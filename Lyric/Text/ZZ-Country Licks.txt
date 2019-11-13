@@ -1,9 +1,0 @@
-TITLE:Zz-Country Licks,DUR:8,BPM:120,BEATS:4,KEY:g,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:TBD
-#INTRO ----------------------------------
-|G          |G          |G          |G 
-z                                      z
-#vers ----------------------------------
-|G          |G          |G          |G
-z                                      z
-TAB:1@A@4@2@6@3:14b16@@1:15@3:h14@1:12@3:h14@2:15@3:14r@3:14@3:12@4:14@@3:12@@@
-TAB:5@A@4@2@6@3:14b16@@1:15@3:h14@1:12@3:h14@2:15@3:14r@3:14@3:12@4:14@@3:12@@@
