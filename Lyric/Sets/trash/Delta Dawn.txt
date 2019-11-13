@@ -1,0 +1,39 @@
+TITLE:Delta Dawn,DUR:102,BPM:162,BEATS:4,KEY:C,QUAL:,ARTIST:Tanya Tucker,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#INTRO ----------------------------------
+|G            |%               |%                |%
+#CHORUS 1 -------------------------------
+|G            |%               |C                |G
+Delta Dawn  what's that flower you have on      Could it 
+|G            |%                |D7              |%
+be a faded rose from days gone by
+|G            |%               |C                |G
+And did I hear you say he was a meeting you here today
+|G            |D7              |C                |G
+To take you to his mansion in the sky
+#VERSE 1 --------------------------------
+|G            |C               |G                |%
+She's forty-one and her daddy still calls her baby
+|G            |C               |G                |%
+All the folks around Brownsville say she's crazy
+|C            |%               |G                |%
+Cause she walks around town with a suitcase in her hand
+|G            |C              |G                 |%
+Looking for a mysterious dark haired man
+#VERSE 2 --------------------------------
+|G            |C               |G                |%
+In her younger days they called her Delta Dawn
+|G            |C               |G                |%
+Prettiest woman you ever laid eyes on
+|C            |%               |G                |%
+Then a man of low degree stood by her side
+|G            |C              |G                 |%
+And promised her he'd take her for his bride
+#CHORUS 2 -------------------------------
+|G            |%               |C                |G
+Delta Dawn  what's that flower you have on
+|G            |%                |D7              |%
+Could it be a faded rose from days gone by
+|G            |%               |C                |G
+And did I hear you say he was a meeting you here today
+|G            |D7              |C                |G
+To take you to his mansion in the sky

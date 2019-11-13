@@ -1,0 +1,96 @@
+REVISION CONTROL SHEET 
+===================================================
+CURRENT PROBLEMS / IDEAS
+Need to start building the library to debug
+    IMMEDIATE:
+    rename function
+    
+    MID TERM
+    must reset when playing to end
+    the targeting is somewhat off
+    
+    LONG TERM:
+
+HISTORY
+
+(1.00)====================================================== 
+    11/27/2015 
+        Rewrite rename function
+        
+    11/18/2015 
+        ALL basic features in place, 
+        Set up file loading so progam works locally with browse
+    
+    11/16/2015
+        Working the Edit routines and file (save/load) routine
+        Still trying to get full working version before going to 1.1
+    
+    11/14/15
+        Added Bar indicator
+        Completed the pop up note and pick boxes
+    
+    11/05/15
+        Rebuilt note selector to use a grid instead of individual notes
+        started conversion process to use ARRAYs instead of varibles
+
+    10/31/15
+        Cleaned up the play section now working the edit...
+    
+    10/27/15
+        Preliminary edit routine working...(320 lines of code)
+    
+    10/23/15
+        Changed the scale format from '3-1-2-3' to '1-0-1-1...."
+        Rewrote the engine to handle key changes
+    
+    10/21/2015
+        Cleaned up the prototype...
+====================================================================
+format for lick:
+
+@   separator for time step in LICK  (HEADER@STEP@STEP....@STEP)
+$   separates major elements of step (notes$picks)
+|   separator for individual notes(note|note...|note and pick|pick....)
+/   separator for individual note/pick details (pos/Icon/text)
+-   separates string and fret (i.e. str-fret=3-5) in each position
+
+HEADER
+    @TITLE/Key/BeatsPerBar/(scale)
+    @Test/E/4  (scale could be added not done yet)
+
+Segment for multiple LH notes LLLLL and Multiple RH actions RRRRR
+    @pos/lhIcon/lhText|pos/lhIcon/lhText|pos/lhIcon/lhText$wire/rhIcon/rhText|wire/rhIcon/rhText   
+
+format for hand actions
+
+1 Element (icon) = Left ICON: F,B1,B2,B3,HO,PO,MU,SU,SD,VB,HM   (Fret, Bend 1,Bend 2,Bend 3 HammerON, PullOFF, Mute ,SlideUp,SlidDown,Vibrato,Harmonic)                                   )
+1 Element (text) = Left Text: T,I,M,R,L,S  (Thumb, Index, Middle, Ring, Little Slide)
+
+3 Element (text) = Right ICON PU,PD,FU,FD,MU,L,S (PickUP,PickDown,FingerUp, FingerDown, Chicken,)
+4 Element (icon) = Right TEXT P T,I,M,R,L C   (Pick,Thumb, Index, Middle, Ring, Little, )
+
+5 Element (icon) = PALM Mute     (PM )
+
+z level
+screen =0
+fretboard 50
+metronome 500
+
+
+=========================================================
+makeScale always works with SCALE so set it before running makeScale
+
+To update to New Revision   (i.e =1.23  to 1.24)
+1) Make a new directory in dropbox/trashLyric   LICKMASTER1-23
+
+2)move ..top/LickMaster.js and LickMaster.html to this directory for safe keeping
+
+3)copy NextLickMaster.js and NextLickMaster.html to LickMaster.js and LickMaster.html in the top directory 
+   
+4)  top/LickMaster.html file===================================================
+        change javascript reference to LickMaster.js from NextLickMaster.js
+        Edit splash screen from 1.23 Beta to  "1.24 Beta"
+5)  top/NextLickMaster.html file===================================================
+        Edit splash screen to  "1.24 Beta"
+     
+        

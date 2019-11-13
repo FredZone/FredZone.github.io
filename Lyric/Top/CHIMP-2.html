@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<head>
+    <link rel="shortcut icon" type="image/png" href="../../Icons/blackQuestion.png">
+    <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> 
+    <title id = 'title'>CHIMP</title>
+    <style type="text/css">
+        Body{
+            
+            background-color:darkgrey;
+            font-family:Courrier New;
+            vertical-align:bottom;}
+        X1{color:white;background-color:white;}
+        X2{color:black;background-color:white;}
+
+    </style>
+    </head>
+
+<body> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html>
+<head>
+    <title></title>
+</head>
+
+<body>
+    <div id='chimp' style="position:fixed;text-align: center; top:0%;left:0%; width:100%;height:100%;">
+        <div id='msg' style="position:absolute;top:0%; left:5%; width:90%;height:5%;">
+            CHIMP
+        </div>
+
+        <div id='game' style="position:absolute;font-size:5vh;top:5%;width:60%;height:95%;background-color:black;vertical-align: bottom">
+            <a id='0' onclick="check(this.id)" style="position:absolute;left:9%;width:9%;top:11%;height:11%;" name="0">1</a>
+            <a id='1' onclick="check(this.id)" style="position:absolute; left:27%;width:9%;top:11%;height:11%;" name="1">1</a>
+            <a id='2' onclick="check(this.id)" style="position:absolute; left:45%;width:9%;top:11%;height:11%;" name="2">1</a>
+            <a id='3' onclick="check(this.id)" style="position:absolute; left:63%;width:9%;top:11%;height:11%;" name="3">1</a>
+            <a id='4' onclick="check(this.id)" style="position:absolute; left:84%;width:9%;top:11%;height:11%;" name="4">1</a>
+            <a id='5' onclick="check(this.id)" style="position:absolute; left:9%;width:9%;top:33%;height:11%;" name="4">1</a>
+            <a id='6' onclick="check(this.id)" style="position:absolute; left:27%;width:9%;top:33%;height:11%;" name="6">1</a>
+            <a id='7' onclick="check(this.id)" style="position:absolute; left:45%;width:9%;top:33%;height:11%;" name="7">1</a>
+            <a id='8' onclick="check(this.id)" style="position:absolute; left:63%;width:9%;top:33%;height:11%;" name="8">1</a>
+            <a id='9' onclick="check(this.id)" style="position:absolute; left:84%;width:9%;top:33%;height:11%;" name="9">1</a>
+            <a id='10' onclick="check(this.id)" style="position:absolute; left:9%;width:9%;top:55%;height:11%;" name="10">1</a>
+            <a id='11' onclick="check(this.id)" style="position:absolute; left:27%;width:9%;top:55%;height:11%;" name="11">1</a>
+            <a id='12' onclick="check(this.id)" style="position:absolute; left:45%;width:9%;top:55%;height:11%;" name="12">1</a>
+            <a id='13' onclick="check(this.id)" style="position:absolute; left:63%;width:9%;top:55%;height:11%;" name="13">1</a>
+            <a id='14' onclick="check(this.id)" style="position:absolute; left:84%;width:9%;top:55%;height:11%;" name="14">1</a>
+            <a id='15' onclick="check(this.id)" style="position:absolute; left:9%;width:9%;top:77%;height:11%;" name="15">1</a>
+            <a id='16' onclick="check(this.id)" style="position:absolute; left:27%;width:9%;top:77%;height:11%;" name="16">1</a>
+            <a id='17' onclick="check(this.id)" style="position:absolute; left:45%;width:9%;top:77%;height:11%;" name="17">1</a>
+            <a id='18' onclick="check(this.id)" style="position:absolute; left:63%;width:9%;top:77%;height:11%;" name="18">1</a>
+            <a id='19' onclick="check(this.id)" style="position:absolute; left:84%;width:9%;top:77%;height:11%;" name="19">1</a>
+        </div>
+    </div>
+
+    <div id='CTRL' style="position:absolute;left:60%;top:5%; width:40%;height:95%;background-color:grey;">
+        CHIMP<br>
+        <a href="https://www.youtube.com/watch?v=ktkjUjcZid0&t=233s">XXXX</a>
+        
+        <button style="position:absolute;top:50%;left:10%;height:10%;width:10%" onclick="play()">PLAY</button><br>
+        <button style="position:absolute;top:50%;left:30%;height:10%;width:10%" onclick="reset()">RESET</button><br>
+        <button onclick="NUM=NUM+1,level()" style="position:absolute;top:35%;left:50%;height:10%;width:10%;font-size:4vh">^</button><br>
+        <button id='level' style="position:absolute;top:50%;left:50%;height:10%;width:10%;font-size:4vh">3</button><br>
+        <button onclick="NUM=NUM-1,level()" style="position:absolute;top:65%;left:50%;height:10%;width:10%;font-size:4vh">v</button><br>
+        <button onclick="delay(200)" style="position:absolute;top:35%;left:70%;height:10%;width:10%;font-size:4vh">^</button> <button id='delay' style="position:absolute;top:50%;left:70%;height:10%;width:10%;font-size:4vh">1.0 0</button> <button onclick="delay(-200)" style="position:absolute;top:65%;left:70%;height:10%;width:10%;font-size:4vh">v</button> <button id='auto' onclick="auto()" style="position:absolute;top:85%;left:10%;height:5%;width:80%;font-size:4vh">AUTO ADVANCE IS ON</button><br>
+    </div>
+</body>
+</html>
+
+
+<script type="text/javascript">
+var CUR = 1
+var NUM = 3
+var DELAY = 1000;
+var TIMEOUTcrap
+var AUTO = true
+
+function auto() {
+    if (AUTO == true) {
+        AUTO = false;
+        document.getElementById('auto').innerHTML = "MANUAL ADVANCE";
+    } else {
+        AUTO = true;
+        document.getElementById('auto').innerHTML = "AUTO ADVANCE";
+    }
+}
+
+function level() {
+    document.getElementById('level').innerHTML = NUM;
+}
+
+function delay(delta) {
+
+    DELAY = parseInt(DELAY + delta, 10)
+    document.getElementById('delay').innerHTML = parseInt(DELAY / 100, 10) / 10;
+}
+
+function reset() {
+    CUR = 1
+    NUM = 3
+    DELAY = 1000
+    delay(0)
+    level()
+    clearGrid()
+    //play()
+}
+
+function play() {
+    CUR = 1
+    ARRdeck = ("").split(",")
+    clearGrid()
+    createDeck()
+    shuffle(ARRdeck)
+    TIMEOUTcrap = setTimeout(function() {
+        showDeck(ARRdeck);
+    }, 400);
+    TIMEOUTcrap = setTimeout(function() {
+        hideDeck(ARRdeck);
+    }, DELAY);
+}
+
+
+function check(pushed) {
+    if (ARRdeck[pushed] == CUR) {
+        document.getElementById(pushed).style.backgroundColor = "green"
+        CUR = CUR + 1
+        if (CUR == NUM + 1) {
+            statusMsg("GOOD!!!  YOU WIN")
+            if (AUTO == true) {
+                NUM = NUM + 1
+            }
+            level()
+        }
+
+    } else if(ARRdeck[pushed]>0){
+        document.getElementById(pushed).style.backgroundColor = "red"
+    }
+}
+
+function clearGrid() {
+    statusMsg('Clearing Grid')
+    for (n = 0; n <= 19; n++) {
+        document.getElementById(n).style.color = 'black'
+        document.getElementById(n).style.backgroundColor = 'black'
+        document.getElementById(n).innerHTML = "x"
+    }
+}
+
+function createDeck() {
+    var str = ""
+    for (n = 1; n <= 19; n++) {
+        if (n <= NUM) {
+            str = str + n + ","
+        } else {
+            str = str + ","
+        }
+    }
+    ARRdeck = str.split(",")
+    statusMsg('New Deck ' + NUM + ' elements : length :' + ARRdeck.length);
+
+}
+
+function showDeck(arr) {
+
+    for (n = 0; n <= 19; n++) {
+        //alert(arr[n])
+        if (arr[n] > 0) {
+            document.getElementById(n).innerHTML = arr[n];
+            document.getElementById(n).style.backgroundColor = "white"
+        } else {
+            document.getElementById(n).innerHTML = "X";
+            document.getElementById(n).style.backgroundColor = "black"
+        }
+    }
+    statusMsg('Showing Deck');
+}
+
+function hideDeck(arr) {
+    CUR = 1
+    for (n = 0; n <= 19; n++) {
+        //alert(arr[n])
+        if (arr[n] > 0) {
+            document.getElementById(n).style.color = "white"
+        } else {
+            document.getElementById(n).style.color = "black"
+        }
+    }
+    statusMsg('Showing Deck');
+}
+
+function statusMsg(msg) { // COLOR SCHEME: light grey=normal;red=problem ;yellow-pause or inwork; green=Ready
+    if (msg === null || msg === '' || msg === " ") {
+        msg = "ERROR: No Status Message Passed";
+    }
+    document.getElementById("msg").innerHTML = msg + " (Arr Length: " + ARRdeck.length + ")";
+}
+
+function shuffle(arr) { //taken from internet I didnt analize it...
+    let counter = arr.length;
+    // While there are elements in the array
+    while (counter > 0) {
+        // Pick a random index
+        let index = Math.floor(Math.random() * counter);
+        // Decrease counter by 1
+        counter--;
+        // And swap the last element with it
+        let temp = arr[counter];
+        arr[counter] = arr[index];
+        arr[index] = temp;
+    }
+    return arr;
+}</script><!--change the file name at revision...-->
+</body>
+<html>

@@ -1,0 +1,680 @@
+REVISION HISTORY and CONTROL SHEET
+    With links to 'some' older versions
+    shown as...<img src='../../Icons/turdSmall.jpg'>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CURRENT PROBLEMS / IDEAS/ STATUS
+    Critical
+        OLD count in not working Remove it
+    Misc...
+        trying to eleminate a lot of "NewLine=undefined"
+        Metronome is primative, does not sync quickly unless at start...
+        Tabs are incomplete
+    Out of my Control...
+        Problem with Chrome/KWS--Loop does not work in Android with KWS server use FIREFOX
+        or another server (js cannot identify server)
+    Plan:
+        isolate the tab as a separte part??
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
+HISTORY...
+6 Beta (MAJOR Cleanup IN PROCESS)==============================(117,247   bytes - 59,044  bytes)
+    11/07/19 3:25PM
+        Finsihed mailto functions
+        Added the End Pause function to allow reading of song for about 4.5 seconds before covering with buttons
+    09/23/19 12:22 PM
+        EDITOR.html> file save recaclulate duration and trim trailing spaces
+        added XX to content header...
+    09/15/19 3:20 PM
+        Removed some duplicate codes
+        Fixed Icons in BigButtons,(mistake 6 days ago)
+    09/08/19 3:20 PM
+        Fixed Config selector (tbd error)
+        Removed: TABs,cntDwn, Vocal Mode, beatAdjust()
+        Simplified: bug Icon,BigButtons,
+    08/28/19
+        Removed Tab from the js and html files to simplify...
+        @around11:00
+        it wasnt usefull...still ahave some residuals
+    08/23/19
+        Moved the clock for presong lines
+        Cleaned up presong line routine
+    08/22/19
+        Reduced the z-index of the info screen to below the Config Screen
+        added iconize to the notes so you can indicate what kind of note
+    07/23/19
+        6:34AM cleaned up the duration
+        ?????? Removed Drum count in (use met or bt)
+    07/20/19
+        11:15PM removed some vestigal code
+        6:47PM  Cleaned up the loop interface
+    07/17/19
+       Started reducing tabs to just a read function
+    07/17/19
+        8:15PM Verfied CTO eliminating a few...
+    07/16/19
+        9.23AM Reformated VOL control to prevent pushing wrong button
+    07/15/19
+        11:01AM Cleanedup Backtrack Bar: Acceptable...
+        12:32AM Simplified 2 draggable headers (backtracker and status)
+    07/14/19
+        11:30PM Cleaned up and automated the backtrack bar
+    07/12/19
+        9:59PM simplified the revision routine
+        2:41PM prevented auto close of configuration bar while configuring
+        2:20PM Removed the AutoNext function...Never used it and it complicated things...
+    07/8/19
+        Cleaned up excess and doubles
+
+5.3 (Latest Stable Version)===========================(128,196 bytes-61,440 bytes)
+<a href='Player6-0.html'><img src='../../Icons/turdSmall.jpg'></a>
+    06/17/19 6:09PM
+        Plan to clean up mode to include BarSync
+    06/11/19 10:03PM
+        Backtrack now analizable still needs interface work
+    05/24/19 1:30PM
+        Backtrack now dragable window
+        splitting the backtrack screen 
+    05/24/19 6:30PM
+        deleted extra stuff
+        Started working the track Tool
+        Reworked duratation of vocal and backtrack to equal the MP3 length
+    05/15/19 6:30AM
+        Cleaned up Vol and Loop routines & displays
+        Added Slow Fade
+    05/13/19 1:14AM
+        Fixed VOL
+    05/12/19 7:41PM
+        Started working on VOL
+    04/15/19
+        added a reset to the Xstart to repeat tab scrolls properly
+    04/15/19
+        10:15PM added variable delay to looper
+        Tab scroll works...if started before the looper
+    04/11/19
+        10:42PM reworked editor and interface, some vaugeness switching form playist vol to default vol
+        2:15AM reworked the volume control to take input from playlist
+        the tab no longer scrolls...
+    04/3/19
+        11:08AM got the tab to higlight but need better start routine...
+    04/2/19
+        8:11 PM fixed auto next last song
+        1:22 PM Put the Tempo getter in
+    04/1/19
+        4:30PM reset two days...lost the TAB functions
+    03/23/19-
+        Everything looks good 7:07PM (REV-6???)
+        loop will not hide....8:17AM
+        reworked the loop to scroll to start...
+    03/22/19-4:55PM
+        reworked the loop to scroll to start...
+    03/21/19
+        killed audio window(not necessary...10;41PM
+        cleaned up some old code
+        used = in headers instead of -
+    03/19/19
+        added audio window...9:36    
+    03/17/19
+        2:16PM  Clock is working...
+    03/16/19
+        working on end song 6:25
+    03/15/19
+       most trackAlign working 6:52
+    03/14/19
+       went back to old version 7:38 
+    03/12/19
+       loop worked into trackReset 9:38PM
+       trying to set LOOPtop as start of ALL resets 8:50PM
+       auto next is workin 6:64PM
+       12:25AM autoNext added to endSong()
+    03/11/19
+        added 1ine to the bottom of the Tune window
+        Everything crashed restored 10:53PM from yesterday
+        12:35AM started messing with Tune/content
+    03/10/19
+        finished new Scroll Engine 10:14 looks good, 
+        working on new Scroll Engine 9:03PM
+        Big chords and text size now work 2:26PM
+        tried to change barSync at 2:02PM
+        added a working fade routine
+        cleaned up the debug interface
+    03/09/19
+        added a notepad to the developer screen in yellow 11:59
+        worked the statusMsg through the arrConvert 10:50
+        removed Pause Pt 12:44Pm
+        renamed passCommand to screenFormat 12:34AM
+        rewrote the barSelect routine 12:13AM to declutter
+    03/07/19
+        1:10 PM working for most modes...clock still off
+        Silent mode with  sync works 12:33AM awkward construct
+        Works silent mode without sync 12:10AM
+        8:57 started messing with barsync
+    03/07/19
+        Work std Scroll
+        SILENT mode works without BARsync 11:41PM
+        good at 10:31 PM for std mode start stop and play
+        good at 2:18 PM for std mode start stop and play
+        tested long drum track and it stays in sync 7:13
+        highlight now works on silent mode...(useful???)6:36AM
+        started working on scroll engine...6:05 AM
+    03/4/19
+        presets working with the following errors 3:12 PM
+        config screen shows wrong set and sound mode even though they are correct in program
+        fixed the preset problem in first half 1:40PM
+    03/4/19
+        dev FAILS at Clock(3)
+        works Load-backtrack-Abeline-sync
+        12:58AM works for highlight on backtrack-start abeline (Restored)
+        Developer Mode fails at clock...
+    03/2/19
+        Align chords fixed
+        logic for audio and scroll sync redone
+        Fixed a glitch in the transpose functions
+    02/25/19
+        BARsync is also Out 7:28.AM
+        think is off 7:28.AM
+        worked ok through the load server track 7:28.AM
+    02/25/19
+        Poorly functioning loadServerTrack 7:03PM AM
+        Started Reworking loadServerTrack 11:31 AM
+        Boot routine being cleaned up 10:30 AM
+        trackPlay() being rewritten to include other functions 7:42 AM
+    02/25/19
+        EVERYthing WORKS without BARsync 7:38Pm
+        Step 1 delete HILITE and KAROKE:
+        Case 1 No BARsync Works...
+        FIXING LAST VERSION from 6:49PM
+        ALL MESSED UP
+    02/21/19
+        Misc Changes...1:05PM
+    02/20/19
+        Deleted DEBUG variable
+        Re-ordered end of scrollSetup
+        Added applyPx() to ARRbars
+        Added new countBars using ARRbars and 1/2 bars 6:40PM
+        Added anchors to chords b1,b2 etc
+        simplified message from scroll 
+        implemented y++ instead of y=y+1 multiple places 11:29AM
+    02/20/19
+        Set the SCROLLpix to 100% PAGEht-WINDht
+        added BARsync into setCustom
+    02/20/19
+        Crashed the program and went back to 5-2
+    02/19/19
+        Merge pause into  BAR shading scroll routine....
+    02/18/19
+        Rebuilt Scroll Routine to work with BAR shading and respond quicker
+    02/13/19
+        Shrank text on line number and line time...to work with Broken lines and Big Chords
+    
+5.2 (Latest Stable Version)===========================(88,343(49,116-comp)bytes 45,325 bytes)
+<a href='Player5-2.html'><img src='../../Icons/turdSmall.jpg'></a>
+    02/12/19
+        Added Preset Modes (Default, Prefrom, Practice) to the Config Screen
+        Added more steps to the Debugger and reorganized the The Debug screen
+        Added QUALITY to the rolling display (KEY/TEMPO/TRACK/QUALITY)
+    02/7/19
+        Made the Key/TEMPO/TRACK display of roll every second or so....
+    02/2/19   
+        Added capability combine split 2 lyric lines prior to automatic split
+    01/31/19
+        Added capability to auto split long lyric lines to fit screen better
+        Relocated some buttons on the config screens for more space
+    01/31/19
+        Cleaned up the scroll setup to group steps logically
+    01/27/19
+        Incorporated * for 1/2 bars and combined countBars() & BARSperLine
+    01/27/19
+        Cleaned up debug interface it is essentially a status msg log
+    01/27/19
+        Status monitoring (Debug) now works, may need to clean up interface
+    01/27/19
+        Fixed Centering on the Think Icons
+    01/19/19
+        Removed autoSize Routine (obsolete)
+
+5.1==========================================(82,463 bytes 42,053 bytes)
+<a href='player5-1.html'><img src='../../Icons/turdSmall.jpg'></a>    
+    01/17/19
+        Tried unsuccessfully to monitor the boot in real time (works in mozilla)
+    01/05/19
+        Reworded some status Messages and limited it to 40
+        saved Messages in the Debug Log
+    01/02/19
+        Fixed config bar presentation to size correctly
+        redworked the scroll font size again....
+        Longest line is now Lyric or Chord only
+    12/30/18
+        redworked the font size to show bigger text below 60 characters per line
+        Reworked the song end so it would wait 6 cycles before recognizing the end
+        it was stopping during the start up so gave it longer to start up
+        Added a debug routine for trouble shooting
+    12/28/18
+        New Songbar added..Old one removed, more compact, needs testing
+    12/27/18
+        Totally messed up the Song settings, may have to go back to 5.0
+
+5.0 =============================================(81,920 bytes 40,244 bytes)
+<a href='player5-0.html'><img src='../../Icons/turdSmall.jpg'></a>
+    12/27/18
+        Released Stable Version from 12/23
+    12/23/18
+        Reconfigured Big button controls to eliminated code
+        Worked big button visibility and icons
+    12/14/18
+        Combined tool and info bars
+        Cleaned up the window open and info screens
+    12/12/18
+        forced all bars closed when a tune was selected
+    12/11/18
+        reworked the graphics on Size and Spread Chords
+
+4.3===============================================(81,920 bytes; 39,228 bytes)
+<a href='player4-3.html'><img src='../../Icons/turdSmall.jpg'></a>
+    12/9/18
+        Worked the revision status to show on the config screen in blue text
+    12/1/18
+        Added an alphabet bar to speed song searches    07-4-18        Fixed the jump ahead and jump back features, the rate change was broken    01-7-18
+        Cleaned up the js file to take out ambiguity and confusing format (BASICALLY ANAL RETENTIVE STUFF)
+    10-1-17
+        Adjusted 'Alt songs' so clicking yellow "ALT song" brings it up while clicking 'next' jumps the alternate
+    10-5-17
+        added a listener to the loading of Song Images for sequencing scroll setup
+
+4.2 ========================================================(81,479 bytes;34,009 bytes)
+<a href='player4-2.html'><img src='../../Icons/turdSmall.jpg'></a>
+    10-1-17
+        Added the ability to use jpg images instead of text files
+        Cleaned up about first 800 lines of js file
+        Reworked the 'big buttons'
+            add Jump Ahead/Behind (frogs)
+            prevented jumping past the top of scroll
+            repositioned the big buttons
+        Recentered the splash screen
+        Implemented Alternate Song
+
+4.1 ========================================================(81,671 bytes; 32,980 bytes)
+    6-20-17
+        Eliminated the 2 piece sound bar
+        Added the Individual Song settings and routines
+        Prettied up the interface...
+    6-12-17
+        Cleaned up the code and config screen
+        allow user to select the size of the BIG Chords...
+    6-9-17
+        Added Big Chords
+        Added Touch Screen
+
+4.0 ========================================================
+    1-30-17
+        3 types of print (std, full,and bass)
+        Passed Array to print page via window, not query string, not length limited
+
+3.9 ========================================================
+    1-8-17
+        Sped up the loop return since long songs took too much time
+        
+3.8========================================================
+<a href='player3-8.html'><img src='../../Icons/turdSmall.jpg'></a>
+    11-28-16
+        Corrected the backing track references to match the files( click backing etc)
+    11-25-16
+        Completed the LOOPER function (needs more test but looks good)
+        Synchronized the Audio and Scroll (scroll tune and audio follows on backtrack and vocal...)
+    11-21-16
+        Added the Looper function
+        Realigned the start and stop to closer mimic the actual track
+    11-17-16
+        Put a 2 bar click and count in place of the delay gif icon
+        Changed the clock color for visibility
+    11-09-22
+        Elected Asshole as president
+        Fixed the local file load...
+    10-22-16
+        Rebuilt the load track routine to use the calculated duration
+        ---if the DURmp3 does not produce a duration due to slow download etc
+        (The scroll was not working in some cases...)
+    08/29/16
+        centered the Key and Tempo on bottom line
+    08/28/16
+        Grouped and labeled similar functions to facilitate refinement
+    08/26/16
+        Built Z-index map and simplified z-index plan
+    08/19/16
+        Renamed the app 'Performer'
+        Took the border off popups just to clean it up
+        Fixed the track reset abiguity
+    08/18/16
+        refurbished volume control to ablsolute positioning & fixed the Z-index problem
+    08/15/16
+        Slowed down the 'catchup scroll to look less jumpy...Some General trash removal
+    08/14/16
+        Reworked the pass from editor to player broken on the addition of playlist parameters
+    08/11/16
+        fixed the clock took out previous slide as it was useless
+    08/10/16
+        Reworked the shade to slide down during the prePlay 'Delayed Start'
+
+3.7 Beta========================================================(72,711 bytes 26,807 bytes)
+    08/09/16
+        General Cleanup...information bar and routine
+    08/02/16
+        Reworked the Titleplus to make it invisible to user...and revamped playlist notes
+        note Old playlists containing note files will not work unless rewritten
+    07/31/16
+        Cleaned up some Icons
+        Added Karaoke Mode (Suppressed Chords)
+        SHADE SCREEN  Obscured the Tune when not Playing (Reminder to scroll...)
+    07/29/16
+        Fixed Transposition Error when changing beat
+        Added warning about Nashville Notation
+        Cleared old code from file
+    07/22/16
+        Larger Config screen with growth area
+        Added a Left Border button to the config screen
+    07/17/16
+        Reformatted the toolbar routine to make it more obvious
+    07/14/16
+        Added wait between song end and upper control appearance
+        Moved the title Up to leave more space for song
+    07/13/16
+        Trivia Auto PopUps do not activate until move to second tune
+        Trivia Auto PopUps now close after specified Time
+    07/12/16
+        Adjusted Scroll Setup to finish earlier since it was off
+        Reformatted Config bar to Center button Text
+    07/6/16
+        Re adjusted Clock for AM to be correct
+        
+3.6  ======================================================= (69,964 bytes)(22,941 bytes)</a>
+<a href='player3-6.html'><img src='../../Icons/turdSmall.jpg'></a>
+    07/6/16
+        Rebuilt and color coded note screen
+    07/5/16
+        Fixed print to cover transpositions
+    07/4/16
+        Added clock to Screen
+        Reformated the info bar and popup function
+        Added chord list to opening msg
+    06/26/16
+        Reoriented and resized Key selection for Tablet/phone usability
+        Reoriented and resized Tempo selection for Tablet/phone usability
+
+3.5  ======================================================= (69,562 bytes)(22,399 bytes)
+    06/28/16    
+        Changed the routine for the Audio Track Msg box
+        Removed the Title from the scroll
+    06/27/16
+        Relocated advance arrows to the top to minimize confusion of advancing instead of playing
+        Moved the Title Select and Track Message to the top of page
+        Moved the Audio Controls to the bottom center of page and increased its size
+        Cleaned up the 'thinking' process so it hides some transitions that 'flashed'
+    02/10/16
+        Smaller font for the trivia notes
+    01/15/16
+        Moved the audio control because it was to big for phones and small tablets
+
+3.4 ======================================================= (69,902 bytes)(21,313 bytes)
+    11/13/2015
+        Released....Tentatively the final version
+    10/3/2015
+        Prints the Chosen Key Change
+        Added Nashville Notatation to KEY selection
+    9/22/2015
+        Added tool to toolbar to load a tune by exact name...
+    9/21/2015
+        Centered the track icon and thinking icon on each other....
+
+3.3 ===================(MAC PROTOTYPE)====================  (67,849 bytes)(20,784 bytes)
+    9/05/2015
+        finished reconfiguration to run on Div Scroll instead of an iframe (mac compatability)
+    9/07/2015    
+        Reconfigured the auto resize routine and the bar sizes to comply
+
+3.3 Beta =======================================================(Never Released)
+    Never Relased...........Replaced by 3.3 (MAC Beta) released 0/07/2015
+    8/23/15
+        added an emphasis routine...Judged to be fluff
+
+3.2 ======================================================(68,925 bytes) (20,832 bytes)
+    8/22/2015
+        Put a 'flashBlinker' on the Status Icon
+        Put a 'flashBlinker' on the boot Msg
+        Resized text in the config screen to fit better
+        Fixed the fade to hit 100% (failed @ 95% going up)
+    8/17/2015
+        Added the fade function and volume pct
+        Cleaned up some Old Icons
+ 
+3.1 ======================================================(67,082 bytes)  (20,627 bytes)
+    8/17/2015
+        Reworked the guidlines and made a separate green centerline
+        Added jump ahead to rabbit and turtle functions
+    8/15/2015
+        Recalculated initial offset so scroll starts on first chord line
+        Smoothed out the jump ahead and behind function
+    8/14/2015   
+        Regrouped the Icons to handle them as groups
+        Merged the Play and Scroll step of Pass Command
+        
+3.0 ======================================================(66,331 bytes)(20,188 bytes)
+    8/10/2015 
+        changed 2.11 Beta to 3.0 and released
+        Restructured the page to work from the top and bottom (2 icon groups)
+        Allowing only a single toolbar at a time
+        Grouped the Icons div's for easier manipulation group
+    8/03/2015 
+        Recalculated the initial text offset using the font size
+        Restructured the html page to start at the middle of the screen
+        Revised the scroll routine to start at the middle
+        Complete revision of the player on screen controls
+        Moved the floater behind the tune so it scrolls properly
+        Standardized on screen icons for the player and made them a pseudo bar
+        Removed the play icon and will use delayed play from now on
+
+2.10======================================================  (67,433 bytes) (20,236 bytes)
+<a href='player2-10.html'><img src='../../Icons/turdSmall.jpg'></a>   
+    8/03/2015 
+        Minor Icon realignment
+        Timed the glass screen and menus
+    8/02/2015
+        Put in the Cloud Pop up
+        Added Counted Chords
+        Eliminated two icons on the tool menu
+        Added the orientation screen to prevent portrait view
+    7/28/2015
+        Added Orientation check to Index and Player (TBD on others....)
+        Added Favicons to tabs
+        Added Big print to the playlists
+
+2.09====================================================== (62,594 bytes) (21,130 bytes)
+    7/26/2015
+        Added the "Alternate" songs to the playlist and player...
+    7/24/2015
+        Added analysis to the print function on the playist
+        Added the Genre and Style to the song file first line for future use
+    7/19/2015
+        Standardized the status msg colors by layer and added a flash display (for a few seconds)
+        added a image blinker function just for fun
+
+2.08======================================================(62,577 bytes)(21,130 bytes)
+    7/17/2015
+        The player cover was changed to a transparent glass and it scrolls up and down
+        Playlist can now pass a Key,Tempo and Sound Mode 
+    7/13/2015
+        Fixed anomalies in the backtrack selection routing and made simpler icons
+
+2.07======================================================(62,504 bytes) (20,630 bytes)
+    7/13/2015
+        Put in locks mechanism to stop if the drum beat is not a 4/4 etc
+    7/12/2015
+        General cleanup, probably just messing with the look to make it more intuative
+        Only things left are minor (more automatic bpm selection and short 4-8 beat entry)
+    7/8/2015
+        Fixed some glitches and color matched the msg bar
+    7/7/2015
+        Completed the interface, all toolbars are pop ups,
+        Chainlink hides the screen when using setup and tools    
+    7/5/2015
+        Refined the track selection method added Country Drum tracks @ 10 bpm interval
+    7/3/2015
+        reworked the icons for modes (drums etc...)works ok but structure sucks
+
+2.06=========================================================== (60,253 bytes)(18,482 bytes)
+    7/1/2015
+        Cleaned up the interface, deleted the presets and refined the interface
+    6/28/2015
+        Mechanics of Custom screen working...Full Screen not operating Pointer and guidlines are obsolete
+        Presets no longer make sense...should be made dormant or eliminated
+    6/24/2015
+        finally got the tools show running at 90%
+        Mode Problems and fullscreen failures need to be worked but its operable
+    6/20/2015
+        Started a toolsShow routine to hide show/hide toolbars (fewer lines of code)
+        elimiated the Xtra screen so user stays on the player...needs some experience to evaluate
+        Cleaned up a lot of trash
+        Went to a clear splash Screen
+        Renamed some routines to make the logic clearer
+    6/18/2015
+        Moved tempo and key change to the player screen 
+    6/17/2015
+        Changed speed to BPM not %
+        Changed 'Harmony' notation to 'Vocal'
+        Cleaned up the splash screen and delayed loading the song initially to shorten boot time
+    6/16/2015
+        Realigned the info to the right column
+        Moved player contols up to the main screen to simplify screen
+    6/14/2015
+        Worked in the Harmony Mode, Added Harmony Directory, drumrock etc
+        Put a loading icon on the screen while the song/track are loading
+    6/13/2015
+        Changed speed indicator from percent to bpm
+        Raised the empirical calculation for EYELINE since it seemed to be too low at start
+    6/11/2015
+        SOUNDmode includes SILENT,CLICK TRACK,BACK TRACK,(CLICK INTRO,DRUM-ROCK in part)
+        Removed CLICKTRACK, BACKTRACK FADE from logic added SOUNDmode & ADDED Select box for sound Mode
+    6/10/2015
+        Working on TITLE and TITLEplus to add extra data to playlists
+
+2.05====================================================== (60,801 bytes)-(19,432 bytes)
+<a href='player2-05.html'><img src='../../Icons/turdSmall.jpg'></a>
+    6/09/2015
+        Started to work the Drum Track hid those alerts and released the next beta since this could be a major rework and 2.04 was old
+    6/07/2015
+        rearranged the z axis and divs of the the rabbit, turtle and status icon to work on android 5 chrome
+    5/20/2015
+        Reworked the Pointers to work with the new scroll engine
+        Reworked the Clicktrack Fade to only last while the 'floater' was making its first scroll to the middle position
+        Counted chordlines and Precordlines to set EYEline mathematically (if emperically)
+        Removed some alerts
+    4/30/2015
+        Rebuilt the  Song End routine for new scroller
+    4/29/2015
+        Removed Guidlines (replaced by floater)
+    4/28/2015
+        rebuilt scroll engine to eliminate sentinel and use Yposition for referenece
+    
+2.04====================================================== (56,741 bytes)(18,907 bytes)   
+    4/24/2015
+        Added an analysis 'alert' screen to the info block
+        So you can view the status of the program from the play screen
+    4/23/2015
+        Formatted the visual Popups for different colors and fonts
+    4/22/2015
+        Reformatted the Printing and Popups for Tech and Trivia notes to different styles
+        (Trivia for easy reading and Tech for <pre> format)
+        Added revision history link and rearraged the icons at bottom of config screen
+        Displayed Title only in the iframe while loading a new tune...
+    4/21/2015
+        Blocked Trivia popups when no notes are present or song is reloaded
+        Added Popup notes for Trivia and Tech notes (with auto popup option)
+    4/17/2015
+        Changed the font size routine to better handle text long lines
+        Recalculated the Scroll delay and reworked scroll engine for smoothness and simplicity
+        Took out the rough scroll feature because its pretty usless
+        Added in tech and trivia notes and their coding in the text..
+    4/16/2015
+        Reformatted the volume to take less space
+        Went to 3 forms of the reset button to indicate status
+        Took out superfluous font notation (new corrier)
+        fixed size of fonts in several locations
+        Increased the width of the audio controls and song selector
+    4/15/2015
+        Changed the status icon routine to display a quality icon
+    
+2.03====================================================== (51,647 bytes)(17,028 bytes)
+    4/11/2015 
+        Reformatted the splash screen, Icons and,config screen
+    4/9/2015
+        Cleaned up some status messages
+    4/7/2015 
+        Fixed SOUND so it didnt reset to 'on' when the song was reset
+    
+2.02====================================================== (51,573 bytes)(16,850 bytes)
+    4/5/2015 
+        finished z-index realignment
+        added an on-off button to the sound slider
+    
+2.01======================================================
+<a href='player2-01.html'><img src='../../Icons/turdSmall.jpg'></a>
+    4/4/2015         started organizing z-index levels better 
+    2.00======================================================    4/3/2015          Added revision status        Made pause Icon visible during play        Centered and resized the countdown and start icons        Made the Pointers what you click to go up or down 10%(removed two images)        Replace notebook icon with info        Info Block added (upper left)    
+1.50======================================================     4/2/2015
+        Put the exit icon in as always on in the ctrlXtra
+        Fixed notes icon to only show on normal screen, not full screen
+        Separated pointer into Pointer Up and Pointer Down Icons and aligned them with guidlines
+        Made the Pointer advance or retard the scroll 10% with a click of either icon
+        Fixed the duration shown on the configuration screen
+        Fixed the Title shown on the configuration screen
+        Added PREVtitle to global variables
+    4/2/2015
+        Went to black and white icons on player screen
+
+1.00====================================================== 
+    3/XX/2015
+        Added Splash screen (named curtain)
+        Went to Android like view, black bar and white icons
+        Added Title to top the Array conversion
+        Removed msg element, replaced with simpler items
+        Put the delayed start icon in middle of the screen
+        Prevented zoom in mobile browser since it caused confusion
+        Went to full screen display of player optional
+        Moved Status Icon to upper right corner
+        Reconfigured config screen operation for custom and preset modes
+        Added Ireal icon and Notes icon to player screen if they are is present
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+To Release a revision   (i.e =current stable player =W.X  next rev Player will be Y.Z)
+
+Search NextPlayer.html  and NextPlayer.js for "TO RELEASE" and follow the instructions
+    1)  Rename the Save NextPlayer.html as PlayerY-Z.html
+    2)  Rename the Save NextPlayer.js as PlayerY-Z.js
+    ================================================================
+    3)  Change the first two lines of PlayerY-Zjs
+    4)  Change last line of PlayerY-Z.html to reflect the new revision
+        Change last first of PlayerY-Z.html to reflect the new revision
+    5) Change the index.html to show the new revision for the stable Performer
+    6) Change this file (player.txt) to show the frozen Revision and Link with <img src='../../Icons/turdSmall.jpg'>
+
+QUAL Test================================
+play song
+    1)   silent-no options||play/stop/restart/auto end/jump-up/jump-down/rabbit/turtle (7/24/19-scroll rate error )
+    2)   backtrack-no options||play/stop/restart/auto end/vol-up/vol-down/fade-fast/fade-slow
+
+
+/*
+function parseNeck(a){
+    var ff=null
+    var sf=null
+    fi='z'
+    if (a.length===1) {
+        ff=a;fi='z';
+    }else{
+        if (isNaN(a.substring(1,1))===true){
+            ff=a.substring(0,1)
+            fi=a.substring(1,1)
+        }else{
+            ff=a.substring(0,2)
+            fi=a.substring(3,1)
+        }
+    
+*/

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <link rel="shortcut icon" type="image/png" href="../../Icons/blackQuestion.png">
+    <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!-- prevents zooming on mobile devices....number-based width or "device-width"-->
+    <title id = 'title'>Performer Help</title>
+    <style type="text/css">
+        Body{
+            line-height:150%;
+            background-color:darkgrey;
+            font-family:Courrier New;
+            vertical-align:top;}
+        X2{ color:red;}
+        X1{ color:green;}
+        X8{ line-height:180%;
+            color:blue;
+            text-decoration: underline;}
+    </style>
+    </head>
+
+<body> 
+    <div id='msg' style="position:fixed; font-size:2.5vw; left:2%; top:2%; width:96%;color:white; height:6%; overflow:hidden;">HELP</div>
+        <div style="position:fixed;vertical-align:top; background-color:white;  border:solid; left:2%; top:10%; width:26%; height:76%; overflow:scroll">
+            <div style="text-decoration: underline;color:blue;">
+            GENERAL
+            <div onclick="postHelpFile('helpAbout.txt',this.innerHTML)">About the Help File</div>
+            
+            
+            <div onclick="postHelpFile('HelpText.txt',this.innerHTML)">Formatting Song Files for the Performer</div>
+            <div onclick="postHelpFile('Player.txt',this.innerHTML)">Revision History of Performer</div>
+            <div onclick="postHelpFile('helpStrumming.txt',this.innerHTML)">Strumming notation used in my text files</div>
+            <div onclick="postHelpFile('helpTab.txt',this.innerHTML)">TAB conventions</div>
+            <div onclick="postHelpFile('helpBAIB.txt',this.innerHTML)">Using Band in A Box to make Back Tracks</div>
+            <div onclick="postHelpFile('HelpReleasePlayer.txt',this.innerHTML)">Releasing the next version of the Player/Peformer</div>
+            <a href=https://kb.musictribe.com/musickb/view/article/TCHelicon/en_US/VoiceLive-How-to-reset-to-default-factory-settings-228153427>Reset Voice Live</a>
+            <a href=https://www.youtube.com/playlist?list=PLgxx2UfYc5pG6FLYEvDjua6_ObGtAr_xi>VoiceLive Videos</a>
+            TOOLs (Within Player)
+            <div onclick="postHelpFile('HelpDebugger.txt',this.innerHTML)">Debug Function</div><div onclick="postHelpFile('HelpDebugger.txt',this.innerHTML)">Debug Function</div>
+            TOOLs (External to Player)
+            <div onclick="postHelpFile('HelpEditor.txt',this.innerHTML)">Editing songs using the html 'Editor'</div>
+            
+            </div>
+            ===========INWORK=============
+         <div style="text-decoration: underline;color:orange;">
+         <div onclick="postHelpFile('HelpGlobalRoutines.txt',this.innerHTML)">Creating a global routines file in javascript</div>
+            </div></div>
+
+    <div id='helpText'style="background-color:white;position:fixed; line-height: 120%;border:solid; left:32%; top:10%; width:66%; height:88%; overflow:scroll">
+<!--<div id='helpText'style="background-color:white;position:fixed; border:solid; left:32%; top:10%; width:66%; height:88%;word-wrap: normal;"> --><!--overflow-y:scroll; overflow-x:auto  -->     
+        HELP Should appear here once you select a title (in blue)!
+        </div>
+<!--
+    <div id='helpFile'style="background-color:white;position:fixed; border:solid; left:2%; top:90%; width:26%; height:8%; overflow:hidden">-->
+    <div id='helpFile'style="background-color:white;position:fixed; border:solid; left:2%; top:90%; width:26%; height:8%; word-wrap: normal;">    
+        File Path will appear here!
+        </div>    
+
+<script type="text/javascript">
+    function postHelpFile(path,heading){//^ Selects your set by its name
+        document.getElementById('msg').innerHTML= "HELP: "+ heading;
+        var request = new XMLHttpRequest();
+        request.open("GET", path, false);
+        request.send(null);
+        document.getElementById('helpText').innerHTML= "<pre>"+(request.responseText)+"</pre>";
+        //document.getElementById('helpText').innerHTML=request.responseText;
+        document.getElementById('helpFile').innerHTML=path; }
+</script><!--change the file name at revision...-->
+</body>
+<html>

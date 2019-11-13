@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="shortcut icon" type="image/png" href="../../Icons/UtubeTool.png">
+    <title id = 'title'>Utool-D</title>
+        <style type="text/css">
+    Body
+        {
+            font-size : 2.5vw;
+            font-family:Courrier New;
+            font-weight:bold;
+            line-height:140%;
+            text-align:center;
+            background-color:lightgrey;
+            color:white;
+        }
+    pre
+        {
+            display: block;
+            font-family: monospace;
+            white-space: pre;
+            margin: 0 0;
+        }
+    select{font-size:1.5vw;}
+    input{font-size:1.5vw;}
+    X1{color:red;}
+    X2{color:blue;}
+    </style>
+    </head>
+  <body>
+
+
+<!-- super Controls various z-index display and visibility-->
+<a id="none" style=" display:none; visibility:visible"></a><!--needed a null element....must be a better way -->
+<a id="msg" title="Message Box" style= "position:fixed; line-height:120%; text-align:center; vertical-align:middle; color:red; background-color:transparent; color:red; font-size: 2vw; height:6%; left:0%; top:60%; width:100%; z-index:5500;overflow:hidden">Loading HTML...</a>
+<form action=false><input type="file" id="fileInput" style="display:none;"/></form>  <!-- <input type='text' value='Initialized' id='temp' style="display:none;"/-->
+
+<!-- Splash  5000 -->
+    <div id ="splash" style="position:fixed; visibility:visible; background-color:white; color:black; top:0%; left:0%; width:100%; height:100%; z-index:5000">
+        YOU TUBE LICK TOOL <br>A Javascript Application<br>by<br>Fred Kaparich<br>fkaparich@gmail.com<br>
+        <img src='../../Icons/resetSpinner.gif' alt ="......." style='position:fixed; width:25%; left:37%;opacity:0.4;'>
+    </div>
+
+<div id='editbar' style="position:fixed; display:none ;border:solid; height:10%;width:80%;left:10%;top:45%; z-index:5500; background-color:lightgrey">
+    <img src="../../icons/blackLoopAdd.png" alt="+" title ="CAPTURE LOOP" onclick="loopCapture()" style="position:absolute;width:5%; left:0%;bottom:0%; height:100%;">
+    <img src="../../icons/BlackLoopDelete.png" alt="+" title ="DELETE LOOP" onclick="loopDelete(document.getElementById('loops').selectedIndex)" style="position:absolute;width:5%; left:5%;bottom:0%; height:100%;">
+    <img src="../../icons/BlackLoopEdit.png" alt="+" title ="EDIT LOOP" onclick="loopUpdate(LOOPnumber,VID)" style="position:absolute;width:5%; left:10%;bottom:0%; height:100%;">
+    <img id = 'saveVids' alt="+" title='SAVE VIDEO/LOOP FILE' onclick="saveVideoFile()" src='../../Icons/blackSave.png' style= "position:absolute; width:5%;  left:15%; bottom:0%; height:100%;">
+    <img id = 'getVids' alt="+" title='GET A LOCAL VIDEO/LOOP FILE' onclick="fileGetLocal('videosLocal')" src='../../Icons/blackread.png' style= "position:absolute; width:5%; left:20%; bottom:0%; height:100%;">
+    <img id = 'getUtube' alt="+"  title='DOWNLOAD A UTUBE VIDEO' onclick="loadUTID()" src='../../Icons/blackUtubeDown.jpg' style= "position:absolute; width:5%;  left:25%; bottom:0%; height:100%;">
+    <img id = 'addVid' alt="+" title='ADD VIDEO FILE' onclick="loadUTID()" src='../../Icons/utubeAdd.png' style= "position:absolute; width:5%;  left:30%; bottom:0%; height:100%;">
+    <img id = 'delVid' alt="+" title='DELETE A VIDEO FILE' onclick="deleteVideo()" src='../../Icons/UtubeDelete.png' style= "position:absolute; width:5%; left:35%; bottom:0%; height:100%;">
+    <img id = 'editVid' alt="+"  title='EDIT A VIDEO PROPERTIES' onclick="vidEdit()" src='../../Icons/UtubeEdit.png' style= "position:absolute; width:5%;  left:40%; bottom:0%; height:100%;">
+    <img id = 'restoreVid' alt="+"  title='RESTORE VIDEO PROPERTIES' onclick="vidsRestore()" src='../../Icons/blackUndo.jpg' style= "position:absolute; width:5%;  left:45%; bottom:0%; height:100%;">
+    <img src="../../icons/blackClose.png" alt="+" title ="Editing" onclick="dis('editbar','none')" style="position:absolute;width:5%; left:95%;bottom:0%; height:100%;">
+</div>
+<!-- Header 4500 4599-->
+
+    <div id='hdr' style ="position:fixed; background-color:lightgrey; opacity:1 ;font-size:7vh; line-height:100%;left:0%; height:9%; top:6%; width:100%;z-index:4500;">
+
+        <select id = 'fileIndex' onchange="colSelect(this.value)" style= "position:absolute; visibility:hidden; width:20%; background-color:white; left:0%; height:80%; top:10%;">
+        </select>
+
+        <select id = 'videos' onchange="vidSelect(this.value)" style= "position:absolute; visibility:hidden; width:20%; background-color:white; left:20%; height:80%; top:10%;">
+        </select>
+
+        <select id = 'loops' onchange="loopSelect(this.value)"  style= "position:absolute; visibility:hidden; width:20%; background-color:white; left:40%; height:80%; top:10%;">
+        </select>
+        <img src="../../icons/blackEdit.png" alt="+" title ="EDIT VIDEOS AND LOOPS" onclick="dis('editbar')" style="position:absolute;width:5%; right:5%;bottom:0%; height:100%;">
+        <img id="buttonHome" title ='HOME' src="../../icons/blackHome.png" alt ="home" onclick="window.open('index.html');" style="position:absolute;width:5%; right:0%;bottom:0%; height:100%;">
+    </div>
+
+
+<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <div id='scroller' style="position:fixed;background-color:red;left:0%; height:75%; width:100%; top:15%; overflow-x:scroll;overflow-y:scroll;z-index:3600"> 
+      <div id='idiv' style="position:absolute; background-color:green; left:0%; height:100%; width:100%; top:0%; z-index:3500;">
+        <div id="player"> </div>
+      </div>
+    </div>
+  
+    <div id='footer' title ="Footer" style ="position:fixed; display:none; background-color:lightgrey; opacity:1 ;font-size:7vh; line-height:100%;left:0%; height:10%; bottom:0%; width:100%;z-index:4500">
+        <select id = 'mag' onchange="sizeFrame(this.value)" style= "position:absolute; width:8%; background-color:white; left:1%; height:80%; top:10%;">
+            <option value=1  selected>NORMAL</option>
+            <option value=1.25>1.25 X</option>
+            <option value=1.5>1.50 X</option>
+            <option value=2>2.00 X</option>
+            <option value=2.5>2.50 X</option>
+            <option value=3>3.00 X</option>
+            <option value=4>4.00 X</option>
+        </select>
+
+        <select id = 'rate' title ="Playback Speed" onchange="player.setPlaybackRate(document.getElementById('rate').value)" style= "position:absolute; width:8%; background-color:yellow; left:10%; height:80%; top:10%;">
+            <option value=.25>0.25</option>
+            <option value=.5>0.5</option>
+            <option value=.75>0.75</option>
+            <option value=1 selected>NORMAL</option>
+            <option value=1.25>1.25</option>
+            <option value=1.5>1.5</option>
+            <option value=2>2</option>
+        </select>
+
+        <div id='loopBox' style="border:groove; position:fixed;bottom:0%;left:19%;height:9%;width:50%;">
+            <div style="position:absolute;left:1%;width:19%;height:80%;bottom:10%;font-size:2vw;line-height:100%">
+                <select  title="PAUSE TIME BETWEEN REPEATED LOOPS" id = 'pause' onchange="LOOPpause=document.getElementById('pause').value;" style= "position:absolute;width:100%; background-color:lightgreen; left:0%; height:90%; bottom:0%; ">
+                    <option value=12000>0:12</option>
+                    <option value=10000>0:10</option>
+                    <option value=8000>0:08</option>
+                    <option value=6000>0:06</option>
+                    <option value=4000 selected>0:04</option>
+                    <option value=2000>0:02</option>
+                    <option value=1>0:00</option>
+                </select>
+            </div>
+            <img alt="<" title="START LOOP SOONER" onclick="loopSetStart(-1)" src="../../icons/Left.png" style="position:absolute; left:20%;width:10%;height:90%;bottom:5%;">
+            <input type="text" title="CLICK TO SET LOOP START" onclick="loopSetStart();"  id="loopstart" style="position:absolute;left:30%;width:10%;height:80%;bottom:10%;border:none;text-align:center;">
+            <img alt=">" title="START LOOP LATER"onclick="loopSetStart(+1)" src="../../icons/Right.png" style="position:absolute; left:40%;width:10%;height:90%;bottom:5%;">
+            <img alt=">>" title="REPEATING LOOP..."onclick="loopStart('repeat')" src="../../icons/transInfinity2.png" style="position:absolute; left:50%;width:10%;height:90%;bottom:5%;">
+            <img  alt="X" id='loopStopper' title="CLOSE LOOP" onclick="mode('Paused...')" src="../../icons/resetSpinner.gif" style="position:absolute; left:50%;width:10%;height:90%;bottom:5%;visibility:hidden;z-index:4600;">
+            <img  alt="<<"title="SINGLE LOOP..." onclick="loopStart('once')" src="../../icons/transOnePlay2.png" style="position:absolute; left:60%;width:10%;height:90%;bottom:5%;">
+            <img alt="?" title="END LOOP SOONER" onclick="loopSetFin(-1)" src="../../icons/Left.png" style="position:absolute; left:70%;width:10%;height:90%;bottom:5%;">
+            <input type="text" title="CLICK TO SET LOOP START" onclick="loopSetFin(0);" id="loopfinish" style="position:absolute;left:80%;width:10%;height:80%;bottom:10%;border:none;text-align:center;">
+            <img alt="?" title="END LOOP LATER" onclick="loopSetFin(+1)" src="../../icons/Right.png" style="position:absolute; right:0%;width:10%;height:90%;bottom:5%;">
+        </div>
+
+        <div id='playBox' style='position:fixed;border:groove; bottom:0%;right:0%;height:9%;width:30%;'>
+            <img id="runImg" src="../../icons/run.gif" alt ="" style="position:absolute; opacity:0.3; visibility:hidden; left:40%;top:0%; width:20%;height:50%;">
+            <img id="lessVid" onclick="setVid('inc',-1)" src="../../icons/left.png" alt ="<<" style="position:absolute; visibility:visible; left:15%;width:25%;top:0%; height:50%;">
+            <div id="loopTime" style="position:absolute; line-height:100%; height:40%; color:red; left:45%; width:10%; vertical-align:middle; font-size:2vw; top:0%; ">0:00</div>
+            <img id="moreVid" onclick="setVid('inc',1)" src="../../icons/right.png" alt =">>" style="position:absolute; visibility:visible; right:15%;width:25%;top:0%; height:50%;">
+            <input type="range"  id="slider1" min="0" max="100" style="background-color:yellow; position:absolute; left:15%; width:65%; bottom:0%;">
+            <img id='buttonPlay' title='Play Loop' onclick="mode('Playing...')" alt="?" src="../../icons/transPlayGreen.png" style="visibility:visible; position:absolute; right:0%; width:15%; height:90%; top:5%;z-index:4510;">
+            <img id='buttonPause' title='Pause'alt="?" onclick="mode('Paused...')" src="../../icons/transPauseRed.png" style="visibility:visible; position:absolute; right:0%; width:15%; height:90%; top:5%;">
+            <img id='buttonReset' title='Reset' alt="?" onclick="mode('Resetting...');" src="../../icons/transResetBlue.png" style="visibility:visible; position:absolute; left:0%; width:15%; height:90%; top:5%;">
+        </div>
+    </div>
+
+    <SCRIPT type="text/javascript" SRC = "Utool-D.js"></script>
+    <SCRIPT type="text/javascript" SRC = "GlobalRoutines.js"></script>
+  </body>
+</html>

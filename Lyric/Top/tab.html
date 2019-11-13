@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/png" href="../../Icons/UtubeTool.png">
+    <title id = 'title'>UTOOL-Developer</title>
+    <style type="text/css">
+      Body{
+        font-size : 2.5vw;
+        font-family:Courrier New;
+        font-weight:bold;
+        line-height:140%;
+        text-align:center;
+        background-color:lightgrey;
+        color:white;}
+      pre{
+        display: block;
+        font-family:Courrier New;
+        white-space: pre;
+        margin: 0 0;}
+      select{font-size:1.5vw;}
+      input{font-size:1.5vw;}
+      X1{color:red;}
+      X2{color:blue;}
+
+      </style>
+    </head>
+  <body>
+<!--- SUPER CONTROLS various z-index display and visibility-->
+    <a id="none" style=" display:none; visibility:visible"></a><!--needed a null element....must be a better way -->
+    <a id="msg" title="Message Box" style= "position:fixed; line-height:120%; text-align:center; vertical-align:middle; color:red; background-color:transparent; color:red; font-size: 2vw; height:6%; left:0%; top:0%; width:100%; z-index:5505;overflow:hidden">Loading HTML...</a>
+    
+<textarea id='editLOOPtab' style="position:absolute;color:black;line-height:140%; overflow-x:scroll; font-family:monospace; font-weight: 400; text-align:left;font-size:1.5vw;border:solid; height:35%; width:96%; left:2%; top:10%; z-index:4551; background-color:white;white-space: pre;">
+        </textarea>
+<div style="position:absolute;text-align:left;border:solid; height:10%; width:96%; left:2%; top:48%; z-index:4551; background-color:white;">
+      <button onclick="addBarToTab()">+Add Bar+</button>
+      <button onclick="expandTab(1)">Expand Tab</button>
+      <button onclick="expandTab(-1)">Contract Tab</button>
+      <button onclick="removeBar()">Remove Beat</button>
+
+<button onclick="document.getElementById('editLOOPtab').value=stringToTab(document.getElementById('stringView').value);">^TO TAB ^</button>
+<button onclick="document.getElementById('stringView').value=tabToString(document.getElementById('editLOOPtab').value);">v TO STRING v</button>
+</div>
+
+<textarea id='stringView' style="position:absolute;color:black;line-height:140%; overflow-x:scroll; font-family:monospace; font-weight: 400; text-align:left;font-size:1.5vw;border:solid; height:35%; width:96%; left:2%; top:60%; z-index:4551; background-color:white;white-space: pre;">
+
+
+        </textarea>      
+<!-- 
+  <SCRIPT type="text/javascript" SRC = "GlobalRoutines.js"></script>
+  
+  <SCRIPT type="text/javascript" SRC = "Utool-J.js"></script>
+  -->
+  <!-- remember the last file overwrites other routines loaded earlier -->
+
+
+<SCRIPT type="text/javascript" >
+
+var TAB1="*|1...&...2...&...3...&...4...&...|1...&...2...&...3...&...4...&...|1...&...2...&...3...&...4...&...|";
+var TAB2="e|-   -   -   -   -   -   -   -   |5   5   5   5   5   5   5   5   |5   -   -   -   -   -   -   -   |";
+var TAB3="B|-   -   -   -   -   -   5   7   |5   5   5   5   5   5   5   5   |5   8   7   5   -   -   -   -   |";
+var TAB4="G|-   -   -   -   -   5h6 -   -   |-   -   -   -   -   -   -   -   |-   -   -   -   5   h6   -   -  |";
+var TAB5="D|-   -   -   -   -   -   -   -   |-   -   -   -   -   -   -   -   |-   -   -   -   -   -   7   5   |";
+
+window.onload = function(){//downloads and creates ARRcollections makes selector and selects default 
+  NONE =document.getElementById('none').style.display;//*  create object
+  document.getElementById('stringView').value="A@4@2@4@@@@@@3:5h6@2:5@2:7@1:5|2:5@1:5|2:5@1:5|2:5@1:5|2:5@1:5|2:5@1:5|2:5@1:5|2:5@1:5|2:5@1:5|2:5@2:8@2:7@2:5@3:5@3:h6@4:7@4:5";//server,new
+  document.getElementById('editLOOPtab').value=TAB1+"\n"+TAB2+"\n"+TAB3+"\n"+TAB4+"\n"+TAB5;
+  };
+  
+function tabToString(tab){//add the Key later
+  //alert(tab);
+  tab=tab.split("\n").join('$');
+  //var tab=LOOPtab;
+  var key='A';
+  var count;
+  var div ;//(div per count)
+  var str;
+  var add;
+  var x=3;//ignore firs 3chr of tab[0] '*|1'
+  while (tab.substr(x,1)==='.'){x=x+1;}//count '|' and '.' until '&' or '2' gives your chr per div
+  chr=(x-2); //determine chrs
+  var bpb=(tab.split('|')[1].length)/chr; //beats/bar
+  var nds =tab.split('|')[1].split('&').length-1; //& per bar
+  count=bpb-nds;
+  div=bpb/count;
+  //alert(div);//calculate div
+  var bars=tab.split('$')[1].split('|').length-1;
+  var ele=(count*div*(bars-1)); //number of elements or clicks
+  var loopTab=tab.split("|").join('');//get rid of '|'
+  var crap= loopTab.length-1;
+  //alert(loopTab.substr(crap));
+  if (loopTab.substr(crap)==='$') {loopTab=loopTab.substr(0,loopTab.length-2);}
+  var arrTab= loopTab.split("$");
+  //alert("KEY; "+key+"\nCOUNT; "+count+"\nBARS; "+bars+"\nDIV; "+div+"\nCHR; "+chr);
+  x=1;//ignore line 1
+  //alert("arrTab.length: "+arrTab.length);
+  while (x<arrTab.length) {//remove string designation E-A-d etc
+    arrTab[x]=arrTab[x].substr(1,arrTab[x].length-1);
+    x=x+1;}
+  str='$';
+  x=0;
+  while (x<ele){
+    str=str+'$';
+    x=x+1;}
+    //arrPlay=str.split('$');alert(arrPlay.join('\n'));//this is the Array to Play
+  x=1;
+  var arrPlay =''.split('|');
+  arrPlay.splice(0,1,'');
+  while(x<ele){
+    arrPlay.splice(0,0,'');
+    x=x+1;}
+  var y=1;
+  while (y<arrTab.length){
+    //alert(y +"of"+arrTab.length);
+    x=0;
+    while (x<ele){//while less that total divisions
+      add=arrTab[y].substr(x*chr,chr);
+      if(add.substr(0,1)!='-') {
+        if (arrPlay[x].length<1){
+          add=y+":"+add;}
+        else {
+          add=arrPlay[x]+"|"+y+":"+add;}
+        arrPlay[x]=add;
+        }
+      x=x+1;}
+    y=y+1;}
+    str=arrPlay.join('@');
+    str=str.split(' ').join('');
+    //alert(str);
+    str=key+'@'+count+'@'+div+'@'+chr+'@'+str;
+  return(str);
+  }  
+
+
+function stringToTab(str){
+  //alert(str);
+  var out=('*|,e|,B|,G|,D|,A|,E|').split(',');
+  pos=0;//position
+  var lineA="";
+  var bar;
+  var arr=str.split('@');
+  var key=arr[0];//strip the key data points
+  var count=arr[1];
+  var div = arr[2];
+  var chr = arr[3];
+  var space="-";
+  var play="";
+  var clk;
+  var dots="";
+  var notes;
+  for(a=1;a<chr;a++){space=space+" ";dots=dots+".";}//get space
+  arr.splice(0,4);//get rid of info string
+  bar=count*div;
+//alert(arr.join('@'));
+  //build line 1
+  var r=1;
+  for(j=0;j<arr.length;j++){
+    out[0]=out[0]+r +dots;
+        for(q=1;q<div;q++){
+        if (j<arr.length-1) {
+          out[0]=out[0]+"&" +dots;
+          j=j+1;
+        }
+      }
+    //if((j+1)/bar===parseInt((j+1)/bar,10)){out[0]=out[0]+"|";}
+    if (r>=count){r=1;out[0]=out[0]+"|";}else{r=r+1;}
+    }
+  for(a=1;a<7;a++){
+    for(j=0;j<arr.length;j++){
+      play=space;
+      if (arr[j]!==undefined & arr[j]!=="") {//valid click
+        clk=arr[j].split("|");          //alert (clk);
+        for(w=0;w<clk.length;w++){
+          notes=clk[w].split(":");
+          //alert("PLAY :"+play + "\nPOSITION\nSTRING: "+a+"\nBAR: "+b+"\nCLICK: "+c+"\narr["+pos+"]:"+arr[pos]+"\nnotes[0]:"+notes[0]+"\nnotes[1]:"+notes[1]);
+          //alert(a +" " +notes[0]+"  "+notes[1])
+          if (notes[0]==a){
+            play=notes[1];
+            while(play.length<chr){play=play+" ";}
+            }
+          }
+        }//else{play=space;
+      out[a]= out[a]+play;
+      if((j+1)/bar===parseInt((j+1)/bar,10)){out[a]=out[a]+"|";}
+      }
+    } 
+  return (out.join('\n'));
+  }  
+
+function addBarToTab(){
+  var x;
+  document.getElementById('stringView').value=tabToString(document.getElementById('editLOOPtab').value);//update String
+  var str=document.getElementById('stringView').value;
+  x=str.split('@');
+  x=x[2]*x[1];
+  for(j=0;j<x;j++){str=str+"@";}
+  document.getElementById('stringView').value=str;
+  document.getElementById('editLOOPtab').value=stringToTab(str);}
+  
+function removeBar(){
+  document.getElementById('stringView').value=tabToString(document.getElementById('editLOOPtab').value);//update String
+  var str=document.getElementById('stringView').value;
+  x=str.split('@');
+  var barLen=x[2]*x[1];
+  alert(barLen);
+  var bar="";
+  for(k=0;k<barLen;k++) {bar=bar+'@';}
+  var pull=str.substr(x.length-barLen);
+  alert(pull+"\n"+bar);
+  if(x.length<(x[2]*x[1])+5){statusMsg("Thats all you can take");return;}
+  //alert(x.length-1);
+  x.splice(x.length-1,1);
+  str=x.join('@');
+  //alert(str);
+  document.getElementById('stringView').value=str;
+  document.getElementById('editLOOPtab').value=stringToTab(str);}
+
+function expandTab(z){
+  var newSpace;
+  document.getElementById('stringView').value=tabToString(document.getElementById('editLOOPtab').value);//update String
+  var str=document.getElementById('stringView').value;
+  x=str.split('@');
+  newSpace=parseInt(x[3],10)+parseInt(z,10);
+  x.splice(3,1,newSpace);
+  str=x.join('@');
+  document.getElementById('stringView').value=str;
+  document.getElementById('editLOOPtab').value=stringToTab(str);}
+
+</script>
+
+  </body>
+</html>

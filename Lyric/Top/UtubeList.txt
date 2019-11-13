@@ -1,0 +1,36 @@
+Select A Backing Track or jam to this CAT Video,xSE9Qk9wkig,A,xxxxxxxxxx,aaaaaa,70,23
+Delta ,nbbhvNtArm8,A,|A |% |% |% |% |% |% |% |C |% |A |% |D |C |A |D ,Blues,088,20
+Minor,22mWUkAi0PI,A,|Am |% |% |% |Dm |% |Am |% |F |E7 |Am |E7 ,Blues,100,0
+BB / Claption Shuffle,y1ueWz4-Hkk,A,E-A-B,Blues,120,34s
+SLOW BB style,3cmfo2uQ1S0,A,std 12 bar,Blues,080,49
+SLOW,2aQRF47hJa0,Em,?? |E |Am |Em |% |Am |% |Em |% |Bm |Am |Em |% |,Blues,040,75
+Shuffle(turn around),1yURXpa0p4M,E,|E7 |% |% |% |A7 |% |E7 |% |B7 |A7 <X1>|E7 ~% ~A ~C7 |E5 ~C7 ~B7 ~%,Blues,120,23
+Slow Blues,8Ndtx9MG5tQ,A,?,Blues,080,?
+Slow Complex,8PzyEtQypYA,C,|C9|F9|C9~C#9|C7|F9|F#dim7|C9|C9|G9~%~%~Gb9|F9|C9~F7|C9~G9,Blues,053,0
+Slow,axTQ3Tg9io8,C,|C |F |C |% |F |% |C |% |G |F |C |G ,Blues,060,0
+Boogie,3DgqJror33Q,C,12 bar in C,Boogie,165,0
+Boogie,clkybYtD1tw,E,std 12 bar,Boogie,190,0
+Double Time,VlB4oxkEEu4,C,|C |% |% |% |F |% |C |% |G |F |C |G,Country,120,0
+Folk,8fi3p5KtOr0,C,|C |% |F |% |C |% |G |F |C |% |F |% |Am |G |F |% ,Country,122,0
+Modern,lF4iVuoyf4Q,C,|F|C|G|C|C<br>:C|C|F|C |C|C|D|G |C|C|F|C |C|C|G|C|C:(x?)<br>|F|C|G|C,Country,120,0
+Old Style,laQi1_Jc0C4,D,D/// I D/// I G/// I G/// I,Country,080,0
+Southern Rock,lF6m5xATDyM,E,:E|E|A|A  |E|E|B|B |E|E|A|A  |E|E|B|B  |E|E:(x?) ,Country,130,0
+Train Beat,_p0CAN-1k6o,E,12 Bar,Country,130 double time,0
+Waltz,R24l4dRlmTk,A,x,Country,076,0
+Country,-ru2vFhsGT0,E,(intro) |A | B |E |%<br>|E |% |% |% |A |B |E |% <br>|E |% |% |% |A |B |E |% <br>|A |% |E |% |F#|% |B |%,Country,140,0
+FOLK ROCK,BBW6KkmDF74,A,|Am |F  |C  |E  |Am |F  |C  |E  <br>|Am |F  |C  |E  |Am |F  |C  |E  |Am |Am<br>|Am |F  |C  |E  |Am |F  |C  |E  <br>|F  |G  |Am |Am |F  |G  |E  |E <br>|Am |F  |G  |C  |Am |F  |G  |C  <br>|Am |Am |Am |Am |Am |F  |C  |E <br>|Am |F  |C  |E  |Am |F  |G  |C~E|Am |F  |G  |C~E,Folk,155,0
+Georgia,H9vi8SEQNis,F,?,Jazz,120,?
+Hendrix Style,weSbYy7TzNA,E,Aolean Scale? instructions on video,Psychedelic,062,0
+12 Bar Bass,wRnLiP9OATs,E,E A B,Rock,105,2
+Hotel Calif.,PKVT0zijJ-I,D,Not Sure of the Scale<br>Play a D major over it,Rock,152,0
+ROCK,hTDKxtC_8d0,G,12 Bar,Rock,130,0
+Rock Feeling,mWOskn9b2tg,B,??,Rock,120,0
+Sultans of Swing,Z7pNKyEbi4k,Dm,F#M works for starting Point,Rock,150,undefined
+Bass & Drum,VYVb7DfmwSg,Am,?,Rock,120,0
+Take It Easy,aUaSiLCJ6Ho,G,?,Rock,143,0
+Take It Easy,bCIGUIatv3c,G,?,Rock,143,?
+ZZ LaGrange,nP_25tTOnDg,Am,(|A|A~%~C~D)ad infinitum,Rock,164,0
+ZZ style,b2tqKYPHE3M,G,12 Bar variation,Rock,152,0
+C.Berry School Days,bBSI7dhwCpI,G,|G |% |% |% |C |% |G |% |D |C |G |% ,Rock,132,0
+Chuck Berry Fast,uLI-Atz1SoM,A,|A |% |% |% |D |% |A |% |E |D |A |E ,Rock,172,0
+Cross Roads,GzABg4BFHG4,C,|C |% |F |% |C |% |G |F |C |% |F |% |Am |G |F |% ,Rock,130,9

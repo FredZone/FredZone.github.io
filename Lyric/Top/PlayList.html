@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="../../Icons/transPlaylist.png" type="image/png">
+<title>BUILD A PLAYLIST</title>
+<style>
+Body{
+    text-align: left;
+    vertical-align: bottom;
+    border-color: black;
+    border-width:thin;
+    background-color:lightgrey;
+    padding:0px;
+    margin:0px;
+    display:block;}
+    </style></head><body>
+<!--list of songs-->
+    <div style = "position:fixed;left:0%; height:100% ;width:40%; overflow-y: scroll;overflow-x:hidden">
+        01 <input id = "a0" style="width:90%" onclick='tag(0)'><button onclick="displayInfo('a0')">01</button><br> 
+        02 <input id = "a1" style="width:90%" onclick='tag(1)'><button onclick="displayInfo('a1')">02</button><br> 
+        03 <input id = "a2" style="width:90%" onclick='tag(2)'><button onclick="displayInfo('a2')">03</button><br> 
+        04 <input id = "a3" style="width:90%" onclick='tag(3)'><button onclick="displayInfo('a3')">04</button><br> 
+        05 <input id = "a4" style="width:90%" onclick='tag(4)'><button onclick="displayInfo('a4')">05</button><br> 
+        06 <input id = "a5" style="width:90%" onclick='tag(5)'><button onclick="displayInfo('a5')">06</button><br> 
+        07 <input id = "a6" style="width:90%" onclick='tag(6)'><button onclick="displayInfo('a6')">07</button><br> 
+        08 <input id = "a7" style="width:90%" onclick='tag(7)'><button onclick="displayInfo('a7')">08</button><br> 
+        09 <input id = "a8" style="width:90%" onclick='tag(8)'><button onclick="displayInfo('a8')">09</button><br> 
+        10 <input id = "a9" style="width:90%" onclick='tag(9)'><button onclick="displayInfo('a9')">10</button><br> 
+        11 <input id = "a10" style="width:90%" onclick='tag(10)'><button onclick="displayInfo('a10')">11</button><br> 
+        12 <input id = "a11" style="width:90%" onclick='tag(11)'><button onclick="displayInfo('a11')">12</button><br> 
+        13 <input id = "a12" style="width:90%" onclick='tag(12)'><button onclick="displayInfo('a12')">13</button><br> 
+        14 <input id = "a13" style="width:90%" onclick='tag(13)'><button onclick="displayInfo('a13')">14</button><br> 
+        15 <input id = "a14" style="width:90%" onclick='tag(14)'><button onclick="displayInfo('a14')">15</button><br> 
+        16 <input id = "a15" style="width:90%" onclick='tag(15)'><button onclick="displayInfo('a15')">16</button><br> 
+        17 <input id = "a16" style="width:90%" onclick='tag(16)'><button onclick="displayInfo('a16')">17</button><br> 
+        18 <input id = "a17" style="width:90%" onclick='tag(17)'><button onclick="displayInfo('a17')">18</button><br> 
+        19 <input id = "a18" style="width:90%" onclick='tag(18)'><button onclick="displayInfo('a18')">19</button><br> 
+        20 <input id = "a19" style="width:90%" onclick='tag(19)'><button onclick="displayInfo('a19')">20</button><br> 
+        21 <input id = "a20" style="width:90%" onclick='tag(20)'><button onclick="displayInfo('a20')">21</button><br> 
+        22 <input id = "a21" style="width:90%" onclick='tag(21)'><button onclick="displayInfo('a21')">22</button><br> 
+        23 <input id = "a22" style="width:90%" onclick='tag(22)'><button onclick="displayInfo('a22')">23</button><br> 
+        24 <input id = "a23" style="width:90%" onclick='tag(23)'><button onclick="displayInfo('a23')">24</button><br> 
+        25 <input id = "a24" style="width:90%" onclick='tag(24)'><button onclick="displayInfo('a24')">25</button><br> 
+        26 <input id = "a25" style="width:90%" onclick='tag(25)'><button onclick="displayInfo('a25')">26</button><br> 
+        27 <input id = "a26" style="width:90%" onclick='tag(26)'><button onclick="displayInfo('a26')">27</button><br> 
+        28 <input id = "a27" style="width:90%" onclick='tag(27)'><button onclick="displayInfo('a27')">28</button><br> 
+        29 <input id = "a28" style="width:90%" onclick='tag(28)'><button onclick="displayInfo('a28')">29</button><br> 
+        30 <input id = "a29" style="width:90%" onclick='tag(29)'><button onclick="displayInfo('a29')">30</button><br> 
+        31 <input id = "a30" style="width:90%" onclick='tag(30)'><button onclick="displayInfo('a30')">31</button><br>
+        32 <input id = "a31" style="width:90%" onclick='tag(31)'><button onclick="displayInfo('a31')">32</button><br> 
+        33 <input id = "a32" style="width:90%" onclick='tag(32)'><button onclick="displayInfo('a32')">33</button><br> 
+        34 <input id = "a33" style="width:90%" onclick='tag(33)'><button onclick="displayInfo('a33')">34</button><br> 
+        35 <input id = "a34" style="width:90%" onclick='tag(34)'><button onclick="displayInfo('a34')">35</button><br> 
+        36 <input id = "a35" style="width:90%" onclick='tag(35)'><button onclick="displayInfo('a35')">36</button><br> 
+        37 <input id = "a36" style="width:90%" onclick='tag(36)'><button onclick="displayInfo('a36')">37</button><br> 
+        38 <input id = "a37" style="width:90%" onclick='tag(37)'><button onclick="displayInfo('a37')">38</button><br> 
+        39 <input id = "a38" style="width:90%" onclick='tag(38)'><button onclick="displayInfo('a38')">39</button><br> 
+        40 <input id = "a39" style="width:90%" onclick='tag(39)'><button onclick="displayInfo('a39')">40</button><br> 
+        41 <input id = "a40" style="width:90%" onclick='tag(40)'><button onclick="displayInfo('a40')">41</button><br>
+        42 <input id = "a41" style="width:90%" onclick='tag(41)'><button onclick="displayInfo('a41')">42</button><br> 
+        43 <input id = "a42" style="width:90%" onclick='tag(42)'><button onclick="displayInfo('a42')">43</button><br> 
+        44 <input id = "a43" style="width:90%" onclick='tag(43)'><button onclick="displayInfo('a43')">44</button><br> 
+        45 <input id = "a44" style="width:90%" onclick='tag(44)'><button onclick="displayInfo('a44')">45</button><br> 
+        46 <input id = "a45" style="width:90%" onclick='tag(45)'><button onclick="displayInfo('a45')">46</button><br> 
+        47 <input id = "a46" style="width:90%" onclick='tag(46)'><button onclick="displayInfo('a46')">47</button><br> 
+        48 <input id = "a47" style="width:90%" onclick='tag(47)'><button onclick="displayInfo('a47')">48</button><br> 
+        49 <input id = "a48" style="width:90%" onclick='tag(48)'><button onclick="displayInfo('a48')">49</button><br> 
+        50 <input id = "a49" style="width:90%" onclick='tag(49)'><button onclick="displayInfo('a49')">50</button><br> 
+        51 <input id = "a50" style="width:90%" onclick='tag(50)'><button onclick="displayInfo('a50')">51</button><br>
+        52 <input id = "a51" style="width:90%" onclick='tag(51)'><button onclick="displayInfo('a51')">52</button><br> 
+        53 <input id = "a52" style="width:90%" onclick='tag(52)'><button onclick="displayInfo('a52')">53</button><br> 
+        54 <input id = "a53" style="width:90%" onclick='tag(53)'><button onclick="displayInfo('a53')">54</button><br> 
+        55 <input id = "a54" style="width:90%" onclick='tag(54)'><button onclick="displayInfo('a54')">55</button><br> 
+        56 <input id = "a55" style="width:90%" onclick='tag(55)'><button onclick="displayInfo('a55')">56</button><br> 
+        57 <input id = "a56" style="width:90%" onclick='tag(56)'><button onclick="displayInfo('a56')">57</button><br> 
+        58 <input id = "a57" style="width:90%" onclick='tag(57)'><button onclick="displayInfo('a57')">58</button><br> 
+        59 <input id = "a58" style="width:90%" onclick='tag(58)'><button onclick="displayInfo('a58')">59</button><br> 
+        60 <input id = "a59" style="width:90%" onclick='tag(59)'><button onclick="displayInfo('a59')">60</button><br> 
+        61 <input id = "a60" style="width:90%" onclick='tag(60)'><button onclick="displayInfo('a60')">61</button><br>
+        </div>
+    <div id='songInfo'onchange="updateSong()"  style=" position:fixed; background-color:red;top:0%; left:80%; width:20%;height:70%; z-index: 10;">
+        Number<br><input id="songNum" style="position:absolute; left:4%; width:20%;">   
+        <br>TITLE<br><input id="songTitle"  style="position:absolute; left:5%; width:95%;">
+        <br>KEY<br><select id="songKey"style="border:thick; position:absolute; left:5%;  z-index:1000;"><option></option><option>A</option><option>Bb</option><option>B</option><option>C</option><option>C#</option><option>D</option><option>Eb</option><option>E</option><option>F</option><option>F#</option><option>G</option><option>Ab</option></select>
+        <br>TEMPO<br><input id="songTempo" style="border:thick; position:absolute; left:5%;  z-index:1000;">
+        <br>SOUND<br><select id="songSound" style="border:thick; position:absolute; left:5%;  z-index:1000;"><option></option><option>SILENT</option><option>BACK TRACK</option><option>CLICK TRACK</option><option>VOCAL</option><option>DRUM ROCK</option><option>DRUM COUNTRY</option><option>DRUM COUNT</option></select>
+        <br>VOLUME<br><select id="songVolume"style="border:thick; position:absolute; left:5%;;  z-index:1000;"><option selected value=null>none</option><option>0%</option><option value=0.125>12.5%</option><option value=0.25>25%</option><option value=0.375>37.5%</option><option value=0.5>50%</option><option value=0.625>62.5%</option><option value=0.75>75%</option><option value=0.875>87.5%</option><option value=1.00>Full</option></select>
+        <br>NOTES<br><textarea  id="songNotes" style="position:absolute; width:90%;left:5%; height:30%;z-index:1000; border:none; margin:0; padding:0;"></textarea>
+        <button style="position:absolute;left:5%;bottom:0%; width:90%" onclick="updateSong()">Update Selected Song...</button>
+        </div>
+    <div style = "position:fixed;left:40%; height:100% ;width:35%; background-color:lightblue ;text-align:center;z-index:20">       
+        <div  style="text-align:center">PLAYLIST BUILDER<br><input id = "title" style="width:80%;font-size:2vw">
+            <br>Select a list below or use the 'folder' icon load a local list<br><a id="setSelect">Sets Appear Here...</a>
+            </div><br>
+        << Click on any individual list postion to the Left<br>it will be highlighted in yellow <br> then you can manipulate it through the buttons below..
+        <br>
+        <button onclick ="up()" style="width:15vw">MOVE UP ^<br>============</button><button onclick ="down()"style="width:15vw">MOVE DOWN v<br>============</button><br>
+        <button onclick ="space();defaults()"style="width:15vw">CLEAR<br>============</button><button onclick ="del()"style="width:15vw">DELETE<br>============</button><br>
+        <button onclick ="ins()"style="width:30vw">INSERT<br>============</button><br>
+        <button onclick ="reset()"style="width:30vw">RESET<br>============</button><br>
+        (Here is where you can select individual tunes or tracks...<br>Which will appear in the highlighted box to the left)<br><br>
+        <a id ="tuneList">Songs Appear Here...or type your own into the list</a>Tunes <br>
+        <a id ="trackList">tracks Appear Here...or type your own into the list</a>Tracks<br>
+        <a id ="msg">--</a><br>
+        <img id = 'warning' src="../../Icons/WarningFlasher.gif" style="position:absolute;display:none; left:30%; bottom:0%; width:40%;";>
+        </div>
+    <div style = "position:fixed;right:0%; height:14%;bottom:14%; width:20%;background-color:black">
+        <img src="../../icons/blackPrinter.png" alt ="print" onclick ="printList()" style="position:absolute;left:0%;height:100%;width:30%; top:0%;z-index:8000">
+        <img src="../../icons/resetSpinner.gif" alt ="..." id ='printSpinner' onclick ="alert('Printing can take a while...each song is downloaded and examined')" style="position:absolute;left:0%;height:100%; top:0%;z-index:8500; visibility:hidden">
+        <img src="../../icons/blackSigmaPrinter.png" alt ="analize" onclick ="analizeList()" style="position:absolute;left:33%;height:100%;width:30%; top:0%;z-index:8000">    
+        <img src="../../icons/resetSpinner.gif" alt ="..." id ='printSpinner2' onclick ="alert('Printing can take a while...each song is downloaded and examined')" style="position:absolute;left:33%;height:100%; top:0%;z-index:8500; visibility:hidden">
+        <img src="../../icons/blackBigPrinter.png" alt ="print" onclick ="printBigList()" style="position:absolute;left:66%;height:100%;width:30%; top:0%;z-index:8000">
+        <img src="../../icons/resetSpinner.gif" alt ="..." id ='printSpinner3' onclick ="alert('Printing can take a while...each song is downloaded and examined')"  style="position:absolute;left:66%;height:100%; top:0%;z-index:8500; visibility:hidden">
+        </div>
+    <div style = "position:fixed;right:0%;height:14%;bottom:0%; width:20%;background-color:black;">
+        <img src = "../../icons/blackFolder.png" alt ="Get Local File" style="position:absolute;left:0%;height:100%;width:30%;top:0%;z-index: 8002">
+        <input title = 'Get a local Playlist' onclick = "setUpListener();" type="file" id = "fileinput" style ="position:absolute;left:0%;height:100%;top:0%; width:30%;width:30%; z-index: 8005 ;opacity:0.01">
+        <img src="../../icons/blackSave.png" alt ="SAVE Local File"  onclick="document.getElementById('warning').style.display='none';document.getElementById('msg').innerHTML='Changes Assumed Saved...'; saveList();" style="position:absolute;left:33%;height:100%;width:30%; top:0%;z-index:8000">
+        <img  id="HomeIcon" src="../../icons/BlackHome.png" alt ="Home" onclick="home();" style="position:absolute;height:100%;width:30%;top:0%;right:0%;z-index:8000">
+        </div>  
+<SCRIPT type="text/javascript" SRC = "PlayList.js"></SCRIPT>
+<SCRIPT type="text/javascript" SRC = "CommonLyric.js"></SCRIPT>
+</html></body>
+

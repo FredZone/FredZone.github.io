@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="shortcut icon" type="image/png" href="../../Icons/lightGreenHistory.png">
+    <title id = 'title'>Perfomer History</title>
+                <style type="text/css">
+    Body{font-size : 4vw;
+        font-family:Courrier New;
+        font-weight:bold;
+        line-height:140%;
+        text-align:center;
+        background-color:lightgrey;
+        color:black;}
+    select{font-size : 5vw;
+        font-family:Courrier New;
+        font-weight:bold;
+        line-height:140%;
+        text-align:center;
+        background-color:lightgrey;
+        color:black;}
+        </style>
+    </head>
+  <body>
+Select an old version of the program...<br>It may (or may not) work in the current environment....
+<select id = 'ver' onchange="if(this.value!=0){window.open('player'+this.value+'.html')};window.close('showHist')" style= "position:absolute; background-color:white; left:5%; bottom:5%; width:90%;">
+        <option value='0'>Select a Version...</option>
+        <option value='NextPlayer'>BETA (IN WORK)</option>
+        <option value=4-3>4.3 (current)</option>
+        <option value=4-2>4.2</option>
+        <option value=3-8>3.8</option>
+        <option value=3-6>3.6</option>
+        <option value=2-05>2.1</option>
+        <option value=2-05>2.05</option>
+        <option value=2-01>2.01</option>
+        </select>
+
+  </body>
+</html>

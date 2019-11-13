@@ -1,0 +1,27 @@
+8:56:08PM   Paused...
+8:56:08PM @ Close Time Out
+8:55:57PM   Ready================================================
+8:55:57PM   The none bar was selected selected...
+8:55:57PM @ Scroll
+8:55:57PM @ Close Time Out
+8:55:57PM @ Start Play with 0 pause
+8:55:57PM   Ready
+8:55:57PM   The none bar was selected selected...
+8:55:57PM   START  SONG  WHEN  THE  SCROLL ROLLS!!
+8:55:57PM @ trackPrePlay
+8:55:54PM @ 25 Minutes To Go reset...
+
+
+10:18:24PM   Paused...
+10:18:24PM @ Close Time Out
+10:18:22PM   14 sec DELAY: (Time to finish...)
+10:18:22PM @ end Song
+10:18:22PM   Ready================================================
+10:18:22PM @ ALL bars were closed
+10:18:22PM @ Scroll
+10:18:22PM @ Close Time Out
+10:18:22PM @ Start Play with 0 pause
+10:18:22PM   Ready
+10:18:22PM @ ALL bars were closed
+10:18:22PM   START  SONG  WHEN  THE  SCROLL ROLLS!!
+10:18:22PM @ trackPrePlay

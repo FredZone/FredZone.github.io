@@ -1,0 +1,28 @@
+<div id='backTrackBarHdr' style='position:absolute;display:block; height:25%; width:100%; top:0%;left:0%;'>
+  <select id ='btLists' title='Select a List of Backing tracks' onchange="btGetList(this.value)" style='border:solid; position:absolute;color:white;background-color:black;height:45%; width:24%; left:0%; top:2%; z-index:2;'>
+    <option value='Default' selected>Default</option><option value='Drums'>Drums</option><option value='Metronome'>Metronome</option>
+    <option value='12 Bar'>12 Bar</option><option value='Rockabilly'>Rock-a-Billy</option><option value='Song Tracks'>Song Tracks</option>
+    <option value='Misc'>Miscellaneous</option><option value='Drills'>Drills</option>
+    </select>
+  <div id ='btSpeed' onchange="btSpeedSet()" style="position:absolute; background-color:transparent; height:45%; width:40%;top:0%;left:25%;">
+    <table><tr><td>Tempo</td><td><input type="radio" name="bSpeed" value="1.25">+25%</td><td><input type="radio" name="bSpeed" value="1">STD</td><td><input type="radio" name="bSpeed" value="0.75">-25%</td><td></tr>
+    <tr><td><div id='btTempo'></div></td><td><input type="radio" name="bSpeed" value="1.50">+50%</td><td></td><td><input type="radio" name="bSpeed" value="0.50">-50%</td><td></tr></table>
+    </div>  
+  <div id="backTrackBarMover"style='position:absolute;display:block;background-color:blue;height:45%;top:0%;right:24%'>
+    <img src="../../icons/blackMove.png" alt="*" style='position:absolute; height:100%; right:0%; top:0%;'>
+    </div>
+  <img src="../../icons/blackResize.png" alt="H" onclick="bigHdr('backTrackBar',82,15,96,15,2)"  style='background-color: white; position:absolute; height:45%; right:18%; top:0%;'>
+  <img id='btLooping' src="../../icons/resetSpinner.gif" alt="X" onclick="btStopLoop()"  style='position:absolute; display:none; height:45%; right:12%; top:0%;z-index:1;'>
+  <img onclick="btStartLoop()" src='../../icons/blackInfinity.png' style="position:absolute; width:4%; height:45%; right:12%; top:0%;">
+  <img id='btPlaying' src="../../icons/resetSpinner.gif" alt="X" onclick="btStop()"  style='position:absolute; display:none; height:45%; right:6%; top:0%;z-index:1;'>
+  <img id='btPlay' src="../../icons/transPlayGreen.png" alt=">" onclick="btPlay()"  style='position:absolute; height:45%; right:6%; top:0%;'>
+  <img src="../../icons/blackClose.png" alt="+" title ="CLOSE" onclick='btClose()'  style="position:absolute; height:50%; right:0%; top:0%;">
+  <select id ='btIndex' title='Select A Backing Track' onchange="optionalBt(this.value)" style='border:solid; border-color:white; position:absolute; color:white; background-color:darkgrey; display:block; height:50%; width:55%; left:0%; bottom:0%; z-index:1;'></select>
+  <div id='btLoop'style='text-align:center; border:solid; position:absolute; height:40%; right:19%; width:11%; bottom:0%;'>xxxxxxx</div>
+  <div id='btGo' onclick="setBT('start')" style="text-align:center; border:solid; position:absolute; right:10%; width:8%;height:40%; bottom:0%;">?</div>
+  <div id='btEnd' onclick="setBT('stop')" style="text-align:center; border:solid; position:absolute; right:1%; width:8%;height:40%; bottom:0%;">?</div>
+  </div>
+<div id ='backTrackBarBody' style='position:absolute; display:block; height:70%; width:100%; bottom:0%; left:0%;'>   
+  <iframe id ="player2" src="https://www.youtube.com/embed/LcOempNj6_g?enablejsapi=1" style="position:absolute;color:white;background-color:black; bottom:0%; left:2%; width:96%; height:100%; border:none;"></iframe> 
+  </div>
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title id = 'title'>FILE MASTER</title>
+    <link rel="icon" href="../../Icons/folder.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="lyric.css">
+    <style type="text/css">
+        Body{
+            font-size:1.5vw;
+            color:white;
+            font-family:Courrier New;
+            font-weight: bold;
+            text-align:left;
+            vertical-align:middle;
+            border-color: black;
+            border-width:thick;
+            background-color:lightgrey;
+            padding:0px;
+            margin:0px;
+            overflow:hidden;
+            line-height: 100%;}
+        </style>
+    </head>
+<body>
+    <img  id="HomeIcon" src="../../icons/blackhome.png" alt ="Home" onclick="home()" style="position:fixed ;height :9%; top:0%; right:1%">
+    <img  id="HelpIcon" src="../../icons/blackquestion.png" alt ="Help" onclick="help()" style="position:fixed ;height :9%; top:0%; right:10%">
+    <div id='hdr' style="text-align:center; color:yellow;  position:fixed; line-height:100%; left:25%; top:1%; width:50%; height:5%;font-size:3vw">FILE MASTER</div>    
+    <div style="color:white;position:fixed;line-height:100%; left:2%; top:10%; height:88%; width:30%;font-size:1.7vw; border: groove">    
+        STEP 1.....Set the parameters...<br><br>    
+        1:  Fill in your own values or select a preset...
+        <select id='mode' onchange="SelectMode(this.value)">
+            <optgroup >
+                <option value="user">User Options</option>
+                <option value="allTunes">PLAYLIST (ALL TUNES)</option>
+                <option value="setList">SET LIST</option>
+                <option value="backingList">Backing Track List</option>
+                <option value="wordPage">WORD PAGE</option>
+                <option value="csv">CSV</option>
+                </optgroup>
+            </select>
+        <br><br>
+        <div id = 'opts'>
+            <img id="cover" src='../../Icons/blackSquare.png' style="visibility:hidden;position:absolute; left:0%;width:100%;top:20%;height:50%;opacity:0.1">
+            Type of file to output<br>
+            <form id ='fileFormat'>
+                <Input type = radio name = "typ"  value ="files">Names and Extentions<br>
+                <Input type = radio name = "typ"  value ="names">Names Only<br>
+                <Input type = radio name = "typ"  value ="wpage">WEB PAGE<br>
+                <Input type = radio name = "typ"  value ="csv">CSV<br>
+                </form>
+            <div id="path" style ="visibility:visible">src for the files:<br><textarea id='src' style="width:90%; left:5%; height:20%;">???</textarea></div>
+            </div>
+        Included file types<br>
+        <select id='filt'>
+            <optgroup >
+                <option value="all">All (*.*)</option>
+                <option value="txt">Text (*.txt)</option>
+                <option value="mp3">Audio(*.mp3)</option>
+                <option value="html">Web (*.html)</option>
+                <option value="doc">Word (.*doc)</option>
+                </optgroup>
+            </select>
+        </div>
+
+
+<div style="color:white;position:fixed;line-height:100%; left:34%; top:10%; height:88%; width:30%;font-size:1.7vw; border: groove;">    
+        <div style="position:absolute;height:5%">STEP 2.....Select all the files: </div>
+        <div style="position:absolute;height:5%;top:5%">Nominal Pick Directory:</div>
+        <textarea  id='pickDir' style="position:absolute ;width:97%; top:10%;left:1% ;height:20%; border:solid; margin:0; padding:0"></textarea><br>
+        <input type='file' id='fileInput' style="background-color:red; position:absolute; top:35%;" multiple='multiple'><br>
+        <!--multiple='multiple' is proprietary   AND it creates a FILE OBJECT, not a string....NO SCRIPT NECESSARY-->
+        <div style="position:absolute;height:5%;top:40%">View File List....</div>
+        <textarea  id="screen" style="position:absolute ;width:97%; top:45%; left:1% ;height:45%; border:solid; margin:0; padding:0"></textarea>
+        <button onclick ="viewPage();" style="position:absolute; left:1%; bottom:1%; width:98%">View HTML page</button>  
+    </div>
+
+<div style="color:white;position:fixed;line-height:100%; left:67%; top:10%; height:88%; width:30%;font-size:1.7vw; border: groove;">  
+        <div style="position:absolute;height:5%">STEP 3....Save Your List of Files</div>
+        <div style="position:absolute;height:5%;top:5%">Nominal Save Directory:(& File)</div>
+        <textarea  id='saveDir' style="position:absolute ;width:97%; top:10%;left:1% ;height:20%; border:solid; margin:0; padding:0"></textarea><br>
+        <textarea  id='saveFile' style="position:absolute ;width:97%; top:31%;left:1% ;height:5%; border:solid; margin:0; padding:0"></textarea><br>
+        <div style="position:absolute;height:5%;top:50%">Download when link appears:</div>
+        <div style="position:absolute;height:45%;top:55%; width:100%;text-align: center">
+            <a download = "????" id='downloadlink' style='display: none; position:absolute;width:100%;top:1%;text-align: center'>
+            <img src='../../Icons/blackWrite.png' onclick="directCopy(document.getElementById('saveDir').value)"><br>
+            Ready to Download...
+            </a>
+        </div>
+         <div style="position:absolute;height:5%;top:95%"><a id = 'viewbox'>CURRENT VERSION</a></div>
+    </div>
+
+<SCRIPT type="text/javascript" SRC = "FileMaster.js"></script>
+</html></body>

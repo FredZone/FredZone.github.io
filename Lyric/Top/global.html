@@ -1,0 +1,148 @@
+<!DOCTYPE html><head><title id = 'title'>Player</title><style type="text/css">
+Body
+    {
+        font-size:1.5vw;
+        color:white;
+        line-height: 110%;
+        font-family:Courrier New;
+        font-weight: bold;
+        text-align:left;
+        border-color: white;
+        border-style:groove;
+        background-color:lightgrey;
+        padding:0px;
+        margin:0px;
+        display:block;
+        overflow:scroll;
+    }
+    X1{color:green}
+    X2{color:black}
+    X3{color:blue}
+    X4{color:red}
+
+    optgroup {font-size:2vw;font-family:Courrier New;}
+    select {font-size:2vw;font-family:Courrier New;overflow:hidden;}
+    
+    table, th, td
+    {
+        border: 1px solid black;
+        border-collapse:collapse;
+        padding: 0px;
+        
+    }
+    th, td
+    {
+        border: 3px solid white;
+        padding: 0px;
+        text-align: left;    
+    }
+</style></head><body>
+  
+<table style='width:100%'>
+    <tr><th colspan=2 style='text-align:center;'>GLOBAL FUNCTIONS</th></tr>
+    
+    <tr><td rowspan=3 style="width:15%; text-align:center;background-color:grey">1<br>hash</td>
+        <th style='color:black'>hash(string, key, default)</th></tr>
+        <tr><th>Gets hash values from string a:b,c:d,e:f,......</th></tr>
+    <tr style='color:blue' onclick="alert(hash('car:ford,truck:mack,motorcycle:triumph','truck','peterbilt'))"><th>hash('car:ford,truck:mack,motorcycle:triumph','truck','peterbilt')</th></tr>
+
+    <tr><td rowspan=3  style="text-align:center">2<br>secToMin</td>
+        <th style='color:black'>secToMin(sec)</th></tr>
+        <tr><th>Converts seconds to min:sec format (with 1 sec rounding error)</th></tr>
+    <tr style='color:blue' onclick="alert(secToMin(345))"><th>secToMin(345)</th></tr>
+
+    <tr><td rowspan=4  style="text-align:center">3<br>statusMsg</td>
+        <th style='color:black'>statusMsg(msg,color,marq)</th>
+        </tr>
+        <tr><th>Presents a status msg in element 'msg' and formats its color/marquee</th></tr>
+        <tr style='color:blue' onclick="alert(EXAMPLE)"><th><a onclick="statusMsg('OMG!','yellow')">statusMsg('OMG!','yellow')</a> - - -
+                <a onclick="statusMsg('WTF?','pink')">statusMsg('WTF?','pink')</a> - - -
+                <a onclick="statusMsg('Marquee!','red', true);">statusMsg('Marquee!','red','true')</a></th></tr>
+        </tr>
+        <tr><td>
+            <div id="msg2" title="Message Box" style= "text-align:center; vertical-align:middle; color:black; font-size: 1.5vw; border:solid; right:5%; top:0%; width:50%; overflow:hidden">status Message appears here</div>
+        </td></tr>
+    
+    
+    
+    <tr><td rowspan=3  style="text-align:center">#<br>NAME</td>
+        <th style='color:black'>VARIABLES</th></tr>
+        <tr><th>DESCRIPTION</th></tr>
+    <tr style='color:blue' onclick="alert(EXAMPLE)"><th>EXAMPLE</th></tr>
+    
+    <tr><td rowspan=3  style="text-align:center">#<br>NAME</td>
+        <th style='color:black'>VARIABLES</th></tr>
+        <tr><th>DESCRIPTION</th></tr>
+    <tr style='color:blue' onclick="alert(EXAMPLE)"><th>EXAMPLE</th></tr>
+        
+    <tr><td rowspan=3  style="text-align:center">#<br>NAME</td>
+        <th style='color:black'>VARIABLES</th></tr>
+        <tr><th>DESCRIPTION</th></tr>
+    <tr style='color:blue' onclick="alert(EXAMPLE)"><th>EXAMPLE</th></tr>
+    
+
+
+</table>
+
+    
+    
+    <div style="position:relative;width:100%;border:groove;">
+        <div style='color:green'><x4>hash:</x4>  hash(string, key, default)</div>
+        <div style='color:black'>Gets hash values from string a:b,c:d,e:f,......</div>
+        <div style='color:blue'><div onclick="alert(hash('car:ford,truck:mack,motorcycle:triumph','truck','peterbilt'))">hash('car:ford,truck:mack,motorcycle:triumph','truck','peterbilt')</div>
+        </div>    
+    
+    
+    
+    `
+    
+    
+    <div style="position:relative;width:100%;border:groove;">
+        <div style='color:green'><x4>statusMsg:</x4> statusMsg(msg,color,marq)</div>
+        <div style='color:black'>displays the msg and color to the element id statMsg </div>
+        <div style='color:blue'>
+            <a onclick="statusMsg('OMG!','yellow')">statusMsg('OMG!','yellow')</a> - - -
+            <a onclick="statusMsg('WTF?','pink')">statusMsg('WTF?','pink')</a> - - -
+            <a onclick="statusMsg('Marquee!','red', true);">statusMsg('Marquee!','red','true')</a>
+        </div>
+    <a id="msg" title="Message Box" id="msg" style= "position:absolute; text-align:center; vertical-align:middle; color:black; font-size: 2vw; height:40%; border:solid; right:5%; top:10%; width:50%; overflow:hidden">status Message appears here</a>
+    </div>
+
+    <div style="position:relative;width:100%;border:groove;">
+        <div style='color:green'><x4>unique:</x4> unique(array)</div>
+        <div style='color:black'>returns the Unique Items in an ARRAY</div>
+        <div style='color:blue'><div onclick="alert(unique(ARRunique))">unique(('dog,dog,cat,cat,cat,cat,cat,cat').split(','))</div>
+    </div>    </div>
+
+<div style="position:relative;width:100%;border:groove;">
+    <input onclick = "fileReadSetup()" type="file" id = "fileInput" style = "position:fixed; visibility:hidden; left:0%; height:0%; width:0%; top:0%;">
+    <img id="sav" src="../../icons/blackSave.png" title = "SAVE FILE" onclick ="fileLickSave()"  alt ="^" style="position:absolute;right:0%;top:0%; height:100%">
+    <div style='color:red'>readSingleFile(e)</div>
+    <div style='color:black'>Read a local file</div>
+    <img src = "../../icons/blackRead.png" alt ="Get Local File" onclick="document.getElementById('fileInput').click()" style="position:absolute;right:0%;top:0%; height:100%">
+
+</div>
+
+    <div style="position:relative;width:100%;border:groove;">
+        <div style='color:green'>saveTextAsFile(fileName,textToWrite)</div>
+        <div style='color:black'>SAVE a 'txt' file to a local Directory </div>
+        <div style='color:blue'>saveTextAsFile('MyFile','Yada yada yada yada yada yada')</div>
+        <img id='fileSaveIcon' src="../../icons/blackwrite.png" alt="SAVE" onclick = "saveTextAsFile('MyFile','Yada yada yada yada yada yada');" style = " position:absolute; right:0%; top:0; height:100%; opacity:1;">
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<SCRIPT type="text/javascript" SRC = "global.js"></SCRIPT>
+</html></body>

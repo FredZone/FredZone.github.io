@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/png" href="../../Icons/blackSquare.png">
+    <title id = 'title'>Bridge</title>
+    <style type="text/css">
+      Body{
+        font-size : 2.5vw;
+        font-family:Courrier New;
+        font-weight:bold;
+        line-height:140%;
+        text-align:center;
+        background-color:lightgrey;
+        color:white;}
+      pre{
+        display: block;
+        font-family:Courrier New;
+        white-space: pre;
+        margin: 0 0;}
+      select{font-size:1.2vw;}
+      input{font-size:1.5vw;}
+      X1{color:red;}
+      X2{color:blue;}
+      .bb {
+        text-align:center;
+        line-height: 4vh;
+        position:absolute;
+        width:14%;
+        height:16%;
+        border: 1px solid black;
+        }
+      
+      
+      </style>
+    </head>
+  <body>
+
+<!--- SUPER CONTROLS various z-index display and visibility-->
+    <a id="none" style=" display:none; visibility:visible"></a><!--needed a null element....must be a better way -->
+    <a id="msg" title="Message Box" style= "position:fixed; line-height:120%; text-align:center; vertical-align:middle; color:red; background-color:transparent; color:red; font-size: 2vw; height:6%; left:0%; top:60%; width:100%; z-index:5505;overflow:hidden">Loading HTML...</a>
+    <form action=false><input type="file" id="fileInput" style="display:none;"></form>  <!-- <input type='text' value='Initialized' id='temp' style="display:none;"/-->
+    
+<!---SPLASH  5000 -->
+    <div id ="splash" style="position:fixed; display:none; background-color:white; color:black; top:0%; left:0%; width:100%; height:100%; z-index:5500;">
+      YOU TUBE LICK TOOL <br>A Javascript Application<br>by<br>Fred Kaparich<br>fkaparich@gmail.com<br>---
+      <img src='../../Icons/resetSpinner.gif' alt ="@" style='position:fixed; width:25%; left:37%;opacity:0.4;'>
+      </div>
+<!--- Analysys   --> 
+    <div id ="analysis" style="position:fixed; text-align: left;display:none;line-height:150%; font-size:2vh; background-color:lightgrey;border:solid; color:black; top:20%; left:20%; width:60%; height:50%; z-index:5500;">
+      <div id='aTitle'style="position:absolute;top:0%;border:solid; left:0%; width:95%; height:12%; ">Analysis Block</div>
+      <img id='aClose' src="../../icons/blacksquare.png" onclick="dis('analysis')" style="position:absolute;border:solid; top:0%; right:0%; width:5%; height:12%; ">
+      <div id='aField'style="position:absolute;overflow:scroll;top:12%;border:solid; left:0%; width:45%; height:88%; ">???</div>
+      <div id='aRec'style="position:absolute;overflow:scroll;top:12%;border:solid; right:0%; width:45%; height:88%; ">???</div>  
+    </div>
+ <!--- Analysys   --> 
+    <div id ="bidBox" style="position:fixed; text-align: left;display:block;line-height:150%; font-size:2vh; background-color:lightgrey;border:solid; color:black; top:20%; left:20%; width:60%; height:50%; z-index:5000;">
+      <div class=bb onclick="bid(this.id)"id='1C' style="top:0%; left:0%;">1 Club</div>
+      <div class=bb onclick="bid(this.id)"id='2C' style="top:0%; left:14%;">2 Club</div>
+      <div class=bb onclick="bid(this.id)"id='3C' style="top:0%; left:28%;">3 Club</div>
+      <div class=bb onclick="bid(this.id)"id='4C' style="top:0%; left:42%;">4 Club</div>
+      <div class=bb onclick="bid(this.id)"id='5C' style="top:0%; left:56%;">5 Club</div>
+      <div class=bb onclick="bid(this.id)"id='6C' style="top:0%; left:70%;">6 Club</div>
+      <div class=bb onclick="bid(this.id)"id='7C' style="top:0%; left:84%;">7 Club</div>
+      
+      <div class=bb onclick="bid(this.id)"id='1D' style="top:16%; left:0%;">1 Diamond</div>
+      <div class=bb onclick="bid(this.id)"id='2D' style="top:16%; left:14%;">2 Diamond</div>
+      <div class=bb onclick="bid(this.id)"id='3D' style="top:16%; left:28%;">3 Diamond</div>
+      <div class=bb onclick="bid(this.id)"id='4D' style="top:16%; left:42%;">4 Diamond</div>
+      <div class=bb onclick="bid(this.id)"id='5D' style="top:16%; left:56%;">5 Diamond</div>
+      <div class=bb onclick="bid(this.id)"id='6D' style="top:16%; left:70%;">6 Diamond</div>
+      <div class=bb onclick="bid(this.id)"id='7D' style="top:16%; left:84%;">7 Diamond</div>
+      
+      <div class=bb onclick="bid(this.id)"id='1H' style="top:32%; left:0%;">1 Heart</div>
+      <div class=bb onclick="bid(this.id)"id='2H' style="top:32%; left:14%;">2 Heart</div>
+      <div class=bb onclick="bid(this.id)"id='3H' style="top:32%; left:28%;">3 Heart</div>
+      <div class=bb onclick="bid(this.id)"id='4H' style="top:32%; left:42%;">4 Heart</div>
+      <div class=bb onclick="bid(this.id)"id='5H' style="top:32%; left:56%;">5 Heart</div>
+      <div class=bb onclick="bid(this.id)"id='6H' style="top:32%; left:70%;">6 Heart</div>
+      <div class=bb onclick="bid(this.id)"id='7H' style="top:32%; left:84%;">7 Heart</div>
+      
+      <div class=bb onclick="bid(this.id)"id='1S' style="top:48%; left:0%;">1 Spade</div>
+      <div class=bb onclick="bid(this.id)"id='2S' style="top:48%; left:14%;">2 Spade</div>
+      <div class=bb onclick="bid(this.id)"id='3S' style="top:48%; left:28%;">3 Spade</div>
+      <div class=bb onclick="bid(this.id)"id='4S' style="top:48%; left:42%;">4 Spade</div>
+      <div class=bb onclick="bid(this.id)"id='5S' style="top:48%; left:56%;">5 Spade</div>
+      <div class=bb onclick="bid(this.id)"id='6S' style="top:48%; left:70%;">6 Spade</div>
+      <div class=bb onclick="bid(this.id)"id='7S' style="top:48%; left:84%;">7 Spade</div>      
+
+      <div class=bb onclick="bid(this.id)"id='1N' style="top:64%; left:0%;">1 No Trump</div>
+      <div class=bb onclick="bid(this.id)"id='2N' style="top:64%; left:14%;">2 No Trump</div>
+      <div class=bb onclick="bid(this.id)"id='3N' style="top:64%; left:28%;">3 No Trump</div>
+      <div class=bb onclick="bid(this.id)"id='4N' style="top:64%; left:42%;">4 No Trump</div>
+      <div class=bb onclick="bid(this.id)"id='5N' style="top:64%; left:56%;">5 No Trump</div>
+      <div class=bb onclick="bid(this.id)"id='6N' style="top:64%; left:70%;">6 No Trump</div>
+      <div class=bb onclick="bid(this.id)"id='7N' style="top:64%; left:84%;">7 No Trump</div>
+      
+      <div class=bb onclick="bid(this.id)"id='Pass' style="top:80%; left:0%;">Pass</div>
+      <div class=bb onclick="bid(this.id)"id='Double' style="top:80%; left:14%;">Double</div>
+      <div class=bb onclick="bid(this.id)"id='ReDouble' style="top:80%; left:28%;">ReDouble</div>
+      <div class=bb onclick="analizeHand('south')"id='4N' style="top:80%; left:42%;">Hint</div>
+      <div class=bb onclick="bid(this.id)"id='5N' style="top:80%; left:56%;">5 No Trump</div>
+      <div class=bb onclick="bid(this.id)"id='6N' style="top:80%; left:70%;">6 No Trump</div>
+      <div class=bb onclick="bid(this.id)"id='7N' style="top:80%; left:84%;">7 No Trump</div>
+      
+
+      
+    </div>  
+    
+    </div>
+
+
+<!---Table 4500 4599==================================================== -->
+  <div id='tbl' style ="position:fixed; background-color:green; border:solid; opacity:1 ;font-size:7vh; line-height:100%;left:0%; height:79%; top:6%; width:100%;z-index:4500;">
+    <img id='n1'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:24%; height:18%; top:2%; width:6%;z-index:4500;">    
+    <img id='n2'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:28%; height:18%; top:2%; width:6%;z-index:4500;">          
+    <img id='n3'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:32%; height:18%; top:2%; width:6%;z-index:4500;">
+    <img id='n4'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:36%; height:18%; top:2%; width:6%;z-index:4500;">            
+    <img id='n5'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:40%; height:18%; top:2%; width:6%;z-index:4500;">          
+    <img id='n6'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:44%; height:18%; top:2%; width:6%;z-index:4500;">          
+    <img id='n7'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:48%; height:18%; top:2%; width:6%;z-index:4500;">          
+    <img id='n8'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:52%; height:18%; top:2%; width:6%;z-index:4500;">          
+    <img id='n9'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:56%; height:18%; top:2%; width:6%;z-index:4500;">          
+    <img id='n10'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black;left:60%; height:18%; top:2%; width:6%;z-index:4500;">          
+    <img id='n11'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black;left:64%; height:18%; top:2%; width:6%;z-index:4500;">          
+    <img id='n12'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black;left:68%; height:18%; top:2%; width:6%;z-index:4500;">          
+    <img id='n13'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black;left:72%; height:18%; top:2%; width:6%;z-index:4500;">
+    
+    <img id='s1'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:24%; height:18%; bottom:2%; width:6%;z-index:13;">    
+    <img id='s2'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:28%; height:18%; bottom:2%; width:6%;z-index:12;">          
+    <img id='s3'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:32%; height:18%; bottom:2%; width:6%;z-index:11;">
+    <img id='s4'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:36%; height:18%; bottom:2%; width:6%;z-index:10;">            
+    <img id='s5'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:40%; height:18%; bottom:2%; width:6%;z-index:9;">          
+    <img id='s6'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:44%; height:18%; bottom:2%; width:6%;z-index:8;">          
+    <img id='s7'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:48%; height:18%; bottom:2%; width:6%;z-index:7;">          
+    <img id='s8'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:52%; height:18%; bottom:2%; width:6%;z-index:6;">          
+    <img id='s9'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:56%; height:18%; bottom:2%; width:6%;z-index:5;">          
+    <img id='s10'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black;left:60%; height:18%; bottom:2%; width:6%;z-index:4;">          
+    <img id='s11'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black;left:64%; height:18%; bottom:2%; width:6%;z-index:3;">          
+    <img id='s12'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black;left:68%; height:18%; bottom:2%; width:6%;z-index:2;">          
+    <img id='s13'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black;left:72%; height:18%; bottom:2%; width:6%;z-index:1;">  
+      
+    <img id='w13'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:2%; height:18%; bottom:2%; width:6%;z-index:13;">    
+    <img id='w12'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:2%; height:18%; bottom:8%; width:6%;z-index:12;">          
+    <img id='w11'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:2%; height:18%; bottom:14%; width:6%;z-index:11;">
+    <img id='w10'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:2%; height:18%; bottom:20%; width:6%;z-index:10;">            
+    <img id='w9'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:2%; height:18%; bottom:26%; width:6%;z-index:9;">          
+    <img id='w8'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:2%; height:18%; bottom:32%; width:6%;z-index:8;">          
+    <img id='w7'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:2%; height:18%; bottom:38%; width:6%;z-index:7;">          
+    <img id='w6'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:2%; height:18%; bottom:44%; width:6%;z-index:6;">          
+    <img id='w5'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:2%; height:18%; bottom:50%; width:6%;z-index:5;">          
+    <img id='w4'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black;left:2%; height:18%; bottom:56%; width:6%;z-index:4;">          
+    <img id='w3'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black;left:2%; height:18%; bottom:62%; width:6%;z-index:3;">          
+    <img id='w2'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black;left:2%; height:18%; bottom:68%; width:6%;z-index:2;">          
+    <img id='w1'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black;left:2%; height:18%; bottom:74%; width:6%;z-index:1;">
+      
+    <img id='e13'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; right:2%; height:18%; bottom:2%; width:6%;z-index:1;">    
+    <img id='e12'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; right:2%; height:18%; bottom:8%; width:6%;z-index:2;">          
+    <img id='e11'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; right:2%; height:18%; bottom:14%; width:6%;z-index:3;">
+    <img id='e10'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; right:2%; height:18%; bottom:20%; width:6%;z-index:4;">            
+    <img id='e9'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; right:2%; height:18%; bottom:26%; width:6%;z-index:5;">          
+    <img id='e8'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; right:2%; height:18%; bottom:32%; width:6%;z-index:6;">          
+    <img id='e7'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; right:2%; height:18%; bottom:38%; width:6%;z-index:7;">          
+    <img id='e6'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; right:2%; height:18%; bottom:44%; width:6%;z-index:8;">          
+    <img id='e5'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; right:2%; height:18%; bottom:50%; width:6%;z-index:9;">          
+    <img id='e4'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black;right:2%; height:18%; bottom:56%; width:6%;z-index:10;">          
+    <img id='e3'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black;right:2%; height:18%; bottom:62%; width:6%;z-index:11;">          
+    <img id='e2'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black;right:2%; height:18%; bottom:68%; width:6%;z-index:12;">          
+    <img id='e1'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black;right:2%; height:18%; bottom:74%; width:6%;z-index:13;">   
+    
+
+    <img id='southPlay'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:48%; height:18%; bottom:25%; width:6%;">
+    <img id='northPlay'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:48%; height:18%; top:25%; width:6%;">
+    <img id='westPlay'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; left:40%; height:18%; bottom:41%; width:6%;">
+    <img id='eastPlay'src ="../../icons/cards/back.png" style ="position:absolute; background-color:green;color:black; right:40%; height:18%; bottom:41%; width:6%;">
+  </div>
+
+<!---FOOTER 4500 4599=========================================================================================--> 
+    <div id='footer' title ="Footer" style ="position:fixed;display:block; border:solid; background-color:lightgrey; opacity:1 ;font-size:2vh; line-height:100%;left:0%; height:10%; bottom:0%; width:100%;z-index:4500;">
+      <button onclick="shuffle();deal()">Shuffle and Deal...</button><button onclick="analizeHand('south')">analize south</button><button onclick="showCards('north')">analize north</button><button onclick="analizeHand('west')">analize west</button><button onclick="analizeHand('east')">analize east</button><br>
+      
+    <button onclick="showCards('south')">Show/hide South</button><button onclick="showCards('north')">Show/hide North</button><button onclick="showCards('west')">Show/Hide west</button><button onclick="showCards('east')">Show/hide east</button><br>
+    <div id='bidNo' style="position: absolute;bottom:20%;left:20%;">???</div> <div id='hand' style="position: absolute;bottom:20%;right:20%;"">???</div>
+    </div>
+  <SCRIPT type="text/javascript" SRC = "GlobalRoutes.js"></script>
+  <SCRIPT type="text/javascript" SRC = "bridge.js"></script>
+  <!-- remember the last file overwrites other routines loaded earlier -->
+  </body>
+</html>

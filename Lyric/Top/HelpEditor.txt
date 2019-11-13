@@ -1,0 +1,54 @@
+HOW TO USE THE EDITOR:
+
+STEP 1    
+    Paste or write your initial song data into the large,
+    white area using the format shown above
+
+    You may paste in the Chord/Lyric text from a website or write your own
+    The Initial format is assumed to follow the following guidelines
+        A) Structure the song with "========" lines between sections (to indicate verse, chorus etc)
+        B)The complete song should be entered in sequence, Don't use coda and :|| to 'go back'
+        C)Typically chords are displayed on the line above the lyric line
+            1) You can start with chords embedded in the lyric lines with parenthesis, brackets etc...
+            2) The embedded chords can be be 'extracted; later
+        E)Your song should look something like this example<X2>
+===================
+C          C7        C    
+                                 The other
+===================
+C         
+ night dear as I lay sleeping, I dreamed I
+F               C        
+held you in my arms, When I
+F                C     
+awoke dear I was mistaken        And I
+C         G        C 
+hung my head and I cried, You are my
+===================
+C      
+sunshine, my only sunshine,You make me
+F            C
+happy when skies are gray, You'll never
+F                    C 
+know dear, how much I love you,Please don't
+C       G          C 
+take my sunshine away,
+===================
+|C     
+I'll always love you and make you happy, If you will
+</X2>
+<X8>STEP 2 
+FIRST LINE</X8>  Fill out the FIRST LINE section
+    Fill out as much of the as you initially can...
+    The program should build a Special First Line
+    Then save the file...(it can now be imported)
+    The first line will then look something like this
+<X2>TITLE:You Are My Sunshine,DUR:134,BPM:185,BEATS:4,KEY:C,QUAL:Raw,ARTIST:The Pine Ridge Boys,GENRE:Country,STYLE:Ballad,HITyear:1940<X2>    
+
+<X8>STEP 3
+INITIAL CLEANUP8
+    Replace Tabs</X8> replaces tabs with 5 spaces 
+    <X8>Remove Junk</X8> button deletes problem characters (i.e. ?)
+    
+<X8>SONG STRUCTURE   
+    

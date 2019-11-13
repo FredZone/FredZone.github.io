@@ -1,0 +1,11 @@
+7/17/19
+    Rebuilt Sort engine (interface needs work)
+
+7/17/19
+    Cleaned up Loop and video add/delete routines
+
+7/17/18
+    Undisplay blocker when Player is ready 7:28
+    Tied the blocker to CollectionSelector and VideoSelector  8:01
+    Clean up the boot routine 8:19
+    add vid and loop to the boot

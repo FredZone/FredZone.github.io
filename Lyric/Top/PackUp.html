@@ -1,0 +1,33 @@
+<!DOCTYPE html><html><head><title id = 'title'>NOTES</title>
+<style type:+text-css">
+Body{
+    font-size : 2vw;
+    margin :0vh; padding: 0;
+    font-family:courrier monospace;
+    font-weight:bold;
+    line-height:150%;
+    text-align:Left;
+    background-color:lightgrey;
+    }
+</style></head>
+<body>
+<div style="position:absolute; width:100%; height: 100%;"> 
+    <div id="header" style="position:absolute;text-align: left;font-size: 3vw; width:100%;height:5%;">PACK UP</div>    
+    <div id="pic" style="position:absolute;height:80%; left:10%;bottom:10%; width:80%;">
+        <img id ='pict' src="../../icons/Case-1.png" title='Case 1' alt ="Case 1" style="position:absolute;border:solid;height:100%;">
+        </div>
+    <img onclick=nxt(-1) src="../../icons/transLeft.png" style="position:absolute;left:1%; bottom:45%; width:8%;color:red;">
+    <img onclick=nxt(1) src="../../icons/transRight.png" style="position:absolute;right:1%; bottom:45%; width:8%;color:red;">
+    </div>
+
+<script type="text/javascript">
+var ARR="Case-1,Case-2,Case-3".split(',')
+var PIC=0;
+function nxt(dir) {
+    if ((PIC + dir)>=0 & (PIC + dir)<ARR.length){
+        PIC=parseInt(PIC+dir)
+        document.getElementById('pict').src="../../icons/"+ARR[PIC]+".png";
+    }
+}
+</script>
+</body></html>

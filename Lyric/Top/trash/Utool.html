@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/png" href="../../Icons/UtubeTool.png">
+    <title id = 'title'>UTOOL</title>
+    <style type="text/css">
+      Body{
+        font-size : 2.5vw;
+        font-family:Courrier New;
+        font-weight:bold;
+        line-height:140%;
+        text-align:center;
+        background-color:lightgrey;
+        color:white;}
+      pre{
+        display: block;
+        font-family:Courrier New;
+        white-space: pre;
+        margin: 0 0;}
+      select{font-size:1.2vw;}
+      input{font-size:1.5vw;}
+      X1{color:red;}
+      X2{color:blue;}
+      </style>
+    </head>
+  <body>
+    
+<!--- SUPER CONTROLS various z-index display and visibility-->
+    <a id="none" style=" display:none; visibility:visible"></a><!--needed a null element....must be a better way -->
+    <a id="msg" title="Message Box" style= "position:fixed; line-height:120%; text-align:center; vertical-align:middle; color:red; background-color:transparent; color:red; font-size: 2vw; height:6%; left:0%; top:60%; width:100%; z-index:5505;overflow:hidden">Loading HTML...</a>
+    <form action=false><input type="file" id="fileInput" style="display:none;"></form>  <!-- <input type='text' value='Initialized' id='temp' style="display:none;"/-->
+    <div id='blocker' style="position:fixed; display:block;text-align:center;color:red;background-color:black;left:0%; top:6%;width:100%; height:94%;z-index:5000">
+      <div title="Clear the Screen of autoload fails..." onclick="userBreak()" style="position:fixed;top:60%;left:44%;width:10%;border:solid;z-index:5001;">BREAK</div>
+      <div id= 'fNote' style='opacity:1;background-color:transparent; color:yellow;position:fixed; top:5%;  width:100%; height:15%; left:0%;'>-</div>
+      <div id= 'vNote' style='opacity:1;background-color:transparent; color:pink;  position:fixed; top:20%; width:100%; height:15%; left:0%;'>-</div>
+      <div id= 'lNote' style='opacity:1;background-color:transparent; color:white; position:fixed; top:35%; width:100%; height:65%; left:0%;'>-</div>
+      <img src='../../Icons/resetSpinner.gif' alt ="@" style='position:fixed; top:25%; width:25%; left:37%;opacity:0.4;'>
+      </div>
+    
+<!---SPLASH  5000 -->
+    <div id ="splash" style="position:fixed; visibility:visible; background-color:white; color:black; top:0%; left:0%; width:100%; height:100%; z-index:5500">
+      YOU TUBE LICK TOOL <br>A Javascript Application<br>by<br>Fred Kaparich<br>fkaparich@gmail.com<br>
+      <img src='../../Icons/resetSpinner.gif' alt ="@" style='position:fixed; width:25%; left:37%;opacity:0.4;'>
+      </div>
+    
+<!---HEADER 4500 4599==================================================== -->
+    <div id='hdr' style ="position:fixed; background-color:lightgrey; opacity:1 ;font-size:7vh; line-height:100%;left:0%; height:9%; top:6%; width:100%;z-index:4500;">
+      <div id='saveChanges' style= "color:white; position:absolute; display:none; width:15%; background-color:red; left:0%; height:100%; top:0%;">
+        <img  src="../../icons/warningFlasher.gif"  alt="??" onclick="saveVideoFile()" style=";position:absolute; width:30%; left:0%;bottom:0%; height:100%"> 
+        <div style="font-size:1.5vw;position:absolute;left:30%; width:70%;">Save Changes!</div>
+        </div>
+      <div id='fileNameSpecial' title='File Name' style="position:absolute; display:block; font-size:1vw; text-align:left; width:15%; background-color:green; left:0%; height:80%; top:10%; z-index:4501;">XXX</div>
+      <select id = 'fileIndex' title='AVAILABLE FILES (ON WEB SERVER)' onchange="colSelect(this.value);" style= "position:absolute; display:block; width:15%; background-color:white; left:0%; height:80%; top:10%;">
+        </select>
+      <!-- <div id = 'fileName'  style= "text-align:left;font-size:3vh;position:absolute; display:none; width:20%; background-color:red; left:0%; height:80%; top:10%;">EDITED!!!</div>  -->
+        <select id = 'videos' title='AVAILABLE UTUBE VIDEOS (IN THIS FILE)'onchange="vidSelect(this.value)" style= "position:absolute; display:none; width:15%; background-color:white; left:15%; height:80%; top:10%;">
+      </select>
+      <select id = 'loops' title= 'AVAILABLE LOOPS FOR THIS VIDEO' onchange="loopSelect(this.value,false)"  style= "position:absolute; display:none; width:15%; background-color:white; left:30%; height:80%; top:10%;">
+        </select>
+      <div id='stepper' title="Frames per Second (user input from statistic for nerds on YOU TUBE" style= "position:absolute; width:15%; background-color:grey; left:45%; height:90%; top:5%;">
+        <select id = 'fps' onchange="mode='Paused...';FPS=this.value" style= "position:absolute; width:38%; background-color:white; left:1%; height:80%; top:10%;">
+          <option value=24>24 fps</option>
+          <option value=25 selected>25 fps</option>
+          <option value=30>30 fps</option>
+          <option value=48>48 fps</option>
+          <option value=50>50fps</option>
+          <option value=60>60 fps</option>
+          </select>
+        <select id = 'frms' title="Frames per move..." onchange="FRAMES=this.value" style= "position:absolute; width:25%; background-color:white; left:40%; height:80%; top:10%;">
+          <option value=1 seleted>1</option>
+          <option value=2>2</option>
+          <option value=3,selected>3</option>
+          <option value=4>5</option>
+          <option value=5>5</option>
+          <option value=6>6</option>
+          <option value=7>7</option>
+          <option value=8>8</option>
+          <option value=9>9</option>
+          <option value=10>10</option>
+          <option value=11>11</option>
+          <option value=12>12</option>
+          <option value=13>13</option>
+          <option value=14>14</option>
+          <option value=15>15 </option>
+          <option value=16>16 </option>
+          <option value=17>17</option>
+          <option value=18>18</option>
+          </select>  
+        <img id='fpsGo' onclick="frameNext(5)" src="../../icons/transRight.png" alt ="One Frame" style="position:absolute; left:70%; width:15%; top:10%;z-index:1">
+        <img id='fpsPlay' onclick="frame(),vis('fpsStop','visible')" src="../../icons/transPlayGreen.png" alt ="Auto" style="position:absolute; left:85%; width:15%; top:10%">  
+        <img id='fpsStop' onclick="clearTimeout(TIMEOUTscroll),vis('fpsStop','hidden')" src="../../icons/transPauseRed.png" alt ="stop" style="visibility:hidden;position:absolute; left:85%; width:15%; top:10%;;z-index:1">
+        </div>  
+      <div id='tempoGetter'onclick="getTempo()" style="background-color:black;position:absolute; width:4%; right:36%;bottom:0%; height:100%;display:block;font-size:1vw;">TPO</div>
+      <img id='buttonKeep' src="../../icons/blackKeep.png" alt="??" onclick="window.open('https://keep.google.com/u/0/#label/'+UTtitle.split(' ').join('%20'))" style="position:absolute; width:4%; right:32%;bottom:0%; height:100%;display:block">
+      <img id='buttonCrap' src="../../icons/debug.png" alt="??" onclick="dis('devBar')" style="position:absolute; width:4%; right:28%;bottom:0%; height:100%;display:block">
+       <img id='buttonTab' src="../../icons/tab.png" alt="Tab" title ="TAB" onclick="barSelect('tabBar')" style="position:absolute;width:4%; right:24%;bottom:0%; height:100%;">
+      <img id='buttonBackTrack' src="../../icons/UtubeTrack.png" alt="TRK" onclick="passARR('backtrack.html',UTback,'|')" style="position:absolute;width:4%; right:20%;bottom:0%; height:100%;display:block">
+      <img id='buttonHelp' src="../../icons/blackQuestion.png" alt="Help"  onclick="barSelect('helpBar')" style="position:absolute;width:4%; right:16%;bottom:0%; height:100%;display:block">
+      <img id='buttonRotate' src="../../icons/rotate.png" alt="@"  onclick="barSelect('rotateBar')" style="position:absolute;width:4%; right:12%;bottom:0%; height:100%;">
+      <img id='buttonNote' src="../../icons/blackInfo.png" alt="Note" title ="NOTES" onclick="barSelect('noteBar')" style="position:absolute;width:4%; right:8%;bottom:0%; height:100%;">
+      <img alt="+" title='EDIT THE FILE PROPERTIES' onclick="barSelect('fileEditBar')" src='../../Icons/blackedit.png' style= "position:absolute; right:4%;width:4%;  height:100%;">
+      <img id="buttonHome" title ='HOME' src="../../icons/blackHome.png" alt ="home" onclick="window.open('index.html');" style="position:absolute;width:4%; right:0%;bottom:0%; height:100%;">
+      </div>
+    <div id='scroller' style="position:fixed;background-color:black;left:0%; height:75%; width:100%; top:15%; overflow-x:scroll;overflow-y:scroll;z-index:3600;">
+      <iframe id="player" src="https://www.youtube.com/embed/LcOempNj6_g?enablejsapi=1" style="position:absolute; background-color:black; left:0%; height:100%; width:100%; top:0%; z-index:3500;"></iframe> 
+      </div>
+    
+<!---FOOTER 4500 4599=========================================================================================--> 
+    <div id='footer' title ="Footer" style ="position:fixed;display:block; background-color:lightgrey; opacity:1 ;font-size:7vh; line-height:100%;left:0%; height:10%; bottom:0%; width:100%;z-index:4500;">
+      <select id = 'mag' onchange="sizeFrame(this.value)" style= "position:absolute; width:8%; background-color:white; left:1%; height:80%; top:10%;">
+        <option value=1 selected>NORMAL</option>
+        <option value=1.25>1.25 X</option>
+        <option value=1.5>1.50 X</option>
+        <option value=2>2.00 X</option>
+        <option value=2.5>2.50 X</option>
+        <option value=3>3.00 X</option>
+        <option value=4>4.00 X</option>
+        </select>
+      <select id = 'rate' title ="Playback Speed" onchange="player.setPlaybackRate(document.getElementById('rate').value)" style= "position:absolute; width:8%; background-color:yellow; left:10%; height:80%; top:10%;">
+        <option value=.25>0.25</option>
+        <option value=.5>0.5</option>
+        <option value=.75>0.75</option>
+        <option value=1 selected>NORMAL</option>
+        <option value=1.25>1.25</option>
+        <option value=1.5>1.5</option>
+        <option value=2>2</option>
+        </select>
+      <div id='loopBox' style="border-style:groove; position:fixed;bottom:0%;left:19%;height:9%;width:50%;">
+        <div style="position:absolute;left:1%;width:19%;height:80%;bottom:10%;font-size:2vw;line-height:100%">
+          <select  title="PAUSE TIME BETWEEN REPEATED LOOPS" id = 'pause' onchange="LOOPpause=document.getElementById('pause').value;" style= "position:absolute;width:100%; background-color:lightgreen; left:0%; height:90%; bottom:0%; ">
+            <option value=60000>1:00</option>
+            <option value=45000>0:45</option>
+            <option value=40000>0:40</option>
+            <option value=35000>0:35</option>
+            <option value=30000>0:30</option>
+            <option value=25000>0:25</option>
+            <option value=20000>0:20</option>
+            <option value=15000>0:18</option>
+            <option value=12000>0:12</option>
+            <option value=10000>0:10</option>
+            <option value=8000>0:08</option>
+            <option value=6000>0:06</option>
+            <option value=4000 selected>0:04</option>
+            <option value=2000>0:02</option>
+            <option value=1>0:00</option>
+            </select>
+          </div>
+        <img alt=">>" title="REPEATING LOOP..."onclick="loopStart('repeat')" src="../../icons/transInfinity2.png" style="position:absolute;left:45%;width:10%;height:90%;bottom:5%;">
+        <img  alt="X" id='loopStopper' title="CLOSE LOOP" onclick="mode('Resetting...')" src="../../icons/resetSpinner.gif" style="position:absolute;display:none; left:45%;width:10%;height:90%;bottom:5%;z-index:4600;">
+        <img  alt="<<"title="SINGLE LOOP..." onclick="loopStart('once')" src="../../icons/transOnePlay2.png" style="position:absolute; left:55%;width:10%;height:90%;bottom:5%;">
+         <img  alt="<<"title="SEQUENCE..." onclick="loopStart('seq')" src="../../icons/transArrowRight.png" style="position:absolute; left:65%;width:10%;height:90%;bottom:5%;">
+        </div>
+      <div id='playBox' style='position:fixed;border:groove; bottom:0%;right:0%;height:9%;width:30%;'>
+        <img id="lessVid" onclick="setVid('inc',-1)" src="../../icons/left.png" alt ="<<" style="position:absolute; visibility:visible; left:15%;width:25%;top:0%; height:50%;">
+        <div id="loopTime" style="position:absolute; line-height:100%; height:40%; color:red; left:45%; width:10%; vertical-align:middle; font-size:2vw; top:0%; ">0:00</div>
+        <img id="moreVid" onclick="setVid('inc',1)" src="../../icons/right.png" alt =">>" style="position:absolute; visibility:visible; right:15%;width:25%;top:0%; height:50%;">
+        <input  id="slider1" type="range" min="0" max="100" style="position:absolute; background-color:yellow; left:15%; width:65%; bottom:0%;">
+        <img id="runImg" src="../../icons/resetSpinner.gif" alt ="" onclick="mode('Pause...')" style="position:absolute; display:block; right:0%; width:15%; height:90%; top:5%;z-index:5000;">
+        <img id='buttonPlay' title='Play Loop' onclick="mode('Playing...')" alt="?" src="../../icons/transPlayGreen.png" style="display:block; position:absolute; right:0%; width:15%; height:90%; top:5%;">
+        <img id='buttonReset' title='Reset' alt="?" onclick="mode('Zeroing Video...');" src="../../icons/transResetBlue.png" style="visibility:visible; position:absolute; left:0%; width:15%; height:90%; top:5%;">
+        </div>
+      </div>
+    
+    <div id='footerFloat' style='background-color:red; position:absolute; bottom:0%; border:solid; left:19%; height:9%; width:50%;'>
+      <img alt="<"  id="lsm" title="START LOOP SOONER" onclick="loopSync('start','delta',-1,true)" src="../../icons/Left.png" style="position:absolute; left:20%; width:8%; height:90%; bottom:5%; z-index:4900;">
+      <input id="loopstart" type="text" onclick="loopSync('start','set',parseInt(player.getCurrentTime(),10),true)" title="CLICK TO SET LOOP START" style="position:absolute; left:28%; width:8%; height:80%; bottom:10%; border:none; text-align:center; z-index:4900";>
+      <img alt=">" id="lsp" title="START LOOP LATER"onclick="loopSync('start','delta',+1,true)" src="../../icons/Right.png" style="position:absolute; left:36%;width:8%;height:90%;bottom:5%;z-index:4900">
+      <img alt="<" id="lfm" title="END LOOP SOONER" onclick="loopSync('finish','delta',-1,true)" src="../../icons/Left.png" style="position:absolute; left:76%;width:8%;height:90%;bottom:5%;z-index:4900;">
+      <input type="text" id='loopfinish' title="CLICK TO SET LOOP START" onclick="loopSync('finish','set',parseInt(player.getCurrentTime(),10),true)" style="position:absolute;left:84%;width:8%;height:80%;bottom:10%;border:none;text-align:center;z-index:4900;">
+      <img alt=">" id="lfp" title="START LOOP LATER"onclick="loopSync('finish','delta',+1,true)" src="../../icons/Right.png" style="position:absolute; left:92%;width:8%;height:90%;bottom:5%;z-index:4900">
+      </div>
+
+<!---BARS====================================================================================   -->
+    <div id="devBar"  style="position:absolute;font-size:1.5vw; text-align:left; display:none; color:red; line-height:100%;background-color:yellow; position:absolute;left:10%;top:15%; width:50%;height:5%;border:outset; z-index:20005;">Developer
+      <div id="devBarMover"style='position:absolute;display:block;z-index:12001;background-color:blue;height:100%;top:0%;right:20%'>
+        <img src="../../icons/blackMove.png" alt="*" style='position:absolute; height:100%; right:0%; top:0%;'>
+        </div>
+      <img src="../../icons/blackSquare.png" alt="+" title ="CLOSE" onclick="launchIntoFullscreen(document.documentElement);"  style="position:absolute; height:100%; right:40%; top:0%;">  
+      <img src="../../icons/raw.png" alt="+" title ="CLOSE" onclick="alert(ARRvideos[0]+'\n'+ARRvideos[1])"  style="position:absolute; height:100%; right:30%; top:0%;">  
+      <img src="../../icons/blackClose.png" alt="+" title ="CLOSE" onclick="document.getElementById('devBar').style.display='none'"  style="position:absolute; height:100%; right:0%; top:0%;">  
+      <img src="../../icons/debug.png" alt="??" onclick="alert(ARRstatusLog.join('\n'))" style="position:absolute; height:100%; right:10%; top:0%;">  
+      </div> 
+
+    <div id="notifyBar" onclick="notifyClear()" style="font-size:1.5vw; text-align:center; display:none; color:red; line-height:100%;background-color:yellow; position:absolute; width:10%;height:5%;border:outset; z-index:20000;">Notification
+      </div>
+     
+    <div id='noteBar' style="position:absolute; font-size:2vw; background-color:black; color:red;line-height:140%; text-align:left;display:none ;border:solid;  position:fixed; right:0%; top:15%; width:100%;height:75%; z-index:4550;">
+      <div id="noteBarMover" style='position:absolute; display:block; background-color: red; height:10%; right:40%; top:0%;'>
+        <img src="../../icons/move.png" alt="*" style='position:absolute; height:100%; right:0%; top:0%;'>
+        </div>
+      <img src="../../icons/blackClose.png" alt="Close" title ="CLOSE" onclick="dis('noteBar','none');" style="position:absolute; height:10%; right:0%; top:0%;">
+      <img src="../../icons/blackLoop.png" alt="loop" title ="LOOP INFO" onclick="infoShow('loop');" style="position:absolute; height:10%; right:10%; top:0%;">
+      <img src="../../icons/blackUtube.png" alt="video" title ="VIDEO INFO" onclick="infoShow('video');" style="position:absolute; height:10%; right:20%; top:0%;">
+      <img src="../../icons/blackFolder.png" alt="file" title ="FILE INFO" onclick="infoShow('file');" style="position:absolute; height:10%; right:30%; top:0%;">
+      <img src="../../icons/tab.png" alt="file" title ="Tab" onclick="infoShow('tab');" style="position:absolute; height:10%; right:40%; top:0%;">
+      <div id='infoType' style="position:absolute; line-height:140%; overflow:hidden; height:10%; width:20%; left:1%; bottom:90%;">INFO BAR</div>
+      <textarea id='infoNote'  style="position:absolute; font-size:2vw;text-align:left; width:96%;top:10%; height:85%; right:2%; overflow-y:hidden;overflow-x:scroll;white-space: pre;"></textarea>
+      </div>  
+    
+    <div id='rotateBar' style="position:fixed; display:none ;border:solid; height:20%;width:60%;left:10%;top:60%; z-index:4550; background-color:grey;">
+      <div onclick="spin('player',-1,0)" style="position:absolute; border:solid; width:15%; top:2%;; height:92%; left:1%">CCW<br>FINE</div>
+      <div onclick="spin('player',-1,25)" style="position:absolute; border:solid; width:15%;top:2%;;height:92%; left:16%"> CCW<br>AUTO</div>
+      <div id='arc' onclick="spin('player',180,0)" style="position:absolute; font-size:8vh; color:red; border:solid; width:15%; top:2% ;height:92%; left:32%;">0<br>FLIP</div>
+      <div onclick="spin('player',1,25)" style="position:absolute; border:solid; width:15%;top:2%;height:92%; left:48%">CW<br>AUTO</div>
+      <div onclick="spin('player',1,0)" style="position:absolute; border:solid; width:15%; top:2%; height:92%; left:64%">CW<br>FINE</div>
+      <img onclick="barSelect()" src="../../icons/blackClose.png" alt="X"style="position:absolute; border:solid; width:15%;top:2%;height:92%; right:1%"> 
+      <div id='spinStop' onclick="spin('player',-0,false);vis('spinStop','hidden')"  style="background-color:yellow; opacity:0.2;visibility:hidden;color:red; position:absolute; width:100%;top:0%;height:100%; left:0%;z-index:4551"></div>
+      </div>
+    
+    <div id='tabBar' style="position:fixed;overflow:hidden;text-align:left;display:none;border:solid; height:15%; width:100%; left:0%; top:15%; z-index:4550; background-color:green;">
+      <textarea id='tabSmall' style="position:absolute; font-weight:900; font-size:1.75vh; color:black;line-height:100%; overflow-x:scroll; font-family:monospace; font-weight: 400; text-align:left;border:none; height:100%; width:95%; left:0%; top:0%; z-index:4551; background-color:white;white-space: pre;">
+        </textarea>
+      <img src="../../icons/blackClose.png" alt="+" title ="CLOSE" onclick="dis('tabBar','none');"style="position:absolute;height:50%; width:5%; right:0%; top:0%;z-index:4555;">  
+      <img src="../../icons/blackResize.png" alt="+" title ='RESIZE' onclick="tabResize()"  style="position:absolute; height:50%;  width:5%; right:0%; bottom:0%;z-index:4555;">
+      <!-- 
+      <div id="tabMover"style='position:absolute;display:block;z-index:12001;background-color:blue;height:50%;bottom:0%;right:0%'>
+      <img src="../../icons/move.png" alt="*" style='position:absolute; height:100%; right:0%; top:0%;'> -->
+      </div>
+
+
+<!---HELP ========================================================================================= -->   
+    <div id ='helpBar' style="overflow:scroll;display:none;visibility:visible; font-size:2vw; line-height:125%; border-style:solid; position:fixed; left:4%; top:15%; width:90%; bottom:15%; background-color:lightgrey; color:black;z-index:4500">
+      <div id ='helpHdr' style="color:white;vertical-align: middle; text-align:left; font-size:3vw; position:absolute; left:0%; height:15%;width:90%;z-index:26000">Subject...</div>
+      <img src ="../../Icons/blackClose.png" alt="X" onclick ="barSelect('helpBar')" style="position:absolute; right:0%; height:15%;z-index:27000">    
+      <div id='helpIndex' style=" text-align:left; position:absolute; left:2%;top:15%; width:20%; background-color:lightgrey;">
+        <!---this index is customized for each program -->
+        <a onclick="help('Tab Abbr');">Tab Abbr</a><br>
+        <a onclick="help('Neck Icons');">Neck Icons</a><br>
+        <a onclick="help('Neck Plan');">Neck Plan</a><br>
+        <a onclick="help('Practice Plan');">Practice Plan</a><br>
+        </div> 
+      <div id ='helpBody' style=" text-align:left; position:absolute; top:15%;overflow-y:scroll; left:0%; height:85%; left:20%; width:80%; background-color:white;">
+        Select your topic from the left Column...
+        </div>
+      </div>
+
+<!---EDIT BARS===========================================================================   -->
+    <div id ='loopBar' style="font-size:3vw; overflow:hidden; display:none; line-height:125%; border-style:solid; position:fixed; right:4%; top:15%; width:60vw;height:30vw; bottom:15%; background-color:lightgrey; color:black;z-index:4500">
+      <!--title-->
+      <div style="height:10%;width:100%;text-align:left;">
+        INSERT A NEW LOOP </div> 
+      <div style="border:solid;position:absolute;right:1%;top:1%;height:10%;width:10%;text-align:right;">
+        <img src="../../icons/blackClose.png" alt="+" title ="Cancel" onclick="dis('loopBar')" style="position:absolute; right:0%;width:50%;  height:100%;">
+        <img src="../../icons/blackThumbsUp.png" alt="+" title ="OK (Inserts the New Loop...)" onclick="newLoop()" style="position:absolute; right:50%;width:50%; height:100%;">
+        </div>
+      <div style="position:absolute;text-align:left; top:15%;left:0%;height:10%;width:100%"> <!--inputLine-->
+        Loop Name
+        <input id='newLoopTitle' type="text" value='My New Loop' style="position:absolute; background-color:white;  width:45%;left:50%;">
+        </div>
+      <div style="position:absolute;text-align:left; top:30%;left:0%;height:10%;width:100%"> <!--inputLine-->
+        Loop appears after...
+        <select id = 'newLoopPosition' onchange="editStatus('changed','loopTarget')"  style= "position:absolute; background-color:white; top:0%; width:45%; left:50%;">
+          </select>
+        </div>
+      <div style="font-size:2vw;position:absolute;text-align:left; top:45%;left:10%;height:50%;width:90%"> <!--inputLine-->
+        This box is used to create a new loop.<br>
+        It will use the start and stop times of the current loop<br>
+        Edit and tab it after it is created...
+        </div>
+      </div>
+    
+    <div id ='videoBar' style="font-size:3vw; overflow:hidden; display:none; line-height:125%; border-style:solid; position:fixed; right:4%; top:15%; width:60vw;height:30vw; bottom:15%; background-color:lightgrey; color:black;z-index:4500">
+      <div style="height:10%;width:100%;text-align:left;">
+        INSERT A VIDEO </div> 
+      <div style="border:solid;position:absolute;right:1%;top:1%;height:10%;width:10%;text-align:right;">
+        <img src="../../icons/blackClose.png" alt="+" title ="Cancel" onclick="dis('videoBar')" style="position:absolute; right:0%;width:50%;  height:100%;">
+        <img src="../../icons/blackThumbsUp.png" alt="+" title ="OK (Inserts the VIDEO...)" onclick="newVideo()" style="position:absolute; right:50%; width:50%; height:100%;">
+        </div>
+      <div style="position:absolute;text-align:left; top:15%;left:0%;height:10%;width:100%"> <!--inputLine-->
+        Video Name
+        <input id='newVideoTitle' type="text" value='My New Video' style="position:absolute; background-color:white;  width:45%;left:50%;">
+        </div>
+      <div style="position:absolute;text-align:left; top:30%;left:0%;height:10%;width:100%"> <!--inputLine-->  
+        Video ID ...
+        <input id='newVideoId' type="text" value='tPEE9ZwTmy0' style="position:absolute; background-color:white;  width:45%;left:50%;">
+        </div>
+      <div style="position:absolute;text-align:left; top:45%;left:0%;height:10%;width:100%"> <!--inputLine-->
+        Video appears after...
+        <select id = 'newVideoPosition' style= "position:absolute; background-color:white; top:0%;width:45%; left:50%;">
+          </select>
+        </div>
+      <div style="font-size:2vw;position:absolute;text-align:left; top:60%;left:10%;height:45%;width:90%"> <!--inputLine-->
+        This box is used to create a new Video.<br>
+        It will create ONE bogus loop<br>
+        Edit the Video and Add Loops, Backtrack etc after it is created...
+        </div>
+      </div>
+
+    <div id ='fileEditBar' style="font-size:1.5vw; overflow:hidden; display:none; line-height:100%; border-style:solid; position:fixed; right:2%; top:15%; width:96vw; height:74%; background-color:red; color:black;z-index:4490">
+      <div style="text-align:left; border-color:white; position:absolute; border:groove; height:12%; width:98%;left:1vw;top:1%;background-color:lightgrey;">
+        <div style="position:absolute;left:0%; width:6%;top:0%;">File</div>
+        <input type="text" title="FILE NAME"  id="editFILEname" onchange="editStatus('changed',this.id)" style="position:absolute;left:10%;width:20%;top:1%;border:none;">
+        <div style="position:absolute;left:32%; width:6%;top:1%;">
+          Notes</div>
+        <textarea id='editCOLnote' onchange="editStatus('changed',this.id)" style=" position:absolute; text-align:left; width:30%; top:1%; left:40%; height:90%;overflow-y:scroll;"></textarea>
+        <img alt="+" title='SAVE VIDEO/LOOP FILE' onclick="saveVideoFile()" src='../../Icons/blackSave.png' style= "position:absolute; right:20%;width:4%;  height:100%;">
+        <img alt="+" title='GET A LOCAL VIDEO/LOOP FILE' onclick="fileGetLocal('videosLocal')" src='../../Icons/blackread.png' style= "position:absolute; right:16%;width:4%;  height:100%;">
+        <img alt="+" title='CREATE A NEW FILE' onclick="newFile('')" src='../../Icons/blacknew.png' style= "position:absolute; right:12%;width:4%;  height:100%;">
+        <img alt="+" title='RELOAD THE NETWORK FILES' onclick="collectionsGet('server')" src='../../Icons/blackdownload.png' style= "position:absolute; right:8%;width:4%;  height:100%;">
+        <img src="../../icons/update.jpg" alt="+" title ="Update File" onclick="vidUpdate()" style="position:absolute; right:4%; width:4%; bottom:0%; height:100%;">
+        <img src="../../icons/blackClose.png" alt="+" title ="CLOSE" onclick="dis('fileEditBar','none')" style="position:absolute;right:0%;width:4%;  bottom:0%; height:100%;">
+        </div>
+      <div style="position:absolute; text-align:left;background-color:lightgrey;  border:groove; height:12%; width:98%;left:1%;top:15%;">
+        <div style="position:absolute;height:100%;top:0%;width:8%;right:0%">
+          <img alt="+" title='ADD VIDEO FILE' onclick="prepNewVideo()" src='../../Icons/utubeAdd.png' style="position:absolute; right:50%;width:50%;bottom:0%;   height:100%;">
+          <img alt="+" title='DELETE A VIDEO FILE' onclick="deleteVideo()" src='../../Icons/UtubeDelete.png' style="position:absolute; right:0%;width:50%;bottom:0%;   height:100%;">
+                   <!--<img src="../../icons/blackClose.png" alt="+" title ="CLOSE" onclick="dis('videoEditBar','none')" style="position:absolute; right:0%;width:25%;bottom:0%;   height:100%;"> -->
+          </div>
+        <div style="position:absolute; top:1%;left:0%">Video Title:</div>
+          <input type="text" title="UTUBE TITLE"  id="editUTtitle"  onchange="editStatus('changed',this.id)"  style="position:absolute;left:10%;width:15%;height:47%;top:2%;border:none;">
+        <div style="position:absolute;left:0% top:5%; width:10%; left:28%;width:10%;">Video Rank:</div>  
+          <select id='videoTarget' onchange="editStatus('changed','videoTarget')" style="position:absolute;top:2%;height:47%;left:38%;width:15%;"></select>
+        <div style="position:absolute; top:50%;left:0%"> UT ID:</div>
+          <input type="text" title="UTUBE INDEX NUMBER"  id="editUTID"  onchange="editStatus('changed',this.id)" style="position:absolute;left:10%;width:15%;height:47%;top:51%;border:none;">
+        <div style="position:absolute;width:10%; top:50%;left:28%"> BT ID:</div>
+          <input type="text" title="UTUBE BACK TRACK(ID | BPM | Start | Stop)"  id="editUTback"  onchange="editStatus('changed',this.id)" style="position:absolute;left:38%;width:15%;height:47%;top:51%;border:none;">
+        <div style="position:absolute;top:1%;right:41%;">NOTE:</div>
+        <textarea title="UTUBE NOTE" id="editUTnote" onchange="editStatus('changed',this.id)"  style="position:absolute; overflow-y:scroll;right:21%; width:20%; height:98%; top:1%; border:none;"></textarea>  
+        </div>
+      <div style="position:absolute; text-align:left;background-color:lightgrey;  border:groove; height:68%; width:98%;left:1%;top:29%;">
+        <div style="position:absolute;height:17%;top:1%;width:8%;right:0%">
+          <img src="../../icons/blackLoopAdd.png" alt="+" title ="INSERT A NEW LOOP" onclick="prepNewLoop()" style="position:absolute; right:50%;width:50%;bottom:0%;   height:100%;">
+          <img src="../../icons/BlackLoopDelete.png" alt="-" title ="DELETE LOOP" onclick="loopDelete(document.getElementById('loops').selectedIndex);" style="position:absolute; right:0%;width:50%; bottom:0%;  height:100%;">
+         <!-- <img src="../../icons/blackClose.png" alt="+" title ="CLOSE" onclick="dis('loopEditBar','none')" style="position:absolute;right:0%; bottom:0%;width:25%; height:100%;">
+          -->
+        </div>
+      <div style=";text-align:left;position:absolute;height:6%;width:10%;left:1%;top:1%;">Loop:</div>
+        <input type="text" title="LOOP TITLE"  id="editLOOPname" onchange="editStatus('changed',this.id)" style="position:absolute;left:9%;width:18%;height:7%;top:1%;">
+      <div style="position:absolute; left:35%;top:1%;">NOTES:</div>  
+        <textarea id='editLOOPnote' onchange="editStatus('changed',this.id)" style=" position:absolute; text-align:left; width:30%; top:1%; left:45%; height:15%;overflow-y:scroll;"></textarea>  
+      <div style="text-align:left;position:absolute;height:7%;width:10%;left:1%;top:9%;">RANK:</div>  
+        <select id='loopTarget' onchange="editStatus('changed','loopTarget')" style="position:absolute;top:10%;left:9%;width:18%;height:7%"></select>
+      <div style="position:absolute;text-align:left; height:7%;width:10%;left:1%;top:20%;">TAB:</div>
+        <textarea id='editLOOPtab' onchange="editStatus('changed',this.id)" style="position:absolute; text-align:left; width:90%;top:19%; height:41%; right:1%; overflow-y:hidden;overflow-x:scroll;white-space: pre;"></textarea>
+      <div style="position:absolute;border:groove;text-align:left; height:7%; width:98%;right:1%;top:82%;"> TAB-EDIT BUTTONS
+        <button onclick="document.getElementById('editLOOPtab').value=stringToTab(document.getElementById('stringView').value);">^TO TAB ^</button>
+        <button onclick="document.getElementById('stringView').value=tabToString(document.getElementById('editLOOPtab').value);">v TO STRING v</button>
+        <button onclick="addBarToTab()">+Add Bar+</button>
+        <button onclick="expandTab(1)">Expand Tab</button>
+        <button onclick="expandTab(-1)">Contract Tab</button>
+        <button onclick="removeBar()">Remove Beat</button>
+        <button onclick="transposeTab(document.getElementById('stringView').value,-1)">Key -</button>
+        <button onclick="transposeTab(document.getElementById('stringView').value,1)">Key +</button>
+        <button onclick="dis('tabBuilder')">New Tab +</button>
+        </div>  
+      <textarea id='stringView' style="position:absolute; text-align:left; width:90%;top:63%; height:13%; right:1%; overflow-y:hidden;overflow-x:scroll;white-space: pre;">-</textarea>
+      <div style="position:absolute;right:2%; width:98%;bottom:0%;height:6%">
+        <input type="text" title="Start(sec)"  id="editLOOPstart" onchange="editStatus('changed',this.id)" style="position:absolute;left:30%;width:8%;height:90%;bottom:10%;">  
+        <input type="text" title="Finish (sec)"  id="editLOOPfinish" onchange="editStatus('changed',this.id)" style="position:absolute;right:30%;width:8%;height:90%;bottom:10%;">  
+        </div>
+      </div>
+    </div>
+
+    <div id ='tabBuilder' style="line-height:100%;text-align:left;border:solid;background-color:blue; border-color:white;display:none; position:absolute;height:46%;width:30%;right:1%;top:50%;z-index:4800;">
+      <img src="../../icons/blackClose.png" alt="+" title ="Cancel" onclick="dis('tabBuilder','none')" style="position:absolute; height:20%; right:0%; top:0%;">
+      <img src="../../icons/blackThumbsUp.png" alt="+" title ="OK (Clears your previous work in the tab frame...)" onclick="tabNew(),dis('tabBuilder','none')" style="position:absolute; height:20%; right:20%; top:0;">
+      TAB BUILDER
+      <div style="position:absolute; top:20%;left:30%;">Beats per Bar</div>
+      <select id = 'beat' style= "position:absolute; top:20%; background-color:white; left:5%;">
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4 selected>4</option>
+        <option value=5>5</option>
+        <option value=6>6 </option>
+        <option value=7>7 </option>
+        <option value=8>8</option>
+        <option value=9>9 </option>
+        </select>
+      <div style="position:absolute; top:40%;left:30%;">Bars</div>
+      <select id = 'bars' style= "position:absolute; background-color:white; top:40%; left:5%;">
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4 selected>4</option>
+        <option value=5>5</option>
+        <option value=6>6 </option>
+        <option value=7>7 </option>
+        <option value=8>8</option>
+        <option value=9>9 </option>
+        <option value=10>10 </option>
+        <option value=11>11</option>
+        <option value=12>12</option>
+        <option value=13>13</option>
+        <option value=14>14</option>
+        <option value=15>15</option>
+        <option value=16>16 </option>
+        <option value=17>17 </option>
+        <option value=18>18</option>
+        <option value=19>19 </option>
+        <option value=20>20 </option>
+        <option value=21>21</option>
+        </select>
+      <div style="position:absolute; top:60%; left:30%;">Divisions per Beat</div>
+        <select id = 'divs' style= "position:absolute; background-color:white; top:60%; left:5%;">
+          <option value=1>1</option>
+          <option value=2 selected>2</option>
+          <option value=3>3</option>
+          <option value=4>4</option>
+          <option value=5>5</option>
+          <option value=6>6</option>
+          <option value=7>7</option>
+          <option value=8>8</option>
+          <option value=9>9</option>
+          </select>
+      <div style="position:absolute; top:80%; left:30%;">Charcters per Div</div>
+        <select id = 'chrs' style= "position:absolute; background-color:white; top:80%; left:5%;">
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4 selected>4</option>
+        <option value=5>5</option>
+        <option value=6>6 </option>
+        <option value=7>7 </option>
+        <option value=8>8</option>
+        <option value=9>9 </option>
+        </select>
+      </div> 
+  <SCRIPT type="text/javascript" SRC = "GlobalRoutes.js"></script>
+  <SCRIPT type="text/javascript" SRC = "Utool.js"></script>
+  <!-- remember the last file overwrites other routines loaded earlier -->
+  </body>
+</html>

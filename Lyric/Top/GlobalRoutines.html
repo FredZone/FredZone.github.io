@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/png" href="../../Icons/debug.png">
+    <title id = 'title'>Global Routines</title>
+    <style type="text/css">
+      Body{
+        font-size : 2.5vw;
+        font-family:Courrier New;
+        font-weight:bold;
+        line-height:140%;
+        text-align:center;
+        background-color:lightgrey;
+        color:white;}
+      pre{
+        display: block;
+        font-family:Courrier New;
+        white-space: pre;
+        margin: 0 0;}
+      select{font-size:1.5vw;}
+      input{font-size:1.5vw;}
+      X1{color:red;}
+      X2{color:blue;}
+      </style>
+    </head>
+  <body>
+<!--- SUPER CONTROLS various z-index display and visibility-->
+    <a id="none" style=" display:none; visibility:visible"></a><!--needed a null element....must be a better way -->
+    <a id="msg" title="Message Box" style= "position:fixed; line-height:120%; text-align:center; vertical-align:middle; color:red; background-color:transparent; color:red; font-size: 2vw; height:6%; left:0%; top:60%; width:100%; z-index:5505;overflow:hidden">Loading HTML...</a>
+    <form action=false><input type="file" id="fileInput" style="display:none;"/></form> 
+    
+<!---SPLASH  5000 -->
+    <div id ="splash" style="position:fixed; visibility:visible; background-color:white; color:black; top:0%; left:0%; width:100%; height:100%; z-index:5500">
+      GLOBAL ROUTINES <br>A Javascript Application<br>by<br>Fred Kaparich<br>fkaparich@gmail.com<br>
+      <img src='../../Icons/resetSpinner.gif' alt ="@" style='position:fixed; width:25%; left:37%;opacity:0.4;'>
+      </div>
+
+    <div id='crap' style="position:fixed;color:red;height:10%;top:50%;">ZZZZZZ</div>
+  <SCRIPT type="text/javascript" SRC = "GlobalRoutines.js"></script>
+  <SCRIPT type="text/javascript" SRC = "backtrack.js"></script>
+  
+  <!-- remember the last file overwrites other routines loaded earlier -->
+  </body>
+</html>

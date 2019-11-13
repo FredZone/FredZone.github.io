@@ -1,0 +1,43 @@
+NOTE|Vault Contains complete songs|With and without Backing tracks|Use Stray Cat strut for set up at Vol=75
+Abilene|||BACK TRACK||0.75
+Amarillo By Morning - 2 Key|||BACK TRACK||0.75
+Always on My Mind|||BACK TRACK||0.75
+Angel From Montgomery|||BACK TRACK||0.75
+Blue Eyes Crying In The Rain|||BACK TRACK||0.75
+Blue Skies|||0.75|BACK TRACK
+Boot Scootin Boogie|||BACK TRACK||0.75
+Break My Mind|||BACK TRACK||0.75
+Cherokee Fiddle|||BACK TRACK||0.75
+Cool Water|||BACK TRACK||0.75
+Dead Skunk|||BACK TRACK||0.75
+Dream|||BACK TRACK||0.75
+Fire Lake|||BACK TRACK||0.75
+Folsom Prison Blues|||BACK TRACK|Get Lead in Right away@Watch for short 2 bar breaks
+From Four until Late|||BACK TRACK||0.75
+Happy Trails|||BACK TRACK||0.75
+If We Were Vampires|||BACK TRACK|testing Volume|0.5
+Its a Heartache|||BACK TRACK||0.75
+Jamaica Farewell|||BACK TRACK||0.50
+L A Freeway|||BACK TRACK||0.50
+Lost Highway|||BACK TRACK||0.75
+Margaritaville|||BACK TRACK||0.75
+Needles and Pins|||BACK TRACK||0.75|Vocal Harmony on Track
+Pancho and Lefty|||BACK TRACK|speed it up|0.75
+Put Another Log On The Fire|||BACK TRACK||0.75
+Rock Me On The Water K|||BACK TRACK||0.75|Vocal Harmony on Track
+Rumble|||BACK TRACK|Out of the lead the base throws in a synchopated beat, DONT JUMP IT|0.875
+San Francisco Bay Blues||0.75
+Sea Of Heartbreak|||BACK TRACK||0.75
+Set Em Up Joe|||BACK TRACK||0.75
+Singing The Blues|||BACK TRACK||0.75
+Sittin On The Dock Of The Bay
+Some Days Are Diamond||0.75
+Stand By Me|||BACK TRACK||0.75
+Stray Cat Strut|||BACK TRACK||0.75
+Take It Easy|||BACK TRACK||0.75
+Thats Gonna Leave A Mark|||BACK TRACK||0.75
+The Cape|||SILENT||0.75
+This Aint My First Rodeo|||BACK TRACK||0.75
+Wagon Wheel|||BACK TRACK||0.75
+When the Roses Bloom Again|||BACK TRACK||0.75
+You Are My Sunshine|||SILENT
