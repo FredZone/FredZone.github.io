@@ -1,0 +1,25 @@
+TITLE:I Cant Help Falling In Love With You-Short,DUR:98,BPM:66,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Elvis Presley,GENRE:Unknown,STYLE:Ballad,HITyear:1961
+@@@<x9>FRED</x9><x4> 1</x4><x14>oooxo</x14><x11> 9</x11><x12> 10 10</x12>
+@@@<x9>PAT </x9><x4> 2</x4><x14>oooxo</x14><x11> 9</x11><x12>  9  6</x12>
+#INTRO ----------------------------------
+|C   ~Em  |C
+#VERSE 1 --------------------------------
+|C   ~Em    |Am        |F   ~C     |G
+Wise  men    say, only fools rush in    but
+|F   ~G     |Am   ~F   |C   ~G     |C
+I can't help falling in love with you
+#CHORUS 1 -------------------------------
+|Em           ~B7         |Em         ~B7
+Like a  river   flows     surely to the sea
+|Em           ~B7         |Em         ~A7    |Dm    ~G
+Darling so it goes      some things are meant to    be
+#VERSE 2 --------------------------------
+|C   ~Em    |Am        |F   ~C     |G
+Take my hand, take my whole life too      for
+|F   ~G     |Am   ~F   |C   ~G     |C
+I can't help falling in love with you
+#OUTRO ----------------------------------
+|F   ~G     |Am    ~F          |C   ~G    |C
+for I can't help falling in love with you
+irealb://Falling%20In%20Love%20With%20You%3DPresley%20Elvis%3D%3DPop%2012-8%3DC%3D0%3D1r34LbKcu7LG%20F%7CGLZCXLC%20F%7CQyX-AZL-EC%20A*%7B%20%20QyXQyX%5DQyZGXyQ%20Ci*%5BG%20-DZLZC%20GEZL7B%20-EZL7B%20-ZEL7B%20-E%5B%7DQyXCZL-%20A7LF%20-AZL7B%20-%20E-LZXCZLG%20CZLF%20-AZGL%20FZLGZLC%20FZL-AyQZ%5BECA*%5B%20%20FZLG7LZE-ZL-AZL-E%20CA*%5B%20%20G-DZL7A%20-EZL7B%20F%20CLZB%20-EZGLZA-%20FLZC%20GLZCXyQZF%20GLZA-%20FLZC%20GLZC%20%20U%20Z%20%3DPop-Rock%2012%2F8%3D66%3D1
+@@The melody is based on "Plaisir d'amour"( "The pleasure of love";1784), a popular romance by Jean-Paul-Égide Martini (1741–1816)

@@ -1,0 +1,76 @@
+TITLE:Dream,DUR:148,BPM:105,BEATS:4,KEY:C,QUAL:Complete,ARTIST:The Everly Brothers,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+$$TCL1 <X14>PR 1</X14> <X14>C M2</X14> <X1>(V3)</X1> <X16>H ON</X16>
+$$STRT_oooXo 8 5 10
+$$RP55_3 or 4
+#INTRO ----------------------------------
+|NC             |C      ~Am      |F      ~G
+Dre..................am  dream   dream   dream
+|C         ~Am         |F          ~G
+Dre..................am   dream   dream   dream<!--#H OFF#-->
+#VERSE 1 --------------------------------
+|C         ~Am         |F          ~G
+When   I want   you          in my       arms
+|C         ~Am         |F          ~G
+When   I want you       and all you      charms
+|C         ~Am         |F          ~G
+When   ever I want you      all I have to   do is
+|C         ~Am         |F          ~G
+Dre..............am         dream   dream   dream<!--#H ON#-->
+#VERSE 2 --------------------------------
+|C         ~Am         |F          ~G
+When   I feel   blue         in the       night
+|C         ~Am         |F          ~G
+When   I need   you         to hold me   tight
+|C         ~Am         |F          ~G
+When   ever I   want you   all I have to   do is
+|C          ~F          |C         ~C7
+Dre.....................am
+#BRIDGE ---------------------------------
+|F                     |Em
+I can make you mine   taste your lips of wine
+|Dm                    |C
+Anytime   night or   day
+|F                     |Em
+The   only trouble is   gee      wiz
+|D7                    |G
+I'm   dreamin' my life   away.
+#CHORUS 1 -------------------------------
+|C         ~Am         |F         ~G7
+I need you   so    that I could   die
+|C         ~Am         |F         ~G7
+I    love you    so    and that is   why
+|C         ~Am         |F         ~G7
+When   ever I   want you   all I have to   do is
+|C         ~Am         |F         ~G7
+Dre...........am           dream   dream   dream
+|C         ~Am         |F         ~G7
+Dre..................am
+#BRIDGE ---------------------------------
+|F                     |Em
+I can make you mine   taste your lips of wine
+|Dm                    |C
+Anytime   night or   day
+|F                     |Em
+The   only trouble is   gee      wiz
+|D                     |G
+I'm   dreamin' my life   away.
+#CHORUS 2 -------------------------------
+|C         ~Am         |F         ~G7
+I need you   so    that I could   die
+|C         ~Am         |F         ~G7
+I    love you    so    and that is   why
+|C         ~Am         |F         ~G7
+When   ever I   want you   all I have to   do is.
+|C         ~Am         |F         ~G7
+Dre..................am   dream   dream   dream
+#OUTRO ----------------------------------
+|C         ~Am         |F         ~G7
+Dre..................am   dream   dream   dream
+|C         ~Am         |F         ~G7
+Dre..................am   dream   dream   dream
+|C         ~Am         |F         ~G7
+Dre..................am   dream   dream   dream
+|C         ~Am         |F         ~G7
+Dre..................am   dream   dream   dream
+|C                     |%
+-(hold chord)

@@ -1,0 +1,61 @@
+TITLE:Walk Right Back,DUR:150,BPM:140,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Everly Brothers,GENRE:Country,STYLE:Up Tempo,HITyear:19
+$$TCL1 <X14>PR 1</X14> <X14>C M2</X14> <X1>(V3)</X1> <X16>H OFF</X16>
+$$STRT ooXoo 8 5 10
+$$RP55 3 or 4
+#INTRO ----------------------------------
+|N                                 |N
+-
+|C      ~C6      |Em      ~Am      |C      ~C6      |Em      ~Am
+-
+#VERSE 1 --------------------------------
+|C               |%               |%               |%
+I want you to tell me why you walked out on me
+|C               |%               |G               |%
+I’m so lonesome every day
+|G               |%               |%               |%
+I want you to know that since you walked out on me
+|G               |%               |C               |%
+Nothing seems to be the same old way
+|C               |%               |%               |%
+Think about the love that burns within my heart for you
+|C               |%               |F      ~A7      |Dm
+The good times we had before you went away,oh me<!--#H ON#-->
+#CHORUS 1 -------------------------------
+|Dm              |%               |C               |%
+Walk right back to me this minute Bring your love to me, don’t send it
+|G                               |%
+I’m so lonesome every day
+|C      ~C6      |Em      ~Am      |C      ~C6      |Em      ~Am
+-
+#VERSE 2 --------------------------------
+|C               |%               |%               |%
+I want you to tell me why you walked out on me
+|C               |%               |G               |%
+I’m so lonesome every day
+|G               |%               |%               |%
+I want you to know that since you walked out on me
+|G               |%               |C               |%
+Nothing seems to be the same old way
+|C               |%               |%               |%
+Think about the love that burns within my heart for you
+|C               |%               |F      ~A7      |Dm
+The good times we had before you went away, oh   me
+#CHORUS 2 -------------------------------
+|Dm              |%               |C               |%
+Walk right back to me this minute Bring your love to me, don’t send it
+|G               |%               |C      ~C6      |Em      ~Am
+I’m so lonesome every day
+-
+#OUTRO ----------------------------------
+|G               |%               |C      ~C6      |Em      ~Am
+I’m so lonesome every day
+|G               |%               |C      ~C6      |Em      ~Am
+I’m so lonesome every day
+|C      ~C6      |Em      ~Am     |C      ~C6      |Em      ~Am
+-
+|C               |%               |%               |%
+(hold one bar)
+https://www.youtube.com/watch?v=r6oLw5gpO44|Original Hit Record
+https://www.youtube.com/watch?v=4OwRp49x-FI|Everly Brothers 1983 Reunion Live
+https://www.youtube.com/watch?v=XRfihobFClY|Karaoke Harmony
+https://www.youtube.com/watch?v=heRvBDxvnvs|Guitar Intro

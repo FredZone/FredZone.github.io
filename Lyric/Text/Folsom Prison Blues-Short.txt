@@ -1,0 +1,46 @@
+TITLE:Folsom Prison Blues-Short,DUR:92,BPM:195,BEATS:4,KEY:E,QUAL:,ARTIST:Johnny Cash,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+@   Chords Pat
+#INTRO ----------------------------------
+|B7 ~NC ~  ~  |%  ~   ~   ~ |%  ~   ~   ~ |E  ~   ~    ~  |%  ~   ~   ~
+-   ^ (walk up starts on beat 2)
+#VERSE 1 --------------------------------
+|E                 |%           |%                  |%
+I hear the train a comin' It's rollin' 'round the bend
+|E                 |%           |%                  |E7
+And I ain't seen the sunshine   Since, I don't know when
+|A                 |%           |%                  |%
+I'm stuck in Folsom Prison           And time keeps  draggin'
+|E                 |%           |%                  |%
+on                                                   But that
+|B7                |%           |%                  |%
+train      keeps     a-rollin'              On down to San 
+|E                 |%          
+Antone 
+#CHORUS 1 -------------------------------
+|E             |%           |%             |%
+-
+|E             |%           |%             |E7
+-
+|A             |%           |%             |%
+-
+|E             |%           |%             |%  ~  ~  ~  
+-                                             ^ walk starts
+|B7            |%           |%             |%
+-                      
+|E             |%           
+-                                   Well,   if they
+#VERSE 2 --------------------------------
+|E                 |%           |%                  |%
+freed me from this prison If that railroad train was mine
+|E                 |%           |%                  |E7
+I bet I'd move it  on a  little Farther down the     line
+|A                 |%           |%                  |%
+Far from Folsom     Prison               That's where I want to
+|E                 |%           |%                  |%
+stay                                                 And
+|B7                |%           |%                  |%
+I'd let that lonesome whistle       Blow my         blues
+|E                 |%  ~   ~  ~ |B7                |%                 
+away                   ^ outro run
+|E                 |%
+irealb://Folsom%20Prison%20Blues%3DCash%20Johnny%3D%3DCountry%20195%3DE%3D%3D1r34LbKcu7ZL%20x%20%2Cnpp%7CKQyXx%7CQyXE44TU%20%7B%20xZL%20EZL%20nZL%20ncl%20LZ7Bi*%5BL%20lcKxXyQ%7CL%20x%20ZL%20lcKQyXxQ%7CyXA%7CQyX7E%7CQyXEZEXyQ%7CQyXEXQyX%7DZ%20x%20L%20lcKQyXEZL%20x%20Z%20Lx%20ZL%20lcKQyX7BZ%3C6x%3E%20L%20x%20ZyQ%20%20%5B*BB7%2CXyQ%7CxXyQ%7CxXyQ%7CEXyQ%5D%20%3DPop-Country%3D195%3D1

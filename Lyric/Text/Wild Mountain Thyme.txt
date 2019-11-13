@@ -1,0 +1,43 @@
+TITLE:Wild Mountain Thyme,DUR:235,BPM:160,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown
+#VERSE 1 --------------------------------
+      |D     ~G     |D
+Oh the summertime is coming
+       |G        ~G/F#    |D
+And the trees are sweetly blooming
+       |G   ~F#m     |Em
+And the wild mountain thyme
+      |G        ~G/F#    |Em
+Grows around the blooming heather
+       |D  ~G     |D
+Will ye go, Lassie go
+#CHORUS 1 -------------------------------
+         |G ~G/F#|D
+And we'll all go together
+        |G   ~F#m     |Em
+To pluck wild mountain thyme
+   |G         ~G/F#    |Em
+All around the blooming heather
+       |D  ~G     |D
+Will ye go, Lassie go
+#VERSE 2 --------------------------------
+      |D     ~G     |D
+I will build my love a tower
+       |G        ~G/F#    |D
+Near yon' pure crystal fountain
+       |G   ~F#m     |Em
+And on it I will build
+      |G        ~G/F#    |Em
+All the flowers of the mountain
+       |D  ~G     |D
+Will ye go, Lassie go
+#VERSE 3 --------------------------------
+      |D     ~G     |D
+If my true love she were gone
+       |G        ~G/F#    |D
+I would surely find another
+       |G   ~F#m     |Em
+Where wild mountain thyme
+      |G        ~G/F#    |Em
+Grows around the blooming heather
+       |D  ~G     |D
+Will ye go, Lassie go

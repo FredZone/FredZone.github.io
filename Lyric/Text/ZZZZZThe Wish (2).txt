@@ -1,0 +1,101 @@
+TITLE:The Wish,DUR:374,BPM:130,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+
+
+|Dm                 |Dm                 |Dm                 
+|F             |F             |C             |C             
+|GmGm7              |Dm                 |Dm7                
+|F             |F             |C             |C      ~C      
+|Gm7       ~Dm       |Gm7                |Dm                 
+|Dm        ~C        |F        ~F        |                   
+|Bb         |F          |C7         |F          |           
+
+|Bb         |F          |C          |C          |           
+
+|Bb         |F          |Dm7   ~C9   |Bb         |           
+
+|Bb         |Dm         |C          |Bb         |           
+
+|C          |Dm         |Dm         |Dm7        |           
+|Dm   ~Em7   |F          |F          |C          |           
+|C          |Gm7        |Gm7        |Dm         |           
+|Dm         |F          |F          |C          |           
+|C          |G          |Gm7        |Dm         |           
+|Dm         |F          |Bb         |F          |           
+|F    ~C9    |C7sus  ~F  |Bb         |F          |           
+|Csus   ~C   |C    ~C    |Bb         |Bb    ~F    |           
+|Dm         |Csus  ~Bb  |F    ~Bb    |Dm         |           
+|Dm    ~C    |Csus  ~Bb  |Bb    ~C    |Csus  ~Dm  |           
+|Asus   ~D   |Dm         |F  ~E7sus  |F    ~C    |           
+|Gsus   ~C   |Gm         |Bb   ~Gm7   |Gm9        |           
+|F   ~Dm7   |C    ~F    |F          |F2    ~C    |           
+|C          |Gm         |Gm         |Dm         |           
+|Dm9        |F    ~Dm    |Em    ~F    |F    ~Bb    |           
+|Bb         |F          |C7sus  ~F  |F    ~Bb    |           
+|Bb    ~F    |F    ~C    |C    ~C    |Bb         |           
+|Bb         |F          |Csus  ~Bb  |Bb   ~Bb   |           
+|Bb   ~Dm   |Dm    ~C    |F          |C          |           
+|C    ~Dm    |F    ~Dm    |Asus   ~D   |Am   ~Dm   |           
+|F    ~Dm    |Asus  ~Dm  |Asus  ~Dm  |F    ~D    |           
+|Dm         |F   ~Dm7   |F    ~Dm    |Asus       |           
+|Am   ~D7   |F   ~Dm7   |F   ~Dm7   |F    ~Dm    |           
+|F          |F    ~Dm    |Asus  ~Dm  |A   ~Dsus   |           
+|A          |E          |E          |E          |           
+
+
+
+#INTRO ----------------------------------
+|N          |N          |Dm         |Dm         |Dm         
+#VERSE 1 --------------------------------
+|F          |F          |C          |C          |           
+I was with the 42nd back in 1943,
+|Gm            |Gm7           |Dm            |Dm7           
+I've fought for freedom on the shores of every sea,
+|F             |F             |C             |C      ~C      
+But nowadays it's different all I feel is shame,
+|Gm7             |Gm7                |Dm       |Dm               
+People dying everyday and I'm the one they blame
+|Dm        ~C        |F        ~F        
+-
+#CHORUS 1 -------------------------------
+|Bb            |F             |C7            |F             
+I wish I was a swingset in some little kid's backyard,
+|Bb            |F             |C             |C             
+A tractor in a field or a bumper on a car,
+|Bb            |F             |Dm7    ~C9    |Bb            
+I wish I was something that couldn't hurt no one,
+|Dm            |C             |Bb            |Bb            
+Of all the things I could have been, I had to be a gun
+#VERSE 2 --------------------------------
+|F          |F          |C          |C          |           
+They hide me in their lockers in the high school halls,
+|Gm            |Gm7           |Dm            |Dm7           
+I hand out on the corners I've broken every law,
+|F             |F             |C             |C      ~C      
+I've laid there in the court rooms tagged exhibit B,
+|Gm7       ~Dm       |Gm7                |Dm                 
+Watched them go away in chains while I go back to the streets
+|Dm        ~C        |F        ~F        
+-
+#CHORUS 2 -------------------------------
+|Bb            |F             |C7            |F             
+I wish I was a swingset in some little kid's backyard,
+|Bb            |F             |C             |C             
+A tractor in a field or a bumper on a car,
+|Bb            |F             |Dm7    ~C9    |Bb            
+I wish I was something that couldn't hurt no one,
+|Dm            |C             |Bb            |Bb            
+Of all the things I could have been, I had to be a gun
+-
+#BREAK 1 --------------------------------
+Underneath a sweater hidden on a closet shelf,
+His tiny hands reached for me but I couldn't scream for help
+#CHORUS 3 -------------------------------
+|Bb            |F             |C7            |F             
+I wish I was a swingset in some little kid's backyard,
+|Bb            |F             |C             |C             
+A tractor in a field or a bumper on a car,
+|Bb            |F             |Dm7    ~C9    |Bb            
+I wish I was something that couldn't hurt no one,
+|Dm            |C             |Bb            |Bb            
+Of all the things I could have been, I had to be a gun
+-

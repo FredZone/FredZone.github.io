@@ -1,0 +1,97 @@
+TITLE:You Were On My Mind,DUR:145,BPM:145,BEATS:4,KEY:E,QUAL:Inwork,ARTIST:We Five,GENRE:Folk,STYLE:Up Tempo,HITyear:1965
+#INTRO ----------------------------------
+|E                     |A
+-
+|E                     |A
+-
+|E                     |A
+-
+|E                     |%
+When I woke up this
+#VERSE 1 --------------------------------
+|E                    |A          ~B7
+morning                  You were on my
+|E                    |A          ~B7
+mind                          And
+|A                    |Abm
+you were              on      my
+|F#m                  |B7
+mind                      I got
+|E                    |A
+troubles,    whoa-oh      I got
+|E                    |A
+worries, whoa-oh          I got
+|E                    |C#m
+wounds               to bind
+|A                    |B7
+-                       So I went to the
+#VERSE 2 --------------------------------
+|E                    |A          ~B7
+corner                 Just to ease my
+|E                    |A          ~B7
+pains                   Yeah,
+|A                    |Abm
+just    to          ease      my
+|F#m                  |B7
+pains                        I got
+|E                    |A
+troubles, whoa-oh            I got
+|E                    |A
+worries, whoa-oh
+|E                    |C#m
+I      came         home    again
+|A                    |B7
+                       When I woke up this
+#VERSE 3 --------------------------------
+|E                    |A          ~B7
+morning                  You were on my
+|E                    |A          ~B7
+you were              on      my
+|A                    |Abm
+mind                          And
+|F#m                  |B7
+mind                      I got
+|E                    |A
+troubles,    whoa-oh      I got
+|E                    |A
+worries, whoa-oh          I got
+|E                    |C#m
+wounds               to bind
+|A                    |B7
+-                      And I got a 
+*modulate down 4 steps
+#CHORUS 1 -------------------------------
+|C                    |F          ~G7
+feelin'          Down in my 
+|C                    |F          ~G7
+sho-oo-oo-oes,       said
+|F                    |Em
+Way     down    in my 
+|Dm                   |G7
+sho-oo-oes            Yeah, I got to 
+|C                    |F
+ramble,   whoa-oh     I got to 
+|C                    |F
+move on, whoa-oh    I     got     to 
+|C                    |Am
+walk      away     my    
+|F                    |G7
+blues     When I woke up this
+#CHORUS 2 -------------------------------
+|C                    |F          ~G7
+morning                  You were on my
+|C                    |F          ~G7
+mind                          And
+|F                    |Em
+you were              on      my
+|Dm                   |G7
+mind                      I got
+|C                    |F
+troubles,    whoa-oh      I got
+|C                    |F
+worries, whoa-oh          I got
+|C                    |Am
+wounds               to bind
+|F                    |G7
+-
+https://www.youtube.com/watch?v=E9lMm5adkEo|Karaoke (E) No Lyrics

@@ -1,0 +1,36 @@
+TITLE:Theme For An Imaginary Western,DUR:,BPM:70,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Jack Bruce,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#INTRO ----------------------------------
+|C      ~C/B       |Am            |C      ~C/B        |Am            
+#VERSE 1 --------------------------------
+|C      ~C/B       |Am            |D       ~D/C       |Bb
+When the wagons leave the city for the forest, and further on
+|C      ~C/B       |Am            |D                  |F
+Painted wagons of the morning dusty roads where they have gone
+|C      ~C/B       |Am            |D       ~D/C       |Bb
+Sometimes traveling through the darkness met the summer coming home
+|C      ~C/B       |Am  ~Am/G     |F       ~D         |C    ~C/B
+Fallen faces by the wayside, looked as if they might have known
+#CHORUS 1 -------------------------------
+|Am                |Em             |Am                |Em
+Oh the sun was in their eyes,  and the desert that dries
+|F       ~C        |Am      ~D     |D                 |F
+In the country town, where the laughter sounds
+#VERSE 2 --------------------------------
+|C      ~C/B       |Am            |D       ~D/C       |Bb
+Oh the dancing and the singing, Oh the music when they played
+|C      ~C/B       |Am            |D                  |F
+Oh the fires that they started, Oh the girls with no regret
+|C      ~C/B       |Am            |D       ~D/C       |Bb
+Sometimes they found it, sometimes they kept it Often lost it along the way
+|C      ~C/B       |Am  ~Am/G     |F       ~D         |C    ~C/B
+Fought each other to possess it, sometimes died in sight of day
+#CHORUS 2 -------------------------------
+|Am                |Em             |Am                |Em
+Oh the sun was in their eyes,  and the desert that dries
+|F       ~C        |Am      ~D     |D                 |F
+In the country town, where the laughter sounds
+#OUTRO ----------------------------------
+@Leslie West lead, follows verse pattern ending :
+|C      ~C/B       |Am  ~Am/G     |F       ~D         |Am
+https://www.youtube.com/watch?v=GNOzw8ufhxE|Mountain at Woodstock
+https://www.youtube.com/watch?v=eszCRHkI9zA|Jack Bruce on the Piano

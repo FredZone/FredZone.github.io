@@ -1,0 +1,58 @@
+TITLE:Bad Bad Leroy Brown,DUR:155,BPM:145,BEATS:4,KEY:G,QUAL:Raw,ARTIST:Jim Croce,GENRE:Rock,STYLE:Up Tempo,HITyear:1970
+#INTRO ----------------------------------
+|G                  |%                 |D7                  |%
+#VERSE 1 --------------------------------
+|G                  |%                  |A7                 |%
+Well, the south side of Chicago Is the baddest part of town.
+|B7                 |C                  |D7        ~C       |G        ~D7
+And if you go down there You better just beware of a man name of Leroy Brown.
+|G                  |%                  |A7                 |%
+Now, Leroy more than trouble, You see he stand about 'bout six foot four.
+|B7                 |C                  |D7        ~C       |G        ~D7
+All the downtown ladies call him "treetop lover."All the men just call him "sir."
+#CHORUS 1 -------------------------------
+|G                  |%                  |A7                 |%
+And he's bad, bad, Leroy Brown,The baddest man in the whole damn town.
+|B7                 |C                  |D7        ~C       |G        ~D7
+Badder than old King Kong And meaner than a junkyard dog.
+#VERSE 2 --------------------------------
+|G                  |%                  |A7                 |%
+Now, Leroy, he a gambler,and he like his fancy clothes.
+|B7                 |C                  |D7        ~C       |G        ~D7
+And he like to wave diamond ring sin front of everybody's nose
+|G                  |%                  |A7                 |%
+He got a custom Continental. He got an Eldorado too.
+|B7                 |C                  |D7        ~C       |G        ~D7
+He got a thirty-two gun in his pocket for fun.He got a razor in his shoe.
+#CHORUS 2 -------------------------------
+|G                  |%                  |A7                 |%
+And he's bad, bad, Leroy Brown,The baddest man in the whole damn town.
+|B7                 |C                  |D7        ~C       |G        ~D7
+Badder than old King Kong And meaner than a junkyard dog.
+#VERSE 3 --------------------------------
+|G                  |%                  |A7                 |%
+Well, Friday 'bout a week ago,Leroy's shootin' dice.
+|B7                 |C                  |D7        ~C       |G        ~D7
+And at the edge of the bar sat a girl name of Doris and oh, that girl look nice
+|G                  |%                  |A7                 |%
+Well, he cast his eyes upon her and the trouble soon began.
+|B7                 |C                  |D7        ~C       |G        ~D7
+And Leroy Brown, he learned a lesson 'bout messin'with the wife of a jealous man
+#CHORUS 3 -------------------------------
+|G                  |%                  |A7                 |%
+And he's bad, bad, Leroy Brown,The baddest man in the whole damn town.
+|B7                 |C                  |D7        ~C       |G        ~D7
+Badder than old King Kong And meaner than a junkyard dog.
+#INTERLUDE ------------------------------
+|G                  |%                  |A7                 |%
+Well, the two men took to fightin'And when they pulled them from the floor,
+|B7                 |C                  |D7        ~C       |G        ~D7
+Leroy looked like a jigsaw puzzle with a couple of pieces gone.
+#INTERLUDE ------------------------------
+|G                  |%                  |A7                 |%
+And he's bad, bad, Leroy Brown,The baddest man in the whole damn town.
+|B7                 |C                  |D7        ~C       |G
+Badder than old King Kong And meaner than a junkyard dog.
+#OUTRO ----------------------------------
+|B7                 |C                  |D7        ~C       |G
+Badder than old King Kong And meaner than a junkyard dog.

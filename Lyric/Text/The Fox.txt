@@ -1,0 +1,91 @@
+TITLE:The Fox,DUR:180,BPM:120,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:TBD
+#VERSE 1 --------------------------------
+|G                                |%
+The fox went out on a chilly night
+|%                                |D
+He prayed for the moon to give him light
+|G                                |C
+For he'd many a mile to go that night
+|G               ~D               |G
+Before he reached the town-o,
+|D                                |G
+town-o, town-o
+|C                                |G
+He'd many a mile to go that night,
+|D                                |G
+before he reached the town-o
+#VERSE 2 --------------------------------
+|G                                |%
+He ran til he came to the farmer's pen
+|%                                |D
+The ducks and the geese were kept therein
+|G                                |C
+He said, ãa couple of you are gonna grease my chin,
+|G               ~D               |G
+Before I leave this town-o,
+|D                                |G
+town-o, town-oä
+|C                                |G
+Said a couple of you are gonna grease my chin
+|D                                |G
+before I leave this town-o
+#VERSE 3 --------------------------------
+|G                                |%
+He grabbed the great goose by the neck
+|%                                |D
+And he threw a duck across his back
+|G                                |C
+And he didn't mind the quack, quack
+|G               ~D               |G
+And the legs all dangling
+|D                                |G
+down-o, down-o, down-o
+|C                                |G
+He didn't mind the quack, quack and the
+|D                                |G
+legs all dangling down-o
+#VERSE 4 --------------------------------
+|G                                |%
+The old grey woman jumped out of bed
+|%                                |D
+Out of the window she popped her head,
+|G                                |C
+Crying John, John, the great goose is gone
+|G               ~D               |G
+And the fox is on the town-o,
+|D                                |G
+town-o, town-o
+|C                                |G
+John, John, the great goose is gone and
+|D                                |G
+the fox is on the town-o
+#VERSE 5 --------------------------------
+|G                                |%
+He ran til he came to his nice warm den
+|%                                |D
+And there were the little ones, eight, nine, ten
+|G                                |C
+Sayin Daddy, Daddy, better go back again
+|G               ~D               |G
+For it must be a might fine town-o,
+|D                                |G
+town-o, town-o
+|C                                |G
+Daddy, Daddy, go back again for it
+|D                                |G
+must be mighty fine town-o
+#VERSE 6 --------------------------------
+|G                                |%
+The fox and his wife, without any strife
+|%                                |D
+Cut up the goose with a fork and a knife
+|G                                |C
+They never had such a supper in their life
+|G               ~D               |G
+And the little ones chewed on the bones-o,
+|D                                |G
+bones-o, bones-o
+|C                                |G
+They never had such a supper in their life
+|D                                |G
+And the little ones chewed on the bones

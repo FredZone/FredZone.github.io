@@ -1,0 +1,61 @@
+TITLE:The Nightlife,DUR:180,BPM:120,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:TBD
+#INTRO ----------------------------------
+|C           |%           |C7          |%           
+-            
+|F           |%           |Fm          |%           
+-           
+|C           |Am          |Dm7         |G           
+-        
+|C           |Am          |Dm7         |G           
+#VERSE 1 --------------------------------
+|C           |%           |C7          |%           
+When the evening sun goes down,
+|F           |%           |Fm          
+you're gonna find me hangin round
+|C           |Am          |F           |G           
+the night life, ain't no good life
+|C           |Am          |Dm7         |G           
+But it's my life
+#VERSE 2 --------------------------------
+|C           |%           |C7          |%           
+Many people , just like me
+|F           |%           |Fm          
+Dreamin of, old use to be's
+|C           |Am          |F           |G           
+night life, ain't no good life
+|C           |Am          |Dm7         |G           
+But it's my life
+#BRIDGE ---------------------------------
+|C           |            |            |            
+         
+Well now, listen to the blues their playin
+|C           |            |            |  
+Well now, listen to the blues their playin
+|F           |C           |G           |C           
+Listen to what the blues are sayin
+ 
+#VERSE 3 --------------------------------
+|C           |%           |C7          |%           
+Mine is just another scene
+|F           |%           |Fm          
+from the world of broken dreams
+|C           |Am          |F           |G           
+and the night life, ain't no good life
+|C           |Am          |Dm7         |G           
+But it's my life
+#BREAK 3 --------------------------------
+|C           |            |            |            
+Well now, listen to the blues their playin
+|F           |C           |G           |C           
+Listen to what the blues are sayin
+ 
+#VERSE 4 --------------------------------
+|C           |%           |C7          |%           
+Mine is just another scene
+|F           |%           |Fm          
+from the world of broken dreams
+|C           |Am          |F           |G           
+and the night life, ain't no good life
+|C           |Am          |Dm7         |G           
+But it's my life
+#OUTRO ----------------------------------

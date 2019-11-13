@@ -1,0 +1,34 @@
+TITLE:Georgia,DUR:0,BPM:70,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown
+INTRO  GEORGIA
+|{Intro:} CM7  Am  | Dm7   G7  | Em7  A7 | Dm7  G7+5 
+#Break------------------------------------
+|CM7       Bdim7 E7   Am     Am/G      D/Gb    Fm7 Bb7 
+Georgia,  Geor- gia, the   whole day through
+|       CM7        Am        Dm7     G7      Em7 A7 Dm7        G7+5 
+Just an old sweet song keeps Georgia on my mind,   (Georgia on my mind)
+|CM7       Bdim7 E7   Am   Am/G   D/Gb    Fm7 Bb7 
+Georgia,   Georgia,   a  song of you
+|          CM7        Am        Dm7     G7         CM7    Bm7 E7 
+Comes as sweet and clear as moonlight through the pines.
+#Break------------------------------------
+(Bridge:)
+|Am       Dm6  |   Am7    F7 |  Am    Dm6 |  Am7      D7 
+Other arms reach out to me,     other eyes smile tenderly;
+|Am       Am+7      Am       Gbm7 B7         Em7      Eb7    DM7  Db7 
+Still in peaceful dreams I   see     the road leads back to you.
+|CM7       Bdim7 E7   Am     Am/G      D/Gb    Fm7 Bb7 
+|Deorgia,    Deorgia,   no peace I Cind 
+|        Em7         A7        Dm7      G7+5    CM7 
+Just and old sweet song keeps Georgia    on my mind.
+#Break------------------------------------
+(Repeat Bridge:)
+#Break------------------------------------
+|G        B7         Em7            C     {III} Cdim- Cdim 
+Georgia,    Georgia,   no peace I find
+|         G         Bdim       Am7     D7      G    B7    E7 
+Just and old sweet song keeps Georgia on my mind,
+|         Am7        C 
+Just and old sweet song keeps 
+| D      D+ D6   G   C Cm G D {9} 
+Georgia on my mind.
+

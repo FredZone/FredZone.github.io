@@ -1,0 +1,28 @@
+TITLE:Twinkle Twinkle,DUR:25,BPM:180,BEATS:4,KEY:G,QUAL:Raw,ARTIST:Unknown
+@No intro jump right in
+|G                    |G
+Twinkle        Twinkle  Little         Star
+|C                    |G
+How I   Wonder       What    you    are
+|G                    |G
+Up    above   the     world so high
+|A                    |D
+Like  a   diamond    in the sky
+|G                    |G
+Twinkle        Twinkle  Little         Star
+|C                    |G
+How I   Wonder       What    you    are
+|G                    |G
+Twinkle        Twinkle  Little         Star
+|D                    |G
+How I   Wonder       What    you    are
+https://www.youtube.com/watch?v=Sae8ZGwFqko|STUPID LINK
+http://en.wikipedia.org/wiki/Twinkle,_Twinkle,_Little_Star|WIKI Link
+irealb://Twinkle%20Twinkle%3DTraditional%3D%3DFiddle%20Tune%3DG%3D%3D1r34LbKcu7B*%5BY%5D2GXyQQyXA%7CQyXG%7CQyXGQ%7CyXG%7CQyXC%7CQyXG%7C%7CDXyQ2TA*%5BGXyQ%7CGXyQ%7CCXyQ%7CGXyQ%7CGXyQ%7CGXyQ%7CDXyQ%7CGXyQZ%20%3DPop-Country%3D180%3D1
+@@popular English lullaby. The lyrics are from an early 19th-century English poem by Jane Taylor, "The Star".
+@@The poem, which is in couplet form, was first published in 1806 in Rhymes for the Nursery, a collection of poems by Taylor and her sister Ann.
+@@It is sung to the tune of the French melody Ah! vous dirai-je, maman, which was published in 1761 and later arranged by several composers including Mozart with Twelve Variations on "Ah vous dirai-je, Maman".
+@@The English lyrics have six stanzas, although only the first is widely known
+@@@This is meant for testing the system
+@@@It's a 2 count quick version to evaluate the performance of the player
+@@@THE Longest Line is 45 characters

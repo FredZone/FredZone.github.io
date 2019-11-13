@@ -1,0 +1,79 @@
+TITLE:Cats In The Cradle,DUR:115,BPM:150,BEATS:4,KEY:D,QUAL:Raw,ARTIST:Harry Chapin,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#VERSE 1 --------------------------------
+|D                         |F
+My child arrived just the other day
+|G                         |D
+He came into the world in the usual way
+|D                         |F
+But there were planes to catch and bills to pay
+|G                         |D
+He learned to walk while I was away
+|C                         |%
+And he was talking 'fore I knew it and as he grew He said
+|F           ~Am           |D
+"I'm gonna be like you, dad.
+|F           ~Am           |D
+You know I'm gonna be like you."
+#CHORUS 1 -------------------------------
+|D                         |C
+And the cats in the cradle and the silver spoon
+|F                         |G
+Little boy blue and the man in the moon
+|D                         |C
+When ya comin' home, dad Son I don’t know when
+|F           ~Am           |D
+But we'll get together then
+|F           ~Am           |D
+you know we'll have a good time then.
+#VERSE 2 --------------------------------
+|D                         |F
+My son turned ten, just the other day
+|G                         |D
+He said, "Thanks for the ball, dad. Come on, lets play.
+|D                         |F
+Can you teach me to throw" I said "Not today
+|G                         |D
+I've got a lot to do." He said, "That's okay."
+|C                         |%
+And he walked away but his smile never dimmed
+|F           ~Am           |D
+It said, "I'm gonna be like him, yeah.
+|F           ~Am           |D
+You know I'm gonna be like him."
+#VERSE 3 --------------------------------
+|D                         |F
+He came from college, just the other day,
+|G                         |D
+So much like a man, I just had to say,
+|D                         |F
+"Son, I'm proud of you. Can you sit for a while"
+|G                         |D
+He shook his head and he said with a smile,
+|C                         |%
+"What I'd really like, dad, is to borrow the car keys.
+|F           ~Am           |D
+See you later. Can I have them please"
+|F           ~Am           |D
+-
+#VERSE 4 --------------------------------
+|D                         |F
+I've long since retired, my son's moved away.
+|G                         |D
+I called him up just the other day.
+|D                         |F
+I said, "I'd like to see you if you don't mind."
+|G                         |D
+He said, "I'd love to, dad, if I could find the time.
+|C                         |%
+You see, my new job's a hassle and the kid's got the flu,
+|F           ~Am           |D
+But it's sure nice talking to you, dad.
+|F           ~Am           |D
+It's been sure nice talking to you."
+#OUTRO ----------------------------------
+|C                         |Am
+And as I hung up the phone, it occurred to me,
+|F           ~Am           |D
+He'd grown up just like me.
+|F           ~Am           |D
+My boy was just like me.

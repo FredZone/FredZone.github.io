@@ -1,0 +1,59 @@
+TITLE:Spanish Eyes,DUR:104,BPM:120,BEATS:4,KEY:G,QUAL:Inwork,ARTIST:Willie Nelson,GENRE:Country,STYLE:Ballad,HITyear:Unknown
+#INTRO ----------------------------------
+|N                    |N                    
+-
+|G          |%          |G          |%          
+-
+#VERSE 1 --------------------------------
+|G          |%          |%          |%          
+Blue, Spanish Eyes
+|G7         |%          |D7         |%          
+Tear drops are falling from your Spanish Eyes
+|D7         |%          |%          |%          
+Please, please don't cry
+|G          |%          |%          |%          
+This is just adios and not good-bye.
+|G          |%          |%          |%          
+Soon, I'll return
+|G7         |%          |C          |%          
+Bringing you all the love your heart can hold.
+|Cm         |%          |G          |%          
+Please, say "Si, si",
+|D7         |%          |G          |%          
+Say you and your Spanish Eyes will wait for me.
+#INTERLUDE ------------------------------
+|G          |%          |%          |%          
+Soon, I'll return
+|G7         |%          |C          |%          
+Bringing you all the love your heart can hold.
+|Cm         |%          |G          |%          
+Please, say "Si, si",
+|D7         |%          |G          |%          
+Say you and your Spanish Eyes will wait for me.
+#VERSE 2 --------------------------------
+|G          |%          |%          |%          
+Blue Spanish Eyes,
+|G7         |%          |D7         |%          
+Prettiest eyes in all of Mex-i-co
+|D7         |%          |%          |%          
+True Spanish Eyes,
+|G          |%          |%          |%          
+Please smile for me once more before I go.
+|G          |%          |%          |%          
+Soon I'll return
+|G7         |%          |C          |%          
+Bringing you all the love your heart can hold
+|Cm         |%          |G          |%          
+Please say 'si si",
+|D7         |%          |G          |%          
+Say you and your Spanish Eyes will wait for me
+#OUTRO ----------------------------------
+|Cm         |%          |G          |%          
+Please say si si,
+|D7         |%          |G          |%          
+Say you and your Spanish Eyes will wait for me
+|G          |%          |G          |%          
+-
+|G          |%          |G          |%          
+-
+https://tabs-database.com/willie-nelson/Spanish-Eyes-chords.html#ixzz5titS3zlc

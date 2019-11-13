@@ -1,0 +1,37 @@
+TITLE:Blue Moon-Short,DUR:110,BPM:130,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+@Pat strums
+@Fred Noodles
+#INTRO ----------------------------------
+|C         |Am        |F         |G
+-
+|C         |Am        |F         |G
+-                                   |Blue
+#VERSE 1 --------------------------------
+|C         |Am        |F         |G
+moon,                   You saw me standing
+|C         |Am        |F         |G
+alone.                  Without a dream in my
+|C         |Am        |F         |G
+heart,                 Without a love of my
+|C         |Am        |F         |G
+own.                                |And then there
+#CHORUS 1 -------------------------------
+|F           |G         |C         |Am
+suddenly appeared  before me.        The only
+|F          |G         |C          |Am
+one my heart could ever hold.      I heard
+|F           |G         |C         |Am
+somebody whisper, please adore me.  And when I
+|F           |Dm        |G         |G7
+looked, the moon had turned to  gold.  Blue
+#VERSE 2 --------------------------------
+|C         |Am        |F         |G
+moon,                   You saw me standing
+|C         |Am        |F         |G
+alone.                  Without a dream in my
+|C         |Am        |F         |G
+heart,                 Without a love of my
+|C         |Am        |F         |G
+of my own                               |Blue
+|C
+Moon

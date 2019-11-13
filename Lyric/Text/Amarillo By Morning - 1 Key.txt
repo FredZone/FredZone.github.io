@@ -1,0 +1,51 @@
+TITLE:Amarillo By Morning - 1 Key,DUR:160,BPM:120,BEATS:4,KEY:C,QUAL:Verified,ARTIST:George Strait,GENRE:Country,STYLE:Ballad,HITyear:1983
+@1 . 2 . 3 . 4 . 
+@D   / u   u D u
+#INTRO ----------------------------------
+|C                |Em               |F                |G                
+-
+|C                |Em               |F                |G                
+-
+#VERSE 1 --------------------------------
+|C                |Em               |F                |C                
+Amarillo  by     mornin'      up from  San Antone
+|C                |Em               |F                |G                
+Everything that  I got is     just what I got on
+|G                |F                |G                |C       ~Em       
+                When that sun is high in that Texas sky
+                                         I'll be buckin at the county
+|F                |C                |Em               |F       ~G       
+fair          Amarillo by mornin' Amarillo I'll be
+|C                |Em               |F                |G                
+there
+#VERSE 2 --------------------------------
+|C                |Em               |F                |C                
+   They took my saddle in Houston, broke my leg in  Sante Fe
+|C                |Em               |F                |G                
+Lost my wife and a girlfriend somewhere along the way  But Ill be
+|F                |G                |C       ~Em       
+              looking for eight when they pull that gate 
+                                       and I hope that judge ain't
+|F                |C                |Em               |F       ~G       
+blind        Amarillo by mornin'    Amarillo's    on my
+|C                |Em               |F                |G                
+mind
+#VERSE 3 --------------------------------
+|C                |Em               |F                |C                
+Amarillo by mornin'   up from San Antone
+|C                |Em               |F                |G                
+ Everything that I got is just what I got on      I ain't 
+|F                |G                |C       ~Em       
+got a dime but what I got is mine I ain't rich but Lord I'm
+|F                |C                |Em               |F       ~G       
+free       Amarillo by mornin' Amarillo's where I'll
+|C                |Em               |F                |G                
+be . . .
+#OUTRO ----------------------------------
+|C                |Em               |F                |G                
+-
+|C                |Em               |F                |G                
+-
+@@Written by Terry Stafford (Suspicion) and Paul Fraser, and recorded by Stafford in 1973 Major 1983 hit for George Strait.
+https://www.youtube.com/watch?v=kX_9Go0Z8e4|live
+@@@Use a sweeping strum  d - s u - u d u

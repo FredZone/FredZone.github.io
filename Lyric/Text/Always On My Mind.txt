@@ -1,0 +1,86 @@
+TITLE:Always On My Mind,DUR:243,BPM:75,BEATS:4,KEY:D,QUAL:Complete,ARTIST:Willie Nelson,GENRE:Country,STYLE:Ballad,HITyear:Unknown
+$$TCL1 <X14>PR. 1</X14> <X14>D M2</X14> <X16>(V3)</X16> <X16>H OFF</X16>
+#INTRO ----------------------------------
+|N                    |N                    
+-
+|D                    |%                    
+-
+|D                    |A                    
+-instrumental
+|Bm         ~D         |G         ~A         
+-----
+#VERSE 1 --------------------------------
+|D                    |A                    
+Maybe I didn't love you
+|Bm         ~D         |G    ~    ~    ~A    
+Quite as often as I could have
+|D                    |A                    
+And maybe I didn't treat you
+|Bm         ~D         |E/G#                 
+Quite as good as I should have
+|G                    |D                    
+If I made you feel second best
+|G         ~D         |Em                   
+Girl, I'm sorry I was blind
+|A    ~    ~Bm    ~A7    |D   ~   ~Em   ~F#m   
+But you were always on my mind
+|G         ~A7         |D    ~    ~G    ~A    
+You were always on my mind <XX>H ON</XX>
+#VERSE 2 --------------------------------
+|D                    |A                    
+Maybe I didn't hold you
+|Bm         ~D         |G    ~    ~    ~A    
+All those lonely, lonely times
+|D                    |A                    
+And I guess I never told you
+|Bm         ~D         |E/G#                 
+I'm so happy that you're mine
+|G                    |D                    
+Little things I should have said and done
+|G         ~D         |Em                   
+I just never took the time
+|A    ~    ~Bm    ~A7    |D   ~   ~Em   ~F#m   
+You were always on my mind
+|G         ~A7         |D    ~    ~G    ~A    
+You were always on my mind
+#INTERLUDE ------------------------------
+|D         ~A         |Bm         ~D         
+Tell                      me
+|G         ~D         |Em    ~    ~G    ~A7    
+Tell me that your sweet love hasn't died
+|D         ~A         |Bm         ~D         
+Give me               
+|G         ~D         |Em                   
+Give me one more chance to keep you satisfied
+|D                    
+I'll keep you satisfied
+#VERSE 3 --------------------------------
+|D                    |A                    
+-
+|Bm         ~D         |G         ~A         
+-
+|D                    |A                    
+-
+|Bm         ~D         |E/G#                 
+-
+|G                    |D                    
+Little things I should have said and done
+|G         ~D         |Em                   
+I just never took the time
+|A    ~    ~Bm    ~A7    |D   ~   ~Em   ~F#m   
+You were always on my mind
+|G         ~A7         |D    ~    ~G    ~A    
+You were always on my mind
+#OUTRO ----------------------------------
+|A    ~    ~Bm    ~A7    |D   ~   ~Em   ~F#m   
+You were always on my mind
+|G         ~A7         |D    ~    ~G    ~A    
+You were always on my mind
+-
+|D                    |D                    
+-
+|D                    |D                    
+-
+https://www.youtube.com/watch?v=n6l0gLA0vHw|Karoke
+https://www.youtube.com/watch?v=R7f189Z0v0Y|Willie Live
+irealb://Always%20On%20My%20Mind%203%201%3DBrenda%20Lee%20(Christopher-James-Carson)%3D%3DRock%3DD%3D%3D1r34LbKcu7A%2CG%7C%2C4sDXyBZL%23C%2FAZLDA*%7B%5DyQXx%7CQyXx%7CQyXx%7CQ-%2CD%2FA4Ti*%7C%2C-B%20AA%2FC%23L%2C%23F%2FD%2CGZLDZLGZ5Lb7-%23G%7C%2CA%2FD%2C-BZ%7CE-%20%5BZLD%7C%2C%7C%2C%23C%2F%7CD%20E-%7B%20QyXQyXQyX%7D%2CAG%2C%20D%7C%2C7A%2CG%7C%2C-%23F%2C*BD%2CA%2C%23C%2FALDC*%7BA%2C%7CG%2C%2C7A%7C%2C-E2NZL%7D%2C7%2CAA%2FG%20-E1N%7C%2C%23F%2FD%7CD%20LZ%2FD%2C-BLDZLGLZB-%2C-%23G%7C%2CA%2FD%2C-BZL%23%2FCAZLD%7C%2CA%2CG%7C%2CA%2FD7b5LZ%23C%2FAZ2NZL%20F%23%2C%7CE%7C%2C7A%2CG%7C%2C-%23F%2C-ED%20%7C%2C%23C%2FA%2C-B%20A%7B%20-N1D%20%7D%2FD%2CGZD%2C%20G%2CA%2C%7CUD%20%3DPop-Rock%3D75%3D1

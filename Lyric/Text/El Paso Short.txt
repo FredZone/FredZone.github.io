@@ -1,0 +1,75 @@
+TITLE:El Paso Short,DUR:0,BPM:120,BEATS:3,KEY:D,QUAL:Raw,ARTIST:Marty Robbins,GENRE:Unknown,STYLE:Unknown,HITyear:1959
+#VERSE 1 --------------------------------
+|D         |%          |Em       |%
+Out in the West Texas town of El Paso
+|A7        |%          |%        |D7
+I fell in love with a Mexican girl.
+|%         |%
+-
+|Em        |%           |%        |%
+Nighttime would find me in Rose's Cantina,
+|A7        |%           |%        |D
+Music would play and Felina would whirl.
+|%         |%
+-
+#CHORUS 1 -------------------------------
+|G          |           |D          |G
+One night a wild young cowboy came in,
+|D         |D7
+Wild as the West Texas wind...
+D7
+Dashing and daring, a drink he was sharing,
+|D7                                 |G
+With wicked Felina, the girl that I love.
+|A7
+So in an - ger
+#VERSE 2 --------------------------------
+I challenged his right for the love of this maiden;
+Down went his hand for the gun that he wore.
+-
+My challenge was answered, in less than a heartbeat
+The handsome young stranger lay dead on the floor.
+-
+#VERSE 3 --------------------------------
+Just for a moment I stood there in silence,
+Shocked by the foul evil deed I had done.
+-
+Many thoughts raced through my mind as I stood there;
+I had but one chance and that was to run.
+-
+#CHORUS 2 -------------------------------
+I saddled up and away I did go,
+Riding alone in the dark...
+Maybe tomorrow a bullet may find me,
+Tonight nothing's worse than this pain in my heart.
+And as last here
+#VERSE 4 --------------------------------
+I am on the hill overlooking El Paso,
+I can see Rose's Cantina below.
+-
+My love is strong and it pushes me onward,
+Down off the hill to Felina I go.
+-
+#ODD VERSE --------------------------------
+Off to my right I see five mounted cowboys,
+Off to my left ride a dozen or more.
+-
+Shouting and shooting; I can't let them catch me,
+I've got to make it to Rose's back door.
+-
+I see the white puff of smoke from the rifle,
+I feel the bullet go deep in my chest.
+-
+#VERSE 5 --------------------------------
+From out of nowhere, Felina has found me,
+Kissing my cheek as she kneels by my side.
+-
+Cradled by two loving arms that I'll die for,
+One little kiss and Felina goodbye.
+-
+https://www.youtube.com/watch?v=mL6puxUeIqU|Live Marty Robbins GOO
+https://www.youtube.com/watch?v=F-Shs5vrJKk|Live German TV???
+https://www.youtube.com/watch?v=L92An_6Muf4|Short version
+@@I'd suggest playing A7 as (x02223). Alternate bass notes on beats one
+@@and four throughout the verses. You might want to try Dadd9 (xx0230)
+@@in place of the D in the first line of the chorus.

@@ -1,0 +1,39 @@
+TITLE:White Sport Coat,DUR:0,BPM:120,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Marty Robbins,GENRE:Country,STYLE:Ballad
+#INTRO ----------------------------------
+|C             |%          |%      |%
+#CHORUS 1 -------------------------------
+|C            |%          |Dm      |G7
+A white sport coat and a pink carnation
+|F            |G7         |C       |G7
+I'm all dressed up for the dance
+|C            |%          |F       |G7
+A white sport coat and a pink carnation
+|F            |G7         |C       |%
+I'm  all      alone in    romance
+#VERSE 1 --------------------------------
+|G7              |%               |C                 |%
+Once you told me long ago  To the prom with me you'd go
+|D7                      |%            |G7                       |%
+Now you've changed your mind it seems  Someone else will hold my dreams
+|C               |%              |F           |G7
+A   white  sport  coat and a     pink      carnation
+|F               |G7              |C          |%
+I'm   in    a   blue     blue    mood
+#CHORUS 2 -------------------------------
+|C            |%          |Dm      |G7
+A white sport coat and a pink carnation
+|F            |G7         |C       |G7
+I'm all dressed up for the dance
+|C            |%          |F       |G7
+A white sport coat and a pink carnation
+|F            |G7         |C       |%
+I'm all alone in romance
+#VERSE 2 --------------------------------
+|G7              |%               |C                 |%
+Once you told me long ago  To the prom with me you'd go
+|D7                      |%            |G7                       |%
+Now you've changed your mind it seems  Someone else will hold my dreams
+|C               |%              |F           |G7
+A   white  sport  coat and a     pink      carnation
+|F               |G7              |C          |%
+I'm   in    a   blue     blue    mood

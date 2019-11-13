@@ -1,0 +1,68 @@
+TITLE:Imagine,DUR:284,BPM:70,BEATS:4,KEY:C,QUAL:Raw,ARTIST:John Lennon,GENRE:Rock,STYLE:Ballad,HITyear:
+#INTRO ----------------------------------
+|C           ~Cmaj7       |F
+-
+|C           ~Cmaj7       |F
+-
+#VERSE 1 --------------------------------
+|C           ~Cmaj7       |F
+Imagine there's no    heaven
+|C           ~Cmaj7       |F
+It's easy if you   try
+|C           ~Cmaj7       |F
+No hell below us
+|C           ~Cmaj7       |F
+Above us only  sky
+#BREAK 1 --------------------------------
+|F           ~Am/E        |Dm7  ~F/C
+Imagine all the people
+|G           ~C/G         |G7
+Living for to - day a-hah
+#VERSE 2 --------------------------------
+|C           ~Cmaj7       |F
+Imagine there's no    countries
+|C           ~Cmaj7       |F
+It isn't hard to    do
+|C           ~Cmaj7       |F
+Nothing to kill or    die for
+|C           ~Cmaj7       |F
+And no religion   too
+#BREAK 2 --------------------------------
+|F           ~Am/E        |Dm7  ~F/C
+Imagine all the people
+|G           ~C/G         |G7
+Living life in  peace - you-hou-hou-ou-ou
+#CHORUS 1 -------------------------------
+|F        ~G          |C  ~Cmaj7 ~E ~E7
+You may say I'm a dreamer
+|F        ~G          |C  ~Cmaj7 ~E ~E7
+But I'm not the only one
+|F        ~G          |C  ~Cmaj7 ~E ~E7
+I hope some day you'll join us
+|F        ~G          |C
+And the world will be as one
+#VERSE 3 --------------------------------
+|C           ~Cmaj7       |F
+Imagine no pos - sessions
+|C           ~Cmaj7       |F
+I wonder if you   can
+|C           ~Cmaj7       |F
+No need for greed or    hunger
+|C           ~Cmaj7       |F
+A brotherhood of    man
+#BREAK 3 --------------------------------
+|F           ~Am/E        |Dm7  ~F/C
+Imagine all the people
+|G           ~C/G         |G7
+Sharing all the world - you-hou-hou-ou
+#CHORUS 2 -------------------------------
+|F        ~G          |C  ~Cmaj7 ~E ~E7
+You may say I'm a dreamer
+|F        ~G          |C  ~Cmaj7 ~E ~E7
+But I'm not the only one
+|F        ~G          |C  ~Cmaj7 ~E ~E7
+I hope some day you'll join us
+|F        ~G          |C
+And the world will live as one
+https://www.youtube.com/watch?v=wshbS_lz1dE|Karaoke
+https://www.youtube.com/watch?v=YkgkThdzX-8}|John Lennon and the Plastic Ono Band

@@ -1,0 +1,105 @@
+TITLE:From Four Until Late,DUR:188,BPM:120,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Robert Johnson,GENRE:Blues,STYLE:Ballad,HITyear:1937?
+#INTRO ----------------------------------
+|NC                        |NC                        
+(Count in 2 bars)
+|C      ~      ~F      ~      |Fm     ~Fm     ~C     ~     
+-
+|C     ~C7     ~F     ~Fm     |C     ~     ~G7     ~     
+-
+#BREAK 1 --------------------------------
+|C                         |F                         
+-
+|C                         |C7                        
+-
+|F                         |F                         
+-
+|C     ~     ~B     ~Bb     |A                         
+-
+|D                         |G7                        
+-
+|C     ~C7     ~F     ~Fm     |C     ~     ~G7     ~     
+-                                     From
+#VERSE 1 --------------------------------
+|C                         |F                         
+four until late I was wringing my hands and
+|C                         |C7                        
+crying
+|F                         |F                         
+From four until late I was wringing my hands and
+|C     ~     ~B     ~Bb     |A                         
+crying
+|D                         |G7                        
+I believe to my soul that your daddy's Gulfport
+|C     ~C7     ~F     ~Fm     |C     ~     ~G7     ~     
+bound
+#VERSE 2 --------------------------------
+|C                         |F                         
+Memphis to Norfolk is a thirty six hour
+|C                         |C7                        
+ride
+|F                         |F                         
+From Memphis to Norfolk is a thirty six hour
+|C     ~     ~B     ~Bb     |A                         
+ride
+|D                         |G7                        
+A man is like a prisoner, and he's never satis
+|C     ~C7     ~F     ~Fm     |C     ~     ~G7     ~     
+fied
+#VERSE 3 --------------------------------
+|C                         |F                         
+A woman is like a dresser,some man always ramblin thru her
+|C                         |C7                        
+drawers
+|F                         |F                         
+A woman is like a dresser,some man always ramblin thru her
+|C     ~     ~B     ~Bb     |A                         
+drawers
+|D                         |G7                        
+It cause so many men to wear an apron over-
+|C     ~C7     ~F     ~Fm     |C     ~     ~G7     ~     
+-all
+# Break 2-------------------------------
+|C                         |F                         
+-
+|C                         |C7                        
+-
+|F                         |F                         
+-
+|C     ~     ~B     ~Bb     |A                         
+-
+|D                         |G7                        
+-
+|C     ~C7     ~F     ~Fm     |C     ~     ~G7     ~     
+-                                     From
+#VERSE 4 --------------------------------
+|C                         |F                         
+Four until late, she made me a no-good barroom
+|C                         |C7                        
+clown
+|F                         |F                         
+From four until late, she made me a no-good barroom
+|C     ~     ~B     ~Bb     |A                         
+clown
+|D                         |G7                        
+Now she won't do nothing but tear a good man's reputation
+|C     ~C7     ~F     ~Fm     |C     ~     ~G7     ~     
+down
+#VERSE 5 --------------------------------
+|C                         |F                         
+When I leave this town, I'm 'on bid you fare-
+|C                         |C7                        
+-well
+|F                         |F                         
+When I leave this town, I'm 'on bid you fare-
+|C     ~     ~B     ~Bb     |A                         
+-well
+|D                         |G7                        
+And when I return again, you'll have a great long story to
+|C      ~      ~F      ~      |Fm     ~Fm     ~C     ~     
+Tell
+|C     ~C7     ~F     ~Fm     |C     ~     ~G7     ~     
+-
+|C(hold)                   |%                       |%                
+https://www.youtube.com/watch?v=eVUzNt1IJZM|Karaoke
+iRealb://From%20Four%20Until%20Late%3DRobert%20Johnson%3D%3DCountry%3DC%3D%3D1r34LbKcu7%7CQyXFF%2Cn%7CFS%7B%7Cn%2C7Gn%2CC%7C%2C-FF%2C%2C7C%2CC%7Cn%2CC%2C-F%2C-CXyQ%7Cn%2CCs%7C%2CCZLQC7XyQQyX7D%7CQyX%2CA%7C%2Cb%2CBB%20C%7CQyXF%7CQyXF%7C%7CG7%20%20%7CQyXCF%2C-F%7CF-%2C%7C%3CCQ%7C%7D%20%3Ex481*%3C%2C7%20GC%3EadoC%20la%20.S.D%2CnF%2Cn%2CF%2C7C-%2CC%2Cn%7CC%2CC7%2CF%2CF-%2C%7CC%2CnG7%2Cn%7C%7CUnXyQZ%20%3DPop-Country%3D125%3D1
+@@Recorded in Dallas, 1937 and released as the 'B' side 'Hell Hound On My Trail'

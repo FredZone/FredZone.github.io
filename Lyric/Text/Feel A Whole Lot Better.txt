@@ -1,0 +1,58 @@
+TITLE:Feel A Whole Lot Better,DUR:171,BPM:140,BEATS:4,KEY:A,QUAL:Raw,ARTIST:Crosby Stills And Nash,GENRE:Country,STYLE:Ballad,HITyear:
+@ progression on A
+#INTRO ----------------------------------
+|A             |%             |A             |%             
+-
+|A             |%             |A             |%             
+-                         the reason
+#VERSE 1 --------------------------------
+|A             |%             |A             |%             
+Why, oh I can't say            I had to let you
+|E             |%             |F#m           |B             
+Go babe, and         right a-way      After what you
+|A             |%             |D             |Bm            
+Did, I can't stay on       and I'll probably
+|A             |E             |D             |E             
+Feel a whole lot better  when you're gone )h when you're
+|A             |%             |A             |%             
+Gone                             Baby for a long
+#VERSE 2 --------------------------------
+|A             |%             |A             |%             
+Time,   you had me believe  that your love was all
+|E             |%             |F#m           |B             
+Mine, and that's the way it would be but I didn't
+|A             |%             |D             |Bm            
+Know, that you were puttin' me on and I'll probably
+|A             |E             |D             |E             
+Feel a whole lot better when you're gone, oh when you're
+|A             |%             |A             |%             
+Gone
+#BREAK 1 --------------------------------
+|A             |%             |A             |%             
+-
+|E             |%             |F#m           |B             
+-
+|A             |%             |D             |Bm            
+-
+|A             |E             |D             |E             
+-
+|A             |%             |A             |%             
+-                                  Now I got to
+#VERSE 3 --------------------------------
+|A             |%             |A             |%             
+Say,   that it's not like before   and I'm not gonna
+|E             |%             |F#m           |B             
+Play,     your games any more          after what you
+|A             |%             |D             |Bm            
+Did,           I can't stay on           and I'll probably
+|A             |E             |D             |E             
+Feel a whole lot better          when you're gone
+|A             |G             |A             |G             
+When you're gone          when you're gone
+#OUTRO ----------------------------------
+|A             |G             |A             |G             
+When you're gone          when you're gone
+|A             |G             |A             |G             
+When you're gone          when you're gone
+|A             |G             |A             |G             
+When you're gone          when you're gone

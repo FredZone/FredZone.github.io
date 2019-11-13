@@ -1,0 +1,85 @@
+TITLE:Twist Medley-Short,DUR:121,BPM:150,BEATS:4,KEY:G,QUAL:Inwork,ARTIST:Chubby Checker-Joey Dee And The Starliters,GENRE:Rock,STYLE:Dance,HITyear:1961
+@@@<x9>FRED</x9><x4> 2</x4><x14>xoooo</x14><x11>7.5</x11><x12> 10 10</x12>
+@@@<x9>PAT </x9><x4> 1</x4><x14>oxooo</x14><x11> 10</x11><x12>  5  5</x12>
+#INTRO ----------------------------------
+|D                       |C
+-
+|G     NC     ~     ~    |G     NC     ~     ~
+#VERSE 1 --------------------------------
+|G                       |%
+Come on  baby,            let's Do the
+|G                       |%
+twist,                        |Come on
+|C                       |%
+baby,                let's  Do the twist,
+|G                       |%
+twist,                      take ya by your little
+|D                       |C
+hand            and|Go like
+|G                       |D7
+this.                       |E-yeah,
+#CHORUS 1 -------------------------------
+|G                       |%
+Round and a Round and up and down you go
+|G                       |%
+Round and Round
+|C                       |%
+Round and a Round and up and down you go
+|G                       |%
+Round and Round
+|D                       |C
+Round and a Round and up and down you go
+|G                       |D7
+Round and a Round..............
+#BREAK 1 --------------------------------
+|G                 |%
+-
+|G                 |%
+-
+|C                 |%
+-
+|G                 |%
+-
+|D                 |C
+-
+|G                 |%
+-
+#VERSE 2 --------------------------------
+|G                       |%
+Well, they've got a new dance and it goes like this..
+|G                       |%
+(Bop shoo..bop, a bop..mm bop..mm shoo..bop)
+|C                       |%
+yeah, the name of the dance is the Peppermint Twist,
+|G                       |%
+(Bop, bop shoo..bop, a bop..mm bop..mm shoo..bop)
+|D                       |C
+well, you like it like this, the Peppermint Twist.
+|G                       |D7
+(Bop bop shoo..bop, a boppa boppa shoo..bop)
+#CHORUS 2 -------------------------------
+|G                 |%
+You go round and round,
+|G                 |%
+up and down,
+|C                 |%
+round and round,
+|G                 |%
+up and down,
+|D                 |C
+round and around and...up and down,
+|G                 |%
+and one, two, three, kick, one, two, three, jump.
+#OUTRO ----------------------------------
+|G                 |%
+-
+|G                 |%
+-
+|C                 |%
+-
+|G                 |%
+-
+|D                 |C
+-
+|G                 |%
+-

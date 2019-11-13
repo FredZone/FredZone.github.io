@@ -1,0 +1,74 @@
+TITLE:St James Infirmary,DUR:0,BPM:130,BEATS:4,KEY:E,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#INTRO ----------------------------------
+#VERSE 1 --------------------------------
+|Em        ~Am        |Em                  
+ I went down to  St. James  Infirmary.
+|Em        ~C         |B7                  
+ I saw my  baby  there.
+|Em        ~Am        |Em                  
+ Lying on a  long white table,
+|C         ~B7        |Em                  
+ So sweet,  so cold,  so fair.
+#VERSE 2 --------------------------------
+|Em        ~Am        |Em                  
+I went up to see the doctor.
+|Em        ~C         |B7                  
+'She's very low,' he said.
+|Em        ~Am        |Em                  
+I went back to see my baby
+|C         ~B7        |Em                  
+And great god she was lying there dead.
+#VERSE 3 --------------------------------
+|Em        ~Am        |Em                  
+I went down to Old Joe's Bar-room.
+|Em        ~C         |B7                  
+Down on the corner by the square.
+|Em        ~Am        |Em                  
+They were serving drinks as usual.
+|C         ~B7        |Em                  
+And the usual crowd was there.
+#VERSE 4 --------------------------------
+|Em        ~Am        |Em                  
+On my left stood Joe MacKennedy.
+|Em        ~C         |B7                  
+His eyes were blood-shot red.
+|Em        ~Am        |Em                  
+He turned to the crowd around him
+|C         ~B7        |Em                  
+And these are the words that he said.
+#VERSE 5 --------------------------------
+|Em        ~Am        |Em                  
+Let her go, let her go, God bless her.
+|Em        ~C         |B7                  
+Wherever she may be.
+|Em        ~Am        |Em                  
+She may search this wide world over
+|C         ~B7        |Em                  
+But she'll never find another man like me.
+#VERSE 6 --------------------------------
+|Em        ~Am        |Em                  
+When I die please bury me
+|Em        ~C         |B7                  
+In a high top stetson hat.
+|Em        ~Am        |Em                  
+Put a gold piece on my watch chain.
+|C         ~B7        |Em                  
+So the boys will know I died standing pat.
+#VERSE 7 --------------------------------
+|Em        ~Am        |Em                  
+Get six gamblers to carry my coffin.
+|Em        ~C         |B7                  
+Six chorus girls to sing my song.
+|Em        ~Am        |Em                  
+Put a jazz band on my tailgate
+|C         ~B7        |Em                  
+To raise hell as we roll along.
+#VERSE 8 --------------------------------
+|Em        ~Am        |Em                  
+This is the end of my story.
+|Em        ~C         |B7                  
+So let's have another round of booze.
+|Em        ~Am        |Em                  
+And if any one should ask you just tell them
+|C         ~B7        |Em                  
+I've got the St. James Infirmary Blues.

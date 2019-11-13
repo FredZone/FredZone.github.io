@@ -1,0 +1,32 @@
+TITLE:Pride,DUR:0,BPM:130,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown
+INTRO  PRIDE
+|%      |%      |%      |%
+#Verse 1 ------------------------------
+|G
+YOU KNOW THAT YOU’RE DOING LOTS OF THINGS THAT JUST AIN’T RIGHT
+|%       D7
+YOU’RE OUT WITH A DIFFERENT PARTY ALMOST EVERYNIGHT
+|%          |%           |%         |%
+AND YOU’RE MAKING ME LOOK LIKE A CRAZY FOOL
+|%      C   G
+SO WHY DO I HAVE THESE DOUBTS ABOUT LEAVING YOU
+#CHORUS---------------------------------
+|G         D7
+BECAUSE MY HEART TELLS ME STAY, BUT MY PRIDE TELLS ME GO
+|%            C  G
+HOW CAN I LEAVE YOU WHEN I LOVE YOU SO
+|%     D7
+WHICH WAY SHALL I TURN, I’D SURE LIKE TO KNOW
+|%      C   G
+MY HEART TELLS ME STAY, BUT MY PRIDE TELLS ME GO
+#Verse 3 ------------------------------
+|G
+I’D BE SO MUCH BETTER OFF TO DRIVE YOU FROM MY MIND
+|%          D7
+AND MAKE YOU A MEMORY, THAT I’D LIKE TO LEAVE BEHIND
+#Verse 4 ------------------------------
+|%          |%           |%         |%
+I KNOW THAT THESE HEARTACHES ARE WHAT YOU’LL PUT ME THROUGH
+|%      C   G
+SO WHY TO I HAVE THESE DOUBTS ABOUT LEAVING YOU
+

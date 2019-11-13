@@ -1,0 +1,86 @@
+TITLE:Garden Party,DUR:234,BPM:142,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Ricky Nelson,GENRE:Rock,STYLE:Ballad,HITyear:Unknown
+#INTRO ----------------------------------
+|N
+-
+|C    ~C/B    |Am   ~Am/G   |F     ~G7     |C
+-
+#VERSE 1 --------------------------------
+|C            |F            |C            |F
+I went to a garden party to reminisce with my old friends
+|C    ~C/B    |Am   ~Am/G   |F     ~G7     |C
+A chance to share old memories and    play our songs again
+|C            |F            |C            |F
+When I got to the garden party they all knew my name
+|C    ~C/B    |Am   ~Am/G   |F     ~G7     |C
+ No one    recognized      me     I didn't look the same
+#interlude 1------------------------------
+|F     ~G     |C            |F     ~G     |C
+But it's all right now I learned my lesson well
+|F            |C            |F     ~G     |C
+You see you can't please everyone So you got to please yourself
+#VERSE 2 --------------------------------
+|C            |F            |C            |F
+People came from miles around everyone was there
+|C    ~C/B    |Am   ~Am/G   |F     ~G7     |C
+Yoko brought her walrus there was magic in the air
+|C            |F            |C            |F
+Over in the corner, much to my suprise
+|C    ~C/B    |Am   ~Am/G   |F     ~G7     |C
+Mr Hughes stood in Dylan's shoes wearing his disguise
+#CHORUS 1 -------------------------------
+|F     ~G     |C            |F     ~G     |C
+But it's all right now I learned my lesson well
+|F            |C            |F     ~G     |C
+You see you can't please everyone So you got to please yourself
+|F     ~G     |C            |F     ~G     |C
+La   ta    da       la -n      da  da da
+|F            |C            |F     ~G     |C
+(instrumental riff)
+#VERSE 3 --------------------------------
+|C            |F            |C            |F
+Played them all the old songs thought that's why they came
+|C    ~C/B    |Am   ~Am/G   |F     ~G7     |C
+No one heard the music we didn't look the same
+|C            |F            |C            |F
+I said hello to Mary Lou she belongs to me
+|C    ~C/B    |Am   ~Am/G   |F     ~G7     |C
+When I sang a song about a honky-tonk it was time to leave
+#CHORUS 2 -------------------------------
+|F     ~G     |C            |F     ~G     |C
+But it's all right now I learned my lesson well
+|F            |C            |F     ~G     |C
+You see you can't please everyone So you got to please yourself
+|F     ~G     |C            |F     ~G     |C
+La   ta    da       la -n      da  da da
+|F            |C            |F     ~G     |C
+(instrumental riff)
+#VERSE 4 --------------------------------
+|C            |F            |C            |F
+Someone opened up a closet door and out stepped Johnny B. Goode
+|C    ~C/B    |Am   ~Am/G   |F     ~G7     |C
+Playing guitar like a ringing a bell and looking like he should
+|C            |F            |C            |F
+If you gotta play at garden party I wish you a lotta luck
+|C    ~C/B    |Am   ~Am/G   |F     ~G7     |C
+But if memories were all I sang I rather drive a truck
+#CHORUS 3 -------------------------------
+|F     ~G     |C            |F     ~G     |C
+But it's all right now I learned my lesson well
+|F            |C            |F     ~G     |C
+You see you can't please everyone So you got to please yourself
+|F     ~G     |C            |F     ~G     |C
+La   ta    da       la -n      da  da da
+|F            |C            |F     ~G     |C
+(instrumental riff)
+#OUTRO ----------------------------------
+|F     ~G     |C            |F     ~G     |C
+And it's all right now I learned my lesson well
+|F            |C            |F     ~G     |C
+You see you can't please everyone So you got to please yourself
+|F            |C            |F     ~G     |C
+-
+|C                         |C
+-
+(instrumental riff)
+https://www.youtube.com/watch?v=fxdiraVxwkI|1985 Concert Rick Nelson
+iRealb://Garden%20Party%3DNelson%20Rick%3D%3DCountry%20145%3DC%3D%3D1r34LbKcu7%2CCZL%2C4%3C*72LG%2F-A%20-AZL%2CB%2FCC%20%3EortnI%20raB%208%20%20ZF%20G74Ti*%5BB*%7B%7D%20S*ACLG%2CF%7C%2CG%2F-A%2C-A%7C%2C%2FBC%2CCsZLFZLCZLFZ7%2C%7CC%2C%7B%5DQyX%2CG%2CFZCLZF%2C%2CFC*%7B%7D%20%2CC%3E.dnEt%20s1%20la%20.S.D%3C%7C%2CGG%2C%7CCL%7C%2CG%2CF*%7B%7D%20%2C%7BS*AC%2CF%7C%2CG%2F-A%2C-A%7C%2CBC%2F%2CCsZLFZLCZLFZLG7%2C%7CC%7D%20%2CC%7CC%2CCsZ%7CCLZFZLFZLCA*S%7B%20%20QyQXyX%7D%20%3Ex4%3C%2CC%7C%2CG%2CCLZFL%2CG%2CFB%2FB%2C%7CA-%2CA-%2FG%2C%7CF%2CG7%2C%7CC%2C%20%7D%7B*BF%2CG%2C%7CCLZF%2CG%2C%7CC%2C%3C7x%3E%20%7D%20%3DPop-Country%3D142%3D1

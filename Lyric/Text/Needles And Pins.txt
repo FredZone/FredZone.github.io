@@ -1,0 +1,85 @@
+TITLE:Needles And Pins,DUR:144,BPM:130,BEATS:4,KEY:D,QUAL:Complete,ARTIST:Jackie Deshannon,GENRE:Rock,STYLE:Up Tempo,HITyear:
+#INTRO ----------------------------------
+|N                      |%         
+-
+|D                      |%                      
+-
+|D                      |%                      
+-                  I saw her
+#VERSE 1 --------------------------------
+|D                      |D                      
+today, I saw her face     It was the face I
+|Bm                     |%                      
+loved          and I knew        I had to run
+|D                      |%                      
+away and get down on my knees and pray
+|Bm                     |%                      
+That they'd go away                 But still they
+|D                      |D                      
+begin                          Needles and
+|Bm                     |%                      
+pins                    Because of all my
+|G                      |%                      
+pride
+|A                      |%                      
+The tears I gotta hide   Hey, I thought I was
+#VERSE 2 --------------------------------
+|D                      |D                      
+smart, I won her heart            Didn't think I'd
+|Bm                     |%                      
+do, but now I see She's worse to him than
+|D                      |%                      
+me  Let her go    ahead, take his love
+|Bm                     |%                      
+instead   And one day she will see
+|D                      |D                      
+Just how to say please And get down on her
+|Bm                     |%                      
+knees              Yeah, that's how it begins
+|G                      |%                      
+She'll feel those needles and pins
+|A                      |%                      
+A-hurtin her, A-hurtin her
+#BREAK 1 --------------------------------
+|F#                     |%                      
+Why can't I stop and tell myself I'm
+|E                      |%                      
+wrong, I'm wrong, so wrong
+|D                      |%                      
+Why can't I stand up and tell myself I'm 
+|C#                     |%                      
+strong                     Because I saw her 
+#VERSE 3 --------------------------------
+|F# {modulate up}                |%                      
+today,   I saw her face It was the face I 
+|Ebm                    |%                      
+loved     and I knew       I had to run 
+|F#                     |%                      
+away and get down on my knees and pray
+|Ebm                    |%                      
+That they'd go away   But still they 
+|F#                     |%                      
+begin                    Needles and 
+|Ebm                    |%                      
+pins                 Because of all my
+|B                      |%                      
+ pride             The tears I gotta 
+|C#                     |%                      
+hide                 Ah, needles and
+#OUTRO ----------------------------------
+|F#                     |%                      
+ pins                     Needles and
+|Ebm                    |%                      
+ pins                     Needles and
+|F#                     |%                      
+ pins                     Needles and
+|Ebm                    |%                      
+ pins                     Needles and
+|F#                     |%                      
+ pins                     Needles and
+|Ebm                    |%                      
+ pins
+|Ebm                    |%                
+-
+|Ebm                    |%                
+-

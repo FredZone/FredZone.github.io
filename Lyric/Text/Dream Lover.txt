@@ -1,0 +1,52 @@
+TITLE:Dream Lover,DUR:150,BPM:130,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Bobby Darin
+#INTRO ----------------------------------
+|G              |%               |Em              |%
+#VERSE 1 --------------------------------
+|G             |%               |Em              |%
+Every night I hope and pray, a dream lover will come my way
+|G             |%               |Em              |%
+A girl to hold in my arms, and know the magic of her charms   'cause
+|G                  |D7               |G                       |C
+I want (yeah-yeah) a girl (yeah-yeah ) to call (yeah-yeah) my own (yeah-yeah)
+|G         ~Em      |Am7             ~D7      |G               |D
+I want a dream lover so I don't have to dream alone
+#VERSE 2 --------------------------------
+|G             |%               |Em              |%
+Dream lover, where are you with a love, oh, so true
+|G             |%               |Em              |%
+And I hand that can hold, to feel you near as I grow old
+|G                  |D7               |G                       |C
+I want (yeah-yeah) a girl (yeah-yeah ) to call (yeah-yeah) my own (yeah-yeah)
+|G         ~Em      |Am7             ~D7      |G               |D
+I want a dream lover so I don't have to dream alone
+#CHORUS 1 -------------------------------
+|C           |%             |G             |%
+Someday, I don't know how, I hope she'll hear my plea
+|A7          |%             |D7           |%
+Some way, I don't know how, she'll bring her love to me
+#VERSE 3 --------------------------------
+|G           |%           |Em                |%
+Dream lover, until then, I'll go to sleep and dream again
+|G            |%              |Em             |%
+That's the only thing to do, till all my lover's dreams come true
+|G                  |D7               |G                       |C
+I want (yeah-yeah) a girl (yeah-yeah ) to call (yeah-yeah) my own (yeah-yeah)
+|G         ~Em      |Am7             ~D7      |G               |D
+I want a dream lover so I don't have to dream alone
+#VERSE 4 --------------------------------
+@Modulate up 2 steps
+|A            |%          |F#m             |%
+Dream lover, until then, I'll go to sleep and dream again
+|A            |%              |F#m               |%
+That's the only thing to do, till all my lover's dreams come true
+|A                  |E7               |A                       |D
+I want (yeah-yeah) a girl (yeah-yeah ) to call (yeah-yeah) my own (yeah-yeah)
+|A         ~F#m     |Bm7             ~E7      |A               |E
+I want a dream lover so I don't have to dream alone
+#OUTRO ----------------------------------
+|A         ~F#m     |Bm7             ~E7      |A               |E
+I want a dream lover so I don't have to dream alone
+@Stop HERE!
+|Bm7                 |E           |Bm7                    |E
+Please don't make me dream alone    I beg you don't make me dream alone
+https://www.youtube.com/watch?v=wVHAQX5sSaU|Bobby Darin

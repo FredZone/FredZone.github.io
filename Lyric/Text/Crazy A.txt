@@ -1,0 +1,42 @@
+TITLE:Crazy A,DUR:217,BPM:75,BEATS:4,KEY:A,QUAL:Raw,ARTIST:Willie Nelson,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#INTRO ----------------------------------
+|A            |F#7              |Bm             |Bm
+-
+#VERSE 1 --------------------------------
+|A            |F#7              |Bm             |Bm
+Crazy   I'm crazy for feeling so lonely
+|E7           |%                |A              |%
+I'm crazy     crazy for feeling so blue
+|A            |F#7              |Bm             |%
+I know you'd love me as long as you wanted
+|E7           |%                |A              |%
+And then someday     you'd leave me for somebody new
+|D            |%               |A               |%
+Worry    why do I let myself worry
+|B7           |%               |E7              |%
+Wondering     what in the world did I do
+#INTERLUDE ------------------------------
+|A            |F#7             |Bm              |%
+Crazy for thinking that my love could hold you
+|D    ~E7     |Bm    ~A        |Bm    ~E7       |A
+I'm crazy for trying  crazy for crying
+-                    And I'm crazy for lov-ing you
+#CHORUS 1 -------------------------------
+|F#7          |%               |Bm              |%
+Crazy   I'm crazy for feeling so lonely
+|E7           |%               |A               |%
+I'm crazy     crazy for feeling so blue
+|F#7          |%               |Bm              |%
+I know you'd love me as long as you wanted
+|E7           |%               |A               |%
+And then someday you'd leave me for somebody new
+|D            |%               |A               |%
+Worry    why do I let myself worry
+|B7           |%               |E7              |%
+Wondering     what in the world did I do
+#INTERLUDE ------------------------------
+|A            |F#7             |Bm              |Bm
+Crazy for thinking that my love could hold you
+|D    ~E7     |Bm     ~A       |Bm     ~E7      |A
+I'm crazy for trying  crazy for crying
+-                    And I'm crazy for lov-ing you

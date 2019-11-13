@@ -1,0 +1,126 @@
+TITLE:L A Freeway,DUR:216,BPM:125,BEATS:4,KEY:A,QUAL:Complete,ARTIST:Guy Clark,GENRE:Country,STYLE:Ballad,HITyear:Unknown
+#INTRO ----------------------------------
+|N
+-
+|A                  |%
+-
+|D                  |%
+-
+|A                  |%
+-
+|E                  |%
+-
+#VERSE 1 --------------------------------
+|A                  |%
+Pack up all your dishes
+|D                  |%
+Make note of all good wishes
+|A                  |%
+Say good-bye to the landlord for me
+|E                  |%
+The son a bitch has always bored me
+|A                  |%
+Throw out them  LA papers And that
+|D                  |%
+moldy box of vanilla wafers
+|A                  |%
+Adios to all this concrete
+|E                  |%
+Gonna get me some dirt road back street
+|A                  |E
+-
+#CHORUS 1 -------------------------------
+|D                  |E
+If I can just get off of this LA freeway
+|A                  |D
+Without getting killed or caught
+|A                  |%
+I'll be down that road in a cloud of smoke
+|E                  |%
+To some land that I ain't bought bought bought
+#VERSE 2 --------------------------------
+|A                  |%
+Here's to you old skinny Dennis
+|D                  |%
+Only one I think I will miss
+|A                  |%
+I can hear that old bass singing
+|E                  |%
+Sweet and low like a gift you'd bring in
+|A                  |%
+Play it for me  one more time now
+|D                  |%
+Got to give it all we can now
+|A                  |%
+I believe everything your saying
+|E                  |%
+Just keep on, keep on playing
+|A                  |E
+-
+#CHORUS 2 -------------------------------
+|D                  |E
+If I can just get off of this LA freeway
+|A                  |D
+Without getting killed or caught
+|A                  |%
+I'll be down that road in a cloud of smoke
+|E                  |%
+To some land that I ain't bought bought bought
+#VERSE 3 --------------------------------
+|A                  |%
+and you Put the pink card in the mailbox
+|D                  |%
+Leave the key in the front door lock
+|A                  |%
+They'll find it likely as not
+|E                  |%
+I'm sure there's something we have for-got
+|A                  |%
+Oh Susanna, don't you cry babe
+|D                  |%
+Love's a gift that's surely handmade
+|A                  |%
+We've got something to believe in
+|E                  |%
+Don't you think it's time we're leavin
+|A                  |E
+-
+#CHORUS 3 -------------------------------
+|D                  |E
+If I can just get off of this LA freeway
+|A                  |D
+Without getting killed or caught
+|A                  |%
+I'll be down the  road in a cloud of smoke
+|E                  |%
+To some land that I ain't bought bought bought
+#CHORUS 4 -------------------------------
+|D                  |E
+If I can just get off of this LA freeway
+|A                  |D
+Without getting killed or caught
+|A                  |%
+I'll be down the  road in a cloud of smoke
+|E                  |A
+To some land that I ain't bought
+#Half verse---------------------
+|A                  |%
+Pack up all your dishes
+|D                  |%
+Make note of all good wishes
+|A                  |%
+Say good-bye to the landlord for me
+|E                  |%
+That son a bitch has always bored me
+#OUTRO ----------------------------------
+|A                  |%
+(Last half of verse)
+|D                  |%
+-
+|A                  |%
+-
+|E                  |%
+-
+|A                  |%
+-
+@@ Clark wrote the song after a falling out with his landlord in Los Angeles, which prompted his move to Nashville.

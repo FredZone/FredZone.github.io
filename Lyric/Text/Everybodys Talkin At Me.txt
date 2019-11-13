@@ -1,0 +1,43 @@
+TITLE:Everybodys Talkin At Me,DUR:184,BPM:120,BEATS:4,KEY:D,QUAL:Raw,ARTIST:Fred Neil,GENRE:Folk,STYLE:Unknown,HITyear:Unknown
+
+#INTRO ----------------------------------
+|D               |Dmaj7           |D6              |Dmaj7           
+#VERSE 1 --------------------------------
+|D               |Dmaj7           |D6              |Dmaj7           
+Everybody's talkin' at me I can't hear a word they're saying
+|Em7             |A               |D6              |Dmaj7           
+Only the echoes- of my mind
+|D               |Dmaj7           |D6              |Dmaj7           
+People stopping, staring I can'y see their faces
+|Em7             |A               |D6              |Dmaj7           
+Only the shadows of their eyes
+#CHORUS 1 -------------------------------
+|Em7             |A               |D6              |D7              
+I'm going where the sun keeps shining Thru' the pouring rain
+|Em7             |A               |D6              |D7              
+Going where the weather suits my clothes
+|Em7             |A               |D6              |D7              
+Bankin' off of the North east wind And sailing on a summer breeze
+|Em7             |A               |D6              |Dmaj7           
+Skippin' over the ocean like a stone
+#BREAK 1 --------------------------------
+|D               |Dmaj7           |D6              |Dmaj7           
+-
+|Em7             |A               |D6              |Dmaj7           
+-
+#CHORUS 1 -------------------------------
+|Em7             |A               |D6              |D7              
+I'm going where the sun keeps shining Thru' the pouring rain
+|Em7             |A               |D6              |D7              
+Going where the weather suits my clothes
+|Em7             |A               |D6              |D7              
+Bankin' off of the North east wind And sailing on a summer breeze
+
+|Em7             |A               |D6              |Dmaj7           
+Skippin' over the ocean like a stone
+#OUTRO ----------------------------------
+|D               |Dmaj7           |D6              |Dmaj7           
+Everybody's talkin' at me ...
+|D               |Dmaj7           |D6              |Dmaj7           
+-
+|D               

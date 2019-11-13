@@ -1,0 +1,59 @@
+TITLE:Take Me Home,DUR:0,BPM:120,BEATS:4,KEY:G,QUAL:Verified,ARTIST:John Denver
+#INTRO ----------------------------------
+|G             |Em
+ Almost heaven, West Virginia,
+||D                    |C         |G
+ Blue Ridge Mountains, Shenandoah River.
+|                   |Em
+ Life is old there, older than the trees,
+||D                          |C             |G
+ Younger than the mountains, growin' like a breeze.
+#BREAK 1 --------------------------------
+||G                     |D
+ Country roads, take me home,
+|       |Em      |C
+ To the place I belong: 
+|     |G                 |D
+ West Virginia, mountain momma,
+|        |C            |G
+ Take me home, country roads.
+#BREAK 2 --------------------------------
+||G               |Em
+ All my mem'ries, gather 'round her,
+||D            |C               |G
+ Miner's lady, stranger to blue water.
+|                |Em
+ Dark and dusty, painted on the sky,
+||D                        |C             |G
+ Misty taste of moonshine, teardrop in my eye.
+#BREAK 3 --------------------------------
+||G                     |D
+ Country roads, take me home,
+|       |Em      |C
+ To the place I belong: 
+|     |G                 |D
+ West Virginia, mountain momma,
+|        |C            |G
+ Take me home, country roads.
+||Em       |D            |G
+#BREAK 4 --------------------------------
+ I hear her voice, in the mornin' hours she calls me,
+|    |C      |G             |D
+ The radio reminds me of my home far away.
+|    |Em             |F
+ And drivin' down the road,
+|        |C             |G                    |D
+ I get a feelin' that I should have been home yesterday,
+|      |D7
+ yesterday.
+#BREAK 5 --------------------------------
+|        |G             |D
+ Country roads, take me home,
+|       |Em      |C
+ To the place I belong: 
+|     |G                 |D
+ West Virginia, mountain momma,
+|        |C            |G
+ Take me home, country roads.
+|        |D                 |G
+ Take me home, down country roads.

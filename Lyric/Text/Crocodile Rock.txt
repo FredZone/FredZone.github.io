@@ -1,0 +1,71 @@
+TITLE:Crocodile Rock,DUR:,BPM:150,BEATS:4,KEY:G,QUAL:Raw,ARTIST:Elton John,GENRE:Rock,STYLE:Up Tempo,HITyear:
+#INTRO ----------------------------------
+|G                         |%                      |Em                          |%
+-
+|C                         |%                      |D                           |%
+-
+#VERSE 1 --------------------------------
+|G                         |%                      |Bm                          |%
+I remember when rock was young,              me and Susie   had   so    much    fun      Holding
+|C                         |%                      |D                           |%
+hands and    skimmin'     stones  had     a         old  gold Chevy & a place of my own   But the 
+|G                         |%                      |Bm                          |%
+biggest   kick   I   ever  got    was   doin'     a thing called the Crocodile   Rock  While the
+|C                         |%                      |D                           |%
+other kids were rockin' 'round the clock we were hoppin' and boppin' to the Crocodile Rock, well
+#CHORUS 1 -------------------------------
+|Em                        |%                      |A7                          |%
+Crocodile Rockin' is something shockin' when your feet just can't keep still
+|D                        |%                       |G                           |%
+I     never    had   me a      better time and I guess    I    never        will.
+|Em                        |%                      |A7                          |%
+Oh, Lawdy mamma those Friday nights when           Susie wore her dresses    tight and
+|D                        |%                       |C                           |%
+the    Crocodile Rockin'   was     out   of        sight.
+#INTERLUDE ------------------------------
+|G                         |%                      |Em                          |%
+-
+|C                         |%                      |D                           |%
+-
+#VERSE 2 --------------------------------
+|G                         |%                      |Bm                          |%
+But the years went by and rock just died, Susie went and left me for some foreign guy,
+|C                         |%                      |D                           |%
+Long nights cryin' by the record machine dreamin' of my Chevy & my old blue jeans but they'll
+|G                         |%                      |Bm                          |%
+Never kill the thrills we've got burnin' up to the Crocodile Rock,
+|C                         |%                      |D                           |%
+Learning fast till the weeks went past, we really thought the Crocodile Rock would last, well
+#CHORUS 2 -------------------------------
+|Em                        |%                      |A7                          |%
+Crocodile Rockin' is something shockin' when your feet just can't keep still
+|D                        |%                       |G                           |%
+I never had me a better time and I guess I never will.
+|Em                        |%                      |A7                          |%
+Oh, Lawdy mamma those Friday nights when Susie wore her dresses tight and
+|D                        |%                       |C                           |%
+the Crocodile Rockin' was out of sight.
+#VERSE 3 --------------------------------
+|G                         |%                      |Bm                          |%
+I remember when rock was young,    me and Susie had so much fun
+|C                         |%                      |D                           |%
+Holding hands and skimmin' stones  had a old gold Chevy & a place of my own
+|G                         |%                      |Bm                          |%
+But the biggest kick I ever got    was doin' a thing called the Crocodile Rock
+|C                         |%                      |D                           |%
+While the other kids were rockin' 'round the clock we were hoppin' and
+-                                                  boppin' to the Crocodile Rock, well
+#CHORUS 3 -------------------------------
+|Em                        |%                      |A7                          |%
+Crocodile Rockin' is something shockin' when your feet just can't keep still
+|D                        |%                       |G                           |%
+I never had me a better time and I guess I never will.
+|Em                        |%                      |A7                          |%
+Oh, Lawdy mamma those Friday nights when Susie wore her dresses tight and
+|D                        |%                       |C                           |%
+the Crocodile Rockin' was out of sight.
+#OUTRO ----------------------------------
+|G                         |%                      |Em                          |%
+-
+|C                         |%                      |D                           |%
+-

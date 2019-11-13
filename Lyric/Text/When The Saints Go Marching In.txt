@@ -1,0 +1,59 @@
+TITLE:When The Saints Go Marching In,DUR:0,BPM:0,BEATS:4,KEY:0,QUAL:0,ARTIST:Traditional
+#INTRO ----------------------------------
+C         |%         |%      |%
+-
+#VERSE 1 --------------------------------
+                             O when the
+C         |%        |%       |%
+Saints go marching in         O when the
+C         |%        |G7      |%
+Saints go  marching  in               I
+C         |%        |F       |%
+want to be in that number       When the
+C         |G         |C      |%
+Saints go marching in
+#VERSE 2 --------------------------------
+C         |%        |%       |%
+And when the sun begins to shine
+C         |%        |G7      |%
+And when the sun begins to shine
+C         |%        |F       |%
+I want to be in that number
+C         |G         |C      |%
+When the sun begins to shine
+#VERSE 3 --------------------------------
+C         |%        |%       |%
+When the moon turns red with blood
+C         |%        |G7      |%
+When the moon turns red with blood
+C         |%        |F       |%
+I want to be in that number
+C         |G         |C      |%
+When the moon turns red with blood
+#VERSE 4 --------------------------------
+C         |%        |%       |%
+On that hallelujah day
+C         |%        |G7      |%
+On that hallelujah day
+C         |%        |F       |%
+I want to be in that number
+C         |G         |C      |%
+On that hallelujah day
+#VERSE 5 --------------------------------
+C         |%        |%       |%
+O when the trumpet sounds the call
+C         |%        |G7      |%
+O when the trumpet sounds the call
+C         |%        |F       |%
+O Lord, I want to be in that number
+C         |G         |C      |%
+When the trumpet sounds the call
+#VERSE 6 --------------------------------
+C         |%        |%       |%
+O when the Saints go marching in
+C         |%        |G7      |%
+When the Saints go marching in
+C         |%        |F       |%
+I want to be in that number
+C         |G         |C      |%
+When the Saints go marching in

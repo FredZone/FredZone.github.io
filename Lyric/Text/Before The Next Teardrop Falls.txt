@@ -1,0 +1,36 @@
+TITLE:Before The Next Teardrop Falls,DUR:0,BPM:120,BEATS:4,KEY:G,QUAL:Raw,ARTIST:Freddy Fender,GENRE:Country,STYLE:Ballad
+#INTRO ----------------------------------
+~C      |G    |D7    |G ~C  |G ~D7
+#VERSE 1 --------------------------------
+     |G               |G7          |C                 |G
+If he brings you happi-ness, then I wish you  both the best.
+         |C              |D               |G    |D7
+It's your happiness  that matters  most of all.
+         |G                |G7           |C             |G
+But if he ever  breaks your heart, if the teardrops  ever start.
+#CHORUS 1 -------------------------------
+~C      |G                |D7            |G  ~C  |G ~D7
+I'll be there  before the next  teardrop falls.
+#VERSE 2 --------------------------------
+     |G              |G7      |C            |G
+SI te quieres  de ver-dad,   y te da  felici-dad,
+     |C          |D               |G    |D7
+Te de-seo  lo mas bueno,  para los dos.
+    |G              |G7        |C            |G
+Pero sI  te hace llo-rar,  a mI me  puedes ha-blar.
+#CHORUS 2 -------------------------------
+ ~C   |G          |D7               |G  ~C  |G
+Y esta-re  contigo cuando  trist' es-tas.
+#BRIDGE ---------------------------------
+~G7     |C         |D7       |G               |
+I'll be there  any-time  you need me  by your side.
+  |A       |A7          |D                  |D7
+To dry,   a-way,   every teardrop,  that you cry.
+#VERSE 3 --------------------------------
+         |G               |G7            |C             |G
+And if he ever  leaves you blue,  just re-member  I love you.
+#CHORUS 3 -------------------------------
+   ~C      |G                |D7            |G    |C
+And I'll be there  before the next  teardrop falls.
+           |G                |D7           |G     |C    |G
+And I'll be there  before the next teardrop falls.

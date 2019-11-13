@@ -1,0 +1,75 @@
+TITLE:Corina Corina,DUR:113,BPM:140,BEATS:4,KEY:E,QUAL:Raw,ARTIST:Unknown
+#INTRO ----------------------------------
+|E              |%       ~NC
+-                           I love
+#VERSE 1 --------------------------------
+|E              |B7
+Corinna,           tell the world I
+|E              |%
+ do                   I love
+|A              |%
+Corinna,        tell the world I
+|E              |%
+do                    I pray at
+|B7             |%
+night             she'd learn to love me
+|E              |%       ~NC
+too              Corinna,        Co-
+#CHORUS 1 -------------------------------
+|A              |%
+-rinna       Corinna,        Co-
+|E              |%
+-rinna,      Corinna,        Co-
+|B7             |%
+-rinna,              I
+|E              |%
+love you so           Oh little
+#VERSE 2 --------------------------------
+|E              |B7
+ darling         where you've been so
+|E              |%
+ long              Oh little d
+|A              |%
+arling            where you've been
+|E              |%
+so long          I ain't had no
+|B7             |%
+Lovin'          since you've been
+|E              |%       ~NC
+ gone             Corinna,        Co-
+#CHORUS 1 -------------------------------
+|A              |%
+-rinna       Corinna,        Co-
+|E              |%
+-rinna,      Corinna,        Co-
+|B7             |%
+-rinna,              I
+|E              |%
+love you so              I left
+#VERSE 3 --------------------------------
+|E              |B7
+Corinna           way across the
+|E              |%
+sea                     I left
+|A              |%
+Corinna           way across the
+|E              |%
+sea                   If you see
+|B7             |%
+Corinna            send her home to
+|E              |%       ~NC
+me                Corinna,        Co-
+#CHORUS 3 -------------------------------
+|A              |%
+-rinna       Corinna,        Co-
+|E              |%
+-rinna,      Corinna,        Co-
+|B7             |%
+-rinna,                    I love you
+|E              |%
+so                 Darling  don't you
+#OUTRO ----------------------------------
+|B7             |
+know,
+|E              |
+I   love   you so

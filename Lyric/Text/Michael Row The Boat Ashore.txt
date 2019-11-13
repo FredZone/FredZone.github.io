@@ -1,0 +1,47 @@
+TITLE:Michael Row The Boat Ashore,DUR:129,BPM:105,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Highwaymen
+#INTRO ----------------------------------
+|C               |%           |C    ~F |F ~C
+-(whistle???)
+|C       ~Em     |Em    F    |C ~G7 |G7  ~C
+-
+#CHORUS 1 -------------------------------
+|C               |%           |C    ~F |F ~C
+Michael row the boat ashore, hallelu-jah
+|C       ~Em     |Em    F    |C ~G7 |G7  ~C
+Michael row the boat ashore, hallelu-jah
+#VERSE 1 --------------------------------
+|C               |%           |C    ~F |F ~C
+Sister help to trim the sail, hallelu-jah
+|C       ~Em     |Em    F    |C ~G7 |G7  ~C
+Sister help to trim the sail,   hallelu-jah
+#CHORUS 2 -------------------------------
+|C               |%           |C    ~F |F ~C
+Michael row the boat ashore, hallelujah
+|C       ~Em     |Em    F    |C ~G7 |G7  ~C
+Michael row the boat ashore, hallelujah
+#VERSE 2 --------------------------------
+|C               |%           |C    ~F |F ~C
+The river Jordan is chilly and cold, hallelujah
+|C       ~Em     |Em    F    |C ~G7 |G7  ~C
+Chills the body but not the soul, hallelujah
+#CHORUS 3 -------------------------------
+|C               |%           |C    ~F |F ~C
+Michael row the boat ashore, hallelujah
+|C       ~Em     |Em    F    |C ~G7 |G7  ~C
+Michael row the boat ashore, hallelujah
+#VERSE 3 --------------------------------
+|C               |%           |C    ~F |F ~C
+The river is deep and is wide, hallelujah
+|C       ~Em     |Em    F    |C ~G7 |G7  ~C
+Milk and honey on the other side, hallelujah
+#CHORUS 4 -------------------------------
+|C               |%           |C    ~F |F ~C
+Michael row the boat ashore, hallelujah
+|C       ~Em     |Em    F    |C ~G7 |G7  ~C
+Michael row the boat ashore, hallelujah
+#OUTRO ----------------------------------
+|C               |%           |C    ~F |F ~C
+-(whistle????)
+|C       ~Em     |Em    F    |C ~G7 |G7  ~C
+-
+https://www.youtube.com/watch?v=jRv-fgfLFTk|Highwaymen

@@ -1,0 +1,56 @@
+TITLE:Snowblind Friend,DUR:158,BPM:180,BEATS:4,KEY:E,QUAL:Raw,ARTIST:Hoyt Axtpm,GENRE:Country,STYLE:Ballad,HITyear:
+@astrix indicates the line is bar was a short of the rest of the song, but lengthened here
+|N            |G            |C            |G            |A            |%
+-
+|C            |%            |%            |D            |%
+-
+#VERSE 1 --------------------------------
+|G            |C            |G            |A            |%
+You  say  it  was  this  morning  when  you  last  saw  your  good  friend
+|C            |%            |%            |D            |%
+Lying    on    the    sidewalk    with    the    misery    on    his    brain
+|G            |C            |G            |A            |%
+Stoned    on    some    new    potion    he    found    upon    the    wall
+|C            |%            |%            |D            |%
+Of    some    unholy    bathroom    in    some    ungodly    hall
+|G            |C            |C            |G            |%
+He    only    had    a    dollar    to    live    on    til    next    Monday
+|C            |%            |D            |%
+But    he    spent    it    all    on    comfort    for    his    mind
+|C            |G            |C            |G            |C
+Did    you    say    you    think    he's    blind
+#VERSE 2 --------------------------------
+|G            |C            |G            |A            |%
+Someone  should  call  his  parents,  or  a  sister  or  a  brother  They'll
+|C            |%            |D            |D
+come    and    take    him    back    home    on    a    bus
+|G            |C            |G            |A            |%
+But  he'll  always  be  a  problem  to  his  poor  and  puzzled  mother
+|C            |%            |D            |%
+And    he'll    always    be    another    one    of    us
+|G            |C            |C            |G            |%
+He    said    he    wanted    heaven    but    praying    was    too    slow
+|C            |%            |%            |D            |C
+So he bought a one way ticket on an airline made of snow Did you say you saw your
+|C            |G            |C            |G            |%
+good    friend    flying    low
+#INTERLUDE ------------------------------
+|G            |C            |G            |A            |%
+-
+|C            |%            |%            |D            |%
+-
+#OUTRO ----------------------------------
+|G            |C            |G            |A            |%
+You  say  it  was  this  morning  when  you  last  saw  your  good  friend
+|C            |%            |%            |D            |%
+Lying    on    the    sidewalk    with    the    misery    on    his    brain
+|G            |C            |G            |A            |%
+Stoned    on    some    new    potion    he    found    upon    the    wall
+|C            |%            |%            |D            |%
+Of    some    unholy    bathroom    in    some    ungodly    hall
+|C            |C            |G            |C            |G
+Did  you  say  you  saw  your  good  friend  flying  low  Dying  slow,
+|C            |G            |C            |G
+Blinded    by    snow,
+|G            |G
+-

@@ -1,0 +1,51 @@
+TITLE:Sing Me Back Home,DUR:251,BPM:85,BEATS:4,KEY:C,QUAL:Test,ARTIST:Unknown
+INTRO  SING ME BACK HOME
+|C              |%             |%              |%             
+#Verse 1 ------------------------------
+|C               |G7                 |F           |C
+THE WARDEN LED A PRISONER, DOWN THE HALLWAY TO HIS  DOOM
+            |C           |%               |G7      |%
+AN I STOOD UP TO SAY GOODBYE LIKE ALL THE REST
+    |C                 |G7          |F                     |C
+AN I HEARD HIM TELL THE WARDEN JUST BEFORE THEY REACHED MY CELL
+       |C             |G7           |C         |%
+LET MY GUITAR PLAYING FRIEND DO MY REQUEST
+#Verse 2 ------------------------------
+       |C            |G7       |F              |C
+LET HIM SING ME BACK HOME, THE SONGS I USED TO HEAR
+|C          |%            |G7      |%
+MAKE MY OLD MEMORIES COME ALIVE
+|C      |G7      |F          |C
+TAKE ME AWAY AND TURN BACK THE YEARS
+|C           |G7           |C         |%
+SING ME BACK HOME BEFORE I DIE
+#Break ------------------------------
+|C        |G7       |F       |C
+---
+|C        |%       |G7       |%
+---
+|C        |G7      |F        |C
+---
+|C        |G7      |C        |%
+--
+#Verse 2 ------------------------------
+|C               |G7            |F                 |C
+I RECALL ONE SUNDAY MORNIN’ A CHOIR FROM OFF THE STREET
+            |C           |%      |G7      |%
+CAME IN TO SING A FEW OLD GOSPLE SONGS
+    |C                  |G7           |F               |C
+AN I HEARD HIM TELL THE WARDEN, THERE’S A SONG MY MAMA SANG
+      |C             |G7           |C         |%
+CAN I HEAR IT ONCE BEFORE THEY MOVE ALONG
+#Chorus 2 ------------------------------
+       |C            |G7       |F              |C
+LET HIM SING ME BACK HOME, THE SONGS I USED TO HEAR
+|C          |%            |G7      |%
+MAKE MY OLD MEMORIES COME ALIVE
+     |C         |G7            |F      |C
+TAKE ME AWAY AND TURN BACK THE YEARS
+|C           |G7           |C         |%
+SING ME BACK HOME BEFORE I DIE
+#Outro ------------------------------
+|C           |G7           |C         |%
+SING ME BACK HOME BEFORE I DIE

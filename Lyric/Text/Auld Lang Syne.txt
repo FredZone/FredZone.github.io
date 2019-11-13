@@ -1,0 +1,19 @@
+TITLE:Auld Lang Syne,DUR:150,BPM:120,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#VERSE 1 --------------------------------
+|C               |G7
+Should Auld acquaintance be forgot
+|C               |F
+And never brought to mind
+|C               |G7
+Should Auld acquaintance be forgot
+|F               |C
+Days of Auld Lang Syne
+#CHORUS 1 -------------------------------
+|C               |G7
+For Auld Lang Syne, my dear
+|C               |F
+For Auld Lang Syne
+|C               |G7
+We’ll take a cup o’ kindness yet
+|F               |C
+For Auld Lang Syne

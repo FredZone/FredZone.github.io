@@ -1,0 +1,55 @@
+TITLE:Dream Lover - Ron,DUR:150,BPM:100,BEATS:4,KEY:C,QUAL:Rough,ARTIST:Bobby Darin
+#INTRO ----------------------------------
+|C              |%               |%               |%
+#VERSE 1 --------------------------------
+|C             |%               |Am              |%
+Every night I hope and pray, a dream lover will come my way
+|C             |%               |Am              |%
+A girl to hold in my arms, and know the magic of her charms   'cause 
+|C                  |G7               |C                       F
+I want (yeah-yeah) a girl (yeah-yeah ) to call (yeah-yeah) my own (yeah-yeah)
+|C         ~Am      |Dm7             ~G7      |C               |G
+I want a dream lover so I don't have to dream alone
+#VERSE 2 --------------------------------
+|C             |%               |Am              |%
+Dream lover, where are you with a love, oh, so true
+|C             |%               |Am              |%
+And I hand that can hold, to feel you near as I grow old
+|C                  |G7               |C                       F
+I want (yeah-yeah) a girl (yeah-yeah ) to call (yeah-yeah) my own (yeah-yeah)
+|C         ~Am      |Dm7             ~G7      |C               |G
+I want a dream lover so I don't have to dream alone
+#CHORUS 1 -------------------------------
+|F           |%             |C             |%
+Someday, I don't know how, I hope she'll hear my plea
+|D7          |%             |G7           |%
+Some way, I don't know how, she'll bring her love to me
+#VERSE 3 --------------------------------
+|C                       |Am
+Dream lover, until then, I'll go to sleep and dream again
+|C                           |Am
+That's the only thing to do, till all my lover's dreams come true
+|C                  |G7               |C                       F
+I want (yeah-yeah) a girl (yeah-yeah ) to call (yeah-yeah) my own (yeah-yeah)
+|C         ~Am      |Dm7             ~G7      |C               |G
+I want a dream lover so I don't have to dream alone
+#CHORUS 2 -------------------------------
+|F           |%             |C             |%
+Someday, I don't know how, I hope she'll hear my plea
+|D7           |%             |G7           |%
+Some way, I don't know how, she'll bring her love to me
+#VERSE 4 --------------------------------
+|C                       |Am
+Dream lover, until then, I'll go to sleep and dream again
+|C                           |Am
+That's the only thing to do, till all my lover's dreams come true
+|C                  |G7               |C                       F
+I want (yeah-yeah) a girl (yeah-yeah ) to call (yeah-yeah) my own (yeah-yeah)
+|C         ~Am      |Dm7             ~G7      |C               |G
+I want a dream lover so I don't have to dream alone
+#OUTRO ----------------------------------
+|C         ~Am      |Dm7             ~G7      |C               |G
+I want a dream lover so I don't have to dream alone
+|Dm7                 |G           |Dm7                    |G 
+Please don't make me dream alone    I beg you don't make me dream alone
+@.....

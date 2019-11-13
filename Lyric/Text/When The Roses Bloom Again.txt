@@ -1,0 +1,62 @@
+TITLE:When The Roses Bloom Again,DUR:172,BPM:131,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Wilco,GENRE:Country,STYLE:Ballad,HITyear:TBD
+$$TCL1 <X14>PR 1</X14> <X14>C M2</X14> <X1>(V3)</X1> <X16>H OFF</X16>
+#INTRO ----------------------------------
+|N                                  |N
+-
+|Am                |%                 |Dm                |%
+-
+|F/C               |%                 |C                 |%
+-
+#VERSE 1 --------------------------------
+|Am                |%                 |Dm                |%
+They were strolling in the gloaming Where the roses were in bloom
+|F/C               |%                 |C                 |%
+A soldier and his sweetheart brave and true
+|Am                |%                 |Dm                |%
+For their thoughts were of tomorrow And  their hearts were filled with sorrow
+|F/C               |%                 |C                 |%
+As she pinned a rose upon his coat of blue <XX>H ON</XX>
+#CHORUS 1 -------------------------------
+|F/C               |%                 |Dm                |%
+Do not ask me love to linger When you know not what to say
+|C                 |%                 |Am                |%
+For duty calls your sweetheart's name again
+|F/C               |%                 |Dm                |%
+And your heart need not be sighing If I be among the dying
+|C                 |F                 |C                 |%
+I'll be with you when the roses bloom again<XX>H OFF</XX>
+#VERSE 2 --------------------------------
+|Am                |%                 |Dm                |%
+When the roses bloom again Beside the river
+|F/C               |%                 |C                 |%
+And the mockingbird has sung his sweet refrain
+|Am                |%                 |Dm                |%
+In the days of Old Lang Syne I'll be with you sweetheart mine
+|F/C               |%                 |C                 |%
+I'll be with you when the roses bloom again
+#VERSE 3 --------------------------------
+|Am                |%                 |Dm                |%
+Mid the rattle of the battle Came a whisper soft and low
+|F/C               |%                 |C                 |%
+A soldier who had fallen in the fray
+|Am                |%                 |Dm                |%
+I am dying, I am dying And I know I'll have to go
+|F/C               |%                 |C                 |%
+But I want to tell you before I pass away <XX>H ON</XX>
+#CHORUS 2 -------------------------------
+|F/C               |%                 |Dm                |%
+There's a far and distant river Where the roses are in bloom
+|C                 |%                 |Am                |%
+A sweetheart who is waiting there for me
+|F/C               |%                 |Dm                |%
+And it's there I pray you take me I've been faithful, don't forsake me
+|C                 |F                 |C                 |%
+I'll be with her when the roses bloom again
+|C                 |%                 |%                 |%
+-
+https://www.youtube.com/watch?v=Yl8-3nBI5is|Billy Bragg and Wilco
+https://www.youtube.com/watch?v=kifh6UOOZyo|Lana Cantrell
+https://www.youtube.com/watch?v=K8x4gnnw-Ec|Johnny Cash and the Carter Family
+https://www.youtube.com/watch?v=atelh6nqJT8|Sons of the Pioneers 1937
+https://www.youtube.com/watch?v=JoJdw2bx6kQ|Vernon Dalhart 1927
+https://www.youtube.com/watch?v=rV_6GdoEero|Harry MacDonough 1901 Edison-8276 original

@@ -1,0 +1,66 @@
+TITLE:A Thousand Stars,DUR:204,BPM:180,BEATS:6,KEY:C,QUAL:Verified,ARTIST:Kathy Young,GENRE:Unknown,STYLE:Unknown,HITyear:1960
+@1 . 2 . 3 . 4 . 
+@d   u   D   ^
+@-
+#INTRO ----------------------------------
+|C           |F           |C             |F   ~F#
+-
+|G           |%
+-                 A thousand
+#VERSE 1 --------------------------------
+|C            |%          |F             |G
+stars in the sky like the stars in your eyes
+|C            |%          |F             |G
+They say to   me that   there ll never be
+|C            |%          |F             |G
+No other      love like    you  -       oo for
+|C            |F           |C             |NC
+me-e-e                                 A thousand
+#VERSE 2 --------------------------------
+|C            |%          |F             |G
+Stars  in the sky       make   me      realize
+|C            |%          |F             |G
+You are the one love that I'll          adore
+|C            |%          |F             |G
+Tell me you love me     Tell me you're mine once
+|C            |F          |C             |C7
+ more         (once more, once mo-o-ore)
+#CHORUS 1 -------------------------------
+|F           |%          |Fm             |%
+Each night I count the stars in the sky
+|C          |%          |C7              |%
+Hoping that you aren't telling    me       lies
+|F          |%          |Fm              |%
+You're with me tonight, I'm captured by your charms
+|C          |Am            |F           |G
+Oh, pretty baby, wont you hold me in your arms A thousand
+#VERSE 3 --------------------------------
+|C            |%          |F             |G
+Stars  in the sky       make   me      realize
+|C            |%          |F             |G
+You are the one love that I'll          adore
+|C            |%          |F             |G
+Tell me you love me     Tell me you're mine once
+|C           |F           |C             |C7
+ more         (once more, once mo-o-ore)
+#CHORUS 2 -------------------------------
+|F          |%             |Fm         |%
+Each night I count the   stars in the sky
+|C          |%             |C7         |%
+Hoping that you aren't    telling me lies
+|F          |%             |Fm         |%
+You're with me tonight, I'm captured by your charms
+|C          |Am            |F           |G
+Oh, pretty baby, wont you hold me in your arms  A thousand 
+#VERSE 4 --------------------------------
+|C            |%          |F             |G
+Stars  in the sky       make   me      realize
+|C            |%          |F             |G
+You are the one love that I'll adore
+|C            |%          |F             |G
+Tell me you love me                 Tell me you're
+|C           |%           |F             |C
+mine once    mo-o-re     (I-   I-    Im  yours)
+@@Written by Eugene Pearson and performed by Kathy Young with the Innocents.
+@@It reached 3 on the Billboard Hot 100 and 6 on the R&B chart in 1960
+@@Sandy Nelson played drums on the record.

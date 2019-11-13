@@ -1,0 +1,62 @@
+TITLE:Bye Bye Love,DUR:204,BPM:120,BEATS:4,KEY:G,QUAL:Raw,ARTIST:Everly Brothers,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+@*ud down indicates muted open strum up and down
+#INTRO ----------------------------------
+|G  ud ~Bb ~C |dud ~ dud ~ u|G  ud ~Bb ~C |dud ~ dud ~
+- 
+#CHORUS 1 -------------------------------
+|C         |G         |C          |G
+Bye,  bye  love,       bye, bye  happiness
+|C         |G         |D7         |G
+Hello      loneliness, I    think I'm going to cry
+|C         |G         |C          |G
+Bye, bye   love,      Bye, bye sweet caress
+|C         |G         |G    ~D7   |G  
+Hello   emptiness, I feel like I could die  Bye,
+|G   ~D7   |G         |G  
+bye my love good bye      There goes my 
+#VERSE 1 --------------------------------
+|D7        |%          |G          |% 
+baby with someone   new           She sure  looks
+|D7        |%          |G          |% 
+happy,     I sure am blue        She was my
+|C         |%          |D7         |% 
+baby,     till he stepped in        Good bye to
+|D7        |%          |G          |% 
+Romance        that might  have been
+#CHORUS 2 -------------------------------
+|C         |G         |C          |G
+Bye,  bye  love,       bye, bye  happiness
+|C         |G         |D7         |G
+Hello      loneliness, I    think I'm going to cry
+|C         |G         |C          |G
+Bye, bye   love,      Bye, bye sweet caress
+|C         |G         |G    ~D7   |G  
+Hello   emptiness, I feel like I could die  Bye,
+|G   ~D7   |G         |G  
+bye my love good bye      I'm through
+#VERSE 2 --------------------------------
+|D7        |%          |G          |% 
+Romance I'm through with love       I'm through with 
+|D7        |%          |G          |% 
+Countin' the stars   above          And here's the 
+|C         |%          |D7         |% 
+reason  that  I'm  so     free       My loving 
+|D7        |%          |G          |% 
+baby is through with me
+#CHORUS 3 -------------------------------
+|C         |G         |C          |G
+Bye,  bye  love,       bye, bye  happiness
+|C         |G         |D7         |G
+Hello      loneliness, I    think I'm going to cry
+|C         |G         |C          |G
+Bye, bye   love,      Bye, bye sweet caress
+|C         |G         |G    ~D7   |G  
+Hello   emptiness, I feel like I could die  Bye,
+|G   ~D7   |G         |G   ~D7    |G         
+bye my love good bye good bye my love good bye
+#OUTRO ----------------------------------
+|G   ~D7   |G         |G   ~D7    |G         
+Bye my love good bye good bye my love good bye
+|G   ~D7   |G         |G   ~D7    |G         
+Bye my love good bye good bye my love good bye
+https://www.youtube.com/watch?v=PUYIflkSL98|Karaoke

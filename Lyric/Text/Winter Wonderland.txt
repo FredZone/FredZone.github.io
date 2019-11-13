@@ -1,0 +1,67 @@
+TITLE:Winter Wonderland,DUR:25,BPM:80,BEATS:4,KEY:C,QUAL:Preliminary,ARTIST:Felix Bernard And Dick Smith,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#INTRO ----------------------------------
+|G       ~F              |Em      ~Dm7
+-
+|Am7          ~G         |C
+-
+#VERSE 1 --------------------------------
+|C                       |%
+Sleigh bells ring, are you listening,
+|G                       |%
+In the lane, snow is glistening
+|G       ~F              |Em      ~Dm7
+A beautiful sight, We're happy tonight.
+|Am7          ~G         |C
+Walking in a winter wonderland.
+#VERSE 2 --------------------------------
+|C                       |%
+Gone away is the bluebird,
+|G                       |%
+Here to stay is a new bird
+|G       ~F              |Em      ~Dm7
+He sings a love song, As we go along,
+|Am7          ~G         |C
+Walking in a winter wonderland.
+#CHORUS 1 -------------------------------
+|E            ~B             |E
+In the meadow we can build a snowman,
+|E            ~B             |E
+Then pretend that he is Parson Brown
+|G               ~D                 |G
+He'll say  Are you married?  We'll say No man,
+|A           ~D                |G
+But you can do the job When you're in town.
+#VERSE 3 --------------------------------
+|C                       |%
+Later on, we'll conspire,
+|G                       |%
+As we dream by the fire
+|G       ~F              |Em      ~Dm7
+To face unafraid,  The plans that we've made,
+|Am7          ~G         |C
+Walking in a winter wonderland.
+#CHORUS 2 -------------------------------
+|E            ~B             |E
+In the meadow we can build a snowman,
+|E            ~B             |E
+And pretend that he's a circus clown
+|G               ~D                 |G
+We'll have lots of fun with mister snowman,
+|A           ~D                |G
+Until the other kids knock him down.
+#VERSE 4 --------------------------------
+|C                       |%
+When it snows, ain't it thrilling,
+|G                       |%
+Though your nose gets a chilling
+|G       ~F              |Em      ~Dm7
+We'll frolic and play, the Eskimo way,
+|Am7          ~G         |C
+Walking in a winter wonderland.
+|Am7          ~G         |C
+Walking in a winter wonderland.
+#OUTRO ----------------------------------
+|Am7                     |G        
+Walking                  in a winter 
+|C                       |%
+wonderland.

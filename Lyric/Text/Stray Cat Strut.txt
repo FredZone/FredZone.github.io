@@ -1,0 +1,123 @@
+TITLE:Stray Cat Strut,DUR:199,BPM:130,BEATS:4,KEY:A,QUAL:Complete,ARTIST:Stray Cats,GENRE:Rock,STYLE:Dance,HITyear:1982
+$$TCH1 <X14>PR 1</X14> <X14>A m2</X14> <X14>PV 1</X14> <X1>(V3)</X1> <X16>H ON</X16>
+$$STRT ooXoo 8 5 10
+$$RP55 3 or 4
+#INTRO ----------------------------------
+|NC             |ANC    ~    ~    |%   ~   ~   ~
+-
+|NC   ~   ~   ~   |%   ~   ~   ~
+-
+|Am      ~G      |F      ~E7
+no vocal = = = = = = = = = = = = =
+|Am      ~G      |F      ~E7
+no vocal = = = = = = = = = = = = =
+|Am      ~G      |F      ~E7
+Oooh                 Oooh
+|Am      ~G      |F      ~E7
+Oooh                 Oooh
+|Am      ~G      |F      ~E7
+Oooh                 Oooh
+|Am      ~G      |F      ~E7
+Oooh                 Oooh <XX>H OFF</XX>
+#VERSE 1 --------------------------------
+|Am      ~G      |F      ~E7
+Black and orange stray cat sittin' on a fence.
+|Am      ~G      |F      ~E7
+-
+|Am      ~G      |F      ~E7
+Ain't got enough dough to pay the rent.
+|Am      ~G      |F      ~E7
+-
+|Am      ~G      |F      ~E7
+I'm flat broke but       I don't   care,
+|Am7      ~      |%
+I strut right by with my tail in the air.
+|Dm      ~C      |Bb     ~A7
+Stray cat strut I'm a (ladies cat,)
+|Dm      ~C      |Bb     ~A7
+I'm a feline Casanova (hey man that's that.)
+|Dm      ~C      |Bb     ~A7
+Get a shoe thrown at me from a mean old man.
+|Dm             |%
+Get my dinner from a garbage can.
+#BREAK 1 --------------------------------
+|Am      ~G      |F      ~E7
+-                  Meoww
+|Am      ~G      |F      ~E7
+-            Hey  don’t cross my path...
+|Am      ~G      |F      ~E7
+-<XX>H ON  soon</XX>
+|Am      ~G      |F      ~E7
+-
+|Am      ~G      |F      ~E7
+-
+|Am      ~G      |F      ~E7
+-
+#CHORUS 1 -------------------------------
+|Dm             |Dm7
+I   don't   bother   chasing mice
+|Am             |%
+around
+|Dm             |Dm
+I slink down the alley looking for a fight
+|B7             |E7
+howlin' to the moon on a hot summer night
+|Am      ~G      |F      ~E7
+Singin' the blues while the lady cats cry
+|Am      ~G      |F      ~E7
+Wild stray cat you're a real gone guy.
+|Am      ~G      |F      ~E7
+I wish I could  be   as care-free and wild,
+|AmNC   ~   ~   |NC      ~
+but I got cat class and I got cat style.
+#INTERLUDE ------------------------------
+|Am  ~NC  ~  ~  |%   ~   ~E7   ~
+-
+|Am  ~NC  ~  ~  |%   ~   ~E7   ~
+-
+#BASS SOLO ----------------------------
+|Am  ~NC  ~  ~  |%   ~   ~E7   ~
+-
+|Am  ~NC  ~  ~  |%   ~   ~E7   ~
+-
+|Am  ~NC  ~  ~  |%   ~   ~E7   ~
+-
+|Am  ~NC  ~  ~  |%   ~   ~E7   ~
+-
+#LEAD BREAK----------------------------
+|Am      ~G      |F      ~E7
+-
+|Am      ~G      |F      ~E7
+-
+|Am      ~G      |F      ~E7
+-
+|Am      ~G      |F      ~E7
+-
+#CHORUS 2 -------------------------------
+|Dm             |Dm7
+I   don't   bother   chasing mice
+|Am             |%
+around
+|Dm             |Dm
+I slink down the alley looking for a fight
+|B7             |E7
+howlin' to the moon on a hot summer night
+|Am      ~G      |F      ~E7
+Singin' the blues while the lady cats cry
+|Am      ~G      |F      ~E7
+Wild stray cat you're a real gone guy.
+|Am      ~G      |F      ~E7
+I wish I could  be   as care-free and wild,
+|AmNC   ~   ~   |NC      ~
+but I got cat class and I got cat style.
+#OUTRO ----------------------------------
+|Am  ~NC  ~  ~  |%   ~   ~E7   ~
+-
+|Am  ~NC  ~  ~  |%  ~  ~Am6/Gb
+-
+|Am6/Gb         |%  ~  ~Am6/Gb
+-
+|Am6/Gb
+-
+https://www.youtube.com/watch?v=iXGfyCuBXhY|Karaoke (Cm)
+@@Released in 1981 in the UK, peaking at No 3 in 1982 <> It was also featured video games Guitar Hero and Rock Band

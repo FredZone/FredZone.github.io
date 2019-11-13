@@ -1,0 +1,60 @@
+TITLE:Green Door,DUR:158,BPM:130,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Jim Lowe,GENRE:Rock,STYLE:Up Tempo,HITyear:1957
+@@@<x9>FRED</x9><x4> 1</x4><x14>oooox</x14><x11> 7</x11><x12>  7 10</x12>
+@@@<x9>PAT </x9><x4> 1</x4><x14>ooxoo</x14><x11> 9</x11><x12>  9  9</x12>
+#INTRO ----------------------------------
+|NC            |G             |G             
+tic-toc-tic-toc
+#VERSE 1 --------------------------------
+|G             |C                     |G              |%
+Midnight one more night without sleeping
+|C             |%                     |G              |%
+Watching till the morning comes creeping
+|D7            |C                     |G              |%
+Green door what's that secret you're keeping
+#VERSE 2 --------------------------------
+|G             |C                     |G              |%
+Well there's an old piano and they play it hot behind the green door
+|C             |%                     |G              |%
+Don't know what they're doing   But they laugh a lot behind the green door
+|D7            |C                     |G              |%
+Wish they'd let me in so I could find out what's behind the green door
+#VERSE 3 --------------------------------
+|G             |C                     |G              |%
+Knocked once tried to tell 'em I'd been there
+|C             |%                     |G              |%
+Door slammed hospitality’s thin there
+|D7            |C                     |G              |%
+Wonder just what's going on in there
+#VERSE 4 --------------------------------
+|G             |C                     |G              |%
+Saw an eyeball peeping through a smoky cloud behind the green door
+|C             |%                     |G              |%
+When I said Joe sent me someone laughed out loud behind the green door
+|D7            |C                     |G              |%
+All I want to do is join the happy crowd behind the green door
+#BREAK 1 --------------------------------
+|G             |C                     |G              |%
+-
+|C             |%                     |G              |%
+-
+|D7            |C                     |G              |%
+-
+#VERSE 5 --------------------------------
+|G             |C                     |G              |%
+Midnight one more night without sleeping
+|C             |%                     |G              |%
+Watching till the morning comes creeping
+|D7            |C                     |G              |%
+Green door what's that secret you're keeping
+#VERSE 6 --------------------------------
+|G             |C                     |G              |%
+Well there's an old piano and they play it hot behind the green door
+|C             |%                     |G              |%
+Don't know what they're doing   But they laugh a lot behind the green door
+|D7            |C                     |G              |%
+Wish they'd let me in so I could find out what's behind the green door
+#OUTRO ----------------------------------
+|D7            |C                     |G              |%
+Wish they'd let me in so I could find out what's behind the green door
+https://www.youtube.com/watch?v=vle44kNHxDg|Jim Lowe
+https://www.youtube.com/watch?v=n0HDefDfpxU|Shakin Stevens

@@ -1,0 +1,70 @@
+TITLE:Jingle-Bell Rock,DUR:110,BPM:132,BEATS:4,KEY:C,QUAL:Preliminary,ARTIST:Bobby Helms,GENRE:Rock,STYLE:Dance,HITyear:1957
+#INTRO ----------------------------------
+|C           ~Em       |Am         ~C
+#VERSE ----------------------------------
+|C            ~Em         |Am         ~C
+Jingle bell, jingle bell, jingle bell rock
+|C                        |Dm         ~G7
+Jingle bells swing and jingle bells ring
+|Dm          ~G7          |Dm         ~G7
+Snowing and blowing up bushels of fun
+|G                        |Dm           ~G7
+Now the jingle hop has begun
+#INTERLUDE ------------------------------
+|C           ~Em          |Am            ~C
+Jingle bell, jingle bell, jingle bell rock
+|C                        |Dm         ~G7
+Jingle bells chime in jingle bell time
+|Dm         ~G7           |Dm        ~G7
+Dancing and prancing in Jingle Bell Square
+|Dm         ~G            |C
+In the frosty air
+#CHORUS ---------------------------------
+|F                        |Fm
+What a bright time, it's the right time
+|C                        |C7
+To rock the night away
+|D                        |D7
+Jingle bell time is a swell time
+|G7                       |%
+To go gliding in a one-horse sleigh
+#BREAK ----------------------------------
+|C         ~Em            |Am         ~C
+Giddy-up jingle horse, pick up your feet
+|C                        |A7
+Jingle  around  the   clock
+|F                        |Fm    
+Mix and mingle in the jingling beat
+|Dm        ~G             |C
+That's the jingle bell rock
+#INTERLUDE ------------------------------
+|C         ~Em            |Am         ~C
+Jingle bell, jingle bell, jingle bell rock
+|C                        |Dm         ~G7
+Jingle bells chime in jingle bell time
+|Dm         ~G7           |Dm        ~G7
+Dancing and prancing in Jingle Bell Square
+|Dm         ~G            |C
+In the frosty air
+#CHORUS ---------------------------------
+|F                        |Fm
+What a bright time, it's the right time
+|C                        |C7
+To rock the night away
+|D                        |D7
+Jingle bell time is a swell time
+|G7                       |%
+To go gliding in a one-horse sleigh
+#OUTRO ----------------------------------
+|C         ~Em            |Am         ~C
+Giddy-up jingle horse, pick up your feet
+|C                        |A7
+Jingle around the clock
+|F                        |Fm
+Mix and mingle in the jingling beat
+|Dm        ~G7            |Dm          ~G7     
+That's the jingle bell That's the jingle bell 
+|Dm          ~G7          |C          
+That's the jingle bell   Rock
+
+https://www.youtube.com/watch?v=UiPkheJRt_Q|Original Bobby Helms

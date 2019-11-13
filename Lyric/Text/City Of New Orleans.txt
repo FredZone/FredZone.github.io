@@ -1,0 +1,94 @@
+TITLE:City Of New Orleans,DUR:0,BPM:130,BEATS:4,KEY:A,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#INTRO ----------------------------------
+|A               |%                |%                |%
+-
+#VERSE 1 --------------------------------
+|A               |E                |A                |%
+Ridin   on  the City  of   New Orleans
+|Gbm             |D                |A                |%
+Illinois Central Monday morning rail
+|A               |E                |A                |%
+Fifteen cars and fifteen restless riders
+|Gbm             |E                |A                |%
+Three conductors and twenty-five sacks of mail.
+#BREAK 1 --------------------------------
+|Gbm             |%                |Dbm              |%
+All along the south bound odyssey, the train pulls out of Kenkakee
+|E               |%                |B                |%
+Rolls along past houses farms and fields
+|Gbm             |%                 |Dbm             |%
+Passing trains that have no name, freight yards of old black men
+|E               |E7               |A                 |%
+And  graveyards  of  rusted  automobiles
+#CHORUS 1 -------------------------------
+|D               |E7                |A                |%
+Good  morning  America,  how  are you
+|Gbm             |D                 |A                |E7    ~E9
+Say, don't you know me, I'm your native son.
+|A               |E                 |Gbm              |Gbm7   ~B7
+I'm the train they call the City of New Orleans
+|D               |E                 |A                |%
+I'll be gone five hundred miles when the day is done.
+#VERSE 2 --------------------------------
+|A               |E                |A                |%
+Dealing card games with the old men in the club car
+|Gbm             |D                |A                |%
+Penny a point ain't no one keeping score
+|A               |E                |A                |%
+Pass the paper bag but hold the bottle
+|Gbm             |E                |A                |%
+Feel the wheels rumbling 'neath the floor
+#BREAK 2 --------------------------------
+|Gbm             |%                |Dbm              |%
+And the sons of Pullman porters and the sons of engineers
+|E               |%                |B                |%
+Ride their father's magic carpets made of steel
+|Gbm             |%                 |Dbm             |%
+Mother with her babes asleep rocking to the gentle beat
+|E               |E7               |A                 |%
+And the rhythm of the rails is all they feel.
+#CHORUS 2 -------------------------------
+|D               |E7                |A                |%
+Good morning America, how are you
+|Gbm             |D                 |A                |E7    ~E9
+Say, don't you know me, I'm your native son.
+|A               |E                 |Gbm              |Gbm7   ~B7
+I'm the train they call the City of New Orleans
+|D               |E                 |A                |%
+I'll be gone five hundred miles when the day is done.
+#VERSE 3 --------------------------------
+|A               |E                |A                |%
+Nightime on the City of New Orleans
+|Gbm             |D                |A                |%
+Changing cars in Memphis Tennessee
+|A               |E                |A                |%
+Half way home we'll be there by morning
+|Gbm             |E                |A                |%
+through the Mississippi darkness rolling down to the sea.
+#BREAK 3 --------------------------------
+|Gbm             |%                |Dbm              |%
+But all the towns and people seem to fade into a dark dream
+|E               |%                |B                |%
+And the steel rail still ain't heard the news
+|Gbm             |%                 |Dbm             |%
+The conductor sings his songs again, the passagers will please refrain
+|E               |E7               |A                 |%
+This train got the disappearing railroad blues.
+#CHORUS 3 -------------------------------
+|D               |E7                |A                |%
+Good morning America, how are you
+|Gbm             |D                 |A                |E7    ~E9
+Say, don't you know me, I'm your native son.
+|A               |E                 |Gbm              |Gbm7   ~B7
+I'm the train they call the City of New Orleans
+|D               |E                 |A                |%
+I'll be gone five hundred miles when the day is done.
+#CHORUS 4 -------------------------------
+|D               |E7                |A                |%
+Good night America, How are you
+|Gbm             |D                 |A                |E7    ~E9
+Say, don't you know me, I'm your native son.
+|A               |E                 |Gbm              |Gbm7   ~B7
+I'm the train they call the City of New Orleans
+|D               |E                 |A                |%
+I'll be gone five hundred miles when the day is done.

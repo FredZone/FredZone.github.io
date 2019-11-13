@@ -1,0 +1,67 @@
+TITLE:The First Song That I Wrote,DUR:173,BPM:180,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Fred Kaparich
+#INTRO ----------------------------------
+|C             |%           |%              |%
+#VERSE 1 --------------------------------
+|C             |%           |F              |%
+Some years ago as I sifted through my life's debris
+|G                |%                 |%                 |C          |%
+I stumbled on my old guitar and it seemed to speak to me
+|C             |%           |F              |%
+When I retired, I'd told myself, I was gonna try new things
+|G                |%                 |%                 |C          |%
+So I dusted off the old flattop and set out to play and sing
+#VERSE 2 --------------------------------
+|C             |%           |F              |%
+Now at first blush it seemed, to me, a simple thing to do
+|G                |%                 |%                 |C          |%
+I'd played the thing in college with a bunch of guys I knew
+|C             |%           |F              |%
+We'd made a little money and some real good times we had
+|G                |%                 |%                 |C          |%
+So I was shocked and a little miffed when I sounded really bad
+#VERSE 3 --------------------------------
+|C             |%           |F              |%
+But I persevered and struggled til I could play 5 chords
+|G                |%                 |%                 |C          |%
+and fake some finger-picking so listeners won't be bored
+|C             |%           |F              |%
+Then, with all that work behind me I tried my vocal wings
+|G                |%                 |%                 |C          |%
+And came to the realization that I really couldn't sing
+#VERSE 4 --------------------------------
+|C             |%           |F              |%
+But being the resourceful type I formed a backup plan
+|G                |%                 |%                 |C          |%
+I'd only play eclectic stuff and pass for a thinking man
+|C             |%           |F              |%
+I figured if a played some tunes no-one had ever heard
+|G                |%                 |%                 |C          |%
+They might ignore my tone deaf style and listen to the words
+#VERSE 5 --------------------------------
+|C             |%           |F              |%
+So I went into the archives of obscure troubadours
+|G                |%                 |%                 |C          |%
+and found some clever lyrics with 3 changes, maybe four
+|C             |%           |F              |%
+So a bad performance,  with stumbling    muted chords
+|G                |%                 |%                 |C          |%
+Might rise to mediocrity if folks just listened to the words
+#VERSE 6 --------------------------------
+|C             |%           |F              |%
+And thus prepared, with trembling voice I made my big debut
+|G                |%                 |%                 |C          |%
+I chose an old Shel Silverstein, I was sure nobody knew
+|C             |%           |F              |%
+But when I stood to take my bow, and maybe pass the hat
+|G                |%                 |%                 |C          |%
+gSomeone said, "That's really Good, and by the way, Did you write that"
+#VERSE 7 --------------------------------
+|C             |%           |F              |%
+Well of course I had to tell them it was someone else's work
+|G                |%                 |%                 |C          |%
+And besides If I'd lied they'd figure it out and know I was a jerk
+|C             |%           |F              |%
+So I sat down and penned this tune, so kindly please take note
+|G                |%                 |%                 |C          |%
+You've just been subjected to the first song I ever wrote
+

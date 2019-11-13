@@ -1,0 +1,98 @@
+TITLE:Box Number Ten,DUR:152,BPM:150,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Jim Croce,GENRE:Folk,STYLE:Ballad,HITyear:Unknown
+#INTRO ----------------------------------
+|C                           |G                           
+-
+|Am                          |F                           
+-
+|C                           |G7                          
+-
+|F                           |C                           
+-
+#VERSE 1 --------------------------------
+|C                           |G7                          
+Well outta Southern Illinois
+|Am                          |F                           
+Come a down-home country boy
+|C                           |G7                          
+He's gonna make it in the city Playin guitar in the stud-
+|F                           |C                           
+-io
+|C                           |G7                          
+Oh well, he hadn't been there an hour
+|Am                          |F                           
+When he met a Broadway flow-r,  You know she
+|C                           |G7                          
+took him for his money And she left him in a cheap
+|F                           |C                           
+hotel
+#VERSE 2 --------------------------------
+|C                           |G7                          
+Oh well, its easy for you to see
+|Am                          |F                           
+That that country boy is me
+|C                           |G7                          
+Say and how-m I gonna ever break the news to the folks back
+|F                           |C                           
+home
+|C                           |G7                          
+Well, I was gonna be a great success
+|Am                          |F                           
+Things sure ended up a mess
+|C                           |G7                          
+But in the process I got messed up
+|F                           |C                           
+too
+#CHORUS 1 -------------------------------
+|G                           |F             ~G             
+Hello, mama and dad I had to call collect
+|C           ~C/B            |Am           ~Am/G           
+Cause I aint got a cent to my name
+|C           ~C/B            |Am           ~Am/G           
+Well, Im sleepin in a hotel doorway
+|D/Gb                        |G                           
+And tonight they say it-s gonna rain And if you-d
+|C           ~C/B            |Am           ~Am/G           
+only send me some money  Ill be
+|C           ~C/B            |Am           ~Am/G           
+back on my feet again
+|C           ~C/B            |Am           ~Am/G           
+Send it in care of the Sunday Mission
+|F                           |C                           
+Box Number Ten
+|C           ~C/B            |Am           ~Am/G           
+-
+|F            ~G             |C                           
+#VERSE 3 --------------------------------
+|C                           |G                           
+Well, back in Southern Illinois
+|Am                          |F                           
+Theyre still worryin bout their boy
+|C                           |G                           
+But this boys goin home soon-s he gets the
+|F                           |C                           
+fare
+|C                           |G                           
+Because as soon as I got my bread
+|Am                          |F                           
+I got a pipe upside my head
+|C                           |G7                          
+You know they left me in an alley took my money and my guitar
+|F                           |C                           
+too
+#CHORUS 2 -------------------------------
+|G                           |F             ~G             
+Hello, mama and dad I had to call collect
+|C           ~C/B            |Am           ~Am/G           
+Cause I aint got a cent to my name
+|C           ~C/B            |Am           ~Am/G           
+Well, Im sleepin in a hotel doorway
+|D/Gb                        |G                           
+And tonight they say it-s gonna rain And if you-d
+|C           ~C/B            |Am           ~Am/G           
+only send me some money  Ill be
+|C           ~C/B            |Am           ~Am/G           
+back on my feet again
+|C           ~C/B            |Am           ~Am/G           
+Send it in care of the Sunday Mission
+|F                           |C                           
+Box Number Ten

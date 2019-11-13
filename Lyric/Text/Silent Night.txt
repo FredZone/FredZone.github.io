@@ -1,0 +1,40 @@
+TITLE:Silent Night,DUR:150,BPM:90,BEATS:3,KEY:A,QUAL:Raw,ARTIST:,GENRE:Unknown,STYLE:Unknown,HITyear:
+#VERSE 1 --------------------------------
+|A       |%       |%       |%
+Silent   night,  holy     night
+|E       |%       |A       |% 
+All   is calm, all is bright
+|D       |%       |A       |%
+Round yon Virgin Mother and Child
+|D       |%       |A       |% 
+Holy   Infant so tender and mild
+|E       |%       |A       |%
+Sleep   in heavenly peace
+|A       |E       |A       |%  
+Sleep in heavenly peace
+#VERSE 2 --------------------------------
+|A       |%       |%       |%
+Silent night, holy night!
+|E       |%       |A       |% 
+Shepherds quake at the sight
+|D       |%       |A       |%
+Glories stream from heaven afar
+|D       |%       |A       |% 
+Heavenly hosts sing Alleluia!
+|E       |%       |A       |%
+Christ, the Savior is born
+|A       |E       |A       |%  
+Christ, the Savior is born
+#VERSE 3 --------------------------------
+|A       |%       |%       |%
+Silent night, holy night
+|E       |%       |A       |% 
+Son of God, love's pure light
+|D       |%       |A       |%
+Radiant beams from Thy holy face
+|D       |%       |A       |% 
+With the dawn of redeeming grace
+|E       |%       |A       |%
+Jesus, Lord, at Thy birth
+|A       |E       |A       |%  
+Jesus, Lord, at Thy birth

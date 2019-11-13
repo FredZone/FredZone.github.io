@@ -1,0 +1,127 @@
+TITLE:Greenback Dollar,DUR:183,BPM:145,BEATS:4,KEY:E,QUAL:Raw,ARTIST:Greenback Dollar,GENRE:Folk,STYLE:Ballad,HITyear:1959 or 62
+#INTRO ----------------------------------
+@muted 'power chord' on E&A strings (2 voices)
+|Em                   |%
+-
+|Em                   |%
+-
+#VERSE 1 --------------------------------
+|Em                |G
+Some people say I'm a no count,
+|Em                |G
+others say I'm no good
+|C7                        |G
+But I'm just a natural born travlin man
+|D                    |Em
+Doing what I think I should O Yeah
+|D                    |Em
+Doing what I think I should.
+|Em                   |%
+-
+#CHORUS 1 -------------------------------
+@Strumming and muted power chord (2+voices)
+|G           ~C           |G          ~C
+And I don't give a damn about a greenback dollar
+|G       ~C         |G       ~C
+Spend it fast as I can....    for a
+|G       ~C         |G       ~C
+wailin song and a good guitar
+|D                     |Em
+The only thing that I understand, poor boy
+|D                    |Em ...
+The only thing that I understand.
+|Em                   |%
+-
+#VERSE 2 --------------------------------
+@muted power chord (Fred Sings)
+|Em              |G
+When I was a little babe,
+|Em              |G
+my mama she said "Son.
+|C7                        |G
+Travel where you will and grow to be a man
+|D                    |Em
+And sing what must be sung, poor boy
+|D                |Em
+Sing what must be sung."
+|Em                   |%
+-
+#CHORUS 2 -------------------------------
+@Strumming and muted power chord (2+voices)
+|G           ~C           |G          ~C
+And I don't give a damn about a greenback dollar
+|G       ~C         |G       ~C
+Spend it fast as I can....    for a
+|G       ~C         |G       ~C
+wailin song and a good guitar
+|D                     |Em
+The only thing that I understand, poor boy
+|D                    |Em ...
+The only thing that I understand.
+|Em                   |%
+-
+#VERSE 3 --------------------------------
+@muted power chord (Pat Sings)
+|Em       |G
+Now that I'm a grown man,
+|Em                 |G
+I've traveled here and there
+|C7                       |G
+And I've learned that a bottle of brandy and a song
+|D            |Em
+Are the only ones who care, oh Lord
+|D            |Em ...
+The only ones who care.
+|Em                   |%
+-
+#CHORUS 3 -------------------------------
+@Strumming and muted power chord (2+voices)
+|G           ~C           |G          ~C
+And I don't give a damn about a greenback dollar
+|G       ~C         |G       ~C
+Spend it fast as I can....    for a
+|G       ~C         |G       ~C
+wailin song and a good guitar
+|D                     |Em
+The only thing that I understand, poor boy
+|D                    |Em ...
+The only thing that I understand.
+|Em                   |%
+-
+#VERSE 4 --------------------------------
+@muted power chord 2+voices
+|Em                |G
+Some people say I'm a no count,
+|Em                |G
+others say I'm no good
+|C7                        |G
+But I'm just a natural born travlin man
+|D                    |Em
+Doing what I think I should O Yeah
+|D                    |Em
+Doing what I think I should.
+|Em                   |%
+-
+#CHORUS 4 -------------------------------
+|G           ~C           |G          ~C
+And I don't give a damn about a greenback dollar
+|G       ~C         |G       ~C
+Spend it fast as I can....    for a
+|G       ~C         |G       ~C
+wailin song and a good guitar
+|D                     |Em
+The only thing that I understand, poor boy
+|D                    |Em ...
+The only thing that I understand.
+#OUTRO ----------------------------------
+|D                     |Em
+The only thing that I understand, poor boy
+|D                    |Em ...
+The only thing that I understand.
+|Em                   |%
+-
+|Em                   |%
+-
+https://www.youtube.com/watch?v=t_Lo40O_zgA|Kignston Trio Live
+https://www.youtube.com/watch?v=TufDxRHetcI|Kignston Trio Album
+https://www.youtube.com/watch?v=I6MG2abVe6g|Hoyt Axton

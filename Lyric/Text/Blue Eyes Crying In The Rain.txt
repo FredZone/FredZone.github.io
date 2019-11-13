@@ -1,0 +1,49 @@
+TITLE:Blue Eyes Crying In The Rain,DUR:142,BPM:120,BEATS:4,KEY:D,QUAL:Complete,ARTIST:Willie Nelson,GENRE:Country,STYLE:Ballad,HITyear:1975
+$$TCL1 <X14>PR 1</X14> <X14>D M3</X14> <X1>(V3)</X1> <X16>H OFF</X16>
+$$STRT ooXoo 8 5 10
+$$RP55 3 or 4
+#INTRO ----------------------------------
+|NC      |D       |%       |%       |%
+-
+#VERSE ----------------------------------
+|D         |%         |%         |%
+In the twilight glow, I see
+|A         |%         |D         |%
+Blue eyes cryin' in the rain
+|D         |%         |%         |%
+When we kissed goodbye and parted
+|A         |%         |D         |%
+I  knew we'd never meet a-gain<!--#H ON#-->
+#VERSE ----------------------------------
+|G         |%         |%         |%
+Love   is like a  dying  em -      ber;
+|D         |%         |A         |%
+Only  memories    re- main.
+|D         |%         |%         |%
+And  thru the ages I'll re-member
+|A         |%         |D         |%
+Blue eyes cryin' in the rain.
+#BREAK ----------------------------------
+|D         |%         |%         |%
+-
+|A         |%         |D         |%
+-
+|D         |%         |%         |%
+-
+|A         |%         |D         |%
+#OUTRO ----------------------------------
+|G         |%         |%         |%
+Someday when we meet up yonder,
+|D         |%         |A         |%
+We'll stroll hand in hand a- gain.
+|D         |%         |%         |%
+And in a land that knows no parting,
+|A         |%         |D  ~G  ~  |D ~G ~D ~NC
+Blue eyes crying in the rain.
+|D         |%
+(hold)
+https://www.youtube.com/watch?v=/0JUxwEIL2Uk|Karaoke
+iRealb://Blue%20Eyes%20Crying%20in%20the%20Rain%3DFred%20Rose%3D%3DCountry%20120%3DD%3D%3D1r34LbKcu7DZLxZ4D%2CLZZLxZLxZLDA*%7B%20%20yQXQyX%7CZ%20xZLxZLxxLZAL4Ti*%7BZLxZLDLZxLLxZLxZLGB*%7C%5D%20xLZDZLxZLAZLxZLxZZxLZDZLxZLG%20%2CD2ZDLZxZLD1NZLxZLA%3Ec%2C%2Cbc%2Cv%2Ci%3CZLxZLxZLx%20%7D%7CNLxZLA%2CLZD%2CG%2CD%2CsnZ%7C%20%3DPop-Country%3D120%3D1
+@@Originally recorded in 1945 by Roy Acuff.
+@@It was recorded by Willie Nelson as part of his 1975 album Red Headed Stranger.
+@@ Red Headed Stranger was Nelsons first successful album as a singer...not a songwriter

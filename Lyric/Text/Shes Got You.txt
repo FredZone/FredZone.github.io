@@ -1,0 +1,57 @@
+TITLE:Shes Got You,DUR:176,BPM:62,BEATS:2,KEY:C,QUAL:Verified,ARTIST:Patsy Cline,GENRE:Country,STYLE:Ballad,HITyear:
+#INTRO ----------------------------------
+|N            |N 
+-           
+|C            |G7           |C            |C  
+-          
+#VERSE 1 --------------------------------
+|C            |G7           |C            |C            
+I've got your picture    that you gave to me
+|F            |F            |F            |F            
+And it's signed "with love," just like it used to be
+|C            |Am           |C            |Am           
+The only thing different,    the only thing new
+|C            |G7           |C            |G7           
+I've got your picture,    she's got you
+#VERSE 2 --------------------------------
+|C            |G7           |C            |C            
+I've got the records that we used to share
+|F            |F            |F            |F            
+And they still sound the same as when you were here
+|C            |Am           |C            |Am           
+The only thing different, the only thing new,
+|C            |G7           |C            |G7           
+I've got your records,    she's got you
+#CHORUS 1 -------------------------------
+|F            |F            |F            |F            
+I've got your memory,   or has it got me
+|D7           |D7           |D7           |G7        |%   
+I really don't know, but I know it won't let me be
+#VERSE 3 --------------------------------
+|C            |G7           |C            |C            
+I've got your class ring; that proved you cared
+|F            |F            |F            |F            
+And it still looks the same as when you gave it dear
+|C            |Am           |C            |Am           
+The only thing different, the only thing new
+|C            |G7           |C            |C        
+I've got these little things,    she's got you
+-
+#CHORUS 2 -------------------------------
+|F            |F            |F            |F            
+I've got your memory,   or has it got me
+|D7           |D7           |G7           |G7           
+I really don't know, but I know it won't let me be
+#VERSE 4 --------------------------------
+|C            |G7           |C            |C            
+I've got your class ring; that proved you cared
+|F            |F            |F            |F            
+And it still looks the same as when you gave it dear
+|C            |Am           |C            |Am           
+The only thing different, the only thing new
+|C            |G7           |C            |C        
+I've got these little things,    she's got you
+|C            |%            |%            |%            
+-
+https://www.youtube.com/watch?v=owNATIdymvs|Patsy Cline live...
+https://www.youtube.com/watch?v=MWCUh6tf7PA|Record Version

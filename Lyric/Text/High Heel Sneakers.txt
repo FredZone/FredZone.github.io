@@ -1,0 +1,19 @@
+TITLE:High Heel Sneakers,DUR:117,BPM:100,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown
+INTRO  HIGH HEEL SNEAKERS
+#Verse 1
+|E7  |E7  |E7  |E7
+|A7  |A7  |E7  |E7
+|B7  |A7  |E7  |E7
+#Verse 2
+|E7  |E7  |E7  |E7
+|A7  |A7  |E7  |E7
+|B7  |A7  |E7  |E7
+#Verse 3
+|E7  |E7  |A7  |A7
+|E7  |E7  |A7  |A7
+|B7  |B7  |A7  |E7
+#Verse 4
+|E7  |E7  |E7  |E7
+|A7  |A7  |E7  |E7
+|B7  |A7  |E7  |E7
+

@@ -1,0 +1,44 @@
+TITLE:Ive Been Workin On The Railroad,DUR:150,BPM:150,BEATS:4,KEY:D,QUAL:Raw,ARTIST:,GENRE:Unknown,STYLE:Ballad,HITyear:
+#INTRO ----------------------------------
+|D                       |%       
+#VERSE 1 --------------------------------
+|D                       |%       
+I've been workin' on the railroad 
+|G                |D
+all the live long day
+|D                       |%       
+I've been workin' on the railroad, 
+|E                    |A
+Just to pass the time away
+|A                         |D       
+Can't you hear the whistle blowin'
+|G                     |D
+Rise up so early in the morn
+|G                         |D      
+Can't you hear the captain shoutin'
+   |A              |D
+"Dinah blow your horn!"
+|D                    |G
+Dinah won't you blow, Dinah won't you blow
+|A                   |D
+Dinah won't you blow your horn
+|D                    |G
+Dinah won't you blow, Dinah won't you blow
+|A                   |D
+Dinah won't you blow your horn
+D                             |%
+Someone's in the kitchen with Dinah
+|D                         |A
+Someone's in the kitchen I know
+|D                            |G
+Someone's in the kitchen with Dinah
+|D              ~A          |D
+Strummin' on the old      banjo 
+           |D               
+A-playin' fee fi fiddle-y-i-o
+|D                |A
+Fee fi fiddle-y-i-o-o-o-o
+|D                |G
+Fee fi fiddle-y-i-o
+|D        ~A             |D
+Strummin' on the old banjo

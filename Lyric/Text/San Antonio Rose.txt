@@ -1,0 +1,76 @@
+TITLE:San Antonio Rose,DUR:184,BPM:156,BEATS:4,KEY:G,QUAL:Raw,ARTIST:Bob Wills,GENRE:Country,STYLE:Dance,HITyear:
+intro
+|G         |G7          |C         |A7
+-
+|D7        |D           |G         |%
+-
+#VERSE 1 --------------------------------
+|G         |G7          |C         |A7
+Deep within my heart lies a melody,
+|D7        |D           |G         |%
+A song of old San An - tone.
+|G         |G7          |C         |A7
+Where in dreams I live with a memory,
+|D7        |%          |G          |%         
+Beneath the stars all alone.
+#VERSE 2 --------------------------------
+|G         |G7          |C         |A7
+It was there I found beside the Alamo
+|D7        |D           |G         |%
+Enchantment strange as the blue up above.
+|G         |G7          |C         |A7
+A moonlit path only she would know,
+|D7        |%          |G          |%         
+Still hears my broken song of love.
+#CHORUS 1 -------------------------------
+|D           |D              |A7          |A7  
+Moon in all your splendor,  know only my  heart
+|A           |A              |D           |%
+Call back my  Rose, Rose of San Antone.
+|D           |D              |A           |A9
+Lips so sweet and tender, like petals falling apart.
+|A           |A9             |D           |D7
+Speak once  a - gain of my love, my own.
+#VERSE 3 --------------------------------
+|G         |G7          |C         |A7
+Broken song, empty  words I know  
+|D7        |D           |G         |%
+still  live in my heart all  alone
+|G         |G7          |C         |A7
+For that moonlit path by the  Alamo,  
+|D7        |%          |G          |%         
+and  Rose, my Rose of San An  tone   
+#VERSE 4 --------------------------------
+|G         |G7          |C         |A7
+-
+|D7        |D           |G         |%
+-
+|G         |G7          |C         |A7
+-
+|D7        |%          |G          |%         
+-
+#CHORUS 2 -------------------------------
+|D           |D              |A7          |A7  
+Moon in all your splendor,  know  only my  heart
+|A           |A              |D           |%
+Call back my  Rose, Rose of  San Antone.
+|D           |D              |A           |A9
+Lips so sweet and tender, like  petals falling apart.
+|A           |A9             |D           |D7
+Speak once  a - gain of my  love, my  own.
+#VERSE 5 --------------------------------
+|G         |G7          |C         |A7
+Broken song, empty  words I know 
+|D7        |D           |G         |%
+still live in my heart all  a - lone
+|G         |G7          |C         |A7
+For that moonlit path  by the Alamo,  
+|D7        |%          |G          |%         
+and  Rose, my Rose of San An  tone.
+@@Signature song of Bob Wills and His Texas Playboys.
+@@It was an instrumental song written by Bob Wills
+@@Band members added lyrics and it was re-titled "New San Antonio Rose"
+https://www.youtube.com/watch?v=83yAbYPrf5Y|John Denver
+https://www.youtube.com/watch?v=3D3_FQJ4X9E|Merle Haggard
+https://www.youtube.com/watch?v=bbI_av3QAKo|Sons of the Pioneers
+https://www.youtube.com/watch?v=rjGamngEs28|Clint Eastwood (REALLY!)

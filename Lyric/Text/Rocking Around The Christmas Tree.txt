@@ -1,0 +1,44 @@
+TITLE:  Rocking Around The Christmas Tree,DUR:,BPM:,BEATS:4,KEY:G,QUAL:Raw,ARTIST:,GENRE:Unknown,STYLE:Unknown,HITyear:
+There is no strumming pattern for this song yet. Add it and get +5 IQ
+
+ROCKING AROUND THE CHRISTMAS TREE
+|G    |Em   |C  |D
+-
+#VERSE 1 --------------------------------
+|G           |%                  |D             |%
+Rocking around the Christmas tree at the Christmas party hop
+|D           |%                  |%             |G
+Mistletoe hung where you can see every couple tries to stop
+|G           |%                  |D             |%
+Rocking around the Christmas tree, let the Christmas spirit ring
+|D           |%                  |%             |G
+Later we'll have some pumpkin pie and we'll do some caroling
+#CHORUS 1 -------------------------------
+|C           |%                 |Bm             |%
+You will get a sentimental feeling when you hear
+|Em          |%                 |A              |D
+Voices singing let's be joll deck the halls with boughs of holly
+#VERSE 2 --------------------------------
+|G           |%                  |D             |%
+Rockin' around the Christmas tree Have a happy holiday
+|D           |%                  |%             |G
+Everyone dancing merrily In the new old fashioned way
+|G           |%                  |D             |%
+Rockin' around the Christmas tree Have a happy holiday
+|D           |%                  |%             |G
+Everyone dancing merrily In the new old fashioned way
+#CHORUS 2 -------------------------------
+|C           |%                 |Bm             |%
+You will get a sentimental feeling when you hear
+|Em          |%                 |A              |D
+Voices singing let's be jolly, deck the halls with boughs of holly
+#OUTRO ----------------------------------
+|G           |%                  |D             |%
+Rocking around the Christmas tree, have a happy holiday
+|D           |%                  |%             |G
+Everyone dancing merrily in the new old-fashioned way
+|D           |D                  |D             |D      
+Everyone dancing merrily in the new   old - fa - shioned
+|G           |C                  |G             |G Gb G
+way
+

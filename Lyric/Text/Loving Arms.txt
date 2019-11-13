@@ -1,0 +1,62 @@
+TITLE:Loving Arms,DUR:180,BPM:130,BEATS:4,KEY:D,QUAL:Raw,ARTIST:Dobie Gray,GENRE:Pop,STYLE:Ballad,HITyear:
+#INTRO ----------------------------------
+|N              |%
+-
+|D              |%              |G              |%
+-
+|D              |%              |G              |%
+#VERSE 1 --------------------------------
+|D              |%              |G              |A
+If you could see me now  The one who said that he'd
+|D              |%              |G              |A
+rather roam    The one who said he'd rather
+|D              |%              |G              |A
+be alone             If you could only see me
+|D              |%              |%              |%
+now
+#VERSE 2 --------------------------------
+|D              |%              |G              |A
+If I could hold you now  Just for a moment if I could really
+|D              |%              |G              |A
+make you mine          Just for a while turn back
+|D              |%              |G              |A
+the hands of time  If I could only hold you
+|D              |%              |%              |%
+now
+#CHORUS 1 -------------------------------
+|G              |A              |D              |G
+I've been too long in the wind too long in the rain
+|Em             |A              |D              |%
+Taking any comfort that I can
+|G              |A              |D              |G
+Lookin' back and longing for the freedom from my chains
+|Em             |A              |D              |%
+Lyin' in your loving arms again
+#VERSE 3 --------------------------------
+|D              |%              |G              |A
+If you could hear me now   Singing somewhere through the
+|D              |%              |G              |A
+lonely night     Dreaming of the arms that
+|D              |%              |G              |A
+held me tight           If you could only hear me
+|D              |%              |%              |%
+now
+#CHORUS 2 -------------------------------
+|G              |A              |D              |G
+I've been too long in the wind too long in the rain
+|Em             |A              |D              |%
+Taking any comfort that I can
+|G              |A              |D              |G
+Lookin' back and longing for the freedom from my chains
+|Em             |A              |D              |%
+Lyin' in your loving arms again
+#OUTRO ----------------------------------
+|G              |A              |D              |G
+I can almost feel your lovin' arms again
+|D              |%              |%              |%
+-
+https://www.youtube.com/watch?v=JqKxMtO6xFw&list=RDJqKxMtO6xFw&index=1|Dobie Gray
+https://www.youtube.com/watch?v=NT1_V_z22SI|Etta James
+https://www.youtube.com/watch?v=1_R1EBmsBBg|Natalie Cole (Simple guitar backup)
+https://www.youtube.com/watch?v=hBjlKBJpGao&list=RDhBjlKBJpGao&index=1|Kristofferson and Coolidge
+https://www.youtube.com/watch?v=TrBSD-nOVQ0&list=RDhBjlKBJpGao&index=2|Mell and Piet Veerman

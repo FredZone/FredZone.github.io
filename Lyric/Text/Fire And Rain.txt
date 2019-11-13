@@ -1,0 +1,72 @@
+TITLE:Fire And Rain,DUR:183,BPM:153,BEATS:4,KEY:A,QUAL:Raw,ARTIST:James Taylor,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+
+@1 . 2 . 3 . 4 .
+@b   d u   u d u
+@-
+#INTRO ----------------------------------
+@Pat establish the groove and we come in...
+|A              |G                  |D            |A
+-
+|A              |E                  |G            |%
+-
+#VERSE 1 --------------------------------
+|A              |Em                 |D            |A   Asus2
+Just yesterday morning they let me know you were gone
+|A              |E                  |G            |G
+  Susanne the plans they made put an end to you
+|A              |Em                 |D            |A   Asus2
+I walked out this morning and I   wrote down this song
+|A              |E                  |G            |%
+ I just can't remember   who   to   send it to
+#CHORUS 1 -------------------------------
+|D                |Bm                  |A           |Asus2
+ I've seen       fire and  I've  seen  rain           I've seen
+|D                |Bm                  |A           |Asus2
+sunny days that I thought would never   end           I've seen
+|D                |Bm                  |A           |Asus2
+lonely times when I could   not find a friend          But I
+|G                |Em                  |A           |A7
+always thought that I'd  see  you       again          Won't you
+#VERSE 2 --------------------------------
+|A                 |Em                   |D             |A   Asus2
+look down upon me, Jesus   You've got to help me make a stand
+|A                 |E                    |G             |%
+ You've just got to see me through      another day
+|A                 |Em                   |D             |A   Asus2
+   My body's       aching  and  my      time   is  at   hand
+|A                 |E                    |G             |%
+ And   I     won't  make it any        other way                Oh,
+#CHORUS 2 -------------------------------
+|D                 |Bm                  |A           |Asus2
+   I've seen     fire and I've seen    rain               I've seen
+|D                 |Bm                  |A           |Asus2
+sunny days that I thought would never end                 I've seen
+|D                 |Bm                  |A           |Asus2
+lonely times when I could not find a   friend              But I
+|G                 |Em                  |A           |A7
+always thought I'd see you             again               Been
+#VERSE 3 --------------------------------
+|A                  |Em                  |D                    |A Asus2
+walking my mind to an easy time, my    back turned towards the sun
+|A                  |E                   |G              |%
+Lord knows when the cold wind blows it'll turn your head around There's
+|A                  |Em                 |D                  |A   Asus2
+hours of time on the telephone line to talk about things to come
+|A              |E                  |G            |%
+Sweet dreams and flying machines in pieces on the ground
+#CHORUS 3 -------------------------------
+|D                |Bm                  |A           |Asus2
+Oh, I've  seen     fire and I've seen rain               I've seen
+|D                |Bm                  |A           |Asus2
+sunny days that I thought would never end                 I've seen
+|D                |Bm                  |A           |Asus2
+lonely times when I could not find a friend              But I
+|G                     |Em             |A             |A7
+always thought that I'd see you,    ,one more time again  Thought I'd
+#OUTRO ----------------------------------
+|G                   |Em                  |A               |%    
+ see you             one   more   time   again           There's just a
+|G                   |Em                  |A               |%
+ few things coming my way this     time around, now         Thought I'd
+|G                   |Em                 |A                |%
+see you,thought I'd  see you  fire  and rain, now . . .

@@ -1,0 +1,33 @@
+TITLE:Rocky Top,DUR:48,BPM:140,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:TBD
+#VERSE 1 --------------------------------
+|G                 |C        ~G
+Wish that I was on ol' Rocky Top,
+|Em       ~D       |G
+down in the Tennessee hills;
+|G                 |C        ~G
+Ain't no smoggy smoke on Rocky Top;
+|Em       ~D       |G
+Ain't no telephone bills;
+#CHORUS 1 -------------------------------
+|Em                |D
+Rocky Top, you'll always be
+|F                 |C
+home sweet home to me;
+|C                 |G
+Good ol' Rocky Top;
+|Em       ~D       |G
+Rocky Top, Tennessee;
+|Em       ~D       |G
+Rocky Top, Tennessee.
+#VERSE 2 --------------------------------
+|G                 |C        ~G
+Once I had a girl on Rocky Top;
+|Em       ~D       |G
+Half bear, other half cat;
+|G                 |C        ~G
+Wild as a mink, but sweet as soda pop,
+|Em       ~D       |G
+I still dream about that;
+#OUTRO ----------------------------------
+|Em       ~D       |G
+I still dream about that;

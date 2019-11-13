@@ -1,0 +1,51 @@
+TITLE:Dream-Short,DUR:82,BPM:105,BEATS:4,KEY:C,QUAL:Complete,ARTIST:The Everly Brothers,GENRE:Rock,STYLE:Ballad,HITyear:Unknown
+@@@<x9>FRED</x9><x4> 1</x4><x14>oxooo</x14><x11> 9</x11><x12> 10 10</x12>
+@@@<x9>PAT </x9><x4> 1</x4><x14>ooxoo</x14><x11>10</x11><x12>  9  6</x12>
+@@@   1...2...3...4...
+@@@   d   D u d   D
+#INTRO ----------------------------------
+@Establish Groove with first 2 lines...voice over 
+|C        ~Am          |F          ~G
+-
+|C        ~Am          |F          ~G
+-
+|C        ~Am          |F          ~G
+Dre..................am  dream   dream   dream
+|C        ~Am          |F          ~G
+Dre..................am   dream   dream   dream
+#VERSE 1 --------------------------------
+|C              ~Am         |F          ~G
+When   I want   you          in my       arms
+|C              ~Am         |F           ~G
+When   I want you       and all you      charms
+|C              ~Am         |F              ~G
+When   ever I want you      all I have to   do is
+|C              ~Am          |F            ~G
+Dre..............am         dream   dream   dream
+#BRIDGE ---------------------------------
+|F                  |Em
+I can make you mine   taste your lips of wine
+|Dm                |C
+Anytime   night or   day
+     |F                 |Em
+The   only trouble is   gee      wiz
+      |D                |G
+I'm   dreamin' my life   away.
+
+#CHORUS 1 -------------------------------
+|C              ~Am         |F          ~G
+I need you   so    that I could   die
+|C              ~Am         |F          ~G
+I    love you    so    and that is   why
+|C              ~Am         |F          ~G
+When   ever I   want you   all I have to   do is.
+|C              ~Am         |F          ~G
+Dre..................am   dream   dream   dream
+#OUTRO ----------------------------------
+|C              ~Am         |F          ~G
+Dre..................am   dream   dream   dream
+|C              ~Am         |F          ~G
+Dre..................am   dream   dream   dream
+@@Chet Adkins Played on the Record
+@@The Everly brothers toured extensively with Buddy Holly in 1957 and 1958
+@@Phil Everly was one of Buddy Holly's pallbearers

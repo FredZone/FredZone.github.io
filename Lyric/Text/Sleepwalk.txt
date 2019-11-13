@@ -1,0 +1,24 @@
+TITLE:Sleepwalk,DUR:,BPM:100,BEATS:4,KEY:c,QUAL:Raw,ARTIST:Santo And Johnny
+#INTRO ----------------------------------
+|C    |Am   |Fm   |G7   
+|C    |Am   |Fm   |G7   
+#VERSE 1 --------------------------------
+|C    |Am   |Fm   |G7 
+|C    |Am   |Fm   |G7 
+|C    |Am   |Fm   |G7 
+|C    |Am   |Fm   |G7 
+|C    |Am   |Fm   |G7 
+|C    |Am   |Fm   |G7 
+|C    |Am   |Fm   |G7 
+|C    |Am   |Fm   |G7 
+#BREAK 1 --------------------------------
+|C    |F    |C    |C7 
+|F    |     |Fm   |
+|C    |F    |C    |C7  
+|F    |     |Fm   |
+G7    |     |G7+9 |
+#OUTRO ----------------------------------
+|C    |Am   |Fm   |G7   
+|C    |Am   |Fm   |G7
+------------------------------------
+NOTE(C6add9(IX): XX10/9/10/10.)

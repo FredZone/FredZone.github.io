@@ -1,0 +1,56 @@
+TITLE:Well Well Well-Short,DUR:120,BPM:88,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#INTRO ----------------------------------
+@Lead in Riff- solo bass/guitar(muted pick of chords)
+|NC                    |%
+-
+|NC                    |%
+-
+|NC                    |%
+-
+|NC                    |%
+-
+#CHORUS 1 -------------------------------
+@Harmony 1-3-4
+|Em                |Em    ~Am    ~Em  ~
+Well, Well, Well, Who's that a-callin'
+|Em        ~Am     |G           ~B7
+Well, Well, Well,  Hold my    hand.
+|Em                |Em    ~Am    ~Em  ~
+Well, Well, Well, Night is a-fallin'
+|G                 |B7
+Spirit is a-movin'all over this land.
+#VERSE 1 --------------------------------
+@AHH on 1-2-3 join on last
+|G                    |%
+Lord told   Noah,     Build him an ark,
+|Bm                   |%
+Build it out of      hickory   bark.
+|Em       ~E          |Am
+Rain started fallen and the water start to climb,
+|G                    |B7
+God send a fire, not a flood next time.
+#CHORUS 2 -------------------------------
+@lead substitutes for WELL WELL WELL harmony 1-3-4
+|Em                |Em    ~Am    ~Em  ~
+-      -         -, Who's that a-callin'
+|Em         ~Am    |G           ~B7
+-      -         -Hold my      hand.
+|Em                |Em    ~Am    ~Em  ~
+-      -         -Night is a-fallin'
+|G                 |B7
+Spirit is a-movin'all over this land.
+#CHORUS 3 -------------------------------
+@Backup Vocal walks down-Harmony on 3
+|Em                |Em    ~Am    ~Em  ~
+Well, Well, Well, Who's that a-callin'
+|Em         ~Am    |G           ~B7
+Well, Well, Well,  Hold my    hand.
+|Em                |Em    ~Am   ~Em  ~
+Well, Well, Well, Night is a-fallin'
+|G                 |B7
+Spirit is a-movin'all over this land.
+|Em  ~NC   ~G  ~NC |A  ~NC  ~   ~
+Well,     Well,    Well,
+|Em
+-END
+https://www.youtube.com/watch?v=mw8PAuOe-Lg&spfreload=1|Bob Gibson and Hamilton Camp

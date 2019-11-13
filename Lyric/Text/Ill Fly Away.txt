@@ -1,0 +1,75 @@
+TITLE:Ill Fly Away,DUR:214,BPM:160,BEATS:4,KEY:D,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#INTRO ----------------------------------
+|C          |%          |%                |%
+#VERSE 1 --------------------------------
+|C          |%          |%                |%
+Some bright morning    when this life is o'er
+|F         |%           |C                |%
+I'll            Fly   Away
+|C         |%           |%                |%
+To  A     home on       God's Celestial shore
+|G         |%           |C                |%
+I'll             Fly   Away
+#CHORUS 1 -------------------------------
+|C          |%          |%                |%
+I'll fly away oh glory
+|F         |%           |C                |%
+I'll fly away
+|C         |%           |%                |%
+When I die Hallelujah by and by
+|G         |%           |C                |%
+I'll fly away
+#VERSE 2 --------------------------------
+|C          |%          |%                |%
+When the shadows of this life have gone
+|F         |%           |C                |%
+I'll fly away
+|C         |%           |%                |%
+Like a bird from these prison walls I'll fly
+|G         |%           |C                |%
+I'll fly away
+#CHORUS 2 -------------------------------
+|C          |%          |%                |%
+I'll fly away oh glory
+|F         |%           |C                |%
+I'll fly away
+|C         |%           |%                |%
+When I die Hallelujah by and by
+|G         |%           |C                |%
+I'll fly away
+#VERSE 3 --------------------------------
+|C          |%          |%                |%
+Oh how glad and happy when we meet
+|F         |%           |C                |%
+I'll fly away
+|C         |%           |%                |%
+No more cold iron shackles on my feet
+|G         |%           |C                |%
+I'll fly away
+#CHORUS 3 -------------------------------
+|C          |%          |%                |%
+I'll fly away oh glory
+|F         |%           |C                |%
+I'll fly away
+|C         |%           |%                |%
+When I die Hallelujah by and by
+|G         |%           |C                |%
+I'll fly away
+#VERSE 4 --------------------------------
+|C          |%          |%                |%
+Just a few more weary days and then
+|F         |%           |C                |%
+I'll fly away
+|C         |%           |%                |%
+To a land where joys will never end
+|G         |%           |C                |%
+I'll fly away
+#CHORUS 4 -------------------------------
+|C          |%          |%                |%
+I'll fly away oh glory
+|F         |%           |C                |%
+I'll fly away
+|C         |%           |%                |%
+When I die Hallelujah by and by
+|G         |%           |C                |%
+I'll fly away

@@ -1,0 +1,61 @@
+TITLE:Walking After Midnight,DUR:,BPM:92,BEATS:4,KEY:A,QUAL:Raw,ARTIST:Patsy Cline,GENRE:Country,STYLE:Ballad,HITyear:Unknown
+#INTRO ----------------------------------
+ |A                     |%
+                            I go out 
+#VERSE ----------------------------------
+|A                     |%
+walking           after midnight    Out in the 
+|D                     |D
+moonlight     just      like we used to do    I'm always 
+|A                     |D        ~E     
+walking after          midnight searching for 
+|A                     |A
+you                             I walk for
+|A                     |%
+Miles       along the highway   Well that's just
+|D                     |D
+My      way           of saying I love you   I'm always 
+|A                     |D        ~E      
+walking    after       midnight searching for 
+|A                     |A7
+You                                    I stopped to
+#CHORUS ---------------------------------
+|D                          |%
+See a    weeping   willow   Crying on his pillow
+|A                          |%
+Maybe   he's  crying   for me           And 
+|D                          |%
+As the skies turn gloomy   Night Winds whisper to me.  I'm 
+|A                         |E
+lone-some     as I can     be                  I go out 
+#BREAK ----------------------------------
+|A                   |%
+walking   after     midnight out in the 
+|D                   |D
+starlight  Just      hoping you maybe somewhere
+|A                   |E
+walking     after     midnight  searching for
+|A                   |E 
+Me 
+#INTERLUDE ------------------------------
+|A                   |%
+-
+|D                   |D
+-                                 I stopped to
+#CHORUS ---------------------------------
+|D                          |%
+See a    weeping   willow   Crying on his pillow
+|A                          |%
+ maybe   he's  crying   for me           And 
+|D                          |%
+As the skies turn gloomy   Night Winds whisper to me.  I'm 
+|A                         |E
+lone-some     as I can     be                  I go out 
+                       just searchin for
+#OUTRO ----------------------------------
+|A                   |E 
+Me                        just searchin for
+|A                   |E 
+Me                        just searchin for
+|A                   |%
+Me

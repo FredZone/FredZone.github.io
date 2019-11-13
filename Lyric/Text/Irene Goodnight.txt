@@ -1,0 +1,70 @@
+TITLE:Irene Goodnight,DUR:160,BPM:270,BEATS:6,KEY:C,QUAL:Complete,ARTIST:Lead Belly,GENRE:Folk,STYLE:Ballad,HITyear:Unknown
+#CHORUS 1 -------------------------------
+|C        |%         |G7       |%
+I   -    rene    goodnight,
+|G7       |%         |C        |%
+Irene           goodnight,
+|C        |C7         |F       |Dm7
+Goodnight Irene, goodnight Irene,
+|G7       |%         |C        |%
+I'll see you in my dreams.
+#VERSE 1 --------------------------------
+|C        |%         |G7       |%
+Last saturday night I got married.
+|G7       |%         |C        |%
+Me and my wife settled down.
+|C        |C7         |F       |Dm7
+Now me and my wife are parted,
+|G7       |%         |C        |%
+I'm gonna take another stroll downtown
+#CHORUS 2 -------------------------------
+|C        |%         |G7       |%
+I   -    rene    goodnight,
+|G7       |%         |C        |%
+Irene           goodnight,
+|C        |C7         |F       |Dm7
+Goodnight Irene, goodnight Irene,
+|G7       |%         |C        |%
+I'll see you in my dreams.
+#VERSE 2 --------------------------------
+|C        |%         |G7       |%
+Sometimes I live in the country;
+|G7       |%         |C        |%
+Sometimes I live in town;
+|C        |C7         |F       |Dm7
+Sometimes I take a great notion
+|G7       |%         |C        |%
+To jump into the river and drown
+#CHORUS 3 -------------------------------
+|C        |%         |G7       |%
+I   -    rene    goodnight,
+|G7       |%         |C        |%
+Irene           goodnight,
+|C        |C7         |F       |Dm7
+Goodnight Irene, goodnight Irene,
+|G7       |%         |C        |%
+I'll see you in my dreams.
+#VERSE 3 --------------------------------
+|C        |%         |G7       |%
+Stop ramblin',           stop your gamblin';
+|G7       |%         |C        |%
+Stop stayin' out late at night;
+|C        |C7         |F       |Dm7
+Go home to your wife and family;
+|G7       |%         |C        |%
+Stay there by your fire-side bright.
+#CHORUS 4 -------------------------------
+|C        |%         |G7       |%
+I   -    rene    goodnight,
+|G7       |%         |C        |%
+Irene           goodnight,
+|C        |C7         |F       |Dm7
+Goodnight Irene, goodnight Irene,
+|G7       |%         |C        |%
+I'll see you in my dreams.
+#OUTRO ----------------------------------
+|C        |C7         |F       |Dm7
+Goodnight Irene, goodnight Irene,
+|G7       |%         |C        |%
+I'll see you in my dreams.
+https://www.youtube.com/watch?v=vmQXmqbZ3Pc|Lead Belly

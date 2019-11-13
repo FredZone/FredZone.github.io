@@ -1,0 +1,64 @@
+TITLE:Dang Me,DUR:76,BPM:175,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Roger Miller,GENRE:Country,STYLE:Up Tempo,HITyear:???
+#INTRO ----------------------------------
+|N                        |%                        
+-
+#VERSE 1 --------------------------------
+|E                        |A                        
+Aw‘ll  here  I  sit  a  high  a  gettin  ideas
+|B7                       |E                        
+Ain't  nothin  but  a  fool'd  live  like  this
+|A                        |A                        
+Out  all  night  runnin  wild
+|B7                       |%                        
+Woman  sittin  home  with  a  month  old  child
+#CHORUS 1 -------------------------------
+|E                        |A                        
+Dang  me,  dang  me
+|B7                       |E                        
+They  ought  to  take  and  rope  and  hang  me
+|E                        |A                        
+High  from  the  highest  tree
+|N                        |E                        
+Woman would you weep for me boop boop boop boop etc.
+|E(Figure1)               |E                        
+One  more  boop  boop  boop  boop  etc.
+#VERSE 2 --------------------------------
+|E                        |A                        
+Just settin’ ‘round drinking with the rest of the guys
+|B7                       |E                        
+Six  rounds  bought  and  I  bought  five
+|A                        |A                        
+Spent  the  groceries  and  half  the  rent
+|B7                       |%                        
+Lack fourteen dollars havin’ twenty seven cents so
+#CHORUS 2 -------------------------------
+|E                        |A                        
+Dang  me,  dang  me
+|B7                       |E                        
+They  ought  to  take  and  rope  and  hang  me
+|E                        |A                        
+High  from  the  highest  tree
+|N                        |E                        
+Woman would you weep for me boop boop boop boop etc.
+|E(Figure1)               |E                        
+One  more  boop  boop  boop  boop  etc.
+#VERSE 3 --------------------------------
+|E                        |A                        
+They  say  roses  are  red  and  violets  are  purple
+|B7                       |E                        
+sugar's  sweet  and  so's  maple  surple
+|A                        |A                        
+I'm  the  seventh  out  of  seven  sons
+|B7                       |%                        
+my pappy was a pistol, I'm a son of a gun. I said
+#CHORUS 3 -------------------------------
+|E                        |A                        
+Dang  me,  dang  me
+|B7                       |E                        
+They  ought  to  take  and  rope  and  hang  me
+|E                        |A                        
+High  from  the  highest  tree
+|N                        |E                        
+Woman would you weep for me boop boop boop boop etc.
+|E(Figure1)               |E                        
+One  more  boop  boop  boop  boop  etc.

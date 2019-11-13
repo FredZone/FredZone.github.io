@@ -1,0 +1,47 @@
+TITLE:Traveling Man,DUR:138,BPM:125,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Rickey Nelson,GENRE:Rock,STYLE:Ballad,HITyear:1961
+INTRO  TRAVELING MAN
+|C  	/  /   /   Am  /   /   /  |C  	/   /   /   Am  /   /   /
+-
+|C  	/  /   /   Am  /   /   /  |C  	/   /   /   Am  /   /   /
+bum, bum, bum, bum...oouuuuuuu (Lots of this through out)
+#CHORUS----------------------------------
+        |C	           |Am	                  |C	         |G7
+I'm a travelin' man, made a lot of stops, all over the world
+       |Am                   |F                |C    G7    |C
+And in every port, I own the heart of at least one lovely girl.
+-
+         |C               |Am             |C           |G7
+I have a pretty senorita, waiting for me, down in old Mexico.
+          |C             |F              |C     G7       |C
+If you 're ever in Alaska stop and see my cute little Eskimo.
+#VERSE----------------------------------------------------
+|F                     |Em         |F                      |C
+Oh my sweet frauline, down in Berlin town makes my heart start to yearn.
+       |F                |Em           |D            |G7
+And my China doll down in old Hong Kong waits for my return.
+        |C              |Am           |C              |G7
+Pretty Polynesian baby, over the sea, I remember the night
+        |C                    |F           |C         G    |C
+when we walked in the sands of Wai Ki Ki and I held her oh so tight.
+--------------------------------------------------
+(Instrumental:)
+|C  	/    /    /   |A  /    /   /     |F  /    /    /  |G   /    /    /
+-
+|Am 	/    /    /   |   /    /   /     |C  /    /G   /  | C  /    /    /
+#VERSE-----------------------------------------------------
+       |F                    |Em          |F                      |C
+Oh my sweet fraline, down in Berlin town, makes my heart start to yearn.
+        |F                |Em           |D           |G7
+And my China doll down in old Hong Kong waits for my return.
+       |C              |Am           |C              |G7
+Pretty Polynesian baby, over the sea, I remember the night
+        |Am                    |F           |C         G7     |C
+when we walked in the sands of Wai Ki Ki and I held her oh so tight.
+--------------------------------------------------
+|C             |Am             |C         |Am
+Whoa.., I'm a travelin' man.  Yes, I'm a travelin' man.
+|C             |Am             |C         |Am
+Whoa.., I'm a travelin' man.  Yes, I'm a travelin' man.
+|C   	/  /   / |Am   	/  / /  |C    G   |C
+M m m m m                    //   //   /
+@@Jerry Fuller had originally written the song with Sam Cooke in mind but offered it to Nelson instead.

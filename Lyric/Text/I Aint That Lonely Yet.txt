@@ -1,0 +1,77 @@
+TITLE:I Aint That Lonely Yet,DUR:100,BPM:110,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Dwight Yokum,GENRE:Country,STYLE:Ballad,HITyear:
+#INTRO ----------------------------------
+|C         ~G        |Am
+-
+|F         ~G7       |C
+-
+#VERSE 1 --------------------------------
+|C                    |F               |C
+You keep calling me,  On the telephone
+|G7                  |Am
+You say you're all alone
+|F       ~G7          |C
+Well, that's real sad
+|C                    |F               |C
+You keep leavin',   Notes stuck on my door
+|G7                  |Am
+Guess you're hungry for some more
+|F       ~G7          |C
+Girl that's too bad
+#CHORUS 1 -------------------------------
+|Am                   |E
+'cause I ain't that lonely yet
+|F         ~G7        |C
+No I ain't that lonely yet
+|Am                   |E
+After what you put me through
+|F         ~G7        |C
+No, I ain't that lonely yet
+#VERSE 2 --------------------------------
+|C                    |F               |C
+Once there was this,  Spider in my bed
+|G7                  |Am
+I got caught up in her web
+|F       ~G7          |C
+Of love and lies
+|C                    |F               |C
+(She) spun her chains around my heart and soul
+|G7                  |Am
+Never to let go
+|F       ~G7          |C
+But I survived
+#CHORUS 2 -------------------------------
+|Am                   |E
+'cause I ain't that lonely yet
+|F         ~G7        |C
+No I ain't that lonely yet
+|Am                   |E
+After what you put me through
+|F         ~G7        |C
+No, I ain't that lonely yet
+#BRIDGE ---------------------------------
+|E                    |%
+There's nothing left That you can do
+|F                     |C
+to try and bring me 'round
+|F                    |D
+('cause) everything you do just brings me
+|G                    |%  ~   ~   ~Ab
+down
+#CHORUS 3 -------------------------------
+|Am                   |E
+Oh, and I   ain't that lonely yet
+|F         ~G7        |C
+No I ain't that lonely yet
+|Am                   |E
+After what you put me through
+|F         ~G7        |C
+Oh, I ain't that lonely yet
+#OUTRO ----------------------------------
+|Am              |E
+Hey, I ain't that lonely yet
+|F        ~G7     |C
+No I ain't that lonely yet
+|Am              |E
+After what you put me through
+|F         ~G7    |C
+Oh, I ain't that lonely yet

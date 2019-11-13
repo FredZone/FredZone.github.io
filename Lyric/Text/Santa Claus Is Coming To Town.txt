@@ -1,0 +1,47 @@
+TITLE:Santa Claus Is Coming To Town,DUR:150,BPM:120,BEATS:2,KEY:A,QUAL:Raw,ARTIST:,GENRE:Unknown,STYLE:Unknown,HITyear:
+#VERSE 1 --------------------------------
+|A                    |D
+You better watch out  You better not cry
+|A                    |D
+Better not pout  I'm telling you why
+|A       ~F#m          |Bm        ~E7
+Santa   Claus is     coming   to
+|A                     |%
+town
+#VERSE 2 --------------------------------
+|A                    |D
+He's making a list  And checking it twice;
+|A                    |D
+Gonna find out Who's naughty and nice
+|A       ~F#m          |Bm        ~E7
+Santa Claus is coming to
+|A                     |%
+town
+#CHORUS 1 -------------------------------
+  |D                   |%
+He sees you when you're sleeping
+  |D                   |%
+He knows when you're awake
+  |B7                  |%
+He knows if you've been bad or good
+  |E7 (stop)           |%   
+So be good for goodness sake!  O!
+#VERSE 3 --------------------------------
+|A                    |D
+You better watch out  You better not cry
+|A                    |D
+Better not pout  I'm telling you why
+|A       ~F#m          |Bm        ~E7
+Santa Claus is coming to
+|A                     |%
+ A
+town
+#OUTRO ----------------------------------
+|A    ~F#m     |Bm  ~E7
+Santa Claus is coming to
+|A             |
+town
+|A    ~F#m     |Bm  ~E7
+Santa Claus is coming to
+|A             |
+town

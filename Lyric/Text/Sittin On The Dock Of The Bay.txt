@@ -1,0 +1,86 @@
+TITLE:Sittin On The Dock Of The Bay,DUR:167,BPM:102,BEATS:4,KEY:G,QUAL:Complete,ARTIST:Otis Redding,GENRE:R&B,STYLE:Ballad,HITyear:Unknown
+#INTRO ----------------------------------
+@   Chords Pat
+@Base Lead in (keep background simple)
+|N             |G             |%             
+-
+|%             |%             
+-
+#VERSE 1 --------------------------------
+|G             |B             
+Sittin' in the morning sun
+|C ~ ~C/B ~C/Bb |A             
+I'll be sittin' in the evening come
+|G             |B             
+Watching the ships roll in,
+|C ~ ~C/B ~C/Bb |A             
+then I watch them roll away   again, yeah
+#CHORUS 1 -------------------------------
+|G             |E             
+I'm sittin' on the dock of the bay
+|G             |E             
+watching the tide roll away
+|G             |A             
+ooh I'm just sittin' on the dock of the bay
+|G             |E             
+wasting ti- - -ime
+#VERSE 2 --------------------------------
+|G             |B             
+I left my home in Georgia
+|C ~ ~C/B ~C/Bb |A             
+Headed for the Fris  -co bay
+|G             |B             
+'Cause I've had nothing to live for
+|C ~ ~C/B ~C/Bb |A             
+and look like nothing's gonna come my way
+#CHORUS 2 -------------------------------
+@ voice over chorus from here on...
+|G             |E             
+I'm sittin' on the dock of the bay
+|G             |E             
+watching the tide roll away
+|G             |A             
+ooh I'm just sittin' on the dock of the bay
+|G             |E             
+wasting ti---ime
+#BREAK 1 --------------------------------
+|G     ~D7     |C             
+Look like nothing's gonna change
+|G     ~D7     |C             
+Everything still remains the same
+|G     ~D7     |C      ~G      
+I can't do what ten people tell me to do
+|F             |D             
+So I guess I'll remain the same
+#VERSE 3 --------------------------------
+|G             |B             
+Sittin' here resting my bones
+|C ~ ~C/B ~C/Bb |A             
+and this loneliness won't leave me alone
+|G             |B             
+These 2000 miles I roamed
+|C  ~  ~B  ~Bb  |A             
+just to make this dock my home
+#CHORUS 3 -------------------------------
+|G             |E             
+I'm sittin' at the dock of the bay
+|G             |E             
+watching the tide roll away     ooh
+|G             |A             
+I'm just sittin' on the dock of the bay
+|G             |E             
+wasting ti---ime
+#OUTRO ----------------------------------
+@whistle over these two chords and fade out
+|G             |%             
+-
+|%             |Em            
+-
+|G             |%             
+-
+|%             |Em            
+-
+|G             |%             
+-
+https://www.youtube.com/watch?v=rTVjnBo96Ug|Otis Redding
+https://www.youtube.com/watch?v=fcKYWDiqeUU|Karaoke (G)

@@ -1,0 +1,66 @@
+TITLE:Long Black Veil,DUR:188,BPM:130,BEATS:4,KEY:D,QUAL:Complete,ARTIST:Lefty Frizzell,GENRE:Country,STYLE:Ballad,HITyear:Unknown
+$$TCL1 <X14>PR 1</X14> <X14>D M2</X14> <X14>PV 1</X14> <X16>V3 & V4</X16> <X16>H OFF</X16>
+$$STRT_ooXoo 8 5 10
+$$RP55 3 or 4
+#INTRO ----------------------------------
+|ND                        |%
+-
+|D            |%            |%            |%
+-
+#VERSE 1 --------------------------------
+|D            |%            |%            |%
+Ten years ago on a cold dark night
+|A7           |%            |G            |D
+Someone was killed beneath the town hall light
+|D            |%            |%            |%
+There were few at the scene but they all agreed That the
+|A7         |%          |G          |D          |%
+slayer who ran looked a lot like me
+#VERSE 2 --------------------------------
+|D            |%            |%            |%
+The judge said son what is your ali - bi      If you were
+|A7           |%            |G            |D
+somewhere else then you won't have to die
+|D            |%            |%            |%
+I spoke not a word though it meant my life  For I had
+|A7         |%          |G          |D          |%
+been in the arms of my best friend's wife  <XX>H ON</XX>
+#CHORUS 1 -------------------------------
+|G            |D            |G            |D
+She walks these hills  In a long black veil
+|G          |D          |G          |D          |%
+She visits my grave  When the night winds wail
+|D            |%            |G            |D
+Nobody knows nobody sees
+|A7           |%            |D            |%
+Nobody knows but me         <XX>H OFF</XX>
+#VERSE 3 --------------------------------
+|D            |%            |%            |%
+The scaffold's high and eternity near
+|A7           |%            |G            |D
+She stood in the crowd and shed not a tear
+|%            |%            |%            |%
+But sometimes at night when the cold wind moans
+|A7           |%            |G            |D
+In a long black veil she cries over my bones <XX>H ON</XX>
+#CHORUS 2 -------------------------------
+|G            |D            |G            |D
+She walks these hills  In a long black veil
+|G          |D          |G          |D          |%
+She visits my grave  When the night winds wail
+|D            |%            |G            |D
+Nobody knows nobody sees
+|A7           |%            |D            |%
+Nobody knows but me
+#OUTRO ----------------------------------
+|D            |%            |G            |D
+Nobody knows nobody sees
+|A7           |%            |D            |%
+Nobody knows but me
+|D            |%            |%            |%
+-
+https://www.youtube.com/watch?v=B3lkz8h5ReE|Karaoke (E)
+@@Written in 1959 by Danny Dill with Marijohn Wilkin,
+@@Deliberately crafted to resemble a traditional ballad. Dill called it an "instant folk song."
+@@Originally recorded in Nashville by Lefty Frizzell (with Wilkin on piano)
+@@Reached #6 on the country music charts.

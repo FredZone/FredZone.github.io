@@ -1,0 +1,29 @@
+TITLE:I Always Get Lucky With You,DUR:0,BPM:130,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown,GENRE:Country,STYLE:Ballad,HITyear:1983
+#INTRO ----------------------------------
+|G               |B7              |C               |A               
+-
+|G               |D7              |G               |%               
+-
+#VERSE 1 --------------------------------
+|G               |B7              |C               |A               
+I've had good luck and bad luck and no luck it's true
+|G               |D7              |G               |%               
+But I always get lucky with you
+#VERSE 2 --------------------------------
+|G               |B7              |C               |A               
+I've been turned on and turned down when the bars close at two
+|G               |D7              |G               |%               
+but I always  get lucky with you
+#CHORUS 1 -------------------------------
+|C               |%               |G               |%               
+I keep two strikes against me most all of the time
+|A               |%               |D7              |%               
+When it's down to a phone call I'm  minus the dime
+#VERSE 3 --------------------------------
+|G               |B7              |C               |A               
+There's been good days and bad days when the day is through
+|G               |D7              |G               |%               
+I'll always get lucky with  you
+|G               |D7              |G               |%               
+I'll always get lucky with  you
+@@Written by Merle Haggard& others and recorded by George Jones

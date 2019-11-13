@@ -1,0 +1,69 @@
+TITLE:Its A Heartache,DUR:236,BPM:120,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Bonnie Tyler,GENRE:Pop,STYLE:Ballad,HITyear:TBD
+#INTRO ----------------------------------
+|N               |N
+-
+|C               |%               |Em              |%
+-
+|F               |%               |C               |G
+-
+#VERSE 1 --------------------------------
+|C               |%               |Em              |%
+It's  a  heartache,  nothing  but  a  heartache,
+|F               |%               |C               |G
+hits you when it's too late, hits you when you're down.
+|C               |%               |Em              |%
+It's  a  fool's  game,  nothing  but  a  fool's  game,
+|F               |%               |C               |G
+standing  in  the  cold  rain,  feeling  like  a  clown.
+#CHORUS 1 -------------------------------
+|C               |%               |Em              |%
+It's  a  heartache,  nothing  but  a  heartache,
+|F               |%               |C               |G
+love him till your arms break, then he let's you down.
+|F               |G               |Em              |Am
+It ain't right with love to share when you find he doesn't care,
+|G               |G               |F               |G
+for  you.      It  ain't  wise  to  need  someone,
+|Em              |Am              |G               |G
+as  much  as  I  depended  on,  you.
+#VERSE 2 --------------------------------
+|C               |%               |Em              |%
+It's  a  heartache,  nothing  but  a  heartache,
+|F               |%               |C               |G
+hits you when it's too late, hits you when you're down.
+|C               |%               |Em              |%
+It's  a  fool's  game,  nothing  but  a  fool's  game,
+|F               |%               |C               |G
+standing in the cold rain, feeling like a clown.
+#BREAK 1 --------------------------------
+|C               |%               |Em              |%
+-lead
+|F               |%               |C               |G
+-lead
+|F               |G               |Em              |Am
+It ain't right with love to share when you find he doesn't care,
+|G               |G               |F               |G
+for you.            It ain't wise to need someone,
+|Em              |Am              |G               |G
+as  much  as  I  depended  on,  you.
+#CHORUS 2 -------------------------------
+|C               |%               |Em              |%
+It's  a  heartache,    nothing  but  a  heartache,
+|F               |%               |C               |G
+love him till your arms break, then he let's you down.
+|C               |%               |Em              |%
+It's  a  fool's  game,  --
+|F               |%               |C               |G
+standing in the cold rain, feeling like a clown.
+#VERSE 3 --------------------------------
+|C (fade)              |%               |Em              |%
+It's  a  heartache,
+|F               |%               |C               |G
+love  him  till  your  arms  break,  then  he  lets  you  down.
+|C         |%               |Em              |%
+It's  a  fool's  game,  nothing  but  a  fool's  game,
+|F               |%               |C               |G
+standing  in  the  cold  rain,  feeling  like  a  clown.
+#OUTRO ----------------------------------
+|C               |C               |C               |C
+https://www.youtube.com/watch?v=nPOy7TPjfkE

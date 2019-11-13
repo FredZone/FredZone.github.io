@@ -1,0 +1,96 @@
+TITLE:Dark As A Dungeon,DUR:252,BPM:110,BEATS:3,KEY:A,QUAL:Complete,ARTIST:Merle Travis,GENRE:Folk,STYLE:Ballad,HITyear:Unknown
+@The Breaks between verses and Chorus vary
+@Need to tie it down since everyone does it differently
+@
+#INTRO ----------------------------------
+|N      |
+-
+|A              |%           |D           |A
+-
+#VERSE 1 --------------------------------
+|A              |%           |D           |E
+Come and listen you fellers so young and so fine
+|A              |%           |D           |A
+And seek not your fortune in the dark, dreary mine
+|A              |%           |D           |E
+It will form as a habit and seep in your soul
+|A              |%           |D           |A
+'til the stream of your blood runs as black as the coal
+#CHORUS 1 -------------------------------
+|E              |E           |A           |%
+Where it's dark as a dungeon and damp as the dew
+|E              |E           |A           |%
+Where the danger is double and pleasures are few
+|A              |A7          |D           |E
+Where the rain never falls and the sun never shines
+|A              |%           |D           |A
+Well its dark as a dungeon way down in the mines
+|A              |%           |D           |A
+-
+#VERSE 2 --------------------------------
+|A              |%           |D           |E
+Theres many a man I known in my day
+|A              |%           |D           |A
+Who lived just to labor his whole life away
+|A              |%           |D           |E
+Like a fiend with his dope and a drunkard his wine
+|A              |%           |D           |A
+A man must have lust for the lure of the mine
+#CHORUS 2 -------------------------------
+|E              |E           |A           |%
+Where it's dark as a dungeon and damp as the dew
+|E              |E           |A           |%
+Where the danger is double and pleasures are few
+|A              |A7          |D           |E
+Where the rain never falls and the sun never shines
+|A              |%           |D           |A
+Well its dark as a dungeon way down in the mines
+|A              |%           |D           |A
+-
+#VERSE 3 --------------------------------
+|A              |%           |D           |E
+The midnight, the morning, the middle of day
+|A              |%           |D           |A
+Are the same to the miner who labors away.
+|A              |%           |D           |E
+Where the demons of death often come by surprise,
+|A              |%           |D           |A
+One fall of the slate and you're buried alive.
+#CHORUS 3 -------------------------------
+|E              |E           |A           |%
+Where it's dark as a dungeon and damp as the dew
+|E              |E           |A           |%
+Where the danger is double and pleasures are few
+|A              |A7          |D           |E
+Where the rain never falls and the sun never shines
+|A              |%           |D           |A
+Well its dark as a dungeon way down in the mines
+|A              |%           |D           |A
+-
+#VERSE 4 --------------------------------
+|A              |%           |D           |E
+I hope when I'm gone and the ages shall roll
+|A              |%           |D           |A
+My body will blacken and form into coal
+|A              |%           |D           |E
+Then I'll look from the door of my heavenly home
+|A              |%           |D           |A
+And ill pity the miner a-digging my bones
+#CHORUS 4 -------------------------------
+|E              |E           |A           |%
+Where it's dark as a dungeon and damp as the dew
+|E              |E           |A           |%
+Where the danger is double and pleasures are few
+|A              |A7          |D           |E
+Where the rain never falls and the sun never shines
+|A              |%           |D           |A
+Well its dark as a dungeon way down in the mines
+#OUTRO ----------------------------------
+|A              |A7          |D           |E
+-
+|A              |%           |%           |%
+-
+https://www.youtube.com/watch?v=-FPmSLzsbdM|Merle Travis Live
+https://www.youtube.com/watch?v=nKGCKwACj1I|Johnny Cash Live
+https://www.youtube.com/watch?v=No8H5BgWOok|Tennesse Ernie Ford Studio Version
+https://www.youtube.com/watch?v=V50ccl-p88I|Guy Clark and Ramblin Jack Elliot

@@ -1,0 +1,20 @@
+TITLE:Take Me Out To The Ball Game,DUR:45,BPM:135,BEATS:3,KEY:C,QUAL:Raw,ARTIST:,GENRE:Unknown,STYLE:Unknown,HITyear:
+#INTRO ----------------------------------
+|C         |%      |%     |%
+#VERSE 1 --------------------------------
+|C         |%      |G     |%
+Take me out to the ball game
+|C        |%         |G     |%
+Take me out with the crowd
+|A7           |%          |D7      |%
+Buy me some peanuts and cracker-jacks
+|Dm        |%     |G        |G7
+I don't care if I ever get back
+         |C             |%         |G   |%
+Well it's root, root, root for the home team
+    |C       |C          |A7       |%
+If they don't win it's a shame
+        |F |F#°7 |C                 |A7
+Now it's 1,  2,   3 strikes - you're out
+       |D7 |G7 |C
+at the old ball game

@@ -1,0 +1,95 @@
+TITLE:Singing The Blues,DUR:113,BPM:150,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Marty Robbins,GENRE:Unknown,STYLE:Unknown,HITyear:1956
+$$TCL1 <X14>PR 1</X14> <X14>CM 2</X14> <X1>(V3)</X1> <X16>H OFF</X16>
+$$STRT ooXoo 8 5 10 (Picking)
+$$RP55 3 or 4
+#INTRO ----------------------------------
+|N                      |N
+-
+|C                      |%
+-
+|C                      |%
+-
+#VERSE 1 --------------------------------
+|C                      |F
+Well I never felt more like singin' the blues
+|C                      |G7
+'Cause I never thought that I'd ever lose
+|F                      |G7
+Your love      dear        why'd you do me this
+|C                      |%
+way <!--#H ON#-->
+#VERSE 2 --------------------------------
+|C                      |F
+Well I never felt more like cryin' all night
+|C                      |G7
+'Cause everything's wrong and ain't nothin' right
+|F                      |G7
+With-out        you        you got me singin' the
+|C                      |C
+blues <!--#V1#-->
+#CHORUS 1 -------------------------------
+|F                      |C
+The moon and stars no longer shine
+|F                      |C
+The dream is gone I thought was mine
+|F                      |C
+There's nothin' left for me to do
+|C                      |*C
+But  Cry -y    -y     -y   over
+|G7                     |G7
+you  (Cry over you)<!--#H OFF#-->
+#VERSE 3 --------------------------------
+|C                      |F
+Well I never felt more like singin' the blues
+|C                      |G7
+'Cause I never thought that I'd ever lose
+<!--#V4#-->
+|F                      |G7
+Your love dear      why'd you do me this
+|C                      |% <!--#H ON#-->
+#VERSE 4 --------------------------------
+|C                      |F
+Well I never felt more like cryin' all night
+|C                      |G7
+'Cause everything's wrong  and ain't nothin' right
+|F                      |G7
+With-out you              you got me singin' the
+|C                      |%
+blues
+#CHORUS 2 -------------------------------
+|F                      |C
+The moon and stars no longer shine
+|F                      |C
+The dream is gone I thought was mine
+|F                      |C
+There's nothin' left for me to do
+|C                      |*C
+But  Cry -y    -y     -y   over
+|G7                     |G7
+you  (Cry over you)
+#VERSE 5 --------------------------------
+|C                      |F
+Well  I never felt more like runnin' away
+|C                      |G7
+But how can I go when I couldn't stay
+|F                      |G7
+Without you         you got me singin'
+|C                      |%
+the  blues
+@STOP PLAYING ...JUST SING
+#OUTRO ----------------------------------
+|F                      |G7
+Without you         you got me singin'
+|C                      |%
+the  blues
+|C(hold)                |%
+-
+@@ by Melvin Endsley
+@@Marty Robbins had a hit the same year
+@@The tune was also sung by Vivian Vance and William Frawley (Ethel and Fred of I Love Lucy fame) for a Ford Motor Company television commercial promoting the Edsel.
+https://www.youtube.com/watch?v=wJA8b3esxfE|Guy Mitchell
+https://www.youtube.com/watch?v=JVaypxYh8aY|Marty Robbins
+https://www.youtube.com/watch?v=MbCHXVOtDP4|Paul McCartney
+https://www.youtube.com/watch?v=uG89I8VVvjA|Anne Murray
+https://www.youtube.com/watch?v=zikk8yRxqZk|George Jones
+https://www.youtube.com/watch?v=XV2mm1jKEcg|Kentucky Head Hunters

@@ -1,0 +1,67 @@
+TITLE:Take Me Home Country Roads - Pat,DUR:208,BPM:165,BEATS:4,KEY:G,QUAL:Verified,ARTIST:John Denver,GENRE:Country,STYLE:Ballad,HITyear:1971
+#INTRO ----------------------------------
+@Pat  Set Groove
+|G       |%     |Em        |%
+#VERSE 1 --------------------------------
+|G     |%      |Em          |%
+ Almost heaven, West Virginia,
+|D        |%           |C         |G
+ Blue Ridge Mountains, Shenandoah River.
+|G        |%           |Em         |%
+ Life is old there, older than the trees,
+|D                |%        |C             |G
+ Younger than the mountains, growin' like a breeze.
+#CHORUS 1 -------------------------------
+|G           |%         |D      |%
+ Country roads, take me home
+|Em         |%          |C      |%
+ To the place     I belong
+|G           |%     |D          |%
+ West Virginia, mountain momma
+|C       |%    |G      |%
+ Take me home country roads
+#VERSE 2 --------------------------------
+|G     |%      |Em          |%
+ All my mem'ries, gather 'round her,
+|D        |%           |C         |G
+ Miner's lady, stranger to blue water.
+|G        |%           |Em         |%
+ Dark and dusty, painted on the sky,
+|D                |%        |C             |G
+ Misty taste of moonshine, teardrop in my eye.
+#CHORUS 2 -------------------------------
+|G           |%         |D      |%
+ Country roads, take me home
+|Em         |%          |C      |%
+ To the place I belong
+|G           |%     |D          |%
+ West Virginia, mountain momma
+|C       |%      |G            |%
+ Take me home country roads
+#BREAK 1 --------------------------------
+|Em         |D           |G               |%
+I hear the voice in the morning when she calls me
+   |C    |G                |D            |%
+The radio reminds me of my home far away
+  |Em                |F          |C                   |G
+And Driving down the road I get a feeling that I should have been home
+|D           |%          |D7            |%
+Yesterday,              Yesterday...
+#CHORUS 3 -------------------------------
+|G           |%         |D      |%
+ Country roads, take me home,
+|Em         |%          |C      |%
+ To the place I belong
+|G           |%     |D          |%
+ West Virginia, mountain momma,
+|C       |%    |G         |%
+ Take me home, country roads.
+#OUTRO ----------------------------------
+        |D         |%       |G        |%
+ Take me home, down country roads.
+@@The popularity of the song has inspired resolutions in the West Virginia Legislature to change the state song of West Virginia to "Take Me Home, Country Roads".
+https://www.youtube.com/watch?v=UtLuBg3Hot0|Karaoke (A)
+https://www.youtube.com/watch?v=1vrEljMfXYo|John Denver Studio
+https://www.youtube.com/watch?v=B4jxUVhR1X8|John Denver Live
+https://www.youtube.com/watch?v=4LfjdfOFCVY|John Denver Live
+

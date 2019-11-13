@@ -1,0 +1,72 @@
+TITLE:Maries The Name,DUR:157,BPM:180,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Elvis,GENRE:Rock,STYLE:Up Tempo,HITyear:TBD
+@Slowed to 200 from 210 BPM
+#INTRO ----------------------------------
+|N                              |%
+-
+|G              |Em             |G              |Em
+-
+|G              |Em             |G              |Em
+-
+#VERSE 1 --------------------------------
+|G              |Em             |G              |Em
+A very old friend   came by today    Cos' he was
+|G              |Em             |G              |Em
+telling everyone in town  of the love that he'd just found
+|Em                 |C                  |D
+And Marie's the name of his latest
+|G              |Em             |G              |Em
+flame.
+#VERSE 2 --------------------------------
+|G              |Em             |G              |Em
+He talked and talked and I heard him say   That she
+|G              |Em             |G              |Em
+had the longest blackest hair The prettiest green eyes anywhere
+|Em                 |C                  |D
+And Marie's the name of his latest
+|G              |Em             |G              |Em
+flame.
+#BREAK 1 --------------------------------
+|D              |C              |D              |%
+Though I smiled the tears inside were a burnin'
+|D              |C              |D              |%
+I wished him luck and then he said goodbye
+|D              |C              |D              |%
+And he was gone but still his words kept returning
+|D                            |C
+What else was left for me to do but
+|G              |Em             |G              |Em
+cry.
+#VERSE 3 --------------------------------
+|G              |Em             |G              |Em
+Would you believe that yesterday  this girl was
+|G              |Em             |G              |Em
+In my arms and swore to me She'd be mine eternally
+|Em                 |C                  |D
+And Marie's the name of his latest
+|G              |Em             |G              |Em
+flame.
+#BREAK 2 --------------------------------
+|D              |C              |D              |%
+Though I smiled the tears inside were a burnin'
+|D              |C              |D              |%
+I wished him luck and then he said goodbye
+|D              |C              |D              |%
+And he was gone but still his words kept returning
+|D                            |C
+What else was left for me to do but
+|G              |Em             |G              |Em
+cry.
+#VERSE 4 --------------------------------
+|G              |Em             |G              |Em
+Would you believe that yesterday  this girl was
+|G              |Em             |G              |Em
+In my arms and swore to me She'd be mine eternally
+|Em                 |C                  |D
+And Marie's the name of his latest
+|G              |Em             |C              |D
+flame.       Yes Marie's the name of his latest
+|G              |Em             |C              |D
+flame.       Oh Marie's the name of his latest
+|G              |Em             |G              |Em
+flame.
+|G              |%              |%              |%

@@ -1,0 +1,83 @@
+TITLE:Margaritaville,DUR:243,BPM:130,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Jimmy Buffet,GENRE:Unknown,STYLE:Unknown,HITyear:1977
+$$TCL1 <X14>PR 1</X14> <X14>C M2</X14> <X1>(V3)</X1> <X16>H OFF</X16>
+$$STRTooXoo 8 5 10
+$$R55_3 or 4
+#INTRO ----------------------------------
+|NC         |C          |C          |C
+(count in)                          Riff>
+|C          |F    ~G    |C          |C
+riff cont...
+#VERSE 1 --------------------------------
+|C          |%          |%          |%
+Nibblin' on   sponge cake,    watchin' the  sun bake
+|C          |%          |G          |%
+All of those  tourists        covered with oil
+|G          |%          |%          |%
+Strummin' my six-string        on my front  porch swing
+|G          |%          |C          |%
+Smell those shrimp they're  beginnin' to boil <!--#H ON#-->
+#CHORUS 1 -------------------------------
+|F          |G          |C          |C
+Wastin'   away again in       Margaritaville
+|F          |G          |C          |C
+Searching for my lost shaker of salt
+|F          |G          |C    ~G    |F
+Some people claim that there's a woman to blame But I
+|G          |%          |C          |%
+know             it's nobody's fault <!--#H OFF#-->
+#VERSE 2 --------------------------------
+|C          |%          |%          |%
+I don't know the reason      I stayed here all season
+|C          |%          |G          |%
+Nothin' to show but this brand new tattoo
+|G          |%          |%          |%
+But it's a real beauty,          a Mexican cutie
+|G          |%          |C          |%
+How it got  here I haven't a clue <!--#H ON#-->
+#CHORUS 2 -------------------------------
+|F          |G          |C          |C
+Wastin'   away again in       Margaritaville
+|F          |G          |C          |C
+Searching for my lost shaker of salt
+|F          |G          |C    ~G    |F
+Some people claim that there's a woman to blame Now I
+|G          |%          |C          |%
+think,        "Hell, it could be my fault."
+#BREAK 1 --------------------------------
+|C          |%          |%          |%
+-
+|C          |%          |G          |%
+-
+|F          |G          |C    ~G    |F <!--#H OFF#-->
+-
+|G          |%          |C          |%
+-
+
+#VERSE 3 --------------------------------
+|C          |%          |%          |%
+I blew out my flip-flop.      Stepped on a pop-top
+|C          |%          |G          |%
+Cut my heel had to cruise on back home
+|G          |%          |%          |%
+But there's booze in the blender  and soon it will render
+|G          |%          |C          |%
+That frozen concoction that helps me hang on <!--#H ON#-->
+#CHORUS 3 -------------------------------
+|F          |G          |C          |C
+Wastin' away again in Margaritaville
+|F          |G          |C          |C
+Searching for my lost shaker of salt
+|F          |G          |C    ~G    |F
+Some people claim that there's a woman to blame
+|G          |%          |C          |%
+But I know            it's my own damn fault   Yes and
+#OUTRO ----------------------------------
+|F          |G          |C    ~G    |F
+Some people claim that there's a woman  to   blame  And I
+|G          |%          |C          |C
+know          it's my own damn fault #---closing riff----
+|F    ~G    |C          |C          |C
+-
+https://www.youtube.com/watch?v=AfUUfHa5n-4|Karaoke (C)
+@@Buffets highest charting tune
+@@One day in the studio, he (Buffet) comes in and starts telling me about a day he had in Key West. He was coming home from a bar and he lost one of his flip-flops and he stepped on a beer can top and he couldn't find the salt for his Margarita. He says he's writing lyrics to it and I say 'That's a terrible idea for a song.' He comes back in a few days later with 'Wasted Away Again In Margaritaville' and plays it and right then everyone knows it's a hit song.(producer Norbert Putnam)

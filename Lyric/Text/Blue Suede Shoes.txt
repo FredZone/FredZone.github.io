@@ -1,0 +1,102 @@
+TITLE:Blue Suede Shoes,DUR:134,BPM:170,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Carl Lee Perkins,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#INTRO ----------------------------------
+~B|C  ~NC   ~   ~  |%  ~   ~   ~B
+Well it's one for the money
+|C  ~NC    ~   ~   |%  ~   ~   ~B
+Two for the show
+|C                    |C9
+Three to get ready now go cat go
+|F9                   |%
+Don't you             step on my Blue Suede
+|C                    |%
+Shoes                        You can
+|G9                   |F9
+do anything but lay    off o my Blue Suede
+|C                    |%
+Shoes
+#VERSE 1 --------------------------------
+|C                    |%
+You can knock me down step in my face
+|C                    |%
+Slander my name all   over the place
+|C                    |%
+Do anything that you   want to do
+|%                    |C7
+But uh uh honey lay   off o my shoes
+|F9                   |C
+Don't you             step on my Blue Suede
+|C                    |%
+Shoes                            You can
+|G9                   |F9
+do anything but lay   off o my Blue Suede
+|C                    |%
+Shoes
+#CHORUS 1 -------------------------------
+|C                    |%
+-
+|C                    |%
+-
+|F9                   |C
+-
+|C                    |%
+-
+|G9                   |F9
+-
+|C                    |%
+-
+#VERSE 2 --------------------------------
+|C                    |%
+Well you can burn my house steal my car
+|C                    |%
+Drink my cider from my ol fruit jar
+|C                    |%
+Do anything that you want to do
+|%                    |C7
+But uh uh honey lay   off o my shoes
+|F9                   |C
+Don't you            step on my Blue Suede
+|C                    |%
+Shoes                             You can
+|G9                   |F9
+do anything but lay  off o my Blue Suede
+|C                    |%
+Shoes
+#CHORUS 2 -------------------------------
+|C                    |%
+-
+|C                    |%
+-
+|F9                   |C
+-
+|C                    |%
+-
+|G9                   |F9
+-
+|C                    |%
+-                           Well it's
+#CHORUS 3 -------------------------------
+|C                    |C
+One for the money     Two for the show
+|C                    |C9
+Three to get ready now go cat go
+|F9                   |%
+Don't you             step on my Blue Suede
+|C                    |%
+Shoes                             You can
+|G9                   |F9
+do anything but lay   off o my Blue Suede
+|C                    |%
+Shoes
+#OUTRO ----------------------------------
+|C                    |C
+Blue Blue             Blue Suede shoes
+|C                    |C9
+Blue Blue             Blue Suede shoes
+|F9                   |%
+Blue Blue             Blue Suede shoes
+|C                    |%
+Blue Blue             Blue Suede shoes  You can
+|G9                   |F9
+do anything but lay   off o my Blue Suede
+|C                    |%
+Shoes

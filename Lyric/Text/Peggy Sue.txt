@@ -1,0 +1,38 @@
+TITLE:Peggy Sue,DUR:112,BPM:140,BEATS:4,KEY:D,QUAL:Raw,ARTIST:Buddy Holly,GENRE:Rock,STYLE:Dance,HITyear:Unknown
+Buddy Holly *
+#INTRO ----------------------------------
+|A            ~D            |A           ~E7           
+-
+|A            ~D            |A           ~E7           
+#VERSE 1 --------------------------------
+|A            |D            |A     ~D     |A            
+If you knew Peggy Sue,  then you'd know why I feel blue
+|D            |D            |A     ~D     |A            
+About Peggy, 'bout Peggy Sue              Oh, well, I
+|E            |D            |A     ~D     |A     ~E     
+love you gal,yes, I love you Peggy Sue.
+#VERSE 2 --------------------------------
+|A            |D            |A     ~D     |A            
+Peggy Sue, Peggy Sue, Oh how my heart yearns for you
+|D            |D            |A     ~D     |A            
+Oh, Peggy,           my   Peggy  Sue;
+|E            |D            |A     ~D     |A     ~E     
+Oh, well, I love you gal, and I need you, Peggy Sue.
+#BREAK 1 --------------------------------
+|A            |A            |F            |A            
+Peggy Sue Peggy Sue pretty pretty pretty pretty Peggy Sue,
+|D            |D            |A     ~D     |A            
+Oh,   my Peggy,         my Peggy Sue        Oh, well, I
+|E            |D            |A     ~D     |A     ~E     
+love you gal, and I need you, Peggy Sue.
+#VERSE 3 --------------------------------
+|A            |D            |A     ~D     |A            
+I love you Peggy Sue, with a love so rare and true,
+|D            |D            |A     ~D     |A            
+Oh, Peggy, My Peggy Sue;
+|E            |D            |A     ~D     |A            
+Oh, well, I love you gal, yes, I want you, Peggy Sue.
+#OUTRO ----------------------------------
+|E            |D            |A     ~D     |A     ~E     
+Oh, well, I love you gal, yes, I want you, Peggy Sue.
+@@@ D   D u d u D

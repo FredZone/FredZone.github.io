@@ -1,0 +1,112 @@
+TITLE:Dear John Letter Lounge,DUR:190,BPM:125,BEATS:4,KEY:D,QUAL:Inwork,ARTIST:Jerry Jeff Walker,GENRE:Country,STYLE:Ballad,HITyear:TBD
+#INTRO ----------------------------------
+|N                               |N
+-
+|D                               |%
+-
+|G                               |D
+-
+#VERSE 1 --------------------------------
+|D                               |%
+Well  I  guess  its  finally  happened
+|G                               |D
+I'm  tired  of  running  'round
+|D                               |%
+I  thank  you  for  waitin'  on  me
+|A                               |%
+While  I  was  a  paintin'  the  town
+|D                               |%
+For  years  and  years  you  stood  by  me
+|G                               |D
+Tellin'  me  I'm  ruinin'  my  life
+|D                               |%
+I'm  tired  of  all  these  honky  tonks
+|A                               |D
+And  that  fly  by  night  life
+|D
+-
+#VERSE 2 --------------------------------
+|D                               |%
+Well,  tonight  a  bottle  stands  alone
+|G                               |D
+In  the  dear  john  letter  lounge
+|D                               |%
+Waitin'  on  me  for  company,
+|A                               |%
+But  I  won't  be  around
+|D                               |%
+Find  someone  else  to  take  my  place
+|G                               |D
+While  I  rejoin  the  wife
+|D                               |%
+Cause  I'm  tired  of  all  these  honky  tonks
+|A                               |D
+And  that  fly  by  night  life
+|D
+-
+#CHORUS 1 -------------------------------
+|G                               |%
+Old  Ira's  tendin'  bar  right  now
+|D                               |%
+Probably  wonderin'  where  I  am
+|D                               |D
+Zekey's  sharkin'  pool,    for  five  a
+|A                               |A
+Throw
+|D                               |%
+And  old  Lucy  fay  brings  the  driks
+|G                               |D
+Takin'  side  bets  on  the  game
+|D                               |A
+And  old  pop  fox  keeps  sayin'  he's  got
+|D                               |D
+To  go
+#BREAK 1 --------------------------------
+|D                               |%
+-
+|G                               |D
+-
+|D                               |A
+-
+|D                               |D
+-
+#VERSE 3 --------------------------------
+|D                               |%
+I'm  gonna  miss  old  jim  and  all  my  friends
+|G                               |D
+In  the  dear  john  lounge  downtown
+|D                               |%
+I'm  gonna  miss  ole  willie  on  the  jukebox
+|A                               |%
+Singin'  songs  round  after  round
+|D                               |%
+I'm  gonna  miss  the  face  of  strangers
+|G                               |D
+And  the  steady  passers  by
+|D                               |%
+I'm  gonna  miss  the  dear  john  letter  lounge
+|A                               |D
+And  that  fly  by  night  life
+|D
+-
+#CHORUS 2 -------------------------------
+|G                               |%
+Old  ira's  tendin'  bar  right  now
+|D                               |%
+Probably  wonderin'  where  I  am
+|D                               |D
+Zekey's  sharkin'  pool,    for  five  a
+|A                               |A
+Throw
+|D                               |%
+And  old  lucy  fay  brings  the  driks
+|G                               |D
+Takin'  side  bets  on  the  game
+|D                               |A
+And  old  pop  fox  keeps  sayin'  he's  got
+|D                               |D
+To  go
+|D                               |D
+https://www.youtube.com/watch?v=jSR0v6u5ILs|Jerry Jeff
+https://www.youtube.com/watch?v=iXV0SBXyqnY|Jack Daniels Band (corny)
+https://www.youtube.com/watch?v=KRArNnH6Adk|Gary P Nunn (up tempo...2 step?)

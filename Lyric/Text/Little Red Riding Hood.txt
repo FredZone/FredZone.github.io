@@ -1,0 +1,102 @@
+TITLE:Little Red Riding Hood,DUR:177,BPM:116,BEATS:4,KEY:E,QUAL:Raw,ARTIST:Sam The Sham And The Pharaohs,GENRE:Unknown,STYLE:Unknown,HITyear:
+$$TCL1 <X14>PR 1</X14> <X14>E M2</X14> <X1>(V3)</X1> <X16>H OFF</X16>
+#INTRO ----------------------------------
+Owwww!
+|Em                    |Em
+-   -                       bass(walk down)
+|Em                    |Em
+-   Who's that I see walkin' in these woods?
+|Em                    |Em
+-     Why, it's Little Red Riding Hood!
+#VERSE 1 --------------------------------
+|Em                   |G
+Hey there, Little Red Riding Hood
+|A                    |%
+ You sure are lookin' good
+|C                    |B7
+You're everything a big bad wolf could want
+|Em                   |B7
+-                         Listen to me!
+#VERSE 2 --------------------------------
+|Em                   |G
+Little Red Riding Hood
+|A                    |%
+I don't think little big girls should
+|C                    |B7
+Go walkin' in these spooky old woods alone
+|Em                   |B7
+-                      Owwww! <!--#H ON#-->
+#CHORUS 1 -------------------------------
+|G                   |%
+ What big eyes you have
+|Em                  |%
+  The kind of eyes that drive wolves mad
+|A                   |%
+So just to see that you don't get chased
+|D7                  |%
+I think I ought to walk with you for a ways
+#CHORUS 2 -------------------------------
+|G                   |%
+What cool lips you have
+|Em                  |%
+They're sure to lure someone bad
+|A                   |%
+So until you get to Grandma's place
+|D7                  |%
+I think you ought to walk with me and be safe <!--#H OFF#-->
+#VERSE 3 --------------------------------
+|Em                   |G
+I'm gonna keep my sheep suit on
+|A                    |%
+Till I'm sure that you've been shown
+|C                    |B7
+That I can be trusted walkin' with you alone
+|Em                   |B7
+-                      Owwww!
+#VERSE 4 --------------------------------
+|Em                   |G
+Little Red Riding Hood,
+|A                    |%
+I'd like to hold you if I could
+|C                    |B7
+But you might think I'm a big bad wolf, so I won't
+|Em                   |B7
+-  Owwww! <!--#H ON#-->
+#CHORUS 3 -------------------------------
+|G                   |%
+What a big heart I have
+|Em                  |%
+The better to love you with
+|A                   |%
+Little Red Riding Hood
+|D7                  |%
+Even bad wolves can be good
+#CHORUS 4 -------------------------------
+|G                   |%
+I'll try to be satisfied
+|Em                  |%
+Just to walk close by your side
+|A                   |%
+Maybe you'll see things my way
+|D7                  |%
+Before we get to Grandma's place <!--#H OFF#-->
+#VERSE 5 --------------------------------
+|Em                   |G
+Little Red Riding Hood
+|A                    |%
+You sure are lookin' good
+|C                    |B7
+You're everything a big bad wolf could want
+|Em                   |B7
+                   Owwww--
+|Em                   |G
+- I mean baaa!            Baaaa?
+|A                    |%
+          Baaaa?                  Baaaa?
+|C                    |B7
+-
+|Em                   |NC
+
+...and fade
+https://www.youtube.com/watch?v=9n3mwU4InlE|Karaoke (Em)
+https://www.youtube.com/watch?v=x-PDvgw14G0|Live Sam the Sham

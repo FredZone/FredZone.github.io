@@ -1,0 +1,88 @@
+TITLE:Summer Song,DUR:,BPM:125,BEATS:4,KEY:G,QUAL:Rough,ARTIST: Chad And Jeremy
+A SUMMER SONG  -   Chad and Jeremy
+#INTRO ----------------------------------
+|G      ~Bm          |C          ~D
+-
+|G      ~Bm          |C          ~D
+-
+#VERSE 1 --------------------------------
+|G      ~Bm          |C          ~D
+Trees                           swayin' in the
+|G      ~Bm          |C          ~D
+summer breeze                 Showin' off their
+|G      ~Bm          |C          ~D
+silver leaves                 As we walked
+|G      ~Bm          |C          ~D
+by   Soft                      kisses on a
+|G      ~Bm          |C          ~D
+summer's day                Laughing all our
+|G      ~Bm          |C          ~D
+cares away                  Just you and
+|G      ~Bm          |C          ~D
+I
+#VERSE 2 --------------------------------
+|G      ~Bm          |C          ~D
+Sweet                   sleepy warmth of
+|G      ~Bm          |C          ~D
+summer nights           Gazing at the
+|G      ~Bm          |C          ~D
+distant lights            In the starry
+|G      ~Bm          |C          ~D
+sky
+#CHORUS 1 -------------------------------
+|C           |D
+They say that all good things must
+|G           |Em
+end some day
+|Am          |D
+Autumn      leaves must
+|Em            |%
+fall                  But
+|G                     |B7
+don't you know that it hurts me so
+|Em            |Bm   ~Am
+To say goodbye to you
+|Em                      |D
+Wish you didn't have to go
+|Em               |D
+No   no    no     no            And when
+#VERSE 3 --------------------------------
+|G      ~Bm          |C          ~D
+the rain                  Beats against my
+|G      ~Bm          |C          ~D
+window pane                I'll think of summer
+|G      ~Bm          |C          ~D
+days again                   And dream of
+|G      ~Bm          |C          ~D
+you
+|G      ~Bm          |C          ~D
+-
+#CHORUS 2 -------------------------------
+|C           |D
+They say that all good things must
+|G           |Em
+end some day
+|Am          |D
+Autumn      leaves must
+|Em            |%
+fall                  but
+|G                     |B7
+don't you know that it hurts me so
+|Em            |Bm   ~Am
+To say goodbye to you
+|Em                      |D
+Wish you didn't have to go
+|Em               |D
+No   no    no     no            And when
+#VERSE 4 --------------------------------
+|G      ~Bm          |C          ~D
+the rain               Beats against my
+|G      ~Bm          |C          ~D
+window pane               I'll think of summer
+|G      ~Bm          |C          ~D
+days again              And dream of
+|G      ~Bm          |C          ~D
+you                       And dream of
+#OUTRO ----------------------------------
+|G      ~Bm          |C          ~D
+ you

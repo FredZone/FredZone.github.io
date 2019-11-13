@@ -1,0 +1,132 @@
+TITLE:Take It Easy,DUR:217,BPM:130,BEATS:4,KEY:D,QUAL:Complete,ARTIST:Eagles,GENRE:Country,STYLE:Ballad,HITyear:Unknown
+$$TCL1 <X14>PR 1</X14> <X14> D M2</X14> <X14>PV 1</X14> <X16> V4 </X16> <X16>H ON</X16>
+$$STRT ooXoo 8 5 10
+$$RP55 3 or 4
+@@@FIX last Bm in the backing track
+#INTRO ----------------------------------
+|NC                            |%
+(2 bar count in)
+|D                             |%
+-
+|G/D                           |D4/9
+-
+|D                             |%
+-
+|G/D                           |D4/9
+-
+|D                             |%
+                 Well I'm a
+#VERSE 1 --------------------------------
+|D                             |%
+runnin' down the road try'n to loosen my load  I've got
+|D           ~A               |G
+seven women  on my  mind
+|D                             |A
+Four that wanna own me,  two that wanna stone me
+|G                             |D
+One says she's a friend of mine   <XX>H ON</XX>  Take it
+|Bm                            |%
+ea                  sy,                take  it
+|G                             |D
+ea                            sy   Don't let the
+|Em                            |G
+sound  of   your   own      wheels drive you
+|Bm                            |%
+cra zy             <!--#V3 ON#-->Lighten
+|G                             |D
+up     while   you   still     can      Don't even
+|G                             |D
+try            to        understand          Just find a
+|Em                            |G
+place   to   make    your     stand,  and take it
+|D                             |%
+ea sy <!--#V3 OFF#-->
+|D                             |%
+-
+#VERSE 2 --------------------------------
+|D                             |%
+Standin' on a corner in Winslow, Arizona
+|D           ~A               |G
+Such a fine  sight to  see
+|D                             |A
+It's a  girl my lord in a  flat-bed Ford
+|G                             |D
+Slowin'  down to take a look at me  Come on
+|Bm                            |%
+ba     by,     don't say
+|G                             |D
+ma y be
+|Em                            |G
+I gotta  know if your sweet  love is gonna
+|Bm                            |%
+save  me   <!--#V3 ON#-->             We may
+|G                             |D
+lose   and   we     may        win, though
+|G                             |D
+we  may  never be  here       again     So open
+|Em                            |G
+up      I'm climbin'          in,        so take it
+|D                             |%
+ea                   sy
+#INTERLUDE ------------------------------
+TAB:62@A@4@2@7@2:9/10|3:10/11@@2:10@3:11@2:10@@3:11@@2:12@@2:10@@2:10@2:10\8|3:11\9@3:7@@2:9/10|3:10/11@@2:10|3:11@@2:8|3:9p7@@2:8|3:9@@2:7|3:7@4:7h9@3:7@@4:7@4:h9@3:7@@2:9/10|3:10/11@@2:10|3:11@@2:8|3:9p7@@2:8|3:9@@1:10/12|2:12/14@1:12@2:4@@1:10|2:12@1:9|2:10@@@1:/10|2:/12@@1:10|2:12@1:12|2:12@1:-|2:-@1:-|2:-@@@1:\13|2:\15@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+|D                             |D
+-
+|D            ~A               |G
+-
+|D                           |A
+-
+|G                             |D
+-
+|Bm                            |A
+-
+|G                             |D
+-
+|Em                            |G
+-
+|Bm     <!--#V3 OFF#-->        |Bm     ~A
+-                                      Well I'm a
+#VERSE 3 --------------------------------
+|D                             |%
+runnin' down the road tryin' to loosen my load  Got a
+|D           ~A               |G
+world   of    trouble    on    my        mind
+|D                             |A
+Lookin' for a lover who  won't blow my cover, she's
+|G                             |D
+so hard to find     <!--#V3 ON#-->    Take it
+|Bm                            |%
+Ea sy,                          Take it
+|G                             |D
+ea sy               Don't let the
+|Em                            |G
+sound of your own  wheels
+|Bm                            |%
+make you cra zy
+|G                             |D
+Come          on            ba by,     don't say
+|G                             |D
+may be
+|Em                            |G
+I gotta  know of your sweet  love is gonna
+|Bm                            |%
+save me<!--#V1 ON#-->
+#OUTRO ----------------------------------
+|G                             |%
+Ooh        Ooh       Ooh       Ooh    Ooh      Ooh
+|D                             |%
+Ooh        Ooh       Ooh       Ooh    Ooh      Ooh
+|G                             |%
+Ooh        Ooh       Ooh       Ooh    Ooh      Ooh
+|D                             |%
+Ooh        Ooh       Ooh       Ooh    Ooh      Ooh
+|G                             |%
+Ooh        Ooh       Ooh       Ooh    Ooh      Ooh
+|D                             |%
+Ooh        Ooh       Ooh       Ooh    Ooh      Ooh
+|D                             |%
+(fade....)
+|D                             |%
+-
+https://www.youtube.com/watch?v=lVA2fR-Z3Fk|Karaoke (G) Jackson Brown
+https://www.youtube.com/watch?v=taBR575oGg8|Karaoke (G) Eagles

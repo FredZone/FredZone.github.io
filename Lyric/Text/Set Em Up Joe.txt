@@ -1,0 +1,64 @@
+TITLE:Set Em Up Joe,DUR:151,BPM:120,BEATS:4,KEY:D,QUAL:Complete,ARTIST:Vern Gosdin,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#INTRO ----------------------------------
+@2/4 bars denoted *
+|N                |N                |D                |*G               
+-
+|D                |D                |D                |D                
+-
+#VERSE 1 --------------------------------
+|D                |*G               |D                |D                
+They got a vintage    Victrola 19-5 - 1        Full of
+|D                |*G               |D                |D                
+my favorite records that I grew up on         They got ole
+|D                |G       ~D       
+Hank  and  Lefty  and  there's  B      -  24
+|D                |G       ~D       
+Set  'em  up  Joe,  and  play  Walkin'  the  Floor
+|D                |*G               |D                |D                
+Set 'em up Joe, and play Walkin' the Floor      I'm gonna
+#CHORUS 1 -------------------------------
+|G       ~A       |D                
+spend  the  night  like  every  night  before
+|A7               |D                
+Play  an  ET  and  I'll  play  him  some  more          I've
+|G       ~A       |*D               |Bm               |Bm               
+gotta  have  a  shot  of  them  old  troubadours
+|D                |G       ~D       
+Set  'em  up  Joe,  and  play  Walkin'  The  Floor
+|D                |*G               |D                
+Set  'em  up  Joe,  and  play  Walkin'  The  Floor
+|D                |*G               |D                
+-
+|D               |%                |%                
+-
+#VERSE 2 --------------------------------
+|D                |*G               |D                |D                
+All  my  neon  neighbors  they  like  what  I  play
+|D                |*G               |D                |D                
+Cause  they've  heard  it  every  night  since  you've  walked  away
+|D                |G       ~D       
+Everyday  they  replace  ol'  B-24
+|D                |G       ~D       
+Cause  every  night  I  run  a  needle  through  Walkin'  the  Floor
+|D                |*A               |D                |D                
+Every night I run a needle through Walking the Floor        I'm gonna
+#CHORUS 2 -------------------------------
+|G       ~A       |D                
+spend  the  night  like  every  night  before
+|A7               |D                
+Play  an  ET  and  I'll  play  him  some  more          I've
+|G       ~A       |*D               |Bm               |Bm               
+gotta  have  a  shot  of  them  old  troubadours
+|D                |G       ~D       
+Set  'em  up  Joe,  and  play  Walkin'  The  Floor
+|D                |*A7              |D                |D                
+Set  'em  up  Joe,  and  play  Walkin'  The  Floor
+#OUTRO ----------------------------------
+|D                |G       ~D       
+Set  'em  up  Joe,  and  play  Walkin'  The  Floor
+|D                |*A               |D                |%                
+Set  'em  up  Joe,  and  play  Walkin'  The  Floor
+|%                |%                |%                
+-
+https://www.youtube.com/watch?v=gTr0RXMbNCE|Karaoke (D)
+https://www.youtube.com/watch?v=RGMDbOZlQfE|Vern Gosdin

@@ -1,0 +1,70 @@
+TITLE:Thats Gonna Leave A Mark,DUR:171,BPM:160,BEATS:4,KEY:D,QUAL:Raw,ARTIST:Fred Kaparich,GENRE:Country,STYLE:Ballad,HITyear:Unknown
+$$TCL1 <X14>PR 1</X14> <X14>D M2</X14> <X16>(V3)</X16> <X16>H OFF</X16>
+#INTRO ----------------------------------
+|N           |N
+-
+|D           |A           |G           |D
+-
+|D           |A           |G           |D
+-
+#VERSE 1 --------------------------------
+|D           |A           |G           |D
+When I woke up I didn't know what had just gone down
+|D           |A           |G           |A
+So I tried to stand up and my world spun around
+|D           |A           |G           |D
+The Bar Sign came in focus as I went down again
+|D           |A           |G           |D
+So I crawled to those swinging doors, stood up and tumbled in
+#INTERLUDE ------------------------------
+|D           |A           |G           |D
+-
+#VERSE 2 --------------------------------
+|D           |A           |G           |D
+I'd spent the night living The classic country song
+|D           |A           |G           |A
+And I thought I'd ask the folks inside where it all went wrong
+|D           |A           |G           |D
+Then this 6 foot 4 gorilla slammed me in a chair
+|D           |A           |G           |D
+And promised not hit me again if I would just sit there
+#INTERLUDE ------------------------------
+|D           |A           |G           |D
+- <XX>H ON</XX>
+#CHORUS 1 -------------------------------
+|Bm          |%           |G           |%
+So never go out drinking when your life falls apart
+|E           |%           |A           |%
+Or the girl you love, she up and breaks your heart
+|Bm          |%           |G           |%
+Cause you may do something stupid at your local bar
+|E           |%           |A           |D
+Like ask a bull riders wife to the backseat of your car
+#INTERLUDE ------------------------------
+|E           |%           |A           |D
+- <XX>H OFF</XX>
+#VERSE 3 --------------------------------
+|D           |A           |G           |D
+He took my keys and walked me to a nearby coffee shop
+|D           |A           |G           |A
+He even tipped waitress and paid for a bottomless cup
+|D           |A           |G           |D
+So I started thinking as I slumped into that booth
+|D           |A           |G           |D
+He really was a pretty nice guy, and I won't miss that tooth
+#INTERLUDE ------------------------------
+|D           |A           |G           |D
+-<XX>H ON</XX>
+#CHORUS 2 -------------------------------
+|Bm          |%           |G           |%
+So never go out drinking when your life falls apart
+|E           |%           |A           |%
+Or the girl you love, she up and breaks your heart
+|Bm          |%           |G           |%
+Cause if you ask somebody's wife to lovers lane to park
+|E           |%           |A           |D
+You'll deal with her husband and that's gonna leave a mark
+#OUTRO ----------------------------------
+|E           |%           |A           |D
+You might meet her husband and that's gonna leave a mark.
+|D           |%           |%           |%

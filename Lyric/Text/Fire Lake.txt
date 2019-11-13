@@ -1,0 +1,61 @@
+TITLE:Fire Lake,DUR:180,BPM:125,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Bob Seger,GENRE:Rock,STYLE:Ballad,HITyear:1975
+$$HCT1 <X14>PR 1</X14> <X14>A m2</X14> <X1>(V3)<X1> <X16>H On</X16>
+$$STRT ooXoo 8 5 10
+$$RP55 3 or 4
+#INTRO ----------------------------------
+|N                             |N
+-
+|C              |G              |Am             |%  ~  ~  ~Am/B
+-
+|C              |G              |Am             |%  ~  ~  ~Am/B
+#VERSE 1 --------------------------------
+|C              |G              |Am             |%  ~  ~  ~Am/B
+Who's gonna ride that chrome three wheeler
+|C              |G              |Am             |%  ~  ~  ~Am/B
+Who's gonna make that first mistake
+|C              |G              |Am             |%  ~  ~  ~Am/B
+Who wants to wear those gypsy leathers
+|C              |G              |Am             |%  ~  ~  ~Am/B
+All the way to fire lake
+#VERSE 2 --------------------------------
+|C              |G              |Am             |%  ~  ~  ~Am/B
+Who wants to break the news about Uncle Joe
+|C              |G              |Am             |%  ~  ~  ~Am/B
+You remember Uncle Joe
+-                 He was the one afraid to cut the cake
+|C              |G              |Am             |%  ~  ~  ~Am/B
+Who wants to tell poor Aunt Sarah
+|C              |G              |Am             |%  ~  ~  ~Am/B
+Joe's run off to fire lake
+|C              |G              |Am             |Am  ~  ~  ~Am/B
+Joe's run off to fire lake <XX>H ON</XX>
+#CHORUS 1 -------------------------------
+|F              |Em             |Am             |%
+Who wants to brave those bronze beauties Lying in the sun
+|Em             |Em7            |Dm             |%
+With their long soft hair falling Flying as they run
+|F              |Fmaj7          |C              |%
+Oh they smile so shy And they flirt
+-                     so well  And they lay you down so fast
+|G           |%           |%           |%           |% (extrabar)
+Till you look straight up and say Oh lord  Am I really here at last
+#VERSE 3 --------------------------------
+$$TCH1 <X16>H OFF</X16>
+|C              |G              |Am             |%  ~  ~  ~Am/B
+Who wants to play those eights and aces
+|C              |G              |Am             |%  ~  ~  ~Am/B
+Who wants a raise      Who needs a stake
+|C              |G              |Am             |%  ~  ~  ~Am/B
+Who wants to take that long shot gamble
+|C              |G              |Am             |%  ~  ~  ~Am/B
+And head out to fire lake    Head out<XX>H ON</XX>
+#OUTRO ----------------------------------
+|C              |G              |Am             |%  ~  ~  ~Am/B
+Who wants to go to fire lake      And head out
+|C              |G              |Am             |%  ~  ~  ~Am/B
+Who wants to go to fire lake    Head out
+|C              |G              |Am             |%  ~  ~  ~Am/B
+Out to fire lake   Who's gonna do it
+|Am                  |%                   |%
+https://www.youtube.com/watch?v=Q3sNriOp2nE|Live Seger
+https://www.youtube.com/watch?v=KcdxcuLPpaE|Seger from 'Against the Wind' Album

@@ -1,0 +1,92 @@
+TITLE:Homeless Brother,DUR:231,BPM:170,BEATS:4,KEY:G,QUAL:Raw,ARTIST:Don McLean,GENRE:Folk,STYLE:Ballad,HITyear:
+#INTRO ----------------------------------
+|G                   |%                   |%                   |%
+-                   
+#VERSE 1 --------------------------------
+|G                   |%                   |C                   |%                   
+I was walking by the graveyard, late last Friday night,
+|E                   |%                   |Am                  |%                   
+I heard somebody yelling, it sounded like a fight.
+|F                   |C                   |Am                  |F                   
+It was just a drunken hobo dancing circles in the night,
+|C                   |G                   |F                   |C                   
+Pouring whiskey on the headstones in the blue moonlight.
+|F                   |G                   |C                   |Am                  
+So often have I wondered where these homeless brothers go,
+|D                   |%                   |G                   |%                   
+Down in some hidden valley were their sorrows cannot show,
+|F                   |C                   |Am                  |F                   
+Where the police cannot find them, where the wanted men can go.
+|C                   |G                   |F                   |C                   
+There's freedom when your walking, even though you're walking slow.
+#CHORUS 1 -------------------------------
+|F                   |G                   |C                   |Am                  
+Smash your bottle on a gravestone and live while you can,
+|D                   |G                   |C                   |%                   
+that homeless brother is my friend.
+#VERSE 2 --------------------------------
+|G                   |%                   |C                   |%                   
+It's hard to be a pack rat, it's hard to be a 'bo,
+|E                   |%                   |Am                  |%                   
+but living's so much harder where the heartless people go.
+|F                   |C                   |Am                  |F                   
+Somewhere the dogs are barking and the children seem to know
+|C                   |G                   |F                   |C                   
+That Jesus on the highway was a lost hobo.
+|F                   |G                   |C                   |Am                  
+And they hear the holy silence of the temples in the hill,
+|D                   |%                   |G                   |%                   
+And they see the ragged tatters as another kind of frill.
+|F                   |C                   |Am                  |F                   
+And they envy him the sunshine and they pity him the chill,
+|C                   |G                   |F                   |C                   
+And they're sad to do their living for some other kind of thrill.
+#CHORUS 2 -------------------------------
+|F                   |G                   |C                   |Am                  
+Smash your bottle on a gravestone and live while you can,
+|D                   |G                   |C                   |%                   
+that homeless brother is my friend.
+#VERSE 3 --------------------------------
+|G                   |%                   |C                   |%                   
+Somewhere there was a woman, somewhere there was a child,
+|E                   |%                   |Am                  |%                   
+Somewhere there was a cottage where the marigolds grew wild.
+|F                   |C                   |Am                  |F                   
+But somewhere's just like nowhere when you leave it for a while,
+|C                   |G                   |F                   |C                   
+You'll find the broken-hearted when you're traveling jungle-style.
+|F                   |G                   |C                   |Am                  
+Down the bowels of a broken land where numbers live like men, Where 
+|D                   |%                   |G                   |%                   
+those who keep their senses have them taken back again, Where the 
+|F                   |C                   |Am                  |F                   
+Nightstick cracks with crazy rage, where madmen don't pretend,
+|C                   |G                   |F                   |C                   
+Where wealth has no beginning and poverty no end.
+#CHORUS 3 -------------------------------
+|F                   |G                   |C                   |Am                  
+Smash your bottle on a gravestone and live while you can,
+|D                   |G                   |C                   |%                   
+that homeless brother is my friend.
+#VERSE 4 --------------------------------
+|G                   |%                   |C                   |%                   
+The ghosts of highway royalty have vanished in the night,
+|E                   |%                   |Am                  |%                   
+The Whitman wanderer walking toward a glowing inner light.
+|F                   |C                   |Am                  |F                   
+The children have grown older and the cops have gripped us tight,
+|C                   |G                   |F                   |C                   
+There's no spot round the melting pot for free men in their flight.
+|F                   |G                   |C                   |Am                  
+And you who leave on promises and prosper as you please,
+|D                   |%                   |G                   |%                   
+The victim of your riches often dies of your disease,  He can't 
+|F                   |C                   |Am                  |F                   
+Hear the factory whistle, just the lonesome freight train's wheeze,
+|C                   |G                   |F                   |C                   
+He's living on good fortune, he ain't dying on his knees.
+#CHORUS 4 -------------------------------
+|F                   |G                   |C                   |Am                  
+Smash your bottle on a gravestone and live while you can,
+|D                   |G                   |C                   |%                   
+that homeless brother is my friend.

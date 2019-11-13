@@ -1,0 +1,97 @@
+TITLE:Dont Be Cruel,DUR:0,BPM:165,BEATS:4,KEY:C,QUAL:Verified,ARTIST:Elvis Presley,GENRE:Rock,STYLE:Dance,HITyear:Unknown
+
+@1...2...3...4...                                                                          
+@b   D u d u D u  (Emphasize Upbeat)
+#INTRO ----------------------------------
+|C            |C
+-
+|C            |C
+#VERSE 1 --------------------------------
+|C            |C
+You know I can be found,
+|C            |C
+sitting home all alone,
+|F            |F
+If you can't come around,
+|C            |C
+at least please telephone.
+|Dm           |G7
+Don't be cruel to a heart that's
+|C            |C
+true.
+#VERSE 2 --------------------------------
+|C            |C
+Baby, if I made you mad
+|C            |C
+for something I might have said,
+|F            |F
+Please, let's forget the past,
+|C            |C
+the future looks bright ahead,
+|Dm           |G7
+Don't be cruel to a heart that's
+|C            |C
+true.
+#BREAK 1 --------------------------------
+|F                    |G
+I don't want no other love,
+|F                    |G
+Baby it's just you I'm thinking
+|C                    |C
+of.
+#VERSE 3 --------------------------------
+|C            |C
+Don't stop thinking of me,
+|C            |C
+don't make me feel this way,
+|F            |F
+Come on over here and love me,
+|C            |C
+you know what I want you to say.
+|Dm           |G7
+Don't be cruel to a heart that's
+|C            |C
+true.
+#BREAK 2 --------------------------------
+|F                    |G
+Why should we be apart
+|F                    |G
+I really love you baby, cross my
+|C                    |C
+heart.
+#VERSE 4 --------------------------------
+|C            |C
+Let's walk up to the preacher
+|C            |C
+And let us say I do,
+|F            |F
+Then you'll know you'll have me,
+|C            |C
+and I'll know I'll have you too,
+|Dm           |G7
+Don't be cruel to a heart that's
+|C            |C
+true.
+#BREAK 3 --------------------------------
+|F                    |G
+I don't want no other love,
+|F                    |G
+Baby it's just you I'm thinking of.
+|C                    |C
+-
+#OUTRO ----------------------------------
+|G            |G
+Don't be cruel to
+|C            |C
+a heart that's true.
+|G            |G
+Don't be cruel to a heart that's 
+|C            |C
+true.
+|F            |G
+I don't want no other love,
+|F            |G
+Baby it's just you I'm thinking
+|C            |C
+of.
+https://www.youtube.com/watch?v=ViMF510wqWA|Elvis

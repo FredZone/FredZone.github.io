@@ -1,0 +1,92 @@
+TITLE:Time In A Bottle,DUR:,BPM:,BEATS:4,KEY:D,QUAL:Raw,ARTIST:Jim Croce,GENRE:Unknown,STYLE:Ballad,HITyear:
+[Intro]
+|Dm     |Dm/C#  |Dm/C  |G7/B
+|Bb6    |A7  |Gm |A7 |A7sus4addb6 |A7(no3rd)
+|A7b9  |Dm11/A | A7(no3rd)
+[Verse 1]
+|Dm         |Dm/C#            |Dm/C  |G7/B
+If I could save_____ time in a bottle
+|Bb6                 |A7  |Gm
+The first thing that Id like to do
+|A7 |A7sus4addb6 A7(no3rd)  |A7b9 |Dm11/A |A7(no3rd))
+|Dm          |Dm/C
+Is to save ev'ry-day
+|Bb6        |Gm*     |Dm/F
+Till e-ternity pass -es away
+|Gm*             |A7 |G/B|A7(no3rd)|A7
+Just to spend them with you
+[Verse 2]
+|Dm            |Dm/C#        |Dm/C |G7/B
+If I could make days last for-ever
+|Bb6                  |A7 |Gm
+If words could make wishes come
+|A7 |A7sus4addb6 |A7(no3rd) |A7b9 |Dm11/A |A7(no3rd)
+true
+|Dm         |Dm/C
+Id save every day
+|Bb6        |Gm*
+like a treasure and then,
+|Dm/F          |Gm*             |A7|G/B
+|A7
+Again, I would spend them with you
+[Chorus]
+|D              |D/C#
+But there never seems to be enough time
+|Bm7               |D/A                |G
+To do the things you wanna to do once you find them
+( |Dadd9/F#  |Em7     |A7 |G/B )
+|D            |D/C#
+Ive looked around enough to know
+|Bm7            |D/A               |G
+That youre the one I want to go through time with
+( |Dadd9/F#  |Em7  |A7 |G/B )
+[Interlude]  Reapeat intro
+|Dm     |Dm/C#  |Dm/C  |G7/B
+|Bb6    |A7  |Gm |A7 |A7sus4addb6 |A7(no3rd)
+|A7b9  |Dm11/A  |A7(no3rd)
+[Verse 3]
+|Dm       |Dm/C#       |Dm/C |G7/B
+If I had a box just for wishes
+|Bb6                |A7   |Gm
+And dreams that had never__ come
+|A7 |A7sus4addb6 |A7(no3rd) |A7b9 |Dm11/A |A7(no3rd)
+true
+|Dm          |Dm/C
+The box would be empty
+|Bb6         |Gm*      |Dm/F
+Except for the memory of how
+|Gm*        |A7|G/B|A7(no3rd)|A7
+They were answered by you.
+[Chorus]
+|D              |D/C#
+But there never seems to be enough time
+|Bm7               |D/A                |G
+To do the things you wanna to do once you find them
+( Dadd9/F#  Em7     A7 G/B )
+|D            |D/C#
+Ive looked around enough to know
+|Bm7            |D/A               |G
+That youre the one I want to go through time with
+( Dadd9/F#  Em7  A7 G/B )
+[Outro]
+[|Dmadd9  [          ]]  x3
+@@@Chords
+@@@Dm(xx0231)
+@@@Dm/C#(x4x231)
+@@@Dm/C(x3x231)
+@@@Bb6(x1003x)
+@@@A7(x02020)
+@Gm(3x03xx)
+@A7sus4addb6(x03030)
+@A7(no3rd)(x05050)
+@A7b9(x08080)
+@Dm11/A(x07060)
+@Gm*(3x033x)
+@Dm/F(1x023x)
+@G/B(x2003x)
+@D/C#(x4x232)
+@Bm7(x2x232)
+@D/A(x00232)
+@G(320033)
+@Em7(022030)
+@Dm(add9)(xx0760)

@@ -1,0 +1,52 @@
+TITLE:Lying Eyes - Short,DUR:0,BPM:130,BEATS:4,KEY:D,QUAL:Verified,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#INTRO ----------------------------------
+|D            |%            |%           |%
+-
+#VERSE 1 --------------------------------
+|D            |Dmaj7        |G           |%
+City girls just seem to find out early,
+|Em           |%            |A           |%
+how to open doors with just a smile.
+|D            |Dmaj7        |G           |%
+A rich old man and she won't have to worry;
+|Em           |G            |D           |%
+she'll dress up all in lace and go in style.
+#VERSE 2 --------------------------------
+|D            |Dmaj7        |G           |%
+Late at night a big old house gets lonely;
+|Em           |%            |A           |%
+I guess every form of refuge has its price.
+|D            |Dmaj7        |G           |%
+And it breaks her heart to think her love is only
+|Em           |G            |D           |%
+Given to a man with hands as cold as ice.  You can't
+#CHORUS 1 -------------------------------
+|D           |G             |D           |%
+Hide    your lyin' eyes, and your
+|Bm          |Gbm           |Em          |A
+smile is a thin disguise.
+|D           |D9            |G           |E
+I thought by now   you'd realize    there
+|Em          |A             |D           |%
+ain't no way to hide those lying eyes.
+#VERSE 3 --------------------------------
+|D            |Dmaj7        |G           |%
+She gets up and pours herself a strong one
+|Em           |%            |A           |%
+And stares out at the stars up in the sky.
+|D            |Dmaj7        |G           |%
+Another night, it's gonna be a long one;
+|Em           |G            |D           |%
+She draws the shade and hangs her head to cry.
+#CHORUS 2 -------------------------------
+|D           |G             |D           |%
+You can't hide    your lyin' eyes, and your
+|Bm          |Gbm           |Em          |A
+smile is a thin disguise.
+|D           |D9            |G           |E
+I thought by now   you'd realize    there
+|Em          |A             |D           |%
+ain't no way to hide those lying eyes.
+#OUTRO ----------------------------------
+|Em          |A             |D           |%
+Honey you  cant hide those lying eyes.

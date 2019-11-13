@@ -1,0 +1,134 @@
+TITLE:Pancho And Lefty,DUR:192,BPM:150,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Townes Van Zandt,GENRE:Country,STYLE:Ballad,HITyear:Unknown
+$$TCL1 <X14>PR 1</X14> <X14>C M2</X14> <X1>(V3)</X1> <X16>H OFF</X16>
+$$STRT ooXoo 8 5 10
+$$RP55 3 or 4
+#INTRO ----------------------------------
+|NC                |%
+-
+|C                 |%
+-
+|G                 |%
+-
+|F                 |%
+-
+|C                 |G7
+#VERSE 1 --------------------------------
+|C                 |%
+Livin'  on  the  road,  my  friend
+|G                 |%
+Was  gonna  keep  us  free  and  clean
+|F                 |%
+But now you wear your skin like iron
+|C                 |G
+And your breath's as hard as kerosene
+|F                 |%
+You  weren't  your  mama's  only  boy
+|C                 |F
+But  her  favorite  one,  it  seems
+|Am          |*F          |G
+She began to cry When you said good bye
+|G                 |F
+-            And  sank  into  your
+|Am                |Am
+dreams
+#VERSE 2 --------------------------------
+|C                 |%
+Pancho  was  a  bandit,  bold
+|G                 |%
+His horse as fast as polished steel
+|F                 |%
+Wore  his  guns  outside  his  clothes
+|C                 |G
+For  all  the  honest  world  to  fear
+|F                 |%
+Pancho  met  his  match,  you  know
+|C                 |F
+On  the  deserts  down  in  Mexico
+|Am          |*F          |G
+No  one  heard  his  dyin'  words
+|G                 |F
+-            But  that's  the  way  it
+|Am                |Am
+goes <!--#H ON#-->
+#CHORUS 1 -------------------------------
+
+|F                 |%
+And  all  the  federales  say
+|C                 |F
+They  could  have  had  him  any  day
+|Am          |*F          |G
+They  only  let  him  slip  away
+|G                 |F
+-          Out  of  kindness,
+|Am                |Am
+I  suppose <!--#H OFF#-->
+#VERSE 3 --------------------------------
+|C                 |%
+Now Lefty he can't sing the blues
+|G                 |%
+All  night  long  like  he  used  to
+|F                 |%
+The dust that Pancho bit down South
+|C                 |G
+Ended  up  in  Lefty's  mouth
+|F                 |%
+The  day  they  laid  old  Pancho  low
+|C                 |F
+Lefty  split  for  Ohio
+|Am          |*F          |G
+Where  he  got  the  bread  to  go
+|G                 |F
+-        Well  there  ain't  nobody
+|Am                |Am
+'knows
+#VERSE 4 --------------------------------
+|C                 |%
+Now  poets  tell  how  Pancho  fell
+|G                 |%
+Lefty's  livin'  in  a  cheap  hotel
+|F                 |%
+The desert's quiet and Cleveland's cold
+|C                 |G
+And so the story ends, we're told
+|F                 |%
+Pancho needs your prayers, it's true
+|C                 |F
+But  save  a  few  for  Lefty,  too
+|Am          |*F          |G
+He  only  did  what  he  had  to  do
+|G                 |F
+-            And  now  he's  growin'
+|Am                |Am
+old <!--#H ON#-->
+#CHORUS 2 -------------------------------
+|F                 |%
+And  all  the  federales  say
+|C                 |F
+They  could  have  had  him  any  day
+|Am          |*F          |G
+They  only  let  him  slip  away
+|G                 |F
+-          Out  of  kindness,
+|Am                |Am
+I  suppose
+#OUTRO ----------------------------------
+|F                 |%
+A few old gray federales still say
+|C                 |F
+They  could  have  had  him  any  day
+|Am          |*F          |G
+They  only  let  him  slip  away
+|G                 |F
+-          Out  of  kindness,
+|Am          |Am          |Am
+I  suppose
+|Am       |Am       |Am       |Am
+-
+https://www.youtube.com/watch?v=zprRZ2wFQD4|Live with Townes VanZandt
+https://www.youtube.com/watch?v=l3LQeRqTBK4|Emmy Lou Harris
+https://www.youtube.com/watch?v=hg807ar4Fwc|Hoyt Axton
+https://www.youtube.com/watch?v=AbZ3VdYb90o|Willie and Merle
+https://www.youtube.com/watch?v=R6lmWGkb3UQ|Jason Isbell
+https://www.youtube.com/watch?v=FSWXP7qb4O4|Delbert McClinton
+https://www.youtube.com/watch?v=H9JJ55-uF4Y|Gillian Welch & David Rawlings
+@@Van Zandt first recorded it in 1972 <> Emmy Lou Harris and Hoyt Axton in 1972 <> # 1 for Merle Haggard and Willey Nelson in 1983.  <> Its not Historical, it came to him "OUT OF THE BLUE"

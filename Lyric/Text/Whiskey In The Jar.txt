@@ -1,0 +1,82 @@
+TITLE:Whiskey In The Jar,DUR:164,BPM:190,BEATS:4,KEY:C,QUAL:Test,ARTIST:Kingston Trio,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#INTRO ----------------------------------
+|C             |Am          |C             |Am
+-
+|C             |Am          |C             |Am
+-
+#VERSE 1 --------------------------------
+|C               |%               |Am            |%
+I have  been  a  rover I  have    been a bold  deceiver
+|F               |%               |C             |Am
+Vowed to make me livin with me   pistol and my   rapier
+|C               |%               |Am            |%
+Dont know what Ive stolen but would make a pretty penny
+|F               |%               |C             |Am
+Then I lost it  all to  me       darlin Sportin   Jenny  Musha
+|G7              |%
+ringum    durumm die
+#CHORUS 1 -------------------------------
+|C               |%               |F             |%
+Whack fall  the daddy-o        Whack fall  the daddy-o There's
+|C    |G7        |C                |Am           |%
+whiskey  in the  Jar
+|C               |%                |G7           |%
+-
+#VERSE 2 --------------------------------
+|C               |%               |Am            |%
+I robbed Colonel Ferrell up on Kilgarrah mountain
+|F               |%               |C             |Am
+Took the gold to Jenny just to help me with the countin
+|C               |%               |Am            |%
+Jenny called the guards and I never saw a penny
+|F               |%               |C             |Am
+I almost lost my freedom to my darlin Sporting Jenny
+|G7              |%
+Musha ringum durumm die
+#CHORUS 2 -------------------------------
+|C               |%               |F             |%
+Whack fall  the daddy-o        Whack fall  the daddy-o There's
+|C    |G7        |C                |Am           |%
+whiskey  in the  Jar
+|C               |%                |G7           |%
+-
+#VERSE 3 --------------------------------
+|C               |%               |Am            |%
+I like to find me brother, hes the one who's in the army
+|F               |%               |C             |Am
+I don’t know where he's stationed be it Kork or in Killarny
+|C               |%               |Am            |%
+Together well go roamin through the mountains of Kilkinney
+|F               |%               |C             |Am
+Swear he'd treat me better than my darlin Sportin Jenny
+|G7              |%
+Musha ringum durumm die
+#CHORUS 3 -------------------------------
+|C               |%               |F             |%
+Whack fall  the daddy-o        Whack fall  the daddy-o There's
+|C    |G7        |C                |Am           |%
+whiskey  in the  Jar
+|C               |%                |G7           |%
+-
+#VERSE 4 --------------------------------
+|C               |%               |Am            |%
+Was early in the morning at the barracks of Kilarny
+|F               |%               |C             |Am
+Me brother took his leave but he did not tell the army
+|C               |%               |Am            |%
+Our horses they were speedy was all over but the shouting
+|F               |%               |C             |Am
+Now we wait for Farrell up on Kilgarry Mountain
+|G7              |%
+Musha ringum durumm die
+#CHORUS 4 -------------------------------
+|C               |%               |F             |%
+Whack fall  the daddy-o        Whack fall  the daddy-o There's
+|C    |G7        |C                |Am           |%
+whiskey  in the  Jar
+|C               |%                |G7           |%         |C
+-
+@@The song's exact origins are unknown. A number of its lines and the general plot resemble those of a contemporary broadside ballad "Patrick Fleming"
+@@Alan Lomax suggests that the song originated in the 17th century
+@@At some point, the song came to the United States and was a favourite in Colonial America because of its irreverent attitude toward British officials.
+@@The song appeared close to its modern version in a precursor called "The Sporting Hero, or, Whiskey in the Bar" in the mid-1850s

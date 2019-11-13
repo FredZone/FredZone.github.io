@@ -1,0 +1,71 @@
+TITLE:Mama Bear,DUR:115,BPM:115,BEATS:4,KEY:G,QUAL:Raw,ARTIST:Pat Valentine,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#INTRO ----------------------------------
+|C            |Am
+-
+|C            |Am
+-
+#VERSE ----------------------------------
+|C             |Am
+Mama bear done left me
+|C          |Am
+For another bear
+|C                 |Am
+Don't know why she did that
+|C                     |Am
+Finding it hard not to care
+#CHORUS ---------------------------------
+|F                  |G
+Mama Bear why'd you leave me
+|F             |G
+Where did I go wrong
+|F                   |G
+How can we make this better
+|F                |G
+Don't want to say so long
+|C               |Am
+Oh Mama Bear
+#VERSE ----------------------------------
+|C             |Am
+Is he a really big Grizzly
+|C          |Am
+Takes guff from no one
+|C                 |Am
+Makes a really good living
+|C                     |Am
+And does he like to have fun
+#CHORUS ---------------------------------
+|F                  |G
+Mama Bear why'd you leave me
+|F             |G
+Where did I go wrong
+|F                   |G
+How can we make this better
+|F                |G
+Don't want to say so long
+|C               |Am
+Oh Mama Bear
+#VERSE ----------------------------------
+|C               |Am
+It's been a long lonely winter
+|C              |Am
+Been asleep for six months
+|C                   |Am
+Woke to the sound of gunfire
+|C                  |Am
+And now I'm on the run
+#CHORUS ---------------------------------
+|F                  |G
+Mama Bear why'd you leave me
+|F             |G
+Where did I go wrong
+|F                   |G
+How can we make this better
+|F                |G
+Don't want to say so long
+|C               |Am
+Oh Mama Bear
+#OUTRO ----------------------------------
+|C               |Am
+Oh Mama Bear
+|C               |Am
+Mama Bear

@@ -1,0 +1,73 @@
+TITLE:Goin Down To Texas,DUR:102,BPM:160,BEATS:4,KEY:G,QUAL:Verified,ARTIST:Shel Silverstein,GENRE:Country,STYLE:Up Tempo,HITyear:1977
+#VERSE 1 --------------------------------
+|C              |C                     
+Why did I hurt that woman?
+|C             |G             
+She never done me wrong
+|G             |%             
+I run away and left her for
+|G             |C             
+A redhead Amazon.
+|C             |%           
+I got no brains, I got no sense.
+|C             |F             
+I never had no class.
+|F             |C             
+So I'm goin' down to Texas
+|G             |C             
+And be one more horse's ass.
+|C              |C      
+-
+#CHORUS 1 -------------------------------
+|C              |C                     
+I'm goin' down to Texas 
+|C             |G             
+And be one more horse's ass.
+|G             |%             
+I used to be a stallion
+|G             |C             
+But that's all in the past.
+|C             |%           
+So put a saddle on my nose
+|C             |F             
+And point me towards the grass...
+|F             |C             
+'Cause I'm goin' down to Texas
+|G             |C             
+And be one more horse's ass!
+|C              |C      
+-
+#VERSE 2 --------------------------------
+|C              |C                     
+I can't run in the hot sun.
+|C             |G             
+I won't run in the mud.
+|G             |%             
+I'm over-aged for racin'
+|G             |C             
+And I'm overweight for stud.
+|C             |%           
+But I can drink and I can fight
+|C             |F             
+And throw a whiskey glass.
+|F             |C             
+I'm goin' down to Texas
+|G             |C             
+And be one more horse's ass!
+#CHORUS 2 -------------------------------
+|C              |C                     
+I'm goin' down to Texas
+|C             |G             
+And be one more horse's ass.
+|G             |%             
+I used to be a stallion
+|G             |C             
+But that's all in the past.
+|C             |%           
+So pin a tail on my face
+|C             |F             
+And point me towards the grass...
+|F             |C             
+'Cause I'm goin' down to Texas
+|G             |C             
+And be one more horse's ass!

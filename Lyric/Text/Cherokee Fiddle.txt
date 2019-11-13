@@ -1,0 +1,97 @@
+TITLE:Cherokee Fiddle,DUR:240,BPM:150,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Michael Martin Murphy,GENRE:Country,STYLE:Up Tempo,HITyear:Unknown
+$$TCL1 <X14>PR 1</X14> <X14>C. M2</X14> <X16>(V3)</X16> <X16>H OFF</X16>
+#INTRO ----------------------------------
+|NC           |C            |%            |F            |%            
+-
+|G            |Ab           |Am           |Ab           
+-When the
+#VERSE 1 --------------------------------
+|C            |%            |F            |%            
+train pulled into the station He rolled up his
+|G            |Ab           |Am           |Ab           
+Sleeve and resined up his bow Fiddle upside
+|C            |%            |F            |%            
+down the Orange Blossom Special       If you
+|G7           |%            |C            |%            
+want to make a living you've got to put on a good show <XX>H ON</XX>
+#CHORUS 1 -------------------------------
+|Am           |%            |C            |%            
+When he'd smell the smoke and the cinders He'd slick back his
+|Am           |%            |Dm           |G7           
+hair, open up his case play the Cherokee
+|C            |%            |F            |%            
+Fiddle, play it for the whiskey Good
+|G7           |%            |C            |%            
+whiskey never let him lose his place  <XX>H OFF</XX>He was always  
+                         
+#VERSE 2 --------------------------------
+|C            |%            |F            |%            
+there, playing for the miners      The Devil's
+|G            |Ab           |Am           |Ab           
+Dream was a song they understood And then he'd
+|C            |%            |F            |%            
+go back to Oaklahoma and he'd         
+|G7           |%            |C            |%            
+Wait till the trains were running and the weather was good <XX>H ON</XX>
+#CHORUS 2 -------------------------------
+|Am           |%            |C            |%            
+When he'd smell the smoke and the cinders He'd slick back his
+|Am           |%            |Dm           |G7           
+hair, open up his case play the Cherokee
+|C            |%            |F            |%            
+Fiddle, play it for the whiskey Good
+|G7           |%            |C            |%            
+whiskey never let him lose his place <XX>H OFF SOON</XX>
+#INSTRUMENTAL (Like a verse)---------------------------------------------------
+|C            |%            |F            |%            
+-
+|G            |Ab           |Am           |Ab           
+-
+|C            |%            |F            |%            
+-
+|G7           |%            |C            |%            
+-
+#VERSE 3 --------------------------------
+|C            |%            |F            |%            
+Now the Indians are dressing up like cowboys And the
+|G            |Ab           |Am           |Ab           
+cowboys are putting leather and turquoise on And the
+|C            |%            |F            |%            
+music  is  sold  by  lawyers          
+|G7           |%            |C            |%            
+fools who fiddled in the middle of the stations 
+are gone<XX>H ON</XX>Some folks
+#CHORUS 3 -------------------------------
+|Am           |%            |C            |%            
+say they'll never miss it That old fiddle
+|Am           |%            |Dm           |G7           
+squealed like the Engines race The Cherokee
+|C            |%            |F            |%            
+Fiddle is gone forever  Like the          
+|G7           |%            |C            |%            
+music of the whistle that the 
+old locomotives made So when you 
+#CHORUS 4 -------------------------------
+|Am           |%            |C            |%            
+smell the smoke and the cinders He'd slick back his
+|Am           |%            |Dm           |G7           
+hair, open up his case play the Cherokee
+|C            |%            |F            |%            
+Fiddle, play it for the whiskey Good
+|G7           |%            |C            |F            
+whiskey never let him lose his place No Good
+#OUTRO ----------------------------------
+|C            |G7           |C            |F            
+whiskey will never let you lose your place
+|C            |G7           |C            |F            
+-----(little guitar /fiddle run ) No Good
+|C            |G7           |C            |%            
+whiskey will never let you lose your place
+|C            
+-
+https://www.youtube.com/watch?v=8jmT_r1kvJQ|Michael Martin Murphey
+https://www.youtube.com/watch?v=fyR6boT8-i4|Karaoke
+https://www.youtube.com/watch?v=0oG4AS6NO7g|Johnny Lee Live
+@@"Cherokee Fiddle" is a song written by Michael Martin Murphey. Murphey's version of the song went to number 58 on the Hot Country Singles chart in 1977.
+@@It was later recorded by Johnny Lee. It was released in October 1982 as the first single from the album Sounds Like Love. The song reached number 10 on the Billboard Hot Country Singles chart.
+iRealb://Cherokee%20Fiddle%3DComposer%20Unknown%3D%3DMedium%20Swing%3DC%3D%3D1r34LbKcu7GZLxZ4CLZxZLCSA*%7BZLbAZL-ZALbAZLGZLxZLFZLxLZFL4Ti*%5BCZLxZZA-LZZLxQZLCZLxZL7GLZxZLFZLxZLCZLbA*BA-LLbAZL%7C%7D%20x1ZA-LZLxZL7GZLxZLFZLZxLCZL7GZL%2C-DZLxZCLZNLxZL%2CxZLFZ2D.S.QC*%7B%20%20QyXQyXQyQXyXZ%20x%3EadoC%20la%20CLZxL1*%3C2NLxZL-AbLZAxZLCZLxZL7GZLxLZFZLxZLCZLbAZL-%20%7B*DAZLGZL%20x1NZxLZA-ZL7GZLxZLFZLxZCLZL7GZL%2C-DZLxZLxLZCLZL%2CCZ%2CCUfZLZCLZGZLCZL%2CF%7CZLCZLG7ZLCZL%2CFZLCZL7G7LZCLF2N%7C%7DZ%20%3DPop-Country%3D150%3D4

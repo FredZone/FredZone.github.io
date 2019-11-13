@@ -1,0 +1,109 @@
+TITLE:The Cape,DUR:152,BPM:150,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Guy Clark,GENRE:Country,STYLE:Ballad,HITyear:1995
+$$TCH1 <X14>PR 1</X14> <X14>C M2</X14> <X1>(V3)</X1> <X16>H OFF</X16>
+$$STRT ooXoo 8 5 10
+$$RP55 3 or 4
+#INTRO ----------------------------------
+|NC            |C     ~C/B     |Am    ~Am/G
+(One bar count in)
+|F     ~G7     |C
+-
+|C     ~C/B     |Am    ~Am/G
+-
+|F     ~G7     |C
+-
+#VERSE 1 --------------------------------
+|C     ~C/B     |Am    ~Am/G
+Eight years old with a flour sack cape
+|F     ~G7     |C
+Tied all around his neck
+|C     ~C/B     |Am    ~Am/G
+He climbed up on the garage
+|F             |G7
+Figurin' what the heck
+|C     ~C/B     |Am    ~Am/G
+He screwed his courage up so tight
+|F     ~G7     |C
+The whole thing came unwound
+|C     ~C/B     |Am    ~Am/G
+He got a runnin' start and bless his heart
+|F     ~G7     |C
+He headed for the ground <!--#H ON#-->
+#CHORUS 1 -------------------------------
+|Am            |Am/G
+Well he's one of those who knows that life
+|F             |C
+Is just a leap of faith
+|C     ~C/B     |Am    ~Am/G
+Spread your arms and hold your breath
+|F     ~G7     |C
+And always trust your cape
+|C     ~C/B     |Am    ~Am/G
+- <!--#H OFF#-->
+|F     ~G7     |C
+-
+#VERSE 2 --------------------------------
+|C     ~C/B     |Am    ~Am/G
+Now he's all grown up with a flour sack cape
+|F     ~G7     |C
+Tied all around his dreams
+|C     ~C/B     |Am    ~Am/G
+He's full of piss and vinegar
+|F             |G7
+He's bustin at the seams
+|C     ~C/B     |Am    ~Am/G
+He licked his finger and checked the wind
+|F     ~G7     |C
+It's gonna be do or die
+|C     ~C/B     |Am    ~Am/G
+He wasn't scared of nothin', Boys
+|F     ~G7     |C
+He was pretty sure he could fly <!--#H ON#-->
+#CHORUS 2 -------------------------------
+|Am            |Am/G
+Well he's one of those who knows that life
+|F             |C
+Is just a leap of faith
+|C     ~C/B     |Am    ~Am/G
+Spread your arms and hold your breath
+|F     ~G7     |C
+And always trust your cape
+|C     ~C/B     |Am    ~Am/G
+-<!--#H OFF#-->
+|F     ~G7     |C
+-
+#VERSE 3 --------------------------------
+|C     ~C/B     |Am    ~Am/G
+Now he's old and grey with a flour sack cape
+|F     ~G7     |C
+Tied all around his head
+|C     ~C/B     |Am    ~Am/G
+He's still jumpin' off the garage
+|F             |G7
+And will be 'till he's dead
+|C     ~C/B     |Am    ~Am/G
+All these years the people said
+|F     ~G7     |C
+He's actin like a kid
+|C     ~C/B     |Am    ~Am/G
+He did not know he could not fly
+|F     ~G7     |C
+So he did  <!--#H ON#-->
+#CHORUS 3 -------------------------------
+|Am            |Am/G
+Well he's one of those who knows that life
+|F             |C
+Is just a leap of faith
+|C     ~C/B     |Am    ~Am/G
+Spread your arms and hold your breath
+|F     ~G7     |C
+And always trust your cape
+#OUTRO ----------------------------------
+|C     ~C/B     |Am    ~Am/G
+Spread your arms and hold your breath
+|F     ~G7     |C
+And always trust your cape
+|C             |C
+(hold...)
+@@Guy Clark (1941) Grammy Award winning Texas singer, musician, songwriter & recording artist. Off his 1995 Dublin Blues Album.  He has released more than twenty albums
+@@his songs have been recorded by other artists including Jerry Jeff Walker, Jimmy Buffett, Lyle Lovett, Ricky Skaggs, Steve Wariner, and Rodney Crowell.
+@@Guy Clark won the 2014 Grammy Award for Best Folk Album: My Favorite Picture Of You.

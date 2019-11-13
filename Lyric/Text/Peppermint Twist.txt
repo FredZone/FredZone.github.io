@@ -1,0 +1,96 @@
+TITLE:Peppermint Twist,DUR:101,BPM:190,BEATS:4,KEY:C#,QUAL:Inwork,ARTIST:Joey Dee And The Starliters,GENRE:Rock,STYLE:Dance,HITyear:1961
+#INTRO ----------------------------------
+|D                       |C                       
+-
+|GNC      ~      ~       |GNC       ~       ~       
+#VERSE 1 --------------------------------
+|G                       |%                       
+Well, they've got a new dance and it goes like this..
+|G                       |%                       
+(Bop shoo..bop, a bop..mm bop..mm shoo..bop)
+|C                       |G                       
+yeah, the name of the dance is the Peppermint Twist,
+|G                       |%                       
+(Bop, bop shoo..bop, a bop..mm bop..mm shoo..bop)
+|D                       |C                       
+well, you like it like this, the Peppermint Twist.
+|G                       |%                       
+(Bop bop shoo..bop, a boppa boppa shoo..bop)
+#CHORUS 1 -------------------------------
+|G                       |%                       
+You go round and round,
+|G                       |%                       
+up and down,
+|C                       |%                       
+round and round,
+|G                       |%                       
+up and down,
+|D                       |C                       
+round and around and...up and down,
+|G                       |%                       
+and one, two, three, kick, one, two, three, jump.
+#BREAK 1 --------------------------------
+|G                       |%                       
+-
+|G                       |%                       
+-
+|C                       |%                       
+-
+|G                       |%                       
+-
+|D                       |C                       
+-
+|G                       |%                       
+-
+#VERSE 2 --------------------------------
+|G                       |%                       
+Well, meet me, baby, down on 45th Street,
+|G                       |%                       
+(Bop bop shoo..bop, a boppa boppa shoo..bop)
+|C                       |G                       
+Where the Peppermint Twisters meet,
+|G                       |%                       
+(Bop bop shoo..bop, a boppa boppa shoo..bop)
+|D                       |C                       
+you'll learn to do this, the Peppermint Twist.
+|G                       |%                       
+(Bop shoo..bop, boppa boppa shoo..bop)
+#VERSE 3 --------------------------------
+|G                       |%                       
+It's alright, all night,  it's alright,
+|G                       |%                       
+(it's alright, it's alright, it's alright),
+|C                       |G                       
+it's okay, all day, it's okay
+|G                       |%                       
+(it's okay, it's okay, it's okay)
+|D                       |C                       
+you'll learn to do this, the Peppermint
+|G                       |%                       
+Twist. (Bop shoo..bop, boppa boppa shoo..bop)
+#VERSE 4 --------------------------------
+|G                       |%                       
+Hey, yay, yay, yay     (..hey, yay, yay, yay..)
+|G                       |%                       
+hey, yay, yay, yay..   (..hey, yay, yay, yay..)
+|C                       |G                       
+hey, yay, yay, yay.    (..hey, yay, yay, yay..)
+|G                       |%                       
+Hey, yay, yay, yay     (..hey, yay, yay, yay..)
+|D                       |C                       
+Hey, yay, yay, yay     (..hey, yay, yay, yay..)
+|G                       |%                       
+Hey, yay, yay, yay.. (..hey, yay, yay, yay..)
+#OUTRO ----------------------------------
+|G                       |%                       
+-
+|G                       |%                       
+-
+|C                       |%                       
+-
+|G                       |%                       
+-
+|D                       |C                       
+-
+|G                       |%                       
+-

@@ -1,0 +1,64 @@
+TITLE:Put Another Log On The Fire,DUR:136,BPM:190,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Shel Silverstien,GENRE:Country,STYLE:Up Tempo,HITyear:Unknown
+$$TCL1 <X14>PR 1</X14> <X14>C.M2</X14> <x1>(V3)</X1> <X16>H ON</X16>
+#INTRO ----------------------------------
+|N           |C           |%           |%           |%
+-
+|C           |%           |%           |%
+-
+#VERSE 1 --------------------------------
+|C           |%           |%           |%
+Put another log on the fire
+|%           |%           |G           |%
+Cook me up some bacon & some beans
+|%           |%           |%           |%
+And go out to the car & change the  tire
+|%           |%           |C           |%
+Wash my socks and sow my old blue jeans  Come on baby you can
+|C           |%           |%           |%
+fill my pipe & then go fetch my slippers
+|C           |%           |F           |%
+And boil me up another pot of tea
+|%           |%           |C           |%
+Then put another log on the fire babe
+|G           |%           |C           |%
+And come & tell me why you're leaving me <X16>H OFF</X16>
+#VERSE 2 --------------------------------
+|C           |%           |%           |%
+Now don't I let you wash the car on Sunday
+|%           |%           |G           |%
+And don't I warn you when you're gettin fat
+|%           |%           |%           |%
+Ain't I a gonna take you fishin' with me someday
+|%           |%           |C           |%
+Well a man can't love a woman more than that
+|C           |%           |%           |%
+And ain't I always nice to your kid sister
+|C           |%           |F           |%
+Don't I take her driving every night
+|%           |%           |C           |%
+So sit here at my feet cause I like you when you're sweet
+|G           |%           |C           |%
+And you know it ain't feminine to fight<X16>H ON</X16>
+#VERSE 3 --------------------------------
+|C           |%           |%           |%
+So put another log on the fire
+|%           |%           |G           |%
+Cook me up some bacon & some beans
+|%           |%           |%           |%
+Go out to to the car & Jack it up & change the tire
+|%           |%           |C           |%
+Wash my socks & sew my old blue jeans    Come on baby you can
+|C           |%           |%           |%
+fill my pipe & then go fetch my slippers
+|C           |%           |F           |%
+And boil me up another pot of tea
+|%           |%           |C           |%
+Then put another log on the fire babe
+|G           |%           |C           |%
+And come & tell me why you're leaving me
+|C           |C           |%
+-
+@@Sheldon Allan "Shel" Silverstein (September 25, 1930 – May 10, 1999) was an American poet, singer-songwriter, cartoonist, screenwriter, and author of children's books
+@@Silverstein's "A Boy Named Sue" won a 1970 Grammy
+@@He was a cartoonist for Playboy, Look and Sports Illustrated
+@@He wrote childrens books including "The Giving Tree", "Light in the Attic", and "Where the Sidewalk Ends"

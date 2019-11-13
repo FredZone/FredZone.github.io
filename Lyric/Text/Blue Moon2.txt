@@ -1,0 +1,62 @@
+TITLE:Blue Moon2,DUR:184,BPM:130,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#INTRO ----------------------------------
+|C         |Am        |F         |G
+-
+|C         |Am        |F         |G
+-                                    Blue
+#VERSE 1 --------------------------------
+|C         |Am        |F         |G
+moon,                   You saw me standing
+|C         |Am        |F         |G
+alone.                  Without a dream in my
+|C         |Am        |F         |G
+heart,                 Without a love of my
+|C         |Am        |F         |G
+own.                                 Blue
+#VERSE 2 --------------------------------
+|C         |Am        |F         |G
+moon,                  You knew just what I was
+|C         |Am        |F         |G
+there for,              You heard me saying a
+|C         |Am        |F         |G
+prayer for,              Someone I really could
+|C         |F         |C         |C7
+care for.                     And then there
+#CHORUS 1 -------------------------------
+|Dm        |G7        |C         |Am
+suddenly  appeared    before  me.     The only
+|Dm        |G7        |C         |%
+one my heart could ever hold.  I heard some-
+|Cm        |Dm        |Bb        |%
+body whisper, please adore me.     And when I
+|Bm        |D7        |G         |G7  
+Looked the moon had turned to gold
+#VERSE 3 --------------------------------
+|C         |Am        |F         |G
+moon,                             Now I'm no longer
+|C         |Am        |F         |G
+alone.                            Without a dream in my
+|C         |Am        |F         |G
+heart,                            Without a love of my
+|C         |F         |C         |C7
+of my own                     And then there
+#CHORUS 2 -------------------------------
+|Dm        |G7        |C         |Am
+suddenly  appeared    before  me.     The only
+|Dm        |G7        |C         |%
+one my heart could ever hold.  I heard some-
+|Cm        |Dm        |Bb        |%
+body whisper, please adore me.     And when I
+|Bm        |D7        |G         |G7  
+Looked the moon had turned to gold
+#VERSE 4 --------------------------------
+|C         |Am        |F         |G
+moon,                   You saw me standing
+|C         |Am        |F         |G
+alone.                  Without a dream in my
+|C         |Am        |F         |G
+heart,                 Without a love of my
+|C         |Am        |F         |G
+of my own                                Blue
+|C
+Moon

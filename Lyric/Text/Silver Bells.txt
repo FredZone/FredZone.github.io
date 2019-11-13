@@ -1,0 +1,73 @@
+TITLE:Silver Bells,DUR:120,BPM:100,BEATS:3,KEY:A,QUAL:Verified,ARTIST:,GENRE:Unknown,STYLE:Unknown,HITyear:
+|A              |%
+-     
+|A              |%
+-                             City
+#VERSE 1 --------------------------------
+|A               |%
+sidewalks, busy sidewalks  Dressed in 
+|D               |%
+Holiday         style           In the  
+|E               |%              
+Air there's a    feeling of 
+|A               |%
+Christmas          Children
+|A               |%
+Laughing, people   passing  Meeting
+|D               |%
+Smile   after    smile       And on 
+|E               |%    
+Every   street   corner you
+|A               |%
+hear
+#CHORUS 1 -------------------------------
+|A               |%   
+Silver bells, 
+|D               |%
+silver bells
+|E               |%        
+It's Christmas-time in the
+|A               |%
+city
+|A               |%   
+Ring-a-ling, 
+|D               |%
+hear them ring
+|E               |%         
+Soon it will  be Christmas
+|A               |%
+day
+#VERSE 2 --------------------------------
+|A               |%
+Strings of street lights, even stop lights Blink a 
+|D               |%
+bright red and green        As the 
+|E               |%              
+shoppers run home with their
+|A               |%
+treasures
+|A               |%
+Hear the snow crunch, see the kids bunch This is 
+|D               |%
+Santa's big scene           And 
+|E               |%    
+above all the bustle you 
+|A               |%
+hear...
+#CHORUS 2 -------------------------------
+|A               |%   
+Silver bells, 
+|D               |%
+silver bells
+|E               |%        
+It's Christmas-time in the
+|A               |%
+city
+|A               |%   
+Ring-a-ling, 
+|D               |%
+hear them ring
+|E               |%         
+Soon it will  be Christmas
+|A               |%
+day

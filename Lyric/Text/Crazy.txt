@@ -1,0 +1,32 @@
+TITLE:Crazy,DUR:0,BPM:75,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Willie Nelson,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#INTRO ----------------------------------
+|C            |%            |%            |%
+-            
+@or run up chromatically:}C7/Bb Db7/Bb D7/Bb Eb7/Bb E7/Bb F7/Bb
+#CHORUS 1 -------------------------------
+|C            |A            |Dm7          |%            
+Crazy ... I'm crazy for feelin' so lonely
+|G            |Gbdim        |C7   ~Dbdim   |D7/Bb   ~G   
+I'm crazy ... crazy for feelin' so blue
+|C            |A            |Dm7          |%            
+I knew you'd love me as long as you wanted,
+|G            |%            |C    ~Dm7    |Adim    ~C    
+And then someday, you'd leave me for somebody new
+|F7           |%            |C            |%            
+Worry ... why do I let myself worry
+|D7           |%            |G riff 6Fret |%            
+Wonderin' ... what in the world did I do
+#CHORUS 2 -------------------------------
+|C            |A            |Dm7          |%            
+Oh, crazy ... for thinkin' that my love could hold you
+|G            |Gbdim        |C7   ~Dbdim   |D7/Bb   ~G   
+I'm crazy for tryin', and crazy for cryin'
+|C            |A            |Dm7          |%            
+And I'm crazy for lovin' you
+|G            |%            |C    ~Dm7    |Adim    ~C    
+Crazy ... for thinkin' that my love could hold you
+|F7           |%            |C            |%            
+I'm crazy for tryin', and crazy for cryin'
+|D7          |%             |G riff 6Fret |%         
+And I'm crazy for lovin' you
+@run up chromatically: B7/9 C7/9 C#7/9 D7/9 Eb7/9 E7/9)

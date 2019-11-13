@@ -1,0 +1,43 @@
+TITLE:Ghost Band,DUR:,BPM:100,BEATS:4,KEY:A,QUAL:Raw,ARTIST:Fred Kaparich,GENRE:Blues,STYLE:Ballad,HITyear:
+#VERSE 1 --------------------------------
+|A                  |%                 |%                 |%
+-Well now that you heard us I'd like to introduce my band...the Ghost Riders...
+|D                  |D                 |A                 |%
+We got together around 4 years ago when I realized I was at best a mediocre guitar player and singer
+|E                  |D                 |A                 |E
+So I used my computer to conjure up a backup band with musicians who would do what I said...
+#VERSE 2 --------------------------------
+|A                  |%                 |%                 |%
+Your listening to the base player...Mystic Mike...playing the imaginary base
+|D                  |D                 |A                 |%
+His Style is pretty basic and he is not particularly creative, but he is consistent
+|E                  |D                 |A                 |E
+But we felt something was missing, so we went out and dug up a drummer....
+#VERSE 3 --------------------------------
+|A                  |%                 |%                 |%
+Thats 'Long Dead Ted' giving you a basic back beat...on the virtual drum set
+|D                  |D                 |A                 |%
+Give a listen and see if you think the sound is better with all three of us
+|E                  |D                 |A                 |E
+What it really does is cover my mistakes and if I lose my place I know their still in time
+#VERSE 4 --------------------------------
+|A                  |%                 |%                 |%
+So now we had a trio...but the thought occured to me, why not conjure up one more guy 
+|D                  |D                 |A                 |%
+to fill in the rhythm and add a little life,  Besides I didn't have to pay em anything
+|E                  |D                 |A                 |E
+So here comes the final member of the group, Rusty fingers, our piano player...
+#VERSE 5 --------------------------------
+|A                  |%                 |%                 |%
+Well thats the Ghost riders, Mike, Ted, Rusty...and me...I'm Fred....
+|D                  |D                 |A                 |%
+Now I'll be calling these guys in to back me up pretty regular today...
+|E                  |D                 |A                 |E
+They really add some spirit to the music...  But for now they are riding up that cloudy Draw...
+#VERSE 6 --------------------------------
+|A                  |%                 |%                 |%
+But theyll be back...(unless my computer goes south with em...)
+|D                  |D                 |A                 |%
+-
+|E                  |D                 |A                 |E
+-

@@ -1,0 +1,53 @@
+TITLE:Runaway,DUR:,BPM:140,BEATS:4,KEY:E,QUAL:Raw,ARTIST:Del Shannon,GENRE:Unknown,STYLE:Unknown,HITyear:
+#VERSE 1 --------------------------------
+|Em            |%               |D               |%
+As  I   walk   along    ,   I wonder  what went wrong
+|C             |%               |B7              |%
+With our love A love that was so strong.
+|Em            |%               |D               |%
+And as I still walk on, I think of, the things We`ve done
+|C             |%               |B7              |%
+together while our hearts were young.
+#CHORUS 1 -------------------------------
+|E             |%               |C#m             |%
+I`m  walking in the rain Tears are falling and I feel the pain
+|E             |%               |C#m             |%
+Wishing you were here by me      To end this misery.
+|E             |%               |C#m             |%
+I wonder                    I wa-wa-wa-wa-wonder
+|E             |%               |C#m             |%
+Why   Wha,  wha,  wha,  wha, why, she ran away
+|A             |%               |B7              |%
+And I wonder, where she will stay-yay
+|E             |A               |E               |B7
+My little runaway  run, run, run, run, runaway.
+#INTERLUDE ------------------------------
+|Em            |%               |D               |%
+-
+|C             |%               |B               |%
+-
+|B7            |%               |%               |%
+-
+|Em            |%               |D               |%
+-
+|C             |%               |B               |%
+-
+|B7            |%               |%               |%
+-
+#CHORUS 2 -------------------------------
+|E             |%               |C#m             |%
+I`m  walking in the rain Tears are falling and I feel the pain
+|E             |%               |C#m             |%
+Wishing you were here by me      To end this misery.
+|E             |%               |C#m             |%
+I wonder                    I wa-wa-wa-wa-wonder
+|E             |%               |C#m             |%
+Why   Wha,  wha,  wha,  wha, why, she ran away
+|A             |%               |B7              |%
+And I wonder, where she will stay-yay
+|E             |A               |E               |B7
+My little runaway  run, run, run, run, runaway.
+#OUTRO ----------------------------------
+|E             |A               |E                |A
+Run, run, run, run, runaway  Run, run, run, run, runaway
+https://www.youtube.com/watch?v=pnToZH05wWA|Karaoke (?)

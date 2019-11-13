@@ -1,0 +1,94 @@
+TITLE:The Streets Of London,DUR:243,BPM:155,BEATS:4,KEY:C,QUAL:Preliminary,ARTIST:Ralph Mctell,GENRE:Folk,STYLE:Ballad,HITyear:TBD
+#INTRO ----------------------------------
+|C                |G                |Am               |Em               
+-
+|F                |C                |G                |C                
+-
+#VERSE 1 --------------------------------
+|C                |G                |Am               |Em               
+Have you seen the old man in the closed-down market
+|F                |C                |D7               |G7               
+Kicking up the paper with his worn-out shoes
+|C                |G                |Am               |Em               
+In his eyes you see no pride, hand held loosely at his side
+|F                |C                |G7               |C                
+Yesterday's paper telling yesterday's news
+#CHORUS 1 -------------------------------
+|F                |Em               |C                |Am               
+So how can you tell me you're lo - ne - ly
+|D7               |%                |G                |G7               
+And say for you that the sun don't shine
+|C                |G                |Am               |Em               
+Let me take you by the hand and lead you through the streets of London
+|F                |C                |G7               |C                
+I'll show you something to make you change your mind
+#BREAK 1 --------------------------------
+|C                |G                |Am               |G                
+-
+#VERSE 2 --------------------------------
+|C                |G                |Am               |Em               
+Have you seen the old gal who walks the streets of London
+|F                |C                |F                |G7               
+Dirt in her hair and her clothes in rags
+|C                |G                |Am               |Em               
+She's no time for talking, she just keeps right on walking
+|F                |C                |G7               |C                
+Carrying her home in two carrier bags
+#CHORUS 2 -------------------------------
+|F                |Em               |C                |Am               
+So how can you tell me you're lo - ne - ly
+|D7               |D7               |G                |G7               
+And say for you that the sun don't shine
+|C                |G                |Am               |Em               
+Let me take you by the hand and lead you through the streets of London
+|F                |C                |G7               |C                
+I'll show you something to make you change your mind
+#INTERLUDE ------------------------------
+|C                |G                |Am               |Em               
+-
+|F                |C                |G                |C                
+-
+#VERSE 3 --------------------------------
+|C                |G                |Am               |Em               
+In the all-night cafe at a quarter past eleven
+|F                |C                |F                |G7               
+Same old man sitting there on his own
+|C                |G                |Am               |Em               
+Looking at the world over the rim of his tea-cup
+|F                |C                |G7               |C                
+Each tea lasts an hour, then he wanders home alone
+#CHORUS 3 -------------------------------
+|F                |Em               |C                |Am               
+So how can you tell me you're lo - ne - ly
+|D7               |D7               |G                |G7               
+And say for you that the sun don't shine
+|C                |G                |Am               |Em               
+Let me take you by the hand and lead you through the streets of London
+|F                |C                |G7               |C                
+I'll show you something to make you change your mind
+#BREAK 2 --------------------------------
+|C                |G                |Am               |G                
+-
+#VERSE 4 --------------------------------
+|C                |G                |Am               |Em               
+Have you seen the old man outside the seaman's mission
+|F                |C                |F                |G7               
+Memory fading with the medal ribbons that he wears
+|C                |G                |Am               |Em               
+And in our winter city the rain cries a little pity
+|F                |C                |G7               |C                
+For one more forgotten hero and a world that doesn't care
+#CHORUS 4 -------------------------------
+|F                |Em               |C                |Am               
+So how can you tell me you're lo - ne - ly
+|D7               |D7               |G                |G7               
+And say for you that the sun don't shine
+|C                |G                |Am               |Em               
+Let me take you by the hand and lead you through the streets of London
+|F                |C                |G7               |C                
+-
+|C(hold)          |%                |%                |%                
+-
+I'll show you something to make you change your mind
+https://www.youtube.com/watch?v=DiWomXklfv8|Ralph McTell Long Version (over produced) with narative
+https://www.youtube.com/watch?v=krY4s1Z3FWo|Ralph McTell Live solo

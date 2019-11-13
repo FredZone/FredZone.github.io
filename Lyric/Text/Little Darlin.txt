@@ -1,0 +1,52 @@
+TITLE:Little Darlin,DUR:,BPM:125,BEATS:4,KEY:D,QUAL:Raw,ARTIST:Diamonds,GENRE:Rock,STYLE:Dance,HITyear:1957
+#INTRO ----------------------------------
+|D                             |Bm
+Aaaaaaaaaaaaaaaaaaaah...Ya-ya-ya, aaaaaaaaaah, Ya-ya-ya,
+|G                             |A
+ aaaaaaaaaah...   Ya-ya-yaaaaaaaaaa-aah.  Hey, little
+#VERSE 1 --------------------------------
+|D                            |Bm
+darlin' ...                  Oh, little darlin'
+Bomp-bomp-bomp, bomp-de-waddie-waddie (x2)
+|G                            |A
+Oh-oh-oh where,               Ar-are you
+Bomp-bomp-bomp, bomp-de-waddie-waddie (x2)
+#VERSE 2 --------------------------------
+|D                           |Bm
+My love-a, I was wrong-a..(La-la-la-la, la, la.)
+|G                            |A
+To-oo try to lo-ove two..A-hoopa, a-hoopa, hoopa..
+|D                           |Bm
+Kno-ow well-a that my love-a..(La-la-la-la, la, la.)
+|G                            |A
+Wa-as just fo-or you..Ooo-oonly yoooooooooooou.
+|D           |G
+(Bomp-bomp-bomp, bomp-de-waddie-waddie.)
+|D              |A
+(Bomp-bomp-bomp.)
+#VERSE 3 --------------------------------
+|D                           |Bm
+My darlin',              I need you..(La-la-la-la, la, la.)
+|G                           |A
+To call my own, and never do wrong.
+|D                           |Bm
+To hold in mine, your little hand..(La-la-la-la, la, la.)
+|G                           |A
+I'll know too soon, that all is so grand.
+|D           |G              |D               |A
+Please, hold my hand.
+#VERSE 4 --------------------------------
+|D                            |Bm
+My dear-a..                  I-I was wrong-a..
+Bomp-bomp-bomp, bomp-de-waddie-waddie (x2)
+|G                           |A
+To-oo try..               To lo-ove two... A-hoopa, A-hoopa, hoopa..
+Bomp-bomp-bomp, bomp-de-waddie-waddie (x2)
+|D                          |Bm
+Know well-   a that     my love-a..(La-la-la-la, la, la.)
+|G                           |A
+Wa-as just              for you    ..   .Oooonly
+Bomp-bomp-bomp, bomp-de-waddie-waddie (x2)
+|D                          |D
+yoooooooooooou.
+Bomp-bomp-bomp, bomp-de-waddie-waddie Bomp-bomp-bomp Cha Cha Cha

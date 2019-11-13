@@ -1,0 +1,72 @@
+TITLE:Teach Your Children,DUR:165,BPM:160,BEATS:4,KEY:D,QUAL:Complete,ARTIST:Crosby,GENRE:Country,STYLE:Up Tempo,HITyear:
+$$TCL1 <X14>PR 1</X14> <X14>D M2</X14> <X14>PV 1</X14> <X16>V4</X16> <X16>H ON</X16>
+$$STRT oooXo 8 5 10
+$$RP55 3 or 4
+#INTRO ----------------------------------
+|N                        |N
+-
+|D            |G            |D            |A
+#VERSE 1 --------------------------------
+|D            |%            |G            |%
+You        who are on the road   Must have a
+|D            |%            |A   ~Asus4   |A
+code          that you can live by
+|D            |%            |G            |%
+And so         become yourself     Because the
+|D            |%            |A   ~Asus4   |A
+past is just a good-bye. <XX>V3 ON (V3,V4)</XX>
+#VERSE 2 --------------------------------
+|D            |%            |G            |%
+Teach      your children well, Their father's
+|D            |%            |A   ~Asus4   |A
+hell           did slowly go by,
+|D            |%            |G            |%
+And feed      them on your dreams The one they
+|D            |%            |A   ~Asus4   |A
+pick         the one you'll know by.
+-
+#CHORUS 1 -------------------------------
+|D            |%            |G            |%
+Don't you ever ask them why, if they told you, you will
+|D            |%            |Bm           |%
+cry,So just look at them and sigh
+|G                        |A
+-            and know they love you.
+|D            |%            |G            |%
+-<XX>VOICE 1 ON (V1,V3,V4)</XX>
+|D            |%            |A            |%
+-<XX>H OFF</XX>
+#VERSE 3 --------------------------------
+|D            |%            |G            |%
+And you,          of tender years, Can't know the
+|D            |%            |A   ~Asus4   |A
+fears  that  your  elders   grew by,
+|D            |%            |G            |%
+And so please help them with your youth, They seek the
+|D            |%            |A   ~Asus4   |A
+truth    before they  can die.<XX>H ON</XX>
+#VERSE 4 --------------------------------
+|D            |%            |G            |%
+Teach your parents well,
+|D            |%            |A   ~Asus4   |A
+Their children's hell will slowly go by,  And
+|D            |%            |G            |%
+feed          them on your dreams  The one they
+|D            |%            |A   ~Asus4   |A
+picks        the one you'll know by.
+-<XX>V2 ON (V-ALL)</XX>
+#CHORUS 2 -------------------------------
+|D            |%            |G            |%
+Don't you ever ask them why, if they told you, you will
+|D            |%            |Bm           |%
+cry,So just look at them and sigh
+|G                        |A
+-             and know they love you.
+|D            |%            |G            |%
+-
+|D            |%            |A            |%
+-
+|D            |%            |%            |%
+-
+https://www.youtube.com/watch?v=dUwqMSab9xw|Studio CSNY
+https://www.youtube.com/watch?v=2vnYKRacKQc|Live CSN

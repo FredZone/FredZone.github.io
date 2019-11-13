@@ -1,0 +1,72 @@
+TITLE:On The Road Again,DUR:150,BPM:170,BEATS:4,KEY:C,QUAL:Verified,ARTIST:Willie Nelson,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#INTRO ----------------------------------
+|C             |%             |%             |%
+-
+|C             |%             |%             |%
+On     the
+#VERSE ----------------------------------
+|C             |%             |%             |%
+road     again                 just can't wait to get on the
+|E7            |%             |%             |%
+road  again                     The life I love is making
+|Dm            |%             |F             |G7
+music with my friends  And     I can't wait to get on the road
+|C             |%             |%             |%
+again                    on the  road   again
+|C             |%             |E7            |%
+goin' places that I've never been
+|E7            |%             |Dm            |%
+Seein' things that I may never see     again        And
+|F             |G7            |C             |C7
+I can't wait to get on the road again               On the
+#CHORUS ---------------------------------
+|F             |%             |%             |%
+road again          like a band of gypsies we go down the
+|C             |%             |F             |%
+hiway                    We're the best of friends
+|F             |%             |C             |%
+insisting that the world keep turning our way        And
+|G7            |%             |C             |%
+our way              is on the  road again
+|C             |%             |E7            |%
+just can't wait to get on the road again
+|E7            |%             |Dm            |%
+The life I love is making music with my friends       And
+|F            |G7            |C              |C
+I can't wait to get on the road again 
+#BREAK ----------------------------------
+|C             |%             |%             |%
+-
+|E7            |%             |%             |%
+-
+|Dm            |%             |F             |G7
+-
+|C             |%             |%             |%
+-
+|C             |%             |%             |%
+-
+|E7            |%             |Dm            |%
+-
+|F             |G7            |C             |C7
+-                                           On the
+#CHORUS ---------------------------------
+|F             |%             |%             |%
+road again                like a band of gypsies we go down the
+|C             |%             |F             |%
+hiway                    We're the best of friends
+|F             |%             |C             |%
+insisting that the world keep turning our way        And
+|G7             |%            |C             |%
+our way              is on the  road again
+|C             |%             |E7            |%
+just can't wait to get on the roadgain
+|E7           |%              |Dm            |%
+The life I love is making music with my friends           And
+|F             |G7            |C             |C
+I can't wait to get on the road again
+#OUTRO ----------------------------------
+|F             |G7            |C             |C
+I can't wait to get on the road again
+|F             |G7            |C             |C
+-
+|F             |G7            |C             |C

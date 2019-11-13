@@ -1,0 +1,49 @@
+TITLE:Wholl Stop The Rain,DUR:153,BPM:125,BEATS:4,KEY:C,QUAL:Verified,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+@   Chords Pat
+#INTRO ----------------------------------
+|C             |%              |Am               |Am
+-
+|C             |%              |Am               |Am
+-
+#VERSE 1 --------------------------------
+|C         |%           |F               |C
+Long as I remember the rain been comin' down
+|C                 |%        |F           |C
+Clouds of mystery pourin' confusion on the ground
+|F                    |C       |F                  |C
+Good men through the ages       Tryin' to find the sun
+|F            |G             |Am              |C
+And I wonder still I wonder  Who'll stop the   rain
+|C  ~   ~   ~
+#VERSE 2 --------------------------------
+|C         |%                |F               |C
+I went down Virginia seeking shelter from the storm
+|C              |Em       |F                |C
+Caught up in the fable I watched the tower grow
+|F                  |C          |F                |C
+Five-year plans and new deals   Wrapped in golden chains
+|F            |G             |Am              |C
+And I wonder, still I wonder  Who'll stop the rain
+|C  ~   ~   ~
+-
+#BREAK 1 --------------------------------
+|C  ~  ~  G  |Dm ~  ~  ~| F ~  ~  Am |G ~  ~  ~
+-
+|C  ~  ~  ~  |%  ~  ~  ~
+-
+#VERSE 3 --------------------------------
+|C                 |%      |F                 |C
+Heard the singers playin', how we cheered for more
+    |C                  |Em          |F          |C
+The crowd had rushed together, just tryin to keep warm
+ |F                 |C           |F          |C
+Still the rain kept pourin'       Fallin on my ears
+|F             |G                |Am          |C
+And I wonder, still I wonder  Who'll stop the rain...
+#OUTRO ----------------------------------
+|C            |%              |Am             |Am
+-
+|C            |%              |Am             |Am
+-
+@@I went up there (Woodstock 1969) and saw a whole bunch of really nice young people. ... It started to rain, and got really muddy, and then half a million people took their clothes off!!!... then I went home and wrote this song.
+@@2007 interview, John Fogarty:

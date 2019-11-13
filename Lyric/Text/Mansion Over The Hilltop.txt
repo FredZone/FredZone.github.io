@@ -1,0 +1,41 @@
+TITLE:Mansion Over The Hilltop,DUR:137,BPM:120,BEATS:4,KEY:G,QUAL:Raw,ARTIST:Elvis Presley,GENRE:Gospel,STYLE:Ballad,HITyear:1960
+#INTRO ----------------------------------
+|G        |%       |%     |%    
+                              I'm satis
+#VERSE 1 --------------------------------
+|G        |%            |C       |G      
+fied with just a cottage below      A little
+|D7    |%           |G        |%
+silver and a little gold        But in that   
+|G     |%          |C            |G 
+ city    where the ransomed will shine    I want a  
+|D7      |%           |G    C    |G 
+gold one that's silver lined         I’ve got a
+#BREAK 1 --------------------------------
+|G7      |C            |G       |%
+ mansion just over the hilltop  In that bright
+|D7        |%                |G        |G7
+ land where we'll never grow old          And some day 
+|C      |%                 |G           |%
+yonder   we will never more wander         But walk on 
+|D7              |%      |G           C    |G 
+streets that are purest gold
+#BREAK 2 --------------------------------
+|G        |%            |C       |G     
+Don't think me poor or deserted or lonely
+|D7    |%           |G        |%
+I'm not discouraged I’m heaven bound
+|G     |%          |C            |G 
+I'm but a pilgrim in search of the city
+|D7      |%           |G    C    |G 
+I want a mansion a harp and a crown
+#BREAK 3 --------------------------------
+|G7      |C            |G       |%
+ mansion just over the hilltop  In that bright
+|D7        |%                |G        |G7
+ land where we'll never grow old          And some day 
+|C      |%                 |G           |%
+yonder   we will never more wander         But walk on 
+|D7              |%      |G           C    |G 
+streets that are purest gold
+@@Written in 1949 by Ira Stanphill, an Assembly of God minister in Oaklahoma, California and Texas...

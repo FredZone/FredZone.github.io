@@ -1,0 +1,62 @@
+TITLE:Im So Lonesome I Could Cry,DUR:204,BPM:95,BEATS:3,KEY:E,QUAL:Complete,ARTIST:Hank Williams,GENRE:Country,STYLE:Ballad,HITyear:1949
+#INTRO ----------------------------------
+|E        |Abm      |C#m      |E        
+-
+|E        |Abm      |Bm7      |E7       
+-
+|A        |Am       |E        |C#m      
+-
+|E        |B7       |E        |%        
+-
+#VERSE 1 --------------------------------
+|E        |Abm      |C#m      |E        
+Hear the lonesome whiperwill
+|E        |Abm      |Bm7      |E7       
+He sounds to blue to fly
+|A        |Am       |E        |C#m      
+The midnight train is whining low
+|E        |B7       |E        |%        
+I'm so lonesome I could cry
+#VERSE 2 --------------------------------
+|E        |Abm      |C#m      |E        
+I've never seen a night so long
+|E        |Abm      |Bm7      |E7       
+When time keeps crawling by
+|A        |Am       |E        |C#m      
+The moon has gone behind the clouds
+|E        |B7       |E        |%        
+To hide his face and cry
+#BREAK 1 --------------------------------
+|E        |Abm      |C#m      |E        
+-
+|E        |Abm      |Bm7      |E7       
+-
+|A        |Am       |E        |C#m      
+-
+|E        |B7       |E        |%        
+-
+#VERSE 3 --------------------------------
+|E        |Abm      |C#m      |E        
+Have you ever seen a robin weep
+|E        |Abm      |Bm7      |E7       
+When leaves have turned to brown
+|A        |Am       |E        |C#m      
+Like me he's lost his will to live
+|E        |B7       |E        |%        
+I'm so lonesome I could cry
+#VERSE 4 --------------------------------
+|E        |Abm      |C#m      |E        
+The silence of a falling star
+|E        |Abm      |Bm7      |E7       
+Lights up a purple haze
+|A        |Am       |E        |C#m      
+And as I wonder where you are
+|E        |B7       |E        |%        
+I'm so lonesome I could cry
+#OUTRO ----------------------------------
+|A        |Am       |E        |C#m      
+And as I wonder where you are
+|E        |B7       |E        |%        
+I'm so lonesome I could cry
+iRealb://Im%20So%20Lonesome%20I%20Could%20Cry%3DWilliams%20Hank%3D%3DCountry%20095%3DC%3D%3D1r34LbKcu77C%7CQy4CXyQQyX-E%7CQyXC%7CQyXC%2C%7CQyX-A%7CQyX%2C-E%7C%7CG-7X3TA*%7B%20%3Ex6%3CXyQ%7CFyXC%7CQyX7G%7CQyXCQ%7CyX-A%7CQyXC%7CQyX-QKcl%20F%7CQyX%3CZ%20%20l%2CFXyQC%7CQyX7G%7CQyXC%7CQXy-A%7CQyXC%7CQyX-F%7CXyQKcA*%2C%5B%7D*74I%2Cv%2Cv%2Cb%2Cv%2Cv%2Co%3E%20%3DPop-Country%3D95%3D1
+@@Williams wrote this as a spoken-word piece that he planned to record as his alter-ego, "Luke the Drifter,"

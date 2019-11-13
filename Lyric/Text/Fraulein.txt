@@ -1,0 +1,52 @@
+TITLE:Fraulein,DUR:150,BPM:150,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#VERSE 1 --------------------------------
+|C               |%
+Far across the blue water
+|F               |%
+Lived an old German's daughter
+|G7              |%
+By the bank of the old river
+|C               |%
+rhine
+|C               |%
+Where I loved her and left her
+|F               |%
+But I can’t forget her
+|G7              |%
+She was my pretty Fraulein
+|C               |%
+-
+#CHORUS 1 -------------------------------
+|C
+Fraulein, Fraulein walk
+|F
+down by the river
+|G7              |%
+Each night when the stars start to
+|C               |%
+shine
+|C               |%
+By the same stars above you
+|F               |%
+I swear that I love you
+|G7              |%
+You are my pretty Fraulein
+|C               |%
+-
+#VERSE 2 --------------------------------
+|C               |%
+As my memory wanders
+|F               |%
+away over yonder
+|G7              |%
+There’s a sweetheart that
+|C               |%
+I left behind
+|C               |%
+In a moment of glory,
+|F               |%
+her face comes before me
+|G7              |%
+The face of my pretty
+|C               |%
+Fraulein

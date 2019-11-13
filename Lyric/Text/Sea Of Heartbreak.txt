@@ -1,0 +1,81 @@
+TITLE:Sea Of Heartbreak,DUR:168,BPM:180,BEATS:4,KEY:E,QUAL:Complete,ARTIST:Don Gibson,GENRE:Country,STYLE:Up Tempo,HITyear:Unknown
+$$TCH1 <X14>PR 1</X14> <X14>E M3</X14> <X14>PV 1</X14> <X16>V3</X16> <X16>H:Off</X16>
+$$STRT ooXoo 8 5 10
+$$RP55 3 or 4
+#INTRO ----------------------------------
+|N                        |%
+-
+|E            |%            |%            |%
+#VERSE 1 --------------------------------
+|E            |%            |C#m          |%
+The lights..       in the harbor
+|A            |%            |B            |%
+Don't..        shine  for me
+|E            |%            |C#m          |%
+..I'm like a lost     ship
+|A            |%            |B[Stop]      |%
+a drift on the sea<!--#H ON#-->
+#CHORUS 1 -------------------------------
+|E            |%            |B            |%
+Sea of Heartbreak lost love and loneliness  Mem'ries of
+|E            |%            |A            |%
+your caress,   So divine..I wish that you were  mine
+|E            |%            |B            |%
+a-gain my dear     I'm on the sea of tears    Sea of
+|E            |%            |A            |B
+Heartbreak <!--#H OFF#-->
+#VERSE 2 --------------------------------
+|E            |%            |C#m          |%
+..How did I lose you.
+|A            |%            |B            |%
+Where did I fail <!--# V1 ON ASAP #-->
+|E            |%            |C#m          |%
+..Why did you leave me
+|A            |%            |B[Stop]      |%
+always to sail <!--#H ON#-->
+#CHORUS 2 -------------------------------
+|E            |%            |B            |%
+Sea of Heartbreak lost love and loneliness  Mem'ries of
+|E            |%            |A            |%
+your caress,   So divine..I wish that you were  mine
+|E            |%            |B            |%
+a-gain my dear     I'm on the sea of tears    Sea of
+|E            |%            |A            |B
+Heartbreak
+#INTERLUDE ------------------------------
+|A            |%            |E            |%
+Oh what I'd give to sail back to shore
+|A            |%            |Ab7          |%
+Back to your arms once more  <!--#H OFF#-->
+#VERSE 3 --------------------------------
+|E            |%            |C#m          |%
+Come to                   my rescue
+|A            |%            |B            |%
+Come          here to        me
+|E            |%            |C#m          |%
+Take me and                   keep me
+|A            |%            |B[Stop]      |%
+away from the sea  <!--#H ON#-->
+#CHORUS 3 -------------------------------
+|E            |%            |B            |%
+Sea of Heartbreak lost love and loneliness  Mem'ries of
+|E            |%            |A            |%
+your caress,   So divine..I wish that you were  mine
+|E            |%            |B            |%
+a-gain my dear     I'm on the sea of tears    Sea of
+|E            |%            |A            |B
+Heartbreak                                   Sea of
+#OUTRO ----------------------------------
+|E            |%            |A            |B
+Heartbreak                                   Sea of
+|E            |%            |A            |B
+Heartbreak                                   Sea of
+|E            |%            |A            |B
+Heartbreak
+|E            |%            |%            |%
+-
+https://www.youtube.com/watch?v=A4bo4ByFhLM|Don Gibson
+https://www.youtube.com/watch?v=PjCuNwYAoeM|Johnny Cash
+https://www.youtube.com/watch?v=ksfAyW5FCww|Roseanne Cash/Bruce Springstein
+https://www.youtube.com/watch?v=GXxLwqON1Vc|Karaoke (G) Gibson
+https://www.youtube.com/watch?v=ah804neRa0Y|Karaoke (Eb) Cash

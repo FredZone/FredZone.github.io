@@ -1,0 +1,65 @@
+TITLE:Georgia Simple,DUR:0,BPM:70,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown
+INTRO  GEORGIA SIMPLE
+|C        |%         |E7       |%
+-
+|Am7      |G7        |F       |F#dim
+-
+|C        |Edim      |Dm7     |G7
+-
+|E7       |A7        |D7      |G7
+-
+#Verse 1----------------------------------
+|C        |%         |E7       |%
+Georgia,              Georgia
+|Am7      |G7        |F       |F#dim
+the whole day through       just an 
+|C        |Edim      |Dm7     |G7
+old sweet song keeps Georgia   on my
+|E7       |A7        |D7      |G7
+  mind
+
+#Verse 2----------------------------------
+|C        |%         |E7       |%
+Georgia,              Georgia,
+|Am7      |G7        |F        |F#dim
+ a song of you         Comes 
+|C        |Edim      |Dm7      |G7           
+sweet and clear as moonlight    through the
+|C        |F         |C        |E7
+ pines
+#Bridge ----------------------------------
+|Am7      |Dm7       |Am7      |F
+Other       arms     reach out to me
+|Am7      |Dm7       |Am7      |D7
+Other      eyes      smile tenderly
+|Am7      |F         |C        |Bdim   
+  Still in peaceful dreams I see the 
+|Am7      |C#dim     |Dm7      |G7
+road leads back to you
+#Verse 3 ----------------------------------
+|C        |%         |E7       |%
+Georgia,               Georgia, 
+|Am7      |G7        |F        |F#dim
+no peace I find
+|Am7      |F         |C        |Bdim   
+just and old sweet song
+|Am7      |C#dim     |Dm7      |G7
+keeps Georgia on my mind
+#Solo----------------------------------
+|C        |%         |E7       |%
+- 
+|Am7      |G7        |F        |F#dim
+-
+|Am7      |F         |C        |Bdim   
+-
+|Am7      |C#dim     |Dm7      |G7
+-
+#Verse 3----------------------------------
+|C |E7 |Am7 |G7 |F |F#dim
+Georgia, Georgia, no peace I find
+|C |Edim |Dm7 |G7 |E7  |A7
+Just and old sweet song keeps Georgia on my mind
+|Dm7 |G7 |C |C |Bb |F
+Just and old sweet song keeps Georgia on my mind
+|C  C  Bb  F
+

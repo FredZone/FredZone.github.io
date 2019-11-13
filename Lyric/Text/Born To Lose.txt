@@ -1,0 +1,45 @@
+TITLE:Born To Lose,DUR:126,BPM:140,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Ted Daffin,GENRE:Country,STYLE:Ballad,HITyear:1942
+Intro
+|C        |%               |%           |% ~ ~F  ~G7
+-                                             Born to
+#VERSE 1 --------------------------------
+|C        |F      ~G7      |C           |C7
+Lose I've lived my life in vain         every
+|F        |%               |C           |%  ~  ~G7  ~   
+Dream has only brought me pain                 all my
+|C        |C7              |F           |%
+Life I've always been so blue           Born to
+|G7       |%               |C           |% ~ ~F  ~G7
+Lose and now I'm losing you                  Born to
+#VERSE 2 --------------------------------
+|C        |F      ~G7      |C           |C7
+Lose it seems so hard to bear
+|F        |%               |C           |%  ~  ~G7  ~   
+How I long to always have you near   you've grown
+|C        |C7              |F           |%
+Tired and now you say we're through      Born to
+|G7       |%               |C           |% ~ ~F  ~G7
+Lose and now I'm losing you             Born to
+#VERSE 3 --------------------------------
+|C        |F      ~G7      |C           |C7
+Lose my every hope is gone              it's so
+|F        |%               |C           |%  ~  ~G7  ~   
+Hard to face an empty dawn                   you were
+|C        |C7              |F           |%
+All the happiness I knew                      Born to
+|G7       |%               |C           |% ~ ~F  ~G7
+Lose and now I'm losing you               there's no
+#VERSE 4 --------------------------------
+|C        |F      ~G7      |C           |C7
+Use to dream of happiness               all I
+|F        |%               |C           |%  ~  ~G7  ~   
+See is   only loneliness                      all my
+|C        |C7              |F           |%
+Life I've always been so blue               Born to
+|G7       |%               |C           |% ~ ~F  ~G7
+Lose and now I'm losing you               Born to 
+#OUTRO ----------------------------------
+|G7       |%              |C    ~F      |C ~G7 ~C NC
+Lose and now I'm losing you
+https://www.youtube.com/watch?v=RWmOmDjO9hc|Ted Daffin (original 1942)
+https://www.youtube.com/watch?v=EsOmizjm0Xw|Ray Charles (over produced)

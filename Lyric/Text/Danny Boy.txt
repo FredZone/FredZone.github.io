@@ -1,0 +1,44 @@
+TITLE:Danny Boy,DUR:244,BPM:100,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Irish Tenors
+#INTRO ----------------------------------
+|C             |C7    ~ C7        |F           |Fm
+-
+|C             |Am                |D7          |G
+-                                             Oh Danny 
+#VERSE 1 --------------------------------
+|C              |C     ~ C7        |F           |Fm
+boy,    the pipes, the pipes are calling        From glen to
+|C              |Am                |D7          |G
+glen    and    down the mountain  side            The summer's 
+|C              |C7                |F           |Fm
+gone   and      all the   roses    dying          'Tis you, 'tis
+|C    ~Am       |D7   ~G7          |C           |D7    ~G 
+you         must go  and   I   must bide
+#CHORUS 1 -------------------------------
+|G  |Am  |G/B |C        |F              |C
+But come ye   back when summer's in the meadow
+|G |Am  |G/B |Am     |F         |C         |D7  |G
+Or when the valley's hushed and white with snow
+          |C|C/E  |F              |C |Em/B|Am|Am7/G|Fm
+And I'll be here in sunshine or in sha-     dow
+         |C      |Am   |Dm   |G       |C     |G7/B
+Oh Danny boy, oh Danny boy I love you so
+#VERSE 2 --------------------------------
+|C|Cmaj7 |C7           |F    |Fm
+But if he come and all the flowers are dying
+         |C|G/B   |Am    |Am/G    |D/F#   |G
+And I am dead, as dead I well may be
+                |C|Cmaj7 |C7              |F    |Fm
+You'll come and find the place where I am lying
+              |C |Am   |F  |G        |C
+And kneel and say an Ave there for me
+#CHORUS--------------------------------
+|G |Am|G/B  |C           |F              |C
+And I shall feel, though soft you tread above me
+|G  |Am  |G/B|Am|Am/G  |F      |C/E      |D/F#  |G
+And then my grave will warmer, sweeter be
+|G   Am7 G/B  C    C/E F       D/F#     C   Em/B  Am  Am7/G  Ab7
+For you will bend and tell me that you lo- ve    me
+           |C      |Am     |Dm     |G      |C  |G7
+And I shall rest in peace until you come to me
+https://www.youtube.com/watch?v=lXQ03XUwe_s|Irish Tenors
+https://www.youtube.com/watch?v=JY2bujHpxFY |John McCermott (A Capella)

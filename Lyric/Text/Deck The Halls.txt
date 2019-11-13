@@ -1,0 +1,52 @@
+TITLE:Deck The Halls,DUR:,BPM:160,BEATS:4,KEY:C,QUAL:Raw,ARTIST:,GENRE:Unknown,STYLE:Unknown,HITyear:
+#VERSE 1 --------------------------------
+|C                  |Am
+Deck the halls with boughs of holly,
+|G7         ~C     |G    ~C
+Fa la la la la, la la la la
+|C             |Am
+Tis the season to be jolly,
+|G7         ~C     |G    ~C
+Fa la la la la, la la la la
+|G7            |C
+Don we now our gay apparel,
+|C       ~Am       |G ~D7 ~G ~
+Fa la la la la, la la la la
+|C                |Am
+Troll the ancient Yuletide carol,
+|F       ~C        |C ~G7 ~C ~
+Fa la la la la, la la la la
+#VERSE 2 --------------------------------
+|C                  |Am
+See the blazing Yule before us,
+|G7         ~C     |G    ~C
+Fa la la la la, la la la la
+|C             |Am
+Strike the harp and join the chorus,
+|G7         ~C     |G    ~C
+Fa la la la la, la la la la
+|G7            |C
+Follow me in merry measure,
+|C       ~Am       |G ~D7 ~G ~
+Fa la la la la, la la la la
+|C                |Am
+While I tell the Yuletide treasure,
+|F       ~C        |C ~G7 ~C ~
+Fa la la la la, la la la la
+#VERSE 3 --------------------------------
+|C                  |Am
+Fast away the old year passes,
+|G7         ~C     |G    ~C
+Fa la la la la, la la la la
+|C             |Am
+Hail the new, ye lads and lasses,
+|G7         ~C     |G    ~C
+Fa la la la la, la la la la
+|G7            |C
+Sing we joyous all together,
+|C       ~Am       |G ~D7 ~G ~
+Fa la la la la, la la la la
+|C                |Am
+Heedless of the wind and weather,
+|F       ~C        |C ~G7 ~C ~
+Fa la la la la, la la la la

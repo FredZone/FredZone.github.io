@@ -1,0 +1,43 @@
+TITLE:Hound Dog,DUR:108,BPM:160,BEATS:4,KEY:A,QUAL:Raw,ARTIST:Elvis Presley,GENRE:Rock,STYLE:Dance,HITyear:1957
+#INTRO ----------------------------------
+|A           |%           |%               |%
+-
+|D           |%           |A               |%
+-
+|E           |D           |A               |%
+-                             You ain't nothin' but a
+#CHORUS 1 -------------------------------
+|A           |%           |%               |%
+hound dog,           Crying all the time      You ain't nothin' but a 
+|D           |%           |A               |%
+hound dog,           Crying all the time       Well, you ain't
+|E           |D           |A               |%
+never caught a rabbit, And you ain't no friend of mine  They said you was 
+#VERSE 1 --------------------------------
+|A           |%           |%               |%
+high-classed, but that was just a lie         They said you was 
+|D           |%           |A               |%
+high-classed, but that was just a lie         Well, you ain't
+|E           |D           |A               |%
+never caught a rabbit, And you ain't no friend of mine
+#BREAK 1 --------------------------------
+|A           |%           |%               |%
+-
+|D           |%           |A               |%
+-
+|E           |D           |A               |%
+-                             You ain't nothin' but a
+#CHORUS 2 -------------------------------
+|A           |%           |%               |%
+hound dog,           Crying all the time      You ain't nothin' but a 
+|D           |%           |A               |%
+hound dog,           Crying all the time       Well, you ain't
+|E           |D           |A               |%
+never caught a rabbit, And you ain't no friend of mine  They said you was 
+#VERSE 2 --------------------------------
+|A           |%           |%               |%
+high-classed, but that was just a lie         They said you was 
+|D           |%           |A               |%
+high-classed, but that was just a lie         Well, you ain't
+|E           |D           |A               |%
+never caught a rabbit, And you ain't no friend of mine

@@ -1,0 +1,71 @@
+TITLE:King Of The Road,DUR:128,BPM:120,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Roger Miller,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#INTRO ----------------------------------
+|N             |%
+-
+|C             |%
+-
+#CHORUS 1 -------------------------------
+|C             |F
+Trailers  for   sale or rent
+|G             |C
+Rooms  to  let fifty cents
+|C             |F
+No   phone no  pool no pets
+|G             |%
+I ain't got no  cigarettes  Ah but
+|C             |F
+two hours of   pushing broom buys an
+|G             |C
+eight by twelve four-bit room I'm a
+|C             |F
+man     of    means by no means
+|G             |C
+   King  of the Road
+#VERSE 1 --------------------------------
+|C             |F
+Third box car  midnight train
+|G             |C
+Destination    Bangor Maine
+|C             |F
+Old worn out   suit & shoes
+|G             |%
+I don't pay no union dues
+#VERSE 2 --------------------------------
+|C             |F
+I smoke old   stogies I have found
+|G             |C
+Short but not too big around I'm a
+|C             |F
+  Man     of  means by no means
+|G             |%
+  King of the Road    I know
+#VERSE 3 --------------------------------
+|C             |F
+every engineer on every train
+|G             |C
+all of their children, all of their names, and
+|C             |F
+every handout in every town, and
+|G             |%
+every lock that aint locked when no ones around
+#CHORUS 2 -------------------------------
+|C             |F
+Trailers for sale or rent
+|G             |C
+Rooms to let fifty cents
+|C             |F
+No phone no  pool no pets
+|G             |%
+I ain't got no  cigarettes
+|C             |F
+Ah but  two hours of pushing broom buys an
+|G             |C
+eight by twelve four-bit room
+|C             |F
+I'm a man of means by no means
+|G             |C
+    King of the Road
+|G             |C
+    King of the Road
+|G             |C
+    King of the Road

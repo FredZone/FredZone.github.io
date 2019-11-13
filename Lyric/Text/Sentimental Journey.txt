@@ -1,0 +1,40 @@
+TITLE:Sentimental Journey,DUR:0,BPM:120,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:1945
+#INTRO ----------------------------------
+|C        |C
+#VERSE ----------------------------------
+  |C        |C
+Gonna take a sentimental journey,
+ |C                  |G7
+Gonna set my heart at ease;
+   |C   ~C7      |F
+Gonna take a sentimental journey
+|C             |G7       ~C
+To renew  old  mem - o  - ries.
+#VERSE ----------------------------------
+|C           |C
+Got my bag, I got my reservation;
+|C                |Em  ~Ab   |G7
+Spent each dime I could af - ford.
+  |C             |F          ~Bb9
+Like a child in wild an-ti-ci-pa-tion,
+|C                |G7    ~C
+Long to hear that "All a - board!"
+#BRIDGE ---------------------------------
+ |F        |F
+Sev-en...that's the time we'd leave,
+  |C                               |D7
+At sev-en.  I'll be waitin' up for Hea - ven,
+ |D7                    |G                |G7
+Countin' ev'ry mile of railroad track that takes me back.
+#VERSE ----------------------------------
+ |C              |C
+Never thought my heart could be so yearny;
+ |C           |Em ~Ab ~G7 /
+Why did I decide to roam
+  |C          |F     ~Bb9
+Gotta take a sentimental journey,
+|C                |G7    ~C
+Sentimental jour-      ney home.
+|C                |G7    ~C
+Sentimental jour-      ney home.
+@@Les Brown's band had been performing the song, but were unable to record it because of the 1942–44 musicians' strike<br> Then the band, with Doris Day as vocalist hit #1 in 1945

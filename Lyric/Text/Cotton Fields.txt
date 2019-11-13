@@ -1,0 +1,123 @@
+TITLE:Cotton Fields,DUR:150,BPM:120,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Hudie Ledbetter (Lead Belly)
+#INTRO ----------------------------------
+C              |%             |%           |%
+-                                             When  I
+#VERSE 1 --------------------------------
+C              |%             |%           |%
+was     a      little bitty    baby      My mama would
+|F             |%             |C           |%
+rock     me    in     the     cradle       In them
+|C             |%             |%           |%
+old                           cotton       fields back
+|G             |%             |%           |%
+home                                       It was
+|C             |%             |%           |%
+Down  in        Loui -  si    an  -   a     Just about a
+|F             |%             |C           |%
+mile    from   Tex  -  ar    -kana         In them
+|%             |%             |F           |%
+old                           Cot  - ton   fields back
+|%             |%             |%           |%
+home                                 Now,   when them
+#CHORUS 1 -------------------------------
+|%             |%             |%           |%
+cotton         bolls       get rotten        You can't
+|%             |%             |%           |%
+pick           very much       cotton      In them
+|%             |%             |%           |%
+old                            cotton      fields back
+|%             |%             |%           |%
+home                                       It was
+|C             |%             |%           |%
+Down  in        Loui -  si    an  -   a     Just about a
+|F             |%             |%           |%
+mile    from   Tex  -  ar    -kana           In them
+|%             |%             |%           |%
+old                           Cot  - ton   fields back
+|%             |%             |%           |%
+home                                         It may
+#VERSE 2 --------------------------------
+C              |%             |%           |%
+sound   a       little        funny     But you didn't
+|F             |%             |C           |%
+make           very much      money         In them
+|C             |%             |%           |%
+old                           cotton       fields back
+|G             |%             |%           |%
+home                                       It may
+|C             |%             |%           |%
+sound   a       little        funny     But you didn't
+|F             |%             |C           |%
+make           very much      money         In them
+|%             |%             |F           |%
+old                           cotton       fields back
+|%             |%             |%           |%
+home                                 Now,   when them
+#CHORUS 2 -------------------------------
+|%             |%             |%           |%
+cotton         bolls       get rotten        You can't
+|%             |%             |%           |%
+pick           very much       cotton      In them
+|%             |%             |%           |%
+old                            cotton      fields back
+|%             |%             |%           |%
+home                                       It was
+|C             |%             |%           |%
+Down  in        Loui -  si    an  -   a     Just about a
+|F             |%             |%           |%
+mile    from   Tex  -  ar    -kana           In them
+|%             |%             |%           |%
+old                           Cot  - ton   fields back
+|%             |%             |%           |%
+home                                         I was
+#VERSE 3 --------------------------------
+C              |%             |%           |%
+home        in Ar -   kan  -  sas            People
+|F             |%             |C           |%
+ask me      what you come here for           In the
+|C             |%             |%           |%
+old                            cotton fields back
+|G             |%             |%           |%
+home                                         I was
+|C             |%             |%           |%
+home        in Ar -   kan  -  sas            People
+|F             |%             |C           |%
+ask me      what you come here for           In the
+|%             |%             |F           |%
+old                            cotton fields back
+|%             |%             |%           |%
+home                                    Oh,   when them
+#CHORUS 3 -------------------------------
+|%             |%             |%           |%
+cotton         bolls       get rotten        You can't
+|%             |%             |%           |%
+pick           very much       cotton      In them
+|%             |%             |%           |%
+old                            cotton      fields back
+|%             |%             |%           |%
+home                                       It was
+|C             |%             |%           |%
+Down  in        Loui -  si    an  -   a     Just about a
+|F             |%             |%           |%
+mile    from   Tex  -  ar    -kana           In them
+|%             |%             |%           |%
+old                           Cot  - ton   fields back
+|%             |%             |%           |%
+home                                    Oh, when those
+#CHORUS 4 -------------------------------
+|%             |%             |%           |%
+cotton         bolls       get rotten        You can't
+|%             |%             |%           |%
+pick           very much       cotton      In them
+|%             |%             |%           |%
+old                            cotton      fields back
+|%             |%             |%           |%
+home                                       It was
+|C             |%             |%           |%
+Down  in        Loui -  si    an  -   a     Just about a
+|F             |%             |%           |%
+mile    from   Tex  -  ar    -kana           In them
+|%             |%             |%           |%
+old                           Cot  - ton   fields back
+|%             |%             |%           |%
+home                                         It may

@@ -1,0 +1,105 @@
+TITLE:Amie,DUR:252,BPM:180,BEATS:4,KEY:A,QUAL:Crap,ARTIST:Pure Prarie League,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+@backtrack is not properly coordinated
+#INTRO ----------------------------------
+|A             |A              |A              |A
+  [single guitar+ + + + + + + + + + + + + + + + + + + + + + +]
+|A             |A              |A              |A
+  [Lead in & guitar + + + + + + + + + + + + + + + + + + + + +]
+|A             |A              |A              |A
+  [Lead in & guitar + + + + + + + + + + + + + + + + + + + + +]
+|A             |G     ~D       |A              |G     ~A
+  [Whole band + + + + + + + + + + + + + + + + + + + + + + + +]
+#VERSE 1 --------------------------------
+|A             |G      ~D      |A              |G       ~D
+  I can see why  you think  you bel ong to me.
+|A             |G      ~D      |A              |A
+I  never tried to  make you  think or  let you see one thing for
+|D             |D              |C              |%
+yourself. But now you're  off with someone else and I'm
+|D             |D              |C              |%
+ alone.     You see I  thought that I might keep you for my
+|E             |%              |%              |%
+own
+#CHORUS 1 -------------------------------
+|A             |A              |G              |D
+  Am  ie,     what you wanna  do
+|A             |A              |G              |D
+I     think,  I could stay with you
+|Bm            |Bm             |E              |%
+  For a  while maybe longer if I  do.
+|A             |G      ~D      |A              |G     ~A
+-
+#VERSE 2 --------------------------------
+|A             |G      ~D      |A              |G       ~D
+Don't you think the  time is  right for  us to find
+|A             |G      ~D      |A              |A
+All  the things we thought weren't proper could be right in time and can you
+|D             |D              |C              |%
+ see which way  we should turn, together or  alone
+|D             |D              |C              |%
+I can  never see what's right and what is  wrong.
+|E             |%              |%              |%
+   (I'd take too long to see)
+#CHORUS 2 -------------------------------
+|A             |A              |G              |D
+  Am  ie,     what you wanna  do
+|A             |A              |G              |D
+I     think,  I could stay with you
+|Bm            |Bm             |E              |%
+  For a  while maybe longer if I  do.
+#BREAK 1 --------------------------------
+|A              |G      ~D       |A               |G      ~D
+-
+|A              |G      ~D       |A               |G      ~D
+-
+|D              |%               |C               |%
+-
+|D              |%               |C               |%
+-
+|E              |%               |%               |%
+#CHORUS 3 -------------------------------
+|A             |A              |G              |D
+  Am  ie,     what you wanna  do
+|A             |A              |G              |D
+I     think,  I could stay with you
+|Bm            |Bm             |E              |%
+  For a  while maybe longer if I  do.
+|A             |G      ~D      |A              |G     ~A
+-
+#VERSE 3 --------------------------------
+|A             |G      ~D      |A              |G       ~D
+  Now its come to  what you  want you've  had your way.
+|A             |G      ~D      |A              |A
+And  all the things you  thought be fore just  faded into gray and you  see
+|D             |D              |C              |%
+that I  don't know if its you or if its  me
+|D             |D              |C              |%
+If its  one of us I'm sure we both will
+|E             |%              |%              |%
+see (Won't you look at me and tell me)
+-
+#OUTRO ----------------------------------
+|A             |A              |G              |D
+  Am  ie,     what you wanna  do
+|A             |A              |G              |D
+I     think,  I could stay with you
+|Bm            |Bm             |E              |%
+  For a  while maybe longer if I  do.
+|A             |A              |G              |D
+  Am  ie,     what you wanna  do
+|A             |A              |G              |D
+I     think,  I could stay with you
+|Bm            |Bm             |E              |%
+  For a  while maybe longer if I  do.
+|A             |%              |G              |D
+I keep  fallin' in and out of  love with  you
+|A             |%              |G              |D
+Fallin' in and out of  love with  you
+|A             |%              |G              |D
+Don't know what I'm gonna  do
+|A             |A              |G              |D
+I keep  fallin' in and out of  lo  ve,  with  you.
+|F             |F              |G              |G         |A 
+-
+https://www.youtube.com/watch?v=u4xp2lgiAjY|Pure Prairie League Album Cut
+https://www.youtube.com/watch?v=Wrmrjx66_T8|Pure Prairie League Live 1979

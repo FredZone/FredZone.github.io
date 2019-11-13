@@ -1,0 +1,71 @@
+TITLE:You Are My Sunshine,DUR:142,BPM:185,BEATS:4,KEY:C,QUAL:Complete,ARTIST:The Pine Ridge Boys,GENRE:Country,STYLE:Ballad,HITyear:1940
+$$TCH1 <X14>PR .1</X14> <X14>C M1</X14> <X1>(V3)</X1> <X16>H:Off</X16>
+$$STRT ooXoo 8 5 10
+$$RP55 3 or 4
+#INTRO ----------------------------------
+|NC         |%
+-
+|C          |C7         |C          |%
+-                            The other
+#VERSE 1 --------------------------------
+|C          |%          |%          |%
+ night dear as I lay sleeping,   I dreamed I
+|F          |%          |C          |%
+held you   in  my    arms,         When I
+|F          |%          |C          |%
+awoke dear I was mistaken        And I
+|C          |G          |C          |%
+hung my head and I cried,<!--#H ON#-->You are my
+#CHORUS 1 -------------------------------
+|C          |%          |%          |%
+sunshine, my only sunshine,    You make me
+|F          |%          |C          |%
+happy    when skies are gray,      You’ll never
+|F          |%          |C          |%
+know dear, how much I love you,    Please don’t
+|C          |G          |C          |%
+take my sunshine away,<!--#H OFF#-->
+#VERSE 2 --------------------------------
+|C          |%          |%          |%
+I’ll always love you and make you happy, If you will
+|F          |%          |C          |%
+only say the same,            But if you
+|F          |%          |C          |%
+leave me to love another,         You will
+|C          |G          |C          |%
+regret it all some day,<!--#H ON#-->You are my
+#CHORUS 2 -------------------------------
+|C          |%          |%          |%
+sunshine, my only sunshine,    You make me
+|F          |%          |C          |%
+happy    when skies are gray,        You’ll never
+|F          |%          |C          |%
+know dear, how much I love you,    Please don’t
+|C          |G          |C          |%
+take my sunshine away,<!--#H OFF#-->
+#VERSE 3 --------------------------------
+|C          |%          |%          |%
+You told me once dear, you really loved me,  and no one
+|F          |%          |C          |%
+else could come between,         but now you’ve
+|F          |%          |C          |%
+left me and love another,         you have
+|C          |G          |C          |%
+shattered all my dreams, <!--#H ON#-->  You are my
+#CHORUS 3 -------------------------------
+|C          |%          |%          |%
+sunshine, my only sunshine,    You make me
+|F          |%          |C          |%
+happy    when skies are gray,        You’ll never
+|F          |%          |C          |%
+know dear, how much I love you,    Please don’t
+|C          |G          |C          |%
+take my sunshine away,             Please don’t
+#OUTRO ----------------------------------
+|C          |G7         |C          |%
+take my sunshine away,
+|C          |%          |%          |%
+Hold...
+@@Probably written by  Paul Rice around 1933
+@@ Recorded by 'The Pine Ridge Boys' in 1939
+@@Popularized by Jimmy Davis who used on his Louisiana gubernatorial campaign in 1944 riding a horse named Sunshine

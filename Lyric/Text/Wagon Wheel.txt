@@ -1,0 +1,152 @@
+TITLE:Wagon Wheel,DUR:214,BPM:150,BEATS:4,KEY:A,QUAL:Complete,ARTIST:Darius Rucker,GENRE:Country,STYLE:Up Tempo,HITyear:2013
+$$TCL1 <X14>PR 1</X14> <X14>A M2</X14> <X1>(V3)</X1> <X16>H OFF</X16>
+$$STRT  ooXoo 8 5 10
+$$RP55 3 or 4
+#INTRO ----------------------------------
+|NC                       |%
+-
+|A                        |E
+-
+|Gbm                      |D
+-
+|A                        |E
+-
+|D                        |%
+#VERSE 1 --------------------------------
+|A                        |E
+Heading down south to the land of the pines
+|Gbm                      |D
+I'm thumbing my way into North Caroline
+|A                        |E
+Staring up the road and pray to God I see
+|D                        |%
+headlights
+|A                        |E
+I made it down the coast in seventeen hours
+|Gbm                      |D
+Picking me a bouquet of dogwood flowers
+|A                        |E
+And I'm a-hopin' for Raleigh, I can see my baby
+|D                        |%
+tonight <XX>H ON</XX>
+#CHORUS 1 -------------------------------
+|A                        |E
+So rock me momma like a wagon wheel
+|Gbm                      |D
+Rock me momma any       way you feel
+|A                        |E
+Hey,                    momma
+|D                        |%
+rock me
+|A                        |E
+Rock me momma like the wind and the rain
+|Gbm                      |D
+Rock me momma like a south bound train
+|A                        |E
+Hey,                    momma
+|D                        |%
+Rock ME <XX>H OFF</XX>
+#VERSE 2 --------------------------------
+|A                        |E
+Running from the cold up in New England
+|Gbm                      |D
+I was born to be a fiddler in an old time string band
+|A                        |E
+My baby plays a guitar, I pick a banjo
+|D                        |%
+now
+|A                        |E
+Oh, north country winters keep a-getting me down
+|Gbm                      |D
+I lost my money playing poker so I had to leave town
+|A                        |E
+But I ain't turning back to living that old life no
+|D                        |%
+more <XX>H ON</XX>
+#CHORUS 2 -------------------------------
+|A                        |E
+So rock me momma like a wagon wheel
+|Gbm                      |D
+Rock me momma any       way you feel
+|A                        |E
+Hey,                    momma
+|D                        |%
+rock me
+|A                        |E
+Rock me momma like the wind and the rain
+|Gbm                      |D
+Rock me momma like a south bound train
+|A                        |E
+Hey,                    momma
+|D                        |%
+Rock ME  <XX>H OFF soon</XX>
+#BREAK 1 --------------------------------
+TAB:73@A@4@2@4@@@@@@6:0@6:2@5:0@5:2b3@@@@5:0@@@@4:4b5@@@@4:2@@@@4:2@4:h4@3:2@3:h4@3:4b6@@1:5|3:=@3:=@3:4r@@@3:2@@@@@1:5|2:5h7@@1:5|2:5@@2:5|3:6@@4:7@4:2>h>@4:4-@3:2>>h@3:4@3:4>b>@3:6>r@3:2|4:@4:4@3:2@5:u5@4:0@4:0@4:0@5:u5@4:0@4:0@4:0@5:u5@4:0@4:0@4:0@5:u5@4:0@@6:2b3@5:0@5:=@5:=@5:=@5:=@5:=@5:=@5:=
+|A                        |E
+-
+|Gbm                      |D
+-
+|A                        |E
+-
+|D                        |%
+-
+#VERSE 3 --------------------------------
+|A                        |E
+Walkin' to the south out of Roanoke
+|Gbm                      |D
+I caught a trucker out of Philly had a nice long toke
+|A                        |E
+But he's a heading west from the Cumberland gap
+|D                        |%
+To Johnson City, Tennessee
+|A                        |E
+And I gotta get a move on before the sun   I hear my
+|Gbm                      |D
+baby calling my name and I know that she's the only one
+|A                        |E
+And if I died in Raleigh at least I will die
+|D                        |%
+free <XX>H ON</XX>
+#CHORUS 3 -------------------------------
+|A                        |E
+So rock me momma like a wagon wheel
+|Gbm                      |D
+Rock me momma any       way you feel
+|A                        |E
+Hey,                    momma
+|D                        |%
+rock me
+|A                        |E
+Rock me momma like the wind and the rain
+|Gbm                      |D
+Rock me momma like a south bound train
+|A                        |E
+Hey,                    momma
+|D                        |%
+Rock ME
+#BREAK 2 --------------------------------
+|A                        |E
+-
+|Gbm                      |D
+-
+|A                        |E
+-
+|D                        |%
+-
+#BREAK 3 --------------------------------
+TAB:121@A@4@2@4@@@@@@6:0@6:2@5:0@5:2b3@@@@5:0@@@@4:4b5@@@@4:2@@@@4:2@4:h4@3:2@3:h4@3:4b6@@1:5
+|A                        |E
+-
+|Gbm                      |D
+-
+|A                        |E
+-
+|D                        |%
+#OUTRO ----------------------------------
+|A                        |%
+HOLD----
+|%                        |%
+-
+https://www.youtube.com/watch?v=nJNAniogMoc|Karaoke (A)
+@@ The chorus and melody from an unfinished Bob Dylan demo during the Pat Garrett and Billy the Kid sessions titled of "Rock Me Mama."
+@@Ketch Secor of Old Crow Medicine Show added verses to Dylan's unfinished song and called it "Wagon Wheel.

@@ -1,0 +1,56 @@
+TITLE:Desperado,DUR:0,BPM:130,BEATS:4,KEY:C,QUAL:Inwork,ARTIST:Unknown
+INTRO  DESPERADO
+|G           G7            |C              Cm6    
+-
+|G           Em            |A7              D 
+-
+#Verse 1 ------------------------------
+|G     /      G9      /      |C       /       Cm6    /
+Desperado,   why don't you come to   your   senses You been
+|G     /       Em7    /      |A7      /        D7    /
+ out ridin' fences for      so    long now    Oh, you're a 
+|G     /       G*     /      |C       /        Cm6   /
+|hard one,    I know that you got your reasons,         These       
+|G    B       Em7     /      |A7     D7        G    /      *|D/F#
+things that are pleasin' you can hurt you somehow            Don't you 
+#Chorus 1 ------------------------------
+|Em       /         Bm7    /           |C       /          G    G/F#
+draw the queen of diamonds boy, She'll beat you if she's able,  the 
+|Em7                C                   |G       D/F#
+queen of hearts is always  your best   bet               Now it 
+|Em                Bm7                  |C                 G
+seems to  me some fine things have been laid upon  your   table
+|        Em            A7             Am7                D
+But you only want the ones you can't get                  Desper
+#Verse 1 ------------------------------
+G   Dm7/G        C                   Bm Am
+ado, oh you ain't gettin' no younger,
+|     G        D/F#    Em           A7          D7
+Your pain and your hunger, they're drivin' you home
+|    G            Dm7/G                      C                  Bm Am
+And freedom, oh, freedom, well, that's just some people talkin'
+|     G      B7/F#   Em7             A7        D7     G  D/F#
+Your prison is walkin' through this world all alone
+#Chorus 2 ------------------------------
+|           Em                   Bm7
+Don't your feet get cold in the winter time 
+|    C                      G         D/F#
+The sky won't snow and the sun won't shine
+|     Em                 C                 G    D/F#
+It's hard to tell the night time from the day
+|       Em              Bm7
+You're losin' all your highs and lows
+|         C             G             Am7   Am7/D
+Ain't it funny how the feelin' goes away
+#Verse 3 ------------------------------
+|D  D7 G  Dm7              C              Cm6
+Desperado, why don't you come to your senses
+|     G         D/F#    Em  A7            D7
+Come down from your fences, open the gate
+|          G      Dm7               C             Cm6
+It may be rainin',  but there's a rainbow above you
+|           G       B7/F#  Em         C  G/B  Am
+You better let somebody love you,
+|           G       B7/D# Em         Am7/D         (G  G7  C  Cm6  G)
+You better let somebody love you before it's too late
+

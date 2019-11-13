@@ -1,0 +1,67 @@
+TITLE:Worried Man,DUR:,BPM:200,BEATS:4,KEY:G,QUAL:,ARTIST:,GENRE:Unknown,STYLE:Unknown
+@Note extra bar at end of each Chorus
+#CHORUS 1 -------------------------------
+|G           |%             |%           |%
+It takes a worried man to sing a worried song,
+  |C         |%             |G           |%
+It takes a worried man to sing a worried song.
+|G           |%             |B           |C
+It takes a worried man to sing a worried song, I'm worried
+|D7          |%             |%           |G            |%
+now                but I won't be worried long.
+#VERSE 1 --------------------------------
+|G           |%             |%           |%
+Got myself a Cadillac, thirty dollars down.
+|C           |%             |G           |%
+Got myself a brand new house,five miles out of town.
+|G           |%             |B           |C
+Got myself a gal named Sue, treats me really fine.
+             |D7            |%           |G        |%
+Yes, she's my baby, And I love her all the time.
+#CHORUS 2 -------------------------------
+|G           |%             |%           |%
+It takes a worried, worried man to sing a worried, worried song,
+  |C         |%             |G           |%
+It takes a worried, worried man to sing a worried, worried song.
+|G           |%             |B           |C
+It takes a worried man to sing a worried song, I'm worried
+|D7          |%             |%           |G            |%
+now                but I won't be worried long.
+#VERSE 2 --------------------------------
+|G           |%             |%           |%
+I've been away on a business trip travelin' all around.
+|C           |%             |G           |%
+I've got a gal and her name is Sue,prettiest gal in town.
+|G           |%             |B           |C
+She sets my mind to worryin'  every  time I'm gone.
+             |D7            |%           |G        |%
+I'll be home tonight, so I won't be worried long.
+#CHORUS 3 -------------------------------
+||G           |%             |%           |%
+It takes a worried man to sing a worried song,
+  |C         |%             |G           |%
+It takes a worried man to sing a worried song.
+|G           |%             |B           |C
+It takes a worried man to sing a worried song, I'm worried
+|D7          |%             |%           |G            |%
+now                but I won't be worried long.
+#VERSE 3 --------------------------------
+|G           |%             |%           |%
+Well, Bobby's in the living room holding hands with Sue.
+|C           |%             |G           |%
+Nickie's at that big front door about to come on through.
+@                           slow down here...
+|G           |%             |B           |C
+Well, I'm here in the closet Oh, Lord, what..shall..I..do We're worried
+|D7          |%             |%           |G            |%
+now                but I won't be worried long.
+#CHORUS 4 -------------------------------
+|G           |%             |%           |%
+It takes a worried man to sing a worried song,
+  |C         |%             |G           |%
+It takes a worried man to sing a worried song.
+|G           |%             |B           |C
+It takes a worried man to sing a worried song, I'm worried
+|D7          |%             |%           |G            |%
+now                but I won't be worried long.
+https://www.youtube.com/watch?v=DcvWrxrNk4k|Carter Family 1930???

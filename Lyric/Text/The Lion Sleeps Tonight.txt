@@ -1,0 +1,77 @@
+TITLE:The Lion Sleeps Tonight,DUR:140,BPM:125,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown
+#INTRO ----------------------------------
+|C         |F    
+Ee-   e-   e-    e
+|C         |G
+e-um-um a- weh
+|C         |F    
+Ee-   e-   e-    e
+|C         |G
+e-um-um a- weh
+#CHORUS 1 -------------------------------
+|C             |F
+Wimoweh Wimoweh Wimoweh Wimoweh
+|C              |G
+Wimoweh Wimoweh Wimoweh Wimoweh
+|C             |F
+Wimoweh Wimoweh Wimoweh Wimoweh
+|C              |G
+Wimoweh Wimoweh Wimoweh Wimoweh
+#VERSE 1 --------------------------------
+|C                |F
+in the jungle the mighty jungle
+     |C                 |G
+the lion sleeps tonight
+|C                |F
+in the jungle the quiet jungle
+     |C                 |G
+the lion sleeps tonight
+#CHORUS 2 -------------------------------
+|C             |F
+Wimoweh Wimoweh Wimoweh Wimoweh
+|C              |G
+Wimoweh Wimoweh Wimoweh Wimoweh
+|C             |F
+Wimoweh Wimoweh Wimoweh Wimoweh
+|C              |G
+Wimoweh Wimoweh Wimoweh Wimoweh
+#VERSE 2 --------------------------------
+|C                   |F
+near the village the peaceful village
+    |C                 |G
+the lion sleeps tonight
+|C                   |F
+near the village the quiet village
+    |C                 |G
+the lion sleeps tonight
+#CHORUS 3 -------------------------------
+|C             |F
+Wimoweh Wimoweh Wimoweh Wimoweh
+|C              |G
+Wimoweh Wimoweh Wimoweh Wimoweh
+|C             |F
+Wimoweh Wimoweh Wimoweh Wimoweh
+|C              |G
+Wimoweh Wimoweh Wimoweh Wimoweh
+#VERSE 3 --------------------------------
+|C                   |F
+hush my darling dont fear my darling
+    |C                |G
+the lion sleeps tonight
+|C                   |F
+hush my darling dont fear my darling
+    |C                  |G
+the lion sleeps tonight
+#CHORUS 4 -------------------------------
+|C             |F
+Wimoweh Wimoweh Wimoweh Wimoweh
+|C              |G
+Wimoweh Wimoweh Wimoweh Wimoweh
+|C             |F
+Wimoweh Wimoweh Wimoweh Wimoweh
+|C              |G
+#OUTRO ----------------------------------
+|C         |F    
+Ee-   e-   e-    e
+|C         |G
+e-um-um a- weh

@@ -1,0 +1,66 @@
+TITLE:Blowin In The Wind,DUR:180,BPM:155,BEATS:4,KEY:C,QUAL:,ARTIST:Bob Dylan,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#INTRO ----------------------------------
+|C          |%          |%          |%          
+#VERSE 1 --------------------------------
+|C          |F          |C          |%          
+How many roads must a man walk down
+|C          |F          |C          |G7         
+before you call him a man
+|C          |F          |C          |%          
+How many seas must a white dove sail
+|C          |F          |G          |G7         
+before she sleeps in the sand
+|C          |F          |C          |%          
+How many times must the cannonballs fly,
+|C          |F          |G          |G7         
+before they're forever banned
+|F          |G7         |C          |Am         
+The answer my friend,is blowin in the wind.
+|F          |G7         |C          |G7         
+The answer is blowin in the wind.
+#VERSE 2 --------------------------------
+|C          |F          |C          |%          
+How many years must a mountain exist
+|C          |F          |C          |G7         
+before it is washed to the sea
+|C          |F          |C          |%          
+How many years can some people exist
+|C          |F          |G          |G7         
+before they're allowed to be free
+|C          |F          |C          |%          
+How many times can a man turn his head,
+|C          |F          |G          |G7         
+and pretend that he just doesn't see
+|F          |G7         |C          |Am         
+The answer my friend, is blowin in the wind.
+|F          |G7         |C          |G7         
+The answer is blowin in the wind.
+#VERSE 3 --------------------------------
+|C          |F          |C          |%          
+How many times must a man look up
+|C          |F          |C          |G7         
+before he can see the sky
+|C          |F          |C          |%          
+How many ears must one man have
+|C          |F          |G          |G7         
+before he can hear people cry
+|C          |F          |C          |%          
+How many deaths will it take 'till he knows
+|C          |F          |G          |G7         
+that too many people have died
+|F          |G7         |C          |Am         
+The answer my friend, is blowin in the wind.
+|F          |G7         |C          |G7         
+The answer is blowin in the wind.
+#OUTRO ----------------------------------
+|F          |G7         |C          |Am         
+ - - - - - - - - - - - - - - - - - - - - -
+|F          |G7         |C          |C          
+The answer is blowin in the wind.
+https://www.youtube.com/watch?v=3l4nVByCL44|Bob Dylan
+https://www.youtube.com/watch?v=Ld6fAO4idaI|Peter Paul and Mary
+https://www.youtube.com/watch?v=ekUJ4lHUdfg|Dolly Parton
+https://www.youtube.com/watch?v=6ayV1XU0csE|The Seekers
+https://www.youtube.com/watch?v=kWURZKtQw9E|Neil Young
+https://www.youtube.com/watch?v=OfOoo4vmEq4|Marlene Dietrich
+https://www.youtube.com/watch?v=YY0W7WXwjYI|Bee Gees (very young)

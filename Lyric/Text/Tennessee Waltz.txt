@@ -1,0 +1,52 @@
+TITLE:Tennessee Waltz,DUR:0,BPM:120,BEATS:3,KEY:C,QUAL:Raw,ARTIST:Unknown
+INTRO  TENNESSEE WALTZ
+|%G           |%              |%                 |%  
+#Verse 1------------------------------------
+      |C              |%            |%          |F
+I was dancin' with my darlin to the Tennessee Waltz
+        |C          |D            |G7           |%
+When an old friend I happened to see.
+       |C              |%           |%            |F
+I introduced him to my darlin' and while they were dancin'
+   |C              |G7             |C             |%
+my friend stole my sweetheart from me.
+
+CHORUS
+  |C         |E7           |F       |C
+I remember the night and the Tennessee Waltz
+          C       |%       |G7      |%
+'cause I know just how much I have lost
+      |C             |%          |%             |F
+Yes I lost my little darlin' the night they were playin'
+     |C         |G7       |C           |%
+That beautiful Tennessee Waltz
+((solo, same as a verse))
+#Break------------------------------------
+-
+-
+-
+-
+((CHORUS 1)                   or CHORUS 1 alone again)
+#Break------------------------------------
+((VERSE 2))
+|%    |G                          |G7       |C
+Now I wonder how a dance like the Tennessee Waltze
+|%         |G        |Em         |A   |D
+Could have broken my heart so complete
+|%     |G                             |G7            |C
+Well I couldn't blame my darlin', and who could help fallin'
+|% |G           |C |G   |D |G
+In love with my darlin' so sweet
+#Break------------------------------------
+((CHORUS 2))
+#Break------------------------------------
+|%      |G          |G7          |C        |G
+Well it must be the fault of the Tennessee Waltz
+|%                      |Em           |A    |D
+Wish I'd known just how much it would cost
+|%    |G                              |G7          |C
+But I didn't see it commin', it's all over but the cryin'
+|%                            |F     |C
+Blame it all on the Tennessee Waltz
+((solo, same as a verse))
+((CHORUS 2))

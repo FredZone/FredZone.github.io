@@ -1,0 +1,46 @@
+TITLE:Wish Chords,DUR:344,BPM:120,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+T:Blake and Brian - The Wish
+L:1/8
+K:C
+Q:1/4=145
+R:
+M:4/4
+intro
+|Dm         |Dm         |Dm         |Dm
+verse
+|F          |F          |C          |C
+|Gm         |Gm7        |Dm         |Dm
+|F          |F          |C          |C
+|Gm         |Gm7        |Dm         |C
+|F
+
+|Bb         |F          |C7         |
+|F    ~F    |Bb         |F          |C
+|G7sus      |Bb         |F          |Dm7  ~Csus
+|Bb         |Bb         |Dm   ~Bb   |C    ~F
+|Bb   ~Am7   |C2         |Dm         |Dm
+|Dm         |Dsus   ~F   |F          |F
+|C          |C          |Gm         |Gm7
+|Dm         |Dm         |F          |F
+|C          |C          |Gm7        |Gm7
+|Dm         |D7    ~F    |F    ~F    |Bb
+|F          |C7         |F          |Bb
+|F          |C          |C    ~F    |Bb
+|F          |Dm9  ~Csus  |Bb    ~F    |Bb
+|Dm         |C   ~Csus   |Bb         |C2
+|Dm         |Dm         |Dm         |E7sus
+|C          |C          |Gm         |Gm7        |
+|Dm7        |Dm7   ~C   |F          |F          |
+|C          |C          |G7         |G7         |
+|Dm9        |Dm7        |D    ~C    |F    ~F    |
+|Bb         |F          |C          |F          |
+|Bb         |F          |C          |G7         |
+|Bb         |F          |Bb  ~Csus  |Bb    ~F    |
+|Bb         |Dm         |C    ~F    |Bb         |
+|C          |Dm         |Dm         |Dm         |
+|Dm         |Dm         |Dm         |Dm         |
+|D          |Dm7        |Dm         |Dm         |
+|D          |Dm7        |Dm7        |Dm         |
+|Dm         |Dm7        |Dm         |D    ~A7    |
+|Dsus       |E          |E          |E          |
+|E          |

@@ -1,0 +1,105 @@
+TITLE:Stand By Me,DUR:185,BPM:118,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Ben E King,GENRE:Rock,STYLE:Ballad,HITyear:1961
+$$TCL1 <X14>PR 1</X14> <X14>C M2</X14>  <X14>PV 1</X14> <X1>(V3)</X1> <X16>H OFF</X16>
+$$STRT ooXoo 8 5 10 (Picking)
+$$RP55 3 or 4
+#INTRO ----------------------------------
+|NC             |C              |%
+-
+|Am             |%
+-
+|F              |G
+-
+|C              |%
+-
+#VERSE 1 --------------------------------
+|C              |%
+When the night has come
+|Am             |%
+And the land is dark
+|F              |G
+And the moon  is the only light we'll-
+|C              |%
+See
+|C              |%
+No, I won't be afraid,
+|Am             |%
+Oh, I won't be afraid
+|F              |G
+Just as long  as you stand ,
+|C              |%
+stand by me.<!--#H ON#-->  So, darling, darling
+#CHORUS 1 -------------------------------
+|C              |%
+Stand by me,
+|Am             |%
+Oh, stand by me.
+|F              |G
+Oh, stand,    stand by me
+|C              |%
+Stand by me.<!--#H OFF#-->
+#VERSE 2 --------------------------------
+|C              |%
+If the sky that we look upon
+|Am             |%
+should tumble and fall
+|F              |G
+Or the mountain should crumble to the
+|C              |%
+sea,   <XX>V4 ON (soon)</XX>
+|C              |%
+I won't cry, I won't cry,
+|Am             |%
+No, I won't shed a tear
+|F              |G
+Just as long as you stand,
+|C              |%
+stand by me <!--#H ON#--> Darling, Darling
+#CHORUS 2 -------------------------------
+|C              |%
+Stand by me,
+|Am             |%
+Oh, stand by me.
+|F              |G
+Oh, stand, stand by me
+|C              |%
+Stand by me.
+#BREAK 1 --------------------------------
+|C              |%
+-
+|Am             |%
+-
+|F              |G
+-
+|C              |%
+-
+|C              |%
+-
+|Am             |%
+-
+|F              |G
+-
+|C              |%
+-
+#CHORUS 3 -------------------------------
+|C              |%
+Stand by me,
+|Am             |%
+Oh, stand by me.
+|F              |G
+Oh, stand, stand by me
+|C              |%
+Stand by me. <!--#V1 ON Acapella#-->
+#OUTRO ----------------------------------
+|C              |%
+Stand by me,
+|Am             |%
+Oh, stand by me.
+|F              |G
+Oh, stand, stand by me
+|C              |%
+Stand by me.
+|C              |%
+(hold)
+@@Written by Ben E King, Jerry Leiber and Mike Stoller for The Drifters, who passed on recording it.
+@@Over 400 versions have been recorded
+https://www.youtube.com/watch?v=9M3wwddDec4|Karaoke (A)

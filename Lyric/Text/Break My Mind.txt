@@ -1,0 +1,118 @@
+TITLE:Break My Mind,DUR:169,BPM:150,BEATS:4,KEY:G,QUAL:Complete,ARTIST:John D. Loudermilk,GENRE:Country,STYLE:Up Tempo,HITyear:Unknown
+$$TCH1 <X14>PR 1</X14> <X14>G M2</X14> <X1>(V3)</X1> <X16>H OFF</X16>
+#INTRO ----------------------------------
+|NC                       
+-
+|G                        |%                        
+-
+|G                        |%                        
+-
+#VERSE 1 --------------------------------
+|G                        |%                        
+Baby                         oh
+|%                        |%                        
+baby                        Tell the
+|C                        |%                        
+man    at   the ticket   stand  That you've changed your
+|G                        |%                        
+mind                         Well let me
+|C                        |%                        
+run on out  side and     tell the cab  To keep the meter
+|G                        |%                        
+flying                          Cause if you
+|G                        |D7                       
+say       goodbye to me   baby gonna break my
+|G                        |%                        
+mind              <XX>H ON</XX>  Break my
+#CHORUS 1 -------------------------------
+|G                        |%                        
+mind                          Break
+|G                        |%                        
+my mind                    You know I
+|G                        |%                        
+just can't stand to hear The big jet engines
+|D7                       |%                        
+whine                            Break my
+|G                        |G7                       
+Mind                                 Break my
+|C                        |%                        
+mind                                If you
+|G                        |D7                       
+leave you're gonna leave A babbling fool
+|G                        |%                        
+behind
+#BREAK 1 --------------------------------
+|G                        |%                        
+-
+|%                        |%                        
+-
+|C                        |%                        
+-
+|G                        |%                        
+-
+|C                        |%                        
+-
+|G                        |%                        
+-
+|G                        |D7                       
+-
+|G                        |%                        
+-                          Break my
+#CHORUS 2 -------------------------------
+|G                        |%                        
+mind                          Break
+|G                        |%                        
+my mind                    You know I
+|G                        |%                        
+just can't stand to hear The big jet engines
+|D7                       |%                        
+whine                            Break my
+|G                        |G7                       
+Mind                                 Break my
+|C                        |%                        
+mind                                If you
+|G                        |D7                       
+leave you're gonna leave A babbling fool
+|G                        |%                        
+behind <XX>H OFF</XX>
+#VERSE 2 --------------------------------
+|G                        |%                        
+Baby              oh
+|%                        |%                        
+baby
+|C                        |%                        
+Let me take your suitcase off
+|G                        |%                        
+Of them scales in time
+|C                        |%                        
+Tell the man that you suddenly developed
+|G                        |%                        
+A thing about flying
+|G                        |D7                       
+Cause if you say goodbye to me
+      You know you're gonna break my
+|G                        |%                        
+ mind       <XX>H ON</XX> Break my
+#CHORUS 3 -------------------------------
+|G                        |%                        
+mind                           Break
+|G                        |%                        
+my mind                    You know I
+|G                        |%                        
+just can't stand to hear The big jet engines
+|D7                       |%                        
+whine                           Break my
+|G                        |%                        
+Mind                                 Break my
+|C                        |%                        
+mind                                If you
+|G                        |D7                       
+leave you're gonna leave A babbling fool
+|G                        |%                        
+behind                       If you
+#OUTRO ----------------------------------
+|G                        |D7                       
+leave you're gonna leave A babbling fool
+|G                        |%              |%                      
+behind
+irealb://Break%20My%20Mind%3DJohn%20D%20Loudermilk%3D%3DRock%20150%3DG%3D%3D1r34LbKcu7C%7CQyX4GXyQx%7CQyXx%7CQyXGB*%7BQ%5DyXx%7CQyXx%7CQyXx%7CXyQ%7Cx4TA*%5B%7CQyX7XyQ%7CGx%7CQyXx%7CQyXG%7CQyxX%7CQyXC%7CQyXx%7CQyXXyQ%7CDx%7CQyXx%7CQyXxXyQ%5DXx%7CQyXx%7CQyXx%7CQXyx%7CQyXx%7CQyXGB*%5ByQ%7CD7%7CQyXG%7C%7D%20%3ExXyQ%7Cx%7CQyXG%7CQyX7D%7CQyGX%7CQyXx%7CQyXC%7CQyXx%20%20%3C3G%7CQyXGXyQ%7CD7XyQ%7CGXyQ%7Cx%20%20%2CU%2C%20Z%20%3DPop-Country%3D150%3D1

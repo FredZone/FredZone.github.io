@@ -1,0 +1,61 @@
+TITLE:Some Days Are Diamond,DUR:187,BPM:105,BEATS:4,KEY:G,QUAL:Complete,ARTIST:John Denver,GENRE:Country,STYLE:Ballad,HITyear:1981
+$$TCL1 <X14>PR 1</X14> <X14>G M3</X14> <X1>(V3)</X1> <X16>H OFF</X16>
+$$STRT_oooXoo 8 5 10
+$$RP55_3 or 4
+#INTRO ----------------------------------
+|NC                     |%
+-
+|G          |D          |Em         |Em
+-
+|G          |D          |Em         |Em
+-
+#VERSE 1 --------------------------------
+|G          |D          |Em         |Em
+When you ask how I've been here without you
+|C          |C          |G          |G
+I like to say, "I've been fine," and I do
+|C          |C          |G          |G
+But we both know the truth is hard to come by
+|Em         |A          |D          |D
+And if I told the truth, that's not quite true<!--#H ON#-->
+#CHORUS 1 -------------------------------
+|G          |C          |G          |G
+Some days are diamond, some days are stone
+|Em         |A          |D          |D
+Sometimes the hard times won't leave me alone
+|G          |C          |G          |Em
+Sometimes the cold wind blows a chill in my bones
+|G          |D          |G          |G
+Some days are diamond, some days are stone<!--#H OFF#-->
+#VERSE 2 --------------------------------
+|G          |D          |Em         |Em
+Now the face that I see in the mirror
+|C          |C          |G          |G
+More and more is a stranger to me
+|C          |C          |G          |G
+More and more I can see there's a danger
+|Em         |A          |D          |D
+In becoming what I never thought I'd be<!--#H ON#-->
+#CHORUS 2 -------------------------------
+|G          |C          |G          |G
+Some days are diamond, some days are stone
+|Em         |A          |D          |D
+Sometimes the hard times won't leave me alone
+|G          |C          |G          |Em
+Sometimes the cold wind blows a chill in my bones
+|G          |D          |G          |C
+Some days are diamond, some days are stone
+#OUTRO ----------------------------------
+|G          |D          |G          |G
+Some days are diamond, some days are stone
+|G          |%          |%          |%
+https://www.youtube.com/watch?v=gQW87VU__Pc|Denver Live
+https://www.youtube.com/watch?v=OKxTxEKvlmo|Dick Feller
+https://www.youtube.com/watch?v=mj3YEciRqFU|Bobby Bare
+https://www.youtube.com/watch?v=l_D7K8zHUrY|Julie Andrews
+https://www.youtube.com/watch?v=loQMgQFx924|Denver on Album
+@@Hit for John Denver in 1981
+@@Written and Released by Dick Feller in 1976
+@@Songwriter Dick Feller usually wrote Novelty Songs
+@@In 1971, Tex Williams recording of Feller's "The Night Miss Nancy Ann's Hotel for Single Girls Burned Down", became a Top 30 single.
+@@In 1972,Johnny Cash got a top five country hit with Feller's "Any Old Wind That Blows"

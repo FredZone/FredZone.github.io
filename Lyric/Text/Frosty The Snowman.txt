@@ -1,0 +1,93 @@
+TITLE:Frosty The Snowman,DUR:150,BPM:165,BEATS:4,KEY:G,QUAL:Raw,ARTIST:,GENRE:Unknown,STYLE:Unknown,HITyear:
+#INTRO ----------------------------------
+|G                    |
+Thumpety thump thump, thumpety thump thump,
+|                     |D7
+Look   at    Frosty    go.
+|D7                    |
+Thumpety thump thump, thumpety thump thump,
+|D7                    |                          |G
+over the hills of snow...Oh...
+Oh...over the hills of snow.
+#VERSE 1 --------------------------------
+|G                     |
+Frosty      the        Snow Man ,     was a
+|C                     |G
+jolly       happy     soul            With a
+|C                     |G
+corn-cob pipe and a    button nose     and two
+|D                     |G
+eyes  made  out of    coal.
+#VERSE 2 --------------------------------
+|G                     |
+Frosty  the         Snow Man,       is a
+|C                     |G
+Fairy tale they say                He was
+|C                     |G
+Made   of   snow    but the  children know how he
+|D                     |G
+Came to life one day.
+#BRIDGE 1---------------------------------
+|C                  |Bm
+There must have been some magic in that
+|Am               |G
+old silk hat they found,
+|D               |Dbdim
+For when they put it on his head he
+|Em            |D
+began to dance around.
+#VERSE 3 --------------------------------
+|G                     |
+Oh,    Frosty   the Snow   Man  was
+|C                     |G
+Alive as he could be,        And the
+|C                     |G
+Children say he could laugh and play just the
+|D                     |G
+Same as you and me.
+#VERSE 4 --------------------------------
+|G                     |
+Frosty the Snow Man,'  knew the
+|C                     |G
+sun was hot that day,           So he
+|C                     |G
+Said, "Let's run  and we'll have some fun now
+|D                     |G
+Before I melt away."
+#VERSE 5 --------------------------------
+|G                     |
+Down   to   the   village,       with a
+|C                     |G
+Broom - stick  in his  hand,      Running
+|C                     |G
+Here and there all around the square, saying
+|D                     |G
+Catch me if you can.
+#BRIDGE 2---------------------------------
+|C                  |Bm
+He led them down the streets of town right
+|Am               |G
+to the traffic cop,                  And he
+|D               |Dbdim
+only paused a moment when he
+|Em            |D
+heard  him    holler,     "Stop!"
+#VERSE 6 --------------------------------
+|G                     |
+Frosty   the   Snow Man   had to
+|C                     |G
+hurry on his way,          But he
+|C                     |G
+waved good-bye, saying, "Don't you cry; I'll be
+|D                     |G
+back again some day."
+#OUTRO ----------------------------------
+G
+|G                    |
+Thumpety thump thump, thumpety thump thump,
+|                     |D7
+Look   at    Frosty    go.
+|D7                    |
+Thumpety thump thump, thumpety thump thump,
+|D7                    |                          |G
+over the hills of snow...Oh...

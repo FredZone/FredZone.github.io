@@ -1,0 +1,83 @@
+TITLE:One Toke Over The Line,DUR:211,BPM:150,BEATS:4,KEY:E,QUAL:Complete,ARTIST:Brewer And Shipley,GENRE:Folk,STYLE:Ballad,HITyear:
+$$TCL1 <X14>PR 1</X14> <X14>E M3</X14> <X14>PV 1</X14> <X16>V1 & V3</X16> <X16>H:ON</X16>
+$$STRT oooXo 8 5 10
+$$RP55 3 or 4*
+#INTRO ----------------------------------
+|N                                     |%                                     
+-                   
+|E                  |%        ~E7        |A                  |E                  
+-
+|E                  |C#m      ~F#7      |A        ~B        |E                  
+-
+#CHORUS 1 -------------------------------
+|E                  |E7                 |A                  |E                  
+One toke over the line, sweet Jesus,     one toke over the line
+|E                  |C#m      ~F#7      |A        ~B        |E                  
+Sitting downtown in a railway station,     one toke over the line
+|E                  |%        ~E7        |A                  |E                  
+Waiting for the train that goes home, sweet Mary,
+-                                     hoping that the train is on time
+|E                  |C#m      ~F#7      |A        ~B        |E                  
+Sitting downtown in a railway station, one toke over the line<XX>H OFF</XX>
+#VERSE 1 --------------------------------
+|E                  |E7                 |A                  |E                  
+Who   do    you    love,             I    hope     it's me
+|E                  |F#7                |A                  |B                  
+I've   been     changing,            as you can plainly see
+|E                  |E7                 |A                  |E                  
+I felt the joy and I learned about the pain, and my mama said
+|E                  |C#m      ~F#7      |A                  |B7                 
+If I should choose to make it part of me, would surely strike me dead
+-                                            <XX>H ON</XX>And now I m..
+
+#CHORUS 2 -------------------------------
+|E                  |E7                 |A                  |E                  
+One toke over the line, sweet Jesus,     one toke over the line
+|E                  |C#m      ~F#7      |A        ~B        |E                  
+Sitting downtown in a railway station,     one toke over the line
+|E                  |%        ~E7        |A                  |E                  
+Waiting for the train that goes home, sweet Mary,  hoping that the train is on time
+|E                  |C#m      ~F#7      |A        ~B        |E                  
+Sitting downtown in a railway station, one toke over the line <XX>H OFF</XX>
+#VERSE 2 --------------------------------
+|E                  |E7                 |A                  |E                  
+I sail away,                                a country mile
+|E                  |F#7                |A                  |B                  
+And now I m returning, a          nd showing off my smile
+|E                  |E7                 |A                  |E                  
+I met all the girls and I loved myself a few, and to my surprise,
+|E                  |C#m      ~F#7      |A                  |B7                 
+like everything else that I ve been through, they opened up my eyes
+-                                        <XX>H ON</XX>And now I m..
+#CHORUS 3 -------------------------------
+|E                  |E7                 |A                  |E                  
+One toke over the line, sweet Jesus,     one toke over the line
+|E                  |C#m      ~F#7      |A        ~B        |E                  
+Sitting downtown in a railway station,     one toke over the line
+|E                  |%        ~E7        |A                  |E                  
+Waiting for the train that goes home, sweet Mary, hoping that the train is on time
+|E                  |C#m      ~F#7      |A        ~B        |E                  
+Sitting downtown in a railway station, one toke over the line
+#CHORUS 4 -------------------------------
+|E                  |E7                 |A                  |E                  
+-
+|E                  |C#m      ~F#7      |A        ~B        |E                  
+-                                        Don t you know I m just
+|E                  |%        ~E7        |A                  |E                  
+Waiting for the train that goes home, sweet Mary, hoping that the train is on time
+|E                  |C#m      ~F#7      |A        ~B        |E                  
+Sitting downtown in a railway station, one toke over the line   (I wanna be)
+#CHORUS 5 -------------------------------
+|E                  |E7                 |A                  |E                  
+One toke over the line, sweet Jesus, one toke over the line
+|E                  |C#m      ~F#7      |A        ~B        |E                  
+Sitting downtown in a railway station, one toke over the line
+|E                  |%        ~E7        |A                  |E                  
+Waiting for the train that goes home, sweet Mary, hoping that the train is on time  
+|E                  |C#m      ~F#7      |A        ~B        |E                  
+Sitting downtown in a railway station, one toke over the line
+#OUTRO ----------------------------------
+|E                  |C#m      ~F#7      |A        ~B        |E                  
+Sitting downtown in a railway station, one toke over the line
+|A            |B     ~E     |E            |%            |%            |%            
+One toke, one toke over the line

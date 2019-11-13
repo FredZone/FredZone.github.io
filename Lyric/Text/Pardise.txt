@@ -1,0 +1,82 @@
+TITLE:Pardise,DUR:180,BPM:155,BEATS:3,KEY:C,QUAL:Verified,ARTIST:John Prine,GENRE:Folk,STYLE:Ballad,HITyear:Unknown
+#INTRO ----------------------------------
+|N                             |%                             
+-
+|C           |%           |F           |C           |%           
+#VERSE 1 --------------------------------
+|C              |%              |F              |C              
+When I was a child my family would travel,
+|C           |%           |G7          |C           |%           
+down to Western Kentucky where my parents were born
+|C              |%              |F              |C              
+And there's a backwards old town that's often remembered,
+|C           |%           |G7          |C           |%           
+so many times that my memories are worn.
+#CHORUS 1 -------------------------------
+|C              |%              |F              |%              
+And daddy won't you take me back to Muhlenberg County,
+|C           |%           |G7          |C           |%           
+down by the Green River where Paradise lay
+|C              |%              |F              |C             
+Well, I'm sorry my son, but you're too late in asking,
+|C           |%           |G7          |C           |%           
+Mr. Peabody's coal train has hauled it away
+#VERSE 2 --------------------------------
+|C              |%              |F              |C              
+Well, sometimes we'd travel right down the Green River,
+|C           |%           |G7          |C           |%           
+to the abandoned old prison down by Adrie Hill
+|C              |%              |F              |C              
+Where the air smelled like snakes and we'd shoot with our pistols,
+|C           |%           |G7          |C           |%           
+but empty pop bottles was all we would kill.
+#CHORUS 2 -------------------------------
+|C              |%              |F              |%              
+And daddy won't you take me back to Muhlenberg County,
+|C           |%           |G7          |C           |%           
+down by the Green River where Paradise lay
+|C              |%              |F              |C             
+Well, I'm sorry my son, but you're too late in asking,
+|C           |%           |G7          |C           |%           
+Mr. Peabody's coal train has hauled it away
+#VERSE 3 --------------------------------
+|C              |%              |F              |C              
+Then the coal company came with the world's largest shovel,
+|C           |%           |G7          |C           |%           
+and they tortured the timber and stripped all the land
+|C              |%              |F              |C              
+Well, they dug for their coal till the land was forsaken,
+|C           |%           |G7          |C           |%           
+then they wrote it all down as the progress of man.
+#CHORUS 3 -------------------------------
+|C              |%              |F              |%              
+And daddy won't you take me back to Muhlenberg County,
+|C           |%           |G7          |C           |%           
+down by the Green River where Paradise lay
+|C              |%              |F              |C             
+Well, I'm sorry my son, but you're too late in asking,
+|C           |%           |G7          |C           |%           
+Mr. Peabody's coal train has hauled it away
+#VERSE 4 --------------------------------
+|C              |%              |F              |C              
+When I die let my ashes float down the Green River,
+|C           |%           |G7          |C           |%           
+let my soul roll on up to the Rochester dam
+|C              |%              |F              |C              
+I'll be halfway to Heaven with Paradise waitin',
+|C           |%           |G7          |C           |%           
+just five miles away from wherever I am.
+#CHORUS 4 -------------------------------
+|C              |%              |F              |%              
+And daddy won't you take me back to Muhlenberg County,
+|C           |%           |G7          |C           |%           
+down by the Green River where Paradise lay
+|C              |%              |F              |C             
+Well, I'm sorry my son, but you're too late in asking,
+|C           |%           |G7          |C           |%           
+Mr. Peabody's coal train has hauled it away
+|C              |%              |%              |%              
+-            
+https://www.youtube.com/watch?v=x-SKCWXoryU|John Prine (early)
+https://www.youtube.com/watch?v=efa6zlDQ1kc|Prine and Stimpson
+

@@ -1,0 +1,79 @@
+TITLE:Jingle Bells,DUR:243,BPM:130,BEATS:4,KEY:C,QUAL:Raw,ARTIST:,GENRE:Unknown,STYLE:Unknown,HITyear:
+#VERSE 1 --------------------------------
+|C                  |%             |%           |F
+Dashing through the snow, in a one-horse open sleigh,
+|F                 |G             |%           |C
+O'er the fields we go,            laughing all the way.
+|C                  |%             |%           |F
+Bells on bob-tails ring,          making spirits bright,
+-     |F            |C             |G           |C       ~G7    
+What fun it is to ride and sing a sleighing song tonight. Oh!
+#CHORUS 1 -------------------------------
+C                  |%             |%            |%
+Jingle bells,      jingle bells,  Jingle all the way!
+|F                 |C            |D             |G
+O what fun it is to ride In a one-horse open sleigh, hey!
+C                  |%             |%            |%
+Jingle bells, jingle bells, Jingle all the way!
+|F                |C              |G            |C
+O what fun it is to ride In a one-horse open sleigh
+#VERSE 2 --------------------------------
+|C                  |%             |%           |F
+A day or two ago, I thought I'd take a ride
+|F                 |G             |%           |C
+And soon Miss Fanny Bright was seated by my side
+|C                  |%             |%           |F
+The horse was lean and lank, Misfortune seemed his lot
+-     |F            |C             |G           |C       ~G7    
+We ran into a drifted bank and there we got upsot. Oh!
+#CHORUS 2 -------------------------------
+C                  |%             |%            |%
+E
+|F                 |C            |D             |G
+Jingle bells, jingle bells, Jingle all the way!
+C                  |%             |%            |%
+O what fun it is to ride In a one-horse open sleigh, hey!
+|F                |C              |G            |C
+E
+Jingle bells, jingle bells, Jingle all the way!
+|F            |C          |G                 |C
+O what fun it is to ride In a one-horse open sleigh
+#VERSE 3 --------------------------------
+|C                  |%             |%           |F
+A day or two ago, the story I must tell
+|F                 |G             |%           |C
+I went out on the snow and on my back I fell
+|C                  |%             |%           |F
+A gent was riding by in a one-horse open sleigh
+-     |F            |C             |G           |C       ~G7    
+He laughed at me as I there lay but quickly drove away.  Oh!
+#CHORUS 3 -------------------------------
+C                  |%             |%            |%
+Jingle bells, jingle bells, Jingle all the way!
+|F                 |C            |D             |G
+O what fun it is to ride In a one-horse open sleigh, hey!
+C                  |%             |%            |%
+E
+|F                |C              |G            |C
+Jingle bells, jingle bells, Jingle all the way!
+|F            |C          |G                 |C
+O what fun it is to ride In a one-horse open sleigh
+#VERSE 4 --------------------------------
+|C                  |%             |%           |F
+Now the ground is white, go it while you're young
+|F                 |G             |%           |C
+Take the girls along and sing this sleighing song
+|C                  |%             |%           |F
+Just bet a bobtailed bay, Two forty as his speed
+-     |F            |C             |G           |C       ~G7    
+Hitch him to an open sleigh and crack! You'll take the lead. Oh!
+#CHORUS 4 -------------------------------
+C                  |%             |%            |%
+Jingle bells, jingle bells, Jingle all the way!
+|F                 |C            |D             |G
+O what fun it is to ride In a one-horse open sleigh, hey!
+C                  |%             |%            |%
+|F                |C              |G            |C
+Jingle bells, jingle bells, Jingle all the way!
+|F            |C          |G                 |C
+O what fun it is to ride In a one-horse open sleigh

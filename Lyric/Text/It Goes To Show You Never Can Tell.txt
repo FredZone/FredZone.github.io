@@ -1,0 +1,52 @@
+TITLE:It Goes To Show You Never Can Tell,DUR:155,BPM:130,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Chuck Berry.,GENRE:Rock,STYLE:Dance,HITyear:1964
+intro
+|NC              |NC              |C               |%
+-
+#VERSE 1 --------------------------------
+|C               |%               |%               |%
+It was a teenage wedding, and the old folks wished them well.
+|C               |%               |G               |%
+You could see that Pierre did truly love the mademoiselle.
+|G               |%               |%               |%
+And now the young monsieur and madame have rung the chapel bell,
+|G               |%               |C               |%
+'C'est la vie', say the old folks, it goes to show you never can tell.
+#VERSE 2 --------------------------------
+|C               |%               |%               |%
+They furnished off an apartment with a two room Roebuck sale.
+|C               |%               |G               |%
+The coolerator was crammed with TV dinners and ginger ale.
+|G               |%               |%               |%
+But when Pierre found work, the little money comin' worked out well.
+|G               |%               |C               |%
+'C'est la vie', say the old folks, it goes to show you never can tell.
+#VERSE 3 --------------------------------
+|C               |%               |%               |%
+They had a hi-fi phono, oh boy, did they let it blast.
+|C               |%               |G               |%
+Seven hundred little records, all rock, rhythm and jazz.
+|G               |%               |%               |%
+But when the sun went down, the rapid tempo of the music fell.
+|G               |%               |C               |%
+'C'est la vie', say the old folks, it goes to show you never can tell.
+#VERSE 4 --------------------------------
+|C               |%               |%               |%
+They bought a souped-up jitney, 'twas a cherry red '53.
+|C               |%               |G               |%
+They drove it down New Orleans to celebrate their anniversary.
+|G               |%               |%               |%
+It was there that Pierre was married to the lovely madamoiselle.
+|G               |%               |C               |%
+C'est la vie', say the old folks, it goes to show you never can tell.
+#VERSE 5 --------------------------------
+|C               |%               |%               |%
+It was a teenage wedding, and the old folks wished them well.
+|C               |%               |G               |%
+You could see that Pierre did truly love the mademoiselle.
+|G               |%               |%               |%
+And now the young monsieur and madame have rung the chapel bell,
+|G               |%               |C               |%
+'C'est la vie', say the old folks, it goes to show you never can tell.
+https://www.youtube.com/watch?v=RoDPPgWbfXY|Chuck Berry
+https://www.youtube.com/watch?v=Qv8gwgNG5R8|Emmy Lou Harris
+https://youtu.be/L-Ds-FXGGQg?t=166|Bruce Springsteen

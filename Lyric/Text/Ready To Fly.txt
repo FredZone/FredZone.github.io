@@ -1,0 +1,67 @@
+TITLE:Ready To Fly,DUR:272,BPM:105,BEATS:4,KEY:D,QUAL:Verified,ARTIST:Greg Beattie
+#INTRO ----------------------------------
+|D           |G            |D             |D
+-
+#CHORUS 1 -------------------------------
+|D                   |G         |D        |D
+I am standing on the edge of the water
+        |D            |G                 |A     |%
+And I am watching the wild birds fill the sky
+         |D           |G          |D          |%
+And I am longing to be lifted up among them
+          |D              |A        |D         |%
+I am not dying I'm getting ready to fly.
+#VERSE 1 --------------------------------
+|D                   |G         |D        |D
+I am an old man and these old hands tell my story
+        |D            |G                 |A     |%
+Fifty years on the Boston piers took their toll
+         |D           |G          |D          |%
+Faded faces smile from those places I cannot return to
+          |D              |A        |D         |%
+'Til my days are done and they take me home
+#CHORUS 2 -------------------------------
+|D                   |G         |D        |D
+I am standing on the edge of the water
+        |D            |G                 |A     |%
+And I am watching the wild birds fill the sky
+         |D           |G          |D          |%
+And I am longing to be lifted up among them
+          |D              |A        |D         |%
+I am not dying I'm getting ready to fly.
+#VERSE 2 --------------------------------
+|D                   |G         |D        |D
+I was a young wife with my whole life still before me
+        |D            |G                 |A     |%
+It was the last year of the last great war
+         |D           |G          |D          |%
+My darling Edward never returned from Normandy
+    |D                 |A          |D         |%
+But soon I will see my Edward once more.
+#CHORUS 3 -------------------------------
+|D                   |G         |D        |D
+I am standing on the edge of the water
+        |D            |G                 |A     |%
+And I am watching the wild birds fill the sky
+         |D           |G          |D          |%
+And I am longing to be lifted up among them
+          |D              |A        |D         |%
+I am not dying I'm getting ready to fly.
+#VERSE 3 --------------------------------
+|D                   |G         |D        |D
+My memory is fading like an ember
+        |D            |G                 |A     |%
+But I remember a promise I once made
+         |D           |G          |D          |%
+I said dear Father I'll be faithful forever
+           |D              |A        |D         |%
+And as he draws near me he can hear me pray
+#CHORUS 4 -------------------------------
+|D                   |G         |D        |D
+I am standing on the edge of the water
+        |D            |G                 |A     |%
+And I am watching the wild birds fill the sky
+         |D           |G          |D          |%
+And I am longing to be lifted up among them
+          |D              |A        |D         |%
+I am not dying I'm getting ready to fly.

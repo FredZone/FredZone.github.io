@@ -1,0 +1,50 @@
+TITLE:Help Me Make It Through The Night,DUR:128,BPM:150,BEATS:4,KEY:C,QUAL:Inwork,ARTIST:Kris Kristofferson,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+@@@<x9>FRED</x9><x4> 1</x4><x14>xoooo</x14><x11> 5</x11><x12>  7 10</x12>
+@@@<x9>PAT </x9><x4> 3</x4><x14>ooxoo</x14><x11> 9</x11><x12>  9  6</x12>
+#INTRO ----------------------------------
+|C          |%         |%            |%
+-
+|C          |%         |NC           |NC
+                            Take the ribbon from your
+#VERSE 1 --------------------------------
+|C          |%         |%            |C7
+ hair                       shake it loose and let it
+|F          |%         |%            |%
+fall                          layin' soft against my
+|G7         |%         |%            |%
+skin                        like the shadows on the
+|C          |%         |%            |%
+wall                       Come and lay down by my
+#VERSE 2 --------------------------------
+|C          |%         |%            |C7
+side                        till the early morning
+|F          |%         |%            |%
+light                        all I'm taking is your
+|G7         |%         |%            |%
+ time                    help me     make it through the
+|C          |%         |%            |%
+night                       I don't care who's right or
+#CHORUS 1 -------------------------------
+|F          |%         |%            |%
+wrong                      I don't try to under-
+|C          |%         |%            |%
+stand                      let the devil take to
+|D7         |%         |%            |%
+morrow                    Lord, tonight I need a
+|G7         |%         |%            |%
+friend                    Yesterday is dead and
+#VERSE 3 --------------------------------
+|C          |%         |%            |C7
+gone                       and tomorrow's out of
+|F          |%         |%            |%
+sight                     and it's sad to be
+|G7         |%         |%            |%
+alone                       help me make it through the
+|C          |%         |%            |%
+night                     Lord, it's sad to be
+#OUTRO ----------------------------------
+|G7          |%        |%            |%
+alone,                    help me make it through the
+|F           |%        |C
+night
+irealb://Help%20Me%20Make%20It%20Through%20the%20Night%3DKris%20Kristofferson%3D%3DCountry%20095%3DC%3D%3D1r34LbKcu7ZLxZLLZxLZZLxZLCSA*%7B%5D%20CZxLZL7GZLxZLFZL7CC7LZFC44T%5B7CZLCLZC%2C%20%5D%207GZLxZL7DZLxLZCZLxZLFZLCB*%5B%7D%5BG7LZxZL7GZLCZLxLZG7GZLCC*%7CZ%20%2CC%3EenFi%20la%20.S.D%3CZLxZL7LZG7ZLFZLb%2Cc%2CvLZxLZ%3C%20%7CZ%2C7Gs%3EeniF%3CC%2CZL7GZL7GZLCZLC*30I%2C7GZLC%2Cc%2Co%3E%20%3DPop-Country%3D95%3D1

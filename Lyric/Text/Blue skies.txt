@@ -1,0 +1,58 @@
+TITLE:Blue Skies,DUR:180,BPM:130,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Willie Nelson,GENRE:Blues,STYLE:Ballad,HITyear:Unknown
+#INTRO ----------------------------------
+|N                              |N
+-
+|Am             |Am/Ab          |Am/G           |Am/Gb
+-
+#VERSE 1 --------------------------------
+|Am             |Am/Ab          |Am/G           |Am/Gb
+Blue    Skies,    smiling    at    me
+|C              |G7             |C              |E7
+Nothing    but    blue    skies            do    I    see
+|Am             |Am/Ab          |Am/G           |Am/Gb
+Blue    birds    singin    a    song
+|C              |G7             |C              |%
+Nothing    but    blue    skies        from    now    on
+#CHORUS 1 -------------------------------
+|C              |Fm7     ~C     |Fm7     ~C     |G7      ~C
+I never saw the sun shinin so bright Never saw things goin so right
+|C              |Fm7     ~C     |Fm7     ~C     |G7  ~  ~C  ~E7
+Noticing the  days hurryin by When your in love, my how they fly by
+#INTERLUDE ------------------------------
+|Am             |Am/Ab          |Am/G           |Am/Gb
+Blue    days,    all    of    them    gone
+|C              |G7             |C              |E7
+Nothing    but    blue    skies            from    now    on
+#VERSE 2 --------------------------------
+|Am             |Am/Ab          |Am/G           |Am/Gb
+-
+|C              |G7             |C              |E7
+-
+|Am             |Am/Ab          |Am/G           |Am/Gb
+-
+|C              |G7             |C              |%
+-
+#CHORUS 2 -------------------------------
+|C              |Fm7     ~C     |Fm7     ~C     |G7      ~C
+-
+|C              |Fm7     ~C     |Fm7     ~C     |G7  ~  ~C  ~E7
+-
+#VERSE 3 --------------------------------
+|Am             |Am/Ab          |Am/G           |Am/Gb
+Blue    skies    smiling    at    me
+|C              |G7             |C              |E7
+Nothing    but    blue    skies    do    I    see
+|Am             |Am/Ab          |Am/G           |Am/Gb
+Blue    days,    all    of    them    gone
+|C              |G7             |C              |%
+Nothing    but    blue    skies    from    now    on
+#VERSE 4 --------------------------------
+|Am             |Am/Ab          |Am/G           |Am/Gb
+Blue    skies    smiling    at    me
+|C              |G7             |C              |E7
+Nothing    but    blue    skies    do    I    see
+|Am             |Am/Ab          |Am/G           |Am/Gb
+Blue    days,    all    of    them    gone
+|C              |G7             |C              |%
+Nothing    but    blue    skies    from    now    on
+|C              |%              |%              |%

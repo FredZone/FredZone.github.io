@@ -1,0 +1,52 @@
+TITLE:Silver Wings,DUR:223,BPM:85,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Merle Haggard,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#INTRO ----------------------------------
+|C             |%              |%             |%
+                                             Silver
+#VERSE 1 --------------------------------
+|C             |%              |%             |%
+wings              shining in the sunlight     Roaring
+|Dm            |%              |G             |%
+engines         headed   somewhere in flight  They're taking you
+|C             |%              |%             |%
+away, and      leaving me lonely              Silver
+|Dm            |G              |C             |%
+wings              slowly fading out of sight
+#CHORUS 1 -------------------------------
+|F             |G              |C     ~Dm    |C
+Don't leave me I cry Don't   take that airplane ride But you
+|D             |%              |G            |%
+locked me out of your mind Left me standing here behind
+#VERSE 2 --------------------------------
+|C             |%              |%             |%
+wings              shining in the sunlight     Roaring
+|Dm            |%              |G             |%
+engines         headed   somewhere in flight  They're taking you
+|C             |%              |%             |%
+away, and      leaving me lonely              Silver
+|Dm            |G              |C             |%
+wings       slowly fading out of sight
+#BREAK 1 --------------------------------
+|C             |%              |%             |%
+-
+|Dm            |%              |G             |%
+-
+|C             |%              |%             |%
+-
+|Dm            |G              |C             |%
+-                                                 Silver
+#VERSE 3 --------------------------------
+|C             |%              |%             |%
+wings              shining in the sunlight     Roaring
+|Dm            |%              |G             |%
+engines    headed   somewhere in flight      They're taking you
+|C             |%              |%             |%
+away, and      leaving me lonely                   Silver
+|Dm            |G              |C             |%
+wings                  slowly fading     out of sight
+#OUTRO ----------------------------------
+Dm            |G              |C             |%
+wings                  slowly fading     out of sight
+https://www.youtube.com/watch?v=T6rsR1s7PaM|Karaoke (E)
+@@@ Strum Pattern
+@@@ 1...2...3...4...
+@@@ d   D u d u d u

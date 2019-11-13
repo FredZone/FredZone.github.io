@@ -1,0 +1,72 @@
+TITLE:Small Town Saturday Night,DUR:150,BPM:120,BEATS:4,KEY:D,QUAL:Raw,ARTIST:Hal Ketcham
+#INTRO ----------------------------------
+C - D - G - D - C - G - D - D
+#VERSE 1 --------------------------------
+|D           ~                 |A      ~D
+There's an Elvis movie on the marquee sign
+|G          ~D      |A            ~D
+We've all seen at least three times
+|D           ~       |A             ~D
+Everybody's broke, Bobby's got a buck
+        |G                 ~D         |A       ~D
+To put a dollars worth of gas in his pickup truck
+#CHORUS 1 -------------------------------
+|G                                    |%
+We're going' ninety miles an hour down a dead end road
+|D                       |A                ~Bm
+What's the hurry, son... where you gonna go
+|G                        ~D    |A              ~D
+We're gonna howl at the moon, shoot out the light
+     |G              ~D   |A         ~D
+It's a small town Saturday night
+|G             ~D   |A        ~D
+It's a small town Saturday night
+#VERSE 2 --------------------------------
+|D           ~                 |A      ~D
+Lucy's got her lipstick on a little too bright
+|G          ~D      |A            ~D
+Bobby's gettin' drunk and lookin' for a fight
+|D           ~       |A             ~D
+Liquor on his breath and trouble on his mind
+        |G                 ~D         |A       ~D
+And Lucy's just a kid along for the ride
+#CHORUS 2 -------------------------------
+|G                                    |%
+Got a six-pack of beer and a bottle of wine
+|D                       |A                ~Bm
+Gotta be bad just to have a good time
+|G                        ~D    |A              ~D
+They're gonna howl at the moon, shoot out the light
+     |G              ~D   |A         ~D
+It's a small town Saturday night
+|G             ~D   |A        ~D
+It's a small town Saturday night
+#VERSE 3 --------------------------------
+|D           ~                 |A      ~D
+Bobby told Lucy, "The world ain't round...
+|G          ~D      |A            ~D
+Drops off sharp at the edge of town
+|D           ~       |A             ~D
+Lucy, you know the world must be flat
+        |G                 ~D         |A       ~D
+'Cause when people leave town, they never come back"
+#CHORUS 3 -------------------------------
+|G                                    |%
+They go ninety miles an hour to the city limits sign
+|D                       |A                ~Bm
+Put the pedal to the metal 'fore they change their mind
+|G                        ~D    |A              ~D
+They howl at the moon, shoot out the light
+     |G              ~D   |A         ~D
+It's a small town Saturday night
+|G             ~D   |A        ~D
+-
+#OUTRO ----------------------------------
+|G                     |A              ~Bm
+They howl at the moon, shoot out the light
+     |G            ~D   |A        ~D
+Yeah, it's a small town Saturday night
+     |G            ~D   |A        ~D
+It's a small town Saturday night
+     |G            ~D   |A        ~D
+It's a small town Saturday night

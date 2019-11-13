@@ -1,0 +1,97 @@
+TITLE:I Fought The Law,DUR:137,BPM:150,BEATS:4,KEY:G,QUAL:Raw,ARTIST:Bobby Fuller Four,GENRE:Rock,STYLE:Up Tempo,HITyear:1966
+@Needs some work
+#INTRO ----------------------------------
+|G      ~C      |D              
+-
+|G  ~D7  ~C  ~D7  |G              
+-
+#VERSE 1 --------------------------------
+|G   ~   ~   ~   |C   ~    ~G   ~   
+A-breakin' rocks in the hot sun
+|G   ~   ~   ~   |C   ~    ~G   ~   
+I fought the law and the law won
+|G   ~   ~   ~   |D7   ~   ~G   ~   
+I fought the law and the law won
+|G   ~   ~   ~   |C   ~    ~D   ~   
+-
+|G  ~  ~D7*C*D7  |G   ~    ~    ~   
+-
+#VERSE 2 --------------------------------
+|G   ~   ~   ~   |C   ~    ~G   ~   
+I needed money 'cause I  had none
+|G   ~   ~   ~   |C   ~    ~G   ~   
+I fought the law and the law won
+|G   ~   ~   ~   |D7   ~   ~G   ~   
+I fought the law and the law won
+|G   ~   ~   ~   |C   ~    ~D   ~   
+-
+|G  ~  ~D7*C*D7  |G   ~    ~    ~   
+-
+#CHORUS 1 -------------------------------
+|C               |%              
+I left my baby and I feel so bad
+|G               |%              
+I guess my race is run
+|C               |%              
+She's the best girl I ever had
+|G               |C       ~G      
+I fought the law and the law won
+|G               |D7      ~G      
+I fought the law and the law won
+|G   ~   ~   ~   |C   ~   ~D   ~   
+-
+|G  ~  ~D7*C*D7  |G   ~   ~   ~   
+-
+#BREAK 1 --------------------------------
+|C               |%              
+- 
+|G               |%              
+-
+|C               |%              
+-
+|G               |C       ~G      
+-
+|G               |D7      ~G      
+-
+|G   ~   ~   ~   |C   ~   ~D   ~   
+-
+|G  ~  ~D7*C*D7  |G   ~   ~   ~   
+-
+#VERSE 3 --------------------------------
+|G   ~   ~   ~   |C   ~    ~G   ~   
+A-robbin' people with a six gun
+|G   ~   ~   ~   |C   ~    ~G   ~   
+I fought the law and the law won
+|G   ~   ~   ~   |D7   ~   ~G   ~   
+I fought the law and the law won
+|G   ~   ~   ~   |C   ~    ~D   ~   
+-
+|G  ~  ~D7*C*D7  |G   ~    ~    ~   
+-
+#VERSE 4 --------------------------------
+|G   ~   ~   ~   |C   ~    ~G   ~   
+I miss my baby and the  good fun
+|G   ~   ~   ~   |C   ~    ~G   ~   
+I fought the law and the law won
+|G   ~   ~   ~   |D7   ~   ~G   ~   
+I fought the law and the law won
+|G   ~   ~   ~   |C   ~    ~D   ~   
+-
+|G  ~  ~D7*C*D7  |G   ~    ~    ~   
+-
+#CHORUS 2 -------------------------------
+|C               |%              
+I left my baby and I feel so bad
+|G               |%              
+I guess my race is run
+|C               |%              
+She's the best girl I ever had
+|G               |C       ~G      
+I fought the law and the law won
+|G               |D7      ~G      
+I fought the law and the law won
+|G   ~   ~   ~   |C   ~   ~D   ~   
+-
+|G  ~  ~D7*C*D7  |G   ~   ~   ~ 
+https://www.youtube.com/watch?v=OgtQj8O92eI|Bobby Fuller Four
+https://www.youtube.com/watch?v=AL8chWFuM-s|Clash  

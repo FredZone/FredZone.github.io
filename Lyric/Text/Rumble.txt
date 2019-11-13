@@ -1,0 +1,43 @@
+TITLE:Rumble,DUR:153,BPM:87,BEATS:4,KEY:E,QUAL:Complete,ARTIST:Link Wray,GENRE:Rock,STYLE:Unknown,HITyear:1958
+#INTRO ----------------------------------
+|NC                            |%     ~     ~Ds2     ~Ds2     
+-                                                 -
+#VERSE 1 --------------------------------
+|E              |%  ~  ~Ds2  ~Ds2  |E              |%  ~  ~Ds2  ~Ds2  
+-
+|A              |%  ~  ~Ds2  ~Ds2  |E              |%  ~  ~Ds2  ~Ds2  
+-
+|B7             |*%      ~      |%   ~   ~   ~   |%  ~  ~Ds2  ~Ds2  
+                (1/2 bar)  ^---pentatonic---A>E ^ 
+#VERSE 2 --------------------------------
+|E              |%  ~  ~Ds2  ~Ds2  |E              |%  ~  ~Ds2  ~Ds2  
+-                                                 -
+|A              |%  ~  ~Ds2  ~Ds2  |E              |%  ~  ~Ds2  ~Ds2  
+-                                                 -
+|B7             |*%      ~      |%   ~   ~   ~   |%  ~  ~Ds2  ~Ds2  
+                (1/2 bar)  ^---pentatonic---A>E ^ 
+#BREAK 1 --------------------------------
+|E              |*%      ~      |%              |%              
+-               (1/2 bar)  T     T    T     T    T    T    T   T   
+|%              |%              |A              |%  ~  ~Ds2  ~Ds2  
+T   T   T   T   T   T   T   T  
+|E                             |%     ~     ~Ds2     ~Ds2     
+-
+|B7             |*%      ~      |%   ~   ~   ~   |%  ~  ~Ds2  ~Ds2  
+                (1/2 bar)  ^---pentatonic---A>E ^ 
+#VERSE 3 --------------------------------
+|E              |%  ~  ~Ds2  ~Ds2  |E              |%  ~  ~Ds2  ~Ds2  
+Heavy Reverb....
+|A              |%  ~  ~Ds2  ~Ds2  |E              |%  ~  ~Ds2  ~Ds2  
+-
+|B7             |*%      ~      |%   ~   ~   ~   |%  ~  ~Ds2  ~Ds2  
+                (1/2 bar) ^---pentatonic---A>E ^ 
+#OUTRO ----------------------------------
+|E              |%  ~  ~Ds2  ~Ds2  |E              |%  ~  ~Ds2  ~Ds2  
+Fade....---------------------------------
+|A
+-
+https://www.youtube.com/watch?v=WnPQK1huDOE|Lesson with 'Anyone Can Play Guitar'
+https://www.anyonecanplayguitar.co.uk/rumble-by-link-wray/|Sheet Music Backing Track etc 'Anyone Can Play Guitar'
+https://www.youtube.com/watch?v=6qQw50zsIOk|Sheet Music and backing track for first half
+https://www.youtube.com/watch?v=ucTg6rZJCu4|Original Link Wray

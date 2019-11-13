@@ -1,0 +1,3 @@
+TITLE:Georgia-Img,DUR:90,BPM:100,BEATS:4,KEY:C,QUAL:Verified,ARTIST:Willie Nelson,GENRE:Country,STYLE:Unknown,HITyear:1960
+@@Hoagy Carmichael Song.
+

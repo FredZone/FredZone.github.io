@@ -1,0 +1,79 @@
+TITLE:Annies Song,DUR:188,BPM:138,BEATS:3,KEY:C,QUAL:Raw,ARTIST:John Denver,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+INTRO  ANNIES SONG
+|G        |Gsus4    |G        |Gsus4    
+-
+|G        |Gsus4    |G        |Gsus4    
+                  You fill up my
+#CHORUS---------------------------------
+|C        |D        |Em       |C        
+sen -  ses,         like a night in the
+|G        |G/F#     |Em       |D        
+ forest.          Like a mountain in
+|C        |D        |Am       |C        
+springtime,    like a walk in the
+|D        |%        |%        |%        
+rain.                Like a storm in the
+|C        |D        |Em       |C        
+desert,        like a sleepy blue
+|G        |G/F#     |Em       |D        
+ ocean.           You fill up my
+|C        |Bm       |Am       |D        
+senses,      come fill me
+|G        |Gsus4    |G        |Gsus4    
+again.                    Come let me
+#Verse----------------------------------
+|C        |D        |Em       |C        
+love you,        let me give my life
+|G        |G/F#     |Em       |D        
+to you.            Let me drown in your
+|C        |D        |Am       |C        
+laughter,         let me die in your
+|D        |%        |%        |%        
+arms.                   Let me lay down
+|C        |D        |Em       |C        
+beside you,         let me always be
+|G        |G/F#     |Em       |D        
+with you.                Come let me
+|C        |Bm       |Am       |D        
+love you,       come love me
+|G        |Gsus4    |G        |Gsus4    
+again.
+#Break & Lead in to last Chorus---------
+|C        |D        |Em       |C        
+-
+|G        |G/F#     |Em       |D        
+-
+|C        |D        |Am       |C        
+-
+|D        |%        |%        |%        
+-
+|C        |D        |Em       |C        
+-                       let me give my life
+|G        |G/F#     |Em       |D        
+to you.                 Come let me
+|C        |Bm       |Am       |D        
+love you,                 come love me
+|G        |Gsus4    |G        |Gsus4    
+again.                    You fill up my
+#CHORUS---------------------------------
+|C        |D        |Em       |C        
+sen -  ses,         like a night in the
+|G        |G/F#     |Em       |D        
+ forest.          Like a mountain in
+|C        |D        |Am       |C        
+springtime,    like a walk in the
+|D        |%        |%        |%        
+rain.                Like a storm in the
+|C        |D        |Em       |C        
+desert,        like a sleepy blue
+|G        |G/F#     |Em       |D        
+ ocean.           You fill up my
+|C        |Bm       |Am       |D        
+senses,      come fill me
+|G        |Gsus4    |G        |Gsus4    
+again.
+#OUTRO----------------------------------
+|G        |Gsus4    |G        |Gsus4    
+-
+|G        |Gsus4    |G        |Gsus4    
+again.

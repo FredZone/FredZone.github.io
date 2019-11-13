@@ -1,0 +1,54 @@
+TITLE:Brother Can You Spare A Dime,DUR:120,BPM:100,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown
+#INTRO ----------------------------------
+|Am                   |BbM7  {X0232X}
+They used to tell me I was building a dream
+|Am               |F
+And so I followed the mob.
+|C                         |B7
+When there was earth to plow or guns to bear,
+|B7    ~       ~      ~C7        |B7
+I was always there, right on the job.
+|Am                   |BbM7
+They used to tell me I was building a dream
+|Am                  |G ~  ~G7 ~G7+D
+With peace and glory ahead --
+|C                          |E7
+Why should I be standing in line,
+|Am               |E7
+just waiting for bread
+#VERSE 1 --------------------------------
+|Am                       |E7    ~A7
+Once I built a railroad, made it run,
+|D       ~G7         |C       ~E7
+Made it race against time;
+|Dm/F          ~E7         |Am       ~F7
+Once I build a railroad -- now it's done.
+|Dm6              |E7     ~Am
+Brother, can you spare a dime
+#VERSE 2 --------------------------------
+|Am                       |E7    ~A7
+Once I built a tower to the sun,
+|D       ~G7         |C       ~E7
+Brick and rivet and lime;
+|Dm/F          ~E7         |Am       ~F7
+Once I build a tower -- now it's done.
+|Dm6              |E7     ~Am
+Brother, can you spare a dime
+#BREAK 1 --------------------------------
+|A7                   |%
+Once, in khaki suits, gee, we looked swell,
+|A7                        |Gm6  ~A7
+Full of that Yankee Doodle de-dum;
+|D7                       |%   
+Half a million boots went sloggin' through Hell --
+|Am                     |F7   ~E7
+I was the kid with the drum.
+#OUTRO ----------------------------------
+|Am                      |E7            ~A7
+Say, don't you remember, they called me Al
+|D        ~G7       |C   ~E7
+It was Al all the time.
+|Dm/F             ~E7     |Am      ~F7
+Say, don't you remember  I'm your pal.
+|Dm6          ~E7         |E7+5 ~Am
+Buddy can you spare    a   dime

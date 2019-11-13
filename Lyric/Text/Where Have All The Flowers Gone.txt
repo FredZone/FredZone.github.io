@@ -1,0 +1,103 @@
+TITLE:Where Have All The Flowers Gone,DUR:150,BPM:120,BEATS:4,KEY:G,QUAL:Verified,ARTIST:Kingston Trio,GENRE:Folk,STYLE:Unknown,HITyear:1961
+#INTRO ----------------------------------
+|G                  |Em
+-
+|C                  |D
+-
+#VERSE 1 --------------------------------
+|G                  |Em
+Where have all the flowers gone
+|C        |D
+Long time passing
+|G                  |Em
+Where have all the flowers gone
+|C        |D
+Long time ago
+|G                  |Em
+Where have all the flowers gone
+|C                     |D
+Girls have picked them every one
+|C              |G
+When will they ever learn
+|C             |D
+When will they ever
+|G             |D
+learn
+#VERSE 2 --------------------------------
+|G                  |Em
+Where have all the young girls gone
+|C        |D
+Long time passing
+|G                  |Em
+Where have all the young girls gone
+|C        |D
+Long time ago
+|G                  |Em
+Where have all the young girls gone
+|C             |D
+Gone to young men every one
+|C             |G
+When will they ever learn
+|C             |D
+When will they ever
+|G             |D
+learn
+#VERSE 3 --------------------------------
+|G                  |Em
+Where have all the young men gone
+|C        |D
+Long time passing
+|G                  |Em
+Where have all the young men gone
+|C        |D
+Long time ago
+|G                  |Em
+Where have all the young men gone
+|C                |D
+Gone for soldiers every one
+|C             |G
+When will they ever learn
+|C             |D
+When will they ever
+|G             |D
+learn
+#VERSE 4 --------------------------------
+|G                 |Em
+Where have all the soldiers gone
+|C        |D
+Long time passing
+|G                 |Em
+Where have all the soldiers gone
+|C        |D
+Long time ago
+|G                 |Em
+Where have all the soldiers gone
+|C                 |D
+Gone to graveyards every one
+|C             |G
+When will they ever learn
+|C             |D
+When will they ever
+|G             |D
+learn
+#VERSE 5 --------------------------------
+|G                 |Em
+Where have all the graveyards gone
+|C        |D
+Long time passing
+|G                 |Em
+Where have all the graveyards gone
+|C        |D
+Long time ago
+|G                 |Em
+Where have all the graveyards gone
+|C                   |D
+Covered with flowers every one
+|C           |G
+When will we ever learn
+|C             |D
+When will they ever
+|G             |D
+learn
+@@First 3 verses Written By Pete Seeger in 1955 after reading a novel that referenced the traditional Cossack folk song "Koloda-Duda"
+@@Later, 1960 Joe Hickerson added two more verses with a recapitulation of the first

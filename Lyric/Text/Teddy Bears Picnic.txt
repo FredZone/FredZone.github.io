@@ -1,0 +1,55 @@
+TITLE:Teddy Bears Picnic,DUR:,BPM:,BEATS:4,KEY:,QUAL:Raw,ARTIST:,GENRE:Unknown,STYLE:Unknown,HITyear:
+#VERSE ----------------------------------
+    |Am     E7          |Am    E7            |Am        E7      |Am
+If you go down to the woods today, you're sure of a big surprise;
+    |C      G           |C       G          |C        G7      |C
+If you go down to the woods today, you'd better go in disguise,
+    |Dm7             |G7
+For ev'ry bear that ever there was
+     |CM7              |Am
+Will gather there for certain because
+   |F         C        |F           C      |G      |C
+Today's the day the teddy bears have their picnic.
+#CHORUS ---------------------------------
+|C             |%            |%              |%          
+Picnic time for teddy bears—             The little 
+|C             |%            |G              |%      
+teddy bears are having a lovely time today.
+|G             |%            |%              |%      
+Watch them, catch them unawares,         And see them 
+|G             |%            |C              |%   
+pic----nic           on their holiday.
+|C             |%            |%              |%
+See them gaily gad about,
+|C             |%            |F               |%
+They love to play and shout, they never have any cares.
+   Fm    Fdim                          C       C/B    Am7
+At six o'clock their moms and dads will take them home to bed
+ Am7/G           Dm7          G      C
+Because they're tired little teddy bears.
+#VERSE ----------------------------------
+    Am     E7          Am      E7      Am         E7    Am
+If you go down in the woods today, you better not go alone;
+      C      G           C       G        C        G7      C
+It's lovely down in the woods today, but safer to stay at home,
+    Dm7             G7
+For ev'ry bear that ever there was
+     CM7              Am
+Will gather there for certain because
+   F         C       F           C          G  C
+Today's the day the teddy bears have their picnic.
+repeat Cho
+#VERSE ----------------------------------
+ Am   E7     Am               E7        Am        E7      Am
+Every teddy bear, that's been good, is sure of a treat today.
+         C      G           C       G        C          G7      C
+There's lots of wonderful things to eat, and wonderful games to play.
+   Dm7                   G7
+Beneath the trees, where nobody sees,
+        CM7              Am
+They'll hide and seek as long as they please.
+   F         C       F           C          G  C
+Today's the day the teddy bears have their picnic.
+Coda:
+    F        C       F           C          G  C
+Today's the day the teddy bears have their picnic.

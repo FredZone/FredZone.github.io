@@ -1,0 +1,50 @@
+TITLE:Happy Trails,DUR:87,BPM:115,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Roy Rodgers And Dale Evans,GENRE:Country,STYLE:Unknown,HITyear:
+$$TCL1 <X14>PR 1</X14> <X14>D M2</X14> <X14>PV 1</X14> <X16>V4</X16> <X16>H ON</X16>
+$$STRT ooXoo 8 5 10
+$$RP55 3 or 4
+#INTRO ----------------------------------
+|NC                    |NC                    
+(2  bar  lead)
+|D                     |%                     
+-
+|D                     |%                     
+-
+#VERSE 1 --------------------------------
+|D                     |%                     
+Happy  trails      to  you
+|%                     |A7                    
+Until      we  meet      again
+|A7                    |%                     
+Happy  trails  to  you  keep
+|A7                    |D                     
+smiling        until  then <XX>V3 ON</XX>
+|D                     |G                     
+Who cares about the clouds when we're together
+|B7                    |E7         ~A7         
+Just sing a song and bring the sunny wea-----ther
+|D                     |B7                    
+Happy trails     to       you till we
+|Em         ~A7         |D                     
+meet  a-gain <XX>V1 ON</XX>
+#VERSE 2 --------------------------------
+|D                     |%                     
+Happy  trails      to  you
+|%                     |A7                    
+Until      we  meet      again
+|A7                    |%                     
+Happy  trails  to  you  keep
+|A7                    |D                     
+smiling        until  then <XX>V2 ON</XX>
+|D                     |G                     
+Who cares about the clouds when we're together
+|B7                    |E7         ~A7         
+Just sing a song and bring the sunny wea-----ther
+|D                     |B7                    
+Happy trails     to       you till we
+|Em         ~A7         |D                     
+meet  a-gain-
+OUTRO --------------------------------
+|D                     |%                     
+-                    
+|D                     |%                     
+-

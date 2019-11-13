@@ -1,0 +1,47 @@
+TITLE:Lost Highway,DUR:142,BPM:120,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+$$TCL1 <X14>PR 1</X14> <X14>C M3</X14> <X1>(V3)</X1> <X16>H OFF</X16>
+$$STRT ooXoo 8 5 10
+$$RP55 3 or 4
+#INTRO ----------------------------------
+|NC         |C          |G7         |C          |%
+#VERSE 1 --------------------------------
+|C          |F          |C          |%
+I'm a rollin' stone all alone and lost
+|C          |%          |G          |%
+For a life of sin   I have paid the cost
+|F          |%          |C          |%
+When I pass by all the people say
+|C          |G          |C          |C
+Just another boy   down the lost highway<X16>H ON</X16>
+#VERSE 2 --------------------------------
+|C          |F          |C          |%
+Just a deck of cards and a jug of wine
+|C          |%          |G          |%
+And a woman's lies makes a life like mine
+|F          |%          |C          |%
+For the day we met I went astray
+|C          |G          |C          |C
+I started rolling down that lost highway<X16>H OFF</X16>
+#VERSE 3 --------------------------------
+|C          |F          |C          |%
+I was just a lad nearly 22
+|C          |%          |G          |%
+Neither good nor bad just a kid like you
+|F          |%          |C          |%
+And now I'm lost too late to pray
+|C          |G          |C          |C
+Lord I pay the cost on the lost highway<X16>H ON</X16>
+#VERSE 4 --------------------------------
+|C          |F          |C          |%
+Now boy's dont start to ramblin' round
+|C          |%          |G          |%
+On this road of sin are you sorrow bound
+|F          |%          |C          |%
+Take my advice or you'll curse the day
+|C          |G          |C          |C
+You started rollin' down that lost highway
+|C          |%
+https://www.youtube.com/watch?v=gJ-MHd7ndWA|Karaoke (G)
+@@"Lost Highway" is a country music song written and recorded by blind country singer-songwriter Leon Payne in 1948. It was released in October 1948 on Nashville-based Bullet label.
+@@In the early days of Leon Payne's career, he used to travel from one place to another, trying to find jobs wherever he could. Once he was in California hitchhiking to Alba, Texas, to visit his sick mother, he was unable to get a ride and finally got help from The Salvation Army. He wrote "Lost Highway" on the edge of the road while waiting for a ride.
+@@In 1949, a famous version was recorded and released by Hank Williams.The version is so well known that Williams is often mistakenly given credit for writing the song.

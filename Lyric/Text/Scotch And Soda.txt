@@ -1,0 +1,73 @@
+TITLE:Scotch And Soda,DUR:0,BPM:95,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown
+INTRO  SCOTCH AND SODA
+|Fm7                        |Bb7
+-
+|C                          |Am7        
+- 
+|D7                         |G7
+- 
+|E7                         |%
+-
+#Verse 1 ------------------------------
+|Fm7                        |Bb7
+Scotch  and  soda,    mud   in   you  eye.
+|C                          |Am7        
+Baby  do  I   feel  high,   oh  me  oh   
+|D7                         |G7
+my                           do   I     feel    
+|E7                         |%
+high.
+#Verse 2 ------------------------------
+|Fm7                        |Bb7
+Dry   martini,              jigger  of  gin
+|C                          |Am7        
+oh,what a spell you've got me in,   oh
+|D7                         |G7
+ my                             do   I    feel    
+|E7                         |%
+high.
+#Chorus 1 ------------------------------
+|F                          |%
+People      won't      believe   me.   They'll    
+|C    /     G7         /    |C
+think  that   I'm  just  braggin'.
+|Am7    /      D7      /    |Am7      /   D7   /
+But I  could   feel   the   way     I    do   and   
+|Dm7    /     Gdim    /     |Dm7     /    G7  /
+ still   be   on      the   wa    --     gon.
+#Break 1 ------------------------------
+|Fmaj7                      |Bb9
+All    I    need   is       one  of  your  smiles
+|C                          |A7               
+sunshine   of    your      eyes,   oh   me  oh   
+|D7                         |G    
+my                                 do   I   feel    
+|A7                         |%
+higher   than   a   kite   can  fly.
+|F                          |G7              
+Give    me   lovin',         baby   I feel  high.
+|C                          |E7
+-
+#chorus 2 ------------------------------
+|F                          |%
+People      won't      believe   me.   They'll    
+|C    /     G7         /    |C
+think  that   I'm  just  braggin'.
+|Am7    /      D7      /    |Am7      /   D7   /
+But I  could   feel   the   way     I    do   and   
+|Dm7    /     Gdim    /     |Dm7   /   G7  /
+ still   be   on      the   wa  --    gon.
+#Verse 3 ------------------------------
+|Fm7                        |Bb7
+All    I    need   is    one   of   your   smiles
+|C                          |Am7        
+sunshine   of    your    eye,   oh   me  oh  
+|D7                         |G7
+ my                             do   I   feel    
+|A7                         |%
+higher   than   a   kite   can  fly.
+|F                          |G7                           
+Give    me   lovin',   baby   I   (pause)  feel
+|C
+high.
+

@@ -1,0 +1,45 @@
+TITLE:Singing The Blues-Short,DUR:105,BPM:150,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Guy Mitchell,GENRE:Unknown,STYLE:Unknown,HITyear:1956
+@@@<x9>FRED</x9><x4> 1</x4><x14>ooxoo</x14><x11> 9</x11><x12> 10 10</x12>
+@@@<x9>PAT </x9><x4> 1</x4><x14>ooxoo</x14><x11> 9</x11><x12>  9  6</x12>
+#INTRO ----------------------------------
+       |C                    |%
+-
+       |C                    |%
+-
+#VERSE 1 --------------------------------
+       |C                    |F
+Well I never felt more like singin' the blues
+       |C                   |G7
+'Cause I never thought that I'd ever lose
+       |F                   |G7
+  Your love      dear        why'd you do me this
+       |C                   |%
+        way
+#CHORUS 1 -------------------------------
+    |F                   |C
+The moon and stars no longer shine
+    |F                   |C
+The dream is gone I thought was mine
+    |F                   |C
+There's nothin' left for me to do
+    |C                  *|C
+But  Cry -y    -y     -y   over
+    |G7                  |G7
+    you  (Cry over you)
+#VERSE 4 --------------------------------
+    |C                   |F
+Well  I never felt more like runnin' away
+    |C                   |G7
+But how can I go when I couldn't stay
+    |F                   |G7
+Without you         you got me singin'
+    |C                   |%
+the  blues
+#OUTRO ----------------------------------
+    |F                   |G7
+Without you         you got me singin'
+    |C                   |%
+the  blues
+@@ by Melvin Endsley
+@@Marty Robbins had a hit the same year
+@@The tune was also sung by Vivian Vance and William Frawley (Ethel and Fred of I Love Lucy fame) for a Ford Motor Company television commercial promoting the Edsel.

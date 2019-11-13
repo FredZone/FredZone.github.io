@@ -1,0 +1,70 @@
+TITLE:End Of The Line,DUR:226,BPM:140,BEATS:4,KEY:D,QUAL:Raw,ARTIST:Traveling Wilburys,GENRE:Rock,STYLE:Ballad,HITyear:2000
+|D           |%           |%           |%
+#VERSE 1 --------------------------------
+|D           |%           |%    ~A     |G
+Well its all right, riding around in the breeze
+|D           |%           |%    ~A     |D
+Well its all right, if you live the life you please
+|D           |%           |%    ~A     |G
+Well its all right, doing the best you can
+|D           |%           |%    ~A     |D
+Well its all right, as long as you lend a hand
+|G           |%           |D           |%
+You can sit around and wait for the phone to ring
+|G           |%           |D           |%
+Waiting for someone to tell you everything
+|G           |%           |D           |%
+Sit around and wonder what tomorrow will bring
+|A           |%           |%           |%
+Maybe a diamond ring
+#VERSE 2 --------------------------------
+|D           |%           |%    ~A     |G
+Well its all right, even if they say youre wrong
+|D           |%           |%    ~A     |D
+Well its all right, sometimes you gotta be strong
+|D           |%           |%    ~A     |G
+Well its all right, as long as you got somewhere to lay
+|D           |%           |%    ~A     |D
+Well its all right, everyday is just one day
+|G           |%           |D           |%
+Maybe somewhere down the road aways
+|G           |%           |D           |%
+Youll think of me, and wonder where I am these days
+|G           |%           |D           |%
+Maybe somewhere down the road when somebody plays
+|A           |%           |%           |%
+Purple haze
+#VERSE 3 --------------------------------
+|D           |%           |%    ~A     |G
+Well its all right, even when push comes to shove
+|D           |%           |%    ~A     |D
+Well its all right, if you got someone to love
+|D           |%           |%    ~A     |G
+Well its all right, everythingll work out fine
+|D           |%           |%    ~A     |D
+Well its all right, were going to the end of the line
+|G           |%           |D           |%
+Dont have to be ashamed of the car I drive
+|G           |%           |D           |%
+Im just glad to be here, happy to be alive
+|G           |%           |D           |%
+It dont matter if youre by my side
+|A           |%           |%           |%
+Im satisfied
+#VERSE 4 --------------------------------
+|D           |%           |%    ~A     |G
+Well its all right, even if youre old and grey
+|D           |%           |%    ~A     |D
+Well its all right, you still got something to say
+|D           |%           |%    ~A     |G
+Well its all right, remember to live and let live
+|D           |%           |%    ~A     |D
+Well its all right, the best you can do is forgive
+|G           |%           |D           |%
+Well its all right, riding around in the breeze
+|G           |%           |D           |%
+Well its all right, if you live the life you please
+|G           |%           |D           |%
+Well its all right, even if the sun dont shine
+|A           |%           |%           |%
+Well its all right, were going to the end of the line

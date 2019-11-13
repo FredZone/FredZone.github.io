@@ -1,0 +1,43 @@
+TITLE:What A Wonderful World,DUR:138,BPM:120,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Louis Armstrong,GENRE:Unknown,STYLE:Ballad,HITyear:Unknown
+#VERSE 1 --------------------------------
+|C           |G           |Am          |Em          
+I see trees of green, red roses too
+|Dm          |C           |E7          |Am          
+I see them bloom, for me and you,
+|F           |%           |G           |%           
+And I think to myself, What a wonderful
+|C           |%           |G           |%           
+world.
+#VERSE 2 --------------------------------
+|C           |G           |Am          |Em          
+I see skies of blue and clouds of white,
+|Dm          |C           |E7          |Am          
+The bright blessed day, the dark sacred night,
+|F           |%           |G           |%           
+And I think to myself, what a wonderful
+|C           |%           |G           |%           
+world
+#CHORUS 1 -------------------------------
+|G           |%           |C           |%           
+The colours of a rainbow are so pretty in the sky
+|G           |%           |C           |%           
+Are also on the faces of people going by
+|Am          |Em          |Am          |Em          
+I see friends shaking hands saying how do you do
+|Am          |Em          |Dm           |G           
+They're really saying I love you.
+#VERSE 3 --------------------------------
+|C           |G           |Am          |Em          
+I hear babies cry, I watch them grow
+|Dm          |C           |E7          |Am          
+They'll learn much more than I'll ever know,
+|F           |%           |G           |%           
+And I think to myself what a wonderful
+|C           |%           |G           |%           
+world
+#OUTRO ----------------------------------
+|F           |%           |G           |%           
+Yes I think to myself, what a wonderful
+|C           
+world.
+https://www.youtube.com/watch?v=xkmB2fZiVDc|Karaoke (F)

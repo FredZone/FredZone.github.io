@@ -1,0 +1,92 @@
+TITLE:Folsom Prison Blues,DUR:169,BPM:205,BEATS:4,KEY:E,QUAL:Complete,ARTIST:Johnny Cash,GENRE:Country,STYLE:Up Tempo,HITyear:Unknown
+$$ 2 bar line at end of each section...
+$$TCL1 <X14>PR 1</X14> <X14>F M2</X14> <X14>PV 1</X14> <X16>V4</X16> <X16>H OFF</X16>
+$$STRT_ooXoo 8 5 10
+$$RP55_3 or 4
+#INTRO ----------------------------------
+|N                  |N                  |C7 <!--#^WALK-STARTS#-->
+-
+|C7             |%              |F              |%
+-------
+#VERSE 1 --------------------------------
+|F              |%              |%              |%
+I hear the train a comin' It's rollin' 'round the bend
+|F              |%              |%              |F7
+And I ain't seen the sunshine   Since, I don't know when
+|Bb             |%              |%              |%
+I'm stuck in Folsom Prison           And time keeps  draggin'
+|F              |%              |%              |%
+on                                                   But that
+|C7             |%              |%              |%
+train      keeps     a-rollin'              On down to San
+|F                            |%
+Antone
+#VERSE 2 --------------------------------
+|F              |%              |%              |%
+When I was just a baby  My Mama told me, "Son
+|F              |%              |%              |F7
+Always be a good boy  Don't ever play with guns"
+|Bb             |%              |%              |%
+But I shot a man in Reno            Just to watch him
+|F              |%              |%              |%
+die                                                  When I
+|C7             |%              |%              |%
+hear that whistle blowin'                  I hang my head  and
+|F                            |%
+cry
+#BREAK 1 -------------------------------
+|F              |%              |%              |%
+-
+|F              |%              |%              |F7
+-
+|Bb             |%              |%              |%
+-
+|F              |%              |%              |% <!--#^WALK#-->
+-
+|C7             |%              |%              |%
+-
+|F                              |% <!--#H-ON#-->
+-
+#VERSE 3 --------------------------------
+|F              |%              |%              |%
+I bet there's rich folks eatin'     In a fancy dining car
+|F              |%              |%              |F7
+They're probably   drinkin' coffee  And smokin' big cigars But I
+|Bb             |%              |%              |%
+know I had it     comin'               I know I      can't be
+|F              |%              |%              |%
+free                                     But those people keep
+|C7             |%              |%              |%
+movin'  And                                a-that's what tortures
+|F                            |%
+me
+#CHORUS 2 -------------------------------
+|F              |%              |%              |%
+-       -      -       -      -       -      -       -
+|F              |%              |%              |F7
+-       -      -       -      -       -      -       -
+|Bb             |%              |%              |%
+-       -      -       -      -       -      -       -
+|F              |%              |%              |% <!--#^WALK#-->
+-
+|C7             |%              |%              |%
+-       -      -       -      -       -      -       -
+|F                            |%
+-       -      -  Well,   if they
+#VERSE 4 --------------------------------
+|F              |%              |%              |%
+freed me from this prison If that railroad train was mine
+|F              |%              |%              |F7
+I bet I'd move it  on a  little Farther down the     line
+|Bb             |%              |%              |%
+Far from Folsom     Prison               That's where I want to
+|F              |%              |%              |%
+stay                                                 And
+|C7             |%              |%              |%
+I'd let that lonesome whistle       Blow my         blues
+|F              |%   ~   ~   ~   |C7             |%
+away                   ^ outro run
+|F                  |%                  |%            |%
+https://www.youtube.com/watch?v=rw7LVKWEo4o|Karaoke
+https://www.youtube.com/watch?v=wG0fS4DoGUc|JC at Folsom
+irealb://Folsom%20Prison%20Blues%3DCash%20Johnny%3D%3DCountry%20195%3DE%3D%3D1r34LbKcu7ZL%20x%20%2Cnpp%7CKQyXx%7CQyXE44TU%20%7B%20xZL%20EZL%20nZL%20ncl%20LZ7Bi*%5BL%20lcKxXyQ%7CL%20x%20ZL%20lcKQyXxQ%7CyXA%7CQyX7E%7CQyXEZEXyQ%7CQyXEXQyX%7DZ%20x%20L%20lcKQyXEZL%20x%20Z%20Lx%20ZL%20lcKQyX7BZ%3C6x%3E%20L%20x%20ZyQ%20%20%5B*BB7%2CXyQ%7CxXyQ%7CxXyQ%7CEXyQ%5D%20%3DPop-Country%3D195%3D1

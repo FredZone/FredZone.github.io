@@ -1,0 +1,59 @@
+TITLE:Kansas City,DUR:176,BPM:120,BEATS:4,KEY:E,QUAL:Verified,ARTIST:Unknown,GENRE:Rock,STYLE:Dance,HITyear:1959
+#INTRO ----------------------------------
+|E  |A   |E   |E
+-
+|A  |A   |E   |E
+-
+|B7 |A   |E   |B7
+-
+#VERSE 1 --------------------------------
+    |E                    |A                 |E    |E
+I'm going to Kansas City  Kansas City here I come
+             |A           |A                 |E       |E
+I'm going to Kansas City  Kansas City here I come They got
+      |B7                  |A                  |E |B7
+some crazy little women And I'm a gonna get me one
+#VERSE 2 --------------------------------
+     |E                    |A               |E    |E
+I'll be standing on the corner Of Twelfth Street and Vine
+        |A                       |A                  |E       |E
+I'll be standing on the corner Of Twelfth Street and Vine
+        |B7                    |A                |E           |B7
+With my Kansas City baby And my bottle of Kansas City wine
+#CHORUS 1 -------------------------------
+     |E                |E
+I might take a train I might take a plane
+        |E                  |E
+But if I have to walk I'm gonna get there just the same
+             |A            |A                |E   |E
+I'm going to Kansas City  Kansas City here I come
+      |B7                  |A                 |E  |E
+some crazy little women And I'm a gonna get me one They
+#Instrumental Break ---------------------------------
+|E  |A   |E   |E
+-
+|A  |A   |E   |E
+-
+|B7 |A   |E   |B7
+-
+#VERSE 3 --------------------------------
+     |E                    |A               |E    |E
+I'll be standing on the corner Of Twelfth Street and Vine
+        |A                       |A                  |E       |E
+I'll be standing on the corner Of Twelfth Street and Vine
+        |B7                    |A                |E           |B7
+With my Kansas City baby And my bottle of Kansas City wine
+#CHORUS 2 -------------------------------
+     |E                |E
+I might take a train I might take a plane
+        |E                  |E
+But if I have to walk I'm gonna get there just the same
+             |A            |A                |E   |E
+I'm going to Kansas City  Kansas City here I come
+      |B7                  |A                 |E  |E
+some crazy little women And I'm a gonna get me one They
+#OUTRO ----------------------------------
+         |B7         |A               |E              |E
+ got some crazy little women there and I'm gonna get me one
+@@Written in 1952 by the team of Jerry Leiber and Mike Stoller
+@@The original title was "K.C. Lovin'." The song was first recorded in 1952 by the R&B singer Little Willie Littlefield. It wasn't until 7 years later that Wilbert Harrison turned the song into a hit, becoming by far his most famous track.

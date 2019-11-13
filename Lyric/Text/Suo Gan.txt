@@ -1,0 +1,46 @@
+TITLE:Suo Gan,DUR:67,BPM:120,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+INTRO  SUO GAN
+|C           ~G
+-
+|C             |G     ~C
+-
+<Verse>---------------------------------
+|C           ~G
+Holy Savior, yet so tiny
+|C             |G     ~C
+Mighty Ruler, yet so small
+|C              |G
+Infant lowly, born so humbly
+|C            |G    ~C
+Yet redeemer of us all
+|C             |F       ~C
+Now the angels sing to greet thee
+|C              |F      ~C
+God is with us here on earth
+|C                 |G
+With the shepherds and the wise men
+|C               |G   ~C
+Come to see this holy birth
+<Verse>---------------------------------
+|C           ~G
+Holy Jesus in a manger
+|C            |G    ~C
+Little baby in a stall
+|C           |G
+Infant holy, God's messiah
+|C            |G    ~C
+Born to suffer for us all
+|C              |F      ~C
+Angels bending o'er the cradle
+|C              |F      ~C
+God's Anointed from on high
+|C           |G
+Blessed Mary watches o'er you
+|C              |G   ~C
+Singing sweetly lullaby
+<OUTRO>---------------------------------
+|C           ~G
+Blessed Mary watches o'er you
+|C               ~G   ~C
+Singing sweetly lullaby
+

@@ -1,0 +1,87 @@
+TITLE:Peaceful Easy Feeling,DUR:260,BPM:140,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Eagles
+INTRO  PEACEFUL EASY FEELING
+|C        |F          |C       |F
+-
+|C        |F          |G7      |%
+-
+#Verse 1------------------------------------
+|C           |F                 |C         |F
+I like the   way your sparklin' earrings   lay
+|C           |F                 |G7        |%
+against your skin so            brown
+|C            |F                    |C        |F
+ and I want to sleep with you in the desert tonight
+|C             |F         |G7    |%
+with a billion stars all around        'cause I got a
+#chorus 1------------------------------------
+|F            |%         |C         |%
+ peaceful,         easy   feelin'
+|F            |%           |Dm     |G7
+ I know you   won't let me down       'cause I'm
+|C            |Dm          |F            |G
+al-              -ready    standin'          on the
+|C            |Csus4         |C            |Csus4
+ground
+#Verse 2------------------------------------
+|C           |F         |C    |F
+ And I found out a long time ago
+|C                |F         |G7    
+what a woman can do to your soul
+|C       |F                 |C  |F
+ Ah, but she can't take you any way
+|C                 |F          |G7    |%
+you don't already know how to go.
+#chorus 2------------------------------------
+|F            |%         |C         |%
+ peaceful,         easy   feelin'
+|F            |%           |Dm     |G7
+ I know you   won't let me down       'cause I'm
+|C            |Dm          |F            |G
+al-              -ready    standin'          on the
+|C            |Csus4         |C            |Csus4
+#Break(like verse)----------------------------------
+|C          |F            |C          |F
+-
+|C          |F            |G7         |G7
+-
+|C          |F            |C          |F
+-
+|C          |F            |G7         |%
+-
+#Break(like chorus)-----------------------------
+|F          |%            |C          |%
+-
+|F          |%            |Dm        |G7
+-
+|C            |Dm          |F            |G
+-
+|C          |Csus4        |C          |Csus4
+-
+#Verse 3-------------------------------------------
+|C          |F            |C   |F
+I get this feeling I might Know you
+|C    |F          |G7     |%
+as a lover and a friend
+|C                    |F         |C          |F
+but this voice keeps whispering in my other ear
+|C          |F            |G7         |%
+tells me I may never see you again
+#Outro (starts as chorus 1)----------------------
+|F            |%         |C         |%
+ peaceful,         easy   feelin'
+|F            |%           |Dm     |G7
+ I know you   won't let me down       'cause I'm
+|C            |Dm          |F            |G7
+al-              -ready    standin'          I'm
+|C            |Dm           |F       |G7
+al-              -ready    standin'      Yes Im
+|C            |Dm           |F       |G7
+al-              -ready    standin'          on the
+|C            |Dm           |F       |G7
+ground
+|C            |Dm           |F       |G7
+-
+|C            |Dm           |F       |G7
+-
+|C
+#Break------------------------------------

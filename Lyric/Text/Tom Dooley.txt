@@ -1,0 +1,105 @@
+TITLE:Tom Dooley,DUR:150,BPM:120,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Kingston Trio,GENRE:Unknown,STYLE:Unknown
+#INTRO ----------------------------------
+|E                                 |%
+@Throughout history there've been many songs written about the eternal triangle.
+|%                          |F#m
+@This next one tells the story of a Mr. Grayson, a beautiful woman,
+|%                       |%
+@and a condemned man named Tom Dooley. 
+|%                        |E
+@When the sun rises tomorrow, Tom Dooley, must hang
+#CHORUS 1 -------------------------------
+|E                       |%
+Hang down your head, Tom Dooley,
+|%                      |F#m
+hang down your head and cry
+|%                       |%
+Hang down your head, Tom Dooley,
+|%                        |E
+poor boy, you're bound to die
+#VERSE 1 --------------------------------
+|E               |%
+I met her on the mountain,
+|%               |F#m
+there I took her life
+|%             |%
+Met her on the mountain,
+|%                  |E
+stabbed her with my knife
+#CHORUS 2 -------------------------------
+|E                       |%
+Hang down your head, Tom Dooley,
+|%                      |F#m
+hang down your head and cry
+|%                       |%
+Hang down your head, Tom Dooley,
+|%                        |E
+poor boy, you're bound to die
+#VERSE 2 --------------------------------
+|E               |%
+This time tomorrow,
+|%               |F#m
+reckon where I'll be
+|%             |%
+Hadn't a-been for Grayson,
+|%                  |E
+I'd a-been in Tennessee
+#CHORUS 3 -------------------------------
+|E                       |%
+Hang down your head, Tom Dooley,
+|%                      |F#m
+hang down your head and cry
+|%                       |%
+Hang down your head, Tom Dooley,
+|%                        |E
+poor boy, you're bound to die
+#CHORUS 4 -------------------------------
+|E                       |%
+Hang down your head, Tom Dooley,
+|%                      |F#m
+hang down your head and cry
+|%                       |%
+Hang down your head, Tom Dooley,
+|%                        |E
+poor boy, you're bound to die
+#VERSE 3 --------------------------------
+|E               |%
+This time tomorrow,
+|%               |F#m
+reckon where I'll be
+|%             |%
+Down in some lonesome valley,
+|%                  |E
+hangin' from a white oak tree
+#CHORUS 5 -------------------------------
+|E                       |%
+E
+|%                      |F#m
+Hang down your head, Tom Dooley,
+|%                       |%
+hang down your head and cry
+|%                        |E
+Hang down your head, Tom Dooley,
+                         |E
+poor boy, you're bound to die
+#CHORUS 6 -------------------------------
+|E                       |%
+E
+|%                      |F#m
+Hang down your head, Tom Dooley,
+|%                       |%
+hang down your head and cry
+|%                        |E
+Hang down your head, Tom Dooley,
+                         |E
+poor boy, you're bound to die
+#OUTRO ----------------------------------
+|F#m                      |E
+Poor boy, you're bound to die
+|F#m                      |E
+Poor boy, you're bound to die
+|F#m                      |E
+Poor boy, you're bound to die...
+https://www.youtube.com/watch?v=k9NHKINSKFk|Grason and Whitter first recorded version
+https://www.youtube.com/watch?v=9NJgAcJPnZk&list=RDk9NHKINSKFk&index=3|Doc Watson
+@@The first hit for the Kingston Trio, this song is about Tom Dula (pronounced Dooley) who was a real person. He was a gifted fiddle player and enjoyed the company of ladies. During the Civil War he served the Confederacy as a musician and was captured near the end of the war and held as a prisoner of war. After he was released he returned to his life and his relationship with Ann Melton and other women including Ann's cousin Laura Foster. On the day that he and Laura were to be married she disappeared and was found weeks later in a shallow grave. She had been stabbed in the heart. Tom knew that it was known he was the last known person to see her alive so he fled the county and went to work for Colonel James Grayson on his farm in a nearby county. Dula stayed long enough to earn money for a pair of boots and then left for Tennessee where the posse with assistance from Colonel Grayson found him. He was taken back to North Carolina and was represented by ex-Governor of North Carolina Zebulon Vance. After a much publicized trial and appeal he was found guilty and hanged in Statesville North Carolina. The graves of Laura and Ann are visited each year by a number of tourists. Tom's grave is on private property and is not open to the public. The "Tom Dooley" museum is located in Ferguson North Carolina. The reason for the murder is not known but it appears he may have killed her because of contracting a venereal disease from her. 

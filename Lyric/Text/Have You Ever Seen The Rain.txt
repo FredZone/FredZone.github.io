@@ -1,0 +1,82 @@
+TITLE:Have You Ever Seen The Rain,DUR:158,BPM:120,BEATS:4,KEY:C,QUAL:Inwork,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#INTRO ----------------------------------
+|Am       |F         |C           |G
+-
+|C        |           |C/A  ~C/G  |C/E   ~C/D
+-
+#VERSE 1 --------------------------------
+|C                   |%               
+  Someone told me    long ago
+|C                   |%               
+    There's a calm before the storm, I
+|G                   |%              
+ know             And it's been coming
+|C                   |C              
+for some time
+|C                  |%                
+   When it's over,   so   they  say
+|C                   |%               
+    It'll   rain   a sunny day, I
+|G                  |G              
+   know              Shining down like
+|C                  |C7              
+  water
+#CHORUS 1 -------------------------------
+|F                  |G              
+ I          wanna know    Have you
+|C        ~Em         |Am              
+ever     seen the   rain
+|F                  |G               
+ I     wanna         know    Have you
+|C       ~Em         |Am              
+ever       seen  the rain
+|F                   |G                
+        Coming        down on a sunny
+|C                    |%               
+ day
+#VERSE 2 --------------------------------
+|C                  |%               
+   Yesterday  and    days before
+|C                   |%               
+  Sun is   cold and   rain is hard,  I
+|G                   |%              
+know                 Been that way for
+|C                  |%                
+all my    time
+|C                  |%                
+   'Til forever     on it goes
+|C                  |%                
+Thru  the  circle     fast and slow, I
+|G                  |G              
+know                 And it can't stop,
+|C                  |C7              
+ I wonder
+#CHORUS 2 -------------------------------
+|F                  |G              
+ I          wanna   know   Have you
+|C     ~Em      |Am              
+ever seen the   rain
+|F                   |G               
+  I     wanna         know      Have you
+|C   ~Em      |Am              
+ever   seen  the rain
+|F                  |G                
+   Coming down on a sunny
+|C                  |%               
+ day
+#CHORUS 3 -------------------------------
+|F                  |G              
+ I          wanna   know   Have you
+|C        ~Em       |Am              
+ever      seen the   rain
+|F                   |G               
+  I     wanna         know      Have you
+|C       ~C/B         |Am      ~Am/G
+ever     seen  the   rain
+|F                  |G                
+         Coming      down on a sunny
+|C                  |%               
+Day
+|C                  |C/A  C/G  C/E   C/D |C
+https://www.youtube.com/watch?v=P9UUrX4lwPk|Karaoke
+iRealb://Have%20You%20Ever%20Seen%20The%20Rain%3DUnknown%3D%3DPop%20Country%3DC%3D%3D1r34LbKcu7%7CQyXC4A-LZD%2FC%2CE%2FC%2CG%2FC%2CA%2F%7CCQyXCZLGZL%2CCZLF%2C%5D%7B*A4Ti*%7C%7CQyXCxXyQ%7C%7CQyXC%7CQyXx%7CQyX%7CCQyXx%7CQyXG%7CQyXxxXyQ%7C%7CQyXx%20-AZLGXyQ%7C%7CQyXG%7CQyXFB*S%7CyQX%2C7C%7CQyXC%7CQyXxC%20C%2FB%7CQyXx1N%7CQyZFXyQXG%7CQyXF%7CZLG%2F-A-%20AZLB%2FC%20C%7CQyXG%7CyQ%7CCXLG%2F-As%7CQyXXyQXy.dnE%20dn2%20la%20.SD.%3C%20%20x2N%7CQyXQyXQ%3E%20%5D%7CC%7DQyXxC%2FA%2CC%2FG%2CC%2FE%2CC%2FD%2C%7CCXyQZ%20%3DPop-Rock%3D120%3D1

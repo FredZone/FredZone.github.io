@@ -1,0 +1,35 @@
+TITLE:Could I Have This Dance,DUR:0,BPM:130,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown
+INTRO  COULD I HAVE THIS DANCE
+|%      |%      |%      |%      
+#Verse 1 ------------------------------
+|C     C7  F
+I'LL ALWAYS REMEMBER, THE SONG THEY WERE 
+|     G7
+PLAYING
+| F      G7        C
+THE FIRST TIME WE DANCED AND I KNEW
+|        C7   F
+AS WE SWAYED TO THE MUSIC, AND HELD TO EACH 
+|   G7
+OTHER
+|F    G7   C
+I FELL IN LOVE WITH YOU
+#CHORUS---------------------------------
+|C     C7   F
+COULD I HAVE THIS DANCE FOR THE REST OF MY LIFE
+|    G7       F  G7
+WOULD YOU BE MY PARTNER, EVERY NIGHT
+|C      F
+WHEN WE'RE TOGETHER, IT FEELS SO RIGHT
+|C        G7   C
+COULD I HAVE THIS DANCE FOR THE REST OF MY LIFE
+#Verse 2 ------------------------------
+|C    C7  F   G7
+I'LL ALWAYS REMEMBER, THAT MAGIC MOMENT
+|    F       G7       C
+WHEN I HELD YOU CLOSE TO ME
+|C    C7        F      G7
+AS WE MOVED TOGETHER, I KNEW FOREVER
+|F         G7   C
+YOU'RE ALL I'LL EVER NEED
+

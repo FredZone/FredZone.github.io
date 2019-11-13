@@ -1,0 +1,73 @@
+TITLE:Let It Be,DUR:,BPM:76,BEATS:4,KEY:G,QUAL:Raw,ARTIST:Beatles,GENRE:Rock,STYLE:Ballad,HITyear:
+#INTRO ----------------------------------
+|G             |D               |Em            |Cmaj7 ~C6
+-
+|G             |D               |C ~  ~G/B ~Am |G
+-                                               When I 
+#VERSE 1 --------------------------------
+|G             |D               |Em            |Cmaj7 ~C6
+find myself in times of trouble, Mother Mary comes to me
+|G             |D               |C ~  ~G/B ~Am |G
+Speaking words of wisdom, let it be
+|G             |D               |Em            |Cmaj7   |C6
+And in my hour of darkness,
+-                    She is standing right in front of me 
+|G             |D               |C ~  ~G/B ~Am |G
+Speaking words of wisdom, Let it be
+#CHORUS 1 -------------------------------
+|Em            |G/D             |C             |G
+Let it be,   let it be,  let it be,     let it be
+|G             |D               |C ~  ~G/B ~Am |G
+Whisper words of wisdom, let it be
+#VERSE 2 --------------------------------
+|G             |D               |Em            |Cmaj7 ~C6
+And when the broken hearted people, Living in the world agree
+|G             |D               |C ~  ~G/B ~Am |G
+There will be an answer, let it be
+|G             |D               |Em            |Cmaj7   |C6
+For though they may be parted,
+-              There is still a chance that they may see
+|G             |D               |C ~  ~G/B ~Am |G
+There will be an answer, let it be
+#CHORUS 2 -------------------------------
+|Em            |G/D             |C             |G
+Let it be, let it be, let it be, let it be
+|G             |D               |C ~  ~G/B ~Am |G
+There will be an answer, let it be
+#CHORUS 3 -------------------------------
+|Em            |G/D             |C             |G
+Let it be, let it be, let it be, let it be
+|G             |D               |C ~  ~G/B ~Am |G
+Whisper words of wisdom, let it be
+#BREAK 1 --------------------------------
+|C ~  ~G/B  ~Am |G ~ ~F~ C/E    |D     ~C      |G
+-
+|C ~  ~G/B  ~Am |G ~ ~F~ C/E    |D     ~C      |G
+-
+#INTERLUDE ------------------------------
+|G              |D              |Em            |C 
+-
+|G              |D              |C             |G
+-
+#CHORUS 4 -------------------------------
+|Em            |G/D             |C             |G
+Let it be, let it be,  let it be, let it be
+|G             |D               |C ~  ~G/B ~Am |G
+Whisper words of wisdom, let it be
+#VERSE 3 --------------------------------
+|G             |D               |Em            |Cmaj7 ~C6
+And when the night is cloudy, 
+-               There is still a light that shines on me
+|G             |D               |C ~  ~G/B ~Am |G
+Shine on till tomorrow, let it be
+|G             |D               |Em            |Cmaj7 ~C6
+I wake up to the sound of music, Mother Mary comes to me
+|G             |D               |C ~  ~G/B ~Am |G
+Speaking words of wisdom, let it be
+#CHORUS 5 -------------------------------
+|Em            |G/D             |C             |G
+Let it be, let it be,  let it be, let it be
+|G             |D               |C ~  ~G/B ~Am |G
+Whisper words of wisdom, let it be
+#OUTRO ----------------------------------
+|C ~  ~G/B ~Am |G ~  ~F  ~ C/E  |D     ~C      |G

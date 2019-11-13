@@ -1,0 +1,48 @@
+TITLE:Then You Can Tell Me Goodbye,DUR:123,BPM:80,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+#INTRO ----------------------------------
+* denotes extra 4 count bar
+|C          ~Am          |F     ~G7
+-
+#VERSE 1 --------------------------------
+|C          ~Am          |F     ~G7
+Kiss me each morning for a million years
+|C          ~Am              |F   ~G7
+Hold me each evening by your side
+|C            ~Am         |F     ~G7
+Tell me you'll love me for a million years
+|C              ~F        |C         ~F
+Then if it don't work out  If it don't work out
+|C          ~F          |Dm      ~G7
+Then you can tell me goodbye
+#VERSE 2 --------------------------------
+|C          ~Am          |F     ~G7
+Sweeten my coffee with a morning kiss
+|C          ~Am              |F   ~G7
+Soften my dreams with your sigh
+|C            ~Am         |F     ~G7
+Tell me you'll love me for a million years
+|C              ~F        |C         ~F
+Then if it don't work out If it don't work out
+|C          ~F          |Dm      ~G7
+Then you can tell me goodbye
+#BRIDGE ---------------------------------
+|F                      |C
+If you must go, I won't grieve
+|D7                   |Dm          ~G7    *|G7
+If you wait a lifetime   before you leave
+#VERSE 3 --------------------------------
+|C          ~Am          |F     ~G7
+But if you must go I won't tell you no
+|C          ~Am              |F   ~G7
+Just so we can say we tried
+|C            ~Am         |F     ~G7
+Tell me you'll love me for a million years
+|C              ~F        |C         ~F
+ Then if it don't work out If it don't work out
+|C          ~F          |Dm      ~G7
+ Then you can tell me goodbye
+#OUTRO ----------------------------------
+|C              ~F        |C         ~F
+ Then if it don't work out If it don't work out
+|C          ~F          |Dm      ~G7
+ Then you can tell me goodbye

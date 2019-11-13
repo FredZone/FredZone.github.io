@@ -1,0 +1,52 @@
+TITLE:The Lesson,DUR:,BPM:125,BEATS:4,KEY:A,QUAL:Raw,ARTIST:Pat Valentine,GENRE:Country,STYLE:Ballad,HITyear:
+#INTRO ----------------------------------
+|A                 |A           |A                 |A 
+#VERSE 1 --------------------------------
+|A                 F#m          |D               |E
+He learned a lesson that was hard for him to see
+|A                 F#m          |D               |E
+There's all kink of folks some nice as they can be
+|A                 F#m          |D               |E
+Then he found out there's others that are just plain mean
+|A                 F#m          |D               |E
+He learned be careful cause some ain't what they seem.
+#CHORUS 1 -------------------------------
+|D                |E            |A               |A
+This world is big full of strife and filled with mystery
+|D                |E            |A               |A
+The dangers are still out there but you can let them be
+|D                |E            |A               |A
+Keep your head up be alert don't be an effigy
+|D                |E            |A               |A
+While you're at it try to be nice even to that SOB
+#VERSE 2 --------------------------------
+|A                          |F#m        |D             |E
+The lessons he learned took him a while fifty years or so
+|A               |F#m       |D         |E
+Not sure why his uptake was oh so very slow
+|A           |F#m          |D        |E
+Life has its ups and downs that's reality
+|A                       |F#m           |D                 |E
+The hand he got dealt was in the cards but not his cup of tea
+#CHORUS 2 -------------------------------
+|D                |E            |A               |A
+He needed a way to get removed from his geography
+|D                |E            |A               |A
+Travlin was expensive so lacked practicality
+|D                 |E        |A
+He put some miles behind him workin his specialty
+|D                |E          |A                     |A  
+Two long years it took him to get where he wanted to be
+|D                |E               |A             |A  
+Now he rests and settles down to a life of luxury
+#OUTRO ----------------------------------
+|D                        |E           |F#m         |F#m
+The lesson he learned was don't try so hard  
+|D                |E               |A               |A
+Keep it in you mind  Think about it once a day
+|D               |E            |A               |A
+Live life to the fullest good things will come your way
+|D                |E      |F#m         |F#m
+And that is the lesson he learned
+|D                |E      |A        |A
+And that is the lesson he learned

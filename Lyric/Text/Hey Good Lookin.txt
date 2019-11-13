@@ -1,0 +1,96 @@
+TITLE:Hey Good Lookin,DUR:107,BPM:170,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Hank Williams,GENRE:Country,STYLE:Up Tempo,HITyear:1951
+$$TCL1 <X14>PR 1</X14> <X14>C M2</X14> <X14>PV 1</X14> <X1>(V3)</X1> <X16>H ON</X16>
+#INTRO ----------------------------------
+|N                    |N
+-
+|C                    |%
+-
+|C                    |%
+-
+#CHORUS 1 -------------------------------
+|C                    |%
+Hey,     Hey,   Good Lookin',
+|%                    |%
+whatcha got  cookin'
+|D7                   |G7
+How's about cookin'  somethin' up with
+|C                    |G7
+me ...<!--#V4 ON#-->
+#VERSE 1 --------------------------------
+|C                    |%
+Hey,      sweet   baby,
+|C                    |%
+don't  you   think maybe
+|D7                  |G7
+We could find us a  brand  new reci-
+|C                   |C7
+pe. ... <!--#H OFF#-->               I got a
+#BREAK 1 --------------------------------
+|F                   |C
+Hot rod Ford and a  two dollar bill   And
+|F                   |C
+I know a spot right  over the hill    There's
+|F                   |C
+Soda pop and  the   dancin's free  So if you
+|D7                  |G7
+Wanna have  fun  come a- long with me.<!--#H ON#-->
+#CHORUS 2 -------------------------------
+|C                    |%
+Hey,     Hey,   Good Lookin',
+|%                    |%
+whatcha got  cookin'
+|D7                   |G7
+How's about cookin'  somethin' up with
+|C                    |G7
+me ...<!--#H OFF#-->
+#VERSE 2 --------------------------------
+|C                    |%
+I'm free and ready so
+|C                    |%
+we can go steady
+|D7                  |G7
+How's about savin' all your time for
+|C                   |G
+me
+#VERSE 3 --------------------------------
+|C                    |%
+No more lookin', I
+|C                    |%
+know I've been (*tooken)
+|D7                  |G7
+How's about keepin' steady compan-
+|C                   |C7
+y.<!--#H ON#-->
+#BREAK 2 --------------------------------
+|F                   |C
+I'm gonna throw my date book over the fence
+|F                   |C
+And find me one for five or ten cents.
+|F                   |C
+I'll keep it 'til it's covered with age
+|D7                  |G7
+'Cause I'm writin' your name down on ev'ry page.
+#CHORUS 3 -------------------------------
+|C                    |%
+Say Hey, Good Lookin',
+|%                    |%
+whatcha got cookin'
+|D7                   |G7
+How's about cookin' somethin' up...
+|D7                   |G7
+How's about cookin' somethin' up...
+|D7                   |G7
+How's about cookin' somethin' up with
+|C                    |C
+me.
+|C                    |C
+-
+@@Williams song is a variation of one written by Cole Porter in 1942.
+irealb://Hey%20Good%20Lookin%3DComposer%20Unknown%3D%3DRock%20150%3DG%3D%3D1r34LbKcu7Xx%7CQyXyQ%7CxXx%7CQyXG44T%2CS%2CA%7B*ZQyXx%7CQyXx%7CQyXyQ%7CxXG44T%5BG%7CQyXXyQ%7CDG%7CQyXCB*%5B%5DQyX72GN%7DQyXx1NZLGZL7XyQ%7CC7A%7CQy%2C7A%7CQXyQ%7CGyXx%7CQyXx%7CQyX%2CGZ%5BQyX7D%7CQyXA%7CQyXQ%7CxXyC%7CQyXXyQ%7CD7XyQ%7CGXyQ%7C%3CD.S.%20al%20Fine%3EG%2CXyQZ%5BG%20D%2Cf%3CFine%3E%20Z%20%3DPop-Rock%3D150%3D1
+https://www.youtube.com/watch?v=r9ajBHfNS54|Karaoke (E) The Mavericks
+https://www.youtube.com/watch?v=bjCoKslQOEs|Hank Williams Live
+https://www.youtube.com/watch?v=8J940BlRkMQ|Jimmy Buffett
+https://www.youtube.com/watch?v=idvlQfIAc1c|Carl Perkins
+https://www.youtube.com/watch?v=TW8oSdt_aFA|Leon Russell
+https://www.youtube.com/watch?v=QObWRqp4z5c|Linda Ronstadt and the Nitty Gritty Dirt Band Live
+https://www.youtube.com/watch?v=6ssnPoETtiA|Linda Ronstadt and the Nitty Gritty Dirt Band Studio
