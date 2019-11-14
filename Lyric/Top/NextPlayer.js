@@ -2137,9 +2137,9 @@ function setCustom(VAR, val, action) {
         statusMsg("Simple Change of " + VAR + " to " + val + "\n======================================", 0);
     }
     if (val === true) {
-        icon = "ON.png";
+        icon = "on.png";
     } else {
-        icon = "OFF.png"
+        icon = "off.png"
     }
     window[VAR] = val;
     document.getElementById("img" + VAR).src = "../../Icons/" + icon;
@@ -2152,13 +2152,13 @@ function setCustom(VAR, val, action) {
             statusMsg(VAR + ": forcing BIG chords to true " + action, 0)
             BIGchords = true
             document.getElementById('imgBREAKlines').style.width = '9%';
-            document.getElementById('imgBREAKlines').src = "../../Icons/ON.png";
+            document.getElementById('imgBREAKlines').src = "../../Icons/on.png";
             document.getElementById('breakLines').style.width = '9%';
             document.getElementById('breakLines').innerHTML = 'CHR/<br>Line';
             document.getElementById('bcp').innerHTML = 'Size<br>Chords';
             document.getElementById('bcp').style.width = '9%';
             document.getElementById('imgBIGchords').style.width = '9%';
-            document.getElementById('imgBIGchords').src = "../../Icons/ON.png";
+            document.getElementById('imgBIGchords').src = "../../Icons/on.png";
         }
         vis('bigChordPct', 'visible');
     }
@@ -2172,7 +2172,7 @@ function setCustom(VAR, val, action) {
         if (BIGchords === true) {
             document.getElementById('imgBIGchords').style.width = '9%';
             document.getElementById('bcp').innerHTML = 'Size<br>Chords';
-            document.getElementById('imgBIGchords').src = "../../Icons/ON.png";
+            document.getElementById('imgBIGchords').src = "../../Icons/on.png";
             document.getElementById('bcp').style.width = '9%';
         } else {
             bcPct(1);
@@ -2183,36 +2183,36 @@ function setCustom(VAR, val, action) {
             BREAKlines = false; //only works with chords spread
             document.getElementById('breakLines').innerHTML = 'Characters<br>Per Line';
             document.getElementById('breakLines').style.width = '18%';
-            document.getElementById('imgBREAKlines').src = "../../Icons/OFF.png";
+            document.getElementById('imgBREAKlines').src = "../../Icons/off.png";
             document.getElementById('imgBREAKlines').style.width = '18%';
         }
     }
     if (VAR == 'SETnotes' & SETnotes === true) {
-        document.getElementById("imgPOPnotes").src = "../../Icons/OFF.png";
+        document.getElementById("imgPOPnotes").src = "../../Icons/off.png";
         POPnotes = false;
-        document.getElementById("imgTECHnotes").src = "../../Icons/OFF.png";
+        document.getElementById("imgTECHnotes").src = "../../Icons/off.png";
         TECHnotes = false;
     }
     if (VAR == 'POPnotes' & POPnotes === true) {
-        document.getElementById("imgSETnotes").src = "../../Icons/OFF.png";
+        document.getElementById("imgSETnotes").src = "../../Icons/off.png";
         SETnotes = false;
-        document.getElementById("imgTECHnotes").src = "../../Icons/OFF.png";
+        document.getElementById("imgTECHnotes").src = "../../Icons/off.png";
         TECHnotes = false;
     }
     if (VAR == 'TECHnotes' & TECHnotes === true) {
-        document.getElementById("imgSETnotes").src = "../../Icons/OFF.png";
+        document.getElementById("imgSETnotes").src = "../../Icons/off.png";
         SETnotes = false;
-        document.getElementById("imgPOPnotes").src = "../../Icons/OFF.png";
+        document.getElementById("imgPOPnotes").src = "../../Icons/off.png";
         POPnotes = false;
     }
     if (VAR == 'LINEnum' & LINEnum === true) {
         window[LINEtime] = false;
-        document.getElementById("imgLINEtime").src = "../../Icons/OFF.png";
+        document.getElementById("imgLINEtime").src = "../../Icons/off.png";
         LINEtime = false;
     }
     if (VAR == 'LINEtime' & LINEtime === true) {
         window[LINEnum] = false;
-        document.getElementById("imgLINEnum").src = "../../Icons/OFF.png";
+        document.getElementById("imgLINEnum").src = "../../Icons/off.png";
         LINEnum = false;
     }
     if (VAR == 'FULLscreen') {
@@ -2231,20 +2231,20 @@ function setCustom(VAR, val, action) {
     }
     if (VAR == 'TEXT') {
         if (TEXT === true) {
-            document.getElementById("imgTEXT").src = "../../Icons/On.png"
+            document.getElementById("imgTEXT").src = "../../Icons/on.png"
         } else {
-            document.getElementById("imgTEXT").src = "../../Icons/OFF.png"
+            document.getElementById("imgTEXT").src = "../../Icons/off.png"
         }
     }
     //if (VAR == 'CLICKER') {//USELESS removed
     //    if (CLICKER === true) {
-    //        document.getElementById("imgCOUNTin").src = "../../Icons/On.png"
+    //        document.getElementById("imgCOUNTin").src = "../../Icons/on.png"
     //        COUNTin = true
     //    }
     //}
     if (VAR == 'METRO') {
         if (METRO===true){
-            document.getElementById('imgBARsync').src = '../../Icons/On.png';
+            document.getElementById('imgBARsync').src = '../../Icons/on.png';
             aB.play();     
             aC.play();
             BARsync=true;
@@ -2252,18 +2252,18 @@ function setCustom(VAR, val, action) {
     }
     if (VAR == 'BARsync') {
         if (BARsync===false){
-            document.getElementById('imgMETRO').src = '../../Icons/OFF.png';
+            document.getElementById('imgMETRO').src = '../../Icons/off.png';
             METRO=false;
         }
     }
     //if (VAR == 'COUNTin') {USELESS click removed
     //    if (COUNTin === false) {
-    //        document.getElementById("imgCLICKER").src = "../../Icons/OFF.png"
+    //        document.getElementById("imgCLICKER").src = "../../Icons/off.png"
     //        CLICKER = false
     //    }
     //}
     if (VAR == 'TBD') {
-        if (TBD==false){document.getElementById("imgTBD").src = "../../Icons/OFF.png"}
+        if (TBD==false){document.getElementById("imgTBD").src = "../../Icons/off.png"}
     }
     if (action === 'presets') {//this is the return point to prevent excessive arrConverstions
         if (PRESETno >= parseInt(ARRpresets.length - 1, 10)) {
@@ -2299,8 +2299,8 @@ function tgl(vrbl,val){
         if(window[vrbl]===true){window[vrbl]=false;}
         else{window[vrbl]=true;}}
     else{window[vrbl]=val;}
-    if(window[vrbl]===true){document.getElementById("img"+vrbl).src ="../../Icons/On.png";}
-    else{document.getElementById("img"+vrbl).src ="../../Icons/OFF.png";}}
+    if(window[vrbl]===true){document.getElementById("img"+vrbl).src ="../../Icons/on.png";}
+    else{document.getElementById("img"+vrbl).src ="../../Icons/off.png";}}
 
 function togl(vrbl){
     tgl(vrbl);
