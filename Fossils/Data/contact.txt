@@ -1,0 +1,4 @@
+<div style="font-size:4vw">
+<x1>Email us at....</x1><br>fkaparich@gmail.com
+<br><br><x1>On the WEB at</x1><br>https://FredZone/Lyric/BarnStorm.updog.co/
+</div>

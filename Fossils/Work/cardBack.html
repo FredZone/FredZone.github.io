@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+<link rel="icon" href="transPUS.png" type="image/png">
+<meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!-- prevents zooming on mobile devices....number-based width or "device-width"-->
+<title id = 'title'>Card - Back</title>
+    <style type="text/css">
+        Body
+            {
+                line-height:110%;
+                font-size:1.2vw;
+
+                font-family:Courrier New;
+                font-weight: bold;
+                text-align:center;
+                vertical-align:middle;
+                padding:0px;
+                margin:0px;                
+            }
+        X2{color:blue;}    
+    </style>
+    </head>
+
+<body>
+    <div id='pg' style='position:absolute;width:1400px;height:1600px;'>
+        <div id='card' style="position:absolute;left:0%;top:0%; width:50%; height:25%;border:solid; border-color:lightgrey">
+            <img id='tit' src=textLogo.png style="position:absolute; width:50%; left:25%; top:5%;">
+            <div style="position:absolute;font-size:30px; width:100%; bottom:15%;">
+            </div>        
+            <img src='strat.png' style="position:absolute;  height:56%; top:20%; left:5%;">
+            <div style="position:absolute; font-size:30px; line-height:130%; width:75%; height:50%; top:22%; left:12%;">
+               Contact...<br><br>______________________________<br><br>______________________________<br><br>______________________________
+               </div>  
+            <img src='mic.png' style="position:absolute;  height:60%; top:20%; right:5%;">
+            </div>
+    
+        <div  id= 'card2' style="position:absolute;left:50%;top:0%; width:50%; height:25%; border:solid; border-color:transparent">
+        </div>    
+    
+        <div  id= 'card3' style="position:absolute;left:0%;top:25%; width:50%; height:25%; border:solid; border-color:transparent">
+        </div>  
+        
+        <div  id= 'card4' style="position:absolute;left:50%;top:25%; width:50%; height:25%; border-style:solid; border-color:transparent">
+        </div>  
+    
+        <div  id= 'card5' style="position:absolute;left:0%;top:50%; width:50%; height:25%; border-style:solid; border-color:transparent">
+        </div>
+        
+        <div  id= 'card6' style="position:absolute;left:50%;top:50%; width:50%; height:25%; border-style:solid; border-color:transparent">
+        </div>    
+        
+        <div  id= 'card7' style="position:absolute;left:0%;top:75%; width:50%; height:25%; border-style:solid; border-color:transparent">
+        </div>    
+        
+        <div  id= 'card8' style="position:absolute;left:50%;top:75%; width:50%; height:25%; border-style:solid; border-color:transparent">
+        </div>    
+    
+        <div  id= 'card9' style="position:absolute;left:0%;top:100%; width:50%; height:25%; border-style:solid; border-color:transparent">
+        </div>    
+        
+        <div  id= 'card0' style="position:absolute;left:50%;top:100%; width:50%; height:25%; border-style:solid; border-color:transparent">
+        </div>    
+
+    </div>
+    
+    
+<script>
+window.onload = function(){
+    str=document.getElementById('card').innerHTML;
+    document.getElementById('card2').innerHTML=str;
+    document.getElementById('card3').innerHTML=str;
+    document.getElementById('card4').innerHTML=str;
+    document.getElementById('card5').innerHTML=str;
+    document.getElementById('card6').innerHTML=str;
+    document.getElementById('card7').innerHTML=str;
+    document.getElementById('card8').innerHTML=str;
+    document.getElementById('card9').innerHTML=str;
+    document.getElementById('card0').innerHTML=str;
+    };   
+</script>
+
+</body></html>
