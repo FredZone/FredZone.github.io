@@ -677,7 +677,7 @@ function selectTune(titl) { //alert('selectTune('+titl+')');//^ Entry Point usin
 
 function loadServerTitle() { //alert('loadServerTitle()');
     statusMsg("Loading "+TITLE);
-    var path = "../text/" + TITLE + ".txt"; //^ get the text file
+    var path = "../Text/" + TITLE + ".txt"; //^ get the text file
     var request = new XMLHttpRequest();
     var content;
     var arr;
