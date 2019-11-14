@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+    <link rel="icon" href="data/LogoIcon.png" type="image/png">
+    <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!-- prevents zooming on mobile devices....number-based width or "device-width"-->
+    <title id = 'title'>---</title>
+    <style type="text/css">
+        Body{
+            line-height:110%;
+            font-size:5vw;
+            color:white;
+            font-family:Courrier New;
+            font-weight: bold;
+            text-align:left;
+            vertical-align:middle;
+            padding:0px;
+            margin:0px;
+            background-color:#C6875E;
+            }
+        
+        input{
+            font-size:2vw;
+            width:50%;
+            }
+        select{
+            font-size:2vw;
+            width:50%;
+            }
+        button{
+            font-size:2vw;
+            width:25%;
+            }
+        mark { 
+            background-color: lightgrey;
+            color: black;
+            }
+        x1{font-size:4vw; color:blue;}
+        x2{font-size:2vw; line-height:100%;}
+        x3{font-size:2vw;color:blue; text-align:center; line-height:110%}
+        x4{font-size:2vw;color:grey; text-align:center;line-height:110%}
+        x5{font-size:4vw; color:blue;text-align:center}
+        x6{font-size:4vw; color:yellow;text-align:center}
+        x7{color:white}
+        </style>
+    </head>
+
+<body>
+    <img id='bground' src= 'data/background.png' alt="" style="position:fixed; width:100%; top:0%;">
+    <img id='ico'onclick="pHome(2)" src= 'data/LogoIcon.png' alt="x" style="border:none;position:fixed; overflow:hidden; top:0%; right:0%; height:10%;z-index:10000;">   
+    
+    <div id='name' style="position:fixed;top:2%;left:20%;">FRED and The FOSSILS</div>
+    <!--
+    <img id='name' src=data/LogoText.png alt=... style="position:fixed; width:60%; top:0%;left:20%;height:12%;">
+    -->
+    <div id="content" style="display:block;position:fixed;border:none; visibility:visible; top:15%; left:25%; height:70%; width:75%; overflow-y:auto; overflow-x:hidden; color: white; background-color:transparent;border-color:black; z-index:10;font-size:1.5vw;">
+        </div>
+
+    <div id='pic' style="position:fixed; overflow:hidden; top:15%; left:25%; height:70%; width:70%; visibility: hidden;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        background-color:transparent;
+        border:solid;
+        border-color:transparent;">
+        </div>
+<!--clearTimeout(TO),document.getElementById('content').innerHTML='',-->
+    <div id ='index' style="display:block; visibility:visible;font-size:4vw; position:fixed;background-color:transparent; color:white; left:0%; top:10%;width:25%; height:80%; z-index:5; text-align:center">
+        <div id='h' style="position:absolute;color:yellow; top:0%;" onclick="updateMenu('h'),pHome(1)">Home</div>
+        <div id='c' style="position:absolute; top:12%;visibility:visible" onclick="updateMenu('c'),contact()">Contact Us </div>
+        <div id='a' style="position:absolute; top:24%;visibility:visible" onclick="updateMenu('a'),narrative(0)">About Me&nbsp;<img alt='...' id='spinA' src='resetSpinner.gif' style ='position:absolute;height:60%;top:20%;visibility:hidden;'></div>
+        <div id='l' style="position:absolute; top:36%;visibility:visible" onclick="updateMenu('l'),dispFile('data/playlist.txt',4,'left','white')">Play List</div>
+        <div id='u' style="position:absolute; top:48%;visibility:visible" onclick="updateMenu('u'),dispFile('data/Schedule.txt',4,'left','white');">Schedule</div>
+        <div id='g' style="position:absolute; top:60%;visibility:hidden" onclick="updateMenu('g'),J=1,picShow();">Gallery&nbsp;&nbsp;<img alt='...' id='spinG' src='resetSpinner.gif' style ='position:absolute;height:60%;top:20%;visibility:hidden;'></div>
+        <div id='s' style="position:absolute; top:72%;visibility:hidden" onclick="updateMenu('s'),dispFile('data/Listen.txt',6,'left','white')">Listen</div>
+        </div>
+        
+    <div id ='index2' style="display:none;background-color:transparent;font-size:4vw; visibility:visible;position:fixed; color:white; left:0%; top:10%;width:25%; height:80%; text-align:center;z-index:200">
+        <div id='h2' style="position:absolute; top:0%;" onclick="updateMenu('h'),pHome(1)">Home...  </div>
+        <div id='v' style="position:absolute; top:15%;" onclick="updateMenu('v'),dispFile('data/Venues.txt',4,'center','white')">Venues   </div>
+        <div id='ca' style="position:absolute; top:30%;" onclick="updateMenu('ca'),dispFile('card.txt',4,'center','white')">Bus Card</div>
+        <div id='f' style="position:absolute; top:45%;" onclick="updateMenu('f'),crap();">Flyer</div>
+        <div id='x' style="position:absolute; top:60%;" onclick="updateMenu('x'),dispFile('data/ListenInwork.txt',6,'left','white');">Inwork Mp3s</div>
+        </div>
+
+    <div id='song' style="position:fixed;visibility:hidden;color:white;font-size:3vw; width:100%; top:90%; height:10%; background-color:black; z-index:20;">
+        <div id='pl' style= "position:absolute; width:45%; top:0%;">Select a Track from 'Listen'</div>
+        <audio id="audio" controls=true preload = "metadata" style="opacity:1; position:absolute; height:100%; top :0%; width:55%; left:45%; z-index:980" source src="x" type="audio/mpeg" ></audio>  
+        </div>
+    
+    <iframe id='macSong' style="position:fixed;visibility:hidden;color:white;font-size:3vw; width:100%; top:90%; height:10%; background-color:black; z-index:20;">
+        </iframe>
+    
+<script type="text/javascript" SRC = "A.js"></script>
+<script type="text/javascript" SRC = "data/B.js"></script>
+<script type="text/javascript">
+    window.onload = function(){
+        WINDht = window.innerHeight;
+        WINDwt = window.innerWidth;
+        RAT =parseFloat(WINDht/WINDwt);
+        init();
+        };
+        </script>   
+
+    </body>
+</html>
+    
