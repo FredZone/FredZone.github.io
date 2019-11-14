@@ -2581,7 +2581,7 @@ function lyricLineCount(){
 
 function getRevisonHistory(){//^ Selects your set by its name
     var request = new XMLHttpRequest();
-    path ="player.txt";
+    path ="Player.txt";
     request.open("GET", path, false);
     request.send(null);
     return(request.responseText); }
