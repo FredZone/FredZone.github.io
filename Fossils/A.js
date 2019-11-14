@@ -234,7 +234,7 @@ function pHome(a){
         }else{
         if (a==2){
             if (LOCKED===true){
-                var z=readFile('data/'+prompt('PASSWORD?')+'.txt');
+                var z=readFile('Data/'+prompt('PASSWORD?')+'.txt');
                 if (z=='OK') {
                     LOCKED=false;
                     }
