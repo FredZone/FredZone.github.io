@@ -1,0 +1,202 @@
+<!DOCTYPE html><html>
+<head>
+    <Title>New Toons...</title>
+    <link rel="icon" href="../../Icons/comix.png" type="image/png">
+    <style type="text/css">
+        Body{
+            font-size : 1.5vw;
+            font-family:Courrier New;
+            font-weight:bold;
+            line-height:110%;
+            text-align:left;
+            background-color:lightgrey;
+            color:blue;}
+        pre{display: block;
+            font-family: monospace;
+            white-space: pre;
+            margin: 0 0;} 
+        
+        button{
+        position:relative;
+        width:85%;
+        left:6%;
+        text-align: left}
+        
+        X1{color:red;}
+        X2{color:blue;}
+        </style>
+    </head>
+<body>
+        <img  id="thatsAllFolks" src="Icons/thatsAllFolks.png" style="position:absolute;display:none; height:30%; right:30%; top:30%;">
+
+<a id="msg" title="Message Box" style= "position:fixed; line-height:120%; text-align:center; vertical-align:middle; color:red; background-color:transparent; color:red; font-size: 2vw; height:6%; left:0%; top:0%; width:100%; z-index:5505;overflow:hidden">Loading HTML...</a>
+<div id= 'hdr' style="position:fixed; line-height:120%; text-align:left; vertical-align:middle; height:6%; left:0%; top:6%; width:100%;overflow:hidden">COMICS</div><br>
+    <div id='buttons' style="position:fixed; line-height:120%; text-align:left; vertical-align:middle;left:0%; top:12%; width:100%;overflow:hidden">
+        <button id ='gCFunny' onclick="loadA(ARRgF,'g',' Go Comix (Funny) ',this.id);">Go Comix Funny (Next 5)</button><br>
+        <button id ='gCPolitical' onclick="loadA(ARRgP,'g',' Go Comix (Political) ',this.id);">Go Comix Political (Next 5)</button><br>
+        <button id="arcamax" onclick="loadA(ARRa,'a',' Arcamax ',this.id);">ArcaMax (Next 5)</button><br>
+        <button id="komic" onclick="loadA(ARRk,'k',' Komic Kingdom ',this.id);">Komic Kindom (Next 5)</button><br>
+        <select onchange="link(this.value)" style="position:relative;left:8%;"><option value="http://www.uclick.com/client/apf/snu/">ONE OFFS...</option><option value="http://www.uclick.com/client/apf/snu/">Soup to Nutz</option>
+        <option value="http://www.uclick.com/client/apf/gw/">Grizwells</option>
+        </select><br>
+        <select id='selectorGF' onchange="link('http://www.gocomics.com/'+ARRgF[this.value]+'/'+CDATE)" style="position:relative;left:8%;"><option>Funny</option></select><br>
+        <select id='selectorGP' onchange="link('http://www.gocomics.com/'+ARRgP[this.value]+'/'+CDATE)" style="position:relative;left:8%;"><option>Editorial</option></select><br>
+        <select id='selectorA' onchange="link('https://www.arcamax.com/thefunnies/'+ARRa[this.value]+'/')" style="position:relative;left:8%;"><option>Editorial</option></select><br>
+        <!--
+        https://assets.amuniversal.com/f03a8260817e01364d19005056a9545d -->
+        
+        <select id='selectorGTest' onchange="alert('a');fileDownload4('http://www.gocomics.com/'+ARRgF[this.value]+'/'+CDATE),'alert(\'text\')'" style="position:relative;left:8%;"><option>Funny</option></select><br>
+        <button id='images1' onclick="loadImage()">Test 1</button>    
+        <button id='images2' onclick="getImage()">Test 2</button>
+         <button id='images3' onclick="httpGet('http://www.gocomics.com/luann/'+CDATE)">Test 3</button> 
+    </div>
+
+<script type="text/javascript" src="lyric/top/GlobalRoutes.js"></script>
+<script language:javascript>
+
+//<meta property="og:image"  look for this
+var TESTfile='';
+var WINno=0;
+var POS=0
+var CNT=0;
+var ARRgF="shoe,rudypark,herman,candorville,luann,pickles,monty,freshlysqueezed,pearlsbeforeswine,baldo,theboondocks,reallifeadventures,arloandjanis,frank-and-ernest,thebornloser,calvinandhobbes,cornered,doonesbury,mustard-and-baloney,grand-avenue,nonsequitur,offthemark,soup-to-nutz,speedbump".split(',');
+var ARRgP="scottstantis,jeffstahler,jen-sorensen,drewsheneman,robrogers,marshallramsey,jackohman,jimmorin,garymarkstein,mikeluckovich,chanlowe,kevinkallaugher,clayjones,joe-heller,walthandelsman,tim-eagan,mattdavies,stuartcarlson,chrisbritt,stevebreen,stevebenson,claybennett,darrin-bell,nickanderson,johndeering,brian-mcfadden,ted-rall".split(',');    
+var ARRa="mallardfillmore,zits,mothergooseandgrimm,babyblues,dennisthemenace,cathy,dogsofckennel,getfuzzy".split(',');
+var ARRk="sally-forth,funky-winkerbean,blondie,beetle-bailey-1,family-circus,marvin,mike-smith,brian-duffy,ed-gamble,jimmy-margulies,lee-judge,mike-peters".split(',');
+var CDATE=""
+var ARRbutton="gCFunny,gCPolitical,arcamax,komic".split(',');
+var BUTTON;
+var OLDbut;//previous button
+
+
+var LINKline="og:image\" content=\"https://assets.amuniversal.com/"
+var LINKtop="https://assets.amuniversal.com/"
+
+
+
+
+window.onload = function(){
+    alert (LINKtop)
+    statusMsg("Loading Javascript...")
+    var d = new Date();
+    var mo=parseInt(d.getMonth(),10)+1;
+    if (mo<10){mo ="0"+mo;}
+    var da=d.getDate();
+    if (da<10){da ="0"+da;}
+    var nd=d.getFullYear()+"/"+mo+"/"+da;
+    CDATE=nd;
+    document.getElementById('hdr').innerHTML="COMICS for "+CDATE;
+    WINno=0;
+    selectorBuild('selectorGF',ARRgF,0)
+    selectorBuild('selectorGP',ARRgP,0)
+    selectorBuild('selectorA',ARRa,0)
+    selectorBuild('selectorGTest',ARRgF,0)//new stuff
+    statusMsg("Ready...");}
+
+function getToonPath(text){
+alert('Going...')
+alert(text)    
+}
+
+function colorButton(id){
+    //alert("BUTTON:"+id)
+    var col
+    if (OLDbut!=id) {OLDbut=id;POS=0}
+    for  (x=0;x<4;x++){//alert(ARRbutton[x])
+        if (ARRbutton[x]==id) {col='red';}else{col='black';}
+        document.getElementById(ARRbutton[x]).style.color=col;};}
+
+
+function selectorBuild(id,arr,sel){//builds a selector 
+  statusMsg(id+": "+arr[1])
+  if (sel===undefined|sel===null|sel==='') {sel=0;}
+  var i=0;var str='';
+  while (i<arr.length){
+    str=str+"<option value="+i+">"+arr[i]+"</option>";
+    i=i+1;}
+    //alert(str)
+  document.getElementById(id).innerHTML=str;
+  document.getElementById(id).selectedIndex=sel;
+  statusMsg("Selector "+id+" Built, "+sel+" Selected")}
+
+function httpGet(theUrl)
+{   alert(theUrl)
+    if (window.XMLHttpRequest)
+    {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp=new XMLHttpRequest();
+    }
+    else
+    {// code for IE6, IE5
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange=function()
+    {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200)
+        {
+            createDiv(xmlhttp.responseText);
+        }
+    }
+    xmlhttp.open("GET", theUrl, false);
+    xmlhttp.send();    
+}
+
+
+
+function getImage(){
+    //var arr=
+    //var path="http://www.gocomics.com/"+arr[1]+"/"+CDATE;
+    var path="http://www.gocomics.com/luann/"+CDATE;
+    alert(path)
+    Comic=window.open(path,"Comic1");
+    fileDownload3(path,"alert(text)");   
+    }
+
+
+
+
+function loadImage(){
+    linkCode = "f41a88b098130136553c005056a9545d"
+    var lnk = LINKtop+linkCode
+    
+}
+
+
+
+function loadA(arr,typ,desc,id){
+    statusMsg("Downloading your stuff...",'green')
+    BUTTON=id;
+    colorButton(id);
+    CNT=arr.length
+    dis('thatsAllFolks','none')
+    var lnk;
+    for (i=1;i<6;i++){
+        WINno=POS;
+        if (WINno>=CNT) {
+            statusMsg("Loaded "+parseInt(POS,10)+" of "+ CNT+"  ...Thats All Folks...")
+            dis('thatsAllFolks','block');
+            lnk="comixNone.html";
+            POS =POS+1
+            Comic=window.open(lnk,"Comic"+i);
+            if (i==5) {POS=0;}}
+        else{            
+            if (typ=='a') {
+                lnk="https://www.arcamax.com/thefunnies/"+arr[POS]+"/";}
+            else if(typ=='g'){    //alert(lnk+" > "+i)
+                lnk="http://www.gocomics.com/"+arr[POS]+"/"+CDATE;}
+            else if(typ=='k'){    //alert(lnk+" > "+i)
+                var d =CDATE.split("/").join('-')
+                lnk="https://comicskingdom.com/"+arr[POS]+"/"+d;}
+            POS =POS+1
+            dis('thatsAllFolks','none')
+            statusMsg("Loaded "+desc+"  "+parseInt(POS,10)+" of "+ CNT);
+            Comic=window.open(lnk,"Comic"+i);};}
+    window.parent.focus();
+    ;}    
+
+    function link(toon){
+        window.open(toon,"Comic1");}
+        //window.open(toon,"TOON","menubar=1,resizable=1,width=700,height=600");}
+    
+    </script>
+
+</body></html>
