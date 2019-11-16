@@ -1,10 +1,8 @@
 //GLOBAL VARIABLES=====================================================================================================
 var J =0;
 var PICcount=7;//pictures in gallery
-var NAME='Old Fred';//band name
+var NAME='Fred and the Fossils';//band name
 var WEBSITE="fredzone.github.io/Fossils";
 var EMAIL ="fkaparich@gmail.com";
 var CALL="(254)214-9980"
-var CARDpitch="Fred<br>Old Guy & Old Music";
-var CARDback="TALK or TEXT<br>(254)214-9980";
-var NAR ="Just an Old guy...|With a guitar...|And some electronic Gear...|Playing Music...|'Cause I love it!!|END";
+var NAR ="Just a retired guy with a guitar...|Some Electronic Gear and Spare Time...|Playing Music at Care facilities in Waco|'Cause I love it!!|END";

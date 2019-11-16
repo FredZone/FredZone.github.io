@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-<link rel="icon" href="transPUS.png" type="image/png">
+<link rel="icon" href="guitarRex.png" type="image/png">
 <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!-- prevents zooming on mobile devices....number-based width or "device-width"-->
 <title id = 'title'>Cards - Front</title>
     <style type="text/css">
@@ -15,65 +15,75 @@
                 padding:0px;
                 margin:0px;                
             }
+        X1{color:red;}
         X2{color:blue;}
-        X3{opacity:30%;}
+        X3{opacity:0.3;}
+        X4{color:green;}
+        X5{opacity:0.4;}
     </style>
     </head>
 
 <body>
-    <div id='pg' style='position:absolute;width:1400px;height:1600px;'>
-        <div id='card' style="position:absolute;left:0%;top:0%; width:50%;height:25%;border:dotted;border-width:1px; border-color:lightgrey">
-            <div style="position:absolute; font-size:40px; line-height:130%; width:90%; height:20%; top:5%; left:5%;">
-               Fred <X3>(and The Fossils Virtual Band)</X3>
-               </div> 
+    <div id='pg' style='position:absolute;width:1400px;height:2000px;'>
+        <div id='card' style="position:absolute;left:0px;top:0px; width:700px;height:400px;border:dotted;border-width:1px; border-color:lightgrey">
+<!--Title-->
+            <div style="position:absolute; font-size:40px; line-height:130%; width:630px; height:80px; top:20px; left:35px;">
+               <X1>Fred <X5>(and The Fossils Virtual Band)</X5></X1>
+            </div> 
+<!--images-->            
+            <img src='folkBand.png' style="position:absolute; overflow:hidden;opacity:0.4;bottom:35px; width:260px; height:320px;left:140px;" >
+            <img src='cutout.png' style="position:absolute; overflow:hidden; height: 320px; top:64px; left:0px;" >
+            <img src='tabletFrame.jpg' style="position:absolute; overflow:hidden;opacity:1;bottom:104px; width:210px; height:140px;left:420px;" >
+    
+<!--Pitch-->       
+            <div style="position:absolute; font-size:30px; line-height:135%; width:350px; height:150px; bottom:180px; left:350px; z-index:25">
+                Songs You'll Remember
+                Songs You'll Forget
+            </div>    
 
-            <img src='folkBand.png' style="position:absolute; overflow:hidden;opacity:0.4;bottom:10%; width:40%; height:80%;left:20%;" >
-            <img src='cutout.png' style="position:absolute; overflow:hidden; height: 80%; top:18%; left:0%;" >
-            
-            <div style="position:absolute;font-size:30px; width:100%; bottom:6%;">
-            <X2>https://Fossils.updog.co/</X2>    
-            </div>        
-       
-            <div style="position:absolute; font-size:30px; line-height:135%; width:30%; height:40%; bottom:38%; left:65%;z-index:25">
-                Old Guy;<br>
-                Old Music;
-                <div>
-                    Electronic<br>
+<!--Electronic disclaimer-->       
+            <div style="position:absolute; font-size:25px; line-height:135%; width:350px; height:150px; bottom:75px; left:350px; z-index:25">
+                    <x4>Electronic<br>
                     Backup &<br>
-                    Harmony
-                </div>
+                    Harmony</x4>
+            </div>    
+<!--Web Address--> 
+            <div style="position:absolute; font-size:30px; line-height:135%; width:350px; height:50px; bottom:50px; left:350px; z-index:25">
                 On the Web at:<br>
             </div>  
-    
-        <img src='tabletFrame.jpg' style="position:absolute; overflow:hidden;opacity:1;bottom:26%; width:30%; height:34%;left:65%;" >
+          
+            <div style="position:absolute;font-size:30px; right:50px;width:500px; bottom:24px;">
+                <X2>https://fredzone.github.io/Fossils/</X2>    
+            </div>            
         
-        </div>
-    
-        <div  id= 'card2' style="position:absolute;left:50%;top:0%; width:50%; height:25%">
+        
+        </div>    
+        
+        <div  id= 'card2' style="position:absolute;left:700px;top:0px; width:700px; height:400px; border:dotted;border-width:1px; border-color:lightgrey;">
         </div>    
     
-        <div  id= 'card3' style="position:absolute;left:0%;top:25%; width:50%; height:25%">
+        <div  id= 'card3' style="position:absolute;left:0px;top:400px; width:50%; height:400px;">
         </div>  
         
-        <div  id= 'card4' style="position:absolute;left:50%;top:25%; width:50%; height:25%;border:dotted;border-width:1px; border-color:lightgrey">
+        <div  id= 'card4' style="position:absolute;left:700px; top:400px; width:50%; height:400px;">
         </div>  
     
-        <div  id= 'card5' style="position:absolute;left:0%;top:50%; width:50%; height:25%; ;border:dotted;border-width:1px; border-color:lightgrey">
+        <div  id= 'card5' style="position:absolute;left:0px;top:800px; width:50%; height:400px;">
         </div>
         
-        <div  id= 'card6' style="position:absolute;left:50%;top:50%; width:50%; height:25%">
+        <div  id= 'card6' style="position:absolute;left:700px;top:800px; width:50%; height:400px;">
         </div>    
         
-        <div  id= 'card7' style="position:absolute;left:0%;top:75%; width:50%; height:25%">
+        <div  id= 'card7' style="position:absolute;left:0px;top:1200px; width:50%; height:400px;">
         </div>    
         
-        <div  id= 'card8' style="position:absolute;left:50%;top:75%; width:50%; height:25%;border:dotted;border-width:1px; border-color:lightgrey">
+        <div  id= 'card8' style="position:absolute;left:700px;top:1200px; width:50%; height:400px;">
         </div>    
     
-        <div  id= 'card9' style="position:absolute;left:0%;top:100%; width:50%; height:25%">
+        <div  id= 'card9' style="position:absolute;left:0px;top:1600px; width:50%; height:400px;border:dotted;border-width:1px; border-color:lightgrey">
         </div>    
         
-        <div  id= 'card0' style="position:absolute;left:50%;top:100%; width:50%; height:25%;border:dotted;border-width:1px; border-color:lightgrey">
+        <div  id= 'card0' style="position:absolute;left:700px;top:1600px; width:50%; height:400px;border:dotted;border-width:1px; border-color:lightgrey">
         </div>    
 
     </div>

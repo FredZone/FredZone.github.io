@@ -1,5 +1,5 @@
-<pre>
-----MAIN LIST----
+<div style="text-align:center;line-height:140%;font-size:3vw; color:white">
+<pre><X6>MAIN LIST</X6>
 Abilene
 From Four until Late
 Sea Of Heartbreak
@@ -28,7 +28,7 @@ Break My Mind
 Fire Lake
 Teach Your Children
 Happy Trails
-----Others----
+<X6>Others</X6>
 Thats Gonna Leave A Mark
 Always on My Mind
 Cherokee Fiddle
