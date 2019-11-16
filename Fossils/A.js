@@ -11,27 +11,151 @@ var OSName="Unknown OS";
 var NAME;
 var LOCKED=true;
 var NARdisp="";
-var ARRmenu =("h/c/a/l/u/h2/ca/f/v/g/s/x").split("/");
+var ARRmenu =("ho,co,ab,sc,pl").split(",");
 var ARRnar;
 var ARRlines;
 //================================================================
-/*window.onload = function(){
+window.onload = function() {
     WINDht = window.innerHeight;
     WINDwt = window.innerWidth;
     RAT =parseFloat(WINDht/WINDwt);
-    pHome();
-    alert(document.getElementById('CustomPoster').style.visibility=='hidden');
-    if (document.getElementById('CustomPoster').style.visibility=='hidden') {update();}
+    document.getElementById('title').innerHTML=NAME;
+    document.getElementById('name').innerHTML=NAME;
+    //getOS();
+    home();
     };
-    */
-function vis(ID,style)
-    {
-        if (style===undefined)
-            {
-                if (document.getElementById(ID).style.visibility =='visible') {style='hidden';}else{style='visible';}
-            }
-        document.getElementById(ID).style.visibility =style;
+
+function home(){
+    var str ="Thanks for Visiting<br>";
+    str = str+"<X2>"+WEBSITE+"</X2>";
+    str = str+"<br>For more informtion:<br>Use the menu on the left<br>"
+    disp(str,4,'center','white');
+    //markActive('ho');
     }
+
+function contact(){
+
+    var str = "Email us at....<br>" +EMAIL;
+    str = str+"<br>----------------------<br>On the WEB at<br>"+WEBSITE;
+    str = str+"<br>----------------------<br>Call or Text<br>"+CALL;
+    str = str+"</div>";
+    disp(str,4,'center','white');
+    //markActive('co');
+    }
+
+function sched(){
+    var str= dispFile('Data/Schedule.txt',4,'left','white')
+    //markActive('sc');
+    }
+
+function dispFile(path,fnt,left,color){
+    clearTimeout(TO);
+    var str = readFile(path);
+    disp(str,4,'left','white');
+    }
+
+function readFile(path){
+    var request = new XMLHttpRequest();
+    request.open("GET", path, false);
+    request.send(null);
+    var content = request.responseText;
+    var n = content.search("404"); //* look for a 404 error from server
+    if (n >-1)//* XXX unverified through all cases of next tune
+        {  
+            content="Sorry...Server data is missing...";
+        }
+    return(content);
+    }
+
+function narrative(str) {
+    clearTimeout(TO);
+    ARRnar = str.split('|');
+    NARdisp ="";
+    nar2(0);
+}   
+    
+function nar2(n) {
+    if (n==ARRnar.length) {
+        return
+    }
+    if (ARRnar[n + 1] == "END") {
+        delay = 5000;
+    } else {
+        delay = 1500;
+    }
+    NARdisp = NARdisp + ARRnar[n] + '<br>'; //alert(NARdisp)
+    disp(NARdisp, 4, 'center', 'white');
+    TO = setTimeout(function() { //time to get the mp3 [arbitrary]{
+        n = n + 1;
+        nar2(n)
+    }, delay);
+}
+
+function vis(ID,style){
+    if (style===undefined)
+        {
+            if (document.getElementById(ID).style.visibility =='visible') {style='hidden';}else{style='visible';}
+        }
+    document.getElementById(ID).style.visibility =style;
+    }
+
+ function disp(str,vw,just,color){
+        clearTimeout(TO);
+        document.getElementById("content").scrollTop=0;
+        document.getElementById("content").innerHTML=str;
+        if (vw>0){document.getElementById('content').style.fontSize=vw+"vw";}else{vw='4vw'}
+        if (just.length>0){document.getElementById('content').style.textAlign =just;}else{just='left'}
+        if (color.length>0){document.getElementById('content').style.color =color}else{color='white'}
+        document.getElementById("content").style.visibility ='visible';
+    }
+
+function helpCard(){
+    var str="BUSINESS CARD HELP\nPrint the card set with the following Settings!";
+    str=str+"\n1)  Use an standard 8.5x 11 sheet";
+    str=str+"\n2)  Print in the Portrait Mode";
+    str=str+"\n3)  Size to 7in width & 10in high";
+    str=str+"\n4)  Set 0.75 left margin";
+    str=str+"\n5)  Set 0.75 right margin";
+    str=str+"\n6)  PRINT the front sheet";
+    str=str+"\n7)  Flip over and re-insert sheet in printer";
+    str=str+"\n  7a)  make sure top and tops align";
+    str=str+"\n8)  PRINT the Back sheet";
+    str=str+"\n9)  Cut out cards at the border";
+    alert(str);
+    }
+    
+    function pHome(){
+    clearTimeout(TO);
+    if (LOCKED===true){
+        var z=readFile('Data/'+prompt('PASSWORD?')+'.txt');
+        if (z=='OK') {
+            LOCKED=false;
+            document.getElementById('panel').style.display='block'
+            }
+        else{
+            alert('That is not the Password!');
+            return;
+            }
+        }    
+    else{
+        document.getElementById('panel').style.display='block'
+        }
+    }
+//Verified above here=====================================================================================Not fixed below here    
+/*
+function markActive(id){
+    var c;
+    var n=0;
+    for(n=0;n<ARRmenu.length;n++){
+        if (id==ARRmenu[n]){
+                document.getElementById(id).style.color='yellow'
+            }else{
+                document.getElementById(id).style.color='white'
+            }    
+        alert(id +"-"+ARRmenu[n])
+    }
+}    
+
 function customPoster(){
     //document.getElementById('think').style.display=block;
     
@@ -67,9 +191,6 @@ function customPoster(){
         ARRlines[1]="";
         ARRlines[2]="";
         }
-        
-        
-        
     if (ARRlines[4]=='none'){
         vis('sticker','hidden');
         }
@@ -100,32 +221,6 @@ function getOS(){
     if (navigator.appVersion.indexOf("X11")!=-1) OSName="UNIX";
     if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
     }
-function narrative(step){
-    clearTimeout(TO);
-    if (step===0) {
-        NARdisp='';
-        }
-    if (ARRnar[step+1]=="XXX"){
-            delay=5000;
-        }else{
-            delay=1500;
-            }
-        if (ARRnar[step]=='XXX'){
-            NARdisp='';
-            step = step+1;
-            }
-        if (ARRnar[step]=='END'|ARRnar[step]===undefined){
-            disp('');
-            updateMenu('h');
-            return;
-            }
-        NARdisp=NARdisp+ARRnar[step]+'<br>'; //alert(NARdisp)
-        disp(NARdisp,4,'center','white');
-        TO = setTimeout(function(){//time to get the mp3 [arbitrary]{
-            narrative(step+1);
-            },delay);
-        }
-
 
 
 function preFlyer(){//alert telling how to print the flyer
@@ -152,25 +247,12 @@ function HelpFlyer(){
     alert(str);
     }
 
-function HelpCard(){
-    var str="BUSINESS CARD HELP\nPrint the card set with the following Settings!";
-    str=str+"\n1)  Use an standard 8.5x 11 sheet";
-    str=str+"\n2)  Print in the Portrait Mode";
-    str=str+"\n3)  Shrink to fit or shrink to fit width";
-    str=str+"\n4)  Set 0.8 left margin";
-    str=str+"\n5)  Set 0.7 right margin";
-    str=str+"\n6)  PRINT the front sheet";
-    str=str+"\n7)  Flip over the printed sheet and re-insert in printer";
-    str=str+"\n8)  PRINT the Back sheet";
-    str=str+"\n9)  Cut out cards at the border";
-    alert(str);
-    }
+
 
 function updateMenu(id){
     var j=0;
-    //alert (ARRmenu.length)
     while(j<ARRmenu.length)
-        {
+        { alert('shit')
            clearTimeout(TO);
            if (ARRmenu[j]==id) {document.getElementById(ARRmenu[j]).style.color='yellow';}
            else{document.getElementById(ARRmenu[j]).style.color='white';}
@@ -178,14 +260,6 @@ function updateMenu(id){
            //if (id=='a'){document.getElementById('spinA').style.visibility='visible';}else{document.getElementById('spinA').style.visibility='hidden';}
            j = j+1;
         }
-    }
-
-function contact(){
-    var str = "Email us at....</x1><br>" +EMAIL;
-    str = str+"<br><x1>On the WEB at</x1><br>"+WEBSITE;
-    str = str+"<br><x1>Call or Text</x1><br>"+CALL;
-    str = str+"</div>";
-    disp(str,4,'center','white');
     }
 
 function zoom(id,start,axis,dir,time,fin){
@@ -204,8 +278,6 @@ function zoom(id,start,axis,dir,time,fin){
         }
     }
 
-
-
 function picShow(){
     var str;
     str="url('Gallery/"+J+".jpg')";
@@ -221,81 +293,21 @@ function picShow(){
         },5000);
     }     
 
-function pHome(a){
-    clearTimeout(TO);
-    if (a==1) {
-        document.getElementById('index').style.display='block';
-        document.getElementById('index2').style.display='none';
-        document.getElementById('content').style.visibility='hidden';
-        document.getElementById('spinG').style.visibility='hidden';
-        document.getElementById('spinA').style.visibility='hidden';
-        document.getElementById('pic').style.visibility='hidden';
-        updateMenu('h');
-        }else{
-        if (a==2){
-            if (LOCKED===true){
-                var z=readFile('Data/'+prompt('PASSWORD?')+'.txt');
-                if (z=='OK') {
-                    LOCKED=false;
-                    }
-                else{
-                    alert('That is not the Password!');
-                    return;
-                    }
-                }    
-            dispFile('data/Venues.txt',4,'center','white');
-            document.getElementById('index').style.display='none';
-            document.getElementById('index2').style.display='block';
-            document.getElementById('content').style.visibility='hidden';
-            //document.getElementById('content2').style.visibility='hidden';
-            document.getElementById('spinG').style.visibility='hidden';
-            document.getElementById('spinA').style.visibility='hidden';
-            document.getElementById('pic').style.visibility='hidden';
-            updateMenu('v');
-            dispFile('data/Venues.txt',4,'center','white');
-            }
-        }
-    }
-
 
 function show(nme){
     document.getElementById('pic').style.src ="../PICS/"+nme;
     }
 
-function dispFile(path,fnt,left,color){
-    clearTimeout(TO);
-    var str = readFile(path);
-    disp(str,fnt,left,color);
-    }
+
  function playTrack(){
     if (SOUND=== true){SOUND=false;}else{SOUND=true;}
     if (SOUND===true){audio.play();}else{audio.pause();}
     if (SOUND===false) {document.getElementById('spkr').src="transPlayGreen.png";}else{document.getElementById('spkr').src="transPauseRed.png";}
     }
 
- function disp(str,fnt,just,color){
-        clearTimeout(TO);
-        document.getElementById("content").scrollTop=0;
-        document.getElementById("content").innerHTML=str;
-        document.getElementById('content').style.fontSize=fnt+"vw";
-        document.getElementById('content').style.textAlign =just;
-        document.getElementById('content').style.color =color;
-        document.getElementById("content").style.visibility ='visible';
-        //document.getElementById("content2").style.visibility ='visible';
-    }
 
-function readFile(path){
-    var request = new XMLHttpRequest();
-    request.open("GET", path, false);
-    request.send(null);
-    var content = request.responseText;
-    var n = content.search("404"); //* look for a 404 error from server
-    if (n >-1)//* XXX unverified through all cases of next tune
-        {  
-            content="Sorry...Some kind of error";
-        }
-    return(content);
-    }
+
+
 
 function loadNewTrack(path,name){
     DOWNtime=2000;
@@ -390,3 +402,4 @@ function printPoster(){
     var str=document.getElementById('pLoc').value+"\n"+document.getElementById('pDate').value +"\n"+document.getElementById('pTime').value+"\n"+document.getElementById('postType').value+"\n"+document.getElementById('sign').value;
     passARR('poster.html',str,'/n',null);
     }
+*/
