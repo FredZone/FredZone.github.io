@@ -1,0 +1,12 @@
+<div style="text-align:center;line-height:140%;font-size:3vw; color:white">
+    <br><X6>Scheduled Appearances</X6><br>
+    
+<!--Put the next performance at the top of the list-->
+<!--No changes below this line================================================= -->    
+    
+    Monthly, 2nd Monday:<br>St Catherines, 3rd Floor<br>
+    =================<br>
+    Monthly, 2nd Wednesday:<br>Wesley Woods
+    
+<!--No changes below this line================================================= -->
+</div>

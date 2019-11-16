@@ -1,0 +1,35 @@
+<div style='line-height:150%; font-size:3vw;overflow:hidden'>
+<a style='color:blue'>LISTEN</a><br>
+==========================================================<br>
+<a onclick="loadNewTrack('Delta Dawn.mp3','Delta Dawn')"><img src='sound.png' style="width:6%">Delta Dawn</a><br>
+<a onclick="loadNewTrack('Only You.mp3','Only You')"><img src='sound.png' style="width:6%">Only You</a><br>
+<a onclick="loadNewTrack('Rock Me On the Water.mp3','Rock Me On the Water')"><img src='sound.png' style="width:6%">Rock Me On the Water</a><br>
+<a onclick="loadNewTrack('Seven Spanish Angels 2.mp3','Seven Spanish Angels')"><img src='sound.png' style="width:6%">Seven Spanish Angels</a><br>
+<a onclick="loadNewTrack('Ghost Riders in the Sky 2.mp3','Where did echo come from?')"><img src='sound.png' style="width:6%">Ghost Riders in the Sky</a><br>
+<a onclick="loadNewTrack('Blowing in the Wind 2.mp3','Blowing in the Wind')"><img src='sound.png' style="width:6%">Blowing in the Wind</a><br>
+<a onclick="loadNewTrack('You are My Sunshine.mp3','You are My Sunshine')"><img src='sound.png' style="width:6%">You are My Sunshine</a><br>
+==========================================================<br>
+<a onclick="loadNewTrack('Your Cheatin Heart-2.mp3','Your Cheatin Heart')"><img src='sound.png' style="width:6%">Your Cheatin Heart</a><br>
+<a onclick="loadNewTrack('House of the Rising Sun.mp3','House of the Rising Sun')"><img src='sound.png' style="width:6%">House of the Rising Sun</a><br>
+<a onclick="loadNewTrack('Wagon Wheel.mp3','Wagon Wheel')"><img src='sound.png' style="width:6%">Wagon Wheel</a><br>
+<a onclick="loadNewTrack('Hallelujah.mp3','Hallelujah')"><img src='sound.png' style="width:6%">Hallelujah</a><br>
+<a onclick="loadNewTrack('Singing the Blues.mp3','Singing the Blues')"><img src='sound.png' style="width:6%">Singing the Blues</a><br>
+<a onclick="loadNewTrack('Blue Moon.mp3','Blue Moon')"><img src='sound.png' style="width:6%">Blue Moon</a><br>
+<a onclick="loadNewTrack('Cool Water.mp3','Cool Water')"><img src='sound.png' style="width:6%">Cool Water</a><br>
+<a onclick="loadNewTrack('From Four Until Late.mp3','From Four Until Late')"><img src='sound.png' style="width:6%">From Four Until Late</a><br>
+<a onclick="loadNewTrack('Blowing in the Wind.mp3','Blowing in the Wind')"><img src='sound.png' style="width:6%">Blowing in the Wind</a><br>
+<a onclick="loadNewTrack('Dream.mp3','Dream')"><img src='sound.png' style="width:6%">Dream</a><br>
+<a onclick="loadNewTrack('This World is Not my Home.mp3','This World is Not my Home')"><img src='sound.png' style="width:6%">This World is Not my Home</a><br>
+<a onclick="loadNewTrack('I Cant Help Falling in Love With You.mp3','I Cant Help Falling in Love With You')"><img src='sound.png' style="width:6%">I Cant Help Falling in Love With You</a><br>
+<a onclick="loadNewTrack('Break My Mind.mp3','Break My Mind')"><img src='sound.png' style="width:6%">Break My Mind</a><br>
+<a onclick="loadNewTrack('Silver Wings.mp3','Silver Wings')"><img src='sound.png' style="width:6%">Silver Wings</a><br>
+<a onclick="loadNewTrack('Ghost Riders in the Sky.mp3','Ghost Riders in the Sky')"><img src='sound.png' style="width:6%">Ghost Riders in the Sky</a><br>
+<a onclick="loadNewTrack('Seven Spanish Angels.mp3','Seven Spanish Angels')"><img src='sound.png' style="width:6%">Seven Spanish Angels</a><br>
+<a onclick="loadNewTrack('Stray Cat Strut.mp3','Stray Cat Strut')"><img src='sound.png' style="width:6%">Stray Cat Strut</a><br>
+<a onclick="loadNewTrack('Heartaches by the Number.mp3','Heartaches by the Number')"><img src='sound.png' style="width:6%">Heartaches by the Number</a><br>
+<a onclick="loadNewTrack('Hey Good Lookin.mp3','Hey Good Lookin')"><img src='sound.png' style="width:6%">Hey Good Lookin</a><br>
+<a onclick="loadNewTrack('Margaritaville.mp3','Margaritaville')"><img src='sound.png' style="width:6%">Margaritaville</a><br>
+<a onclick="loadNewTrack('Blue Eyes Crying in the Rain.mp3','Blue Eyes Crying in the Rain')"><img src='sound.png' style="width:6%">Blue Eyes Crying in the Rain</a><br>
+<a onclick="loadNewTrack('I Saw the Light.mp3','I Saw the Light')"><img src='sound.png' style="width:6%">I Saw the Light</a><br>
+<a onclick="loadNewTrack('Irene Goodnight.mp3','Irene Goodnight')"><img src='sound.png' style="width:6%">Irene Goodnight</a><br>
+</div>
