@@ -1,0 +1,13 @@
+<div style='text-align:center;line-height:100%;font-size:3vw;color:white'>
+    <X6>PAST PERFORMANCES</X6>
+    <div onclick="dispFile('data/schedule.txt')" style='text-align:center;line-height:100%;font-size:2vw;'><mark>Click for Upcoming Shows...</mark></div>
+<!--Paste the LAST performance at the toop of the list from schedule.txt-->
+<!--No changes above this line================================================= -->
+    
+Finally Farm:<br> Saturday, May 27, 2017 4:00PM<br><br>
+    
+    
+    
+    
+<!--No changes below this line================================================= -->    
+    </div>
