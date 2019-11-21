@@ -1,195 +1,102 @@
 <!DOCTYPE html>
+
 <head>
-<link rel="icon" href="Data/iconFav.png" type="image/png">
-<meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!-- prevents zooming on mobile devices....number-based width or "device-width"-->
-<title id = 'title'>FOSSILS</title>
-    <style type="text/css">
-        Body
-            {
-                line-height:110%;
-                font-size:1.2vw;
-                font-family:Courrier New;
-                font-weight: bold;
-                text-align:center;
-                vertical-align:middle;
-                padding:0px;
-                margin:0px;                
-            }
-        X1{color:red;}
-        X2{color:blue;}
-        X3{opacity:0.3;}
-        X4{color:green;}
-        X5{opacity:0.4;}
+    
+<link rel="shortcut icon" type="image/png" href="Icons/fz.png">
+<title id = 'title'>Fred Zone</title>
+<style type="text/css">
+    Body
+        {
+            font-size:1.5vw;
+            color:white;
+            font-family:Courrier New;
+            font-weight: bold;
+            text-align:center;
+            vertical-align:middle;
+            border-color: black;
+            border-width:thick;
+            background-color:lightgrey;
+            padding:0px;
+            margin:0px;
+            overflow:hidden;
+            line-height: 100%;
+        }
+
+        X3{color:red;}
+        X2{color:lightgreen;}
+        X3{color:red;}
     </style>
     </head>
-
 <body>
-<!--verical map...
-   -100 main div 
-    100 crowd
-    500 targets
-    600 message
-    700 aux panels
-   1500 msg
-    main buttons close etc 5
 
-<!--LARGE background so if screen is rotated we dont loose control-->    
-<div style="position:fixed;background-color:transparent; width:100%;height:200vw;z-index:-100;overflow:visible;">
-    <img src='Data/crowdB.png'  id='crowd'  onclick="msg(this.id,'The Audience',CROWDstring,23,10,44,35,true)" style="position:absolute;left:0vw; width:100vw ;top:46vw;height:150vw;z-index:10">    
+<div style ='line-height:110%;position:fixed; font-size:3.7vw; vertical-align:middle; overflow:hidden; left:1%;width:95%; top:1%;border: groove; height:8%'>WELCOME to the F<X3>RED</X3>ZONE!</div>
+
+<div style="color:white;position:fixed;line-height:100%; left:1%; top:10%; height:40%; width:95%;font-size:1.7vw; border: groove;">
+    <div style="position:absolute;overflow:hidden;left:1%;top:1%;width:100%">MY STUFF</div>
+        <div title ="Performer" onclick ="window.open('Lyric/Top/nextplayer.html')" style='border-style:solid;vertical-align:bottom; position:absolute;left:1%; top:20%; width:9vw;height:12vw'>
+            <img src ='Icons/transVocalWhat.png' alt = '?' style='position:absolute;top:0%;left:0%; width:100%;'>
+            <div style="position:absolute;text-align: center; bottom:0%;width:100%">Performer</div>
+            </div>   
+   
+        <div title ="Fossils" onclick ="window.open('Fossils')"  style='border-style:solid;vertical-align:bottom; position:absolute;left:12%; top:20%; width:9vw;height:12vw'>
+            <img src ='Icons/cutout.png' alt = '?'  style='position:absolute;top:0%;left:0%; height:75%;'>
+            <img src ='Icons/folkBand.png' alt = '?'  style='position:absolute;top:25%;left:30%; height:50%;'>
+            <div style="position:absolute;text-align: center; bottom:0%;width:100%">The Fossils</div>
+            </div>      
     
-    <div id='pg' style="position:absolute;background-color:white;left:0%;top:0%; width:100vw; height:60vw;overflow:visible">
-    <!--<img src= 'Data/cutout.png' style="position:absolute; width: 20%; top:4%; left:3%;height:74%;z-index:500">-->
-        <img src='Data/transRingBlue.png' id="ring" onclick="document.getElementById('ring').style.display='none',document.getElementById('msg').style.display='none'" style="position:absolute;opacity:0.4; display:none;z-index:600;" >    
+        <div title ="Freds Rants" onclick ="window.open('https://zonefred.blogspot.com');"  style='border-style:solid;vertical-align:bottom; position:absolute;left:24%; top:20%; width:9vw;height:12vw'>
+            <img src ='Icons/me.png' alt = '?'  style='position:absolute;top:0%;left:0%; width:100%;'>
+            <div style="position:absolute;text-align: center; bottom:0%;width:100%">RANTS</div>
+            </div>     
         
-        <div id="panel" style="position:absolute;line-height:130%;font-size:7vw;display:none;border-style:ridge;width:100vw;top:0%;height:50vw;z-index:700;background-color:lightgrey;">
-            PRINTING PANEL <img id='ico' onclick="document.getElementById('panel').style.display='none'" src='Data/iconSite.png' alt="x" style="border:none;position:fixed; overflow:hidden; top:0%; right:0%; height:10%;">
-            <img src= 'Data/cutout.png' style="position:absolute; width: 20vw; top:4vw; left:3vw;">
-            <br><button onclick="window.open('Data/card.html')">Card-Front</button>
-            <button onclick="window.open('Data/cardBack.html')">Card-Back</button>
-            <button onclick="alert(helpCard())">Card Help</button><br>
-            <button onclick="window.open('Data/flyer.html')">FLYER</button>
-        </div>
-      
-        <div id="panelB" style="line-height:130%;font-size:5vh;position:absolute;display:none;border-style:ridge;background-color:yellow;width:100vw;top:0%;height:50vw;z-index:700;">
-            <img src= 'Data/cutout.png' style="position:absolute; width: 20%; top:4%; left:3%;">
-            CONTACT PANEL<br>Press button to make Call or Send Email...<br>
-            <img src='Data/blackClose.png' id ='contactClose' onclick="document.getElementById('panelB').style.display='none'"" style="position:absolute;color:red;display:block;right:0%;top:0%;height:4vw;z-index:5;"> 
-            <X2>fredzone.github.io/Fossils/</X2><br> 
-            Email:<br>
-            <a onclick="window.open('mailto:fkaparich@gmail.com?subject=From Fossil Website&body=Put your message here..................%0A')"><button style="font-size:6vh">fkaparich@gmail.com</button></a><br>
-            <br>Call or Text:<br>
-            <a onclick="window.open('tel:2542149980')"><button style="font-size:6vh">(254)-214-9980</button></a>
-        </div>
+        <div title ="Climbing" onclick ="window.open('Climbing.html');"  style='border-style:solid;vertical-align:bottom; position:absolute;left:36%; top:20%; width:9vw;height:12vw'>
+            <img src ='Icons/climbing.png' alt = 'CLIMB'   style='position:absolute;top:0%;left:0%; width:100%;'>
+            <div style="position:absolute;text-align: center; bottom:0%;width:100%">Climbing</div>
+            </div>               
+         
+        <div title ="Fred Zone INTERNET" onclick ="window.open('https://fredzone.github.io/index.html');"  style='border-style:solid;vertical-align:bottom; position:absolute;left:48%; top:20%; width:9vw;height:12vw'>
+            <img src ='Icons/blackFZ.png' alt = 'Fred Zone on the Net'   style='position:absolute;top:0%;left:0%; width:100%;'>
+            <div style="position:absolute;text-align: center; bottom:0%;width:100%">Fred Zone NET</div>
+            </div>    
 
-        <div id="panelC" style="line-height:130%;font-size:5vh;position:fixed;display:none;border-style:ridge;background-color:lightgrey;width:100vw;top:0%;height:50vw;z-index:700;">
-            <img src= 'Data/cutout.png' style="position:absolute; width: 20%; top:4%; left:3%;">
-            EXTRA PANEL
-            <img src='Data/blackClose.png' id ='contactClose' onclick="document.getElementById('panelC').style.display='none'"" style="position:absolute;color:red;display:block;right:0%;top:0%;height:4vw;z-index:5;"> 
-        </div>        
+        <div title ="Fred Zone Local" onclick ="window.open('http://localhost/fredzone');"   style='border-style:solid;vertical-align:bottom; position:absolute;left:60%; top:20%; width:9vw;height:12vw'>
+            <img src ='Icons/blackFZ.png' alt = 'Fred Zone If its on your machine'   style='position:absolute;top:0%;left:0%; width:100%;'>
+            <div style="position:absolute;text-align: center; bottom:0%;width:100%">Fred Zone Local</div>
+            </div>    
 
-<!--message box  -->
-        <div id='msg'style="position:absolute;display:none;line-height:130%; background-color:white;border-color:black;border-style:outset;border:solid;font-size:2.5vw;text-align:left; width:30%; height:40%; top:30%; left:20%;z-index:600;">
-            <div id='msgHead'style="position:absolute;background-color:lightyellow;line-height:130%; border:none;font-size:2.5vw;text-align:left; width:100%; height:4vw; top:0%; left:0%;overflow:hidden;">
-                BOGUS SCREEN
-            </div>
-            <img src='Data/blackClose.png' id ='msgClose' onclick="msg()" style="position:absolute;color:red;display:block;right:0%;top:0%;height:4vw;z-index:5;"> 
-            <div id='msgText'onclick="document.getElementById('ring').style.display='none',document.getElementById('msg').style.display='none'
-                "style="position:absolute;line-height:130%; background-color:white;border:none;font-size:2.5vw;text-align:left; width:100%; top:4vw;bottom:0%; left:0%;overflow-y:scroll;">
-                This is a test box<br>Yada,yada,yada,yada,yada<br>Yada,yada,yada,yada,yada<br>Yada,yada,yada,yada,yada<br>Yada,yada,yada,yada,yada<br>Yada,yada,yada,yada,yada
-            </div>
-        </div>
-<!--header--> 
-        <div style="position:absolute; font-size:5vw; line-height:150%; width:90%; height:6%; top:0%; left:8%;">
-           <X1>Fred <X5> and The Fossils (Virtual Band)</X5></X1>
-        </div>         
-<!--msg Targets-->
-        <div id='notes' onclick="msg(this.id,'My Playlist',PLAYLISTstring,23,8,44,35,true)" style="position:absolute;color:lightgrey;font-size:2.5vw; line-height:150%;left:68.5vw;top:8vw;width:29vw;height:7vw;z-index:500;border:none">
-             <img src='Data/musicNote.jpg' style="position:absolute;left:0%;top:0%;width:9%;height:100%;">
-             <img src='Data/musicNote.jpg' style="position:absolute;right:0%;top:0%;width:9%;height:100%;">
-            <X2>Songs To Remember<br>
-            Songs To Forget...<br></X2>
-        </div>
-  <!--tablet-->         
-        <div id='tablet' onclick="msg(this.id,'WHY ELECTRONIC???',WHYstring,23,8,44,35,true)" style="position:absolute;color:red;background-image:url('Data/tabletFrame.jpg');background-size:100% 100%;font-size:2vw; line-height:130%;left:73.5vw;top:16vw;width:20vw;height:12vw;z-index:500;border:none;">
-            <X2><br>ELECTRONIC<br>
-            BACKUP &<br>HARMONY</X2>
-        </div>
-  <!--contact-->       
-        <div id='con' onclick="document.getElementById('panelB').style.display='block'" style="position:absolute; background-color:transparent;text-align:center; font-size:2.5vw; line-height:135%;width:33%; left:65.5% ;top:48%; height:30%;z-index:500;border:none;">
-            <X2>fredzone.github.io/Fossils/</X2><br> 
-            Email:<br>
-            <X2>fkaparich@gmail.com</X2><br>
-            Call or Text:<br>
-            <X2>(254)-214-9980</X2>
-        </div>     
-    <!--images-->  
-        <img src='Data/cutout.png' id='me' onclick="msg(this.id,'This is Me...',FREDstring,23,8,44,35,true)" style="position:absolute;left:3% ;top:4%;width:20%;height:74%;z-index:500;">
-        <img src='Data/folkBand.png'id='band' onclick="msg(this.id,'My Virtual Band',BANDstring,59,8,40,37,true)" style="position:absolute;opacity:0.4;top:10vw; width:35vw;left:23vw;height:35vw;z-index:500;">
-     
-     
-<!--        <img src='Data/transRingBlue.png' id="ring" onclick="document.getElementById('ring').style.display='none',document.getElementById('msg').style.display='none'" style="position:absolute;opacity:0.4; display:none;z-index:600;" >
-    -->    <div id="icon" onclick="pHome()" style="position:absolute;display:block;top:0%;left:0%;width:5%; height:5%;z-index:500;" ></div>
-        
-        
-        <div id="extr" onclick="document.getElementById('panelC').style.display='block'" style="position:absolute; display:block; top:0%; right:0%; width:5%; height:5%;z-index:500;"></div>
-        
-    </div>            
-</div>
+       <div title ="Chimp" onclick ="window.open('Lyric/Top/Chimp.html');"   style='border-style:solid;vertical-align:bottom; position:absolute;left:84%; top:20%; width:9vw;height:12vw'>
+            <img src ='Icons/chimp.png' alt = 'Chimp'   style='position:absolute;top:0%;left:0%; width:100%;'>
+            <div style="position:absolute;text-align: center; bottom:0%;width:100%">CHIMP</div>
+            </div>     
+            
+    </div>
 
-<script>
-var LASTmsg='band'
-var LOCKED=true;
-var BANDstring
-var FREDstring
-var CROWDstring
-var SCHEDULEstring
-var PLAYLISTstring
-var WHYstring
+    
+<div style="color:white;position:fixed;line-height:100%; left:1%; top:55%; height:40%; width:95%;font-size:1.7vw; border: groove;">
+    <div style="position:absolute;color:red;overflow:hidden;left:1%;top:1%;width:100%">INWORK AND DANGEROUS...</div>
+        <div title ="Animals" onclick ="window.open('Lyric/Top/Animal.html')" style='border-style:solid;vertical-align:bottom; position:absolute;left:1%; top:20%; width:9vw;height:12vw'>
+            <img src ='Icons/chimp.png' alt = '?' style='position:absolute;top:0%;left:0%; width:100%;'>
+            <div style="position:absolute;text-align: center; bottom:0%;width:100%">ANIMAL</div>
+            </div>     
+           
+    
+        <div title ="Guitar Stuff" onclick ="window.open('Lyric/Top/index.html')" style='border-style:solid;vertical-align:bottom; position:absolute;left:12%; top:20%; width:9vw;height:12vw'>
+            <img src ='Icons/guitarTrans.png' alt = '?' style='position:absolute;top:0%;left:0%; width:100%;'>
+            <div style="position:absolute;text-align: center; bottom:0%;width:100%">Guitar</div>
+            </div>  
 
-window.onload = function() {
-    CROWDstring=fileDownload('Data/crowdString.txt')
-    BANDstring=fileDownload('Data/bandString.txt')
-    FREDstring=fileDownload('Data/fredString.txt')
-    SCHEDULEstring=fileDownload('Data/scheduleString.txt')
-    PLAYLISTstring=fileDownload('Data/playlistString.txt')
-    WHYstring=fileDownload('Data/whyString.txt')
-    if (window.innerHeight >= window.innerWidth) {
-        alert("Please: Rotate your device...\nThis site is better in Landscape ...");}
-    }
+        <div title ="comix" onclick ="window.open('Comix.html')" style='border-style:solid;vertical-align:bottom; position:absolute;left:24%; top:20%; width:9vw;height:12vw'>
+            <img src ='Icons/comedy.png' alt = '?' style='position:absolute;top:0%;left:0%; width:100%;'>
+            <div style="position:absolute;text-align: center; bottom:0%;width:100%">COMIX</div>
+            </div>   
 
 
-
-function msg(id,title,str, left, top, width, height,pop){
-    document.getElementById('ring').style.display='none'
-    document.getElementById('msg').style.display='none'
-    if (id!=undefined) {
-        LASTmsg=id;
-        if (pop==true) {
-            document.getElementById('ring').style.left=document.getElementById(id).style.left
-            document.getElementById('ring').style.top=document.getElementById(id).style.top
-            document.getElementById('ring').style.width=document.getElementById(id).style.width
-            document.getElementById('ring').style.height=document.getElementById(id).style.height
-            document.getElementById('ring').style.display='block'
-        }
-        document.getElementById('msg').style.left = left + 'vw';
-        document.getElementById('msg').style.top = top + 'vw';
-        document.getElementById('msg').style.width = width + 'vw';
-        document.getElementById('msg').style.height = height + 'vw';
-        document.getElementById('msgHead').innerHTML = title;
-        document.getElementById('msgText').innerHTML = str;
-        document.getElementById('msg').style.display = 'block';
-    }
-}
-
-function pHome(){
-    var z="XX"
-    if (LOCKED===true){
-        //alert(1)
-        var z=fileDownload('Data/'+prompt('PASSWORD?')+'.txt');
-        if (z=='OK') {
-            LOCKED=false;
-            document.getElementById('panel').style.display='block'
-            }
-        else{
-            alert('That is not the Password!');
-            return;
-            }
-        }    
-    else{
-        document.getElementById('panel').style.display='block'
-        }
-    }
-
-function fileDownload(path){
-    var content = "Attemping to Download" +path;
-    var request = new XMLHttpRequest();
-    request.open("GET", path, false);
-    request.send(null);
-    content = request.responseText;
-    if (content===undefined |content.search("404")>-1|content.length<1){
-        content="SOME KIND DOWNLOAD ERROR...<br>"+content;}
-    return content;
-    }
-    </script>
-</body>
-</html>
+</div>   
+    
+    
+    
+    
+    
+    
+    
+    </div></body></html>
