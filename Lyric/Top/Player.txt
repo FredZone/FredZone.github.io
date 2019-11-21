@@ -18,6 +18,8 @@ CURRENT PROBLEMS / IDEAS/ STATUS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
 HISTORY...
 6 Beta (MAJOR Cleanup IN PROCESS)==============================(117,247   bytes - 59,044  bytes)
+    11/20/19 8:03 AM
+        changed the home path to allow out of view development
     11/07/19 3:25PM
         Finsihed mailto functions
         Added the End Pause function to allow reading of song for about 4.5 seconds before covering with buttons
