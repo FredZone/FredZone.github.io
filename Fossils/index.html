@@ -24,28 +24,58 @@
     </head>
 
 <body>
+<!--verical map...
+   -100 main div 
+    100 crowd
+    500 targets
+    600 message
+    700 aux panels
+   1500 msg
+    main buttons close etc 5
 
 <!--LARGE background so if screen is rotated we dont loose control-->    
 <div style="position:fixed;background-color:transparent; width:100%;height:200vw;z-index:-100;overflow:visible;">
-    <img src='Data/crowdB.png'  id='crowd'  onclick="msg(this.id,'The Audience',CROWDstring,23,10,44,35,true)" style="position:absolute;left:0vw; width:100vw ;top:46vw;height:150vw;z-index:5">    
-     
-    <div id='pg' style="position:absolute;background-color:white;left:0%;top:0%; width:100vw; height:60vw;overflow:hidden">
-        <div id="panel" style="font-size:4vw;position:fixed;display:none;width:100%;top:0%;height:100%;z-index:700;background-image:url('Data/background.png'); background-size:cover;">
-            Panel <img id='ico' onclick="document.getElementById('panel').style.display='none'" src='Data/iconSite.png' alt="x" style="border:none;position:fixed; overflow:hidden; top:0%; right:0%; height:10%;">
+    <img src='Data/crowdB.png'  id='crowd'  onclick="msg(this.id,'The Audience',CROWDstring,23,10,44,35,true)" style="position:absolute;left:0vw; width:100vw ;top:46vw;height:150vw;z-index:10">    
+    
+    <div id='pg' style="position:absolute;background-color:white;left:0%;top:0%; width:100vw; height:60vw;overflow:visible">
+    <!--<img src= 'Data/cutout.png' style="position:absolute; width: 20%; top:4%; left:3%;height:74%;z-index:500">-->
+        <img src='Data/transRingBlue.png' id="ring" onclick="document.getElementById('ring').style.display='none',document.getElementById('msg').style.display='none'" style="position:absolute;opacity:0.4; display:none;z-index:600;" >    
+        
+        <div id="panel" style="position:absolute;line-height:130%;font-size:7vw;display:none;border-style:ridge;width:100vw;top:0%;height:50vw;z-index:700;background-color:lightgrey;">
+            PRINTING PANEL <img id='ico' onclick="document.getElementById('panel').style.display='none'" src='Data/iconSite.png' alt="x" style="border:none;position:fixed; overflow:hidden; top:0%; right:0%; height:10%;">
+            <img src= 'Data/cutout.png' style="position:absolute; width: 20vw; top:4vw; left:3vw;">
             <br><button onclick="window.open('Data/card.html')">Card-Front</button>
             <button onclick="window.open('Data/cardBack.html')">Card-Back</button>
             <button onclick="alert(helpCard())">Card Help</button><br>
             <button onclick="window.open('Data/flyer.html')">FLYER</button>
         </div>
+      
+        <div id="panelB" style="line-height:130%;font-size:5vh;position:absolute;display:none;border-style:ridge;background-color:yellow;width:100vw;top:0%;height:50vw;z-index:700;">
+            <img src= 'Data/cutout.png' style="position:absolute; width: 20%; top:4%; left:3%;">
+            CONTACT PANEL<br>Press button to make Call or Send Email...<br>
+            <img src='Data/blackClose.png' id ='contactClose' onclick="document.getElementById('panelB').style.display='none'"" style="position:absolute;color:red;display:block;right:0%;top:0%;height:4vw;z-index:5;"> 
+            <X2>fredzone.github.io/Fossils/</X2><br> 
+            Email:<br>
+            <a onclick="window.open('mailto:fkaparich@gmail.com?subject=From Fossil Website&body=Put your message here..................%0A')"><button style="font-size:6vh">fkaparich@gmail.com</button></a><br>
+            <br>Call or Text:<br>
+            <a onclick="window.open('tel:2542149980')"><button style="font-size:6vh">(254)-214-9980</button></a>
+        </div>
+
+        <div id="panelC" style="line-height:130%;font-size:5vh;position:fixed;display:none;border-style:ridge;background-color:lightgrey;width:100vw;top:0%;height:50vw;z-index:700;">
+            <img src= 'Data/cutout.png' style="position:absolute; width: 20%; top:4%; left:3%;">
+            EXTRA PANEL
+            <img src='Data/blackClose.png' id ='contactClose' onclick="document.getElementById('panelC').style.display='none'"" style="position:absolute;color:red;display:block;right:0%;top:0%;height:4vw;z-index:5;"> 
+        </div>        
+
 <!--message box  -->
-        <div id='msg'style="position:absolute;display:none;line-height:130%; background-color:white;border-color:black;border-style:outset;border:solid;font-size:2.5vw;text-align:left; width:30%; height:40%; top:30%; left:20%;z-index:1500;">
+        <div id='msg'style="position:absolute;display:none;line-height:130%; background-color:white;border-color:black;border-style:outset;border:solid;font-size:2.5vw;text-align:left; width:30%; height:40%; top:30%; left:20%;z-index:600;">
             <div id='msgHead'style="position:absolute;background-color:lightyellow;line-height:130%; border:none;font-size:2.5vw;text-align:left; width:100%; height:4vw; top:0%; left:0%;overflow:hidden;">
-                XXX
+                BOGUS SCREEN
             </div>
             <img src='Data/blackClose.png' id ='msgClose' onclick="msg()" style="position:absolute;color:red;display:block;right:0%;top:0%;height:4vw;z-index:5;"> 
             <div id='msgText'onclick="document.getElementById('ring').style.display='none',document.getElementById('msg').style.display='none'
                 "style="position:absolute;line-height:130%; background-color:white;border:none;font-size:2.5vw;text-align:left; width:100%; top:4vw;bottom:0%; left:0%;overflow-y:scroll;">
-                This is a test box<br>xxxxxx<br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>xxxxxx
+                This is a test box<br>Yada,yada,yada,yada,yada<br>Yada,yada,yada,yada,yada<br>Yada,yada,yada,yada,yada<br>Yada,yada,yada,yada,yada<br>Yada,yada,yada,yada,yada
             </div>
         </div>
 <!--header--> 
@@ -54,31 +84,34 @@
         </div>         
 <!--msg Targets-->
         <div id='notes' onclick="msg(this.id,'My Playlist',PLAYLISTstring,23,8,44,35,true)" style="position:absolute;color:lightgrey;font-size:2.5vw; line-height:150%;left:68.5vw;top:8vw;width:29vw;height:7vw;z-index:500;border:none">
-             <img src='Data/musicNote.jpg' style="position:absolute;color:red;display:block;left:0%;top:0%;width:9%;height:100%;">
-             <img src='Data/musicNote.jpg' style="position:absolute;color:red;display:block;right:0%;top:0%;width:9%;height:100%;">
-            <X4>Songs To Remember<br>
-            Songs To Forget...<br></X4>
+             <img src='Data/musicNote.jpg' style="position:absolute;left:0%;top:0%;width:9%;height:100%;">
+             <img src='Data/musicNote.jpg' style="position:absolute;right:0%;top:0%;width:9%;height:100%;">
+            <X2>Songs To Remember<br>
+            Songs To Forget...<br></X2>
         </div>
   <!--tablet-->         
         <div id='tablet' onclick="msg(this.id,'WHY ELECTRONIC???',WHYstring,23,8,44,35,true)" style="position:absolute;color:red;background-image:url('Data/tabletFrame.jpg');background-size:100% 100%;font-size:2vw; line-height:130%;left:73.5vw;top:16vw;width:20vw;height:12vw;z-index:500;border:none;">
-            <X4><br>ELECTRONIC<br>
-            BACKUP &<br>HARMONY</X4>
+            <X2><br>ELECTRONIC<br>
+            BACKUP &<br>HARMONY</X2>
         </div>
   <!--contact-->       
-        <div style="position:absolute; background-color:transparent;text-align:center; font-size:2.5vw; line-height:135%;width:33%;border:solid; left:65.5% ;top:48%; z-index:25;border:none">
+        <div id='con' onclick="document.getElementById('panelB').style.display='block'" style="position:absolute; background-color:transparent;text-align:center; font-size:2.5vw; line-height:135%;width:33%; left:65.5% ;top:48%; height:30%;z-index:500;border:none;">
             <X2>fredzone.github.io/Fossils/</X2><br> 
             Email:<br>
-            <X2>fkaparich@gmail.com</X2><br> 
+            <X2>fkaparich@gmail.com</X2><br>
             Call or Text:<br>
-            <X2>(254)-214-9980</X2>     
+            <X2>(254)-214-9980</X2>
         </div>     
-    <!--images-->
-        <img src= 'Data/cutout.png' id='me' onclick="msg(this.id,'This is Me...',FREDstring,23,8,44,35,true)" style="position:absolute; width: 20%; top:4%; left:3%;height:74%">
-        <img src='Data/folkBand.png'id='band' onclick="msg(this.id,'My Virtual Band',BANDstring,59,8,40,37,true)" style="position:absolute;opacity:0.4;top:10vw; width:35vw;left:23vw;height:35vw;z-index:100;">
-        <img src='Data/transRingBlue.png' id="ring" onclick="document.getElementById('ring').style.display='none',document.getElementById('msg').style.display='none'" style="position:absolute;opacity:0.4; display:none;z-index:500;" >
-        <div src='Data/transRingBlue.png' id="icon" onclick="pHome()" style="position:absolute;display:block; top:0%;left:0%;width:5%; height:5%;z-index:500;" >
-            ?    
-        </div>
+    <!--images-->  
+        <img src='Data/cutout.png' id='me' onclick="msg(this.id,'This is Me...',FREDstring,23,8,44,35,true)" style="position:absolute;left:3% ;top:4%;width:20%;height:74%;z-index:500;">
+        <img src='Data/folkBand.png'id='band' onclick="msg(this.id,'My Virtual Band',BANDstring,59,8,40,37,true)" style="position:absolute;opacity:0.4;top:10vw; width:35vw;left:23vw;height:35vw;z-index:500;">
+     
+     
+        <div id="print" onclick="pHome()" style="position:absolute;display:block;top:0%;left:0%;width:5%; height:5%;z-index:500;" ></div>
+        
+        
+        <div id="extr" onclick="document.getElementById('panelC').style.display='block'" style="position:absolute; display:block; top:0%; right:0%; width:5%; height:5%;z-index:500;"></div>
+        
     </div>            
 </div>
 
@@ -151,7 +184,7 @@ function fileDownload(path){
     request.send(null);
     content = request.responseText;
     if (content===undefined |content.search("404")>-1|content.length<1){
-        content="SOME KIND OF ERROR DOWNLOADING...";}
+        content="SOME KIND DOWNLOAD ERROR...<br>"+content;}
     return content;
     }
     </script>
