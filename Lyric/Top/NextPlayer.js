@@ -2026,7 +2026,7 @@ function newKey(nk){//nash means Nashville
     while(ARRscale[i]!==nk){i++;}
     TRANSPOSE =i-j;//calculate the Transpositon
     if(nash!==false) {nk='N';}
-    document.getElementById('key2').src='../../Icons/Key'+nk2+'.png'
+    document.getElementById('key2').src='../../Icons/key'+nk2+'.png'
     KEYlast=KEY;
     KEY=nk;
     //SONGlastCustom=0; USELESS
@@ -2310,12 +2310,12 @@ function togl(vrbl){
 function volOnOff() {
     if (SOUND === false) {
         SOUND = true;
-        document.getElementById("soundOO").style.backgroundImage="url('../../icons/on.png')"
+        document.getElementById("soundOO").style.backgroundImage="url('../../Icons/on.png')"
         document.getElementById("Audio1").volume = VOLdefault;
         dis('vCont','block')
     } else {
         SOUND = false
-        document.getElementById("soundOO").style.backgroundImage="url('../../icons/off.png')"
+        document.getElementById("soundOO").style.backgroundImage="url('../../Icons/off.png')"
         document.getElementById("Audio1").volume = 0;
         dis('vCont','none')
     }
