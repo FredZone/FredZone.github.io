@@ -1,9 +1,12 @@
-<pre>I use a <X1>TC Helicon TC1</X1>
-It provides up to 4
-'harmony' voices...
-=====================  
-I use <X1>Band in a Box</X1>;
-to Build Backing Tracks
-Typically I add Drums,
-Bass, guitar, piano and
-Harmonica<pre>
+<div style="text-align:center">
+<X2>MY ELECTRONIC BAND...</X2><br>
+For Vocal Harmony:<br>
+I use a <X3>TC Helicon TC1</X3><br>
+Its an old electronic device<br>that synthesizes up to 4 voices.<br>
+<X2>====================</X2><br> 
+For a Backup Band:<br>
+I use <X3>Band in a Box</X3> Software<br>
+to compose Backing Tracks.<br>
+Typically:I use Drums, Bass & Guitar.<br>
+Occasionally: I add a Piano or Harmonica or Strings.<br>
+<div>

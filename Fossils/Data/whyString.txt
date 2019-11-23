@@ -1,9 +1,7 @@
-<pre>I would rather
-play with others and will
-bring friends along...
-If I get the chance
-However...
-It's difficult to organize
-schedule and rehearse.
-So it's usually just me...
-</pre>
+<div style="text-align:center">
+<X2>WHY ELECTRONIC?</X2><br><div>
+I would rather play with others and will occasionally bring friends along<br><br>
+<X2>However...</X2><br>
+It's difficult to organize schedule and rehearse a group of retirees.
+<br><br>
+<X1>So it's usually just me...</X1>

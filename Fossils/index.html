@@ -16,10 +16,13 @@
                 margin:0px;                
             }
         X1{color:red;}
-        X2{color:blue;}
-        X3{opacity:0.3;}
+        X2{color:white;}
+        X3{color:blue;}
         X4{color:green;}
-        X5{opacity:0.4;}
+        O3{opacity:0.3;}
+        O5{opacity:0.4;}
+        AC{text-align:center;}
+        AL{text-align:left;}
     </style>
     </head>
 
@@ -34,12 +37,8 @@
     main buttons close etc 5
 
 <!--LARGE background so if screen is rotated we dont loose control-->    
-<div style="position:fixed;background-color:transparent; width:100%;height:200vw;z-index:-100;overflow:visible;">
-    <img src='Data/crowdB.png'  id='crowd'  onclick="msg(this.id,'The Audience',CROWDstring,23,10,44,35,true)" style="position:absolute;left:0vw; width:100vw ;top:46vw;height:150vw;z-index:10">    
-    
-    <div id='pg' style="position:absolute;background-color:white;left:0%;top:0%; width:100vw; height:60vw;overflow:visible">
-        <img src='Data/transRingBlue.png' id="ring" onclick="document.getElementById('ring').style.display='none',document.getElementById('msg').style.display='none'" style="position:absolute;opacity:0.4; display:none;z-index:900;" >    
-        
+<div style="position:fixed;background-color:lightgrey; width:100%;height:200vw;z-index:-100;overflow:visible;">
+    <div id='pg' style="position:absolute;background-color:white;left:0%;top:0%; width:100vw; height:50vw;overflow:visible">
         <div id="panelAdmin" style="position:absolute;line-height:130%;font-size:7vw;display:none;border-style:ridge;width:100vw;top:0%;height:50vw;z-index:900;background-color:yellow;">
             PRINTING PANEL <img id='ico' onclick="document.getElementById('panelAdmin').style.display='none'" src='Data/iconSite.png' alt="x" style="border:none;position:fixed; overflow:hidden; top:0%; right:0%; height:10%;">
             <img src= 'Data/cutout.png' style="position:absolute; width: 20vw; top:4vw; left:3vw;">
@@ -53,7 +52,7 @@
             <img src= 'Data/cutout.png' style="position:absolute; width: 20%; top:4%; left:3%;">
             CONTACT PANEL<br>Press button to make Call or Send Email...<br>
             <img src='Data/transHome.png' id ='contactClose' onclick="home()" style="position:absolute;display:block;right:0%;top:0%;height:4vw;z-index:5;"> 
-            <X2>fredzone.github.io/Fossils/</X2><br> 
+            <X3>fredzone.github.io/Fossils/</X3><br> 
             Email:<br>
             <a onclick="window.open('mailto:fkaparich@gmail.com?subject=From Fossil Website&body=Put your message here..................%0A')"><button style="font-size:6vh">fkaparich@gmail.com</button></a><br>
             <br>Call or Text:<br>
@@ -61,96 +60,60 @@
             <button onclick="document.getElementById('panelContact').style.display='none'" style="font-size:6vh">Back to Home Page</button>  
         </div>
 
-<div id="panelHome" style="line-height:130%;font-size:4vw;position:fixed;display:block;border-style:ridge;background-color:lightgrey;width:100vw;top:0%;height:50vw;z-index:700;">
-    <img src='Data/cutout.png' style="position:absolute; width: 20%; top:4%; left:3%;"> FRED and The Fossils (Virtual Band)
-    <img src='Data/folkBand.png'id='band' style="position:absolute;opacity:0.4;top:10vw; width:35vw;left:60vw;height:35vw;z-index:500;">
-     <img src='Data/transHome.png' onclick="home()" style="position:absolute; display:block; top:0%; right:0%; width:4%;z-index:500;">
-    
-    
-    <div id='menu' style="position:absolute;line-height:130%; border:none;font-size:2.5vw;text-align:left; width:30%; height:85%; top:10%; left:25%;overflow:hidden;">
-        Menu<br>
-        <a onclick="msg('msg','WELCOME',WELCOMEstring,60,5,38,43,false)">-WELCOME</a><br>
-        <a onclick="document.getElementById('panelContact').style.display='block'">-<X1>CONTACT ME</X1></a><br>
-        <a onclick="msg('msg','About Me',FREDstring,60,5,38,43,false)">-ABOUT ME</a><br>
-        <a onclick="msg('msg','My Playlist',PLAYLISTstring,60,5,38,43,false)">-MY PLAYLIST</a><br>
-        <a onclick="msg('msg','My\"BAND\"',BANDstring,60,5,38,43,false)">-HARMONY &amp; BACK UP</a><br>
-        <a onclick="msg('msg','My AUDIENCE',CROWDstring,60,5,38,43,false)">-THE AUDIENCE</a><br>
-        <a onclick="msg('msg','WHY ELECTRONCS',WHYstring,60,5,38,43,false)">-WHY "ELECTRONIC"</a><br>
-        <a onclick="document.getElementById('panelHome').style.display='none'">-VISUAL MODE</a><br>
-        
-        <a onclick="document.getElementById('msg').style.display='none'">-HOME</a><br>
-        <!--<a onclick="window.open('Data/flyer.html')">-PRINT A FLYER</a><br>-->
-        <a onclick="pHome()">-ADMINISTRATOR</a><br>
-    </div>
-    <div id='crowdBlock' style="position:absolute; background-color:lightgrey;left:-10%;top:100%; width:120%; height:300%;z-index:-10;"></div>
-</div>
-
-
-<!--message box  -->
-        <div id='msg'style="position:absolute;display:none;line-height:130%; background-color:white;border-style:ridge;border-color:darkgrey; border-style:ridge; border-width:thick;font-size:2.5vw;text-align:left; width:30%; height:67%; top:10%; left:65%;z-index:750;">
-            <div id='msgHead'style="position:absolute;background-color:lightgrey;line-height:130%; border:none;font-size:2.5vw;text-align:left; width:100%; height:4vw; top:0%; left:0%;overflow:hidden;">
-                BOGUS SCREEN
+        <div id="panelHome" style="line-height:130%;font-size:4vw;position:fixed;display:block;border-style:ridge;background-color:lightgrey;width:100vw;top:0%;height:50vw;z-index:700;">
+            <img src='Data/cutout.png' style="position:absolute; width: 20%; top:4%; left:3%;"> FRED and The Fossils (Virtual Band)
+            <img src='Data/folkBand.png'id='band' style="position:absolute;opacity:0.4;top:10vw; width:35vw;left:60vw;height:35vw;z-index:500;">
+            <img src='Data/transHome.png' onclick="home()" style="position:absolute; display:block; top:0%; right:0%; width:4%;z-index:500;">
+            <div id='menu' style="position:absolute;line-height:130%; border:groove;font-size:2.5vw;text-align:left; width:30%; height:85%; top:12%; left:25%;overflow:hidden;">
+               <X2><AC>MENU ========================</X2><br>
+               <a onclick="msg(WELCOMEstring)">-WELCOME</a><br>
+               <a onclick="msg(ABOUTstring)">-ABOUT ME</a><br>
+               <a onclick="msg(PLAYLISTstring)">-MY PLAYLIST</a><br>
+               <a onclick="msg(BANDstring)">-ELECTRONIC BAND</a><br>
+               <a onclick="msg(SCHEDULEstring)">-SCHEDULE</a><br>
+               <a onclick="msg(WHYstring)">-WHY "ELECTRONIC"</a><br>
+               <a onclick="document.getElementById('msg').style.display='none'">-HOME</a><br>
+               <!--<a onclick="window.open('Data/flyer.html')">-PRINT A FLYER</a><br>
+               <a onclick="msg('msg','TEST',TESTstring,60,5,38,43,false)">-TEST STRING"</a><br>-->
+               <a onclick="pHome()">-ADMINISTRATOR</a><br>
+               <a onclick="document.getElementById('panelContact').style.display='block'"><X1>-CONTACT ME</X1></a>
             </div>
-            <img src='Data/blackClose.png' id ='msgClose' onclick="msg()" style="position:absolute;color:red;display:block;right:0%;top:0%;height:4vw;z-index:5;"> 
-            <div id='msgText'onclick="document.getElementById('ring').style.display='none',document.getElementById('msg').style.display='none'
-                "style="position:absolute;line-height:130%; background-color:white;border:none;font-size:2.5vw;text-align:left; width:100%; top:4vw;bottom:0%; left:0%;overflow-y:scroll;">
-                This is a test box<br>Yada,yada,yada,yada,yada<br>Yada,yada,yada,yada,yada<br>Yada,yada,yada,yada,yada<br>Yada,yada,yada,yada,yada<br>Yada,yada,yada,yada,yada
+            <!--
+            <div id='msg'style="position:absolute;display:none;line-height:130%; background-color:lightgrey;border:groove;font-size:2.5vw;text-align:left; width:38%; height:85%; top:12%; left:60%;z-index:750;overflow:hidden;">
+                <div id='msgText' style="position:absolute;background-color:lightgrey;line-height:130%;font-size:2.5vw;text-align:left; width:100%;height:90%; top:4vw; left:0%;overflow-y:auto;word-break: keep-all">
+                </div>
             </div>
-        </div>
-<!--header--> 
-        <div style="position:absolute; font-size:5vw; line-height:150%; width:90%; height:6%; top:0%; left:8%;">
-           <X1>Fred <X5> and The Fossils (Virtual Band)</X5></X1>
-        </div>         
-<!--msg Targets-->
-        <div id='notes' onclick="msg(this.id,'My Playlist',PLAYLISTstring,23,8,44,35,true)" style="position:absolute;color:lightgrey;font-size:2.5vw; line-height:150%;left:68.5vw;top:8vw;width:29vw;height:7vw;z-index:500;border:none">
-             <img src='Data/musicNote.jpg' style="position:absolute;left:0%;top:0%;width:9%;height:100%;">
-             <img src='Data/musicNote.jpg' style="position:absolute;right:0%;top:0%;width:9%;height:100%;">
-            <X2>Songs To Remember<br>
-            Songs To Forget...<br></X2>
-        </div>
-  <!--tablet-->         
-        <div id='tablet' onclick="msg(this.id,'WHY ELECTRONIC???',WHYstring,23,8,44,35,true)" style="position:absolute;color:red;background-image:url('Data/tabletFrame.jpg');background-size:100% 100%;font-size:2vw; line-height:130%;left:73.5vw;top:16vw;width:20vw;height:12vw;z-index:500;border:none;">
-            <X2><br>ELECTRONIC<br>
-            BACKUP &<br>HARMONY</X2>
-
-        </div>
-  <!--contact-->       
-        <div id='con' onclick="document.getElementById('panelContact').style.display='block'" style="position:absolute; background-color:transparent;text-align:center; font-size:2.5vw; line-height:135%;width:33%; left:65.5% ;top:48%; height:30%;z-index:500;border:none;">
-            <X2>fredzone.github.io/Fossils/</X2><br> 
-            Email:<br>
-            <X2>fkaparich@gmail.com</X2><br>
-            Call or Text:<br>
-            <X2>(254)-214-9980</X2>
-        </div>     
-    <!--images-->  
-        <img src='Data/cutout.png' id='me' onclick="msg(this.id,'This is Me...',FREDstring,23,8,44,35,true)" style="position:absolute;left:3% ;top:4%;width:20%;height:74%;z-index:500;">
-        <img src='Data/folkBand.png'id='band' onclick="msg(this.id,'My Virtual Band',BANDstring,59,8,40,37,true)" style="position:absolute;opacity:0.4;top:10vw; width:35vw;left:23vw;height:35vw;z-index:500;">
-        <img  src='Data/transHome.png' onclick="home()" style="position:absolute; display:block; top:0%; right:0%; width:6%;z-index:500;">
-        
+            -->
+            <div id='msg'style="position:absolute;display:none;line-height:130%; background-color:lightgrey;border:groove;font-size:2.5vw;text-align:center; width:38%; height:85%; top:12%; left:60%;z-index:750;overflow-y:auto;word-break: keep-all"">
+                </div>
+            </div>
+    
     </div>            
 </div>
 
 <script>
-var LASTmsg='band'
+var LASTmsg='band';
 var LOCKED=true;
-var WELCOMEstring="XXXXXXXXXXXXX<br>XXXXXXXXXXXXX<br> XXXXXXXXXXXXX<br>XXXXXXXXXXXXX<br>XXXXXXXXXXXXX<br>XXXXXXXXXXXXX<br>" 
-var BANDstring
-var FREDstring
-var CROWDstring
-var SCHEDULEstring
-var PLAYLISTstring
-var WHYstring
+var WELCOMEstring;
+var BANDstring;
+var ABOUTstring;
+var CROWDstring;
+var SCHEDULEstring;
+var PLAYLISTstring;
+var WHYstring;
+var TESTstring='This is the test string. And it looks like this... Here is A Break<br>Title<br>';
 
 window.onload = function() {
     CROWDstring=fileDownload('Data/crowdString.txt')
     BANDstring=fileDownload('Data/bandString.txt')
-    FREDstring=fileDownload('Data/fredString.txt')
+    ABOUTstring=fileDownload('Data/aboutString.txt')
     SCHEDULEstring=fileDownload('Data/scheduleString.txt')
     PLAYLISTstring=fileDownload('Data/playlistString.txt')
     WHYstring=fileDownload('Data/whyString.txt')
+    WELCOMEstring=fileDownload('Data/welcomeString.txt')
     home()
     if (window.innerHeight >= window.innerWidth) {
-        alert("Please: Rotate your device...\nThis site is better in Landscape ...");}
+        alert("Please: Rotate your device...\nThis site is MUCH better in Landscape ...");}
     }
 
 
@@ -158,63 +121,41 @@ function home(){
     document.getElementById('panelHome').style.display='block'
     document.getElementById('panelContact').style.display='none'
     document.getElementById('msg').style.display='none'
-    document.getElementById('ring').style.display='none'
     document.getElementById('panelAdmin').style.display='none'
     }
 
-
-
-function msg(id,title,str, left, top, width, height,pop){
-    document.getElementById('ring').style.display='none'
-    document.getElementById('msg').style.display='none'
-    if (id!=undefined) {
-        LASTmsg=id;
-        if (pop==true) {
-            document.getElementById('ring').style.left=document.getElementById(id).style.left
-            document.getElementById('ring').style.top=document.getElementById(id).style.top
-            document.getElementById('ring').style.width=document.getElementById(id).style.width
-            document.getElementById('ring').style.height=document.getElementById(id).style.height
-            document.getElementById('ring').style.display='block'
-        }
-        document.getElementById('msg').style.left = left + 'vw';
-        document.getElementById('msg').style.top = top + 'vw';
-        document.getElementById('msg').style.width = width + 'vw';
-        document.getElementById('msg').style.height = height + 'vw';
-        document.getElementById('msgHead').innerHTML = title;
-        document.getElementById('msgText').innerHTML = str;
+function msg(str){
+        document.getElementById('msg').innerHTML = str;
         document.getElementById('msg').style.display = 'block';
     }
-}
 
 function pHome(){
-    var z="XX"
-    if (LOCKED===true){
-        //alert(1)
-        var z=fileDownload('Data/'+prompt('PASSWORD?')+'.txt');
-        if (z=='OK') {
-            LOCKED=false;
-            document.getElementById('panelAdmin').style.display='block'
-            }
-        else{
-            alert('That is not the Password!');
-            return;
-            }
-        }    
-    else{
+    if (LOCKED===false){
         document.getElementById('panelAdmin').style.display='block'
+    }else{
+        var f=prompt('PASSWORD?');
+        if (f!=null) {
+            var str=fileDownload("Data/"+f+".txt");
+            if (str=='OK') {
+                LOCKED=false;
+                document.getElementById('panelAdmin').style.display='block'
+            }else{
+                alert('WRONG PASSWORD');
+            }
         }
     }
-
+}
 function fileDownload(path){
     var content = "Attemping to Download" +path;
     var request = new XMLHttpRequest();
     request.open("GET", path, false);
     request.send(null);
     content = request.responseText;
-    if (content===undefined |content.search("404")>-1|content.length<1){
-        content="SOME KIND DOWNLOAD ERROR...<br>"+content;}
-    return content;
-    }
-    </script>
+    if (content.search("404")>-1|content.length<1){
+        content='404 Error'+ content
+        }
+    return content;//could be undfined or null, not tested for
+}
+</script>
 </body>
 </html>
