@@ -1928,14 +1928,14 @@ function loopMark(typ) {
 function loopOn() {
     if (LOOPon === true) {
         LOOPon = false
-        document.getElementById("playLoop").style.backgroundImage="url('../../icons/off.png')"
+        document.getElementById("playLoop").style.backgroundImage="url('../../Icons/off.png')"
         dis('loopBlock', 'none');
     } else {
         LOOPon = true;
         dis('loopBlock', 'block');
         LOOPend=LOOPendBU//restore points
         LOOPtop=LOOPtopBU
-        document.getElementById("playLoop").style.backgroundImage="url('../../icons/on.png')"
+        document.getElementById("playLoop").style.backgroundImage="url('../../Icons/on.png')"
     }
 }
 
