@@ -35,13 +35,13 @@
 
     <div id="notePad" style="position:absolute; resize:both; border-style:ridge; border-width:thick;display:none;color:white;text-align:center; font-size:1vw; background-color:lightgrey; overflow:scroll; height:61% ;width:40%; top:33%; left:7%;z-index:20000 ">
     <div id="notePadheader" style="position:absolute;height:5%; width:100%; background-color:orange;">Note Pad</div>
-    <img src="../../icons/danger.png" onclick="dis('notePad','none')" style="position:absolute;width:7%;width:5%;height:10%;right:1%;top:5%;">
+    <img src="../../Icons/danger.png" onclick="dis('notePad','none')" style="position:absolute;width:7%;width:5%;height:10%;right:1%;top:5%;">
     <textarea id='note' style="border-style:groove;text-align:left; line-height:120%; display:block; position:absolute;overflow:scroll; left:2%; top:16%;width:96%;height:74%;color:black;background-color:yellow;">Text printed here...</textarea>
     </div>  
 
     <div id="cannedText" style="position:absolute; resize:both; border-style:ridge; border-width:thick;display:none;color:white;text-align:center; font-size:1vw; background-color:lightgrey;height:30% ;width:50%; top:22%; left:40%;z-index:20000 ">
     <div id="cannedTextheader" style="position:absolute;height:8%; width:100%; background-color:orange;">Canned Text</div>
-    <img src="../../icons/danger.png" onclick="dis('cannedText','none')" style="position:absolute;width:7%;height:10%;right:1%;top:5%;">
+    <img src="../../Icons/danger.png" onclick="dis('cannedText','none')" style="position:absolute;width:7%;height:10%;right:1%;top:5%;">
     <textarea id='cannedTextText' style="border-style:groove;text-align:left; line-height:120%; position:absolute;overflow:scroll;left:2%; top:16%;width:96%;height:74%;color:black;background-color:white;">
 THESE ITEMS DO NOT SHOW UP UNLESS LIVE NOTES IS TURNED ON!!!
 VoiceLive=========================================== 
@@ -182,8 +182,8 @@ Digitec RP55=======================================
     <fieldset style="text-align:left">
         
         <legend>TOOLS (Edit and paste in)</legend>    
-            <img id ='xmlImg' src="../../icons/text.png" alt ="TXT" style=" left:1vw; height:3vw; width:3vw" onclick = "dis('cannedText')">
-            <img src="../../icons/blackNotePad.png" alt ="PAD" style=" left:5vw; height:3vw; width:3vw" onclick = "dis('notePad')">
+            <img id ='xmlImg' src="../../Icons/text.png" alt ="TXT" style=" left:1vw; height:3vw; width:3vw" onclick = "dis('cannedText')">
+            <img src="../../Icons/blackNotePad.png" alt ="PAD" style=" left:5vw; height:3vw; width:3vw" onclick = "dis('notePad')">
     </fieldset> 
 
     <fieldset style="text-align:left">
@@ -218,21 +218,21 @@ Digitec RP55=======================================
 <!-- Master Div for Edit ========================================================================================================= -->
 
 <div  id = "editCntrl" style = "position:fixed; height:15%; width:100%; left:0px ; bottom: 0vw; LEFT:0vw; border:none; margin:0; padding:0; z-index:7500; background:black; text-align: center" >
-    <img src="../../icons/blackRead.png"id='getLocal' title="GET A LOCAL FILE" onclick="fileGetLocal('createARRlines')"  alt ="GET FILE" style="position:fixed;left:0vw;height:6vw;width :6vw ;z-index: 8002">
-    <img src="../../icons/blackSave.png" id ="iconSave" title ="SAVE LOCAL FILE" alt ="save Local File" onclick="updateDur(),firstLineGlobal('con'),StepThroughArray('rTrim'),saveTextAsFile(decodeURI(TITLE),'rawTune')" style="position:fixed;left:6vw; height:6vw ;width :6vw;z-index:8000">
-    <img id ='xmlImg' src="../../icons/musicXML.png" alt ="XML" style="position:fixed; height:6vw; left:18vw; height:6vw; width:6vw" onclick = "mode('xml')">
-    <img id ='tabImg' src="../../icons/tab.png" alt ="TAB" style="position:fixed; height:6vw; left:12vw; height:6vw; width:6vw" onclick = "mode('tab')">
-    <img id ='xmlImg' src="../../icons/blackedit.png" alt ="EDIT" style="position:fixed; height:6vw; left:24vw; height:6vw; width:6vw" onclick = "mode('edit')">
-    <img id="xmlExport" src="../../icons/blackRedSave.png" alt ="EXPORT THE XML" onclick = "saveTextAsFile('crapola.xml','xml');" style ="position:fixed; display:none;height:6vw; left:6vw; height:6vw; width:6vw;z-index:20000;">
-    <img src="../../icons/blackUndo.jpg" alt ="Info" id='iconRestore' onclick="restoreBackup()" title ="RESTORE TO LAST ATTMPTED SAVE" style="position:fixed; left:30vw ;height:6vw; z-index:8002 ;display:block">
+    <img src="../../Icons/blackRead.png"id='getLocal' title="GET A LOCAL FILE" onclick="fileGetLocal('createARRlines')"  alt ="GET FILE" style="position:fixed;left:0vw;height:6vw;width :6vw ;z-index: 8002">
+    <img src="../../Icons/blackSave.png" id ="iconSave" title ="SAVE LOCAL FILE" alt ="save Local File" onclick="updateDur(),firstLineGlobal('con'),StepThroughArray('rTrim'),saveTextAsFile(decodeURI(TITLE),'rawTune')" style="position:fixed;left:6vw; height:6vw ;width :6vw;z-index:8000">
+    <img id ='xmlImg' src="../../Icons/musicXML.png" alt ="XML" style="position:fixed; height:6vw; left:18vw; height:6vw; width:6vw" onclick = "mode('xml')">
+    <img id ='tabImg' src="../../Icons/tab.png" alt ="TAB" style="position:fixed; height:6vw; left:12vw; height:6vw; width:6vw" onclick = "mode('tab')">
+    <img id ='xmlImg' src="../../Icons/blackedit.png" alt ="EDIT" style="position:fixed; height:6vw; left:24vw; height:6vw; width:6vw" onclick = "mode('edit')">
+    <img id="xmlExport" src="../../Icons/blackRedSave.png" alt ="EXPORT THE XML" onclick = "saveTextAsFile('crapola.xml','xml');" style ="position:fixed; display:none;height:6vw; left:6vw; height:6vw; width:6vw;z-index:20000;">
+    <img src="../../Icons/blackUndo.jpg" alt ="Info" id='iconRestore' onclick="restoreBackup()" title ="RESTORE TO LAST ATTMPTED SAVE" style="position:fixed; left:30vw ;height:6vw; z-index:8002 ;display:block">
     <div id="xmlTools" style ="position:absolute;background-color: transparent; width:28%;display:none; top:0%;left:0; height:100% ;text-align:left; z-index:20000;">
         <button id="xmlExport" alt ="EXPORT THE XML" onclick = "saveTextAsFile('crapola.xml','xml');" style ="position:absolute;display:none; width:23%; top:0%;left:25%; height:100% ;text-align:left; z-index:20000;">Export The XML</button>
         </div> 
     <a id ="tuneList" style="color:white;left:60%;">Songs Appear Here...or type your own into the list</a>
-    <img src="../../icons/blackSearch.png" alt ="Research" style="position:fixed; height:6vw; right:21vw ; height:6vw;width:6vw" onclick = "research()">
-    <img src="../../icons/blackQuestion.png" alt ="Help" style="position:fixed; height:6vw; right:14vw ; height:6vw;width:6vw" onclick = "window.open('helpIndex.html','Help with text file','width = 400, height=500, scrollbars=yes, resizable =yes')">        
-    <img src="../../icons/transVocalWhat.png" alt ="Player" onclick = "passARR('nextplayer.html',ARRlines,'\n',null);" id = "ButtonConfigToPlay" style = "position:fixed; height:6vw; width:6vw; right:7vw; border:none; margin:0; padding:0; z-index:7900">
-    <img  id="HomeIcon" src="../../icons/blackHome.png" alt ="Home" onclick="home()" style="position:fixed;height:6vw ;width :6vw;right:0vw">
+    <img src="../../Icons/blackSearch.png" alt ="Research" style="position:fixed; height:6vw; right:21vw ; height:6vw;width:6vw" onclick = "research()">
+    <img src="../../Icons/blackQuestion.png" alt ="Help" style="position:fixed; height:6vw; right:14vw ; height:6vw;width:6vw" onclick = "window.open('helpIndex.html','Help with text file','width = 400, height=500, scrollbars=yes, resizable =yes')">        
+    <img src="../../Icons/transVocalWhat.png" alt ="Player" onclick = "passARR('nextplayer.html',ARRlines,'\n',null);" id = "ButtonConfigToPlay" style = "position:fixed; height:6vw; width:6vw; right:7vw; border:none; margin:0; padding:0; z-index:7900">
+    <img  id="HomeIcon" src="../../Icons/blackHome.png" alt ="Home" onclick="home()" style="position:fixed;height:6vw ;width :6vw;right:0vw">
     </div>
 
     <div  id = "listCntrl" style = "position:fixed; height:100%; width:100%; left:0px ; bottom: 0vw; LEFT:0vw; border:none; margin:0; padding:0; z-index:7501; background:black; text-align: center;display:none">
@@ -268,8 +268,8 @@ Digitec RP55=======================================
     </div>
     
     <div id ='tabBuilder' style="line-height:100%;text-align:left;border:solid;background-color:blue; border-color:white;display:none; position:absolute;height:46%;width:30%;right:1%;top:50%;z-index:20001;">
-      <img src="../../icons/blackClose.png" alt="+" title ="Cancel" onclick="dis('tabBuilder','none')" style="position:absolute; height:20%; right:0%; top:0%;">
-      <img src="../../icons/blackThumbsUp.png" alt="+" title ="OK (Clears your previous work in the tab frame...)" onclick="tabNew(),dis('tabBuilder','none')" style="position:absolute; height:20%; right:20%; top:0;">
+      <img src="../../Icons/blackClose.png" alt="+" title ="Cancel" onclick="dis('tabBuilder','none')" style="position:absolute; height:20%; right:0%; top:0%;">
+      <img src="../../Icons/blackThumbsUp.png" alt="+" title ="OK (Clears your previous work in the tab frame...)" onclick="tabNew(),dis('tabBuilder','none')" style="position:absolute; height:20%; right:20%; top:0;">
       TAB BUILDER
       <div style="position:absolute; top:20%;left:30%;">Beats per Bar</div>
       <select id = "beat" style= "position:absolute; top:20%; background-color:white; left:5%;">
