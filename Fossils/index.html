@@ -29,7 +29,6 @@
 <body>
 <!--verical map...
    -100 main div 
-    100 crowd
     500 targets
     600 message
     700 aux panels
@@ -70,8 +69,8 @@
                <a onclick="msg(ABOUTstring)">-ABOUT ME</a><br>
                <a onclick="msg(PLAYLISTstring)">-MY PLAYLIST</a><br>
                <a onclick="msg(BANDstring)">-ELECTRONIC BAND</a><br>
-               <a onclick="msg(SCHEDULEstring)">-SCHEDULE</a><br>
                <a onclick="msg(WHYstring)">-WHY "ELECTRONIC"</a><br>
+               <a onclick="msg(SCHEDULEstring)">-SCHEDULE</a><br>
                <a onclick="document.getElementById('msg').style.display='none'">-HOME</a><br>
                <!--<a onclick="window.open('Data/flyer.html')">-PRINT A FLYER</a><br>
                <a onclick="msg('msg','TEST',TESTstring,60,5,38,43,false)">-TEST STRING"</a><br>-->
@@ -97,14 +96,12 @@ var LOCKED=true;
 var WELCOMEstring;
 var BANDstring;
 var ABOUTstring;
-var CROWDstring;
 var SCHEDULEstring;
 var PLAYLISTstring;
 var WHYstring;
 var TESTstring='This is the test string. And it looks like this... Here is A Break<br>Title<br>';
 
 window.onload = function() {
-    CROWDstring=fileDownload('Data/crowdString.txt')
     BANDstring=fileDownload('Data/bandString.txt')
     ABOUTstring=fileDownload('Data/aboutString.txt')
     SCHEDULEstring=fileDownload('Data/scheduleString.txt')
