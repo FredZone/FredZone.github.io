@@ -1,0 +1,130 @@
+FORMATTING A TEXT FILE FOR USE BY THE 'PERFORMER'
+	
+
+========================================================================================
+GENERAL
+1) 	RULE NUMBER ONE!!!!!!!!!! DONT USE TABS FOR SPACING!
+2) 	The body should consist of 4 MAJOR kinds of lines:Data, Header, Chord, Lyric,
+3) 	There are also 2 specialized lines: Spacer and Note used for special functions)
+4) 	HINT: Use the the editor <img src="../../icons/blackEdit.png" style="width:4%" onclick="window.open('Editor.html')">
+	to write this file it saves all kinds of time....and some tools are provided
+
+--------------------------------------------------------------
+DATA LINE   (DONT USE TABS FOR SPACING!)
+1) 	The first line is reserved for the data and will NOT be displayed,
+	so dont put chords or lyrics or notes you want to see displayed
+2) 	If you want to pass data to the program in order to help it select a scroll speed
+	and other display features your must arrange it as a data 'hash' make it scroll at the rigth speed
+3) 	The first line is a data 'hash' consisting of a name and value separated by a colon
+	and that pair is separated from the next pair by a comma
+4) 	The recognized data you can pass is
+	TITLE: (this should be the exact name of the file without the ".txt" extension 
+	DUR: (duration in seconds)
+	BPM:  (tempo in beats per minute
+	BEATS  (beats per bar...3/4 = 3 and 12/8 =12 etc
+	ARTIST:
+	KEY:	(Key the song is in...)
+	QUAL: (just a word or two to say how good it is  Crude, perfect, verified etc...)
+5) 	The names must be EXACT and in CAPITAL Letters or they will be missed...
+	None of the values are absolutely necessary but to utilize all the bells and whistles you need to provide data
+6)	Example of data in the first line (extra spaces in there for clarity)
+	TITLE:Silent Night,  DUR:185,  BPM:73,  BEATS:3,  ARTIST:Perry Como,  KEY:A,  QUAL:Good
+
+--------------------------------------------------------------
+HEADER LINES (DONT USE TABS FOR SPACING!)
+These Separate the sections of the song and are in capital letters proceeded by a # symbol
+The Program recognizes the following types and numbers some of them
+	#INTRO
+	#VERSE  (#VERSE 1, #VERSE 2...)
+	#CHORUS (#CHORUS 1, #CHORUS 2#...)
+	#BREAK  (#BREAK 1, #BREAK 2...)
+	#OUTRO
+	#BRIDGE
+	#TURN AROUND
+	
+--------------------------------------------------------------
+CHORD LINE:  (DONT USE TABS FOR SPACING!)
+This Line should normally consist of following symbols
+1) Capital letters designating chords (C,D,E,F,G,A,B)
+2) Vertical bars to indicate start of a measure (|)
+3) Tildes to indicate partial bars (~)
+4) Flat and sharp symbols (#,b)
+5) Forward slashes indicating a special bass note for the chord(/)
+6) Percent sign indicating the chord does not change at the bar |% (all % signs must be proceeded by a bar)
+7) Numbers as part of a chord description{used without an  space (i.e: A7, A9, A-, Am, Asus4)
+8) An asterix indicates a short 1/2 length bar...
+The example below covers 8 full bars
+|C   ~C/B    |Am   ~Am/G   |F   ~G7     |C    *|%        |Dbm/G#     |Em9       |C ~F ~G  ~C
+(FYI--in 4/4 time at 60bpm this bar would last around 38 seconds,{9 std (36 sec)and 1 short( 2 sec) bar}
+The program uses this and other data to determine scroll rate) 
+
+HINTS
+1) If you want the chord line to be highlighted in color you must have a vertical bar " | " in the line
+2) If you want the program to calculate the scroll rate  and duration you must use the "|" to show each measure
+3) You can use small letters in the line and symbols not used in chords, for notes but use small letters and spaces to separate them from chords 
+
+--------------------------------------------------------------
+LYRIC LINE:(DONT USE TABS FOR SPACING!)
+These will be displayed as written but try to keep them under 80 characters of they are hard to see on a smaller screen
+1) avoid punctuation if possible (use a small quote for an apostrophe or just leave it out)
+2) DONT use a bar (|) or the line will be treated as a chord
+3) Lining up the chords and lyrics is totally optional
+
+--------------------------------------------------------------
+SPACER LINES (DONT USE TABS FOR SPACING!)
+1) These are simply used as space holders to balance the scroll or put extra lyric information if the lyric line is too long
+2) They are usually placed right below a lyric line since they are formatted like a lyric line but dont get line numbers
+3) The Program recognizes the $ as a spacer if it appears as the first character
+   example:
+   $     This would be a spacer line...
+
+4) They effect the displayed length of the song and consequently speed the scroll rate
+
+5) If a song has secton that scrolls by too fast you can put a spacer beneath some the problem lyric line it  will solve the problem by requiring extra time to scroll past it..
+
+--------------------------------------------------------------
+NOTE LINES (DONT USE TABS FOR SPACING!)
+1)Designated with the @ (asterisks)These normally appear highlighted within the body of the song, and they are 
+A)@  	These are intended to be peformance notes, like who sings ect...
+		a)example:  @Joe sings harmony here...
+		b)Struming Notes are also designated with a single @
+			see <A onclick="postHelpFile('HelpStrumming.txt','Strumming Notation')"><X2>Strumming Help</X2></A>		
+		@ Notes do effect the scroll rate so if you use more then a few distribute them equally
+			throuhout the song to keep the scroll in sync with the back track
+B)@@ 	Use a double asterisk for Trivia notes that are not part of the song but you wish to look at separately,
+	They dont appear in the normal presentation...and are normally used at the end of a song
+	They are available in a pop up note screen or in the edit screen, so they dont effect the scroll rate
+	uses include: song history & trivia
+C) @@@ 	Use a triple asterix for Technical notes that are not part of the song
+	but you wish to look at separately, either in a note screen or in the edit screen, so they dont effect the scroll rate
+	They dont appear in the normal presentation...and are normally used at the end of a song
+	uses include: tableture,chord diagrams etc
+   
+--------------------------------------------------------------
+LINK LINES (DONT USE TABS FOR SPACING!)
+1) To insert a link just paste it in:  for example
+	https://www.youtube.com/watch?v=IPyKaH09lpc
+2) If you want to 'name' the link put a "|" between the link and title
+	https://www.youtube.com/watch?v=IPyKaH09lpc|The Truth About PhD Creationists
+	
+--------------------------------------------------------------
+TAB LINES (These are new!)
+1) The I had an original TAB format to it I've added
+	'TAB:@' to indicate a tab
+	'71@'	to indicate the starting bar (i.e 71)
+2)format
+	"TAB:"
+	"@"+starting Bar
+	"@"+beats PER BAR
+	"@"+divisions per beat
+	"@"+spaces per division;
+	TAB:@33@4@4@4>>>>>>
+	each '@' after spaces breaks down as string:action  (i.e.) @3:5r meash string 3 fret 5 release...
+	
+NOTE the use must strip off the first 2 elements (i.e "TAB:@34@") to make the editor work	
+--------------------------------------------------------------
+GENERAL STUFF
+Try to keep the lines all the same number of bars since scrolling is a constant speed
+Try to evenly spread the lyrics and notes so you dont have to adjust the scroll Speed
+Long and short lines force the display to size to the longest line
+DONT USE TABS FOR SPACING

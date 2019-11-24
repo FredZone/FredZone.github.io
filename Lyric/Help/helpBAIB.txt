@@ -1,0 +1,19 @@
+BAND IN A BOX
+------------------------------------------
+Export the Chords
+    Built an export from my editor to Music XML
+
+Saving your file
+    Save your BAIB file as SGU in BIAB Directory
+    Save an MP3 in Backing Directory if you want to use it with perform
+    Save the file as SGU in the BIAB directory
+=====================================================    
+Creating my own MUSIC XML---------------------------------------------
+Bar based text (lyric)
+    Shown below the "</harmony>"end tag
+    <direction placement="above">
+        <direction-type>
+            <words font-weight="normal">crapola</words>
+            </direction-type>
+        <staff>1</staff>
+    </direction>
