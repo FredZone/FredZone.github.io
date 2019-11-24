@@ -313,7 +313,7 @@ Super controls ???? belonging to no group so z is determined by function   -->
         <div id="tools" style="position:absolute;visibility:visible; display:block; text-align:center; overflow:hidden; top:0%; left:0%; width:100%; height:33%;">   
             <div style="display:block; background-color:darkgrey; text-align:center; overflow:hidden; position:absolute; top:0%; left:0%; height:80%; width:100%; height:20%;">TOOLS</div>
             <img src="../../Icons/blackAdmin.png" title='FILE MAKER' alt ="XXX" onclick="fileMaster()" style="position:absolute;width:9%; height:70%;left:0.5%;bottom:0%;">
-            <img src="../../Icons/blackPlayList.png" title='PLAYLIST BUILDER' alt ="PlayList" onclick ="passARR('playlist.html',SETname,null,null)" style="position:absolute; width:9%; height:70%;left:10.5%;bottom:0%;">
+            <img src="../../Icons/blackPlayList.png" title='PLAYLIST BUILDER' alt ="PlayList" onclick ="passARR('PlayList.html',SETname,null,null)" style="position:absolute; width:9%; height:70%;left:10.5%;bottom:0%;">
             <img src="../../Icons/blackEdit.png" title='EDITOR' alt ="Edit" onclick ="passARR('editor.html',ARRlines,'\n',null)" style="position:absolute;width:9%; height:70%;left:20.5%;bottom:0%;">
             <img src="../../Icons/blackSearch.png" title='INFO / RESEARCH' alt ="Info" onclick="passARR('Research.html',TITLE,'\n',null)" style="position:absolute;width:9%; height:70%;left:30.5%;bottom:0%;">
             <img src="../../Icons/blackSheet.png" title='OPEN BY EXACT NAME' alt ="open" onclick ="openSong()" style="position:absolute;width:9%; height:70%;left:40.5%;bottom:0%;">
@@ -325,7 +325,7 @@ Super controls ???? belonging to no group so z is determined by function   -->
             </div>
         <div id="info" style="position:absolute; visibility: visible; display:block; text-align:center; overflow:hidden;top:33%; left:0%; width:100%; height:33%; z-index:1200">   
             <div style="text-align:center; background-color:darkgrey; overflow:hidden; position:absolute; top:0%; left:0%; width:100%; height:20%;">INFORMATION</div>
-            <img id="ButtonHelp" title='HELP' src="../../Icons/blackQuestion.png" alt ="HELP"  onclick ="window.open('../help/helpIndex.html')" style=position:absolute;width:9%;height:70%;left:0.5%;bottom:0%;">
+            <img id="ButtonHelp" title='HELP' src="../../Icons/blackQuestion.png" alt ="HELP"  onclick ="window.open('../Help/helpIndex.html')" style=position:absolute;width:9%;height:70%;left:0.5%;bottom:0%;">
             <img id="ButtonAnalysis" title='SONG ANALYSIS' src="../../Icons/blackInfo.png" alt ="LINKS" onclick="notePopUp(analizeSong(),'2vw','black','tan','No Analysis Available...','Song Analysis')" style=position:absolute;width:9%;height:70%;left:10.5%;bottom:0%;">
             <img id="ButtonTech" title='TECHNICAL INFO' src="../../Icons/violetNotepad.png" alt ="TECH NOTES" onclick="notePopUp(NOTEtech,'2vw','black','violet','No Technical Notes...','Technical Notes')" style=position:absolute;width:9%;height:70%;left:20.5%;bottom:0%;">
             <img id="ButtonTrivia" title='TRIVIA' src="../../Icons/yellowGift.png" alt ="TRIVIA NOTES" onclick="notePopUp(triviaNotes(),'2vw','black','yellow','No Trivia Notes...','Trivia Notes')" style=position:absolute;width:9%;height:70%;left:30.5%;bottom:0%;">
@@ -333,7 +333,8 @@ Super controls ???? belonging to no group so z is determined by function   -->
             <img id="ButtonLinks" title='LINKS (Internet)' src="../../Icons/blackLinks.png" alt ="LINKS" onclick="notePopUp(NOTElinks,'3vw','Blue','white','No links...','Internet Links')" style=position:absolute;width:9%;height:70%;left:50.5%;bottom:0%;">
             <img id="ButtonHistory" title="Click for Revision History" src="../../Icons/lightGreenHistory.png" title="REVISION HISTORY" alt ="HISTORY" onclick ="notePopUp('<pre>'+ getRevisonHistory()+'</pre>','1vw','black','white','Unable to access Revision History...','Revision History')" style=position:absolute;width:9%;height:70%;left:60.5%;bottom:0%;">
             <!--<img id="ButtonNeck" src="../../Icons/neck.png" title="Neck" alt ="Neck" onclick ="dis('neckBar')" style="position:absolute;width:9%;height:70%;left:70.5%;bottom:0%;">-->
-            </div>
+            <img onclick =mailTo('open'); title="Email to Webmaster..." src="../../Icons/email.jpg" alt="?" style='position:absolute;width:9%;height:70%;left:70.5%;bottom:0%;'>
+        </div>
         <div id='prntType' style="position:absolute; display:none; font-size:1.5vw; left:50.5%; top:33%; height:66%; background-color:orange; width:9%; color:black; font-size:1.5vw; text-align:left; z-index:5000">    
             <button onclick="passARR('print2.html',ARRlines,'\n','\n'+TITLE+'\n'+FONTSIZE)" style="position:absolute;width:100%;top:0%;height:16%;left:0%;width:100%">Std</button>
             <button onclick="passARR('print2.html',ARRlines,'\n','(Full)\n'+TITLE+'\n'+FONTSIZE)" style="position:absolute;width:100%;top:16%;height:16%;left:0%;width:100%">Full</button>
@@ -344,10 +345,10 @@ Super controls ???? belonging to no group so z is determined by function   -->
             </div>
         <div id="misc" style="position:absolute; visibility: visible; display:block; text-align:center; overflow:hidden;top:66%; left:0%; width:100%; height:33%; z-index:1200">   
             <div style="text-align:center; background-color:darkgrey; overflow:hidden; position:absolute; top:0%; left:0%; width:100%; height:20%;">MISCELLANEOUS</div>
-            <img id="SS" title='Signal Setup' src="../../Icons/blackAmp.png" alt="Passport Setup"  onclick="window.open('SignalSetup.html')" style=position:absolute;width:9%;height:70%;left:0.5%;bottom:0%;">
+            <!--<img id="SS" title='Signal Setup' src="../../Icons/blackAmp.png" alt="Passport Setup"  onclick="window.open('SignalSetup.html')" style=position:absolute;width:9%;height:70%;left:0.5%;bottom:0%;">
             <img id="PP" title='?' src="../../Icons/blackVol.png" alt="?" onclick="window.open('Passport.html')" style=position:absolute;width:9%;height:70%;left:10.5%;bottom:0%;">
             <img id="PL" title='?' src="../../Icons/packingList.png" alt="?" onclick="window.open('EquipmentList.html')" style='position:absolute;width:9%;height:70%;left:20.5%;bottom:0%;'">
-            <img onclick =mailTo('open'); title="Email to Webmaster..." src="../../Icons/email.jpg" alt="?" style='position:absolute;width:9%;height:70%;left:30.5%;bottom:0%;'>
+            -->
         </div>
     </div>
 
