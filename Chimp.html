@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<head>
+    <link rel="shortcut icon" type="image/png" href="../../Icons/blackQuestion.png">
+    <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> 
+    <title id = 'title'>CHIMP</title>
+    <style type="text/css">
+        Body{
+            background-color:black;
+            font-family:Courrier New;
+            vertical-align:middle;
+            color:black;
+            }
+    </style>
+    </head>
+
+<body onresize="sizeFont()"> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+    <title></title>
+</head>
+
+<body >
+   
+    <div id='chimp' style="position:fixed;text-align: center;background-color:black; top:0%;left:0%; width:100%;height:100%; width:100%;overflow:hidden;">
+        <div style=position:absolute;background-color:green;width:1px;left:60%;top:0%;height:100%;z-index:300;"></div>
+        <div id='game' style="position:absolute;line-height:200%; font-size:7vw;left:0%; bottom:0%;width:59%;height:100%;background-color:black;vertical-align: top;">
+            <div id='sheild' style="position:absolute;display:block;font-size:10vh;left:0%;top:0%;width:100%;height:100%;background-color:transparent;z-index:5;"></div> 
+            <a id='0' onclick="check(this.id)" style="position:absolute;left:4%;width:15%;top:5%;height:18%;border:solid;border-color:black;font-weight:bold;" name="0">0</a>
+            <a id='1' onclick="check(this.id)" style="position:absolute;left:23%;width:15%;top:5%;height:18%;border:solid;border-color:black;font-weight:bold;" name="1">1</a>
+            <a id='2' onclick="check(this.id)" style="position:absolute;left:42%;width:15%;top:5%;height:18%;border:solid;border-color:black;font-weight:bold;" name="2">2</a>
+            <a id='3' onclick="check(this.id)" style="position:absolute;left:61%;width:15%;top:5%;height:18%;border:solid;border-color:black;font-weight:bold;" name="3">3</a>
+            <a id='4' onclick="check(this.id)" style="position:absolute;left:80%;width:15%;top:5%;height:18%;border:solid;border-color:black;font-weight:bold;" name="4">4</a>
+            <a id='5' onclick="check(this.id)" style="position:absolute; left:4%;width:15%;top:28%;height:18%;border:solid;border-color:black;font-weight:bold;"" name="4">5</a>
+            <a id='6' onclick="check(this.id)" style="position:absolute; left:23%;width:15%;top:28%;height:18%;border:solid;border-color:black;font-weight:bold;" name="6">-</a>
+            <a id='7' onclick="check(this.id)" style="position:absolute; left:42%;width:15%;top:28%;height:18%;border:solid;border-color:black;font-weight:bold;" name="7">-</a>
+            <a id='8' onclick="check(this.id)" style="position:absolute; left:61%;width:15%;top:28%;height:18%;border:solid;border-color:black;font-weight:bold;" name="8">-</a>
+            <a id='9' onclick="check(this.id)" style="position:absolute; left:80%;width:15%;top:28%;height:18%;border:solid;border-color:black;font-weight:bold;" name="9">-</a>
+            <a id='10' onclick="check(this.id)" style="position:absolute; left:4%;width:15%;top:51%;height:18%;border:solid;border-color:black;font-weight:bold;" name="10">10</a>
+            <a id='11' onclick="check(this.id)" style="position:absolute; left:23%;width:15%;top:51%;height:18%;border:solid;border-color:black;font-weight:bold;" name="11">-</a>
+            <a id='12' onclick="check(this.id)" style="position:absolute; left:42%;width:15%;top:51%;height:18%;border:solid;border-color:black;font-weight:bold;" name="12">-</a>
+            <a id='13' onclick="check(this.id)" style="position:absolute; left:61%;width:15%;top:51%;height:18%;border:solid;border-color:black;font-weight:bold;" name="13">-</a>
+            <a id='14' onclick="check(this.id)" style="position:absolute; left:80%;width:15%;top:51%;height:18%;border:solid;border-color:black;font-weight:bold;" name="14">14</a>
+            <a id='15' onclick="check(this.id)" style="position:absolute; left:4%;width:15%;top:74%;height:18%;border:solid;border-color:black;font-weight:bold;" name="15">-</a>
+            <a id='16' onclick="check(this.id)" style="position:absolute; left:23%;width:15%;top:74%;height:18%;border:solid;border-color:black;font-weight:bold;" name="16">-</a>
+            <a id='17' onclick="check(this.id)" style="position:absolute; left:42%;width:15%;top:74%;height:18%;border:solid;border-color:black;font-weight:bold;" name="17">-</a>
+            <a id='18' onclick="check(this.id)" style="position:absolute; left:61%;width:15%;top:74%;height:18%;border:solid;border-color:black;font-weight:bold;" name="18">-</a>
+            <a id='19' onclick="check(this.id)" style="position:absolute; left:80%;width:15%;top:74%;height:18%;border:solid;border-color:black;font-weight:bold;" name="19">19</a>
+        </div>
+        <div id='msg' style="text-align:center;line-height:100%;font-size:4vh; position:absolute;top:0%; left:60%; width:40%;height:15%;color:white;background-color:black;">
+                WELCOME TO CHIMP
+            </div>  
+        
+        <div id='ctrl' style="position:absolute;display:block;left:60%;top:15%; width:40%;height:85%;background-color:black;font-size:3vw;">
+  
+            <div onclick="window.open('https://www.youtube.com/watch?v=ktkjUjcZid0&t=36s')"style="position:absolute;border: 5px solid blue;background-color:lightgrey;top:5%;left:5%;height:15%;width:90%;">Inspirational Video...</div>
+            <div style=" position:absolute;font-size:7vw; border: 5px solid green;background-color:lightgrey;top:35%;left:10%;height:40%;width:80%;" onclick="play()">PLAY</div>
+            <div onclick="dis('settings')"style="position:absolute;border: 5px solid yellow;background-color:lightgrey;right:5%;bottom:5%;width:40%;height:12%;">SETTINGS</div>
+            <div onclick="reset()" style="position:absolute;border: 5px solid red;background-color:lightgrey;left:5%;bottom:5%;width:40%;height:12%;">RESET</div> >
+        
+        
+        </div>
+   
+        <div id='settings' style="position:absolute;display:none;font-size:4vh;background-color:lightgrey; width:100%; top:0%; height:100%; left:0%;z-index:400;">
+           <button style="position:absolute;font-size:8vh;top:5%;right:5%;height:10%;width:90%">GAME SETTINGS</button><br>
+           <button style="position:absolute;font-size:4vh;top:20%;right:50%;height:10%;width:10%" onclick="fullField()">FULL FIELD</button><br>
+           <button style="position:absolute;font-size:4vh;top:20%;right:35%;height:10%;width:10%" onclick="smallField()">SMALL FIELD</button><br>
+           <button style="position:absolute;font-size:4vh;top:20%;right:20%;height:10%;width:10%" onclick="miniField()">Mini FIELD</button><br>
+           <button style="position:absolute;font-size:4vh;top:20%;right:5%;height:10%;width:10%" onclick="microField()">micro FIELD</button><br>
+           
+
+           <button onclick="if(LEVEL<20){LEVEL=LEVEL+1,document.getElementById('buttonLevel').innerHTML=LEVEL;}" style="position:absolute;top:35%;left:50%;height:10%;width:10%;font-size:4vh">^</button><br>
+           <button id='buttonLevel' style="position:absolute;top:50%;left:50%;height:10%;width:10%;font-size:4vh">3</button><br>
+           <button onclick="if(LEVEL>3){LEVEL=LEVEL-1,document.getElementById('buttonLevel').innerHTML=LEVEL;}" style="position:absolute;top:65%;left:50%;height:10%;width:10%;font-size:4vh">v</button><br>
+           <button onclick="delay(200)" style="position:absolute;top:35%;left:70%;height:10%;width:10%;font-size:4vh">^</button>
+           <button id='delay' style="position:absolute;top:50%;left:70%;height:10%;width:10%;font-size:4vh">1.0</button>
+           <button onclick="delay(-200)" style="position:absolute;top:65%;left:70%;height:10%;width:10%;font-size:4vh">v</button>
+           <button id='auto' onclick="auto()" style="position:absolute;top:85%;right:15%;height:10%;width:15%;">AUTO ADVANCE</button><br>
+           <button id='buttonSpeed' onclick="speedSet()" style="position:absolute;top:85%;right:40%;height:10%;width:15%;">AUTO DELAY</button><br>
+            <button id='buttonSpeed' onclick="dis('settings')" style="position:absolute;bottom:5%;right:5%;height:10%;width:15%;">BACK to GAME...</button><br>
+        
+        </div>
+    </div>
+ 
+</body>
+</html>
+
+
+<script type="text/javascript">
+//Not baselined
+
+var CUR = 0
+var LEVEL = 3
+var DELAY = 1000;
+var TIMEOUTcrap
+var AUTO = true
+var WINS = 0
+var GAMES = 0
+var SPEED = 'auto'
+
+
+window.onload = function() {
+    sizeFont()
+}
+
+
+
+   
+function sizeFont() {
+    var fs='7vw';
+    if (window.innerHeight<window.innerWidth){
+        fs='7vh'
+    }
+    document.getElementById('game').style.fontSize='fs'
+    document.getElementById('game').style.lineHeight=parseInt(200*window.innerHeight/window.innerWidth,10)+'%'
+}   
+   
+   
+    /*function sizeFont() {
+        if (window.innerWidth/window.innerHeight<1) {
+            document.getElementById('game').style.fontSize = "7vw";
+        } else {
+            document.getElementById('game').style.fontSize = "10vh";
+        }
+    }*/
+
+    function delay(delta) {
+        var x = parseInt(DELAY + delta, 10)
+        if (x > 400) {
+            if (x < 4000) {
+                DELAY = x;
+
+            }
+        }
+        document.getElementById('delay').innerHTML = parseInt(DELAY / 100, 10) / 10;
+    }
+
+    function reset() {
+        WINS = 0;
+        GAMES = 0;
+        CUR = 0;
+        LEVEL = 3
+        document.getElementById('buttonLevel').innerHTML = LEVEL;
+        DELAY = 1000;
+        document.getElementById('delay').innerHTML = '1.0';
+        clearGrid()
+        dis('sheild', 'block')
+        SPEED = 'auto'
+        document.getElementById('auto').innerHTML = "AUTO ADVANCE";
+        statusMsg("RESET AND READY!");
+
+    }
+
+    function clearGrid() {
+        for (n = 0; n <= 19; n++) {
+            document.getElementById(n).style.color = 'black';
+            document.getElementById(n).style.backgroundColor = 'black';
+            document.getElementById(n).style.borderColor = 'black';
+            document.getElementById(n).innerHTML = ""
+        }
+        statusMsg('Grid Cleared...')
+    }
+
+
+    function play() {
+        dis('ctrl', 'none')
+        GAMES = GAMES + 1
+        dis('sheild', 'block')
+        ARRdeck = ("").split(",")
+        clearGrid()
+        createDeck()
+        shuffle(ARRdeck)
+        TIMEOUTcrap = setTimeout(function() {
+            showDeck(ARRdeck);
+        }, 400);
+        TIMEOUTcrap = setTimeout(function() {
+            hideDeck(ARRdeck);
+        }, DELAY);
+        dis('sheild', 'none')
+    }
+
+    function createDeck() {
+        var str = ""
+        for (n = 1; n <= 19; n++) {
+            if (n <= LEVEL) {
+                str = str + n + ","
+            } else {
+                str = str + ","
+            }
+        }
+        ARRdeck = str.split(",")
+        statusMsg('NEW GAME! LEVEL ' + LEVEL);
+    }
+
+    function shuffle(arr) { //taken from internet I didnt analize it...
+        let counter = arr.length;
+        // While there are elements in the array
+        while (counter > 0) {
+            // Pick a random index
+            let index = Math.floor(Math.random() * counter);
+            // Decrease counter by 1
+            counter--;
+            // And swap the last element with it
+            let temp = arr[counter];
+            arr[counter] = arr[index];
+            arr[index] = temp;
+        }
+        return arr;
+    }
+
+    function check(pushed) {
+        var wl
+        var n;
+        if (ARRdeck[pushed] == CUR) {
+            document.getElementById(pushed).style.color = "yellow"
+            wl = (CUR + " of " + LEVEL)
+            CUR = CUR + 1
+            if (CUR == LEVEL + 1) {
+                dis('ctrl', 'block');
+                WINS = WINS + 1
+                if (AUTO == true) {
+                    LEVEL = LEVEL + 1
+                    document.getElementById('buttonLevel').innerHTML = LEVEL;
+                }
+                var pct = 100 * (WINS / GAMES)
+                pct = parseInt(pct, 10)
+                wl = "YOU W1N! :";
+                if (SPEED == 'auto') {
+                    delay(200);
+                }
+            }
+        } else {
+            for (n = 0; n <= 19; n++) {
+                if (ARRdeck[n] >= CUR) {
+                    document.getElementById(n).style.backgroundColor = "red"
+                }
+            }
+            var pct = 100 * (WINS / GAMES)
+            pct = parseInt(pct, 10)
+            wl = "OOPS YOU LOST! ";
+            dis('sheild', 'block');
+            dis('ctrl', 'block');
+        }
+        statusMsg(wl + " {" + WINS + " WINS in " + GAMES + " GAMES (" + pct + "%)}")
+
+    }
+
+    function showDeck(arr) {
+        for (n = 0; n <= 19; n++) {
+            if (arr[n] > 0) {
+                document.getElementById(n).innerHTML = arr[n];
+                document.getElementById(n).style.color = "yellow"
+                document.getElementById(n).style.backgroundColor = "black"
+            } else {
+                document.getElementById(n).innerHTML = "";
+                document.getElementById(n).style.backgroundColor = "black"
+            }
+        }
+    }
+
+    function hideDeck(arr) {
+        CUR = 1
+        for (n = 0; n <= 19; n++) {
+            if (arr[n] > 0) {
+                //document.getElementById(n).style.color = "yellow"
+                document.getElementById(n).style.borderColor = "grey"
+                document.getElementById(n).style.color = "black"
+            }
+        }
+    }
+
+    function statusMsg(ms) { // COLOR SCHEME: light grey=normal;red=problem ;yellow-pause or inwork; green=Ready
+        if (ms === null || ms === '' || ms === " ") {
+            ms = "ERROR: No Status Message Passed";
+        }
+        document.getElementById("msg").innerHTML = ms;
+    }
+
+    function dis(id, disp) {
+        if (disp === undefined) {
+            if (document.getElementById(id).style.display == 'none') {
+                document.getElementById(id).style.display = 'block';
+            } else {
+                document.getElementById(id).style.display = 'none';
+            }
+        } else {
+            if (disp == 'none') {
+                document.getElementById(id).style.display = 'none';
+            } else {
+                document.getElementById(id).style.display = 'block';
+            }
+        }
+    }
+
+    function fullField(fact) {
+        document.getElementById('game').style.fontSize = "10vh";
+        document.getElementById('game').style.width = "60%";
+        document.getElementById('game').style.height = "95%";
+    }
+
+    function smallField(fact) {
+        document.getElementById('game').style.fontSize = "8vh";
+        document.getElementById('game').style.width = "40%";
+        document.getElementById('game').style.height = "80%";
+    }
+
+    function miniField(fact) {
+        document.getElementById('game').style.fontSize = "6vh";
+        document.getElementById('game').style.width = "30%";
+        document.getElementById('game').style.height = "65%";
+    }
+
+    function microField(fact) {
+        document.getElementById('game').style.fontSize = "3vh";
+        document.getElementById('game').style.width = "15%";
+        document.getElementById('game').style.height = "32%";
+    }
+
+    function speedSet() {
+        if (SPEED == 'auto') {
+            SPEED = 'fixed';
+            document.getElementById('buttonSpeed').innerHTML = "FIXED DELAY";
+        } else {
+            SPEED = 'auto';
+            document.getElementById('buttonSpeed').innerHTML = "AUTO DELAY";
+        }
+    }
+
+    function auto() {
+        if (AUTO == true) {
+            AUTO = false;
+            document.getElementById('auto').innerHTML = "MANUAL ADVANCE";
+        } else {
+            AUTO = true;
+            document.getElementById('auto').innerHTML = "AUTO ADVANCE";
+        }
+    }
+</script>
+</body>
+<html>
