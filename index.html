@@ -71,7 +71,7 @@ Body
             </div>
         </div>
 
-        <div id=netButton' title="Fred Zone INTERNET" onclick="window.open('https://fredzone.github.io/index.html');" style="background-color:lightgrey;display:block; border-style:solid;vertical-align:bottom; position:absolute;left:48%; top:20%; width:9vw;height:12vw;z-index:10;">
+        <div id='netButton' title="Fred Zone INTERNET" onclick="window.open('https://fredzone.github.io/index.html');" style="background-color:lightgrey;display:block; border-style:solid;vertical-align:bottom; position:absolute;left:48%; top:20%; width:9vw;height:12vw;z-index:10;">
             <img src='Icons/blackFZ.png' alt='Fred Zone on the Net' style='position:absolute;top:0%;left:0%; width:100%;'>
 
             <div style="position:absolute;text-align: center; bottom:0%;width:100%">
@@ -128,9 +128,7 @@ Body
             //alert('LOCAL')
             document.getElementById('local').style.display='block';
             document.getElementById('localButton').style.display='none';
-            //document.getElementById('netButton').style.display='block';
             document.getElementById('greeting').innerHTML='Fred Zone <X3>PROTOTYPE VERSION</X3>';
-
         }else{
             //alert('net')
             //document.getElementById('local').style.display='none';
