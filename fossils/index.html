@@ -18,84 +18,61 @@
         X1{color:red;}
         X2{color:white;}
         X3{color:blue;}
-        X4{line-height:100%;font-size:4vw;color:yellow;}
-        X5{line-height:150%;font-size:5vw;color:green;}
+        X4{line-height:100%;color:yellow;}
+        X5{line-height:150%;color:green;}
     </style>
     </head>
 
 <body onresize="realign()">
-
-<div id="panelBoot" style="position:absolute;display:block;background-color:lightgreen;width:100vw;top:0%;bottom:0%;z-index:300;overflow: hidden;">LOADING...</div>
-
-<div id="panelAdmin" style="position:absolute;line-height:130%;font-size:7vw;display:none;border:none;width:100vw;top:0%;height:50vw;z-index:200;background-color:pink;"><br><br>
-    PRINTING PANEL <img id='ico' onclick="document.getElementById('panelAdmin').style.display='none'" src='Data/iconSite.png' alt="x" style="border:none;position:fixed; overflow:hidden; top:0%; right:0%; height:10%;">
-    <br><button onclick="window.open('Data/card.html')">Card-Front</button>
-    <button onclick="window.open('Data/cardBack.html')">Card-Back</button>
-    <button onclick="alert(helpCard())">Card Help</button><br>
-    <button onclick="window.open('Data/flyer.html')">FLYER</button>
-</div>
- 
-<div id="panelContact" style="position:absolute; line-height:120%; font-size:3vw;  display:none; border:none; background-color:yellow; width:100vw; top:0%; bottom:0%; z-index:100; overflow:hidden; ">
-    <br<br>CONTACT
-    <br>Press button to make Call or Send Email...
-    <br><X3>fredzone.github.io/fossils/</X3>
-    <br><br>Email:
-    <br><a onclick="window.open('mailto:fkaparich@gmail.com?subject=From Fossil Website&body=Put your message here..................%0A')"><button style="font-size:3vw">fkaparich@gmail.com</button></a>
-    <br><br>Call or Text:
-    <br><a onclick="window.open('tel:2542149980')"><button style="font-size:3vw">(254)-214-9980</button></a>
-    <br><br><br><button onclick="document.getElementById('panelContact').style.display='none'" style="font-size:3vw">Back to Home Page</button>  
-</div>
-
-<div style="position:fixed;display:block;background-color:transparent;line-height:130%;font-size:4vw;left:0%;top:0%;right:0%; bottom:96%;z-index:300;">
-    FRED and The Fossils (Virtual Band) 
-</div>
+    
+<!--BOOT PANEL -->   
+    <div id="panelBoot" style="position:absolute;display:block;background-color:lightgreen;width:100vw;top:0%;bottom:0%;z-index:300;overflow: hidden;">LOADING...</div>
+<!--ADMIN PANEL -->     
+    <div id="panelAdmin" style="position:absolute;line-height:130%;font-size:7vw;display:none;border:none;width:100vw;top:0%;height:50vw;z-index:200;background-color:pink;"><br><br>
+        PRINTING PANEL <img id='ico' onclick="document.getElementById('panelAdmin').style.display='none'" src='Data/iconSite.png' alt="x" style="border:none;position:fixed; overflow:hidden; top:0%; right:0%; height:10%;">
+        <br><button onclick="window.open('Data/card.html')">Card-Front</button>
+        <button onclick="window.open('Data/cardBack.html')">Card-Back</button>
+        <button onclick="alert(helpCard())">Card Help</button><br>
+        <button onclick="window.open('Data/flyer.html')">FLYER</button>
+    </div>
+<!--CONTACT PANEL -->     
+    <div id="panelContact" style="position:absolute; line-height:120%; font-size:3vw;  display:none; border:none; background-color:yellow; width:100vw; top:0%; bottom:0%; z-index:100; overflow:hidden; ">
+        <br<br>CONTACT
+        <br>Press button to make Call or Send Email...
+        <br><X3>fredzone.github.io/fossils/</X3>
+        <br><br>Email:
+        <br><a onclick="window.open('mailto:fkaparich@gmail.com?subject=From Fossil Website&body=Put your message here..................%0A')"><button style="font-size:3vw">fkaparich@gmail.com</button></a>
+        <br><br>Call or Text:
+        <br><a onclick="window.open('tel:2542149980')"><button style="font-size:3vw">(254)-214-9980</button></a>
+        <br><br><br><button onclick="document.getElementById('panelContact').style.display='none'" style="font-size:3vw">Back to Home Page</button>  
+    </div>
+<!--TITLE-->  
+    <div style="position:fixed;display:block;background-color:transparent;line-height:130%;font-size:4vw;left:0%;top:0%;right:0%; bottom:96%;z-index:300;">
+        FRED and The Fossils (Virtual Band) 
+    </div>
 <!--ICON A-->    
     <img id='iconA'src='Data/cutout.png' style="position:absolute;display:block; width:20%; top:3vw; left:0%;z-index:400">
-
 <!--ICON B-->    
     <img id='iconB'src='Data/folkBand.png' style="position:fixed;display:block; right:0vw; height:35vw; bottom:3vw;right:3vw;z-index:400">
-
-
-
 <!--MAIN SCREEN ==============================================================================--> 
-
-
-<div style="position:fixed;display:block ;background-color:lightgrey; line-height:130%; font-size:4vw; left:0%; top:0%; right:0%; bottom:0%; z-index:0;">
-
-<!--Title-->
-
-<!--MENU-->      
-    <div id='menu' style="position:absolute;text-align:center; line-height:150%; border:groove; font-size:2.5vw; text-align:left; left:19vw; right:60vw; top:5vw;  bottom:1vw; overflow:hidden";>
-        <div id='0'onclick="msg(WELCOMEstring)"style="position:absolute;text-align:center;color:yellow; border:none;top:0%;height:10%;width:100%;z-index:5;">WELCOME</div>
-        <div id='1'onclick="msg(ABOUTstring)"style="position:absolute; border:none;top:10%;height:10%;width:100%;z-index:5;">-ABOUT ME</div>
-        <div id='2'onclick="msg(PLAYLISTstring)"style="position:absolute; border:none;top:20%;height:10%;width:100%;z-index:5;">-PLAYLIST</div>
-        <div id='3'onclick="msg(WHYstring)"style="position:absolute; border:none;top:30%;height:10%;width:100%;z-index:5;">-BAND???</div>
-        <div id='4'onclick="msg(BANDstring)"style="position:absolute; border:none;top:40%;height:10%;width:100%;z-index:10;">-VIRTUAL</div>
-        <div id='5'onclick="msg(SCHEDULEstring)"style="position:absolute; border:none;top:50%;height:10%;width:100%;z-index:10;">-SCHEDULE</div>
-        <div id='6'onclick="pHome()"style="position:absolute; border:none;top:60%;height:10%;width:100%";z-index:10;">-MEMBERS...</div>
-        <div id='7'onclick="msg('TBD')"style="position:absolute; border:none;top:70%;height:10%;width:100%;z-index:15;">-TBD</div>
-        <div id='8'onclick="msg('TBD')"style="position:absolute; border:none;top:80%;height:10%;width:100%;z-index:15;">-TBD </div>
-        <div id='9'onclick="document.getElementById('panelContact').style.display='block'" style="position:absolute; border:none;top:90%;height:10%;width:100%;z-index:15;"><X1>CONTACT ME</X1></div>
-
-        
-        
-        
-<!--      
-        <a onclick="msg(WELCOMEstring)">-WELCOME</a><br>
-        <a onclick="msg(ABOUTstring)">-ABOUT ME</a><br>
-        <a onclick="msg(PLAYLISTstring)">-PLAYLIST</a><br>
-        <a onclick="msg(BANDstring)">-VIRTUAL?</a><br>
-        <a onclick="msg(WHYstring)">-BAND?</a><br>
-        <a onclick="msg(SCHEDULEstring)">-SCHEDULE</a><br>
-        <a onclick="document.getElementById('msg').style.display='none'">-HOME</a><br>
-        <a onclick="pHome()">-MEMBER</a><br>
-        <a onclick="document.getElementById('panelContact').style.display='block'"><X1>-CONTACT</X1></a>
--->
-    </div>
-<!--MSG-->         
-    <div id='msg'style="font-family:Courrier New;font-weight: bold;position:absolute;display:none;line-height:130%;overflow-y:scroll; background-color:lightgrey;border:groove;font-size:2.5vw;text-align:center;left:40vw;right:1vw; top:5vw; bottom:1vw; z-index:50;overflow-y:auto;word-break: keep-all">
-</div>
-
+    <div style="position:fixed;display:block ;background-color:lightgrey; line-height:130%; font-size:2.5vw; left:0%; top:0%; right:0%; bottom:0%; z-index:0;">
+    <!--MENU-->      
+        <div id='menu' style="position:absolute;text-align:center; line-height:150%; border:groove; font-size:2.5vw; text-align:left; left:19vw; right:60vw; top:5vw;  bottom:1vw; overflow:hidden";>
+            <div id='0'onclick="msg(WELCOMEstring)"style="position:absolute;text-align:center;color:yellow; border:none;top:0%;height:10%;width:100%;z-index:5;">WELCOME</div>
+            <div id='1'onclick="msg(ABOUTstring)"style="position:absolute; border:none;top:10%;height:10%;width:100%;z-index:5;">-ABOUT ME</div>
+            <div id='2'onclick="msg(PLAYLISTstring)"style="position:absolute; border:none;top:20%;height:10%;width:100%;z-index:5;">-PLAYLIST</div>
+            <div id='3'onclick="msg(WHYstring)"style="position:absolute; border:none;top:30%;height:10%;width:100%;z-index:5;">-BAND???</div>
+            <div id='4'onclick="msg(BANDstring)"style="position:absolute; border:none;top:40%;height:10%;width:100%;z-index:10;">-VIRTUAL</div>
+            <div id='5'onclick="msg(SCHEDULEstring)"style="position:absolute; border:none;top:50%;height:10%;width:100%;z-index:10;">-SCHEDULE</div>
+            <div id='6'onclick="pHome()"style="position:absolute; border:none;top:60%;height:10%;width:100%";z-index:10;">-MEMBERS...</div>
+            <div id='7'onclick="msg('TBD')"style="position:absolute; border:none;top:70%;height:10%;width:100%;z-index:15;">-TBD</div>
+            <div id='8'onclick="msg('TBD')"style="position:absolute; border:none;top:80%;height:10%;width:100%;z-index:15;">-TBD </div>
+            <div id='9'onclick="document.getElementById('panelContact').style.display='block'" style="position:absolute; border:none;top:90%;height:10%;width:100%;z-index:15;"><X1>CONTACT ME</X1></div>
+        </div>
+    <!--MSG-->         
+        <div id='msg'style="font-family:Courrier New;font-weight: bold;position:absolute;display:none;line-height:130%;overflow-y:scroll; background-color:lightgrey;border:groove;font-size:2.5vw;text-align:center;left:40vw;right:1vw; top:5vw; bottom:1vw; z-index:50;overflow-y:auto;word-break: keep-all">
+            MESSAGE APPEARS HERE...
+        </div>
 
 <script>
 var LASTmsg='band';
@@ -120,7 +97,8 @@ var TESTstring='This is the test string. And it looks like this... Here is A Bre
  */
 function realign() {//TALL  (this order left-right-top-bottom-font)
     document.getElementById('iconB').style.display='none';
-    if (window.innerHeight>window.innerWidth){//TALL
+    //if (window.innerHeight>window.innerWidth){//TALL
+    if (window.innerHeight/window.innerWidth>0.8){//TALL
     //Border
         document.getElementById('msg').style.border="groove"
         document.getElementById('menu').style.border="groove";
@@ -129,15 +107,14 @@ function realign() {//TALL  (this order left-right-top-bottom-font)
         document.getElementById('msg').style.right="1vw";
         document.getElementById('msg').style.top="5vw";
         document.getElementById('msg').style.bottom="28vh";
-            document.getElementById('msg').style.fontSize= "4vw";
+            document.getElementById('msg').style.fontSize= "3vw";
     //MENU
         document.getElementById('menu').style.left="1vw";
         document.getElementById('menu').style.right="1vw";
         document.getElementById('menu').style.top="72vh";
         document.getElementById('menu').style.bottom="1vw";
-            document.getElementById('menu').style.fontSize= "4vw";
-    
-    
+            document.getElementById('menu').style.fontSize= "3vw";
+
     document.getElementById('0').style.height='25%';
     document.getElementById('0').style.top='0%';
 //----------------
@@ -207,57 +184,46 @@ function realign() {//TALL  (this order left-right-top-bottom-font)
         document.getElementById('iconB').style.bottom="3vh";
         document.getElementById('iconB').style.height="35vw";
     
+        document.getElementById('0').style.height='10%';
+        document.getElementById('0').style.top='0%';
+    //----------------
+        document.getElementById('1').style.height='10%';
+        document.getElementById('1').style.top='10%';
+        document.getElementById('1').style.left='0%';
+        
+        document.getElementById('2').style.height='10%';
+        document.getElementById('2').style.top='20%';
+        document.getElementById('2').style.left='0%';
+        
+        document.getElementById('3').style.height='10%';
+        document.getElementById('3').style.top='30%';
+        document.getElementById('3').style.left='0%';
+    //----------------
+        document.getElementById('4').style.height='10%';
+        document.getElementById('4').style.top='40%';
+        document.getElementById('4').style.left='0%';
     
-    document.getElementById('0').style.height='10%';
-    document.getElementById('0').style.top='0%';
-//----------------
-    document.getElementById('1').style.height='10%';
-    document.getElementById('1').style.top='10%';
-    document.getElementById('1').style.left='0%';
+        document.getElementById('5').style.height='10%';
+        document.getElementById('5').style.top.height='50%';
+        document.getElementById('5').style.left='0%';
+        
+        document.getElementById('6').style.height='10%';
+        document.getElementById('6').style.top='60%';
+        document.getElementById('6').style.left='0%';    
+      //----------------  
+        document.getElementById('7').style.height='10%';
+        document.getElementById('7').style.top='70%';
+        document.getElementById('7').style.left='0%';
     
-    document.getElementById('2').style.height='10%';
-    document.getElementById('2').style.top='20%';
-    document.getElementById('2').style.left='0%';
-    
-    document.getElementById('3').style.height='10%';
-    document.getElementById('3').style.top='30%';
-    document.getElementById('3').style.left='0%';
-//----------------
-    document.getElementById('4').style.height='10%';
-    document.getElementById('4').style.top='40%';
-    document.getElementById('4').style.left='0%';
-
-    document.getElementById('5').style.height='10%';
-    document.getElementById('5').style.top.height='50%';
-    document.getElementById('5').style.left='0%';
-    
-    document.getElementById('6').style.height='10%';
-    document.getElementById('6').style.top='60%';
-    document.getElementById('6').style.left='0%';    
-  //----------------  
-    document.getElementById('7').style.height='10%';
-    document.getElementById('7').style.top='70%';
-    document.getElementById('7').style.left='0%';
-
-    document.getElementById('8').style.height='10%';
-    document.getElementById('8').style.top='80%';
-    document.getElementById('8').style.left='0%';
-    
-    document.getElementById('9').style.height='10%';
-    document.getElementById('9').style.top='90%';
-    document.getElementById('9').style.left='0%';        
-  //----------------      
-    
-    
-    
-    
-    
-    
+        document.getElementById('8').style.height='10%';
+        document.getElementById('8').style.top='80%';
+        document.getElementById('8').style.left='0%';
+        
+        document.getElementById('9').style.height='10%';
+        document.getElementById('9').style.top='90%';
+        document.getElementById('9').style.left='0%';        
     }
-
 }
-
-
 
 window.onload = function() {
     document.getElementById('panelBoot').style.display="none";
@@ -267,9 +233,9 @@ window.onload = function() {
     PLAYLISTstring=fileDownload('Data/playlistString.txt')
     WHYstring=fileDownload('Data/whyString.txt')
     WELCOMEstring=fileDownload('Data/welcomeString.txt')
-    //realign();
+    realign();
     msg(WELCOMEstring)
-    delay(2000);
+    delay(500);
 }
 
 
