@@ -26,9 +26,7 @@
 
 <body onresize="realign()">
 
-<!--BOOT PANEL 
-    <div id="panelBoot" style="position:absolute;opacity:1;display:block;background-image:url('Data/parchmentA.jpg'); background-size:100% 100%;width:100vw;top:0%;bottom:0%;z-index:300;overflow: hidden;"></div>
--->   
+<!--BOOT PANEL-->   
     <div id="panelBoot" style="position:absolute;opacity:1;display:block;background-color:black;width:100vw;top:0%;bottom:0%;z-index:300;overflow: hidden;"></div>
 
 <!--ADMIN PANEL -->     
@@ -39,39 +37,28 @@
         <button onclick="alert(helpCard())">Card Help</button><br>
         <button onclick="window.open('Data/flyer.html')">FLYER</button>
     </div>
-<!--CONTACT PANEL -->     
-    <div id="panelContact" style="position:absolute; line-height:120%; font-size:3vw;  display:none; border:none;background-image:url('Data/parchmentA.jpg'); background-size:100% 100%;width:100vw; top:0%; bottom:0%; z-index:100; overflow:hidden; ">
-        <br><br>CONTACT
-        <br>Press button to make Call or Send Email...
-        <br><X3>fredzone.github.io/fossils/</X3>
-        <br><br>Email:
-        <br><a onclick="window.open('mailto:fkaparich@gmail.com?subject=From Fossil Website&body=Put your message here..................%0A')"><button style="font-size:3vw">fkaparich@gmail.com</button></a>
-        <br><br>Call or Text:
-        <br><a onclick="window.open('tel:2542149980')"><button style="font-size:3vw">(254)-214-9980</button></a>
-        <br><br><br><button onclick="document.getElementById('panelContact').style.display='none'" style="font-size:3vw">Back to Home Page</button>  
-    </div>
 <!--TITLE-->  
     <div style="position:fixed;display:block;background-color:transparent;line-height:130%;font-size:4vw;left:0%;top:0%;right:0%; bottom:96%;z-index:300;">
         FRED and The Fossils (Virtual Band) 
     </div>
 <!--ICON A-->    
-    <img id='iconA'src='Data/player.png' style="position:absolute;display:block; width:20%; top:1vw; left:0%;z-index:400">
+    <img id='iconA'src='Data/player.png' onclick="msg(WELCOMEstring)" style="position:absolute;display:block; width:20%; top:1vw; left:0%;z-index:400">
 <!--ICON B-->    
     <img id='iconB'src='Data/folkBand.png' style="position:fixed;display:none; right:0vw; height:35vw; bottom:3vw;right:3vw;z-index:400">
 <!--MAIN SCREEN ==============================================================================--> 
     <div style="position:fixed;display:block ;background-image:url('Data/backgroundA.jpg'); background-size:100% 100%; line-height:130%; font-size:2.5vw; left:0%; top:0%; right:0%; bottom:0%; z-index:0;">
     <!--MENU-->      
         <div id='menu' style="position:absolute;text-align:center; line-height:200%; border:none; font-size:2.5vw; text-align:left; left:19vw; right:60vw; top:5vw;  bottom:1vw; overflow:hidden";>
-            <div id='0'onclick="msg(WELCOMEstring)"style="position:absolute;text-align:center;color:yellow; border:none;">WELCOME</div>
+            <div id='0'onclick="msg(WELCOMEstring)"style="position:absolute;color:yellow; border:none;">-HOME</div>
             <div id='1'onclick="msg(ABOUTstring)"style="position:absolute; border:none;">-ABOUT ME</div>
             <div id='2'onclick="msg(PLAYLISTstring)"style="position:absolute; border:none;">-PLAYLIST</div>
             <div id='3'onclick="msg(WHYstring)"style="position:absolute; border:none;">-BAND???</div>
             <div id='4'onclick="msg(BANDstring)"style="position:absolute; border:none;">-VIRTUAL</div>
             <div id='5'onclick="msg(SCHEDULEstring)"style="position:absolute; border:none;">-SCHEDULE</div>
-            <div id='6'onclick="pHome()"style="position:absolute; border:none;">-MEMBERS...</div>
-            <div id='7'onclick="msg(LISTENstring)"style="position:absolute; border:none;">LISTEN<img style="position:absolute;top:0%;height:100%"src="Data/underConstruction.png"></div>
+            <div id='6'onclick="admin()"style="position:absolute; border:none;">-ADMIN AREA</div>
+            <div id='7'onclick="msg(LISTENstring)"style="position:absolute; border:none;">-LISTEN<img style="position:absolute;top:0%;height:100%"src="Data/underConstruction.png"></div>
             <div id='8'onclick="msg('TBD')"style="position:absolute; border:none;">-TBD </div>
-            <div id='9'onclick="document.getElementById('panelContact').style.display='block'" style="position:absolute; border:none;">CONTACT ME</X1></div>
+            <div id='9'onclick="msg(CONTACTstring)"style="position:absolute; border:none;">-CONTACT</div>
         </div>
     <!--MSG-->         
         <div id='msg'style="position:absolute;color:black;font-family:Courrier New;font-weight: bold;display:none;line-height:130%;overflow-y:scroll; background-image:url('Data/parchmentA.jpg'); background-size:100% 100%;background-color:lightgrey;border:groove;font-size:2.5vw;text-align:center;left:40vw;right:1vw; top:5vw; bottom:1vw; z-index:50;overflow-y:auto;word-break: keep-all">
@@ -88,6 +75,8 @@ var SCHEDULEstring;
 var PLAYLISTstring;
 var WHYstring;
 var LISTENstring
+var ADMINstring
+var HELPstring="Looking for help...tough"
 var TESTstring='This is the test string. And it looks like this... Here is A Break<br>Title<br>';
 
 
@@ -161,42 +150,27 @@ window.onload = function() {
     WHYstring=fileDownload('Data/whyString.txt')
     WELCOMEstring=fileDownload('Data/welcomeString.txt')
     LISTENstring=fileDownload('Data/listenString.txt')
+    CONTACTstring=fileDownload('Data/contactString.txt')
     realign();
     msg(WELCOMEstring)
     fade(1.0);
 }
 
 
-function home(){
-    document.getElementById('panelContact').style.display='none'
-    document.getElementById('panelAdmin').style.display='none'
-    msg(WELCOMEstring)
-    
-    }
 
 function msg(str){
     document.getElementById('msg').innerHTML = str;
     document.getElementById('msg').style.display = 'block';
     }
 
-function pHome(){
-    if (LOCKED===false){
-    LOCKED=false
-        document.getElementById('panelAdmin').style.display='block'
-
-    }else{
-        var f=prompt('PASSWORD?');
-        if (f!=null) {
-            var str=fileDownload("Data/"+f+".txt");
-            if (str=='OK') {
-                LOCKED=false;
-                document.getElementById('panelAdmin').style.display='block'
-            }else{
-                alert('SORRY...WRONG PASSWORD!');
-            }
-        }
-    }
+function admin(){
+    var f=prompt('PASSWORD?');
+    ADMINstring=fileDownload("Data/"+f+".txt");
+    if (ADMINstring.substring(0,3)=='404') {ADMINstring=" BAD PASSWORD..."}
+    msg(ADMINstring)
 }
+
+
 function fileDownload(path){
     var content = "Attemping to Download" +path;
     var request = new XMLHttpRequest();

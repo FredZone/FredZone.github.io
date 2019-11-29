@@ -1,1 +1,15 @@
-OK
+    <div style="position:realtive;font-size:3vw;">
+        ADMINISTRATION AREA<br>
+        <button onclick="window.open('Data/card.html')"style="font-size:2vw;">Card-Front</button>
+        <button onclick="window.open('Data/cardBack.html')"style="font-size:2vw;">Card-Back</button>
+        <button style="font-size:2vw;" onclick="HELPstring='CARD PRINTING\nSet your side margins to 0.75in(7in wide)\nSet you top and bottom margins for 0.5in (10in tall)',alert(HELPstring)">
+            Card Help
+        </button><br><br>
+        <button onclick="window.open('Data/flyer.html')"style="font-size:2vw;">Flyer</button>
+        <button style="font-size:2vw;" onclick="HELPstring='FLYER PRINTING\n1) Align you print using the border as a guide\n2)Type in the Where and When (if Desired)\n3) Click in the upper right hand corner to hide the border\n4) The bottom line may be altered or erased before printing ',alert(HELPstring)">
+            Flyer Help
+        </button>
+    </div>
+    
+
+

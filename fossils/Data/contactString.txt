@@ -1,0 +1,10 @@
+<div> 
+CONTACT ME...
+<br>Press button to make Call or Send Email...
+<br><X3>fredzone.github.io/fossils/</X3>
+<br><br>Email:
+<br><a onclick="window.open('mailto:fkaparich@gmail.com?subject=From Fossil Website&body=Put your message here..................%0A')"><button style="font-size:3vw">fkaparich@gmail.com</button></a>
+<br><br>Call or Text:
+<br><a onclick="window.open('tel:2542149980')"><button style="font-size:3vw">(254)-214-9980</button></a>
+<br><br><br><button onclick="document.getElementById('panelContact').style.display='none'" style="font-size:3vw">Back to Home Page</button>  
+</div>
