@@ -1,0 +1,13 @@
+SONG: ABILENE (John D Loudermilk)
+<br><br>Band in a Box Track ONLY
+<br>I am NOT on it...
+<br><audio controls id='player' style='left;10%;width:80%;'><source src='Data/Abilene.mp3' type='audio/mpeg'></audio>
+<br><br>Me, playing guitar over the track...
+<br><img style='width:20%'src='Data/underConstruction.png'>
+<!--
+<br><audio controls id='player' style='left;10%;width:80%;'><source src='Data/Abilene.mp3' type='audio/mpeg'></audio>
+<br><br>Me, playing & singing over the track...
+<br><audio controls id='player' style='left;10%;width:80%;'><source src='Data/Abilene.mp3' type='audio/mpeg'></audio>
+<br><br>Me, playing & Singing with Electronic Harmony
+<br><audio controls id='player' style='left;10%;width:80%;'><source src='Data/Abilene.mp3' type='audio/mpeg'></audio>
+-->

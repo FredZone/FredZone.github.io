@@ -6,6 +6,7 @@
     <style type="text/css">
         Body
             {
+                color:white;
                 line-height:110%;
                 font-size:1.2vw;
                 font-family:Courrier New;
@@ -24,9 +25,12 @@
     </head>
 
 <body onresize="realign()">
-    
-<!--BOOT PANEL -->   
-    <div id="panelBoot" style="position:absolute;display:block;background-color:lightgreen;width:100vw;top:0%;bottom:0%;z-index:300;overflow: hidden;">LOADING...</div>
+
+<!--BOOT PANEL 
+    <div id="panelBoot" style="position:absolute;opacity:1;display:block;background-image:url('Data/parchmentA.jpg'); background-size:100% 100%;width:100vw;top:0%;bottom:0%;z-index:300;overflow: hidden;"></div>
+-->   
+    <div id="panelBoot" style="position:absolute;opacity:1;display:block;background-color:black;width:100vw;top:0%;bottom:0%;z-index:300;overflow: hidden;"></div>
+
 <!--ADMIN PANEL -->     
     <div id="panelAdmin" style="position:absolute;line-height:130%;font-size:7vw;display:none;border:none;width:100vw;top:0%;height:50vw;z-index:200;background-color:pink;"><br><br>
         PRINTING PANEL <img id='ico' onclick="document.getElementById('panelAdmin').style.display='none'" src='Data/iconSite.png' alt="x" style="border:none;position:fixed; overflow:hidden; top:0%; right:0%; height:10%;">
@@ -36,8 +40,8 @@
         <button onclick="window.open('Data/flyer.html')">FLYER</button>
     </div>
 <!--CONTACT PANEL -->     
-    <div id="panelContact" style="position:absolute; line-height:120%; font-size:3vw;  display:none; border:none; background-color:yellow; width:100vw; top:0%; bottom:0%; z-index:100; overflow:hidden; ">
-        <br<br>CONTACT
+    <div id="panelContact" style="position:absolute; line-height:120%; font-size:3vw;  display:none; border:none;background-image:url('Data/parchmentA.jpg'); background-size:100% 100%;width:100vw; top:0%; bottom:0%; z-index:100; overflow:hidden; ">
+        <br><br>CONTACT
         <br>Press button to make Call or Send Email...
         <br><X3>fredzone.github.io/fossils/</X3>
         <br><br>Email:
@@ -51,26 +55,26 @@
         FRED and The Fossils (Virtual Band) 
     </div>
 <!--ICON A-->    
-    <img id='iconA'src='Data/cutout.png' style="position:absolute;display:block; width:20%; top:3vw; left:0%;z-index:400">
+    <img id='iconA'src='Data/player.png' style="position:absolute;display:block; width:20%; top:1vw; left:0%;z-index:400">
 <!--ICON B-->    
-    <img id='iconB'src='Data/folkBand.png' style="position:fixed;display:block; right:0vw; height:35vw; bottom:3vw;right:3vw;z-index:400">
+    <img id='iconB'src='Data/folkBand.png' style="position:fixed;display:none; right:0vw; height:35vw; bottom:3vw;right:3vw;z-index:400">
 <!--MAIN SCREEN ==============================================================================--> 
-    <div style="position:fixed;display:block ;background-color:lightgrey; line-height:130%; font-size:2.5vw; left:0%; top:0%; right:0%; bottom:0%; z-index:0;">
+    <div style="position:fixed;display:block ;background-image:url('Data/backgroundA.jpg'); background-size:100% 100%; line-height:130%; font-size:2.5vw; left:0%; top:0%; right:0%; bottom:0%; z-index:0;">
     <!--MENU-->      
-        <div id='menu' style="position:absolute;text-align:center; line-height:150%; border:groove; font-size:2.5vw; text-align:left; left:19vw; right:60vw; top:5vw;  bottom:1vw; overflow:hidden";>
-            <div id='0'onclick="msg(WELCOMEstring)"style="position:absolute;text-align:center;color:yellow; border:none;top:0%;height:10%;width:100%;z-index:5;">WELCOME</div>
-            <div id='1'onclick="msg(ABOUTstring)"style="position:absolute; border:none;top:10%;height:10%;width:100%;z-index:5;">-ABOUT ME</div>
-            <div id='2'onclick="msg(PLAYLISTstring)"style="position:absolute; border:none;top:20%;height:10%;width:100%;z-index:5;">-PLAYLIST</div>
-            <div id='3'onclick="msg(WHYstring)"style="position:absolute; border:none;top:30%;height:10%;width:100%;z-index:5;">-BAND???</div>
-            <div id='4'onclick="msg(BANDstring)"style="position:absolute; border:none;top:40%;height:10%;width:100%;z-index:10;">-VIRTUAL</div>
-            <div id='5'onclick="msg(SCHEDULEstring)"style="position:absolute; border:none;top:50%;height:10%;width:100%;z-index:10;">-SCHEDULE</div>
-            <div id='6'onclick="pHome()"style="position:absolute; border:none;top:60%;height:10%;width:100%";z-index:10;">-MEMBERS...</div>
-            <div id='7'onclick="msg('TBD')"style="position:absolute; border:none;top:70%;height:10%;width:100%;z-index:15;">-TBD</div>
-            <div id='8'onclick="msg('TBD')"style="position:absolute; border:none;top:80%;height:10%;width:100%;z-index:15;">-TBD </div>
-            <div id='9'onclick="document.getElementById('panelContact').style.display='block'" style="position:absolute; border:none;top:90%;height:10%;width:100%;z-index:15;"><X1>CONTACT ME</X1></div>
+        <div id='menu' style="position:absolute;text-align:center; line-height:200%; border:none; font-size:2.5vw; text-align:left; left:19vw; right:60vw; top:5vw;  bottom:1vw; overflow:hidden";>
+            <div id='0'onclick="msg(WELCOMEstring)"style="position:absolute;text-align:center;color:yellow; border:none;">WELCOME</div>
+            <div id='1'onclick="msg(ABOUTstring)"style="position:absolute; border:none;">-ABOUT ME</div>
+            <div id='2'onclick="msg(PLAYLISTstring)"style="position:absolute; border:none;">-PLAYLIST</div>
+            <div id='3'onclick="msg(WHYstring)"style="position:absolute; border:none;">-BAND???</div>
+            <div id='4'onclick="msg(BANDstring)"style="position:absolute; border:none;">-VIRTUAL</div>
+            <div id='5'onclick="msg(SCHEDULEstring)"style="position:absolute; border:none;">-SCHEDULE</div>
+            <div id='6'onclick="pHome()"style="position:absolute; border:none;">-MEMBERS...</div>
+            <div id='7'onclick="msg(LISTENstring)"style="position:absolute; border:none;">LISTEN<img style="position:absolute;top:0%;height:100%"src="Data/underConstruction.png"></div>
+            <div id='8'onclick="msg('TBD')"style="position:absolute; border:none;">-TBD </div>
+            <div id='9'onclick="document.getElementById('panelContact').style.display='block'" style="position:absolute; border:none;">CONTACT ME</X1></div>
         </div>
     <!--MSG-->         
-        <div id='msg'style="font-family:Courrier New;font-weight: bold;position:absolute;display:none;line-height:130%;overflow-y:scroll; background-color:lightgrey;border:groove;font-size:2.5vw;text-align:center;left:40vw;right:1vw; top:5vw; bottom:1vw; z-index:50;overflow-y:auto;word-break: keep-all">
+        <div id='msg'style="position:absolute;color:black;font-family:Courrier New;font-weight: bold;display:none;line-height:130%;overflow-y:scroll; background-image:url('Data/parchmentA.jpg'); background-size:100% 100%;background-color:lightgrey;border:groove;font-size:2.5vw;text-align:center;left:40vw;right:1vw; top:5vw; bottom:1vw; z-index:50;overflow-y:auto;word-break: keep-all">
             MESSAGE APPEARS HERE...
         </div>
 
@@ -83,6 +87,7 @@ var ABOUTstring;
 var SCHEDULEstring;
 var PLAYLISTstring;
 var WHYstring;
+var LISTENstring
 var TESTstring='This is the test string. And it looks like this... Here is A Break<br>Title<br>';
 
 
@@ -97,145 +102,68 @@ var TESTstring='This is the test string. And it looks like this... Here is A Bre
  */
 function realign() {//TALL  (this order left-right-top-bottom-font)
     document.getElementById('iconB').style.display='none';
-    //if (window.innerHeight>window.innerWidth){//TALL
     if (window.innerHeight/window.innerWidth>0.8){//TALL
-    //Border
-        document.getElementById('msg').style.border="groove"
-        document.getElementById('menu').style.border="groove";
-    //MSG
-        document.getElementById('msg').style.left="20vw";
-        document.getElementById('msg').style.right="1vw";
-        document.getElementById('msg').style.top="5vw";
-        document.getElementById('msg').style.bottom="28vh";
-            document.getElementById('msg').style.fontSize= "3vw";
-    //MENU
-        document.getElementById('menu').style.left="1vw";
-        document.getElementById('menu').style.right="1vw";
-        document.getElementById('menu').style.top="72vh";
-        document.getElementById('menu').style.bottom="1vw";
-            document.getElementById('menu').style.fontSize= "3vw";
 
-    document.getElementById('0').style.height='25%';
-    document.getElementById('0').style.top='0%';
-//----------------
-    document.getElementById('1').style.height='25%';
-    document.getElementById('1').style.top='25%';
-    document.getElementById('1').style.left='6%';
-    
-    document.getElementById('2').style.height='25%';
-    document.getElementById('2').style.top='50%';
-    document.getElementById('2').style.left='6%';
-    
-    document.getElementById('3').style.height='25%';
-    document.getElementById('3').style.top='75%';
-    document.getElementById('3').style.left='6%';
-//----------------
-    document.getElementById('4').style.height='25%';
-    document.getElementById('4').style.top='25%';
-    document.getElementById('4').style.left='39%';
-
-    document.getElementById('5').style.height='25%';
-    document.getElementById('5').style.top.height='50%';
-    document.getElementById('5').style.left='39%';
-    
-    document.getElementById('6').style.height='25%';
-    document.getElementById('6').style.top='75%';
-    document.getElementById('6').style.left='39%';    
-  //----------------  
-    document.getElementById('7').style.height='25%';
-    document.getElementById('7').style.top='25%';
-    document.getElementById('7').style.left='72%';
-
-    document.getElementById('8').style.height='25%';
-    document.getElementById('8').style.top='50%';
-    document.getElementById('8').style.left='72%';
-    
-    document.getElementById('9').style.height='25%';
-    document.getElementById('9').style.top='75%';
-    document.getElementById('9').style.left='72%';        
-  //----------------     
-    //IconA
-        document.getElementById('iconA').style.top="4vw";
-        document.getElementById('iconA').style.width="20vw";
-    //IconB
-        document.getElementById('iconB').style.right="4vw";
-        document.getElementById('iconB').style.bottom="27vh";
-        document.getElementById('iconB').style.height="35vw";
-
-    
+    document.getElementById('msg').style.border="groove";
+    document.getElementById('menu').style.border="none";
+//l,r,t,b,h,w,f
+    shapeShift('msg','20vw','1vw','5vw','28vh',0,0,'3vh');
+    shapeShift('menu','1vw','1vw','72vh','1vw',0,0,'3vw');
+        shapeShift(0,'1%',0,'0%',0,'25%','98%',0);
+        shapeShift(1,'1%',0,'25%',0,'25%','32%',0);
+        shapeShift(2,'1%',0,'50%',0,'25%','32%',0);
+        shapeShift(3,'1%',0,'75%',0,'25%','32%',0);
+        shapeShift(4,'34%',0,'25%',0,'25%','32%',0);
+        shapeShift(5,'34%',0,'50%',0,'25%','32%',0);
+        shapeShift(6,'34%',0,'75%',0,'25%','32%',0);
+        shapeShift(7,'67%',0,'25%',0,'25%','32%',0);
+        shapeShift(8,'67%',0,'50%',0,'25%','32%',0);
+        shapeShift(9,'67%',0,'75%',0,'25%','32%',0);
+    shapeShift('iconA','0%',0,"0%",0,0,'20vw',0);   
+    shapeShift('iconB',0,'4vw',0,"27vh","35vw",0,0);  
     }else{//SHORT
-        //MSG
-        document.getElementById('msg').style.left="40vw";
-        document.getElementById('msg').style.right="1vw";
-        document.getElementById('msg').style.top="5vw";
-        document.getElementById('msg').style.bottom="1vw";
-            document.getElementById('msg').style.fontSize= "3vw";
-        //MENU
-        document.getElementById('menu').style.left="19vw";
-        document.getElementById('menu').style.right="60vw";
-        document.getElementById('menu').style.top="5vw";
-        document.getElementById('menu').style.bottom="1vw";
-            document.getElementById('menu').style.fontSize= "2.5vw";
-        //IconA
-        document.getElementById('iconA').style.top="4vw";
-        document.getElementById('iconA').style.width="20vw";
-        //IconB
-        document.getElementById('iconB').style.right="3vw";
-        document.getElementById('iconB').style.bottom="3vh";
-        document.getElementById('iconB').style.height="35vw";
-    
-        document.getElementById('0').style.height='10%';
-        document.getElementById('0').style.top='0%';
-    //----------------
-        document.getElementById('1').style.height='10%';
-        document.getElementById('1').style.top='10%';
-        document.getElementById('1').style.left='0%';
         
-        document.getElementById('2').style.height='10%';
-        document.getElementById('2').style.top='20%';
-        document.getElementById('2').style.left='0%';
-        
-        document.getElementById('3').style.height='10%';
-        document.getElementById('3').style.top='30%';
-        document.getElementById('3').style.left='0%';
-    //----------------
-        document.getElementById('4').style.height='10%';
-        document.getElementById('4').style.top='40%';
-        document.getElementById('4').style.left='0%';
-    
-        document.getElementById('5').style.height='10%';
-        document.getElementById('5').style.top.height='50%';
-        document.getElementById('5').style.left='0%';
-        
-        document.getElementById('6').style.height='10%';
-        document.getElementById('6').style.top='60%';
-        document.getElementById('6').style.left='0%';    
-      //----------------  
-        document.getElementById('7').style.height='10%';
-        document.getElementById('7').style.top='70%';
-        document.getElementById('7').style.left='0%';
-    
-        document.getElementById('8').style.height='10%';
-        document.getElementById('8').style.top='80%';
-        document.getElementById('8').style.left='0%';
-        
-        document.getElementById('9').style.height='10%';
-        document.getElementById('9').style.top='90%';
-        document.getElementById('9').style.left='0%';        
+    shapeShift('msg','20vw','20vw','5vw','1vw',0,0,'3vw');
+    shapeShift('menu','80vw','1vw','5vw','1vw',0,0,'2.5vw');
+        shapeShift(0,'0%',0,'0%',0,'10%','100%',0);
+        shapeShift(1,'0%',0,'10%',0,'10%','100%',0);
+        shapeShift(2,'0%',0,'20%',0,'10%','100%',0);
+        shapeShift(3,'0%',0,'30%',0,'10%','100%',0);
+        shapeShift(4,'0%',0,'40%',0,'10%','100%',0);
+        shapeShift(5,'0%',0,'50%',0,'10%','100%',0);
+        shapeShift(6,'0%',0,'60%',0,'10%','100%',0);
+        shapeShift(7,'0%',0,'70%',0,'10%','100%',0);
+        shapeShift(8,'0%',0,'80%',0,'10%','100%',0);
+        shapeShift(9,'0%',0,'90%',0,'10%','100%',0);  
+    shapeShift('iconA','0%',0,'0%',0,0,'20vw',0);   
+    shapeShift('iconB',0,'3vw',0,"3vh","35vw",0,0);
     }
 }
 
+
+function shapeShift(id,lf,rt,tp,bm,ht,wt,fs){
+    //alert(id+"\n"+lf)
+    if (lf!==0){document.getElementById(id).style.left=lf;}
+    if (rt!==0){document.getElementById(id).style.right=rt;}
+    if (tp!==0){document.getElementById(id).style.top=tp;}
+    if (bm!==0){document.getElementById(id).style.bottom=bm;}
+    if (ht!==0){document.getElementById(id).style.height=ht;}
+    if (wt!==0){document.getElementById(id).style.width=wt;}
+    if (fs!==0){document.getElementById(id).style.fontSize=fs;}
+}
+
 window.onload = function() {
-    document.getElementById('panelBoot').style.display="none";
+    document.getElementById('panelBoot').style.display="block";
     BANDstring=fileDownload('Data/bandString.txt')
     ABOUTstring=fileDownload('Data/aboutString.txt')
     SCHEDULEstring=fileDownload('Data/scheduleString.txt')
     PLAYLISTstring=fileDownload('Data/playlistString.txt')
     WHYstring=fileDownload('Data/whyString.txt')
     WELCOMEstring=fileDownload('Data/welcomeString.txt')
+    LISTENstring=fileDownload('Data/listenString.txt')
     realign();
     msg(WELCOMEstring)
-    delay(500);
+    fade(1.0);
 }
 
 
@@ -288,6 +216,20 @@ function delay(ms) {
         n = n + 0
     }
 }
+
+function fade(op) {
+   if (op<0) {
+        clearTimeout(TIMEOUTfade)
+        document.getElementById('panelBoot').style.display='none'
+   }else{
+        TIMEOUTfade = setTimeout(function(){
+        document.getElementById('panelBoot').style.opacity=op;
+        op=op-0.1;
+        fade(op)}, 12);
+
+   }    
+}
+
 
 </script>
 </body>
