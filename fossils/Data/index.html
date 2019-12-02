@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<head>
+<link rel="icon" href="Data/iconFav.png" type="image/png">
+<meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!-- prevents zooming on mobile devices....number-based width or "device-width"-->
+<title id = 'title'>FOSSILS</title>
+    <style type="text/css">
+        Body
+            {
+                color:white;
+                line-height:110%;
+                font-size:1.2vw;
+                font-family:Courrier New;
+                font-weight: bold;
+                text-align:center;
+                vertical-align:middle;
+                padding:0px;
+                margin:0px;                
+            }
+        X1{color:red;}
+        X2{color:white;}
+        X3{color:blue;}
+        X4{line-height:100%;color:yellow;}
+        X5{line-height:150%;color:green;}
+    </style>
+    </head>
+
+<body onresize="realign()">
+
+<!--BOOT PANEL-->   
+    <div id="panelBoot" style="position:absolute;opacity:1;display:block;background-color:black;width:100vw;top:0%;bottom:0%;z-index:300;overflow: hidden;"></div>
+
+<!--ADMIN PANEL  
+    <div id="XXXpanelAdmin" style="position:absolute;line-height:130%;font-size:7vw;display:none;border:none;width:100vw;top:0%;height:50vw;z-index:200;background-color:pink;"><br><br>
+        PRINTING PANEL <img id='ico' onclick="document.getElementById('panelAdmin').style.display='none'" src='Data/iconSite.png' alt="x" style="border:none;position:fixed; overflow:hidden; top:0%; right:0%; height:10%;">
+        <br><button onclick="window.open('Data/card.html')">Card-Front</button>
+        <button onclick="window.open('Data/cardBack.html')">Card-Back</button>
+        <button onclick="alert(helpCard())">Card Help</button><br>
+        <button onclick="window.open('Data/flyer.html')">FLYER</button>
+    </div>-->    
+<!--TITLE-->  
+    <div style="position:fixed;display:block;background-color:transparent;line-height:130%;font-size:4vw;left:0%;top:0%;right:0%; bottom:96%;z-index:300;">
+        FRED and The Fossils (Virtual Band) 
+    </div>
+<!--ICON A-->    
+    <img id='iconA'src='Data/player.png' onclick="msg(WELCOMEstring)" style="position:absolute;display:block; width:20%; top:1vw; left:0%;z-index:400">
+<!--ICON B-->    
+    <img id='iconB'src='Data/folkBand.png' style="position:fixed;display:none; right:0vw; height:35vw; bottom:3vw;right:3vw;z-index:400">
+<!--MAIN SCREEN ==============================================================================--> 
+    <div style="position:fixed;display:block ;background-image:url('Data/backgroundA.jpg'); background-size:100% 100%;line-height:130%; font-size:2.5vw; left:0%; top:0%; right:0%; bottom:0%; z-index:0;">
+    <!--MENU-->      
+        <div id='menu' style="position:absolute;text-align:center; line-height:200%; border:none; font-size:2.5vw; text-align:left; left:19vw; right:60vw; top:5vw;  bottom:1vw; overflow:hidden";>
+            <div id='0'onclick="msg(WELCOMEstring)"style="position:absolute;color:yellow; border:none;">-HOME</div>
+            <div id='1'onclick="msg(ABOUTstring)"style="position:absolute; border:none;">-ABOUT ME</div>
+            <div id='2'onclick="msg(PLAYLISTstring)"style="position:absolute; border:none;">-PLAYLIST</div>
+            <div id='3'onclick="msg(WHYstring)"style="position:absolute; border:none;">-BAND???</div>
+            <div id='4'onclick="msg(BANDstring)"style="position:absolute; border:none;">-VIRTUAL</div>
+            <div id='5'onclick="msg(SCHEDULEstring)"style="position:absolute; border:none;">-SCHEDULE</div>
+            <div id='6'onclick="admin()"style="position:absolute; border:none;">-ADMIN AREA</div>
+            <div id='7'onclick="msg(LISTENstring)"style="position:absolute; border:none;">-LISTEN<img style="position:absolute;top:0%;height:100%"src="Data/underConstruction.png"></div>
+            <div id='8'onclick="msg('TBD')"style="position:absolute; border:none;">-TBD </div>
+            <div id='9'onclick="msg(CONTACTstring)"style="position:absolute; border:none;">-CONTACT</div>
+        </div>
+    <!--MSG-->         
+        <div id='msg'style="position:absolute;color:black;font-family:Courrier New;font-weight: bold;display:none;line-height:130%;overflow-y:scroll; background-image:url('Data/parchmentA.jpg'); background-size:100% 100%;background-color:lightgrey;border:groove;font-size:2.5vw;text-align:center;left:40vw;right:1vw; top:5vw; bottom:1vw; z-index:50;overflow-y:auto;word-break: keep-all">
+            MESSAGE APPEARS HERE...
+        </div>
+
+<script>
+var LASTmsg='band';
+var LOCKED=true;
+var WELCOMEstring;
+var BANDstring;
+var ABOUTstring;
+var SCHEDULEstring;
+var PLAYLISTstring;
+var WHYstring;
+var LISTENstring;
+var ADMINstring;
+var HELPstring="Looking for help...tough";
+var TESTstring='This is the test string. And it looks like this... Here is A Break<br>Title<br>';
+var CAL=3;//calibration
+var CALbase=0;
+var CALcount=0;
+var SWITCHtune;
+var SWITCHtune;
+var CHECKtune;
+var CHECKtime;
+var TUNEtime;
+var CLOCKtime;
+
+/*z-index  map
+ Base0
+ menu    50
+ msg     50 
+ contact 100
+ admin   200
+ Boot    300
+ Icons   400
+ */
+
+function switchTrack(path){
+    var done=1;
+    var hint="Switched Tracks..."
+    document.getElementById('hint').innerHTML="Changing Tracks..."+CAL
+    SWITCHtune= Audio1.currentTime
+    SWITCHtime= new Date().getTime();
+    //document.getElementById('hint').innerHTML=base
+    Audio1.src=path; type="audio/mpeg"
+    Audio1.currentTime=SWITCHtune+0.2
+    Audio1.play();
+    CHECKtune=Audio1.currentTime
+    CHECKtime= new Date().getTime();
+    setTimeout(function(){
+
+        hint="Switched at Tune time:"+SWITCHtune;
+        hint=hint+"---Checked at Tune Time:"+CHECKtune;
+        hint=hint+"---DELTA:"+parseFloat(CHECKtune-SWITCHtune);
+        hint=hint+"<br>Switched at Real Time"+SWITCHtime;
+        hint=hint+"---Checked at Real Time"+CHECKtime;
+        hint=hint+"---DELTA:"+parseFloat(CHECKtime-SWITCHtime,10);
+        
+    document.getElementById('hint').innerHTML=hint },1000);
+document.getElementById('hint').innerHTML=hint
+}
+
+
+
+function realign() {//TALL  (this order left-right-top-bottom-font)
+    document.getElementById('iconB').style.display='none';
+    if (window.innerHeight/window.innerWidth>0.8){//TALL
+
+    document.getElementById('msg').style.border="groove";
+    document.getElementById('menu').style.border="none";
+//l,r,t,b,h,w,f
+    shapeShift('msg','20vw','1vw','5vw','28vh',0,0,'3vh');
+    shapeShift('menu','1vw','1vw','72vh','1vw',0,0,'3vw');
+        shapeShift(0,'1%',0,'0%',0,'25%','98%',0);
+        shapeShift(1,'1%',0,'25%',0,'25%','32%',0);
+        shapeShift(2,'1%',0,'50%',0,'25%','32%',0);
+        shapeShift(3,'1%',0,'75%',0,'25%','32%',0);
+        shapeShift(4,'34%',0,'25%',0,'25%','32%',0);
+        shapeShift(5,'34%',0,'50%',0,'25%','32%',0);
+        shapeShift(6,'34%',0,'75%',0,'25%','32%',0);
+        shapeShift(7,'67%',0,'25%',0,'25%','32%',0);
+        shapeShift(8,'67%',0,'50%',0,'25%','32%',0);
+        shapeShift(9,'67%',0,'75%',0,'25%','32%',0);
+    shapeShift('iconA','0%',0,"0%",0,0,'20vw',0);   
+    shapeShift('iconB',0,'4vw',0,"27vh","35vw",0,0);  
+    }else{//SHORT
+        
+    shapeShift('msg','20vw','20vw','5vw','1vw',0,0,'3vw');
+    shapeShift('menu','80vw','1vw','5vw','1vw',0,0,'2.5vw');
+        shapeShift(0,'0%',0,'0%',0,'10%','100%',0);
+        shapeShift(1,'0%',0,'10%',0,'10%','100%',0);
+        shapeShift(2,'0%',0,'20%',0,'10%','100%',0);
+        shapeShift(3,'0%',0,'30%',0,'10%','100%',0);
+        shapeShift(4,'0%',0,'40%',0,'10%','100%',0);
+        shapeShift(5,'0%',0,'50%',0,'10%','100%',0);
+        shapeShift(6,'0%',0,'60%',0,'10%','100%',0);
+        shapeShift(7,'0%',0,'70%',0,'10%','100%',0);
+        shapeShift(8,'0%',0,'80%',0,'10%','100%',0);
+        shapeShift(9,'0%',0,'90%',0,'10%','100%',0);  
+    shapeShift('iconA','0%',0,'0%',0,0,'20vw',0);   
+    shapeShift('iconB',0,'3vw',0,"3vh","35vw",0,0);
+    }
+}
+
+
+function shapeShift(id,lf,rt,tp,bm,ht,wt,fs){
+    //alert(id+"\n"+lf)
+    if (lf!==0){document.getElementById(id).style.left=lf;}
+    if (rt!==0){document.getElementById(id).style.right=rt;}
+    if (tp!==0){document.getElementById(id).style.top=tp;}
+    if (bm!==0){document.getElementById(id).style.bottom=bm;}
+    if (ht!==0){document.getElementById(id).style.height=ht;}
+    if (wt!==0){document.getElementById(id).style.width=wt;}
+    if (fs!==0){document.getElementById(id).style.fontSize=fs;}
+}
+
+window.onload = function() {
+    document.getElementById('panelBoot').style.display="block";
+    BANDstring=fileDownload('Data/bandString.txt')
+    ABOUTstring=fileDownload('Data/aboutString.txt')
+    SCHEDULEstring=fileDownload('Data/scheduleString.txt')
+    PLAYLISTstring=fileDownload('Data/playlistString.txt')
+    WHYstring=fileDownload('Data/whyString.txt')
+    WELCOMEstring=fileDownload('Data/welcomeString.txt')
+    LISTENstring=fileDownload('Data/listenString.txt')
+    CONTACTstring=fileDownload('Data/contactString.txt')
+    ABILENEstring=fileDownload('Data/abileneString.txt')
+    realign();
+    msg(WELCOMEstring)
+    fade(1.0);
+}
+
+
+
+function msg(str){
+    document.getElementById('msg').innerHTML = str;
+    document.getElementById('msg').style.display = 'block';
+    }
+
+function admin(){
+    var f=prompt('PASSWORD?');
+    ADMINstring=fileDownload("Data/"+f+".txt");
+    if (ADMINstring.substring(0,3)=='404') {ADMINstring=" BAD PASSWORD..."}
+    msg(ADMINstring)
+}
+
+
+function fileDownload(path){
+    var content = "Attemping to Download" +path;
+    var request = new XMLHttpRequest();
+    request.open("GET", path, false);
+    request.send(null);
+    content = request.responseText;
+    if (content.search("404")>-1|content.length<1){
+        content='404 Error'+ content
+        }
+    return content;//could be undfined or null, not tested for
+}
+
+function delay(ms) {
+    var n = 1;
+    var t = new Date().getTime() + ms
+    while (new Date().getTime() < t) {
+        n = n + 0
+    }
+}
+
+function fade(op) {
+   if (op<0) {
+        clearTimeout(TIMEOUTfade)
+        document.getElementById('panelBoot').style.display='none'
+   }else{
+        TIMEOUTfade = setTimeout(function(){
+        document.getElementById('panelBoot').style.opacity=op;
+        op=op-0.1;
+        fade(op)}, 12);
+
+   }    
+}
+
+
+</script>
+</body>
+</html>
