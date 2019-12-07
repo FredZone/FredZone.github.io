@@ -9,6 +9,10 @@
         <button style="font-size:2vw;" onclick="HELPstring='FLYER PRINTING\n1) Align you print using the border as a guide\n2)Type in the Where and When (if Desired)\n3) Click in the upper right hand corner to hide the border\n4) The bottom line may be altered or erased before printing ',alert(HELPstring)">
             Flyer Help
         </button>
+        <br>
+        <button id='designButton' style="font-size:2vw;" onclick="alert('For Coding DESIGNmode is now TRUE!!!')">YOUR ARE IN DESIGNER MODE</button>
+    
+    
     </div>
     
 

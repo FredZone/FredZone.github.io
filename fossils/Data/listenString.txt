@@ -1,13 +1,77 @@
-SONG: ABILENE (John D Loudermilk)
-<br><br>Band in a Box Track ONLY
-<br>I am NOT on it...
-<br><audio controls id='player' style='left;10%;width:80%;'><source src='Data/Abilene.mp3' type='audio/mpeg'></audio>
-<br><br>Me, playing guitar over the track...
-<br><img style='width:20%'src='Data/underConstruction.png'>
+<!DOCTYPE html>
+<head></head>
+<body>
+
+
+
+<div style='position:absolute;top:0%;width:100%;height:100%;background-color:lightgrey;'>
+    <audio id="Audio1" controls=true preload = "metadata" style="position:absolute;bottom:1%;width:80%;left:10%;height:8%;" source src='Data/Abilene.mp3' type="audio/mpeg" ></audio>
+    
+<!-- -->   
+   <div id='singAlong' style='position:absolute;font-size:2.5vw;line-height:100%;text-align:center;border:groove;left:2%;top:10%;width:96%;height:80%;background-color:white;overflow:scroll'>
+   <pre>YOUR BIG BREAK :<)
+
+   Just hit the'singer'icon 
+   It brings up the Lyrics
+   
+   Use the PLAYER on the bottom 
+   It should be familiar...
+   
+   The Lyrics are 4 bars per line
+   JUST SCROLL ALONG
+   
+   For instrumentalists...
+   The '====' lines are your solos..
+   
+   !! HAVE FUN !!
+      
+   =======FYI=======
+   the track is 'Abiline'
+   by John D Loudermilk
+   I used the software
+   BAND IN A BOX
+   to make the track...
+   
+   I used chords and lyrics
+   easily available on the net...
+   </pre>
+    </div>
+    <div  style='position:absolute;font-size:2.5vw;border:groove;left:2%;top:1%;width:96%;height:8%;background-color:transparent;overflow:none'>
+    
+    
+    
+    <img src="Data/transVocal.png" onclick="document.getElementById('songTitle').innerHTML='ABELINE (John D Laudermilk)',document.getElementById('singAlong').innerHTML='<pre>'+ABILENEstring+'</pre>'" style="position:absolute;display:block; right:0%; top:0%; height:100%;">
+    
+    <!--document.getElementById('songTitle')innerHTML='ABELINE (John D Laudermilk)';      ,document.getElementById('singAlong').innerHTML='<pre>'+ABILENEstring+'</pre>'-->
+    
+    <img src='Data/blackQuestion.png' onclick="msg(LISTENstring);helpMe()" style="position:absolute;display:block; left:0%; top:0%; height:100%;">
+    
+    <div id="songTitle">SING with the VIRTUAL BAND...</div>
+    </div>
+
+</div>
+
+
+
+
 <!--
-<br><audio controls id='player' style='left;10%;width:80%;'><source src='Data/Abilene.mp3' type='audio/mpeg'></audio>
-<br><br>Me, playing & singing over the track...
-<br><audio controls id='player' style='left;10%;width:80%;'><source src='Data/Abilene.mp3' type='audio/mpeg'></audio>
-<br><br>Me, playing & Singing with Electronic Harmony
-<br><audio controls id='player' style='left;10%;width:80%;'><source src='Data/Abilene.mp3' type='audio/mpeg'></audio>
+<div id='track' style='position:absolute;top:0%;width:100%;height:50%;background-color:pink;'>
+    SONG: ABILENE (John D Loudermilk)<br>
+    <audio id="Audio1" controls=true preload = "metadata" style="position:absolute;text-align:center; bottom:10%;width:80%;right:10%;" source src='Data/Abilene.mp3' type="audio/mpeg" >
+    XXX</audio>
+    <div id='hint' style='font-size:1vw;line-height-85%;'>Your hints and tips should appear here...</div>
+</div>
+<div style="position:absolute;border:solid;background-color:yellow;left:0%;width:100%;top:50%;bottom:0%; ">Controls
+    
+    <div onclick="switchTrack('Data/Rock Me On the Water.mp3')"style="position:absolute;border:solid;background-color:green;left:0%;top:20%;width:20%;bottom:0%;">rock me on the WATER</div>
+    <div onclick="switchTrack('Data/Abilene.mp3')"style="position:absolute;border:solid;background-color:orange;left:20%;top:20%;width:20%;bottom:0%;">Backing Track<br>&Guitar</div>
+    <div onclick="switchTrack('Data/Break My Mind.mp3')"style="position:absolute;border:solid;background-color:green;left:40%;top:20%;width:20%;bottom:0%;">C</div>
+    <div onclick="switchTrack('Data/Abilene.mp3')"style="position:absolute;border:solid;background-color:orange;left:60%;top:20%;width:20%;bottom:0%;">D</div>
+    <div onclick="switchTrack('Data/Abilene.mp3')"style="position:absolute;border:solid;background-color:green;left:80%;top:20%;width:20%;bottom:0%;">E</div>
+</div>
 -->
+<script>
+    function helpMe(){alert('OK')}
+</script>
+</body>
+</html>

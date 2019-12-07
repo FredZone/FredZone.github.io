@@ -1,10 +1,16 @@
+#INTRO
+=============================================
+=============================================
+=============================================
+=============================================
+
 #CHORUS
 ABILENE,ABILENE,
 PRETTIEST TOWN I'VE EVER SEEN
 WOMEN THERE DON'T TREAT YOU MEAN
 IN ABILENE, MY ABILENE
 
-VERSE ----------------------------------
+#VERSE
 I SAT ALONE, MOST EVERY NIGHT
 WATCH THE TRAINS PULL OUT OF SIGHT
 DON'T I WISH THEY WERE CARRYING ME
@@ -17,6 +23,8 @@ WOMEN THERE DON'T TREAT YOU MEAN
 IN ABILENE, MY ABILENE
 
 #BREAK
+=============================================
+=============================================
 =============================================
 =============================================
 
@@ -35,8 +43,12 @@ IN ABILENE, MY ABILENE
 #BREAK
 =============================================
 =============================================
+=============================================
+=============================================
 
 #OUTRO
 =============================================
-WOMEN THERE DON'T TREAT YOU MEAN IN ABILENE, MY ABILENE
+=============================================
+WOMEN THERE DON'T TREAT YOU MEAN
+IN ABILENE, MY ABILENE
 -
