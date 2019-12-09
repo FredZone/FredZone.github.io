@@ -30,34 +30,26 @@ get a good compare for dropbox and gitub
     </head>
 
 <body onresize="realign()">
-<!---
-<div id='note' style="position:absolute;text-align:left;background-color:red;display:block; width:40%; bottom:2%; left:10%;z-index:400">
- CCC   
-</div>
--->
+
 <img id='picData' style='position:fixed; left:0%;width:10%;display:block;z-index:500;'>
     
 <!--MAIN SCREEN ==============================================================================--> 
-    <div id='background' style="position:fixed;display:block ;background-image:url('Data/backgroundB.jpg'); background-size:100% 100%;line-height:130%; font-size:2.5vw; left:0%; top:0%; right:0%; bottom:0%; z-index:1000;">
+<div id='background' style="position:fixed;display:block ;background-image:url('Data/backgroundB.jpg'); background-size:100% 100%;line-height:130%; font-size:2.5vw; left:0%; top:0%; right:0%; bottom:0%; z-index:1000;">
     
 <!--BOOT PANEL
-<img src='Data/backgroundB.jpg'id="panelBoot" style="position:absolute;opacity:1;display:block;width:100%;top:0%;height:100%;z-index:300">-->
     <div id="panelBoot" style="position:absolute;opacity:0;display:block;background-color:black;width:100%;top:0%;height:100%;z-index:300;overflow: hidden;">
     </div>
 
 <!--TITLE-->
-<!--<div id='hdr'onclick="fade('iconA',0.01,15)" style="position:fixed;display:none;background-color:transparent;line-height:130%;font-size:4vw;left:0%;top:0%;right:0%; bottom:96%;z-index:300;">
--->
     <div id='hdr' style="position:fixed;display:none;background-color:transparent;line-height:130%;font-size:4vw;left:0%;top:0%;right:0%; bottom:96%;z-index:300;">
         FRED and The Fossils (Virtual Band) 
     </div>
 
+<!--ADMIN-->    
+    <img id='admin'src='Data/iconFav.png' onclick="admin()" style="position:absolute;display:block;opacity:1; width:5%; top:0%; right:0%;z-index:400">
+
 <!--ICON A-->    
     <img id='iconA'src='Data/player.png' onclick="msg(WELCOMEstring)" style="position:absolute;display:none;opacity:0; width:1%; top:0%; left:0%;z-index:400">
-
-<!--ICON B   
-    <img id='iconB'src='Data/folkBand.png' style="position:fixed;display:none; right:0vw; height:35vw; bottom:3vw;right:3vw;z-index:400">
-    --> 
 
 <!--MENU-->      
     <div id='menu' style="position:absolute;text-align:center;display:block;opacity:0; line-height:200%; border:none; font-size:2.5vw; text-align:left; left:19vw; right:60vw; top:5vw;  bottom:1vw; overflow:hidden";>
@@ -68,28 +60,30 @@ get a good compare for dropbox and gitub
         <div id='4'onclick="msg(SCHEDULEstring)"style="position:absolute; border:none;">-SCHEDULE</div>            
         <div id='5'onclick="msg(WHYstring)"style="position:absolute; border:none;">-VIRTUAL</div>
         <div id='6'onclick="msg(BANDstring)"style="position:absolute; border:none;">-GADGETS</div>
-        <div id='7'onclick="admin()"style="position:absolute; border:none;">-ADMIN AREA</div>
+        <div id='7'onclick="msg(LISTENstring)"style="position:absolute;display:block; border:none;">-SING ALONG</div>
+        <div id='8'onclick="gallery(0)"style="position:absolute;display:block;border:none;">GALLERY</div>
         <!----working on stuff below here, careful what you delete here and in data)-->
-        <div id='8'onclick="msg(LISTENstring)"style="position:absolute;display:block; border:none;">-SING!!<img style="position:absolute;top:0%;height:100%"src="Data/underConstruction.png"></div>
-        <div id='9'onclick="gallery(2)"style="position:absolute;display:block;border:none;">GALLERY</div>
+        <div id='9'onclick="admin()"style="position:absolute;display:none; border:none;">-ADMIN AREA</div>
     </div><!--        function moveDiv(id,endL,unitsL,steps,ms)-->
 
-<!--MSG-->         
-    <div id='msg'style="position:absolute;opacity:0;color:black;font-family:Courrier New;font-weight: bold;display:block;line-height:130%;overflow-y:scroll; background-image:url('Data/parchmentA.jpg'); background-size:100% 100%;background-color:lightgrey;border:groove;font-size:2.5vw;text-align:center;left:20vw;right:20vw; top:5vw; bottom:1vw; z-index:50;"> z-index:50;overflow-y:auto;word-break: keep-all">
-            MESSAGE APPEARS HERE...
+<!--MSG-->
+<div id='msg'style="position:absolute; opacity:0;color:black; font-family:Courrier New; font-weight:bold; display:block; line-height:130%; overflow-y:scroll; background-image:url('Data/parchmentA.jpg'); background-size:100% 100%; border:groove; font-size:2.5vw; text-align:center; left:20vw; right:20vw; top:5vw; bottom:1vw; z-index:50; z-index:50;overflow-y:auto;word-break: keep-all">
+    MESSAGE APPEARS HERE...
     </div>
     
 <!--viewbox-->      
-    <div id='viewBox'style="position:absolute;display:none;background-color:lightgrey;left:20vw;right:20vw; top:5vw; bottom:1vw; z-index:40;">
+    <div id='viewBox'style="position:absolute;display:none;background-color:transparent;left:20vw;right:20vw; top:5vw; bottom:1vw; z-index:40;">
         <div id ='gallery' style='position:absolute;border:none;left:0%; top:0%; height:90%; width:100%;'>
-            <div id='galleryPic'  style="position:absolute;background-image:url('Data/folkBand.png');background-size:100% 100%; left:0%;bottom:0%;right:0%;top:0%;"></div>
+            <img id='galleryPic' style='position:absolute;left:0%;height:100%;width:100%;bottom:0%'>
         </div>                                                                                                                                                                                
-        <div id='galleryTxt' style='position:absolute;color:black; line-height:85%;font-size:2vw;border:none;left:0%; top:90%;height:10%;width:100%;'>
-            ????
+        <img id='picLeft'src='Data/transPointerLeft.png' onclick="gallery(PIC-1)" style="position:absolute;display:block;opacity:1;left:0%;top:90%;width:10%;">
+        <img id='picRight'src='Data/transPointerRight.png' onclick="gallery(PIC+1)" style="position:absolute;display:block;opacity:1;right:0%; top:90%; width:10%;">
+        <div id='galleryTxt' onclick="aspect()" style='position:absolute;color:white; line-height:100%;font-size:2vw;border:none;left:0%; top:90%;left:10%;height:10%;width:80%;'>
+            How I see the 'Virtual' Band
         </div>"
        
     </div>
-
+</div>
 <script>
 //var LASTmsg='band';
 var LOCKED=true;
@@ -106,21 +100,20 @@ var HELPstring = "Looking for help...tough";
 var TESTstring = 'This is the test string. And it looks like this... Here is A Break<br>Title<br>';
 var TIMEOUTfade
 var TIMEOUTgallery;
+var PIC
 var PICpath
 var PICaspect
-var FRAMEaspect
 //working on calibrating...not worth the effort
-var CAL = 3; //calibration
-var CALbase = 0;
-var CALcount = 0;
-var SWITCHtune;
-var SWITCHtune;
-var CHECKtune;
-var CHECKtime;
-var TUNEtime;
-var CLOCKtime;
+//var CAL = 3; //calibration
+//var CALbase = 0;
+//var CALcount = 0;
+//var SWITCHtune;
+//var SWITCHtune;
+//var CHECKtune;
+//var CHECKtime;
+//var TUNEtime;
+//var CLOCKtime;
 var ARRgallery = "0,1,2,3,4,5".split(',')
-var DESIGNmode = false;
 /*z-index  map
  Base0
  menu    50
@@ -131,21 +124,68 @@ var DESIGNmode = false;
  Icons   400
  */
 
-function loadGallery() {
-    ARRgallery[0] = "This is me! 50 years ago playing with my buddies at an outdoor event...|bass.png";
-    ARRgallery[1] = "Here I am with Ron, who got me back into playing after a 45 year guitar break...|ron.jpg";
-    ARRgallery[2] = "Christmas gig with my buddy, Pat, who passed away in November of 2019|pat.jpg";
-    ARRgallery[3] = "With a group of friends playing for a fall cookout...|barn.jpg";
-    ARRgallery[4] = "This is me at one of my ususal gigs...|fred.jpg";
-    ARRgallery[5] = "And this is how I imagine my Vitrual Backup band...|folkBand.png";
+
+function aspect(){
+    if (LOCKED==false) {
+    var w=document.getElementById('galleryPic').naturalWidth
+    var h=document.getElementById('galleryPic').naturalHeight
+    var a=w/h
+    alert("Picture Aspect Information:+\n  Width: "+w+"px\n  Height: "+h+"px\n  Aspect Ratio: "+a)
+    }
+} 
+function loadGallery(n) {
+    ARRgallery="0,1,2,3,4,5,6".split(',')
+    ARRgallery[0]="This is me! 50 years ago playing with my buddies at an outdoor event...|bass.png|1316|1940";
+    ARRgallery[1]="Here I am with Ron, who got me back into playing after a 45 year guitar break...|ron.jpg|1051|788";
+    ARRgallery[2]="Christmas gig with my buddy, Pat, who passed away in November of 2019|pat.jpg|1051|855";
+    ARRgallery[3]="With a group of friends playing for a fall cookout...|barn.jpg|480|289";
+    ARRgallery[4]="This is me at one of my ususal gigs...|fred.jpg|1641|3919";
+    ARRgallery[5]="And this is how I imagine my Vitrual Backup band...|folkBand.png|581|575";
+       //gallery(0)
+
+}    
+    
+function gallery(n){    
     PICpath = "Data/"
-    document.getElementById('picData').src = PICpath + ARRgallery[0].split('|')[1];
-    //document.getElementById('msg').style.display='none'//hide msg div
+    if (n==0) {
+        document.getElementById('picLeft').style.display='none'
+        }else{
+        document.getElementById('picLeft').style.display='block'    
+        }
+    if (n==ARRgallery.length-2) {
+        document.getElementById('picRight').style.display='none'
+        }else{
+        document.getElementById('picRight').style.display='block'    
+        }
+    PIC=n;
+    w = ARRgallery[n].split('|')[2]; 
+    h = ARRgallery[n].split('|')[3];
+    document.getElementById('viewBox').style.display='block'//hide msg div
+    document.getElementById('msg').style.display='none'//hide msg div
+    var a=w/h
+    var wf=document.getElementById('gallery').clientWidth
+    var hf=document.getElementById('gallery').clientHeight
+    var af=wf/hf
+    var fh=document.getElementById('galleryPic').style.height
+    var factor=a/af
+    if (factor<1) {
+        document.getElementById('galleryPic').style.height="100%"
+        document.getElementById('galleryPic').style.width=factor*100+"%"
+        document.getElementById('galleryPic').style.left=50*(1-factor)+"%"
+        document.getElementById('galleryPic').style.bottom="0%"
+    }else{
+        document.getElementById('galleryPic').style.width="100%"
+        document.getElementById('galleryPic').style.height=1/factor*100+"%"
+        document.getElementById('galleryPic').style.left="0%"
+        document.getElementById('galleryPic').style.bottom=50*(1-(1/factor))+"%"
+        }
+    document.getElementById('galleryPic').src=PICpath +ARRgallery[n].split('|')[1] //Data/fred.jpg')"; //= PICpath + ARRgallery[n].split('|')[1];
+    document.getElementById('galleryTxt').innerHTML = ARRgallery[n].split('|')[0];
+
+
 }
 
-function gallery(n) {
-    alert('gallery')
-}
+
 
 function fades(id, dir, ms, ids) {
     document.getElementById(id).style.display = 'block'//secure starting point
@@ -157,6 +197,8 @@ function fades(id, dir, ms, ids) {
     if (cur >= 1 | cur <= 0) {
         clearTimeout(TIMEOUTfade)
         document.getElementById(id).style.display = 'block'
+        if (cur>0.6) document.getElementById(id).style.opacity = 1;
+        if (cur<0.4) document.getElementById(id).style.opacity = 0;
             arr = ids.split('|')
             id = arr[0]
             arr.shift()
@@ -176,7 +218,7 @@ function fades(id, dir, ms, ids) {
 }
 
     window.onload = function() {
-        loadGallery();
+        
         BANDstring = fileDownload('Data/bandString.txt');
         ABOUTstring = fileDownload('Data/aboutString.txt');
         SCHEDULEstring = fileDownload('Data/scheduleString.txt');
@@ -188,13 +230,13 @@ function fades(id, dir, ms, ids) {
         ABILENEstring = fileDownload('Data/abileneString.txt');
         msg(WELCOMEstring);
         realign();
-        document.getElementById('panelBoot').style.display = 'none';
+        loadGallery(0);
+        //document.getElementById('panelBoot').style.display = 'none';
         document.getElementById('hdr').style.opacity = 0
         document.getElementById('hdr').style.display = 'block'
         LOCKED = true //lock design area
-        //document.getElementById(8).style.display = 'none'
-        document.getElementById(9).style.display = 'none'
-        fades('hdr',0.02,10,'msg|menu|iconA')
+
+        fades('hdr',0.10,10,'msg|menu|iconA')
     }
 
     function cto() {
