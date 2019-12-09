@@ -4,7 +4,7 @@
 
 
 
-<div style='position:absolute;top:0%;width:100%;height:100%;background-color:lightgrey;'>
+<div style='position:absolute;text-align:center;top:0%;width:100%;height:100%;background-color:lightgrey;'>
     <audio id="Audio1" controls=true preload = "metadata" style="position:absolute;bottom:1%;width:80%;left:10%;height:8%;" source src='Data/Abilene.mp3' type="audio/mpeg" ></audio>
     
 <!-- -->   
@@ -36,17 +36,11 @@
    easily available on the net...
    </pre>
     </div>
-    <div  style='position:absolute;font-size:2.5vw;border:groove;left:2%;top:1%;width:96%;height:8%;background-color:transparent;overflow:none'>
-    
-    
-    
-    <img src="Data/transVocal.png" onclick="document.getElementById('songTitle').innerHTML='ABELINE (John D Laudermilk)',document.getElementById('singAlong').innerHTML='<pre>'+ABILENEstring+'</pre>'" style="position:absolute;display:block; right:0%; top:0%; height:100%;">
-    
-    <!--document.getElementById('songTitle')innerHTML='ABELINE (John D Laudermilk)';      ,document.getElementById('singAlong').innerHTML='<pre>'+ABILENEstring+'</pre>'-->
-    
-    <img src='Data/blackQuestion.png' onclick="msg(LISTENstring);helpMe()" style="position:absolute;display:block; left:0%; top:0%; height:100%;">
-    
-    <div id="songTitle">SING with the VIRTUAL BAND...</div>
+        <div  style='position:absolute;font-size:2.5vw;border:groove;left:2%;top:1%;width:96%;height:8%;background-color:transparent;overflow:none'>
+        <img src="Data/transVocal.png" onclick="document.getElementById('songTitle').innerHTML='ABELINE (John D Laudermilk)',document.getElementById('singAlong').innerHTML='<pre>'+ABILENEstring+'</pre>'" style="position:absolute;display:block; right:0%; top:0%; height:100%;">
+        <!--document.getElementById('songTitle')innerHTML='ABELINE (John D Laudermilk)';      ,document.getElementById('singAlong').innerHTML='<pre>'+ABILENEstring+'</pre>'-->
+        <img src='Data/blackQuestion.png' onclick="msg(LISTENstring);helpMe()" style="position:absolute;display:block; left:0%; top:0%; height:100%;">
+        <div id="songTitle">SING with the VIRTUAL BAND...</div>
     </div>
 
 </div>
