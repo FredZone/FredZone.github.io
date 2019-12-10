@@ -61,7 +61,7 @@ get a good compare for dropbox and gitub
         <div id='5'onclick="msg(WHYstring)"style="position:absolute; border:none;">-VIRTUAL</div>
         <div id='6'onclick="msg(BANDstring)"style="position:absolute; border:none;">-GADGETS</div>
         <div id='7'onclick="msg(LISTENstring)"style="position:absolute;display:block; border:none;">-SING ALONG</div>
-        <div id='8'onclick="gallery(0)"style="position:absolute;display:block;border:none;">GALLERY</div>
+        <div id='8'onclick="gallery(0)"style="position:absolute;display:block;border:none;">-GALLERY</div>
         <!----working on stuff below here, careful what you delete here and in data)-->
         <div id='9'onclick="admin()"style="position:absolute;display:none; border:none;">-ADMIN AREA</div>
     </div><!--        function moveDiv(id,endL,unitsL,steps,ms)-->
@@ -72,12 +72,12 @@ get a good compare for dropbox and gitub
     </div>
     
 <!--viewbox-->      
-    <div id='viewBox'style="position:absolute;display:none;font-size:3vw;background-color:transparent;left:20vw;right:20vw; top:5vw; bottom:1vw; z-index:40;">
+    <div id='viewBox'style="position:absolute;display:none;font-size:3vw;background-color:black;border:solid;border-color:black;overflow:hidden;left:20vw;right:20vw; top:5vw; bottom:1vw; z-index:40;">
         <div id ='gallery' style='position:absolute;border:none;left:0%; top:0%; height:90%; width:100%;'>
             <img id='galleryPic' style='position:absolute;left:0%;height:100%;width:100%;bottom:0%'>
         </div>                                                                                                                                                                                
-        <img id='picLeft'src='Data/transPointerLeft.png' onclick="gallery(PIC-1)" style="position:absolute;display:block;opacity:1;left:0%;top:90%;width:10%;">
-        <img id='picRight'src='Data/transPointerRight.png' onclick="gallery(PIC+1)" style="position:absolute;display:block;opacity:1;right:0%; top:90%; width:10%;">
+        <img id='picLeft'src='Data/transPointerLeft.png' onclick="gallery(PIC-1)" style="position:absolute;display:block;opacity:1;left:0%;top:90%;height:8%; width:8%;">
+        <img id='picRight'src='Data/transPointerRight.png' onclick="gallery(PIC+1)" style="position:absolute;display:block;opacity:1;right:0%; top:90%;height:8%; width:8%;">
         <div id='galleryTxt' onclick="aspect()" style='position:absolute;color:white; line-height:100%;border:none;left:0%; top:90%;left:10%;height:10%;width:80%;'>
             How I see the 'Virtual' Band
         </div>
@@ -295,35 +295,35 @@ function fades(id, dir, ms, ids) {
             document.getElementById('msg').style.border = "groove";
             document.getElementById('menu').style.border = "none";
             //l,r,t,b,h,w,f
-            shapeShift('viewBox', '20vw', '1vw', '5vw', '28vh', 0, 0, '3vw');
-            shapeShift('msg', '20vw', '1vw', '5vw', '28vh', 0, 0, '3vh');
+            shapeShift('viewBox', '10vw', '1vw', '5vw', '28vh', 0, 0, '3vw');
+            shapeShift('msg', '10vw', '1vw', '5vw', '28vh', 0, 0, '3vh');
             shapeShift('menu', '1vw', '1vw', '72vh', '1vw', 0, 0, '3vw');
-            shapeShift(0, '1%', 0, '0%', 0, '25%', '98%', 0);
-            shapeShift(1, '1%', 0, '25%', 0, '25%', '32%', 0);
-            shapeShift(2, '1%', 0, '50%', 0, '25%', '32%', 0);
-            shapeShift(3, '1%', 0, '75%', 0, '25%', '32%', 0);
-            shapeShift(4, '34%', 0, '25%', 0, '25%', '32%', 0);
-            shapeShift(5, '34%', 0, '50%', 0, '25%', '32%', 0);
-            shapeShift(6, '34%', 0, '75%', 0, '25%', '32%', 0);
-            shapeShift(7, '67%', 0, '25%', 0, '25%', '32%', 0);
-            shapeShift(8, '67%', 0, '50%', 0, '25%', '32%', 0);
-            shapeShift(9, '67%', 0, '75%', 0, '25%', '32%', 0);
-            shapeShift('iconA', '0%', 0, "2%", 0, 0, '20vw', 0);
+            shapeShift(0, '1%', 0, '0%', 0, '25%', '98%', '4vw');
+            shapeShift(1, '1%', 0, '25%', 0, '25%', '32%','4vw');
+            shapeShift(2, '1%', 0, '50%', 0, '25%', '32%', '4vw');
+            shapeShift(3, '1%', 0, '75%', 0, '25%', '32%', '4vw');
+            shapeShift(4, '34%', 0, '25%', 0, '25%', '32%', '4vw');
+            shapeShift(5, '34%', 0, '50%', 0, '25%', '32%', '4vw');
+            shapeShift(6, '34%', 0, '75%', 0, '25%', '32%', '4vw');
+            shapeShift(7, '67%', 0, '25%', 0, '25%', '32%', '4vw');
+            shapeShift(8, '67%', 0, '50%', 0, '25%', '32%', '4vw');
+            shapeShift(9, '67%', 0, '75%', 0, '25%', '32%', '4vw');
+            shapeShift('iconA', '0%', 0, "2%", 0, 0, '10vw', 0);
             //shapeShift('iconB',0,'4vw',0,"27vh","35vw",0,0);  
         } else { //SHORT
             shapeShift('viewBox', '20vw', '20vw', '5vw', '1vw', 0, 0, '2vw');
             shapeShift('msg', '20vw', '20vw', '5vw', '1vw', 0, 0, '3vw');
             shapeShift('menu', '80vw', '1vw', '5vw', '1vw', 0, 0, '2.5vw');
-            shapeShift(0, '0%', 0, '0%', 0, '10%', '100%', 0);
-            shapeShift(1, '0%', 0, '10%', 0, '10%', '100%', 0);
-            shapeShift(2, '0%', 0, '20%', 0, '10%', '100%', 0);
-            shapeShift(3, '0%', 0, '30%', 0, '10%', '100%', 0);
-            shapeShift(4, '0%', 0, '40%', 0, '10%', '100%', 0);
-            shapeShift(5, '0%', 0, '50%', 0, '10%', '100%', 0);
-            shapeShift(6, '0%', 0, '60%', 0, '10%', '100%', 0);
-            shapeShift(7, '0%', 0, '70%', 0, '10%', '100%', 0);
-            shapeShift(8, '0%', 0, '80%', 0, '10%', '100%', 0);
-            shapeShift(9, '0%', 0, '90%', 0, '10%', '100%', 0);
+            shapeShift(0, '0%', 0, '0%', 0, '10%', '100%', '2.5vw');
+            shapeShift(1, '0%', 0, '10%', 0, '10%', '100%', '2.5vw');
+            shapeShift(2, '0%', 0, '20%', 0, '10%', '100%', '2.5vw');
+            shapeShift(3, '0%', 0, '30%', 0, '10%', '100%', '2.5vw');
+            shapeShift(4, '0%', 0, '40%', 0, '10%', '100%', '2.5vw');
+            shapeShift(5, '0%', 0, '50%', 0, '10%', '100%', '2.5vw');
+            shapeShift(6, '0%', 0, '60%', 0, '10%', '100%', '2.5vw');
+            shapeShift(7, '0%', 0, '70%', 0, '10%', '100%', '2.5vw');
+            shapeShift(8, '0%', 0, '80%', 0, '10%', '100%', '2.5vw');
+            shapeShift(9, '0%', 0, '90%', 0, '10%', '100%', '2.5vw');
             shapeShift('iconA', '0%', 0, '2%', 0, 0, '20vw', 0);
             //shapeShift('iconB',0,'3vw',0,"3vh","35vw",0,0);
         }
