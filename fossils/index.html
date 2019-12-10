@@ -72,13 +72,13 @@ get a good compare for dropbox and gitub
     </div>
     
 <!--viewbox-->      
-    <div id='viewBox'style="position:absolute;display:none;background-color:transparent;left:20vw;right:20vw; top:5vw; bottom:1vw; z-index:40;">
+    <div id='viewBox'style="position:absolute;display:none;font-size:3vw;background-color:transparent;left:20vw;right:20vw; top:5vw; bottom:1vw; z-index:40;">
         <div id ='gallery' style='position:absolute;border:none;left:0%; top:0%; height:90%; width:100%;'>
             <img id='galleryPic' style='position:absolute;left:0%;height:100%;width:100%;bottom:0%'>
         </div>                                                                                                                                                                                
         <img id='picLeft'src='Data/transPointerLeft.png' onclick="gallery(PIC-1)" style="position:absolute;display:block;opacity:1;left:0%;top:90%;width:10%;">
         <img id='picRight'src='Data/transPointerRight.png' onclick="gallery(PIC+1)" style="position:absolute;display:block;opacity:1;right:0%; top:90%; width:10%;">
-        <div id='galleryTxt' onclick="aspect()" style='position:absolute;color:white; line-height:100%;font-size:2vw;border:none;left:0%; top:90%;left:10%;height:10%;width:80%;'>
+        <div id='galleryTxt' onclick="aspect()" style='position:absolute;color:white; line-height:100%;border:none;left:0%; top:90%;left:10%;height:10%;width:80%;'>
             How I see the 'Virtual' Band
         </div>
        
@@ -133,21 +133,21 @@ function aspect(){
     alert("Picture Aspect Information:+\n  Width: "+w+"px\n  Height: "+h+"px\n  Aspect Ratio: "+a)
     }
 } 
+
 function loadGallery(n) {
     ARRgallery="0,1,2,3,4,5,6,7".split(',')
-    ARRgallery[0]="One of my first gigs, 1968? Chuck, Bill, Yours Truley and Jay.  Playing as 'JAM' in Butte Montana|firstBand.jpg|1219|810";
+    ARRgallery[0]="One of my first gigs, 1968? Chuck, Bill, Yours Truely and Jay.  Playing as 'JAM' in Butte Montana|firstBand.jpg|1219|810";
     ARRgallery[1]="Me, 50 years ago playing bass at a Montana State University Spring Event...|bass.png|1316|1940";
     ARRgallery[2]="Thats Ron (on the right), who got me back into playing guitar after a 45 year hiatus...|ron.jpg|1051|788";
     ARRgallery[3]="At a Newcomers Christmas party with my buddy, Pat, who passed away in November of 2019|pat.jpg|1051|855";
-    ARRgallery[4]="With a group of friends playing at a fall BBQ...|barn.jpg|461|278";
+    ARRgallery[4]="With a group of friends, John, Sally,me and Bill, playing at Family BBQ...|barn.jpg|461|278";
     ARRgallery[5]="At St Catherine's, one of my current monthly gigs...|fred.jpg|1641|3919";
     ARRgallery[6]="How I imagine my Vitrual Backup band...|folkBand.png|581|575";
-       //gallery(0)
-
 }    
     
 function gallery(n){    
     PICpath = "Data/"
+    document.getElementById('galleryPic').style.display='none'
     if (n==0) {
         document.getElementById('picLeft').style.display='none'
         }else{
@@ -182,6 +182,7 @@ function gallery(n){
         }
     document.getElementById('galleryPic').src=PICpath +ARRgallery[n].split('|')[1] //Data/fred.jpg')"; //= PICpath + ARRgallery[n].split('|')[1];
     document.getElementById('galleryTxt').innerHTML = ARRgallery[n].split('|')[0];
+    document.getElementById('galleryPic').style.display='block'
 
 
 }
@@ -237,7 +238,7 @@ function fades(id, dir, ms, ids) {
         document.getElementById('hdr').style.display = 'block'
         LOCKED = true //lock design area
 
-        fades('hdr',0.10,10,'msg|menu|iconA')
+        fades('hdr',0.03,10,'msg|menu|iconA')
     }
 
     function cto() {
@@ -294,7 +295,7 @@ function fades(id, dir, ms, ids) {
             document.getElementById('msg').style.border = "groove";
             document.getElementById('menu').style.border = "none";
             //l,r,t,b,h,w,f
-            shapeShift('viewBox', '20vw', '1vw', '5vw', '28vh', 0, 0, '3vh');
+            shapeShift('viewBox', '20vw', '1vw', '5vw', '28vh', 0, 0, '3vw');
             shapeShift('msg', '20vw', '1vw', '5vw', '28vh', 0, 0, '3vh');
             shapeShift('menu', '1vw', '1vw', '72vh', '1vw', 0, 0, '3vw');
             shapeShift(0, '1%', 0, '0%', 0, '25%', '98%', 0);
@@ -310,7 +311,7 @@ function fades(id, dir, ms, ids) {
             shapeShift('iconA', '0%', 0, "2%", 0, 0, '20vw', 0);
             //shapeShift('iconB',0,'4vw',0,"27vh","35vw",0,0);  
         } else { //SHORT
-            shapeShift('viewBox', '20vw', '20vw', '5vw', '1vw', 0, 0, '3vw');
+            shapeShift('viewBox', '20vw', '20vw', '5vw', '1vw', 0, 0, '2vw');
             shapeShift('msg', '20vw', '20vw', '5vw', '1vw', 0, 0, '3vw');
             shapeShift('menu', '80vw', '1vw', '5vw', '1vw', 0, 0, '2.5vw');
             shapeShift(0, '0%', 0, '0%', 0, '10%', '100%', 0);
