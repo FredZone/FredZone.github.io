@@ -53,17 +53,17 @@ get a good compare for dropbox and gitub
 
 <!--MENU-->      
     <div id='menu' style="position:absolute;text-align:center;display:block;opacity:0; line-height:200%; border:none; font-size:2.5vw; text-align:left; left:19vw; right:60vw; top:5vw;  bottom:1vw; overflow:hidden";>
-        <div id='0'onclick="msg(WELCOMEstring)"style="position:absolute;color:yellow; border:none;">-HOME</div>
-        <div id='1'onclick="msg(CONTACTstring)"style="position:absolute; border:none;">-CONTACT</div>
-        <div id='2'onclick="msg(ABOUTstring)"style="position:absolute; border:none;">-ABOUT ME</div>
-        <div id='3'onclick="msg(PLAYLISTstring)"style="position:absolute; border:none;">-PLAYLIST</div>
-        <div id='4'onclick="msg(SCHEDULEstring)"style="position:absolute; border:none;">-SCHEDULE</div>            
-        <div id='5'onclick="msg(WHYstring)"style="position:absolute; border:none;">-VIRTUAL</div>
-        <div id='6'onclick="msg(BANDstring)"style="position:absolute; border:none;">-GADGETS</div>
-        <div id='7'onclick="msg(LISTENstring)"style="position:absolute;display:block; border:none;">-SING ALONG</div>
+        
+        <div id='0'onclick="msg(WELCOMEstring,this.id)"style="position:absolute;color:yellow; border:none;">-HOME</div>
+        <div id='1'onclick="msg(CONTACTstring,this.id)"style="position:absolute; border:none;">-CONTACT</div>
+        <div id='2'onclick="msg(ABOUTstring,this.id)"style="position:absolute; border:none;">-ABOUT ME</div>
+        <div id='3'onclick="msg(PLAYLISTstring,this.id)"style="position:absolute; border:none;">-PLAYLIST</div>
+        <div id='4'onclick="msg(SCHEDULEstring,this.id)"style="position:absolute; border:none;">-SCHEDULE</div>            
+        <div id='5'onclick="msg(WHYstring,this.id)"style="position:absolute; border:none;">-VIRTUAL</div>
+        <div id='6'onclick="msg(BANDstring,this.id)"style="position:absolute; border:none;">-GADGETS</div>
+        <div id='7'onclick="msg(LISTENstring,this.id)"style="position:absolute;display:block; border:none;">-SING ALONG</div>
         <div id='8'onclick="gallery(0)"style="position:absolute;display:block;border:none;">-GALLERY</div>
-        <!----working on stuff below here, careful what you delete here and in data)-->
-        <div id='9'onclick="admin()"style="position:absolute;display:none; border:none;">-ADMIN AREA</div>
+        <div id='9'onclick="msg(ADMINstring,this.id)"style="position:absolute;display:none; border:none;">-ADMIN AREA</div>
     </div><!--        function moveDiv(id,endL,unitsL,steps,ms)-->
 
 <!--MSG-->
@@ -85,7 +85,7 @@ get a good compare for dropbox and gitub
     </div>
 </div>
 <script>
-//var LASTmsg='band';
+//GLOBAL VARIABLES===============================================
 var LOCKED=true;
 var WELCOMEstring;
 var BANDstring;
@@ -100,7 +100,7 @@ var HELPstring = "Looking for help...tough";
 var TESTstring = 'This is the test string. And it looks like this... Here is A Break<br>Title<br>';
 var TIMEOUTfade
 var TIMEOUTgallery;
-var PIC
+var PIC=0
 var PICpath
 var PICaspect
 //working on calibrating...not worth the effort
@@ -124,70 +124,111 @@ var ARRgallery = "0,1,2,3,4,5".split(',')
  Icons   400
  */
 
+//BOOT=============================================================
+window.onload = function() {
+    BANDstring = fileDownload('Data/bandString.txt');
+    ABOUTstring = fileDownload('Data/aboutString.txt');
+    SCHEDULEstring = fileDownload('Data/scheduleString.txt');
+    PLAYLISTstring = fileDownload('Data/playlistString.txt');
+    WHYstring = fileDownload('Data/whyString.txt');
+    WELCOMEstring = fileDownload('Data/welcomeString.txt');
+    LISTENstring = fileDownload('Data/listenString.txt');
+    CONTACTstring = fileDownload('Data/contactString.txt');
+    ABILENEstring = fileDownload('Data/abileneString.txt');
+    msg(WELCOMEstring,0);
+    realign();
+    loadGallery(0);
+    document.getElementById('hdr').style.opacity = 0
+    document.getElementById('hdr').style.display = 'block'
+    LOCKED = true //lock design area
+    fades('hdr',0.03,10,'msg|menu|iconA')
+}
 
-function aspect(){
-    if (LOCKED==false) {
-    var w=document.getElementById('galleryPic').naturalWidth
-    var h=document.getElementById('galleryPic').naturalHeight
-    var a=w/h
-    alert("Picture Aspect Information:+\n  Width: "+w+"px\n  Height: "+h+"px\n  Aspect Ratio: "+a)
+function msg(str,id) {
+    if (id==undefined) {
+        id=0
     }
-} 
+    document.getElementById('8').innerHTML='-GALLERY';
+    for (n=0;n<10;n++){   
+        document.getElementById(n).style.backgroundColor='transparent';
+        }
+    document.getElementById(id).style.backgroundColor='black';
+    cto()
+    document.getElementById('msg').innerHTML = str;
+    document.getElementById('msg').style.display = 'block';
+}
 
-function loadGallery(n) {
+function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-width-font)
+    if (window.innerHeight / window.innerWidth > 0.8) { //TALL
+        document.getElementById('msg').style.border = "groove";
+        document.getElementById('menu').style.border = "none";
+        //l,r,t,b,h,w,f
+        shapeShift('viewBox', '10vw', '1vw', '5vw', '28vh', 0, 0, '3vw');
+        shapeShift('msg', '10vw', '1vw', '5vw', '28vh', 0, 0, '3vh');
+        shapeShift('menu', '1vw', '1vw', '72vh', '1vw', 0, 0, '3vw');
+        shapeShift(0, '1%', 0, '0%', 0, '25%', '98%', '4vw');
+        shapeShift(1, '1%', 0, '25%', 0, '25%', '32%','4vw');
+        shapeShift(2, '1%', 0, '50%', 0, '25%', '32%', '4vw');
+        shapeShift(3, '1%', 0, '75%', 0, '25%', '32%', '4vw');
+        shapeShift(4, '34%', 0, '25%', 0, '25%', '32%', '4vw');
+        shapeShift(5, '34%', 0, '50%', 0, '25%', '32%', '4vw');
+        shapeShift(6, '34%', 0, '75%', 0, '25%', '32%', '4vw');
+        shapeShift(7, '67%', 0, '25%', 0, '25%', '32%', '4vw');
+        shapeShift(8, '67%', 0, '50%', 0, '25%', '32%', '4vw');
+        shapeShift(9, '67%', 0, '75%', 0, '25%', '32%', '4vw');
+        shapeShift('iconA', '0%', 0, "2%", 0, 0, '10vw', 0);
+    } else { //WIDE ASPECT
+        shapeShift('viewBox', '20vw', '20vw', '5vw', '1vw', 0, 0, '2vw');
+        shapeShift('msg', '20vw', '20vw', '5vw', '1vw', 0, 0, '3vw');
+        shapeShift('menu', '80vw', '1vw', '5vw', '1vw', 0, 0, '2.5vw');
+        shapeShift(0, '0%', 0, '0%', 0, '10%', '100%', '2.5vw');
+        shapeShift(1, '0%', 0, '10%', 0, '10%', '100%', '2.5vw');
+        shapeShift(2, '0%', 0, '20%', 0, '10%', '100%', '2.5vw');
+        shapeShift(3, '0%', 0, '30%', 0, '10%', '100%', '2.5vw');
+        shapeShift(4, '0%', 0, '40%', 0, '10%', '100%', '2.5vw');
+        shapeShift(5, '0%', 0, '50%', 0, '10%', '100%', '2.5vw');
+        shapeShift(6, '0%', 0, '60%', 0, '10%', '100%', '2.5vw');
+        shapeShift(7, '0%', 0, '70%', 0, '10%', '100%', '2.5vw');
+        shapeShift(8, '0%', 0, '80%', 0, '10%', '100%', '2.5vw');
+        shapeShift(9, '0%', 0, '90%', 0, '10%', '100%', '2.5vw');
+        shapeShift('iconA', '0%', 0, '2%', 0, 0, '20vw', 0);
+    }
+}
+
+function shapeShift(id, lf, rt, tp, bm, ht, wt, fs) {
+    if (lf !== 0) {
+        document.getElementById(id).style.left = lf;
+    }
+    if (rt !== 0) {
+        document.getElementById(id).style.right = rt;
+    }
+    if (tp !== 0) {
+        document.getElementById(id).style.top = tp;
+    }
+    if (bm !== 0) {
+        document.getElementById(id).style.bottom = bm;
+    }
+    if (ht !== 0) {
+        document.getElementById(id).style.height = ht;
+    }
+    if (wt !== 0) {
+        document.getElementById(id).style.width = wt;
+    }
+    if (fs !== 0) {
+        document.getElementById(id).style.fontSize = fs;
+    }
+}
+
+function loadGallery() {
     ARRgallery="0,1,2,3,4,5,6,7".split(',')
     ARRgallery[0]="One of my first gigs, 1968? Chuck, Bill, Yours Truely and Jay.  Playing as 'JAM' in Butte Montana|firstBand.jpg|1219|810";
     ARRgallery[1]="Me, 50 years ago playing bass at a Montana State University Spring Event...|bass.png|1316|1940";
     ARRgallery[2]="Thats Ron (on the right), who got me back into playing guitar after a 45 year hiatus...|ron.jpg|1051|788";
     ARRgallery[3]="At a Newcomers Christmas party with my buddy, Pat, who passed away in November of 2019|pat.jpg|1051|855";
-    ARRgallery[4]="With a group of friends, John, Sally,me and Bill, playing at Family BBQ...|barn.jpg|461|278";
+    ARRgallery[4]="My friends, Stan, Bill, John, Sally and I playing for the fun of it...|barn.jpg|2754|1660";
     ARRgallery[5]="At St Catherine's, one of my current monthly gigs...|fred.jpg|1641|3919";
     ARRgallery[6]="How I imagine my Vitrual Backup band...|folkBand.png|581|575";
-}    
-    
-function gallery(n){    
-    PICpath = "Data/"
-    document.getElementById('galleryPic').style.display='none'
-    if (n==0) {
-        document.getElementById('picLeft').style.display='none'
-        }else{
-        document.getElementById('picLeft').style.display='block'    
-        }
-    if (n==ARRgallery.length-2) {
-        document.getElementById('picRight').style.display='none'
-        }else{
-        document.getElementById('picRight').style.display='block'    
-        }
-    PIC=n;
-    w = ARRgallery[n].split('|')[2]; 
-    h = ARRgallery[n].split('|')[3];
-    document.getElementById('viewBox').style.display='block'//hide msg div
-    document.getElementById('msg').style.display='none'//hide msg div
-    var a=w/h
-    var wf=document.getElementById('gallery').clientWidth
-    var hf=document.getElementById('gallery').clientHeight
-    var af=wf/hf
-    var fh=document.getElementById('galleryPic').style.height
-    var factor=a/af
-    if (factor<1) {
-        document.getElementById('galleryPic').style.height="100%"
-        document.getElementById('galleryPic').style.width=factor*100+"%"
-        document.getElementById('galleryPic').style.left=50*(1-factor)+"%"
-        document.getElementById('galleryPic').style.bottom="0%"
-    }else{
-        document.getElementById('galleryPic').style.width="100%"
-        document.getElementById('galleryPic').style.height=1/factor*100+"%"
-        document.getElementById('galleryPic').style.left="0%"
-        document.getElementById('galleryPic').style.bottom=50*(1-(1/factor))+"%"
-        }
-    document.getElementById('galleryPic').src=PICpath +ARRgallery[n].split('|')[1] //Data/fred.jpg')"; //= PICpath + ARRgallery[n].split('|')[1];
-    document.getElementById('galleryTxt').innerHTML = ARRgallery[n].split('|')[0];
-    document.getElementById('galleryPic').style.display='block'
-
-
 }
-
-
 
 function fades(id, dir, ms, ids) {
     document.getElementById(id).style.display = 'block'//secure starting point
@@ -216,183 +257,143 @@ function fades(id, dir, ms, ids) {
             fades(id,dir,ms,ids)
         }, ms);
     }
-
+}
+//USER FUNCTIONS===========================================================
+function gallery(n){    
+        for (i=0;i<10;i++){   
+        document.getElementById(i).style.backgroundColor='transparent';
+        }
+    PICpath = "Data/"
+    document.getElementById('galleryPic').style.display='none'
+    if (n==0) {
+        document.getElementById('picLeft').style.display='none'
+        }else{
+        document.getElementById('picLeft').style.display='block'    
+        }
+    if (n==ARRgallery.length-2) {
+        document.getElementById('picRight').style.display='none'
+        }else{
+        document.getElementById('picRight').style.display='block'    
+        }
+    PIC=n;
+    document.getElementById('8').innerHTML=" Pic "+parseInt(PIC+1,10)+" / "+parseInt(ARRgallery.length-1,10)
+    document.getElementById('8').style.backgroundColor='black';
+    w = ARRgallery[n].split('|')[2]; 
+    h = ARRgallery[n].split('|')[3];
+    document.getElementById('viewBox').style.display='block'//hide msg div
+    document.getElementById('msg').style.display='none'//hide msg div
+    var a=w/h
+    var wf=document.getElementById('gallery').clientWidth
+    var hf=document.getElementById('gallery').clientHeight
+    var af=wf/hf
+    var fh=document.getElementById('galleryPic').style.height
+    var factor=a/af
+    if (factor<1) {
+        document.getElementById('galleryPic').style.height="100%"
+        document.getElementById('galleryPic').style.width=factor*100+"%"
+        document.getElementById('galleryPic').style.left=50*(1-factor)+"%"
+        document.getElementById('galleryPic').style.bottom="0%"
+    }else{
+        document.getElementById('galleryPic').style.width="100%"
+        document.getElementById('galleryPic').style.height=1/factor*100+"%"
+        document.getElementById('galleryPic').style.left="0%"
+        document.getElementById('galleryPic').style.bottom=50*(1-(1/factor))+"%"
+        }
+    document.getElementById('galleryPic').src=PICpath +ARRgallery[n].split('|')[1] //Data/fred.jpg')"; //= PICpath + ARRgallery[n].split('|')[1];
+    document.getElementById('galleryTxt').innerHTML = ARRgallery[n].split('|')[0];
+    document.getElementById('galleryPic').style.display='block'
 }
 
-    window.onload = function() {
-        
-        BANDstring = fileDownload('Data/bandString.txt');
-        ABOUTstring = fileDownload('Data/aboutString.txt');
-        SCHEDULEstring = fileDownload('Data/scheduleString.txt');
-        PLAYLISTstring = fileDownload('Data/playlistString.txt');
-        WHYstring = fileDownload('Data/whyString.txt');
-        WELCOMEstring = fileDownload('Data/welcomeString.txt');
-        LISTENstring = fileDownload('Data/listenString.txt');
-        CONTACTstring = fileDownload('Data/contactString.txt');
-        ABILENEstring = fileDownload('Data/abileneString.txt');
-        msg(WELCOMEstring);
-        realign();
-        loadGallery(0);
-        //document.getElementById('panelBoot').style.display = 'none';
-        document.getElementById('hdr').style.opacity = 0
-        document.getElementById('hdr').style.display = 'block'
-        LOCKED = true //lock design area
-
-        fades('hdr',0.03,10,'msg|menu|iconA')
-    }
-
-    function cto() {
-        clearTimeout(TIMEOUTgallery);
-    }
-
-    function fade(id, dir, ms) {
-        var crp = parseFloat(document.getElementById(id).style.opacity, 10)
-        var cur = parseFloat(crp + dir, 10)
-        if (cur >= 1 | cur < 0) {
-            clearTimeout(TIMEOUTfade)
-            document.getElementById(id).style.display = 'block'
-        } else if (cur == 0) {
-            clearTimeout(TIMEOUTfade)
-            document.getElementById(id).style.display = 'none'
+function admin() {
+    if (LOCKED == true) {
+        var f = prompt('PASSWORD?');
+        ADMINstring = fileDownload("Data/" + f + ".txt");
+        if (ADMINstring.substring(0, 3) == '404') {
+            alert("Sorry...\n Wrong password...")
         } else {
-            TIMEOUTfade = setTimeout(function() {
-                document.getElementById(id).style.opacity = cur;
-                fade(id, dir, ms)
-            }, ms);
+            LOCKED = false
+            document.getElementById('admin').src = 'Data/underConstruction.png'
         }
+    }else{
+    msg(ADMINstring,0)    
     }
+}
 
-    function switchTrack(path) {
-        var done = 1;
-        var hint = "Switched Tracks..."
-        document.getElementById('hint').innerHTML = "Changing Tracks..." + CAL
-        SWITCHtune = Audio1.currentTime
-        SWITCHtime = new Date().getTime();
-        //document.getElementById('hint').innerHTML=base
-        Audio1.src = path;
-        type = "audio/mpeg"
-        Audio1.currentTime = SWITCHtune + 0.2
-        Audio1.play();
-        CHECKtune = Audio1.currentTime
-        CHECKtime = new Date().getTime();
-        setTimeout(function() {
-            hint = "Switched at Tune time:" + SWITCHtune;
-            hint = hint + "---Checked at Tune Time:" + CHECKtune;
-            hint = hint + "---DELTA:" + parseFloat(CHECKtune - SWITCHtune);
-            hint = hint + "<br>Switched at Real Time" + SWITCHtime;
-            hint = hint + "---Checked at Real Time" + CHECKtime;
-            hint = hint + "---DELTA:" + parseFloat(CHECKtime - SWITCHtime, 10);
-            document.getElementById('hint').innerHTML = hint
-        }, 1000);
+//UTILITY FUNCTIONS
+
+function aspect(){
+    if (LOCKED==false) {
+    var w=document.getElementById('galleryPic').naturalWidth
+    var h=document.getElementById('galleryPic').naturalHeight
+    var a=w/h
+    alert("Picture Aspect Information:+\n  Width: "+w+"px\n  Height: "+h+"px\n  Aspect Ratio: "+a)
+    }
+} 
+
+function cto() {
+    clearTimeout(TIMEOUTgallery);
+}
+
+function fade(id, dir, ms) {
+    var crp = parseFloat(document.getElementById(id).style.opacity, 10)
+    var cur = parseFloat(crp + dir, 10)
+    if (cur >= 1 | cur < 0) {
+        clearTimeout(TIMEOUTfade)
+        document.getElementById(id).style.display = 'block'
+    } else if (cur == 0) {
+        clearTimeout(TIMEOUTfade)
+        document.getElementById(id).style.display = 'none'
+    } else {
+        TIMEOUTfade = setTimeout(function() {
+            document.getElementById(id).style.opacity = cur;
+            fade(id, dir, ms)
+        }, ms);
+    }
+}
+
+function switchTrack(path) {
+    var done = 1;
+    var hint = "Switched Tracks..."
+    document.getElementById('hint').innerHTML = "Changing Tracks..." + CAL
+    SWITCHtune = Audio1.currentTime
+    SWITCHtime = new Date().getTime();
+    //document.getElementById('hint').innerHTML=base
+    Audio1.src = path;
+    type = "audio/mpeg"
+    Audio1.currentTime = SWITCHtune + 0.2
+    Audio1.play();
+    CHECKtune = Audio1.currentTime
+    CHECKtime = new Date().getTime();
+    setTimeout(function() {
+        hint = "Switched at Tune time:" + SWITCHtune;
+        hint = hint + "---Checked at Tune Time:" + CHECKtune;
+        hint = hint + "---DELTA:" + parseFloat(CHECKtune - SWITCHtune);
+        hint = hint + "<br>Switched at Real Time" + SWITCHtime;
+        hint = hint + "---Checked at Real Time" + CHECKtime;
+        hint = hint + "---DELTA:" + parseFloat(CHECKtime - SWITCHtime, 10);
         document.getElementById('hint').innerHTML = hint
+    }, 1000);
+    document.getElementById('hint').innerHTML = hint
+}
+
+function fileDownload(path) {
+    var content = "Attemping to Download" + path;
+    var request = new XMLHttpRequest();
+    request.open("GET", path, false);
+    request.send(null);
+    content = request.responseText;
+    if (content.search("404") > -1 | content.length < 1) {
+        content = '404 Error' + content
     }
+    return content; //could be undfined or null, not tested for
+}
 
-
-
-    function realign() { //TALL  (this order left-right-top-bottom-height-width-font)
-        //document.getElementById('iconB').style.display='none';
-        if (window.innerHeight / window.innerWidth > 0.8) { //TALL
-            document.getElementById('msg').style.border = "groove";
-            document.getElementById('menu').style.border = "none";
-            //l,r,t,b,h,w,f
-            shapeShift('viewBox', '10vw', '1vw', '5vw', '28vh', 0, 0, '3vw');
-            shapeShift('msg', '10vw', '1vw', '5vw', '28vh', 0, 0, '3vh');
-            shapeShift('menu', '1vw', '1vw', '72vh', '1vw', 0, 0, '3vw');
-            shapeShift(0, '1%', 0, '0%', 0, '25%', '98%', '4vw');
-            shapeShift(1, '1%', 0, '25%', 0, '25%', '32%','4vw');
-            shapeShift(2, '1%', 0, '50%', 0, '25%', '32%', '4vw');
-            shapeShift(3, '1%', 0, '75%', 0, '25%', '32%', '4vw');
-            shapeShift(4, '34%', 0, '25%', 0, '25%', '32%', '4vw');
-            shapeShift(5, '34%', 0, '50%', 0, '25%', '32%', '4vw');
-            shapeShift(6, '34%', 0, '75%', 0, '25%', '32%', '4vw');
-            shapeShift(7, '67%', 0, '25%', 0, '25%', '32%', '4vw');
-            shapeShift(8, '67%', 0, '50%', 0, '25%', '32%', '4vw');
-            shapeShift(9, '67%', 0, '75%', 0, '25%', '32%', '4vw');
-            shapeShift('iconA', '0%', 0, "2%", 0, 0, '10vw', 0);
-            //shapeShift('iconB',0,'4vw',0,"27vh","35vw",0,0);  
-        } else { //SHORT
-            shapeShift('viewBox', '20vw', '20vw', '5vw', '1vw', 0, 0, '2vw');
-            shapeShift('msg', '20vw', '20vw', '5vw', '1vw', 0, 0, '3vw');
-            shapeShift('menu', '80vw', '1vw', '5vw', '1vw', 0, 0, '2.5vw');
-            shapeShift(0, '0%', 0, '0%', 0, '10%', '100%', '2.5vw');
-            shapeShift(1, '0%', 0, '10%', 0, '10%', '100%', '2.5vw');
-            shapeShift(2, '0%', 0, '20%', 0, '10%', '100%', '2.5vw');
-            shapeShift(3, '0%', 0, '30%', 0, '10%', '100%', '2.5vw');
-            shapeShift(4, '0%', 0, '40%', 0, '10%', '100%', '2.5vw');
-            shapeShift(5, '0%', 0, '50%', 0, '10%', '100%', '2.5vw');
-            shapeShift(6, '0%', 0, '60%', 0, '10%', '100%', '2.5vw');
-            shapeShift(7, '0%', 0, '70%', 0, '10%', '100%', '2.5vw');
-            shapeShift(8, '0%', 0, '80%', 0, '10%', '100%', '2.5vw');
-            shapeShift(9, '0%', 0, '90%', 0, '10%', '100%', '2.5vw');
-            shapeShift('iconA', '0%', 0, '2%', 0, 0, '20vw', 0);
-            //shapeShift('iconB',0,'3vw',0,"3vh","35vw",0,0);
-        }
+function Xdelay(ms) {
+    var n = 1;
+    var t = new Date().getTime() + ms
+    while (new Date().getTime() < t) {
+        n = n + 0
     }
-
-    function shapeShift(id, lf, rt, tp, bm, ht, wt, fs) {
-        if (lf !== 0) {
-            document.getElementById(id).style.left = lf;
-        }
-        if (rt !== 0) {
-            document.getElementById(id).style.right = rt;
-        }
-        if (tp !== 0) {
-            document.getElementById(id).style.top = tp;
-        }
-        if (bm !== 0) {
-            document.getElementById(id).style.bottom = bm;
-        }
-        if (ht !== 0) {
-            document.getElementById(id).style.height = ht;
-        }
-        if (wt !== 0) {
-            document.getElementById(id).style.width = wt;
-        }
-        if (fs !== 0) {
-            document.getElementById(id).style.fontSize = fs;
-        }
-    }
-
-    function msg(str) {
-        cto()
-        document.getElementById('msg').innerHTML = str;
-        document.getElementById('msg').style.display = 'block';
-    }
-
-    function admin() {
-        if (LOCKED == true) {
-            var f = prompt('PASSWORD?');
-            ADMINstring = fileDownload("Data/" + f + ".txt");
-            if (ADMINstring.substring(0, 3) == '404') {
-                ADMINstring = " BAD PASSWORD..."
-                msg("SORRY, INVALID PASSWORD!")
-            } else {
-                LOCKED = false
-                document.getElementById(8).style.display = 'block'
-                document.getElementById(9).style.display = 'block'
-            }
-        }
-        msg(ADMINstring)
-    }
-
-    function fileDownload(path) {
-        var content = "Attemping to Download" + path;
-        var request = new XMLHttpRequest();
-        request.open("GET", path, false);
-        request.send(null);
-        content = request.responseText;
-        if (content.search("404") > -1 | content.length < 1) {
-            content = '404 Error' + content
-        }
-        return content; //could be undfined or null, not tested for
-    }
-
-    function Xdelay(ms) {
-        var n = 1;
-        var t = new Date().getTime() + ms
-        while (new Date().getTime() < t) {
-            n = n + 0
-        }
-    }</script>
+}</script>
 </body>
 </html>
