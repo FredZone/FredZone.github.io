@@ -63,7 +63,7 @@ get a good compare for dropbox and gitub
         <div id='6'onclick="msg(BANDstring,this.id)"style="position:absolute; border:none;">-GADGETS</div>
         <div id='7'onclick="msg(LISTENstring,this.id)"style="position:absolute;display:block; border:none;">-SING ALONG</div>
         <div id='8'onclick="gallery(0)"style="position:absolute;display:block;border:none;">-GALLERY</div>
-        <div id='9'onclick="msg(ADMINstring,this.id)"style="position:absolute;display:none; border:none;">-ADMIN AREA</div>
+        <div id='9'onclick="fullScreen()"style="position:absolute;display:block; border:none;">-FULL SCREEN</div>
     </div><!--        function moveDiv(id,endL,unitsL,steps,ms)-->
 
 <!--MSG-->
@@ -86,6 +86,7 @@ get a good compare for dropbox and gitub
 </div>
 <script>
 //GLOBAL VARIABLES===============================================
+var FULLscreen=false
 var LOCKED=true;
 var WELCOMEstring;
 var BANDstring;
@@ -114,7 +115,7 @@ var PICaspect
 //var TUNEtime;
 //var CLOCKtime;
 var ARRgallery = "0,1,2,3,4,5".split(',')
-/*z-index  map
+/*z-index  map============================================
  Base0
  menu    50
  msg     50 
@@ -123,8 +124,8 @@ var ARRgallery = "0,1,2,3,4,5".split(',')
  Boot    300
  Icons   400
  */
-
 //BOOT=============================================================
+
 window.onload = function() {
     BANDstring = fileDownload('Data/bandString.txt');
     ABOUTstring = fileDownload('Data/aboutString.txt');
@@ -319,7 +320,31 @@ function admin() {
     }
 }
 
-//UTILITY FUNCTIONS
+function fullScreen(){
+    if (FULLscreen ==false) {
+        launchIntoFullscreen(document.documentElement);
+        document.getElementById('9').innerHTML="-STD SCREEN";
+        FULLscreen=true
+    } else {
+        exitFullscreen();
+        FULLscreen=false
+        document.getElementById('9').innerHTML="-FULL SCREEN";
+    }
+}
+
+function launchIntoFullscreen(element){
+    if(element.requestFullscreen) {element.requestFullscreen();}
+    else if(element.mozRequestFullScreen) {element.mozRequestFullScreen();}
+    else if(element.webkitRequestFullscreen) {element.webkitRequestFullscreen();}
+    else if(element.msRequestFullscreen) {element.msRequestFullscreen();} }
+
+function exitFullscreen(){
+    if(document.exitFullscreen) {document.exitFullscreen();}
+    else if(document.mozCancelFullScreen) {document.mozCancelFullScreen();}
+    else if(document.webkitExitFullscreen) {document.webkitExitFullscreen();}
+    else if(element.msCancelFullscreen) {document.msCancelFullscreen();}}//this step is BOGUS
+
+//UTILITY FUNCTIONS===========================================================================
 
 function aspect(){
     if (LOCKED==false) {
