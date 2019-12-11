@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--12/11/2019/12:50PM-->
 <head>
     <title id = 'title'>EDITOR</title>
     <link rel="shortcut icon" type="image/png" href="../../Icons/faviconEdit.png">
@@ -183,7 +184,7 @@ Digitec RP55=======================================
         
         <legend>TOOLS (Edit and paste in)</legend>    
             <img id ='xmlImg' src="../../Icons/text.png" alt ="TXT" style=" left:1vw; height:3vw; width:3vw" onclick = "dis('cannedText')">
-            <img src="../../Icons/blackNotePad.png" alt ="PAD" style=" left:5vw; height:3vw; width:3vw" onclick = "dis('notePad')">
+            <img src="../../Icons/blackNotepad.png" alt ="PAD" style=" left:5vw; height:3vw; width:3vw" onclick = "dis('notePad')">
     </fieldset> 
 
     <fieldset style="text-align:left">
@@ -222,7 +223,7 @@ Digitec RP55=======================================
     <img src="../../Icons/blackSave.png" id ="iconSave" title ="SAVE LOCAL FILE" alt ="save Local File" onclick="updateDur(),firstLineGlobal('con'),StepThroughArray('rTrim'),saveTextAsFile(decodeURI(TITLE),'rawTune')" style="position:fixed;left:6vw; height:6vw ;width :6vw;z-index:8000">
     <img id ='xmlImg' src="../../Icons/musicXML.png" alt ="XML" style="position:fixed; height:6vw; left:18vw; height:6vw; width:6vw" onclick = "mode('xml')">
     <img id ='tabImg' src="../../Icons/tab.png" alt ="TAB" style="position:fixed; height:6vw; left:12vw; height:6vw; width:6vw" onclick = "mode('tab')">
-    <img id ='xmlImg' src="../../Icons/blackedit.png" alt ="EDIT" style="position:fixed; height:6vw; left:24vw; height:6vw; width:6vw" onclick = "mode('edit')">
+    <img id ='xmlImg' src="../../Icons/blackEdit.png" alt ="EDIT" style="position:fixed; height:6vw; left:24vw; height:6vw; width:6vw" onclick = "mode('edit')">
     <img id="xmlExport" src="../../Icons/blackRedSave.png" alt ="EXPORT THE XML" onclick = "saveTextAsFile('crapola.xml','xml');" style ="position:fixed; display:none;height:6vw; left:6vw; height:6vw; width:6vw;z-index:20000;">
     <img src="../../Icons/blackUndo.jpg" alt ="Info" id='iconRestore' onclick="restoreBackup()" title ="RESTORE TO LAST ATTMPTED SAVE" style="position:fixed; left:30vw ;height:6vw; z-index:8002 ;display:block">
     <div id="xmlTools" style ="position:absolute;background-color: transparent; width:28%;display:none; top:0%;left:0; height:100% ;text-align:left; z-index:20000;">
