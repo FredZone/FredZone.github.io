@@ -1,5 +1,4 @@
 <div style="text-align:center">
-<img src='Data/folkBand.png' style="position:absolute;opacity:0.3;width:25%; top:8%; right:0%">
 <X5>MY GHOST (ELECTRONIC) BAND...</X5><br>
 For Vocal Harmony:<br>
 I use a <X3>TC Helicon TC1</X3><br>

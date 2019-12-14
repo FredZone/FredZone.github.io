@@ -1,4 +1,4 @@
-<div style="position:absolute;text-align:center;width:100%;height:100%;">
+<div style="position:absolute;text-align:center;width:100%;height:100%;z-index:10;">
     <X5>WHY AN ELECTRONIC BAND?</X5><br>
     I'd would rather play with others and occasionally bring friends along
     <br><X5>However...</X5>
@@ -8,5 +8,4 @@
     <br>
     <X1>SO ITS USUALLY JUST ME...</X1>
     <br> and my VIRTUAL BAND!
-    <img src="Data/folkBand.png" style="position:absolute;left:33%;bottom:0%;width:30%;">
 </div>
