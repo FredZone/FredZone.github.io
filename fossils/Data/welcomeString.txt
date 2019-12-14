@@ -1,10 +1,12 @@
 <div style="text-align:center">
-<X2>WELCOME</X2><br>
-Welcome to my Website!<br>
-Its a 'hand-built' thing...<br>
-So it can be a little 'glitchey'<br><br>
-<X2>------------------------<br></X2>
-Additionally...<br>I can't leave<br>well enough alone...<br>I keep messing with it...
-<br>
-<br>
+<X5>WELCOME</X5>
+<br>Welcome to my Website!
+<br>Its a 'hand-built' thing...
+<br>So it can be a little 'glitchey'
+<br>(I keep messing with it...)
+<br><X2>------------------------</X2>
+<br>Clicking this guy...
+<br><img src='Data/player.png'style="position:relative;width:10%">
+<br>Always brings you back here,
+<br>to the HOME screen!
 </div>

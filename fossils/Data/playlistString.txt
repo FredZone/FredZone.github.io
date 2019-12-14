@@ -1,49 +1,48 @@
 <div style="text-align:center">
-<X2>My Playlist</X2><br><div>
-<div style="text-align:left"><pre>
-Abilene
-From Four until Late
-Sea Of Heartbreak
-You Are My Sunshine
-Pancho and Lefty
-When the Roses Bloom Again
-Margaritaville
-Dream
-The Cape
-Little Red Riding Hood
-Walk Right Back
-Long Black Veil
-All The Lonely People
-Jamaica Farewell
-Singing The Blues
-Stand By Me
-Blue Eyes Crying In The Rain
-Take It Easy
-Folsom Prison Blues
-Some Days Are Diamond
-Lost Highway
-Wagon Wheel
-Stray Cat Strut
-Put Another Log On The Fire
-Break My Mind
-Fire Lake
-Teach Your Children
-Happy Trails</pre><div>
-<div style="text-align:center">
-<X2>-----Extras-----</X2><div>
-<div style="text-align:left"><pre>
-<pre>Thats Gonna Leave A Mark
-Always on My Mind
-Cherokee Fiddle
-One Toke Over The Line
-Dead Skunk
-This Aint My First Rodeo
-Needles and Pins
-Angel from Montgomery
-Rumble
-Amarillo By Morning
-Set Em Up Joe
-Rock Me On The Water
-Blue Skies
-The Wish</div>
-</pre>
+    MY PLAYLIST<br>
+</div>
+<div style="text-align:left;font-family:Courrier New; font-weight: bold;">
+    <b>Abilene
+    <br>From Four until Late
+    <br>Sea Of Heartbreak
+    <br>You Are My Sunshine
+    <br>Pancho and Lefty
+    <br>When the Roses Bloom Again
+    <br>Margaritaville
+    <br>Dream
+    <br>The Cape
+    <br>Little Red Riding Hood
+    <br>Walk Right Back
+    <br>Long Black Veil
+    <br>All The Lonely People
+    <br>Jamaica Farewell
+    <br>Singing The Blues
+    <br>Stand By Me
+    <br>Blue Eyes Crying In The Rain
+    <br>Take It Easy
+    <br>Folsom Prison Blues
+    <br>Some Days Are Diamond
+    <br>Lost Highway
+    <br>Wagon Wheel
+    <br>Stray Cat Strut
+    <br>Put Another Log On The Fire
+    <br>Break My Mind
+    <br>Fire Lake
+    <br>Teach Your Children
+    <br>Happy Trails
+    <br><X5>-----Extras-----</X5>
+    <br>Thats Gonna Leave A Mark
+    <br>Always on My Mind
+    <br>Cherokee Fiddle
+    <br>One Toke Over The Line
+    <br>Dead Skunk
+    <br>This Aint My First Rodeo
+    <br>Needles and Pins
+    <br>Angel from Montgomery
+    <br>Rumble
+    <br>Amarillo By Morning
+    <br>Set Em Up Joe
+    <br>Rock Me On The Water
+    <br>Blue Skies
+    <br>The Wish
+    </div>

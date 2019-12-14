@@ -1,7 +1,12 @@
-<div style="text-align:center">
-<X2>WHY ELECTRONIC?</X2><br><div>
-I would rather play with others and will occasionally bring friends along<br><br>
-<X2>However...</X2><br>
-It's difficult to organize schedule and rehearse a group of retirees.
-<br><br>
-<X1>So it's usually just me...</X1>
+<div style="position:absolute;text-align:center;width:100%;height:100%;">
+    <X5>WHY AN ELECTRONIC BAND?</X5><br>
+    I'd would rather play with others and occasionally bring friends along
+    <br><X5>However...</X5>
+    <br>
+    Organizing, scheduling and rehearsing a
+    <br>group of retirees is like hearding cats.
+    <br>
+    <X1>SO ITS USUALLY JUST ME...</X1>
+    <br> and my VIRTUAL BAND!
+    <img src="Data/folkBand.png" style="position:absolute;left:33%;bottom:0%;width:30%;">
+</div>

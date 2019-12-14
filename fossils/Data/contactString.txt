@@ -1,9 +1,13 @@
-<div> 
-CONTACT ME...
-<br>Press button to make Call or Send Email...
-<br><X3>fredzone.github.io/fossils/</X3>
-<br><br>Email:
-<br><a onclick="window.open('mailto:fkaparich@gmail.com?subject=From Fossil Website&body=Put your message here..................%0A')"><button style="font-size:3vw">fkaparich@gmail.com</button></a>
-<br><br>Call or Text:
-<br><a onclick="window.open('tel:2542149980')"><button style="font-size:3vw">(254)-214-9980</button></a>
-<br><a style="font-size:2vw;line-height:10%;">Simply use the buttons<br>If your Device is setup for email or phone...</a></div>
+<div>
+    CONTACT INFORMATION
+    <br>On the web at<br><X3>https//fredzone.github.io/fossils/</X3>
+    <br>Press one of the buttons below to:
+    <br>to make a Call or send an Email...
+    <br><br>Call or Text*:
+    <br><a onclick="window.open('tel:2542149980')"><button style="font-size:3vw">(254)-214-9980</button></a>
+    <br><br>Email*:
+    <br><a onclick="window.open('mailto:fkaparich@gmail.com?subject=From Fossil Website&body=Put your message here..................%0A')"><button style="font-size:3vw">fkaparich@gmail.com</button></a>
+    <br>
+    <br><a style="text-align:right;">*If your Device is setup for email or phone...</a>
+</div>
+

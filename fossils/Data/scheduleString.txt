@@ -1,10 +1,10 @@
 <div style="text-align:center">
-<X2>SCHEDULE</X2>
+<X5>SCHEDULE</X5>
 <br>St Catherines (3rd Floor)
 <br>Monthly, 2nd Monday:
 <br>2:00PM to 3:00PM
-<br><X2>=================</X2>
+<br><X5>=================</X5>
 <br>Wesley Woods (Willow Wing)
 <br>Monthly, 2nd Wednesday:
 <br>2:00PM to 3:00PM
-<br><X2>=================</X2>  
+<br><X5>=================</X5>  

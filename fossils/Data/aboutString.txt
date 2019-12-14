@@ -1,5 +1,5 @@
 <div style="text-align:center">
-<X2>ABOUT ME</X2><br>
+ABOUT ME<br>
 <X3>----Retired----</X3><br>
 Mechanical Engineer<br><br>
 <X3>----Occasional----</X3><br>
