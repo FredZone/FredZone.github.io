@@ -5,8 +5,6 @@
 <br>So it can be a little 'glitchey'
 <br>(I keep messing with it...)
 <br><X2>------------------------</X2>
-<br>Clicking this guy...
-<br><img src='Data/player.png'style="position:relative;width:10%">
-<br>Always brings you back here,
-<br>to the HOME screen!
+<br>Clicking this guy ALWAYS brings you back here,
+<br><img src='Data/player.png'style="position:relative;width:15%">
 </div>

@@ -2,16 +2,16 @@
 <head></head>
 <body>
 
-<div style="position:absolute;text-align:center;top:0%;width:100%;height:100%;">
-    <a id ='songTitle' style="font-size:4vw;color:red;top:0%height:10%;">To LISTEN: Click A Song Below...</a><br>
-    <div id='track' style='position:absolute;top:10%;width:100%;height:10%;'>
+<div style="position:absolute;text-align:center;top:0%;width:100%;height:100%">
+    <div id ='songTitle' style="position:relative;font-size:4vw;color:red;top:0%;width:100%;">To LISTEN: Click A Song Below...</div>
+    <div id='track' style='fixed:absolute;top:25%;border:raised';>
         <img onclick="document.getElementById('Audio1').pause()" src='Data/transPause.png' style='position:absolute;left:0%;bottom:0%;width:9%'>
         <img onclick="document.getElementById('Audio1').play()" src='Data/transPlay.png' style='position:absolute;right:0%;bottom:0%;width:9%'>
-        <audio id="Audio1" controls=true preload = "metadata" style="position:absolute;text-align:center; bottom:0%;width:80%;right:10%;" source src='Data/Abilene.mp3' type="audio/mpeg" >
+        <audio id="Audio1" controls=true preload = "metadata" style="position:absolute;text-align:center; bottom:0%;width:80%;right:10%;" source src='Data/Box Number 10.mp3' type="audio/mpeg" >
             XXX
         </audio>
     </div>
-    <div id='tracks' style='position:absolute;line-height:200%;text-align:left;top:20%;width:100%;height:80%;overflow-y:scroll'><X3>
+    <div id='tracks' style='position:relative;line-height:200%;text-align:left;width:100%;bottom:0%;overflow-y:auto'><X3>
         <a onclick="playTrack('Box Number 10')">1) Box Number 10<a>
         <br><a onclick="playTrack('Put Another Log On The Fire')">2) Put Another Log On The Fire<a>
         <br><a onclick="playTrack('Pancho And Lefty')">3) Pancho And Lefty<a>
@@ -19,8 +19,6 @@
         <br><a onclick="playTrack('Dead Skunk')">5) Dead Skunk<a>
         <br><a onclick="playTrack('Steel Rail Blues')">6) Steel Rail Blues<a><X3>
     </div>
-
-
 </div>
 
 <!--

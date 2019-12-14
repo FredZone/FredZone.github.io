@@ -73,7 +73,7 @@ get a good compare for dropbox and gitub
         <div id ='picFrame' style='position:absolute;display:block;border:none;left:0%; top:0%; height:85%; width:100%;'>
             <img id='galleryPic' style='position:absolute;display:block;left:0%;height:100%;width:100%;bottom:0%'>
         </div>                                                                                                                                                                                
-        <img id='picLeft'src='Data/transPointerLeft.png' onclick="gallery(-1)" style="position:absolute;display:block;opacity:1;left:0%;bottom:0%; width:8%;">
+        <img id='picLeft'src='Data/transPointerLeft.png' onclick="gallery(-1)" style="position:absolute;display:none;opacity:1;left:0%;bottom:0%; width:8%;">
         <img id='picRight'src='Data/transPointerRight.png' onclick="gallery(+1)" style="position:absolute;display:block;opacity:1;right:0%; bottom:0%; width:8%;">
         <div id='galleryTxt' onclick="aspect()" style='position:absolute;color:white; line-height:100%;border:none;left:0%; top:85%;left:10%;height:10%;width:80%;'>
             How I see the 'Virtual' Band
@@ -281,7 +281,7 @@ function fades(id, dir, ms, ids) {
 function gallery(n){
     if (n==undefined) { n=0}
     document.getElementById('galleryPic').style.display='none'
-    document.getElementById('iconA').style.width='4vw';
+    document.getElementById('iconA').style.width='8vw';
     PIC=PIC+n;
     PICpath = "Data/"
     MODE='GALLERY'
@@ -289,7 +289,8 @@ function gallery(n){
     if (PIC==0) {
             document.getElementById('picLeft').style.display='none'
         }else{
-            document.getElementById('picLeft').style.display='block'    
+            document.getElementById('picLeft').style.display='block'
+             document.getElementById('iconA').style.top='2%'
         }
     if (PIC==ARRgallery.length-2){
             document.getElementById('picRight').style.display='none'
