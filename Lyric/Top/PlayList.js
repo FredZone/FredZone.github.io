@@ -405,7 +405,7 @@ function selectSet(set,num)//C
         //("Getting " + set +" from the Server");
         if (!num) {num = 0;}
         if (!set) {
-         alert(1);//zzzzzzzzzzzzzzzzzzzzzzzzzz
+         set="ALL TUNES"
         }
         TUNEnum = num ;
         SETname = set;
