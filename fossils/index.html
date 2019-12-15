@@ -34,11 +34,11 @@ get a good compare for dropbox and gitub
 <img id='picData' style='position:fixed; left:0%;width:10%;display:block;z-index:500;'>
     
 <!--MAIN SCREEN ==============================================================================--> 
-<div id='background' style="position:fixed;display:block ;background-image:url('Data/backgroundB.jpg'); background-size:100% 100%;line-height:130%; font-size:2.5vw; left:0%; top:0%; right:0%; bottom:0%; z-index:1000;">
+<div id='background' style="position:fixed;display:block ;background-image:url('Data/backgroundB.jpg'); background-size:100% 100%;line-height:100%; font-size:2.5vw; left:0%; top:0%; right:0%; bottom:0%; z-index:1000;">
     
 
 <!--TITLE-->
-    <div id='hdr' style="position:fixed;display:none;background-color:transparent;line-height:130%;font-size:4vw;left:0%;top:0%;right:0%; bottom:96%;z-index:300;">
+    <div id='hdr' style="position:fixed;display:none;background-color:transparent;line-height:130%;font-size:4vw;left:0%;top:0%;right:0%; bottom:90%;z-index:300;">
         FRED and The Fossils (Virtual Band) 
     </div>
 
@@ -67,9 +67,14 @@ get a good compare for dropbox and gitub
 <div id='msg'style="position:absolute; opacity:0;color:black; font-family:Courrier New; font-weight:bold; display:block; line-height:130%; overflow-y:scroll; background-image:url('Data/parchmentA.jpg'); background-size:100% 100%; border:groove; font-size:2.5vw; text-align:center; left:20vw; right:20vw; top:5vw; bottom:1vw; z-index:50; z-index:50;overflow-y:auto;word-break: keep-all">
     MESSAGE APPEARS HERE...
     </div>
-    
+
+
+
+
+
 <!--viewbox-->      
     <div id='viewBox'style="position:absolute;display:none;font-size:3vw;background-color:black;border:solid;border-color:black;overflow:hidden;left:0vw;right:0vw; top:0vw; bottom:0vw; z-index:450;">
+        
         <div id ='picFrame' style='position:absolute;display:block;border:none;left:0%; top:0%; height:85%; width:100%;'>
             <img id='galleryPic' style='position:absolute;display:block;left:0%;height:100%;width:100%;bottom:0%'>
         </div>                                                                                                                                                                                
@@ -102,7 +107,7 @@ var PIC=0
 var PICpath
 var PICaspect
 var MODE='STD'
-//working on calibrating...not worth the effort
+// working on calibrating...not worth the effort
 //var CAL = 3; //calibration
 //var CALbase = 0;
 //var CALcount = 0;
@@ -124,11 +129,15 @@ var ARRgallery = "0,1,2,3,4,5".split(',')
  viewBox 500
  */
 //BOOT=============================================================
-function playTrack(nme){
-    document.getElementById('songTitle').innerHTML=nme;
-    document.getElementById('Audio1').src='Data/'+nme+'.mp3';
+
+function player() {
+    document.getElementById('playBox').display = block
+}
+
+function playTrack(nme) {
+    document.getElementById('songTitle').innerHTML = nme;
+    document.getElementById('Audio1').src = 'Data/' + nme + '.mp3';
     document.getElementById('Audio1').play();
-   
 }
 
 window.onload = function() {
@@ -141,27 +150,30 @@ window.onload = function() {
     LISTENstring = fileDownload('Data/listenString.txt');
     CONTACTstring = fileDownload('Data/contactString.txt');
     ABILENEstring = fileDownload('Data/abileneString.txt');
-    msg(WELCOMEstring,0);
+    msg(WELCOMEstring, 0);
     realign();
     loadGallery(0);
     document.getElementById('hdr').style.opacity = 0
     document.getElementById('hdr').style.display = 'block'
     LOCKED = true //lock design area
-    fades('hdr',0.03,10,'msg|menu|iconA')
+    fades('hdr', 0.03, 10, 'msg|menu|iconA')
 }
 
-function msg(str,id) {
-    MODE='STD';
+function msg(str, id) {
+    MODE = 'STD';
+    if (str == LISTENstring) {
+        MODE = 'LISTEN' //code
+    }
     var i;
     cto()
     document.getElementById('msg').innerHTML = str;
     document.getElementById('msg').style.display = 'block';
     document.getElementById('viewBox').style.display = 'none';
-    for (i=0;i<=7;i++){
-        if (id==i){
-            document.getElementById(i).style.color='yellow';
-        }else{
-            document.getElementById(i).style.color='white';
+    for (i = 0; i <= 7; i++) {
+        if (id == i) {
+            document.getElementById(i).style.color = 'yellow';
+        } else {
+            document.getElementById(i).style.color = 'white';
         }
     }
     realign()
@@ -172,11 +184,15 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         document.getElementById('msg').style.border = "groove";
         document.getElementById('menu').style.border = "none";
         //l,r,t,b,h,w,f
+        shapeShift('hdr', '-', '-', '-', '-', '-', '-', '2.8vh');
         shapeShift('viewBox', '-', '-', '-', '-', '-', '-', '3vw');
-        shapeShift('msg', '10vw', '1vw', '5vw', '28vh', '-', '-', '3vh');
         shapeShift('menu', '1vw', '1vw', '72vh', '1vw', '-', '-', '3vw');
+        shapeShift('msg', '10%', '1%', '5%', '28%', '-', '-', '3vh');
+        if (MODE == 'LISTEN') {
+            shapeShift('songTitle', '-', '-', '-', '-', '-', '-', '6vw');
+        }
         shapeShift(0, '1%', '-', '0%', '-', '25%', '98%', '4vw');
-        shapeShift(1, '1%', '-', '25%', '-', '25%', '32%','4vw');
+        shapeShift(1, '1%', '-', '25%', '-', '25%', '32%', '4vw');
         shapeShift(2, '1%', '-', '50%', '-', '25%', '32%', '4vw');
         shapeShift(3, '1%', '-', '75%', '-', '25%', '32%', '4vw');
         shapeShift(4, '34%', '-', '25%', '-', '25%', '32%', '4vw');
@@ -185,15 +201,19 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         shapeShift(7, '67%', '-', '25%', '-', '25%', '32%', '4vw');
         shapeShift(8, '67%', '-', '50%', '-', '25%', '32%', '4vw');
         shapeShift(9, '67%', '-', '75%', '-', '25%', '32%', '4vw');
-        if (MODE=='STD'){
-            shapeShift('iconA', ''-'%', '-', '2%', '-', '-', '10vw', '-')
-        }else{
-            shapeShift('iconA', ''-'%', '-', '2%', '-', '-', '8vw', '-')
+        if (MODE == 'STD') {
+            shapeShift('iconA', '' - '%', '-', '2%', '-', '-', '10vw', '-')
+        } else {
+            shapeShift('iconA', '' - '%', '-', '2%', '-', '-', '8vw', '-')
         }
     } else { //WIDE ASPECT
+        shapeShift('hdr', '-', '-', '-', '-', '-', '-', '3.5vw');
+        if (MODE == 'LISTEN') {
+            shapeShift('songTitle', '-', '-', '-', '-', '-', '-', '3.5vw');
+        }
         shapeShift('viewBox', '-', '-', '-', '-', '-', '-', '2.5vw');
-        shapeShift('msg', '20vw', '20vw', '5vw', '1vw', '-', '-', '3vw');
-        shapeShift('menu', '80vw', '1vw', '5vw', '1vw', '-', '-', '1.6vw');
+        shapeShift('msg', '20%', '20%', '8%', '1%', '-', '-', '2vw');
+        shapeShift('menu', '80vw', '1vw', '10%', '1vw', '-', '-', '1.6vw');
         shapeShift(0, '0%', '-', '0%', '-', '10%', '100%', '2.5vw');
         shapeShift(1, '0%', '-', '10%', '-', '10%', '100%', '2.5vw');
         shapeShift(2, '0%', '-', '20%', '-', '10%', '100%', '2.5vw');
@@ -204,9 +224,9 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         shapeShift(7, '0%', '-', '70%', '-', '10%', '100%', '2.5vw');
         shapeShift(8, '0%', '-', '80%', '-', '10%', '100%', '2.5vw');
         shapeShift(9, '0%', '-', '90%', '-', '10%', '100%', '2.5vw');
-        if (MODE=='STD'){
+        if (MODE == 'STD') {
             shapeShift('iconA', '0%', '-', '2%', '-', '-', '20vw', '-')
-        }else{
+        } else {
             shapeShift('iconA', '0%', '-', '2%', '-', '-', '6vw', '-')
         }
 
@@ -215,7 +235,7 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
 }
 
 function shapeShift(id, lf, rt, tp, bm, ht, wt, fs) {
-    if (lf !='-' ) {
+    if (lf != '-') {
         document.getElementById(id).style.left = lf;
     }
     if (rt !== '-') {
@@ -239,87 +259,90 @@ function shapeShift(id, lf, rt, tp, bm, ht, wt, fs) {
 }
 
 function loadGallery() {
-    ARRgallery="0,1,2,3,4,5,6,7".split(',')
-    ARRgallery[0]="1968? Chuck, Bill, Yours Truely and Jay. Playing as 'JAM' in Butte Montana|firstBand.jpg|1219|810";
-    ARRgallery[1]="Me, 50 years ago playing bass at a Montana State University Spring Event...|bass.png|1316|1940";
-    ARRgallery[2]="Thats Ron (on the right), who got me back into playing guitar after a 45 year hiatus...|ron.jpg|1051|788";
-    ARRgallery[3]="At a Newcomers Christmas party with my buddy, Pat, who passed away in November of 2019|pat.jpg|1051|855";
-    ARRgallery[4]="My friends, Stan, Bill, John, Sally and I playing for the fun of it...|barn.jpg|2754|1660";
-    ARRgallery[5]="At St Catherine's, one of my current monthly gigs...|fred.jpg|1641|3919";
-    ARRgallery[6]="How I imagine my Virtual Backup band...|folkBand.png|581|575";
+    ARRgallery = "0,1,2,3,4,5,6,7".split(',')
+    ARRgallery[0] = "1968? Chuck, Bill, Yours Truely and Jay. Playing as 'JAM' in Butte Montana|firstBand.jpg|1219|810";
+    ARRgallery[1] = "Me, 50 years ago playing bass at a Montana State University Spring Event...|bass.png|1316|1940";
+    ARRgallery[2] = "Thats Ron (on the right), who got me back into playing guitar after a 45 year hiatus...|ron.jpg|1051|788";
+    ARRgallery[3] = "At a Newcomers Christmas party with my buddy, Pat, who passed away in November of 2019|pat.jpg|1051|855";
+    ARRgallery[4] = "My friends, Stan, Bill, John, Sally and I playing for the fun of it...|barn.jpg|2754|1660";
+    ARRgallery[5] = "At St Catherine's, one of my current monthly gigs...|fred.jpg|1641|3919";
+    ARRgallery[6] = "How I imagine my Virtual Backup band...|folkBand.png|581|575";
 }
 
 function fades(id, dir, ms, ids) {
-    document.getElementById(id).style.display = 'block'//secure starting point
+    document.getElementById(id).style.display = 'block' //secure starting point
     if (document.getElementById(id).style.opacity == NaN) {
-        alert("UNDEFINED Opacity for "+id)
+        alert("UNDEFINED Opacity for " + id)
     }
     var arr;
     var cur = parseFloat(parseFloat(document.getElementById(id).style.opacity, 10) + dir, 10)
     if (cur >= 1 | cur <= 0) {
         clearTimeout(TIMEOUTfade)
         document.getElementById(id).style.display = 'block'
-        if (cur>0.6) document.getElementById(id).style.opacity = 1;
-        if (cur<0.4) document.getElementById(id).style.opacity = 0;
-            arr = ids.split('|')
-            id = arr[0]
-            arr.shift()
-            ids = arr.join('|')
-            if (id==null|id==undefined|id==''|id==' ') {
-               return;
-            }else{
-            fades(id,dir,ms,ids)
-            }
+        if (cur > 0.6) document.getElementById(id).style.opacity = 1;
+        if (cur < 0.4) document.getElementById(id).style.opacity = 0;
+        arr = ids.split('|')
+        id = arr[0]
+        arr.shift()
+        ids = arr.join('|')
+        if (id == null | id == undefined | id == '' | id == ' ') {
+            return;
         } else {
+            fades(id, dir, ms, ids)
+        }
+    } else {
         TIMEOUTfade = setTimeout(function() {
             document.getElementById(id).style.opacity = cur;
-            fades(id,dir,ms,ids)
+            fades(id, dir, ms, ids)
         }, ms);
     }
 }
 //USER FUNCTIONS===========================================================
-function gallery(n){
-    if (n==undefined) { n=0}
-    document.getElementById('galleryPic').style.display='none'
-    document.getElementById('iconA').style.width='8vw';
-    PIC=PIC+n;
+
+function gallery(n) {
+    if (n == undefined) {
+        n = 0
+    }
+    document.getElementById('galleryPic').style.display = 'none'
+    document.getElementById('iconA').style.width = '8vw';
+    PIC = PIC + n;
     PICpath = "Data/"
-    MODE='GALLERY'
-    document.getElementById('viewBox').style.display='block';
-    if (PIC==0) {
-            document.getElementById('picLeft').style.display='none'
-        }else{
-            document.getElementById('picLeft').style.display='block'
-             document.getElementById('iconA').style.top='2%'
-        }
-    if (PIC==ARRgallery.length-2){
-            document.getElementById('picRight').style.display='none'
-        }else{
-            document.getElementById('picRight').style.display='block'    
-        }
-    document.getElementById('galleryPic').src=PICpath +ARRgallery[PIC].split('|')[1]
-    document.getElementById('viewBox').style.display='block'//hide msg div
-    document.getElementById('msg').style.display='none'//hide msg div
-    PICaspect=ARRgallery[PIC].split('|')[2]/ARRgallery[PIC].split('|')[3]//=w/h
+    MODE = 'GALLERY'
+    document.getElementById('viewBox').style.display = 'block';
+    if (PIC == 0) {
+        document.getElementById('picLeft').style.display = 'none'
+    } else {
+        document.getElementById('picLeft').style.display = 'block'
+        document.getElementById('iconA').style.top = '2%'
+    }
+    if (PIC == ARRgallery.length - 2) {
+        document.getElementById('picRight').style.display = 'none'
+    } else {
+        document.getElementById('picRight').style.display = 'block'
+    }
+    document.getElementById('galleryPic').src = PICpath + ARRgallery[PIC].split('|')[1]
+    document.getElementById('viewBox').style.display = 'block' //hide msg div
+    document.getElementById('msg').style.display = 'none' //hide msg div
+    PICaspect = ARRgallery[PIC].split('|')[2] / ARRgallery[PIC].split('|')[3] //=w/h
     document.getElementById('galleryTxt').innerHTML = ARRgallery[PIC].split('|')[0];
     picAlign();
 }
-    
-function picAlign(){    
-    var frameAspect=document.getElementById('picFrame').clientWidth/document.getElementById('picFrame').clientHeight
-    var factor=PICaspect/frameAspect
-    if (factor<1) {
-        document.getElementById('galleryPic').style.height="100%"
-        document.getElementById('galleryPic').style.width=factor*100+"%"
-        document.getElementById('galleryPic').style.left=50*(1-factor)+"%"
-        document.getElementById('galleryPic').style.bottom="0%"
-    }else{
-        document.getElementById('galleryPic').style.width="100%"
-        document.getElementById('galleryPic').style.height=1/factor*100+"%"
-        document.getElementById('galleryPic').style.left="0%"
-        document.getElementById('galleryPic').style.bottom=50*(1-(1/factor))+"%"
+
+function picAlign() {
+    var frameAspect = document.getElementById('picFrame').clientWidth / document.getElementById('picFrame').clientHeight
+    var factor = PICaspect / frameAspect
+    if (factor < 1) {
+        document.getElementById('galleryPic').style.height = "100%"
+        document.getElementById('galleryPic').style.width = factor * 100 + "%"
+        document.getElementById('galleryPic').style.left = 50 * (1 - factor) + "%"
+        document.getElementById('galleryPic').style.bottom = "0%"
+    } else {
+        document.getElementById('galleryPic').style.width = "100%"
+        document.getElementById('galleryPic').style.height = 1 / factor * 100 + "%"
+        document.getElementById('galleryPic').style.left = "0%"
+        document.getElementById('galleryPic').style.bottom = 50 * (1 - (1 / factor)) + "%"
     }
-document.getElementById('galleryPic').style.display='block'
+    document.getElementById('galleryPic').style.display = 'block'
 }
 
 function admin() {
@@ -332,45 +355,57 @@ function admin() {
             LOCKED = false
             document.getElementById('admin').src = 'Data/underConstruction.png'
         }
-    }else{
-    msg(ADMINstring)    
+    } else {
+        msg(ADMINstring)
     }
 }
 
-function fullScreen(){
-    if (FULLscreen ==false) {
+function fullScreen() {
+    if (FULLscreen == false) {
         launchIntoFullscreen(document.documentElement);
-        document.getElementById('9').innerHTML="-STD SCREEN";
-        FULLscreen=true
+        document.getElementById('9').innerHTML = "-STD SCREEN";
+        FULLscreen = true
     } else {
         exitFullscreen();
-        FULLscreen=false
-        document.getElementById('9').innerHTML="-BIG SCREEN";
+        FULLscreen = false
+        document.getElementById('9').innerHTML = "-BIG SCREEN";
     }
 }
 
-function launchIntoFullscreen(element){
-    if(element.requestFullscreen) {element.requestFullscreen();}
-    else if(element.mozRequestFullScreen) {element.mozRequestFullScreen();}
-    else if(element.webkitRequestFullscreen) {element.webkitRequestFullscreen();}
-    else if(element.msRequestFullscreen) {element.msRequestFullscreen();} }
+function launchIntoFullscreen(element) {
+    if (element.requestFullscreen) {
+        element.requestFullscreen();
+    } else if (element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();
+    } else if (element.webkitRequestFullscreen) {
+        element.webkitRequestFullscreen();
+    } else if (element.msRequestFullscreen) {
+        element.msRequestFullscreen();
+    }
+}
 
-function exitFullscreen(){
-    if(document.exitFullscreen) {document.exitFullscreen();}
-    else if(document.mozCancelFullScreen) {document.mozCancelFullScreen();}
-    else if(document.webkitExitFullscreen) {document.webkitExitFullscreen();}
-    else if(element.msCancelFullscreen) {document.msCancelFullscreen();}}//this step is BOGUS
+function exitFullscreen() {
+    if (document.exitFullscreen) {
+        document.exitFullscreen();
+    } else if (document.mozCancelFullScreen) {
+        document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+    } else if (element.msCancelFullscreen) {
+        document.msCancelFullscreen();
+    }
+} //this step is BOGUS
 
 //UTILITY FUNCTIONS===========================================================================
 
-function aspect(){
-    if (LOCKED==false) {
-    var w=document.getElementById('galleryPic').naturalWidth
-    var h=document.getElementById('galleryPic').naturalHeight
-    var a=w/h
-    alert("Picture Aspect Information:+\n  Width: "+w+"px\n  Height: "+h+"px\n  Aspect Ratio: "+a)
+function aspect() {
+    if (LOCKED == false) {
+        var w = document.getElementById('galleryPic').naturalWidth
+        var h = document.getElementById('galleryPic').naturalHeight
+        var a = w / h
+        alert("Picture Aspect Information:+\n  Width: " + w + "px\n  Height: " + h + "px\n  Aspect Ratio: " + a)
     }
-} 
+}
 
 function cto() {
     clearTimeout(TIMEOUTgallery);
