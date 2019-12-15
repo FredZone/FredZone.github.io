@@ -34,36 +34,36 @@ function updateSong() {
     document.getElementById(CELL).value = recode();
     document.getElementById('warning').style.display = 'block';
     document.getElementById('msg').innerHTML = "SAVE YOUR CHANGES!";
-}
-
-function recode() {
-    var str = "";
-    if (SONGvolume >= 0) {
-        str = "|" + SONGvolume;
-        alert(str)
     }
-    if (SONGnotes.length !== 0 | str.length !== 0) {
-        SONGnotes = (SONGnotes.split("\n")).join("@");
-        str = "|" + SONGnotes + str;
-    }
-    if (SONGsound.length !== 0 | str.length !== 0) {
-        str = "|" + SONGsound + str;
-    }
-    if (SONGtempo.length !== 0 | str.length !== 0) {
-        str = "|" + SONGtempo + str;
-    }
-    if (SONGkey.length !== 0 | str.length !== 0) {
-        str = "|" + SONGkey + str;
-    }
-    str = SONGtitle + str;
-    alert(str)
+    
+    function recode() {
+        var str = "";
+        if (SONGvolume >= 0) {
+            str = "|" + SONGvolume;
+            alert(str)
+            }
+            if (SONGnotes.length !== 0 | str.length !== 0) {
+                SONGnotes = (SONGnotes.split("\n")).join("@");
+                str = "|" + SONGnotes + str;
+                }
+                if (SONGsound.length !== 0 | str.length !== 0) {
+                    str = "|" + SONGsound + str;
+                    }
+                    if (SONGtempo.length !== 0 | str.length !== 0) {
+                        str = "|" + SONGtempo + str;
+                        }
+                        if (SONGkey.length !== 0 | str.length !== 0) {
+                str = "|" + SONGkey + str;
+                }
+                str = SONGtitle + str;
+                alert(str)
     return str;
-}
-
-function decode(args) { //works
-    defaults();
-    var k = "";
-    var n = " ";
+    }
+    
+    function decode(args) { //works
+        defaults();
+        var k = "";
+        var n = " ";
     var i = 0;
     var arr = args.split("|");
     document.getElementById("songNum").value = CELL;
@@ -76,11 +76,11 @@ function decode(args) { //works
             if (k[0] == arr[1]) {
                 n = k[1];
                 SONGkey = k[0];
-            }
-            i = i + 1;
-        }
-        document.getElementById("songKey").selectedIndex = n;
-        if (arr.length > 2) {
+                }
+                i = i + 1;
+                }
+                document.getElementById("songKey").selectedIndex = n;
+                if (arr.length > 2) {
             document.getElementById("songTempo").value = SONGtempo = arr[2];
             n = " ";
             if (arr.length > 3) {
@@ -94,7 +94,7 @@ function decode(args) { //works
                         SONGsound = arr[3];
                     }
                     i = i + 1;
-                }
+                    }
                 document.getElementById("songSound").selectedIndex = n;
                 if (arr.length > 4) {
                     document.getElementById("songNotes").value = SONGnotes = (arr[4].split('@')).join('\n');
