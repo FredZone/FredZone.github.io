@@ -424,9 +424,11 @@ function reset()
 function selectSet(set,num)//C
     {  //Selects your set and tune by number
         //("Getting " + set +" from the Server");
-        if (!num) {num = 0;}
-        if (!set) {
-         set="ALL TUNES"
+        if (!num|num==undefined) {
+            num = 0;
+        }
+        if (set.length<=1|set==undefined|set==null|set=='') {
+            set="ALL TUNES"
         }
         TUNEnum = num ;
         SETname = set;
@@ -498,6 +500,14 @@ function readSingleFile(e)
         };
         reader.readAsText(file);
     }
+
+
+
+
+
+
+
+
 
 //LIST NAVIGATION==================================================================================
 function tag(num) //tag a cell to work on
@@ -579,8 +589,8 @@ function countBARS() {
 }
 
 function screenUpdate(str, title) {
-    if (!title) {
-        TITLE = document.getElementById('title').value;
+    if (title==null|title==undefined|title.length<=1|title==''|title=='ALL TUNES') {
+        TITLE = document.getElementById('title').value='BOGUS LIST (library fragment)';
     } else {
         document.getElementById('title').value = title;
         TITLE = title;
