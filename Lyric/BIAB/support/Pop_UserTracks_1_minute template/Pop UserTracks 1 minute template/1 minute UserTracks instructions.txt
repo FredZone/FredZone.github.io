@@ -1,0 +1,27 @@
+1 minute UserTracks template
+
+This file is all you need to make a working Band-in-a-Box UserTrack!  This file was designed to work well with Pop/Rock/Country styles.  If you want to make a jazz UserTrack, we have a different template for that.  The steps you can take to make the UserTrack are:
+
+1.  Pick the style and tempo you want to record at, and give your UserTrack a name
+
+By default we have a "Dreamy Pop Quintet" style loaded, with a tempo of 120, but you can pick ANY style at ANY tempo.  At 120bpm, the file will be just over a minute long.  At faster tempos it will be less than a minute, and at slower tempos it will be more than a minute.
+
+To name your UserTrack, place the folder in C:\bb\RealTracks\UserTracks\, and rename the folder to the name of your style, for example, "Strumming Guitar UserTracks".
+
+2.  Play and record your instrument on the audio track by pressing the "Record Audio" button in Band-in-a-Box (if you're using RealBand, you can record your audio on any unused audio track).  If you're using a microphone to record, make sure you're using headphones to listen to the backing tracks so they don't bleed into your microphone.  If you're using an electric guitar or bass plugged right into your computer, you don't need to worry about that.
+
+3.  When you are finished recording, save the song in Band-in-a-Box, which will ALSO save a wave file with the same name.  If you're recording in RealBand, you need to just export the track you recorded as a wave file.
+
+4.  Use your completed UserTrack by pressing the "UserTracks" button!
+
+You CAN record additional material for your UserTracks style by also recording other templates, and placing the .sgu+wav files in the same folder with this one.  You can pick and choose which ones you want to record, and this added material will give your style things like:
+
+-song endings
+-additional material for greater diversity in your style
+-additional common chords like sus, dim
+-additional jazzy chords like maj7, m7, m7b5, etc.
+-additional less common chords like 7b9, 13, mmaj7, etc.
+
+You can also create your OWN chord progressions to add to your UserTracks style!  Just make your own custom progression in Band-in-a-Box, record along with that chord progression, and save the .sgu+.wav in the same folder as this file, and Band-in-a-Box will automatically add that material to the UserTrack when it is used.
+
+You also can make UserTracks even if you don't have Band-in-a-Box or RealBand.  To do this, simply download the "Making UserTracks without Band-in-a-Box or RealBand" template file.  This has instructions for making UserTracks using other DAWs besides Band-in-a-Box or RealBand.  For example, you could record yourself in Protools, and send the resulting files to your friend who DOES have Band-in-a-Box, and they'd be able to use them as UserTracks!

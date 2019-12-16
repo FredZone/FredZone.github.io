@@ -1,0 +1,33 @@
+TABLATURE CONVENTIONS
+<br>=====================================
+<br>STANDARD CONVENTIONS(Loosly from Ultimate Guitar)
+<br>----------------------
+<br>Tab
+<br>h - hammer on
+<br>p - pull off
+<br>b - bend up i.e(12b14)
+<br>r - release bend
+<br>u - slide up
+<br>d - slide down";
+<br>s =s+"
+<br>v - vibrato (sometimes written as ~)
+<br>t - right hand tap
+<br>x - play 'note' with heavy damping
+<br>* - harmonic ";
+<br>
+<br>MY PERSONAL CONVENTIONS
+<br>----------------------
+<br>= - hold the note in current state
+<br>m - mute after playing
+<br>c - curl (small bend-release)";
+<br>
+<br>Picking Conventions
+<br>(Last Letter of the NOTE)
+<br>----------------------
+<br>U:Pick Up
+<br>D: Pick Down
+<br>T: Thumb
+<br>I: Index
+<br>M: Middle
+<br>R: Ring
+<br>L: Little"

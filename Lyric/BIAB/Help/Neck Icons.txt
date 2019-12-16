@@ -1,0 +1,16 @@
+<div font-size:8vh;color:black;font-family:Courrier New;font-weight: bold;text-align:left;vertical-align:middle;border-color:black; border-width:thin; background-color:lightgrey;padding:10px;margin:10px;>
+&nbsp3&nbsp&nbsp&nbsp<img  src='../../icons/fing.png' style='height:8vh;'>&nbsp3&nbsp&nbsp&nbspPress
+<br>&nbsp3c&nbsp&nbsp<img  src='../../icons/Fingcurl.png' style='height:8vh;'>  Curl
+<br>&nbsp3b4&nbsp <img  src='../../icons/fingB1.png' style='height:8vh;'>  Bend 1/2 tone
+<br> 3b5&nbsp <img  src='../../icons/fingB2.png' style='height:8vh;'>Bend 1 tone
+<br> 3b6&nbsp <img  src='../../icons/fingB3.png' style='height:8vh;'>Bend 1&1/2 tone
+<br> 3h&nbsp&nbsp  <img  src='../../icons/fingHammerOn.png' style='height:8vh;'>Hammer On
+<br> 3m&nbsp  <img  src='../../icons/fingMute.png' style='height:8vh;'>Mute
+<br> 3r&nbsp&nbsp  <img  src='../../icons/fingRelease.png' style='height:8vh;'>Release
+<br> 3d&nbsp&nbsp  <img  src='../../icons/fingSlideDown.png' style='height:8vh;'>Slide Down
+<br> 3u&nbsp&nbsp  <img  src='../../icons/fingSlideUp.png' style='height:8vh;'>Slide Up
+<br> 3v&nbsp&nbsp  <img  src='../../icons/fingVibrato.png' style='height:8vh;'>Vibrato
+<br> 3p&nbsp&nbsp  <img  src='../../icons/fingPullOff.png' style='height:8vh;'>Pull Off
+<br> 3=&nbsp&nbsp&nbsp  <img  src='../../icons/fingHold.png' style='height:8vh;'>Hold as played
+<br> 3a&nbsp&nbsp&nbsp  <img  src='../../icons/fingReplay.png' style='height:8vh;'>Pick Again
+</div>

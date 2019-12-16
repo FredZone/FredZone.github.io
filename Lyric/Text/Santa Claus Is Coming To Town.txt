@@ -1,47 +1,101 @@
-TITLE:Santa Claus Is Coming To Town,DUR:150,BPM:120,BEATS:2,KEY:A,QUAL:Raw,ARTIST:,GENRE:Unknown,STYLE:Unknown,HITyear:
+TITLE:Santa Claus Is Coming To Town,DUR:164,BPM:150,BEATS:4,KEY:C,QUAL:Verified,ARTIST:??,GENRE:Country,STYLE:Up Tempo,HITyear:
+SANTA CLAUS IS COMING TO TOWN
+#INTRO ----------------------------------
+|C    ~Am    |Dm    ~C
+-
+|G           |
+-
 #VERSE 1 --------------------------------
-|A                    |D
-You better watch out  You better not cry
-|A                    |D
-Better not pout  I'm telling you why
-|A       ~F#m          |Bm        ~E7
-Santa   Claus is     coming   to
-|A                     |%
-town
+|C           |F
+You better watch out, you'd better not cry,
+|C           |F
+you'd better not pout, I'm telling you why,
+|C    ~Am    |Dm    ~G
+Santa Claus is coming to town. (Gather 'round)
+|C           |G
+-
 #VERSE 2 --------------------------------
-|A                    |D
-He's making a list  And checking it twice;
-|A                    |D
-Gonna find out Who's naughty and nice
-|A       ~F#m          |Bm        ~E7
-Santa Claus is coming to
-|A                     |%
-town
+|C           |F
+He's making a list and checking it twice,
+|C           |F
+gonna find out who's naughty and nice,
+|C    ~Am    |Dm    ~G
+Santa Claus is coming to town.
+|C           |G
+-------
 #CHORUS 1 -------------------------------
-  |D                   |%
-He sees you when you're sleeping
-  |D                   |%
-He knows when you're awake
-  |B7                  |%
-He knows if you've been bad or good
-  |E7 (stop)           |%   
-So be good for goodness sake!  O!
+|F           |
+He sees you when you're sleeping, and
+|F7       |
+he knows when you're awake
+|D7                      |%
+he knows if you've been bad or good, so be good for
+|G7         |
+goodness sake. Oh
 #VERSE 3 --------------------------------
-|A                    |D
-You better watch out  You better not cry
-|A                    |D
-Better not pout  I'm telling you why
-|A       ~F#m          |Bm        ~E7
-Santa Claus is coming to
-|A                     |%
- A
-town
+|C           |F
+you'd better watch out, you'd better not cry,
+|C           |F
+you'd better not pout I'm telling you why,
+|C    ~Am    |Dm    ~G
+Santa Claus is coming to town.
+|C           |G
+
+#VERSE 4 --------------------------------
+|C           |F
+With little tin horns and little toy drums,
+|C           |F
+with root-ti-toot-toots and rummy-tum-tums.
+|C    ~Am    |Dm    ~G
+Santa Claus is coming to town.
+|C           |G
+-------------------
+#VERSE 5 --------------------------------
+|C           |F
+And curley-haired dolls that cuddle and coo,
+|C           |F
+elephants, boats and kiddy-cars too.
+|C    ~Am    |Dm    ~G
+Santa Claus is coming to town.
+|C           |G
+-------------
+#CHORUS 2 -------------------------------
+|F           |
+He sees you when you're sleeping, and
+|F7       |
+he knows when you're awake
+|D7                      |%
+he knows if you've been bad or good, so be good for
+|G7         |
+goodness sake. Oh
+#VERSE 6 --------------------------------
+|C           |F
+you'd better watch out, you'd better not cry,
+|C           |F
+You'd better not pout I'm telling you why
+|C    ~Am    |Dm    ~G
+Santa Claus is coming to town.
+|C           |G
+--------
+#CHORUS 3 -------------------------------
+|F           |
+The kids in girl and boy town
+|F7       |
+will have a jubilee
+|D7                      |%
+they're gonna build a toy land town -
+|G7         |
+all around the christmas tree, so
 #OUTRO ----------------------------------
-|A    ~F#m     |Bm  ~E7
-Santa Claus is coming to
-|A             |
-town
-|A    ~F#m     |Bm  ~E7
-Santa Claus is coming to
-|A             |
-town
+|C           |F
+you better watch out, you'd better not cry
+|C           |F
+you'd better not pout I'm telling you why.
+|C    ~Am    |Dm    ~G
+Santa Claus is coming
+|C    ~Am    |Dm    ~G
+Santa Claus is coming
+|C    ~Am    |Dm    ~G
+Santa Claus is coming
+|C
+TO town
