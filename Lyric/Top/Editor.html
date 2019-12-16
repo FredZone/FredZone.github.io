@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<!--Capitaliztion-->
+<head>
+    <title id = 'title'>EDITOR</title>
+    <link rel="shortcut icon" type="image/png" href="../../Icons/faviconEdit.png">
+    <style type="text/css">
+        #notePad,#cannedText{cursor: move; background-color:orange; color:black; font-size:1vw; line-height:100%; top:0%; width:100%; height:5%; overflow:hidden;}
+        Body
+            {text-align: left;
+            vertical-align: bottom;
+            border-color: black;
+            border-width:thin;
+            padding:0px;
+            margin:0px;
+            display:block;}
+        optgroup {font-size:2vw;font-family:Courrier New;}
+        X0{color:orange;}
+        X2{color:red;}
+        X3{background-color:lightgrey;}
+        X4{color:red;background-color:#F4FA58;}
+        X5{color:white; background-color:lightgrey;}
+        X6{background-color:lightgrey;}
+        X7{background-color:transparent;}
+        X8{color:blue;}
+        X9{text-align:center; background-color:white; color:green;}
+        X10{color:white;}
+        X11{text-align:center; background-color:yellow; color:red;}
+        X12{text-align:center; background-color:yellow; color:black;}
+        X13{text-align:center; background-color:black; color:red;}
+        X14{background-color:black; color:white;}
+        X15{text-align:center; background-color:green; color:black;}
+        F21 {vertical-align:middle ;color:purple;text-align:left;}
+        </style></head>
+<body>
+<!--Global.js Requirements....=========================================================== -->
+
+    <div id="notePad" style="position:absolute; resize:both; border-style:ridge; border-width:thick;display:none;color:white;text-align:center; font-size:1vw; background-color:lightgrey; overflow:scroll; height:61% ;width:40%; top:33%; left:7%;z-index:20000 ">
+    <div id="notePadheader" style="position:absolute;height:5%; width:100%; background-color:orange;">Note Pad</div>
+    <img src="../../Icons/danger.png" onclick="dis('notePad','none')" style="position:absolute;width:7%;width:5%;height:10%;right:1%;top:5%;">
+    <textarea id='note' style="border-style:groove;text-align:left; line-height:120%; display:block; position:absolute;overflow:scroll; left:2%; top:16%;width:96%;height:74%;color:black;background-color:yellow;">Text printed here...</textarea>
+    </div>  
+
+    <div id="cannedText" style="position:absolute; resize:both; border-style:ridge; border-width:thick;display:none;color:white;text-align:center; font-size:1vw; background-color:lightgrey;height:30% ;width:50%; top:22%; left:40%;z-index:20000 ">
+    <div id="cannedTextheader" style="position:absolute;height:8%; width:100%; background-color:orange;">Canned Text</div>
+    <img src="../../Icons/danger.png" onclick="dis('cannedText','none')" style="position:absolute;width:7%;height:10%;right:1%;top:5%;">
+    <textarea id='cannedTextText' style="border-style:groove;text-align:left; line-height:120%; position:absolute;overflow:scroll;left:2%; top:16%;width:96%;height:74%;color:black;background-color:white;">
+THESE ITEMS DO NOT SHOW UP UNLESS LIVE NOTES IS TURNED ON!!!
+VoiceLive=========================================== 
+   Initial Line (A) shows first 3 actions (PR 1 & CM 2) default voice(V3) Harmony Off (H OFF)
+     $$TCL1 <X14>PR 1</X14> <X14>C M2</X14> <X1>(V3)</X1> <X16>H OFF</X16> 
+   Initial Line (B) shows first 3 actions (PR 1 & CM 2 & PV-1) 2 voices(V3,V4) Harmony Off (H OFF)  
+     $$TCL1 <X14>PR 1</X14> <X14>D M2</X14> <X14>PV 1</X14> <X16>V3,V4</X16> <X16>H OFF</X16>
+   Action Line with green background (action)    
+     $$<X16>H OFF</X16>
+   Action Line with black background (screen after Action)
+     $$<X14>PV 1</X14>
+   IN-LINE Action: with green Background Put it in the chords 
+      <!--#H ON#-->
+   (OBSOLETE VoiceLive IN-LINE Note: <XX>H ON</XX>)
+
+Stratocaster==========================================   
+   Shows Switch position and vol, tone, tone         
+     $$STRT ooXoo 8 5 10
+
+Digitec RP55=======================================  
+   Shows ONLY the preset number
+     $$RP55 3 or 4"
+     
+    </textarea>
+    </div>  
+
+
+
+
+
+<a id="none" style=" display:none; visibility:hidden"></a>
+<form action=false><input type="file" id="fileInput" style="display:none;"/></form>
+<div id="msg" style="position:fixed;height:2vw; background:white; left:0px; bottom:15%; width:100vw; font-size:1vw;font-family:Courrier New;
+    font-weight:bold; line-height:100%; text-align: center; overflow:hidden; z-index:10000">Loading HTML...
+    </div> 
+
+<div id ="edit" style="position:fixed;display:block ;width:100% ;height:100% ;background:lightgrey;border:none; margin:0; padding:0">
+    <textarea id="rawTune" style="position:fixed ;width:70vw; left:0vw ;height:80%; border:none; margin:0; padding:0; z-index:10050"></textarea>
+    </div>
+
+<div id ="xmlTop" style="position:fixed; display:none; width:100%; height:100%; background-color:pink; border:none; margin:0; padding:0">
+    <div style="position:fixed; border-style:solid; border:thick; border-color:red;font-size:4vh; text-align: center; background-color:tan; width:70vw; top:0%; left:0vw ;height:5%; border:none; margin:0; padding:0; z-index:10060">MUSIC XML FILE (use with Band in a Box)</div>
+    <textarea id="xml" style="position:fixed; background-color:yellow; width:70vw; top:5%; left:0vw ;height:75%; border:none; margin:0; padding:0; z-index:10060"></textarea>
+    </div>
+
+<div  id = "controls" style = "position:fixed; display:block; right :0% ; z-index:12000;  text-align:right ; width:30%; height: 80%;overflow:scroll">
+    <fieldset onchange="firstLineGlobal('con')" style="text-align:left" >
+        <legend>FIRST LINE <button onclick="firstLineGlobal('con')"> Update First Line</button></legend>   
+        <label for="Title">Title </label>
+            <input type="text" style= 'width:12vw;background-color:lightgrey' name="Title" id="Title" value="TBD" /><br>
+            <label for="Duration">Duration </label>
+            <input type="text"; style= 'width:8vw' name="Duration" id="duration" value="180"/><button onclick="updateDur(); firstLineGlobal('con')" style= 'width:4vw'>Calc</button><br>
+            <label for="Tempo">Tempo (BPM)</label>
+            <input type="text" style= 'width:12vw' name="Tempo" id="Tempo" value="120"/><br>
+            <label for="name">Time Sig</label>
+            <select id ='sigOpt' name ="sigOpt" style= 'width:12vw'>
+                <option value="12">12/8</option><option value="11">11/8</option><option value="10">10/8</option><option value="9">9/8</option>
+                <option value="8">8/8</option><option value="7">7/8</option><option value="6">6/4</option><option value="5">5/4</option>
+                <option value="4" selected>4/4</option><option value="3">3/4</option><option value="2">2/4</option>
+                </select><br>
+        <label for="name">Key</label>
+            <input type="text" style= "width:12vw" name="Key" id="Key" value="C" /><br> 
+        <label for="name">Quality</label>
+            <select id ='Qual' name ="Qual" style= 'width:12vw'>
+                <option value="Raw" selected>Raw</option><option value="Preliminary">Preliminary</option><option value="Inwork">Inwork</option><option value="Verified">Verified</option><option value="Complete">Complete</option>
+                </select><br>    
+        <label for="name">Artist</label>
+            <input type="text" style= 'width:12vw' name="Artist" id="Artist" value="UNKNOWN"/><br>
+            <label for="name">Genre</label>
+            <select id ='Genre' name ="Genre" style= 'width:12vw'>        
+                <option value="Unknown">Unknown</option><option value="Rock">Rock</option><option value="Country">Country</option><option value="Blues">Blues</option>
+                <option value="Gospel">Gospel</option>value="Pop">Pop</option><option value="Folk">Folk</option><option value="Pop">Pop</option><option value="R&B">R&B</option><option value="Novelty">Novelty</option>
+                </select><br>
+        <label for="name">Style</label>
+             <select id ='Style' name ="Style" style= 'width:12vw'>
+                 <option value="Unknown">Unknown</option><option value="Ballad">Ballad</option><option value="Dance">Dance</option><option value="Up Tempo">Up Tempo</option><option value="Swing">Swing</option><option value="Talking">Talking</option>
+                </select><br>
+        <label for="name">HIT YEAR</label>
+            <input type="text" style= 'width:12vw' name="Hit Year" id="year" value="TBD"/><br>    
+        </fieldset>
+    <fieldset style="text-align:left">
+        <legend>Initial Cleanup</legend>
+        <button onclick="StepThroughArray('replaceTabs')" style ="width:16vw; text-align: left" >1: Replace Tabs</button><button  onclick="hlert('Replace Tabs')" style ="width:1.5vw; text-align: left"  >?</button><br>
+        <button  onclick ="StepThroughArray('clearJunk')" style ="width:16vw; text-align : left">2: Remove Junk</button><button  onclick="hlert('Remove Junk')" style ="width:1.5vw; text-align: left"  >?</button><br>
+        </fieldset>
+    <fieldset style="text-align:left">
+        <legend>Song Structure</legend>
+        <button  onclick = "StepThroughArray('addHeaders'),statusMsg('Replaced Breaks (=====)with VERSE CHORUS BREAK INTERLUDE INTRO OUTRO. Delete leading elements until correct on shows...','red')"" style ="width:16vw; top: 62vh;text-align : left">1: Break at Blanks</button><button  onclick="hlert('Break at Blanks')" style ="width:1.5vw; text-align: left" >?</button><br>
+        <button  onclick = "StepThroughArray('tagHeader'),StepThroughArray('numberHeaders','#CHORUS'),StepThroughArray('numberHeaders','#VERSE'),StepThroughArray('numberHeaders','#BREAK'),StepThroughArray('numberHeaders','#INTERLUDE')"style ="width:16vw; top: 62vh;text-align : left">2: Tag & Number Headers</button><button  onclick="hlert('Tag Headers'),statusMsg('INTRO CHORUS VERSE INTERLUDE BREAK OUTRO ,You can copy and paste there to set sections','red')" style ="width:1.5vw; text-align: left" >?</button><br>
+        </fieldset>  
+    <fieldset style="text-align:left">
+        <legend>Chord Work</legend>
+        <button  onclick="extractChords()" style ="width:10vw; text-align: left" >1: Extract Chords</button><input type="text" style= 'width:2.5vw' name="open" id="open"value="("><input type="text" style='width:2.5vw' name="close" id="close" value=")"><button  onclick="hlert('extract the Chords')" style ="width:1.5vw; text-align: left"  >?</button><br>
+        <button  onclick="StepThroughArray('findChords')" style = "width:16vw; text-align: left">2: Mark Chords with Bars ( |C)</button><button  onclick="hlert('Find Chords Button')" style ="width:1.5vw; text-align: left"  >?</button><br>
+        <button  onclick="StepThroughArray('addBars',prompt('How Many Bars Per Line?',4))" style = "width:16vw; text-align: left">3: Add Bars (|)</button><button  onclick="hlert('Add Bars Button')" style ="width:1.5vw; text-align: left"  >?</button><br>
+        <button  onclick="StepThroughArray('cleanBars')"style ="width:16vw; text-align: left" >4: Mark Open Bars Repeat ( |%)</button><button  onclick="hlert('Clean Up Open Bars')" style ="width:1.5vw; text-align: left"  >?</button><br>
+        <button  onclick="StepThroughArray('addPartBars')"style ="width:16vw; text-align: left" >5: Mark Partial Bars (~C)</button><button  onclick="hlert('Tag Partial Bars')" style ="width:1.5vw; text-align: left"  >?</button><br>
+        <button  onclick="StepThroughArray('spreadChords')"style ="width:16vw; text-align: left" >6: Spread the Chords</button><button  onclick="hlert('Spread the Chords')" style ="width:1.5vw; text-align: left"  >?</button><br>
+        <button  onclick ="StepThroughArray('chordTransfer',document.getElementById('hdr').value)" style ="width:10vw; text-align: left">7: Chord Transfer</button>
+        <select id ='hdr' style ="width:6vw">
+            <option value="VERSE" style ="width:8vw" selected>VERSE</option>
+            <option value="CHORUS">CHORUS</option>
+            <option value="BREAK">BREAK</option>
+            </select>
+        <button onclick="hlert('Chord Transfer')" style ="width:1.5vw; text-align: left">?</button><br>
+        <button  onclick="StepThroughArray('usePct','chord')" style ="width:16vw; text-align: left" >8: Duplicate Chords to % </button>
+        <button onclick="hlert('UsePCT')" style ="width:1.5vw; text-align: left">?</button><br>
+        <button  onclick="StepThroughArray('transpose',parseInt(document.getElementById('Tpose').value,10))" style ="width:10vw; text-align: left">9: Transpose</button>
+        <select id ='Tpose'  style ="width:6vw"> 
+            <option value="12">12</option><option value="11">11</option><option value="10">10</option><option value="9">9</option>
+            <option value="8">8</option><option value="7">7</option><option value="6">6</option><option value="5">5</option>
+            <option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option>
+            <option value="0" selected>0</option><option value="-1">-1</option><option value="-2">-2</option><option value="-3">-3</option>
+            <option value="-4">-4</option><option value="-5">-5</option><option value="-6">-6</option><option value="-7">-7</option>
+            <option value="-8">-8</option><option value="-9">-9</option><option value="-10">-10</option><option value="-11">-11</option>
+            <option value="-12">-12</option>
+            </select><button  onclick="hlert('Transpose');" style ="width:1.5vw; text-align: left">?</button><br>  
+        <button onclick="hlert('XML Chords')" style ="width:15vw; text-align: left">LIST VALID XML CHORDS ???</button><select id ='goodChords' style ="width:5vw"></select><br>
+        <button onclick="hlert('Current Chords')" style ="width:15vw; text-align: left">LIST OF CHORDS USED ???</button><select id ='songChords' style ="width:5vw"></select><br> 
+        
+    </fieldset>    
+    
+    <fieldset style="text-align:left">
+        <legend>General Edit</legend>
+        <button  onclick ="StepThroughArray('sentCase')" id ="scase" style ="width:16vw; text-align : left">1: Sentence Case</button><button  onclick="hlert('Sentence Case')" style ="width:1.5vw; text-align: left"  >?</button><br>
+        <button  onclick ="StepThroughArray('titleCase')" id ="tcase" style ="width:16vw; text-align : left">2: Title Case</button><button  onclick="hlert('Title Case')" style ="width:1.5vw; text-align: left"  >?</button><br>
+        <button  onclick ="StepThroughArray('spreadText')" id ="sptext" style ="width:16vw; text-align : left">3: Spread Text</button><button  onclick="hlert('?')" style ="width:1.5vw; text-align: left"  >?</button><br>
+        <button  onclick ="StepThroughArray('shrinkText')" id ="shtext" style ="width:16vw; text-align : left">4: Shrink Text</button><button  onclick="hlert('?')" style ="width:1.5vw; text-align: left"  >?</button><br>
+        <button  onclick = "StepThroughArray('rTrim')" style = "width:16vw; text-align: left">4: Trim Trailing Spaces </button><button  onclick="hlert('Trim Trailing Spaces')" style ="width:1.5vw; text-align: left"  >?</button><br>
+        <button  onclick = "StepThroughArray('lTrim')" style = "width:16vw; text-align: left">4: Trim Leading Spaces </button><button  onclick="hlert('Trim Leading Spaces')" style ="width:1.5vw; text-align: left"  >?</button><br>
+        <button onclick = "StepThroughArray('deleteBlanks','none','Recommend')" style ="width:16vw; text-align: left" >5: Delete Blank Lines</button><button  onclick="hlert('Delete Blank Lines')" style ="width:1.5vw; text-align: left"  >?</button>
+        <legend>Replace (In Lyrics or Chords)</legend>
+        <input type="text" style= 'width:5vw' name="replaceFrom" id="replaceFrom">
+        <button onclick="StepThroughArray('replace',document.getElementById('replaceTo').value,document.getElementById('replaceFrom').value)" style ="width:2.5vw ; text-align:center"><</button><button onclick="StepThroughArray('replace',document.getElementById('replaceFrom').value,document.getElementById('replaceTo').value)" style ="width:2.5vw ; text-align: center">></button><input type="text" style= "width:5vw ; text-align:left" name="replaceTo" id="replaceTo"><button  onclick="hlert('replace')" style ="width:1.5vw; text-align: left">?</button><br>             
+        <select id ='replaceIn' style ="width:10vw"><option value="lyric" style ="width:10vw" selected>lyric</option><option value="chord">chord</option></select>  
+        </fieldset> 
+    
+    <fieldset style="text-align:left">
+        
+        <legend>TOOLS (Edit and paste in)</legend>    
+            <img id ='xmlImg' src="../../Icons/text.png" alt ="TXT" style=" left:1vw; height:3vw; width:3vw" onclick = "dis('cannedText')">
+            <img src="../../Icons/blackNotepad.png" alt ="PAD" style=" left:5vw; height:3vw; width:3vw" onclick = "dis('notePad')">
+    </fieldset> 
+
+    <fieldset style="text-align:left">
+        <legend>MP3 & Tempo</legend>    
+        <div  onclick ="getTempo()" id ="tempoGetter" style ="border:solid; width:16vw; height:1.5vw; text-align : center">TEMPO TOOL</div><br>
+        <audio id="Audio1" controls = false preload = "metadata" style="height:3vw; width: 16vw " source src="../Backing/Default.mp3" type="audio/mpeg"></audio><BR>
+        <label for="audDur">mp3 Duration </label><br>
+        <button onclick="updateDur()">Get MP3 Duration (if available) </button><input type="text" size="5" name="audDur" id="audDur" /><br>   
+        </fieldset> 
+        
+    <fieldset style="text-align:left">
+       <legend>XML ouput</legend>   
+       <label for="XML Duration">XML Duration</label>
+       <input type="text" value='480' style= 'width:12vw;background-color:white' name="XML Duration" id="xmlDuration"/><br>
+       </fieldset>
+    
+    <fieldset style="text-align:left">
+        <legend>TABS</legend>   
+        <label for="TABS">TABS</label>
+        <select id ='tabSelect' name ="SELCECT A TAB" onchange="alert(this.value)" style= 'width:12vw'>
+        <option value=1>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option></select><br>
+        <button onclick="alert(document.getElementById('tabSelect').value),openTab(document.getElementById('tabSelect').value)">Edit</button> <!--,openTab(document.getElementById('tabSelect').value)-->
+        </fieldset>
+    
+
+    <fieldset style="text-align:left">
+        <legend>ABC FILE </legend>   
+        <button onclick="abcConvert()">Convert</button> 
+        </fieldset>
+    </div>
+
+<!-- Master Div for Edit ========================================================================================================= -->
+
+<div  id = "editCntrl" style = "position:fixed; height:15%; width:100%; left:0px ; bottom: 0vw; LEFT:0vw; border:none; margin:0; padding:0; z-index:7500; background:black; text-align: center" >
+    <img src="../../Icons/blackRead.png"id='getLocal' title="GET A LOCAL FILE" onclick="fileGetLocal('createARRlines')"  alt ="GET FILE" style="position:fixed;left:0vw;height:6vw;width :6vw ;z-index: 8002">
+    <img src="../../Icons/blackSave.png" id ="iconSave" title ="SAVE LOCAL FILE" alt ="save Local File" onclick="updateDur(),firstLineGlobal('con'),StepThroughArray('rTrim'),saveTextAsFile(decodeURI(TITLE),'rawTune')" style="position:fixed;left:6vw; height:6vw ;width :6vw;z-index:8000">
+    <img id ='xmlImg' src="../../Icons/musicXML.png" alt ="XML" style="position:fixed; height:6vw; left:18vw; height:6vw; width:6vw" onclick = "mode('xml')">
+    <img id ='tabImg' src="../../Icons/tab.png" alt ="TAB" style="position:fixed; height:6vw; left:12vw; height:6vw; width:6vw" onclick = "mode('tab')">
+    <img id ='xmlImg' src="../../Icons/blackEdit.png" alt ="EDIT" style="position:fixed; height:6vw; left:24vw; height:6vw; width:6vw" onclick = "mode('edit')">
+    <img id="xmlExport" src="../../Icons/blackRedSave.png" alt ="EXPORT THE XML" onclick = "saveTextAsFile('crapola.xml','xml');" style ="position:fixed; display:none;height:6vw; left:6vw; height:6vw; width:6vw;z-index:20000;">
+    <img src="../../Icons/blackUndo.jpg" alt ="Info" id='iconRestore' onclick="restoreBackup()" title ="RESTORE TO LAST ATTMPTED SAVE" style="position:fixed; left:30vw ;height:6vw; z-index:8002 ;display:block">
+    <div id="xmlTools" style ="position:absolute;background-color: transparent; width:28%;display:none; top:0%;left:0; height:100% ;text-align:left; z-index:20000;">
+        <button id="xmlExport" alt ="EXPORT THE XML" onclick = "saveTextAsFile('crapola.xml','xml');" style ="position:absolute;display:none; width:23%; top:0%;left:25%; height:100% ;text-align:left; z-index:20000;">Export The XML</button>
+        </div> 
+    <a id ="tuneList" style="color:white;left:60%;">Songs Appear Here...or type your own into the list</a>
+    <img src="../../Icons/blackSearch.png" alt ="Research" style="position:fixed; height:6vw; right:21vw ; height:6vw;width:6vw" onclick = "research()">
+    <img src="../../Icons/blackQuestion.png" alt ="Help" style="position:fixed; height:6vw; right:14vw ; height:6vw;width:6vw" onclick = "window.open('helpIndex.html','Help with text file','width = 400, height=500, scrollbars=yes, resizable =yes')">        
+    <img src="../../Icons/transVocalWhat.png" alt ="Player" onclick = "passARR('nextplayer.html',ARRlines,'\n',null);" id = "ButtonConfigToPlay" style = "position:fixed; height:6vw; width:6vw; right:7vw; border:none; margin:0; padding:0; z-index:7900">
+    <img  id="HomeIcon" src="../../Icons/blackHome.png" alt ="Home" onclick="home()" style="position:fixed;height:6vw ;width :6vw;right:0vw">
+    </div>
+
+    <div  id = "listCntrl" style = "position:fixed; height:100%; width:100%; left:0px ; bottom: 0vw; LEFT:0vw; border:none; margin:0; padding:0; z-index:7501; background:black; text-align: center;display:none">
+        </div>
+    
+    <div  id = "floater" style = "display:none;position:fixed; background-color:yellow; height:40%; width:55%; left:10% ; bottom:40%; border:solid; margin:0; padding:0; z-index:7501; text-align: left;">
+        </div>
+
+<!--TABS-->
+
+<div id='tabster' style="position:fixed;display:none;opacity:1;background-color:grey;width:100%;bottom:6vw;top:0%; z-index:20000;">TBS MUST BE MANUALLY PASTED TO OR COPIED INTO THE TEXT FILE UNTIL I GET AMBITIOUS<br>
+    ADD TAB: and Bar number as 'TAB:25@' before pasting the STRING into the file...
+    <div style="position:absolute;display:none;text-align:left; height:7%;width:10%;left:1%;top:20%;">TAB:</div>
+        <textarea id='editLOOPtab' onchange="editStatus('changed',this.id)" style="position:absolute; text-align:left; width:90%;top:19%; height:41%; right:1%; overflow-y:hidden;overflow-x:scroll;white-space: pre;"></textarea>
+        <div style="position:absolute;border:groove;text-align:left; height:7%; width:98%;right:1%;top:82%;"> TAB-EDIT BUTTONS
+            <button onclick="document.getElementById('editLOOPtab').value=stringToTab(document.getElementById('stringView').value);">^TO TAB ^</button>
+            <button onclick="document.getElementById('stringView').value=tabToString(document.getElementById('editLOOPtab').value);">v TO STRING v</button>
+            <button onclick="addBarToTab()">+Add Bar+</button>
+            <button onclick="expandTab(1)">Expand Tab</button>
+            <button onclick="expandTab(-1)">Contract Tab</button>
+            <button onclick="removeBar()">Remove Beat</button>
+            <button onclick="transposeTab(document.getElementById('stringView').value,-1)">Key -</button>
+            <button onclick="transposeTab(document.getElementById('stringView').value,1)">Key +</button>
+            <button onclick="dis('tabBuilder')">New Tab +</button>
+            <button onclick="saveTab()">Save this Tab+</button>
+            </div>  
+        <textarea id='stringView' style="position:absolute; text-align:left; width:90%;top:63%; height:13%; right:1%; overflow-y:hidden;overflow-x:scroll;white-space: pre;">-</textarea>
+        <div style="position:absolute;right:2%; width:98%;bottom:0%;height:6%">
+            <input type="text" title="Start(sec)"  id="editLOOPstart" onchange="editStatus('changed',this.id)" style="position:absolute;left:30%;width:8%;height:90%;bottom:10%;">  
+            <input type="text" title="Finish (sec)"  id="editLOOPfinish" onchange="editStatus('changed',this.id)" style="position:absolute;right:30%;width:8%;height:90%;bottom:10%;">  
+            </div>
+        </div>
+    </div>
+    
+    <div id ='tabBuilder' style="line-height:100%;text-align:left;border:solid;background-color:blue; border-color:white;display:none; position:absolute;height:46%;width:30%;right:1%;top:50%;z-index:20001;">
+      <img src="../../Icons/blackClose.png" alt="+" title ="Cancel" onclick="dis('tabBuilder','none')" style="position:absolute; height:20%; right:0%; top:0%;">
+      <img src="../../Icons/blackThumbsUp.png" alt="+" title ="OK (Clears your previous work in the tab frame...)" onclick="tabNew(),dis('tabBuilder','none')" style="position:absolute; height:20%; right:20%; top:0;">
+      TAB BUILDER
+      <div style="position:absolute; top:20%;left:30%;">Beats per Bar</div>
+      <select id = "beat" style= "position:absolute; top:20%; background-color:white; left:5%;">
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4 selected>4</option>
+        <option value=5>5</option>
+        <option value=6>6 </option>
+        <option value=7>7 </option>
+        <option value=8>8</option>
+        <option value=9>9 </option>
+        </select>
+      <div style="position:absolute; top:40%;left:30%;">Bars</div>
+      <select id = 'bars' style= "position:absolute; background-color:white; top:40%; left:5%;">
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4 selected>4</option>
+        <option value=5>5</option>
+        <option value=6>6 </option>
+        <option value=7>7 </option>
+        <option value=8>8</option>
+        <option value=9>9 </option>
+        <option value=10>10 </option>
+        <option value=11>11</option>
+        <option value=12>12</option>
+        <option value=13>13</option>
+        <option value=14>14</option>
+        <option value=15>15</option>
+        <option value=16>16 </option>
+        <option value=17>17 </option>
+        <option value=18>18</option>
+        <option value=19>19 </option>
+        <option value=20>20 </option>
+        <option value=21>21</option>
+        </select>
+      <div style="position:absolute; top:60%; left:30%;">Divisions per Beat</div>
+        <select id = 'divs' style= "position:absolute; background-color:white; top:60%; left:5%;">
+          <option value=1>1</option>
+          <option value=2 selected>2</option>
+          <option value=3>3</option>
+          <option value=4>4</option>
+          <option value=5>5</option>
+          <option value=6>6</option>
+          <option value=7>7</option>
+          <option value=8>8</option>
+          <option value=9>9</option>
+          </select>
+      <div style="position:absolute; top:80%; left:30%;">Charcters per Div</div>
+        <select id = 'chrs' style= "position:absolute; background-color:white; top:80%; left:5%;">
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4 selected>4</option>
+        <option value=5>5</option>
+        <option value=6>6 </option>
+        <option value=7>7 </option>
+        <option value=8>8</option>
+        <option value=9>9 </option>
+        </select>
+      </div>
+    </div> 
+
+function dis(id,disp){
+alert(1)
+    if(disp===undefined){
+            if(document.getElementById(id).style.display == 'none'){
+                document.getElementById(id).style.display='block';}
+            else{document.getElementById(id).style.display='none';}}
+        else{
+            if(disp=='none') {
+                document.getElementById(id).style.display = 'none';}
+            else{document.getElementById(id).style.display = 'block' ;}}}
+
+<SCRIPT type="text/javascript" SRC = "editor.js"></SCRIPT>
+<SCRIPT type="text/javascript" SRC = "GlobalRoutines.js"></SCRIPT>
+
+</body>
+</html>
