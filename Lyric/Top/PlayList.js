@@ -24,6 +24,7 @@ var SONGkey;
 var SONGsound;
 var SONGnotes;
 var SONGvolume;
+
 function updateSong() {
     SONGnotes = document.getElementById('songNotes').value;
     SONGtitle = document.getElementById('songTitle').value;
@@ -36,34 +37,34 @@ function updateSong() {
     document.getElementById('msg').innerHTML = "SAVE YOUR CHANGES!";
     }
     
-    function recode() {
-        var str = "";
-        if (SONGvolume >= 0) {
-            str = "|" + SONGvolume;
-            alert(str)
-            }
-            if (SONGnotes.length !== 0 | str.length !== 0) {
-                SONGnotes = (SONGnotes.split("\n")).join("@");
-                str = "|" + SONGnotes + str;
-                }
-                if (SONGsound.length !== 0 | str.length !== 0) {
-                    str = "|" + SONGsound + str;
-                    }
-                    if (SONGtempo.length !== 0 | str.length !== 0) {
-                        str = "|" + SONGtempo + str;
-                        }
-                        if (SONGkey.length !== 0 | str.length !== 0) {
-                str = "|" + SONGkey + str;
-                }
-                str = SONGtitle + str;
-                alert(str)
-    return str;
+function recode() {
+    var str = "";
+    if (SONGvolume >= 0) {
+        str = "|" + SONGvolume;
+        alert(str)
     }
+    if (SONGnotes.length !== 0 | str.length !== 0) {
+        SONGnotes = (SONGnotes.split("\n")).join("@");
+        str = "|" + SONGnotes + str;
+    }
+    if (SONGsound.length !== 0 | str.length !== 0) {
+        str = "|" + SONGsound + str;
+    }
+    if (SONGtempo.length !== 0 | str.length !== 0) {
+        str = "|" + SONGtempo + str;
+    }
+    if (SONGkey.length !== 0 | str.length !== 0) {
+        str = "|" + SONGkey + str;
+    }
+    str = SONGtitle + str;
+    alert(str)
+    return str;
+}
     
-    function decode(args) { //works
-        defaults();
-        var k = "";
-        var n = " ";
+function decode(args) { //works
+    defaults();
+    var k = "";
+    var n = " ";
     var i = 0;
     var arr = args.split("|");
     document.getElementById("songNum").value = CELL;
@@ -76,11 +77,11 @@ function updateSong() {
             if (k[0] == arr[1]) {
                 n = k[1];
                 SONGkey = k[0];
-                }
-                i = i + 1;
-                }
-                document.getElementById("songKey").selectedIndex = n;
-                if (arr.length > 2) {
+            }
+            i = i + 1;
+        }
+        document.getElementById("songKey").selectedIndex = n;
+        if (arr.length > 2) {
             document.getElementById("songTempo").value = SONGtempo = arr[2];
             n = " ";
             if (arr.length > 3) {
@@ -94,7 +95,7 @@ function updateSong() {
                         SONGsound = arr[3];
                     }
                     i = i + 1;
-                    }
+                }
                 document.getElementById("songSound").selectedIndex = n;
                 if (arr.length > 4) {
                     document.getElementById("songNotes").value = SONGnotes = (arr[4].split('@')).join('\n');
@@ -233,64 +234,84 @@ function printBigList()
         document.getElementById('printSpinner3').style.visibility='hidden';
     }  
 
- function printList()
-  {
-    document.getElementById('printSpinner').style.visibility='visible';
-    var titlePlus="";
-    var newKey ="";
-    var newBPM ="";
+function printList() {
+    document.getElementById('printSpinner').style.visibility = 'visible';
+    var titlePlus = "";
+    var newKey = "";
+    var newBPM = "";
     var line = "";
-    var title ="";
-    var  str ="";
-    var durSet =0;
-    var songCount =0;
-    var songNum =0;
-    var hasAlt=false;
+    var title = "";
+    var str = "";
+    var durSet = 0;
+    var songCount = 0;
+    var songNum = 0;
+    var hasAlt = false;
     var alt = false;
-        str = "<!DOCTYPE html><html><head><Title>" + TITLE +"</title>\n";
-        str = str + "\n<style>\nBody\n{font-size : 2.7vw; font-family:Courrier New;font-weight:bold;line-height:100%;text-align:Left;background-color:white;}\n";
-        str = str + "X2{font-size : 4vw ; text-align:Center}\n";
-        str = str + "X3{font-size : 2.7vw ;color:Black;}\n";
-        str = str + "X4{font-size : 2.7vw ;color:Green;}\n";
-        str = str + "\n</style></head><body>";
-        str = str+"<X2>"+TITLE +"</X2><pre>\n";                
-        str = str+"===========================================" + "KEY BPM";
-        var j = 0;
-        while (j < MAXcell)
-        {   titlePlus=document.getElementById("a"+j).value;
-            arrTitle =titlePlus.split("|");
-            title=arrTitle[0];
-            document.getElementById('statusMsg').innerHTML=title;
-            if (title.substr(0,1)=="@") {title = title.substr(1);alt = true; hasAlt=true;}else {songCount = songCount+1;}
-            if (title)
-                {
-                if (alt === true){line = "**";}else{line = songCount +":";}
-                if (songCount<10) {line = " " + line ;}
-                line ="\n"+ line +"  " + title.toUpperCase()+"                                   ";
-                line = line.substring(0,40);    
-                analizeSong(title); //alert("anlized "+j);
-                if (arrTitle[1]!== undefined & arrTitle[1]!=="") {newKey = arrTitle[1];}else {newKey=KEY;}
-                line=line +newKey;
-                line = line+"    ";
-                line = line.substring(0,47);
-                if (arrTitle[2]!== undefined & arrTitle[2]!=="") {newBPM = arrTitle[2];}else {newBPM= BPM;}
-                line = line +"("+ newBPM +")";
-                line = line+"     ";
-                line = line.substring(0,52);
-                str =str+ line;
-                }
-            alt = false;
-            j = j+1;
+    str = "<!DOCTYPE html><html><head><Title>" + TITLE + "</title>\n";
+    str = str + "\n<style>\nBody\n{font-size : 2.7vw; font-family:Courrier New;font-weight:bold;line-height:100%;text-align:Left;background-color:white;}\n";
+    str = str + "X2{font-size : 4vw ; text-align:Center}\n";
+    str = str + "X3{font-size : 2.7vw ;color:Black;}\n";
+    str = str + "X4{font-size : 2.7vw ;color:Green;}\n";
+    str = str + "\n</style></head><body>";
+    str = str + "<X2>" + TITLE + "</X2><pre>\n";
+    str = str + "===========================================" + "KEY BPM";
+    var j = 0;
+    while (j < MAXcell) {
+        titlePlus = document.getElementById("a" + j).value;
+        arrTitle = titlePlus.split("|");
+        title = arrTitle[0];
+        document.getElementById('msg').innerHTML = title;
+        if (title.substr(0, 1) == "@") {
+            title = title.substr(1);
+            alt = true;
+            hasAlt = true;
+        } else {
+            songCount = songCount + 1;
         }
-        str = str +"<br>=================================================";
-        if (hasAlt === true) {str=str +"\n** Indicates Alternate Song";}
-        str = str + "</pre></body></html>";
-        var newWindow = window.open(scrollbars=1);
-        newWindow .document.open();
-        newWindow .document.write(str);
-        newWindow .document.close();
-        document.getElementById('printSpinner').style.visibility='hidden';
-    }  
+        if (title) {
+            if (alt === true) {
+                line = "**";
+            } else {
+                line = songCount + ":";
+            }
+            if (songCount < 10) {
+                line = " " + line;
+            }
+            line = "\n" + line + "  " + title.toUpperCase() + "                                   ";
+            line = line.substring(0, 40);
+            analizeSong(title); //alert("anlized "+j);
+            if (arrTitle[1] !== undefined & arrTitle[1] !== "") {
+                newKey = arrTitle[1];
+            } else {
+                newKey = KEY;
+            }
+            line = line + newKey;
+            line = line + "    ";
+            line = line.substring(0, 47);
+            if (arrTitle[2] !== undefined & arrTitle[2] !== "") {
+                newBPM = arrTitle[2];
+            } else {
+                newBPM = BPM;
+            }
+            line = line + "(" + newBPM + ")";
+            line = line + "     ";
+            line = line.substring(0, 52);
+            str = str + line;
+        }
+        alt = false;
+        j = j + 1;
+    }
+    str = str + "<br>=================================================";
+    if (hasAlt === true) {
+        str = str + "\n** Indicates Alternate Song";
+    }
+    str = str + "</pre></body></html>";
+    var newWindow = window.open(scrollbars = 1);
+    newWindow.document.open();
+    newWindow.document.write(str);
+    newWindow.document.close();
+    document.getElementById('printSpinner').style.visibility = 'hidden';
+}
 
 function analizeList()
     {
