@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <link rel="shortcut icon" type="image/png" href="Icons/blackFZ.png">
+    <link rel="shortcut icon" type="image/png" href="Icons/fz.png">
     <title id='title'>Fred Zone</title>
     <style type="text/css">
 Body
@@ -26,10 +26,18 @@ Body
 </head>
 
 <body>
-    <div id ='greeting' style='line-height:110%;position:fixed;background-color:green; font-size:3.7vw; vertical-align:middle; overflow:hidden; left:1%;width:95%; top:1%;border: groove; height:8%'>
-        WELCOME to the Fred Zone on the NET!!
-        <img id='localButton' src='Icons/fz.png' onclick="window.open('http://localhost/fredzone')" alt='Fred Zone on Local Server' style='position:absolute;top:0%;right:0%; height:100%;'>
-    </div>
+    
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html>
+<head>
+    <title></title>
+</head>
+
+<body>
+    <div id='greetingLocal' style='line-height:110%;position:fixed;display:none; font-size:3.7vw; vertical-align:middle; overflow:hidden; left:1%;width:95%; top:1%;border: groove; height:8%'>WELCOME to the LOCAL FredZone! <img id='netButton' src='Icons/blackFZ.png' onclick="window.open('https://fredzone.github.io/index.html');" alt='Fred Zone on the Net' style='position:absolute;top:0%;right:0%; height:100%;' name="netButton"></div>
+
+    <div id='greetingNet' style='line-height:110%;position:fixed;display:none; font-size:3.7vw; vertical-align:middle; overflow:hidden; left:1%;width:95%; top:1%;border: groove; height:8%'>WELCOME to the Fred Zone on the NET!! <img id='localButton' src='Icons/fz.png' onclick="window.open('http://localhost/fredzone')" alt='Fred Zone on Local Server' style='position:absolute;top:0%;right:0%; height:100%;' name="localButton"></div>
 
     <div style="color:white;position:fixed;line-height:100%; left:1%; top:10%; height:40%; width:95%;font-size:1.7vw; border: groove;">
         <div style="position:absolute;overflow:hidden;left:1%;top:1%;width:100%">
@@ -68,8 +76,6 @@ Body
             </div>
         </div>
 
-
-        
         <div title="Chimp" onclick="window.open('Chimp.html');" style='border-style:solid;vertical-align:bottom; position:absolute;left:48%; top:20%; width:9vw;height:12vw'>
             <img src='Icons/chimp.png' alt='Chimp' style='position:absolute;top:0%;left:0%; width:100%;'>
 
@@ -79,56 +85,110 @@ Body
         </div>
     </div>
 
-    <div id='local' style="display:block;color:white;position:fixed;line-height:100%; left:1%; top:55%; height:40%; width:95%;font-size:1.7vw; border: groove;">
-            <div style="display:block;text-align:center; overflow:hidden; position:absolute; top:0%; left:0%; height:80%; width:100%; height:20%;">TOOLS</div>
-            
-        <div  title="Crap" onclick="window.open('Lyric/Top/FileMaster.html')" style="background-color:lightgrey;display:block;border-style:solid;vertical-align:bottom; position:absolute;left:1%; top:20%; width:9vw;height:12vw;">
+    <div id='tools' style="display:block;color:white;position:fixed;line-height:100%; left:1%; top:55%; height:40%; width:95%;font-size:1.7vw; border: groove;">
+        <div style="display:block;text-align:center; overflow:hidden; position:absolute; top:0%; left:0%; height:80%; width:100%; height:20%;">
+            TOOLS
+        </div>
+
+        <div title="File Master" onclick="window.open('Lyric/Top/FileMaster.html')" style="background-color:lightgrey;display:block;border-style:solid;vertical-align:bottom; position:absolute;left:1%; top:20%; width:9vw;height:12vw;">
             <img src="Icons/blackAdmin.png" alt='??' style='position:absolute;top:0%;left:0%; width:100%;'>
+
             <div style="position:absolute;text-align: center; bottom:0%;width:100%">
                 ADMIN
             </div>
         </div>
-            
-        <div  title='PLAYLIST BUILDER' onclick="window.open('Lyric/Top/PlayList.html')" style="background-color:lightgrey;display:block;border-style:solid;vertical-align:bottom; position:absolute;left:12%; top:20%; width:9vw;height:12vw;">
+
+        <div title='PLAYLIST BUILDER' onclick="window.open('Lyric/Top/PlayList.html')" style="background-color:lightgrey;display:block;border-style:solid;vertical-align:bottom; position:absolute;left:12%; top:20%; width:9vw;height:12vw;">
             <img src="Icons/blackPlayList.png" alt='??' style='position:absolute;top:0%;left:0%; width:100%;'>
+
             <div style="position:absolute;text-align: center; bottom:0%;width:100%">
                 PlayList
             </div>
         </div>
-            
-        
-        <div  title='Song Editor' onclick="window.open('Lyric/Top/Editor.html')" style="background-color:lightgrey;display:block;border-style:solid;vertical-align:bottom; position:absolute;left:24%; top:20%; width:9vw;height:12vw;">
+
+        <div title='Song Editor' onclick="window.open('Lyric/Top/Editor.html')" style="background-color:lightgrey;display:block;border-style:solid;vertical-align:bottom; position:absolute;left:24%; top:20%; width:9vw;height:12vw;">
             <img src="Icons/blackEdit.png" alt='??' style='position:absolute;top:0%;left:0%; width:100%;'>
+
             <div style="position:absolute;text-align: center; bottom:0%;width:100%">
                 Editor
             </div>
         </div>
-        
-        
-        <div  title='Research' onclick="window.open('Lyric/Top/Research.html')" style="background-color:lightgrey;display:block;border-style:solid;vertical-align:bottom; position:absolute;left:36%; top:20%; width:9vw;height:12vw;">
-            <img src="Icons/blackSearch.png"  alt='??' style='position:absolute;top:0%;left:0%; width:100%;'>
+
+        <div title='Research' onclick="window.open('Lyric/Top/Research.html')" style="background-color:lightgrey;display:block;border-style:solid;vertical-align:bottom; position:absolute;left:36%; top:20%; width:9vw;height:12vw;">
+            <img src="Icons/blackSearch.png" alt='??' style='position:absolute;top:0%;left:0%; width:100%;'>
+
             <div style="position:absolute;text-align: center; bottom:0%;width:100%">
                 Research
             </div>
         </div>
-        
-            <!--
-            <img src="Icons/blackPlayList.png" title='PLAYLIST BUILDER' alt ="PlayList" onclick ="window.open('Lyric/Top/PlayList.html')" style="position:absolute; width:9%; height:70%;left:10.5%;bottom:0%;">
-            <img src="Icons/blackEdit.png" title='EDITOR' alt ="Edit" onclick ="window.open('Lyric/Top/editor.html')" style="position:absolute;width:9%; height:70%;left:20.5%;bottom:0%;">
-            <img src="Icons/blackSearch.png" title='INFO / RESEARCH' alt ="Info" onclick="window.open('Lyric/Top/Research.html')" style="position:absolute;width:9%; height:70%;left:30.5%;bottom:0%;">
--->
 
+        <div id='local' style="display:none;color:white;position:fixed;line-height:100%; left:1%; top:55%; height:40%; width:95%;font-size:1.7vw; border: groove;">
+            <div style="position:absolute;color:red;overflow:hidden;left:1%;top:1%;width:100%">
+                INWORK AND DANGEROUS...
+            </div>
+
+            <div title="Animals" onclick="window.open('Lyric/Top/Animal.html')" style='border-style:solid;vertical-align:bottom; position:absolute;left:1%; top:20%; width:9vw;height:12vw'>
+                <img src='Icons/chimp.png' alt='?' style='position:absolute;top:0%;left:0%; width:100%;'>
+
+                <div style="position:absolute;text-align: center; bottom:0%;width:100%">
+                    ANIMAL
+                </div>
+            </div>
+
+            <div title="Guitar Stuff" onclick="window.open('Lyric/Top/index.html')" style='border-style:solid;vertical-align:bottom; position:absolute;left:12%; top:20%; width:9vw;height:12vw'>
+                <img src='Icons/inWork.png' alt='?' style='position:absolute;top:0%;left:0%; width:100%;'>
+
+                <div style="position:absolute;text-align: center; bottom:0%;width:100%">
+                    Guitar
+                </div>
+            </div>
+
+            <div title="comix" onclick="window.open('Comix.html')" style='border-style:solid;vertical-align:bottom; position:absolute;left:24%; top:20%; width:9vw;height:12vw'>
+                <img src='Icons/comedy.png' alt='?' style='position:absolute;top:0%;left:0%; width:100%;'>
+
+                <div style="position:absolute;text-align: center; bottom:0%;width:100%">
+                    COMIX
+                </div>
+            </div>
+        </div>
     </div>
-<script type="text/javascript">
-    //Baslined 11/25/19 12:53AM
-    window.onload = function(){
+</body>
+</html>
 
-    if (window.innerHeight >= window.innerWidth) {
+   
+<script type="text/javascript">
+       //Baslined 11/25/19 12:53AM
+    window.onload = function() {
+        if (window.innerHeight >= window.innerWidth) {
             alert("PLEASE rotate your device...Landscape works best on this site...");
         }
-    }
-</script>
-<SCRIPT type="text/javascript" SRC = "Lyric/Top/CommonLyric.js"></SCRIPT>
+        if (location.host == 'localhost') {
+            dis('greetingNet', 'none');
+            dis('greetingLocal', 'block');
+            document.body.style.backgroundColor = "lightblue";
+        } else {
+            dis('greetingNet', 'block');
+            dis('greetingLocal', 'none');
+            document.body.style.backgroundColor = "lightgrey";
+        }
 
+    }
+
+      function dis(id, disp) {
+          if (disp === undefined) {
+              if (document.getElementById(id).style.display == 'none') {
+                  document.getElementById(id).style.display = 'block';
+              } else {
+                  document.getElementById(id).style.display = 'none';
+              }
+          } else {
+              if (disp == 'none') {
+                  document.getElementById(id).style.display = 'none';
+              } else {
+                  document.getElementById(id).style.display = 'block';
+              }
+          }
+      }
+</script>
 </body>
 </html>
