@@ -21,7 +21,7 @@
             <input id = "title" type="text" style= "width:90%; height:20%;font-size : 2.0vw;"><br>
             ^Put your title or seach term here...or select one from below^<br>
             <a id = 'tuneSelect' onclick = "getAllTunes()">TUNES APPEAR HERE, (Click here if they dont...)</a></div>
-            <img id="ButtonHome" title ='HOME' src="../../icons/transHome.png" alt ="home" onclick="home()" style="position:absolute; right:1%;top:1%; height:70%">  
+            <img id="ButtonHome" title ='HOME' src="../../Icons/transHome.png" alt ="home" onclick="home()" style="position:absolute; right:1%;top:1%; height:70%">  
             </div>
 <!--Main Section-->
     <div style ="position:absolute;font-size : 2.0vw; height:79%; bottom:0 ;width: 98%;border:groove;color:white;vertical-align:middle">
@@ -68,7 +68,7 @@
             <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
                 SONGSTERR</div></div>        
         <div style="position:absolute; left:26%; height:15%; top:33%; width:23%;border:groove;vertical-align:middle" onclick= "songfacts()">
-            <img src = '../../Icons/songfacts.png' style ='right:1%;height:100%;vertical-align:middle' alt="...">
+            <img src = '../../Icons/songFacts.png' style ='right:1%;height:100%;vertical-align:middle' alt="...">
             <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
                 SONG FACTS</div></div>       
         <div style="position:absolute; left:51%; height:15%; top:33%; width:23%;border:groove;vertical-align:middle" onclick= "azlyrics()">
@@ -212,16 +212,16 @@ function getAllTunes()//C
    
 function uTube(){chkTitle(); window.open("https://www.youtube.com/results?search_query="+TITLE);}
 function google(){chkTitle(); window.open('https://www.google.com/webhp?hl=en&tab=mw#newwindow=1&safe=off&hl=en&q=' +TITLE);}
-function ultGuitar(){chkTitle(); window.open('http://www.ultimate-guitar.com/search.php?search_type=title&value=' +TITLE);}
-function Wikipedia(){chkTitle(); window.open('http://en.wikipedia.org/wiki/' +TITLE);}
+function ultGuitar(){chkTitle(); window.open('https://www.ultimate-guitar.com/search.php?search_type=title&value=' +TITLE);}
+function Wikipedia(){chkTitle(); window.open('https://en.wikipedia.org/wiki/' +TITLE);} 
 function cowboy()
     {
         if(WARNcowboy===true){alert('Enter your Search Criteria at the site...');WARNcowboy=false;}
         window.open("http://www.cowboylyrics.com");
     }
-function guitareTab(){chkTitle(); window.open('http://www.guitaretab.com/fetch/?type=tab&query=' +TITLE);}
-function songsterr(){chkTitle(); window.open('http://www.songsterr.com/a/wa/search?pattern=' +TITLE);}
-function songFacts(){chkTitle(); window.open('http://www.songfacts.com/search-songs-1.php?' +TITLE);}
+function guitareTab(){chkTitle(); window.open('https://www.guitaretab.com/fetch/?type=tab&query=' +TITLE);}
+function songsterr(){chkTitle(); window.open('https://www.songsterr.com/?pattern=' +TITLE);}//https://www.songsterr.com/?pattern=hurt
+function songFacts(){chkTitle(); window.open('https://www.songfacts.com/search/songs/' +TITLE);}//https://www.songfacts.com/search/songs/hurt
 function azlyrics(){chkTitle(); window.open('http://search.azlyrics.com/search.php?q='+TITLE);}
 function songlyrics(){chkTitle(); window.open('http://www.songlyrics.com/index.php?section=search&searchW='+TITLE +"&submit=Search");}
 function billboard(){chkTitle(); window.open('http://www.billboard.com/search/site/'+TITLE);}
@@ -235,7 +235,7 @@ TITLE = title;
 
 function chkTitle(){TITLE =document.getElementById('title').value;}
 function home(){window.open("index.html");}
-function chordify() {window.open('http://www.chordify.net/' +TITLE);}
+function chordify() {window.open('http://chordify.net/search/' +TITLE);}//https://chordify.net/search/hurt
 
 </script>
 <SCRIPT type="text/javascript" SRC = "CommonLyric.js"></SCRIPT>
