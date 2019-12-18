@@ -1,11 +1,11 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html>
 <head>
     <Title>RESEARCH</title>
     <link rel="icon" href="../../Icons/blackSearch.png" type="image/gif">
     <style>
         Body
         {
-            font-size : 2.5vw;
+            font-size : 4vh;
             font-family:Courrier New;
             font-weight:bold;
             line-height:100%;
@@ -16,227 +16,263 @@
 </head>
 <body>
     <!--Header-->
-    <div style ="position:fixed; height:20%; top:0 ;width:98%; border:groove;color:white; vertical-align:middle">
-        <div style="position:absolute;text-align:center; width:90%; height:95%">
-            <input id = "title" type="text" style= "width:90%; height:20%;font-size : 2.0vw;"><br>
-            ^Put your title or seach term here...or select one from below^<br>
-            <a id = 'tuneSelect' onclick = "getAllTunes()">TUNES APPEAR HERE, (Click here if they dont...)</a></div>
-            <img id="ButtonHome" title ='HOME' src="../../Icons/transHome.png" alt ="home" onclick="home()" style="position:absolute; right:1%;top:1%; height:70%">  
+    <div style ="position:fixed;font-size:4vh;text-align:center; line-height:120%;height:5%; top:0% ;width:98%; border:groove;color:white; vertical-align:middle">SONG RESEARCH</div>
+    <div style ="position:fixed; height:15%; top:5% ;width:98%; border:groove;color:white; vertical-align:middle">
+        <div style="position:absolute;text-align:center; height:2vh">
+            <input id = "title" type="text" style= "width:90%; height:3vh;font-size : 2.0vh;">
+            <br>^Put search term here...or select from below^<br>
+            <a id = 'tuneSelect' onclick = "getAllTunes()">TUNES APPEAR HERE, (Click here if they dont...)</a>
+        </div>
+            <img id="ButtonHome" title ='HOME' src="../../Icons/transHome.png" alt ="home" onclick="home()" style="position:absolute; right:1vh;bottom:1vh; height:8vh;">
             </div>
 <!--Main Section-->
     <div style ="position:absolute;font-size : 2.0vw; height:79%; bottom:0 ;width: 98%;border:groove;color:white;vertical-align:middle">
 <!--Row 1-->
         <div style="position:absolute; left:1%; height:15%; top:1%; width:23%; border:groove;vertical-align:middle" onclick= "uTube()">
             <img src = '../../Icons/uTube.jpg' style ='right:1%;height:100%;vertical-align:middle' alt="...">
-            <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+            <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                 U-TUBE </div></div>
         <div style="position:absolute; left:26%; height:15%; top:1%; width:23%;border:groove;vertical-align:middle" onclick= "google()">
             <img src = '../../Icons/google.png' style ='right:1%;height:100%;vertical-align:middle' alt="...">
-            <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+            <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                 GOOGLE </div></div>
+        
         <div style="position:absolute; left:51%; height:15%; top:1%; width:23%;border:groove;vertical-align:middle" onclick= "Wikipedia()">
             <img src = '../../Icons/wikipedia.jpg' style ='right:1%;height:100%;vertical-align:middle' alt="...">
-            <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+            <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                 WICKIPEDIA</div></div>        
+        
         <div style="position:absolute; left:76%; height:15%; top:1%; width:23%;border:groove;vertical-align:middle" onclick="chordify();">
             <img src = '../../Icons/chordify.jpg' style ='right:1%;height:100%;vertical-align:middle' alt="...">
-            <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+            <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                 CHORDIFY </div></div>
 <!--Row 2-->
         <div style="position:absolute; left:1%; height:15%; top:17%; width:23%;border:groove;vertical-align:top" onclick= "ultGuitar()">
             <img src = '../../Icons/ultGuitar.png' style ='left:0%;height:100%;'>
-            <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+            <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                 ULTIMATE<br>GUITAR
             </div>
         </div>
         <div style="position:absolute; left:26%; height:15%; top:17%; width:23%;border:groove;vertical-align:middle" onclick= "cowboy()">
             <img src = '../../Icons/cowboy.jpg' style ='right:1%;height:100%;vertical-align:middle' alt="...">
-            <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+            <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                 COWBOY<br>SONGS</div>
             </div>  
         <div style="position:absolute; left:51%; height:15%; top:17%; width:23%;border:groove;vertical-align:middle" onclick= "guitareTab()">
             <img src = '../../Icons/guitareTab.jpg' style ='right:1%;height:100%;vertical-align:middle' alt="...">
-            <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+            <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                 GUITARE TAB</div></div>      
         <div style="position:absolute; left:76%; height:15%; top:17%; width:23%;border:groove;vertical-align:middle" onclick="alert('nothing yet');">
             <img src = '../../Icons/transCircle.png' style ='right:1%;height:100%;vertical-align:middle' alt="...">
-            <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+           <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                 TBD</div></div>
 <!--Row 3-->
         <div style="position:absolute; left:1%; height:15%; top:33%; width:23%;border:groove;vertical-align:middle" onclick= "songsterr()">
             <img src = '../../Icons/songsterr.png' style ='right:1%;height:100%;vertical-align:middle' alt="...">
-            <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+            <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                 SONGSTERR</div></div>        
-        <div style="position:absolute; left:26%; height:15%; top:33%; width:23%;border:groove;vertical-align:middle" onclick= "songfacts()">
+        <div style="position:absolute; left:26%; height:15%; top:33%; width:23%;border:groove;vertical-align:middle" onclick= "songFacts()">
             <img src = '../../Icons/songFacts.png' style ='right:1%;height:100%;vertical-align:middle' alt="...">
-            <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+            <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                 SONG FACTS</div></div>       
         <div style="position:absolute; left:51%; height:15%; top:33%; width:23%;border:groove;vertical-align:middle" onclick= "azlyrics()">
             <img src = '../../Icons/azlyrics.png' style ='right:1%;height:100%;vertical-align:middle' alt="...">
-            <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+            <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                 A-Z LYRICS </div></div>
         <div style="position:absolute; left:76%; height:15%; top:33%; width:23%;border:groove;vertical-align:middle" onclick="bing();">
             <img src = '../../Icons/bing.jpg' style ='right:1%;height:100%;vertical-align:middle' alt="...">
-            <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+            <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                  BING</div></div>
         <!--Row 4-->
         <div style="position:absolute; left:1%; height:15%; top:49%; width:23%;border:groove;vertical-align:middle" onclick= "billboard()">
             <img src = '../../Icons/billboard.png' style ='right:1%;height:100%;vertical-align:middle' alt="...">
-            <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+            <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                 BILL BOARD
             </div>
         </div>         
         <div style="position:absolute; left:26%; height:15%; top:49%; width:23%;border:groove;vertical-align:middle" onclick= "songlyrics()">
             <img src = '../../Icons/songLyrics.png' style ='right:1%;height:100%;vertical-align:middle' alt="...">
-            <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+            <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                 SONG<br>LYRICS
             </div>
         </div>
         <div style="position:absolute; left:51%; height:15%; top:49%; width:23%;border:groove;vertical-align:middle" onclick="tabs911();">
             <img src = '../../Icons/911tabs.png' style ='right:1%;height:100%;vertical-align:middle' alt="...">
-            <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+            <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                 911 TABS
             </div>
         </div>
-
         <div style="position:absolute; left:76%; height:15%; top:49%; width:23%;border:groove;vertical-align:middle" onclick="alert('nothing yet');">
             <img src = '../../Icons/transCircle.png' style ='right:1%;height:100%;vertical-align:middle' alt="...">
-            <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+            <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                 TBD
             </div>
         </div>
-        
-
-
-        
-        
         <div style="position:absolute; left:1%; height:15%; top:65%; width:23%;border:groove;vertical-align:middle" onclick="alert('nothing yet');">
             <img src = '../../Icons/transCircle.png' style ='right:1%;height:100%;vertical-align:middle' alt="...">
-            <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+            <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                 TBD
             </div>
         </div>
-       <div style="position:absolute; left:26%; height:15%; top:65%; width:23%;border:groove;vertical-align:middle" onclick="alert('nothing yet');">
+        <div style="position:absolute; left:26%; height:15%; top:65%; width:23%;border:groove;vertical-align:middle" onclick="alert('nothing yet');">
             <img src = '../../Icons/transCircle.png' style ='right:1%;height:100%;vertical-align:middle' alt="...">
-            <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+            <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                 TBD
             </div>
         </div>
-       <div style="position:absolute; left:51%; height:15%; top:65%; width:23%;border:groove;vertical-align:middle" onclick="alert('nothing yet');">
+        <div style="position:absolute; left:51%; height:15%; top:65%; width:23%;border:groove;vertical-align:middle" onclick="alert('nothing yet');">
             <img src = '../../Icons/transCircle.png' style ='right:1%;height:100%;vertical-align:middle' alt="...">
-           <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+           <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                 TBD
             </div>
         </div>
-        
-        
         <div style="position:absolute; left:76%; height:15%; top:65%; width:23%;border:groove;vertical-align:middle" onclick="alert('nothing yet');">
             <img src = '../../Icons/transCircle.png' style ='right:1%;height:100%;vertical-align:middle' alt="...">
-            <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+            <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                 TBD
             </div>
         </div>
-        
-        
-        
-        
-        
         <div style="position:absolute; left:1%; height:15%; top:81%; width:23%;border:groove;vertical-align:middle" onclick="alert('nothing yet');">
             <img src = '../../Icons/transCircle.png' style ='right:1%;height:100%;vertical-align:middle' alt="...">
-           <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+            <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                 TBD
             </div>
         </div>
         <div style="position:absolute; left:26%; height:15%; top:81%; width:23%;border:groove;vertical-align:middle" onclick="alert('nothing yet');">
             <img src = '../../Icons/transCircle.png' style ='right:1%;height:100%;vertical-align:middle' alt="...">
-            <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+            <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                 TBD
             </div>
         </div>
         <div style="position:absolute; left:51%; height:15%; top:81%; width:23%;border:groove;vertical-align:middle" onclick="alert('nothing yet');">
             <img src = '../../Icons/transCircle.png' style ='right:1%;height:100%;vertical-align:middle' alt="...">
-            <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+            <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                 TBD
             </div>
         </div>
         <div style="position:absolute; left:76%; height:15%; top:81%; width:23%;border:groove;vertical-align:middle" onclick="alert('nothing yet');">
             <img src = '../../Icons/transCircle.png' style ='right:1%;height:100%;vertical-align:middle' alt="...">
-            <div style="position:absolute; top:0%; right:0%; width:60%;height:100%;">
+            <div style="position:absolute; text-align: right; top:0%; right:1%; width:60%;height:100%;">
                 TBD
             </div>
         </div>
     </div>    
 <script language:javascript>
 
-var ARRnotes;   
+var ARRnotes;
 var TITLE;
-var WARNcowboy=true;
+var WARNcowboy = true;
 
-function  passARR(pageName,arr,divider,leadingElements)
-    {
-        var pf=arr.join(divider);
-        if (leadingElements!==null){pf=leadingElements+divider+pf;}
-        window.open(pageName,encodeURI(encodeFredComponent(pf)));
+function getAllTunes() //C
+{ //gets all tunes list so you can research other stuff
+    var request = new XMLHttpRequest();
+    path = "../Sets/ALL TUNES.txt";
+    request.open("GET", path, false);
+    request.send(null);
+    var content = request.responseText;
+    var SETlist = content.split("\n");
+    var lst = "<select id='mySet' style='font-size:2vw;font-family:Courrier New;' onchange='newTune(this.value)'><optgroup>";
+    j = 0;
+    while (j < SETlist.length) {
+        lst = lst + "\n<option>" + SETlist[j] + "</option>";
+        j = j + 1;
     }
+    lst = lst + "\n</optgroup></Select>";
+    document.getElementById("tuneSelect").outerHTML = lst; //this is the DIV ID
+}
 
-function receiveARR(divider)
-    {//decode array and leading elements (put in receiving page)
-    return decodeURIComponent(decodeFredComponent(window.name)).split(divider);
+window.onload = function() {
+    TITLE = receiveARR();
+    getAllTunes();
+    document.getElementById('title').value = TITLE;
+}
+
+function uTube() {
+    chkTitle();
+    window.open("https://www.youtube.com/results?search_query=" + TITLE);
+}
+
+function google() {
+    chkTitle();
+    window.open('https://www.google.com/webhp?hl=en&tab=mw#newwindow=1&safe=off&hl=en&q=' + TITLE);
+}
+
+function ultGuitar() {
+    chkTitle();
+    window.open('https://www.ultimate-guitar.com/search.php?search_type=title&value=' + TITLE);
+}
+
+function Wikipedia() {
+    chkTitle();
+    window.open('https://en.wikipedia.org/wiki/' + TITLE);
+}
+
+function guitareTab() {
+    chkTitle();
+    window.open('https://www.guitaretab.com/fetch/?type=tab&query=' + TITLE);
+}
+
+function songsterr() {
+    chkTitle();
+    window.open('https://www.songsterr.com/?pattern=' + TITLE);
+} //https://www.songsterr.com/?pattern=hurt
+
+function songFacts() {
+    chkTitle();
+    window.open('https://www.songfacts.com/search/songs/'+TITLE);
+}
+
+function azlyrics() {
+    chkTitle();
+    window.open('https://search.azlyrics.com/search.php?q=' + TITLE);
+}
+
+function songlyrics() {
+    chkTitle();
+    window.open('https://www.songlyrics.com/index.php?section=search&searchW=' + TITLE + "&submit=Search");
+}
+
+function billboard() {
+    chkTitle();
+    window.open('https://www.billboard.com/search/site/' + TITLE);
+}
+
+function tabs911() {
+    chkTitle();
+    window.open('https://www.911tabs.com/search.php?search=' + TITLE);
+}
+
+function bing() {
+    chkTitle();
+    window.open('https://www.bing.com/search?q=' + TITLE);
+}
+
+function chkTitle() {
+    TITLE = document.getElementById('title').value;
+}
+
+function chordify() {
+    window.open('https://chordify.net/search/' + TITLE);
+} //https://chordify.net/search/hurt
+
+function home() {
+    window.open("../../index.html");
+}
+
+function newTune(title) {
+    document.getElementById('title').value = title;
+    TITLE = title;
+}
+
+function cowboy() {
+    if (WARNcowboy === true) {
+        alert('Enter your Search Criteria at the site...');
+        WARNcowboy = false;
     }
-
-function getAllTunes()//C
-    {  //gets all tunes list so you can research other stuff
-        var request = new XMLHttpRequest();
-        path ="../Sets/ALL TUNES.txt";
-        request.open("GET", path, false);
-        request.send(null);
-        var content = request.responseText;
-        var SETlist = content.split("\n");
-        var lst ="<select id='mySet' style='font-size:2vw;font-family:Courrier New;' onchange='newTune(this.value)'><optgroup>";
-        j =0;
-        while (j < SETlist.length)
-        {
-            lst =lst +"\n<option>"+ SETlist[j] +"</option>";
-            j = j+1;
-        }
-        lst =lst +"\n</optgroup></Select>";
-        document.getElementById("tuneSelect").outerHTML=lst;//this is the DIV ID
-    }
-
-   window.onload =function()
-   {
-        TITLE=receiveARR();
-        getAllTunes();
-        document.getElementById('title').value = TITLE; 
-   }
-   
-function uTube(){chkTitle(); window.open("https://www.youtube.com/results?search_query="+TITLE);}
-function google(){chkTitle(); window.open('https://www.google.com/webhp?hl=en&tab=mw#newwindow=1&safe=off&hl=en&q=' +TITLE);}
-function ultGuitar(){chkTitle(); window.open('https://www.ultimate-guitar.com/search.php?search_type=title&value=' +TITLE);}
-function Wikipedia(){chkTitle(); window.open('https://en.wikipedia.org/wiki/' +TITLE);} 
-function cowboy()
-    {
-        if(WARNcowboy===true){alert('Enter your Search Criteria at the site...');WARNcowboy=false;}
-        window.open("http://www.cowboylyrics.com");
-    }
-function guitareTab(){chkTitle(); window.open('https://www.guitaretab.com/fetch/?type=tab&query=' +TITLE);}
-function songsterr(){chkTitle(); window.open('https://www.songsterr.com/?pattern=' +TITLE);}//https://www.songsterr.com/?pattern=hurt
-function songFacts(){chkTitle(); window.open('https://www.songfacts.com/search/songs/' +TITLE);}//https://www.songfacts.com/search/songs/hurt
-function azlyrics(){chkTitle(); window.open('http://search.azlyrics.com/search.php?q='+TITLE);}
-function songlyrics(){chkTitle(); window.open('http://www.songlyrics.com/index.php?section=search&searchW='+TITLE +"&submit=Search");}
-function billboard(){chkTitle(); window.open('http://www.billboard.com/search/site/'+TITLE);}
-function tabs911(){chkTitle(); window.open('http://www.911tabs.com/search.php?search='+TITLE);}
-function bing(){chkTitle(); window.open('http://www.bing.com/search?q='+TITLE);}
-function newTune(title)
-    {
-document.getElementById('title').value =title;
-TITLE = title;
-    }
-
-function chkTitle(){TITLE =document.getElementById('title').value;}
-function home(){window.open("index.html");}
-function chordify() {window.open('http://chordify.net/search/' +TITLE);}//https://chordify.net/search/hurt
-
+    window.open("http://www.cowboylyrics.com");
+}
 </script>
+<!-- -->
 <SCRIPT type="text/javascript" SRC = "CommonLyric.js"></SCRIPT>
-</body></html>
+</body>
+</html>
