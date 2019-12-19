@@ -33,8 +33,9 @@ Body
     <title></title>
 </head>
 <body>
-    <div id='greetingLocal' style='line-height:110%;position:fixed;display:none; font-size:2.5vw;  vertical-align:middle; text-align: left; overflow:hidden; left:1%;width:95%; top:1%;border: groove; height:3vw'>Fred Zone:PERFORMER SUITE: LOCALHOST!<img id='netButton' src='../Icons/blackFZ.png' onclick="window.open('https://fredzone.github.io/Lyric/index.html');" alt='Fred Zone on the Net' style='position:absolute;top:0%;right:0%; height:100%;' name="netButton"></div>
-    <div id='greetingNet'   style='line-height:110%;position:fixed;display:none; font-size:2.5vw;  vertical-align:middle; text-align: left; overflow:hidden; left:1%;width:95%; top:1%;border: groove; height:3vw'>Fred Zone:PERFORMER SUITE: LOCALHOST!<img id='netButton' src='../Icons/fz.png'      onclick="window.open('http://localhost/fredzone/Lyric/index.html');            " alt='Fred Zone, LOCAL' style='position:absolute;top:0%;right:0%; height:100%;' name="localButton"></div>
+    <div id='greeting' style='line-height:110%;position:fixed;display:block; font-size:2.5vw;  vertical-align:middle; text-align: left; overflow:hidden; left:1%;width:95%; top:1%;border: groove; height:3vw'>XXX<img id='netButton' src='../Icons/blackFZ.png' onclick="window.open('https://fredzone.github.io/Lyric/index.html')" alt='Fredzone (on your Local Server)' style='position:absolute;top:0%;right:0%; height:100%;' name="netButton">
+        PERFORMER... Where am I???
+    </div>
     
     <div style="color:white;position:fixed;line-height:100%; left:1vw; top:5vw; height:17vw; width:95%;font-size:3vw; border: groove;">
         <div style="position:absolute;overflow:hidden;left:1%;top:1%;width:100%">
@@ -66,7 +67,7 @@ Body
         </div>
     </div>
 
-     <div style="position:absolute;overflow:hidden;line-height:100%;color:white;left:1%; top:25vw; height:17vw; width:95%;font-size:1.7vw; border: groove;">
+     <div id='files' style="position:absolute;display:block;overflow:hidden;line-height:100%;color:white;left:1%; top:25vw; height:17vw; width:95%;font-size:1.7vw; border: groove;">
         <div style="position:absolute;left:1%;top:1%;width:100%">
             Data Repositories
         </div>
@@ -111,19 +112,31 @@ Body
 </html>
 
 <script type="text/javascript">
+    var ICONS
 window.onload = function() {
     if (window.innerHeight >= window.innerWidth) {
         alert("PLEASE rotate your device...Landscape works best on this site...");
-    }
-    if (location.host == 'localhost') {
-        dis('greetingNet', 'none');
-        dis('greetingLocal', 'block');
+    }   
+    var ICONS="<img id='netButton' src='../Icons/blackFZ.png' onclick=\"window.open('https://fredzone.github.io/Lyric/index.html')\" alt='Fredzone (to the NET)' style='position:absolute;top:0%;right:0%; height:100%;'>"
+    var ICONS=ICONS+"<img id='localButton' src='../Icons/fz.png' onclick=\"window.open('localhost/Lyric/index.html')\" alt='Fredzone (LOCAL)' style='position:absolute;top:0%;right:3vw; width:3vw;'>"
+    var ICONS=ICONS+"<img id='localButton' src='../Icons/transVocal.png' onclick=\"alert('I aint Got it...')\" style='position:absolute;top:0%;right:6vw; width:3vw;'>"
+    
+    if(location.host==undefined|location.host==null|location.host==''){
         document.body.style.backgroundColor = "pink";
+        document.getElementById('greeting').innerHTML="PERFORMER SUITE(from a FILE)"+ICONS
+        document.getElementById('files').style.display='block';
+    }else if (location.host == 'localhost') {
+        document.body.style.backgroundColor = "lightblue";
+        document.getElementById('greeting').innerHTML="PERFORMER SUITE(on a local Server)"+ICONS
+        document.getElementById('files').style.display='block';
     } else {
-        dis('greetingNet', 'block');
-        dis('greetingLocal', 'none');
         document.body.style.backgroundColor = "lightgrey";
+         document.getElementById('greeting').innerHTML="PERFORMER SUITE(on the NET)"
+         document.getElementById('files').style.display='none';
     }
+
+
+
 }
 
 function dis(id, disp) {
