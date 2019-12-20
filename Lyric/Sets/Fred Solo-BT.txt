@@ -1,11 +1,9 @@
 @Abilene|||BACK TRACK||0.75
 From Four Until Late|||BACK TRACK||0.75
-Frosty The Snowman|||SILENT||0.75
 Sea Of Heartbreak|||BACK TRACK||0.75
 You Are My Sunshine|||SILENT|
 @Pancho And Lefty|||BACK TRACK||0.75
 When The Roses Bloom Again|||BACK TRACK||0.75|
-Rudolph The Red-Nosed Reindeer|||SILENT||0.75
 Margaritaville|||BACK TRACK||0.75
 Dream|||BACK TRACK||0.75
 @The Cape|C||SILENT||0.75
@@ -14,7 +12,6 @@ Walk Right Back|||BACK TRACK||0.75
 Long Black Veil|||BACK TRACK||0.75
 @All The Lonely People|||BACK TRACK||0.75
 Jamaica Farewell|||BACK TRACK||0.75
-Santa Claus Is Coming To Town|||SILENT||0.75
 Singing The Blues|C||BACK TRACK||0.75
 Stand By Me|C||BACK TRACK||0.75
 Blue Eyes Crying In The Rain|||BACK TRACK||0.75
@@ -28,7 +25,6 @@ Put Another Log On The Fire|||BACK TRACK||0.75
 @Break My Mind|||BACK TRACK||0.75
 Fire Lake|||BACK TRACK||0.75
 Teach Your Children|||BACK TRACK||0.75
-Silent Night|||SILENT||0.75
 Happy Trails|||BACK TRACK||0.75
 NOTE|Christmas
 Jingle Bell Rock||120

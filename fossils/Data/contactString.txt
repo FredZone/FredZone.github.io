@@ -1,9 +1,9 @@
 <div>
     CONTACT INFORMATION
     <br><br>Call or Text*:
-    <br><a onclick="window.open('tel:2542149980')"><button style="font-size:3vw">(254)-214-9980</button></a>
+    <br><a onclick="window.open('tel:2542149980')"><button style="font-size:5vw">(254)-214-9980</button></a>
     <br><br>Email*:
-    <br><a onclick="window.open('mailto:fkaparich@gmail.com?subject=From Fossil Website&body=Put your message here..................%0A')"><button style="font-size:3vw">fkaparich@gmail.com</button></a>
+    <br><a onclick="window.open('mailto:fkaparich@gmail.com?subject=From Fossil Website&body=Put your message here..................%0A')"><button style="font-size:5vw">fkaparich@gmail.com</button></a>
     <br><br>On the web at<br><X3>https//fredzone.github.io/fossils/</X3>
 
 <div style="position:absolute;text-align:right; bottom:0%;right:2%">*You can press a button to call or eMail</div>
