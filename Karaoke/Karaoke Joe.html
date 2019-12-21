@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+    <link rel="shortcut icon" type="image/png" href="../Icons/blackKaraoke.png">
+    <title id = 'title'>Karaoke Joe</title>
+    <style type="text/css">
+        Body{font-size:5vh;
+            color:black;
+            font-family:Courrier New;
+            font-weight: bold;
+            text-align:center;
+            vertical-align:middle;
+            border-color: black;
+            border-width:thin;
+            background-color:transparent;
+            padding:0px;
+            margin:0px;
+            overflow:hidden;}
+        X1{color:red;}
+        pre { display: inline}
+    </style>    
+</head>
+<body style='background-color:black;'>
+    <div id='hdr' style='position:absolute; background-color:green;top:0vw; height:12vw;'> 
+        <a id="msg" title="Message Box" onclick="info()" style= "position:absolute; text-align:center; vertical-align:middle;background-color:pink; color:black; font-size: 2vw; height:3vw; left:0px; top:0%; width:100vw; z-index:4501;overflow:hidden">Loading HTML...</a>
+    </div >
+    <select id="sel" onchange="selectTune(this.value)" title="Select Song" style="position:absolute;display:block;font-size: 2vw; overflow:hidden;border-style:solid; background-color:yellow; color:black; line-height:100%; text-align:left; font-weight:bold; top:3vw; height:6vw; left:0%; width:76%;z-index:4501">vvvvvvvvvvvvvvvvvvv</select>
+    <img id='karaokeHelp' onclick="document.getElementById('notes').innerHTML=HELP+info()"src="../Icons/blackQuestion.png" style="position:absolute;top:3vw; height:6vw; right:18vw;display:block">
+    <img id='link' onclick="window.open('https://www.youtube.com/watch?v='+LINKS);" src="../Icons/blackLinks.png" style="position:absolute;top:3vw; height:6vw; right:12vw;display:block">
+    <img id='search' onclick="window.open('https://www.youtube.com/results?search_query='+TITLE)" src="../Icons/blackSearch.png" style="position:absolute;top:3vw;; height:6vw; right:6vw;">
+    <img id='go' onclick="window.open('https://www.youtube.com/watch?v='+UTID)" src="../Icons/blackUtube.png" style="position:absolute;top:3vw; height:6vw; right:0vw;">
+    <div id='notes' style="position:fixed;overflow-y:auto;overflow-x:hidden;font-size: 2vw; line-height:200%;background-color:white; color:black; line-height:100%; text-align:left; font-weight:bold; top:9vw;bottom:0%; left:0%;width:100%;">
+        Notes
+    </div>
+
+<SCRIPT type="text/javascript">
+    var ARR = ("");
+    var TITLE = "???"
+    var TYPE = '';
+    var UTID = "";
+    var KEY = "?";
+    var TEMPO = "?";
+    var HELP = "???";
+    var NOTES = "No Notes";
+    var LINKS = "No LINKS";
+    
+    window.onload = function() {
+        writeHelp();
+        statusMsg('Loading Java Script.....')
+        var str = ""
+        var arr = ''.split(',');
+        ARR = (fileDownload("Karaoke.csv").split('\n'))
+        ARR.splice(0, 1, "Information about Karaoke Joe (Then select your track here...),,,,,,," + HELP) //get rid of info line
+        for (w = 0; w < ARR.length; w++) {
+            str = str + ARR[w].split(',')[0] + ",";
+        }
+        arr = str.split(',');
+        document.getElementById('notes').innerHTML = HELP
+        statusMsg('Building Selector...')
+        selectorBuild('sel', arr, 0)
+    }
+    
+    function writeHelp() {
+        HELP = "<x1>HOW TO USE THIS PAGE...</x1><div style='position:relative;left:5%;'>1) Select a tune from the yellow 'Select Box' above...<br>2) Use the Black and Red 'utube'icon to launch your track...</div><br>";
+        HELP = HELP + "<x1>WHERE IT WORKS</x1><br><div style='position:relative;left:5%;'>Tested on Android 6 and Windows 10 using the Chrome Browser...No Guarantees...</div>"
+        HELP = HELP + "<br><x1>RECOMENDATIONS</x1><div style='position:relative;left:5%;'>1)Use Windows as your Operating System (tabbed windows are much easier)<br>2)Use Chrome as you browser (because it has a useful extension)<br>3)Install an extension from the<a href=' https://chrome.google.com/webstore/category/extensions'> Chrome Store</a><div style='position:relative;left:5%;'>a)<a href=' https://chrome.google.com/webstore/detail/transpose-pitch-loop-for/ioimlbgefgadofblnajllknopjboejda'>Transpose - Pitch - Loop for videos</a> (Pro is only about $4.00)<br>...It lets you to control the Pitch and Tempo of your video and create loops<br></div></div>"
+        HELP = HELP + "<br><x1>ADDING TRACKS</x1><div style='position:relative;left:5%;'>1)Go to uTube, find a Karaoke video and send me the Link...or<br>2)Send me a song title and I'll see if I can find a karaoke track...</div><br>"
+        HELP = HELP + "<br><x1>QUALITY</x1><div style='position:relative;left:5%;'>I just auditioned 1 or 2 tracks for each song.<br>So...If there are better tracks on uTube let me know, its easy to fix</div><br><br>"
+        HELP = HELP + "Fred Kaparich<br>fkaparich@gmail.com";
+        //HELP=HELP+info();
+    }
+    
+    function selectTune(no) {
+        if (no == 0) {
+            document.getElementById('notes').innerHTML = HELP;
+        } else {
+            var arr = ARR[no].split(',');
+            TITLE = arr[0];
+            UTID = arr[1];
+            KEY = arr[2];
+            TYPE = arr[3];
+            TEMPO = arr[4];
+            NOTES = arr[7];
+            LINKS = arr[8]
+            if (LINKS.length >= 10) { //no Links
+                document.getElementById('link').style.display = 'block';
+            } else {
+                document.getElementById('link').style.display = 'none';
+            }
+            statusMsg("<X1>" + TITLE + "</X1>..." + TYPE + " in the key of " + KEY + " @ " + TEMPO + "bpm");
+            if (NOTES.length < 3) {
+                NOTES = "NO NOTES"
+            }
+            document.getElementById('notes').innerHTML = NOTES + "<br>" + info();
+        }
+    }
+    
+    function selectorBuild(id, arr, sel) { //probably going global
+        if (sel === undefined | sel === null | sel === '') {
+            sel = 0;
+        }
+        var i = 0;
+        var str = '';
+        while (i < arr.length) {
+            str = str + "<option value=" + i + ">" + arr[i] + "</option>";
+            i = i + 1;
+        }
+        document.getElementById(id).innerHTML = str;
+        document.getElementById(id).selectedIndex = sel;
+        statusMsg('Karaoke Joe  Ready to go!');
+    }
+    
+    function karaoke() {
+        window.open("https://www.youtube.com/watch?v=" + UTID, TITLE);
+    }
+    
+    function statusMsg(msg) {
+        document.getElementById("msg").innerHTML = msg;
+    }
+    
+    function fileDownload(path) {
+        statusMsg('Downloading: ' + path);
+        var request = new XMLHttpRequest();
+        request.open("GET", path, false);
+        request.send(null);
+        var content = request.responseText;
+        if (content === undefined | content.search("404") > -1) {
+            content = undefined;
+            statusMsg("Download Failed...", 'red');
+        } else {
+            (statusMsg('File Downloaded...'));
+        }
+        return content;
+    }
+    
+    function info() {
+        var str = "<br><br><br>===================================<br>TECH DATA<br>===================================";
+        var str = str + "<br>TITLE: " + TITLE;
+        var str = str + "<br>UTID: " + UTID;
+        var str = str + "<br>KEY: " + KEY;
+        var str = str + "<br>TYPE: " + TYPE;
+        var str = str + "<br>TEMPO: " + TEMPO;
+        var str = str + "<br>LINKS: " + LINKS;
+        return str;
+    }
+</script>
+</body>
+</html>
