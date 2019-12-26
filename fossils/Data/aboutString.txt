@@ -1,9 +1,12 @@
 <div style="text-align:center">
-ABOUT ME<br>
-<X3>----Retired----</X3><br>
-Mechanical Engineer<br><br>
-<X3>----Occasional----</X3><br>
-Guitar Player<br>
-Singer<br><br>
-I Play at Senior Care Centers in and around Waco Texas
+<br>ABOUT ME
+<br><X3>----Former----</X3>
+<br>Middle School Teacher
+<br><br><X3>----Retired----</X3>
+<br>Mechanical Engineer
+<br><br><X3>----Occasional----</X3>
+<br>Guitar Player
+<br>&
+<br>Singer
+<br><br>I Play at Senior Care Centers in and around Waco Texas
 <div>

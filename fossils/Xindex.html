@@ -50,6 +50,7 @@ get a good compare for dropbox and gitub
 
 <!--MENU-->      
     <div id='menu' style="position:absolute;text-align:center;display:block;opacity:0; line-height:200%; border:none; font-size:2.5vw; text-align:left; left:19vw; right:60vw; top:5vw;  bottom:1vw; overflow-x:hidden";>
+        
         <div id='0'onclick="msg(WELCOMEstring,this.id)"style="position:absolute;color:yellow; border:none;">-HOME</div>
         <div id='1'onclick="msg(CONTACTstring,this.id)"style="position:absolute; border:none;">-CONTACT</div>
         <div id='2'onclick="msg(ABOUTstring,this.id)"style="position:absolute; border:none;">-ABOUT ME</div>
@@ -58,7 +59,7 @@ get a good compare for dropbox and gitub
         <div id='5'onclick="msg(WHYstring,this.id)"style="position:absolute; border:none;">-GHOST BAND</div>
         <div id='6'onclick="msg(BANDstring,this.id)"style="position:absolute; border:none;">-GADGETS</div>
         <div id='7'onclick="msg(LISTENstring,this.id)"style="position:absolute;display:block; border:none;">-LISTEN</div>
-        <div id='8'onclick="msg('GALLERY',this.id),PIC=0;gallery(0)" style="position:absolute;display:block;border:none;">-GALLERY</div>
+        <div id='8'onclick="gallery(0)"style="position:absolute;display:block;border:none;">-GALLERY</div>
         <div id='9'onclick="fullScreen()"style="position:absolute;display:block; border:none;">-BIG SCREEN</div>
     </div><!--        function moveDiv(id,endL,unitsL,steps,ms)-->
 
@@ -102,7 +103,7 @@ var HELPstring = "Looking for help...tough";
 var TESTstring = 'This is the test string. And it looks like this... Here is A Break<br>Title<br>';
 var TIMEOUTfade
 var TIMEOUTgallery;
-var PIC=1
+var PIC=0
 var PICpath
 var PICaspect
 var MODE='STD'
@@ -160,21 +161,20 @@ window.onload = function() {
 
 function msg(str, id) {
     MODE = 'STD';
+    //if (str == LISTENstring) {
+    //    MODE = 'LISTEN' //code
+    //}
     var i;
     cto()
     document.getElementById('msg').innerHTML = str;
     document.getElementById('msg').style.display = 'block';
     document.getElementById('viewBox').style.display = 'none';
-    for (i = 0; i <= 8; i++) {
+    for (i = 0; i <= 7; i++) {
         if (id == i) {
             document.getElementById(i).style.color = 'yellow';
         } else {
             document.getElementById(i).style.color = 'white';
         }
-    }
-    if (id==8) {
-        MODE="GALLERY"
-        document.getElementById('viewBox').style.display='block'
     }
     realign()
 }
@@ -185,7 +185,7 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         document.getElementById('menu').style.border = "none";
         //l,r,t,b,h,w,f
         shapeShift('hdr', '-', '-', '-', '-', '-', '-', '2.8vh');
-        shapeShift('viewBox', '0%', '0%', '-', '28%', '-', '-', '3vw');
+        shapeShift('viewBox', '-', '-', '-', '-', '-', '-', '3vw');
         shapeShift('menu', '1vw', '1vw', '72vh', '1vw', '-', '-', '3vw');
         shapeShift('msg', '10%', '1%', '5%', '28%', '-', '-', '3vh');
         if (MODE == 'LISTEN') {
@@ -211,7 +211,7 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         if (MODE == 'LISTEN') {
             shapeShift('songTitle', '-', '-', '-', '-', '-', '-', '3.5vw');
         }
-        shapeShift('viewBox', '-', '20%', '-', '0%', '-', '-', '2.5vw');
+        shapeShift('viewBox', '-', '-', '-', '-', '-', '-', '2.5vw');
         shapeShift('msg', '20%', '20%', '8%', '1%', '-', '-', '2vw');
         shapeShift('menu', '80vw', '1vw', '10%', '1vw', '-', '-', '1.6vw');
         shapeShift(0, '0%', '-', '0%', '-', '10%', '100%', '2.5vw');
@@ -471,7 +471,6 @@ function Xdelay(ms) {
     while (new Date().getTime() < t) {
         n = n + 0
     }
-}
-</script>
+}</script>
 </body>
 </html>

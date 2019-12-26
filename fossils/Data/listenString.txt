@@ -4,10 +4,10 @@
 
 <div style="position:absolute;text-align:center;top:0%;width:100%;height:100%; overflow:hidden;">
     <div id ='songTitle' style="position:absolute;line-height:130%;border:groove; font-size:4vw; color:red; left:0%; top:0%; right:0%; bottom:90%">
-        Box Number 10 (or select below...)
+        Abilene (or select below...)
     </div>
     <div id='tracks' style='position:absolute; line-height:150%;font-size:4vw; text-align:left; width:100%; top:11%; bottom:11%; overflow-y:scroll; overflow-x:hidden;'><X3>
-        <a onclick="playTrack('Box Number 10')">1) Box Number 10<a>
+        <a onclick="playTrack('Abilene')">1) Abilene<a>
         <br><a onclick="playTrack('Put Another Log On The Fire')">2) Put Another Log On The Fire<a>
         <br><a onclick="playTrack('Pancho And Lefty')">3) Pancho And Lefty<a>
         <br><a onclick="playTrack('Set Em Up Joe')">4) Set Em Up Joe<a>
@@ -19,7 +19,7 @@
     <div id='track' style='position:absolute;border:groove;overflow:hidden;top:90%; left:0%; right:0%; bottom:0%;'>
     <!--    <img onclick="document.getElementById('Audio1').pause()" src='Data/transPause.png' style='position:absolute;right:0%;bottom:0%;height:95%'>
         <img onclick="document.getElementById('Audio1').play()" src='Data/transPlay.png' style='position:absolute;left:0%;bottom:0%;height:95%'>
-    -->    <audio id="Audio1" controls=true preload = "metadata" style="position:absolute; top:0%; height:100%; width:100%;left:0%;" source src='Data/Box Number 10.mp3' type="audio/mpeg" >
+    -->    <audio id="Audio1" controls=true preload = "metadata" style="position:absolute; top:0%; height:100%; width:100%;left:0%;" source src='Data/Abilene.mp3' type="audio/mpeg" >
             XXX
         </audio>
     </div>
