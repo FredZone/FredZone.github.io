@@ -1,42 +1,38 @@
 <!DOCTYPE html>
-<head></head>
+<head>
+
+
+</head>
 <body>
 
-<div style="position:absolute;text-align:center;top:0%;width:100%;height:100%; overflow:hidden;">
-    <div id ='songTitle' style="position:absolute;line-height:130%;border:groove; font-size:4vw; color:red; left:0%; top:0%; right:0%; bottom:90%">
-        Abilene (or select below...)
+<div style="position:absolute;text-align:left;top:0%;width:100%;height:100%; overflow:hidden;">
+    <div id ='songTitle' style="position:absolute;line-height:100%;border:groove; font-size:4vw; color:red; left:0%; top:0%; right:0%; bottom:90%">
+        Select A Tune Below...
     </div>
+    <img src="Data/blackInfo.png" style="position:absolute;right:0%;height:10%"  onclick="dis('songInfo'),document.getElementById('songInfo').innerHTML='SONG INFO<br>'+LISTENarray[TRACK]">
     <div id='tracks' style='position:absolute; line-height:150%;font-size:4vw; text-align:left; width:100%; top:11%; bottom:11%; overflow-y:scroll; overflow-x:hidden;'><X3>
-        <a onclick="playTrack('Abilene')">1) Abilene<a>
-        <br><a onclick="playTrack('Put Another Log On The Fire')">2) Put Another Log On The Fire<a>
-        <br><a onclick="playTrack('Pancho And Lefty')">3) Pancho And Lefty<a>
-        <br><a onclick="playTrack('Set Em Up Joe')">4) Set Em Up Joe<a>
-        <br><a onclick="playTrack('Dead Skunk')">5) Dead Skunk<a>
-        <br><a onclick="playTrack('Steel Rail Blues')">6) Steel Rail Blues<a><X3>
+        <a onclick="playTrack('Abilene',0)">1) Abilene<a>
+        <br><a onclick="playTrack('Sea of Heartbreak',1)">2) Sea of Heartbreak<a>
+        <br><a onclick="playTrack('Pancho And Lefty',2)">3) Pancho And Lefty<a>
+        <br><a onclick="playTrack('The Cape',3)">4) The Cape<a>
+        <br><a onclick="playTrack('When The Roses Bloom Again',4)">5) When The Roses Bloom Again<a>
     </div>
-    
- 
+
     <div id='track' style='position:absolute;border:groove;overflow:hidden;top:90%; left:0%; right:0%; bottom:0%;'>
-    <!--    <img onclick="document.getElementById('Audio1').pause()" src='Data/transPause.png' style='position:absolute;right:0%;bottom:0%;height:95%'>
-        <img onclick="document.getElementById('Audio1').play()" src='Data/transPlay.png' style='position:absolute;left:0%;bottom:0%;height:95%'>
-    -->    <audio id="Audio1" controls=true preload = "metadata" style="position:absolute; top:0%; height:100%; width:100%;left:0%;" source src='Data/Abilene.mp3' type="audio/mpeg" >
+    <audio id="Audio1" controls=true preload = "metadata" style="position:absolute; top:0%; height:100%; width:100%;left:0%;" source src='none' type="audio/mpeg" >
             XXX
         </audio>
     </div>
-    
+    <div id='songInfo' style='position:absolute;display:none; border:solid; background-color:white;line-height:150%;font-size:2vw; text-align:left; left:25%; width:70%; top:12%; bottom:12%; overflow-y:scroll; overflow-x:hidden;'>
+        <div style='position:absolute; background-color:white;line-height:150%;font-size:2vw; text-align:left; left:0%; width:100%; top:0%; bottom:90%;'>SONG INFORMATION</div> 
+    </div> 
+
+
+
 </div>
 
-<!--
-<div style="position:absolute;border:solid;background-color:yellow;left:0%;width:100%;top:50%;bottom:0%; ">Controls
-    
-    <div onclick="switchTrack('Data/Rock Me On the Water.mp3')"style="position:absolute;border:solid;background-color:green;left:0%;top:20%;width:20%;bottom:0%;">rock me on the WATER</div>
-    <div onclick="switchTrack('Data/Abilene.mp3')"style="position:absolute;border:solid;background-color:orange;left:20%;top:20%;width:20%;bottom:0%;">Backing Track<br>&Guitar</div>
-    <div onclick="switchTrack('Data/Break My Mind.mp3')"style="position:absolute;border:solid;background-color:green;left:40%;top:20%;width:20%;bottom:0%;">C</div>
-    <div onclick="switchTrack('Data/Abilene.mp3')"style="position:absolute;border:solid;background-color:orange;left:60%;top:20%;width:20%;bottom:0%;">D</div>
-    <div onclick="switchTrack('Data/Abilene.mp3')"style="position:absolute;border:solid;background-color:green;left:80%;top:20%;width:20%;bottom:0%;">E</div>
-</div>
--->
-<script>
+<script type="text/javascript">
+    var VAR='help';
     function helpMe(){alert('OK')}
 </script>
 </body>

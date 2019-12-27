@@ -37,10 +37,13 @@ get a good compare for dropbox and gitub
 <div id='background' style="position:fixed;display:block ;background-image:url('Data/backgroundB.jpg'); background-size:100% 100%;line-height:100%; font-size:2.5vw; left:0%; top:0%; right:0%; bottom:0%; z-index:1000;">
     
 
-<!--TITLE-->
+<!--TITLE
     <div id='hdr' style="position:fixed;display:none;background-color:transparent;line-height:130%;font-size:4vw;left:0%;top:0%;right:0%; bottom:90%;z-index:300;">
         FRED and The Fossils (Virtual Band) 
     </div>
+-->
+    <img id='hdr' src="Data/fatf.png" style="position:fixed;display:none;left:30%;height:10%;z-index:300;">
+        
 
 <!--ADMIN-->    
     <img id='admin'src='Data/amberSpider.png' onclick="admin()" style="position:absolute;display:block;opacity:1; width:5%; top:0%; right:0%;z-index:400">
@@ -59,7 +62,10 @@ get a good compare for dropbox and gitub
         <div id='6'onclick="msg(BANDstring,this.id)"style="position:absolute; border:none;">-GADGETS</div>
         <div id='7'onclick="msg(LISTENstring,this.id)"style="position:absolute;display:block; border:none;">-LISTEN</div>
         <div id='8'onclick="msg('GALLERY',this.id),PIC=0;gallery(0)" style="position:absolute;display:block;border:none;">-GALLERY</div>
-        <div id='9'onclick="fullScreen()"style="position:absolute;display:block; border:none;">-BIG SCREEN</div>
+        <img id='9' onclick="fullScreen()" src="Data/blackEnterFullScreen.png" style="position:absolute;">
+        <div id='10' style="position:absolute;display:block;border:none;">-</div><!--onclick="msg('Nothing',this.id)"-->
+        
+        <!-- <div id='9'onclick="fullScreen()"style="position:absolute;display:block; border:none;">-BIG SCREEN</div>  -->
     </div><!--        function moveDiv(id,endL,unitsL,steps,ms)-->
 
 <!--MSG-->
@@ -67,13 +73,8 @@ get a good compare for dropbox and gitub
     MESSAGE APPEARS HERE...
     </div>
 
-
-
-
-
 <!--viewbox-->      
     <div id='viewBox'style="position:absolute;display:none;font-size:3vw;background-color:black;border:solid;border-color:black;overflow:hidden;left:0vw;right:0vw; top:0vw; bottom:0vw; z-index:450;">
-        
         <div id ='picFrame' style='position:absolute;display:block;border:none;left:0%; top:0%; height:85%; width:100%;'>
             <img id='galleryPic' style='position:absolute;display:block;left:0%;height:100%;width:100%;bottom:0%'>
         </div>                                                                                                                                                                                
@@ -85,7 +86,7 @@ get a good compare for dropbox and gitub
        
     </div>
 </div>
-<script>
+<script language:javascript>
 //GLOBAL VARIABLES===============================================
 var FULLscreen=false
 var LOCKED=true;
@@ -96,12 +97,14 @@ var SCHEDULEstring;
 var PLAYLISTstring;
 var WHYstring;
 var LISTENstring;
+var LISTENarray
 var ADMINstring;
 var TEMPstring = null;
 var HELPstring = "Looking for help...tough";
 var TESTstring = 'This is the test string. And it looks like this... Here is A Break<br>Title<br>';
 var TIMEOUTfade
 var TIMEOUTgallery;
+var TRACK=0
 var PIC=1
 var PICpath
 var PICaspect
@@ -133,8 +136,10 @@ function player() {
     document.getElementById('playBox').display = block
 }
 
-function playTrack(nme) {
+function playTrack(nme,track) {
+    dis('songInfo','none');
     document.getElementById('songTitle').innerHTML = nme;
+    TRACK=track;
     document.getElementById('Audio1').src = 'Data/' + nme + '.mp3';
     document.getElementById('Audio1').play();
 }
@@ -148,7 +153,7 @@ window.onload = function() {
     WELCOMEstring = fileDownload('Data/welcomeString.txt');
     LISTENstring = fileDownload('Data/listenString.txt');
     CONTACTstring = fileDownload('Data/contactString.txt');
-    ABILENEstring = fileDownload('Data/abileneString.txt');
+    LISTENarray=fileDownload('Data/listenArray.txt').split('|');
     msg(WELCOMEstring, 0);
     realign();
     loadGallery(0);
@@ -184,7 +189,8 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         document.getElementById('msg').style.border = "groove";
         document.getElementById('menu').style.border = "none";
         //l,r,t,b,h,w,f
-        shapeShift('hdr', '-', '-', '-', '-', '-', '-', '2.8vh');
+        //shapeShift('hdr', '-', '-', '-', '-', '-', '-', '2.8vh');
+        shapeShift('hdr', '7%', '-', '0%', '-', '4.5%', '-', '3.5vw');
         shapeShift('viewBox', '0%', '0%', '-', '28%', '-', '-', '3vw');
         shapeShift('menu', '1vw', '1vw', '72vh', '1vw', '-', '-', '3vw');
         shapeShift('msg', '10%', '1%', '5%', '28%', '-', '-', '3vh');
@@ -200,14 +206,16 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         shapeShift(6, '34%', '-', '75%', '-', '25%', '32%', '4vw');
         shapeShift(7, '67%', '-', '25%', '-', '25%', '32%', '4vw');
         shapeShift(8, '67%', '-', '50%', '-', '25%', '32%', '4vw');
-        shapeShift(9, '67%', '-', '75%', '-', '25%', '32%', '4vw');
+        shapeShift(9, '-', '0%', '75%', '-', '25%', '', '4vw');
+        shapeShift(10, '67%', '-', '75%', '-', '25%', '25%', '4vw');
         if (MODE == 'STD') {
             shapeShift('iconA', '' - '%', '-', '2%', '-', '-', '10vw', '-')
         } else {
             shapeShift('iconA', '' - '%', '-', '2%', '-', '-', '8vw', '-')
         }
     } else { //WIDE ASPECT
-        shapeShift('hdr', '-', '-', '-', '-', '-', '-', '3.5vw');
+        shapeShift('hdr', '20%', '-', '0%', '-', '8%', '-', '3.5vw');
+        //shapeShift('hdr', '-', '-', '-', '-', '-', '-', '3.5vw');
         if (MODE == 'LISTEN') {
             shapeShift('songTitle', '-', '-', '-', '-', '-', '-', '3.5vw');
         }
@@ -223,7 +231,8 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         shapeShift(6, '0%', '-', '60%', '-', '10%', '100%', '2.5vw');
         shapeShift(7, '0%', '-', '70%', '-', '10%', '100%', '2.5vw');
         shapeShift(8, '0%', '-', '80%', '-', '10%', '100%', '2.5vw');
-        shapeShift(9, '0%', '-', '90%', '-', '10%', '100%', '2.5vw');
+        shapeShift(9, '-', '0%', '90%', '-','10%', '-', '2.5vw');
+        shapeShift(10, '0%', '-', '90%', '-', '10%', '60%', '2.5vw');
         if (MODE == 'STD') {
             shapeShift('iconA', '0%', '-', '2%', '-', '-', '20vw', '-')
         } else {
@@ -363,12 +372,12 @@ function admin() {
 function fullScreen() {
     if (FULLscreen == false) {
         launchIntoFullscreen(document.documentElement);
-        document.getElementById('9').innerHTML = "-STD SCREEN";
+        document.getElementById('9').src = 'Data/blackExitFullScreen.png';
         FULLscreen = true
     } else {
         exitFullscreen();
         FULLscreen = false
-        document.getElementById('9').innerHTML = "-BIG SCREEN";
+        document.getElementById('9').src = 'Data/blackEnterFullScreen.png';
     }
 }
 
@@ -472,6 +481,19 @@ function Xdelay(ms) {
         n = n + 0
     }
 }
+
+function dis(id,disp){
+    if(disp===undefined){
+            if(document.getElementById(id).style.display == 'none'){
+                document.getElementById(id).style.display='block';}
+            else{document.getElementById(id).style.display='none';}}
+        else{
+            if(disp=='none') {
+                document.getElementById(id).style.display = 'none';}
+            else{document.getElementById(id).style.display = 'block' ;}}}
+
+
+
 </script>
 </body>
 </html>

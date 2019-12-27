@@ -1,10 +1,12 @@
 <div style="text-align:center">
 <X5>MY GADGETS...</X5>
 <br><X2>====================</X2>
-<br>VOCAL HARMONY
-<br>I use a <X3>TC Helicon TC1</X3>
-<br>Its an old electronic device
-<br>that synthesizes up to 4 voices.
+<br>MUSIC GEAR:
+<br>I play a <X3>Fender Stratocaster</X3> guitar
+<br>through a <X3>Digitec RP55</X3> effects pedal
+<br>into a <X3>Fender Passport 300</X3> PA Amplifier.
+<br>I use a Fender 10 watt amp for stage monitor and
+<br>a <X3>Shure SM58</X3> Microphone for vocals
 <br><X2>====================</X2>
 <br>BACKING TRACKS:
 <br>I use <X3>Band in a Box</X3> Software
@@ -12,17 +14,21 @@
 <br>Typically, I use Drums, Bass & Guitar.
 <br>Occasionally, I add a Piano, Harmonica, Horn, or Strings.
 <br><X2>====================</X2>
+<br>VOCAL HARMONY
+<br>I use a <X3>TC Helicon TC1</X3>
+<br>Its an old electronic device
+<br>that synthesizes up to 4 voices.
+<br><X2>====================</X2>
 <br>COMPUTER GEAR:
 <br>I use a program I wrote in <X3>'javascript'</X3>
 <br>to play my tracks and sychronize them with
 <br>scrolling lyrics and chords notation.
-<br>Normally I use a simple <X3>Android tablet</X3>
-<br>to run the program 
+<br>Normally I use a generic <X3>Android tablet</X3>
+<br>to run the program
 <br><X2>====================</X2>
-<br>MUSIC GEAR:
-<br>I play a <X3>Fender Stratocaster</X3> guitar
-<br>through a <X3>Digitec RP55</X3> effects pedal
-<br>into a <X3>Fender Passport 300</X3> PA Amplifier.
-<br>I use a Fender 10 watt amp for stage monitor and
-<br>a <X3>Shure SM58</X3> Microphone for vocals
+<br>RECORDING GEAR:
+<br>On the rare occasion I record anyghing
+<br>I use a <X3>TASCAM DR-05</X3> digital recorder
+<br>Plugged into the PAs stereo output jack
+<br><X3>Audacity</X3> software is used to prepare the tracks
 <div>
