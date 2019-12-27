@@ -78,15 +78,15 @@ get a good compare for dropbox and gitub
         <div id ='picFrame' style='position:absolute;display:block;border:none;left:0%; top:0%; height:85%; width:100%;'>
             <img id='galleryPic' style='position:absolute;display:block;left:0%;height:100%;width:100%;bottom:0%'>
         </div>                                                                                                                                                                                
-        
-        <div id='picLeft' onclick="gallery(-1)" style="position:absolute;display:none;font-size:10vh;opacity:0.5;left:1%;top:47%;"><</div>
-        <div id='picRight' onclick="gallery(+1)" style="position:absolute;display:none;font-weight:bold;font-size:10vh;opacity:0.5;right:1%;top:47%;">></div>
+        <div id='picCount'style="position:absolute;line-height:50%;background-color:black;display:block;font-size:10vh;opacity:1;;font-weight:bold;font-size:4vh; right:1%;top:1%;">1/7</div>
+        <div id='picLeft' onclick="gallery(-1)" style="position:absolute;line-height:50%;background-color:black;display:none;font-size:10vh;opacity:0.5;display:none;font-weight:bold;font-size:10vh; left:1%;top:47%;"><</div>
+        <div id='picRight' onclick="gallery(+1)"style="position:absolute;line-height:50%;background-color:grey;display:none;font-size:10vh;opacity:0.5;display:none;font-weight:bold;font-size:10vh;right:1%;top:47%;">></div>
         
         <!--
         <img id='picLeft'src='Data/transPointerLeft.png' onclick="gallery(-1)" style="position:absolute;display:none;opacity:1;left:0%;bottom:0%; width:8%;">
         <img id='picRight'src='Data/transPointerRight.png' onclick="gallery(+1)" style="position:absolute;display:block;opacity:1;right:0%; bottom:0%; width:8%;">
         -->
-        <div id='galleryTxt' onclick="aspect()" style='position:absolute;color:white; line-height:100%;border:none;left:0%; top:85%;left:10%;height:10%;width:80%;'>
+        <div id='galleryTxt' onclick="aspect()" style='position:absolute;color:white; line-height:150%;border:none;left:0%; top:85%;left:10%;height:10%;width:80%;'>
             How I see the 'Virtual' Band
         </div>
        
@@ -111,6 +111,7 @@ var TESTstring = 'This is the test string. And it looks like this... Here is A B
 var TIMEOUTfade
 var TIMEOUTgallery;
 var TRACK=0
+var PICcount=7;
 var PIC=1
 var PICpath
 var PICaspect
@@ -277,7 +278,7 @@ function shapeShift(id, lf, rt, tp, bm, ht, wt, fs) {
 }
 
 function loadGallery() {
-    ARRgallery = "0,1,2,3,4,5,6,7".split(',')
+    ARRgallery = "0,1,2,3,4,5,6".split(',')
     ARRgallery[0] = "1968? Chuck, Bill, Yours Truely and Jay. Playing as 'JAM' in Butte Montana|firstBand.jpg|1219|810";
     ARRgallery[1] = "Me, 50 years ago playing bass at a Montana State University Spring Event...|bass.png|1316|1940";
     ARRgallery[2] = "Thats Ron (on the right), who got me back into playing guitar after a 45 year hiatus...|ron.jpg|1051|788";
@@ -285,6 +286,7 @@ function loadGallery() {
     ARRgallery[4] = "My friends, Stan, Bill, John, Sally and I playing for the fun of it...|barn.jpg|2754|1660";
     ARRgallery[5] = "At St Catherine's, one of my current monthly gigs...|fred.jpg|1641|3919";
     ARRgallery[6] = "How I imagine my Virtual Backup band...|folkBand.png|581|575";
+PICcount=ARRgallery.length
 }
 
 function fades(id, dir, ms, ids) {
@@ -333,7 +335,7 @@ function gallery(n) {
         document.getElementById('picLeft').style.display = 'block'
         document.getElementById('iconA').style.top = '2%'
     }
-    if (PIC == ARRgallery.length - 2) {
+    if (PIC == ARRgallery.length - 1) {
         document.getElementById('picRight').style.display = 'none'
     } else {
         document.getElementById('picRight').style.display = 'block'
@@ -344,6 +346,7 @@ function gallery(n) {
     PICaspect = ARRgallery[PIC].split('|')[2] / ARRgallery[PIC].split('|')[3] //=w/h
     document.getElementById('galleryTxt').innerHTML = ARRgallery[PIC].split('|')[0];
     picAlign();
+    document.getElementById('picCount').innerHTML=parseInt(PIC+1,10)+"/"+PICcount;
 }
 
 function picAlign() {

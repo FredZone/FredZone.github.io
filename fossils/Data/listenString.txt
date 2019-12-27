@@ -22,7 +22,7 @@
     </div> 
     <div id='track' style='position:absolute;border:groove;overflow:hidden;top:90%; left:0%; right:0%; bottom:0%;'>
     <audio id="Audio1" controls=true preload = "metadata" style="position:absolute; top:0%; height:100%; width:100%;left:0%;" source src='none' type="audio/mpeg" >
-            XXX
+            -/-
         </audio>
     </div>
 </div>
