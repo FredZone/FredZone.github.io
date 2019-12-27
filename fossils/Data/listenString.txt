@@ -9,7 +9,7 @@
     <div id ='songTitle' style="position:absolute;line-height:100%;border:groove; font-size:4vw; color:red; left:0%; top:0%; right:0%; bottom:90%">
         Select A Tune Below...
     </div>
-    <img src="Data/blackInfo.png" style="position:absolute;right:0%;height:10%"  onclick="dis('songInfo'),document.getElementById('songInfo').innerHTML='SONG INFO<br>'+LISTENarray[TRACK]">
+    <img id='infoButton' src="Data/blackInfo.png" style="position:absolute;top:1%;right:1%;height:8%;display:none;" onclick="dis('songInfo'), document.getElementById('songData').innerHTML=LISTENarray[TRACK]";>  <!-- <img src="Data/transVocal.png style='position:relalative;right:0%;width:2vh'><br>"+LISTENarray[TRACK]> -->
     <div id='tracks' style='position:absolute; line-height:150%;font-size:4vw; text-align:left; width:100%; top:11%; bottom:11%; overflow-y:scroll; overflow-x:hidden;'><X3>
         <a onclick="playTrack('Abilene',0)">1) Abilene<a>
         <br><a onclick="playTrack('Sea of Heartbreak',1)">2) Sea of Heartbreak<a>
@@ -18,16 +18,20 @@
         <br><a onclick="playTrack('When The Roses Bloom Again',4)">5) When The Roses Bloom Again<a>
     </div>
 
+    <div id='songInfo' style='position:absolute;display:none; border:solid; background-color:white;line-height:150%;font-size:2vw; text-align:left; left:25%; width:70%; top:12%; bottom:12%; overflow-y:scroll; overflow-x:hidden;'>
+        <div style='position:absolute; background-color:yellow;line-height:150%;font-size:2vw; text-align:left; left:0%; width:100%; top:0%; bottom:90%;'>SONG INFORMATION</div>
+        <img src="Data/transRedNo.png" style="position:absolute;top:0%;right:0%;height:10%" onclick="dis('songInfo')">        
+        <div id='songData' style='position:absolute; left:2%; width:100%; top:10%; bottom:0%;'>XXX</div>
+    </div> 
+    
+    
+    
     <div id='track' style='position:absolute;border:groove;overflow:hidden;top:90%; left:0%; right:0%; bottom:0%;'>
     <audio id="Audio1" controls=true preload = "metadata" style="position:absolute; top:0%; height:100%; width:100%;left:0%;" source src='none' type="audio/mpeg" >
             XXX
         </audio>
     </div>
-    <div id='songInfo' style='position:absolute;display:none; border:solid; background-color:white;line-height:150%;font-size:2vw; text-align:left; left:25%; width:70%; top:12%; bottom:12%; overflow-y:scroll; overflow-x:hidden;'>
-        <div style='position:absolute; background-color:white;line-height:150%;font-size:2vw; text-align:left; left:0%; width:100%; top:0%; bottom:90%;'>SONG INFORMATION</div> 
-    </div> 
-
-
+    
 
 </div>
 
