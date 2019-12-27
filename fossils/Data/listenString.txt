@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <head>
-
-
 </head>
 <body>
 
@@ -17,22 +15,16 @@
         <br><a onclick="playTrack('The Cape',3)">4) The Cape<a>
         <br><a onclick="playTrack('When The Roses Bloom Again',4)">5) When The Roses Bloom Again<a>
     </div>
-
     <div id='songInfo' style='position:absolute;display:none; border:solid; background-color:white;line-height:150%;font-size:2vw; text-align:left; left:25%; width:70%; top:12%; bottom:12%; overflow-y:scroll; overflow-x:hidden;'>
         <div style='position:absolute; background-color:yellow;line-height:150%;font-size:2vw; text-align:left; left:0%; width:100%; top:0%; bottom:90%;'>SONG INFORMATION</div>
-        <img src="Data/transRedNo.png" style="position:absolute;top:0%;right:0%;height:10%" onclick="dis('songInfo')">        
+        <img src="Data/blackClose.png" style="position:absolute;top:0%;right:0%;height:10%" onclick="dis('songInfo')">        
         <div id='songData' style='position:absolute; left:2%; width:100%; top:10%; bottom:0%;'>XXX</div>
     </div> 
-    
-    
-    
     <div id='track' style='position:absolute;border:groove;overflow:hidden;top:90%; left:0%; right:0%; bottom:0%;'>
     <audio id="Audio1" controls=true preload = "metadata" style="position:absolute; top:0%; height:100%; width:100%;left:0%;" source src='none' type="audio/mpeg" >
             XXX
         </audio>
     </div>
-    
-
 </div>
 
 <script type="text/javascript">
