@@ -6,8 +6,8 @@
     <br>From Four until Late
     <br><a onclick="playTrack('Sea Of Heartbreak',1)" style="position:relative"><X3>  Sea Of Heartbreak</X3> <img src='Data/speaker.png' style='width:2vw;position:relative'></a>
     <br>You Are My Sunshine
-    <br><a onclick="playTrack('Pancho and Lefty',2)" style="position:relative"><X3>  Pancho and Lefty</X3> <img src='Data/speaker.png' style='width:2vw;position:relative'></a>
-    <br><a onclick="playTrack('When the Roses Bloom Again',4)" style="position:relative"><X3>  When the Roses Bloom Again </X3><img src='Data/speaker.png' style='width:2vw;position:relative'></a>
+    <br><a onclick="playTrack('Pancho And Lefty',2)" style="position:relative"><X3>  Pancho And Lefty</X3> <img src='Data/speaker.png' style='width:2vw;position:relative'></a>
+    <br><a onclick="playTrack('When The Roses Bloom Again',4)" style="position:relative"><X3>  When the Roses Bloom Again </X3><img src='Data/speaker.png' style='width:2vw;position:relative'></a>
     <br>Margaritaville
     <br>Dream
     <br><a onclick="playTrack('The Cape',3)" style="position:relative"><X3> The Cape </X3><img src='Data/speaker.png' style='width:2vw;position:relative'></a>

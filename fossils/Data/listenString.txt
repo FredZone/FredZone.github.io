@@ -10,7 +10,7 @@
     <img id='infoButton' src="Data/blackInfo.png" style="position:absolute;top:1%;right:1%;height:8%;display:none;" onclick="dis('songInfo'), document.getElementById('songData').innerHTML=LISTENarray[TRACK]";>  <!-- <img src="Data/transVocal.png style='position:relalative;right:0%;width:2vh'><br>"+LISTENarray[TRACK]> -->
     <div id='tracks' style='position:absolute; line-height:150%;font-size:4vw; text-align:left; width:100%; top:11%; bottom:11%; overflow-y:scroll; overflow-x:hidden;'><X3>
         <a onclick="playTrack('Abilene',0)">1) Abilene<a>
-        <br><a onclick="playTrack('Sea of Heartbreak',1)">2) Sea of Heartbreak<a>
+        <br><a onclick="playTrack('Sea Of Heartbreak',1)">2) Sea Of Heartbreak<a>
         <br><a onclick="playTrack('Pancho And Lefty',2)">3) Pancho And Lefty<a>
         <br><a onclick="playTrack('The Cape',3)">4) The Cape<a>
         <br><a onclick="playTrack('When The Roses Bloom Again',4)">5) When The Roses Bloom Again<a>
