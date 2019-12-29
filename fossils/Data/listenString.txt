@@ -4,27 +4,29 @@
 <body>
 
 <div style="position:absolute;text-align:left;top:0%;width:100%;height:100%; overflow:hidden;">
-    <div id ='songTitle' style="position:absolute;line-height:100%;border:groove; font-size:4vw; color:red; left:0%; top:0%; right:0%; bottom:90%">
-        Select A Tune Below...
+    <div id ='songTitle' style="position:absolute;background-color:lightgrey;line-height:100%;border:none; font-size:4vw; color:red; left:0%; top:0%; right:0%; bottom:90%">
+       <img src='Data/complete.png' style='height:5vw;'> Select A Tune Below...
     </div>
     <img id='infoButton' src="Data/blackInfo.png" style="position:absolute;top:1%;right:1%;height:8%;display:none;" onclick="dis('songInfo'), document.getElementById('songData').innerHTML=LISTENarray[TRACK]";>  <!-- <img src="Data/transVocal.png style='position:relalative;right:0%;width:2vh'><br>"+LISTENarray[TRACK]> -->
-    <div id='tracks' style='position:absolute; line-height:150%;font-size:4vw; text-align:left; width:100%; top:11%; bottom:11%; overflow-y:scroll; overflow-x:hidden;'><X3>
-        <a onclick="playTrack('Abilene',0)">1) Abilene<a>
-        <br><a onclick="playTrack('Sea Of Heartbreak',1)">2) Sea Of Heartbreak<a>
-        <br><a onclick="playTrack('Pancho And Lefty',2)">3) Pancho And Lefty<a>
-        <br><a onclick="playTrack('The Cape',3)">4) The Cape<a>
-        <br><a onclick="playTrack('When The Roses Bloom Again',4)">5) When The Roses Bloom Again<a>
-    </div>
-    <div id='songInfo' style='position:absolute;display:none; border:solid; background-color:white;line-height:150%;font-size:2vw; text-align:left; left:25%; width:70%; top:12%; bottom:12%; overflow-y:scroll; overflow-x:hidden;'>
-        <div style='position:absolute; background-color:yellow;line-height:150%;font-size:2vw; text-align:left; left:0%; width:100%; top:0%; bottom:90%;'>SONG INFORMATION</div>
-        <img src="Data/blackClose.png" style="position:absolute;top:0%;right:0%;height:10%" onclick="dis('songInfo')">        
-        <div id='songData' style='position:absolute; left:2%; width:100%; top:10%; bottom:0%;'>XXX</div>
-    </div> 
-    <div id='track' style='position:absolute;border:groove;overflow:hidden;top:90%; left:0%; right:0%; bottom:0%;'>
-    <audio id="Audio1" controls=true preload = "metadata" style="position:absolute; top:0%; height:100%; width:100%;left:0%;" source src='none' type="audio/mpeg" >
+    <div id='track' style='position:absolute;border:none;background-color:lightgrey;overflow:hidden;top:10%; left:0%; right:0%; bottom:80%;'>
+        <audio id="Audio1" controls=true preload = "metadata" style="position:absolute;border:none; top:0%; height:80%; width:90%;left:5%;" source src='none' type="audio/mpeg" >
             -/-
         </audio>
+    </div>    
+    <div id='tracks' style='position:absolute; line-height:150%;font-size:4vw;border:solid; text-align:left; width:100%; top:20%; bottom:0%; overflow-y:scroll; overflow-x:hidden;'><X3>
+        <a onclick="playTrack('Abilene',0)"><img src='Data/complete.png' style='height:5vw;'>  Abilene<a>
+        <br><a onclick="playTrack('Sea Of Heartbreak',1)"><img src='Data/complete.png' style='height:5vw;'> Sea Of Heartbreak<a>
+        <br><a onclick="playTrack('Pancho And Lefty',2)"><img src='Data/complete.png' style='height:5vw;'>  Pancho And Lefty<a>
+        <br><a onclick="playTrack('The Cape',3)"><img src='Data/complete.png' style='height:5vw;'>  The Cape<a>
+        <br><a onclick="playTrack('When The Roses Bloom Again',4)"><img src='Data/complete.png' style='height:5vw;'>  When The Roses Bloom Again<a>
     </div>
+    <div id='songInfo' style='position:absolute;display:none; border:groove; background-color:lightgrey;line-height:100%;font-size:3vw; text-align:left; width:100%; top:20%; bottom:0%;'>
+        <div style='position:absolute; background-color:yellow;line-height:150%;font-size:4vw; text-align:left; left:0%; width:100%; top:0%; bottom:90%;'>SONG INFO
+            <img src="Data/blackClose.png" style="position:absolute;top:0%;right:0%;height:100%;z-index:1" onclick="dis('songInfo')">
+        </div>
+        <div id='songData' style='position:absolute; line-height:150%; left:0%; width:100%; top:10%; bottom:0%; overflow-y:scroll; overflow-x:hidden;'>XXX</div>
+    </div> 
+
 </div>
 
 <script type="text/javascript">
