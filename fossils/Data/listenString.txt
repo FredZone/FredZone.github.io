@@ -4,8 +4,8 @@
 <body>
 
 <div style="position:absolute;text-align:left;top:0%;width:100%;height:100%; overflow:hidden;">
-    <div id ='songTitle' style="position:absolute;background-color:lightgrey;line-height:100%;border:none; font-size:4vw; color:red; left:0%; top:0%; right:0%; bottom:90%">
-       <img src='Data/complete.png' style='height:5vw;'> Select A Tune Below...
+    <div id ='songTitle' style="position:absolute;background-color:lightgrey;line-height:100%;border:none; font-size:5vh; color:red; left:0%; top:0%; right:0%; bottom:90%">
+       <img src='Data/complete.png' style='height:3vw;'> Select A Tune Below...
     </div>
     <img id='infoButton' src="Data/blackInfo.png" style="position:absolute;top:1%;right:1%;height:8%;display:none;" onclick="dis('songInfo'), document.getElementById('songData').innerHTML=LISTENarray[TRACK]";>  <!-- <img src="Data/transVocal.png style='position:relalative;right:0%;width:2vh'><br>"+LISTENarray[TRACK]> -->
     <div id='track' style='position:absolute;border:none;background-color:lightgrey;overflow:hidden;top:10%; left:0%; right:0%; bottom:80%;'>
@@ -20,8 +20,8 @@
         <br><a onclick="playTrack('The Cape',3)"><img src='Data/complete.png' style='height:5vw;'>  The Cape<a>
         <br><a onclick="playTrack('When The Roses Bloom Again',4)"><img src='Data/complete.png' style='height:5vw;'>  When The Roses Bloom Again<a>
     </div>
-    <div id='songInfo' style='position:absolute;display:none; border:groove; background-color:lightgrey;line-height:100%;font-size:3vw; text-align:left; width:100%; top:20%; bottom:0%;'>
-        <div style='position:absolute; background-color:yellow;line-height:150%;font-size:4vw; text-align:left; left:0%; width:100%; top:0%; bottom:90%;'>SONG INFO
+    <div id='songInfo' style='position:absolute;display:none; border:groove; background-color:lightgrey;line-height:100%;font-size:3vw;vertical-align:top; text-align:left; width:100%; top:20%; bottom:0%;'>
+        <div style='position:absolute; background-color:yellow;line-height:100%;font-size:5vh; text-align:left; left:0%; width:100%; top:0%; bottom:90%;'>SONG INFO
             <img src="Data/blackClose.png" style="position:absolute;top:0%;right:0%;height:100%;z-index:1" onclick="dis('songInfo')">
         </div>
         <div id='songData' style='position:absolute; line-height:150%; left:0%; width:100%; top:10%; bottom:0%; overflow-y:scroll; overflow-x:hidden;'>XXX</div>
