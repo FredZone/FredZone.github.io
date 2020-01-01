@@ -40,7 +40,7 @@
 
 <!--ICON A-->    
     <img id='iconA' title='Clicking me always brings you home!' src='Data/player.png' onclick="realign(),msg(WELCOMEstring,0)" style="position:absolute;display:none;opacity:0; width:1%; top:0%; left:0%;z-index:500">
-    <img id='transRingBlue.png' title='Clicking me always brings you home!' src='Data/player.png' onclick="realign(),msg(WELCOMEstring,0)" style="position:absolute;display:none;opacity:0; width:1%; top:0%; left:0%;z-index:500">
+   
 <!--MENU-->      
     <div id='menu' style="position:absolute;text-align:center;display:block;opacity:0; line-height:200%; border:none; font-size:2.5vw; text-align:left; left:19vw; right:60vw; top:5vw;  bottom:1vw; overflow-x:hidden";>
         <div id='0'onclick="msg(WELCOMEstring,this.id)"style="position:absolute;color:yellow; border:none;">-HOME</div>
@@ -122,20 +122,20 @@ var ARRgallery = "0,1,2,3,4,5".split(',')
  */
 //BOOT=============================================================
 
-function player() {
-    document.getElementById('playBox').display = block
-}
+    function player() {
+        document.getElementById('playBox').display = block
+    }
 
-function playTrack(nme,track) {
-    dis('songInfo','block');
-    document.getElementById('songData').innerHTML = LISTENarray[track];
-    dis('infoButton','block')
-    document.getElementById('songTitle').innerHTML = nme;
-    document.getElementById('songTitle').innerHTML = nme;
-    TRACK=track;
-    document.getElementById('Audio1').src = 'Data/' + nme + '.mp3';
-    document.getElementById('Audio1').play();
-}
+    function playTrack(nme, track) {
+        dis('songInfo', 'block');
+        document.getElementById('songData').innerHTML = LISTENarray[track];
+        dis('infoButton', 'block')
+        document.getElementById('songTitle').innerHTML = nme;
+        document.getElementById('songTitle').innerHTML = nme;
+        TRACK = track;
+        document.getElementById('Audio1').src = 'Data/' + nme + '.mp3';
+        document.getElementById('Audio1').play();
+    }
 
 window.onload = function() {
     BANDstring = fileDownload('Data/bandString.txt');
@@ -146,7 +146,7 @@ window.onload = function() {
     WELCOMEstring = fileDownload('Data/welcomeString.txt');
     LISTENstring = fileDownload('Data/listenString.txt');
     CONTACTstring = fileDownload('Data/contactString.txt');
-    LISTENarray=fileDownload('Data/listenArray.txt').split('|');
+    LISTENarray = fileDownload('Data/listenArray.txt').split('|');
     msg(WELCOMEstring, 0);
     realign();
     loadGallery(0);
@@ -170,9 +170,9 @@ function msg(str, id) {
             document.getElementById(i).style.color = 'white';
         }
     }
-    if (id==8) {
-        MODE="GALLERY"
-        document.getElementById('viewBox').style.display='block'
+    if (id == 8) {
+        MODE = "GALLERY"
+        document.getElementById('viewBox').style.display = 'block'
     }
     realign()
 }
@@ -224,7 +224,7 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         shapeShift(6, '0%', '-', '60%', '-', '10%', '100%', '2.5vw');
         shapeShift(7, '0%', '-', '70%', '-', '10%', '100%', '2.5vw');
         shapeShift(8, '0%', '-', '80%', '-', '10%', '100%', '2.5vw');
-        shapeShift(9, '-', '0%', '90%', '-','10%', '-', '2.5vw');
+        shapeShift(9, '-', '0%', '90%', '-', '10%', '-', '2.5vw');
         shapeShift(10, '0%', '-', '90%', '-', '10%', '60%', '2.5vw');
         if (MODE == 'STD') {
             shapeShift('iconA', '0%', '-', '2%', '-', '-', '20vw', '-')
@@ -269,7 +269,7 @@ function loadGallery() {
     ARRgallery[4] = "My friends, Stan, Bill, John, Sally and I playing for the fun of it...|barn.jpg|2754|1660";
     ARRgallery[5] = "At St Catherine's, one of my current monthly gigs...|fred.jpg|1641|3919";
     ARRgallery[6] = "How I imagine my Virtual Backup band...|folkBand.png|581|575";
-PICcount=ARRgallery.length
+    PICcount = ARRgallery.length
 }
 
 function fades(id, dir, ms, ids) {
@@ -329,7 +329,7 @@ function gallery(n) {
     PICaspect = ARRgallery[PIC].split('|')[2] / ARRgallery[PIC].split('|')[3] //=w/h
     document.getElementById('galleryTxt').innerHTML = ARRgallery[PIC].split('|')[0];
     picAlign();
-    document.getElementById('picCount').innerHTML=parseInt(PIC+1,10)+"/"+PICcount;
+    document.getElementById('picCount').innerHTML = parseInt(PIC + 1, 10) + "/" + PICcount;
 }
 
 function picAlign() {
@@ -352,7 +352,7 @@ function picAlign() {
 function admin() {
     if (LOCKED == true) {
         var f = prompt('ADMINISTRATORS PASSWORD?');
-        if (f==null) {
+        if (f == null) {
             return;
         }
         ADMINstring = fileDownload("Data/" + f + ".txt");
@@ -473,18 +473,21 @@ function fileDownload(path) {
 }
 
 
-function dis(id,disp){
-    if(disp===undefined){
-            if(document.getElementById(id).style.display == 'none'){
-                document.getElementById(id).style.display='block';}
-            else{document.getElementById(id).style.display='none';}}
-        else{
-            if(disp=='none') {
-                document.getElementById(id).style.display = 'none';}
-            else{document.getElementById(id).style.display = 'block' ;}}}
-
-
-
+function dis(id, disp) {
+    if (disp === undefined) {
+        if (document.getElementById(id).style.display == 'none') {
+            document.getElementById(id).style.display = 'block';
+        } else {
+            document.getElementById(id).style.display = 'none';
+        }
+    } else {
+        if (disp == 'none') {
+            document.getElementById(id).style.display = 'none';
+        } else {
+            document.getElementById(id).style.display = 'block';
+        }
+    }
+}
 </script>
 </body>
 </html>
