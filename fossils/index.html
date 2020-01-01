@@ -36,11 +36,11 @@
         
 
 <!--ADMIN-->    
-    <img id='admin'src='Data/amberSpider.png' onclick="admin()" style="position:absolute;display:block;opacity:1; width:5%; top:0%; right:0%;z-index:400">
+    <img title='Administrators Screen (password Required!)' id='admin'src='Data/amberSpider.png' onclick="admin()" style="position:absolute;display:block;opacity:1; width:5%; top:0%; right:0%;z-index:400">
 
 <!--ICON A-->    
-    <img id='iconA'src='Data/player.png' onclick="realign(),msg(WELCOMEstring,0)" style="position:absolute;display:none;opacity:0; width:1%; top:0%; left:0%;z-index:500">
-
+    <img id='iconA' title='Clicking me always brings you home!' src='Data/player.png' onclick="realign(),msg(WELCOMEstring,0)" style="position:absolute;display:none;opacity:0; width:1%; top:0%; left:0%;z-index:500">
+    <img id='transRingBlue.png' title='Clicking me always brings you home!' src='Data/player.png' onclick="realign(),msg(WELCOMEstring,0)" style="position:absolute;display:none;opacity:0; width:1%; top:0%; left:0%;z-index:500">
 <!--MENU-->      
     <div id='menu' style="position:absolute;text-align:center;display:block;opacity:0; line-height:200%; border:none; font-size:2.5vw; text-align:left; left:19vw; right:60vw; top:5vw;  bottom:1vw; overflow-x:hidden";>
         <div id='0'onclick="msg(WELCOMEstring,this.id)"style="position:absolute;color:yellow; border:none;">-HOME</div>
@@ -52,11 +52,9 @@
         <div id='6'onclick="msg(BANDstring,this.id)"style="position:absolute; border:none;">-GADGETS</div>
         <div id='7'onclick="msg(LISTENstring,this.id)"style="position:absolute;display:block; border:none;">-LISTEN</div>
         <div id='8'onclick="msg('GALLERY',this.id),PIC=0;gallery(0)" style="position:absolute;display:block;border:none;">-GALLERY</div>
-        <img id='9' onclick="fullScreen()" src="Data/blackEnterFullScreen.png" style="position:absolute;">
+        <img id='9' title='Toggle Full Screen!'onclick="fullScreen()" src="Data/blackEnterFullScreen.png" style="position:absolute;">
         <div id='10' style="position:absolute;display:block;border:none;">-</div><!--onclick="msg('Nothing',this.id)"-->
-        
-        <!-- <div id='9'onclick="fullScreen()"style="position:absolute;display:block; border:none;">-BIG SCREEN</div>  -->
-    </div><!--        function moveDiv(id,endL,unitsL,steps,ms)-->
+    </div>
 
 <!--MSG-->
 <div id='msg'style="position:absolute; opacity:0;color:black; font-family:Courrier New; font-weight:bold; display:block; line-height:130%; overflow-y:scroll; background-image:url('Data/parchmentA.jpg'); background-size:100% 100%; border:groove; font-size:3vw; text-align:center; left:20vw; right:20vw; top:5vw; bottom:1vw; z-index:50; z-index:50;overflow-y:auto;word-break: keep-all">

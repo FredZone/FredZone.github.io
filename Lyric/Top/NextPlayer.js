@@ -173,7 +173,7 @@
 //MAIL
    var MAIL="";
    var MAILsys;
-   
+   var BACKTRACK; //to try backtracks  
 window.onbeforeunload = function(e) {
    if (MAIL.length>20) {
       statusMsg('YOU HAVE UNSENT MAIL','red')
@@ -713,6 +713,8 @@ function loadServerTitle() { //alert('loadServerTitle()');
         statusMsg("Song Unavailable...Printing Note or 404",0)
         scrollSetup();
     } else if (PRESETlock != true) {
+        BACKTRACK=TITLE;//zzz
+        document.getElementById('btName').value=BACKTRACK
         createARRlines(content);
     }
 }
@@ -769,7 +771,7 @@ function loadServerTrack() { //afrom 5.2
         if (SOUNDmode == "BACK TRACK") {
             BPMfile=BPM = hash(ARRlines[0], "BPM", BPM);
             icon = "transBackTrack.png";
-            src = "../Backing/" + TITLE + ".mp3";
+            src = "../Backing/" + BACKTRACK + ".mp3";//zzz
         } else { //dependent on Beat (round up to 5 or 10)
             while (parseFloat(newBPM / 5, 10) !== parseInt(newBPM / 5, 10)) {
                 newBPM = parseInt(newBPM, 10) + 1;
