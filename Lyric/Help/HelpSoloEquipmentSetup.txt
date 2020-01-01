@@ -1,0 +1,21 @@
+<pre>
+Simplified
+ 0) Boot the Tablet to this page
+ 1) Place major 120v devices.(Monitor, PA. Voice-Live,RP55&pwr Supply)
+ 2) Turn All Volumes and Power Swtches OFF
+ 3) Set all tones/effects to default setting
+ 4) Plug in power chords & power strip (OFF) to 4 120v Items
+ 5) Setup Microphone,Stand,Tablet & Battery
+ 6) Place Guitar and Stand
+ 7) Connect all Signal Cables
+ 8) Turn on Power initiate first Song at default tablet volume
+ 9) Adjust monitor volume with Pedal Maxed (70db @ Mic) then zero Pedal
+10) Set the Passport MAIN Volume so Backtrack gets about 60db @ audience
+12) TUNE GUITAR
+13) Verify setup by playing a song
+</pre>
+
+
+
+        
+    
