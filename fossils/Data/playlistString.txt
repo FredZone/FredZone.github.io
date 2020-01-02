@@ -15,7 +15,7 @@
     <br>Walk Right Back
     <br>Long Black Veil
     <br>All The Lonely People
-    <br>Jamaica Farewell
+    <br><a onclick="playTrack('Jamaica Farewell',5)" style="position:relative"><X3><img src='Data/complete.png' style='height:4vw;'> Jamaica Farewell</X3></a>
     <br>Singing The Blues
     <br>Stand By Me
     <br>Blue Eyes Crying In The Rain

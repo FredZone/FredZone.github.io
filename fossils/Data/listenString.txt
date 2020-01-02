@@ -19,6 +19,7 @@
         <br><a onclick="playTrack('Pancho And Lefty',2)"><img src='Data/complete.png' style='height:5vw;'>  Pancho And Lefty<a>
         <br><a onclick="playTrack('The Cape',3)"><img src='Data/complete.png' style='height:5vw;'>  The Cape<a>
         <br><a onclick="playTrack('When The Roses Bloom Again',4)"><img src='Data/complete.png' style='height:5vw;'>  When The Roses Bloom Again<a>
+        <br><a onclick="playTrack('Jamaica Farewell',5)"><img src='Data/complete.png' style='height:5vw;'>  Jamaica Farewell<a>
     </div>
     <div id='songInfo' style='position:absolute;display:none; border:groove; background-color:lightgrey;line-height:100%;font-size:3vw;vertical-align:top; text-align:left; width:100%; top:20%; bottom:0%;'>
         <div style='position:absolute; background-color:yellow;line-height:100%;font-size:5vh; text-align:left; left:0%; width:100%; top:0%; bottom:90%;'>SONG INFO
