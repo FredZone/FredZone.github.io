@@ -28,7 +28,7 @@
     <br>Put Another Log On The Fire
     <br>Break My Mind
     <br>Fire Lake
-    <br>Teach Your Children
+    <br><a onclick="playTrack('Teach Your Children',6)" style="position:relative"><X3><img src='Data/complete.png' style='height:4vw;'>Teach Your Children</X3></a>
     <br>Happy Trails
     <br><X5>-----Extras-----</X5>
     <br>Thats Gonna Leave A Mark
