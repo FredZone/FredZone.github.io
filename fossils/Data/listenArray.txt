@@ -1,5 +1,3 @@
-Select a Song
-<br>Song information will appear here...
 |Abeline was written by Bob Gibson, Albert Stanton, Lester Brown and John D. Loudermilk.
 <br>---------------------<br>Gibson was inspired to write the song after watching the Randolph Scott film 'Abilene Town.'
 <br>---------------------<br>Abilene, Kansas, was at the railhead of the Chisholm Trail.
@@ -23,7 +21,7 @@ Select a Song
 <br>---------------------<br>I've found recordings by Johnny Cash, the Carter Family, Wilco and, The Sons of the Pioneers.
 |Jamaica Farewell
 <br>---------------------<br>The lyrics for the song were written by Lord Burgess (Irving Burgie), an American-born, half-Barbadan songwriter.
-<br>---------------------<br>Burgess acknowledged his use of the tune of another 'mento', "Iron Bar". (mento=='folksong')
+<br>---------------------<br>Burgess acknowledged his use of the tune of another Jamaican 'mento'(folksong,) titled "Iron Bar".
 |Teach Your Children
 <br>---------------------<br>It was written when Nash was a member of the Hollies, But never recorded by them.
 <br>---------------------<br>Jerry Garcia (of the Greatful Dead) played Steel guitar on the track. In trade Crosby, Stills and Nash would help them with their Harmony

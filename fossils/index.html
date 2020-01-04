@@ -99,16 +99,6 @@ var PIC=1
 var PICpath
 var PICaspect
 var MODE='STD'
-// working on calibrating...not worth the effort
-//var CAL = 3; //calibration
-//var CALbase = 0;
-//var CALcount = 0;
-//var SWITCHtune;
-//var SWITCHtune;
-//var CHECKtune;
-//var CHECKtime;
-//var TUNEtime;
-//var CLOCKtime;
 var ARRgallery = "0,1,2,3,4,5".split(',')
 /*z-index  map============================================
  Base0
@@ -122,18 +112,24 @@ var ARRgallery = "0,1,2,3,4,5".split(',')
  */
 //BOOT=============================================================
 
-    function player() {
-        document.getElementById('playBox').display = block
-    }
 
-    function playTrack(track,num) {
-        document.getElementById('songData').innerHTML = LISTENarray[num];
-        TRACK = track;
-        dis('listenList','none')
-        document.getElementById('Audio1').src = 'Data/' +track+ '.mp3';
-        document.getElementById('Audio1').play();
-        document.getElementById('songTitle').innerHTML=track;
+function tracksView(){
+    dis('listenList')
+    if (document.getElementById('listenList').style.display=='block') {
+        document.getElementById('playlistButton').src='Data/pointerUp.png';
+    }else{
+        document.getElementById('playlistButton').src='Data/pointerDown.png';
     }
+}
+
+function playTrack(track,num) {
+    document.getElementById('songData').innerHTML = LISTENarray[num];
+    TRACK = track;
+    tracksView();
+    document.getElementById('Audio1').src = 'Data/' +track+ '.mp3';
+    document.getElementById('Audio1').play();
+    document.getElementById('songTitle').innerHTML=track;
+}
 
 window.onload = function() {
     BANDstring = fileDownload('Data/bandString.txt');
@@ -229,7 +225,6 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         } else {
             shapeShift('iconA', '0%', '-', '2%', '-', '-', '6vw', '-')
         }
-
     }
     picAlign()
 }

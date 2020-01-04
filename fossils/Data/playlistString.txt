@@ -45,7 +45,4 @@
     <br>Rock Me On The Water
     <br>Blue Skies
     <br>The Wish
-    </div>
-    
-    
-    
+    </div>   

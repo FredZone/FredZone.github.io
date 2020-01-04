@@ -5,8 +5,8 @@
 <br>a <X3>Shure SM58</X3> Microphone for vocals.
 <br>I play a <X3>Fender Stratocaster</X3> guitar
 <br>through a <X3>Digitec RP55</X3> effects pedal
-<br>My Sound System is a<X3>Fender Passport 300</X3>.
-<br>My stage monitor is a <X3>Fender</X3>10 watt amp.
+<br>My Sound System is a <X3>Fender Passport 300 PRO</X3>.
+<br>My stage monitor is a <X3>Fender</X3> 10 watt amp.
 <br><X2>====================</X2>
 <br>BACKING TRACKS:
 <br>I use <X3>Band in a Box</X3> Software
@@ -19,17 +19,17 @@
 <br>Its an old electronic device
 <br>that synthesizes up to 4 voices.
 <br><X2>====================</X2>
-<br>COMPUTER GEAR:
-<br>I use a program I wrote in <X3>'javascript'</X3>
+<br>COMPUTING:
+<br>I wrote a program in <X3>'javascript'</X3>
 <br>to play my tracks and sychronize them with
-<br>scrolling lyrics and chords notation.
+<br>scrolling lyrics and chord notation.
 <br>Normally I use a generic <X3>Android tablet</X3>
-<br>to run the program.
+<br>to run that program.
 <br><X2>====================</X2>
-<br>RECORDING GEAR:
-<br>On the rare occasion I record anyghing
-<br>I use a <X3>TASCAM DR-05</X3> digital recorder
-<br>Plugged into the PA's stereo output jack
-<br>And <X3>Audacity</X3> software is used to
-<br>clean up the tracks.
+<br>RECORDING:
+<br>On the rare occasion I record anything
+<br>I use a <X3>Tascam DR-05</X3> digital recorder
+<br>plugged into the PA's output jack
+<br><X3>Audacity</X3> freeware is used to
+<br>post process the tracks.
 <div>
