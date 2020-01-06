@@ -36,7 +36,7 @@
         
 
 <!--ADMIN-->    
-    <img title='Administrators Screen (password Required!)' id='admin'src='Data/amberSpider.png' onclick="admin()" style="position:absolute;display:block;opacity:1; width:5%; top:0%; right:0%;z-index:400">
+    <img title='Administrators Screen (password Required!)' id='admin' src='Data/transparent.png' onclick="admin()" style="position:absolute;display:block;opacity:1; width:5%; top:0%; right:0%;z-index:400">
 
 <!--ICON A-->    
     <img id='iconA' title='Clicking me always brings you home!' src='Data/player.png' onclick="realign(),msg(WELCOMEstring,0)" style="position:absolute;display:none;opacity:0; width:1%; top:0%; left:0%;z-index:500">
@@ -67,8 +67,8 @@
             <img id='galleryPic' style='position:absolute;display:block;left:0%;height:100%;width:100%;bottom:0%'>
         </div>                                                                                                                                                                                
         <div id='picCount'style="position:absolute;line-height:50%;background-color:black;display:block;font-size:10vh;opacity:1;;font-weight:bold;font-size:4vh; right:1%;top:1%;">1/7</div>
-        <div id='picLeft' onclick="gallery(-1)" style="position:absolute;line-height:50%;background-color:black;display:none;font-size:10vh;opacity:0.5;display:none;font-weight:bold;font-size:10vh; left:1%;top:47%;"><</div>
-        <div id='picRight' onclick="gallery(+1)"style="position:absolute;line-height:50%;background-color:grey;display:none;font-size:10vh;opacity:0.5;display:none;font-weight:bold;font-size:10vh;right:1%;top:47%;">></div>
+        <div id='picLeft' onclick="gallery(-1)" style="position:absolute;line-height:50%;background-color:grey;display:none;font-size:10vh;opacity:0.9;display:none;font-weight:bold;font-size:8vh; left:1%;top:47%;"><</div>
+        <div id='picRight' onclick="gallery(+1)"style="position:absolute;line-height:50%;background-color:grey;display:none;font-size:10vh;opacity:0.9;display:none;font-weight:bold;font-size:8vh;right:1%;top:47%;">></div>
         <div id='galleryTxt' onclick="aspect()" style='position:absolute;color:white; line-height:150%;border:none;left:0%; top:85%;left:10%;height:10%;width:80%;'>
             How I see the 'Virtual' Band
         </div>
@@ -255,13 +255,13 @@ function shapeShift(id, lf, rt, tp, bm, ht, wt, fs) {
 
 function loadGallery() {
     ARRgallery = "0,1,2,3,4,5,6".split(',')
-    ARRgallery[0] = "1968? Chuck, Bill, Yours Truely and Jay. Playing as 'JAM' in Butte Montana|firstBand.jpg|1219|810";
+    ARRgallery[0] = "1968? Chuck, Bill, yours truly and Jay. Playing as 'JAM' in Butte Montana|firstBand.jpg|1219|810";
     ARRgallery[1] = "Me, 50 years ago playing bass at a Montana State University Spring Event...|bass.png|1316|1940";
     ARRgallery[2] = "Thats Ron (on the right), who got me back into playing guitar after a 45 year hiatus...|ron.jpg|1051|788";
     ARRgallery[3] = "At a Newcomers Christmas party with my buddy, Pat, who passed away in November of 2019|pat.jpg|1051|855";
     ARRgallery[4] = "My friends, Stan, Bill, John, Sally and I playing for the fun of it...|barn.jpg|2754|1660";
     ARRgallery[5] = "At St Catherine's, one of my current monthly gigs...|fred.jpg|1641|3919";
-    ARRgallery[6] = "How I imagine my Virtual Backup band...|folkBand.png|581|575";
+    ARRgallery[6] = "How I imagine my 'virtual' backup band...|folkBand.png|581|575";
     PICcount = ARRgallery.length
 }
 

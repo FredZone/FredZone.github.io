@@ -1,7 +1,7 @@
 <div style="position:absolute;text-align:center;width:100%;overflow-x:auto;">
     <X5>WHY AN ELECTRONIC BAND?</X5><br>
-    I'd would rather play with others and,
-    <br>occasionally bring friends along
+    I would rather play with others and,
+    <br>occasionally bring friends along.
     <br><X5>HOWEVER!...</X5>
     <br>
     Organizing, scheduling and rehearsing a
@@ -9,6 +9,6 @@
     <br>
     <X1>SO ITS USUALLY JUST ME...</X1>
     <br> and my VIRTUAL BAND!
-    <br><img src='Data/folkBand.png'style="position:relative;width:35%">
+    <br><img src='Data/folkBand.png'style="position:relative;opacity:0.6;width:35%">
     
 </div>
