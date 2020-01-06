@@ -1,9 +1,9 @@
 <div style="position:absolute;text-align:left;left:0% top:0%;width:100%;height:100%; overflow:hidden;">
-    <div id ='songTitle' style="position:absolute;background-color:lightgrey;overflow-x:hidden;overflow-y:hidden;line-height:100%;border:none; font-size:4vh; color:red; left:0%; top:0%; right:0%; height:6%;">
+    <div id ='songTitle' style="position:absolute;background-color:lightgrey;overflow-x:hidden;overflow-y:hidden;line-height:100%;border:none; font-size:4vh; color:red; left:0%; top:6%; right:0%; height:6%;">
         Select a Song Here   >>>
     </div>
-    <img id='playlistButton' src='Data/pointerDown.png' onclick="tracksView()" style='position:absolute;right:0%;top:0%;height:6%;z-index:1'>
-    <audio id="Audio1" controls=true preload = "metadata" style="position:absolute;border:none; top:6.5%; height:5%; width:98%;left:1%;" source src='none' type="audio/mpeg" >
+    <img id='playlistButton' src='Data/pointerDown.png' onclick="tracksView()" style='position:absolute;right:0%;top:6%;height:6%;z-index:1'>
+    <audio id="Audio1" controls=true preload = "metadata" style="position:absolute;border:none; background-color:lightgrey;top:0%; height:6%; width:100%;left:0%;" source src='none' type="audio/mpeg" >
     -/-
     </audio>  
         <div id='listenList' style="position:absolute;line-height:130%;background-color:lightgrey;font-size:3vw; overflow-y:auto;overflow-x:hidden;display:none;border:groove; top:12%; width:100%;left:0%;height:88%;z-index:1">
