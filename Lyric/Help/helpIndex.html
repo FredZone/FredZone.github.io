@@ -2,11 +2,11 @@
 <head>
     <link rel="shortcut icon" type="image/png" href="../../Icons/blackQuestion.png">
     <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!-- prevents zooming on mobile devices....number-based width or "device-width"-->
-    <title id = 'title'>Performer Help</title>
+    <title id = 'title'>HELP</title>
     <style type="text/css">
         Body{
             line-height:130%;
-            background-color:darkgrey;
+            
             font-family:Courrier New;
             vertical-align:top;
             font-size:3vw;}
@@ -15,7 +15,6 @@
         X8{ line-height:120%;
             color:blue;
         }
-            
         table
         {
             color:black;
@@ -40,43 +39,48 @@
                 text-align:center;
             }
         img {height:5vw;}        
-            
     </style>
     </head>
 
 <body> 
-<div id='msg' style="position:fixed; line-height:120%;font-size:4vw; left:0%; top:0%; width:90%;color:black; height:8%; overflow:hidden;">HELP</div>
-<img src="../../Icons/blackQuestion.png" onclick='showMenu()' style="position:absolute;right:0%;height:10%;top:0%">
-  
+<div id='msg' style="position:fixed;border:groove;font-size:4vw; line-height:120%; left:0%; top:0%; width:100%;color:black; background-color:lightgrey; overflow:hidden;">HELP INDEX</div>
+    <div id = 'buttons' style='position:fixed;right:0%; top:0%; width:16%;color:black;z-index: 5; display:none;'>
+        <img src="../../Icons/blackHelpHome.png" onclick='showMenu()' style="position:absolute;right:0%;width:5vw;top:0%">
+        <img id='txtLarge' src="../../Icons/blackTextLarge.png" onclick='textSize(0.5)' style="position:absolute;right:5.5vw;width:5vw;top:0%">
+        <img id='txtSmall'src="../../Icons/blackTextSmall.png" onclick='textSize(-0.5)' style="position:absolute;right:11vw;width:5vw;top:0%">
+    </div>
+</div>
+<!--
 <div id ='picFrame'style="background-color:white; display:none ;position:fixed; line-height: 120%;border:solid; left:32%; top:10%; width:66%; height:88%;overflow: hidden;">
     <div style="position:absolute;border:groove;background-color:green;left:0%; top:0%; width:100%;height:100%; overflow:scroll;">
         <img id='pic' src="../../icons/transBackTrack.png" style="position:absolute;border:thick;left:0%; top:0%; height:100%;">
         </div>
     </div>
+-->
 <div id='helpText'style="background-color:white; display:none; position:fixed; font-size:3.5vw; line-height: 120%;border:none; right:0%; top:10%; width:100%; height:90%; overflow:scroll;z-index:1;">
     HELP Should appear here once you select a title (in blue)!
     </div>
 
-<div id ='hindex' style="position:fixed;vertical-align:top;line-height:100%;  background-color:white;  left:0%; top:10%; width:100%; height:90%;background-color:lightyellow; overflow-y:scroll;overflow-x:hidden;">
+<div id ='hindex' style="position:fixed;vertical-align:top;line-height:100%; background-color:white;left:0%; top:10%; width:100%; height:90%;background-color:lightyellow; overflow-y:scroll;overflow-x:hidden;">
     <X2>GENERAL</X2>
-    <br><a onclick="post('../Top/Player.txt',this.innerHTML)"><X8><img src='../../Icons/word.png' style='width:2vw;height:2vw'> Revision History</X8></a>
-    <br><a onclick="post('helpAbout.txt',this.innerHTML)"><img src='../../Icons/word.png' style='width:2vw;height:2vw'><X8> About Help Files</X8></a>
-    <br><a onclick="post('helpText.txt',this.innerHTML)"><img src='../../Icons/word.png' style='width:2vw;height:2vw'><X8> Formatting Song Files</X8></a>
-    <br><a onclick="post('helpStrumming.txt',this.innerHTML)"><img src='../../Icons/word.png' style='width:2vw;height:2vw'><X8> Strumming Notation</X8></a>
-    <br><a onclick="post('helpTab.txt',this.innerHTML)"><img src='../../Icons/word.png' style='width:2vw;height:2vw'><X8> TAB conventions</X8></a>
-    <br><a onclick="post('helpBAIB.txt',this.innerHTML)"><img src='../../Icons/word.png' style='width:2vw;height:2vw'><X8> BIAB Back Tracks</X8></a>
-    <br><a onclick="post('helpReleasePlayer.txt',this.innerHTML)"><img src='../../Icons/word.png' style='width:2vw;height:2vw'><X8> Releasing NextPlayer</X8></a>
+    <br><a onclick="postText('../Top/Player.txt',this.innerHTML)"><img src='../../Icons/blackText.png' style='width:2vw;height:2vw'><X8>Revision History</X8></a>
+    <br><a onclick="postText('helpAbout.txt',this.innerHTML)"><img src='../../Icons/blackText.png' style='width:2vw;height:2vw'><X8>About Help Files</X8></a>
+    <br><a onclick="postText('helpText.txt',this.innerHTML)"><img src='../../Icons/blackText.png' style='width:2vw;height:2vw'><X8>Formatting Song Files</X8></a>
+    <br><a onclick="postText('helpStrumming.txt',this.innerHTML)"><img src='../../Icons/blackText.png' style='width:2vw;height:2vw'><X8>Strumming Notation</X8></a>
+    <br><a onclick="postText('helpTab.txt',this.innerHTML)"><img src='../../Icons/blackText.png' style='width:2vw;height:2vw'><X8>TAB conventions</X8></a>
+    <br><a onclick="postText('helpBAIB.txt',this.innerHTML)"><img src='../../Icons/blackText.png' style='width:2vw;height:2vw'><X8>BIAB Back Tracks</X8></a>
+    <br><a onclick="postText('helpReleasePlayer.txt',this.innerHTML)"><img src='../../Icons/blackText.png' style='width:2vw;height:2vw'><X8>Releasing Next Player</X8></a>
     
     <br><br><X2>Freds Setup</X2>
-    <br><a onclick="postHTML('HelpSoloPackingList.html',this.innerHTML)"><img src='../../Icons/word.png' style='width:2vw;height:2vw'><X8> Solo Packing List</X8></a>
-    <br><a onclick="postHTML('HelpSoloSetup.html',this.innerHTML)"><img src='../../Icons/word.png' style='width:2vw;height:2vw'><X8> Solo Setup</X8></a>
-     <br><a onclick="postHTML('HelpSoloEquipmentSetup.txt',this.innerHTML)"><img src='../../Icons/word.png' style='width:2vw;height:2vw'><X8> Solo Equipment Setup</X8></a>   
+    <br><a onclick="post('HelpSoloPackingList.html',this.innerHTML)"><img src='../../Icons/blackHTML.png' style='width:2vw;height:2vw'><X8>Solo Packing List</X8></a>
+    <br><a onclick="post('HelpSoloSetup.html',this.innerHTML)"><img src='../../Icons/blackHTML.png' style='width:2vw;height:2vw'><X8>Solo Setup</X8></a>
+     <br><a onclick="post('HelpSoloEquipmentSetup.txt',this.innerHTML)"><img src='../../Icons/blackHTML.png' style='width:2vw;height:2vw'><X8>Solo Equipment Setup</X8></a>   
 
     <br><br><X2>TELECON VL1</X2>
     <br><a onclick=window.open('https://www.youtube.com/playlist?list=PLgxx2UfYc5pG6FLYEvDjua6_ObGtAr_xi')><img src='../../Icons/blackLinks.png' style='width:2vw;height:2vw'><X8> VoiceLive Videos</X8></a>
     <br><a onclick=window.open('https://kb.musictribe.com/musickb/view/article/TCHelicon/en_US/VoiceLive-How-to-reset-to-default-factory-settings-228153427')><img src='../../Icons/blackLinks.png' style='width:2vw;height:2vw'><X8> Reset Voice Live</X8></a>
-    <br><a onclick=window.open('http://www.manualsdir.com/models/tc-helicon/voicelive-manual.html')><img src='../../Icons/blackLinks.png' style='width:2vw;height:2vw'><X8> Manual</X8></a>
-    <br><a onclick="post('Telecon Presets.txt',this.innerHTML)"><img src='../../Icons/word.png' style='width:2vw;height:2vw'><X8> Voice Live Presets</X8></a>
+    <br><a onclick=window.open('http://www.manualsdir.com/models/tc-helicon/voicelive-manual.html')><img src='../../Icons/blackLinks.png' style='width:2vw;height:2vw'><X8>VL1 Manual</X8></a>
+    <br><a onclick="post('Telecon Presets.html',this.innerHTML)"><img src='../../Icons/blackHTML.png' style='width:2vw;height:2vw'><X8> Voice Live Presets</X8></a>
     
     <br><br><X2>DIGITECH RP55</X2>
     <br><a onclick=window.open('https://3e7777c294b9bcaa5486-bc95634e606bab3d0a267a5a7901c44d.ssl.cf2.rackcdn.com/product_documents/documents/251_1307026373/RP55%20Manual%2018-0838V-A_original.pdf')><img src='../../Icons/blackLinks.png' style='width:2vw;height:2vw'><X8> Manual</X8></a>
@@ -85,23 +89,36 @@
     <br><a onclick=window.open('https://www.fmicassets.com/Damroot/Original/10001/OM_leg_audio_Passport_300_Pro.pdf')><img src='../../Icons/blackLinks.png' style='width:2vw;height:2vw'><X8> Manual</X8></a>
     
     <br><br><X2>TASCAM DR05 Notes</X2>
-    <br><a onclick="post('HelpTascamDR05.txt',this.innerHTML)"><img src='../../Icons/word.png' style='width:2vw;height:2vw'><X8> My Tascam Notes</X8></a>
+    <br><a onclick="postText('HelpTascamDR05.txt',this.innerHTML)"><img src='../../Icons/blackText.png' style='width:2vw;height:2vw'><X8> My Tascam Notes</X8></a>
     <br><a onclick=window.open('https://tascam.com/content/downloads/products/558/e_dr-05_rm_va.pdf')><img src='../../Icons/blackLinks.png' style='width:2vw;height:2vw'><X8> Manual</X8></a>
     
     <br><br><X2>TOOLs (Within Player)</X2>
-    <br><a onclick="post('helpDebugger.txt',this.innerHTML)"><img src='../../Icons/word.png' style='width:2vw;height:2vw'><X8> Debug Function</X8></a>
+    <br><a onclick="postText('helpDebugger.txt',this.innerHTML)"><img src='../../Icons/blackHTML.png' style='width:2vw;height:2vw'><X8> Debug Function</X8></a>
     
     <br><br><X2>TOOLs (External)</X2>
-    <br><a onclick="post('helpEditor.txt',this.innerHTML)"><img src='../../Icons/word.png' style='width:2vw;height:2vw'><X8> Editor</X8></a>
+    <br><a onclick="postText('helpEditor.txt',this.innerHTML)"><img src='../../Icons/blackHTML.png' style='width:2vw;height:2vw'><X8> Editor</X8></a>
     </div>
 
 <script type="text/javascript">
+var TEXTsize=3
+
 function showMenu(){
     document.getElementById("helpText").style.display='none'
-    document.getElementById("picFrame").style.display='none'
+    //document.getElementById("picFrame").style.display='none'
+    document.getElementById('buttons').style.display='none'
+    document.getElementById('msg').innerHTML='HELP INDEX'
     }     
 
+function textSize(dir) {
+    var a
+    a=TEXTsize+dir
+    if (a>0.5&a<5) {
+        TEXTsize=a
+        document.getElementById('helpText').style.fontSize=TEXTsize+'vw';
+    }
 
+    
+}
 
 
 function picShow(pict){
@@ -112,18 +129,20 @@ function picShow(pict){
     }     
 
 function post(path,heading){//^ Selects your set by its name
-    document.getElementById("picFrame").style.display='none'
+    document.getElementById('txtLarge').style.display= document.getElementById('txtSmall').style.display='block'
+    //document.getElementById("picFrame").style.display='none'
     document.getElementById("helpText").style.display='block'
-    document.getElementById('msg').innerHTML= "HELP: "+ heading;
+    document.getElementById('msg').innerHTML= heading;
     var request = new XMLHttpRequest();
     request.open("GET", path, false);
     request.send(null);
-    document.getElementById('helpText').innerHTML= "<pre>"+(request.responseText)+"</pre>";
-    //document.getElementById('helpPath').innerHTML=path;
+    document.getElementById('helpText').innerHTML= request.responseText;
+    document.getElementById('buttons').style.display='block'
     }
     
 function postHTML(path,heading){//^ Selects your set by its name
-    document.getElementById("picFrame").style.display='none'
+    //document.getElementById('txtLarge').style.display= document.getElementById('txtSmall').style.display='none'
+   // document.getElementById("picFrame").style.display='none'
     document.getElementById("helpText").style.display='block'
     document.getElementById('msg').innerHTML= "HELP: "+ heading;
     var request = new XMLHttpRequest();
@@ -132,7 +151,28 @@ function postHTML(path,heading){//^ Selects your set by its name
     document.getElementById('helpText').innerHTML= request.responseText;
     document.getElementById('helpText').style.width="100%";
     //document.getElementById('helpPath').innerHTML=path;
+    document.getElementById('buttons').style.display='block'
     }    
+
+function postText(path,heading){//^ Selects your set by its name
+    var arr;
+    document.getElementById('txtLarge').style.display= document.getElementById('txtSmall').style.display='block'
+    //document.getElementById("picFrame").style.display='none'
+    document.getElementById("helpText").style.display='block'
+    document.getElementById('msg').innerHTML= heading;
+    var request = new XMLHttpRequest();
+    request.open("GET", path, false);
+    request.send(null);
+    var arr=request.responseText.split('\n').join('<br>')
+    
+    document.getElementById('helpText').innerHTML= arr;
+    document.getElementById('buttons').style.display='block'
+    //document.getElementById('helpPath').innerHTML=path;
+    }
+
+
+
+
 </script><!--change the file name at revision...-->
 </body>
 <html>
