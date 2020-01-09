@@ -2087,7 +2087,7 @@ function presets(action) {
             setLineLimit(80);
             document.getElementById('soundSelector').selectedIndex = 0;
             setSoundModeDefault(document.getElementById('soundSelector').value);
-            selectSet('Z-Recent')
+            selectSet('ALL TUNES')
             document.getElementById('Set').value = 'Z-Recent';
             
         }
@@ -2098,7 +2098,7 @@ function presets(action) {
             setLineLimit(70);
             document.getElementById('soundSelector').selectedIndex = 1;
             setSoundModeDefault(document.getElementById('soundSelector').value);
-            selectSet('Z-Developer')
+            selectSet('ALL TUNES')
             document.getElementById('Set').value = 'Z-Developer';
             nextTune(+1);
         }
