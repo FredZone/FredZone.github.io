@@ -2,17 +2,17 @@
 <X5>MY GADGETS...</X5>
 <br><X2>====================</X2>
 <br>MUSIC GEAR:
-<br>a <X3>Shure SM58</X3> Microphone for vocals.
+<br>My Microphone is a <X3>Shure SM58</X3> 
 <br>I play a <X3>Fender Stratocaster</X3> guitar
 <br>through a <X3>Digitec RP55</X3> effects pedal
-<br>My Sound System is a <X3>Fender Passport 300 PRO</X3>.
-<br>My stage monitor is a <X3>Fender</X3> 10 watt amp.
+<br>All amplified by a <X3>Fender Passport 300 PRO</X3>
+<br>with a <X3>Fender</X3> 10 watt amp for a stage monitor.
 <br><X2>====================</X2>
 <br>BACKING TRACKS:
 <br>I use <X3>Band in a Box</X3> Software
 <br>to create Backing Tracks.
-<br>Typically, I use Drums, Bass & Guitar.
-<br>Occasionally, I add a Piano, Harmonica, Horn, or Strings.
+<br>Typically, with Drums, Bass & Guitar.
+<br>Occasionally, I'll add a Piano, Harmonica, Horn, or Strings.
 <br><X2>====================</X2>
 <br>VOCAL HARMONY
 <br>I use a <X3>TC Helicon Voice Live 1</X3>
@@ -27,9 +27,9 @@
 <br>to run that program.
 <br><X2>====================</X2>
 <br>RECORDING:
-<br>On the rare occasion I record anything
-<br>I use a <X3>Tascam DR-05</X3> digital recorder
-<br>plugged into the PA's output jack
+<br>On the rare recording I'll use
+<br>a <X3>Tascam DR-05</X3> digital recorder
+<br>plugged into the PA output jack
 <br><X3>Audacity</X3> freeware is used to
-<br>post process the tracks.
+<br>convert the tracks to mp3s for the Web.
 <div>

@@ -22,6 +22,8 @@
         X3{color:blue;}
         X4{line-height:100%;color:yellow;}
         X5{line-height:150%;color:green;}
+   
+    
     </style>
     </head>
 
@@ -42,18 +44,18 @@
     <img id='iconA' title='Clicking me always brings you home!' src='Data/player.png' onclick="realign(),msg(WELCOMEstring,0)" style="position:absolute;display:none;opacity:0; width:1%; top:0%; left:0%;z-index:500">
    
 <!--MENU-->      
-    <div id='menu' style="position:absolute;text-align:center;display:block;opacity:0; line-height:200%; border:none; font-size:2.5vw; text-align:left; left:19vw; right:60vw; top:5vw;  bottom:1vw; overflow-x:hidden";>
-        <div id='0'onclick="msg(WELCOMEstring,this.id)"style="position:absolute;color:yellow; border:none;">-HOME</div>
-        <div id='1'onclick="msg(CONTACTstring,this.id)"style="position:absolute; border:none;">-CONTACT</div>
-        <div id='2'onclick="msg(ABOUTstring,this.id)"style="position:absolute; border:none;">-ABOUT ME</div>
-        <div id='3'onclick="msg(PLAYLISTstring,this.id)"style="position:absolute; border:none;">-PLAYLIST</div>
-        <div id='4'onclick="msg(SCHEDULEstring,this.id)"style="position:absolute; border:none;">-SCHEDULE</div>            
-        <div id='5'onclick="msg(WHYstring,this.id)"style="position:absolute; border:none;">-GHOST BAND</div>
-        <div id='6'onclick="msg(BANDstring,this.id)"style="position:absolute; border:none;">-GADGETS</div>
-        <div id='7'onclick="msg(LISTENstring,this.id)"style="position:absolute;display:block; border:none;">-LISTEN</div>
-        <div id='8'onclick="msg('GALLERY',this.id),PIC=0;gallery(0)" style="position:absolute;display:block;border:none;">-GALLERY</div>
+    <div id='menu' style="position:absolute;text-align:center;display:block;opacity:0; line-height:130%;border:none; font-size:2.5vw; left:19vw; right:60vw; top:5vw;  bottom:1vw; overflow-x:hidden";>
+        <div id='0'onclick="msg(WELCOMEstring,this.id)"style="position:absolute;"> HOME</div>
+        <div id='1'onclick="msg(CONTACTstring,this.id)"style="position:absolute;"> CONTACT</div>
+        <div id='2'onclick="msg(ABOUTstring,this.id)"style="position:absolute;"> ABOUT ME</div>
+        <div id='3'onclick="msg(PLAYLISTstring,this.id)"style="position:absolute;"> PLAYLIST</div>
+        <div id='4'onclick="msg(SCHEDULEstring,this.id)"style="position:absolute;"> SCHEDULE</div>            
+        <div id='5'onclick="msg(WHYstring,this.id)"style="position:absolute; border:none;"> GHOST BAND</div>
+        <div id='6'onclick="msg(BANDstring,this.id)"style="position:absolute; border:none;"> GADGETS</div>
+        <div id='7'onclick="msg(LISTENstring,this.id),tracksView()" style="position:absolute;display:block; border:none;"> LISTEN</div>
+        <div id='8'onclick="msg('GALLERY',this.id),PIC=0;gallery(0)" style="position:absolute;display:block;border:none;"> GALLERY</div>
         <img id='9' title='Toggle Full Screen!'onclick="fullScreen()" src="Data/blackEnterFullScreen.png" style="position:absolute;">
-        <div id='10' style="position:absolute;display:block;border:none;">-</div><!--onclick="msg('Nothing',this.id)"-->
+        <div id='10' style="position:absolute;display:block;border:none;"> </div><!--onclick="msg('Nothing',this.id)"-->
     </div>
 
 <!--MSG-->
@@ -159,9 +161,11 @@ function msg(str, id) {
     document.getElementById('viewBox').style.display = 'none';
     for (i = 0; i <= 8; i++) {
         if (id == i) {
-            document.getElementById(i).style.color = 'yellow';
+            document.getElementById(i).style.color = 'red';
+            document.getElementById(i).style.backgroundColor = 'yellow';
         } else {
             document.getElementById(i).style.color = 'white';
+            document.getElementById(i).style.backgroundColor = 'transparent';
         }
     }
     if (id == 8) {
@@ -184,16 +188,16 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         if (MODE == 'LISTEN') {
             shapeShift('songTitle', '-', '-', '-', '-', '-', '-', '6vw');
         }
-        shapeShift(0, '1%', '-', '0%', '-', '25%', '98%', '4vw');
-        shapeShift(1, '1%', '-', '25%', '-', '25%', '32%', '4vw');
-        shapeShift(2, '1%', '-', '50%', '-', '25%', '32%', '4vw');
-        shapeShift(3, '1%', '-', '75%', '-', '25%', '32%', '4vw');
-        shapeShift(4, '34%', '-', '25%', '-', '25%', '32%', '4vw');
-        shapeShift(5, '34%', '-', '50%', '-', '25%', '32%', '4vw');
-        shapeShift(6, '34%', '-', '75%', '-', '25%', '32%', '4vw');
-        shapeShift(7, '67%', '-', '25%', '-', '25%', '32%', '4vw');
-        shapeShift(8, '67%', '-', '50%', '-', '25%', '32%', '4vw');
-        shapeShift(9, '-', '0%', '75%', '-', '25%', '', '4vw');
+        shapeShift(0, '34%', '-', '0%', '-', '4vw', '32%', '4vw');
+        shapeShift(1, '1%', '-', '25%', '-', '4vw', '32%', '4vw');
+        shapeShift(2, '1%', '-', '50%', '-', '4vw', '32%', '4vw');
+        shapeShift(3, '1%', '-', '75%', '-', '4vw', '32%', '4vw');
+        shapeShift(4, '34%', '-', '25%', '-', '4vw', '32%', '4vw');
+        shapeShift(5, '34%', '-', '50%', '-', '4vw', '32%', '4vw');
+        shapeShift(6, '34%', '-', '75%', '-', '4vw', '32%', '4vw');
+        shapeShift(7, '67%', '-', '25%', '-', '4vw', '32%', '4vw');
+        shapeShift(8, '67%', '-', '50%', '-', '4vw', '32%', '4vw');
+        shapeShift(9, '-', '0%', '75%', '-', '4vw', '', '4vw');
         shapeShift(10, '67%', '-', '75%', '-', '25%', '25%', '4vw');
         if (MODE == 'STD') {
             shapeShift('iconA', '' - '%', '-', '2%', '-', '-', '10vw', '-')
@@ -209,16 +213,16 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         shapeShift('viewBox', '-', '20%', '-', '0%', '-', '-', '2.5vw');
         shapeShift('msg', '20%', '20%', '8%', '1%', '-', '-', '2vw');
         shapeShift('menu', '80vw', '1vw', '10%', '1vw', '-', '-', '1.6vw');
-        shapeShift(0, '0%', '-', '0%', '-', '10%', '100%', '2.5vw');
-        shapeShift(1, '0%', '-', '10%', '-', '10%', '100%', '2.5vw');
-        shapeShift(2, '0%', '-', '20%', '-', '10%', '100%', '2.5vw');
-        shapeShift(3, '0%', '-', '30%', '-', '10%', '100%', '2.5vw');
-        shapeShift(4, '0%', '-', '40%', '-', '10%', '100%', '2.5vw');
-        shapeShift(5, '0%', '-', '50%', '-', '10%', '100%', '2.5vw');
-        shapeShift(6, '0%', '-', '60%', '-', '10%', '100%', '2.5vw');
-        shapeShift(7, '0%', '-', '70%', '-', '10%', '100%', '2.5vw');
-        shapeShift(8, '0%', '-', '80%', '-', '10%', '100%', '2.5vw');
-        shapeShift(9, '-', '0%', '90%', '-', '10%', '-', '2.5vw');
+        shapeShift(0, '2%', '-', '0%', '-', '2.5vw', '100%', '2.5vw');
+        shapeShift(1, '2%', '-', '10%', '-', '2.5vw', '100%', '2.5vw');
+        shapeShift(2, '2%', '-', '20%', '-', '2.5vw', '100%', '2.5vw');
+        shapeShift(3, '2%', '-', '30%', '-', '2.5vw', '100%', '2.5vw');
+        shapeShift(4, '2%', '-', '40%', '-', '2.5vw', '100%', '2.5vw');
+        shapeShift(5, '2%', '-', '50%', '-', '2.5vw', '100%', '2.5vw');
+        shapeShift(6, '2%', '-', '60%', '-', '2.5vw', '100%', '2.5vw');
+        shapeShift(7, '2%', '-', '70%', '-', '2.5vw', '100%', '2.5vw');
+        shapeShift(8, '2%', '-', '80%', '-', '2.5vw', '100%', '2.5vw');
+        shapeShift(9, '-', '0%', '90%', '-', '2.5vw', '-', '2.5vw');
         shapeShift(10, '0%', '-', '90%', '-', '10%', '60%', '2.5vw');
         if (MODE == 'STD') {
             shapeShift('iconA', '0%', '-', '2%', '-', '-', '20vw', '-')
