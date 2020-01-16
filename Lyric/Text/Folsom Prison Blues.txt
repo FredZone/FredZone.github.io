@@ -1,4 +1,4 @@
-TITLE:Folsom Prison Blues,DUR:169,BPM:205,BEATS:4,KEY:E,QUAL:Complete,ARTIST:Johnny Cash,GENRE:Country,STYLE:Up Tempo,HITyear:Unknown
+TITLE:Folsom Prison Blues,DUR:169,BPM:205,BEATS:4,KEY:F,QUAL:Complete,ARTIST:Johnny Cash,GENRE:Country,STYLE:Up Tempo,HITyear:Unknown
 $$ 2 bar line at end of each section...
 $$TCL1 <X14>PR 1</X14> <X14>F M2</X14> <X14>PV 1</X14> <X16>V4</X16> <X16>H OFF</X16>
 $$STRT_ooXoo 8 5 10

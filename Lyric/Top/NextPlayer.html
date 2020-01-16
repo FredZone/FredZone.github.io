@@ -134,8 +134,20 @@ Super controls ???? belonging to no group so z is determined by function   -->
                 </tr>
                 <td colspan=5 id ='trackQual'style='background-color:red;color:white'>Quality</td>
             </table>
-        <div style="position:absolute;border:solid; bottom:7%; height:5%;left:1%; width:50%; text-align : left;">Type in a Another Backtrack Title</div>
+        <div style="position:absolute;border:solid; bottom:12%; height:5%;left:1%; width:60%; text-align : left;">Select A Backtrack (if it exists)</div>
+        <div id ='trackName' style="position:absolute;border:solid; bottom:7%; height:5%;left:1%; width:60%; text-align : left;">Track Name</div>
+        
+        <select 'btName' onchange="BACKTRACK=TITLE+this.value,loadServerTrack()" style="position:absolute;border:solid; bottom:1%; height:5%;left:1%; width:50%; text-align : left; overflow:auto;">
+        <option value='' selected>[TITLE].mp3</option>
+        <option value='1'>[TITLE]1.mp3</option>
+        <option value='2'>[TITLE]2.mp3</option>
+        <option value='3'>[TITLE]3.mp3</option>
+        <option value='4'>[TITLE]4.mp3</option>
+        <option value='5'>[TITLE]5.mp3</option>
+        </select>
+       <!--
         <input id='btName'onchange="BACKTRACK=this.value,loadServerTrack()" style="position:absolute;border:solid; bottom:1%; height:5%;left:1%; width:50%; text-align : left; overflow:auto;">
+                -->
         <div id ="map" style ="position:absolute;border:solid; top:15%; height:84%;left:66%; width:30%; text-align : left; overflow:scroll;">MAP appears here...
             </div>
         </div>
@@ -327,7 +339,7 @@ Super controls ???? belonging to no group so z is determined by function   -->
             </div>
         <div id="info" style="position:absolute; visibility: visible; display:block; text-align:center; overflow:hidden;top:33%; left:0%; width:100%; height:33%; z-index:1200">   
             <div style="text-align:center; background-color:darkgrey; overflow:hidden; position:absolute; top:0%; left:0%; width:100%; height:20%;">INFORMATION</div>
-            <img id="ButtonHelp" title='HELP' src="../../Icons/blackQuestion.png" alt ="HELP"  onclick ="window.open('../Help/helpIndex.html')" style=position:absolute;width:9%;height:70%;left:0.5%;bottom:0%;">
+            <img id="ButtonHelp" title='HELP' src="../../Icons/blackQuestion.png" alt ="HELP"  onclick ="window.open('../Help/index.html')" style=position:absolute;width:9%;height:70%;left:0.5%;bottom:0%;">
             <img id="ButtonAnalysis" title='SONG ANALYSIS' src="../../Icons/blackInfo.png" alt ="LINKS" onclick="notePopUp(analizeSong(),'2vw','black','tan','No Analysis Available...','Song Analysis')" style=position:absolute;width:9%;height:70%;left:10.5%;bottom:0%;">
             <img id="ButtonTech" title='TECHNICAL INFO' src="../../Icons/violetNotepad.png" alt ="TECH NOTES" onclick="notePopUp(NOTEtech,'2vw','black','violet','No Technical Notes...','Technical Notes')" style=position:absolute;width:9%;height:70%;left:20.5%;bottom:0%;">
             <img id="ButtonTrivia" title='TRIVIA' src="../../Icons/yellowGift.png" alt ="TRIVIA NOTES" onclick="notePopUp(triviaNotes(),'2vw','black','yellow','No Trivia Notes...','Trivia Notes')" style=position:absolute;width:9%;height:70%;left:30.5%;bottom:0%;">

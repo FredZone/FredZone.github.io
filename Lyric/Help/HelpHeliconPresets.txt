@@ -1,0 +1,22 @@
+Preset
+1: C M2
+2: D M2
+3: E M2
+4: F M2
+5: G M2
+6: A M2
+7: B M2
+8: C M2
+9: D M2
+10: E M2
+11: F M2
+12: G M2
+13: A M2
+14: B M2
+15: C m1
+16: D m2
+17: E m2
+18: F m2
+19: G m2
+20: A m2
+21: B m2

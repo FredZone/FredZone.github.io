@@ -1,9 +1,0 @@
-Implementing Global Javascript Routines
-    Break them into managable groups
-        reading and saving files
-        messasging and user interface
-        string manipulation
-        filling out selectors and fields
-        array manipulation
-    Work out individual routines in the group
-    Move to the collector

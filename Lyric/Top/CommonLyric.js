@@ -59,7 +59,7 @@ function createSetSelector() //B
     request.send(null);
     var content = request.responseText;
     var SETS = content.split("\n");
-    ihtml = "SELECT A PLAYLIST: <select id='Set' style='font-size:2vw;font-family:Courrier New;' onchange='selectSet(this.value)'><optgroup>\n<option selected>ALL TUNES</option>";
+    ihtml = "SELECT A PLAYLIST: <select id='Set' onchange='selectSet(this.value)'><optgroup>\n<option selected>ALL TUNES</option>";
     j = 0;
     while (j < SETS.length) {
         if (SETS[j] !== "ALL TUNES") {

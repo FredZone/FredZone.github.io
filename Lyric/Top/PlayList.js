@@ -25,6 +25,11 @@ var SONGsound;
 var SONGnotes;
 var SONGvolume;
 
+
+function ZZZZZ() {
+    alert(TEMP);
+}
+
 function updateSong() {
     SONGnotes = document.getElementById('songNotes').value;
     SONGtitle = document.getElementById('songTitle').value;
@@ -57,7 +62,6 @@ function recode() {
         str = "|" + SONGkey + str;
     }
     str = SONGtitle + str;
-    alert(str)
     return str;
 }
     
@@ -124,7 +128,7 @@ function defaults() {
 
 //BOOT FUNCTIONS====================================================================================
 window.onload = function() {
-    reset();
+    set();
     var x = receiveARR();
     if (!x) //normal first time boot, no query string
     {
@@ -134,6 +138,16 @@ window.onload = function() {
     }
 };
 //RECENT========================================================================================================
+
+function reset(){
+    if (confirm('This Clears the entire LIST!!!\nCONTINUE???')==false) {
+        return;
+    }
+    set()
+}
+
+
+
 
 function saveList()
     {
@@ -410,8 +424,7 @@ function arrUpdate()
         ARR=songStr.split('\n');
     }
 
-function reset()
-    {
+function set(){
     getTracks();
     listOfTunes();
     listOfTracks();
@@ -469,6 +482,22 @@ function destroyClickedElement(event)
             document.body.removeChild(event.target);
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function importPlaylist()//XXX
     {
         Fobj = document.getElementById('fileInput').files;//created fileInput in first step
@@ -477,12 +506,49 @@ function importPlaylist()//XXX
         //alert (Fstr);
     }
 
+
+
+
+
+
+
+
+
+
 function setUpListener()               
     {
         document.getElementById('fileinput').addEventListener('change', readSingleFile, false);
     }
 
+
+function gboom(process){
+    
+}
+
+
+
+
+
 function readSingleFile(e)
+        {
+        var file = e.target.files[0];
+        if (!file){ alert("No Valid File...");return;}//incase no file
+        var reader = new FileReader();
+        reader.onload = function(e)
+        {
+            TEMP = e.target.result;//to screenUpdate is program specific
+            //get rid of the damn line feeds
+            while (TEMP.indexOf("\r") >= 0)
+            {TEMP = TEMP.replace("\r", "");}
+            //program specific steps below
+            document.getElementById('title').value= (file.name.substring(0,(file.name.length)-4));
+            TITLE =document.getElementById('title').value;
+            screenUpdate(TEMP, TITLE);
+        };
+        reader.readAsText(file);
+    }
+
+function XreadSingleFile(e)
         {
         var file = e.target.files[0];
         if (!file){ alert("No Valid File...");return;}//incase no file
@@ -500,8 +566,6 @@ function readSingleFile(e)
         };
         reader.readAsText(file);
     }
-
-
 
 
 
@@ -556,6 +620,7 @@ function space() {
 
 function del() {
     j = TAG;
+
     while (j < MAXcell) {
         document.getElementById("a" + j).value = document.getElementById("a" + (j + 1)).value;
         j = j + 1;
@@ -634,7 +699,7 @@ function listOfTunes() //Get a list of ALL TUNES to select from
     request.send(null);
     var content = request.responseText;
     TUNElist = content.split("\n");
-    var lst = "<select id='mySet' onchange='addTune(this.value)' style='width:30vw'><br>optgroup>";
+    var lst = "<select id='mySet' onchange='addTune(this.value)'><br>optgroup>";
     j = 0;
     while (j < TUNElist.length) {
         lst = lst + "\n<option>" + TUNElist[j] + "</option>";
@@ -653,7 +718,7 @@ function listOfTracks() //Get a list of ALL TRACKS to select from
     request.send(null);
     var content = request.responseText;
     TRACKlist = content.split("\n");
-    var lst = "<select id='mySet' onchange='addTune(this.value)' style='width:30vw'><br>optgroup>";
+    var lst = "<select id='mySet' onchange='addTune(this.value)'><br>optgroup>";
     j = 0;
     while (j < TRACKlist.length) {
         lst = lst + "\n<option>" + TRACKlist[j] + "</option>";
@@ -670,7 +735,7 @@ function listOfSets() {
     request.send(null);
     var content = request.responseText;
     var SETS = content.split("\n");
-    ihtml = "<select id='Set' onchange='selectSet(this.value,0)'><optgroup>\n<option selected>ALL TUNES</option>";
+    ihtml = "<select style='position;relative;left:5%'id='Set' onchange='selectSet(this.value,0)'><optgroup><option selected>Select A List</option>\n<option>ALL TUNES</option>";
     j = 0;
     while (j < SETS.length) {
         if (SETS[j] !== "ALL TUNES") {

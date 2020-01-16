@@ -714,7 +714,7 @@ function loadServerTitle() { //alert('loadServerTitle()');
         scrollSetup();
     } else if (PRESETlock != true) {
         BACKTRACK=TITLE;//zzz
-        document.getElementById('btName').value=BACKTRACK
+        //document.getElementById('btName').value=BACKTRACK
         createARRlines(content);
     }
 }
@@ -772,6 +772,7 @@ function loadServerTrack() { //afrom 5.2
             BPMfile=BPM = hash(ARRlines[0], "BPM", BPM);
             icon = "transBackTrack.png";
             src = "../Backing/" + BACKTRACK + ".mp3";//zzz
+            document.getElementById('trackName').innerHTML=BACKTRACK + ".mp3"
         } else { //dependent on Beat (round up to 5 or 10)
             while (parseFloat(newBPM / 5, 10) !== parseInt(newBPM / 5, 10)) {
                 newBPM = parseInt(newBPM, 10) + 1;
@@ -1625,6 +1626,52 @@ function trackPause(){
         else
             {statusMsg("Loop Paused!","yellow");} 
         screenFormat("Pause");}
+
+
+
+
+function trackPlayNOGOOD() { //pause options...undefined
+    Audio1.pause() //just in case
+    ENDscroll = false
+    CTO();
+    if (SOUNDmode === 'SILENT' | SOUNDmode === 'BACK TRACK') {
+        if (BARsync === false) {
+            trackAlign('Screen');
+        } else{
+            if(SOUNDmode === 'SILENT'){
+               trackAlign('Bar')
+            }else{
+               trackAlign('Audio')
+            }
+        }
+    } else if (SOUNDmode === 'CLICK TRACK' | SOUNDmode === 'DRUM COUNTRY' | SOUNDmode === 'DRUM ROCK') {
+        if (BARsync === true) {
+            trackAlign('Free Bar');
+        } else {
+            trackAlign('Free')
+        }
+    }
+    document.getElementById('Audio1').currentTime=POStrack
+    Ystart = document.getElementById('Tune').scrollTop=POSscreen
+    screenFormat("Scroll");
+    // = document.getElementById("tabBox").scrollLeft;
+    if (METRO===true & BAR===0){metro(0)} 
+    statusMsg("PLAY STEP 2: "+document.getElementById("Audio1").currentTime+ ' secs >>>'+POStrack,0);
+    SCROLLstartTime = new Date().getTime();
+    document.getElementById("Audio1").play();
+    scrollEngine();
+}
+
+
+
+
+
+
+
+
+
+
+
 
 function trackPlay() { //pause options...undefined
     Audio1.pause() //just in case

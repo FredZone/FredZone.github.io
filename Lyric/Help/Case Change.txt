@@ -1,0 +1,10 @@
+Changing File CAPITALIZATION on gethub
+1)Recommend one directory or batch at a time...
+2)Move the files to be re-Capitalized
+    FROM the local github repository to
+    EMPTY directory AAAA near the github tree
+3) Commit and push the deletions to gethub
+4) Make the Files in AAAA the way you want them
+5)Optional change the modified date to today for all files
+6) Copy the files from AAAA to the proper directory in the local github repository
+7) Commit and Push the addions to github

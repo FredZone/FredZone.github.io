@@ -1,0 +1,30 @@
+Strumming Notation  
+===============================================
+Note that strumming should essentially be the 2nd and 3rd note lines in the tunes .txt file
+Put the two lines immediately after the Data Line (the first line of the file is the Data Line)
+Each line of the strum pattern is proceded by a @
+    see <A onclick="postHelpFile('HelpText.txt','Writing Text files for Performer')"><X2>Writing Text files for Performer</X2></A>	
+===============================================
+The first line is the count (or Tempo)
+@1 . 2 . 3 . 4 .
+the Second line is the strumming pattern  
+@B . V u d u V 
+===============================================
+The strumming conventions are shown below, they are in flux currently
+D   down-hard
+d   down-soft
+U   up-hard
+u   up-soft
+V   mute down hard
+v   mute down soft
+A   mute Up hard
+^   mute Up soft 
+/   roll down
+\   roll up
+B   base strings hard
+b   base soft
+==========================================
+Strumming example from Abilene
+@1 . 2 . 3 . 4 .                                                      
+@B . V u d u V u 
+--------------------------------------------------------------

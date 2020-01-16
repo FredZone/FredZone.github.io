@@ -1,0 +1,13 @@
+1)Open ALL js LOCAL FILES in Komodo in this order
+    HelpGithub.txt
+    XXX.html
+    XXX.js
+    ???.js
+2)open in the Chrome browser
+    Page on Web (indeveloper mode)
+    Page on Local(indeveloper mode)
+
+
+BASELINE waS 11/232010 12:00PM
+================================
+Fix the references not the CASE for icons
