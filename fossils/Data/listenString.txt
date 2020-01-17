@@ -1,26 +1,30 @@
-<div style="position:absolute;text-align:left;left:0% top:0%;width:100%;height:100%; overflow:hidden;">
-    <div id ='songTitle' style="position:absolute;background-color:white;overflow:hidden;line-height:100%;border:groove; font-size:3vw; color:red; left:0%; top:6%; right:0%; height:6%;">
-        Use 'LIST' To Select Songs >>>>
+<div style="position:absolute;background-color:lightgrey;text-align:left;left:0% top:0%;width:100%;height:100%; overflow:hidden;">
+    <audio id="Audio1" controls=true preload = "metadata" style="position:absolute;display:none;border:none; background-color:lightgrey;color:red;top:0%; height:10%; width:50%;left:25%;" source src='none' type="audio/mpeg" >
+        -/-
+    </audio>  
+    <img id ='pauseButton' onclick="trackPause()"; src='Data/yellowPause.png' style="position:absolute;display:none;top:0%; right:0%; height:10%;">
+    <img id ='playButton' onclick="trackPlay()"; src='Data/yellowPlay.png' style="position:absolute;display:none;top:0%; right:0%; height:10%;">
+    <img id ='resetButton'onclick="trackReset()" src='Data/yellowRewind.png' style="position:absolute;display:none;top:0%; left:0%; height:10%;">
+    
+    <div id ='songTitle' style="position:absolute;color:black;background-color:white; overflow:hidden; line-height:100%; border:groove; font-size:3vw; left:0%; top:10%; right:0%; bottom:80%;">
+        Select A tune below...
     </div>
     
-    <div id='playlistButton' onclick="tracksView()" style='position:absolute;border:groove;background-color:yellow;text-align:center;right:0%;font-size:3vw;top:6%;height:6%;width:15%;z-index:1'>LIST</div>
-   <!-- <img id='playlistButton' src='Data/pointerDown.png' onclick="tracksView()" style='position:absolute:0%;top:6%;height:6%;z-index:1'>
-    -->
+    <div id='playlistButton' onclick="tracksView()" style='position:absolute;border:groove;color:red;background-color:yellow;text-align:center;right:0%;font-size:2.5vw;top:10%;bottom:80%;width:15%;z-index:1'>LIST</div>
     
-    <audio id="Audio1" controls=true preload = "metadata" style="position:absolute;border:none; background-color:lightgrey;top:0%; height:6%; width:100%;left:0%;" source src='none' type="audio/mpeg" >
-    -/-
-    </audio>  
-        <div id='listenList' style="position:absolute;line-height:130%;background-color:lightgrey;font-size:3vw; overflow-y:auto;overflow-x:hidden;display:none;border:groove; top:12%; width:100%;left:0%;height:88%;z-index:1">
-            <div style="background-color:lightgrey">
-            <div id='L1' onmouseover="document.getElementById(this.id).style.backgroundColor='grey'" onmouseout="document.getElementById(this.id).style.backgroundColor='lightgrey'" onclick='playTrack(this.innerHTML,1)' style='border:groove;overflow-x:hidden;'>Abilene</div>
-            <div id='L2' onmouseover="document.getElementById(this.id).style.backgroundColor='grey'" onmouseout="document.getElementById(this.id).style.backgroundColor='lightgrey'"onclick='playTrack(this.innerHTML,2)' style='border:groove;overflow-x:hidden;'>Sea Of Heartbreak</div>
-            <div id='L3' onmouseover="document.getElementById(this.id).style.backgroundColor='grey'" onmouseout="document.getElementById(this.id).style.backgroundColor='lightgrey'"onclick='playTrack(this.innerHTML,3)' style='border:groove;overflow-x:hidden;'>Pancho And Lefty</div> 
-            <div id='L4' onmouseover="document.getElementById(this.id).style.backgroundColor='grey'" onmouseout="document.getElementById(this.id).style.backgroundColor='lightgrey'"onclick='playTrack(this.innerHTML,4)' style='border:groove;overflow-x:hidden;'>The Cape</div>
-            <div id='L5' onmouseover="document.getElementById(this.id).style.backgroundColor='grey'" onmouseout="document.getElementById(this.id).style.backgroundColor='lightgrey'"onclick='playTrack(this.innerHTML,5)' style='border:groove;overflow-x:hidden;'>When The Roses Bloom Again</div>
-            <div id='L6' onmouseover="document.getElementById(this.id).style.backgroundColor='grey'" onmouseout="document.getElementById(this.id).style.backgroundColor='lightgrey'"onclick='playTrack(this.innerHTML,6)' style='border:groove;overflow-x:hidden;'>Jamaica Farewell</div>
-            <div id='L7' onmouseover="document.getElementById(this.id).style.backgroundColor='grey'" onmouseout="document.getElementById(this.id).style.backgroundColor='lightgrey'"onclick='playTrack(this.innerHTML,7)' style='border:groove;overflow-x:hidden;'>Teach Your Children</div>
+
+        <div id='listenList' style="position:absolute;line-height:130%;background-color:lightgrey;font-size:3vw; overflow-y:auto;overflow-x:hidden;display:none;border:groove; top:20%; width:100%;left:0%;bottom:0%;z-index:1">
+            <div style="color:red;background-color:yellow">
+            <div id='L1' onmouseover="document.getElementById(this.id).style.backgroundColor='lightyellow'" onmouseout="document.getElementById(this.id).style.backgroundColor='yellow'" onclick='playTrack(this.innerHTML,1)' style='border:groove;overflow-x:hidden;'>Abilene</div>
+            <div id='L2' onmouseover="document.getElementById(this.id).style.backgroundColor='lightyellow'" onmouseout="document.getElementById(this.id).style.backgroundColor='yellow'"onclick='playTrack(this.innerHTML,2)' style='border:groove;overflow-x:hidden;'>Sea Of Heartbreak</div>
+            <div id='L3' onmouseover="document.getElementById(this.id).style.backgroundColor='lightyellow'" onmouseout="document.getElementById(this.id).style.backgroundColor='yellow'"onclick='playTrack(this.innerHTML,3)' style='border:groove;overflow-x:hidden;'>Pancho And Lefty</div> 
+            <div id='L4' onmouseover="document.getElementById(this.id).style.backgroundColor='lightyellow'" onmouseout="document.getElementById(this.id).style.backgroundColor='yellow'"onclick='playTrack(this.innerHTML,4)' style='border:groove;overflow-x:hidden;'>The Cape</div>
+            <div id='L5' onmouseover="document.getElementById(this.id).style.backgroundColor='lightyellow'" onmouseout="document.getElementById(this.id).style.backgroundColor='yellow'"onclick='playTrack(this.innerHTML,5)' style='border:groove;overflow-x:hidden;'>When The Roses Bloom Again</div>
+            <div id='L6' onmouseover="document.getElementById(this.id).style.backgroundColor='lightyellow'" onmouseout="document.getElementById(this.id).style.backgroundColor='yellow'"onclick='playTrack(this.innerHTML,6)' style='border:groove;overflow-x:hidden;'>Jamaica Farewell</div>
+            <div id='L7' onmouseover="document.getElementById(this.id).style.backgroundColor='lightyellow'" onmouseout="document.getElementById(this.id).style.backgroundColor='yellow'"onclick='playTrack(this.innerHTML,7)' style='border:groove;overflow-x:hidden;'>Teach Your Children</div>
         </div>     
 </div>        
-    <div id='songData' style='position:absolute;background-color:transparent; line-height:150%; left:0%; width:100%; top:12%; overflow-y:auto; overflow-x:hidden;'>
-        Information about the song will appear here.
+    <div id='songData' style='position:absolute;background-color:lightgrey; line-height:150%; left:0%; width:100%; top:20%; overflow-y:auto; overflow-x:hidden;'>
+        Use LIST then Select a Tune HERE...
+        <br> Use INFO to see some song facts HERE.
     </div>

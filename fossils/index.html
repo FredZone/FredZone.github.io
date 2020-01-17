@@ -22,21 +22,19 @@
         X3{color:blue;}
         X4{line-height:100%;color:yellow;}
         X5{line-height:150%;color:green;}
-   
-    
     </style>
     </head>
 
 <body onresize="realign()">
-
+<!--
 <img id='picData' style='position:fixed; left:0%;width:10%;display:block;z-index:500;'>
-    
+-->    
 <!--MAIN SCREEN ==============================================================================--> 
 <div id='background' style="position:fixed;display:block ;background-image:url('Data/backgroundB.jpg'); background-size:100% 100%;line-height:100%; font-size:2.5vw; left:0%; top:0%; right:0%; bottom:0%; z-index:1000;">
-    
-    <img id='hdr' src="Data/fatf.png" style="position:fixed;display:none;left:30%;height:10%;z-index:300;">
-        
 
+<!--HDR-->    
+    <img id='hdr' src="Data/fatf.png" style="position:fixed;display:none;left:30%;height:10%;z-index:300;">
+ 
 <!--ADMIN-->    
     <img title='Administrators Screen (password Required!)' id='admin' src='Data/transparent.png' onclick="admin()" style="position:absolute;display:block;opacity:1; width:5%; top:0%; right:0%;z-index:400">
 
@@ -54,8 +52,7 @@
         <div id='6'onclick="msg(BANDstring,this.id)"style="position:absolute; border:none;"> GADGETS</div>
         <div id='7'onclick="msg(LISTENstring,this.id),tracksView()" style="position:absolute;display:block; border:none;"> LISTEN</div>
         <div id='8'onclick="msg('GALLERY',this.id),PIC=0;gallery(0)" style="position:absolute;display:block;border:none;"> GALLERY</div>
-        <img id='9' title='Toggle Full Screen!'onclick="fullScreen()" src="Data/blackEnterFullScreen.png" style="position:absolute;">
-        <div id='10' style="position:absolute;display:block;border:none;"> </div><!--onclick="msg('Nothing',this.id)"-->
+        <img id='sizeScreen' title='Toggle Full Screen!'onclick="fullScreen()" src="Data/yellowEnterFullScreen.png" style="position:fixed;right:0%;bottom:0%;height:8%">
     </div>
 
 <!--MSG-->
@@ -63,20 +60,21 @@
     MESSAGE APPEARS HERE...
     </div>
 
-<!--viewbox-->      
+<!--VIEW BOX-->      
     <div id='viewBox'style="position:absolute;display:none;font-size:3vw;background-color:black;border:solid;border-color:black;overflow:hidden;left:0vw;right:0vw; top:0vw; bottom:0vw; z-index:450;">
         <div id ='picFrame' style='position:absolute;display:block;border:none;left:0%; top:0%; height:85%; width:100%;'>
             <img id='galleryPic' style='position:absolute;display:block;left:0%;height:100%;width:100%;bottom:0%'>
         </div>                                                                                                                                                                                
         <div id='picCount'style="position:absolute;line-height:50%;background-color:black;display:block;font-size:10vh;opacity:1;;font-weight:bold;font-size:4vh; right:1%;top:1%;">1/7</div>
-        <div id='picLeft' onclick="gallery(-1)" style="position:absolute;line-height:50%;background-color:grey;display:none;font-size:10vh;opacity:0.9;display:none;font-weight:bold;font-size:8vh; left:1%;top:47%;"><</div>
-        <div id='picRight' onclick="gallery(+1)"style="position:absolute;line-height:50%;background-color:grey;display:none;font-size:10vh;opacity:0.9;display:none;font-weight:bold;font-size:8vh;right:1%;top:47%;">></div>
+        <div id='picLeft' onclick="gallery(-1)" style="position:absolute;line-height:50%;color:red;background-color:yellow;display:none;font-size:10vh;opacity:1;display:none;font-weight:bold;font-size:8vh; left:1%;top:47%;"><</div>
+        <div id='picRight' onclick="gallery(+1)"style="position:absolute;line-height:50%;color:red;background-color:yellow;display:none;font-size:10vh;opacity:1;display:none;font-weight:bold;font-size:8vh;right:1%;top:47%;">></div>
         <div id='galleryTxt' onclick="aspect()" style='position:absolute;color:white; line-height:150%;border:none;left:0%; top:85%;left:10%;height:10%;width:80%;'>
             How I see the 'Virtual' Band
         </div>
-       
     </div>
 </div>
+
+
 <script language:javascript>
 //GLOBAL VARIABLES===============================================
 var FULLscreen=false
@@ -113,26 +111,6 @@ var ARRgallery = "0,1,2,3,4,5".split(',')
  viewBox 500
  */
 //BOOT=============================================================
-
-
-function tracksView(){
-    dis('listenList')
-    if (document.getElementById('listenList').style.display=='block') {
-        document.getElementById('playlistButton').src='Data/pointerUp.png';
-    }else{
-        document.getElementById('playlistButton').src='Data/pointerDown.png';
-    }
-}
-
-function playTrack(track,num) {
-    document.getElementById('songData').innerHTML = LISTENarray[num];
-    TRACK = track;
-    tracksView();
-    document.getElementById('Audio1').src = 'Data/' +track+ '.mp3';
-    document.getElementById('Audio1').play();
-    document.getElementById('songTitle').innerHTML=track;
-}
-
 window.onload = function() {
     BANDstring = fileDownload('Data/bandString.txt');
     ABOUTstring = fileDownload('Data/aboutString.txt');
@@ -152,6 +130,65 @@ window.onload = function() {
     fades('hdr', 0.01, 10, 'msg|menu|iconA')
 }
 
+//AUDIO=============================================================
+function trackPause(){
+     if (document.getElementById('Audio1').currentTime==document.getElementById('Audio1').duration) {
+        trackReset()
+    }
+    document.getElementById('Audio1').pause()  
+    document.getElementById('pauseButton').style.display='none'
+    document.getElementById('playButton').style.display='block'    
+}
+
+function trackPlay(){
+
+    document.getElementById("Audio1").onended = function() {
+        trackReset();
+        }
+    if (document.getElementById('Audio1').currentTime==document.getElementById('Audio1').duration) {
+        trackReset()
+    }
+    document.getElementById('Audio1').play()  
+    document.getElementById('pauseButton').style.display='block'
+    document.getElementById('playButton').style.display='none'
+    document.getElementById('Audio1').addEventListener('Audio', loadFile, false)
+}
+
+function trackReset(){
+    document.getElementById('Audio1').pause()
+    document.getElementById('Audio1').currentTime=0
+    document.getElementById('pauseButton').style.display='none'
+    document.getElementById('playButton').style.display='block'    
+}
+
+function playTrack(track,num) {
+    TRACK = track;
+    document.getElementById("Audio1").onended = function() {
+        trackReset();
+        }
+    document.getElementById('Audio1').style.display='block'
+    document.getElementById('songTitle').innerHTML=track;
+    document.getElementById('songData').innerHTML = LISTENarray[num];
+    document.getElementById('Audio1').src = 'Data/'+TRACK+'.mp3';
+    document.getElementById('listenList').style.display='none';
+    document.getElementById('playlistButton').innerHTML='LIST';
+    document.getElementById('Audio1').play();
+    document.getElementById('Audio1').style.display.block;
+    document.getElementById('pauseButton').style.display='block';
+    document.getElementById('resetButton').style.display='block';
+}
+
+function tracksView(){
+    dis('listenList')
+    alert
+    if (document.getElementById('listenList').style.display=='block') {
+       document.getElementById('playlistButton').innerHTML='INFO';
+    }else{
+        document.getElementById('playlistButton').innerHTML='LIST';    
+    }
+
+}
+
 function msg(str, id) {
     MODE = 'STD';
     var i;
@@ -161,11 +198,11 @@ function msg(str, id) {
     document.getElementById('viewBox').style.display = 'none';
     for (i = 0; i <= 8; i++) {
         if (id == i) {
+            document.getElementById(i).style.color = 'white';
+            document.getElementById(i).style.backgroundColor = 'green';
+        } else {
             document.getElementById(i).style.color = 'red';
             document.getElementById(i).style.backgroundColor = 'yellow';
-        } else {
-            document.getElementById(i).style.color = 'white';
-            document.getElementById(i).style.backgroundColor = 'transparent';
         }
     }
     if (id == 8) {
@@ -197,8 +234,8 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         shapeShift(6, '34%', '-', '75%', '-', '4vw', '32%', '4vw');
         shapeShift(7, '67%', '-', '25%', '-', '4vw', '32%', '4vw');
         shapeShift(8, '67%', '-', '50%', '-', '4vw', '32%', '4vw');
-        shapeShift(9, '-', '0%', '75%', '-', '4vw', '', '4vw');
-        shapeShift(10, '67%', '-', '75%', '-', '25%', '25%', '4vw');
+        shapeShift('sizeScreen', '-', '0%', '94%', '-', '6%', '-', '2.5vw');
+        //shapeShift(10, '67%', '-', '75%', '-', '25%', '25%', '4vw');
         if (MODE == 'STD') {
             shapeShift('iconA', '' - '%', '-', '2%', '-', '-', '10vw', '-')
         } else {
@@ -222,8 +259,8 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         shapeShift(6, '2%', '-', '60%', '-', '2.5vw', '100%', '2.5vw');
         shapeShift(7, '2%', '-', '70%', '-', '2.5vw', '100%', '2.5vw');
         shapeShift(8, '2%', '-', '80%', '-', '2.5vw', '100%', '2.5vw');
-        shapeShift(9, '-', '0%', '90%', '-', '2.5vw', '-', '2.5vw');
-        shapeShift(10, '0%', '-', '90%', '-', '10%', '60%', '2.5vw');
+        shapeShift('sizeScreen', '-', '0%', '90%', '-', '10%', '-', '2.5vw');
+        //shapeShift(10, '0%', '-', '90%', '-', '10%', '60%', '2.5vw');
         if (MODE == 'STD') {
             shapeShift('iconA', '0%', '-', '2%', '-', '-', '20vw', '-')
         } else {
@@ -367,12 +404,12 @@ function admin() {
 function fullScreen() {
     if (FULLscreen == false) {
         launchIntoFullscreen(document.documentElement);
-        document.getElementById('9').src = 'Data/blackExitFullScreen.png';
+        document.getElementById('sizeScreen').src = 'Data/yellowExitFullScreen.png';
         FULLscreen = true
     } else {
         exitFullscreen();
         FULLscreen = false
-        document.getElementById('9').src = 'Data/blackEnterFullScreen.png';
+        document.getElementById('sizeScreen').src = 'Data/yellowEnterFullScreen.png';
     }
 }
 
