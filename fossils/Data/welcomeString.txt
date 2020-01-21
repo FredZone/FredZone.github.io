@@ -2,10 +2,8 @@
 <X5>WELCOME TO MY WEBSITE</X5>
 <br>Its a 'hand-built' thing...
 <br>So it can be a little 'glitchey'
-<br>(and, I keep messing with it...)
 <br>------------------------------------
 <br>Available Controls are <a onclick="alert('Available Controls are RED on YELLOW')" style='color:red; background-color:yellow;'>
 <br>RED on YELLOW</a>
-<br><br>Clicking this guy ALWAYS brings you back here,
 <br><img src='Data/player.png'style="position:relative;width:15%">
 </div>
