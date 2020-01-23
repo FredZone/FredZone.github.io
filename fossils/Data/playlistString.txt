@@ -8,7 +8,7 @@
         <br><img src='Data/transparent.png' style='height:5vw;'>You Are My Sunshine
         <br><a onclick="loadTrack('Pancho And Lefty'),trackPlay()"><img src='Data/yellowSpeaker.png' style='height:5vw;'> Pancho And Lefty<img src='Data/yellowSpeaker.png' style='height:5vw;'> </a>
         <br><img src='Data/transparent.png' style='height:5vw;'>Margaritaville
-        <br><a onclick="loadTrack('When the Roses Bloom Again'),trackPlay()"><img src='Data/yellowSpeaker.png' style='height:5vw;'> When the Roses Bloom Again<img src='Data/yellowSpeaker.png' style='height:5vw;'> </a>
+        <br><a onclick="loadTrack('When The Roses Bloom Again'),trackPlay()"><img src='Data/yellowSpeaker.png' style='height:5vw;'> When The Roses Bloom Again<img src='Data/yellowSpeaker.png' style='height:5vw;'> </a>
         <br><img src='Data/transparent.png' style='height:5vw;'>Dream
         <br><a onclick="loadTrack('The Cape'),trackPlay()"><img src='Data/yellowSpeaker.png' style='height:5vw;'>The Cape<img src='Data/yellowSpeaker.png' style='height:5vw;'> </a>
         <br><img src='Data/transparent.png' style='height:5vw;'>Little Red Riding Hood
