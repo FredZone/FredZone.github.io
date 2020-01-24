@@ -1,48 +1,48 @@
-<div style="text-align:center;line-height:120%;font-family:Courrier New;font-size:6vw; font-weight: bold;">
+<div style="text-align:center;line-height:120%;font-family:Courrier New;font-size:4vw; font-weight: bold;">
    MY PLAYLIST
 </div>
-    <div style="text-align:center;line-height:150%;font-family:Courrier New;font-size:4vw;font-weight: bold;">
-        <a onclick="loadTrack('Abilene'),trackPlay()"><img src='Data/yellowSpeaker.png' style='height:5vw;'> Abilene<img src='Data/yellowSpeaker.png' style='height:5vw;'> </a>
-        <br><img src='Data/transparent.png' style='height:5vw;'>From Four until Late
-        <br><a onclick="loadTrack('Sea Of Heartbreak'),trackPlay()"><img src='Data/yellowSpeaker.png' style='height:5vw;'> Sea Of Heartbreak<img src='Data/yellowSpeaker.png' style='height:5vw;'> </a>
-        <br><img src='Data/transparent.png' style='height:5vw;'>You Are My Sunshine
-        <br><a onclick="loadTrack('Pancho And Lefty'),trackPlay()"><img src='Data/yellowSpeaker.png' style='height:5vw;'> Pancho And Lefty<img src='Data/yellowSpeaker.png' style='height:5vw;'> </a>
-        <br><img src='Data/transparent.png' style='height:5vw;'>Margaritaville
-        <br><a onclick="loadTrack('When The Roses Bloom Again'),trackPlay()"><img src='Data/yellowSpeaker.png' style='height:5vw;'> When The Roses Bloom Again<img src='Data/yellowSpeaker.png' style='height:5vw;'> </a>
-        <br><img src='Data/transparent.png' style='height:5vw;'>Dream
-        <br><a onclick="loadTrack('The Cape'),trackPlay()"><img src='Data/yellowSpeaker.png' style='height:5vw;'>The Cape<img src='Data/yellowSpeaker.png' style='height:5vw;'> </a>
-        <br><img src='Data/transparent.png' style='height:5vw;'>Little Red Riding Hood
-        <br><img src='Data/transparent.png' style='height:5vw;'>Walk Right Back
-        <br><img src='Data/transparent.png' style='height:5vw;'>Long Black Veil
-        <br><img src='Data/transparent.png' style='height:5vw;'>All The Lonely People
-        <br><a onclick="loadTrack('Jamaica Farewell'),trackPlay()"><img src='Data/yellowSpeaker.png' style='height:5vw;'> Jamaica Farewell<img src='Data/yellowSpeaker.png' style='height:5vw;'> </a>
-        <br><img src='Data/transparent.png' style='height:5vw;'>Singing The Blues
-        <br><img src='Data/transparent.png' style='height:5vw;'>Stand By Me
-        <br><img src='Data/transparent.png' style='height:5vw;'>Blue Eyes Crying In The Rain
-        <br><img src='Data/transparent.png' style='height:5vw;'>Take It Easy
-        <br><img src='Data/transparent.png' style='height:5vw;'>Folsom Prison Blues
-        <br><img src='Data/transparent.png' style='height:5vw;'>Some Days Are Diamond
-        <br><img src='Data/transparent.png' style='height:5vw;'>Lost Highway
-        <br><img src='Data/transparent.png' style='height:5vw;'>Wagon Wheel
-        <br><img src='Data/transparent.png' style='height:5vw;'>Stray Cat Strut
-        <br><img src='Data/transparent.png' style='height:5vw;'>Put Another Log On The Fire
-        <br><img src='Data/transparent.png' style='height:5vw;'>Break My Mind
-        <br><img src='Data/transparent.png' style='height:5vw;'>Fire Lake
-        <br><img src='Data/transparent.png' style='height:5vw;'>Teach Your Children
-        <br><img src='Data/transparent.png' style='height:5vw;'>Happy Trails
+    <div style="text-align:center;line-height:150%;font-family:Courrier New;font-size:3vw;font-weight: bold;">
+        <div onclick="loadTrack('Abilene'),trackPlay()"style='background-color:yellow;width:100%;height:4vw'><img src='Data/yellowSpeaker.png' style='position:absolute;height:4vw;left:4vw'>Abilene</div>
+        <img src='Data/transparent.png' style='height:4vw;'>From Four until Late
+        <div onclick="loadTrack('Sea Of Heartbreak'),trackPlay()"style='background-color:yellow;width:100%;height:4vw'><img src='Data/yellowSpeaker.png' style='position:absolute;height:4vw;left:4vw'>Sea Of Heartbreak</div>
+        <img src='Data/transparent.png' style='height:4vw;'>You Are My Sunshine
+        <div onclick="loadTrack('Pancho And Lefty'),trackPlay()"style='background-color:yellow;width:100%;height:4vw'><img src='Data/yellowSpeaker.png' style='position:absolute;height:4vw;left:4vw'>Sea Of Heartbreak</div>
+        <img src='Data/transparent.png' style='height:4vw;'>Margaritaville
+        <div onclick="loadTrack('When The Roses Bloom Again'),trackPlay()"style='background-color:yellow;width:100%;height:4vw'><img src='Data/yellowSpeaker.png' style='position:absolute;height:4vw;left:4vw'>When The Roses Bloom Again</div>
+        <img src='Data/transparent.png' style='height:4vw;'>Dream
+        <div onclick="loadTrack('The Cape'),trackPlay()"style='background-color:yellow;width:100%;height:4vw'><img src='Data/yellowSpeaker.png' style='position:absolute;height:4vw;left:4vw'>The Cape</div>
+        <img src='Data/transparent.png' style='height:4vw;'>Little Red Riding Hood
+        <br><img src='Data/transparent.png' style='height:4vw;'>Walk Right Back
+        <br><img src='Data/transparent.png' style='height:4vw;'>Long Black Veil
+        <br><img src='Data/transparent.png' style='height:4vw;'>All The Lonely People
+        <div onclick="loadTrack('Jamaica Farewell'),trackPlay()"style='background-color:yellow;width:100%;height:4vw'><img src='Data/yellowSpeaker.png' style='position:absolute;height:4vw;left:4vw'>Jamaica Farewell</div>
+        <img src='Data/transparent.png' style='height:4vw;'>Singing The Blues
+        <br><img src='Data/transparent.png' style='height:4vw;'>Stand By Me
+        <br><img src='Data/transparent.png' style='height:4vw;'>Blue Eyes Crying In The Rain
+        <br><img src='Data/transparent.png' style='height:4vw;'>Take It Easy
+        <br><img src='Data/transparent.png' style='height:4vw;'>Folsom Prison Blues
+        <br><img src='Data/transparent.png' style='height:4vw;'>Some Days Are Diamond
+        <br><img src='Data/transparent.png' style='height:4vw;'>Lost Highway
+        <br><img src='Data/transparent.png' style='height:4vw;'>Wagon Wheel
+        <br><img src='Data/transparent.png' style='height:4vw;'>Stray Cat Strut
+        <br><img src='Data/transparent.png' style='height:4vw;'>Put Another Log On The Fire
+        <br><img src='Data/transparent.png' style='height:4vw;'>Break My Mind
+        <br><img src='Data/transparent.png' style='height:4vw;'>Fire Lake
+        <br><img src='Data/transparent.png' style='height:4vw;'>Teach Your Children
+        <br><img src='Data/transparent.png' style='height:4vw;'>Happy Trails
         <br><X5>-----Extras-----</X5>
-        <br><img src='Data/transparent.png' style='height:5vw;'>Thats Gonna Leave A Mark
-        <br><img src='Data/transparent.png' style='height:5vw;'>Always on My Mind
-        <br><img src='Data/transparent.png' style='height:5vw;'>Cherokee Fiddle
-        <br><img src='Data/transparent.png' style='height:5vw;'>One Toke Over The Line
-        <br><img src='Data/transparent.png' style='height:5vw;'>Dead Skunk
-        <br><img src='Data/transparent.png' style='height:5vw;'>This Aint My First Rodeo
-        <br><img src='Data/transparent.png' style='height:5vw;'>Needles and Pins
-        <br><img src='Data/transparent.png' style='height:5vw;'>Angel from Montgomery
-        <br><img src='Data/transparent.png' style='height:5vw;'>Rumble
-        <br><img src='Data/transparent.png' style='height:5vw;'>Amarillo By Morning
-        <br><img src='Data/transparent.png' style='height:5vw;'>Set Em Up Joe
-        <br><img src='Data/transparent.png' style='height:5vw;'>Rock Me On The Water
-        <br><img src='Data/transparent.png' style='height:5vw;'>Blue Skies
-        <br><img src='Data/transparent.png' style='height:5vw;'>The Wish
+        <br><img src='Data/transparent.png' style='height:4vw;'>Thats Gonna Leave A Mark
+        <br><img src='Data/transparent.png' style='height:4vw;'>Always on My Mind
+        <br><img src='Data/transparent.png' style='height:4vw;'>Cherokee Fiddle
+        <br><img src='Data/transparent.png' style='height:4vw;'>One Toke Over The Line
+        <br><img src='Data/transparent.png' style='height:4vw;'>Dead Skunk
+        <br><img src='Data/transparent.png' style='height:4vw;'>This Aint My First Rodeo
+        <br><img src='Data/transparent.png' style='height:4vw;'>Needles and Pins
+        <br><img src='Data/transparent.png' style='height:4vw;'>Angel from Montgomery
+        <br><img src='Data/transparent.png' style='height:4vw;'>Rumble
+        <br><img src='Data/transparent.png' style='height:4vw;'>Amarillo By Morning
+        <br><img src='Data/transparent.png' style='height:4vw;'>Set Em Up Joe
+        <br><img src='Data/transparent.png' style='height:4vw;'>Rock Me On The Water
+        <br><img src='Data/transparent.png' style='height:4vw;'>Blue Skies
+        <br><img src='Data/transparent.png' style='height:4vw;'>The Wish
         </div>

@@ -46,7 +46,6 @@
         <img title='Administrators Screen (password Required!)' id='admin' src='Data/transparent.png' onclick="admin()" style="position:absolute;display:block;right:0%; top:0%; height:100%;width:100%">
         <img title='Stop the Track' id='playButton' src='Data/yellowPlay.png' onclick="trackPlay()" style="position:absolute;display:none;right:0%; top:0%; height:100%;z-index:600">
         <img title='Stop the Track' id='pauseButton' src='Data/yellowPause.png' onclick="trackPause()" style="position:absolute;display:none;right:0%; top:0%; height:100%;z-index:700">
-        
     </div>
 
 <!--HDR-->    
@@ -98,8 +97,11 @@
         <div id='4'onclick="config(SCHEDULEstring,this.id)"style="position:absolute;"> SCHEDULE</div>            
         <div id='5'onclick="config(WHYstring,this.id)"style="position:absolute; border:none;"> GHOST BAND</div>
         <div id='6'onclick="config(BANDstring,this.id)"style="position:absolute; border:none;"> GADGETS</div>
-        <div id='7'onclick="config('LISTEN MODE',this.id)" style="position:absolute;display:block; border:none;"> LISTEN</div>
-        <div id='8'onclick="config('GALLERY',this.id)" style="position:absolute;display:block;border:none;"> GALLERY</div>
+        <div id='7'onclick="config('GALLERY',this.id)" style="position:absolute;display:block;border:none;"> GALLERY</div>
+        <div id='8'onclick="config('LISTEN MODE',this.id)" style="position:absolute;display:none; border:none;"> LISTEN</div>
+        
+        
+        
         <img id='sizeScreen' title='Toggle Full Screen!'onclick="fullScreen()" src="Data/yellowEnterFullScreen.png" style="position:fixed;right:0%;bottom:0%;height:8%">
     </div>
 
@@ -109,10 +111,17 @@
             <img id='galleryPic' style='position:absolute;display:block;left:0%;height:100%;width:100%;bottom:0%'>
         </div>                                                                                                                                                                                
         <div id='picCount'style="position:absolute;line-height:50%;background-color:black;display:block;font-size:10vh;opacity:1;;font-weight:bold;font-size:4vh; left:1%;top:1%;">--</div>
-        <div id='picLeft' onclick="gallery(-1)" style="position:absolute;line-height:50%;color:red;background-color:yellow;display:none;font-size:10vh;opacity:1;display:none;font-weight:bold;font-size:8vh; left:1%;top:47%;"><</div>
-        <div id='picRight' onclick="gallery(+1)"style="position:absolute;line-height:50%;color:red;background-color:yellow;display:none;font-size:10vh;opacity:1;display:none;font-weight:bold;font-size:8vh;right:1%;top:47%;">></div>
+        <div id='picLeft' onclick="changeGalleryMode('Manual'),gallery(-1)" style="position:absolute;line-height:50%;color:red;background-color:yellow;display:none;font-size:10vh;opacity:1;display:none;font-weight:bold;font-size:8vh; left:1%;top:47%;"><</div>
+        <div id='picRight' onclick="changeGalleryMode('Manual'),gallery(+1)"style="position:absolute;line-height:50%;color:red;background-color:yellow;display:none;font-size:10vh;opacity:1;display:none;font-weight:bold;font-size:8vh;right:1%;top:47%;">></div>
         <div id='galleryTxt' onclick="aspect()" style='position:absolute;color:white; line-height:150%;border:none;left:0%; top:85%;left:10%;height:10%;width:80%;'>
            Text Should Appear Here...
+        </div>
+ <!--   
+<div  id ="soundOO" alt = "SOUND" onclick="volOnOff()" style="position:absolute;background-size:100% 100%;border:solid; border-color:black; background-image: url('../../Icons/on.png');width:100%; bottom:0%; height:15%;">VOL</div>
+-->
+
+        <div id='am' onclick="changeGalleryMode()"style="font-size: 3vh;line-height:150%;background-color:yellow;color:red;position:absolute;right:1%;bottom:1vh;height:4vh; background-size:100% 100%;border:solid; border-color:red; background-image: url('Data/resetSpinner.gif')">
+            Auto
         </div>
     </div>
 </div>

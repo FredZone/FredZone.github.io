@@ -25,6 +25,41 @@ var MODE='STD'
 var ARRgallery = "0,1,2,3,4,5".split(',')
 var VOL=0.5
 var LOOPtype='all'
+var GALLERYmode='Auto'
+
+
+function rollPics(){
+    TIMEOUTgallery = setTimeout(function() {
+    gallery(1);
+    //alert(PIC);
+    if (PIC==6){
+        PIC=-1
+    }
+    rollPics()
+    }, 10000);
+}
+
+function changeGalleryMode(x){ 
+    if (x==undefined) {
+        if (GALLERYmode=='Auto'){
+            x='Manual'
+        }else{x='Auto'}
+    }
+    //alert(GALLERYmode)
+    GALLERYmode=x
+    if (GALLERYmode=='Auto') {
+        document.getElementById('am').innerHTML='Auto';
+        //document.getElementById('am').style.backgroundImage.url='Data/resetSpinner.gif'
+        document.getElementById('am').style.backgroundImage="url('Data/resetSpinner.gif')"
+        rollPics();
+    }else{
+        clearTimeout(TIMEOUTgallery)
+        GALLERYmode='Manual'
+        //document.body.style.backgroundImage = "url('img_tree.png')";
+        document.getElementById('am').style.backgroundImage="url('Data/transparent.png')"
+        document.getElementById('am').innerHTML='Manual';
+    }
+}
 
 //^BOOT=============================================================
 window.onload = function() {
@@ -59,12 +94,15 @@ document.getElementById('msg').innerHTML = msg;
             document.getElementById(i).style.color = 'red';
             document.getElementById(i).style.backgroundColor = 'yellow';
         }
+    
+    clearTimeout(TIMEOUTgallery)
     }
-    if (id == 8) {
+    if (id == 7) {
         MODE = "GALLERY";
         dis('viewBox','block')
         gallery()
-    }else if(id == 7) {
+        rollPics()
+    }else if(id == 8) {
         MODE = "LISTEN"
         listen()
         realign()
@@ -85,6 +123,7 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         } else if (MODE == 'GALLERY') {
             dis('viewBox', 'block')
             dis('playerA', 'none')
+            shapeShift('msg', '1vw', '1vw', '10vw', '28vh', '-', '-', '3vh')
         } else {
             shapeShift('msg', '1vw', '1vw', '10vw', '28vh', '-', '-', '3vh')
             dis('viewBox', 'none')
@@ -113,6 +152,7 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         } else if (MODE == 'GALLERY') {
             dis('viewBox', 'block')
             dis('playerA', 'none')
+            shapeShift('msg', '1vw', '20vw', '7vw', '1vh', '-', '-', '3vh')
         } else {
             shapeShift('msg', '1vw', '20vw', '7vw', '1vh', '-', '-', '3vh')
             dis('viewBox', 'none')
@@ -134,6 +174,7 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         shapeShift('sizeScreen', '-', '1%', '91%', '-', '8%', '-', '2.5vw');
     }
     picAlign()
+    if (LOCKED==false) {document.getElementById('8').style.display='block'}
 }
 
 function shapeShift(id, lf, rt, tp, bm, ht, wt, fs) {
@@ -190,6 +231,9 @@ function loadGallery() {
 function gallery(n) {
     if (n == undefined) {n=0}
     PIC=PIC+n
+    if (PIC>6) {
+     PIC=0
+    }
     document.getElementById('galleryPic').style.display = 'block'
     PICpath = "Data/"
     document.getElementById('viewBox').style.display = 'block';
@@ -358,6 +402,7 @@ function fades(id, dir, ms, ids) {
 
 function admin() {
     if (LOCKED == true) {
+        document.getElementById(8).style.display='none'
         var f = prompt('ADMINISTRATORS PASSWORD?');
         if (f == null) {
             return;
@@ -370,7 +415,9 @@ function admin() {
             document.getElementById('admin').src = 'Data/underConstruction.png'
         }
     } else {
+       document.getElementById(8).style.display='block'
         config(ADMINstring)
+        realign()
     }
 }
 
