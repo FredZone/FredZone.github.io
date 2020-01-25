@@ -17,7 +17,8 @@ var TESTstring = 'This is the test string. And it looks like this... Here is A B
 var TIMEOUTfade
 var TIMEOUTgallery;
 var TRACK='Abilene'
-var PICcount=7;
+var TRACKindex=undefined
+var PICcount=9;
 var PIC=0
 var PICpath
 var PICaspect
@@ -25,39 +26,40 @@ var MODE='STD'
 var ARRgallery = "0,1,2,3,4,5".split(',')
 var VOL=0.5
 var LOOPtype='all'
-var GALLERYmode='Auto'
+var GALLERYmode='man'
 
 
 function rollPics(){
+    clearTimeout(TIMEOUTgallery)
     TIMEOUTgallery = setTimeout(function() {
-    gallery(1);
-    //alert(PIC);
-    if (PIC==6){
-        PIC=-1
-    }
-    rollPics()
-    }, 10000);
+        gallery(1);
+        if (PIC==PICcount-1){
+            changeGalleryMode('man')
+            return
+        }
+        rollPics()
+    },6000);
 }
 
 function changeGalleryMode(x){ 
+    if (PIC==PICcount-1) {
+        x='man'
+        }
     if (x==undefined) {
-        if (GALLERYmode=='Auto'){
-            x='Manual'
-        }else{x='Auto'}
+        if (GALLERYmode=='auto'){
+            x='man'
+        }else{x='auto'}
     }
-    //alert(GALLERYmode)
     GALLERYmode=x
-    if (GALLERYmode=='Auto') {
-        document.getElementById('am').innerHTML='Auto';
-        //document.getElementById('am').style.backgroundImage.url='Data/resetSpinner.gif'
-        document.getElementById('am').style.backgroundImage="url('Data/resetSpinner.gif')"
+    if (GALLERYmode=='auto') {
+        gallery(1)
+        clearTimeout(TIMEOUTgallery)
+        document.getElementById('amIcon').src='Data/resetSpinner.gif';
         rollPics();
     }else{
         clearTimeout(TIMEOUTgallery)
-        GALLERYmode='Manual'
-        //document.body.style.backgroundImage = "url('img_tree.png')";
-        document.getElementById('am').style.backgroundImage="url('Data/transparent.png')"
-        document.getElementById('am').innerHTML='Manual';
+        GALLERYmode='man'
+        document.getElementById('amIcon').src='Data/transparent.png';
     }
 }
 
@@ -71,7 +73,6 @@ window.onload = function() {
     WELCOMEstring = fileDownload('Data/welcomeString.txt');
     CONTACTstring = fileDownload('Data/contactString.txt');
     LISTENarray = fileDownload('Data/listenArray.txt').split('|');
-    loadGallery();
     document.getElementById('Audio1').src = 'Data/Abilene.mp3';
     document.getElementById("Audio1").volume = 0.5
     VOL = 0.5
@@ -98,10 +99,12 @@ document.getElementById('msg').innerHTML = msg;
     clearTimeout(TIMEOUTgallery)
     }
     if (id == 7) {
+        loadGallery();
         MODE = "GALLERY";
         dis('viewBox','block')
+        changeGalleryMode('man')
         gallery()
-        rollPics()
+        //rollPics()
     }else if(id == 8) {
         MODE = "LISTEN"
         listen()
@@ -113,7 +116,7 @@ document.getElementById('msg').innerHTML = msg;
 }
 
 function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-width-font)
-    if (window.innerHeight / window.innerWidth > 0.8) { //TALL
+    if (window.innerHeight / window.innerWidth > 1) { //TALL  0.8 worked
         //l,r,t,b,h,w,f
         if (MODE == 'LISTEN') {
             dis('playerA', 'block')
@@ -130,8 +133,8 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
             dis('playerA', 'none')
         }
         shapeShift('hdr', '0%', '-', '0%', '-', '10vw', '100%', '3.5vw');
-        shapeShift('viewBox', '0%', '0%', '5', '28%', '-', '-', '3vw');
-        shapeShift('floater', '-', '0%', '0%', '-', '7vw', '-', '7vw');
+        shapeShift('viewBox', '0%', '0%', '5', '28%', '-', '-', '4vw');
+        shapeShift('floater', '-', '0%', '0%', '-', '10vw', '-', '7vw');
         shapeShift('menu', '1vw', '1vw', '72vh', '1vw', '-', '-', '3vw');
         shapeShift(0, '34%', '-', '0%', '-', '4vw', '32%', '4vw');
         shapeShift(1, '1%', '-', '25%', '-', '4vw', '32%', '4vw');
@@ -160,7 +163,7 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         }
         shapeShift('hdr', '0%', '-', '0%', '-', '7vw', '100%', '3.5vw');
         shapeShift('viewBox', '-', '20%', '-', '0%', '-', '-', '2.5vw');
-        shapeShift('floater', '-', '0%', '0%', '-', '6vw', '-', '3vw');
+        shapeShift('floater', '-', '0%', '0%', '-', '7vw', '-', '3vw');
         shapeShift('menu', '80vw', '1vw', '7vw', '1vw', '-', '-', '1.6vw');
         shapeShift(0, '2%', '-', '0%', '-', '2.5vw', '100%', '2.5vw');
         shapeShift(1, '2%', '-', '10%', '-', '2.5vw', '100%', '2.5vw');
@@ -216,29 +219,31 @@ function shapeShift(id, lf, rt, tp, bm, ht, wt, fs) {
 }
 //^Gallery=============================================================
 function loadGallery() {
-    ARRgallery = "0,1,2,3,4,5,6".split(',')
-    ARRgallery[0] = "1968? Chuck, Bill, yours truly and Jay. Playing as 'JAM' in Butte Montana|firstBand.jpg|1219|810";
-    ARRgallery[1] = "Me, 50 years ago playing bass at a Montana State University Spring Event...|bass.png|1316|1940";
-    ARRgallery[2] = "Thats Ron (on the right), who got me back into playing guitar after a 45 year hiatus...|ron.jpg|1051|788";
-    ARRgallery[3] = "At a Newcomers Christmas party with my buddy, Pat, who passed away in November of 2019|pat.jpg|1051|855";
-    ARRgallery[4] = "My friends, Stan, Bill, John, Sally and I playing for the fun of it...|barn.jpg|2754|1660";
-    ARRgallery[5] = "At St Catherine's, one of my current monthly gigs...|fred.jpg|1641|3919";
-    ARRgallery[6] = "How I imagine my 'virtual' backup band...|folkBand.png|581|575";
+    ARRgallery = "0,1,2,3,4,5,6,7,8".split(',')
+    ARRgallery[0] = "<a onclick='changeGalleryMode()'><X10>Auto</X10></a> for the 60 second Fred and the Fossils Story<br>Or set your pace with the<a onclick='gallery(+1)'> <X10>&lt</X10> <X10>&gt</X10></a> arrows.|sepia.png|947|897";;
+    ARRgallery[1] = "1968; My First Band was'JAM'; Shown in Twin Bridges Montana? - Chuck, Bill, yours truly and Jay.|firstBand.jpg|1219|810";
+    ARRgallery[2] = "1969: Playing bass at a Montana State University Spring Event|bass.png|1316|1940";
+    ARRgallery[3] = "1969: to 2010; I just played with friends and family.|backyard.png|465|661";
+    ARRgallery[4] = "2010: Ron (on the right) got me back into performing (After a 40 year hiatus)|ron.jpg|1051|788";
+    ARRgallery[5] = "2016: I played with my buddy, Pat, who passed away in November of 2019... (Here at a Newcomers Christmas Party)|pat.jpg|1051|855";
+    ARRgallery[6] = "2019>: Now I play Solo St Catherine's and Wesley Woods Senior Care facilities in Waco Texas|fred.jpg|1641|3919";
+    ARRgallery[7] = "My 'virtual' BACKUP BAND consists of computer generated tracks and electronic harmony.|theFossils.png|1209|1007";
+    ARRgallery[8] = "Additionaly, I play with my friends, Stan, Bill, John, Sally for the fun of it...|barn.jpg|2754|1660";
+    ARRgallery[9] = "THATS ALL FOLKS!|thatsAllFolks.png|581|575";
     PICcount = ARRgallery.length
     PIC=0
 }
-
+ 
 function gallery(n) {
+    document.getElementById('galleryPic').style.display = 'n'
+    document.getElementById('galleryPic').src = 'Data/black.png'
     if (n == undefined) {n=0}
     PIC=PIC+n
-    if (PIC>6) {
-     PIC=0
-    }
+    var path=undefined
     document.getElementById('galleryPic').style.display = 'block'
     PICpath = "Data/"
     document.getElementById('viewBox').style.display = 'block';
     if (PIC == 0) {
-        //alert ('FIRST PIC')
         document.getElementById('picLeft').style.display = 'none'
     } else {
         document.getElementById('picLeft').style.display = 'block'
@@ -248,15 +253,17 @@ function gallery(n) {
     } else {
         document.getElementById('picRight').style.display = 'block'
     }
-    document.getElementById('galleryPic').src = PICpath + ARRgallery[PIC].split('|')[1]
+    path=PICpath + ARRgallery[PIC].split('|')[1];
+    //document.getElementById('galleryPic').src = PICpath + ARRgallery[PIC].split('|')[1]
     document.getElementById('viewBox').style.display = 'block' //hide msg div
     PICaspect = ARRgallery[PIC].split('|')[2] / ARRgallery[PIC].split('|')[3] //=w/h
     document.getElementById('galleryTxt').innerHTML = ARRgallery[PIC].split('|')[0];
     picAlign();
+    document.getElementById('galleryPic').src = path
     document.getElementById('picCount').innerHTML = (PIC+1)  + "/" + PICcount;
 }
 
-function picAlign() {
+function picAlign(path) {
     var frameAspect = document.getElementById('picFrame').clientWidth / document.getElementById('picFrame').clientHeight
     var factor = PICaspect / frameAspect
     if (factor < 1) {
@@ -270,7 +277,7 @@ function picAlign() {
         document.getElementById('galleryPic').style.left = "0%"
         document.getElementById('galleryPic').style.bottom = 50 * (1 - (1 / factor)) + "%"
     }
-    document.getElementById('galleryPic').style.display = 'block'
+
 }
 
 //^Audio=============================================================
@@ -279,26 +286,40 @@ function listen() {
     loadTrack(TRACK,true)
 }
 
-function loadTrack(track, info) {
-    var num = undefined;
+function loadTrack(track, info, idx) {
+    var oldGreen=undefined
+    if (TRACKindex!=undefined){
+        oldGreen='s'+TRACKindex ;
+    }
+    var newGreen='s'+idx;
+    
+    
+    //clear any green
     if (track == undefined) {
         track = TRACK
     } else {
         TRACK = track
     }
+    //set the selector...
     document.getElementById('tuneSelect').selectedValue = TRACK
-    num = document.getElementById('tuneSelect').selectedIndex
-
+    TRACKindex = document.getElementById('tuneSelect').selectedIndex
+if (idx!=undefined)TRACKindex = idx
     if (info == true) {
-        document.getElementById('msg').innerHTML = LISTENarray[num]
+        document.getElementById('msg').innerHTML = LISTENarray[TRACK]
+        document.getElementById('msg').innerHTML = LISTENarray[TRACKindex]
     }
-
+    //alert('LOADING '+TRACK)
     document.getElementById('Audio1').src = 'Data/' + TRACK + '.mp3';
     document.getElementById("Audio1").onended = function() {
         trackReset();
     }
+    //alert( "Blueing > "+ oldGreen )
+    if(oldGreen!=undefined){ document.getElementById(oldGreen).style.backgroundColor = 'lightgrey'}
+    //alert('GREENING '+newGreen)
+    document.getElementById(newGreen).style.backgroundColor = 'green'
     dis('pauseButton','none')
     dis('pauseButtonA','none')
+    dis('playing','none')
 }  
 
 
@@ -312,18 +333,25 @@ function trackPause() {
         trackReset()
     }
     document.getElementById('Audio1').pause()
-    document.getElementById('pauseButton').style.display = 'none'
-    document.getElementById('pauseButtonA').style.display = 'none'
+    dis('pauseButton','none')
+    dis('pauseButtonA','none')
+    dis('playing','none')
 }
 
 function trackPlay() {
+    dis('playing','block')
+    document.getElementById('Audio1').play()
+    dis('pauseButton','block')
+    dis('pauseButtonA','block')
+    dis('playButton','block')
+    //document.getElementById('playButton').style.display = 'block'
+
     document.getElementById("Audio1").onended = function() {
         trackEnd();
     }
-    document.getElementById('Audio1').play()
-    document.getElementById('pauseButtonA').style.display = 'block'
-    document.getElementById('pauseButton').style.display = 'block'
-    document.getElementById('playButton').style.display = 'block'
+
+    
+    
 }
 
 function trackReset() {
@@ -332,10 +360,12 @@ function trackReset() {
     document.getElementById('Audio1').currentTime = 0
     dis('pauseButton','none')
     dis('pauseButtonA','none')
+    dis('playing','none')
 }
 
 function trackEnd() {
     incTrack(1)
+    dis('playing','none')
     //trackPlay();
 }
 
