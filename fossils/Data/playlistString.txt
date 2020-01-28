@@ -1,5 +1,10 @@
 <div style="text-align:center;line-height:120%;font-family:Courrier New;font-size:4vw; font-weight: bold;">
-   MY PLAYLIST
+   <!-- -->
+    <a onclick ="document.getElementById('8').click,      document.getElementById(8).style.display='block',  config(ADMINstring), realign()">FOSSIL'S BiG PLAYLIST</a>
+   
+   <!--FOSSIL'S PLAYLIST-->
+   
+   -->
 </div>
     <div style="text-align:center;line-height:150%;font-family:Courrier New;font-size:3vw;font-weight: bold;">
         <div id='s0' onclick="loadTrack('Abilene',false,0),trackPlay()"style='background-color:yellow;width:100%;height:4vw'><img src='Data/yellowSpeaker.png' style='position:absolute;height:4vw;left:4vw'>Abilene</div>

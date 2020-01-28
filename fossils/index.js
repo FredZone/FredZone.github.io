@@ -1,5 +1,5 @@
 //GLOBAL VARIABLES===============================================
-var FULLscreen=false
+var FULLscreen=false;
 var LOCKED=true;
 var WELCOMEstring;
 var BANDstring;
@@ -9,25 +9,51 @@ var PLAYLISTstring;
 var WHYstring;
 var LISTEN=false;
 var LISTENstring;
-var LISTENarray
+var LISTENarray;
 var ADMINstring;
 var TEMPstring = null;
 var HELPstring = "Looking for help...tough";
 var TESTstring = 'This is the test string. And it looks like this... Here is A Break<br>Title<br>';
-var TIMEOUTfade
+var TIMEOUTfade;
 var TIMEOUTgallery;
-var TRACK='Abilene'
-var TRACKindex=undefined
+var TRACK='Abilene';
+var TRACKindex=undefined;
 var PICcount=9;
-var PIC=0
-var PICpath
-var PICaspect
-var MODE='STD'
-var ARRgallery = "0,1,2,3,4,5".split(',')
-var VOL=0.5
-var LOOPtype='all'
-var GALLERYmode='man'
+var PIC=0;
+var PICpath;
+var PICaspect;
+var MODE='STD';
+var ARRgallery = "0,1,2,3,4,5".split(',');
+var VOL=0.5;
+var LOOPtype='all';
+var GALLERYmode='man';
+var ARRcards;
+var TIMEOUTcards;
+var CARD=0;
+var STATE=1
 
+function playCards(state) {
+    clearTimeout(TIMEOUTcards)
+    if (document.getElementById('cards').style.display=='block') {
+            CARD = CARD + 1
+            if (CARD >= ARRcards.length) {
+                CARD = 0;
+            }
+            fade('cards', -0.1, 100) //code
+            TIMEOUTcards = setTimeout(function() {
+            playCards()
+        }, 1200);
+    } else {
+        document.getElementById('cards').style.opacity=0
+        document.getElementById('cards').style.display='block'
+        
+        document.getElementById('cards').innerHTML = ARRcards[CARD];
+        fade('cards', +0.1, 60)
+        TIMEOUTcards = setTimeout(function() {
+            playCards()
+        },7000);
+    }
+}
 
 function rollPics(){
     clearTimeout(TIMEOUTgallery)
@@ -76,6 +102,7 @@ window.onload = function() {
     document.getElementById('Audio1').src = 'Data/Abilene.mp3';
     document.getElementById("Audio1").volume = 0.5
     VOL = 0.5
+    ARRcards=fileDownload('Data/cardsString.txt').split('\n');
     config(WELCOMEstring, 0);
     dis('hdr','block')
     dis('msg','block')
@@ -95,7 +122,6 @@ document.getElementById('msg').innerHTML = msg;
             document.getElementById(i).style.color = 'red';
             document.getElementById(i).style.backgroundColor = 'yellow';
         }
-    
     clearTimeout(TIMEOUTgallery)
     }
     if (id == 7) {
@@ -104,10 +130,14 @@ document.getElementById('msg').innerHTML = msg;
         dis('viewBox','block')
         changeGalleryMode('man')
         gallery()
-        //rollPics()
     }else if(id == 8) {
         MODE = "LISTEN"
         listen()
+        realign()
+    }else if(id == 0) {
+        MODE = "WELCOME"
+        document.getElementById('cards').innerHTML=ARRcards[0]
+        playCards()
         realign()
     } else {
         MODE = 'STD';
@@ -127,13 +157,20 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
             dis('viewBox', 'block')
             dis('playerA', 'none')
             shapeShift('msg', '1vw', '1vw', '10vw', '28vh', '-', '-', '3vh')
+        } else if (MODE == 'WELCOME') {
+            dis('viewBox', 'none')
+            dis('playerA', 'none')
+shapeShift('iconA','1%','-','1%','-','-','24%','-')
+shapeShift('welText','-','1%','1%','-','74%','74%','3vh')
+shapeShift('cards','1%','-','85%','0%','-','98%','2vh')
+            shapeShift('msg', '1vw', '1vw', '10vw', '28vh', '-', '-', '3vh')        
         } else {
             shapeShift('msg', '1vw', '1vw', '10vw', '28vh', '-', '-', '3vh')
             dis('viewBox', 'none')
             dis('playerA', 'none')
         }
         shapeShift('hdr', '0%', '-', '0%', '-', '10vw', '100%', '3.5vw');
-        shapeShift('viewBox', '0%', '0%', '5', '28%', '-', '-', '4vw');
+        shapeShift('viewBox', '0%', '0%', '0%', '28%', '-', '-', '4vw');
         shapeShift('floater', '-', '0%', '0%', '-', '10vw', '-', '7vw');
         shapeShift('menu', '1vw', '1vw', '72vh', '1vw', '-', '-', '3vw');
         shapeShift(0, '34%', '-', '0%', '-', '4vw', '32%', '4vw');
@@ -145,7 +182,7 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         shapeShift(6, '34%', '-', '75%', '-', '4vw', '32%', '4vw');
         shapeShift(7, '67%', '-', '25%', '-', '4vw', '32%', '4vw');
         shapeShift(8, '67%', '-', '50%', '-', '4vw', '32%', '4vw');
-        shapeShift('sizeScreen', '-', '1%', '94%', '-', '5%', '-', '2.5vw');
+        shapeShift('sizeScreen', '-', '0%', '-', '0%', '25%', '-', '2.5vw');
     } else { //WIDE ASPECT
         if (MODE == 'LISTEN') {
             dis('playerA', 'block')
@@ -155,14 +192,23 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         } else if (MODE == 'GALLERY') {
             dis('viewBox', 'block')
             dis('playerA', 'none')
-            shapeShift('msg', '1vw', '20vw', '7vw', '1vh', '-', '-', '3vh')
+            shapeShift('msg', '1vw', '20vw', '19vw', '1vh', '-', '-', '3vh')
+            } else if (MODE == 'WELCOME') {
+            dis('viewBox', 'none')
+            dis('playerA', 'none')
+shapeShift('iconA','1%','-','1%','-','70%','-','-')
+shapeShift('welText','-','1%','1%','-','80%','60%','3vw')
+shapeShift('cards','1%','1%','85%','0%','-','-','3vh')
+            shapeShift('msg', '1vw', '20vw', '7vw', '1vh', '-', '-', '3vh')  
         } else {
             shapeShift('msg', '1vw', '20vw', '7vw', '1vh', '-', '-', '3vh')
             dis('viewBox', 'none')
             dis('playerA', 'none')
         }
         shapeShift('hdr', '0%', '-', '0%', '-', '7vw', '100%', '3.5vw');
-        shapeShift('viewBox', '-', '20%', '-', '0%', '-', '-', '2.5vw');
+        
+        shapeShift('viewBox', '0%', '20%', '0%', '0%', '-', '-', '2vw');
+        //shapeShift('viewBox', '-', '20%', '-', '0%', '-', '-', '2.5vw');
         shapeShift('floater', '-', '0%', '0%', '-', '7vw', '-', '3vw');
         shapeShift('menu', '80vw', '1vw', '7vw', '1vw', '-', '-', '1.6vw');
         shapeShift(0, '2%', '-', '0%', '-', '2.5vw', '100%', '2.5vw');
@@ -174,7 +220,8 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         shapeShift(6, '2%', '-', '60%', '-', '2.5vw', '100%', '2.5vw');
         shapeShift(7, '2%', '-', '70%', '-', '2.5vw', '100%', '2.5vw');
         shapeShift(8, '2%', '-', '80%', '-', '2.5vw', '100%', '2.5vw');
-        shapeShift('sizeScreen', '-', '1%', '91%', '-', '8%', '-', '2.5vw');
+        shapeShift('sizeScreen', '-', '0%', '-', '0%', '12%', '-', '2.5vw');
+        //shapeShift('sizeScreen', '-', '1%', '91%', '-', '100%', '-', '2.5vw');
     }
     picAlign()
     if (LOCKED==false) {document.getElementById('8').style.display='block'}
@@ -184,59 +231,59 @@ function shapeShift(id, lf, rt, tp, bm, ht, wt, fs) {
     if (lf != '-') {
         document.getElementById(id).style.left = lf;
     } else {
-        document.getElementById(id).style.left = undefined;
+        document.getElementById(id).style.left = null;
     }
     if (rt !== '-') {
         document.getElementById(id).style.right = rt;
     } else {
-        document.getElementById(id).style.right = undefined;
+        document.getElementById(id).style.right = null;
     }
     if (tp !== '-') {
         document.getElementById(id).style.top = tp;
     } else {
-        document.getElementById(id).style.top = undefined;
+        document.getElementById(id).style.top = null;
     }
     if (bm !== '-') {
         document.getElementById(id).style.bottom = bm;
     } else {
-        document.getElementById(id).style.bottom = undefined;
+        document.getElementById(id).style.bottom = null;
     }
     if (ht !== '-') {
         document.getElementById(id).style.height = ht;
     } else {
-        document.getElementById(id).style.height = undefined;
+        document.getElementById(id).style.height = null;
     }
     if (wt !== '-') {
         document.getElementById(id).style.width = wt;
     } else {
-        document.getElementById(id).style.width = undefined;
+        document.getElementById(id).style.width = null;
     }
     if (fs !== '-') {
         document.getElementById(id).style.fontSize = fs;
     } else {
-        document.getElementById(id).style.fontSize = undefined;
+        document.getElementById(id).style.fontSize = null;
     }
 }
 //^Gallery=============================================================
 function loadGallery() {
     ARRgallery = "0,1,2,3,4,5,6,7,8".split(',')
     ARRgallery[0] = "<a onclick='changeGalleryMode()'><X10>Auto</X10></a> for the 60 second Fred and the Fossils Story<br>Or set your pace with the<a onclick='gallery(+1)'> <X10>&lt</X10> <X10>&gt</X10></a> arrows.|sepia.png|947|897";;
-    ARRgallery[1] = "1968; My First Band was'JAM'; Shown in Twin Bridges Montana? - Chuck, Bill, yours truly and Jay.|firstBand.jpg|1219|810";
-    ARRgallery[2] = "1969: Playing bass at a Montana State University Spring Event|bass.png|1316|1940";
-    ARRgallery[3] = "1969: to 2010; I just played with friends and family.|backyard.png|465|661";
-    ARRgallery[4] = "2010: Ron (on the right) got me back into performing (After a 40 year hiatus)|ron.jpg|1051|788";
-    ARRgallery[5] = "2016: I played with my buddy, Pat, who passed away in November of 2019... (Here at a Newcomers Christmas Party)|pat.jpg|1051|855";
-    ARRgallery[6] = "2019>: Now I play Solo St Catherine's and Wesley Woods Senior Care facilities in Waco Texas|fred.jpg|1641|3919";
+    ARRgallery[1] = "<X5>1968</X5> My First Band,'JAM'; Twin Bridges Montana? Left to Right... Chuck, Bill, yours truly and Jay.|firstBand.jpg|1219|810";
+    ARRgallery[2] = "<X5>1969</X5> Playing bass at a Montana State University Spring Event|bass.png|1316|1940";
+    ARRgallery[3] = "<X5>1969 > 2010</X5> I occasionally played with friends and family.|backyard.png|465|661";
+    ARRgallery[4] = "<X5>2010 > 2016</X5> Ron (on right) got me back into performing (After a 40 year hiatus)|ron.jpg|1051|788";
+    ARRgallery[5] = "<X5>2016 > 2019</X5> Played with my buddy, Pat, until he passed away... (Here at a Newcomers Christmas Party)|pat.jpg|1051|855";
+    ARRgallery[6] = "<X5>2019 > Now</X5> I play Solo at St Catherine's and Wesley Woods Senior Care facilities in Waco Texas|fred.jpg|1641|3919";
     ARRgallery[7] = "My 'virtual' BACKUP BAND consists of computer generated tracks and electronic harmony.|theFossils.png|1209|1007";
-    ARRgallery[8] = "Additionaly, I play with my friends, Stan, Bill, John, Sally for the fun of it...|barn.jpg|2754|1660";
-    ARRgallery[9] = "THATS ALL FOLKS!|thatsAllFolks.png|581|575";
+    ARRgallery[8] = "Additionally, I play with my friends, Stan, Bill, John, Sally for the fun of it...|barn.jpg|2754|1660";
+    ARRgallery[9] = "RESET or Choose something from the Menu|thatsAllFolks.png|581|575";
     PICcount = ARRgallery.length
     PIC=0
 }
  
 function gallery(n) {
-    document.getElementById('galleryPic').style.display = 'n'
-    document.getElementById('galleryPic').src = 'Data/black.png'
+    dis('am','block')
+    dis('rg','none')
     if (n == undefined) {n=0}
     PIC=PIC+n
     var path=undefined
@@ -250,11 +297,13 @@ function gallery(n) {
     }
     if (PIC == ARRgallery.length - 1) {
         document.getElementById('picRight').style.display = 'none'
+        changeGalleryMode('man')
+        dis('am','none')
+        dis('rg','block')
     } else {
         document.getElementById('picRight').style.display = 'block'
     }
     path=PICpath + ARRgallery[PIC].split('|')[1];
-    //document.getElementById('galleryPic').src = PICpath + ARRgallery[PIC].split('|')[1]
     document.getElementById('viewBox').style.display = 'block' //hide msg div
     PICaspect = ARRgallery[PIC].split('|')[2] / ARRgallery[PIC].split('|')[3] //=w/h
     document.getElementById('galleryTxt').innerHTML = ARRgallery[PIC].split('|')[0];
@@ -277,7 +326,6 @@ function picAlign(path) {
         document.getElementById('galleryPic').style.left = "0%"
         document.getElementById('galleryPic').style.bottom = 50 * (1 - (1 / factor)) + "%"
     }
-
 }
 
 //^Audio=============================================================
@@ -292,8 +340,6 @@ function loadTrack(track, info, idx) {
         oldGreen='s'+TRACKindex ;
     }
     var newGreen='s'+idx;
-    
-    
     //clear any green
     if (track == undefined) {
         track = TRACK
@@ -308,14 +354,11 @@ if (idx!=undefined)TRACKindex = idx
         document.getElementById('msg').innerHTML = LISTENarray[TRACK]
         document.getElementById('msg').innerHTML = LISTENarray[TRACKindex]
     }
-    //alert('LOADING '+TRACK)
     document.getElementById('Audio1').src = 'Data/' + TRACK + '.mp3';
     document.getElementById("Audio1").onended = function() {
         trackReset();
     }
-    //alert( "Blueing > "+ oldGreen )
     if(oldGreen!=undefined){ document.getElementById(oldGreen).style.backgroundColor = 'lightgrey'}
-    //alert('GREENING '+newGreen)
     document.getElementById(newGreen).style.backgroundColor = 'green'
     dis('pauseButton','none')
     dis('pauseButtonA','none')
@@ -326,7 +369,6 @@ if (idx!=undefined)TRACKindex = idx
 function closePlayer() {
     document.getElementById('playerA').style.display = 'none'
 }
-
 
 function trackPause() {
     if (document.getElementById('Audio1').currentTime == document.getElementById('Audio1').duration) {
@@ -344,14 +386,9 @@ function trackPlay() {
     dis('pauseButton','block')
     dis('pauseButtonA','block')
     dis('playButton','block')
-    //document.getElementById('playButton').style.display = 'block'
-
     document.getElementById("Audio1").onended = function() {
         trackEnd();
     }
-
-    
-    
 }
 
 function trackReset() {
@@ -366,7 +403,7 @@ function trackReset() {
 function trackEnd() {
     incTrack(1)
     dis('playing','none')
-    //trackPlay();
+    //trackPlay(); if you want to make it loop work here
 }
 
 function playTrack(track, num) {
@@ -431,9 +468,12 @@ function fades(id, dir, ms, ids) {
 //CONFIG FUNCTIONS===========================================================
 
 function admin() {
+        document.getElementById(8).style.display='block'
+        //config(ADMINstring)
+        //realign()
     if (LOCKED == true) {
-        document.getElementById(8).style.display='none'
-        var f = prompt('ADMINISTRATORS PASSWORD?');
+        //document.getElementById(8).style.display='none'
+        var f = prompt('The LISTEN function has been activated/n use your password for admin access... ADMINISTRATORS PASSWORD?');
         if (f == null) {
             return;
         }
@@ -500,11 +540,13 @@ function aspect() {
 
 function cto() {
     clearTimeout(TIMEOUTgallery);
+    clearTimeout(TIMEOUTcards);
 }
 
 function fade(id, dir, ms) {
     var crp = parseFloat(document.getElementById(id).style.opacity, 10)
     var cur = parseFloat(crp + dir, 10)
+    //return
     if (cur >= 1 | cur < 0) {
         clearTimeout(TIMEOUTfade)
         document.getElementById(id).style.display = 'block'

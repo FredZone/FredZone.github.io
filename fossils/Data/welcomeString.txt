@@ -1,9 +1,19 @@
-<div style="text-align:center">
-<X5>WELCOME TO MY WEBSITE</X5>
-<br>Its a 'hand-built' thing...
-<br>So it can be a little 'glitchey'
-<br>------------------------------------
-<br>Available Controls are <a onclick="alert('Available Controls are RED on YELLOW')" style='color:red; background-color:yellow;'>
-<br>RED on YELLOW</a>
-<br><img src='Data/player.png'style="position:relative;width:15%">
+<div style="position:absolute;fontsize:3vw;left:0%,bottom:0%;width:100%;height:100%;background-color:transparent;">
+
+        
+<div id='welText'style="position:absolute;font-family:Courier New;font-size:4vw;line-height:120%;text-align:left;right:0%;top:0%;width:80%;height:70%">
+    <div style='font-family:Courrier New;'><X5>WELCOME TO MY SITE</X5>
+    <br>I am a volunteer, one man band.
+    <br>-------------------------
+    <br>Playing guitar and singing at senior care facilities in Waco
+    <br>-------------------------
+    <br>I use electronic backing tracks and a vocal harmony generator</div>
+    </div>   
+
+<div id='cards' style="position:absolute;opacity:1;display:block;border:none;font-family:Courier New;line-height:100%;overflow:hidden;text-align:center;right:0%;top:85%;width:100%;height:15%">
+HINTS...
+</div> 
+
+<img id='iconA' src='Data/player.png' style="position:absolute;">
+
 </div>

@@ -23,6 +23,8 @@
         X4{line-height:100%;color:yellow;}
         X5{line-height:150%;color:green;}
         X10{line-height:150%;color:red;background-color:yellow}
+    font{Courier}
+    
     </style>
     </head>
 
@@ -43,11 +45,12 @@
 <!--MAIN SCREEN -------------------------------------------------------------------------------------------------------  -->
 <div id='background' style="position:fixed;display:block ;background-image:url('Data/parchmentA.jpg'); background-size:100% 100%;line-height:100%; font-size:2.5vw; left:0%; top:0%; right:0%; bottom:0%;">
     <div id='floater' style="position:fixed;display:block;background-color:transparent;right:0%; top:0%; height:7vw; width:7vw;border:none;z-index:500">
-        <img title='Administrators Screen (password Required!)' id='admin' src='Data/transparent.png' onclick="admin()" style="position:absolute;display:block;right:0%; top:0%; height:100%;width:100%">
         <img title='Play the Track' id='playButton' src='Data/yellowPlay.png' onclick="trackPlay()" style="position:absolute;display:none;right:0%; top:0%; height:100%;z-index:600">
         <img title='Stop the Track' id='pauseButton' src='Data/yellowPause.png' onclick="trackPause()" style="position:absolute;display:none;right:0%; top:0%; height:100%;z-index:700">
         <img title='Stop' id='playing' src='Data/resetSpinner.gif' onclick="trackPause()" style="position:absolute;display:none;right:0%; top:0%; height:100%;z-index:800">
     </div>
+<!--ADMiN-->
+    <img title='Administator (password Required)' id='admin' src='Data/transparent.png' onclick="admin()" style="position:absolute;display:block;left:0%; top:0%; height:7vw;z-index:500">
 
 <!--HDR-->    
     <div id='hdr' style="position:absolute;display:none;left:0%;right:0%;top:0%;bottom:0%;">
@@ -81,7 +84,7 @@
 
 
 <!--MSG-->
-    <div id='msg'style="position:absolute; color:black; font-family:Courrier New; font-weight:bold; border:groove;display:none; line-height:130%; overflow-y:scroll; font-size:3vw; text-align:center; left:0%; right:0%; top:0%; bottom:0%;overflow-y:auto;word-break: keep-all">
+    <div id='msg'style="position:absolute; color:black; font-weight:bold; border:groove;display:none; line-height:130%; overflow-y:scroll; font-size:3vw; text-align:center; left:0%; right:0%; top:0%; bottom:0%;overflow-y:auto;word-break: keep-all">
         MESSAGE APPEARS HERE...
     </div>    
 
@@ -99,8 +102,8 @@
         <div id='5'onclick="config(WHYstring,this.id)"style="position:absolute; border:none;"> GHOST BAND</div>
         <div id='6'onclick="config(BANDstring,this.id)"style="position:absolute; border:none;"> GADGETS</div>
         <div id='7'onclick="config('GALLERY',this.id)" style="position:absolute;display:block;border:none;"> GALLERY</div>
-        <div id='8'onclick="config('LISTEN MODE',this.id)" style="position:absolute;display:none; border:none;"> LISTEN</div>
-        <img id='sizeScreen' title='Toggle Full Screen!'onclick="fullScreen()" src="Data/yellowEnterFullScreen.png" style="position:fixed;right:0%;bottom:0%;height:8%">
+        <div id='8'onclick="config('LISTEN MODE',this.id), document.getElementById(8).style.display='block'" style="position:absolute;display:none; border:none;"> LISTEN</div>
+        <img id='sizeScreen' title='Toggle Full Screen!'onclick="fullScreen()" src="Data/yellowEnterFullScreen.png" style="position:absolute;right:0%;bottom:0%;height:0%">
     </div>
 
 <!--VIEW BOX-->      
@@ -112,17 +115,20 @@
         <div id='picLeft' onclick="changeGalleryMode('Man'),gallery(-1)" style="position:absolute;line-height:50%;color:red;background-color:yellow;display:none;font-size:10vh;opacity:1;display:none;font-weight:bold;font-size:8vh; left:1%;top:47%;"><</div>
         <div id='picRight' onclick="changeGalleryMode('Man'),gallery(+1)"style="position:absolute;line-height:50%;color:red;background-color:yellow;display:none;font-size:10vh;opacity:1;display:none;font-weight:bold;font-size:8vh;right:1%;top:47%;">></div>
 
-        <div id='am' style="position:absolute; font-size:3vh; line-height:150%; background-color:yellow; color:red; right:1vh; bottom:1vh; height:4vh;border:solid; border-color:red;">
+        <div id='am'  style="position:absolute; font-size:3vh; line-height:150%; background-color:yellow; color:red; right:1vh; bottom:1vh; height:4vh;border:solid; border-color:red;">
             Auto
             <img id='amIcon' onclick="changeGalleryMode()" src='Data/transparent.png' style="position:absolute;display:block;left:0%;height:100%;width:100%;bottom:0%;z-index:300;">
         </div>       
+        <div id='rg' onclick="PIC=0,gallery(0)" style="position:absolute; font-size:3vh;display:none; line-height:150%; background-color:yellow; color:red; right:1vh; bottom:1vh; height:4vh;border:solid; border-color:red;z-index:500">
+            RESET
+        </div>  
+        
         <div id='galleryTxt' onclick="aspect()" style='position:absolute;color:white;border:none;left:0%;line-height:115%;  top:85%;left:1%;height:15%;width:98%;'>
            Text Should Appear Here...
-        
         </div>
     </div>
 </div>
-
+<div style ='background-color:red; width:100%; top:90%; bottom:100%;'></div>
 <SCRIPT type="text/javascript" SRC = "index.js"></script>
 </body>
 </html>
