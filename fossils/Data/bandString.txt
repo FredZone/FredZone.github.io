@@ -1,4 +1,3 @@
-<div style="text-align:center">
 <X5>MY GADGETS...</X5>
 <br><X2>====================</X2>
 <br>MUSIC GEAR:
@@ -35,4 +34,4 @@ or another Guitar...
 <br>plugged into the PA output jack
 <br><X3>Audacity</X3> freeware is used to convert
 <br>the tracks to mono MP3s for the Web.
-<div>
+
