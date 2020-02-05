@@ -18,6 +18,7 @@
     var TIMEOUTfade;
     var TIMEOUTgallery;
     var TIMEOUTcards;
+    var TIMEOUTpop;
 //Gallery===========================================================
     var PICcount=9;
     var PIC=0;
@@ -88,7 +89,7 @@ function player(){
     if (LISTEN==false) {
         toggleListen()
     }else{
-        pop('The player is on...<br>Use the close button on the player to close it...')
+        pop("The PLAYER is in <X10>yellow</X10> at the bottom of the screen...<br>Use the 'Close Button' on the player to close it...",'<X1>THE PLAYER IS ALREADY OPEN...<X1>',10)
     }
 }
 
@@ -102,9 +103,16 @@ function listen(id,play){
     playTrack()
 
 }
-function pop(txt){
+function pop(txt,title,seconds){
+     clearTimeout(TIMEOUTpop);
     dis('popper','block')
+    if (seconds==undefined) {seconds=10}
+    if (title==undefined) {title='POP UP NOTE!'}
     document.getElementById('popText').innerHTML=txt
+    document.getElementById('popTitle').innerHTML=title
+            TIMEOUTpop = setTimeout(function() {
+            dis('popper','none');
+        },seconds*1000);
 }
 
 //^Configure Views=============================================================
@@ -112,6 +120,7 @@ function pop(txt){
 function config(id){
     var i;
     cto()
+    dis('popper','none')
     var msg="NO MSESSAGE"
     for (i = 0; i <= 7; i++) { //set the menu
         if (id == i) {
@@ -153,12 +162,12 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
     var aspect = window.innerHeight / window.innerWidth
     var formFactor = 'none'
     var black = 0
-    if (aspect > 1.8) {
-        black = 100 - 100 * (1.8 / aspect)
+    if (aspect > 1.7) {
+        black = 100 - 100 * (1.7 / aspect)
         shapeShift('background', '0%', '0%', '0%', black + '%', '-', '-', '-')
         formFactor = 'tall'
     }
-    if (aspect > 1&aspect<=1.8) {
+    if (aspect > 1&aspect<=1.7) {
         shapeShift('background', '0%', '0%', '0%', '0%', '-', '-', '-')
         formFactor = 'tall'
     }
@@ -182,16 +191,16 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
             shapeShift('msg', '1%', '1%', '7%', '22%', '-', '-', '4vw')
             shapeShift('menu', '1%', '1%', '78%', '0%', '-', '-', '4vw');
             if (MODE == 'GALLERY') {
-                shapeShift('viewBox', '0%', '0%', '7%', '22%', '-', '-', '2.5vw')
+                shapeShift('viewBox', '0%', '0%', '7%', '22%', '-', '-', '3.5vw')
             }
         } else if (LISTEN == true) {
             shapeShift('msg', '1%', '1%', '7%', '32%', '-', '-', '4vw');
             shapeShift('menu', '1%', '1%', '68%', '10%', '-', '-', '3vw');
             if (MODE == 'GALLERY') {
-                shapeShift('viewBox', '0%', '0%', '7%', '32%', '-', '-', '2.5vw')
+                shapeShift('viewBox', '0%', '0%', '7%', '32%', '-', '-', '3.5vw')
             }
         }
-        shapeShift('popper', '10%', '10%', '25%', '25%', '-', '-', '3vw')
+        shapeShift('popper', '15%', '15%', '20%', '35%', '-', '-', '3vw')
         shapeShift('playerA', '0%', '0%', '90%', '0%', '-', '-', '6vw')
         shapeShift('tuneSelect','0%', '0%', '0%', '0%', '-', '-', '4vw')        
         shapeShift('hdr', '0%', '0%', '0%', '93%', '-', '-', '3.5vw');
@@ -215,17 +224,17 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
             shapeShift('msg', '1%', '20%', '7%', '1%', '-', '-', '4.5vh')
             shapeShift('menu', '80%', '0%', '7%', '0%', '-', '-', '3vh');
             if (MODE == 'GALLERY') {
-                shapeShift('viewBox', '0%', '20%', '7%', '0%', '-', '-', '2.5vh')
+                shapeShift('viewBox', '0%', '20%', '7%', '0%', '-', '-', '3.5vh')
             }
         } else if (LISTEN == true) {
             shapeShift('msg', '1%', '20%', '7%', '10%', '-', '-', '4.5vh')
             
             shapeShift('menu', '80%', '0%', '7%', '0%', '-', '-', '3vh');
             if (MODE == 'GALLERY') {
-                shapeShift('viewBox', '0%', '20%', '7%', '10%', '-', '-', '2.5vh')
+                shapeShift('viewBox', '0%', '20%', '7%', '10%', '-', '-', '3.5vh')
             }
         }
-        shapeShift('popper', '10%', '10%', '25%', '25%', '-', '-', '3vh')
+        shapeShift('popper', '10%', '30%', '25%', '25%', '-', '-', '3vh')
         shapeShift('hdr', '0%', '-', '0%', '-', '7%', '100%', '1vw');
         shapeShift('playerA', '1%', '20%', '90%', '0%', '-', '-', '5vh')
         shapeShift('tuneSelect','0%', '0%', '0%', '0%', '-', '-', '4vh') 
@@ -327,7 +336,7 @@ function loadGallery() {
     ARRgallery[2] = "<X5>1969</X5> Playing bass at a Montana State University Spring Event|bass.png|1316|1940";
     ARRgallery[3] = "<X5>1969 > 2010</X5> I occasionally played with friends and family.|backyard.png|465|661";
     ARRgallery[4] = "<X5>2010 > 2016</X5> Ron (on right) got me back into performing (After a 40 year hiatus)|ron.jpg|1051|788";
-    ARRgallery[5] = "<X5>2016 > 2019</X5> Played with my buddy, Pat, until he passed away... (Here at a Newcomers Christmas Party)|pat.jpg|1051|855";
+    ARRgallery[5] = "<X5>2016 > 2019</X5> Played with my buddy, Pat, until he passed away in November 2019|pat.jpg|1051|855";
     ARRgallery[6] = "<X5>2019 > Now</X5> I play Solo at St Catherine's and Wesley Woods Senior Care facilities in Waco Texas|fred.jpg|1641|3919";
     ARRgallery[7] = "My 'virtual' BACKUP BAND consists of computer generated tracks and electronic harmony.|theFossils.png|1209|1007";
     ARRgallery[8] = "Additionally, I play with my friends, Stan, Bill, John, Sally for the fun of it...|barn.jpg|2754|1660";
@@ -530,7 +539,7 @@ function playTrack() {
     }
     TRACK=document.getElementById('tuneSelect').selectedIndex
     TUNE=document.getElementById('tuneSelect').value
-    pop(ARRtunes[TRACK])
+    pop(ARRtunes[TRACK],'SONG INFORMATION',15)
     TUNE = document.getElementById('tuneSelect').value;
     document.getElementById("Audio1").onended = function() {
         trackReset();
