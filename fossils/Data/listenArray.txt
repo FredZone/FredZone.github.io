@@ -1,7 +1,4 @@
-PICK A SONG HERE!
-Simply pick a song from the yellow 'Dropdown' box above...
-<br>It should Start to Play
-|Abilene
+Abilene
 Written by Bob Gibson, Albert Stanton, Lester Brown and John D. Loudermilk.
 <br>---------------------<br>Gibson was inspired to write the song after watching the Randolph Scott film 'Abilene Town.'
 <br>---------------------<br>Abilene, Kansas, was at the railhead of the Chisholm Trail.

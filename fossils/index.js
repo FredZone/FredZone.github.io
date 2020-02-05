@@ -56,38 +56,52 @@ window.onload = function() {
     WELCOMEstring = fileDownload('Data/welcomeString.txt');
     CONTACTstring = fileDownload('Data/contactString.txt');
     ARRtunes = fileDownload('Data/listenArray.txt').split('|');
-    GALLERYstring=fileDownload('Data/galleryString.txt')
-    tuneSelectorMake()
-    document.getElementById('tuneSelect').innerHTML = TUNEselector
+    GALLERYstring=fileDownload('Data/galleryString.txt');
+    tuneSelectorMake();
+    document.getElementById('tuneSelect').innerHTML = TUNEselector;
     document.getElementById('tuneSelect').selectedIndex = TRACK;
-    document.getElementById("Audio1").volume = 0.033
-    VOL = 0.5
+    document.getElementById("Audio1").volume = 0.033;
+    VOL = 0.5;
     ARRcards=fileDownload('Data/cardsString.txt').split('\n');
-    dis('hdr','block')
-    dis('msg','block')
-    dis('viewBox','none')
-    dis('playerA','block')
-    dis('menu','block')// fades('hdr', 0.01, 1, 'msg|menu')    
+    dis('hdr','block');
+    dis('msg','block');
+    dis('viewBox','none');
+    dis('playerA','block');
+    dis('menu','block');
+    //fades('hdr', 0.01, 100, 'msg|menu')    
     config(0);
 }
 
 function toggleListen(){
     if(LISTEN==true){
-        document.getElementById('listenA').style.backgroundColor='yellow'
+        trackPause()
         LISTEN=false
     }else{
         LISTEN=true
-        document.getElementById('listenA').style.backgroundColor='green'
     }
     config(ID)
+    playTrack()
 }
 
-function listen(id,play){
-        document.getElementById('tuneSelect').selectedIndex=id;
-        TUNE=document.getElementById('tuneSelect').value;
-        playTrack()
-    }
 
+function player(){
+    if (LISTEN==false) {
+        toggleListen()
+    }else{
+        pop('The player is on...<br>Use the close button on the player to close it...')
+    }
+}
+
+
+function listen(id,play){
+    if (LISTEN==false) {
+        toggleListen()
+    }
+    document.getElementById('tuneSelect').selectedIndex=id;
+    TUNE=document.getElementById('tuneSelect').value;
+    playTrack()
+
+}
 function pop(txt){
     dis('popper','block')
     document.getElementById('popText').innerHTML=txt
@@ -117,7 +131,7 @@ function config(id){
     if (MODE == 'WELCOME') {
         dis('viewBox', 'none');
         document.getElementById('cards').innerHTML = ARRcards[0]
-        playCards();
+        playCards(0,1);
     } else if (MODE == 'GALLERY') {
         loadGallery();
         changeGalleryMode('man');
@@ -135,7 +149,7 @@ function config(id){
 }
 
 function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-width-font)
-    //Determine formFactor and background
+    //Determine formFactor and font-size
     var aspect = window.innerHeight / window.innerWidth
     var formFactor = 'none'
     var black = 0
@@ -166,25 +180,21 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         }
         if (LISTEN == false) {
             shapeShift('msg', '1%', '1%', '7%', '22%', '-', '-', '4vw')
-            //shapeShift('popper', '1vw', '1vw', '25vw', '23vh', '-', '-', '5vw')
             shapeShift('menu', '1%', '1%', '78%', '0%', '-', '-', '4vw');
             if (MODE == 'GALLERY') {
                 shapeShift('viewBox', '0%', '0%', '7%', '22%', '-', '-', '2.5vw')
             }
         } else if (LISTEN == true) {
             shapeShift('msg', '1%', '1%', '7%', '32%', '-', '-', '4vw');
-            //shapeShift('popper', '1vw', '1vw', '25vw', '23vh', '-', '-', '3vh')
             shapeShift('menu', '1%', '1%', '68%', '10%', '-', '-', '3vw');
             if (MODE == 'GALLERY') {
                 shapeShift('viewBox', '0%', '0%', '7%', '32%', '-', '-', '2.5vw')
             }
         }
         shapeShift('popper', '10%', '10%', '25%', '25%', '-', '-', '3vw')
-        shapeShift('playerA', '0%', '0%', '90%', '0%', '-', '-', '2vh')
-        shapeShift('tuneSelect', '0%', '-', '0%', '55%', '-', '100%', '4vw')
-        shapeShift('playButtons', '0%', '0%', '45%', '0%', '-', '-', '4vw')
+        shapeShift('playerA', '0%', '0%', '90%', '0%', '-', '-', '6vw')
+        shapeShift('tuneSelect','0%', '0%', '0%', '0%', '-', '-', '4vw')        
         shapeShift('hdr', '0%', '0%', '0%', '93%', '-', '-', '3.5vw');
-        //shapeShift('floater', '-', '0%', '0%', '-', '10vw', '-', '7vw');
         shapeShift(0, '34%', '34%', '0%', '77%', '-', '-', '4vw');
         shapeShift(1, '1%', '68%', '25%', '52%', '_', '_', '4vw');
         shapeShift(2, '1%', '68%', '50%', '27%', '_', '_', '4vw');
@@ -195,8 +205,7 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         shapeShift(7, '67%', '2%', '25%', '52%', '-', '_', '4vw');
         shapeShift('listenA', '67%', '2%', '50%', '27%', '_', '-', '4vw');
         shapeShift('sizeScreen', '-', '2%', '-', '2%', '22%', '-', '2.5vw');
-} else { //WIDE ASPECT
-        //pop('short');
+    } else { //WIDE ASPECT
         if (MODE == 'WELCOME') {
             shapeShift('iconA', '1%', '-', '1%', '-', '75%', '-', '-')
             shapeShift('welText', '-', '1%', '1%', '-', '90%', '60%', '4vh')
@@ -204,7 +213,6 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         }
         if (LISTEN == false) {
             shapeShift('msg', '1%', '20%', '7%', '1%', '-', '-', '4.5vh')
-            //shapeShift('popper', '1vw', '1vw', '25vw', '23vh', '-', '-', '3vh')
             shapeShift('menu', '80%', '0%', '7%', '0%', '-', '-', '3vh');
             if (MODE == 'GALLERY') {
                 shapeShift('viewBox', '0%', '20%', '7%', '0%', '-', '-', '2.5vh')
@@ -218,11 +226,9 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
             }
         }
         shapeShift('popper', '10%', '10%', '25%', '25%', '-', '-', '3vh')
-        shapeShift('tuneSelect', '0%', '-', '0%', '60%', '-', '100%', '2.5vh')
-        shapeShift('playButtons', '0%', '0%', '40%', '0vw', '-', '-', '4vh')
         shapeShift('hdr', '0%', '-', '0%', '-', '7%', '100%', '1vw');
-        //shapeShift('floater', '-', '0%', '0%', '-', '7vw', '-', '3vw');
-        shapeShift('playerA', '1%', '20%', '90%', '0%', '-', '-', '2vh')
+        shapeShift('playerA', '1%', '20%', '90%', '0%', '-', '-', '5vh')
+        shapeShift('tuneSelect','0%', '0%', '0%', '0%', '-', '-', '4vh') 
         shapeShift(0, '2%', '2%', '0%', '91%', '-', '-', '3.5vh');
         shapeShift(1, '2%', '2%', '10%', '81%', '-', '-', '3.5vh');
         shapeShift(2, '2%', '2%', '20%', '71%', '-', '-', '3.5vh');
@@ -232,7 +238,7 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         shapeShift(6, '2%', '2%', '60%', '31%', '-', '-', '3.5vh');
         shapeShift(7, '2%', '2%', '70%', '21%', '-', '-', '3.5vh');
         shapeShift('listenA', '2%', '2%', '80%', '11%', '-', '-', '3.5vh');
-        shapeShift('sizeScreen', '-', '1%', '-', '1%', '8%', '-', '2.5vh');
+        shapeShift('sizeScreen', '-', '2%', '-', '1%', '9%', '-', '2.5vh');
     }
     if (MODE == 'GALLERY') {
         picAlign()
@@ -276,37 +282,30 @@ function shapeShift(id, lf, rt, tp, bm, ht, wt, fs) {
     } else {
         document.getElementById(id).style.fontSize = '';
     }
-
-    //*developer lines
-    //document.getElementById('8').style.display='block';
-
-
 }
 
 
 //^Welcome Functions============================================================
 
-function playCards(state) {
+function playCards(id,step) {
     clearTimeout(TIMEOUTcards)
-    clearTimeout(TIMEOUTfade)
-    if (document.getElementById('cards').style.display=='block') {//fade out
-            CARD = CARD + 1
-            if (CARD >= ARRcards.length) {
-                CARD = 0;
-            }
-            fade('cards', -0.02, 50) //fade out
-            TIMEOUTcards = setTimeout(function() {
-            playCards()
-        }, 2000);
-    } else {//change card and fade in
-        document.getElementById('cards').innerHTML = ARRcards[CARD];
-        document.getElementById('cards').style.opacity=0
-        document.getElementById('cards').style.display='block'
-        fade('cards', +0.02, 50)
+    if (step==1) {//it should be 0 opacity and old Card
+        document.getElementById('cards').innerHTML = ARRcards[id];
+        fade('cards', 0.02, 50)
         TIMEOUTcards = setTimeout(function() {
-            playCards()
+            playCards (id,2)
         },7000);
     }
+    if (step==2) {
+        id = id + 1
+        if (id >= ARRcards.length) {
+            id = 0;
+        }
+        fade('cards', -0.02, 50)
+        TIMEOUTcards = setTimeout(function() {
+            playCards (id,1)
+        },3000);
+    }    
 }
 
 function tuneSelectorMake(){
@@ -394,10 +393,10 @@ function rollPics(){
             return
         }
         rollPics()
-    },6000);
+    },7000);
 }
 
-function changeGalleryMode(x){ 
+function changeGalleryMode(x){
     if (PIC==PICcount-1) {
         x='man'
         }
@@ -420,23 +419,15 @@ function changeGalleryMode(x){
 }
 
 //^Audio=============================================================
-
-
-
-
-
-
 function volSet(fact) {
     var v = document.getElementById('Audio1').volume
-    
-    
     v=v*fact
     if (v <= 0.00390625) {
         v = 0.0025;
-        dial = 1;
+        dial = 'L';
     }else if (v >= 1){
         v=1;
-        dial = 10
+        dial = 'H'
     }else{
         if (v >= .5) {
             dial = 9
@@ -466,6 +457,7 @@ function volSet(fact) {
 
 
 function loadTrack(TUNE, info, idx) {
+    alert('LOAD TRACK');
     var oldGreen=undefined
     if (TRACKindex!=undefined){
         oldGreen='s'+TRACKindex ;
@@ -492,7 +484,7 @@ if (idx!=undefined)TRACKindex = idx
     if(oldGreen!=undefined){ document.getElementById(oldGreen).style.backgroundColor = 'lightgrey'}
     document.getElementById(newGreen).style.backgroundColor = 'green'
     dis('pauseButton','none')
-    dis('pauseButtonA','none')
+    //dis('pauseButtonA','none')
     dis('playing','none')
 }  
 
@@ -507,46 +499,38 @@ function trackPause() {
     }
     document.getElementById('Audio1').pause()
     dis('pauseButton','none')
-    dis('pauseButtonA','none')
     dis('playing','none')
 }
 
 function trackPlay() {
-    dis('playing','block')
-    //volSet(0)
     document.getElementById('Audio1').play()
+    dis('playing','block')
     dis('pauseButton','block')
-    dis('pauseButtonA','block')
-    dis('playButton','block')
     document.getElementById("Audio1").onended = function() {
         trackEnd();
     }
 }
-
 function trackReset() {
     document.getElementById('Audio1').onended = null
     document.getElementById('Audio1').pause()
     document.getElementById('Audio1').currentTime = 0
     dis('pauseButton','none')
-    dis('pauseButtonA','none')
     dis('playing','none')
 }
 
 function trackEnd() {
     incTrack(1)
-    dis('playing','none')
-    //trackPlay(); if you want to make it loop work here
+    dis('playing','none')    
 }
 
 
 function playTrack() {
+    if (LISTEN==false) {
+        return
+    }
     TRACK=document.getElementById('tuneSelect').selectedIndex
     TUNE=document.getElementById('tuneSelect').value
     pop(ARRtunes[TRACK])
-    if (TRACK==0) {
-    document.getElementById('Audio1').src = null;
-    return
-    }
     TUNE = document.getElementById('tuneSelect').value;
     document.getElementById("Audio1").onended = function() {
         trackReset();
@@ -557,17 +541,15 @@ function playTrack() {
 
 function incTrack(dir) {
     var newNo = parseInt(tuneSelect.selectedIndex + dir, 10)
-    if (newNo == 7) {
+    if (newNo == ARRtunes.length) {
         newNo = 0
     }
     if (newNo == -1) {
-        newNo = 6
+        newNo = ARRtunes.length-1
     }
     document.getElementById('tuneSelect').selectedIndex =TRACK= newNo
     TUNE=document.getElementById('tuneSelect').value
     playTrack()
-    dis('pauseButton','none')
-    dis('pauseButtonA','none')
 }
 
 //^MISC============================================================
@@ -616,8 +598,6 @@ function admin() {
             document.getElementById('admin').src = 'Data/underConstruction.png'
         }
     } else {
-       //document.getElementById(8).style.display='block'
-       //alert(ADMINstring)
        config(8)
     }
 }
@@ -675,16 +655,14 @@ function cto() {
 }
 
 function fade(id, dir, ms) {
-    var crp = parseFloat(document.getElementById(id).style.opacity, 10)
-    var cur = parseFloat(crp + dir, 10)
-    //return
-    //if (cur >= 1 | cur < 0) {
-    if (cur == 1 ) {
+    var opac = parseFloat(document.getElementById(id).style.opacity, 10)
+    var cur = parseFloat(opac + dir, 10)
+    if (cur >= 1 ) {
         clearTimeout(TIMEOUTfade)
-        document.getElementById(id).style.display = 'block'
-    } else if (cur == 0) {
+        document.getElementById(id).style.opacity = 1
+    } else if (cur <= 0) {
         clearTimeout(TIMEOUTfade)
-        document.getElementById(id).style.display = 'none'
+        document.getElementById(id).style.opacity = 0
     } else {
         TIMEOUTfade = setTimeout(function() {
             document.getElementById(id).style.opacity = cur;

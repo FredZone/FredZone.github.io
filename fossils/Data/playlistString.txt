@@ -1,17 +1,17 @@
 PLAYLIST
-<br><a id='s0' onclick="listen(1,true)" style='color:red;background-color:yellow;color:red;'>Abilene</a>
-<br><a  id='s1' onclick="listen(2,true)" style='color:red;background-color:yellow'>Sea Of Heartbreak</a>
+<br><a id='s0' onclick="listen(0,true)" style='color:red;background-color:yellow;color:red;'>Abilene</a>
+<br><a  id='s1' onclick="listen(1,true)" style='color:red;background-color:yellow'>Sea Of Heartbreak</a>
 <br>You Are My Sunshine
-<br><a id='s2'onclick="listen(3,true)" style='color:red;background-color:yellow;width:100%;height:4vw'>Pancho And Lefty</a>
+<br><a id='s2'onclick="listen(2,true)" style='color:red;background-color:yellow;width:100%;height:4vw'>Pancho And Lefty</a>
 <br>Margaritaville
-<br><a id='s3' onclick="listen(5,true)"style='color:red;background-color:yellow;width:100%;height:4vw'>When The Roses Bloom Again</a>
+<br><a id='s3' onclick="listen(4,true)"style='color:red;background-color:yellow;width:100%;height:4vw'>When The Roses Bloom Again</a>
 <br>Dream
-<br><a id='s4' onclick="listen(4,true)" style='color:red;background-color:yellow;width:100%;height:4vw'>The Cape</a>
+<br><a id='s4' onclick="listen(3,true)" style='color:red;background-color:yellow;width:100%;height:4vw'>The Cape</a>
 <br>Little Red Riding Hood
 <br>Walk Right Back
 <br>Long Black Veil
 <br>All The Lonely People
-<br><a id='s5' onclick="listen(6,true)" style='color:red;background-color:yellow;width:100%;height:4vw'>Jamaica Farewell</a>
+<br><a id='s5' onclick="listen(5,true)" style='color:red;background-color:yellow;width:100%;height:4vw'>Jamaica Farewell</a>
 <br>Singing The Blues
 <br>Stand By Me
 <br>Blue Eyes Crying In The Rain
