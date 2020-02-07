@@ -1,1 +1,10 @@
-This is the Photo Gallery...
+<a onclick='changeGalleryMode()'><X10>Auto</X10></a> for the 60 second Fred and the Fossils Story<br>Or set your pace with the<a onclick='gallery(+1)'> <img src='Data/transRight.png'style='height:25%'> arrows.|sepia.png|947|897
+<X5>1968</X5> My First Band,'JAM'; Twin Bridges Montana? Left to Right... Chuck, Bill, yours truly and Jay.|firstBand.jpg|1219|810
+<X5>1969</X5> Playing bass at a Montana State University Spring Event|bass.png|1316|1940
+<X5>1969 > 2010</X5> I occasionally played with friends and family.|backyard.png|465|661
+<X5>2010 > 2016</X5> Ron (on right) got me back into performing (After a 40 year hiatus)|ron.jpg|1051|788
+<X5>2016 > 2019</X5> Played with my buddy, Pat, until he passed away in November 2019|pat.jpg|1051|855
+<X5>2019 > Now</X5> I play Solo at St Catherine's and Wesley Woods Senior Care facilities in Waco Texas|fred.jpg|1641|3919
+My 'virtual' BACKUP BAND consists of computer generated tracks and electronic harmony.|theFossils.png|1209|1007
+Additionally, I play with my friends, Stan, Bill, John, Sally for the fun of it...|barn.jpg|2754|1660
+RESET or Choose something from the Menu|thatsAllFolks.png|581|575

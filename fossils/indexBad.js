@@ -1,7 +1,7 @@
 //GLOBAL VARIABLES===============================================
-    var PLAYERopened=false;
     var FULLscreen=false;
     var LOCKED=true;
+    var PLAYERopened=false
 //Strings===============================================
     var WELCOMEstring;
     var BANDstring;
@@ -59,11 +59,6 @@ window.onload = function() {
     CONTACTstring = fileDownload('Data/contactString.txt');
     ARRtunes = fileDownload('Data/listenArray.txt').split('|');
     GALLERYstring=fileDownload('Data/galleryString.txt');
-    
-    ARRgallery=GALLERYstring.split('\n')
-    PICcount = ARRgallery.length
-    PIC=0
-    
     tuneSelectorMake();
     document.getElementById('tuneSelect').innerHTML = TUNEselector;
     document.getElementById('tuneSelect').selectedIndex = TRACK;
@@ -78,124 +73,59 @@ window.onload = function() {
     //fades('hdr', 0.01, 100, 'msg|menu')    
     config(0);
 }
-//^AUDIO====================================================================================================================================
 
-function player() {//opens initially opens or closes the player
-    if (PLAYERopened == false){
-        PLAYERopened =true;
-        var str="The player will open at the bottom of the screen...<br><br>"
-        str=str+"<img src='Data/playerA.png'style='position;relative;border:groove;width:90%;left:10%;'>"
-        str=str+"<br><br>YOUR FIRST SONG SHOULD PLAY WITHIN 5 SECONDS!"
-        pop(str, '<X1>AUTOMATICALLY OPENING THE PLAYER...<X1>',5, "toggleListen()")
-    } else {
-        toggleListen()
-    }
-}
-
-function toggleListen(){//turns listen box green and shows player A or yellow and Hides A
+function toggleListen(){
     if (PLAYERopened==false) {
-        pop('darn','player not open',3)
-    }else if(LISTEN==true){
+    PLAYERopened=true;
+    pop('The player has opened at the bottom of the screen','PLAYER OPENED!',10)
+    return;
+    }
+    if(LISTEN==true){
         trackPause()
         LISTEN=false
-        document.getElementById('listenA').style.backgroundColor='yellow';
-        document.getElementById('listenA').style.color='red';
-        trackPause()
     }else{
         LISTEN=true
-        document.getElementById('listenA').style.backgroundColor='green';
-        document.getElementById('listenA').style.color='white';
-        playTrack()
     }
-     config(ID)
+    config(ID)
+    playTrack()
 }
 
-function listen(id,play){//play by selecting from the playlist etc===============
-    document.getElementById('tuneSelect').selectedIndex=id;
-    if (PLAYERopened==false) {
-        player()
-    }else if (LISTEN==false){
+
+function player(){
+    if (PLAYERopened==true) {
         toggleListen()
     }else{
-        playTrack()
+        pop("The PLAYER is in <X10>yellow</X10> at the bottom of the screen...<br>Use the 'Close Button' on the player to close it...",'<X1>THE PLAYER IS ALREADY OPEN...<X1>',10,alert(4));
     }
 }
 
-function closePlayer() {
-    document.getElementById('playerA').style.display = 'none'
-}
 
-function trackPause() {
-    document.getElementById('Audio1').pause()
-    dis('pauseButton','none')
-    dis('playing','none')
-}
-
-function trackPlay() {
-    document.getElementById('Audio1').play()
-    dis('playing','block')
-    dis('pauseButton','block')
-    document.getElementById("Audio1").onended = function() {
-        trackEnd();
-    }
-}
-
-function trackReset() {
-    document.getElementById('Audio1').currentTime = 0
-    playTrack()
-}
-
-function trackEnd() {
-    incTrack(1)
-}
-
-
-function playTrack() {
+function ZZlisten(id,play){
     if (LISTEN==false) {
-        return
-    }
-    TRACK=document.getElementById('tuneSelect').selectedIndex
-    TUNE=document.getElementById('tuneSelect').value
-    pop(ARRtunes[TRACK].split('\n').slice(1),'<X2>'+TUNE.toUpperCase()+'</X2>',15)
-    TUNE = document.getElementById('tuneSelect').value;
-    document.getElementById("Audio1").onended = function() {
-        trackReset();
-    }
-    document.getElementById('Audio1').src = 'Data/' + TUNE + '.mp3';
-    trackPlay()
-}
-
-function incTrack(dir) {
-    var newNo = parseInt(tuneSelect.selectedIndex + dir, 10)
-    if (newNo == ARRtunes.length) {
-        newNo = 0
-    }
-    if (newNo == -1) {
-        newNo = ARRtunes.length-1
-    }
-    document.getElementById('tuneSelect').selectedIndex =TRACK= newNo
-    TUNE=document.getElementById('tuneSelect').value
+        toggleListen()
+        }
+    document.getElementById('tuneSelect').selectedIndex=id;
+    TUNE=document.getElementById('tuneSelect').value;
     playTrack()
+
 }
-
-
 function pop(txt,title,seconds,evil){
     clearTimeout(TIMEOUTpop);
     dis('popper','block')
     if (seconds==undefined) {seconds=10}
     if (title==undefined) {title='POP UP NOTE!'}
     document.getElementById('popText').innerHTML=txt
-    document.getElementById('popClose').style.display='block'
-    if (evil==undefined) {evil="dis('popper','none')"
-    document.getElementById('popText').style.backgroundColor='lightgrey'
+    if (evil!=undefined) {
+        TIMEOUTpop = setTimeout(function() {
+            eval(evil);
+        },seconds*1000);    
     }else{
-    document.getElementById('popClose').style.display='none'
-    document.getElementById('popText').style.backgroundColor='pink'
-    }
     document.getElementById('popTitle').innerHTML=title
-    TIMEOUTpop = setTimeout(function() {
-    eval(evil)//dis('popper','none');
-    },seconds*1000);
+            TIMEOUTpop = setTimeout(function() {
+            dis('popper','none');
+        },seconds*1000);
+    }
+
 }
 
 //^Configure Views=============================================================
@@ -225,7 +155,7 @@ function config(id){
         document.getElementById('cards').innerHTML = ARRcards[0]
         playCards(0,1);
     } else if (MODE == 'GALLERY') {
-        //loadGallery();
+        loadGallery();
         changeGalleryMode('man');
         gallery();
         dis('viewBox', 'block');
@@ -433,10 +363,10 @@ function loadGallery() {
 function gallery(n) {
     dis('am','block')
     dis('rg','none')
-    document.getElementById('galleryPic').style.display = 'none'//to prevent flicker on change
     if (n == undefined) {n=0}
     PIC=PIC+n
     var path=undefined
+    document.getElementById('galleryPic').style.display = 'block'
     PICpath = "Data/"
     document.getElementById('viewBox').style.display = 'block';
     if (PIC == 0) {
@@ -459,7 +389,6 @@ function gallery(n) {
     picAlign();
     document.getElementById('galleryPic').src = path
     document.getElementById('picCount').innerHTML = (PIC+1)  + "/" + PICcount;
-    document.getElementById('galleryPic').style.display = 'block'
 }
 
 function picAlign(path) {
@@ -551,7 +480,7 @@ function volSet(fact) {
 }
 
 
-function XXloadTrack(TUNE, info, idx) {
+function loadTrack(TUNE, info, idx) {
     alert('LOAD TRACK');
     var oldGreen=undefined
     if (TRACKindex!=undefined){
@@ -559,11 +488,11 @@ function XXloadTrack(TUNE, info, idx) {
     }
     var newGreen='s'+idx;
     //clear any green
-    //if (TUNE == undefined) {
-    //    TUNE = TUNE
-    //} else {
-    //    TUNE = TUNE
-    //}
+    if (TUNE == undefined) {
+        TUNE = TUNE
+    } else {
+        TUNE = TUNE
+    }
     //set the selector...
     document.getElementById('tuneSelect').selectedValue = TUNE
     TRACKindex = document.getElementById('tuneSelect').selectedIndex
@@ -584,6 +513,68 @@ if (idx!=undefined)TRACKindex = idx
 }  
 
 
+function closePlayer() {
+    document.getElementById('playerA').style.display = 'none'
+}
+
+function trackPause() {
+    if (document.getElementById('Audio1').currentTime == document.getElementById('Audio1').duration) {
+        trackReset()
+    }
+    document.getElementById('Audio1').pause()
+    dis('pauseButton','none')
+    dis('playing','none')
+}
+
+function trackPlay() {
+    document.getElementById('Audio1').play()
+    dis('playing','block')
+    dis('pauseButton','block')
+    document.getElementById("Audio1").onended = function() {
+        trackEnd();
+    }
+}
+function trackReset() {
+    document.getElementById('Audio1').onended = null
+    document.getElementById('Audio1').pause()
+    document.getElementById('Audio1').currentTime = 0
+    dis('pauseButton','none')
+    dis('playing','none')
+}
+
+function trackEnd() {
+    incTrack(1)
+    dis('playing','none')    
+}
+
+
+function playTrack() {
+    if (LISTEN==false) {
+        return
+    }
+    TRACK=document.getElementById('tuneSelect').selectedIndex
+    TUNE=document.getElementById('tuneSelect').value
+    pop(ARRtunes[TRACK],'SONG INFORMATION',15)
+    TUNE = document.getElementById('tuneSelect').value;
+    document.getElementById("Audio1").onended = function() {
+        trackReset();
+    }
+    document.getElementById('Audio1').src = 'Data/' + TUNE + '.mp3';
+    trackPlay()
+}
+
+function incTrack(dir) {
+    var newNo = parseInt(tuneSelect.selectedIndex + dir, 10)
+    if (newNo == ARRtunes.length) {
+        newNo = 0
+    }
+    if (newNo == -1) {
+        newNo = ARRtunes.length-1
+    }
+    document.getElementById('tuneSelect').selectedIndex =TRACK= newNo
+    TUNE=document.getElementById('tuneSelect').value
+    playTrack()
+}
 
 //^MISC============================================================
 function fades(id, dir, ms, ids) {
