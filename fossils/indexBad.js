@@ -1,7 +1,8 @@
 //GLOBAL VARIABLES===============================================
+    var PLAYER=false;
+    var PLAYERopened=false;
     var FULLscreen=false;
     var LOCKED=true;
-    var PLAYERopened=false
 //Strings===============================================
     var WELCOMEstring;
     var BANDstring;
@@ -21,6 +22,7 @@
     var TIMEOUTcards;
     var TIMEOUTpop;
 //Gallery===========================================================
+    var PICtime=5
     var PICcount=9;
     var PIC=0;
     var PICpath;
@@ -29,7 +31,7 @@
 //CONFIGURATION===========================================================
     var MODE='WELCOME';
     var ID=0;
-    var PLAYER=false;
+
 //WELC0ME MODE==========================================================================
     var CARD=0;
     var STATE=1
@@ -59,6 +61,9 @@ window.onload = function() {
     CONTACTstring = fileDownload('Data/contactString.txt');
     ARRtunes = fileDownload('Data/listenArray.txt').split('|');
     GALLERYstring=fileDownload('Data/galleryString.txt');
+    ARRgallery=GALLERYstring.split('\n')
+    PICcount = ARRgallery.length
+    PIC=0
     tuneSelectorMake();
     document.getElementById('tuneSelect').innerHTML = TUNEselector;
     document.getElementById('tuneSelect').selectedIndex = TRACK;
@@ -73,63 +78,145 @@ window.onload = function() {
     //fades('hdr', 0.01, 100, 'msg|menu')    
     config(0);
 }
-
-function toggleListen(){
-    if (PLAYERopened==false) {
-    PLAYERopened=true;
-    pop('The player has opened at the bottom of the screen','PLAYER OPENED!',10)
-    return;
+//^AUDIO====================================================================================================================================
+function player() {//opens initially opens/starts Current tune OR closes the player
+    if (PLAYERopened == "X"){
+        PLAYERopened =true;
+        var str="The player will open at the bottom of the screen...<br><br>"
+        str=str+"<img src='Data/playerA.png'style='position;relative;border:groove;width:90%;left:10%;'>"
+        str=str+"<br><br>YOUR FIRST SONG SHOULD PLAY WITHIN 5 SECONDS!"
+        //LISTEN=false
+       // pop(str, '<X1>AUTOMATICALLY OPENING THE PLAYER...<X1>',5, "toggleListen()")
+        pop(str, '<X1>AUTOMATICALLY OPENING THE PLAYER...<X1>',2, "alert('A'),toggleListen()")
     }
-    if(LISTEN==true){
+    else {
+        toggleListen()
+    }
+
+function toggleListen(){//turns menu 'listen' box green/shows playerA/starts current track OR hides Hides playerA and pauses Track
+    alert('t')
+    if(LISTEN==true){//shuts off current track
         trackPause()
         LISTEN=false
+        document.getElementById('listenA').style.backgroundColor='yellow';
+        document.getElementById('listenA').style.color='red';
+        //trackPause()
     }else{
         LISTEN=true
+        document.getElementById('listenA').style.backgroundColor='green';
+        document.getElementById('listenA').style.color='white';
+        playTrack()
     }
-    config(ID)
-    playTrack()
+     config(ID)
+}
+
+function playTrack() {
+    TRACK=document.getElementById('tuneSelect').selectedIndex
+    TUNE=document.getElementById('tuneSelect').value
+    pop(ARRtunes[TRACK].split('\n').slice(1),'<X2>'+TUNE.toUpperCase()+'</X2>',15)
+    TUNE = document.getElementById('tuneSelect').value;
+    document.getElementById("Audio1").onended = function() {
+        trackReset();
+    }
+    document.getElementById('Audio1').src = 'Data/' + TUNE + '.mp3';
+    trackPlay()
 }
 
 
-function player(){
-    if (PLAYERopened==true) {
-        toggleListen()
-    }else{
-        pop("The PLAYER is in <X10>yellow</X10> at the bottom of the screen...<br>Use the 'Close Button' on the player to close it...",'<X1>THE PLAYER IS ALREADY OPEN...<X1>',10,alert(4));
-    }
+
+}
+function playlist(x){
+ document.getElementById('tuneSelect').selectedIndex=x;   
+    LISTEN=true
+    player()
 }
 
 
-function ZZlisten(id,play){
-    if (LISTEN==false) {
-        toggleListen()
-        }
+
+
+
+
+
+function listen(id,play){//play by selecting from the playlist etc===============
     document.getElementById('tuneSelect').selectedIndex=id;
-    TUNE=document.getElementById('tuneSelect').value;
-    playTrack()
-
-}
-function pop(txt,title,seconds,evil){
-    clearTimeout(TIMEOUTpop);
-    dis('popper','block')
-    if (seconds==undefined) {seconds=10}
-    if (title==undefined) {title='POP UP NOTE!'}
-    document.getElementById('popText').innerHTML=txt
-    if (evil!=undefined) {
-        TIMEOUTpop = setTimeout(function() {
-            eval(evil);
-        },seconds*1000);    
+    if (PLAYERopened==false) {
+        player()
+    }else if (LISTEN==false){
+        toggleListen()
     }else{
-    document.getElementById('popTitle').innerHTML=title
-            TIMEOUTpop = setTimeout(function() {
-            dis('popper','none');
-        },seconds*1000);
+        playTrack()
     }
+}
 
+function closePlayer() {
+    document.getElementById('playerA').style.display = 'none'
+}
+
+function trackPause() {
+    document.getElementById('Audio1').pause()
+    dis('pauseButton','none')
+    dis('playing','none')
+}
+
+function trackPlay() {
+    document.getElementById('Audio1').play()
+    dis('playing','block')
+    dis('pauseButton','block')
+    document.getElementById("Audio1").onended = function() {
+        trackEnd();
+    }
+}
+
+function trackReset() {
+    document.getElementById('Audio1').currentTime = 0
+    playTrack()
+}
+
+function trackEnd() {
+    incTrack(1)
+}
+
+function incTrack(dir) {
+    var newNo = parseInt(tuneSelect.selectedIndex + dir, 10)
+    if (newNo == ARRtunes.length) {
+        newNo = 0
+    }
+    if (newNo == -1) {
+        newNo = ARRtunes.length-1
+    }
+    document.getElementById('tuneSelect').selectedIndex =TRACK= newNo
+    TUNE=document.getElementById('tuneSelect').value
+    playTrack()
+}
+
+
+function pop(txt, title, seconds, evil) {
+    clearTimeout(TIMEOUTpop);
+    dis('popper', 'block')
+    if (seconds == undefined) {//defualt ime
+        seconds = 10
+    }
+    if (title == undefined) {//default title
+        title = 'POP UP NOTE!'
+    }
+    document.getElementById('popText').innerHTML = txt
+    if (evil == undefined|evil.length<5) {
+        evil="dis('pop','none')"
+        document.getElementById('popText').style.backgroundColor = 'lightgrey'
+    } else {
+        document.getElementById('popClose').style.display = 'none'
+        document.getElementById('popText').style.backgroundColor = 'pink'
+    }
+    document.getElementById('popTitle').innerHTML = title
+    document.getElementById('popClose').style.display = 'block'
+    TIMEOUTpop = setTimeout(function() {
+        dis('popper', 'none')
+        alert(evil)
+        eval(evil) //;
+    }, seconds * 1000);
 }
 
 //^Configure Views=============================================================
-//function config(msg, id, mode)
 function config(id){
     var i;
     cto()
@@ -155,7 +242,6 @@ function config(id){
         document.getElementById('cards').innerHTML = ARRcards[0]
         playCards(0,1);
     } else if (MODE == 'GALLERY') {
-        loadGallery();
         changeGalleryMode('man');
         gallery();
         dis('viewBox', 'block');
@@ -202,13 +288,13 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         }
         if (LISTEN == false) {
             shapeShift('msg', '1%', '1%', '7%', '22%', '-', '-', '4vw')
-            shapeShift('menu', '1%', '1%', '78%', '0%', '-', '-', '4vw');
+            shapeShift('menu', '0%', '0%', '78%', '0%', '-', '-', '4vw');
             if (MODE == 'GALLERY') {
                 shapeShift('viewBox', '0%', '0%', '7%', '22%', '-', '-', '3.5vw')
             }
         } else if (LISTEN == true) {
             shapeShift('msg', '1%', '1%', '7%', '32%', '-', '-', '4vw');
-            shapeShift('menu', '1%', '1%', '68%', '10%', '-', '-', '3vw');
+            shapeShift('menu', '0%', '0%', '68%', '10%', '-', '-', '3vw');
             if (MODE == 'GALLERY') {
                 shapeShift('viewBox', '0%', '0%', '7%', '32%', '-', '-', '3.5vw')
             }
@@ -219,15 +305,15 @@ shapeShift('playerA', '1%', '0%', '90%', '0%', '-', '-', '6vw')
          document.getElementById('tuneSelect').style.maxWidth="50%"
         shapeShift('hdr', '0%', '0%', '0%', '93%', '-', '-', '3.5vw');
         shapeShift(0, '34%', '34%', '0%', '77%', '-', '-', '4vw');
-        shapeShift(1, '1%', '68%', '25%', '52%', '_', '_', '4vw');
-        shapeShift(2, '1%', '68%', '50%', '27%', '_', '_', '4vw');
-        shapeShift(3, '1%', '68%', '75%', '2%', '_', '_', '4vw');
+        shapeShift(1, '1%', '67%', '25%', '52%', '_', '_', '4vw');
+        shapeShift(2, '1%', '67%', '50%', '27%', '_', '_', '4vw');
+        shapeShift(3, '1%', '67%', '75%', '1%', '_', '_', '4vw');
         shapeShift(4, '34%', '34%', '25%', '52%', '-', '_', '4vw');
         shapeShift(5, '34%', '34%', '50%', '27%', '', '_', '4vw');
-        shapeShift(6, '34%', '34%', '75%', '2%', '', '_', '4vw');
+        shapeShift(6, '34%', '34%', '75%', '1%', '', '_', '4vw');
         shapeShift(7, '67%', '2%', '25%', '52%', '-', '_', '4vw');
         shapeShift('listenA', '67%', '2%', '50%', '27%', '_', '-', '4vw');
-        shapeShift('sizeScreen', '-', '2%', '-', '2%', '22%', '-', '2.5vw');
+        shapeShift('sizeScreen', '-', '2%', '-', '1%', '22%', '-', '2.5vw');
     } else { //WIDE ASPECT
         if (MODE == 'WELCOME') {
             shapeShift('iconA', '1%', '-', '1%', '-', '75%', '-', '-')
@@ -251,7 +337,7 @@ shapeShift('playerA', '1%', '0%', '90%', '0%', '-', '-', '6vw')
         shapeShift('popper', '10%', '30%', '25%', '25%', '-', '-', '3vh')
         shapeShift('hdr', '0%', '-', '0%', '-', '7%', '100%', '1vw');
         document.getElementById('tuneSelect').style.maxWidth="50%"
-        shapeShift('playerA', '21%', '20%', '90%', '0%', '-', '-', '5vh')
+        shapeShift('playerA', '10%', '30%', '90%', '0%', '-', '-', '5vh')
         shapeShift('tuneSelect','0%', '0%', '0%', '0%', '-', '-', '4vh') 
         shapeShift(0, '2%', '2%', '0%', '91%', '-', '-', '3.5vh');
         shapeShift(1, '2%', '2%', '10%', '81%', '-', '-', '3.5vh');
@@ -268,7 +354,6 @@ shapeShift('playerA', '1%', '0%', '90%', '0%', '-', '-', '6vw')
         picAlign()
     }
 }
-
 
 function shapeShift(id, lf, rt, tp, bm, ht, wt, fs) {
     if (lf != '-') {
@@ -308,9 +393,7 @@ function shapeShift(id, lf, rt, tp, bm, ht, wt, fs) {
     }
 }
 
-
 //^Welcome Functions============================================================
-
 function playCards(id,step) {
     clearTimeout(TIMEOUTcards)
     if (step==1) {//it should be 0 opacity and old Card
@@ -340,33 +423,21 @@ function tuneSelectorMake(){
     TUNEselector=str
 }
 
-
-
-
 //^Gallery=============================================================
-function loadGallery() {
-    ARRgallery = "0,1,2,3,4,5,6,7,8".split(',')
-    ARRgallery[0] = "<a onclick='changeGalleryMode()'><X10>Auto</X10></a> for the 60 second Fred and the Fossils Story<br>Or set your pace with the<a onclick='gallery(+1)'> <img src='Data/transRight.png'style='height:25%'> arrows.|sepia.png|947|897";;
-    ARRgallery[1] = "<X5>1968</X5> My First Band,'JAM'; Twin Bridges Montana? Left to Right... Chuck, Bill, yours truly and Jay.|firstBand.jpg|1219|810";
-    ARRgallery[2] = "<X5>1969</X5> Playing bass at a Montana State University Spring Event|bass.png|1316|1940";
-    ARRgallery[3] = "<X5>1969 > 2010</X5> I occasionally played with friends and family.|backyard.png|465|661";
-    ARRgallery[4] = "<X5>2010 > 2016</X5> Ron (on right) got me back into performing (After a 40 year hiatus)|ron.jpg|1051|788";
-    ARRgallery[5] = "<X5>2016 > 2019</X5> Played with my buddy, Pat, until he passed away in November 2019|pat.jpg|1051|855";
-    ARRgallery[6] = "<X5>2019 > Now</X5> I play Solo at St Catherine's and Wesley Woods Senior Care facilities in Waco Texas|fred.jpg|1641|3919";
-    ARRgallery[7] = "My 'virtual' BACKUP BAND consists of computer generated tracks and electronic harmony.|theFossils.png|1209|1007";
-    ARRgallery[8] = "Additionally, I play with my friends, Stan, Bill, John, Sally for the fun of it...|barn.jpg|2754|1660";
-    ARRgallery[9] = "RESET or Choose something from the Menu|thatsAllFolks.png|581|575";
-    PICcount = ARRgallery.length
-    PIC=0
-}
- 
+
+
 function gallery(n) {
-    dis('am','block')
-    dis('rg','none')
+    document.getElementById('galleryPic').style.display = 'none'//to prevent flicker on change
     if (n == undefined) {n=0}
+    if (PIC==ARRgallery.length-2) {
+        changeGalleryMode('auto')
+    }
+    
+    if (PIC>=ARRgallery.length-1) {//EOArr
+        PIC=-1
+        }
     PIC=PIC+n
     var path=undefined
-    document.getElementById('galleryPic').style.display = 'block'
     PICpath = "Data/"
     document.getElementById('viewBox').style.display = 'block';
     if (PIC == 0) {
@@ -376,20 +447,57 @@ function gallery(n) {
     }
     if (PIC == ARRgallery.length - 1) {
         document.getElementById('picRight').style.display = 'none'
-        changeGalleryMode('man')
-        dis('am','none')
-        dis('rg','block')
     } else {
         document.getElementById('picRight').style.display = 'block'
+    }
+    if (ARRgallery[PIC]==undefined) {
+        alert(1)
     }
     path=PICpath + ARRgallery[PIC].split('|')[1];
     document.getElementById('viewBox').style.display = 'block' //hide msg div
     PICaspect = ARRgallery[PIC].split('|')[2] / ARRgallery[PIC].split('|')[3] //=w/h
+    PICtime=ARRgallery[PIC].split('|')[4]
     document.getElementById('galleryTxt').innerHTML = ARRgallery[PIC].split('|')[0];
     picAlign();
     document.getElementById('galleryPic').src = path
     document.getElementById('picCount').innerHTML = (PIC+1)  + "/" + PICcount;
+    document.getElementById('galleryPic').style.display = 'block'
 }
+
+
+function rollPics(){
+    clearTimeout(TIMEOUTgallery)
+    TIMEOUTgallery = setTimeout(function() {
+        gallery(1);
+        if (PIC==0) {
+            changeGalleryMode('man')
+            return;
+        }
+        if (PIC>=PICcount-1){
+            PIC=-1
+        }
+        rollPics()
+    },PICtime*1000);
+}
+
+function changeGalleryMode(mode){
+    if (mode==undefined) {
+        if (GALLERYmode=='auto'){
+            mode='man'
+        }else{mode='auto'}
+    }
+    GALLERYmode=mode
+    if (GALLERYmode=='auto') {
+        clearTimeout(TIMEOUTgallery)
+        document.getElementById('amIcon').src='Data/resetSpinner.gif';
+        rollPics();
+    }else{
+        clearTimeout(TIMEOUTgallery)
+        GALLERYmode='man'
+        document.getElementById('amIcon').src='Data/transparent.png';
+    }
+}
+
 
 function picAlign(path) {
     var frameAspect = document.getElementById('picFrame').clientWidth / document.getElementById('picFrame').clientHeight
@@ -407,40 +515,7 @@ function picAlign(path) {
     }
 }
 
-//^GALLERY" Functions
-function rollPics(){
-    clearTimeout(TIMEOUTgallery)
-    TIMEOUTgallery = setTimeout(function() {
-        gallery(1);
-        if (PIC==PICcount-1){
-            changeGalleryMode('man')
-            return
-        }
-        rollPics()
-    },7000);
-}
 
-function changeGalleryMode(x){
-    if (PIC==PICcount-1) {
-        x='man'
-        }
-    if (x==undefined) {
-        if (GALLERYmode=='auto'){
-            x='man'
-        }else{x='auto'}
-    }
-    GALLERYmode=x
-    if (GALLERYmode=='auto') {
-        gallery(1)
-        clearTimeout(TIMEOUTgallery)
-        document.getElementById('amIcon').src='Data/resetSpinner.gif';
-        rollPics();
-    }else{
-        clearTimeout(TIMEOUTgallery)
-        GALLERYmode='man'
-        document.getElementById('amIcon').src='Data/transparent.png';
-    }
-}
 
 //^Audio=============================================================
 function volSet(fact) {
@@ -480,20 +555,13 @@ function volSet(fact) {
 }
 
 
-function loadTrack(TUNE, info, idx) {
+function XXloadTrack(TUNE, info, idx) {
     alert('LOAD TRACK');
     var oldGreen=undefined
     if (TRACKindex!=undefined){
         oldGreen='s'+TRACKindex ;
     }
     var newGreen='s'+idx;
-    //clear any green
-    if (TUNE == undefined) {
-        TUNE = TUNE
-    } else {
-        TUNE = TUNE
-    }
-    //set the selector...
     document.getElementById('tuneSelect').selectedValue = TUNE
     TRACKindex = document.getElementById('tuneSelect').selectedIndex
 if (idx!=undefined)TRACKindex = idx
@@ -508,73 +576,8 @@ if (idx!=undefined)TRACKindex = idx
     if(oldGreen!=undefined){ document.getElementById(oldGreen).style.backgroundColor = 'lightgrey'}
     document.getElementById(newGreen).style.backgroundColor = 'green'
     dis('pauseButton','none')
-    //dis('pauseButtonA','none')
     dis('playing','none')
 }  
-
-
-function closePlayer() {
-    document.getElementById('playerA').style.display = 'none'
-}
-
-function trackPause() {
-    if (document.getElementById('Audio1').currentTime == document.getElementById('Audio1').duration) {
-        trackReset()
-    }
-    document.getElementById('Audio1').pause()
-    dis('pauseButton','none')
-    dis('playing','none')
-}
-
-function trackPlay() {
-    document.getElementById('Audio1').play()
-    dis('playing','block')
-    dis('pauseButton','block')
-    document.getElementById("Audio1").onended = function() {
-        trackEnd();
-    }
-}
-function trackReset() {
-    document.getElementById('Audio1').onended = null
-    document.getElementById('Audio1').pause()
-    document.getElementById('Audio1').currentTime = 0
-    dis('pauseButton','none')
-    dis('playing','none')
-}
-
-function trackEnd() {
-    incTrack(1)
-    dis('playing','none')    
-}
-
-
-function playTrack() {
-    if (LISTEN==false) {
-        return
-    }
-    TRACK=document.getElementById('tuneSelect').selectedIndex
-    TUNE=document.getElementById('tuneSelect').value
-    pop(ARRtunes[TRACK],'SONG INFORMATION',15)
-    TUNE = document.getElementById('tuneSelect').value;
-    document.getElementById("Audio1").onended = function() {
-        trackReset();
-    }
-    document.getElementById('Audio1').src = 'Data/' + TUNE + '.mp3';
-    trackPlay()
-}
-
-function incTrack(dir) {
-    var newNo = parseInt(tuneSelect.selectedIndex + dir, 10)
-    if (newNo == ARRtunes.length) {
-        newNo = 0
-    }
-    if (newNo == -1) {
-        newNo = ARRtunes.length-1
-    }
-    document.getElementById('tuneSelect').selectedIndex =TRACK= newNo
-    TUNE=document.getElementById('tuneSelect').value
-    playTrack()
-}
 
 //^MISC============================================================
 function fades(id, dir, ms, ids) {
@@ -606,7 +609,6 @@ function fades(id, dir, ms, ids) {
     }
 }
 //CONFIG FUNCTIONS===========================================================
-
 function admin() {
     if (LOCKED == true) {
         var f = prompt('The LISTEN function has been activated/n use your password for admin access... ADMINISTRATORS PASSWORD?');

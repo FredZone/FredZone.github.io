@@ -4,12 +4,6 @@
 <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!-- prevents zooming on mobile devices....number-based width or "device-width"-->
 <title id = 'title'>FOSSILS</title>
     <style type="text/css">
-      
-      img-container {
-        text-align: center;
-      }
-        
-        
         Body
             {
                 color:white;
@@ -23,15 +17,15 @@
                 margin:0px;
                 
             }
+        
         X1{color:red;}
         X2{color:white;}
         X3{color:blue;}
         X4{line-height:100%;color:yellow;}
         X5{line-height:150%;color:green;}
         X10{line-height:150%;color:red;background-color:yellow}
-    
     font{ Courrier;}
-    
+ 
     </style>
     </head>
 
@@ -71,7 +65,7 @@
     </div>    
 
 <!--Audio-->
-    <div id='playerA' style='position:absolute; display:none; border:none; background-color:yellow;font-size:3vw;line-height:75%;left:0%;width:75%;top:0%;bottom:0%;z-index:12000'>
+    <div id='playerA' style='position:absolute; display:none; border:solid;border-color:black; background-color:yellow;font-size:3vw;line-height:75%;left:0%;width:75%;top:0%;bottom:0%;z-index:12000'>
     <div style='position:absolute;background-color:green;text-align:center;color:red;left:15%; top:0%;width:70%;max-width:70%; bottom:50%;'>
         <select id='tuneSelect' onchange='playTrack()' style='position:absolute;border:solid;background-color:yellow;line-height:100%;font-size:3vw;text-align:center;color:red;min-width:100%; left:0%; top:0%;bottom:0%;right:0%;'>
         </select>
@@ -85,7 +79,7 @@
             </div>
             <img title='LOUDER' onclick='volSet(2)' id='volUpButton' src='Data/yellowVolUp.png' style='position:absolute;right:0%;bottom:10%;height:80%;z-index:5'>
         </div>
-        <div onclick= "pop(ARRtunes[TRACK].split('\n').slice(1),'<X2>'+TUNE.toUpperCase()+'</X2>')" style="position:absolute;background-image: url('Data/blackI.png');background-size:100% 100%;color:red;border:solid;font-size:3vw;left:25%;right:60%;top:0%;bottom:0%;"></div>
+        <div onclick= "pop(ARRtunes[TRACK].split('\n').slice(1).join(''),'<X2>'+TUNE.toUpperCase()+'</X2>')" style="position:absolute;background-image: url('Data/blackI.png');background-size:100% 100%;color:red;border:solid;font-size:3vw;left:25%;right:60%;top:0%;bottom:0%;"></div>
         <div onclick='incTrack(-1)' style="position:absolute;background-image: url('Data/yellowLastTuneA.png');background-size:100% 100%; color:red;border:solid;font-size:3vw;left:40%;right:40%;top:0%;bottom:0%;"></div>
         <div onclick='trackReset()' style="position:absolute;background-image: url('Data/yellowRewindA.png');background-size:100% 100%; color:red;border:solid;font-size:3vw;left:60%;right:20%;top:0%;bottom:0%;"></div>
         <div onclick='incTrack(1)' style="position:absolute;background-image: url('Data/yellowNextTuneA.png');background-size:100% 100%; color:red;border:solid;font-size:3vw;left:80%;right:0%;top:0%;bottom:0%;">
@@ -102,7 +96,7 @@
     </div>    
 
 <!--MENU-- //linehight:130   --> 
-    <div id='menu' style="position:absolute;background-color:black;text-align:center;display:none;line-height:150%;border:none; font-size:2.5vw; left:0%;right:0%;top:0%;bottom:0%; overflow-x:hidden";>
+    <div id='menu' style="position:absolute;color:black;border:solid;background-color:black;text-align:center;display:none;line-height:150%;font-size:2.5vw; left:0%;right:0%;top:0%;bottom:0%; overflow-x:hidden";>
         <div id='0'onclick="config(this.id)"style="position:absolute;"> HOME</div>
         <div id='1'onclick="config(this.id)"style="position:absolute;"> CONTACT</div>
         <div id='2'onclick="config(this.id)"style="position:absolute;"> ABOUT ME</div>
@@ -116,18 +110,15 @@
     </div>
 
 <!--VIEW BOX-->      
-    <div id='viewBox'style="position:absolute;display:none;line-height:85%;background-color:black;border:solid;left:0vw;right:0vw; top:0vw; bottom:0vw; z-index:450;">
+    <div id='viewBox'style="position:absolute;display:none;line-height:85%;background-color:black;border:groove;left:0vw;right:0vw; top:0vw; bottom:0vw; z-index:450;">
         <div id ='picFrame' style='position:absolute;display:block;border:none;left:0%; top:0%; height:85%; width:100%;'>
             <img id='galleryPic' style='position:absolute;display:block;left:0%;height:100%;width:100%;bottom:0%'>
         </div>                                                                                                                                                                                
-        <div id='picCount'style="position:absolute;line-height:100%;background-color:black;display:block;opacity:1;;font-weight:bold;left:1%;top:1%;">--</div>
-        <img id='picLeft' src='Data/transLeft.png' onclick="changeGalleryMode('Man'),gallery(-1)" style="position:absolute;left:1%;bottom:1%;width:7%">
-        <img id='picRight' src='Data/transRight.png' onclick="changeGalleryMode('Man'),gallery(+1)"style="position:absolute;right:1%;bottom:1%;width:7%">
-        <div id='am' onclick="changeGalleryMode('auto')" style="position:absolute;  line-height:150%; background-color:yellow; color:red; right:0%;top:0%;height:7%;border:solid; border-color:red;"> AUTO </div>
-        <img id='amIcon' onclick="changeGalleryMode()" src='Data/yellowPlay.png' style="position:absolute;display:block;right:0%;top:0%;height:7%;z-index:300;">
-        <div id='rg' onclick="PIC=0,gallery(0)" style="position:absolute; display:none; line-height:150%; background-color:yellow; color:red; right:0%; top:0%; height:4vh;border:solid; border-color:red;z-index:500">
-            RESET
-        </div>  
+        <div id='picCount'style="position:absolute;line-height:100%;background-color:black;display:block;opacity:1;font-weight:bold;left:0%;top:0%;">--</div>
+        <img id='picLeft' src='Data/transLeft.png' onclick="changeGalleryMode('Man'),gallery(-1)" style="position:absolute;left:0%;bottom:0%;height:7%">
+        <img id='picRight' src='Data/transRight.png' onclick="changeGalleryMode('Man'),gallery(+1)"style="position:absolute;right:0%;bottom:0%;height:7%">
+        <img src='Data/yellowAuto.png' id='am' onclick="changeGalleryMode('auto')" style="position:absolute; line-height:150%; right:0%; bottom:8%; height:7%;">
+        <img id='amIcon' onclick="if (PIC!=-1){changeGalleryMode()}" src='Data/transparent.png' style="position:absolute;display:block;right:0%;bottom:8%;height:7%;z-index:300;">
         <div id='galleryTxt' onclick="aspect()" style='position:absolute;color:white;border:none;left:0%;line-height:115%;top:85%;left:10%;height:14%;width:80%;'>
            Text Should Appear Here...
         </div>
