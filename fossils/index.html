@@ -118,12 +118,17 @@
         <img id='picLeft' src='Data/transLeft.png' onclick="changeGalleryMode('Man'),gallery(-1)" style="position:absolute;left:0%;bottom:0%;height:7%">
         <img id='picRight' src='Data/transRight.png' onclick="changeGalleryMode('Man'),gallery(+1)"style="position:absolute;right:0%;bottom:0%;height:7%">
         <img src='Data/yellowAuto.png' id='am' onclick="changeGalleryMode('auto')" style="position:absolute; line-height:150%; right:0%; bottom:8%; height:7%;">
-        <img id='amIcon' onclick="if (PIC!=-1){changeGalleryMode()}" src='Data/transparent.png' style="position:absolute;display:block;right:0%;bottom:8%;height:7%;z-index:300;">
+        <img id='amIcon' onclick="if (PIC!=-2){changeGalleryMode()}" src='Data/transparent.png' style="position:absolute;display:block;right:0%;bottom:8%;height:7%;z-index:300;">
         <div id='galleryTxt' onclick="aspect()" style='position:absolute;color:white;border:none;left:0%;line-height:115%;top:85%;left:10%;height:14%;width:80%;'>
            Text Should Appear Here...
         </div>
     </div>
+    <img src='Data/yellowPlay.png' id='picPreload' style='position:absolute;display:none;z-index:10000;right:0%;top:0%;width:10%;'>
 </div>
+
+
+
+
 <SCRIPT type="text/javascript" SRC = "index.js"></script>
 </body>
 </html>

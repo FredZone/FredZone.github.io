@@ -21,6 +21,7 @@
     var TIMEOUTcards;
     var TIMEOUTpop;
 //Gallery===========================================================
+    var PRELOADED=false;
     var PICtime=5
     var PICcount=9;
     var PIC=0;
@@ -62,6 +63,7 @@ window.onload = function() {
     GALLERYstring=fileDownload('Data/galleryString.txt');
     ARRgallery=GALLERYstring.split('\n')
     PICcount = ARRgallery.length
+    preLoadPics()
     PIC=0
     tuneSelectorMake();
     document.getElementById('tuneSelect').innerHTML = TUNEselector;
@@ -85,11 +87,6 @@ function player() {//opens initially opens or closes the player
         var str="The player will open at the bottom of the screen...<br><br>"
         str=str+"<img src='Data/playerA.png'style='position;relative;border:groove;width:90%;left:10%;'>"
         str=str+"<br><br>YOUR FIRST SONG SHOULD PLAY WITHIN 5 SECONDS!"
-        
-        
-        //pop(str, '<X1>AUTOMATICALLY OPENING THE PLAYER...<X1>',5, "playTrack()")
-        //playTrack()
-        
         pop(str, '<X1>AUTOMATICALLY OPENING THE PLAYER...<X1>',5, "toggleListen(),playTrack()")
     } else {
         toggleListen()
@@ -109,7 +106,6 @@ function toggleListen(){//turns listen box green and shows player A or yellow an
         LISTEN=true
         document.getElementById('listenA').style.backgroundColor='green';
         document.getElementById('listenA').style.color='white';
-///playTrack()
     }
      config(ID)
 }
@@ -410,20 +406,25 @@ function tuneSelectorMake(){
 }
 
 //^Gallery=============================================================
-
+function preLoadPics(){
+    document.getElementById('picPreload').src='Data/'+ARRgallery[0].split('|')[1]
+}
 
 function gallery(n) {
+    var path
     document.getElementById('galleryPic').style.display = 'none'//to prevent flicker on change
     if (n == undefined) {n=0}
     if (PIC==ARRgallery.length-2) {
         changeGalleryMode('auto')
+        dis('amIcon','none')
+    }else{
+        dis('amIcon','block')
     }
-    
     if (PIC>=ARRgallery.length-1) {//EOArr
         PIC=-1
-        }
+    }
     PIC=PIC+n
-    var path=undefined
+    path=undefined
     PICpath = "Data/"
     document.getElementById('viewBox').style.display = 'block';
     if (PIC == 0) {
@@ -437,9 +438,9 @@ function gallery(n) {
         document.getElementById('picRight').style.display = 'block'
     }
     if (ARRgallery[PIC]==undefined) {
-        alert(1)
+        alert('ERROR in PICTURE COUNT')
     }
-    path=PICpath + ARRgallery[PIC].split('|')[1];
+    path=PICpath + ARRgallery[PIC].split('|')[1];//get phot info
     document.getElementById('viewBox').style.display = 'block' //hide msg div
     PICaspect = ARRgallery[PIC].split('|')[2] / ARRgallery[PIC].split('|')[3] //=w/h
     PICtime=ARRgallery[PIC].split('|')[4]
@@ -448,10 +449,17 @@ function gallery(n) {
     document.getElementById('galleryPic').src = path
     document.getElementById('picCount').innerHTML = (PIC+1)  + "/" + PICcount;
     document.getElementById('galleryPic').style.display = 'block'
+    if (PRELOADED==false) {//forcing a one time preload of pictures
+        if(PIC<ARRgallery.length-1){
+        path=PICpath + ARRgallery[PIC+1].split('|')[1];
+        document.getElementById('picPreload').src=path
+        }else{
+            PRELOADED=true
+        }
+    }
 }
 
-
-function rollPics(){
+function rollPics(){//automatic picture sequence and time
     clearTimeout(TIMEOUTgallery)
     TIMEOUTgallery = setTimeout(function() {
         gallery(1);
@@ -500,8 +508,6 @@ function picAlign(path) {
         document.getElementById('galleryPic').style.bottom = 50 * (1 - (1 / factor)) + "%"
     }
 }
-
-
 
 //^Audio=============================================================
 function volSet(fact) {
