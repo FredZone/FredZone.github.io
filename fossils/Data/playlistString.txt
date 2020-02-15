@@ -1,18 +1,40 @@
 <div style="border:groove">
 PLAYLIST
-<br><div onclick="listen(0,true)"style='position:relative;border:groove;color:red;background-color:yellow;'><img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>Abilene</div>
-<div  onclick="listen(1,true)"style='position:relative;border:groove;color:red;background-color:yellow;'><img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>Sea Of Heartbreak</div>
+<br>
+<div onclick="trackLoad(0,true)"style='position:relative;border:groove;color:red;background-color:yellow;'>
+    <img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>
+    Abilene
+</div>
+<div  onclick="trackLoad(1,true)"style='position:relative;border:groove;color:red;background-color:yellow;'>
+    <img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>
+    Sea Of Heartbreak
+    <!-- unfortunately this starts the tune too...
+    <img src='Data/blackI.png' onclick= "pop(ARRtunes[TRACK].split('\n').slice(1).join(''),'<X2>'+TUNE.toUpperCase()+'</X2>')" style='position:absolute;right:0%;top:0%;height:100%;z-index:500'>
+     -->
+</div>
 You Are My Sunshine
-<div  onclick="listen(2,true)"style='position:relative;border:groove;color:red;background-color:yellow;'><img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>Pancho And Lefty</div>
+<div  onclick="trackLoad(2,true)"style='position:relative;border:groove;color:red;background-color:yellow;'>
+    <img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>
+    Pancho And Lefty
+</div>
 Margaritaville
-<div  onclick="listen(4,true)"style='position:relative;border:groove;color:red;background-color:yellow;'><img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>When The Roses Bloom Again</div>
+<div  onclick="trackLoad(4,true)"style='position:relative;border:groove;color:red;background-color:yellow;'>
+    <img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>
+    When The Roses Bloom Again
+</div>
 Dream
-<div  onclick="listen(3,true)"style='position:relative;border:groove;color:red;background-color:yellow;'><img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>The Cape</div>
+<div  onclick="trackLoad(3,true)"style='position:relative;border:groove;color:red;background-color:yellow;'>
+    <img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>
+    The Cape
+</div>
 Little Red Riding Hood
 <br>Walk Right Back
 <br>Long Black Veil
 <br>All The Lonely People
-<div  onclick="listen(5,true)"style='position:relative;border:groove;color:red;background-color:yellow;'><img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>Jamaica Farewell</div>
+<div  onclick="trackLoad(5,true)"style='position:relative;border:groove;color:red;background-color:yellow;'>
+    <img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>
+    Jamaica Farewell
+</div>
 Singing The Blues
 <br>Stand By Me
 <br>Blue Eyes Crying In The Rain
@@ -25,8 +47,11 @@ Singing The Blues
 <br>Put Another Log On The Fire
 <br>Break My Mind
 <br>Fire Lake
-<br>Teach Your Children
-<br>Happy Trails
+<div  onclick="trackLoad(6,true)"style='position:relative;border:groove;color:red;background-color:yellow;'>
+    <img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>
+    Teach Your Children
+</div>
+Happy Trails
 <br><X5>-----Extras-----</X5>
 <br>Thats Gonna Leave A Mark
 <br>Always on My Mind

@@ -1,4 +1,4 @@
-Click <img src='Data/yellowAuto.png' onclick='changeGalleryMode()' style="height:30%"> for a 60 sec. 'Fred and the Fossils' Pictoral History<br>Or set your pace with the<a onclick='gallery(+1)'><img src='Data/transRight.png'style='height:25%'> arrows.|sepia.png|947|897|3
+Click <img src='Data/yellowAuto.png' onclick='changeGalleryMode()' style="height:30%"> for a 60 sec. 'Fred and the Fossils' Pictoral History &nbsp &nbsp (Or use the<a onclick='gallery(+1)'><img src='Data/transRight.png'style='height:25%'> arrows.)|sepia.png|947|897|3
 <X4>1968</X4> My First Band,'JAM'; Butte, Montana; Left to Right> Chuck, Bill, yours truly and Jay.|firstBand.jpg|1219|810|10
 <X4>1969</X4> Playing bass at a Montana State University Spring Event|bass.png|1316|1940|5
 <X4>1969 > 2010 </X4> I occasionally played with friends and family|backyard.png|465|661|5
@@ -7,4 +7,4 @@ Click <img src='Data/yellowAuto.png' onclick='changeGalleryMode()' style="height
 <X4>2019 > Now </X4> I play Solo at St Catherine's and Wesley Woods Senior Care facilities in Waco, Texas|fred.jpg|1641|3919|8
 My 'virtual' BACKUP BAND consists of computer generated tracks and electronic harmony.|theFossils.png|1209|1007|7
 Additionally, I play with my friends, Stan, Bill, John and, Sally for the fun of it...|barn.jpg|2754|1660|9
-THANKS FOR WATCHING...<br>(Resetting the Gallery) |thatsAllFolks.png|581|575|3
+THANKS FOR WATCHING...<br>(Resetting the Gallery...) |thatsAllFolks.png|581|575|3

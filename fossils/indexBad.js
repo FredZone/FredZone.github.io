@@ -47,8 +47,8 @@
     var TUNE=undefined
     var TUNEselector;//A string to paste into the tuneSelect
     var TRACK=0;//from ARRtunes
-    var TUNE;
-    //var TRACKindex=undefined;//index of the tuneSelector
+    var TUNE='PICK ONE...';//Title of the Tune
+    var TRACKindex=undefined;//index of the tuneSelector
     var VOL=0.5;
     var LOOPtype='all';
 //^BOOT=============================================================
@@ -69,9 +69,10 @@ window.onload = function() {
     PIC=0
     tuneSelectorMake();
     document.getElementById('tuneSelect').innerHTML = TUNEselector;
-    //document.getElementById('tuneSelect').selectedIndex = TRACK;
-    trackLoad(0,false)
-    TUNE=document.getElementById('tuneSelect').value;
+    document.getElementById('tuneSelect').selectedIndex=0
+    TUNE=document.getElementById('tuneSelect').selectedValue
+    alert(TUNE)
+    document.getElementById('Audio1').src = 'Data/' + TUNE + '.mp3';
     document.getElementById("Audio1").volume = 0.033;
     VOL = 0.5;
     ARRcards=fileDownload('Data/cardsString.txt').split('\n');
@@ -299,9 +300,20 @@ function shapeShift(id, lf, rt, tp, bm, ht, wt, fs) {
 
 //^AUDIO====================================================================================================================================
 
+function player() {//opens initially opens or closes the player
+    //if (PLAYERopened == false){
+    //    PLAYERopened =true;
+    //    toggleListen()
+        //var str="The player will open at the bottom of the screen...<br><br>"
+        //str=str+"<img src='Data/playerA.png'style='position;relative;border:groove;width:90%;left:10%;'>"
+        //str=str+"<br><br>YOUR FIRST SONG SHOULD PLAY WITHIN 5 SECONDS!"
+        //pop(str, '<X1>AUTOMATICALLY OPENING THE PLAYER...<X1>',4, "toggleListen(),playTrack()")
+    //} else {
+        toggleListen(TRACK)
+    //}
+}
 
-
-function togglePlayer(){//turns listen box green and shows player A or yellow and Hides A
+function toggleListen(id){//toggles playerA & menu
     if(LISTEN==true){
         trackPause()
         LISTEN=false
@@ -310,20 +322,25 @@ function togglePlayer(){//turns listen box green and shows player A or yellow an
         trackPause()
     }else{
         LISTEN=true
+        if (id==undefined) {
+            TRACK=document.getElementById('tuneSelect').selectedIndex
+        }
         document.getElementById('listenA').style.backgroundColor='green';
         document.getElementById('listenA').style.color='white';
+         alert(TUNE+">>"+TRACK)
+        //trackPlay()
     }
     config(ID)
 }
 
-function listenXXXX(id,play){//play by selecting from the playlist etc===============
+function listen(id,play){//play by selecting from the playlist etc===============
     document.getElementById('tuneSelect').selectedIndex=id;
     if (PLAYERopened==false) {
         player()
     }else if (LISTEN==false){
-        togglePlayer()
+        toggleListen()
     }else{
-        trackLoad()
+        playTrack()
     }
 }
 
@@ -332,14 +349,43 @@ function closePlayer() {
     document.getElementById('playerB').style.display = 'none'
 }
 
-function trackLoad(track,play) {
-    trackPause()//close any playing track
-    if (track==undefined) {
-        TRACK=document.getElementById('tuneSelect').selectedIndex
-    }else{
-        TRACK=track
-        document.getElementById('tuneSelect').selectedIndex=TRACK
-        }
+function trackPause() {
+    document.getElementById('Audio1').pause()
+    dis('pauseButton','none')
+    dis('playing','none')
+}
+
+function trackPlay() {
+    //alert(Audio1).play()
+    document.getElementById('Audio1').play()
+    dis('playing','block')
+    dis('pauseButton','block')
+    document.getElementById("Audio1").onended = function() {
+        trackEnd();
+    }
+}
+
+function trackReset() {
+    document.getElementById('Audio1').currentTime = 0
+    //playTrack()
+}
+
+function trackEnd() {
+    incTrack(1)
+}
+
+
+function helpPlayer(){
+    //pop("<img src='Data/playerAhelp.png' style='position:absolute;top:0%;left:0%;width:100%;'>","PLAYER HELP",25,undefined)    
+}
+
+
+
+function playTrack() {
+    if (LISTEN==false) {
+        return
+    }
+    TRACK=document.getElementById('tuneSelect').selectedIndex
     TUNE=document.getElementById('tuneSelect').value
     //pop(ARRtunes[TRACK].split('\n').slice(1).join(''),'<X2>'+TUNE.toUpperCase()+"</X2><img onclick='helpPlayer()' src='Data/yellowHelp.png' style='position:absolute;left:0%;bottom:0;height:100%;'>",15)
     TUNE = document.getElementById('tuneSelect').value;
@@ -347,48 +393,8 @@ function trackLoad(track,play) {
         trackReset();
     }
     document.getElementById('Audio1').src = 'Data/' + TUNE + '.mp3';
-    if (play==true) {
-        if (LISTEN==false) {
-            togglePlayer()
-        }
-        trackPlay()
-    }
+    trackPlay()
 }
-
-function trackPlay() {
-    
-    document.getElementById('Audio1').play()
-    dis('playing','block')
-    dis('pauseButton','block')
-    if (document.getElementById('Audio1').currentTime<3) {
-        pop(ARRtunes[TRACK].split('\n').slice(1).join(''),'<X2>'+TUNE.toUpperCase()+"</X2>",15)
-    }
-    document.getElementById("Audio1").onended = function() {
-        trackEnd();
-    }
-}
-
-
-function trackPause() {
-    document.getElementById('Audio1').pause()
-    dis('pauseButton','none')
-    dis('playing','none')
-}
-
-function trackReset() {
-    document.getElementById('Audio1').currentTime = 0
-    trackLoad(undefined,true)
-}
-
-function trackEnd() {
-    incTrack(1)
-}
-
-function helpPlayer(){
-    pop("<img src='Data/playerAhelp.png' style='position:absolute;top:0%;left:0%;width:100%;'>","PLAYER HELP",25,undefined,'black')    
-}
-
-
 
 function incTrack(dir) {
     var newNo = parseInt(tuneSelect.selectedIndex + dir, 10)
@@ -400,25 +406,36 @@ function incTrack(dir) {
     }
     document.getElementById('tuneSelect').selectedIndex =TRACK= newNo
     TUNE=document.getElementById('tuneSelect').value
-    trackLoad(undefined,true)
+    //playTrack()
 }
 
 
-function pop(txt,title,seconds,evil,color){
+function pop(txt,title,seconds,evil,lfIcon,rtIcon){//ICONS =IconName|action    i.e.  "yellowHelp|alert('this sucks')" 
     clearTimeout(TIMEOUTpop);
-    dis('popper','block')
-    if (seconds==undefined) {seconds=10}
-    if (title==undefined) {title='POP UP NOTE!'}
-    document.getElementById('popText').innerHTML=txt
-    document.getElementById('popClose').style.display='block'
-    if (evil==undefined) {evil="dis('popper','none')"}
-    if (color==undefined){color='lightgrey'}
-    document.getElementById('popText').style.backgroundColor=color;
+    //dis('popper','block')
+    if (seconds==undefined){
+        seconds=10
+    }
+    if (title==undefined) {
+        title='POP UP NOTE!'
+    }
+
+    if (evil==undefined) {
+        evil="dis('popper','none')"
+        document.getElementById('popText').style.backgroundColor='lightgrey'
+    }else{
+        document.getElementById('popRight').style.display='none'
+        document.getElementById('popText').style.backgroundColor='pink'
+    }
     document.getElementById('popTitle').innerHTML=title
+    document.getElementById('popText').innerHTML=txt
+    document.getElementById('popRight').style.display='block'
     TIMEOUTpop = setTimeout(function() {
-    eval(evil)//dis('popper','none');
+        eval(evil);//dis('popper','none');
     },seconds*1000);
 }
+
+
 
 //^Welcome Functions============================================================
 function playCards(id,step) {
@@ -590,6 +607,31 @@ function volSet(fact) {
     document.getElementById('volUpButton').style.opacity=dial/10
     document.getElementById('volDownButton').style.opacity=1-dial/11
 }
+
+
+function XXloadTrack(TUNE, info, idx) {
+    alert('LOAD TRACK');
+    var oldGreen=undefined
+    if (TRACKindex!=undefined){
+        oldGreen='s'+TRACKindex ;
+    }
+    var newGreen='s'+idx;
+    document.getElementById('tuneSelect').selectedValue = TUNE
+    TRACKindex = document.getElementById('tuneSelect').selectedIndex
+if (idx!=undefined)TRACKindex = idx
+    if (info == true) {
+        document.getElementById('msg').innerHTML = ARRtunes[TUNE]
+        document.getElementById('msg').innerHTML = ARRtunes[TRACKindex]
+    }
+    document.getElementById('Audio1').src = 'Data/' + TUNE + '.mp3';
+    document.getElementById("Audio1").onended = function() {
+        trackReset();
+    }
+    if(oldGreen!=undefined){ document.getElementById(oldGreen).style.backgroundColor = 'lightgrey'}
+    document.getElementById(newGreen).style.backgroundColor = 'green'
+    dis('pauseButton','none')
+    dis('playing','none')
+}  
 
 //^MISC============================================================
 function fades(id, dir, ms, ids) {
