@@ -34,7 +34,7 @@
     var PLAYER=false;
 //WELC0ME MODE==========================================================================
     var CARD=0;
-    var STATE=1
+    //var STATE=1
 //ARRAYS===============================================================================
     var ARRmode='WELCOME,CONTACT,ABOUT,PLAYLIST,SCHEDULE,WHY,BAND,GALLERY,SETTINGS,ADMIN'.split(',')
     var ARRcards;
@@ -121,8 +121,8 @@ function config(id) {
     msg = eval(msg)
     document.getElementById('msg').innerHTML = msg;
     if (MODE == 'WELCOME') {
-        document.getElementById('cards').innerHTML = ARRcards[0]
-        playCards(0,1);
+        document.getElementById('cards').innerHTML = ARRcards[CARD]
+        playCards();
     }else if (MODE == 'GALLERY') {
         PIC=0;
         changeGalleryMode('man');
@@ -135,14 +135,14 @@ function config(id) {
     if (LISTEN == true) {
         if (PLAYERtype == 'A') {
             dis('playerA', 'block');
-        //    dis('playerB', 'none');
+            dis('playerB', 'none');
         } else {
             dis('playerA', 'none');
-        //    dis('playerB', 'block');
+            dis('playerB', 'block');
         }
     } else {
         dis('playerA', 'none');
-        //dis('playerB', 'none');
+        dis('playerB', 'none');
     }
     if (MODE != 'GALLERY') {
         dis('viewBox', 'none');
@@ -422,24 +422,26 @@ function pop(txt,title,seconds,evil,color){
 }
 
 //^Welcome Functions============================================================
-function playCards(id,step) {
+function playCards() {
     clearTimeout(TIMEOUTcards)
-    if (step==1) {//it should be 0 opacity and old Card
-        document.getElementById('cards').innerHTML = ARRcards[id];
-        fade('cards', 0.02, 50)
-        TIMEOUTcards = setTimeout(function() {
-            playCards (id,2)
-        },7000);
+    if (MODE!='WELCOME') {
+        return
     }
-    if (step==2) {
-        id = id + 1
-        if (id >= ARRcards.length) {
-            id = 0;
-        }
-        fade('cards', -0.02, 50)
+    if (document.getElementById('cards').style.opacity <0.5) {
+        document.getElementById('cards').innerHTML = ARRcards[CARD];
+        fade('cards', 0.08, 50)
         TIMEOUTcards = setTimeout(function() {
-            playCards (id,1)
-        },3000);
+            playCards ()
+        },7000);
+    }else{
+        CARD = CARD + 1
+        if (CARD >= ARRcards.length) {
+            CARD = 0;
+        }
+        fade('cards', -0.08, 50)
+        TIMEOUTcards = setTimeout(function() {
+            playCards ()
+        },1000);
     }    
 }
 

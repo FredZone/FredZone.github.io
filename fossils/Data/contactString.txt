@@ -1,5 +1,5 @@
 <div>
-    CONTACT INFORMATION
+    <X5>CONTACT INFORMATION</X5>
     <br><br>Call or Text*:
     <br><a onclick="window.open('tel:2542149980')"><button style="color:red;background-color:yellow;font-size:5vw">(254)-214-9980</button></a>
     <br><br>Email*:
