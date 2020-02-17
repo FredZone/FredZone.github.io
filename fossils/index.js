@@ -85,17 +85,7 @@ window.onload = function() {
 }
 
 //^Configure Views=============================================================
-function changePlayer(){
-    if (PLAYERtype=='A'){
-        PLAYERtype='B'
-        document.getElementById('playerB').style.display='block'
-        document.getElementById('playerA').style.display='none' 
-    }else{
-        PLAYERtype='A'
-        document.getElementById('playerB').style.display='none'
-        document.getElementById('playerA').style.display='block'     
-    }
-}
+
 
 function config(id) {
     var i;
@@ -199,7 +189,7 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         }
         shapeShift('popper', '15%', '15%', '20%', '35%', '-', '-', '3vw')
         shapeShift('playerA', '1%', '0%', '90%', '0%', '-', '-', '6vw')
-        shapeShift('playerB', '1%', '0%', '90%', '%5%', '-', '-', '6vw')
+        shapeShift('playerB', '1%', '0%', '90%', '0%', '-', '-', '6vw')
         
         document.getElementById('tuneSelect').style.fontSize="4vw"
         shapeShift('hdr', '0%', '0%', '0%', '93%', '-', '-', '3.5vw');
@@ -239,8 +229,7 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         shapeShift('popper', '10%', '30%', '25%', '25%', '-', '-', '3vh')
         shapeShift('hdr', '0%', '-', '0%', '-', '7%', '100%', '1vw');
         shapeShift('playerA', '10%', '30%', '90%', '0%', '-', '-', '5vh')
-        shapeShift('playerB', '1%', '0%', '90%', '%5%', '-', '-', '6vw')
-        //shapeShift('playerB', '10%', '30%', '90%', '0%', '-', '-', '5vh')
+        shapeShift('playerB', '10%', '30%', '90%', '0%', '-', '-', '6vw')
         document.getElementById('tuneSelect').style.fontSize="4vh"
         shapeShift(0, '2%', '2%', '0%', '91%', '-', '-', '3.5vh');
         shapeShift(1, '2%', '2%', '10%', '81%', '-', '-', '3.5vh');
@@ -300,7 +289,19 @@ function shapeShift(id, lf, rt, tp, bm, ht, wt, fs) {
 
 //^AUDIO====================================================================================================================================
 
-
+function changePlayer(){
+    LISTEN=false
+    togglePlayer()
+    if (PLAYERtype=='A'){
+        PLAYERtype='B'
+        document.getElementById('playerB').style.display='block'
+        document.getElementById('playerA').style.display='none' 
+    }else{
+        PLAYERtype='A'
+        document.getElementById('playerB').style.display='none'
+        document.getElementById('playerA').style.display='block'     
+    }
+}
 
 function togglePlayer(){//turns listen box green and shows player A or yellow and Hides A
     if(LISTEN==true){
@@ -317,16 +318,6 @@ function togglePlayer(){//turns listen box green and shows player A or yellow an
     config(ID)
 }
 
-function listenXXXX(id,play){//play by selecting from the playlist etc===============
-    document.getElementById('tuneSelect').selectedIndex=id;
-    if (PLAYERopened==false) {
-        player()
-    }else if (LISTEN==false){
-        togglePlayer()
-    }else{
-        trackLoad()
-    }
-}
 
 function closePlayer() {
     document.getElementById('playerA').style.display = 'none'
@@ -428,7 +419,7 @@ function playCards() {
         return
     }
     if (document.getElementById('cards').style.opacity <0.5) {
-        document.getElementById('cards').innerHTML = ARRcards[CARD];
+        document.getElementById('cards').innerHTML = '<X5>'+ARRcards[CARD]+'</X5>';
         fade('cards', 0.08, 50)
         TIMEOUTcards = setTimeout(function() {
             playCards ()

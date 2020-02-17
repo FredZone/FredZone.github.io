@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <head>
-<link rel="icon" href="Data/iconFav.png" type="image/png">
-<meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!-- prevents zooming on mobile devices....number-based width or "device-width"-->
-<title id = 'title'>FOSSILS</title>
+    <link rel="icon" href="Data/iconFav.png" type="image/png">
+    <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!-- prevents zooming on mobile devices....number-based width or "device-width"-->
+    <title id = 'title'>FOSSILS</title>
     <style type="text/css">
         Body
             {
@@ -23,13 +23,12 @@
         X4{line-height:100%;color:yellow;}
         X5{line-height:150%;color:green;}
         X10{line-height:150%;color:red;background-color:yellow}
-
- 
     </style>
-    </head>
+</head>
 
 <body onresize="realign()">
 <!--z-index  map============================================
+-1 Main Screen black background
  0 Base hdr/menu/msg/playerA 
  50:pause buttonA
  100   
@@ -39,100 +38,104 @@
  500 floater
  600 playButton
  700 pause Button
+1000 popper
  audio 1000temp
 -->
 
 <!--MAIN SCREEN -------------------------------------------------------------------------------------------------------  -->
-<div style="position:fixed; display:block; left:0%; top:0%; right:0%; bottom:0%;background-color:black;z-index:-1;">
+<div style="position:fixed; display:block; left:0%; top:0%; right:0%; bottom:0%;background-color:black;z-index:-1;"><!--Main Envelope-->
     <div id='background' style="position:fixed;display:block ;background-color:black;line-height:100%; font-size:2.5vw; left:0%; top:0%; right:0%; bottom:0%;">
-<!--popper-->    
-    <div id='popper' style="position:absolute; color:black; background-color:lightgrey;font-weight:bold; border:groove;display:none; line-height:130%; overflow:hidden; font-size:5vw; text-align:center; left:5%; right:20%; top:30%; bottom:25%;z-index:1000">   
-        <div id='popTitle'style="position:absolute;left:0%;right:0%;top:0%;height:10%;text-align:center">POP UP NOTE!!</div>
-        <img id='popClose' src="Data/yellowClose.png" onclick="dis('popper')"  style="position:absolute;display:block;right:0%;bottom:90%;height:10%;z-index:2000;">
-        <img id='popClose' src="Data/resetSpinner.gif" style="position:absolute;display:block;right:0%;bottom:90%;height:10%;">
-        <div id='popText' style="position:absolute; color:black; background-color:lightgrey;font-weight:bold; border:groove;display:block; line-height:130%; overflow-y:scroll; text-align:center; left:0%; right:0%; top:10%; bottom:0%;overflow-y:auto;word-break: keep-all;">   
-        YOUR POP UP MESSAGE SHOULD HAVE APPERED HERE!!   SORRY ABOUT THAT
-        </div>   
-    </div>
-
-<!--ADMIN-->
-    <img title='Administator (password Required)' id='admin' src='Data/transparent.png' onclick="admin()" style="position:absolute;display:block;left:0%; top:0%; height:7%;z-index:1500">
-
-<!--HDR-->    
-    <div id='hdr' style="position:absolute;display:none;left:0%;right:0%;top:0%;bottom:0%;">
-        <img  src="Data/fatf.png" style="position:absolute;display:block;left:20%;height:100%;width:60%">
-    </div>    
-
-<!--Audio-->
-    <div id='playerB' style='position:absolute;overflow:hidden;display:none;color:white;text-align:center; border:solid;background-color:black;z-index:10;left:0%;right:0%;top:90%;bottom:0%'>
-        <select id='tuneSelectB' onchange='trackLoad(undefined,true)' style='position:absolute;display:block;border:solid;background-color:yellow;line-height:100%;font-size:3vw;text-align:center;color:red;left:0%;width:100%;top:0%;bottom:60%;z-index:5'>
-        <option>XXXX</option>    
-        </select>
-        <audio id='Audio1' controls='true' preload='metadata' source src='none' type='audio/mpeg' style='position:absolute;display:block;left:0%;right:0%;top:20%;bottom:0%'></audio>
-    </div>
+    <!--popper-->    
+        <div id='popper' style="position:absolute; color:black; background-color:lightgrey;font-weight:bold; border:groove;display:none; line-height:130%; overflow:hidden; font-size:5vw; text-align:center; left:5%; right:20%; top:30%; bottom:25%;z-index:1000">   
+            <div id='popTitle'style="position:absolute;left:0%;right:0%;top:0%;height:10%;text-align:center">
+                POP UP NOTE!!
+            </div>
+            <img id='popClose' src="Data/yellowClose.png" onclick="dis('popper')"  style="position:absolute;display:block;right:0%;bottom:90%;height:10%;z-index:2000;">
+            <img id='popClose' src="Data/resetSpinner.gif" style="position:absolute;display:block;right:0%;bottom:90%;height:10%;">
+            <div id='popText' style="position:absolute; color:black; background-color:lightgrey;font-weight:bold; border:groove;display:block; line-height:130%; overflow-y:scroll; text-align:center; left:0%; right:0%; top:10%; bottom:0%;overflow-y:auto;word-break: keep-all;">   
+                YOUR POP UP MESSAGE SHOULD HAVE APPERED HERE!!   SORRY ABOUT THAT
+            </div>   
+        </div>
     
-    <div id='playerA' style='position:absolute; display:none; border:groove; background-color:yellow;font-size:3vw;line-height:75%;left:0%;width:0%;top:0%;bottom:0%;z-index:20'>
-        <select id='tuneSelect' onchange='trackLoad(undefined,true)' style='position:absolute;display:block;border:solid;background-color:yellow;line-height:100%;font-size:3vw;text-align:center;color:red;left:15%;right:15%;top:0%;max-width:60%;min-width:60%; bottom:50%;'>
-        </select>
+    <!--ADMIN-->
+        <img title='Administator (password Required)' id='admin' src='Data/transparent.png' onclick="admin()" style="position:absolute;display:block;left:0%; top:0%; height:7%;z-index:1500">
+    
+    <!--HDR-->    
+        <div id='hdr' style="position:absolute;display:none;left:0%;right:0%;top:0%;bottom:0%;">
+            <img  src="Data/fatf.png" style="position:absolute;display:block;left:20%;height:100%;width:60%">
+        </div>    
+    
+    <!--Audio-->
+        <div id='playerB' style='position:absolute;overflow:hidden;display:none;color:white;text-align:center; border:solid;background-color:green;z-index:10;left:0%;right:40%;top:0%;bottom:0%'>
+            <audio id='Audio1' controls='true' preload='metadata' source src='none' type='audio/mpeg' style='position:absolute;display:block;left:0%;right:0%;top:0%;bottom:0%'></audio>
+        </div>
         
-        
-        
-<div onclick='helpPlayer()' style="position:absolute;color:red;border:solid;right:15%;top:0%;bottom:50%;line-height:80%;width:10%;">??</div>
-        <img onclick='togglePlayer()' src='Data/yellowClose.png' style='position:absolute;right:86%;bottom:10%;height:80%;'>
-        <div id='playButtons' style='position:absolute;color:red; background-color:yellow;left:15%;right:15%;top:50%;bottom:0%;'>
-            <div style='position:absolute;border:solid;background-color:transparent;left:0%;right:75%;top:0%;bottom:0%;'>
-                <img title='Quieter...' onclick='volSet(0.5)' id='volDownButton' src='Data/yellowVolDown.png' style='position:absolute;left:0%;bottom:10%;height:80%;z-index:5'>
-                <div id='volNo' style='position:absolute;border:none; background-color:transparent;color:black;text-align:center;left:0%;bottom:1%;right:0%;top:1%;line-height:100%;font-size:4vw;'>
-                5
+        <div id='playerA' style='position:absolute; display:none; border:groove; background-color:yellow;font-size:3vw;line-height:75%;left:0%;width:0%;top:0%;bottom:0%;z-index:20'>
+            <select id='tuneSelect' onchange='trackLoad(undefined,true)' style='position:absolute;display:block;border:solid;background-color:yellow;line-height:100%;font-size:3vw;text-align:center;color:red;left:15%;right:15%;top:0%;max-width:60%;min-width:60%; bottom:50%;'>
+            </select>
+            <div onclick='helpPlayer()' style="position:absolute;color:red;border:solid;right:15%;top:0%;bottom:50%;line-height:80%;width:10%;">
+                ??
+            </div>
+            <img onclick='togglePlayer()' src='Data/yellowClose.png' style='position:absolute;right:86%;bottom:10%;height:80%;'>
+            <div id='playButtons' style='position:absolute;color:red; background-color:yellow;left:15%;right:15%;top:50%;bottom:0%;'>
+                <div style='position:absolute;border:solid;background-color:transparent;left:0%;right:75%;top:0%;bottom:0%;'>
+                    <img title='Quieter...' onclick='volSet(0.5)' id='volDownButton' src='Data/yellowVolDown.png' style='position:absolute;left:0%;bottom:10%;height:80%;z-index:5'>
+                    <div id='volNo' style='position:absolute;border:none; background-color:transparent;color:black;text-align:center;left:0%;bottom:1%;right:0%;top:1%;line-height:100%;font-size:4vw;'>
+                    5
+                    </div>
+                    <img title='LOUDER' onclick='volSet(2)' id='volUpButton' src='Data/yellowVolUp.png' style='position:absolute;right:0%;bottom:10%;height:80%;z-index:5'>
                 </div>
-                <img title='LOUDER' onclick='volSet(2)' id='volUpButton' src='Data/yellowVolUp.png' style='position:absolute;right:0%;bottom:10%;height:80%;z-index:5'>
+                <div onclick= "pop(ARRtunes[TRACK].split('\n').slice(1).join(''),'<X2>'+TUNE.toUpperCase()+'</X2>')" style="position:absolute;background-image: url('Data/blackI.png');background-size:100% 100%;color:red;border:solid;font-size:3vw;left:25%;right:60%;top:0%;bottom:0%;">
+                </div>
+                <div onclick='incTrack(-1)' style="position:absolute;background-image: url('Data/yellowLastTuneA.png');background-size:100% 100%; color:red;border:solid;font-size:3vw;left:40%;right:40%;top:0%;bottom:0%;">
+                </div>
+                <div onclick='trackReset()' style="position:absolute;background-image: url('Data/yellowRewindA.png');background-size:100% 100%; color:red;border:solid;font-size:3vw;left:60%;right:20%;top:0%;bottom:0%;">
+                </div>
+                <div onclick='incTrack(1)' style="position:absolute;background-image: url('Data/yellowNextTuneA.png');background-size:100% 100%; color:red;border:solid;font-size:3vw;left:80%;right:0%;top:0%;bottom:0%;">
+                </div>
             </div>
-            <div onclick= "pop(ARRtunes[TRACK].split('\n').slice(1).join(''),'<X2>'+TUNE.toUpperCase()+'</X2>')" style="position:absolute;background-image: url('Data/blackI.png');background-size:100% 100%;color:red;border:solid;font-size:3vw;left:25%;right:60%;top:0%;bottom:0%;"></div>
-            <div onclick='incTrack(-1)' style="position:absolute;background-image: url('Data/yellowLastTuneA.png');background-size:100% 100%; color:red;border:solid;font-size:3vw;left:40%;right:40%;top:0%;bottom:0%;"></div>
-            <div onclick='trackReset()' style="position:absolute;background-image: url('Data/yellowRewindA.png');background-size:100% 100%; color:red;border:solid;font-size:3vw;left:60%;right:20%;top:0%;bottom:0%;"></div>
-            <div onclick='incTrack(1)' style="position:absolute;background-image: url('Data/yellowNextTuneA.png');background-size:100% 100%; color:red;border:solid;font-size:3vw;left:80%;right:0%;top:0%;bottom:0%;">
+                <img title='Stop' id='playing' src='Data/resetSpinner.gif' onclick="trackPause()" style='position:absolute;display:none;left:86%;bottom:10%;height:80%;z-index:30;'>
+                <img id='pauseButton' onclick='trackPause()' src='Data/yellowPause.png' style='position:absolute;display:none;left:86%;bottom:10%;height:80%;z-index:20;'>
+                <img id='playButton' onclick='trackPlay()' src='Data/yellowPlay.png' style='position:absolute;left:86%;bottom:10%;height:80%;'>
+        </div>
+    
+    <!--MSG-->
+        <div id='msg'style="position:absolute;background-image:url('Data/parchmentA.jpg');background-size:100% 100%; color:black; font-weight:bold; border:groove;display:none; line-height:130%; overflow-y:scroll; font-size:3vh; text-align:center; left:0%; right:0%; top:0%;z-index:30; bottom:0%;overflow-y:auto;word-break: keep-all">
+            MESSAGE APPEARS HERE...
+        </div>    
+    
+    <!--MENU-- //linehight:130   --> 
+        <div id='menu' style="position:absolute;color:black;border:solid;background-color:black;text-align:center;display:none;line-height:150%;font-size:2.5vw; left:0%;right:0%;top:0%;bottom:0%; overflow-x:hidden";>
+            <div id='0'onclick="config(this.id)"style="position:absolute;"> HOME</div>
+            <div id='1'onclick="config(this.id)"style="position:absolute;"> CONTACT</div>
+            <div id='2'onclick="config(this.id)"style="position:absolute;"> ABOUT ME</div>
+            <div id='3'onclick="config(this.id)"style="position:absolute;"> PLAYLIST</div>
+            <div id='4'onclick="config(this.id)"style="position:absolute;"> SCHEDULE</div>            
+            <div id='5'onclick="config(this.id)"style="position:absolute; border:none;"> GHOST BAND</div>
+            <div id='6'onclick="config(this.id)"style="position:absolute; border:none;"> GADGETS</div>
+            <div id='7'onclick="config(this.id);PIC=0" style="position:absolute;display:block;border:none;"> GALLERY</div>
+            <div id='listenA'onclick="togglePlayer()" style="position:absolute; display:block; background-color:yellow;color:red;"> PLAYER</div>
+            <img id='sizeScreen' title='Toggle Full Screen!' onclick="fullScreen()" src="Data/yellowEnterFullScreen.png" style="position:absolute;right:0%;bottom:0%;height:0%">
+            <img id='8' title='Settings!'src="Data/yellowGear.png" onclick="config(this.id)" style="display:none;position:absolute;left:0%;bottom:0%;height:0%">
+        </div>
+    
+    <!--VIEW BOX-->      
+        <div id='viewBox'style="position:absolute;display:none;line-height:85%;background-color:black;border:groove;left:0vw;right:0vw; top:0vw; bottom:0vw; z-index:450;">
+            <div id ='picFrame' style='position:absolute;display:block;border:none;left:0%; top:0%; height:85%; width:100%;'>
+                <img id='galleryPic' style='position:absolute;display:block;left:0%;height:100%;width:100%;bottom:0%'>
+            </div>                                                                                                                                                                                
+            <div id='picCount'style="position:absolute;line-height:100%;background-color:black;display:block;opacity:1;font-weight:bold;left:0%;top:0%;">--</div>
+            <img id='picLeft' src='Data/transLeft.png' onclick="changeGalleryMode('Man'),gallery(-1)" style="position:absolute;left:0%;bottom:0%;height:7%">
+            <img id='picRight' src='Data/transRight.png' onclick="changeGalleryMode('Man'),gallery(+1)"style="position:absolute;right:0%;bottom:0%;height:7%">
+            <img src='Data/yellowAuto.png' id='am' onclick="changeGalleryMode('auto')" style="position:absolute; line-height:150%; right:0%; bottom:8%; height:7%;">
+            <img id='amIcon' onclick="if (PIC!=-2){changeGalleryMode()}" src='Data/transparent.png' style="position:absolute;display:block;right:0%;bottom:8%;height:7%;z-index:300;">
+            <div id='galleryTxt' onclick="aspect()" style='position:absolute;color:white;border:none;left:0%;line-height:115%;top:85%;left:10%;height:14%;width:80%;'>
+               Text Should Appear Here...
             </div>
         </div>
-            <img title='Stop' id='playing' src='Data/resetSpinner.gif' onclick="trackPause()" style='position:absolute;display:none;left:86%;bottom:10%;height:80%;z-index:30;'>
-            <img id='pauseButton' onclick='trackPause()' src='Data/yellowPause.png' style='position:absolute;display:none;left:86%;bottom:10%;height:80%;z-index:20;'>
-            <img id='playButton' onclick='trackPlay()' src='Data/yellowPlay.png' style='position:absolute;left:86%;bottom:10%;height:80%;'>
+        <img src='Data/yellowPlay.png' id='picPreload' style='position:absolute;display:none;z-index:10000;right:0%;top:0%;width:10%;'>
     </div>
-<!--MSG-->
-    <div id='msg'style="position:absolute;background-image:url('Data/parchmentA.jpg');background-size:100% 100%; color:black; font-weight:bold; border:groove;display:none; line-height:130%; overflow-y:scroll; font-size:3vh; text-align:center; left:0%; right:0%; top:0%;z-index:30; bottom:0%;overflow-y:auto;word-break: keep-all">
-        MESSAGE APPEARS HERE...
-    </div>    
-
-<!--MENU-- //linehight:130   --> 
-    <div id='menu' style="position:absolute;color:black;border:solid;background-color:black;text-align:center;display:none;line-height:150%;font-size:2.5vw; left:0%;right:0%;top:0%;bottom:0%; overflow-x:hidden";>
-        <div id='0'onclick="config(this.id)"style="position:absolute;"> HOME</div>
-        <div id='1'onclick="config(this.id)"style="position:absolute;"> CONTACT</div>
-        <div id='2'onclick="config(this.id)"style="position:absolute;"> ABOUT ME</div>
-        <div id='3'onclick="config(this.id)"style="position:absolute;"> PLAYLIST</div>
-        <div id='4'onclick="config(this.id)"style="position:absolute;"> SCHEDULE</div>            
-        <div id='5'onclick="config(this.id)"style="position:absolute; border:none;"> GHOST BAND</div>
-        <div id='6'onclick="config(this.id)"style="position:absolute; border:none;"> GADGETS</div>
-        <div id='7'onclick="config(this.id);PIC=0" style="position:absolute;display:block;border:none;"> GALLERY</div>
-        <div id='listenA'onclick="togglePlayer()" style="position:absolute; display:block; background-color:yellow;color:red;"> PLAYER</div>
-        <img id='sizeScreen' title='Toggle Full Screen!' onclick="fullScreen()" src="Data/yellowEnterFullScreen.png" style="position:absolute;right:0%;bottom:0%;height:0%">
-        <img id='8' title='Settings!'src="Data/yellowGear.png" onclick="config(this.id)" style="display:none;position:absolute;left:0%;bottom:0%;height:0%">
-    </div>
-
-<!--VIEW BOX-->      
-    <div id='viewBox'style="position:absolute;display:none;line-height:85%;background-color:black;border:groove;left:0vw;right:0vw; top:0vw; bottom:0vw; z-index:450;">
-        <div id ='picFrame' style='position:absolute;display:block;border:none;left:0%; top:0%; height:85%; width:100%;'>
-            <img id='galleryPic' style='position:absolute;display:block;left:0%;height:100%;width:100%;bottom:0%'>
-        </div>                                                                                                                                                                                
-        <div id='picCount'style="position:absolute;line-height:100%;background-color:black;display:block;opacity:1;font-weight:bold;left:0%;top:0%;">--</div>
-        <img id='picLeft' src='Data/transLeft.png' onclick="changeGalleryMode('Man'),gallery(-1)" style="position:absolute;left:0%;bottom:0%;height:7%">
-        <img id='picRight' src='Data/transRight.png' onclick="changeGalleryMode('Man'),gallery(+1)"style="position:absolute;right:0%;bottom:0%;height:7%">
-        <img src='Data/yellowAuto.png' id='am' onclick="changeGalleryMode('auto')" style="position:absolute; line-height:150%; right:0%; bottom:8%; height:7%;">
-        <img id='amIcon' onclick="if (PIC!=-2){changeGalleryMode()}" src='Data/transparent.png' style="position:absolute;display:block;right:0%;bottom:8%;height:7%;z-index:300;">
-        <div id='galleryTxt' onclick="aspect()" style='position:absolute;color:white;border:none;left:0%;line-height:115%;top:85%;left:10%;height:14%;width:80%;'>
-           Text Should Appear Here...
-        </div>
-    </div>
-    <img src='Data/yellowPlay.png' id='picPreload' style='position:absolute;display:none;z-index:10000;right:0%;top:0%;width:10%;'>
 </div>
-<SCRIPT type="text/javascript" SRC = "index.js"></script>
+<script type="text/javascript" src = "index.js"></script>
 </body>
 </html>
