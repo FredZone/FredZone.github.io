@@ -124,6 +124,7 @@ function config(id) {
         document.getElementById('cards').innerHTML = ARRcards[0]
         playCards(0,1);
     }else if (MODE == 'GALLERY') {
+        PIC=0;
         changeGalleryMode('man');
         gallery();
         dis('viewBox', 'block');
@@ -134,14 +135,14 @@ function config(id) {
     if (LISTEN == true) {
         if (PLAYERtype == 'A') {
             dis('playerA', 'block');
-            dis('playerB', 'none');
+        //    dis('playerB', 'none');
         } else {
             dis('playerA', 'none');
-            dis('playerB', 'block');
+        //    dis('playerB', 'block');
         }
     } else {
         dis('playerA', 'none');
-        dis('playerB', 'none');
+        //dis('playerB', 'none');
     }
     if (MODE != 'GALLERY') {
         dis('viewBox', 'none');
@@ -454,6 +455,14 @@ function tuneSelectorMake(){
 function preLoadPics(){
     document.getElementById('picPreload').src='Data/'+ARRgallery[0].split('|')[1]
 }
+
+
+function galleryReset(){
+GALLERYmode='man';
+PIC=0
+}
+
+
 
 function gallery(n) {
     var path

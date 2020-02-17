@@ -1,39 +1,57 @@
 <div style="border:groove">
 PLAYLIST
 <br>
-<div onclick="trackLoad(0,true)"style='position:relative;border:groove;color:red;background-color:yellow;'>
-    <img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>
-    Abilene
+<div  style='position:relative;border:none;'>
+    <div  onclick="trackLoad(0,true)"style='position:relative;border:groove;color:red;background-color:yellow;'>    
+        <img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>
+        Abilene
+     </div>
+     <img src='Data/blackI.png' onclick= "pop(ARRtunes[0].split('\n').slice(1).join(''),'<X2>'+ARRtunes[0].split('\n')[0].toUpperCase()+'</X2>',25)" style='position:absolute;border:none;right:0%;top:5%;height:90%;z-index:500'>
 </div>
-<div  onclick="trackLoad(1,true)"style='position:relative;border:groove;color:red;background-color:yellow;'>
-    <img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>
-    Sea Of Heartbreak
-    <!-- unfortunately this starts the tune too...
-    <img src='Data/blackI.png' onclick= "pop(ARRtunes[TRACK].split('\n').slice(1).join(''),'<X2>'+TUNE.toUpperCase()+'</X2>')" style='position:absolute;right:0%;top:0%;height:100%;z-index:500'>
-     -->
+<div  style='position:relative;border:none;'>
+    <div  onclick="trackLoad(1,true)"style='position:relative;border:groove;color:red;background-color:yellow;'>    
+        <img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>
+        Sea Of Heartbreak
+     </div>
+     <img src='Data/blackI.png' onclick= "pop(ARRtunes[1].split('\n').slice(1).join(''),'<X2>'+ARRtunes[1].split('\n')[0].toUpperCase()+'</X2>',25)" style='position:absolute;border:none;right:0%;top:5%;height:90%;z-index:500'>
 </div>
 You Are My Sunshine
-<div  onclick="trackLoad(2,true)"style='position:relative;border:groove;color:red;background-color:yellow;'>
-    <img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>
-    Pancho And Lefty
+<div  style='position:relative;border:none;'>
+    <div  onclick="trackLoad(2,true)"style='position:relative;border:groove;color:red;background-color:yellow;'>    
+        <img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>
+        Pancho and Lefty
+     </div>
+    <img src='Data/blackI.png' onclick= "pop(ARRtunes[2].split('\n').slice(1).join(''),'<X2>'+ARRtunes[2].split('\n')[0].toUpperCase()+'</X2>',25)" style='position:absolute;border:none;right:0%;top:5%;height:90%;z-index:500'>
+
 </div>
 Margaritaville
-<div  onclick="trackLoad(4,true)"style='position:relative;border:groove;color:red;background-color:yellow;'>
-    <img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>
-    When The Roses Bloom Again
+<div  style='position:relative;border:none;'>
+    <div  onclick="trackLoad(3,true)"style='position:relative;border:groove;color:red;background-color:yellow;'>    
+        <img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>
+        The Cape
+     </div>
+    <img src='Data/blackI.png' onclick= "pop(ARRtunes[3].split('\n').slice(1).join(''),'<X2>'+ARRtunes[3].split('\n')[0].toUpperCase()+'</X2>',25)" style='position:absolute;border:none;right:0%;top:5%;height:90%;z-index:500'>
+
 </div>
 Dream
-<div  onclick="trackLoad(3,true)"style='position:relative;border:groove;color:red;background-color:yellow;'>
-    <img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>
-    The Cape
+<div  style='position:relative;border:none;'>
+    <div  onclick="trackLoad(4,true)"style='position:relative;border:groove;color:red;background-color:yellow;'>    
+        <img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>
+        When The Roses Bloom Again
+     </div>
+    <img src='Data/blackI.png' onclick= "pop(ARRtunes[4].split('\n').slice(1).join(''),'<X2>'+ARRtunes[4].split('\n')[0].toUpperCase()+'</X2>',25)" style='position:absolute;border:none;right:0%;top:5%;height:90%;z-index:500'>
 </div>
 Little Red Riding Hood
 <br>Walk Right Back
 <br>Long Black Veil
 <br>All The Lonely People
-<div  onclick="trackLoad(5,true)"style='position:relative;border:groove;color:red;background-color:yellow;'>
-    <img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>
-    Jamaica Farewell
+<div  style='position:relative;border:none;'>
+    <div  onclick="trackLoad(5,true)"style='position:relative;border:groove;color:red;background-color:yellow;'>    
+        <img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>
+        Jamaica Farewell
+     </div>
+     <img src='Data/blackI.png' onclick= "pop(ARRtunes[5].split('\n').slice(1).join(''),'<X2>'+ARRtunes[5].split('\n')[0].toUpperCase()+'</X2>',25)" style='position:absolute;border:none;right:0%;top:5%;height:90%;z-index:500'>
+
 </div>
 Singing The Blues
 <br>Stand By Me
@@ -47,9 +65,12 @@ Singing The Blues
 <br>Put Another Log On The Fire
 <br>Break My Mind
 <br>Fire Lake
-<div  onclick="trackLoad(6,true)"style='position:relative;border:groove;color:red;background-color:yellow;'>
-    <img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>
-    Teach Your Children
+<div  style='position:relative;border:none;'>
+    <div  onclick="trackLoad(6,true)"style='position:relative;border:groove;color:red;background-color:yellow;'>    
+        <img src='Data/yellowSpeaker.png'style='position:absolute;left:1vh;height:100%;'>
+        Teach Your Children
+     </div>
+     <img src='Data/blackI.png' onclick= "pop(ARRtunes[6].split('\n').slice(1).join(''),'<X2>'+ARRtunes[6].split('\n')[0].toUpperCase()+'</X2>',25)" style='position:absolute;border:none;right:0%;top:5%;height:90%;z-index:500'>
 </div>
 Happy Trails
 <br><X5>-----Extras-----</X5>
