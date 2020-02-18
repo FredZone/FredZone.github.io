@@ -7,4 +7,4 @@ Click <img src='Data/yellowAuto.png' onclick='changeGalleryMode()' style="height
 <X4>2019 > Now </X4> I play Solo at St Catherine's and Wesley Woods Senior Care facilities in Waco, Texas|fred.jpg|1641|3919|8
 My 'virtual' BACKUP BAND consists of computer generated tracks and electronic harmony.|theFossils.png|1209|1007|7
 Additionally, I play with my friends, Stan, Bill, John and, Sally for the fun of it...|barn.jpg|2754|1660|9
-THANKS FOR WATCHING...<br>(Resetting the Gallery...) |thatsAllFolks.png|581|575|3
+THANKS FOR WATCHING...<br>(Resetting the Gallery...) |thatsAllFolks.png|581|575|2

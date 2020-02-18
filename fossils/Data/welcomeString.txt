@@ -1,21 +1,18 @@
-<div style="position:absolute;font-family:font-family:Courrier New;font-size:4vw;line-height:100%;text-align:left:0%,bottom:0%;width:100%;height:100%;background-color:transparent;">
-
-        
-<div id='welText'style="position:absolute;text-align:left;right:0%;top:0%;width:80%;height:70%">
-    <div style='position:absolute;text-align:left;font-family:Courrier New;'><X5>WELCOME TO MY SITE</X5>
-    <br>I am a volunteer, one man band.
-    <br>-------------------------
-    <br>Playing guitar and singing at senior care facilities in Waco
-    <br>-------------------------
-    <br>I use electronic backing tracks and a vocal harmony generator
-    <br>-------------------------
-    <br>I 'hand-made' this Website and would appreciate any constructive comments...</div>
+<div style='position:absolute;border:none;background-color:transparent;left:0%;right:0%;top:0%;bottom:0%;overflow:hidden;'>
+    <div id='welText'style="position:absolute;background-color:transparent;border:none;overflow-y:auto;border:text-align:left">
+        <X5>WELCOME TO MY SITE</X5>
+        <br>I am a volunteer, one man band.
+        <br>-------------------------
+        <br>Playing guitar and singing at senior care facilities in Waco
+        <br>-------------------------
+        <br>I use electronic backing tracks and a vocal harmony generator
+        <br>-------------------------
+        <br>I 'hand-made' this Website and would appreciate any constructive comments...
     </div>   
-
-<div id='cards' style="position:absolute;opacity:0;display:block;border:none;line-height:100%;overflow:auto;text-align:center;right:0%;top:85%;width:100%;height:15%">
-HINTS...
-</div> 
-
-<img id='iconA' src='Data/player.png' style="position:absolute;">
-
+    
+    <div id='cards' style="position:absolute;opacity:0;display:block;border:none;line-height:100%;overflow-y:auto;text-align:center;">
+        HINTS...
+    </div> 
+    
+    <img id='iconA' src='Data/player.png' style="position:absolute;">
 </div>

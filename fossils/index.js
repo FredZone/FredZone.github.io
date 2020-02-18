@@ -171,8 +171,8 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         //l,r,t,b,h,w,f
         if (MODE == 'WELCOME') {
             shapeShift('iconA', '1%', '-', '1%', '-', '-', '24%', '-')
-            shapeShift('welText', '-', '1%', '1%', '-', '89%', '74%', '4vw')
-            shapeShift('cards', '1%', '-', '90%', '0%', '-', '98%', '3vw')
+            shapeShift('welText', '20%', '0%', '0%', '15%', '-', '-', '4vw')
+            shapeShift('cards', '0%', '0%', '86%', '0%', '-', '-%', '3vw')
         }
         if (LISTEN == false) {
             shapeShift('msg', '1%', '1%', '7%', '22%', '-', '-', '4vw')
@@ -209,8 +209,8 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
     } else { 
         if (MODE == 'WELCOME') {
             shapeShift('iconA', '1%', '-', '1%', '-', '75%', '-', '-')
-            shapeShift('welText', '-', '1%', '1%', '-', '90%', '70%', '4vh')
-            shapeShift('cards', '1%', '1%', '90%', '0%', '-', '-', '3vh')
+            shapeShift('welText', '30%', '0%', '0%', '15%', '-', '-', '4vh')
+            shapeShift('cards', '0%', '0%', '86%', '0%', '-', '-%', '3vh')
         }
         if (LISTEN == false) {
             shapeShift('msg', '1%', '20%', '7%', '1%', '-', '-', '4.5vh')
@@ -220,7 +220,6 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
             }
         } else if (LISTEN == true) {
             shapeShift('msg', '1%', '20%', '7%', '10%', '-', '-', '4.5vh')
-            
             shapeShift('menu', '80%', '0%', '7%', '0%', '-', '-', '3vh');
             if (MODE == 'GALLERY') {
                 shapeShift('viewBox', '0%', '20%', '7%', '10%', '-', '-', '3.5vh')
@@ -476,13 +475,15 @@ function gallery(n) {
     document.getElementById('viewBox').style.display = 'block';
     if (PIC == 0) {
         document.getElementById('picLeft').style.display = 'none'
-    } else {
-        document.getElementById('picLeft').style.display = 'block'
-    }
-    if (PIC == ARRgallery.length - 1) {
-        document.getElementById('picRight').style.display = 'none'
-    } else {
         document.getElementById('picRight').style.display = 'block'
+    }else if (PIC == ARRgallery.length - 1) {
+        PICtime=2
+        document.getElementById('picRight').style.display = 'none'
+        document.getElementById('picLeft').style.display = 'none'
+        changeGalleryMode('auto')
+    }else{
+        document.getElementById('picRight').style.display = 'block'
+        document.getElementById('picLeft').style.display = 'block'
     }
     if (ARRgallery[PIC]==undefined) {
         alert('ERROR in PICTURE COUNT')
@@ -515,7 +516,8 @@ function rollPics(){//automatic picture sequence and time
             return;
         }
         if (PIC>=PICcount-1){
-            PIC=-1
+            PICtime=2;
+            PIC=-1            
         }
         rollPics()
     },PICtime*1000);
@@ -625,13 +627,13 @@ function fades(id, dir, ms, ids) {
 //CONFIG FUNCTIONS===========================================================
 function admin() {
     if (LOCKED == true) {
-        var f = prompt('The LISTEN function has been activated/n use your password for admin access... ADMINISTRATORS PASSWORD?');
+        var f = prompt('ADMINISTRATORS PASSWORD?');
         if (f == null) {
             return;
         }
         ADMINstring = fileDownload("Data/" + f + ".txt");
         if (ADMINstring.substring(0, 3) == '404') {
-            alert("Sorry...\n Wrong password...")
+            pop("Sorry...<br> Wrong password...","OOPS!",2,undefined,'pink')
         } else {
             LOCKED = false
             document.getElementById('admin').src = 'Data/underConstruction.png'
