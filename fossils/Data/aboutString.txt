@@ -1,14 +1,9 @@
-<div style="text-align:center">
-<X5>ABOUT ME</X5>
-<br><br>Husband, Dad & Grandpa
-<br><X3>----Former----</X3>
-<br>Middle School Teacher
-<br><X3>----Retired----</X3>
-<br>Mechanical Engineer
-<br><X3>----Occasional Amateur----</X3>
-<br>Guitar Player,
-<br>Singer &
-<br>Computer Guy...
+<div style="position:auto;text-align:center;"><X5>ABOUT ME</X5><br><X3>-------------------------</X3>
+    <br>&nbsp &nbsp <img src='Data/iconFav.png' style='position:relative;height:2.5vh;background-color:white;'>&nbsp &nbsp Husband, Dad & Grandpa &nbsp &nbsp &nbsp &nbsp
+    <br>&nbsp &nbsp <img src='Data/iconFav.png' style='position:relative;height:2.5vh;background-color:white;'>&nbsp &nbsp Former Middle School Teacher
+    <br>&nbsp &nbsp <img src='Data/iconFav.png' style='position:relative;height:2.5vh;background-color:white;'>&nbsp &nbsp Retired Mechanical Engineer &nbsp &nbsp 
+    <br>&nbsp &nbsp <img src='Data/iconFav.png' style='position:relative;height:2.5vh;background-color:white;'>&nbsp &nbsp Amateur Singer-Guitarist &nbsp &nbsp &nbsp &nbsp 
+    <br>&nbsp &nbsp <img src='Data/iconFav.png' style='position:relative;height:2.5vh;background-color:white;'>&nbsp &nbsp Aspiring Web Designer&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
 <br><X3>-------------------------</X3>
 <br>I Play & Sing at Senior Care Centers,
 <br>in and around Waco Texas

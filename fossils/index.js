@@ -30,7 +30,7 @@
     var GALLERYmode='man';   
 //CONFIGURATION===========================================================
     var MODE='WELCOME';
-    var ID=0;
+    var ID=0;//MODE Index
     var PLAYER=false;
 //WELC0ME MODE==========================================================================
     var CARD=0;
@@ -80,7 +80,7 @@ window.onload = function() {
     dis('viewBox','none');
     dis('menu','block');
     dis('playerA','block');
-    //fades('hdr', 0.01, 100, 'msg|menu')    
+    //fades('hdr', 0.08, 100, 'msg|menu')    
     config(0);
 }
 
@@ -289,8 +289,6 @@ function shapeShift(id, lf, rt, tp, bm, ht, wt, fs) {
 //^AUDIO====================================================================================================================================
 
 function changePlayer(){
-    LISTEN=false
-    togglePlayer()
     if (PLAYERtype=='A'){
         PLAYERtype='B'
         document.getElementById('playerB').style.display='block'
@@ -309,12 +307,19 @@ function togglePlayer(){//turns listen box green and shows player A or yellow an
         document.getElementById('listenA').style.backgroundColor='yellow';
         document.getElementById('listenA').style.color='red';
         trackPause()
+        config(ID)
     }else{
         LISTEN=true
         document.getElementById('listenA').style.backgroundColor='green';
         document.getElementById('listenA').style.color='white';
+        
+        config(ID)
+        trackLoad(TRACK,true)
+        
     }
-    config(ID)
+    
+
+
 }
 
 
@@ -323,7 +328,7 @@ function closePlayer() {
     document.getElementById('playerB').style.display = 'none'
 }
 
-function trackLoad(track,play) {
+function trackLoad(track,play) {//LOAD A TRACK
     trackPause()//close any playing track
     if (track==undefined) {
         TRACK=document.getElementById('tuneSelect').selectedIndex
@@ -332,28 +337,22 @@ function trackLoad(track,play) {
         document.getElementById('tuneSelect').selectedIndex=TRACK
         }
     TUNE=document.getElementById('tuneSelect').value
-    //pop(ARRtunes[TRACK].split('\n').slice(1).join(''),'<X2>'+TUNE.toUpperCase()+"</X2><img onclick='helpPlayer()' src='Data/yellowHelp.png' style='position:absolute;left:0%;bottom:0;height:100%;'>",15)
-    TUNE = document.getElementById('tuneSelect').value;
-    document.getElementById("Audio1").onended = function() {
-        trackReset();
-    }
     document.getElementById('Audio1').src = 'Data/' + TUNE + '.mp3';
     if (play==true) {
         if (LISTEN==false) {
             togglePlayer()
         }
-        trackPlay()
+    trackPlay()
     }
 }
 
 function trackPlay() {
-    
-    document.getElementById('Audio1').play()
     dis('playing','block')
     dis('pauseButton','block')
     if (document.getElementById('Audio1').currentTime<3) {
-        pop(ARRtunes[TRACK].split('\n').slice(1).join(''),'<X2>'+TUNE.toUpperCase()+"</X2>",15)
+        pop(ARRtunes[TRACK].split('\n').slice(1).join(''),'<X2>'+TUNE.toUpperCase()+'</X2>',15)
     }
+    document.getElementById('Audio1').play()
     document.getElementById("Audio1").onended = function() {
         trackEnd();
     }

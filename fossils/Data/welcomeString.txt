@@ -13,6 +13,5 @@
     <div id='cards' style="position:absolute;opacity:0;display:block;border:none;line-height:100%;overflow-y:auto;text-align:center;">
         HINTS...
     </div> 
-    
     <img id='iconA' src='Data/player.png' style="position:absolute;">
 </div>
