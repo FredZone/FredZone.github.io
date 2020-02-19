@@ -182,7 +182,7 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
             }
         } else if (LISTEN == true) {
             shapeShift('msg', '1%', '1%', '7%', '32%', '-', '-', '4vw');
-            shapeShift('menu', '0%', '0%', '68%', '10%', '-', '-', '3vw');
+            shapeShift('menu', '0%', '0%', '68%', '10%', '-', '-', '2.7vw');
             if (MODE == 'GALLERY') {
                 shapeShift('viewBox', '0%', '0%', '7%', '32%', '-', '-', '3.5vw')
             }
@@ -234,7 +234,7 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
         shapeShift(1, '2%', '2%', '10%', '81%', '-', '-', '3.5vh');
         shapeShift(2, '2%', '2%', '20%', '71%', '-', '-', '3.5vh');
         shapeShift(3, '2%', '2%', '30%', '61%', '-', '-', '3.5vh');
-        shapeShift(4, '2%', '2%', '40%', '51%', '-', '-', '3.5vh');
+        shapeShift(4, '2%', '2%', '40%', '51%', '-', '-', '3.3vh');
         shapeShift(5, '2%', '2%', '50%', '41%', '-', '-', '3.5vh');
         shapeShift(6, '2%', '2%', '60%', '31%', '-', '-', '3.5vh');
         shapeShift(7, '2%', '2%', '70%', '21%', '-', '-', '3.5vh');
@@ -515,7 +515,7 @@ function rollPics(){//automatic picture sequence and time
             return;
         }
         if (PIC>=PICcount-1){
-            PICtime=2;
+            PICtime=8;
             PIC=-1            
         }
         rollPics()

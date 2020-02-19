@@ -1,10 +1,9 @@
-<div style="position:auto;text-align:center;"><X5>ABOUT ME</X5><br><X3>-------------------------</X3>
-    <br>&nbsp &nbsp <img src='Data/iconFav.png' style='position:relative;height:2.5vh;background-color:white;'>&nbsp &nbsp Husband, Dad & Grandpa &nbsp &nbsp &nbsp &nbsp
-    <br>&nbsp &nbsp <img src='Data/iconFav.png' style='position:relative;height:2.5vh;background-color:white;'>&nbsp &nbsp Former Middle School Teacher
-    <br>&nbsp &nbsp <img src='Data/iconFav.png' style='position:relative;height:2.5vh;background-color:white;'>&nbsp &nbsp Retired Mechanical Engineer &nbsp &nbsp 
-    <br>&nbsp &nbsp <img src='Data/iconFav.png' style='position:relative;height:2.5vh;background-color:white;'>&nbsp &nbsp Amateur Singer-Guitarist &nbsp &nbsp &nbsp &nbsp 
-    <br>&nbsp &nbsp <img src='Data/iconFav.png' style='position:relative;height:2.5vh;background-color:white;'>&nbsp &nbsp Aspiring Web Designer&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
-<br><X3>-------------------------</X3>
+<X5>ABOUT ME</X5>
+<br>Husband, Dad & Grandpa
+<br>Former Middle School Teacher
+<br>Retired Mechanical Engineer
+<br>Amateur Singer-Guitarist
+<br>Aspiring Web Designer
+<br><X5>=========================</X5>
 <br>I Play & Sing at Senior Care Centers,
 <br>in and around Waco Texas
-<div>

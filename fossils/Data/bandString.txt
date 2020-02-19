@@ -1,25 +1,25 @@
-<X5>MY GADGETS...</X5>
-<br><X2>====================</X2>
+<X5>MY GADGETS</X5>
+<br><X5>=========================</X5>
 <br>MUSIC GEAR:
 <br>I sing into a <X3>Shure SM58</X3> microphone
 <br>and play a <X3>Fender Stratocaster</X3> guitar
 <br>through a <X3>Digitec RP55</X3> effects pedal.
 <br>All amplified by a <X3>Fender Passport 300 PRO</X3>
 <br>with a <X3>Fender</X3> 10 watt amp for a stage monitor.
-<br><X2>====================</X2>
+<br><X5>=========================</X5>
 <br>BACKING TRACKS:
 <br>I play guitar and sing over Backing Tracks.  
 <br>created with <X3>BAND IN A BOX</X3> software
 <br>Typically, I use synthetic Drums & Bass .
 <br>I often add a Piano, Harmonica
 or another Guitar...
-<br><X2>====================</X2>
+<br><X5>=========================</X5>
 <br>VOCAL HARMONY
 <br>I use a <X3>TC Helicon Voice Live 1</X3>
 <br>Its an old electronic device
 <br>that synthesizes up to 4 voices
 <br>guided by my voice and the Key of the Song.
-<br><X2>====================</X2>
+<br><X5>=========================</X5>
 <br>COMPUTING:
 <br>I wrote a  program in <X3>'javascript'</X3>
 <br>to play my back tracks and
@@ -27,7 +27,7 @@ or another Guitar...
 <br>scrolling lyrics and chord notation.
 <br>I use a generic <X3>Android tablet</X3>
 <br>to run that program.
-<br><X2>====================</X2>
+<br><X5>=========================</X5>
 <br>RECORDING:
 <br>On the rare recording I use
 <br>a <X3>Tascam DR-05</X3> digital recorder

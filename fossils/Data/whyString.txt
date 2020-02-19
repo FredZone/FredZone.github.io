@@ -1,14 +1,12 @@
-<div style="position:absolute;text-align:center;width:100%;overflow-x:auto;">
-    <X5>WHY AN ELECTRONIC BAND?</X5><br>
-    I would rather play with others and,
-    <br>occasionally bring friends along.
-    <br><X5>HOWEVER!...</X5>
-    <br>
-    Organizing, scheduling and rehearsing a
-    <br>group of retirees is like herding cats.
-    <br>
-    <X1>SO ITS USUALLY JUST ME...</X1>
-    <br> and my VIRTUAL BAND!
-    <br><img src='Data/folkBand.png'style="position:relative;opacity:0.6;width:35%">
+<X5>WHY AN ELECTRONIC BAND?</X5>
+<br>I would rather play with others and,
+<br>occasionally bring friends along.
+<br><X5>HOWEVER!...</X5>
+<br>Organizing, scheduling and rehearsing a
+<br>group of retirees is like herding cats.
+<br>
+<X5>SO ITS USUALLY JUST ME...</X5>
+<br> and my VIRTUAL BAND!
+<br><img src='Data/folkBand.png'style="position:relative;opacity:0.6;width:35%">
     
-</div>
+

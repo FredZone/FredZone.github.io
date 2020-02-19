@@ -1,12 +1,12 @@
 <div style='position:absolute;border:none;background-color:transparent;left:0%;right:0%;top:0%;bottom:0%;overflow:hidden;'>
-    <div id='welText'style="position:absolute;background-color:transparent;border:none;overflow-y:auto;border:text-align:left">
+    <div id='welText'style="position:absolute;background-color:transparent;border:none;overflow-y:auto;overflow-x:hidden;border:text-align:left">
         <X5>WELCOME TO MY SITE</X5>
         <br>I am a volunteer, one man band.
-        <br>-------------------------
+        <br><X5>=========================</X5>
         <br>Playing guitar and singing at senior care facilities in Waco
-        <br>-------------------------
+        <br><X5>=========================</X5>
         <br>I use electronic backing tracks and a vocal harmony generator
-        <br>-------------------------
+        <br><X5>=========================</X5>
         <br>I 'hand-made' this Website and would appreciate any constructive comments...
     </div>   
     
