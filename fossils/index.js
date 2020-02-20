@@ -515,7 +515,7 @@ function rollPics(){//automatic picture sequence and time
             return;
         }
         if (PIC>=PICcount-1){
-            PICtime=8;
+            PICtime=4;
             PIC=-1            
         }
         rollPics()
