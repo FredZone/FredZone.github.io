@@ -209,14 +209,14 @@ function realign() { //TALL ASPECT  (this order left-right-top-bottom-height-wid
     } else { 
         if (MODE == 'WELCOME') {
             shapeShift('iconA', '1%', '-', '1%', '-', '75%', '-', '-')
-            shapeShift('welText', '30%', '0%', '0%', '15%', '-', '-', '4vh')
+            shapeShift('welText', '30%', '0%', '0%', '15%', '-', '-', '3vh')
             shapeShift('cards', '0%', '0%', '86%', '0%', '-', '-%', '3vh')
         }
         if (LISTEN == false) {
             shapeShift('msg', '1%', '20%', '7%', '1%', '-', '-', '4.5vh')
             shapeShift('menu', '80%', '0%', '7%', '0%', '-', '-', '3vh');
             if (MODE == 'GALLERY') {
-                shapeShift('viewBox', '0%', '20%', '7%', '0%', '-', '-', '3.5vh')
+                shapeShift('viewBox', '0%', '20%', '7%', '0%', '-', '-', '3.0vh')
             }
         } else if (LISTEN == true) {
             shapeShift('msg', '1%', '20%', '7%', '10%', '-', '-', '4.5vh')

@@ -106,17 +106,17 @@
     
     <!--MENU-- //linehight:130   --> 
         <div id='menu' style="position:absolute;color:black;border:solid;background-color:black;text-align:center;display:none;line-height:120%;font-size:5vw; left:0%;right:0%;top:0%;bottom:0%; overflow-x:hidden";>
-            <div id='0'onclick="config(this.id)"style="position:absolute;border:solid;">*HOME*</div>
-            <div id='1'onclick="config(this.id)"style="position:absolute;border:solid;">CONTACT</div>
-            <div id='2'onclick="config(this.id)"style="position:absolute;border:solid;">ABOUT ME</div>
-            <div id='3'onclick="config(this.id)"style="position:absolute;border:solid;">PLAYLIST</div>
-            <div id='4'onclick="config(this.id)"style="position:absolute;border:solid;">SCHEDULE</div>            
-            <div id='5'onclick="config(this.id)"style="position:absolute;border:solid;">MY 'BAND'</div>
-            <div id='6'onclick="config(this.id)"style="position:absolute;border:solid; ">GADGETS</div>
-            <div id='7'onclick="config(this.id);PIC=0" style="position:absolute;display:block;border:solid;"> GALLERY</div>
-            <div id='listenA'onclick="togglePlayer()" style="position:absolute; display:block; background-color:yellow;color:red;border:solid;"> PLAYER</div>
+            <div id='0'onclick="config(this.id)"style="position:absolute;border:solid;" title="HOME PAGE">*HOME*</div>
+            <div id='1'onclick="config(this.id)"style="position:absolute;border:solid;"title="CONTACT INFORMATION">CONTACT</div>
+            <div id='2'onclick="config(this.id)"style="position:absolute;border:solid;"title="WHO I AM">ABOUT ME</div>
+            <div id='3'onclick="config(this.id)"style="position:absolute;border:solid;"title="MY PLAYLIST, LOOK and/or LISTEN">PLAYLIST</div>
+            <div id='4'onclick="config(this.id)"style="position:absolute;border:solid;"title="SCHEDULED PERFORMANCES">SCHEDULE</div>            
+            <div id='5'onclick="config(this.id)"style="position:absolute;border:solid;"title="MY 'GHOST' BAND">MY 'BAND'</div>
+            <div id='6'onclick="config(this.id)"style="position:absolute;border:solid;" title="MY MUSIC GEAR">GADGETS</div>
+            <div id='7'onclick="config(this.id);PIC=0" style="position:absolute;display:block;border:solid;"title="PICTORAL STORY OF THE 'FOSSILS'"> GALLERY</div>
+            <div id='listenA'onclick="togglePlayer()" style="position:absolute; display:block; background-color:yellow;color:red;border:solid;"title="LISTEN TO SOME OF MY RECORDED TRACKS"> PLAYER</div>
             <img id='sizeScreen' title='Toggle Full Screen!' onclick="fullScreen()" src="Data/yellowEnterFullScreen.png" style="position:absolute;right:0%;bottom:0%;height:0%;color:red;border:solid;">
-            <img id='8' title='Settings!'src="Data/yellowGear.png" onclick="config(this.id)" style="display:none;position:absolute;left:0%;bottom:0%;height:0%;border:solid;">
+            <img id='8' title='SETTINGS!'src="Data/yellowGear.png" onclick="config(this.id)" style="display:none;position:absolute;left:0%;bottom:0%;height:0%;border:solid;">
         </div>
     
     <!--VIEW BOX-->      
@@ -125,8 +125,8 @@
                 <img id='galleryPic' style='position:absolute;display:block;left:0%;height:100%;width:100%;bottom:0%'>
             </div>                                                                                                                                                                                
             <div id='picCount'style="position:absolute;line-height:100%;background-color:black;display:block;opacity:1;font-weight:bold;left:0%;top:0%;">--</div>
-            <img id='picLeft' src='Data/transLeft.png' onclick="changeGalleryMode('Man'),gallery(-1)" style="position:absolute;left:0%;bottom:0%;height:7%">
-            <img id='picRight' src='Data/transRight.png' onclick="changeGalleryMode('Man'),gallery(+1)"style="position:absolute;right:0%;bottom:0%;height:7%">
+            <img id='picLeft' src='Data/yellowLeft.png' onclick="changeGalleryMode('Man'),gallery(-1)" style="position:absolute;left:0%;bottom:0%;height:7%">
+            <img id='picRight' src='Data/yellowRight.png' onclick="changeGalleryMode('Man'),gallery(+1)"style="position:absolute;right:0%;bottom:0%;height:7%">
             <img src='Data/yellowAuto.png' id='am' onclick="changeGalleryMode('auto')" style="position:absolute; line-height:150%; right:0%; bottom:8%; height:7%;">
             <img id='amIcon' onclick="if (PIC!=-2){changeGalleryMode()}" src='Data/transparent.png' style="position:absolute;display:block;right:0%;bottom:8%;height:7%;z-index:300;">
             <div id='galleryTxt' onclick="aspect()" style='position:absolute;color:white;border:none;left:0%;line-height:115%;top:85%;left:10%;height:14%;width:80%;'>
