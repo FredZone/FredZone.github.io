@@ -418,7 +418,7 @@ function playCards() {
     }
     if (document.getElementById('cards').style.opacity <0.5) {
         document.getElementById('cards').innerHTML = '<X5>'+ARRcards[CARD]+'</X5>';
-        fade('cards', 0.08, 50)
+        fade('cards', 0.16, 50)
         TIMEOUTcards = setTimeout(function() {
             playCards ()
         },7000);
@@ -427,10 +427,10 @@ function playCards() {
         if (CARD >= ARRcards.length) {
             CARD = 0;
         }
-        fade('cards', -0.08, 50)
+        fade('cards', -0.16, 50)
         TIMEOUTcards = setTimeout(function() {
             playCards ()
-        },1000);
+        },500);
     }    
 }
 
