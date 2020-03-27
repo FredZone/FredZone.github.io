@@ -15,6 +15,8 @@
     var HELPstring = "Looking for help...tough";
     var TESTstring = 'This is the test string. And it looks like this... Here is A Break<br>Title<br>';
     var SETTINGSstring='Settings'
+    var MSGspecial=""
+    var ICONspecial=undefined
 //Timeouts=========================================================
     var TIMEOUTfade;
     var TIMEOUTgallery;
@@ -82,6 +84,14 @@ window.onload = function() {
     dis('playerA','block');
     //fades('hdr', 0.08, 100, 'msg|menu')    
     config(0);
+
+    ICONspecial='coronavirus.png'
+    MSGspecial="<div style='line-height:180%;'>THE VIRUS HAS FORCED ME TO CANCEL ALL SHOWS"    
+    MSGspecial=MSGspecial +'<br>HOPEFULLY WE CAN RESUME WHEN THE CRISIS PASSES.'  
+    MSGspecial=MSGspecial +'<br>I WILL MISS SEEING ALL OF YOU.'  
+    MSGspecial=MSGspecial +'<br>UNTIL THEN: TAKE CARE OF EACH OTHER!'
+    MSGspecial=MSGspecial +'<br>Fred Kaparich</div>'
+    pop(MSGspecial,'A NOTE ABOUT COVID 19...',15,undefined,'red')
 }
 
 //^Configure Views=============================================================

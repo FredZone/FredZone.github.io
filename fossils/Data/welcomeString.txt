@@ -1,9 +1,15 @@
+
+
 <div style='position:absolute;border:none;background-color:transparent;left:0%;right:0%;top:0%;bottom:0%;overflow:hidden;'>
+    
+    <div onclick="pop(MSGspecial,'COVID 19',15,undefined,'red')" style="position:absolute;right:0%;top:0%;width:10%;z-index:10000;"><img src='Data/coronavirus.jpg' style='width:100%;'></div>
+    
+    
     <div id='welText'style="position:absolute;background-color:transparent;border:none;overflow-y:auto;overflow-x:hidden;border:text-align:left">
         <X5>WELCOME TO MY SITE</X5>
         <br>I am a volunteer, one man band.
         <br><X5>=========================</X5>
-        <br>Playing guitar and singing at senior care facilities in Waco
+        <br>Playing guitar and singing at senior care facilities in Waco.
         <br><X5>=========================</X5>
         <br>I use electronic backing tracks and a vocal harmony generator
         <br><X5>=========================</X5>
