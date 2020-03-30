@@ -25,55 +25,43 @@
     </head>
   <body>
 <!--- SUPER CONTROLS various z-index display and visibility-->
-  <a id="none" style=" display:none; visibility:visible"></a><!--needed a null element....must be a better way -->
+  <a id="none" style="display:none; visibility:visible"></a><!--needed a null element....must be a better way -->
   <a id="msg" title="Message Box" style= "position:absolute; line-height:120%; text-align:center; vertical-align:middle; color:red; background-color:transparent; color:red; font-size: 2vw; height:6%; left:0%; top:0%; width:100%; z-index:5505;overflow:hidden">Loading HTML...</a>
   <form action=false><input type="file" id="fileInput" style="display:none;"/></form> 
 <!---the page-->
   <div id='backTrackBarHdr' style='border-width: thin; position:absolute;display:block; height:24%; width:100%; top:6%;left:0%;'>
     <div id='hdrA' style='position:absolute;display:block; height:50%; width:100%; top:0%;left:0%;'>
-      <select id ='btLists' title='Select a List of Backing tracks' onchange="btGetList(this.value)" style='position:absolute;color:white;background-color:black;height:90%; width:24%; left:0%; top:5%; z-index:2;'>
+      <select id ='btLists' title='Select a List of Backing tracks' onchange="btGetList(this.value)" style='position:absolute;color:white;background-color:black;height:40%; width:24%; left:2%; top:5%; z-index:2;'>
         <option value='Default' selected>Default</option><option value='Drums'>Drums</option><option value='Metronome'>Metronome</option>
         <option value='12 Bar'>12 Bar</option><option value='Rockabilly'>Rock-a-Billy</option><option value='Song Tracks'>Song Tracks</option><option value='Karaoke'>Karaoke</option>
         <option value='Misc'>Miscellaneous</option><option value='Country'>Country</option><option value='Drills'>Drills</option><option value='Licks-Country'>Licks Country</option>
         </select>
-      <div id ='btSpeed' onchange="btSpeedSet()" style="position:absolute; background-color:darkgrey; height:90%; width:50%;top:5%;left:25%;">
-        <div style='position:absolute; width:25%;height:100%; left:0%;'>Tempo<br><X1><div id='btTempo'>--</div></X1></div>
-        <div style='position:absolute; width:15%;height:100%; left:25%;'><input id='p50' type="radio" name="bSpeed" value="1.50">+50%</div>
-        <div style='position:absolute; width:15%;height:100%; left:40%;'><input id='p25'type="radio" name="bSpeed" value="1.25">+25%</div>
-        <div style='position:absolute; width:15%;height:100%; left:55%;'><input id='pm0'type="radio" name="bSpeed" value="1.00">+00%</div>
-        <div style='position:absolute; width:15%;height:100%; left:70%;'><input id='m25'type="radio" name="bSpeed" value="0.75">-25%</div>
-        <div style='position:absolute; width:15%;height:100%; left:85%;'><input id='m50'type="radio" name="bSpeed" value="0.50">-50%</div>
-        </div>
-      
-      <img id='tool2' title="OPEN IN UTUBE (to use Apps and extensions)" src="../../icons/blackUtube.png" alt="X" onclick="winOpen()"  style='position:absolute;height:90%; right:18%;width:6%; top:5%;z-index:10000;'>
-      
-      
-      <img id='notesShow' src="../../icons/blackNotePad.png" alt="X" onclick="vis('notes')"  style='position:absolute;height:90%; right:12%;width:6%; top:5%;z-index:1;'>
-      <img id='btLooping' src="../../icons/resetSpinner.gif" alt="X" onclick="btStopLoop()"  style='position:absolute; display:none; height:90%;width:6%; right:6%; top:5%;z-index:1;'>
-      <img onclick="btStartLoop()" src='../../icons/transInfinity2.png' alt="LOOP" style="position:absolute; height:100%; width:6%;right:6%; top:0%;">
-      <img id='btPlaying' src="../../icons/resetSpinner.gif" alt="X" onclick="btStop()"  style='position:absolute; display:none; height:100%; right:0%;width:6%; top:0%;z-index:1;'>
-      <img id='btPlay' src="../../icons/transPlayGreen.png" alt=">" onclick="btPlay()"  style='position:absolute; height:100%; right:0%;width:6%; top:0%;'>
-      </div>
-    <div id='hdrB' style='position:absolute;display:block; height:50%; width:100%; top:50%;left:0%;'>
-      <select id ='btIndex' title='Select A Backing Track' onchange="optionalBt(this.value)" style='border:solid; border-color:white; position:absolute; color:white; background-color:darkgrey; display:none; height:90%; width:55%; left:0%; bottom:5%; z-index:1;'></select>
-      <img src="../../icons/transPlayGreen.png" alt="??" onclick="backtrackInfo()" style="position:absolute;height:90%; left:55%; width:2%; bottom:5%;">
-      <div id='tempoGetter'onclick="getTempo()" title="Click once per beat...Until the tempo stabilizes..." style="border:solid;text-align:center;;position:absolute;height:90%; right:31%; width:11%; bottom:5%;">Loading<br>Tool...</div>
+      <select id ='btIndex' title='Select A Backing Track' onchange="optionalBt(this.value)" style='border:solid; border-color:white; position:absolute; color:white; background-color:darkgrey; display:none; height:40%; width:24%; left:2%; bottom:5%; z-index:1;'></select>
+      <img src="../../icons/blackInfo.png" alt="??" onclick="backtrackInfo()" style="position:absolute;height:90%; left:26.5%; width:6%; bottom:5%;">
+      <img id='tool2' title="OPEN IN UTUBE (to use Apps and extensions)" src="../../icons/blackUtube.png" alt="X" onclick="winOpen()"  style='position:absolute;height:90%; left:33%;width:6%; top:5%;z-index:10000;'>
+      <img id='notesShow' src="../../icons/blackNotePad.png" alt="X" onclick="vis('notes')"  style='position:absolute;height:90%; left:39.5%;width:6%; top:5%;z-index:1;'>
+      <img id='btPlaying' src="../../icons/resetSpinner.gif" alt="X" onclick="btStop()"  style='position:absolute; display:none; height:100%; left:46%; width:6%; top:0%;z-index:1;'>
+      <img id='btPlay' src="../../icons/transPlayGreen.png" alt=">" onclick="btPlay()"  style='position:absolute; height:100%; left:46%;width:6%; top:0%;'>  
+      <img id='btLooping' src="../../icons/resetSpinner.gif" alt="X" onclick="btStopLoop()"  style='position:absolute; display:none; height:90%;width:6%; left:46%; top:5%;z-index:1;'>
+      <img onclick="btStartLoop()" src='../../icons/transInfinity2.png' alt="LOOP" style="position:absolute; height:100%; width:6%;left:52.5%; top:0%;">
+ 
+      <div id='tempoGetter'onclick="getTempo()" title="Click once per beat...Until the tempo stabilizes..." style="border:solid;text-align:center;;position:absolute;height:90%; right:31%; width:10%; bottom:5%;">Loading<br>Tool...</div>
       <div id='a'style='border:solid;text-align:center;position:absolute; height:40%; right:19%; width:11%; bottom:55%;'>Secs Left...</div>
       <div id='btLoop'style='border:solid;text-align:center;position:absolute; height:40%; right:19%; width:11%; bottom:5%;'>Secs Left...</div>
       <div id='b' onclick="setBT('start')" style='border:solid; text-align:center; position:absolute; right:10%; width:8%; height:40%; bottom:55%;'>Start</div> 
       <div id='btGo' title="Click to Set Start" onclick="setBT('start')" style='border:solid; text-align:center; position:absolute; right:10%; width:8%; height:40%; bottom:5%;'>?</div>
       <div id='c' title="Click to Set Finish"  onclick="setBT('stop')" style='border:solid; text-align:center; position:absolute; right:1%;  width:8%; height:40%; bottom:55%;'>Finish</div>
       <div id='btEnd' title="Click to Set Finish"  onclick="setBT('stop')" style='border:solid; text-align:center; position:absolute; right:1%;  width:8%; height:40%; bottom:5%;'>?</div>
-      </div> 
     </div>
-  
-  <div id ='backTrackBarBody' style='position:absolute; display:block; height:65%; width:100%; bottom:0%; left:0%;'>   
+  </div>
+ 
+  <div id ='backTrackBarBody' style='position:absolute; display:block; height:75%; width:100%; bottom:0%; left:0%;'>   
     <div id ="notes" style="position:absolute; white-space:pre; font-family:monospace; text-align:left; color:white; background-color:green; visibility:hidden; left:10%; width:80%; height:60%; bottom:20%;  border:none; z-index:100;"></div> 
     <iframe id ="player2" src="https://www.youtube.com/embed/LcOempNj6_g?enablejsapi=1" style="position:absolute; color:white; background-color:black; bottom:3%; left:2%; width:96%; height:100%; border:none;"></iframe> 
     </div>
   
   
-  <div id ='newLine' style=' position:absolute; background-color:grey; text-align:left; display:none; height:60%; width:80%; bottom:20%; left:10%;'>   
+  <div id ='newLine' style=' position:absolute; background-color:grey; text-align:left; display:none; height:60%; width:80%; bottom:10%; left:10%;'>   
     <div>TitleTRACK INFORMATION<br>
       <div>Title<input id = 'nTitle' style= "position:absolute;left:8%";></div><br>
       <!--<div>Title<input id = 'nTitle' style= "position:absolute;left:8%";></div><br>
