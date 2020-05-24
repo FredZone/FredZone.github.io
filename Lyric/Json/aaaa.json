@@ -1,0 +1,23 @@
+{
+    "file": {
+        "title": "JS blues",
+        "desc": "Good Intro to blues",
+        
+        "backtrack": "a3HZ8S2H-GQ",
+        "loops": [{
+                "name": "Box 1",
+                "start": 30,
+                "finish": 40,
+                "desc": "Lick 1pattern from W - W - W# ",
+                "tab": "XXXXXXX"
+            }, {
+                "name": "Box 1",
+                "start": 30,
+                "finish": 40,
+                "desc": "Lick 1pattern from W - W - W# ",
+                "tab": "XXXXXXX"
+
+            }
+        ]
+    }
+}

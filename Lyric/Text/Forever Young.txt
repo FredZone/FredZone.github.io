@@ -1,0 +1,91 @@
+TITLE:Forever Young,DUR:265,BPM:75,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:TBD
+#INTRO ----------------------------------
+|G               |%
+-
+|G               |%
+-                        May God
+#VERSE 1 --------------------------------
+|G               |%
+bless and keep you always   May your
+|Bm              |%
+wishes all come true        May you
+|C               |%
+always do for others       And let
+|D               |G             |
+others do for you                May you
+|G
+build a ladder to the stars  And climb
+|Bm              |%
+ on every rung       May you
+|C               |%
+Stay
+|D               |%
+-ay                       forever
+|G               |%
+young
+|G               |%
+-                      May you
+#VERSE 2 --------------------------------
+|G               |%
+grow up to be righteous
+|Bm              |%
+May you grow up to be true
+|C               |%
+May you always know the truth
+|D               |G
+And see the lights surrounding you
+|G               |%
+-
+|G               |%
+May you always be courageous
+|Bm              |%
+Stand upright and be strong
+|C               |%
+And may you
+|D               |%
+stay
+|G               |%
+forever young
+[Chorus]
+|D               |%
+Forever young,
+|Em              |%
+forever young,
+|G               |%
+May you stay --
+|D               |%
+-------    forever
+|G               |%
+ young.
+|G               |%
+-
+#VERSE 3 --------------------------------
+|G               |%
+May your hands always be busy
+|Bm              |%
+May your feet always be swift
+|C               |%
+May you have a strong foundation
+|D          |G          |
+When the winds of changes shift
+|G               |%
+May your heart always be joyful
+|Bm              |%
+May your song always be sung
+|C               |%
+May you stay
+|D               |%
+forever
+|G               |%
+young
+#CHORUS 2 -------------------------------
+|D               |%
+Forever young,
+|Em              |%
+forever young,
+|G               |%
+May you stay --
+|D               |%
+-------    forever
+|G               |%
+ young.

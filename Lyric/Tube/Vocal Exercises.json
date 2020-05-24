@@ -1,0 +1,64 @@
+{
+    "file": {
+        "title": "TITLE",
+        "desc": "Trying to Sing Better",
+        "tracks": [
+            {
+                "utid": "lEnvcmU8jPg",
+                "title": "Sing High",
+                "notes": "Singing High",
+                "loops": [
+                    {
+                        "title": "Uh Uh",
+                        "start": "119",
+                        "stop": "186",
+                        "desc": "Practice Uh-uh uh-uh$",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "OW",
+                        "start": "271",
+                        "stop": "328",
+                        "desc": "Practice Uh-uh uh-uh$",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Eh",
+                        "start": "391",
+                        "stop": "483",
+                        "desc": "Oww$",
+                        "tab": "-"
+                    }
+                ]
+            },
+            {
+                "utid": "Ki-UYXQxVyk",
+                "title": "Hallelujah Karaoke",
+                "notes": "User Created Loop",
+                "loops": [
+                    {
+                        "title": "Whole Song",
+                        "start": "0",
+                        "stop": "270",
+                        "desc": "Just Fun$",
+                        "tab": "-"
+                    }
+                ]
+            },
+            {
+                "utid": "MA07if-IDDg",
+                "title": "Sing High 2",
+                "notes": "Singing High",
+                "loops": [
+                    {
+                        "title": "Nyay NyAY",
+                        "start": "239",
+                        "stop": "255",
+                        "desc": "nyay$",
+                        "tab": "-"
+                    }
+                ]
+            }
+        ]
+    }
+}

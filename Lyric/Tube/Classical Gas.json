@@ -1,0 +1,36 @@
+{
+    "file": {
+        "title": "Classical Gas",
+        "desc": "What I used to get into guitar about 10 years ago",
+        "tracks": [
+            {
+                "utid": "xnAFXazFtaQ",
+                "title": "Lesson 1",
+                "notes": "Just an Example",
+                "loops": [
+                    {
+                        "title": "Loop 1",
+                        "desc": "Overview",
+                        "start": 100,
+                        "stop": "122",
+                        "tab": "-"
+                    }
+                ]
+            },
+            {
+                "utid": "nHZQbIvGw2E",
+                "title": "Lesson 2",
+                "notes": "Continuing",
+                "loops": [
+                    {
+                        "title": "Loop 1",
+                        "desc": "Overview",
+                        "start": 76,
+                        "stop": "80",
+                        "tab": "-"
+                    }
+                ]
+            }
+        ]
+    }
+}

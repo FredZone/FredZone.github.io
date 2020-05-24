@@ -1,0 +1,43 @@
+{
+    "file": {
+        "title": "Rock Classics",
+        "desc": "Me Just over-reaching",
+        "tracks": [
+            {
+                "utid": "ISX8ucJH7os",
+                "title": "White Room",
+                "notes": "Short and to the point, uses Wah Wah",
+                "loops": [
+                    {
+                        "title": "Only Loop",
+                        "desc": "Just One Loop here",
+                        "start": "1",
+                        "stop": "70",
+                        "tab": "-"
+                    }
+                ]
+            },
+            {
+                "utid": "2j0osqiJJk8",
+                "title": "Let it Be",
+                "notes": "Another Example",
+                "loops": [
+                    {
+                        "title": "Any Loop 1",
+                        "desc": "Shot in the Dark",
+                        "start": "10",
+                        "stop": "15",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Any Loop 2",
+                        "desc": "Second Shot",
+                        "start": "50",
+                        "stop": "55",
+                        "tab": "-"
+                    }
+                ]
+            }
+        ]
+    }
+}

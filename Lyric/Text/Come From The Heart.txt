@@ -1,77 +1,79 @@
-TITLE:Come From The Heart,DUR:144,BPM:120,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Guy Clark,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+TITLE:Come From The Heart,DUR:148,BPM:120,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Guy Clark,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
 #INTRO ----------------------------------
-|C                        |F                        
+|NC                       |%
 -
-|C                        |G7                       
+|C                        |F
 -
-|C                        |F                        
+|C                        |G7
 -
-|C                        |G7                       
+|C                        |F
+-
+|C                        |G7
 #VERSE 1 --------------------------------
-|C                        |F                        
-When I was a young man, my daddy told me
-|C                        |G7                       
-A lesson he learned, it was a long time ago
-|C                        |F                        
-If you want to have someone to hold onto
-|C                        |G                        
-You're gonna have to learn to let go
+|C                        |F
+When  I  was  a  young  man,  my  daddy  told  me
+|C                        |G7
+A  lesson  he  learned,  it  was  a  long  time  ago
+|C                        |F
+If  you  want  to  have  someone  to  hold  onto
+|C                        |G
+You're  gonna  have  to  learn  to  let  go
 #CHORUS 1 -------------------------------
-|C                        |F                        
-You got to sing like you don't need the money
-|C                        |G7                       
-Love, like you'll never get hurt
-|C                        |F                        
-You got to dance like nobody's watchin'
-|C           ~Am           |G           ~C           
+|C                        |F
+You  got  to  sing  like  you  don't  need  the  money
+|C                        |G7
+Love,  like  you'll  never  get  hurt
+|C                        |F
+You  got  to  dance  like  nobody's  watchin'
+|C           ~Am           |G           ~C
 It's gotta come from the heart If you want it to work
 #BREAK 1 --------------------------------
-|C                        |F                        
+|C                        |F
 -
-|C                        |G7                       
+|C                        |G7
 -
-|C                        |F                        
+|C                        |F
 -
-|C                        |G7                       
+|C                        |G7
 -
 #VERSE 2 --------------------------------
-|C                        |F                        
-Now here is the one thing I keep forgettin'
-|C                        |G                        
-When everything is falling apart
-|C                        |F                        
+|C                        |F
+Now  here  is  the  one  thing  I  keep  forgettin'
+|C                        |G
+When  everything  is  falling  apart
+|C                        |F
 In life as in love you know I need to remember
-|C                        |G                        
-There's such a thing as trying too hard
+|C                        |G
+There's  such  a  thing  as  trying  too  hard
 #CHORUS 2 -------------------------------
-|C                        |F                        
-You got to sing like you don't need the money
-|C                        |G7                       
-Love, like you'll never get hurt
-|C                        |F                        
+|C                        |F
+You  got  to  sing  like  you  don't  need  the  money
+|C                        |G7
+Love,  like  you'll  never  get  hurt
+|C                        |F
 You got to dance, dance, dance like nobody's watchin'
-|C           ~Am           |G           ~C           
+|C           ~Am           |G           ~C
 It's gotta come from the heart If you want it to work
 #CHORUS 3 -------------------------------
-|C                        |F                        
+|C                        |F
 You got to sing sometimes like you don't need the money
-|C                        |G                        
-Love sometimes like you'll never get hurt
-|C                        |F                        
+|C                        |G
+Love  sometimes  like  you'll  never  get  hurt
+|C                        |F
 You got to dance, dance, dance like nobody's watchin'
-|C           ~Am           |G           ~C           
+|C           ~Am           |G           ~C
 It's gotta come from the heart if you want it to work
 #OUTRO ----------------------------------
-|C            |F            |C            |G7           
+|C            |F            |C            |G7
 -
-|C            |F            |C     ~Am     |G7     ~C     
+|C            |F            |C     ~Am     |G7     ~C
 -
-|C            |F            |C            |G7           
+|C            |F            |C            |G7
 -
-|C            |F            |C     ~Am     |G7     ~C     
+|C            |F            |C     ~Am     |G7     ~C
 -
 irealb://Come%20From%20The%20Heart%3DComposer%20Unknown%3D%3DCountry%20100%3DC%3D%3D1r34LbKcu77G%7CQy4CXyQXF%7CQyXC44TA*%7B%7DyQX7G%7CQyXC%7CQyXF%7CyQ%7CCX4Ti*%7B%7CQyX7XyQ%7CFC%7CQyXF%7CQyXCSB*%5D%5BQyX7G%7CQyXC%7CQyXXyQ%7CGC%7CQyXLCZLFFXyQ%7C7GZLCZLFZLCC*%5B%20ZQ%2CC%207G1NZL-A%20CLZCLZ%7CQyXC%7C%2CCsQ%7DXyQX%2CC%3EadoC%20la%20.S.%3CD%207G2N%7CQyXQyXQy%20%5D%7B*D%20%2C7GZF%2C%7CC%2C%7CG7%2C%7CC%2C%7CF%2C%7CC%20A-LZG7%2C%20C%2C%20%7D%20%3DPop-Country%3D105%3D1
 @@Written by Richard Leigh and Susanna Clark.
 @@Best known as a 1989 single by Kathy Mattea, and her album Willow in the Wind
-@@First recorded and released on the 1987 Don Williams album Traces 
+@@First recorded and released on the 1987 Don Williams album Traces
 @@Also released in 1988 by Clark's husband, Guy, on his album Old Friends

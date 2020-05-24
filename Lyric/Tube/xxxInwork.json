@@ -1,0 +1,132 @@
+{
+    "file": {
+        "title": "JS blues",
+        "desc": "Good Intro to blues",
+        "tracks": [
+            {
+                "utid": "LcOempNj6_g",
+                "title": "Box 1",
+                "notes": "G Form  CMaj and Amin",
+                "loops": [
+                    {
+                        "title": "Lick 1",
+                        "desc": "Very Simple Loop...",
+                        "start": "337",
+                        "stop": "341",
+                        "tab": "A@4@2@6@1:8b10@@1:8b9@@1:5@@@"
+                    },
+                    {
+                        "title": "Lick 2",
+                        "desc": "Mute after you bend up",
+                        "start": "342",
+                        "stop": "345",
+                        "tab": "A@4@2@6@3:7b9@@3:5@@@@@"
+                    },
+                    {
+                        "title": "Lick 3",
+                        "desc": "-",
+                        "start": "398",
+                        "stop": "403",
+                        "tab": "A@4@2@5@@@3:7b8@@2:5@@1:5@@2:8b10@"
+                    },
+                    {
+                        "title": "Lick 4",
+                        "desc": "-",
+                        "start": "463",
+                        "stop": "468",
+                        "tab": "A@4@2@6@2:8b10@@1:5@2:8@2:p5@@2:8b10@"
+                    },
+                    {
+                        "title": "Lick 5",
+                        "desc": "-",
+                        "start": "518",
+                        "stop": "523",
+                        "tab": "A@4@2@6@2:8b10@@2:8@2:p5@3:7@2:5@3:5@@4:7"
+                    }
+                ]
+            },
+            {
+                "utid": "Ni6cU7hH5ts",
+                "title": "Box 2",
+                "notes": "E Form CMaj and Amin",
+                "loops": [
+                    {
+                        "title": "Lick 1",
+                        "desc": "Very Simple Loop...",
+                        "start": "74",
+                        "stop": "78",
+                        "tab": "A@4@2@6@@2:10@1:8@1:10@1:10b11@1:m@1:8@@2:10;197"
+                    },
+                    {
+                        "title": "Lick 2",
+                        "desc": "Very Simple Loop...",
+                        "start": "197",
+                        "stop": "200",
+                        "tab": "A@4@2@6@@@@@@3:7s9@2:8@1:8@2:10"
+                    },
+                    {
+                        "title": "Lick 3",
+                        "desc": "Very Simple Loop...",
+                        "start": "369",
+                        "stop": "374",
+                        "tab": "A@4@2@6@1:10b12@@@1:8@1:10@2:10@1:8@"
+                    },
+                    {
+                        "title": "Lick 4",
+                        "desc": "Very Simple Loop...",
+                        "start": "542",
+                        "stop": "548",
+                        "tab": "A@4@2@6@2:10@2:8@3:9@2:8@2:10@1:8|2:-@2:10@2:8@2:10@2:8@3:9@2:8@2:10@1:8|2:-@2:10@2:8@2:10"
+                    },
+                    {
+                        "title": "Lick 5",
+                        "desc": "Kind of Howling on the last bend, up, rel, up",
+                        "start": "765",
+                        "stop": "769",
+                        "tab": "A@4@2@6@2:8@2:10@1:8@2:8@2:10@1:8@1:10b12r@1:.b12"
+                    }
+                ]
+            },
+            {
+                "utid": "r-czdtlbpBE",
+                "title": "Box 3",
+                "loops": [
+                    {
+                        "title": "Loop A3",
+                        "desc": "Very Simple Loop...",
+                        "start": "337",
+                        "stop": "341",
+                        "tab": "#A@4@2@6@1:8b10@@1:8b9@@1:5@@@;342#345#Lick 2#Mute after you bend up#A@4@2@6@3:7b9@@3:5@@@@@;398#403#Lick 3#-#A@4@2@5@@@3:7b8@@2:5@@1:5@@2:8b10@;463#468#Lick 4#-#A@4@2@6@2:8b10@@1:5@2:8@2:p5@@2:8b10@;518#523#Lick 5#-#A@4@2@6@2:8b10@@2:8@2:p5@3:7@2:5@3:5@@4:7"
+                    },
+                    {
+                        "title": "Loop B3",
+                        "desc": "Very Simple Loop...",
+                        "start": "400",
+                        "stop": "410",
+                        "tab": "#A@4@2@6@1:8b10@@1:8b9@@1:5@@@;342#345#Lick 2#Mute after you bend up#A@4@2@6@3:7b9@@3:5@@@@@;398#403#Lick 3#-#A@4@2@5@@@3:7b8@@2:5@@1:5@@2:8b10@;463#468#Lick 4#-#A@4@2@6@2:8b10@@1:5@2:8@2:p5@@2:8b10@;518#523#Lick 5#-#A@4@2@6@2:8b10@@2:8@2:p5@3:7@2:5@3:5@@4:7"
+                    }
+                ]
+            },
+            {
+                "utid": "mPD0AaqkAxc",
+                "title": "Box 4",
+                "loops": [
+                    {
+                        "title": "Loop A4",
+                        "desc": "Very Simple Loop...",
+                        "start": "337",
+                        "stop": "341",
+                        "tab": "#A@4@2@6@1:8b10@@1:8b9@@1:5@@@;342#345#Lick 2#Mute after you bend up#A@4@2@6@3:7b9@@3:5@@@@@;398#403#Lick 3#-#A@4@2@5@@@3:7b8@@2:5@@1:5@@2:8b10@;463#468#Lick 4#-#A@4@2@6@2:8b10@@1:5@2:8@2:p5@@2:8b10@;518#523#Lick 5#-#A@4@2@6@2:8b10@@2:8@2:p5@3:7@2:5@3:5@@4:7"
+                    },
+                    {
+                        "title": "Loop B4",
+                        "desc": "Very Simple Loop...",
+                        "start": "400",
+                        "stop": "410",
+                        "tab": "#A@4@2@6@1:8b10@@1:8b9@@1:5@@@;342#345#Lick 2#Mute after you bend up#A@4@2@6@3:7b9@@3:5@@@@@;398#403#Lick 3#-#A@4@2@5@@@3:7b8@@2:5@@1:5@@2:8b10@;463#468#Lick 4#-#A@4@2@6@2:8b10@@1:5@2:8@2:p5@@2:8b10@;518#523#Lick 5#-#A@4@2@6@2:8b10@@2:8@2:p5@3:7@2:5@3:5@@4:7"
+                    }
+                ]
+            }
+        ]
+    }
+}

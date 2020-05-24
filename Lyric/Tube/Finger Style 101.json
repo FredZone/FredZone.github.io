@@ -1,0 +1,50 @@
+{
+    "file": {
+        "title": "TITLE",
+        "desc": "Rename and edit this! Save it to your Drive after editing it",
+        "tracks": [
+            {
+                "utid": "gBwq_S6ahnY",
+                "title": "The Claw",
+                "notes": "-",
+                "loops": [
+                    {
+                        "title": "Loop 1",
+                        "start": "87",
+                        "stop": "95",
+                        "desc": "By Tommy Emmanual$Shows fingering, not notes$Sort of Runaway",
+                        "tab": "A@4@2@4@6:T@5:T@2:Mu|3:Iu@6:T@4:T@2:Mu|3:Iu@6:T@3:Iu"
+                    }
+                ]
+            },
+            {
+                "utid": "gBwq_S6ahnY",
+                "title": "The Claw",
+                "notes": "-",
+                "loops": [
+                    {
+                        "title": "Loop 1",
+                        "start": "87",
+                        "stop": "95",
+                        "desc": "By Tommy Emmanual$Shows fingering, not notes",
+                        "tab": "A@3@3@4@5:T@4:T@2:Mu|3:Iu@6:T@4:T@2:Mu|3:Iu@6:T@3:Iu@"
+                    }
+                ]
+            },
+            {
+                "utid": "gBwq_S6ahnY",
+                "title": "The Claw",
+                "notes": "-",
+                "loops": [
+                    {
+                        "title": "Loop 1",
+                        "start": "87",
+                        "stop": "95",
+                        "desc": "By Tommy Emmanual",
+                        "tab": "A@3@3@4@5:T@4:T@2:Mu|3:Iu@6:T@4:T@2:Mu|3:Iu@6:T@3:Iu@@@@@@@@@@"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "file": {
+        "title": "TITLE",
+        "desc": "Ray is an 'aquired taste'",
+        "tracks": [
+            {
+                "utid": "VjzZuZ76DBQ",
+                "title": "Rays Lesson",
+                "notes": "Ray trying to 'splain it'",
+                "loops": [
+                    {
+                        "title": "Entire Lesson (short)",
+                        "start": "1",
+                        "stop": "138",
+                        "desc": "Rays Explanation",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Signature Loop",
+                        "start": "108",
+                        "stop": "112",
+                        "desc": "My Take on the Tab",
+                        "tab": "A@4@2@4@3:4|4:4|5:2@3:4|4:4|5:2@6:0@3:0|4:0|5:0@3:2|4:2|5:0@@3:0|4:0|5:0@@6:0@3:4|4:4|5:2@6:0@3:4|4:4|5:2@6:0@6:3@6:5v@"
+                    }
+                ]
+            },
+            {
+                "utid": "F2gwgnlEa-s",
+                "title": "Snake Farm Good View of Picking",
+                "notes": "",
+                "loops": [
+                    {
+                        "title": "-",
+                        "start": "0",
+                        "stop": "313",
+                        "desc": "-",
+                        "tab": "undefined"
+                    }
+                ]
+            },
+            {
+                "utid": "89VR_lZehw4",
+                "title": "Music Fog Full Track",
+                "notes": "",
+                "loops": [
+                    {
+                        "title": "Whole Song",
+                        "start": "0",
+                        "stop": "235",
+                        "desc": "-",
+                        "tab": "-"
+                    }
+                ]
+            }
+        ]
+    }
+}

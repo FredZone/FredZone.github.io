@@ -1,0 +1,50 @@
+{
+    "file": {
+        "title": "Utool-Format",
+        "desc": "Use this to build a new Database",
+        "tracks": [
+            {
+                "utid": "nveEtVqYyvw",
+                "title": "Monkey Business",
+                "notes": "Just an Example",
+                "loops": [
+                    {
+                        "title": "1st Loop",
+                        "desc": "Random pick",
+                        "start": "10",
+                        "stop": "15",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "2nd Loop",
+                        "desc": "Other Random Pick",
+                        "start": "10",
+                        "stop": "15",
+                        "tab": "-"
+                    }
+                ]
+            },
+            {
+                "utid": "2j0osqiJJk8",
+                "title": "Let it Be",
+                "notes": "Another Example",
+                "loops": [
+                    {
+                        "title": "Any Loop 1",
+                        "desc": "Shot in the Dark",
+                        "start": "10",
+                        "stop": "15",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Any Loop 2",
+                        "desc": "Second Shot",
+                        "start": "50",
+                        "stop": "55",
+                        "tab": "-"
+                    }
+                ]
+            }
+        ]
+    }
+}

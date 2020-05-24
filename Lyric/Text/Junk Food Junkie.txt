@@ -1,76 +1,81 @@
-TITLE:Junk Food Junkie,DUR:132,BPM:240,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Larry Groce,GENRE:Folk,STYLE:Up Tempo,HITyear:1976
+TITLE:Junk Food Junkie,DUR:168,BPM:200,BEATS:4,KEY:D,QUAL:Raw,ARTIST:Larry Groce,GENRE:Folk,STYLE:Up Tempo,HITyear:1976
+#INTRO ----------------------------------
+|D                   |%                   |%                   |%
+-
+|D                   |%                   |%                   |%
+-
 #VERSE 1 --------------------------------
-|C                   |%                   |F                   |C
+|D                   |%                   |G                   |D
 You know I love that organic cooking, I always ask for more.
-|C                   |A                   |D                   |G
+|D                   |B                   |E                   |A
 And they call me Mr. Natural, on down to the health food store.
-|C                   |%                   |F                   |C
+|D                   |%                   |G                   |D
 I only eat good sea salt, white sugar don't touch my lips.
-|C                   |A                   |D         ~G         |C         ~
+|D                   |B                   |E         ~A        |D         ~
 And my friends is always begging me to take them on, macrobiotic trips.
-|Am                  |%                   |Am                  |%
+|Bm                  |%                   |Bm                  |%
 Yes, they are.
 #BREAK 1 --------------------------------
-|Am                  |%                   |Dm                  |Am
+|Bm                  |%                   |Em                  |Bm
 Oh, but at night I take out my strongbox, that I keep under lock and key.
-|Am                   |%                   |B7                   |E7
+|Bm                  |%                   |C#7                 |F#7
 And I take it off to my closet, where nobody else can see.
-|Am                  |%                   |Dm                  |Am
+|Bm                  |%                   |Em                  |Bm
 I open that door so slowly, take a peek up north and south.
-|C                   |A                   |D         ~G         |C         ~
+|D                   |B                   |E         ~A        |D         ~
 Then I pull out a Hostess Twinkie, and I pop it in my mouth.
 #CHORUS 1 -------------------------------
-|F                   |C                   |G                   |C
+|G                   |D                   |A                   |D
 Yeah, in the daytime I'm Mr. Natural, just as healthy as I can be.
-|C                   |Am                  |E                   |Am
+|D                   |Bm                  |F#                  |Bm
 But at night I'm a junk food junkie, good Lord have pity on me.
 #VERSE 2 --------------------------------
-|C                   |%                   |F                   |C
+|D                   |%                   |G                   |D
 Well, at lunchtime you can always find me, at the Whole Earth Vitamin Bar.
-|C                   |A                   |D                   |G
+|D                   |B                   |E                   |A
 Just sucking on my plain white yogurt, from my hand thrown pottery jar.
-|C                   |%                   |F                   |C
+|D                   |%                   |G                   |D
 And sippin' a little hand pressed cider, with a carrot stick for dessert.
-|C                   |A                   |D         ~G         |C         ~
+|D                   |B                   |E         ~A         |D         ~
 And wiping my face in a natural way, on the sleeve of my peasant shirt.
-|Am                  |%                   |Am                  |%
+|Bm                  |%                   |Bm                  |%
 Oh yeah!
 #BREAK 2 --------------------------------
-|Am                  |%                   |Dm                  |Am
+|Bm                  |%                   |Em                  |Bm
 Ah, but when that clock strikes midnight and I'm all by myself.
-|Am                   |%                   |B7                   |E7
+|Bm                  |%                   |C#7                 |F#7
 I work that combination, on my secret hideaway shelf.
-|Am                  |%                   |Dm                  |Am
+|Bm                  |%                   |Em                  |Bm
 And I pull out some Fritos corn chips, Dr. Pepper and an ol' Moon Pie.
-|C                   |A                   |D         ~G         |C         ~
+|D                   |B                   |E         ~A         |D         ~
 Then I sit back in glorious expectation, of a genuine junk food high.
 #CHORUS 2 -------------------------------
-|F                   |C                   |G                   |C
+|G                   |D                   |A                   |D
 Yeah, in the daytime I'm Mr. Natural, just as healthy as I can be.
-|C                   |Am                  |E                   |Am
+|D                   |Bm                  |F#                  |Bm
 But at night I'm a junk food junkie, good Lord have pity on me.
 #VERSE 3 --------------------------------
-|C                   |%                   |F                   |C
+|D                   |%                   |G                   |D
 My friends down at the commune, they think I'm pretty neat.
-|C                   |A                   |D                   |G
+|D                   |B                   |E                   |A
 Oh, I don't know nothing about arts and crafts,but I give 'em all something to eat.
-|C                   |%                   |F                   |C
+|D                   |%                   |G                   |D
 I'm a friend to old Euell Gibbons, and I only eat homegrown spice.
-|C                   |A                   |D         ~G         |C         ~
+|D                   |B                   |E         ~A         |D         ~
 I got a John Keats autographed Grecian urn, filled up with my brown rice.
-|Am                  |%                   |Am                  |%
+|Bm                  |%                   |Bm                  |%
 Yes, I do.
 #BREAK 3 --------------------------------
-|Am                  |%                   |Dm                  |Am
+|Bm                  |%                   |Em                  |Bm
 Oh, but folks, lately I have been spotted, with a Big Mac on my breath.
-|D                   |%                   |G                   |%
+|Bm                  |%                   |C#7                 |F#7
 Stumbling into a Colonel Sanders, with a face as white as death.
-|Am                  |%                   |Dm                  |Am
+|Bm                  |%                   |Em                  |Bm
 I'm afraid someday they'll find me, just stretched out on my bed.
-|C                   |A                   |D         ~G         |C         ~
+|D                   |B                   |E         ~A         |D         ~
 With a handful of Pringles Potato Chips, and a Ding Dong by my head.
 #CHORUS 3 -------------------------------
-|F                   |C                   |G                   |C
+|G                   |D                   |A                   |D
 Yeah, in the daytime I'm Mr. Natural, just as healthy as I can be.
-|C                   |Am                  |E                   |Am
+|D                   |Bm                  |F#                  |Bm
 But at night I'm a junk food junkie, good Lord have pity on me.

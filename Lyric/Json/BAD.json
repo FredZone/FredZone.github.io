@@ -1,0 +1,34 @@
+
+    "file": {
+        "id": "96cydVB4w-A",
+        "title": "Modes",
+        "desc": "Good Intro to Modes, all one shape for 7 modes",
+        "backtrack": "a3HZ8S2H-GQ",
+        "loops": [{
+                "name": "Ionian",
+                "start": 159,
+                "finish": 208,
+                "desc": "Major(Ionian)# Note the 1 - 3 - 5 pattern from W - W - W# ",
+                "backtrack": "a3HZ8S2H-GQ"
+            }, {
+                "name": "Dorian",
+                "start": 315,
+                "finish": 339,
+                "desc": "Same positions but start on the second note (D)",
+                "backtrack": "a3HZ8S2H-GQ"
+            }, {
+                "name": "Crudian",
+                "start": 615,
+                "finish": 639,
+                "desc": "crap",
+                "backtrack": "a3HZ8S2H-GQ"
+            }, {
+                "name": "Crudian2",
+                "start": 615,
+                "finish": 639,
+                "desc": "crap",
+                "backtrack": "a3HZ8S2H-GQ"
+            }
+        ]
+    }
+}

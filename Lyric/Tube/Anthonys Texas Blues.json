@@ -1,0 +1,35 @@
+{
+    "file": {
+        "title": "TITLE",
+        "desc": "Anthonys Lessons",
+        "tracks": [
+            {
+                "utid": "xQCeIWDZOJQ",
+                "title": "Blues Shuffle",
+                "notes": "",
+                "loops": [
+                    {
+                        "title": "The Shuffle Full Speed",
+                        "start": "122",
+                        "stop": "132",
+                        "desc": "with Tab",
+                        "tab": "A@4@2@6@@@@@@@@"
+                    },
+                    {
+                        "title": "Loop B",
+                        "start": "15",
+                        "stop": "20",
+                        "desc": "Bogus Loop$Edit it",
+                        "tab": "A@4@2@6@@@@@@@@"
+                    }
+                ]
+            },
+            {
+                "utid": "",
+                "title": "undefined",
+                "notes": "undefined",
+                "loops": []
+            }
+        ]
+    }
+}

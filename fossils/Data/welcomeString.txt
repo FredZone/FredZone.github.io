@@ -1,7 +1,6 @@
-
-
 <div style='position:absolute;border:none;background-color:transparent;left:0%;right:0%;top:0%;bottom:0%;overflow:hidden;'>
-    
+
+    <!CORONAVIRUS POP UP!-->   
     <div onclick="pop(MSGspecial,'COVID 19',15,undefined,'red')" style="position:absolute;right:0%;top:0%;width:10%;z-index:10000;"><img src='Data/coronavirus.jpg' style='width:100%;'></div>
     
     

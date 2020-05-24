@@ -1,0 +1,99 @@
+{
+    "file": {
+        "title": "TITLE",
+        "desc": "Simple country licks and tracks",
+        "tracks": [
+            {
+                "utid": "x08Yp4VkNbI",
+                "title": "Ten Basic Country Licks",
+                "notes": "Jim Lills take",
+                "loops": [
+                    {
+                        "title": "Folsom Prison",
+                        "start": "62",
+                        "stop": "73",
+                        "desc": "Not the way I do it",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Mama Tried",
+                        "start": "101",
+                        "stop": "111",
+                        "desc": "Merle Haggard",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Eastbound and Down",
+                        "start": "138",
+                        "stop": "148",
+                        "desc": "User Created Loop",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Guitars and Caddilacs",
+                        "start": "166",
+                        "stop": "173",
+                        "desc": "Dwight Yokham",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Chatahoochie",
+                        "start": "202",
+                        "stop": "218",
+                        "desc": "Brent Mason on Alan Jackson record",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Aint goin Down till the sun comes up",
+                        "start": "217",
+                        "stop": "259",
+                        "desc": "Garth Brooks ",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Awful Beautiful Life",
+                        "start": "298",
+                        "stop": "307",
+                        "desc": "Dont know this one",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Lotta Leavin left to Do",
+                        "start": "347",
+                        "stop": "360",
+                        "desc": "JT Cornflos on Dirks Bently song",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Alcohol",
+                        "start": "410",
+                        "stop": "423",
+                        "desc": "Brad Paisly Lick",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Nobody to Blame",
+                        "start": "448",
+                        "stop": "470",
+                        "desc": "Chris Stapleton",
+                        "tab": "-"
+                    }
+                ]
+            },
+            {
+                "utid": "OXW9OhgoqKQ",
+                "title": "One Lick Solo",
+                "notes": "One Lick Extended to a solo",
+                "loops": [
+                    {
+                        "title": "Basic Lick",
+                        "start": "172",
+                        "stop": "176",
+                        "desc": "$$$",
+                        "tab": "A@4@2@4@1:3@@2:0@2:1@2:2@3:0@3:2@3:0@4:0@@@@@@@@1:3@@1:5@1:6|2:@1:7@2:5@2:7@2:5@3:0@@@@@@2:@2:"
+                    }
+                ]
+            }
+        ]
+    }
+}
