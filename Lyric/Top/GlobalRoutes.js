@@ -5,7 +5,7 @@ var TEMPflag;//REQUIRED FOR fileGetLocal()
 var TEMPlocalFileName="unknown"//REQUIRED FOR fileGetLocal()clear in parent routine
 var TEMP="Initialized";//use it as required but close in the routine that opens it
 //for StatusMsg
-var LOG=true;//if you want to log status messages set to true
+//var LOG=true;//if you want to log status messages set to true
 var ARRstatusLog="START>>>".split('-');
 var MSGcount=0;
 //???dont remember why I have these
@@ -61,13 +61,12 @@ function readSingleFile(e){
         eval(str);};//EVAL is EVIL, find something else
     reader.readAsText(file);}
 
-/*
+/*ZAP01 take out function fileDownload(path)
 fetch('http://localhost/foo.txt')
   .then(response => response.text())
   .then((data) => {
     console.log(data)
   })
-*/
 function fileDownloadX(path){
     statusMsg('Downloading: '+ path);
     var xhr=new XMLHttpRequest();
@@ -145,7 +144,7 @@ function fileDownload2(path){
     // This is where you run code if the server returns any errors
     });
     }
-
+*/
 
 
 function fileSaveTextAs(fileName,textToWrite){   
@@ -166,6 +165,7 @@ function destroyClickedElement(event){
 // remove the link from the DOM
 
 //^DISPLAY ROUTINES===============================================================================================================
+/*ZAP 06============================================================
 function launchIntoFullscreen(element){
        if(element.requestFullscreen) {element.requestFullscreen();}
        else if(element.mozRequestFullScreen) {element.mozRequestFullScreen();}
@@ -177,7 +177,9 @@ function exitFullscreen(){
       else if(document.mozCancelFullScreen) {document.mozCancelFullScreen();}
       else if(document.webkitExitFullscreen) {document.webkitExitFullscreen();}
       else if(element.msCancelFullscreen) {document.msCancelFullscreen();}}//this step is BOGUS
+*/
 
+/*ZAP 04
 function vis(id,style){
     if (style===undefined){
         if (document.getElementById(id).style.visibility =='visible') {
@@ -188,20 +190,17 @@ function vis(id,style){
     document.getElementById(id).style.visibility =style;}
 
 function dis(id,disp){
-//toggles display by id or sets it to 'style' block or none (requires this line in the html page)
-//requires variable: var NONE;
-//requires this line in the window.onload: NONE =document.getElementById('none').style.display;
-//requires this line in the html file: <a id="none" style=" display:none; visibility:hidden"></a>    
-    if (disp===undefined){
-        if (document.getElementById(id).style.display == NONE){
-            document.getElementById(id).style.display='block';}
-        else{document.getElementById(id).style.display=NONE;}}
-    else{
-        if (disp=='none'){
-            document.getElementById(id).style.display = NONE;}
+    if(disp===undefined){
+            if(document.getElementById(id).style.display == 'none'){
+                document.getElementById(id).style.display='block';}
+            else{document.getElementById(id).style.display='none';}}
         else{
-            document.getElementById(id).style.display = 'block' ;}}}
+            if(disp=='none') {
+                document.getElementById(id).style.display = 'none';}
+            else{document.getElementById(id).style.display = 'block' ;}}}
+*/
 
+/*ZAP05 movved to obsolete in Global.js
 function rat(){
     //WINDht, WINDwt RAT must all be definded in parent js
     //use the RAT on boot and resize elements for different ratios of length to width 
@@ -214,11 +213,12 @@ function autoSize(id,fVh,bottom,ht,wt){//* id//* fontsize(vh)//* text Bottom//* 
     if (bottom!==undefined){bottom =parseInt(bottom/RAT,10)+'%';document.getElementById(id).style.bottom=bottom ;}
     if (ht!==undefined){ht =parseInt(ht/RAT,10)+'%';document.getElementById(id).style.height=ht;}
     if (wt!==undefined){wt =parseInt(wt*RAT,10)+'%';document.getElementById(id).style.width=wt;}}
+*/
 
 //^NAVIGATION ROUTINES====================================================================================
 function home(){window.open("index.html");}
-
-//^STRING FUNCTIONS====================================================================================
+//ZAP 07
+/*STRING FUNCTIONS====================================================================================
 function breakStrAtCaps(str){return(str.match(/[A-Z]*[^A-Z]+/g));} //returns array of words split by in string split with Caps
 
 function leftTo(str,find,incFind,keepLeft){//comes from the left of a string to a'find' string 
@@ -245,7 +245,7 @@ function secToMin(sec){//XXX this sucks
     var s =parseInt(parseFloat((sec/60)-parseInt(sec/60,10))*60,10);
     if (s < 10) {s = ":0" + s;}else{s = ":" + s;}
     return m+s;}
-
+*/
 //^UTUBE FUNCTIONS========================================================================================
 function uTubeGetId(str){//if other charcters show up add them here...
     str=(leftTo(str,"v=",true,false));
@@ -256,47 +256,50 @@ function uTubeGetId(str){//if other charcters show up add them here...
     return str;}
 
 //^MISC ROUTINES==============================================================================
-function statusMsgXXX(msg,bgcolor,marq){//* xxx could trim to 40 chr
-    // COLOR SCHEME: light grey=normal;red=problem ;yellow-pause or inwork; green=Ready
-    if(msg===null){msg=MSGlast;}
-    MSGlast = msg;
-    var clr;
-    if( document.getElementById("msg").style.top !="0%"){bgcolor = 'Transparent';clr='red';}//for splash screen
-    else if (bgcolor === undefined){bgcolor = 'lightgrey';}//default
-    document.getElementById("msg").style.backgroundColor = bgcolor;
-    if (bgcolor == "black"|bgcolor == "red"){clr = 'white';}
-    else if (bgcolor == "yellow"){clr = 'red';}
-    else if (bgcolor == "green"|bgcolor == "blue"|bgcolor=='grey'){clr='white';}
-    else{clr='black';}
-    document.getElementById("msg").style.color = clr;
-    if (marq===true){msg= "<marquee><mark>"+msg+"</mark></marquee>";}
-    document.getElementById("msg").innerHTML = msg;}
+
     
 function echo(ech){alert("ECHO:\n"+ech);}   //just test if this program is woring using i.e. echo('shit')
-    
-function statusMsg(msg,bgcolor,marq) { 
-  // COLOR SCHEME: light grey=normal;red=problem ;yellow-pause or inwork; green=Ready
-  if(LOG===true & bgcolor===true){
-    ARRstatusLog.splice(0,0,">>>>:"+msg);
-    return;}
-  ARRstatusLog.splice(0,0,MSGcount+":  "+msg);
-  ARRstatusLog.splice(30,1);
-  if(msg===null){msg=MSGlast;}
-  MSGlast = msg;
-  var clr;
-  if( document.getElementById("msg").style.top !="0%"){bgcolor = 'Transparent';clr='red';}//for splash screen
-  else if (bgcolor === undefined){bgcolor = 'lightgrey';}//default
-  document.getElementById("msg").style.backgroundColor = bgcolor;
-  if (bgcolor == "black"|bgcolor == "red"){clr = 'white';}
-  else if (bgcolor == "yellow"){clr = 'red';}
-  else if (bgcolor == "green"|bgcolor == "blue"|bgcolor=='grey'){clr='white';}
-  else{clr='black';}
-  document.getElementById("msg").style.color = clr;
-  if (marq===true){msg= "<marquee><mark>"+msg+"</mark></marquee>";}
-  document.getElementById("msg").innerHTML = msg;
-  MSGcount=MSGcount+1;}     
-    
+/*--ZAP 100    
+function XXXstatusMsg(msg, bgcolor, marq) {
+    // COLOR SCHEME: light grey=normal;red=problem ;yellow-pause or inwork; green=Ready
+    //if(LOG===true & bgcolor===true){
+    ARRstatusLog.splice(0, 0, ">>>>:" + msg);
+    return;
+}
+ARRstatusLog.splice(0, 0, MSGcount + ":  " + msg);
+ARRstatusLog.splice(30, 1);
+if (msg === null) {
+    msg = MSGlast;
+}
+MSGlast = msg;
+var clr;
+if (document.getElementById("msg").style.top != "0%") {
+    bgcolor = 'Transparent';
+    clr = 'red';
+} //for splash screen
+else if (bgcolor === undefined) {
+    bgcolor = 'lightgrey';
+} //default
+document.getElementById("msg").style.backgroundColor = bgcolor;
+if (bgcolor == "black" | bgcolor == "red") {
+    clr = 'white';
+} else if (bgcolor == "yellow") {
+    clr = 'red';
+} else if (bgcolor == "green" | bgcolor == "blue" | bgcolor == 'grey') {
+    clr = 'white';
+} else {
+    clr = 'black';
+}
+document.getElementById("msg").style.color = clr;
+if (marq === true) {
+    msg = "<marquee><mark>" + msg + "</mark></marquee>";
+}
+document.getElementById("msg").innerHTML = msg;
+MSGcount = MSGcount + 1;
+}
+*/    
 
+/*ZAP 03
 function  passARR(pageName,arr,divider,leadingElements,winSpecs){
     //alert(POPUP);
     if (POPUP!==undefined) {POPUP.close();}//close exiting POPUP
@@ -336,9 +339,9 @@ function encodeFredComponent(str){//encodes problem char (?)
     str=str.split("@");
     str=str.join("AMARK");
     return str;}
-
+*/
 //dragElement============================================================
-  
+/*  ZAP 02
 dragElement(document.getElementById(("tabBar")));//apparentlty you must initiateThis
   function dragElement(elmnt) {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -364,8 +367,9 @@ dragElement(document.getElementById(("tabBar")));//apparentlty you must initiate
       elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
       }
     function closeDragElement() {
-      /* stop moving when mouse button is released:*/
+      // stop moving when mouse button is released://
       document.onmouseup = null;
       document.onmousemove = null;
       }
   }
+*/

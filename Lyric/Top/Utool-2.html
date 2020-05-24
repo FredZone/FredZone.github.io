@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+    <head>
+        <!--COMMON STRUCTURE ==========================================================================================
+        Items requiring Change are marked YADA
+        move bugs/make trigger go away/smaller default on any key
+        -->
+        <link rel="shortcut icon" type="/png" href="../../Icons/transWhiteCircle.png"><!--YADA-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!-- prevents zooming on mobile devices....number-based width or "device-width"-->
+        <title id = 'titleMain'>UTOOL</title> <!--YADA-->
+        <style type="text/css">
+            table, th, td {
+              table-layout: fixed;
+              overflow: hidden;
+              border: 1px solid black;
+              border-collapse: collapse;
+            }
+            #statusWindowheader{cursor: move; background-color:orange; color:black; font-size:1vw; line-height:100%; top:0%; width:100%; height:5%; overflow:hidden;}
+            Body{
+                font-size:2vh;                
+                color:white;
+                font-family:Courrier New;
+                font-weight: bold;
+                text-align:center;
+                vertical-align:middle;
+                border-color: black;
+                border-width:thin;
+                background-color:black;
+                padding:0px;
+                margin:0px;
+                overflow:hidden;}
+            X1{color:green;}
+            X2{color:red;}
+            X4{color:red;background-color:#F4FA58;}
+            X5{color:white; background-color:lightgrey;}
+            X6{background-color:lightgrey;}
+            X7{background-color:transparent;}
+            X8{color:blue;}
+            X14{text-align:center; background-color:black; color:white;}
+            X16{text-align:center; background-color:green; color:yellow;}
+            XX{text-align:center; background-color:transparent; color:transparent;}<!--invisible-->
+            table{border-color:transparent;
+                background-color:transparent;}
+            th  {border-style:groove;
+                border-color:black;
+                background-color:pink;
+                text-align:center;}
+            pre { display: inline}
+            optgroup {font-size:1.5vw; }
+        </style>    
+    </head>
+    
+    <body onresize=squish(1.0,0.50)><!--YADA--can change aspect-->
+    <form action=false><input type="file" id="fileInput" style="display:none;"/></form>
+    <!--field-->  
+    <div id='field' style="position:fixed;display:block; font-size:2vw;color:black;top:0%; left:0%; width:100%; height:100%;background-color:pink;z-index:0">
+        <div onclick="dis('main')"style="position:absolute;border:groove;color:green;top:50%;left:30%;width:40%;">
+            Click to return to the Main form...     
+        </div>      
+    <!-- Splash  10000 10999 -->  
+        <div id ="splash" style="position:absolute; display:block; font-size:5vh;text-align:center;border:solid;background-color:white; color:black; top:0%; left:0%; height:100%; width:100%; z-index:10000">
+            <div style="position:absolute;width:100%;top:5%;height:50%;left:0%;">
+                UTOOL-2<br><br>A Javascript Application<br>by<br>Fred Kaparich<br>fkaparich@gmail.com<!--YADA-->
+            </div>
+            <img src='../../Icons/resetSpinner.gif' alt ="Booting..." style='position:absolute;width:20%; bottom:20%; right:40%;opacity:0.4;'>
+            <input id='debugTrigger' onkeydown="monitorBoot()" style="position:absolute;left:0%;width:1%;height:1%;bottom:0%;">
+        <!--    <input id='dubugSafety' style="position:absolute;right:0%; height:5%;bottom:0%;"> -->
+            <img id='bootBug' src='../../Icons/bug2.gif' alt ="Check for bugs"  onclick="statusMonitor(2)" style='position:absolute;display:block; height:15%; right:0%;bottom:0%'>
+        </div>
+
+    <!-- Debugger 10000 11000 -->  
+        <div id="msg" title="Message Box" style= "position:absolute; display:block; line-height:120%; text-align:center; vertical-align:middle; color:red; background-color:transparent; color:red; height:5%; left:0%; top:60%; width:100%; z-index:10500;overflow:hidden">
+            Loading...
+        </div>
+        <img src="../../Icons/greyBug.jpg" title="Debug Screen"  onclick ="statusMonitor(2)" id='debugButton'style="position:absolute; display:none;top:0%; height:5%; left:0%; z-index:10600">
+        <img title="Hide or Show the Debug Window..." id='bug' src="../../Icons/bug2.gif" onclick="monitorWindow()" style="position:absolute;display:none;height:5%; top:0%; left:0%;  z-index:12000">
+        <div id="statusWindow" style="position:absolute; resize:both; border-style:ridge; border-width:thick;display:none;color:white;text-align:center; font-size:1vw; background-color:lightgrey; overflow:hidden; height:61vh ;width:49vw; top:25vh; left:1vw;z-index:10500 ">
+            <div id="statusWindowheader">
+                DEBUG WINDOW
+            </div>
+            <img src="../../Icons/danger.png" onclick="statusMonitor(0)" style="position:absolute;width:7%;height:10%;right:1%;top:5%;">
+            <img src="../../Icons/bug2.gif" onclick="dis('statusWindow','none')" style="position:absolute;width:7%;height:10%;right:9%;top:5%;">
+            <img src="../../Icons/clean.png" onclick="ARRstatusLog = ''.split('-'),statusMsg('-------------User Cleared Log---------',0);" style="position:absolute;width:7%;height:10%;right:17%;top:5%;">
+            <select onchange="LOG=this.value.split('-')[1],ARRstatusLog=''.split('-')" style='position:absolute;top:8%;left:30%;width:40%;'><option>Record-20-Steps</option><option>Record-40-Steps</option><option>Record-80-Steps</option><option>Record-160-Steps</option><option>Record-320-Steps</option><option  selected>Record-640-Steps</option></select>
+            <div id='bootText' style="border-style:groove;text-align:left; line-height:120%;  position:absolute;overflow:scroll;left:2%; top:16%;width:96%;height:74%;color:black;background-color:white;">
+                ERROR! Status Messages not Being Recorded...
+            </div>
+        </div>
+    <!--popper-- 9000-->    
+        <div id='popper' style="position:absolute; color:black; background-color:lightblue;font-weight:bold; border:groove;display:none; line-height:130%; overflow:hidden; font-size:2vw; text-align:center; left:5%; right:20%; top:30%; bottom:25%;z-index:9000">   
+            <div id='popTitle'style="position:absolute;left:0%;right:0%;top:0%;height:10%;text-align:center">
+                POP UP NOTE!!
+            </div>
+            <img id='popClose' src="../../Icons/blackClose.png" onclick="dis('popper')"  style="position:absolute;display:block;right:0%;bottom:90%;height:10%;z-index:2000;">
+            <img id='popCloser' src="../../Icons/resetSpinner.gif" onclick="dis('popper')" style="position:absolute;display:block;right:0%;bottom:90%;height:10%;z-index:2000;">
+            <div id='popText' style="position:absolute; color:black; background-color:lightgrey;font-weight:bold; border:groove;display:block; line-height:130%; overflow-y:scroll; text-align:center; left:0%; right:0%; top:10%; bottom:0%;overflow-y:auto;word-break: keep-all;">   
+                YOUR POP UP MESSAGE SHOULD HAVE APPERED HERE!!   SORRY ABOUT THAT
+            </div>   
+        </div>
+
+    <!--START of CUSTOM Structure XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        Change anything below this line as you see fit, these are really just examples...YADA
+        duplicate the main form to start other forms...      
+        Convention id: title; src; action: STYLE position: font-size: text-align:color; background-color: border: left: right: top: bottom: width: height: z-index> -->     
+        
+        <div id ="main" style="position:absolute; display:block; font-size:2vw;text-align:center;  background-color:lightgrey; top:5%; left:0%; width:100%; height:95%; z-index:0">
+            <div id='hdr' style='position:absolute;background-color:grey;border:none;left:0%;top:0%;height:8%;width:100%;'>
+                <select id = 'fileIndex' title='AVAILABLE COLLECTIONS (ON WEB SERVER)' onchange="colSelect(this.value);" style= "position:absolute; display:block; width:15%; background-color:white; left:0%; height:80%; top:10%;">
+                </select>
+
+                <select id = 'videos' title='AVAILABLE UTUBE VIDEOS (IN THIS FILE)'onchange="vidSelect(this.selectedIndex,0)" style= "position:absolute; display:block; width:15%; background-color:white; left:15%; height:80%; top:10%;">xxxxxx
+                </select>
+                <select id = 'loops' title= 'AVAILABLE LOOPS FOR THIS VIDEO' onchange="loopSelect(this.selectedIndex)"  style= "position:absolute; display:block; width:15%; background-color:white; left:30%; height:80%; top:10%;">????
+                </select>
+                
+                <img  title="Editor" src="../../icons/blackEdit.png" alt="+" onclick="dis('main2')" style='position:absolute;right:18%;top:1%;height:98%;'>
+                <img  title="Popup" src="../../icons/blackInfo.png" alt="+" onclick="popUp('yada yada yada','popup',3,'pink')"style='position:absolute;right:9%;top:1%;height:98%;'>
+                <img  title="Go Home" src="../../icons/blackHome.png" alt="+"onclick="window.open('../../index.html','HOME')"style='position:absolute;right:0%;top:1%;height:98%;'>
+            </div>
+        <div id='scroller' style="position:absolute;background-color:black;overflow-x:scroll;overflow-y:scroll;left:0%; height:87%; width:100%; top:8%; z-index:3600;">z-index:3600;">
+        <!--    <iframe id="player" src="https://www.youtube.com/embed/LcOempNj6_g?enablejsapi=1" style="position:absolute; background-color:black; left:0%; height:100%; width:100%; top:0%; z-index:3500;"></iframe> 
+        -->
+        <div id="player" style="position:absolute; background-color:black; left:0%; height:100%; width:100%; top:0%; z-index:3500;"></div>
+        
+        
+        </div>
+            <div id='ftr' style='position:absolute;background-color:grey;font-size:2vw;left:0;bottom:0%;height:5%;width:100%;'><!--YADA put functions on Buttons-->
+                <button id='b21' onclick="alert(player.getDuration()),player.playVideo()" style='position:absolute;border-color:white;left:0%;top:1%;height:98%;width:9%;'>DUR</button>
+                <div id='loopBox' style="position:absolute;background-color:yellow;bottom:0%;left:25%;height:100%;width:50%;">
+                    <select  title="PAUSE TIME BETWEEN REPEATED LOOPS" id = 'delay' style= "position:absolute;width:100%; background-color:lightgreen; left:0%; height:100%;width:20%; ">
+                        <option value=60000>1:00</option>
+                        <option value=45000>0:45</option>
+                        <option value=40000>0:40</option>
+                        <option value=35000>0:35</option>
+                        <option value=30000>0:30</option>
+                        <option value=25000>0:25</option>
+                        <option value=20000>0:20</option>
+                        <option value=15000>0:18</option>
+                        <option value=12000>0:12</option>
+                        <option value=10000>0:10</option>
+                        <option value=8000>0:08</option>
+                        <option value=6000>0:06</option>
+                        <option value=4000 selected>0:04</option>
+                        <option value=2000>0:02</option>
+                        <option value=1>0:00</option>
+                    </select>
+                                                                              
+                    <img alt="<"id="lsm" title="START LOOP SOONER" onclick="loopSet('start',-1)" src="../../icons/Left.png" style="position:absolute; left:20%; width:8%; bottom:0%;height:100%; z-index:4900;">
+                    <input id="loopStart" type="text" onclick="loopSet('start',0)" title="CLICK TO SET LOOP START" style="position:absolute; border:none;left:28%; width:8%; bottom:0%;top:0%;text-align:center; z-index:4900";>
+                    <img alt=">"id="lsp" title="START LOOP LATER "onclick="loopSet('start',1)" src="../../icons/Right.png" style="position:absolute;  left:36%; width:8%; bottom:0%;height:100%; z-index:4900;">
+                    
+                    <img alt="<"title="FINISH LOOP SOONER" onclick="loopSet('stop',-1)" src="../../icons/Left.png" style="position:absolute; left:76%; width:8%; bottom:0%;height:100%; z-index:4900;">
+                    <input id="loopFinish" type="text" onclick="loopSet('stop',0)" title="CLICK TO SET LOOP FINISH" style="position:absolute; border:none;left:84%; width:8%; bottom:0%;top:0%;text-align:center; z-index:4900";>
+                    <img alt=">"title="FINISH LOOP LATER "onclick="loopSet('stop',1)" src="../../icons/Right.png" style="position:absolute;  left:92%; width:8%; bottom:0%;height:100%; z-index:4900;">
+                    
+                    
+                    
+                    <img  alt="X" id='loopStopper' title="CLOSE LOOP" onclick="changeMode('Paused')" src="../../icons/resetSpinner.gif" style="position:absolute;display:none;left:55%;height:100%;top:0%;width:8%;z-index:4600;">
+                    <img alt=">>" title="REPEATING LOOP..." onclick="changeMode('Repeating...')" src="../../icons/transInfinity2.png" style="position:absolute;left:45%;height:100%;top:0%;width:8%">
+                    <img  alt="<<"title="SINGLE LOOP..." onclick="changeMode('Looping...')" src="../../icons/transOnePlay2.png" style="position:absolute; left:55%;height:100%;top:0%;width:8%">
+                    <img  alt="<<"title="SEQUENCE..." onclick="changeMode('Looping Sequence...')" src="../../icons/transArrowRight.png" style="position:absolute; left:65%;height:100%;top:0%;width:8%">
+                   
+                </div>            
+        <!--        <div style="background-color:white; position:absolute; bottom:0%; bottom:0%; left:25%; height:100%; width:50%;z-index:0">
+                        <img alt="<"  id="lsm" title="START LOOP SOONER" onclick="loopSync('start','delta',-1,true)" src="../../icons/Left.png" style="position:absolute; left:20%; width:8%; height:90%; bottom:5%; z-index:4900;">
+                        <input id="loopstart" type="text" onclick="loopSync('start','set',parseInt(player.getCurrentTime(),10),true)" title="CLICK TO SET LOOP START" style="position:absolute; left:28%; width:8%; height:80%; bottom:10%; border:none; text-align:center; z-index:4900";>
+                        <img alt=">" id="lsp" title="START LOOP LATER"onclick="loopSync('start','delta',+1,true)" src="../../icons/Right.png" style="position:absolute; left:36%;width:8%;height:90%;bottom:5%;z-index:4900">
+                        <img alt="<" id="lfm" title="END LOOP SOONER" onclick="loopSync('finish','delta',-1,true)" src="../../icons/Left.png" style="position:absolute; left:76%;width:8%;height:90%;bottom:5%;z-index:4900;">
+                        <input type="text" id='loopfinish' title="CLICK TO SET LOOP START" onclick="loopSync('finish','set',parseInt(player.getCurrentTime(),10),true)" style="position:absolute;left:84%;width:8%;height:80%;bottom:10%;border:none;text-align:center;z-index:4900;">
+                        <img alt=">" id="lfp" title="START LOOP LATER"onclick="loopSync('finish','delta',+1,true)" src="../../icons/Right.png" style="position:absolute; left:92%;width:8%;height:90%;bottom:5%;z-index:4900">
+                    </div> --> 
+                <div id='playBox' style='position:absolute; bottom:0%;right:0%;height:100%;width:25%;'>
+                    <!--
+                    <img id="lessVid" onclick="setVid('inc',-1)" src="../../icons/left.png" alt ="<<" style="position:absolute; visibility:visible; left:15%;width:25%;top:0%; height:50%;">
+                    <div id="loopTime" style="position:absolute; line-height:100%; height:40%; color:red; left:45%; width:10%; vertical-align:middle; font-size:2vw; top:0%; ">0:00</div>
+                    <img id="moreVid" onclick="setVid('inc',1)" src="../../icons/right.png" alt =">>" style="position:absolute; visibility:visible; right:15%;width:25%;top:0%; height:50%;">
+                                       <input  id="slider1" type="range" min="0" max="100" style="position:absolute; background-color:yellow; left:15%; width:65%; bottom:0%;">-->
+                    <img id='buttonReset' title='Reset' alt="?" onclick="changeMode('Reset');" src="../../icons/transResetBlue.png" style="position:absolute;display:block;  left:0%;  height:100%; top:0%;">
+                    <img id="runImg" src="../../icons/resetSpinner.gif" alt ="" onclick="changeMode('Paused')" style="position:absolute; display:none; right:0%; height:100%; top:0%;z-index:5000;">
+                    <img id='buttonPlay' title='Play Loop' onclick="changeMode('Playing...')" alt="?" src="../../icons/transPlayGreen.png" style="display:block; position:absolute; right:0%; height:100%; top:0%;">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+<!--START OF CUSTOM STRUCTURE Part 2 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+    </div><!--end of field-->      
+<!--END OF CUSTOM STRUCTURE  Part 2 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+    <SCRIPT type="text/javascript" SRC = "Json.js"></script><!--   -->    
+    <SCRIPT type="text/javascript" SRC = "Global.js"></script>
+    <SCRIPT type="text/javascript" SRC = "Utool-2.js"></script><!--change this form-->
+    </body>
+</html>
+<!--05/01/2020@8:45PM updated to msgbox and greybug sizes to vh from %
+-->

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+    <!--COMMON STRUCTURE ========================================================================================== -->
+    <link rel="shortcut icon" type="image/png" href="../../Icons/danger.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!-- prevents zooming on mobile devices....number-based width or "device-width"-->
+    <title id = 'title'>YOUR TITLE</title>
+
+    <style type="text/css">
+        table, th, td {
+          table-layout: fixed;
+          overflow: hidden;
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        #statusWindowheader{cursor: move; background-color:orange; color:black; font-size:1vw; line-height:100%; top:0%; width:100%; height:5%; overflow:hidden;}
+        Body{font-size:3.3vw;                
+            color:white;
+            font-family:Courrier New;
+            font-weight: bold;
+            text-align:center;
+            vertical-align:middle;
+            border-color: black;
+            border-width:thin;
+            background-color:white;
+            padding:0px;
+            margin:0px;
+            overflow:hidden;}
+        X1{color:green;}
+        X2{color:red;}
+        X4{color:red;background-color:#F4FA58;}
+        X5{color:white; background-color:lightgrey;}
+        X6{background-color:lightgrey;}
+        X7{background-color:transparent;}
+        X8{color:blue;}
+        X14{text-align:center; background-color:black; color:white;}
+        X16{text-align:center; background-color:green; color:yellow;}
+        XX{text-align:center; background-color:transparent; color:transparent;}<!--invisible-->
+        table{border-color:transparent;
+            background-color:transparent;}
+        th  {border-style:groove;
+            border-color:black;
+            background-color:lightgrey;
+            text-align:center;}
+        pre { display: inline}
+        optgroup {font-size:1.5vw; }
+    </style>    
+</head>
+
+<body>
+<!--COMMOMN HTML====================================================================================================-->    
+    <!-- Splash  4000 4999 -->  
+    <div id ="splash" style="position:fixed; display:block; font-size:5vh;text-align:center; background-color:white; color:black; top:0%; left:0%; width:100%; height:100%; z-index:4500">
+        YOUR TITLE HERE <br><br>A Javascript Application<br>by<br>Fred Kaparich<br>fkaparich@gmail.com<br>
+        <img src='../../Icons/resetSpinner.gif' alt ="Booting..." style='position:fixed; width:25%; left:37%;opacity:0.4;z-index:4099;'>
+        <input id='debugTrigger' onkeydown="monitorBoot()" style="position:fixed;right:-10%; height:5%;bottom:0%;">
+        <input id='dubugSafety' style="position:fixed;right:-10%; height:5%;bottom:0%;">
+        <img id='bootBug' src='../../Icons/bug2.gif' alt ="Check for bugs"  onclick="monitorBoot()" style='position:fixed; display:block; height:15%; right:0%;top:10%;z-index:4099;'>
+    </div>
+    <!-- Debugger 10000 11000 -->  
+    <div id="msg" title="Message Box" style= "position:fixed; display:block; line-height:120%; text-align:center; vertical-align:middle; color:red; background-color:transparent; color:red; font-size: 2vw; height:6%; left:0%; top:60%; width:100%; z-index:10500;overflow:hidden">Loading...</div>
+
+    <img src="../../Icons/greyBug.jpg" title="Debug Screen"  onclick ="setMonitor(1)" id='debugButton'style="position:absolute; text-align: center;color:white; border-style:ridge; background-color:transparent; line-height:110%; font-size:1vw; top:8%; height:5%; left:0%; z-index:10600">
+    <img title="Hide or Show the Debug Window..." id='bug' src="../../Icons/bug2.gif" onclick="monitorWindow()" style="position:fixed;display:none;height:4.5%; top:23%; left:1%;  z-index:12000">
+    <div id="statusWindow" style="position:absolute; resize:both; border-style:ridge; border-width:thick;display:none;color:white;text-align:center; font-size:1vw; background-color:lightgrey; overflow:hidden; height:61% ;width:40%; top:33%; left:7%;z-index:10500 ">
+        <div id="statusWindowheader">DEBUG WINDOW
+        </div>
+        <img src="../../Icons/danger.png" onclick="statusMonitor(0)" style="position:absolute;width:7%;height:10%;right:1%;top:5%;">
+        <img src="../../Icons/bug2.gif" onclick="dis('statusWindow','none')" style="position:absolute;width:7%;height:10%;right:9%;top:5%;">
+        <img src="../../Icons/clean.png" onclick="ARRstatusLog = ''.split('-'),statusMsg('-------------User Cleared Log---------',0);" style="position:absolute;width:7%;height:10%;right:17%;top:5%;">
+        <select onchange="LOG=this.value.split('-')[1],ARRstatusLog=''.split('-')" style='position:absolute;top:8%;left:30%;width:40%;'><option>Record-20-Steps</option><option>Record-40-Steps</option><option>Record-80-Steps</option><option>Record-160-Steps</option><option>Record-320-Steps</option><option  selected>Record-640-Steps</option></select>
+        <textarea id='devText' style="border-style:groove;text-align:left; line-height:120%; display:none; position:absolute;overflow-x:scroll;overflow-y:scroll;left:2%; top:16%;width:96%;height:74%;color:black;background-color:yellow;z-index:11500">Text printed here...</textarea>
+        <div id='bootText' style="border-style:groove;text-align:left; line-height:120%;  position:absolute;overflow:scroll;left:2%; top:16%;width:96%;height:74%;color:black;background-color:white;">ERROR! Status Messages not Being Recorded...</div>
+    </div>     
+
+<!--PUT YOUR Main HTML HERE-->
+    <div id ="main" style="position:fixed; display:block; font-size:5vh;text-align:center; background-color:lightgreen; color:black; top:0%; left:0%; width:100%; height:100%; z-index:100">
+        THIS IS YOUR STARTING POINT <br><br>Build your forms etc HERE<br>by<br>GOOD LUCK!<br>Fred Kaparich<br>fkaparich@gmail.com<br>
+    </div>
+
+<SCRIPT type="text/javascript" SRC = "GlobalRoutinesA.js"></script>
+</body></html>
