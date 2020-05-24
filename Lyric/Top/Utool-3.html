@@ -113,12 +113,12 @@
                 </select>
                 <select id = 'loops' title= 'AVAILABLE LOOPS FOR THIS VIDEO' onchange="loopSelect(this.selectedIndex)"  style= "position:absolute; display:block; width:15%; background-color:white; left:30%; height:80%; top:10%;">????
                 </select>
-                <img  title="timer" src="../../icons/blackTools.png" alt="+" onclick="dis('pace')" style='position:absolute;right:45%;top:1%;height:98%;'>
-                <img  title="magnifier" src="../../icons/blackSearch.png" alt="+" onclick="dis('size')" style='position:absolute;right:36%;top:1%;height:98%;'>
-                <img  title="Rotator" src="../../icons/rotate.png" alt="+" onclick="dis('rotate')" style='position:absolute;right:27%;top:1%;height:98%;'>
-                <img  title="Editor" src="../../icons/blackEdit.png" alt="+" onclick="openEditor()" style='position:absolute;right:18%;top:1%;height:98%;'>
-                <img  title="Tabs" src="../../icons/tab.png" alt="+" onclick="viewTab()" style='position:absolute;right:9%;top:1%;height:98%;'>
-                <img  title="Go Home" src="../../icons/blackHome.png" alt="+"onclick="window.open('../../index.html','HOME')"style='position:absolute;right:0%;top:1%;height:98%;'>
+                <img  title="timer" src="../../Icons/blackTools.png" alt="+" onclick="dis('pace')" style='position:absolute;right:45%;top:1%;height:98%;'>
+                <img  title="magnifier" src="../../Icons/blackSearch.png" alt="+" onclick="dis('size')" style='position:absolute;right:36%;top:1%;height:98%;'>
+                <img  title="Rotator" src="../../Icons/rotate.png" alt="+" onclick="dis('rotate')" style='position:absolute;right:27%;top:1%;height:98%;'>
+                <img  title="Editor" src="../../Icons/blackEdit.png" alt="+" onclick="openEditor()" style='position:absolute;right:18%;top:1%;height:98%;'>
+                <img  title="Tabs" src="../../Icons/tab.png" alt="+" onclick="viewTab()" style='position:absolute;right:9%;top:1%;height:98%;'>
+                <img  title="Go Home" src="../../Icons/blackHome.png" alt="+"onclick="window.open('../../index.html','HOME')"style='position:absolute;right:0%;top:1%;height:98%;'>
             </div>
 <!--FLOATING CONTROLS-->             
             <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
@@ -126,19 +126,19 @@
                     <div id="tabsheader">
                         Guitar TAB
                     </div>
-                    <img  src="../../icons/blackClose.png" alt="X"onclick="dis('tabs')"style='position:absolute;right:0%;top:0%;height:9%;'>
+                    <img  src="../../Icons/blackClose.png" alt="X"onclick="dis('tabs')"style='position:absolute;right:0%;top:0%;height:9%;'>
                 <textarea id='tabBox' style="border-style:groove;text-align:left; line-height:120%; position:absolute;overflow:scroll;left:1%; top:11%;width:98%;height:88%;color:black;background-color:white;">
                 </textarea>
                 </div>
             <div  id='rotate' style='position:absolute;display:none;background-color:black;border:groove;right:5%;bottom:8%;height:5%;width:90%; z-index:450;'>
-                <img  src="../../icons/blackLevel.png" alt="X"onclick="levelPlayer()" style='position:absolute;left:0%;top:1%;height:98%;'>
+                <img  src="../../Icons/blackLevel.png" alt="X"onclick="levelPlayer()" style='position:absolute;left:0%;top:1%;height:98%;'>
                 <input id='spinner'type="range" oninput="rotatePlayer(this.value)" min="-180" max="180" value="0" style="color:black;width:90%;left:5%;">
-                <img  src="../../icons/blackClose.png" alt="X"onclick="dis('rotate')"style='position:absolute;right:0%;top:1%;height:98%;'>
+                <img  src="../../Icons/blackClose.png" alt="X"onclick="dis('rotate')"style='position:absolute;right:0%;top:1%;height:98%;'>
             </div>
             <div  id='size' style='position:absolute;display:none;background-color:lightblue;border:groove;right:5%;bottom:14%;height:5%;width:90%; z-index:450;'>
-                <img  src="../../icons/blackResize.png" alt="X"onclick="sizeFrame(100),document.getElementById('sizer').value=100" style='position:absolute;left:0%;top:1%;height:98%;'>
+                <img  src="../../Icons/blackResize.png" alt="X"onclick="sizeFrame(100),document.getElementById('sizer').value=100" style='position:absolute;left:0%;top:1%;height:98%;'>
                 <input id='sizer' type="range" oninput="sizeFrame(this.value)" min="50" max="400" value="100" style="color:black;width:90%;left:5%;">
-                <img  src="../../icons/blackClose.png" alt="X"onclick="dis('size')"style='position:absolute;right:0%;top:1%;height:98%;'>
+                <img  src="../../Icons/blackClose.png" alt="X"onclick="dis('size')"style='position:absolute;right:0%;top:1%;height:98%;'>
             </div>         
             
             
@@ -147,7 +147,7 @@
                     Pacer
                 </div>
                 <div style= "position:absolute; width:100%;left:0%; height:40%;top:20%;">
-                    <img  src="../../icons/blackLevel.png" alt="X" onclick="clearTimeout(TIMEOUTscroll),vis('fpsStop','hidden')"style='position:absolute;left:0%;top:0%;height:100%;'>    
+                    <img  src="../../Icons/blackLevel.png" alt="X" onclick="clearTimeout(TIMEOUTscroll),vis('fpsStop','hidden')"style='position:absolute;left:0%;top:0%;height:100%;'>    
                     <select id = 'rate' title ="Playback Speed" onchange="newRate(this.value)" style= "position:absolute; font-size:2vw;width:50%; right:25%; height:100%; top:0%;">
                         <option value=.25>0.25</option>
                         <option value=.5>0.5</option>
@@ -157,7 +157,7 @@
                         <option value=1.5>1.5</option>
                         <option value=2>2</option>
                     </select>
-                    <img  src="../../icons/blackClose.png" alt="X"onclick="dis('pace')"style='position:absolute;right:0%;top:0%;height:100%;'>    
+                    <img  src="../../Icons/blackClose.png" alt="X"onclick="dis('pace')"style='position:absolute;right:0%;top:0%;height:100%;'>    
                 </div>
                 <div id='stepper' title="Frames per Second (user input from statistic for nerds on YOU TUBE" style= "position:absolute;left:0%;top:60%; width:100%; height:40%;">
                     <select id = 'fps' onchange="mode='Paused...';FPS=this.value" style= "position:absolute; font-size:2vw;top:0%; background-color:white; left:0%; top:0%; width:25%;height:100%;">
@@ -219,23 +219,23 @@
                 <div id='loopBox' style="position:absolute;background-color:yellow;bottom:0%;left:25%;height:100%;width:50%;">
                     
 
-                    <img alt="<"id="lsm" title="START LOOP SOONER" onclick="loopSet('start',-1)" src="../../icons/Left.png" style="position:absolute; left:20%; width:8%; bottom:0%;height:100%; z-index:450;">
+                    <img alt="<"id="lsm" title="START LOOP SOONER" onclick="loopSet('start',-1)" src="../../Icons/left.png" style="position:absolute; left:20%; width:8%; bottom:0%;height:100%; z-index:450;">
                     <input id="loopStart" type="text" onclick="loopSet('start',0)" title="CLICK TO SET LOOP START" style="position:absolute; border:none;left:28%; width:8%; bottom:0%;top:0%;text-align:center; z-index:450";>
-                    <img alt=">"id="lsp" title="START LOOP LATER "onclick="loopSet('start',1)" src="../../icons/Right.png" style="position:absolute;  left:36%; width:8%; bottom:0%;height:100%; z-index:450;">
-                    <img alt="<"title="FINISH LOOP SOONER" onclick="loopSet('stop',-1)" src="../../icons/Left.png" style="position:absolute; left:76%; width:8%; bottom:0%;height:100%; z-index:450;">
+                    <img alt=">"id="lsp" title="START LOOP LATER "onclick="loopSet('start',1)" src="../../Icons/right.png" style="position:absolute;  left:36%; width:8%; bottom:0%;height:100%; z-index:450;">
+                    <img alt="<"title="FINISH LOOP SOONER" onclick="loopSet('stop',-1)" src="../../Icons/left.png" style="position:absolute; left:76%; width:8%; bottom:0%;height:100%; z-index:450;">
                     <input id="loopFinish" type="text" onclick="loopSet('stop',0)" title="CLICK TO SET LOOP FINISH" style="position:absolute; border:none;left:84%; width:8%; bottom:0%;top:0%;text-align:center; z-index:450";>
-                    <img alt=">"title="FINISH LOOP LATER "onclick="loopSet('stop',1)" src="../../icons/Right.png" style="position:absolute;  left:92%; width:8%; bottom:0%;height:100%; z-index:450;">
-                    <img  alt="X" id='loopStopper' title="CLOSE LOOP" onclick="changeMode('Paused')" src="../../icons/resetSpinner.gif" style="position:absolute;display:none;left:55%;height:100%;top:0%;width:8%;z-index:460;">
-                    <img alt=">>" title="REPEATING LOOP..." onclick="changeMode('Repeating...')" src="../../icons/transInfinity2.png" style="position:absolute;left:45%;height:100%;top:0%;width:8%">
-                    <img  alt="<<"title="SINGLE LOOP..." onclick="changeMode('Looping...')" src="../../icons/transOnePlay2.png" style="position:absolute; left:55%;height:100%;top:0%;width:8%">
-                    <img  alt="<<"title="SEQUENCE..." onclick="changeMode('Sequencing Loops...')" src="../../icons/transArrowRight.png" style="position:absolute; left:65%;height:100%;top:0%;width:8%">
+                    <img alt=">"title="FINISH LOOP LATER "onclick="loopSet('stop',1)" src="../../Icons/right.png" style="position:absolute;  left:92%; width:8%; bottom:0%;height:100%; z-index:450;">
+                    <img  alt="X" id='loopStopper' title="CLOSE LOOP" onclick="changeMode('Paused')" src="../../Icons/resetSpinner.gif" style="position:absolute;display:none;left:55%;height:100%;top:0%;width:8%;z-index:460;">
+                    <img alt=">>" title="REPEATING LOOP..." onclick="changeMode('Repeating...')" src="../../Icons/transInfinity2.png" style="position:absolute;left:45%;height:100%;top:0%;width:8%">
+                    <img  alt="<<"title="SINGLE LOOP..." onclick="changeMode('Looping...')" src="../../Icons/transOnePlay2.png" style="position:absolute; left:55%;height:100%;top:0%;width:8%">
+                    <img  alt="<<"title="SEQUENCE..." onclick="changeMode('Sequencing Loops...')" src="../../Icons/transArrowRight.png" style="position:absolute; left:65%;height:100%;top:0%;width:8%">
                 </div>            
 <!--PLAYER CONTROLS -->               
                 <div id='playBox' style='position:absolute; bottom:0%;right:0%;height:100%;width:15%;'>
-                    <img id='buttonReset' title='Reset' alt="?" onclick="changeMode('Reset');" src="../../icons/transResetBlue.png" style="position:absolute;display:block;  left:0%;  height:100%; top:0%;">
-                    <img id="runImg" src="../../icons/resetSpinner.gif" alt ="" onclick="changeMode('Paused')" style="position:absolute; display:none; right:0%; height:100%; top:0%;z-index:450;">
+                    <img id='buttonReset' title='Reset' alt="?" onclick="changeMode('Reset');" src="../../Icons/transResetBlue.png" style="position:absolute;display:block;  left:0%;  height:100%; top:0%;">
+                    <img id="runImg" src="../../Icons/resetSpinner.gif" alt ="" onclick="changeMode('Paused')" style="position:absolute; display:none; right:0%; height:100%; top:0%;z-index:450;">
                     <div id="trackTime" style="position:absolute;font-size:2vw; line-height:100%; height:40%; color:red; left:45%; width:10%; vertical-align:middle; top:0%; ">0</div>
-                    <img id='buttonPlay' title='Play Loop' onclick="changeMode('Playing...')" alt="?" src="../../icons/transPlayGreen.png" style="display:block; position:absolute; right:0%; height:100%; top:0%;">
+                    <img id='buttonPlay' title='Play Loop' onclick="changeMode('Playing...')" alt="?" src="../../Icons/transPlayGreen.png" style="display:block; position:absolute; right:0%; height:100%; top:0%;">
                 </div>
             </div>
 <!--End of FOOTER-->
@@ -249,7 +249,7 @@
                 <img title="Save the text as a file" onclick="fileSaveTextAs(FILEname+'.json', document.getElementById('demo').value),save()" src="..\..\Icons\blackSave.png" style='position:absolute;left:0%;top:1%;height:98%;'>
                 <img title="Select any local file" onclick="fileGetLocal('locGet()')"  src="../../Icons/blackRead.png" id='getLocal'" style='position:absolute;left:10%;top:1%;height:98%;'>
                 <img id='editClose' src="../../Icons/blackClose.png" onclick="dis('editUtool')"  style="position:absolute;display:block;right:0%;bottom:0%;height:100%;">
-                <img  title="Tabs" src="../../icons/tabEdit.png" alt="+" onclick="dis('tabster'),updateTabster() " style='position:absolute;right:9%;top:1%;height:98%;'>
+                <img  title="Tabs" src="../../Icons/tabEdit.png" alt="+" onclick="dis('tabster'),updateTabster() " style='position:absolute;right:9%;top:1%;height:98%;'>
             </div>
             <div id='fileInfo'style='position:absolute;background-color:grey;left:1%;top:9%;height:21%;width:48%'>
                 <div style='position:absolute;background-color:transparent;color:white;height:15%;left:0%;top:0%;width:100%'>
