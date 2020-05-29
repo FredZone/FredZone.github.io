@@ -1,0 +1,412 @@
+{
+    "file": {
+        "title": "Rockabilly Classics",
+        "desc": "Goal is to be able to improvise a complete 12 Bar Solo;In the Rockabilly or Chuck Berry Style;Practice individual Licks and come up to speed;Each section goes with the 1,4, or 5 chord;Use the backing track;The Licks are not set in stone...IMPROVISE;Mastery is playing the all the loops/lick at speed",
+        "tracks": [
+            {
+                "utid": "fF4UTL65Rzw",
+                "title": "Your Momma Dont Dance",
+                "notes": "This is old Style Boogie rock in C$Not a perfect Backing track",
+                "backtrack": "none",
+                "loops": [
+                    {
+                        "title": "Rhythm Lick",
+                        "start": "1",
+                        "stop": "7",
+                        "desc": "This is a starts with the A form (box 5)  pentatonic in the Key of C as shown$it works a string higher over the D form (box 3) $and a string lower over the E form as G (box 2)$Try to think of it moving both up and down and higher and lower on the neck and know the chord",
+                        "tab": "A@4@2@4@4:5|5:3@@@4:5|5:6@5:h7@4:5@4:h7@"
+                    },
+                    {
+                        "title": "lick A",
+                        "start": "499",
+                        "stop": "510",
+                        "desc": "-",
+                        "tab": "A@4@2@4@@@2:10|3:10@@2:8|3:8@3:h9@4:10@@3:12|4:10@3:12|4:10@3:14|4:10@3:14|4:10@3:12|4:10@3:12|4:10@3:14|4:10@3:14|4:10@3:10|4:8@3:10|4:8@3:10|4:8@3:10|4:8@3:12|4:8@3:12|4:8@3:12|4:8@3:12|4:8"
+                    }
+                ]
+            },
+            {
+                "utid": "IL3JijaR4uc",
+                "title": "Rockabilly Classics",
+                "notes": "Very Slow Rockabilly Backtrack$Useful in learning",
+                "backtrack": "none",
+                "loops": [
+                    {
+                        "title": "Loop 1",
+                        "start": "270",
+                        "stop": "274",
+                        "desc": "A signature rockabilly,useful and the basis of other runs",
+                        "tab": "A@4@2@5@@@@@3:5@3:h6@2:5@2:h7@1:5|2:5@@@@3:5@3:h6@2:5@2:h7@1:6|2:5@@@@@@@"
+                    },
+                    {
+                        "title": "Loop 2",
+                        "start": "345",
+                        "stop": "347",
+                        "desc": "Real Simple, use as a launching point$Play it at different tempos etc",
+                        "tab": "A@4@2@5@@3:7@3:p5@4:7@3:5@@3:6@@4:7@@@@@@@"
+                    },
+                    {
+                        "title": "Pull off run",
+                        "start": "414",
+                        "stop": "418",
+                        "desc": "Simple-minded illusion of speed$can slide to (*)instead",
+                        "tab": "A@4@3@3@1:8p@1:7p@1:5@2:8@@1:5p@1:8p@1:7@1:5@2:8@@1:5@1:p8@1:p7@1:5@2:8@@@1:5|2:*@@@@@"
+                    },
+                    {
+                        "title": "Ender",
+                        "start": "498",
+                        "stop": "501",
+                        "desc": "timing is optional here and it can start at several beats",
+                        "tab": "A@4@2@3@1:8|2:8@1:7|2:7@1:5|2:5@@2:8|3:8@@2:7|3:7@@2:5|3:5@@2:5|3:h6@4:7@@@@"
+                    }
+                ]
+            },
+            {
+                "utid": "WMnx5sL-BQE",
+                "title": "Five Chuck Berry Licks",
+                "notes": "Very efficient Video,$Improvise all 5 licks with backtrack",
+                "backtrack": "none",
+                "loops": [
+                    {
+                        "title": "Loop 1",
+                        "start": "135",
+                        "stop": "146",
+                        "desc": "Classic Chuck$Johnny B Goode",
+                        "tab": "A@4@2@3@@@@@@3:5h6@2:5@2:7@1:5|2:5@1:5|2:5@1:5|2:5@1:5|2:5@1:5|2:5@1:5|2:5@1:5|2:5@1:5|2:5@1:5|2:5@2:8@2:7@2:5@3:5@3:h6@4:7@4:5"
+                    },
+                    {
+                        "title": "LOOP 2",
+                        "start": "168",
+                        "stop": "177",
+                        "desc": "-",
+                        "tab": "A@4@2@3@@@@@@3:5h6@2:5@2:7@1:5|2:5@1:5|2:5@1:5|2:5@1:5|2:5@1:5|2:5@1:5|2:5@1:5|2:5@1:5|2:5@1:8..@1:7..@1:5.-|2:8..@1:-|2:7..@1:-|2:5.-|3:8..@1:-|2:-|3:7..@1:-|2:-|3:5.6@1:-|2:-|3:-|4:7"
+                    },
+                    {
+                        "title": "LOOP 3",
+                        "start": "209",
+                        "stop": "213",
+                        "desc": "-",
+                        "tab": "A@4@3@2@@@@2:8|3:9@2:8|3:9@2:8|3:9@2:8|3:9@2:8|3:9@2:8|3:9@2:7|3:7@@2:5|3:5-@4:7|5:7@@@@@@@@@@@"
+                    },
+                    {
+                        "title": "Loop 4",
+                        "start": "232",
+                        "stop": "239",
+                        "desc": "-",
+                        "tab": "A@4@2@3@1:16|2:17@1:16|2:17@1:14|2:15@1:14|2:15@1:12|2:14@1:12|2:14@1:11|2:13@1:11|2:13@1:10|2:12@@@@@@@"
+                    },
+                    {
+                        "title": "Loop 5",
+                        "start": "265",
+                        "stop": "274",
+                        "desc": "This is really just a chunk of the Memphis Scale",
+                        "tab": "A@4@2@5@3:12h13@1:12@3:11h12@1:11@3:8h9@1:9@3:6h7@1:7@1:6|3:5@@@@@@@"
+                    }
+                ]
+            },
+            {
+                "utid": "pxRSe9lQkW4",
+                "title": "Double Stop Rock",
+                "notes": "Play over 12 Bar progression in A$A-A-A-A-D-D-A-A-E-D-A-E..",
+                "backtrack": "none",
+                "loops": [
+                    {
+                        "title": "Phrase 1",
+                        "start": "78",
+                        "stop": "87",
+                        "desc": "Play over the Root Note  In this case Key of A$No tab given.$Its pretty much a double-stop using the E form Chord",
+                        "tab": "A@4@2@4@1:8|2:8@1:5|2:5@1:h7|2:h7@1:s8|2:s8@1:s7|2:s7@1:5|2:5@2:7|3:7@2:5|3:5@2:h7|3:h7@2:5|3:5@3:7|4:7@@2:5v|3:5v@@@"
+                    },
+                    {
+                        "title": "Phrase 2",
+                        "start": "261",
+                        "stop": "266",
+                        "desc": "Play over the natural 4th (D)$No tab given$Double Stop using E form Chord at the D position",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Phrase 3",
+                        "start": "367",
+                        "stop": "372",
+                        "desc": "Back to the Root(A) for 2 bars$Add double stop bends when improvising",
+                        "tab": "A@4@2@4@1:8|2:8@1:5|2:5@1:h7|2:h7@1:s8|2:s8@1:s7|2:s7@1:5|2:5@2:7|3:7@2:5|3:5@2:h7|3:h7@2:5|3:5@3:7|4:7@@2:5v|3:5v@@@"
+                    },
+                    {
+                        "title": "Phrase 4",
+                        "start": "448",
+                        "stop": "455",
+                        "desc": "The 5th(E)for 2 bars",
+                        "tab": "A@4@2@4@3:1|4:2@@3:2|4:4@3:3|4:5@3:4|4:6@2:5@@@4:6|5:7@4:6|5:7@4:5|5:6@@4:4|5:5@@@"
+                    },
+                    {
+                        "title": "Phrase 5",
+                        "start": "540",
+                        "stop": "544",
+                        "desc": "This basically the turn around.$Bars 11 and 12  1st and 5th$",
+                        "tab": "A@4@2@4@2:7s|3:8s|7:(Roo@2:8|3:9|7:tA)@7:@3:5|4:6|7:@3:s6|4:s7|7:@7:@7:@4:6|5:6|7:"
+                    },
+                    {
+                        "title": "Entire Solo",
+                        "start": "5",
+                        "stop": "25",
+                        "desc": "-",
+                        "tab": "-"
+                    }
+                ]
+            },
+            {
+                "utid": "W2OVsPQYJfM",
+                "title": "Rockabilly Rythm",
+                "notes": "User Created Loop",
+                "backtrack": "none",
+                "loops": [
+                    {
+                        "title": "Basic Bar",
+                        "start": "304",
+                        "stop": "315",
+                        "desc": "Thumb Picking Pattern over A$Probably Scotty Moore$X indicates string, not fret, a picking pattern",
+                        "tab": "A@4@2@4@6:X@@2:X|4:X@@6:X@3:X@4:X@@2:X|6:X@@4:X@3:X@6:X@2:X@4:X@"
+                    },
+                    {
+                        "title": "Basic Bar",
+                        "start": "411",
+                        "stop": "423",
+                        "desc": "Thumb Picking Pattern over A$Probably Scotty Moore$A picking pattern 1 is thumb",
+                        "tab": "A@4@2@4@6:1@@2:3|4:1@@6:1@3:2@4:1@@2:3|6:1@@4:1@3:2@6:1@2:3@4:1@"
+                    }
+                ]
+            },
+            {
+                "utid": "cFdSSYztEXk",
+                "title": "12 Bar Rockabilly Lick",
+                "notes": "More Rockabilly than Rock",
+                "backtrack": "none",
+                "loops": [
+                    {
+                        "title": "Whole Lick",
+                        "start": "62",
+                        "stop": "78",
+                        "desc": "Granpas Rock",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Root Section",
+                        "start": "62",
+                        "stop": "68",
+                        "desc": "Over the Root G in this case",
+                        "tab": "A@4@2@4@1:7|2:8@@1:7|3:9@@1:7|2:8@@1:7|3:9@@1:7|2:8@1:7|2:8@1:10|2:11@@1:7|2:8@@3:9@"
+                    },
+                    {
+                        "title": "Over the 4th",
+                        "start": "73",
+                        "stop": "76",
+                        "desc": "In this case a C chord",
+                        "tab": "A@4@2@4@1:6|2:8@@1:6|3:9@@1:6|2:8@@1:6|3:9@@1:6|2:8@1:6|2:8@1:10|2:11@@1:7|2:8@@3:9@"
+                    },
+                    {
+                        "title": "Over the 5th",
+                        "start": "62",
+                        "stop": "79",
+                        "desc": "User Created Loop",
+                        "tab": "A@4@2@4@1:8|2:10@@1:8|3:11@@1:8|2:10@@1:8|3:11@@1:8|2:10@1:8|2:10@1:10|2:11@@1:7|2:8@@3:9@"
+                    },
+                    {
+                        "title": "Tab Part A",
+                        "start": "88",
+                        "stop": "88",
+                        "desc": "Just the TAB$NOT A LOOP",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "TAB Part B",
+                        "start": "127",
+                        "stop": "127",
+                        "desc": "JUST A TAB$NOT A LOOP",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "TAB Part C",
+                        "start": "193",
+                        "stop": "193",
+                        "desc": "Just A Tab$NO LOOP",
+                        "tab": "-"
+                    }
+                ]
+            },
+            {
+                "utid": "h7Ws24aZYoA",
+                "title": "Sonny Fisher Lick",
+                "notes": "Double stop",
+                "backtrack": "none",
+                "loops": [
+                    {
+                        "title": "Part one",
+                        "start": "144",
+                        "stop": "148",
+                        "desc": "",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Part Two",
+                        "start": "210",
+                        "stop": "219",
+                        "desc": "-",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Part 3",
+                        "start": "253",
+                        "stop": "259",
+                        "desc": "Next Phrase",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Part 4",
+                        "start": "261",
+                        "stop": "270",
+                        "desc": "part 4",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Whole Lick",
+                        "start": "341",
+                        "stop": "369",
+                        "desc": "Whole Lick",
+                        "tab": "-"
+                    }
+                ]
+            },
+            {
+                "utid": "aDiDmmPzfew",
+                "title": "Rockabilly Break-G",
+                "notes": "G Break",
+                "backtrack": "none",
+                "loops": [
+                    {
+                        "title": "Whole Break",
+                        "start": "176",
+                        "stop": "192",
+                        "desc": "Whole Break",
+                        "tab": "-"
+                    }
+                ]
+            },
+            {
+                "utid": "Ovnce60CgvA",
+                "title": "memphis scale",
+                "notes": "Shown with root on G$Works with root on first and second string",
+                "backtrack": "none",
+                "loops": [
+                    {
+                        "title": "The scale",
+                        "start": "10",
+                        "stop": "14",
+                        "desc": "",
+                        "tab": "A@4@2@4@1:3|3:4@1:5|3:5@1:7|3:7@1:8|3:9@1:10|3:11@1:12|3:12@1:14|3:14@1:15|3:16"
+                    },
+                    {
+                        "title": "Brown Eyed Girl Lick 1",
+                        "start": "65",
+                        "stop": "73",
+                        "desc": "",
+                        "tab": "A@4@2@4@1:3|3:4@1:|3:@1:5|3:5@1:7|3:7@@1:5|3:5@1:3|3:4@"
+                    },
+                    {
+                        "title": "Brown Eyed Girl Lick 2",
+                        "start": "105",
+                        "stop": "109",
+                        "desc": "",
+                        "tab": "A@4@2@4@1:8|3:9@@1:10|3:10@1:12|3:12@@1:10|3:10@1:8|3:9@"
+                    }
+                ]
+            },
+            {
+                "utid": "22uBk5E0Dok",
+                "title": "Three Rockabilly Licks",
+                "notes": "All in the Key of E$So its somewhat limited because it uses open strings",
+                "backtrack": "none",
+                "loops": [
+                    {
+                        "title": "LOOP A",
+                        "start": "66",
+                        "stop": "70",
+                        "desc": "This is in E... C form on the 5th fret",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "LOOP B",
+                        "start": "416",
+                        "stop": "421",
+                        "desc": "sort of a-tonal fill or turn around",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "LOOP C",
+                        "start": "484",
+                        "stop": "488",
+                        "desc": "Simple Outro...",
+                        "tab": "-"
+                    }
+                ]
+            },
+            {
+                "utid": "_MS5cdw3lVU",
+                "title": "Bacci Rockabilly Solo",
+                "notes": "Melodic Solo",
+                "backtrack": "none",
+                "loops": [
+                    {
+                        "title": "LOOP A",
+                        "start": "168",
+                        "stop": "180",
+                        "desc": "Part A",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Loop B",
+                        "start": "181",
+                        "stop": "189",
+                        "desc": "User Created Loop",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Loop C",
+                        "start": "197",
+                        "stop": "204",
+                        "desc": "User Created Loop",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Loop D",
+                        "start": "210",
+                        "stop": "219",
+                        "desc": "User Created Loop",
+                        "tab": "-"
+                    }
+                ]
+            },
+            {
+                "utid": "lozA-sJLrOo",
+                "title": "Bacci Jump-a-billy",
+                "notes": "typical RockABilly",
+                "backtrack": "none",
+                "loops": [
+                    {
+                        "title": "Full Solo",
+                        "start": "202",
+                        "stop": "262",
+                        "desc": "full Solo",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Lick 1",
+                        "start": "202",
+                        "stop": "209",
+                        "desc": "First Part",
+                        "tab": "-"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,1 +1,57 @@
-{"file":{"title":"Country 101","desc":"Just Some Country Licks","tracks":[{"utid":"FssLnkmPyJU","title":"Brent Mason 3 Licks","notes":"Last 2 licks when I actually can play them","loops":[{"title":"Loop A","start":"299","stop":"310","desc":"Play it over an A then to D$Simplest of them","tab":"A@4@2@6@1:9|2:8@2:8b10@1:9|2:8h@1:9|2:8h@1:9|2:8h@1:9|2:8h@2:8r@2:8@2:8|3:7@3:7b9@2:8|3:7h@2:8|3:7h@2:8|3:7h@2:8|3:7h@3:7r@3:6@2:5|3:4@3:4b5@2:5|3:5h@2:5|3:5h@2:5|3:5h@2:|3:5h@3:5r@3:2@4:5@@@@@@@"},{"title":"Loop A in context","start":"313","stop":"320","desc":"in context","tab":"-"}]},{"utid":"8WRyBWQTvpk","title":"10 beginner licks","notes":"fast, slow down to learn","loops":[{"title":"Lick A","start":"48","stop":"61","desc":"One","tab":"-"},{"title":"Lick B","start":"109","stop":"122","desc":"-","tab":"-"},{"title":"Lick C","start":"226","stop":"230","desc":"-","tab":"-"}]}]}}
+{
+    "file": {
+        "title": "Country 101",
+        "desc": "Just Some Country Licks",
+        "tracks": [
+            {
+                "utid": "FssLnkmPyJU",
+                "title": "Brent Mason 3 Licks",
+                "notes": "Last 2 licks when I actually can play the first",
+                "loops": [
+                    {
+                        "title": "Loop A",
+                        "start": "299",
+                        "stop": "310",
+                        "desc": "Play it over an A then to D$Simplest of them",
+                        "tab": "A@4@2@6@1:9|2:8@2:8b10@1:9|2:8h@1:9|2:8h@1:9|2:8h@1:9|2:8h@2:8r@2:8@2:8|3:7@3:7b9@2:8|3:7h@2:8|3:7h@2:8|3:7h@2:8|3:7h@3:7r@3:6@2:5|3:4@3:4b5@2:5|3:5h@2:5|3:5h@2:5|3:5h@2:|3:5h@3:5r@3:2@4:5@@@@@@@"
+                    },
+                    {
+                        "title": "Loop A in context",
+                        "start": "313",
+                        "stop": "320",
+                        "desc": "in context",
+                        "tab": "-"
+                    }
+                ]
+            },
+            {
+                "utid": "8WRyBWQTvpk",
+                "title": "10 beginner licks",
+                "notes": "fast, slow down to learn",
+                "loops": [
+                    {
+                        "title": "Lick A",
+                        "start": "48",
+                        "stop": "61",
+                        "desc": "One",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Lick B",
+                        "start": "109",
+                        "stop": "122",
+                        "desc": "-",
+                        "tab": "-"
+                    },
+                    {
+                        "title": "Lick C",
+                        "start": "226",
+                        "stop": "230",
+                        "desc": "-",
+                        "tab": "-"
+                    }
+                ]
+            }
+        ]
+    }
+}
