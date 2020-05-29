@@ -1,4 +1,5 @@
 //*ADD GLOBAL VARIABLES HERE!!!!
+var BACKTRACK;
 var ARRcollections;
 var FILEname='Your.json';
 var FPS=30;//frames per second
@@ -33,6 +34,8 @@ var TIMEOUTtemp;
 var JSONval;
 var MON;
 var STEPPING;
+var JSONstate=1;
+var DEMOstate=1;
 
 // 2. This code loads the IFrame Player API code asynchronously.
 var tag = document.createElement('script');
@@ -90,6 +93,7 @@ function onYouTubeIframeAPIReady() {
 //^==================================================================
 dragElement(document.getElementById("tabs"));
 dragElement(document.getElementById("pace"));
+dragElement(document.getElementById("scratchPad"));
 
 function frameNext() {
     var t = player.getCurrentTime();
@@ -133,18 +137,16 @@ function logGet(){//peformed after downloading a network file?????
     document.getElementById('demo').value=TEMP;
     JSONfile=document.getElementById('demo').value
     JSONdown=JSONfile;
-    document.getElementById('state').innerHTML='LOCAL GET'
-    document.getElementById('state').style.backgroundColor='white'
-    document.getElementById('demo').style.backgroundColor='white'
     validate()
     JSONobj=JSON.parse(TEMP)
-    statusMsg("LOCAL JSON FILE LOADED...")
+    statusMsg("JSON FILE DOWN LOADED...")
 }
 
 function locGet(){//performed after uploading a local file
     JSONfile=TEMP
+    document.getElementById("demo").value=TEMP
     JSONobj=JSON.parse(TEMP)
-    statusMsg("LOCAL JSON FILE LOADED...")
+    statusMsg("LOCAL FILE LOADED...")
     fillVideos()
 }
 
@@ -152,11 +154,17 @@ function locGet(){//performed after uploading a local file
 //operations on JSONobj=======================================
 function replaceJSONobj(){
     statusMsg("Unable to update JSONobj...Likely Error in text",'red')
-    //JSONlast=JSONobj;
+    statusMsg("ERROR! There is a JSON error in displayed text",'red');
+    document.getElementById('demoX').innerHTML='Text ERROR'
+    document.getElementById('demoX').style.backgroundColor='red';
     JSONobj=JSON.parse(document.getElementById('demo').value);
     warn();
     statusMsg("Gettng Videos...");
     fillVideos(VID,LOOP);
+    document.getElementById('demoX').innerHTML='VALID TEXT'
+    document.getElementById('demoX').style.backgroundColor='lightgreen';
+    document.getElementById('jsonX').innerHTML='EDITED'
+    document.getElementById('jsonX').style.backgroundColor='yellow';
     statusMsg("Updated JSONobject with your data",'yellow')
 }
 
@@ -165,33 +173,44 @@ function restoreJSONobj(){
     x=document.getElementById('demo').value
     JSONobj=document.getElementById('demo').value=JSONlast
     JSONlast=x
-    updateEditor()
+    ()
     statusMsg("Restored Previous JSONobject and Saved your text ",'red')    
 }
 //Operations on text field===================================
 function stringify(){
     statusMsg("ERROR! There is a JSON error in displayed text",'red');
+    document.getElementById('demoX').innerHTML='Text ERROR'
+    document.getElementById('demoX').style.backgroundColor='red';
     JSONval=null;
     JSONval=JSON.parse(document.getElementById('demo').value);
-    statusMsg('Your displayed text is a valid JSON file','green')
+    statusMsg("Your Text Beautified!",'yellow')
+    document.getElementById('demoX').innerHTML='VALID TEXT'
+    document.getElementById('demoX').style.backgroundColor='lightgreen';
     document.getElementById('demo').value=JSON.stringify(JSONval)
-    statusMsg("Your Text Stringified!",'yellow') 
+    statusMsg("Your Text Stringified!",'yellow')
 }
 
 function beautify() {
     statusMsg("ERROR! There is a JSON error in displayed text",'red');
+    document.getElementById('demoX').innerHTML='Text ERROR'
+    document.getElementById('demoX').style.backgroundColor='red';
     JSONval=JSON.parse(document.getElementById('demo').value);
     document.getElementById('demo').value=JSON.stringify( JSONval,null,3)
-    statusMsg("Your Text Beautified!",'yellow') 
+    statusMsg("Your Text Beautified!",'yellow')
+    document.getElementById('demoX').innerHTML='VALID TEXT'
+    document.getElementById('demoX').style.backgroundColor='lightgreen';
 }
 
 function validate(){
     statusMsg("ERROR! There is a JSON error in displayed text",'red');
+    document.getElementById('demoX').innerHTML='Text ERROR'
+    document.getElementById('demoX').style.backgroundColor='red';
     JSONval=null;
     JSONval=JSON.parse(document.getElementById('demo').value);
-    statusMsg('Your displayed text is a valid JSON file','green')
+    statusMsg("Your Text is valid",'green')
+    document.getElementById('demoX').innerHTML='VALID TEXT'
+    document.getElementById('demoX').style.backgroundColor='lightgreen';
 }
-
 
 //editor operatons====================================================================
 function openEditor() {
@@ -206,25 +225,28 @@ function openEditor() {
 function updateEditor() {
     //File info
     document.getElementById('titleA').value = JSONobj.file.title;
-    document.getElementById('descA').innerHTML = JSONobj.file.desc;
+    document.getElementById('descA').value = JSONobj.file.desc;
     //track info
     document.getElementById('titleB').value = JSONobj.file.tracks[VID].title;
     document.getElementById('utidB').value = JSONobj.file.tracks[VID].utid;
-    document.getElementById('notesB').innerHTML = JSONobj.file.tracks[VID].notes;
+    document.getElementById('backtrackB').value = JSONobj.file.tracks[VID].backtrack;
+    document.getElementById('notesB').value = JSONobj.file.tracks[VID].notes;
     //loop info
     document.getElementById('titleC').value = JSONobj.file.tracks[VID].loops[LOOP].title;
     document.getElementById('startC').value = JSONobj.file.tracks[VID].loops[LOOP].start;
     document.getElementById('stopC').value = JSONobj.file.tracks[VID].loops[LOOP].stop;
     document.getElementById('tabC').value = JSONobj.file.tracks[VID].loops[LOOP].tab;
-    document.getElementById('descC').innerHTML = JSONobj.file.tracks[VID].loops[LOOP].desc;
+    document.getElementById('descC').value = JSONobj.file.tracks[VID].loops[LOOP].desc;
     document.getElementById('demo').value = JSON.stringify(JSONobj, null, 4) //show the easiest view of JSONobj
+    document.getElementById('demo').style.backgroundColor='lightgreen'
     statusMsg("Updated the editor to the current JSONobj")
+
 }
 
 
 function updateTabster() {
-document.getElementById('stringView').value=JSONobj.file.tracks[VID].loops[LOOP].tab
-document.getElementById('editLOOPtab').value=stringToTab(document.getElementById('stringView').value)   
+    document.getElementById('stringView').value=JSONobj.file.tracks[VID].loops[LOOP].tab
+    document.getElementById('editLOOPtab').value=stringToTab(document.getElementById('stringView').value)   
 }
 
 function newRate(rate){
@@ -235,10 +257,24 @@ function newRate(rate){
     
 }
 
-function warn(){
+function jsonUpdated(){
+    document.getElementById('demo').value=JSON.stringify(JSONobj,null,4)
     dis('warning','block')
+    document.getElementById('demo').style.backgroundColor='yellow'
+    document.getElementById('demoX').innerHTML='Current'
+    document.getElementById('demoX').style.backgroundColor='lightgreen';
+    document.getElementById('jsonX').innerHTML='Edited'
+    document.getElementById('jsonX').style.backgroundColor='Yellow';
+    warn()
 }
 
+
+
+
+
+function warn(){
+    dis('warning','block')
+    document.getElementById('demo').style.backgroundColor='pink'}
 //BOOT function==============================================
 function boot() {
     statusMsg('Loading javascript...')
@@ -299,6 +335,7 @@ statusMsg ('Downloading JSON data file: '+path)
     statusMsg("Parsing JSON data file" )
     JSONfile=content;
     JSONobj=JSON.parse(content)
+
     fillVideos(vid,loop)
 }
 
@@ -328,6 +365,7 @@ function vidSelect(vid,loop) {
     document.getElementById('videos').selectedIndex = vid; //align selector
     UTID = JSONobj.file.tracks[vid].utid;
     UTtitle = JSONobj.file.tracks[vid].title;
+    BACKTRACK= JSONobj.file.tracks[vid].backtrack;
     var path = "https://www.youtube.com/embed/" + UTID;
     path = path + "?enablejsapi=1"; //Works but shows ads;SHORTEST WORKING SOLUTION working solution
     document.getElementById('player').src = path;

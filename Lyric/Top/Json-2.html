@@ -104,17 +104,18 @@
         Change anything below this line as you see fit, these are really just examples...YADA
         duplicate the main form to start other forms...      
         Convention id: title; src; action: STYLE position: font-size: text-align:color; background-color: border: left: right: top: bottom: width: height: z-index> --> 
-        <div id ="main" style="position:absolute; display:block; font-size:2vw;text-align:center;  background-color:lightgrey; top:5%; left:0%; width:100%; height:95%; z-index:0">
+ <!--       <div id ="main" style="position:absolute; display:block; font-size:2vw;text-align:center;  background-color:lightgrey; top:5%; left:0%; width:100%; height:95%; z-index:0">
             <div id='hdr' style='position:absolute;background-color:grey;border:none;left:0%;top:0%;height:8%;width:100%;'>
                 <img title="Select any local file" onclick="fileGetLocal('logGet()')"  src="../../Icons/blackRead.png" id='getLocal'" style='position:absolute;left:10%;top:1%;height:98%;'>
                 <img title="Save the text as a file" onclick="fileSaveTextAs('bogus', document.getElementById('demo').value),save()" src="..\..\Icons\blackSave.png" style='position:absolute;left:0%;top:1%;height:98%;'>
-                <div id='jsonX' style='position:absolute;line-height: 100%; background-color:lightgreen; color:black; left:21%; top:0%; width:14%; height:100%;'>Valid JSON</div>
-                <h1>{[JSON]}</h1>
-                <div id='demoX' style='position:absolute;line-height: 100%; background-color:lightgreen; color:black; right:21%; top:0%; width:14%; height:100%;'>Valid Text</div>
-          
+                <img title="UTOOL" src="../../icons/blackUtubeTool.png" alt="+" onclick="window.open('Utool-3.html','HOME')" style='position:absolute;left:40%;top:1%;height:98%;'>
+<!--temporary until old files are convertded----------------------------------------------------- >
+                 <select id ='selectX' onchange="alert(1),document.getElementById('demo').value=fileDownload('../Tube/'+ARRoldList[this.value])" style='position:absolute;left:50%;top:1%;height:98%;'><option>XXXXX</option></select>
+<!--temporary until old files are convertded------------------------------------------------------ >               
                 <img title="UTOOL" src="../../icons/blackNotePad.png" alt="+" onclick="dis('notePad')" style='position:absolute;right:24%;top:1%;height:98%;'>
                 <img title="Editor" src="../../icons/blackEdit.png" alt="+" onclick="dis('editUtool')"style='position:absolute;right:16%;top:1%;height:98%;'>
-                <img title="Go Home" src="../../icons/blackClose.png" alt="+"onclick="window.open('../../index.html','HOME')" style='position:absolute;right:0%;top:1%;height:98%;'>
+                <img title="Popup" src="../../icons/blackInfo.png" alt="+" onclick="popUp('This is gonna be your help screen...','popup',undefined,'pink')"style='position:absolute;right:8%;top:1%;height:98%;'>
+                <img title="Go Home" src="../../icons/blackHome.png" alt="+"onclick="window.open('../../index.html','HOME')" style='position:absolute;right:0%;top:1%;height:98%;'>
             </div>
             <select id='dbSelect'  onchange="document.getElementById('demo').value=fileDownload(this.value)" style="position:absolute;overflow-y:hidden;top:10%;height:4%;left:1%;width:23%">
                 <option value='../Tube/Sandercoe Blues.json' selected >Sandercoe Blues </option>
@@ -148,22 +149,10 @@
                 <option value="popUp(JSONobj=JSON.parse(document.getElementById('demo').value))">Parse The Demo</option>)
                 <option value="popUp(JSON.stringify(document.getElementById('demo').value))">Stringify Demo</option>)
                 <option value="popUp(JSON.parse(JSONobj))">Stringify JSONobj</option>
-            </select>
-            <!--
+            </select>  
             <div id='padHTML' style='position:absolute;text-align: left;background-color:lightyellow;overflow-y:scroll;font-size:2vw;border:groove;right:1%;bottom:6%;width:48%;height:40%;'>
             </div>
-            -->
-            <div id='ftr' style='position:absolute;background-color:grey;font-size:2vw;left:0;bottom:0%;height:5%;width:100%;'><!--YADA put functions on Buttons-->
-                
-                <button id='strBtn'title="JSON.stringify using least characters." onclick="document.getElementById('demo').value=stringify(document.getElementById('demo').value)" style='position:absolute;border-color:white;left:0%;top:1%;height:98%;width:20%;'>String</button>
-                <button id='beautyBtn' title="JSON.stringify with in easy read mode" onclick="beautify()" style='position:absolute;border-color:white;left:20%;top:1%;height:98%;width:20%;'>Beauty</button>
-                <button id='wrap' title="Wrap or Scroll the Text." onclick="toggleWrap('demo','wrap')"style='position:absolute;border-color:white;left:40%;top:1%;height:98%;width:20%;'>SCROLL</button>
-                <button id='nice' title="Fake a stringinify to help you edit" onclick="nice()" style='position:absolute;border-color:white;left:60%;top:1%;height:98%;width:20%;'>Pretty?</button>
-                <button  onclick="validate()"style='position:absolute;border-color:white;left:80%;top:1%;height:98%;width:20%;'>VALID?</button>
-            
-                
-                
-               <!-- 
+            <div id='ftr' style='position:absolute;background-color:grey;font-size:2vw;left:0;bottom:0%;height:5%;width:100%;'><!--YADA put functions on Buttons->
                 <button id='b21' onclick="original()" title="Last Download or Local File" style='position:absolute;border-color:white;left:0%;top:1%;height:98%;width:9%;'>Last GET</button>
                 <button id='b22' onclick="update()" style='position:absolute;border-color:white;left:10%;top:1%;height:98%;width:9%;'>STORE</button>
                 <button id='b23' onclick="lastSave()" style='position:absolute;border-color:white;left:20%;top:1%;height:98%;width:9%;'>STORED</button>
@@ -173,10 +162,109 @@
                 <button id='b27' onclick="toggleWrap('demo','b27')"style='position:absolute;border-color:white;left:60%;top:1%;height:98%;width:9%;'>WRAP...</button>
                 <button id='b27' onclick="nice()"style='position:absolute;border-color:white;left:70%;top:1%;height:98%;width:9%;'>NICE</button>
                 <button id='b27' onclick="convertOld()"style='position:absolute;border-color:white;left:80%;top:1%;height:98%;width:9%;'>CONVERT UT</button>
-            -->
             </div>
         </div>
 <!--end of main form -->
+
+
+        <div id ="editUtool" style="position:absolute; display:block; border:groove;font-size:1.5vw;text-align:left;line-height: 100%;  background-color:black; top:13%; left:0%; width:100%; height:87%; z-index:500">
+            <div id='editHd'style='position:absolute;text-align: center;line-height:0% ;background-color:black;left:0%;top:0%;height:9%;width:100%'>
+
+                <img title="Save the text as a file" onclick="fileSaveTextAs(FILEname+'.json', document.getElementById('demo').value),save()" src="..\..\Icons\blackSave.png" style='position:absolute;left:0%;top:1%;height:98%;'>
+                <img title="Select any local file" onclick="fileGetLocal('locGet()')"  src="../../Icons/blackRead.png" id='getLocal'" style='position:absolute;left:7%;top:1%;height:98%;'>
+                <img title="ScratchPad" onclick="dis('scratchPad')"  src="../../Icons/blackNotepad.png"  style='position:absolute;left:14%;top:1%;height:98%;'>
+                <div id='jsonX' style='position:absolute;line-height: 100%; background-color:lightgreen; color:black; left:21%; top:0%; width:14%; height:100%;'>Valid JSON</div>
+                <h1>{[JSON]}</h1>
+                <div id='demoX' style='position:absolute;line-height: 100%; background-color:lightgreen; color:black; right:21%; top:0%; width:14%; height:100%;'>Valid Text</div>
+                <img  title="Tabs" src="../../Icons/blackTabEdit.png" alt="+" onclick="dis('tabster'),updateTabster() " style='position:absolute;right:7%;top:1%;height:98%;'>
+                <img id='editClose' src="../../Icons/blackClose.png" onclick="dis('editUtool')"  style="position:absolute;display:block;right:0%;bottom:1%;height:98%;">
+            </div>
+            <div id='fileInfo'style='position:absolute;background-color:grey;left:1%;top:9%;height:21%;width:48%'>
+                <div style='position:absolute;background-color:transparent;color:white;height:15%;left:0%;top:0%;width:100%'>
+                    FILE (Contains Utube links and data)
+                </div>
+                <div style='position:absolute;background-color:transparent; overflow:hidden;height:20%;left:0%;top:20%;width:100%'>
+                    Title
+                    <input onchange='JSONobj.file.title=this.value,jsonUpdated()'  id ='titleA' style='position:absolute;overflow:hidden;left:15%; top:1%; height:97%;width:82%'>
+                </div>
+                <div style='position:absolute;background-color:transparent; overflow:hidden;height:60%;left:0%;top:40%;width:100%'>
+                    Desc
+                <textarea id ='descA' onchange="JSONobj.file.desc=document.getElementById('descA').value,jsonUpdated()" style='position:absolute;overflow:hidden;bottom:2%;left:15%;top:1%;width:81.5%'>error</textarea>
+                </div>
+            </div>
+            <div id='trackInfo'style='position:absolute;background-color:grey;left:1%;top:31%;height:30%;width:48%'>
+                <div style='position:absolute;background-color:transparent;color:white;height:15%;left:0%;top:0%;width:100%'>
+                TRACK (A YouTube video)
+                </div>
+                <div style='position:absolute;background-color:transparent; overflow:hidden;height:15%;left:0%;top:15%;width:100%'>
+                    Title
+                    <input id ='titleB' onchange='JSONobj.file.tracks[VID].title=this.value,jsonUpdated()'  value='Title' style='position:absolute;overflow:hidden;left:15%; top:1%; height:97%;width:82%'>
+                </div>
+                <div style='position:absolute;background-color:transparent; overflow:hidden;height:15%;left:0%;top:30%;width:100%'>
+                    UTID
+                    <input id ='utidB' onchange='JSONobj.file.tracks[VID].utid=this.value,jsonUpdated()'  value='???'  style='position:absolute;overflow:hidden;left:15%; top:1%; height:97%;width:82%'>
+                </div>
+                <div style='position:absolute;background-color:transparent; overflow:hidden;height:15%;left:0%;top:45%;width:100%'>
+                    Backtrack
+                    <input id ='backtrackB' onchange='JSONobj.file.tracks[VID].backtrack=this.value,jsonUpdated()'  value='???'  style='position:absolute;overflow:hidden;left:15%; top:1%; height:97%;width:82%'>
+                </div>
+                <div style='position:absolute;background-color:transparent; overflow:hidden;height:40%;left:0%;top:60%;width:100%'>
+                    Notes
+                    <textarea id ='notesB' onchange="JSONobj.file.tracks[VID].notes=document.getElementById('notesB').value,jsonUpdated()" style='position:absolute;overflow:hidden;bottom:2%;left:15%;top:1%;width:81.5%'>error</textarea>
+                </div>
+            </div>            
+            <div id='loopInfo'style='position:absolute; background-color:grey; left:1%; top:63%; height:35%; width:48%'>
+                <div style='position:absolute;background-color:transparent;color:white;height:12%;left:0%;top:0%;width:100%'>
+                LOOPS 
+                </div>
+                <div style='position:absolute;background-color:transparent; overflow:hidden;height:12%;left:0%;top:12%;width:100%'>
+                    Title
+                    <input onchange='JSONobj.file.tracks[VID].loops[LOOP].title=this.value,jsonUpdated()' id ='titleC' value='???'  style='position:absolute;overflow:hidden;left:15%; top:1%; height:97%;width:82%'>
+                </div>
+                <div style='position:absolute;background-color:transparent; overflow:hidden;height:12%;left:0%;top:24%;width:100%'>
+                    Start
+                    <input onchange='JSONobj.file.tracks[VID].loops[LOOP].start=this.value,jsonUpdated()' id ='startC' value='???'  style='position:absolute;overflow:hidden;left:15%; top:1%; height:97%;width:82%'>
+                </div>
+                <div style='position:absolute;background-color:transparent; overflow:hidden;height:12%;left:0%;top:36%;width:100%'>
+                    Stop
+                    <input onchange='JSONobj.file.tracks[VID].loops[LOOP].stop=this.value,jsonUpdated()'id ='stopC' value='???'  style='position:absolute;overflow:hidden;left:15%; top:1%; height:97%;width:82%'>
+                </div>
+                <div style='position:absolute;background-color:transparent; overflow:hidden;height:12%;left:0%;top:48%;width:100%'>
+                    Tab
+                    <input onchange='JSONobj.file.tracks[VID].loops[LOOP].tab=this.value,jsonUpdated()'id ='tabC' value='???'  style='position:absolute;overflow:hidden;left:15%; top:1%; height:97%;width:82%'>
+                </div>
+                <div style='position:absolute;background-color:transparent; overflow:hidden;height:38%;left:0%;top:60%;width:100%'>
+                    Desc
+                    <textarea id ='descC' onchange="JSONobj.file.tracks[VID].loops[LOOP].desc=document.getElementById('descC').value,jsonUpdated()" style='position:absolute;overflow:hidden;bottom:2%;left:15%;top:1%;width:81.5%'>error</textarea>
+                </div>
+            </div>                       
+            <textarea id="demo" onchange="document.getElementById('demo').style.backgroundColor='lightyellow'" title="Current JSON file" style="white-space:normal;position:absolute;overflow:scroll;right:1%;top:16%;bottom:6%;width:48%">GET A JASON FILE AND PARSE IT...</textarea>
+            <div id='editHdr' style="position:absolute;top:9%; height:5%;width:50%;right:0%;z-index:5;">
+                <button id='jObj' onclick="document.getElementById('demo').value=JSON.stringify(JSONobj),statusMsg('This is the Current JSON object (JSONobj)','red'),document.getElementById('demo').style.backgoundColor='yellow'" style='position:absolute;color:red;border-color:red;left:0%;top:1%;height:98%;width:33%;'>JSON>>TEXT</button>
+                <button  onclick="replaceJSONobj()"style='position:absolute;border-color:red;color:red;left:33%;top:1%;height:98%;width:33%;'>TEXT>>JSON</button>
+                <!--<button  onclick="restoreJSONobj()"style='position:absolute;border-color:red;color:red;left:66%;top:1%;height:98%;width:33%;'>RESTORE LAST</button>-->
+            </div>
+            <div id='editCntrl' style="position:absolute;top:95%; height:5%;width:50%;right:0%">
+                <button id='strBtn'title="JSON.stringify using least characters." onclick=stringify() style='position:absolute;border-color:white;left:0%;top:1%;height:98%;width:20%;'>String</button>
+                <button id='beautyBtn' title="JSON.stringify with in easy read mode" onclick="beautify()" style='position:absolute;border-color:white;left:20%;top:1%;height:98%;width:20%;'>Beauty</button>
+                <button id='wrap' title="Wrap or Scroll the Text." onclick="toggleWrap('demo','wrap')"style='position:absolute;border-color:white;left:40%;top:1%;height:98%;width:20%;'>SCROLL</button>
+                <button id='nice' title="Fake a stringinify to help you edit" onclick="nice()" style='position:absolute;border-color:white;left:60%;top:1%;height:98%;width:20%;'>Pretty?</button>
+                <button  onclick="validate()"style='position:absolute;border-color:white;left:80%;top:1%;height:98%;width:20%;'>VALID?</button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--NOTEPAD -->
         <div id="notePad" style="position:absolute; resize:both; border-style:ridge; border-width:thick;display:none;color:white;text-align:left; background-color:lightgrey; overflow:hidden; height:61vh ;width:49vw; top:25vh; left:1vw;z-index:10500 ">
             <div id="notePadheader">
@@ -187,8 +275,9 @@
         </div>
 <!--Start of editor -->        
         <div id ="editUtool" style="position:absolute; display:none; font-size:2vw;text-align:left;line-height: 140%;  background-color:lightgrey; top:5%; left:0%; width:100%; height:95%; z-index:0">
-            <div id='editHdr' style='position:absolute; background-color:black;border:none;left:0%;top:0%;height:8%;width:100%;'>
-                    <img title="JSON SCREEN" src="../../icons/blackJson.png" alt="JSON HOME SCREEN"onclick="dis('editUtool')" style='position:absolute;right:0%;top:1%;height:98%;'>
+            <div id='editHdr' style='background-color:black;border:none;left:0%;top:0%;height:8%;width:100%;'>
+                    <img title="JSON SCREEN" src="../../icons/blackJson.png" alt="JSON HOME SCREEN"onclick="dis('editUtool')" style='right:10%;top:1%;height:98%;'>
+                    <img title="Load JSON file" src="../../icons/blackReset.png" alt="LOAD" onclick="bullshit()" style='right:10%;top:1%;height:98%;'>
             </div>    
             <div id='fileInfo'style='position:absolute;background-color:grey;left:1%;top:9%;height:21%;width:48%'>
                 
@@ -272,40 +361,4 @@
 
 <SCRIPT type="text/javascript" SRC = "Global.js"></script>
 <SCRIPT type="text/javascript" SRC = "JSON.js"></script><!--YADA>-->
-<SCRIPT>
-    //custom taken from JSON.js
-function editorUpdate(){
-document.getElementById('titleA').value=JSONobj.file.title;
-document.getElementById('descA').innerHTML=JSONobj.file.desc;
-//=======================    
-document.getElementById('videos').selectedIndex = vid; //align selector
-document.getElementById('titleB').innerHTML=JSONobj.file.tracks[vid].title;
-document.getElementById('notesB').innerHTML=JSONobj.file.tracks[vid].notes;
-document.getElementById('utidB').value=JSONobj.file.tracks[vid].utid;
-//=====================
-document.getElementById('startC').value=JSONobj.file.tracks[VID].loops[LOOP].start;
-document.getElementById('stopC').value=JSONobj.file.tracks[VID].loops[LOOP].stop;
-document.getElementById('titleC').value=JSONobj.file.tracks[VID].loops[LOOP].title;
-document.getElementById('tabC').value=JSONobj.file.tracks[VID].loops[LOOP].tab;
-document.getElementById('descC').value=JSONobj.file.tracks[VID].loops[LOOP].desc;
-}
-
-function stringify(){
-    statusMsg("ERROR! There is a JSON error in displayed text",'red');
-    document.getElementById('demoX').innerHTML='Text ERROR'
-    document.getElementById('demoX').style.backgroundColor='red';
-    JSONval=null;
-    JSONval=JSON.parse(document.getElementById('demo').value);
-    statusMsg("Your Text Beautified!",'yellow')
-    document.getElementById('demoX').innerHTML='VALID TEXT'
-    document.getElementById('demoX').style.backgroundColor='lightgreen';
-    document.getElementById('demo').value=JSON.stringify(JSONval)
-    statusMsg("Your Text Stringified!",'yellow')
-}
-
-
-
-
-</SCRIPT>
-
 </body></html>

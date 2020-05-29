@@ -7,16 +7,6 @@ var VID
 dragElement(document.getElementById("notePad"));
 
 //YOUR BOOT CODE=============================================================
-
-function toggleWrap(id) {//you must have this function to mate with Global.js Boot and debug
-    if(document.getElementById('demo').style.whiteSpace=="nowrap"){
-        document.getElementById('demo').style.whiteSpace="normal";
-        document.getElementById(id).innerHTML="SCROLL Y";
-    }else{
-        document.getElementById('demo').style.whiteSpace="nowrap";
-                document.getElementById(id).innerHTML="WRAP Y";
-    }
-}
 function buildSelector(id){
     if (id==undefined) {
         id='selectorA'
@@ -27,16 +17,16 @@ var ARRoldList
 
 function boot() {//you must have this function to mate with Global.js Boot and debug
     statusMsg('Loading default Database!')
-    JSONget(document.getElementById('dbSelect').value)//default database
+    //JSONget(document.getElementById('dbSelect').value)//default database
     
 //Custom Opening  ===You can bypass this =============================================================  
    
-    document.getElementById('demo').value=fileDownload('../Utool/Blues Justin Sandercoe(best).txt');
-    document.getElementById('code').value="convertOld()";
-    popUp('Programers Custom Settings','Custom Opening...',1,'white')
-    ARRoldList=fileDownload('../Tube/OldList.txt').split('\n')   
-    selectorBuild('selectX',ARRoldList,0)
-    collectionsGet()
+    document.getElementById('demo').value=fileDownload('../Tube/Sandercoe Blues.json');
+    //document.getElementById('code').value="convertOld()";
+    //popUp('Programers Custom Settings','Custom Opening...',3,'white')
+    //ARRoldList=fileDownload('../Tube/Utool.txt').split('\n')   
+    //selectorBuild('selectX',ARRoldList,0)
+    //collectionsGet()
     MSGready="Welcome to the JSON Jungle Gym"
 //^COMMON CODE (FINISH BOOT)
     finishBoot()
@@ -48,7 +38,7 @@ function bullshit(){
      document.getElementById('descA').value=(JSONobj.file.desc)
 }
 //stolen======================================================================================
-function collectionsGet() { //creates ARRcollections from server or local stollen from Utool-3
+/*function collectionsGet() { //creates ARRcollections from server or local stollen from Utool-3
     statusMsg("Requesting Collection List'")
     ARRcollections = fileDownload('../Tube/Utool.txt').split("\n");
     selectorBuild('fileIndex', ARRcollections, 0);
@@ -60,18 +50,17 @@ function colSelect(col){//creates the ARRcollections select box
     statusMsg('Collection '+col+ ' selected...'  );
     COL=col;//set the working Collection
     document.getElementById('fileIndex').selectedIndex=COL  // need only one of these
- 
-    
-    
     vidsGet(col);
     }
 
 function vidsGet(vid){//alert('vidsGet('+vid+')');//creates ARRvideos passes default value to selector and default loop
     statusMsg('Requesting Collection '+COL);
     if (vid===undefined|vid===''|vid===null){vid=0;}
-    FILEname=ARRcollections[COL];
+    FILEname="Sandercoe Blues"
     statusMsg('Getting JSON Collection '+FILEname);
-    jsonLoad("../Tube/"+FILEname+".json")
+    
+alert("../Tube/Sandercoe Blues.json")
+jsonLoad("../Tube/Sandercoe Blues.json")
 }
 
 function jsonLoad(path) {//XXXshould go to json.js eventually
@@ -88,10 +77,8 @@ function jsonLoad(path) {//XXXshould go to json.js eventually
     JSONfile=content;
     JSONobj=JSON.parse(content)
     fillVideos()
-    
     document.getElementById('titleA').value=JSONobj.file.title;
     document.getElementById('descA').innerHTML=JSONobj.file.desc;
-
 }
 
 function fillVideos() { //JSONselector(sel,str)
@@ -118,26 +105,7 @@ function vidSelect(vid) {
     document.getElementById('titleB').innerHTML=JSONobj.file.tracks[vid].title;
     document.getElementById('notesB').innerHTML=JSONobj.file.tracks[vid].notes;
     document.getElementById('utidB').value=JSONobj.file.tracks[vid].utid;
-
-
-/*   UTID = JSONobj.file.tracks[vid].utid;
-    UTtitle = JSONobj.file.tracks[vid].title;
-    var path = "https://www.youtube.com/embed/" + UTID;
-    path = path + "?enablejsapi=1"; //Works but shows ads;SHORTEST WORKING SOLUTION working solution
-    document.getElementById('player').src = path;
-    
-    
-    
-    
-    
-    
-    
-    if (ONLINE===false) {
-        statusMsg("YOU ARE OFFLINE!  YOU TUBE WONT WORK!");
-        loopsGet(0);
-    }else{
-        statusMsg('Waiting for Video to load...','red')*/
-        loopsGet()
+    loopsGet()
     }
 
 function loopsGet() { //JSONselector(sel,str)
@@ -164,37 +132,32 @@ function loopSelect(loop) {
     document.getElementById('titleC').value=JSONobj.file.tracks[VID].loops[LOOP].title;
     document.getElementById('tabC').value=JSONobj.file.tracks[VID].loops[LOOP].tab;
     document.getElementById('descC').value=JSONobj.file.tracks[VID].loops[LOOP].desc;
-    //document.getElementById('loopStart').value=LOOPstart = JSONobj.file.tracks[VID].loops[LOOP].start; //in seconds
-    //document.getElementById('loopFinish').value=LOOPfinish = JSONobj.file.tracks[VID].loops[LOOP].stop; //in seconds
-   // LOOPtab=JSONobj.file.tracks[VID].loops[LOOP].stop; //in seconds
-   // LOOPtab=JSONobj.file.tracks[VID].loops[LOOP].tab; //in seconds
-   // LOOPnote=JSONobj.file.tracks[VID].loops[LOOP].desc; //in seconds
-   // MSGready=LOOPname+ " Ready...("+ LOOPstart + " --> " + LOOPfinish +" seconds.)"
-    //changeMode('Paused');
 }
 
 
-
+*/
 //end of stolen=============================================================
+//use as an example for filling
 
+/*
 function editorUpdate(){
 document.getElementById('titleA').value=JSONobj.file.title;
 document.getElementById('descA').innerHTML=JSONobj.file.desc;
-    
+//=======================    
 document.getElementById('videos').selectedIndex = vid; //align selector
 document.getElementById('titleB').innerHTML=JSONobj.file.tracks[vid].title;
 document.getElementById('notesB').innerHTML=JSONobj.file.tracks[vid].notes;
 document.getElementById('utidB').value=JSONobj.file.tracks[vid].utid;
-
+//=====================
 document.getElementById('startC').value=JSONobj.file.tracks[VID].loops[LOOP].start;
 document.getElementById('stopC').value=JSONobj.file.tracks[VID].loops[LOOP].stop;
 document.getElementById('titleC').value=JSONobj.file.tracks[VID].loops[LOOP].title;
 document.getElementById('tabC').value=JSONobj.file.tracks[VID].loops[LOOP].tab;
 document.getElementById('descC').value=JSONobj.file.tracks[VID].loops[LOOP].desc;
 }
+*/
 
-
-function nice() {//fakes a JSON.parse of one of any json file but prints if its good or BAD!
+function nice() {//XXXfakes a JSON.parse of one of any json file but prints if its good or BAD!
     var space = ""
     var ARRcrap
     str = document.getElementById('demo').value
@@ -300,9 +263,17 @@ function original(){
     document.getElementById('state').style.backgroundColor='white'
 }
 
-function beautify() {
-    JSONobj=JSON.parse(document.getElementById('demo').value);
-    document.getElementById('demo').value=JSON.stringify( JSONobj,null,4)
+
+function stringify(str){
+    return JSON.stringify(str)
+statusMsg ('Valid String')
+}
+
+
+
+function beautify() {//XXX
+    //JSONobj=JSON.parse(document.getElementById('demo').value);
+    document.getElementById('demo').value=JSON.stringify(JSON.stringify( document.getElementById('demo').value,null,4))
 }
 
 function beautifyString(str) {
@@ -437,32 +408,7 @@ function fillForm( ){//form will be the second form
     document.getElementById('demo').value=JSON.parse(JSONobj);
   }
 
-function ZZZOldToJson(){
-NEW="{\n\"file\":{\"title\":\"NEW TITLE\","//start
-COLnote=ARRvideos[0];//.split(';').join('\n');//Get the FILE NOTE
-ARRvideos=document.getElementById('demo').value.split('\n');
-COLnote=ARRvideos[0];
-ARRvideos.splice(0,1);//strip FILE NOTE FROM ARRAY
-VID=0//start here
-LOOP=0
-NEW=NEW+"\n\"desc\":\""+COLnote+"\",\n\"tracks \":\n[\n\{\n\"utid\""
-alert(NEW)
-alert('GOOD\n'+ARRvideos[VID])//GOOD
-ARRloops=ARRvideos[VID].split('#')
-ARRloops.splice(0,1);//remove the link
-alert(ARRloops[0])
-alert(ARRvideos[1])
-ARRloops=ARRvideos[VID].split('#')
-NEW=NEW+ARRloops[0]+"\",\n\"title\":\""+ARRloops[1]+"\", \n\"notes\":\""+ARRloops[2]+"\", \n\"loops\":\":\n[\n\{\n\"title\","+ARRloops[5]+"\", \n\"start\","+ARRloops[3]+"\", \n\"finish\""
-alert(NEW)
-}
 
-function ZZZreplacePoundSign(){
-    var a;
-    a=a.replace(/#/g,"#");
-    document.getElementById('padHTML').innerHTML=a
-    document.getElementById('demo').value=a    
-}
 
 
 
