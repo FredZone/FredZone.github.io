@@ -82,6 +82,7 @@ function boot() {
         statusMsg("YOU ARE OFF LINE!", 'red');
         ONLINE = false;
     }
+    localCodeShow() //prefill this so it doesnt automatically refill while you are working
     dis('thinking', 'none')
     statusMsg('finishing...')
     finishBoot()
@@ -109,6 +110,72 @@ function aboutS() {
     str = str + 'The id of the textarea is\'page\'; Address it that way in your code...'
     popUp(str, 'Using the \'scratchPad\'', 15)
 }
+
+function localCodeUpdate(){//should not requery the select box
+    var key=document.getElementById('localCode').value;
+    var val=document.getElementById('code').value;
+    localStorage.setItem(key,val);
+    statusMsg('Updated the '+key+' function...','yellow')
+}
+
+function localCodeShow(){
+    var sel="";
+    for ( var i = 0, len = localStorage.length; i < len; ++i ) {
+      sel=sel+"<option value=\'"+localStorage.key( i )+"\'>"+localStorage.key( i )+"</option>";
+    }
+    document.getElementById('localCode').innerHTML=sel
+    statusMsg('Refreshed the code selector...','yellow')
+    localCodeGet()
+}
+function localCodeSave() {
+    var sel=""
+    nme = prompt('Function Name???', 'crap')
+    if (nme == null) {
+        statusMsg('Nothing Saved...', 'red')
+    } else {
+        localStorage.setItem(nme, document.getElementById('code').value);
+        statusMsg('Saved the function ' + nme + '...', 'yellow')
+        for (var i = 0, len = localStorage.length; i < len; ++i) {
+            sel = sel + "<option value=\'" + localStorage.key(i) + "\'>" + localStorage.key(i) + "</option>";
+        }
+        localCodeRefreshSelect(nme)
+        //statusMsg('The Select box now has '+i+' elements...', 'yellow')
+        //document.getElementById('localCode').innerHTML = sel
+        
+        //statusMsg('Registered your new Code', 'yellow')
+        //document.getElementById('localCode').selectedValue = 'crap'
+        //statusMsg('set Selector to '+nme, 'yellow')
+    }
+}
+
+function localCodeGet() {
+    var key=document.getElementById('localCode').value
+    document.getElementById('code').value = localStorage.getItem(key)
+    statusMsg('Retrieved the '+key+ ' function...','yellow')
+}
+
+function localCodeKill(key) {
+    if (confirm("Do you want to kill this piece of code:"+key)==true){
+        localStorage.removeItem(key)
+        localCodeShow()
+        statusMsg('Deleting the  '+key+ ' function...','yellow')
+    }
+}
+
+function localCodeRefreshSelect(key) {//adds new <option> and updates selectBox (does not refresh the code)
+    var sel;
+    for (var i = 0, len = localStorage.length; i < len; ++i) {
+        sel = sel + "<option value=\'" + localStorage.key(i) + "\'>" + localStorage.key(i) + "</option>";
+    }
+    alert(sel)
+    document.getElementById('localCode').innerHTML = sel
+    document.getElementById('localCode').value = key
+    statusMsg('Refresed Selector at'+key, 'yellow')
+
+}
+
+
+
 
 
 function getLevel(lev){

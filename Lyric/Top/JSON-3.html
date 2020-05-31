@@ -118,7 +118,7 @@
             <div id="htmlPageheader">
                 HTML
             </div>
-            <button onclick="document.getElementById('page').value='-'" style="position:absolute;left:0%;top:0%;height:5%;width:10%">Clear</button>
+            <button onclick="document.getElementById('page').innerHTML='-'" style="position:absolute;left:0%;top:0%;height:5%;width:10%">Clear</button>
             <button onclick="aboutH()" style="position:absolute;left:10%;top:0%;height:5%;width:10%">About</button>
             <button id='but1' onclick="alert('Nothing yet')"style="position:absolute;right:10%;top:0%;height:5%;">????</button>
             <img  title="Close" src="../../Icons/blackClose.png" alt="X" onclick="dis('htmlPage')" style="position:absolute;right:0%;top:0%;height:5%;">
@@ -264,33 +264,42 @@
             </div>
             <div id='JS' display:none; border:groove;font-size:1.5vw;text-align:left;line-height: 100%;  background-color:black; top:5%; left:0%; width:100%; height:90%; z-index:1000">            -->
             <textarea id="code" title="TEST CODE"  style="position:absolute;display:block;overflow-y:scroll;top:11%;height:82%;left:1%;width:98%">alert('put the test code in pace of alert')</textarea>
-            <button id='evalButton' onclick="eval(document.getElementById('code').value)" style='position:absolute;border:groove;left:0%;height:5%;bottom:0%;width:10%;'>EVAL</button>
-           
-                <select id= 'selectCode' onchange="document.getElementById('code').value=this.value"style='position:absolute;border:groove;left:10%;height:5%;bottom:0%;width:20%;'>
-                    <option value="convertOld()">Convert Old Utool</option>
-                    <option value="inWork()">inWork() OR Select Pre-Packaged Code</option>
-                    <option value="oldToJson()">OLD TO JSON</option>
-                    <option value="buildSelector()">Build selectorA</option>
-                    <option value="fillSelector()">Fill selectorA</option>
-                    <option value="popUp(JSON.stringify(document.getElementById('demo').value))">A-Stringify(demo)</option>
-                    <option value="beautify()">B-beautify (stringify with spaces)</option>)
-                    <option value="popUp(JSONfile=JSON.stringify(JSONobj))">C: Stringify the JSONobj</option>
-                    <option value="padHTML.innerHTML=JSON.parse(JSONfile)">C: JSON.parse The JSONfile</option>
-                    <option value="padHTML.innerHTML=JSON.stringify(JSONfile)">D: Stringify The JSONfile</option>
-                    <option value="padHTML.innerHTML='<pre>'+JSONfile+'</pre>'">C:SHOW PRE JSONfile on the PAD</option>
-                    <option value="SPACER">A:=================Spacer=====================</option>
-                    <option value="JSONfile=JSON.stringify(JSONojb),popUp(JSONfile)">A: Stringify JSONobj and save as JSONfile</option>
-                    <option value="popUp('name:'+JSONobj.file.loops[0].name+'<br>backtrack: '+JSONobj.file.loops[0].backtrack+'<br>start: '+JSONobj.file.loops[0].start+'<br>finish: '+ JSONobj.file.loops[0].finish)">C: POP 4 individual values loop 0 info</option>
-                    <option value="JSONobj=JSON.stringify(JSONojb),popUp(JSONfile)">A: Stringify JSONobj and save as JSONfile</option>
-                    <option value="popUp (JSONobj.file.loops[2].name)">A: get a loop from JSONobj</option>
-                    <option value="JSONobj=JSON.stringify(JSONojb),popUp(JSONfile)">A: Stringify JSONobj and save as JSONfile</option>
-                    <option value="popUp('name:'+JSONobj.file.loops[0].name+'<br>backtrack: '+JSONobj.file.loops[0].backtrack+'<br>start: '+JSONobj.file.loops[0].start+'<br>finish: '+ JSONobj.file.loops[0].finish)">POP loop 0 info</option>
-                    <option value="popUp(document.getElementById('demo').value)">POP up the demo</option>
-                    <option value="popUp(JSONobj=JSON.parse(document.getElementById('demo').value))">Parse The Demo</option>)
-                    <option value="popUp(JSON.stringify(document.getElementById('demo').value))">Stringify Demo</option>)
-                    <option value="popUp(JSON.parse(JSONobj))">Stringify JSONobj</option>
-                </select>
-         <button id='getCode' onclick="alert(1)" style='position:absolute;border:groove;left:30%;height:5%;bottom:0%;width:10%;'>???</button>        
+            <button id='evalButton' onclick="eval(document.getElementById('code').value)" style='position:absolute;border:groove;left:0%;height:5%;bottom:1%;width:10%;'>EVAL</button>
+            <!--<select id= 'selectCode' onchange="document.getElementById('code').value=this.value"style='position:absolute;border:groove;left:10%;height:5%;bottom:0%;width:20%;'>
+                <option value="convertOld()">Convert Old Utool</option>
+                <option value="inWork()">inWork() OR Select Pre-Packaged Code</option>
+                <option value="oldToJson()">OLD TO JSON</option>
+                <option value="buildSelector()">Build selectorA</option>
+                <option value="fillSelector()">Fill selectorA</option>
+                <option value="popUp(JSON.stringify(document.getElementById('demo').value))">A-Stringify(demo)</option>
+                <option value="beautify()">B-beautify (stringify with spaces)</option>)
+                <option value="popUp(JSONfile=JSON.stringify(JSONobj))">C: Stringify the JSONobj</option>
+                <option value="padHTML.innerHTML=JSON.parse(JSONfile)">C: JSON.parse The JSONfile</option>
+                <option value="padHTML.innerHTML=JSON.stringify(JSONfile)">D: Stringify The JSONfile</option>
+                <option value="padHTML.innerHTML='<pre>'+JSONfile+'</pre>'">C:SHOW PRE JSONfile on the PAD</option>
+                <option value="SPACER">A:=================Spacer=====================</option>
+                <option value="JSONfile=JSON.stringify(JSONojb),popUp(JSONfile)">A: Stringify JSONobj and save as JSONfile</option>
+                <option value="popUp('name:'+JSONobj.file.loops[0].name+'<br>backtrack: '+JSONobj.file.loops[0].backtrack+'<br>start: '+JSONobj.file.loops[0].start+'<br>finish: '+ JSONobj.file.loops[0].finish)">C: POP 4 individual values loop 0 info</option>
+                <option value="JSONobj=JSON.stringify(JSONojb),popUp(JSONfile)">A: Stringify JSONobj and save as JSONfile</option>
+                <option value="popUp (JSONobj.file.loops[2].name)">A: get a loop from JSONobj</option>
+                <option value="JSONobj=JSON.stringify(JSONojb),popUp(JSONfile)">A: Stringify JSONobj and save as JSONfile</option>
+                <option value="popUp('name:'+JSONobj.file.loops[0].name+'<br>backtrack: '+JSONobj.file.loops[0].backtrack+'<br>start: '+JSONobj.file.loops[0].start+'<br>finish: '+ JSONobj.file.loops[0].finish)">POP loop 0 info</option>
+                <option value="popUp(document.getElementById('demo').value)">POP up the demo</option>
+                <option value="popUp(JSONobj=JSON.parse(document.getElementById('demo').value))">Parse The Demo</option>)
+                <option value="popUp(JSON.stringify(document.getElementById('demo').value))">Stringify Demo</option>)
+                <option value="popUp(JSON.parse(JSONobj))">Stringify JSONobj</option>
+            </select>
+            
+            <button id='getCode' onclick=alert(1) style='position:absolute;border:groove;left:30%;height:5%;bottom:0%;width:20%;'>???</button>
+            -->
+            <select id= 'localCode' onchange="localCodeGet(this.value)"style='position:absolute;border:groove;left:10%;height:5%;bottom:1%;width:20%;'>
+                <option>CCC</option>
+            </select>
+            localCodeUpdate()
+            <button  onclick="localCodeUpdate()" style='position:absolute;border:groove;left:30%;height:5%;bottom:1%;width:10%;'>Update</button>
+            <button  onclick="localCodeKill(document.getElementById('localCode').value)" style='position:absolute;border:groove;left:40%;height:5%;bottom:1%;width:10%;'>KILL</button>
+            <button  onclick="localCodeSave()" style='position:absolute;border:groove;left:50%;height:5%;bottom:1%;width:10%;'>Save As></button>      
+           <!-- <button  onclick="localCodeShow()" style='position:absolute;border:groove;left:60%;height:5%;bottom:1%;width:10%;'>Show</button>      -->
         </div>
     </div>
 <!--START OF CUSTOM STRUCTURE Part 2 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
