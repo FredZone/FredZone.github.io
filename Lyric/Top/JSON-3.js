@@ -1,3 +1,4 @@
+//Looks guood 05/31/20 10:15am
 //*ADD GLOBAL VARIABLES HERE!!!!
 var FILEname='Your.json';
 var JSONfile;

@@ -1,5 +1,6 @@
 //*ADD GLOBAL VARIABLES HERE!!!!
 var BACKTRACK;
+var ARRrates
 var ARRcollections;
 var FILEname='Your.json';
 var FPS=30;//frames per second
@@ -381,7 +382,9 @@ function vidSelect(vid,loop) {
 //^ON VIDEO READY =====================================================
 function onPlayerReady(event){
   statusMsg('VIDEO READY...','blue');
-  loopsGet(LOOP);}
+  ARRrates=(player.getAvailablePlaybackRates())
+      selectorBuild('rate',ARRrates,null,1);
+      loopsGet(LOOP);}
 
 function loopsGet() { //JSONselector(sel,str)
     statusMsg("Loading the loops "+VID)
