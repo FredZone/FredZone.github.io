@@ -563,7 +563,7 @@ statusMsg("Rotated "+deg+"%")
 }
 
 function levelPlayer(){
-    var str="rotate(1deg)"
+    var str="rotate(0deg)"
     document.getElementById("player").style.msTransform = str;
     document.getElementById("player").style.transform=str;
     document.getElementById('spinner').value=1
