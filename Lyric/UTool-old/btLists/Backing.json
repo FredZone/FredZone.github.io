@@ -1,0 +1,367 @@
+{
+   "title": "Backing",
+   "msg": "Lots Tracks",
+   "notes": "Yada Yada Yada Yada Yada Yada Yada Yada Yada Yada Yada ",
+   "video": [
+      {
+         "title": "Delta",
+         "utid": "nbbhvNtArm8",
+         "key": "A",
+         "class": "Blues",
+         "tempo": "88",
+         "start": "20",
+         "stop": "30",
+         "notes": "|A |% |% |% |% |% |% |% |C |% |A |% |D |C |A |D"
+      },
+      {
+         "title": "Minor",
+         "utid": "22mWUkAi0PI",
+         "key": "A",
+         "class": "Blues",
+         "tempo": "100",
+         "start": "0",
+         "stop": "100",
+         "notes": "|Am |% |% |% |Dm |% |Am |% |F |E7 |Am |E7"
+      },
+      {
+         "title": "BB / Claption Shuffle",
+         "utid": "y1ueWz4-Hkk",
+         "key": "A",
+         "class": "Blues",
+         "tempo": "120",
+         "start": "34",
+         "stop": "",
+         "notes": "E-A-B"
+      },
+      {
+         "title": "SLOW BB style",
+         "utid": "3cmfo2uQ1S0",
+         "key": "A",
+         "class": "Blues",
+         "tempo": "80",
+         "start": "49",
+         "stop": "",
+         "notes": "std 12 bar"
+      },
+      {
+         "title": "SLOW",
+         "utid": "2aQRF47hJa0",
+         "key": "Em",
+         "class": "Blues",
+         "tempo": "40",
+         "start": "75",
+         "stop": "",
+         "notes": "?? |E |Am |Em |% |Am |% |Em |% |Bm |Am |Em |% |"
+      },
+      {
+         "title": "Shuffle(turn around)",
+         "utid": "1yURXpa0p4M",
+         "key": "E",
+         "class": "Blues",
+         "tempo": "120",
+         "start": "23",
+         "stop": "",
+         "notes": "|E7 |% |% |% |A7 |% |E7 |% |B7 |A7 <X1>|E7 ~% ~A ~C7 |E5 ~C7 ~B7 ~%"
+      },
+      {
+         "title": "Slow Blues",
+         "utid": "8Ndtx9MG5tQ",
+         "key": "A",
+         "class": "Blues",
+         "tempo": "80",
+         "start": "0",
+         "stop": "",
+         "notes": "?"
+      },
+      {
+         "title": "Slow Complex",
+         "utid": "8PzyEtQypYA",
+         "key": "C",
+         "class": "Blues",
+         "tempo": "53",
+         "start": "0",
+         "stop": "",
+         "notes": "|C9|F9|C9~C#9|C7|F9|F#dim7|C9|C9|G9~%~%~Gb9|F9|C9~F7|C9~G9"
+      },
+      {
+         "title": "Slow",
+         "utid": "axTQ3Tg9io8",
+         "key": "C",
+         "class": "Blues",
+         "tempo": "60",
+         "start": "0",
+         "stop": "",
+         "notes": "|C |F |C |% |F |% |C |% |G |F |C |G"
+      },
+      {
+         "title": "Boogie",
+         "utid": "3DgqJror33Q",
+         "key": "C",
+         "class": "Boogie",
+         "tempo": "165",
+         "start": "0",
+         "stop": "",
+         "notes": "12 bar in C"
+      },
+      {
+         "title": "Boogie",
+         "utid": "clkybYtD1tw",
+         "key": "E",
+         "class": "Boogie",
+         "tempo": "190",
+         "start": "0",
+         "stop": "",
+         "notes": "std 12 bar"
+      },
+      {
+         "title": "Double Time",
+         "utid": "VlB4oxkEEu4",
+         "key": "C",
+         "class": "Country",
+         "tempo": "120",
+         "start": "0",
+         "stop": "",
+         "notes": "|C |% |% |% |F |% |C |% |G |F |C |G"
+      },
+      {
+         "title": "Folk",
+         "utid": "8fi3p5KtOr0",
+         "key": "C",
+         "class": "Country",
+         "tempo": "122",
+         "start": "0",
+         "stop": "",
+         "notes": "|C |% |F |% |C |% |G |F |C |% |F |% |Am |G |F |%"
+      },
+      {
+         "title": "Modern",
+         "utid": "lF4iVuoyf4Q",
+         "key": "C",
+         "class": "Country",
+         "tempo": "120",
+         "start": "0",
+         "stop": "",
+         "notes": "|F|C|G|C|C<br>:C|C|F|C |C|C|D|G |C|C|F|C |C|C|G|C|C:(x?)<br>|F|C|G|C"
+      },
+      {
+         "title": "Old Style",
+         "utid": "laQi1_Jc0C4",
+         "key": "D",
+         "class": "Country",
+         "tempo": "80",
+         "start": "0",
+         "stop": "",
+         "notes": "D/// I D/// I G/// I G/// I"
+      },
+      {
+         "title": "Southern Rock",
+         "utid": "lF6m5xATDyM",
+         "key": "E",
+         "class": "Country",
+         "tempo": "130",
+         "start": "0",
+         "stop": "",
+         "notes": ":E|E|A|A |E|E|B|B |E|E|A|A |E|E|B|B |E|E:(x?)"
+      },
+      {
+         "title": "Train Beat",
+         "utid": "_p0CAN-1k6o",
+         "key": "E",
+         "class": "Country",
+         "tempo": "130",
+         "start": "0",
+         "stop": "",
+         "notes": "12 Bar"
+      },
+      {
+         "title": "Waltz",
+         "utid": "R24l4dRlmTk",
+         "key": "A",
+         "class": "Country",
+         "tempo": "76",
+         "start": "0",
+         "stop": "",
+         "notes": "x"
+      },
+      {
+         "title": "Country",
+         "utid": "-ru2vFhsGT0",
+         "key": "E",
+         "class": "Country",
+         "tempo": "140",
+         "start": "0",
+         "stop": "",
+         "notes": "(intro) |A | B |E |%<br>|E |% |% |% |A |B |E |% <br>|E |% |% |% |A |B |E |% <br>|A |% |E |% |F#|% |B |%"
+      },
+      {
+         "title": "FOLK ROCK",
+         "utid": "BBW6KkmDF74",
+         "key": "A",
+         "class": "Folk",
+         "tempo": "155",
+         "start": "0",
+         "stop": "",
+         "notes": "|Am |F |C |E |Am |F |C |E <br>|Am |F |C |E |Am |F |C |E |Am |Am<br>|Am |F |C |E |Am |F |C |E <br>|F |G |Am |Am |F |G |E |E <br>|Am |F |G |C |Am |F |G |C <br>|Am |Am |Am |Am |Am |F |C |E <br>|Am |F |C |E |Am |F |G |C~E|Am |F |G |C~E"
+      },
+      {
+         "title": "Georgia",
+         "utid": "H9vi8SEQNis",
+         "key": "F",
+         "class": "Jazz",
+         "tempo": "120",
+         "start": "0",
+         "stop": "",
+         "notes": "?"
+      },
+      {
+         "title": "Hendrix Style",
+         "utid": "weSbYy7TzNA",
+         "key": "E",
+         "class": "Psychedelic",
+         "tempo": "62",
+         "start": "0",
+         "stop": "",
+         "notes": "Aolean Scale? instructions on video"
+      },
+      {
+         "title": "12 Bar Bass",
+         "utid": "wRnLiP9OATs",
+         "key": "E",
+         "class": "Rock",
+         "tempo": "105",
+         "start": "2",
+         "stop": "",
+         "notes": "E A B"
+      },
+      {
+         "title": "Hotel Calif.",
+         "utid": "PKVT0zijJ-I",
+         "key": "D",
+         "class": "Rock",
+         "tempo": "152",
+         "start": "0",
+         "stop": "",
+         "notes": "Not Sure of the Scale<br>Play a D major over it"
+      },
+      {
+         "title": "ROCK",
+         "utid": "hTDKxtC_8d0",
+         "key": "G",
+         "class": "Rock",
+         "tempo": "130",
+         "start": "0",
+         "stop": "",
+         "notes": "12 Bar"
+      },
+      {
+         "title": "Rock Feeling",
+         "utid": "mWOskn9b2tg",
+         "key": "B",
+         "class": "Rock",
+         "tempo": "120",
+         "start": "0",
+         "stop": "",
+         "notes": "??"
+      },
+      {
+         "title": "Sultans of Swing",
+         "utid": "Z7pNKyEbi4k",
+         "key": "Dm",
+         "class": "Rock",
+         "tempo": "150",
+         "start": "0",
+         "stop": "",
+         "notes": "F#M works for starting Point"
+      },
+      {
+         "title": "Bass & Drum",
+         "utid": "VYVb7DfmwSg",
+         "key": "Am",
+         "class": "Rock",
+         "tempo": "120",
+         "start": "0",
+         "stop": "",
+         "notes": "?"
+      },
+      {
+         "title": "Take It Easy",
+         "utid": "aUaSiLCJ6Ho",
+         "key": "G",
+         "class": "Rock",
+         "tempo": "143",
+         "start": "0",
+         "stop": "",
+         "notes": "?"
+      },
+      {
+         "title": "Take It Easy",
+         "utid": "bCIGUIatv3c",
+         "key": "G",
+         "class": "Rock",
+         "tempo": "143",
+         "start": "0",
+         "stop": "",
+         "notes": "?"
+      },
+      {
+         "title": "ZZ LaGrange",
+         "utid": "nP_25tTOnDg",
+         "key": "Am",
+         "class": "Rock",
+         "tempo": "164",
+         "start": "0",
+         "stop": "",
+         "notes": "(|A|A~%~C~D)ad infinitum"
+      },
+      {
+         "title": "ZZ style",
+         "utid": "b2tqKYPHE3M",
+         "key": "G",
+         "class": "Rock",
+         "tempo": "152",
+         "start": "0",
+         "stop": "",
+         "notes": "12 Bar variation"
+      },
+      {
+         "title": "C.Berry School Days",
+         "utid": "bBSI7dhwCpI",
+         "key": "G",
+         "class": "Rock",
+         "tempo": "132",
+         "start": "0",
+         "stop": "",
+         "notes": "|G |% |% |% |C |% |G |% |D |C |G |%"
+      },
+      {
+         "title": "Chuck Berry Fast",
+         "utid": "uLI-Atz1SoM",
+         "key": "A",
+         "class": "Rock",
+         "tempo": "172",
+         "start": "0",
+         "stop": "",
+         "notes": "|A |% |% |% |D |% |A |% |E |D |A |E"
+      },
+      {
+         "title": "Cross Roads",
+         "utid": "GzABg4BFHG4",
+         "key": "C",
+         "class": "Rock",
+         "tempo": "130",
+         "start": "9",
+         "stop": "",
+         "notes": "|C |% |F |% |C |% |G |F |C |% |F |% |Am |G |F |%"
+      },
+      {
+         "title": "Drums Straight",
+         "utid": "zZbM9n9j3_g",
+         "key": "-",
+         "class": "Drums",
+         "tempo": "100",
+         "start": "undefined",
+         "stop": "undefined",
+         "notes": "undefined"
+      }
+   ]
+}

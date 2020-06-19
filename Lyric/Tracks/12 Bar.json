@@ -1,0 +1,95 @@
+{
+   "title": "12 Bar",
+   "msg": "Lots of 12 BAR Tracks",
+   "notes": "Yada Yada Yada Yada Yada Yada Yada Yada Yada Yada Yada ",
+   "video": [
+      {
+         "title": "Chicago Shuffle",
+         "utid": "xf4V7L9csG4",
+         "key": "A",
+         "class": "Blues",
+         "tempo": "90",
+         "start": "37",
+         "stop": "740",
+         "chords": "|1 |1 |1 |1 <br>|4 |4 |1 |1 <br>|5 |4 |1 |5",
+         "notes": "Classic 12 Bar Blues"
+      },
+      {
+         "title": "BB King (E simple)",
+         "utid": "iLTdHasc_go",
+         "key": "E",
+         "class": "Blues",
+         "tempo": "77",
+         "start": "-",
+         "stop": "-",
+         "chords": "|1 |1 |1 |1 <br>|4 |4 |1 |1 <br>|5 |4 |1 |5,",
+         "notes": "-"
+      },
+      {
+         "title": "BB King (A simple)",
+         "utid": "3cmfo2uQ1S0",
+         "key": "A",
+         "class": "Blues",
+         "tempo": "75",
+         "start": "-",
+         "stop": "-",
+         "chords": "|1 |1 |1 |1 <br>|4 |4 |1 |1 <br>|5 |4 |1 |5",
+         "notes": "1"
+      },
+      {
+         "title": "BB King (A7 simple)",
+         "utid": "8L2mqkk28sE",
+         "key": "A7",
+         "class": "Blues",
+         "tempo": "70",
+         "start": "-",
+         "stop": "-",
+         "chords": "-",
+         "notes": "1"
+      },
+      {
+         "title": "BB King (A7 simple)",
+         "utid": "qKSxTuO5Qlk",
+         "key": "-",
+         "class": "Blues",
+         "tempo": "70",
+         "start": "A7",
+         "stop": "-",
+         "chords": "-",
+         "notes": "-"
+      },
+      {
+         "title": "Chitlins con Carne",
+         "utid": "A_ZXkGDhauU",
+         "key": "Bm",
+         "class": "Blues",
+         "tempo": "113",
+         "start": "-",
+         "stop": "-",
+         "chords": "-",
+         "notes": "Stevie Ray Vaughn version"
+      },
+      {
+         "title": "7",
+         "utid": "-",
+         "key": "-",
+         "class": "Blues",
+         "tempo": "-",
+         "start": "-",
+         "stop": "-",
+         "chords": "-",
+         "notes": "90"
+      },
+      {
+         "title": "8",
+         "utid": "-",
+         "key": "-",
+         "class": "Blues",
+         "tempo": "-",
+         "start": "-",
+         "stop": "-",
+         "chords": "-",
+         "notes": "90"
+      }
+   ]
+}

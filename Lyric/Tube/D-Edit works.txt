@@ -1,2 +1,0 @@
-var a="<div onclick=\"JSONobj.file.title=prompt('\Edit title\',\'???\')\">title: "+JSONobj.file.title+"</div><br>"
-var a=a+"<div onclick=\"alert(\'"+JSONobj.file.desc+"\')\">desc: "+JSONobj.file.desc+"</div>"

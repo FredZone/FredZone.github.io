@@ -1,0 +1,6 @@
+AAA TITLE,UTID,KEY,Class,Tempo,start,stop,Notes,links
+Blues Guitar 1,gofTVOIwdmw,-,-,-,-,-,An Intro to the Blues,Whats her name1...-https://www.youtube.com/watch?v=GatiekRziok@Chart-../UTool/btLists/modalChart.png
+Blues Guitar,LcOempNj6_g,-,-,-,-,-,An Intro to the Blues,Whats her name1...-https://www.youtube.com/watch?v=GatiekRziok@Chart-../UTool/btLists/modalChart.png
+Number 2,LcOempNj6_g,A,Blues,90,30,35,Part 2,Whats her name2...-https://www.youtube.com/watch?v=GatiekRziok@Chart-../UTool/btLists/modalChart.png
+Number 3,LcOempNj6_g,A,-,-,-,-,Test Part 3,Whats her name3...-https://www.youtube.com/watch?v=GatiekRziok@Chart-../UTool/btLists/modalChart.png
+Number 4,LcOempNj6_g,A,-,-,-,-,Test Part 4,Whats her name4...-https://www.youtube.com/watch?v=GatiekRziok@Chart-../UTool/btLists/modalChart.png

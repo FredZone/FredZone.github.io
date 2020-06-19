@@ -1,4 +1,4 @@
-Click <img src='Data/yellowAuto.png' onclick="if (PIC!=-2){changeGalleryMode()}" style="height:33%"> for a 1 minute <u>Fred and the Fossils</u> Pictoral History &nbsp &nbsp <i>Or use the arrows.</i><img src='Data/yellowRight.png' onclick='gallery(+1)' style="height:33%">|sepia.png|947|897|1
+Click <img src='Data/yellowAuto.png' onclick="if (PIC!=-2){changeGalleryMode()}" style="height:33%"> for a 1 minute <u>Fred and the Fossils</u> Pictorial History &nbsp &nbsp <i>Or use the arrows.</i><img src='Data/yellowRight.png' onclick='gallery(+1)' style="height:33%">|sepia.png|947|897|1
 <X4>1968:</X4>&nbsp My First Band, <i>JAM</i>, in Butte, Montana. &nbsp &nbsp &nbsp <i>Left to Right: Chuck, Bill, yours truly and Jay.</i>|firstBand.jpg|1219|810|10
 <X4>1969:</X4> Playing bass at a Montana State University Spring Event|bass.png|1316|1940|5
 <X4>1969 > 2010: </X4> Occasionally played with friends and family|backyard.png|465|661|5
