@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+    <head>
+        <!--COMMON STRUCTURE ==========================================================================================
+        Items requiring Change are marked YADA
+        move bugs/make trigger go away/smaller default on any key
+        -->
+        <link rel="shortcut icon" type="/png" href="../../Icons/transWhiteCircle.png"><!--YADA-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!-- prevents zooming on mobile devices....number-based width or "device-width"-->
+        <title id = 'titleMain'>TRACKS</title> <!--YADA-->
+        <style type="text/css">
+            table, th, td {
+              table-layout: fixed;
+              overflow: hidden;
+              border: 1px solid black;
+              border-collapse: collapse;
+            }
+            #statusWindowheader{cursor: move; background-color:orange; color:black; font-size:1vw; line-height:100%; top:0%; width:100%; height:5%; overflow:hidden;}
+            Body{
+                font-size:2vh;                
+                color:white;
+                font-family:Courrier New;
+                font-weight: bold;
+                text-align:center;
+                vertical-align:middle;
+                border-color: black;
+                border-width:thin;
+                background-color:black;
+                padding:0px;
+                margin:0px;
+                overflow:hidden;}
+            p1{color:white;}
+            p2{color:red;}
+            p3{color:orange;}
+            p4{color:yellow;}
+            p5{color:green;}
+            p6{color:blue;}
+            p7{color:indigo;}
+            p8{color:violet;}
+            p9{color:black;}
+            table{border-color:transparent;
+                background-color:transparent;}
+            th  {border-style:groove;
+                border-color:black;
+                background-color:pink;
+                text-align:center;}
+            pre { display: inline}
+            optgroup {font-size:1.5vw;border:none }
+        </style>    
+    </head>
+    
+    <body onresize=squish(1.0,0.50)><!--YADA--can change aspect-->
+    <form action=false><input type="file" id="fileInput" style="display:none;"/></form>
+    <!--field-->  
+    <div id='field' style="position:fixed;display:block; font-size:2vw;color:black;top:0%; left:0%; width:100%; height:100%;background-color:pink;z-index:0">
+        <div onclick="dis('main')"style="position:absolute;border:groove;color:green;top:50%;left:30%;width:40%;">
+            Click to return to the Main form...     
+        </div>      
+    <!-- Splash  10000 10999 -->  
+        <div id ="splash" style="position:absolute; display:block; font-size:5vh;text-align:center;border:solid;background-color:white; color:black; top:0%; left:0%; height:100%; width:100%; z-index:10000">
+            <div style="position:absolute;width:100%;top:5%;height:50%;left:0%;">
+                TRACKS<br><br>A Javascript Application<br>by<br>Fred Kaparich<br>fkaparich@gmail.com<!--YADA-->
+            </div>
+            <input id='debugTrigger' onkeydown="monitorBoot()" style="position:absolute;left:0%;width:1%;height:1%;bottom:0%;">
+        <!--    <input id='dubugSafety' style="position:absolute;right:0%; height:5%;bottom:0%;"> -->
+            <img id='bootBug' src='../../Icons/bug2.gif' alt ="Check for bugs"  onclick="statusMonitor(2)" style='position:absolute;display:block; height:15%; right:0%;bottom:0%'>
+        </div>
+
+    <!-- Debugger 10000 11000 -->  
+        <div id="msg" title="Message Box" style= "position:absolute; display:block; line-height:120%; text-align:center; vertical-align:middle; color:red; background-color:transparent; color:red; height:5%; left:0%; top:60%; width:100%; z-index:10500;overflow:hidden">
+            Loading...
+        </div>
+        <img src="../../Icons/greyBug.jpg" title="Debug Screen"  onclick ="statusMonitor(2)" id='debugButton'style="position:absolute; display:block;top:0%; height:5%; left:0%; z-index:10600">
+        <img title="Hide or Show the Debug Window..." id='bug' src="../../Icons/bug2.gif" onclick="monitorWindow()" style="position:absolute;display:none;height:5%; top:0%; left:0%;  z-index:12000">
+        <div id="statusWindow" style="position:absolute; resize:both; border-style:ridge; border-width:thick;display:none;color:white;text-align:center; font-size:1vw; background-color:lightgrey; overflow:hidden; height:61vh ;width:49vw; top:25vh; left:1vw;z-index:10500 ">
+            <div id="statusWindowheader">
+                DEBUG WINDOW
+            </div>
+            <img src="../../Icons/danger.png" onclick="statusMonitor(0)" style="position:absolute;width:7%;height:10%;right:1%;top:5%;">
+            <img src="../../Icons/bug2.gif" onclick="dis('statusWindow','none')" style="position:absolute;width:7%;height:10%;right:9%;top:5%;">
+            <img src="../../Icons/clean.png" onclick="ARRstatusLog = ''.split('-'),statusMsg('-------------User Cleared Log---------',0);" style="position:absolute;width:7%;height:10%;right:17%;top:5%;">
+            <select onchange="LOG=this.value.split('-')[1],ARRstatusLog=''.split('-')" style='position:absolute;top:8%;left:30%;width:40%;'><option>Record-20-Steps</option><option>Record-40-Steps</option><option>Record-80-Steps</option><option>Record-160-Steps</option><option>Record-320-Steps</option><option  selected>Record-640-Steps</option></select>
+            <div id='bootText' style="border-style:groove;text-align:left; line-height:120%;  position:absolute;overflow:scroll;left:2%; top:16%;width:96%;height:74%;color:black;background-color:white;">
+                ERROR! Status Messages not Being Recorded...
+            </div>
+        </div>
+    <!--popper-- 9000-->    
+        <div id='popper' style="position:absolute; color:black; background-color:lightblue;font-weight:bold; border:groove;display:none; line-height:130%; overflow:hidden; font-size:2vw; text-align:center; left:5%; right:20%; top:30%; bottom:25%;z-index:9000">   
+            <div id='popTitle'style="position:absolute;left:0%;right:0%;top:0%;height:10%;text-align:center">
+                POP UP NOTE!!
+            </div>
+            <img id='popClose' src="../../Icons/blackClose.png" onclick="dis('popper')"  style="position:absolute;display:block;right:0%;bottom:90%;height:10%;z-index:2000;">
+            <img id='popCloser' src="../../Icons/resetSpinner.gif" onclick="dis('popper')" style="position:absolute;display:block;right:0%;bottom:90%;height:10%;z-index:2000;">
+            <div id='popText' style="position:absolute; color:black; background-color:lightgrey;font-weight:bold; border:groove;display:block; line-height:130%; overflow-y:scroll; text-align:center; left:0%; right:0%; top:10%; bottom:0%;overflow-y:auto;word-break: keep-all;">   
+                YOUR POP UP MESSAGE SHOULD HAVE APPERED HERE!!   SORRY ABOUT THAT
+            </div>   
+        </div>
+    <!--THINKING-- 11000-->         
+        <img id='thinking' src='../../Icons/resetSpinner.gif' alt ="thinking..." style='position:absolute;display:block;width:20%; bottom:20%; right:40%;opacity:0.4;z-index:11000'>
+    
+    <!--START of CUSTOM Structure XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        Change anything below this line as you see fit, these are really just examples...YADA
+        duplicate the main form to start other forms...      
+        Convention id: title; src; action: STYLE position: font-size: text-align:color; background-color: border: left: right: top: bottom: width: height: z-index> -->     
+        
+<!--MAIN FORM--> 
+        <div id ="main" style="position:absolute; display:block; font-size:2vw;text-align:center;  background-color:lightgrey; top:5%; left:0%; width:100%; height:95%; z-index:0">
+<!--HEADER--> 
+            <div id='hdr' style='position:absolute;background-color:black;border:none;left:0%;top:0%;height:8%;width:100%;'>
+                <div id='warning' onclick="dis(this.id)" style="position:absolute; display:none; width:15%; background-color:red; left:0%; height:80%; top:10%;z-index:6001">Edited!</div>
+                <select id = 'fileIndex' title='AVAILABLE COLLECTIONS (ON WEB SERVER)' onchange="colSelect(this.value);" style= "position:absolute; display:none; width:15%; background-color:white; left:0%; height:80%; top:10%;z-index:6000">
+                </select>
+                <select id = 'videos' title='AVAILABLE UTUBE VIDEOS (IN THIS FILE)'onchange="vidSelect(this.selectedIndex,0)" style= "position:absolute; display:block; width:15%; background-color:white; left:15%; height:80%; top:10%;">
+                </select>
+            </div>
+<!--iFrame Container -->            
+            <div id='scroller' style="position:absolute;background-color:black;overflow-x:scroll;overflow-y:scroll;left:0%; height:87%; width:100%; top:8%; z-index:300;">
+                    <div id="player" style="position:absolute; background-color:black; left:0%; height:100%; width:100%; top:0%; z-index:100;">
+                </div>
+            </div>
+        </div>
+<!--End of Main Form-->         
+            
+<!--START OF CUSTOM STRUCTURE Part 2 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+    </div><!--end of field-->      
+<!--END OF CUSTOM STRUCTURE  Part 2 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+    <SCRIPT type="text/javascript" SRC = "Global.js"></script>
+    <SCRIPT type="text/javascript" SRC = "Tracks.js"></script><!--change this form-->
+    </body>
+</html>
