@@ -1,0 +1,58 @@
+TITLE:Love Has No Pride,DUR:156,BPM:120,BEATS:3,KEY:C,QUAL:Raw,ARTIST:Linda Ronstadt,GENRE:Country,STYLE:Ballad,HITyear:TBD
+#INTRO ----------------------------------
+|F              |G              |F    ~C    ~G    |C
+#VERSE 1 --------------------------------
+|C              |Em             |Am             |D
+I've had bad dreams too many times
+|F              |G              |F    ~C    ~G    |C
+To think that they don't mean much anymore
+|C              |Em             |Am             |D
+Fine times have gone and left my sad home
+|F              |G              |F    ~C    ~G    |C
+Friends who once cared just walk out my door
+#CHORUS 1 -------------------------------
+|Am             |Em             |F              |C
+Love has no pride when I call out your name
+|Am             |Em             |F              |C
+Love has no pride when there's no one left to blame
+|F         |G         |F  ~C  ~G  |C         |F  ~C  ~G  |C
+I'd give anything to see you again
+#CHORUS 2 -------------------------------
+|C              |Em             |Am             |D
+I've been alone too many nights
+|F              |G              |F    ~C    ~G    |C
+To think that you could come back again
+|C              |Em             |Am             |D
+And I've heard you talk   she's crazy to stay
+|F              |G              |F    ~C    ~G    |C
+But this love hurts me so  I don't care what you say
+#VERSE 2 --------------------------------
+|Am             |Em             |F              |C
+Love has no pride when I call out your name
+|Am             |Em             |F              |C
+Love has no pride when there's no one left to blame
+|F        |G        |F  ~C  ~G  |C        |F  ~C  ~G  |C        |C7
+But I'd give anything to see you again
+#BREAK 1 --------------------------------
+|F              |G              |C              |Am
+If I could buy your love, well I'd surely try, my friend
+|D              |F              |Bb
+And if I could pray, my prayers would never end
+|F              |G              |C              |Am
+But if you want me to beg, I'll fall down on my knees
+|F              |G              |Em7            |Am
+And ask you to come back, I'd be pleading for you to come back
+|F              |G              |F  ~C/E  ~Dm7  |C
+I'd beg for you to come back to me
+#CHORUS 3 -------------------------------
+|Am             |Em             |F              |C
+Love has no pride when I call out your name
+|Am             |Em             |F              |C
+Love has no pride when there's no one but myself to blame
+|F              |G              |F    ~C    ~G    |C
+But I'd give anything to see you again
+|F              |G              |F    ~C    ~G    |C
+Yes  I would give anything to see you again
+#OUTRO ----------------------------------
+|F              |G              |F    ~C    ~G    |C
+oh oh  oh oh o h h h h h

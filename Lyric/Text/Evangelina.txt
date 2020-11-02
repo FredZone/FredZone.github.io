@@ -1,0 +1,64 @@
+TITLE:Evangelina,DUR:212,BPM:120,BEATS:4,KEY:A,QUAL:Verified,ARTIST:Hoyt Axton ,GENRE:Country,STYLE:Ballad,HITyear:1975
+EVANGELINA
+intro
+|A               |%               |%               |%
+-
+#VERSE 1 --------------------------------
+|F#m             |E               |A               |%
+And I dream in the morning,       that she brings me water;
+|B               |B7              |E               |E7
+And I dream in the evening,      that she brings me wine.
+|A               |D               |A               |%
+Just a poor man’s daughter,      from Porta Pen~asco;
+|E               |E7              |A               |%
+Evangelina,      Old Mexico.
+#VERSE 2 --------------------------------
+|F#m             |E               |A               |%
+There’s a great hot desert,       South of Mexicalli;
+|B               |B7              |E               |E7
+If you don’t have water,       you’d better not go.
+|A               |D               |A               |%
+Tequilla won’t get you,       across that desert;
+|E               |E7              |A               |%
+to Evangelina,    in Old Mexico.
+#CHORUS 1 -------------------------------
+|Abm             |G               |D               |A
+And the Fire I feel for the woman I love,  Is driving me insane;
+|E               |E7              |A               |%
+knowing she’s waiting,      and I can’t get there.
+|Abm             |G               |D               |A
+God only knows that I rack my brain to try to find a way,
+|E               |E7              |A               |%
+to reach that woman,      in old Mexico.
+#VERSE 3 --------------------------------
+|F#m             |E               |A               |%
+And I met a kind man,      he guarded the Border;
+|B               |B7              |E               |E7
+He said you don’t need papers,       I’ll let you go.
+|A               |D               |A               |%
+I can tell that you love her,       by the look in your eyes now;
+|E               |E7              |A               |%
+She’s the rose of the desert,     in old Mexico.
+#CHORUS 2 -------------------------------
+|Abm             |G               |D               |A
+And the Fire I feel for the woman I love,  Is driving me insane;
+|E               |E7              |A               |%
+knowing she’s waiting,      and I can’t get there.
+|Abm             |G               |D               |A
+God only knows that I rack my brain to try to find a way,
+|E               |E7              |A               |%
+to reach that woman,      in old Mexico.
+#VERSE 4 --------------------------------
+|F#m             |E               |A               |%
+And I dream in the morning,     that she brings me water;
+|B               |B7              |E               |E7
+And I dream in the evening,      that she brings me wine.
+|A               |D               |A               |%
+Just a poor man’s daughter,     from Porta Pen~asco;
+|E               |E7              |A               |%
+South of the Border,    in old Mexico.
+#OUTRO ----------------------------------
+|E               |E7              |D               |%
+Evangelina,    I miss you so.    I miss you so.
+-
+|A               |%

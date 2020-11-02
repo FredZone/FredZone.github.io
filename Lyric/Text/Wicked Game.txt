@@ -1,61 +1,61 @@
-TITLE:Wicked Game,DUR:130,BPM:100,BEATS:4,KEY:B,QUAL:Rough,ARTIST:Chris Isaak
+TITLE:Wicked Game,DUR:182,BPM:100,BEATS:4,KEY:B,QUAL:,ARTIST:Chris Isaak,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
 #VERSE 1 --------------------------------
 @this line needs work
-|Bm                        |A                      |E   {Fill 1}
+|Am                 |G                  |D                  |%
 The world was on fire and no one could save me but you.
-|Bm                           |A                   |E   {Fill 2}
+|Am                 |G                  |D                  |%
 It's strange what desire will make foolish people do.
-|Bm                    |A                    |E   {Fill 1}
+|Am                 |G                  |D                  |%
 I never dreamed that I'd meet somebody like you.
-|Bm                    |A                    |E   {Fill 2}
+|Am                 |G                  |D                  |%
 I never dreamed that I'd love somebody like you.
 #CHORUS 1 -------------------------------
-|Bm|A                  |E                  {Fill 1}
+|Am                 |G                  |D                  |%
 I don't want to fall in love. (This world is only gonna break your heart)
-|Bm|A                  |E                  {Fill 2}
+|Am                 |G                  |D                  |%
 I don't want to fall in love. (This world is only gonna break your heart)
-$         {Part 2}          {Part 2}
+|Am                 |G                  |D                  |%
 With you.         With you.        (This world is only gonna break your heart)
 #VERSE 2 --------------------------------
-|Bm            |A          |E                        {Fill 1}
+|Am                 |G                  |D                  |%
 What a wicked game to play, to make me feel this way.
-|Bm              |A       |E                       {Fill 2}
+|Am                 |G                  |D                  |%
 What a wicked thing to do, to let me dream of you.
-|Bm             |A         |E                        {Fill 1}
+|Am                 |G                  |D                  |%
 What a wicked thing to say, you never felt this way.
-|Bm             |A        |E                           {Fill 2}
+|Am                 |G                  |D                  |%
 What a wicked thing to do, to make me dream of you and,
 #CHORUS 2 -------------------------------
-|Bm|A                  |E                  {Fill 1}
+|Am                 |G                  |D                  |%
 I don't want to fall in love. (This world is only gonna break your heart)
-|Bm|A                  |E                  {Fill 2}
+|Am                 |G                  |D                  |%
 I don't want to fall in love. (This world is only gonna break your heart)
-$         {Part 1}          {Part 2}
+|Am                 |G                  |D                  |%
 With you.
 #VERSE 3 --------------------------------
-|Bm                        |A                      |E   {Fill 1}
+|Am                 |G                  |D                  |%
 The world was on fire and no one could save me but you.
-|Bm                           |A                   |E   {Fill 2}
+|Am                 |G                  |D                  |%
 It's strange what desire will make foolish people do.
-|Bm                    |A                    |E   {Fill 1}
+|Am                 |G                  |D                  |%
 I never dreamed that I'd love somebody like you.
-|Bm                    |A                    |E   {Fill 2}
+|Am                 |G                  |D                  |%
 I never dreamed that I'd loose somebody like you no,
 #CHORUS 3 -------------------------------
-|Bm|A                  |E                  {Fill 1}
+|Am                 |G                  |D                  |%
 I don't want to fall in love. (This world is only gonna break your heart)
-|Bm|A                  |E                  {Fill 2}
+|Am                 |G                  |D                  |%
 I don't want to fall in love. (This world is only gonna break your heart)
-         {Part 2}          {Part 2}
+|Am                 |G                  |D                  |%
 With you.         With you.        (This world is only gonna break your heart)
-|Bm      |A      |E
+|Am                 |G                  |D                  |%
 Nobody loves no one.
 @@A tale of obsessive love by Chris Isaak
 @@He said "Wicked Game" came to him 'effortlessly'
 @@In 1996, the song was used on the TV show Friends
-@@Jaguar used this in commercials to introduce it's X-type cars. 
+@@Jaguar used this in commercials to introduce it's X-type cars.
 @@The Irish singer-songwriter Gemma Hayes recorded a remake in 2012 for the US teen drama Pretty Little Liars.
-@@@Standard Tuning                                                                        
+@@@Standard Tuning
 @@@                                       Wicked Game
 @@@                                    As Preformed By:
 @@@                            Chris Isaak & The Silvertones

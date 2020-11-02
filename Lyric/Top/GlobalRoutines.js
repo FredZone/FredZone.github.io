@@ -420,3 +420,23 @@ function encodeFredComponent(str) { //encodes problem char (?)
     return str;
 }
 
+
+function readTFile(file,id)
+{
+    alert(file+'\n'+id);
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+                document.getElementById('demo').innerText = allText 
+            }
+        }
+    }
+    rawFile.send(null);
+}
+

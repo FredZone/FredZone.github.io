@@ -1,0 +1,103 @@
+TITLE:Look What Theyve Done To My Song,DUR:158,BPM:145,BEATS:4,KEY:G,QUAL:Raw,ARTIST:Melanie Safka,GENRE:Unknown,STYLE:Ballad,HITyear:1970
+#CHORUS 1 -------------------------------
+|G                      |%
+Look what they've done to my
+|Em                     |%
+song, Ma
+|C                      |%
+Look what they've done to my
+|C/A                    |%
+song
+|G                      |A
+Well it's the only thing that I could do half right
+|C                      |A7
+And it's turning out all wrong, ma
+|G                      |D7
+Look what they've done to my
+|G                      |%
+song.
+#CHORUS 2 -------------------------------
+|G                      |%
+Look what they've done to my
+|Em                     |%
+brain, Ma
+|C                      |%
+Look what they've done to my
+|C/A                    |%
+brain
+|G                      |A
+Yeah they picked it like a chicken bone
+|C                      |A7
+And I think I'm half insane, Ma
+|G                      |D7
+Look what they've done to my
+|G                      |%
+brain.
+#VERSE 1 --------------------------------
+|G                      |%
+I wish I could find a good
+|Em                     |%
+book to live in
+|C                      |%
+Wish I could find a good
+|C/A                    |%
+book
+|G                      |A
+Cause if I could find a real good book
+|C                      |A7
+I'd never have to come out and look at
+|G                      |D7
+Look what they've done to my
+|G                      |%
+song.
+#VERSE 2 --------------------------------
+|G                      |%
+Na na na na na na na na
+|Em                     |%
+Na na na na na na na na
+|C                      |%
+Na na na na na na na na
+|C/A                    |%
+Na na na na na na na na
+|G                      |A
+And if people are buying tears
+|C                      |A7
+I’ll be rich some day, Ma
+|G                      |D7
+Look what they've done to my
+|G                      |%
+ brain.
+#VERSE 3 --------------------------------
+|G                      |%
+But maybe it'll all be all right
+|Em                     |%
+Ma,
+|C                      |%
+Maybe it'll all be
+|C/A                    |%
+OK
+|G                      |A
+Cause if the people are buying tears
+|C                      |A7
+I'll be rich someday, Ma
+|G                      |D7
+Look what they've done to my
+|G                      |%
+song.
+#CHORUS 3 -------------------------------
+|G                      |%
+Look what they've done to my
+|Em                     |%
+song, Ma
+|C                      |%
+Look what they've done to my
+|C/A                    |%
+ song
+|G                      |A
+Well it's the only thing that I could do half right
+|C                      |A7
+And it's turning out all wrong, ma
+|G                      |D7
+Look what they've done to my
+|G                      |%
+song.

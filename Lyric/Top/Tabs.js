@@ -1,9 +1,22 @@
-dragElement(document.getElementById("tabs"));
+//added 'NO TAB' display for null or empty tabs
+function tabGlossary(){
+  var str="GLOSSARY:<br>0-24 Fret number" 
+  return str
+}
+
+function saveTab(tab) {
+  document.getElementById('stringView').value= tabToString(document.getElementById('editLOOPtab').value)
+  JSONobj.file.tracks[VID].loops[LOOP].tab=tabToString(document.getElementById('editLOOPtab').value)
+  loopsGet()
+}
 
 function viewTab() {
     dis('tabs')
     if (document.getElementById('tabs').style.display=='block'){
       var tab=stringToTab(JSONobj.file.tracks[VID].loops[LOOP].tab)
+      if (tab==undefined||tab.length<22) {
+        tab="NO TAB"
+      }
       document.getElementById('tabBox').innerHTML =tab
     }
 }
@@ -69,46 +82,75 @@ function tabToString(tab){//add the Key later
       str=key+'@'+count+'@'+div+'@'+chr+'@'+str;
     return(str);} }  
 
-function stringToTab(str){
-  var out=('*|,e|,B|,G|,D|,A|,E|').split(',');
-  pos=0;//position
+function stringToTab(str) {
+  var out = ('*|,e|,B|,G|,D|,A|,E|').split(',');
+  pos = 0; //position
   //var lineA="";
   var bar;
-  var arr=str.split('@');
-  var key=arr[0];//strip the key data points
-  var count=arr[1];
+  var arr = str.split('@');
+  var key = arr[0]; //strip the key data points
+  var count = arr[1];
   var div = arr[2];
   var chr = arr[3];
-  var space="-";
-  var play="";
+  var space = "-";
+  var play = "";
   var clk;
-  var dots="";
+  var dots = "";
   var notes;
-  //alert(str)
-  for(a=1;a<chr;a++){space=space+" ";dots=dots+".";}//get space
-  arr.splice(0,4);//get rid of info string
-  bar=count*div;
-  var r=1;
-  for(j=0;j<arr.length;j++){//build line 1
-    out[0]=out[0]+r +dots;
-    for(q=1;q<div;q++){
-      if (j<arr.length-1){
-        out[0]=out[0]+"&" +dots;
-        j=j+1;}}
-    if(r>=count){r=1;out[0]=out[0]+"|";}else{r=r+1;}}
-  for(a=1;a<7;a++){
-    for(j=0;j<arr.length;j++){
-      play=space;
-      if (arr[j]!==undefined & arr[j]!=="") {//valid click
-        clk=arr[j].split("|");          //alert (clk);
-        for(w=0;w<clk.length;w++){
-          notes=clk[w].split(':');
-          if (notes[0]==a){
-            play=notes[1];
-            while(play.length<chr){play=play+" ";}}}}
-      out[a]= out[a]+play;
-      if((j+1)/bar===parseInt((j+1)/bar,10)){out[a]=out[a]+"|";}}} 
-  return (out.join('\n'));}  
+  var r = 1;
+  for (a = 1; a < chr; a++) {
+    space = space + " ";
+    dots = dots + ".";
+  }
+  //get space
+  dotz = dots.substring(0, dots.length - 1)
+  arr.splice(0, 4); //get rid of info string
+  bar = count * div; //
+  //alert("bar: "+bar+"\ncount: "+count+"\ndiv: "+div+"\nchr: "+chr+"\ndots\n"+dots+"\ndotz\n"+dotz)
+  for (j = 0; j < arr.length; j++) { //build line 1
+    statusMsg(r)  
+    if (r > 9) {
+      out[0] = out[0] + r + dotz;
+    } else {
+      out[0] = out[0] + r + dots;
+    }
+    for (q = 1; q < div; q++) {
+      if (j < arr.length - 1) {
+        out[0] = out[0] + "&" + dots;
+        j = j + 1;
+      }
+    }
+    if (r >= count) {
+      r = 1;
+      out[0] = out[0] + "|";
+    } else {
+      r = r + 1;
+    }
+  }
+  //====================================================
+  for (a = 1; a < 7; a++) {
+    for (j = 0; j < arr.length; j++) {
+      play = space;
+      if (arr[j] !== undefined & arr[j] !== "") { //valid click
+        clk = arr[j].split("|"); //alert (clk);
+        for (w = 0; w < clk.length; w++) {
+          notes = clk[w].split(':');
+          if (notes[0] == a) {
+            play = notes[1];
+            while (play.length < chr) {
+              play = play + " ";
+            }
+          }
+        }
+      }
+      out[a] = out[a] + play;
+      if ((j + 1) / bar === parseInt((j + 1) / bar, 10)) {
+        out[a] = out[a] + "|";
+      }
+    }
+  }
+  return (out.join('\n'));
+}
 
 function tabCompress(){//add the Key later
   var tab=LOOPtab;
@@ -217,7 +259,7 @@ function tabDecompress(str) {
     document.getElementById('editLOOPtab').value = out.join('\n');
 }
 
-function tabNew(){
+function xtabNew(){
   var arrStrings='e|,B|,G|,D|,A|,E|'.split(',');
   var bar=document.getElementById('bars').value;
   var bea=document.getElementById('beat').value;
@@ -226,6 +268,33 @@ function tabNew(){
   var tab=tabSkeleton(bar,bea,div,spa);
   document.getElementById('editLOOPtab').value=tab;}
   
+function tabNew(){
+  //var arrStrings='e|,B|,G|,D|,A|,E|'.split(',');
+  //  var key = arr[0]; //strip the key data points
+  //var count = arr[1];
+  //var div = arr[2];
+  //var chr = arr[3];
+  alert('go')
+  var str=""
+  var bars=document.getElementById('bars').value;
+  var beat=document.getElementById('beat').value;
+  var div=document.getElementById('divs').value;
+  var chr=document.getElementById('chrs').value;
+  //var tab=tabSkeleton(bar,bea,div,spa);
+  for (i=0;i<(beat*bars*div)-1;i++){
+    str=str+"@"
+    }
+    str="A@"+beat+"@"+div+"@"+chr+"@"+str
+  alert(str)
+  document.getElementById('stringView').value=str
+  stringToTab(str)
+  document.getElementById('editLOOPtab').value=stringToTab(str)
+  }
+
+
+
+
+
 function tabSkeleton(bar,count,div,chr){
   var tab='';
   var arrStrings='e|,B|,G|,D|,A|,E|'.split(',');
@@ -365,6 +434,3 @@ function expandTab(z){
   document.getElementById('stringView').value=str;
   document.getElementById('editLOOPtab').value=stringToTab(str);}
 
-//function saveTab(){
-//  prompt("Save the Tab to your file at BAR ",0)
-//}

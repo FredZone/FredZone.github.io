@@ -2,6 +2,9 @@
 var BACKTRACK;
 var ARRrates
 var ARRcollections;
+var EDITmode=false
+var EDITstatus="Clear"
+var EDITlock="none"
 var FILEname='Your.json';
 var FPS=30;//frames per second
 var FRAMEtime;
@@ -29,6 +32,7 @@ var TIMEOUTloop;
 var TIMEOUTdelay;
 var TIMEOUTtime;
 var TIMEOUTscroll=false;
+var TABedit=true
 var FLAG=null;
 var FLAGmode=null;
 var TIMEOUTtemp;
@@ -92,9 +96,80 @@ function onYouTubeIframeAPIReady() {
 
 //REWRITE THE BOOT FUNCTION AS YOU SEE FIT
 //^==================================================================
-dragElement(document.getElementById("tabs"));
+dragElement(document.getElementById("tabster"));
 dragElement(document.getElementById("pace"));
 dragElement(document.getElementById("scratchPad"));
+dragElement(document.getElementById("bt"));
+
+
+
+function Abort()
+{
+   throw new Error('This is not an error. This is just to abort javascript');
+}
+
+function breakBoot(){
+   MSGready="USER BREAK from Debugger popup"
+   finishBoot()
+    throw new Error('User Aborted Javascript...');
+}
+
+
+
+function resizePlayer2() {
+    if (document.getElementById('bt').style.height == '70%') {
+        document.getElementById('bt').style.height = '25%'
+        document.getElementById('bt').style.width = '25%'
+    } else {
+        document.getElementById('bt').style.height = '70%'
+        document.getElementById('bt').style.width = '70%'
+    }
+}
+function openBT() {
+    var path = JSONobj.file.tracks[VID].backtrack;
+    if (path==undefined||path.length<11) {
+        statusMsg('No Backtrack Assigned to this Video', 'red')
+    } else {
+        dis('bt','block')
+        
+        statusMsg('Opening Backtrack Assigned to this Video')
+        document.getElementById("player2").data = "https://www.youtube.com/v/" + path + "?version=2&enablejsapi=1&theme=light"
+        //dis('btBlock','none')
+        vis('bt','visible')
+    }
+}
+
+function closeBT() {
+    statusMsg('Closed Backtrack Pop Up')
+    //dis('btBlock','block')
+    document.getElementById("player2").data = "https://www.youtube.com/v/7-qGKqveZaM?version=2&enablejsapi=1&theme=light"
+    // document.getElementById("player2").data = null
+    vis('bt','hidden')
+}
+
+function setLastCol() {
+    alert('Leaving...')
+    localStorage.setItem('lastCol',COL)
+    localStorage.setItem('lastVid',VID)
+    localStorage.setItem('lastLoop',LOOP) 
+}
+
+
+function capture() {
+    var path;
+    var utid = prompt("Enter the YouTube Link or YouTube URL", "????")
+    if (utid.length > 20) {
+        var arr=utid=utid.split('/')
+        utid=arr[arr.length-1]
+        var arr=utid=utid.split('=')
+        utid=arr[arr.length-1]
+    
+    }
+    path = "https://www.youtube.com/embed/" + utid;
+    path = path + "?enablejsapi=1"; //Works but shows ads;SHORTEST WORKING SOLUTION working solution
+    document.getElementById('player').src = path;
+}
+
 
 function frameNext() {
     var t = player.getCurrentTime();
@@ -217,9 +292,11 @@ function validate(){
 function openEditor() {
     if (document.getElementById('editUtool').style.display == 'block') {
         dis('editUtool', 'none')
+        editMode(false)
     } else {
-        updateEditor()
+        updateEditor()//get data from current JSON object
         dis('editUtool', 'block')
+        editMode(true)
     }
 }
 
@@ -241,19 +318,58 @@ function updateEditor() {
     document.getElementById('demo').value = JSON.stringify(JSONobj, null, 4) //show the easiest view of JSONobj
     document.getElementById('demo').style.backgroundColor='lightgreen'
     statusMsg("Updated the editor to the current JSONobj")
-
 }
 
+<!--Tab Functions -->
 
-function updateTabster() {
-    document.getElementById('stringView').value=JSONobj.file.tracks[VID].loops[LOOP].tab
-    document.getElementById('editLOOPtab').value=stringToTab(document.getElementById('stringView').value)   
+function updateTab() {//incorporates Tab edits into the JSON file
+    document.getElementById('stringView').value=tabToString(document.getElementById('editLOOPtab').value);
+    JSONobj.file.tracks[VID].loops[LOOP].tab=document.getElementById('stringView').value
+    statusMsg("Updated TAB for:" +JSONobj.file.tracks[VID].title+"; "+JSONobj.file.tracks[VID].loops[LOOP].title)
+    EDITstatus="Updated"
+    document.getElementById('editLOOPtab').style.backgroundColor='white'; 
+    warn()
 }
+
+function updateTabster() {//loads the tabster with the current JSONobj datafile
+    document.getElementById('stringView').value=JSONobj.file.tracks[VID].loops[LOOP].tab;
+    document.getElementById('editLOOPtab').value=stringToTab(JSONobj.file.tracks[VID].loops[LOOP].tab);
+    document.getElementById('editLOOPtab').style.backgroundColor='white';
+    document.getElementById('tabster').style.display='block';
+}
+
+function tabsterEdit(tf){//Goes into/out of the tab edit mode
+   if (tf==undefined) {
+        if(TABedit==false){TABedit=true}else{TABedit=false};
+   }else(TABedit==tf)
+   if (TABedit==true) {
+        document.getElementById('tabster').style.height="25%";
+        document.getElementById('tabsterheader').style.height="15%";
+        document.getElementById('tabButtons').style.height="15%";
+        document.getElementById('editLOOPtab').style.top="15%";
+        document.getElementById('editLOOPtab').style.height="80%";
+        document.getElementById('tEdit').style.height="0%";
+        dis('tEdit','none')
+    }else{
+        document.getElementById('tabster').style.height="40%"
+        document.getElementById('tabsterheader').style.height="10%";
+        document.getElementById('tabButtons').style.height="10%";
+        document.getElementById('editLOOPtab').style.top="10%";
+        document.getElementById('editLOOPtab').style.height="60%";
+        document.getElementById('tEdit').style.height="30%";
+        dis('tEdit','block')
+        //TABedit=true
+        editMode(true)
+   }
+}    
+
+//End of Tab functions-------------------------------------------------------------------------------------------------------
+
+
 
 function newRate(rate){
     dis('thinking' ,'block');
     player.setPlaybackRate(Number(rate));
-    //alert(player.getAvailablePlaybackRates())
     onPlaybackRateChange=dis('thinking' ,'none');   
     
 }
@@ -269,18 +385,23 @@ function jsonUpdated(){
     warn()
 }
 
-
-
-
-
 function warn(){
     dis('warning','block')
     document.getElementById('demo').style.backgroundColor='pink'}
-//BOOT function==============================================
+//^BOOT      START CUSTOM BOOT CODE (you can break the boot function into muliple functions)======================
+
 function boot() {
+    window.addEventListener("beforeunload", function(event) {
+        var x=undefined
+        if (EDITstatus != 'Clear') {
+            //event.returnValue = EDITstatus + ": Pending\nYou have unsaved changes.";
+            alert(EDITstatus)
+            event.returnValue = EDITstatus;
+            
+            return
+        }
+    })
     statusMsg('Loading javascript...')
-    dis('thinking','block')
-    //^START CUSTOM BOOT CODE (you can break the boot function into muliple functions)
     MSGready = "WORKING ON THIS SHIT!" //YADA
     //statusMsg('INSERT BOOT CODE HERE!'); //YADA
     if (navigator.onLine) {
@@ -295,11 +416,17 @@ function boot() {
 }
 
 function collectionsGet() { //creates ARRcollections from server or local
+    var col=0
+    var vid=0
+    var loop=0
     statusMsg("Requesting Collection List'")
-    ARRcollections = fileDownload('../Tube/Utool.txt').split("\n");
+    ARRcollections = fileDownload('../Utool/Utool.txt').split("\n");
     selectorBuild('fileIndex', ARRcollections, 0);
     dis('fileIndex', 'block');
-    colSelect(0,0,0)
+    col=localStorage.getItem('lastCol')
+    vid=localStorage.getItem('lastVid')
+    loop=localStorage.getItem('lastLoop')
+    colSelect(col,vid,loop)
 }
 
 function colSelect(col,vid,loop){//creates the ARRcollections select box
@@ -309,7 +436,7 @@ function colSelect(col,vid,loop){//creates the ARRcollections select box
     statusMsg('Collection '+col+ ' selected...'  );
     COL=col;//set the working Collection
     document.getElementById('fileIndex').selectedIndex=COL
-    vidsGet(vid,0);}
+    vidsGet(vid,loop);}
 
 function vidsGet(vid,loop){//alert('vidsGet('+vid+')');//creates ARRvideos passes default value to selector and default loop
 statusMsg('Requesting Collection '+COL);
@@ -318,13 +445,14 @@ statusMsg('Requesting Collection '+COL);
     if (vid===undefined|vid===''|vid===null){vid=0;}
     FILEname=ARRcollections[COL];
     statusMsg('Getting JSON Collection '+FILEname);
-    jsonLoad("../Tube/"+FILEname+".json",vid,loop)
+    jsonLoad("../Utool/"+FILEname+".json",vid,loop)
 }
+
 function jsonLoad(path,vid,loop) {//XXXshould go to json.js eventually
 statusMsg ('Downloading JSON data file: '+path)   
     if(isNaN(vid)){vid=0}
     if(isNaN(loop)){loop=0}
-    vid=0;loop=0;
+    //vid=0;loop=0;
     var content = "Attemping to Download" + path;
     var request = new XMLHttpRequest();
     request.open("GET", path, false);
@@ -336,7 +464,6 @@ statusMsg ('Downloading JSON data file: '+path)
     statusMsg("Parsing JSON data file" )
     JSONfile=content;
     JSONobj=JSON.parse(content)
-
     fillVideos(vid,loop)
 }
 
@@ -361,6 +488,7 @@ function vidSelect(vid,loop) {
     if(isNaN(vid)){vid=0}
     if(isNaN(loop)){loop=0}
     VID = vid;
+    LOOP=loop
     VIDnew = true;//????
     LOOPtype = 'none';
     document.getElementById('videos').selectedIndex = vid; //align selector
@@ -371,7 +499,7 @@ function vidSelect(vid,loop) {
     path = path + "?enablejsapi=1"; //Works but shows ads;SHORTEST WORKING SOLUTION working solution
     document.getElementById('player').src = path;
     if (ONLINE===false) {
-        statusMsg("YOU ARE OFFLINE!  YOU TUBE WONT WORK!");
+        statusMsg("YOU ARE OFFLINE!  YOU-TUBE WONT WORK!");
         loopsGet(loop);
     }else{
         statusMsg('Waiting for Video to load...','red');
@@ -380,14 +508,17 @@ function vidSelect(vid,loop) {
     }
 }
 //^ON VIDEO READY =====================================================
-function onPlayerReady(event){
-  statusMsg('VIDEO READY...','blue');
-  ARRrates=(player.getAvailablePlaybackRates())
-      selectorBuild('rate',ARRrates,null,1);
-      loopsGet(LOOP);}
+function onPlayerReady(event) {
+    statusMsg('VIDEO READY...', 'blue');
+    //alert("LOOP: "+LOOP)
+    ARRrates = (player.getAvailablePlaybackRates())
+    selectorBuild('rate', ARRrates, null, 1);
+    loopsGet(LOOP);
+}
 
-function loopsGet() { //JSONselector(sel,str)
+function loopsGet(loop) { //JSONselector(sel,str)
     statusMsg("Loading the loops "+VID)
+    LOOP=loop;
     var x, val, out;
     out = ""
     for (x in JSONobj.file.tracks[VID].loops) {
@@ -396,12 +527,13 @@ function loopsGet() { //JSONselector(sel,str)
     }
     document.getElementById('loops').innerHTML = out
     LOOPcount=JSONobj.file.tracks[VID].loops.length
-    loopSelect(0)
+    loopSelect(loop)
 }
 
 function loopSelect(loop) {
     statusMsg("Loop " + loop + " selected...")
     LOOP = loop
+    document.getElementById('loops').selectedIndex=LOOP
     LOOPname = JSONobj.file.tracks[VID].loops[LOOP].title;
     document.getElementById('loopStart').value=LOOPstart = JSONobj.file.tracks[VID].loops[LOOP].start; //in seconds
     document.getElementById('loopFinish').value=LOOPfinish = JSONobj.file.tracks[VID].loops[LOOP].stop; //in seconds
@@ -415,15 +547,17 @@ function loopSelect(loop) {
     }
     if (document.getElementById('tabster').style.display=='block' ){
         updateTabster()
-        MSGready="Tabster in use and updated with the current data file"
     }
     changeMode('Paused');
-    
-    //^COMMON CODE (FINISH BOOT)
+    player.seekTo(LOOPstart);
+    if (location.host == 'localhost') {//change the favicon and Title for local host.
+        document.getElementById("icon").href = "../../Icons/transWhiteCircle.png";
+        document.getElementById("titleMain").innerHTML="UTOOL LOCAL"
+    }
     dis('thinking','none')
     finishBoot()
 }
-
+//^END COMMON BOOT CODE (FINISH BOOT)
 //End of Boot============================================================================
 //UTOOL specific operations (not JSONedit related)
 function changeMode(mode) {
@@ -457,37 +591,36 @@ function changeMode(mode) {
         FLAGmode = 'Delay...';
     } else if (mode == 'Sequencing Loops...') {
         player.seekTo(LOOPstart);
+        statusMsg(LOOPname +" ("+parseInt(LOOP+1,10)+" of "+LOOPcount+")")
         document.getElementById('loopStopper').style.left = "65%";
         dis('loopStopper', 'block');
         player.playVideo();
         FLAG = LOOPfinish
         FLAGmode = 'Delaying Sequence...'
     } else if (mode == 'Delaying Sequence...') {
+        statusMsg( LOOPname +" ("+parseInt(document.getElementById('delay').value/1000)+" second delay...)")
         player.pauseVideo()
         var nextLoop = 0
+        TIMEOUTdelay = setTimeout(function() {
+            changeMode('Incrementing Loop...');
+        }, document.getElementById('delay').value);
+    } else if (mode == 'Incrementing Loop...') {
+        player.pauseVideo()
         if (LOOP < LOOPcount - 1) {
             LOOP = LOOP + 1;
         } else {
             LOOP = 0;
         }
-        statusMsg("Loop " + parseInt(LOOP + 1, 10) + " selected...")
-        LOOPname = JSONobj.file.tracks[VID].loops[LOOP].title;
         document.getElementById('loopStart').value = LOOPstart = JSONobj.file.tracks[VID].loops[LOOP].start; //in seconds
-        document.getElementById('loopFinish').value = LOOPfinish = JSONobj.file.tracks[VID].loops[LOOP].stop; //in seconds
-        LOOPtab = JSONobj.file.tracks[VID].loops[LOOP].stop; //in seconds
-        LOOPtab = JSONobj.file.tracks[VID].loops[LOOP].tab; //in seconds
-        LOOPnote = JSONobj.file.tracks[VID].loops[LOOP].desc; //in seconds
         player.seekTo(LOOPstart);
-        player.pauseVideo()
-        dis('runImg', 'none')
+        LOOPname = JSONobj.file.tracks[VID].loops[LOOP].title;
+        document.getElementById('loopFinish').value = LOOPfinish = JSONobj.file.tracks[VID].loops[LOOP].stop; //in seconds
+        LOOPnote = JSONobj.file.tracks[VID].loops[LOOP].desc;
         document.getElementById('loops').selectedIndex = LOOP
-        TIMEOUTdelay = setTimeout(function() {
-            changeMode('Sequencing Loops...');
-        }, document.getElementById('delay').value);
+        changeMode('Sequencing Loops...');
     } else if (mode == 'Delay...') {
         player.pauseVideo()
         player.seekTo(LOOPstart)
-        player.pauseVideo()
         dis('runImg', 'none')
         TIMEOUTdelay = setTimeout(function() {
             changeMode('Repeating...');
@@ -511,9 +644,6 @@ function loopReset(){
     document.getElementById('loopStart').value=LOOPstart = JSONobj.file.tracks[VID].loops[LOOP].start; //in seconds
     document.getElementById('loopFinish').value=LOOPfinish = JSONobj.file.tracks[VID].loops[LOOP].stop; //in seconds    
 }
-
-
-
 
 function loopSet(stst, delta) { //user can edit loop start and stop
     var t;
@@ -553,8 +683,8 @@ function timeMon() { //PLAYERtimecurrent loop position
 }
 
 function rotatePlayer(deg){
-deg=document.getElementById('spinner').value
-var str = "rotate("+ deg +"deg)"
+    deg=document.getElementById('spinner').value
+    var str = "rotate("+ deg +"deg)"
     // Code for IE9
     document.getElementById("player").style.msTransform = str;
     // Standard syntax
@@ -567,15 +697,10 @@ function levelPlayer(){
     document.getElementById("player").style.msTransform = str;
     document.getElementById("player").style.transform=str;
     document.getElementById('spinner').value=1
-
     statusMsg('Leveled Player...')
     //document.getElementById("player").style.transform="rotate(0deg)"
     document.getElementById('spinner').value=0;
     }
-    
-
-
-
 
 function sizeFrame(mag){//sizes the video
   MAG=mag;
@@ -583,3 +708,43 @@ function sizeFrame(mag){//sizes the video
   document.getElementById('player').style.height =MAG+"%";
   statusMsg("Magnified "+MAG+"%")
   }
+  
+function info(){//sizes the video
+    document.getElementById('popper').style.textAlign="left"
+    str=JSONobj.file.desc +"<br>=============================<br>"
+    str=str+"<p2>VIDEO: </p2>" +JSONobj.file.tracks[VID].title +"<br>"
+    str=str+JSONobj.file.tracks[VID].notes
+    popUp(str,"FILE/LESSON: "+JSONobj.file.title)
+  }  
+  
+
+//^edit MODES  
+function editStatus(sts){
+EDITstatus=sts;
+}
+
+
+function editClose(elemnt) {
+    if (EDITstatus == 'Pending') {
+        if (confirm('WARNING!\n====================\nYou have Changes Pending!\n CLOSE AND LOSE YOUR CHANGES??') == false) {
+            if (elemnt=='tabster'){tabsterEdit()}
+            return    
+        }
+    //}else if (EDITstatus == 'Updated') {
+    //    if (confirm('WARNING!\n====================\nYou have Updated the File!\n YOU MAY WANT TO SAVE IT\nCLOSE AND LOSE YOUR CHANGES??') == false) {
+    //        if (elemnt=='tabster'){tabsterEdit()}
+    //        return    
+    //    }
+    }
+    dis('tabster', 'none')
+    dis('editor', 'none')
+}
+
+function editMode(tf) {
+    if (tf == true) {
+        EDITmode = true
+
+    } else {
+        EDITmode = false
+    }
+}

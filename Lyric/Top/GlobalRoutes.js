@@ -66,7 +66,7 @@ fetch('http://localhost/foo.txt')
   .then(response => response.text())
   .then((data) => {
     console.log(data)
-  })
+  })*/
 function fileDownloadX(path){
     statusMsg('Downloading: '+ path);
     var xhr=new XMLHttpRequest();
@@ -144,7 +144,7 @@ function fileDownload2(path){
     // This is where you run code if the server returns any errors
     });
     }
-*/
+
 
 
 function fileSaveTextAs(fileName,textToWrite){   

@@ -140,12 +140,6 @@ function localCodeSave() {
             sel = sel + "<option value=\'" + localStorage.key(i) + "\'>" + localStorage.key(i) + "</option>";
         }
         localCodeRefreshSelect(nme)
-        //statusMsg('The Select box now has '+i+' elements...', 'yellow')
-        //document.getElementById('localCode').innerHTML = sel
-        
-        //statusMsg('Registered your new Code', 'yellow')
-        //document.getElementById('localCode').selectedValue = 'crap'
-        //statusMsg('set Selector to '+nme, 'yellow')
     }
 }
 
@@ -202,20 +196,21 @@ function locGet(){//performed after uploading a local file
 }
 
 //operations on JSONobj=======================================
-function XXXreplaceJSONobj(){
-    statusMsg("Unable to update JSONobj...Likely Error in text",'red')
-    statusMsg("ERROR! There is a JSON error in displayed text",'red');
-    document.getElementById('demoX').innerHTML='Text ERROR'
-    document.getElementById('demoX').style.backgroundColor='red';
+function replaceJSONobj(){
+   // statusMsg("Unable to update JSONobj...Likely Error in text",'red')
+   // statusMsg("ERROR! There is a JSON error in displayed text",'red');
+   // document.getElementById('demoX').innerHTML='Text ERROR'
+  //  document.getElementById('demoX').style.backgroundColor='red';
+    JSONfile=document.getElementById('demo').value
     JSONobj=JSON.parse(document.getElementById('demo').value);
     warn();
-    statusMsg("Gettng Videos...");
+    //statusMsg("Gettng Videos...");
     //fillVideos(VID,LOOP);
-    document.getElementById('demoX').innerHTML='VALID TEXT'
-    document.getElementById('demoX').style.backgroundColor='lightgreen';
-    document.getElementById('jsonX').innerHTML='EDITED'
-    document.getElementById('jsonX').style.backgroundColor='yellow';
-    statusMsg("Updated JSONobject with your data",'yellow')
+    //document.getElementById('demoX').innerHTML='VALID TEXT'
+    //document.getElementById('demoX').style.backgroundColor='lightgreen';
+    //document.getElementById('jsonX').innerHTML='EDITED'
+    //document.getElementById('jsonX').style.backgroundColor='yellow';
+    statusMsg("Updated JSONobject and JSONfile with your data",'yellow')
 }
 
 function restoreJSONobj(){

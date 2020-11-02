@@ -1,10 +1,17 @@
+<!--
+moved debugTrigger to field
+hid splash during boot if monitored
+added break icon to finsih boot and hide thinking,show msg
+changed h2 etc to p2 to avoid header designation
+-->
+
 <!DOCTYPE html>
     <head>
-        <!--COMMON STRUCTURE ======================================
+<!--
         Items requiring Change are marked YADA
         move bugs/make trigger go away/smaller default on any key
         -->
-        <link rel="shortcut icon" type="/png" href="../../Icons/transWhiteCircle.png"><!--YADA-->
+        <link id='icon' rel="shortcut icon" type="/png" href="../../Icons/blackUtubeTool.png"><!--YADA-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!-- prevents zooming on mobile devices....number-based width or "device-width"-->
         <title id = 'titleMain'>UTOOL</title> <!--YADA-->
@@ -16,9 +23,12 @@
               border-collapse: collapse;
             }
             #statusWindowheader{cursor: move; background-color:orange; color:black; font-size:1vw; line-height:100%; top:0%; width:100%; height:5%; overflow:hidden;}
-            #tabsheader{cursor: move; background-color:orange; color:black; font-size:1vw; line-height:100%; top:0%; width:100%; height:10%; overflow:hidden;}
+            #tabsheader{cursor: move; background-color:orange; color:black; font-size:2vw; line-height:100%; top:0%; width:100%; height:25%; overflow:hidden;}
+            #tabsterheader{cursor: move; background-color:orange; text-align:center;color:black; font-size:2vw; line-height:100%; top:0%; width:100%; height:15%; overflow:hidden;}
             #paceheader{cursor: move; background-color:orange; color:black; font-size:2vw; line-height:100%; top:0%; width:100%; height:25%; overflow:hidden;}
             #scratchPadheader{cursor: move; background-color:orange; color:black; font-size:1vw; line-height:100%; top:0%; width:100%; height:5%; overflow:hidden;}
+            #btheader{cursor: move; background-color:orange; color:black; font-size:1vw; line-height:100%; top:0%; width:100%; height:10%; overflow:hidden;}
+<!-- YADA STRUCTURE for all dragable forms-->               
             Body{
                 font-size:2vh;                
                 color:white;
@@ -31,15 +41,16 @@
                 background-color:black;
                 padding:0px;
                 margin:0px;
-                overflow:hidden;}
-            h1{color:white;}
-            h2{color:red;}
-            h3{color:orange;}
-            h4{color:yellow;}
-            h5{color:green;}
-            h6{color:blue;}
-            h7{color:indigo;}
-            h8{color:violet;}
+                overflow:hidden;
+            }
+            p1{color:white;}
+            p2{color:red;}
+            p3{color:orange;}
+            p4{color:yellow;}
+            p5{color:green;}
+            p6{color:blue;}
+            p7{color:indigo;}
+            p8{color:violet;}
             table{border-color:transparent;
                 background-color:transparent;}
             th  {border-style:groove;
@@ -50,10 +61,14 @@
             optgroup {font-size:1.5vw; }
         </style>    
     </head>
-    <body onresize=squish(1.0,0.50)><!--YADA--can change aspect-->
+    <body onunload=setLastCol() onresize=squish(1.0,0.50)>
+    <!--
+    <body onresize=squish(1.0,0.50) onunload="alert(1)"><!--YADA--can change aspect  add onunload etc-->
+    -->
     <form action=false><input type="file" id="fileInput" style="display:none;"/></form>
 <!--FIELD-->  
     <div id='field' style="position:fixed;display:block; font-size:2vw;color:black;top:0%; left:0%; width:100%; height:100%;background-color:pink;z-index:0">
+        <input id='debugTrigger' onkeydown="monitorBoot()" style="position:absolute;left:0%;width:1%;height:1%;bottom:0%;">
         <div onclick="dis('main')"style="position:absolute;border:groove;color:green;top:50%;left:30%;width:40%;">
             Click to return to the Main form...     
         </div>      
@@ -62,8 +77,8 @@
             <div style="position:absolute;width:100%;top:5%;height:50%;left:0%;">
                 UTOOL-3<br><br>A Javascript Application<br>by<br>Fred Kaparich<br>fkaparich@gmail.com<!--YADA-->
             </div>
-            <!--<img src='../../Icons/resetSpinner.gif' alt ="Booting..." style='position:absolute;width:20%; bottom:20%; right:40%;opacity:0.4;'>-->
-            <input id='debugTrigger' onkeydown="monitorBoot()" style="position:absolute;left:0%;width:1%;height:1%;bottom:0%;">
+            <!--<img src='../../Icons/resetSpinner.gif' alt ="Booting..." style='position:absolute;width:20%; bottom:20%; right:40%;opacity:0.4;'>
+            <input id='debugTrigger' onkeydown="monitorBoot()" style="position:absolute;left:0%;width:1%;height:1%;bottom:0%;">-->
         <!--    <input id='dubugSafety' style="position:absolute;right:0%; height:5%;bottom:0%;"> -->
             <img id='bootBug' src='../../Icons/bug2.gif' alt ="Check for bugs"  onclick="statusMonitor(2)" style='position:absolute;display:block; height:15%; right:0%;bottom:0%'>
         </div>
@@ -77,7 +92,8 @@
             <div id="statusWindowheader">
                 DEBUG WINDOW
             </div>
-            <img src="../../Icons/danger.png" onclick="statusMonitor(0)" style="position:absolute;width:7%;height:10%;right:1%;top:5%;">
+            <img src="../../Icons/danger.png" onclick="breakBoot()" style="position:absolute;width:7%;height:10%;left:1%;top:5%;">
+            <img src="../../Icons/blackClose.png" onclick="statusMonitor(0)" style="position:absolute;width:7%;height:10%;right:1%;top:5%;">
             <img src="../../Icons/bug2.gif" onclick="dis('statusWindow','none')" style="position:absolute;width:7%;height:10%;right:9%;top:5%;">
             <img src="../../Icons/clean.png" onclick="ARRstatusLog = ''.split('-'),statusMsg('-------------User Cleared Log---------',0);" style="position:absolute;width:7%;height:10%;right:17%;top:5%;">
             <select onchange="LOG=this.value.split('-')[1],ARRstatusLog=''.split('-')" style='position:absolute;top:8%;left:30%;width:40%;'><option>Record-20-Steps</option><option>Record-40-Steps</option><option>Record-80-Steps</option><option>Record-160-Steps</option><option>Record-320-Steps</option><option  selected>Record-640-Steps</option></select>
@@ -86,13 +102,13 @@
             </div>
         </div>
 <!--POPPER-- 9000-->    
-        <div id='popper' style="position:absolute; color:black; background-color:lightblue;font-weight:bold; border:groove;display:none; line-height:130%; overflow:hidden; font-size:2vw; text-align:center; left:5%; right:20%; top:30%; bottom:25%;z-index:9000">   
+        <div id='popper' style="resize:both;position:absolute; color:black; background-color:lightblue;font-weight:bold; border:groove;display:none; line-height:130%; overflow:hidden; font-size:2vw; text-align:center; left:5%; right:20%; top:30%; bottom:25%;z-index:9000">   
             <div id='popTitle'style="position:absolute;left:0%;right:0%;top:0%;height:10%;text-align:center">
                 POP UP NOTE!!
             </div>
             <img id='popClose' src="../../Icons/blackClose.png" onclick="dis('popper')"  style="position:absolute;display:block;right:0%;bottom:90%;height:10%;z-index:2000;">
             <img id='popCloser' src="../../Icons/resetSpinner.gif" onclick="dis('popper')" style="position:absolute;display:block;right:0%;bottom:90%;height:10%;z-index:2000;">
-            <div id='popText' style="position:absolute; color:black; background-color:lightgrey;font-weight:bold; border:groove;display:block; line-height:130%; overflow-y:scroll; text-align:center; left:0%; right:0%; top:10%; bottom:0%;overflow-y:auto;word-break: keep-all;">   
+            <div id='popText' style="position:absolute;color:black; background-color:lightgrey;font-weight:bold; border:groove;display:block; line-height:130%; overflow-y:scroll; text-align:left; left:0%; right:0%; top:10%; bottom:0%;overflow-y:auto;word-break: keep-all;">   
                 YOUR POP UP MESSAGE SHOULD HAVE APPEARED HERE!!   SORRY ABOUT THAT
             </div>   
         </div>
@@ -103,57 +119,184 @@
         Change anything below this line as you see fit, these are really just examples...YADA
         duplicate the main form to start other forms...      
         Convention id: title; src; action: STYLE position: font-size: text-align:color; background-color: border: left: right: top: bottom: width: height: z-index> -->     
+        
+<!--Scratch Pad-- 10500-->         
+        <div  id='scratchPad' style="position:absolute; resize:both; border-style:ridge; border-width:thick;display:none;color:white;text-align:center; font-size:1vw; background-color:lightgrey; overflow:hidden; height:61vh ;width:49vw; top:25vh; right:1vw;z-index:10500 ">
+            <div id="scratchPadheader">
+                Scratch Pad
+            </div>
+            <button id='wrap' onclick="toggleWrap('pad','wrap')"style="position:absolute;right:10%;top:0%;height:5%;">Scroll</button>
+            <img  title="Close" src="../../Icons/blackClose.png" alt="X" onclick="dis('scratchPad')" style="position:absolute;right:0%;top:0%;height:5%;">
+            <textarea id='pad' style="border-style:groove;text-align:left; line-height:120%;  position:absolute;overflow:scroll;left:1%; top:6%;width:98%;height:92%;color:black;background-color:white;">
+            Put your scratch Here!
+            </textarea>
+        </div>
+<!--Backtrack-- 12000--> 
+        <div id="bt" style="resize:both;position:absolute;overflow:hidden;background-color:black;border:ridge; z-index:12000;left:10%;top:10%;height:25%;width:25%; display:none">
+            <div id="btheader">
+                Back Track
+            </div>
+            <img  title="Resize" src="../../Icons/blackResize.png" alt="X" onclick="resizePlayer2()" style="position:absolute;left:0%;top:0%;height:10%;">
+            <img  title="Close" src="../../Icons/blackClose.png" alt="X" onclick="closeBT()" style="position:absolute;right:0%;top:0%;height:10%;">
+            <div id='btBlock' style="position:absolute;display:none;left:0%;top:10%;height:90%;width:100%;background-color:yellow;z-index:5"></div>
+            <object id="player2" type=" application/x-shockwave-flash" overflow="hidden" postition="absolute" top="10%" width="90%" height="80%" data="https://www.youtube.com/v/g8wj7AWZHLk?version=2&enablejsapi=1&theme=light">
+            </object>   
+        </div>     
 
-<div  id='scratchPad' style="position:absolute; resize:both; border-style:ridge; border-width:thick;display:none;color:white;text-align:center; font-size:1vw; background-color:lightgrey; overflow:hidden; height:61vh ;width:49vw; top:25vh; right:1vw;z-index:10500 ">
-    <div id="scratchPadheader">
-        Scratch Pad
-    </div>
-    <button id='wrap' onclick="toggleWrap('pad','wrap')"style="position:absolute;right:10%;top:0%;height:5%;">Scroll</button>
-    <img  title="Close" src="../../Icons/blackClose.png" alt="X" onclick="dis('scratchPad')" style="position:absolute;right:0%;top:0%;height:5%;">
-    <textarea id='pad' style="border-style:groove;text-align:left; line-height:120%;  position:absolute;overflow:scroll;left:1%; top:6%;width:98%;height:92%;color:black;background-color:white;">
-    Put your scratch Here!
-    </textarea>
-</div>
+<!--tabster 12500======================================================================================================================-->
+        <div id='tabster' style="resize:both;position:absolute;overflow:hidden;border:ridge;background-color:lightgrey; z-index:12500;left:2%;top:10%;height:25%;width:96%; display:none">
+            <div id="tabsterheader">
+                Tabster!
+            </div><!--
+            <div style='position:absolute;width:40%;height:15%;top:0%;left:0%;text-align:right;background-color: black'></div>-->
+            <div id='tabButtons' style='position:absolute;width:20%;height:15%;top:0%;right:0%;text-align:right;background-color: black'>
+                <img title="Save thefile" onclick="fileSaveTextAs(FILEname+'.json', JSON.stringify(JSONobj))" src="..\..\Icons\blackSave.png" style="position:relative;height:100%;">
+                <img id='tabsterEdit' src="../../Icons/blackEdit.png" onclick="tabsterEdit()" style="position:relative;height:100%;">
+                <img id='tabsterClose' src="../../Icons/blackClose.png" onclick="editClose('tabster')"  style="position:relative;height:100%;">
+
+            </div>
+            <textarea id='editLOOPtab' onchange="editStatus('Pending',this.id),document.getElementById('editLOOPtab').style.backgroundColor='pink'" style="resize:none;position:absolute; text-align:left; width:95%;top:15%; height:80%; left:1%; overflow:scroll; white-space:nowrap;">
+                Tab Appears Here
+            </textarea>
+            
+            <div id='tEdit' style="position:absolute;display:none;border:none;text-align:left; height:0%; width:100%;left:0%;top:70%;">
+                <div style="position:absolute;border:none;text-align:left; height:60%; width:98%;left:0%;top:0%;">
+                    <button onclick="document.getElementById('editLOOPtab').value=stringToTab(document.getElementById('stringView').value);">^TO TAB ^</button>
+                    <button onclick="document.getElementById('stringView').value=tabToString(document.getElementById('editLOOPtab').value);">v TO STRING v</button>
+                    <button onclick="addBarToTab()">+Add Bar+</button>
+                    <button onclick="expandTab(1)">Expand Tab</button>
+                    <button onclick="expandTab(-1)">Contract Tab</button>
+                    <button onclick="removeBar()">Remove BAR</button>
+                    <button onclick="transposeTab(document.getElementById('stringView').value,-1)">Key -</button>
+                    <button onclick="transposeTab(document.getElementById('stringView').value,1)">Key +</button>
+                    <button onclick="dis('tabBuilder')">New Tab +</button>
+                    <button onclick="updateTab()" style="color:red;">UPDATE</button>
+                </div>  
+                <textarea id='stringView' style="resize:none;position:absolute; text-align:left;width:98%;top:60%; height:30%; left:0%; overflow-y:hidden;overflow-x:scroll;white-space: pre;">-</textarea>
+            </div>    
+            <div id ='tabBuilder' style="position:absolute;line-height:100%;text-align:left;border:solid;background-color:red; border-color:white;display:none;height:75%;width:30%;left:60%;top:20%;z-index:20001;">
+                <img src="../../Icons/blackClose.png" alt="+" title ="Cancel" onclick="dis('tabBuilder','none')" style="position:absolute; height:20%; right:0%; top:0%;">
+                <img src="../../Icons/blackThumbsUp.png" alt="+" title ="OK (Clears your previous work in the tab frame...)" onclick="tabNew(),dis('tabBuilder','none')" style="position:absolute; height:20%; right:20%; top:0;">
+                TAB BUILDER
+                <div style="position:absolute; top:20%;left:30%;">
+                    Beats per Bar
+                </div>
+                <select id = "beat" style= "position:absolute; top:20%; background-color:white; left:5%;">
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4 selected>4</option>
+                    <option value=5>5</option>
+                    <option value=6>6 </option>
+                    <option value=7>7 </option>
+                    <option value=8>8</option>
+                    <option value=9>9 </option>
+                    <option value=10>10</option>
+                    <option value=11>11</option>
+                    <option value=12>12</option>
+                    <option value=16>16</option>
+                </select>
+                <div style="position:absolute;top:40%;left:30%;">
+                    Bars
+                </div>
+                <select id = 'bars' style= "position:absolute; background-color:white; top:40%; left:5%;">
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4 selected>4</option>
+                    <option value=5>5</option>
+                    <option value=6>6 </option>
+                    <option value=7>7 </option>
+                    <option value=8>8</option>
+                    <option value=9>9 </option>
+                    <option value=10>10 </option>
+                    <option value=11>11</option>
+                    <option value=12>12</option>
+                    <option value=13>13</option>
+                    <option value=14>14</option>
+                    <option value=15>15</option>
+                    <option value=16>16 </option>
+                    <option value=17>17 </option>
+                    <option value=18>18</option>
+                    <option value=19>19 </option>
+                    <option value=20>20 </option>
+                    <option value=21>21</option>
+                </select>
+                <div style="position:absolute; top:60%; left:30%;">
+                      Divisions per Beat
+                </div>
+                <select id = 'divs' style="position:absolute; background-color:white; top:60%; left:5%;">
+                    <option value=1>1</option>
+                    <option value=2 selected>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                    <option value=6>6</option>
+                    <option value=7>7</option>
+                    <option value=8>8</option>
+                    <option value=9>9</option>
+                    </select>
+                <div style="position:absolute; top:80%; left:30%;">
+                    Charcters per Div
+                </div>
+                <select id = 'chrs' style= "position:absolute; background-color:white; top:80%; left:5%;">
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4 selected>4</option>
+                    <option value=5>5</option>
+                    <option value=6>6 </option>
+                    <option value=7>7 </option>
+                    <option value=8>8</option>
+                    <option value=9>9 </option>
+                    <option value=10>10</option>
+                    <option value=11>11</option>
+                    <option value=12>12</option>
+                    <option value=16>16</option>
+                </select>
+            </div>
+        </div> 
 <!--MAIN FORM--> 
         <div id ="main" style="position:absolute; display:block; font-size:2vw;text-align:center;  background-color:lightgrey; top:5%; left:0%; width:100%; height:95%; z-index:0">
-<!--HEADER--> 
+<!--MAIN HEADER--> 
             <div id='hdr' style='position:absolute;background-color:black;border:none;left:0%;top:0%;height:8%;width:100%;'>
-                <div id='warning' onclick="dis(this.id)" style="position:absolute; display:none; width:15%; background-color:red; left:0%; height:80%; top:10%;z-index:6001">Edited!</div>
+                <div id='warning' onclick="if(confirm('Close the Warning?')==true){dis('warning')}" style="position:absolute; display:none; width:15%; background-color:red; left:0%; line-height:200%; text-align:left; top:10%;z-index:6001">Edited!<img src="../../Icons/warning.gif" alt="+" onclick="alert('EDIT MODE')" style='position:absolute;right:0%;top:0%;height:100%;'></div>
                 <select id = 'fileIndex' title='AVAILABLE COLLECTIONS (ON WEB SERVER)' onchange="colSelect(this.value);" style= "position:absolute; display:none; width:15%; background-color:white; left:0%; height:80%; top:10%;z-index:6000">
                 </select>
                 <select id = 'videos' title='AVAILABLE UTUBE VIDEOS (IN THIS FILE)'onchange="vidSelect(this.selectedIndex,0)" style= "position:absolute; display:block; width:15%; background-color:white; left:15%; height:80%; top:10%;">
                 </select>
                 <select id = 'loops' title= 'AVAILABLE LOOPS FOR THIS VIDEO' onchange="loopSelect(this.selectedIndex)"  style= "position:absolute; display:block; width:15%; background-color:white; left:30%; height:80%; top:10%;">????
                 </select>
-                <img  title="Adjustments" src="../../Icons/blackTools.png" alt="+" onclick="dis('pace')" style='position:absolute;right:18%;top:1%;height:98%;'>
-                <img  title="Editor" src="../../Icons/blackEdit.png" alt="+" onclick="openEditor()" style='position:absolute;right:9%;top:1%;height:98%;'>
-                <img  title="Tabs" src="../../Icons/blackTab.png" alt="+" onclick="viewTab()" style='position:absolute;right:0%;top:1%;height:98%;'>
-            </div>
-<!--FLOATING CONTROLS-->             
-            <div id="tabs" style="position:absolute; resize:both; border-style:ridge; border-width:thick;display:none;color:white;text-align:center; font-size:1vw; background-color:lightgrey; overflow:hidden; height:30% ;width:98%; top:10%; left:1%;z-index:10500">
-                <div id="tabsheader">
-                    Guitar TAB
+                    <div style="text-align:right;position:absolute;width:50%;left:50%;height:100%">
+                        <img title="Save the text as a file" onclick="fileSaveTextAs(FILEname+'.json',  JSON.stringify(JSONobj))" src="..\..\Icons\blackSave.png" style='position:relative;top:0%;height:100%;'>
+                        <img title="Information" src="../../Icons/blackInfo.png" alt="+" onclick="info()" style='position:relative;top:1%;height:98%;'>
+                        <img title="Backing Track" src="../../Icons/blackUtubeTracks.png" alt="+" onclick="openBT()" style='position:relative;top:1%;height:98%;'>
+                        <img title="capture" src="../../Icons/blackUtubeDown.png" alt="+" onclick="capture()" style='position:relative;top:1%;height:98%;'>
+                        <img title="Adjustments" src="../../Icons/blackTools.png" alt="+" onclick="dis('pace')" style='position:relative;top:1%;height:98%;'>
+                        <img title="Editor" src="../../Icons/blackEdit.png" alt="+" onclick="openEditor()" style='position:relative;top:1%;height:98%;'>
+                        
+                        <img  title="Tabs" src="../../Icons/blackTab.png" alt="+"onclick="updateTabster()" style='position:relative;top:1%;height:98%;'>
+                    </div>
                 </div>
-                <img  src="../../Icons/blackClose.png" alt="X"onclick="dis('tabs')"style='position:absolute;right:0%;top:0%;height:9%;'>
-                <textarea id='tabBox' style="border-style:groove;text-align:left; line-height:120%; position:absolute;overflow:scroll;left:1%; top:11%;width:98%;height:88%;color:black;background-color:white;">
-                </textarea>
-            </div>
-            <div  id='pace' style='position:absolute;display:none;text-align:left; font-size:2vw; background-color:yellow; border:groove; right:5%; bottom:5%; height:25%; width:45%; z-index:450;'>
+<!--FLOATING CONTROLS-->             
+<!--Pace-->              
+            <div  id='pace' style='position:absolute;display:none;text-align:center; font-size:1.5vw;border:groove; right:5%; bottom:5%; height:30%; width:45%; z-index:450;'>
                 <div id="paceheader">
                         Player Adjustments...
-                    </div>    
+                    </div>
                 <img  src="../../Icons/blackClose.png" alt="X"onclick="dis('pace')"style='position:absolute;right:0%;top:0%;height:25%;z-index:550;'>
-                <img  title="Reset ALL" src="../../Icons/blackReset.png" alt="X"onclick="sizeFrame(100),levelPlayer(),clearTimeout(TIMEOUTscroll),document.getElementById('rate').value=1,newRate(1)"style='position:absolute;right:15%;top:0%;height:25%;z-index:550;'>
-                <div  id='size' style='position:absolute;display:block;background-color:lightblue;border:none;left:0%;top:25%;height:25%;width:100%; z-index:450;'>
-                    <img  src="../../Icons/blackResize.png" alt="X"onclick="sizeFrame(100),document.getElementById('sizer').value=100" style='position:absolute;left:0%;top:1%;width:10%;height:98%;'>
+                <img  title="Reset ALL" src="../../Icons/blackReset.png" alt="X"onclick="sizeFrame(100),levelPlayer(),clearTimeout(TIMEOUTscroll),document.getElementById('rate').value=1,newRate(1)"style='position:absolute;left:0%;top:0%;height:25%;z-index:10500'>
+                <div  id='size' style='position:absolute;text-align:center;background-color:lightblue;border:none;left:0%;top:25%;height:25%;width:100%; z-index:450;'>
+                    <img  src="../../Icons/blackReset.png" alt="X"onclick="sizeFrame(100),document.getElementById('sizer').value=100" style='position:absolute;left:0%;top:0%;height:100%'>
                     <input id='sizer' type="range" oninput="sizeFrame(this.value)" min="50" max="400" value="100" style="position:absolute;color:black;left:20%;width:75%;">
+                    <div style='position:absolute;line-height: 100%;left:10%;width:90%;top:50%;height:50%;'><==SHRINK..........ENLARGE==></div>
                 </div>      
-                <div  id='rotate' style='position:absolute;display:block;background-color:lightyellow;border:none;left:0%;top:50%;height:25%;width:100%; z-index:450;'>
-                    <img  src="../../Icons/blackLevel.png" alt="X"onclick="levelPlayer()" style='position:absolute;left:0%;top:1%;width:10%;height:98%;'>
+                <div  id='rotate' style='position:absolute;text-align:center;background-color:yellow;border:none;left:0%;top:50%;height:25%;width:100%; z-index:450;'>
+                    <img  src="../../Icons/blackReset.png" alt="X"onclick="levelPlayer()" style='position:absolute;left:0%;top:0%;height:100%'>
                     <input id='spinner'type="range" oninput="rotatePlayer(this.value)" min="-180" max="180" value="0" style="position:absolute;color:black;left:20%;width:75%;">
+                    <div style='position:absolute;line-height: 100%;left:10%;width:90%;top:50%;height:50%;'><==ccw ROTATE cw==></div>
                 </div>    
-                <div id='speed' style= "position:absolute; width:100%;left:0%; height:25%;top:75%;">
-                        <img  src="../../Icons/blackSpeed.png" alt="X" onclick="clearTimeout(TIMEOUTscroll),document.getElementById('rate').value=1,newRate(1)" style='position:absolute;left:0%;top:0%;width:10%;height:100%;'>    
+                <div id='speed' style= "position:absolute; background-color:white;width:100%;left:0%; height:25%;top:75%;">
+                        <img  src="../../Icons/blackReset.png" alt="X" onclick="clearTimeout(TIMEOUTscroll),document.getElementById('rate').value=1,newRate(1)" style='position:absolute;left:0%;top:0%;height:100%'>
                         <select id = 'rate' title ="Playback Speed" onchange="newRate(this.value)" style= "position:absolute; font-size:2vw;width:15%; left:10%; height:100%; top:0%;">
                         </select>
                         <select id = 'fps' onchange="mode='Paused...';FPS=this.value" style= "position:absolute; font-size:2vw;top:0%; background-color:white; left:25%; top:0%; width:15%;height:100%;">
@@ -213,8 +356,6 @@
                 </select>
 <!--LOOP BOX -->                 
                 <div id='loopBox' style="position:absolute; background-color:yellow; bottom:0%; left:25%; height:100%; width:50%;">
-                    
-
                     <img alt="<"id="lsm" title="START LOOP SOONER" onclick="loopSet('start',-1)" src="../../Icons/left.png" style="position:absolute; left:20%; width:8%; bottom:0%;height:100%; z-index:450;">
                     <input id="loopStart" type="text" onclick="loopSet('start',0)" title="CLICK TO SET LOOP START" style="position:absolute; border:none;left:28%; width:8%; bottom:0%;top:0%;text-align:center; z-index:450";>
                     <img alt=">"id="lsp" title="START LOOP LATER "onclick="loopSet('start',1)" src="../../Icons/right.png" style="position:absolute;  left:36%; width:8%; bottom:0%;height:100%; z-index:450;">
@@ -240,14 +381,15 @@
      
 <!--Start of editor ====================================================================================================== -->        
         <div id ="editUtool" style="position:absolute; display:none; border:groove;font-size:1.5vw;text-align:left;line-height: 100%;  background-color:black; top:13%; left:0%; width:100%; height:87%; z-index:500">
-            <div id='editHd'style='position:absolute;text-align: center;line-height:0% ;background-color:black;left:0%;top:0%;height:9%;width:100%'>
-
-                <img title="Save the text as a file" onclick="fileSaveTextAs(FILEname+'.json', document.getElementById('demo').value),save()" src="..\..\Icons\blackSave.png" style='position:absolute;left:0%;top:1%;height:98%;'>
+            <div id='editHd'style='position:absolute;text-align: center;line-height:200% ;background-color:black;left:0%;top:0%;height:9%;width:100%'>
+                <img title="Save the text as a file" onclick="fileSaveTextAs(FILEname+'.json',  JSON.stringify(JSONobj))" src="..\..\Icons\blackSave.png" style='position:absolute;left:0%;top:1%;height:98%;'>
+  
                 <img title="Select any local file" onclick="fileGetLocal('locGet()')"  src="../../Icons/blackRead.png" id='getLocal'" style='position:absolute;left:7%;top:1%;height:98%;'>
                 <img title="ScratchPad" onclick="dis('scratchPad')"  src="../../Icons/blackNotepad.png"  style='position:absolute;left:14%;top:1%;height:98%;'>
                 <div id='jsonX' style='position:absolute;line-height: 100%; background-color:lightgreen; color:black; left:21%; top:0%; width:14%; height:100%;'>Valid JSON</div>
-                <h1>{[JSON]}</h1>
+                <p1>EDITOR {JSON}</p1>
                 <div id='demoX' style='position:absolute;line-height: 100%; background-color:lightgreen; color:black; right:21%; top:0%; width:14%; height:100%;'>Valid Text</div>
+                <img  title="Tabs" src="../../Icons/blackTurd.png" alt="+" onclick="loopsGet() " style='position:absolute;right:10%;top:1%;height:98%;'>
                 <img  title="Tabs" src="../../Icons/blackTabEdit.png" alt="+" onclick="dis('tabster'),updateTabster() " style='position:absolute;right:7%;top:1%;height:98%;'>
                 <img id='editClose' src="../../Icons/blackClose.png" onclick="dis('editUtool')"  style="position:absolute;display:block;right:0%;bottom:1%;height:98%;">
             </div>
@@ -326,108 +468,16 @@
         </div>
 <!--end of the editor -->
 
-<!--start of the tabster ======================================================================================================================-->
-        <div id='tabster' style="position:fixed;display:none;border:groove;background-color:black;left:5%;width:90%;bottom:8%;top:13%; z-index:9000;">TABSTER
-            <div id='editHd'style='position:absolute;text-align: center;line-height:0% ;background-color:black;left:0%;top:0%;height:9%;width:100%'>
-                <h1>TABSTER</h1>
-                <img id='tabsterClose' src="../../Icons/blackClose.png" onclick="dis('tabster')"  style="position:absolute;display:block;right:0%;bottom:0%;height:100%;">
-            </div>   
-            <div style="position:absolute;display:none;text-align:left; height:7%;width:10%;left:1%;top:20%;">TAB:</div>
-                <textarea id='editLOOPtab' onchange="editStatus('changed',this.id)" style="position:absolute; text-align:left; width:90%;top:19%; height:41%; right:1%; overflow-y:hidden;overflow-x:scroll;white-space: pre;"></textarea>
-                <div style="position:absolute;border:groove;text-align:left; height:7%; width:98%;right:1%;top:82%;"> TAB-EDIT BUTTONS
-                    <button onclick="document.getElementById('editLOOPtab').value=stringToTab(document.getElementById('stringView').value);">^TO TAB ^</button>
-                    <button onclick="document.getElementById('stringView').value=tabToString(document.getElementById('editLOOPtab').value);">v TO STRING v</button>
-                    <button onclick="addBarToTab()">+Add Bar+</button>
-                    <button onclick="expandTab(1)">Expand Tab</button>
-                    <button onclick="expandTab(-1)">Contract Tab</button>
-                    <button onclick="removeBar()">Remove BAR</button>
-                    <button onclick="transposeTab(document.getElementById('stringView').value,-1)">Key -</button>
-                    <button onclick="transposeTab(document.getElementById('stringView').value,1)">Key +</button>
-                    <button onclick="dis('tabBuilder')">New Tab +</button>
-                    <button onclick="saveTab()">Save this Tab+</button>
-                    </div>  
-                <textarea id='stringView' style="position:absolute; text-align:left; width:90%;top:63%; height:13%; right:1%; overflow-y:hidden;overflow-x:scroll;white-space: pre;">-</textarea>
-            </div>
-            <div id ='tabBuilder' style="line-height:100%;text-align:left;border:solid;background-color:lightblue; border-color:white;display:none; position:absolute;height:46%;width:30%;right:1%;top:50%;z-index:20001;">
-                <img src="../../Icons/blackClose.png" alt="+" title ="Cancel" onclick="dis('tabBuilder','none')" style="position:absolute; height:20%; right:0%; top:0%;">
-                <img src="../../Icons/blackThumbsUp.png" alt="+" title ="OK (Clears your previous work in the tab frame...)" onclick="tabNew(),dis('tabBuilder','none')" style="position:absolute; height:20%; right:20%; top:0;">
-                TAB BUILDER
-                <div style="position:absolute; top:20%;left:30%;">
-                    Beats per Bar
-                </div>
-                <select id = "beat" style= "position:absolute; top:20%; background-color:white; left:5%;">
-                    <option value=2>2</option>
-                    <option value=3>3</option>
-                    <option value=4 selected>4</option>
-                    <option value=5>5</option>
-                    <option value=6>6 </option>
-                    <option value=7>7 </option>
-                    <option value=8>8</option>
-                    <option value=9>9 </option>
-                </select>
-                <div style="position:absolute;top:40%;left:30%;">
-                    Bars
-                </div>
-                <select id = 'bars' style= "position:absolute; background-color:white; top:40%; left:5%;">
-                    <option value=1>1</option>
-                    <option value=2>2</option>
-                    <option value=3>3</option>
-                    <option value=4 selected>4</option>
-                    <option value=5>5</option>
-                    <option value=6>6 </option>
-                    <option value=7>7 </option>
-                    <option value=8>8</option>
-                    <option value=9>9 </option>
-                    <option value=10>10 </option>
-                    <option value=11>11</option>
-                    <option value=12>12</option>
-                    <option value=13>13</option>
-                    <option value=14>14</option>
-                    <option value=15>15</option>
-                    <option value=16>16 </option>
-                    <option value=17>17 </option>
-                    <option value=18>18</option>
-                    <option value=19>19 </option>
-                    <option value=20>20 </option>
-                    <option value=21>21</option>
-                </select>
-                <div style="position:absolute; top:60%; left:30%;">
-                      Divisions per Beat
-                </div>
-                <select id = 'divs' style="position:absolute; background-color:white; top:60%; left:5%;">
-                    <option value=1>1</option>
-                    <option value=2 selected>2</option>
-                    <option value=3>3</option>
-                    <option value=4>4</option>
-                    <option value=5>5</option>
-                    <option value=6>6</option>
-                    <option value=7>7</option>
-                    <option value=8>8</option>
-                    <option value=9>9</option>
-                    </select>
-                <div style="position:absolute; top:80%; left:30%;">
-                    Charcters per Div
-                </div>
-                <select id = 'chrs' style= "position:absolute; background-color:white; top:80%; left:5%;">
-                    <option value=1>1</option>
-                    <option value=2>2</option>
-                    <option value=3>3</option>
-                    <option value=4 selected>4</option>
-                    <option value=5>5</option>
-                    <option value=6>6 </option>
-                    <option value=7>7 </option>
-                    <option value=8>8</option>
-                    <option value=9>9 </option>
-                </select>
-              </div>
-            </div> 
+
  <!--  end of the tabster -->
 
 <!--START OF CUSTOM STRUCTURE Part 2 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
     </div><!--end of field-->      
 <!--END OF CUSTOM STRUCTURE  Part 2 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+
+   
     <SCRIPT type="text/javascript" SRC = "Tabs.js"></script>
-    <SCRIPT type="text/javascript" SRC = "Json.js"></script><!--   -->    
+   <!--    <SCRIPT type="text/javascript" SRC = "Json.js"></script><!--   -->    
     <SCRIPT type="text/javascript" SRC = "Global.js"></script>
     <SCRIPT type="text/javascript" SRC = "Utool-3.js"></script><!--change this form-->
     </body>

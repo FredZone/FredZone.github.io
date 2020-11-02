@@ -1,0 +1,68 @@
+TITLE:Right Down The Line,DUR:266,BPM:120,BEATS:4,KEY:Am,QUAL:Raw,ARTIST:Gerry Rafferty ,GENRE:Rock,STYLE:Ballad,HITyear:TBD
+
+#INTRO ----------------------------------
+|Am                |G                 |Em                |C
+-
+|Am                |G                 |Em                |C
+-
+|Am                |G                 |Em                |C
+-
+|G             |D             |Em            |D             |C
+-
+#VERSE 1 --------------------------------
+|Am                |G                 |Em                |C
+You know I need your love   You've got that hold over me
+|Am                |G                 |Em                |C
+Long as I got your love   You know that I'll never leave
+|Am                |G                 |Em                |C
+When I wanted you to share my life I had no doubt in my mind
+|G             |D             |Em            |D             |C
+And it's been you Woman Right down the line
+|Am                |G                 |Em                |C
+I know how much I lean on you        Only you can see
+|Am                |G                 |Em                |C
+The changes that I've been through   Have left a mark on me
+|Am                |G                 |Em                |C
+You've been as constant as a northern star  The brightest light that shines
+|G             |D             |Em           ~D             |C
+And it's been you Woman Right down the line
+#BRIDGE ---------------------------------
+|A                 |F#m               |D
+I just want to say this is my way
+|B/Eb              |E                 |C                 |Am
+Of telling you everything I could never Say before
+|F#m               |D
+Yeah this is my way
+|B/Eb              |E                 |C                 |Am
+Of telling you that every day I'm loving you so much more...
+#VERSE 2 --------------------------------
+|G                 |Em                |C
+'Cause you believed in me    Through my darkest night
+|Am                |G                 |Em                |C
+Put something better inside of me    You brought me into the light
+|Am                |G                 |Em                |C
+Threw away all those crazy dreams    I put them all behind
+|G             |D             |Em       ~D             |C
+And it was you Woman Right down the line
+|G      |Em     |C      |       |(x3)G  |D      |EmD    |C      |       |       |
+#BRIDGE ---------------------------------
+|A                 |F#m               |D
+I just want to say this is my way
+|B/Eb              |E                 |C                 |Am
+Of telling you everything I could never Say before
+|F#m               |D
+Yeah this is my way
+|B/Eb              |E                 |C                 |Am
+Of telling you that every day I'm loving you so much more...
+#VERSE 3 --------------------------------
+|G                 |Em                |C
+If I should doubt myself    If I'm losing ground
+|Am                |G                 |Em                |C
+I won't turn to someone else   They'd only let me down
+|Am                |G                 |Em                |C
+When I wanted you to share my life   I had no doubt in my mind
+|G             |D             |Em            |D             |C
+And it's been you Woman Right down the line
+#OUTRO ----------------------------------
+|A     |F#m   |D     |B/Eb  |E     |C     |Am    |F#m   |D     |B/Eb  |E     |C     |Am(&fade)
+Oooh  ooohhh..Woooh... etc.

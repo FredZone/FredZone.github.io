@@ -91,7 +91,7 @@
             </div>
             <img id='popClose' src="../../Icons/blackClose.png" onclick="dis('popper')"  style="position:absolute;display:block;right:0%;bottom:90%;height:10%;z-index:2000;">
             <img id='popCloser' src="../../Icons/resetSpinner.gif" onclick="dis('popper')" style="position:absolute;display:block;right:0%;bottom:90%;height:10%;z-index:2000;">
-            <div id='popText' style="position:absolute; color:black; background-color:lightgrey;font-weight:bold; border:groove;display:block; line-height:130%; overflow-y:scroll; text-align:center; left:0%; right:0%; top:10%; bottom:0%;overflow-y:auto;word-break: keep-all;">   
+            <div id='popText' style="position:absolute; color:black; background-color:lightgrey;font-weight:bold; border:groove;display:block; line-height:130%; overflow-y:scroll; text-align:left; left:0%; right:0%; top:10%; bottom:0%;overflow-y:auto;word-break: keep-all;">   
                 YOUR POP UP MESSAGE SHOULD HAVE APPERED HERE!!   SORRY ABOUT THAT
             </div>   
         </div>
@@ -112,6 +112,8 @@
                 </select>
                 <select id = 'videos' title='AVAILABLE UTUBE VIDEOS (IN THIS FILE)'onchange="vidSelect(this.selectedIndex,0)" style= "position:absolute; display:block; width:15%; background-color:white; left:15%; height:80%; top:10%;">
                 </select>
+                <img  id='crap' onclick='chords()' title='CHORD PATTERN' src='../../Icons/blackChord.png' alt='+' style='position:absolute;right:9%;top:1%;height:98%;'>
+                <img  id='info' onclick='info()' title='Available Informaton...' src='../../Icons/blackInfo.png' alt='+' style='position:absolute;right:0%;top:1%;height:98%;'>
             </div>
 <!--iFrame Container -->            
             <div id='scroller' style="position:absolute;background-color:black;overflow-x:scroll;overflow-y:scroll;left:0%; height:87%; width:100%; top:8%; z-index:300;">
@@ -124,7 +126,22 @@
 <!--START OF CUSTOM STRUCTURE Part 2 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
     </div><!--end of field-->      
 <!--END OF CUSTOM STRUCTURE  Part 2 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
-    <SCRIPT type="text/javascript" SRC = "Global.js"></script>
-    <SCRIPT type="text/javascript" SRC = "Tracks.js"></script><!--change this form-->
+
+    <script type="text/javascript" src="Tracks.js"></script>
+    <script type="text/javascript" src="Global.js"></script>
+    <script type="text/javascript">
+        function crapola(){
+            var txt = 'TITLE: ' + JSONobj.video[VID].title;
+            txt = txt + '<br>NOTES: ' + JSONobj.video[VID].notes;
+            txt = txt + '<br>KEY: ' + JSONobj.video[VID].key;
+            txt = txt + '<br>CLASS: ' + JSONobj.video[VID].class;
+            txt = txt + '<br> TEMPO: ' + JSONobj.video[VID].tempo;
+            txt = txt + '<br>START: ' + JSONobj.video[VID].start;
+            txt = txt + '<br>STOP: ' + JSONobj.video[VID].stop;
+            txt = txt + '<br>CHORDS: ' + JSONobj.video[VID].chords;
+            popUp(txt, "Track Info", undefined, 'lightgrey');
+            //document.getElementById('popper').style.textAlign='left';
+      }
+    </script>
     </body>
 </html>

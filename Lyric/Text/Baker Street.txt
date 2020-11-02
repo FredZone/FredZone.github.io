@@ -1,0 +1,120 @@
+TITLE:Baker Street,DUR:222,BPM:120,BEATS:4,KEY:A,QUAL:Raw,ARTIST:Gerry Raferty,GENRE:Unknown,STYLE:Unknown,HITyear:TBD
+#INTRO ----------------------------------
+|A                            |%
+-
+|A                            |%
+-
+#VERSE 1 --------------------------------
+|A                            |%
+Winding your way down on Baker Street
+|A                            |%
+Lite in your head, and dead on your feet
+|Em                           |G
+Well an- other crazy day, you drink the night away
+|D                            |%
+And for- get about e- very- thing
+|A                            |%
+This city desert makes you feel so cold, it's got
+|A                            |%
+So many people but it's got no soul
+|Em                           |G
+And it's taken you so long to find out you were wrong
+|D                            |%
+When you thought it held e- very- thing
+#CHORUS 1 -------------------------------
+|Dm7                          |Am
+You used to think that it was so ea-       sy
+|Dm7                          |Am
+You used to say that it was so ea-        sy
+|C                            |G
+But you're tryin, you're tryin
+|D                            |%
+now
+|Dm7                          |Am
+Another year and then you'd be ha-      ppy
+|Dm7                          |Am
+Just one more year and then you'd be ha-      ppy
+|C                            |G
+But you're cryin', you're cryin'
+|A                            |F
+Now
+#BREAK 1 --------------------------------
+|D                            |%
+-
+|D                            |%
+-
+|C                            |A7sus4
+-
+|G                            |%
+-
+|D                            |%
+-
+|D                            |%
+-
+|C                            |A7sus4
+-
+|G                            |%
+-
+#VERSE 2 --------------------------------
+|A                            |%
+Way down the street there's a light in his place
+|A                            |%
+He opens the door, he's got that look on his face
+|Em                           |G
+And he asks you where you've been, you tell him who you've seen
+|D                            |%
+And you talk about a- ny-     thing
+|A                            |%
+He's got this dream a- bout   buyin' some land
+|A                            |%
+He's gonna give up the booze and the one night stands
+|Em                           |G
+And then he'll settle down, in some quiet little town
+|D                            |%
+And for- get about e- very- thing
+#CHORUS 2 -------------------------------
+|Dm7                          |Am
+But you know he'll always keep mo-     ving
+|Dm7                          |Am
+You know he's never gonna stop mo-     ving
+|C                            |G
+Cause he's rollin', he's the rolling
+|D                            |%
+stone
+|Dm7                          |Am
+And when you wake up it's a new mor-     ning
+|Dm7                          |Am
+The sun is shining it's a new   mor-    ning
+|C                            |G
+And you're going, you're going
+|A                            |F
+Home
+#BREAK 2 --------------------------------
+|D                            |%
+-
+|D                            |%
+-
+|C                            |A7sus4
+-
+|G                            |%
+-
+|D                            |%
+-
+|D                            |%
+-
+|C                            |A7sus4
+-
+|G                            |%
+-
+#OUTRO (fade)----------------------------------
+|D                            |%
+-
+|D                            |%
+-
+|C                            |A7sus4
+-
+|G                            |%
+-
+|D                            |D
+-
+|D

@@ -43,13 +43,32 @@ function onYouTubeIframeAPIReady() {
 //      done = true;
 //  }
 //}
+function info() {
+  var txt = 'TITLE: ' + JSONobj.video[VID].title;
+  txt = txt + '<br>NOTES: ' + JSONobj.video[VID].notes;
+  txt = txt + '<br>KEY: ' + JSONobj.video[VID].key;
+  txt = txt + '<br>CLASS: ' + JSONobj.video[VID].class;
+  txt = txt + '<br> TEMPO: ' + JSONobj.video[VID].tempo;
+  txt = txt + '<br>START: ' + JSONobj.video[VID].start;
+  txt = txt + '<br>STOP: ' + JSONobj.video[VID].stop;
+  txt = txt + '<br>Chords:<br>' + JSONobj.video[VID].chords;
+  popUp(txt, "Track Information", undefined, 'lightgrey');
+  //document.getElementById('popper').style.textAlign='left';
+}
+
+function chords(){
+  var txt =JSONobj.video[VID].chords;
+  popUp(txt, "Chord Pattern", undefined, 'lightgrey');
+}
+
 
 //REWRITE THE BOOT FUNCTION AS YOU SEE FIT
+
 function boot() {
     //dis('splash')
     //dis('thinking')
-    statusMsg('Loading javascript!')
-    MSGready = "Ready" //YADA
+    statusMsg('Loading javascript!');
+    MSGready = "Ready" ;//YADA
     if (navigator.onLine) {
         ONLINE = true;
         statusMsg("You are online.");
@@ -61,7 +80,7 @@ function boot() {
 }
 
 function collectionsGet() { //creates ARRcollections from server or local
-    statusMsg("Requesting Collection List'")
+    statusMsg("Requesting Collection List'");
     ARRcollections = fileDownload('Tracks.txt').split("\n");
     selectorBuild('fileIndex', ARRcollections, 0);
     dis('fileIndex', 'block');
@@ -70,10 +89,10 @@ function collectionsGet() { //creates ARRcollections from server or local
 
 function colSelect(col, vid) { //creates the ARRcollections select box
     if (isNaN(col)) {
-        col = 0
+        col = 0;
     }
     if (isNaN(vid)) {
-        vid = 0
+        vid = 0;
     }
     statusMsg('Collection ' + col + ' selected...');
     COL = col; //set the working Collection
@@ -82,15 +101,15 @@ function colSelect(col, vid) { //creates the ARRcollections select box
 }
 
 function vidsGet(vid){//alert('vidsGet('+vid+')');//creates ARRvideos passes default value to selector and default loop
-statusMsg('Requesting Collection '+COL);
+    statusMsg('Requesting Collection '+COL);
     if(isNaN(vid)){vid=0}
     if (vid===undefined|vid===''|vid===null){vid=0;}
     FILEname=ARRcollections[COL];
     statusMsg('Getting JSON Collection '+FILEname);
-    jsonLoad("../Tracks/"+FILEname+".json",vid)
+    jsonLoad("../Tracks/"+FILEname+".json",vid);
 }
 function jsonLoad(path,vid) {//XXXshould go to json.js eventually
-statusMsg ('Downloading JSON data file: '+path)   
+    statusMsg ('Downloading JSON data file: '+path)   
     if(isNaN(vid)){vid=0}
     vid=0;
     var content = "Attemping to Download" + path;
@@ -103,28 +122,23 @@ statusMsg ('Downloading JSON data file: '+path)
     }
     statusMsg("Parsing JSON data file" )
     JSONfile=content;
-
-    JSONobj=JSON.parse(content)
-    //alert(JSONobj.video[0].title)
+    JSONobj=JSON.parse(content);
     fillVideos(vid)
 }
 
 function fillVideos(vid) { //JSONselector(sel,str)
-    statusMsg('Cataloging in the Available Videos...')
+    statusMsg('Cataloging in the Available Videos...');
     var x, val, out;
     if(isNaN(vid)){vid=0}
-    
     out = ""
-    //alert(JSONobj.video[0].title)
     for (x in JSONobj.video) {
-        val = JSONobj.video[x].title
+        val = JSONobj.video[x].title;
         out = out + "<option value='" + val + "'>" + val + "</option>"
     }
-    //alert(out)
-    TRACKcount=JSONobj.video.length
-    document.getElementById('videos').innerHTML = out
-    document.getElementById('videos').selectedIndex=0
-    vidSelect(vid)
+    TRACKcount=JSONobj.video.length;
+    document.getElementById('videos').innerHTML = out;
+    document.getElementById('videos').selectedIndex=0;
+    vidSelect(vid);
 }
 
 function vidSelect(vid) {
@@ -144,17 +158,20 @@ function vidSelect(vid) {
     }else{
         statusMsg('Waiting for Video ('+UTID+') to load...','red');
         dis('thinking','block');
-        //loopsGet()
-        
+        dis('popper','none')
     }
 }
 //^ON VIDEO READY =====================================================
 function onPlayerReady(event){
   if (PATH!=undefined) {
-    
-    finishBoot()
-    
+    finishBoot();
   }
 }
+
+//^Unique functions==================================================
+
+function crapola() {alert('CRAPOLA')}
+
+
 
 

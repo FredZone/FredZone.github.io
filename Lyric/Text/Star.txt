@@ -1,0 +1,77 @@
+TITLE:Star,DUR:128,BPM:120,BEATS:4,KEY:C,QUAL:Preliminary,ARTIST:Steelers Wheel,GENRE:Folk,STYLE:Ballad,HITyear:TBD
+[Intro]  (x4)
+D Dsus2 D C
+#VERSE 1 --------------------------------
+|D             ~A             |F#m            ~Bm
+So they made you a star,
+|G             ~D
+now your head's in a cloud,
+|Em           ~Esus2           |Em           ~Esus2
+-
+|D             ~A             |F#m            ~Bm
+Now you're walking down the street
+|G             ~D
+with your feet off the ground
+|Em           ~Esus2           |Em           ~Esus2
+-
+#CHORUS 1 -------------------------------
+|Bm             ~A             |G             ~D
+They read in the press all about your success,
+|Em            ~Bm            |A
+They believe every word they've been told.
+|Bm             ~A             |G             ~D
+After all you've been through tell me  what will you do,
+|Em            ~Bm            |A
+When you find yourself out in the cold
+|G                            |A
+Aah tell me
+|G                            |A
+Aah tell me
+#VERSE 2 --------------------------------
+|D             ~A             |F#m            ~Bm
+When you appear on the stage
+|G             ~D
+there's a standing ovation,
+|Em           ~Esus2           |Em           ~Esus2
+-
+|D             ~A             |F#m            ~Bm
+You really live out your performance
+|G             ~D
+you're the biggest sensation.
+|Em           ~Esus2           |Em           ~Esus2
+-
+#CHORUS 2 -------------------------------
+|Bm             ~A             |G             ~D
+You breeze through the door and when you take the floor
+|Em            ~Bm            |A
+You expect to have it all to yourself.
+|Bm             ~A             |G             ~D
+After all you've been through
+|Em            ~Bm            |A
+tell me what will you do When you find yourself back on the shelf
+|G                            |A
+Aah tell me
+|G                            |A
+Aah tell me
+#CHORUS 3 -------------------------------
+|Bm             ~A             |G             ~D
+You breeze through the door and when you take the floor
+|Em            ~Bm            |A
+You expect to have it all to yourself.
+|Bm             ~A             |G             ~D
+After all you've been through
+|Em            ~Bm            |A
+tell me what will you do When you find yourself back on the shelf
+|G                            |A
+Aah tell me
+|G                            |A
+Aah tell me
+#OUTRO ----------------------------------
+|Bm             ~A             |G             ~D
+Doo doo doo doo doo doo doo doo doo doo
+|Em            ~Bm            |A
+doo doo doo doo doo doo doo doo doo dooo
+|Bm             ~A             |G             ~D
+Doo doo doo doo doo doo doo doo doo doo
+|Em            ~Bm            |A
+doo doo doo doo doo doo doo doo doo dooo
