@@ -1,0 +1,75 @@
+TITLE:Haunted House,DUR:264,BPM:120,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Jumpin Gene Simmons,GENRE:Rock,STYLE:Up Tempo,HITyear:TBD
+#INTRO ----------------------------------
+|G           |%           |%           |%
+#VERSE 1 --------------------------------
+|G           |%           |%           |%
+I just moved in my new house today
+|G           |%           |C           |%
+Movin' was hard but I got squared away
+|G           |%           |D           |%
+Bells started ringin' and chains rattled loud
+|D           |%           |G           |%
+I knew I'd moved in a haunted house
+#VERSE 2 --------------------------------
+|G           |%           |%           |%
+Still I made up in my mind to stay
+|G           |%           |C           |%
+Nothin' was a-gonna drive me away
+|G           |%           |D           |%
+When I seen somethin' that give me the creep
+|D           |%           |G           |%
+Had one big eye and a-two big feet
+#VERSE 3 --------------------------------
+|G           |%           |%           |%
+I stood right still and I did the freeze
+|G           |%           |C           |%
+He did the stroll right up to me
+|G           |%           |D           |%
+Made a noise with his feet that sound like a drum
+|D           |%           |G           |%
+(Say, you'll be here when the mornin' come?)
+#CHORUS 1 -------------------------------
+|G           |%           |%           |%
+Say yes, I'll be here when the mornin' come
+|G           |%           |C           |%
+I'll be right here and I ain't gonna run
+|G           |%           |D           |%
+I bought this house now you know I am bold
+|D           |%           |G           |%
+Ain't no haint gonna run me off
+#VERSE 4 --------------------------------
+|G           |%           |%           |%
+In my kitchen my stove was a-blazin' hot
+|G           |%           |C           |%
+The coffee was a-boilin' in the pot
+|G           |%           |D           |%
+The grease had melted in my pan
+|D           |%           |G           |%
+I had a hunk of meat in my hand
+#VERSE 5 --------------------------------
+|G           |%           |%           |%
+From outer space there sat a man
+|G           |%           |C           |%
+On a hot stove with the pots and pans
+|G           |%           |D           |%
+"Say that's hot" I began to shout
+|D           |%           |G           |%
+He drank a hot coffee right from the spout
+#VERSE 6 --------------------------------
+|G           |%           |%           |%
+He ate the raw meat right from my hand
+|G           |%           |C           |%
+Drank a hot grease from the fryin' pan
+|G           |%           |D           |%
+He said to me "Now, you better run"
+|D           |%           |G           |%
+(Don't be here when the mornin' come)
+#CHORUS 2 -------------------------------
+|G           |%           |%           |%
+Say yes, I'll be here when the mornin' come
+|G           |%           |C           |%
+I'll be right here and I ain't gonna run
+|G           |%           |D           |%
+I bought this house now you know I am bold
+|D           |%           |G           |%
+Ain't no haint gonna run me off

@@ -1,0 +1,58 @@
+TITLE:For Baby,DUR:160,BPM:150,BEATS:4,KEY:D,QUAL:Preliminary,ARTIST: John Denver,GENRE:Unknown,STYLE:Unknown,HITyear:TBD
+#INTRO ----------------------------------
+|D           |%          |%          |%
+-
+#VERSE 1 --------------------------------
+|D           |G           |D           |%
+I'll walk in the rain by your side,
+|G           |A7          |D           |%
+I'll cling to the warmth of your hand,
+|G           |A7          |D           |G
+I'll do anything to keep you satisfied
+|D           |A7          |D           |%
+I'll love you more than anybody can.
+#CHORUS 1 -------------------------------
+|G           |A7          |D           |%
+And the wind will whisper your name to me
+|G           |A7          |D           |%
+little birds will sing along in time,
+|G           |A7          |D           |G
+leaves will bow down when you walk by
+|D           |A7          |D           |%
+and morning bells will chime
+#VERSE 2 --------------------------------
+|D           |G           |D           |%
+I'll be there when you're feelin' down
+|G           |A7          |D           |%
+to kiss away the tears if you cry,
+|G           |A7          |D           |G
+I'll share with you all the happiness I've found
+|D           |A7          |D           |%
+a reflection of the love in your eyes.
+#CHORUS 2 -------------------------------
+|G           |A7          |D           |%
+And I'll sing you the songs of the rainbow,
+|G           |A7          |D           |%
+a whisper of the joy that is mine
+|G           |A7          |D           |G
+and leaves will bow down when you walk by
+|D           |A7          |D           |%
+and morning bells will chime
+#VERSE 3 --------------------------------
+|D           |G           |D           |%
+I'll walk in the rain by your side,
+|G           |A7          |D           |%
+I'll cling to the warmth of your tiny hand,
+|G           |A7          |D           |G
+I'll do anything to help you understand
+|D           |A7          |D           |%
+I'll love you more than anybody can.
+#CHORUS 3 -------------------------------
+|G           |A7          |D           |%
+And the wind will whisper your name to me
+|G           |A7          |D           |%
+little birds will sing along in time,
+|G           |A7          |D           |G
+leaves will bow down when you walk by
+|D           |A7          |D           |%
+and morning bells will chime
