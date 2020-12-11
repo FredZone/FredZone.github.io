@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+
+<html>
+<head>
+    <title id='title'>Tunes</title>
+    <style type="text/css">
+Body
+    {
+        font-size:1.5vw;
+        color:white;
+        font-family:Courrier New;
+        font-weight: bold;
+        text-align:center;
+        vertical-align:middle;
+        border-color: black;
+        border-width:thick;
+        background-color:black;
+        padding:0px;
+        margin:0px;
+        overflow:hidden;
+        line-height: 100%;
+    }
+    X3{color:red;}
+    </style>
+</head>
+
+<body>
+<div id='bod' style="background-color:yellow;font-size:3.7vw;overflow-y:hidden;" >
+    <div id='hdr'style='line-height:110%;position:absolute;display:block; vertical-align:middle; overflow:hidden; left:1%;width:98%; top:1%;border: groove; height:8%'>
+        TUNES
+        </div>
+    
+    <div id='matrix' style='position:absolute;border:none; line-height:110%;position:fixed;display:block; font-size:1.5vw; vertical-align:middle; overflow:scroll; left:0%;width:100%; top:11%;height:88%'>
+        <div style= "position:absolute;top:0vw;left:1vw;width:12vw; height:6vw; border:solid; background-color:black" onclick="playYT('B9FzVhw8_bY')">
+            <X3>Dead South</X3><br>In Hell Ill be in Good Company
+            </div>
+        <div style= "position:absolute;top:0vw;left:15vw;width:12vw; height:6vw; border:solid; background-color:black" onclick="playYT('sD72LbIk02M')">
+            <X3>Shakey Graves</X3><br>Roll the Bones
+            </div>
+        <div style= "position:absolute;top:0vw;left:29vw;width:12vw; height:6vw; border:solid; background-color:black" onclick="playYT('sXQi6TRFPXU')">
+            <X3>Hank Ketchum</X3><br>Smalltown Saturday Night
+            </div>
+        <div style= "position:absolute;top:0vw;left:43vw;width:12vw; height:6vw; border:solid; background-color:black" onclick="playYT('3HlDN4JMCY8')">
+            <X3>Hoyt Axton</X3><br>Evangelina
+            </div>
+        </div>
+    </div>
+3HlDN4JMCY8
+<script type="text/javascript">
+
+    window.onload = function() {
+        if (window.innerHeight >= window.innerWidth) {
+            alert("PLEASE rotate your device...Landscape works best on this site...");
+        }
+        if (location.host == 'localhost') {
+            dis('greetingNet', 'none');
+            dis('greetingLocal', 'block');
+            document.body.style.backgroundColor = "lightblue";
+        } else {
+            dis('greetingNet', 'block');
+            dis('greetingLocal', 'none');
+            document.body.style.backgroundColor = "lightgrey";
+        }
+    }
+
+function playYT(link) {
+    window.open('https://www.youtube.com/watch?v='+link)
+    }
+    
+    
+    
+      function dis(id, disp) {
+          if (disp === undefined) {
+              if (document.getElementById(id).style.display == 'none') {
+                  document.getElementById(id).style.display = 'block';
+              } else {
+                  document.getElementById(id).style.display = 'none';
+              }
+          } else {
+              if (disp == 'none') {
+                  document.getElementById(id).style.display = 'none';
+              } else {
+                  document.getElementById(id).style.display = 'block';
+              }
+          }
+      }
+</script>
+
+
+
+
+
+
+</body>
+</html>
