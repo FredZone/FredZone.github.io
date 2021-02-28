@@ -28,10 +28,11 @@ Body
 <div id='bod' style="background-color:yellow;font-size:3.7vw;overflow-y:hidden;" >
     <div id='hdr'style='line-height:110%;position:absolute;display:block; vertical-align:middle; overflow:hidden; left:1%;width:98%; top:1%;border: groove; height:8%'>
         TUNES
-        </div>
+        <img id='pic' src='Icons/+comedy.png'  style="position:absolute;height:100%">
+    </div>
     
     <div id='matrix' style='position:absolute;border:none; line-height:110%;position:fixed;display:block; font-size:1.5vw; vertical-align:middle; overflow:scroll; left:0%;width:100%; top:11%;height:88%'>
-        <div style= "position:absolute;top:0vw;left:1vw;width:12vw; height:6vw; border:solid; background-color:black" onclick="playYT('B9FzVhw8_bY')">
+        <div onmouseover="picOn('F&E.png')" onmouseout="picOff()"style= "position:absolute;top:0vw;left:1vw;width:12vw; height:6vw; border:solid; background-color:black" onclick="playYT('B9FzVhw8_bY')">
             <X3>Dead South</X3><br>In Hell Ill be in Good Company
             </div>
         <div style= "position:absolute;top:0vw;left:15vw;width:12vw; height:6vw; border:solid; background-color:black" onclick="playYT('sD72LbIk02M')">
@@ -45,7 +46,7 @@ Body
             </div>
         </div>
     </div>
-3HlDN4JMCY8
+
 <script type="text/javascript">
 
     window.onload = function() {
@@ -62,6 +63,15 @@ Body
             document.body.style.backgroundColor = "lightgrey";
         }
     }
+
+function picOn(id){
+    document.getElementById('pic').src='Icons/'+id
+}
+
+function picOff(){
+    document.getElementById('pic').src='Icons/comedy.png'
+}
+
 
 function playYT(link) {
     window.open('https://www.youtube.com/watch?v='+link)

@@ -23,57 +23,61 @@ Body
     X3{color:red;}
     </style>
 </head>
-
+<!-- <meta property="og:image" content="https://assets.amuniversal.com/cd3cc3b01011013935fb005056a9545d" />   -->
 <body>
 <div id='bod' style="background-color:yellow;font-size:3.7vw;overflow-y:scroll;" >
-    <div id='hdr'style='line-height:110%;position:absolute;display:block; vertical-align:middle; overflow:hidden; left:1%;width:98%; top:1%;border: groove; height:8%'>COMICS </div>
+    <div id='hdr'style='line-height:110%;position:absolute;display:block; vertical-align:middle; overflow:hidden; left:1%;width:98%; top:1%;border: groove; height:8%'>
+        <img id='pic' src='Icons/+comedy.png'  style="left:0px;position:absolute;height:100%">COMICS
+        </div>
     
     <div id='matrix' style='position:absolute;border:none; line-height:110%;position:fixed;display:block; font-size:1.5vw; vertical-align:middle; overflow:scroll; left:0%;width:100%; top:11%;height:88%'>
 
-        <div style= "position:absolute;top:0vw;left:1vw;width:12vw; height:16vw; border:solid; background-color:black" onclick="todayGC('luann')">
-            <img src='Icons/Luann.png' style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none;'>Luann</div>    
+        <div style= "position:absolute;top:0vw;left:1vw;width:12vw; height:4vw; border:solid; background-color:black" onmouseover="picOn('Luann.png')" onmouseout="picOff()" onclick="todayGC('luann')">
+            Luann
             </div>
         
-        <div style= 'position:absolute;top:0vw;left:15vw;width:12vw; height:16vw; border:solid;background-color:black' onclick="window.open('https://www.comicskingdom.com/funky-winkerbean')">
-            <img src="Icons/Funky.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>Funky Winkerbean</div>    
+        <div style= 'position:absolute;top:0vw;left:15vw;width:12vw; height:4vw; border:solid;background-color:black'onmouseover="picOn('Funky.png')" onmouseout="picOff()" onclick="window.open('https://www.comicskingdom.com/funky-winkerbean')">
+            Funky Winkerbean  
             </div>
 
-        <div style= 'position:absolute;top:0vw;left:29vw;width:12vw; height:16vw; border:solid;background-color:black' onclick="todayGC('calvinandhobbes')">
-            <img src="Icons/Calvin.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none;'>Calvin & Hobbs</div>    
-            </div>
-
-        <div style= 'position:absolute;top:0vw;left:43vw;width:12vw; height:16vw; border:solid;background-color:black' onclick="window.open('https://www.comicskingdom.com/darrin-bell')">
-            <img src="Icons/DBell.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>Darrin Bell</div>    
+        <div style= 'position:absolute;top:0vw;left:29vw;width:12vw; height:4vw; border:solid;background-color:black' onmouseover="picOn('Calvin.png')" onmouseout="picOff()" onclick="todayGC('calvinandhobbes')">
+            Calvin & Hobbs   
             </div>
         
-        <div style= 'position:absolute;top:0vw;left:57vw;width:12vw; height:16vw; border:solid;background-color:black' onclick="todayGC('doonesbury')">
-            <img src="Icons/Doones.jpg" style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>Doonesbury</div>    
-            </div>      
+<div style= 'position:absolute;top:0vw;left:43vw;width:12vw; height:4vw; border:solid;background-color:black' onmouseover="picOn('Dbell.png')" onmouseout="picOff()" onclick="todayCK('darrin-bell')">
+            Darrin Bell
+            </div>       
+ 
+<div style= 'position:absolute;top:0vw;left:57vw;width:12vw; height:4vw; border:solid;background-color:black' onmouseover="picOn('Farside.png')" onmouseout="picOff()" onclick="window.open('https://www.thefarside.com/')">
+            The Farside
+            </div>    
         
-        <div style= 'position:absolute;top:0vw;left:71vw;width:12vw; height:16vw; border:solid;background-color:black' onclick="window.open('https://www.thefarside.com/')">
-            <img src="Icons/Farside.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>The Farside</div>    
-            </div>          
+        <div style= 'position:absolute;top:0vw;left:71vw;width:12vw; height:4vw; border:solid;background-color:black' onmouseover="picOn('Doones.jpg')" onmouseout="picOff()" onclick="todayGC('doonesbury')">
+            Doonesbury   
+            </div>    
 
-        <div style= 'position:absolute;top:0vw;left:85vw;width:12vw; height:16vw;border:solid;background-color:black' onclick="window.open('https://www.wacotrib.com/eedition/')">
-            <img src="Icons/WTrib.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>Waco Trib</div>    
+<div style= 'position:absolute;top:0vw;left:85vw;width:12vw; height:4vw;border:solid;background-color:black' onmouseover="picOn('WTrib.png')" onmouseout="picOff()" onclick="window.open('https://www.wacotrib.com/eedition/')">
+            Waco Trib
             </div>
+
+<!--  
+<div style= 'position:absolute;top:0vw;left:29vw;width:12vw; height:4vw; border:solid;background-color:black' onmouseover="picOn('Calvin.png')" onmouseout="picOff()" onclick="todayGC('LINK')">
+            NAME   
+            </div>    
+        
+-->
+       
+
+
 
 <!-- =========================================== -->
 
-        <div style= "position:absolute;top:18vw;left:1vw;width:12vw; height:16vw; border:solid;background-color:black" onclick="todayGC('claybennett')">
-            <img src="Icons/Clay.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>Clay Bennet</div>    
+        <div style= "position:absolute;top:6vw;left:1vw;width:12vw; height:4vw; border:solid;background-color:black" onmouseover="picOn('Clay.png')" onmouseout="picOff()" onclick="todayGC('claybennett')">
+            Clay Bennett
             </div>
 
         <div style= 'position:absolute;top:18vw;left:15vw;width:12vw; height:16vw; border:solid;background-color:black' onclick="todayGC('johndeering')">
-            <img src="Icons/Deering.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
+            <img src="Icons/Deering.png" style="height:12vw;width:100%;top:0px;left:0px">
             <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>John Deering</div>    
             </div>
 
@@ -188,7 +192,49 @@ Body
     </div>
 
 <script type="text/javascript">
+    
+    function picOn(id){
+        document.getElementById('pic').src='Icons/'+id
+    }
+
+    function picOff(){
+        document.getElementById('pic').src='Icons/comedy.png'
+    }
        
+function imgOnly(link){
+    var dateObj = new Date();
+    var month = ('0' + (dateObj.getMonth() + 1)).slice(-2);
+    var date = ('0' + dateObj.getDate()).slice(-2);
+    var year = dateObj.getFullYear();
+    var shortDate = year + '/' + month + '/' + date;    
+    var A= "https://www.gocomics.com/"+link+"/"+shortDate
+    alert(A)
+    alert(fileDownload(A))
+    }
+    
+    
+ function htmlText(path) {
+    //statusMsg ('Downloading: '+path)
+    var content = "Attemping to Download" + path;
+    var request = new XMLHttpRequest();
+    request.open("GET", path, false);
+    request.send(null);
+    content = request.responseText;
+    if (content.search("404") > -1 | content.length < 1) {
+        content = '404 Error' + content
+    }
+    return content; //could be undfined or null, not tested for
+}   
+ function savePageAs(fileName){
+  if(!fileName){fileName = location.href.toString(); }
+  var X=new XMLHttpRequest, data="";
+  X.open('GET', fileName, false );
+  X.send('');	
+  data = X.responseText;
+ return window.open( "data:x-application/external;charset=utf-8," + escape(data));
+}//end savePageAs   
+    
+    
     window.onload = function() {
         if (window.innerHeight >= window.innerWidth) {
             alert("PLEASE rotate your device...Landscape works best on this site...");
