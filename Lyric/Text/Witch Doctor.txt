@@ -1,0 +1,92 @@
+TITLE:Witch Doctor,DUR:320,BPM:120,BEATS:4,KEY:A,QUAL:Raw,ARTIST:David Seville,GENRE:Novelty,STYLE:Up Tempo,HITyear:1958
+#VERSE 1 --------------------------------
+|A               |%               |%               |%
+I told the witch doctor I was in love with you.
+|A               |%               |%               |%
+I told the witch doctor you didn't love me, too.
+|E               |%               |A               |%
+And then the witch doctor, he told me what to do. He said that...
+#CHORUS 1 -------------------------------
+|A               |D               |A               |E
+Ooo eee, ooo ah ah, ting tang, walla walla, bing bang.
+|A               |D               |A       ~E       |A
+Ooo eee, ooo ah ah, ting tang, walla walla, bing bang.
+|A               |D               |A               |E
+Ooo eee, ooo ah ah, ting tang, walla walla, bing bang.
+|A               |D               |A       ~E       |A
+Ooo eee, ooo ah ah, ting tang, walla walla, bing bang.
+#VERSE 2 --------------------------------
+|A               |%               |%               |%
+I told the witch doctor you didn't love me true.
+|A               |%               |%               |%
+I told the witch doctor you didn't love me nice.
+|E               |%               |A               |%
+And then the witch doctor, he gave me this advice.He said to ...
+#CHORUS 2 -------------------------------
+|A               |D               |A               |E
+Ooo eee, ooo ah ah, ting tang, walla walla, bing bang.
+|A               |D               |A       ~E       |A
+Ooo eee, ooo ah ah, ting tang, walla walla, bing bang.
+|A               |D               |A               |E
+Ooo eee, ooo ah ah, ting tang, walla walla, bing bang.
+|A               |D               |A       ~E       |A
+Ooo eee, ooo ah ah, ting tang, walla walla, bing bang.
+#INTERLUDE 1 ----------------------------
+|D               |%               |A               |%
+Now, you've been keeping love from me, just like you were a miser.
+|E               |%               |A               |%
+And I'll admit I wasn't very smart.
+|D               |%               |A               |%
+So, I went out and found myself a guy that's so much wiser.
+|B               |                |E               |%
+And he taught me the way to win your heart.
+#VERSE 3 --------------------------------
+|A               |%               |%               |%
+My friend the witch doctor, he taught me what to say.
+|A               |%               |%               |%
+My friend the witch doctor, he taught me what to do.
+|E               |%               |A               |%
+I know that you'll be mine when I say this to you.Oh, Baby ....
+#CHORUS 3 -------------------------------
+|A               |D               |A               |E
+Ooo eee, ooo ah ah, ting tang, walla walla, bing bang.
+|A               |D               |A       ~E       |A
+Ooo eee, ooo ah ah, ting tang, walla walla, bing bang.
+|A               |D               |A               |E
+Ooo eee, ooo ah ah, ting tang, walla walla, bing bang.
+|A               |D               |A       ~E       |A
+Ooo eee, ooo ah ah, ting tang, walla walla, bing bang.
+#INTERLUDE 2 ----------------------------
+|D               |%               |A               |%
+Now, you've been keeping love from me, just like you were a miser.
+|E               |%               |A               |%
+And I'll admit I wasn't very smart.
+|D               |%               |A               |%
+So, I went out and found myself a guy that's so much wiser.
+|B               |                |E               |%
+And he taught me the way to win your heart.
+#VERSE 4 --------------------------------
+|A               |%               |%               |%
+My friend the witch doctor, he taught me what to say.
+|A               |%               |%               |%
+My friend the witch doctor, he taught me what to do.
+|E               |%               |A               |%
+I know that you'll be mine when I say this to you.Oh, Baby ....
+#CHORUS 4 -------------------------------
+|A               |D               |A               |E
+Ooo eee, ooo ah ah, ting tang, walla walla, bing bang.
+|A               |D               |A       ~E       |A
+Ooo eee, ooo ah ah, ting tang, walla walla, bing bang.
+|A               |D               |A               |E
+Ooo eee, ooo ah ah, ting tang, walla walla, bing bang.
+|A               |D               |A       ~E       |A
+Ooo eee, ooo ah ah, ting tang, walla walla, bing bang.
+#OUTRO ----------------------------------
+|A               |D               |A               |E
+Ooo eee, ooo ah ah, ting tang, walla walla, bing bang.
+|A               |D               |E               |A
+Ooo eee, ooo ah ah, ting tang, walla walla, bing bang.
+|A               |D               |A               |E
+Ooo eee, ooo ah ah, ting tang, walla walla, bing bang.
+|A               |D               |E               |A
+Ooo eee, ooo ah ah, ting tang, walla walla, bing bang.

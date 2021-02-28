@@ -6,7 +6,7 @@ TITLE:Haunted House,DUR:264,BPM:120,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Jumpin Gene Si
 I just moved in my new house today
 |G           |%           |C           |%
 Movin' was hard but I got squared away
-|G           |%           |D           |%
+|C           |%           |D           |%
 Bells started ringin' and chains rattled loud
 |D           |%           |G           |%
 I knew I'd moved in a haunted house
@@ -15,7 +15,7 @@ I knew I'd moved in a haunted house
 Still I made up in my mind to stay
 |G           |%           |C           |%
 Nothin' was a-gonna drive me away
-|G           |%           |D           |%
+|C           |%           |D           |%
 When I seen somethin' that give me the creep
 |D           |%           |G           |%
 Had one big eye and a-two big feet
@@ -24,7 +24,7 @@ Had one big eye and a-two big feet
 I stood right still and I did the freeze
 |G           |%           |C           |%
 He did the stroll right up to me
-|G           |%           |D           |%
+|C           |%           |D           |%
 Made a noise with his feet that sound like a drum
 |D           |%           |G           |%
 (Say, you'll be here when the mornin' come?)
@@ -33,8 +33,8 @@ Made a noise with his feet that sound like a drum
 Say yes, I'll be here when the mornin' come
 |G           |%           |C           |%
 I'll be right here and I ain't gonna run
-|G           |%           |D           |%
-I bought this house now you know I am bold
+|C           |%           |D           |%
+I bought this house now you know I am boss
 |D           |%           |G           |%
 Ain't no haint gonna run me off
 #VERSE 4 --------------------------------
@@ -42,7 +42,7 @@ Ain't no haint gonna run me off
 In my kitchen my stove was a-blazin' hot
 |G           |%           |C           |%
 The coffee was a-boilin' in the pot
-|G           |%           |D           |%
+|C           |%           |D           |%
 The grease had melted in my pan
 |D           |%           |G           |%
 I had a hunk of meat in my hand
@@ -51,7 +51,7 @@ I had a hunk of meat in my hand
 From outer space there sat a man
 |G           |%           |C           |%
 On a hot stove with the pots and pans
-|G           |%           |D           |%
+|C           |%           |D           |%
 "Say that's hot" I began to shout
 |D           |%           |G           |%
 He drank a hot coffee right from the spout
@@ -60,7 +60,7 @@ He drank a hot coffee right from the spout
 He ate the raw meat right from my hand
 |G           |%           |C           |%
 Drank a hot grease from the fryin' pan
-|G           |%           |D           |%
+|C           |%           |D           |%
 He said to me "Now, you better run"
 |D           |%           |G           |%
 (Don't be here when the mornin' come)
@@ -69,7 +69,7 @@ He said to me "Now, you better run"
 Say yes, I'll be here when the mornin' come
 |G           |%           |C           |%
 I'll be right here and I ain't gonna run
-|G           |%           |D           |%
-I bought this house now you know I am bold
+|C           |%           |D           |%
+I bought this house now you know I am boss
 |D           |%           |G           |%
 Ain't no haint gonna run me off

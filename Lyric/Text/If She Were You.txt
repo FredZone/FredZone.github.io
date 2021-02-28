@@ -1,0 +1,67 @@
+TITLE:If She Were You,DUR:253,BPM:110,BEATS:4,KEY:G,QUAL:Raw,ARTIST:John Prine,GENRE:Country,STYLE:Ballad,HITyear:TBD
+#INTRO ----------------------------------
+|G            |%            |B7           |%
+-
+|C            |D            |G            |%
+-
+#VERSE 1 --------------------------------
+|G            |%            |B7           |%
+Every time I try to love another
+|C            |D            |G            |D
+I never know exactly what to do
+|G            |%            |B7           |%
+I'd like to tell her just how much I want her
+|C            |D            |G            |%
+And I could find a way if she were you
+#VERSE 2 --------------------------------
+|G            |%            |B7           |%
+When she speaks to me I hear your sweet voice callin
+|C            |D            |G            |D
+when I close my eyes your face comes into view
+|G            |%            |B7           |%
+I remember how it hurt when I was falling
+|C            |D            |G            |%
+But I could fall again if she were you
+#CHORUS 1 -------------------------------
+|D            |%            |G            |%
+I never knew how much I cared about you
+|A7           |%            |D            |D7
+Till your memory made me a lovesick fool
+|G            |%            |B7           |%
+When she speaks to me I hear your sweet voice calling
+|C            |D            |G            |D
+When I close my eyes your face comes into view
+|G            |%            |B7           |%
+I remember how it hurt when I was falling
+|C            |D            |G            |%
+And I could fall again if she were you
+#VERSE 3 --------------------------------
+|G            |%            |B7           |%
+Her eyes may shine for me and not another,
+|C            |D            |G            |D
+Her lonely arms reach out to hold me too
+|G            |%            |B7           |%
+She wants to take your place and be my lover
+|C            |D            |G            |%
+And I could make her mine if she were you
+#INTERLUDE 1 ----------------------------
+|G            |B7           |%            |%
+-
+|C            |D            |G            |D
+-
+|G            |B7           |%            |%
+-
+|C            |D            |G            |%
+-
+#CHORUS 2 -------------------------------
+|D            |%            |G            |%
+I never knew how much I cared about you
+|A7           |%            |D            |D7
+Till your memory made me a lovesick fool
+|G            |%            |B7           |%
+She wants to take your place and be my lover
+|C            |D            |G            |D
+And I could make her mine if she were you
+#OUTRO ----------------------------------
+|G            |%            |B7           |%
+Yes, I could make her mine if she were you

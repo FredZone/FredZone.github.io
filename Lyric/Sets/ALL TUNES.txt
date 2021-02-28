@@ -21,12 +21,12 @@ Baker Street
 Before The Deluge
 Before The Next Teardrop Falls
 Blowin In The Wind
-Blue Eyes Crying In The Rain
 Blue Eyes Crying In The Rain-Short
-Blue Moon
-Blue Moon2
+Blue Eyes Crying In The Rain
 Blue Moon-Crazy
 Blue Moon-Short
+Blue Moon
+Blue Moon2
 Blue Skies
 Blue Suede Shoes
 Blueberry Hill
@@ -45,14 +45,14 @@ Cats In The Cradle
 Chattanooga Shoe Shine Boy
 Cherokee Fiddle - F F L
 Cherokee Fiddle
-Cigarettes And Whiskey And Wild Wild Women
 Cigarettes And Whiskey And Wild Wild Women-Sally
-City Of New Orleans
+Cigarettes And Whiskey And Wild Wild Women
 City Of New Orleans-Short
+City Of New Orleans
 Come From The Heart
 Constant Craving
-Cool Water
 Cool Water-John
+Cool Water
 Cooler N Hell
 Corina Corina
 Cotton Fields
@@ -77,8 +77,8 @@ Down On The Corner
 Down Under
 Dream Lover - Ron
 Dream Lover
-Dream
 Dream-Short
+Dream
 Drift Away
 Drinkin And Dialin
 Drinking And Dialing-RAW
@@ -94,8 +94,9 @@ Feliz Navidad
 Fire And Rain
 Fire Lake
 Fly over States
-Folsom Prison Blues
 Folsom Prison Blues-Short
+Folsom Prison Blues
+For Baby
 Forever Young
 Four Strong Winds
 Fox On The Run
@@ -107,8 +108,8 @@ Frosty The Snowman
 Garden Party
 Georgia On My Mind
 Georgia Simple
-Georgia
 Georgia-Img
+Georgia
 Get Back-Img
 Gettin You Home
 Ghost Band
@@ -118,9 +119,10 @@ Goin Down To Texas
 Green Door
 Greenback Dollar
 Hallelujah - A
-Hallelujah
 Hallelujah-Barn
+Hallelujah
 Happy Trails
+Haunted House
 Have You Ever Seen The Rain
 He Stopped Loving Her Today
 He Was A Friend Of Mine
@@ -133,13 +135,14 @@ Homeless Brother
 Hot Rod Lincoln
 Hound Dog
 House Of The Rising Sun - Short
-House Of The Rising Sun
 House Of The Rising Sun-John
+House Of The Rising Sun
+How Much Tequila Did I Drink Last Night
 I Aint That Lonely Yet
 I Always Get Lucky With You
 I Can Help
-I Cant Help Falling In Love With You
 I Cant Help Falling In Love With You-Short
+I Cant Help Falling In Love With You
 I Cant Help It If Im Still In Love With You
 I Cant Stop Loving You
 I Fall To Pieces
@@ -149,11 +152,12 @@ I Want To Be A Cowboys Sweetheart
 I Was Not A Nazi Polka 
 If I Didnt Know Better
 If I Die Tomorrow
+If She Were You
 If We Were Vampires
 Ill Fly Away
 Ill Stand by You
-Ill Take You Home Again Kathleen
 Ill Take You Home Again Kathleen-Img
+Ill Take You Home Again Kathleen
 Im Moving On
 Im So Lonesome I Could Cry
 Imagine
@@ -221,10 +225,11 @@ One Toke Over The Line
 Only You
 Pancho And Lefty
 Pardise
+Past The Point Of Rescue
 Peaceful Easy Feeling - F F L
 Peaceful Easy Feeling - Pjf
-Peaceful Easy Feeling
 Peaceful Easy Feeling-Short
+Peaceful Easy Feeling
 Peggy Sue
 Peppermint Twist
 Pleasures Of The Harbor
@@ -262,8 +267,8 @@ Silent Night
 Silver Bells
 Silver Wings
 Sing Me Back Home
-Singing The Blues
 Singing The Blues-Short
+Singing The Blues
 Sittin On The Dock Of The Bay
 Sleepwalk
 Small Town Saturday Night
@@ -281,6 +286,7 @@ Steel Rail Blues
 Still Gonna Die
 Stray Cat Strut
 Stuck In The Middle With You
+Suicide Is Painless
 Sultans Of Swing (1)
 Sultans Of Swing
 Summer Song
@@ -316,15 +322,15 @@ The Nightlife
 The Pilgrim Chapter 33
 The Streets Of London
 The Times They Are A Changing
-The Twist
 The Twist-2
+The Twist
 The Weight
 The Wish
 Theme For An Imaginary Western
 Then You Can Tell Me Goodbye
 This Aint My First Rodeo
-This Land Is Your Land
 This Land Is Your Land-Long
+This Land Is Your Land
 This World Is Not My Home
 Time In A Bottle
 Tobacco Road
@@ -333,18 +339,19 @@ Tom Dooley
 Traveling Man
 Tulsa Time
 Twinkle Twinkle
-Twist Medley
 Twist Medley-Short
+Twist Medley
 Under The Boardwalk
 Under The X In Texas
 Wagon Wheel
 Walk Right Back
 Walking After Midnight
 Waltz Across Texas
-Waltzing Matilda
 Waltzing Matilda-Short
-Well Well Well
+Waltzing Matilda
+Weeping in the Promised Land
 Well Well Well-Short
+Well Well Well
 Werewolves Of London
 What A Wonderful World
 Whats Forever For 2
@@ -366,12 +373,14 @@ Will The Circle Be Unbroken
 Will You Still Love Me Tomorrow
 Willie And The Hand Jive
 Winter Wonderland
+Witch Doctor
 Wolverton Mountain
 Worried Man
-Yesterday
 Yesterday-2
+Yesterday
 You Are My Sunshine
 You Dont Have To Call Me Darlin Darlin
 You Were On My Mind
 Your Cheatin Heart
+Your Momma Dont Dance
 Your Momma Dont Dance
