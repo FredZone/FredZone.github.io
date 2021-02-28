@@ -17,11 +17,14 @@ CURRENT PROBLEMS / IDEAS/ STATUS
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
 HISTORY...
-6 Beta (MAJOR Cleanup IN PROCESS)==============================(117,247   bytes - 59,044  bytes)
+6 Beta (MAJOR Cleanup IN PROCESS)==============================(127,680 bytes - 60,710 bytes)
+    
+    01/02/20 6:37PM
+        fixed loop to stop playing during delay
     11/20/19 8:03 AM
         changed the home path to allow out of view development
     11/07/19 3:25PM
-        Finsihed mailto functions
+        Finished mailto functions
         Added the End Pause function to allow reading of song for about 4.5 seconds before covering with buttons
     09/23/19 12:22 PM
         EDITOR.html> file save recaclulate duration and trim trailing spaces

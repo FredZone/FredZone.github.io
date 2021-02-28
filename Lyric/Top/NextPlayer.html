@@ -182,7 +182,7 @@ Super controls ???? belonging to no group so z is determined by function   -->
     <div id="statusWindow" style="position:absolute; resize:both; border-style:ridge; border-width:thick;display:none;color:white;text-align:center; font-size:1vw; background-color:lightgrey; overflow:hidden; height:61% ;width:40%; top:33%; left:7%;z-index:11000 ">
         <div id="statusWindowheader">DEBUG WINDOW
         </div>
-        <img src="../../Icons/danger.png" onclick="statusMonitor(0)" style="position:absolute;width:7%;height:10%;right:1%;top:5%;">
+        <img src="../../Icons/blackClose.png" onclick="statusMonitor(0)" style="position:absolute;width:7%;height:10%;right:1%;top:5%;">
         <img src="../../Icons/bug2.gif" onclick="dis('statusWindow','none')" style="position:absolute;width:7%;height:10%;right:9%;top:5%;">
         <img src="../../Icons/clean.png" onclick="ARRstatusLog = ''.split('-'),statusMsg('-------------User Cleared Log---------',0);" style="position:absolute;width:7%;height:10%;right:17%;top:5%;">
         <select onchange="LOG=this.value.split('-')[1],ARRstatusLog=''.split('-')" style='position:absolute;top:8%;left:30%;width:40%;'><option>Record-20-Steps</option><option>Record-40-Steps</option><option>Record-80-Steps</option><option>Record-160-Steps</option><option>Record-320-Steps</option><option  selected>Record-640-Steps</option></select>

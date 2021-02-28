@@ -397,7 +397,6 @@ function boot() {
             //event.returnValue = EDITstatus + ": Pending\nYou have unsaved changes.";
             alert(EDITstatus)
             event.returnValue = EDITstatus;
-            
             return
         }
     })
@@ -555,7 +554,7 @@ function loopSelect(loop) {
         document.getElementById("titleMain").innerHTML="UTOOL LOCAL"
     }
     dis('thinking','none')
-    finishBoot()
+    finishBoot()//this  is in the global.js
 }
 //^END COMMON BOOT CODE (FINISH BOOT)
 //End of Boot============================================================================
