@@ -19,18 +19,23 @@ MySupport.MakeFileList('C:/Users/fkapa/Dropbox/fredzone/Lyric/Text','C:/Users/fk
 print ('<br>')
 MySupport.MakeFileList('C:/Users/fkapa/Dropbox/fredzone/Lyric/Sets','C:/Users/fkapa/Dropbox/fredzone/Lyric/Top/SetList.txt','.txt')
 print ('<br>')
-MySupport.WriteFile('C:/Users/fkapa/Dropbox/fredzone/Lyric/Text/ZZZZ.ASC',"Put info here someday")
+MySupport.WriteFile('C:/Users/fkapa/Dropbox/fredzone/Lyric/Top/PythonUpdate.asc',"PythonUpdate.py successfully executed")
 print("<div style=\"color:white;background-color:green;border:solid;border-color:red\">")
-print ('UPDATE SUCCESSFUL!!  And BoguS ZZZZ.ASC Created')
+print ('UPDATE SUCCESSFUL!!  And File "\'PythonUpdate.asc\' Created')
 print("</div>")
 
-print("<div id ='crap' onclick=\"alert('ALERT')\" style=\"color:red;background-color:yellow;border:solid;border-color:red\">")
-print ('ALERT!!')
-print("</div>")
+#print("<div id ='alert' onclick=\"alert('ALERT')\" style=\"color:red;background-color:yellow;border:solid;border-color:red\">")
+#print ('ALERT!!')
+#print("</div>")
 
-print("<div onclick=\"dis('crap')\" style=\"color:red;background-color:yellow;border:solid;border-color:red\">")
-print ('function test!!')
-print("</div>")
+#print("<div id ='crap' style=\"color:red;background-color:yellow;border:solid;border-color:red\">")
+#print ('Box of Nothing!!')
+#print("</div>")
+
+
+#print("<div onclick=\"dis('crap')\" style=\"color:red;background-color:yellow;border:solid;border-color:red\">")
+#print ('function test!!')
+#print("</div>")
 
 print("<SCRIPT type='text/javascript' SRC = '../Lyric/Top/global.js'></script>")
 #<SCRIPT type="text/javascript" SRC = "NextPlayer.js"></script>

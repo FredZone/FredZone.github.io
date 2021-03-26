@@ -55,8 +55,11 @@
 <body onresize="arrConvert()">
 <!--
 Super controls ???? belonging to no group so z is determined by function   --> 
+<!--???????????????????????????????????????????????????????????????????????????????????????????-->    
+    <div id='BS'  style="display:none;font-size:3vw;line-height:120%;border:solid;background-color:lightyellow;overflow-y:scroll;overflow-x:hidden;overflow-x:hidden;position:absolute; width:50%;height:86%;left:25%;top:14%;z-index:30000;">
+        </div>
     
-    <a id="msg" title="Message Box" style= "position:fixed; display:block; line-height:120%; text-align:center; vertical-align:middle; color:red; background-color:transparent; color:red; font-size: 2vw; height:6%; left:0%; top:60%; width:100%; z-index:5505;overflow:hidden">Loading...</a>
+    <div id="msg" title="Message Box" style= "position:fixed; display:block; line-height:120%; text-align:center; vertical-align:middle; color:red; background-color:transparent; color:red; font-size: 2vw; height:6%; left:0%; top:60%; width:100%; z-index:5505;overflow:hidden">Loading...</div>
     
     <audio id='aC' style="visibility: hidden;" controls=false visibility='hidden' preload = "metadata" source src="../Click/Cl.mp3" type="audio/mpeg"></audio>
     <audio id='aB' style="visibility: hidden;" controls=false visibility='hidden' preload = "metadata" source src="../Click/Bo.mp3" type="audio/mpeg"></audio>
@@ -136,7 +139,6 @@ Super controls ???? belonging to no group so z is determined by function   -->
             </table>
         <div style="position:absolute;border:solid; bottom:12%; height:5%;left:1%; width:60%; text-align : left;">Select A Backtrack (if it exists)</div>
         <div id ='trackName' style="position:absolute;border:solid; bottom:7%; height:5%;left:1%; width:60%; text-align : left;">Track Name</div>
-        
         <select 'btName' onchange="BACKTRACK=TITLE+this.value,loadServerTrack()" style="position:absolute;border:solid; bottom:1%; height:5%;left:1%; width:50%; text-align : left; overflow:auto;">
         <option value='' selected>[TITLE].mp3</option>
         <option value='1'>[TITLE]1.mp3</option>
@@ -231,10 +233,10 @@ Super controls ???? belonging to no group so z is determined by function   -->
         <div id='mirror' title ='TEMPO<>KEY<>BACK TRACK<>QUALITY' onclick="rollMirror(false),listTempos(),newKey(KEY),barSelect('songbar')" style="line-height:7vw;font-size:4vw; position:fixed;text-align:center;background-color:transparent;background-size:100%;vertical-align:middle;left:17%;width:7%;top:7%;z-index:701"></div>
         <img id='mirrorImage' src'../../Icons/transSilent.png' style="position:fixed; left:17%;width:7%;top:7%;z-index:700;">
     <!--Top Center-->   
-        <select id="mySet" onchange="selectTune(this.value)" title="Select Song" style="position:fixed; overflow:hidden; opacity:0.01; border-style:solid; border-color:black; border-width:thick; background-color:white; color:green; line-height:100%; text-align:left; font-weight:bold; top:7%; height:8%; left:25%; width:50%; z-index:701;"></select>
+        <select id="mySet" onchange="selectTune(this.value)" title="Select Song" style="position:fixed; overflow:hidden; opacity:0.01; border-style:solid; border-color:black; border-width:thick; background-color:white; color:green; line-height:100%; text-align:left; font-weight:bold; top:7%; height:8%; left:25%; width:45%; z-index:701;"></select>
         <div  id='TheTune' title='Select TITLE from your Play List' style='position:fixed;background-color:lightyellow; font-size:3vw; line-height:100%; color:green; border-style:solid; border-color:green; text-align:center; vertical-align:top; white-space:nowrap; overflow:hidden; font-weight:bold; top:6%; height:8%; left:25%; width:50%; overflow:hidden;'>
             <div  id='myTune' title='Select TITLE from your Play List' style='position:fixed;background-color:lightyellow; font-size:3vw; line-height:100%; color:green; border-style:solid; border-color:green; text-align:center; vertical-align:top; white-space:nowrap; overflow:hidden; font-weight:bold; top:6%; height:8%; left:25%; width:50%; overflow:hidden;' >-</div> 
-            <img id="theTuneArrow" title='Select' src="../../Icons/pointerDown.png" alt ="v"  style="position:absolute; right:0%;height:100%">
+            <img onclick=dis('BS') src='../../Icons/blackSearch.png' style='display:block;position:absolute;position:absolute; right:0%;height:100%'>
             </div>
         <div id="clock" style="position:fixed;display:block;border:solid;border-style:ridge; border-width:thick;line-height:80%;background-color:gold;overflow:hidden;right:45%; bottom:6%; z-index:-10000;">CLOCK</div>
         <div id="altSong" onclick="nextTune(1)" style="text-align:center; display:none; position:fixed; background-color:lightgrey; overflow:hidden; left:25%; font-size:3vw; border-style:solid; border-color:black; color:red; line-height:100%; top:15%; overflow:hidden; white-space:nowrap; height:8%; width:50%; z-index:-11000;">Alternate Song</div>
@@ -386,9 +388,8 @@ Super controls ???? belonging to no group so z is determined by function   -->
             <img src="../../Icons/transAdd.png" onclick ="volSet(+0.125)" style="position:absolute;left:0%;border:solid; bottom:40%; height:19%;width:100%;">
             <img src="../../Icons/transSubtract.png" onclick ="volSet(-0.125)" style="position:absolute;left:0%;border:solid; bottom:0%; height:19%;width:100%;">
             <div id = "V"  style=" border:solid; line-height:250%;position:absolute; bottom: 20%; height:19%;vertical-align:middle;width:100%;font-size:4vh">-</div>
-            
         </div>
-        <div  id ="soundOO" alt = "SOUND" onclick="volOnOff()" style="position:absolute;background-size:100% 100%;border:solid; border-color:black; background-image: url('../../Icons/on.png');width:100%; bottom:0%; height:15%;">VOL</div>
+            <div id ="soundOO" alt = "SOUND" onclick="volOnOff()" style="position:absolute;background-size:100% 100%;border:solid; border-color:black; background-image: url('../../Icons/on.png');width:100%; bottom:0%; height:15%;">VOL</div>
         </div>  
 
 <!--TAB BAR 
@@ -487,7 +488,6 @@ Super controls ???? belonging to no group so z is determined by function   -->
             </div>  
     <div style="color:white;position:absolute;line-height:100%; left:51%; bottom:1%; height:31%; width:48%;border: groove;">
             Automation
-    
         <a  onclick ="setCustom('ENDpause','','refresh')" style="position:absolute; display:block; text-align:center; top:42%; height:40%; width:16%; right:65%; color:white; opacity:1;z-index:1">End<br>Pause</a>
           <img src ="../../Icons/off.png" id ="imgENDpause"  alt = "" style="position:absolute;display:block; bottom:1%; right:65%; height:70%; width:16%;">
         <a  id ='countText'  onclick ="setCustom('COUNTin','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:49%; color:white; opacity:1;z-index:1">Count<br>In</a>

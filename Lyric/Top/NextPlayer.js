@@ -9,14 +9,15 @@
 
 //*GLOBAL VAR=======================================================================================================
 //* FLAGS
+var ARRtunes
     var ALT=false;//^ alternate song
     var AUDfail=false;
     var AUDend=false;
     var BOOT=true;//^ used to do setup on boot
-    var NASH=false;//Nashville notation
+    var NASH=false;//Nashville notation????incomplete...
     var SETnoteViewed=false;//used to keep not from popping up AWK
 //*PROGRAM and SONG VARS//
-    var ARRtitle;//XXXXXXX
+    var ARRtitle;
     var ARRsoundModes=("SILENT/nBACK TRACK/nCLICK TRACK/nDRUM ROCK/nDRUM COUNTRY").split("/n");
     var DUR=120;//^ Duration for scrolling and calculating
     var DURsource='Default';//^ string where the program got the duration
@@ -181,6 +182,44 @@ window.onbeforeunload = function(e) {
       return 'UNSENT MAIL ';
    }else{return(null)}
 }; 
+
+function getSetTune(i){
+   //alert("bs"+i);
+   
+   //document.getElementById('mySet').selectedIndex=i;
+   //selectTune(document.getElementById('mySet').value);
+   //document.getElementById('BS').style.display='none';
+   //TUNEnum =i;
+   //alert('bs'+i)
+   //document.getElementById('bs'+i).style.color='red';
+   }
+
+
+function bigSelect(i){
+      TUNEnum =i
+      TITLEplus=SETlist[i];
+      document.getElementById('bs'+i).style.color='red';
+      selectTune(TITLEplus);
+}
+
+
+function bigSelectorBuild(id, arr, indx, val) { //(if val is not null value is the arr's value & selected value, otherwise arr's index is the value and the indx is the index selected)
+   statusMsg("Building Big Selector... ID="+id)
+   if (indx === undefined | indx === null | indx === '') {
+      indx = 0;
+   }
+   var i = 0;
+   var str=""
+      while (i < arr.length) {
+        var x='bs'+i
+         //str = str + "<div id='bs"+i+"'  onclick='getSetTune("+i+"),alert(this.id)' style='width:100%;height:4vw;overflow:hidden;color:green';>"+arr[i].split('|')[0] + "</div>";
+         //str = str + "<div id='bs"+i+"'  onclick=\"getSetTune("+i+"),TUNEnum ="+i+",document.getElementById(\'"+x+"\').style.color=\'red\'\" style='width:100%;height:4vw;overflow:hidden;color:green';>"+arr[i].split('|')[0] + "</div>";
+         str = str + "<div id='bs"+i+"' onclick=\"bigSelect("+i+")\" style='width:100%;height:4vw;overflow:hidden;color:green';>"+arr[i].split('|')[0] + "</div>";
+         //str = str + "<div id='bs"+i+"'  onclick='getSetTune("+i+"), alert(this.id), document.getElementById(\'"+this.id+"\').style.color=\'red\' style=\'width:100%;height:4vw;overflow:hidden;color:green\';>"+arr[i].split('|')[0] + "</div>";
+         i = i + 1;
+      }
+   document.getElementById(id).innerHTML = str
+}
 
 function getSelectionText() {
     var text = "";
@@ -554,10 +593,11 @@ function start() {
     arr = receiveARR(); //get an array if one is sent...*possible global
     if (arr ===undefined | arr ===null | arr ===''|arr.length<10) { //^ normal first time boot, no query string
         BOOT = true;
-        statusMsg("Weird or faulty array '"+arr+"' is being ignored...",0)
+        statusMsg("No valid array passed to boot routine",0)
         createSetSelector();
     } 
-    else {//this document is recieving a song from the editor 
+    else {
+      statusMsg("Song Recieved from the editor",0)
         BOOT = 'edit';
         ARRtitle = ("Passed From Editor").split(','); //Bogus title array
         createARRlines(arr);
@@ -623,7 +663,8 @@ function createSetList() { //alert('createSetList()');//^ creates the setlist op
 //TITLE = TITLEplus;//why here???????USELESS
     PREVtitle = TITLEplus;
 //if(PRESETlock!=true){selectTune(TITLEplus);} USELESS redundant since you set it to 0
-    selectTune(TITLEplus);
+   bigSelectorBuild("BS",SETlist,0,0)
+   selectTune(TITLEplus);
 }
 
 function nextTune(delta) { //alert("nextTune("+delta+")");//^ Entry point if you have selected the next tune in the list by direction 1,0,-1
@@ -648,9 +689,10 @@ function openSong() { //opens a song with title, if its on server, not on list==
 
 function selectTune(titl) { //alert('selectTune('+titl+')');//^ Entry Point using the TITLE (or extended title) to download tune
     statusMsg(titl + ": selected ...", 'lightgrey');
+    //TITLEplus = titl; //TITLEplus is formated play info=@TITLE|KEY|BPM|SOUNDmode|NOTEset|volume (@ indicates alternate if its present)
+    dis('BS','none');
     dis('backtracker','none');//SIMPLIFY
-    TITLEplus = titl; //TITLEplus is formated play info=@TITLE|KEY|BPM|SOUNDmode|NOTEset|volume (@ indicates alternate if its present)
-    ARRtitle = TITLEplus.split("|");
+    ARRtitle = titl.split("|");
     if (ARRtitle[0].substr(0, 1) !== "@") {
         TITLE = ARRtitle[0];
         ALT = false;
@@ -674,7 +716,14 @@ function selectTune(titl) { //alert('selectTune('+titl+')');//^ Entry Point usin
     } else {
         VOL = VOLdefault;
     }
-    TUNEnum = SETlist.indexOf(TITLEplus); //^ XXX causes problems if tune is in list more than 1 time
+//alert("SETlist:\n=================\n"+SETlist)  
+    
+    //SETlist=SETlist.split(',')
+   //TUNEnum = document.getElementById('mySet').indexOf(titl)
+    TUNEnum=document.getElementById("mySet").selectedIndex;
+    //TUNEnum = SETlist.indexOf(titl); //^ XXX causes problems if tune is in list more than 1 time
+//alert(TITLE+"<<<"+titl+">>"+TUNEnum)
+    document.getElementById('bs'+TUNEnum).style.color='red';
     if (PRESETlock != true) {
         loadServerTitle();
     }
