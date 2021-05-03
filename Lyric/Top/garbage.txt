@@ -1,0 +1,33 @@
+   if (VAR == 'BREAKlines') { //works with BIGchords 
+   if (VAR == 'BIGchords') {
+   if (VAR == 'SETnotes' & SETnotes === true) {
+   if (VAR == 'POPnotes' & POPnotes === true) {
+   if (VAR == 'TECHnotes' & TECHnotes === true) {
+   if (VAR == 'FULLscreen') {
+   if (VAR == 'LOOPER') {
+   if (VAR == 'METRO') {
+   if (VAR == 'BARsync') {
+   if (VAR == 'COUNTin') {//USELESS click removed
+   if (VAR == 'BIGselect')
+   
+
+CAPS
+BREAKlines
+BIGchords
+SETnotes
+POPnotes
+TECHnotes
+FULLscreen
+LOOPER
+METRO
+BARsync
+COUNTin
+BIGselect
+
+take breaklines out
+#11 starting with 0
+
+Restored 5/1 9:07 PM has line 1659 problem
+restored 9.52 at 11:43 to see if I could fix it BAD
+restored 9.52 at 11:49 to see if I could fix it
+restored the 9:40 at 1:17 on may 6  go fix the arr index

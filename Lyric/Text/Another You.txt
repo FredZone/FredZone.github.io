@@ -1,0 +1,51 @@
+TITLE:Another You,DUR:132,BPM:150,BEATS:4,KEY:C,QUAL:Preliminary,ARTIST:Seekers,GENRE:Folk,STYLE:Ballad,HITyear:1969?
+[Intro]
+|G      ~C      |D              |G      ~C      |D
+-
+|G      ~C      |D              |G      ~C      |D
+-
+#VERSE 1 --------------------------------
+|C              |F              |D7             |G7
+There's a new world somewhere, they call the promised land,
+|C              |Em             |F              |G
+And I'll be there someday, if you will hold my hand.
+|Am             |F              |G      ~F      |Em      ~F
+I still need you there beside me, no matter what I do,
+|C      ~F      |Dm      ~G      |C      ~F      |C
+For I know I'll never find another you.
+#VERSE 2 --------------------------------
+|C              |F              |D7             |G7
+There is always someone for each of us they say,
+|C              |Em             |F              |G
+And you'll be my someone forever and a day.
+|Am             |F              |G      ~F      |Em      ~F
+I could search the whole world over, until my life is through
+|C      ~F      |Dm      ~G      |C      ~F      |C      ~G
+But I know I'll never find another you.
+#CHORUS 1 -------------------------------
+|Am             |F              |C      ~F      |C     ~C/B
+It's a long, long, journey, so stay by my side.
+|Am             |G      ~F      |C   ~F   ~G7
+When I walk through the storm you'll be my guide, be my guide
+#VERSE 3 --------------------------------
+|C              |F              |D7             |G7
+If they gave me a fortune, my pleasure would be small,
+|C              |Em             |F              |G
+I could lose it all tomorrow, and never mind at all.
+|Am             |F              |G      ~F      |Em      ~F
+But if I should lose your love, dear, I don't know what I'd do,
+|C      ~F      |Dm      ~G      |C      ~F      |C
+For I know I'll never find another you.
+#OUTRO ----------------------------------
+|C              |F              |D7             |G7
+-
+|C              |Em             |F              |G
+-
+|Am             |F              |G      ~F      |Em      ~F
+But if I should lose your love, dear, I don't know what I'd do,
+|C      ~F      |Dm      ~G      |C      ~F      |G7
+For I know I'll never find another you.
+|C      ~F      |G7
+Another you . . .
+|C      ~F      |C
+Another you

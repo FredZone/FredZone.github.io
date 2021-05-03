@@ -13,6 +13,7 @@ Amie
 And So It Goes
 Angel From Montgomery
 Annies Song
+Another You
 At This Moment
 Auld Lang Syne
 Bad Bad Leroy Brown
@@ -138,6 +139,7 @@ Hound Dog
 House Of The Rising Sun - Short
 House Of The Rising Sun-John
 House Of The Rising Sun
+How Great Thou Art
 How Much Tequila Did I Drink Last Night
 I Aint That Lonely Yet
 I Always Get Lucky With You
@@ -162,6 +164,7 @@ Ill Take You Home Again Kathleen
 Im Moving On
 Im So Lonesome I Could Cry
 Imagine
+In Spite Of Ourselves
 In The Bleak Mid Winter
 Irene Goodnight
 Is Anybody Going To San Antone
@@ -384,3 +387,4 @@ You Dont Have To Call Me Darlin Darlin
 You Were On My Mind
 Your Cheatin Heart
 Your Momma Dont Dance
+ZZTake It Easy

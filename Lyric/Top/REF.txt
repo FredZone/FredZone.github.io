@@ -1,0 +1,21 @@
+1  CAPS
+2  FULLscreen
+3  LEFTborder
+4  LOCK
+5  TEXT
+6  SHADE
+7  NOTES
+8  SETnotes
+9  POPnotes
+10 TECHnotes
+11 LIVEnotes
+12 COUNTin
+13 TBD2
+14 BREAKlines
+15 BIGchords
+16 LOOPER
+17 METRO
+18 BARsync
+19 BIGselect
+
+before 12:40

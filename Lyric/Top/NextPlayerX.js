@@ -1,13 +1,16 @@
-    var REV ="7"//this revision
-    var JSname="NextPlayer.js"//java script file
+//  TO RELEASE THIS AS THE STABLE REVISION  MARKED WITH $$$$
+//  Save the old NextPlayer.js and NextPlayer.html in directory "NP-R" where R is the current Revision (ie "NP-7)just for history's sake
+//===============================================
+//  Save this new files "NextPlayerX.js" and NextPlayerX.html as NextPlayer.js" and NextPlayer.html in the 'TOP' directory
+//  Change the last line of Nexplayer.html to reference <SCRIPT "NextPlayer.js"  instead of "NextPlayerX.js"
+//================================================
+// Change the REV of NextPlayerX to the new rev (i.e. "var REV ="8.0")
+//areas for work tagged with ???
+//*REVISION VAR==================================
+    var REV ="<X9>Beta 7-1</X9>";//this revision $$$$
+    var JSname="NextPlayerX.js";//java script file $$$$
     var JHdate;
-//TO RELEASE Javascript file(ex as rev 7.4)
-//  Save this file as this file as "Player7-4.js" and Change first two lines of file as shown below
-//  var REV ="7.4"
-//  var JSname="Player7-4.js"
-//areas for work tqagged with ???
-
-//*GLOBAL VAR=======================================================================================================
+//*GLOBAL VAR====================================
 //*   FLAGS
     var ALT=false;//^ alternate song
     var AUDfail=false;
@@ -2166,12 +2169,11 @@ function setCustom(VAR, val, action) {
       document.getElementById(ico).src = "../../Icons/" + icon;
       statusMsg(PRESET + ">" + VAR + ">" + ico + ">" + icon + ">" + val)
    } else if (action == 'wrap') {
-      statusMsg("WRAPPING UP")
       ARRconvert()
    }
 
    if (VAR == 'BREAKlines') { //works with BIGchords
-      if (LINElimit >50) {
+      if (LINElimit >35) {
          LINElimit = parseInt(LINElimit - 5,0);
           document.getElementById('imgBREAKlines').src = "../../Icons/on.png"
       } else{
@@ -2267,13 +2269,12 @@ if (VAR == 'BARsync') {
    }
 }
 if (VAR == 'COUNTin') { //USELESS click removed
-
    if (COUNTin === false) {
       document.getElementById("imgCLICKER").src = "../../Icons/off.png"
       CLICKER = false
    }
-   alert('cleared COUNTin')
 }
+
 if (VAR == 'BIGselect') {
    if (BIGselect === false) {
       document.getElementById("imgBIGselect").src = "../../Icons/off.png"
@@ -2291,7 +2292,6 @@ if (action === 'toggle') {
 } else if (action === 'presets') { //this is the return point to prevent excessive arrConverstions
    if (PRESETno > 15) {
       statusMsg("<X2>arrConvert Triggered Preset ALL...</X2>", 0)
-      alert('wrapping it up')
       presets('wrap')
    } else {
       PRESETno = PRESETno + 1;

@@ -1,22 +1,25 @@
-TITLE:Blueberry Hill,DUR:0,BPM:120,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Fats Domino,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+TITLE:Blueberry Hill,DUR:100,BPM:120,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Fats Domino,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+
+intro
+|C             |C
 #VERSE 1 --------------------------------
-|C             |F
-I found  my  thrill
-|F             |C
-On Blueberry Hill
-|C             |G7
-On Blueberry Hill
-|G7            |C
-When I found you
+|F             |F
+I found  my  thrill...  On Blueberry
+|C             |C
+ Hill        On Blueberry
+|G7           |G7
+Hill   When I found
+|C             |C
+you            The moon stood
 #VERSE 2 --------------------------------
-|C             |F
-The moon stood still
-|F             |C
-On Blueberry   Hill
-|C             |G7
-It lingered  until
-|G7            |C
-My dreams came true
+|F             |F
+still  On Blueberry
+|C             |C
+ Hill          It lingered
+|G7           |G7
+until        My dreams came
+|C             |C
+true
 #CHORUS 1 -------------------------------
 |G7            |C
 The wind in the willow played

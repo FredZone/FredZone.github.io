@@ -1,14 +1,18 @@
-    var REV ="7"//this revision
-    var JSname="NextPlayer.js"//java script file
+    var REV ="<X9>REV: Beta 7-1</X9>";//this revision
+    var JSname="NextPlayer.js";//java script file
     var JHdate;
-//TO RELEASE Javascript file(ex as rev 7.4)
-//  Save this file as this file as "Player7-4.js" and Change first two lines of file as shown below
-//  var REV ="7.4"
-//  var JSname="Player7-4.js"
-//areas for work tqagged with ???
+//TO RELEASE New Revision
+//  Save the old NextPlayer.js and NextPlayer.html in directory "NP-R" where R is the current Revision (ie "NP-7)
+//===============================================
+//  Save this new files "NextPlayerX.js" and NextPlayerX.html as NextPlayer.js" and NextPlayer.html in the 'TOP' directory
+//  Change the last line of Nexplayer.html to reference <SCRIPT "NextPlayer.js"  instead of "NextPlayerX.js"
+//================================================
+// Change the of NextPlayerX to the new rev (i.e. "var REV ="8.0")
+//areas for work tagged with ???
 
 //*GLOBAL VAR=======================================================================================================
 //*   FLAGS
+var ACTION='none'
     var ALT=false;//^ alternate song
     var AUDfail=false;
     var AUDend=false;
@@ -92,40 +96,59 @@
     var TIMEOUTmet;
     var TIMEOUTwait; //Wait after scroll end before showing top Icons title etc
 //*   CONFIGURATION
- //             0        1            2            3        4       5        6        7         8        9         10        11      12         13       14     15     16    
-   ARRimg="imgCAPS,imgFULLscreen,imgLEFTborder,imgCLOCK,imgTEXT,imgSHADE,imgNOTES,imgSETnotes,imgPOPnotes,imgTECHnotes,imgLIVEnotes,imgCOUNTin,imgBREAKlines,imgBIGchords,imgLOOPER,imgMETRO,imgBARsync".split(',');
-      //             0        1          2        3   4    5     6     7         8        9         10        11      12         13       14     15     16  
-    var ARRpresets="CAPS,FULLscreen,LEFTborder,CLOCK,TEXT,SHADE,NOTES,SETnotes,POPnotes,TECHnotes,LIVEnotes,COUNTin,BREAKlines,BIGchords,LOOPER,METRO,BARsync".split(',');
-    var TBD= false;
-    var BACKdrop=false;
-    var BARsync=false
-    var BIGchords=true;
-    var BIGchordSize=1.00;
-    var BREAKlines=true;
-    var COUNTin=false;//
-    var CAPS=true;//
-    var CLOCK=false;
-    var CLOCKstart=0;
-    var CLOCKstop=0;
-    var ENDpause=false;
-    var TBD2=false;//Later    
-    var FULLscreen=false;
-    var LEFTborder=false;
-    var LINEnum=false;//^ show line numbers
-    var LINEtime=false;//^ show min sec instead of line num
-    var LINKnotes=false;
-    var LIVEnotes=false;
-    var NOTES=false;
-    var POPnotes=false;
-    var SHADE=false;//shade the screen
+//                0        1          2        3     4    5     6     7         8        9       10        11      12      13       14       15      16    17
+//var ARRpresets="CAPS,FULLscreen,LEFTborder,CLOCK,TEXT,SHADE,NOTES,SETnotes,POPnotes,TECHnotes,LIVEnotes,COUNTin,TBD2,BREAKlines,BIGchords,LOOPER,METRO,BARsync".split(',');
+   var ARRpresets="CAPS,FULLscreen,LEFTborder,CLOCK,TEXT,SHADE,NOTES,SETnotes,POPnotes,TECHnotes,LIVEnotes,COUNTin,BREAKlines,BIGchords,LOOPER,METRO,BARsync".split(',');
+      
+  //page html arrConvert
+      var CAPS=true;//
+      var NOTES=false;//
+      var TECHnotes=false;
+      var LIVEnotes=false;
+      var SETnotes=false;
+      var LEFTborder=false;
+      var TEXT=false;//reduce text size
+      var BREAKlines=false;
+      var BIGchords=false;     
+      var LINEnum=false;//^ show line numbers
+      var LINEtime=false;//^ show min sec instead of line num
+      var FULLscreen=false;
+      var BIGchordSize=1.00;
+      var LINKnotes=false;
+      
+     
+      var CLOCK=false;
+      
+      var SHADE=false;//shade the screen
+      
+      
+      var POPnotes=false;
+      var COUNTin=false;
+      //var TBD2= false;//Disabled BUT STILL IN ARRPRSETS
+
+      var LOOPER=false;
+      var METRO=false;//metronome
+      var BARsync=false
+      //NOT FULLY INTEGRATED INTO PRESETS================================================
+
+      var ENDpause=false;
+      var BACKdrop=false;
+      
+      var BIGselect=false;
+      
+    
+    
+    
+   
     var SOUND=true;
-    var SETnotes=false;
+    
     var TABS=false;
-    var TEXT=false;//reduce text size
+   
     var TRIVIAnotes=false;
-    var TECHnotes=false;
+    
 //*   MISC CONSTANTS
-    var BIGselect=false;
+
+    var BIGht=100
     var ARRscale="A,Bb,B,C,C#,D,Eb,E,F,F#,G,Ab,A,Bb,B,C,C#,D,Eb,E,F,F#,G,Ab,A,Bb,B,C,C#,D,Eb,E,F,F#,G,Ab".split(",");
     var ARRsongSettings;
     var MSGlast="No Message...";
@@ -136,12 +159,11 @@
     var SETname="Single Tune";//^ default in case a list cannot be loaded
     var WINDht;//px window height
     var WINDwt;//px window width
+
 //*   LOOP VARIABLES
-    var METRO=false;//metronome
     var MET;//METRO count
     var METRObpm;
     var METRObeats;
-    var LOOPER=false;
     var LOOPon=false;
     var LOOPtop=0;
     var LOOPtopBU=0;
@@ -152,8 +174,8 @@
     var ENDaudio=false
 //*   PRESETS
     var ARRtf="true,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false".split(',');
-    var PRESETno=0;
-    var PRESET="Default Mode";
+    var PRESETno=-1;
+    var PRESET="DEFAULT";
     var PRESETlock=false //force break in presets
     var BAR=0
     var BARShalf;
@@ -177,195 +199,11 @@
 //*   MAIL
    var MAIL="";
    var MAILsys;
-   var BACKTRACK; //to try backtracks  
-//*MISC CRAP NOT LOCATED LOGICALLY ===================================================================
-window.onbeforeunload = function(e) {
-   if (MAIL.length>20) {
-      statusMsg('YOU HAVE UNSENT MAIL','red')
-      return 'UNSENT MAIL ';
-   }else{return(null)}
-}
-function sizeTuneSelect(){
-   dis('BS','none')
-   if (BIGselect==false) {
-      BIGselect=true;
-      statusMsg("Creating Small Selector...");
-      bigSelectorBuild("BS",PLAYlist);
-      document.getElementById('BSicon').src='../../Icons/blackTextSmall.png';
-      document.getElementById('BSbutton').style.display='block';
-   }else{
-      statusMsg("Creating Small Selector...");
-      BIGselect=false;
-      document.getElementById('BSbutton').style.display='none';
-   }
-}
+   var BACKTRACK; //to try backtracks
+   var PLAYLIST='ALL TUNES'
 
-function getSelectionText() {
-    var text = "";
-    if (window.getSelection) {
-        text = window.getSelection().toString();
-    } else if (document.selection && document.selection.type != "Control") {
-        text = document.selection.createRange().text;
-    }
-    return text;
-}
-
-function mailTo(mode) {
-   var entry=null;
-   var x=false
-   if (mode == 'open') {
-      document.getElementById('msg').style.width = "96%";
-      if (MAIL.length >= 1) {
-         document.getElementById('mailerBody').value = MAIL
-         statusMsg('eMail Initiated');
-      }
-      dis('mailer', 'block');
-   }
-   if (mode == 'send') {
-      dis('mailer', 'none');
-      window.open("mailto:fkaparich@gmail.com?subject=From PERFORMER MAIL&body=.............Start of Mail..................%0A" + MAIL.replace(/\n/g, '%0A')+"...............End of Mail..................");
-   } else {
-      if (mode == 'title') {
-         entry = TITLE +":";
-      }
-      if (mode == 'info') {
-         var pct = document.getElementById("Tune").scrollTop / SCROLLpix;
-         var time = parseInt(pct * DUR, 10);
-         entry = TITLE + ": [" + time + " seconds {" + parseInt(pct * 100, 10) + "%}]  (" + SETname + ")";
-      }
-      if (mode == 'key') {
-         entry = TITLE + ": Key(Base)=" + KEYbase + ": now =" + KEY;
-      }
-      if (mode == 'tempo') {
-         entry = TITLE + ": Tempo now " + BPM;
-      }
-      if (mode == 'set') {
-         entry = TITLE + ": Set=" + SETname;
-      }
-      if (mode == 'hilite') {
-         entry = TITLE + ":\n----------------Selected Text-----------------\n" + getSelectionText()+"\n----------------------------------------------";
-      }     
-      if (mode == 'clear') {
-         let x=confirm('PERMANENTLY Delete Your eMail???')
-         if(x===true) {
-            window.onbeforeunload = null
-            MAIL = ""
-            document.getElementById('mailerBody').value = ""
-            document.getElementById('msg').style.width = "100%"
-            document.getElementById('mailer').style.display = "none"
-            statusMsg("eMail Deleted...", 'yellow')
-         }else{statusMsg("eMail SAVED...", 'yellow')}
-         return;
-      }
-      if (entry != undefined) {
-         MAIL = entry + '\n' + document.getElementById('mailerBody').value;
-      }
-      document.getElementById('mailerBody').value = MAIL;
-   }
-}
-
-function rTrim(str){
-   while (str.substring(str.length-1)==" "){str = str.substring(0,str.length-1);}
-   return str;
-}
-
-function iconize(icon,fontsize){// put an icon.png in text line
-   if (icon==''|icon==undefined) {icon='transRedCircle'}
-   if (fontsize==''|fontsize==undefined) {fontsize=FONTSIZE}
-   return  "<img src=\'../../Icons/"+icon+".png\' alt =\'?\' style=\'position:absolute;width:"+FONTSIZE+"\'>"
-}
-
-function localFile(desc, loc, web) {
-   var a = '<!DOCTYPE html><head></head><body>'
-   var x = window.open("", "", "toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=" + parseInt(WINDwt / 2, 10) + ", height=" + parseInt(WINDht / 3, 10));
-   a = a + '<b>' + desc + '</b>';
-   a = a + "<br><br><a href=\'" + web + "\'>INTERNET LINK (Click Here...)</a>";
-   a = a + '<br><br>To View the Local File, (If it is on your on YOUR Machine)...<br>--PASTE the string below into Address Bar...'
-   a = a + "<br>--<a href=\'" + loc + "\'>" + loc + "<br>"
-   a = a + "</body></html>";
-   x.document.write(a)
-   x.document.close
-}
-//*BACTRACK functions=======================================
-function btInst() {
-    var a = "BACKTRACK INSTRUCTIONS\n";
-    a = a + "1) Select a song in with Backtrack in \'Backtrack Mode\'...\n";
-    a = a + "2) The Default measurement is automatic...\n";
-    a = a + "3) Analyize the 'Map' and look at the Quality (Color Coded: Excellent,Good,Marginal,Sucks) \n";
-    a = a + "4) Verify average Tempo in C by Taking 3 measurements of Tempo (start,middle,end) and make sure it is logged correcly\n";
-    a = a + "5) Put your best measurement in the yellow input box and re-evaluate\n";
-    a = a + "6) To Get an acceptable reading change the length of the MP3 or put the correct number of bars in the song text\n";
-    a = a + "7) Be sure to add any intro bars to the start of the song and the correct number of hold bars at the end ";
-    alert(a)
-}
-
-function btAnal() {
-    var deltaDur
-    var bars
-    var ans
-    deltaDur = document.getElementById('btMdur').innerHTML - MEASURES * BEATS * 60 / document.getElementById('btTempo').value
-    bars = document.getElementById('btMdur').innerHTML * document.getElementById('btTempo').value / (BEATS * 60);
-    ans = "<pre>Measured tempo and backtrack duration indicate:" + bars + " MEASURES\n=================\n"
-    ans = ans + "Your file has " + MEASURES + " MEASURES\n=================\n"
-    ans = ans + "MP3 duration is off by " + deltaDur + " seconds\n=================\n"
-    ans = ans + "OR by " + parseFloat(MEASURES - bars, 10) + " Measures</pre>"
-    document.getElementById('eval').innerHTML = ans;
-}
-
-function d(id) {//shortcut for a common piece of code
-   return (document.getElementById(id))
-} 
-
-function songMap() {
-    countBARS();
-    d('map').innerHTML = '<pre>' + MAP.join('-') + '</pre>';
-    var barZero = 0;
-    var barLen = SCROLLpix / MEASURES;
-    var fact = parseFloat(barZero / BAR, 10);
-    var pct = parseFloat(barZero * 100 / BAR, 10);
-    var tempoMp3;
-    var col = 'white';
-    var bgc = 'black';
-    var qual="None";
-    var err;
-    //File
-    d('btTitle').innerHTML = TITLE;
-    d('btFbpm').innerHTML = BPMfile;
-    d('btFbars').innerHTML = BARS;
-    d('btFmeas').innerHTML = MEASURES;
-    d('btFdur').innerHTML = MEASURES * BEATS * 60 / BPMfile;
-    //Measures and MP3
-    d('btMbpm').innerHTML = (BEATS*MEASURES*60)/Audio1.duration
-    d('btMmeas').innerHTML =MEASURES
-    d('btMdur').innerHTML =Audio1.duration
-    //TEMPO and MP3
-    d('btTdur').innerHTML = Audio1.duration;
-    d('btTmeas').innerHTML = (d('btTempo').value*Audio1.duration)/(BEATS*60)
-    //TEMPO and MP3
-    d('btRbpm').innerHTML = d('btMbpm').innerHTML -d('btTempo').value;
-    d('btRmeas').innerHTML = d('btMmeas').innerHTML-d('btTmeas').innerHTML;
-    d('btRdur').innerHTML = ((MEASURES * BEATS * 60) / BPMfile)-Audio1.duration
-    err=Math.abs(d('btRmeas').innerHTML)
-    if ( err<=0.5/BEATS) {
-        bgc = 'gold';
-        col='black' 
-        qual="Excellent: ";
-    }else if ( err<=1/BEATS) {
-        bgc = 'green';
-        qual="Good: ";
-    }else if (err<=2/BEATS) {
-        bgc = 'yellow';
-        col='black';        
-        qual="Marginal: "; 
-    }else{bgc = 'red';
-    qual="Timing Sucks: "}
-    qual=qual+" Off by "+parseInt(err*BEATS*1000,10)/1000+ " beats over the Entire Song"
-    d('trackQual').style.backgroundColor = bgc;
-    d('trackQual').style.color = col;
-    d('trackQual').innerHTML = qual;
-}
-
-//*BOOT ROUTINE BOOT and embedded functions=================== All in functions sequence with breaks between sub routines
+//*BOOT ROUTINE BOOT and embedded functions===================
+//All in functions sequence with breaks between sub routines
 window.onload = function() {
     var agent=(navigator.userAgent.split(')').reverse()[0].match(/(?!Gecko|Version|[A-Za-z]+?Web[Kk]it)[A-Z][a-z]+/g)[0])
     ARRstatusLog=("================BOOTING in "+agent+"==================").split('-');
@@ -390,14 +228,14 @@ function start() {
     clearTimeout(TIMEOUTcrap);
     document.getElementById('dubugSafety').focus();
     revDates();
-    document.getElementById('revStatus').innerHTML = "REV: " + REV;
-    var lst = "<a style='text-align:center; width:100%'><a style='color:white;'>SOUND MODE</a><br><select id='soundSelector' style='background-color:white;color:black;font-size:2vw; width:100%' onchange='setSoundModeDefault(this.value)'>";
-    while (j < ARRsoundModes.length) {
-        lst = lst + "\n<option>" + ARRsoundModes[j] + "</option>";
-        j++;
-    }
-    lst = lst + "\n</Select>";
-    document.getElementById("soundBox").innerHTML = lst;
+    document.getElementById('revStatus').innerHTML = REV;
+//    var lst = "<a style='text-align:center; width:100%'><a style='color:white;'>SOUND MODE</a><br><select id='soundSelector' style='background-color:white;color:black;font-size:2vw; width:100%' onchange='setSoundModeDefault(this.value)'>";
+//    while (j < ARRsoundModes.length) {
+//       lst = lst + "\n<option>" + ARRsoundModes[j] + "</option>";
+//      j++;
+// }
+//    lst = lst + "\n</Select>";
+//document.getElementById("soundBox").innerHTML = lst;
     arr = receiveARR(); //get an array if one is sent...*possible global
     if (arr ===undefined | arr ===null | arr ===''|arr.length<10) { //^ normal first time boot, no query string
         BOOT = true;
@@ -411,7 +249,6 @@ function start() {
         createARRlines(arr);
     }
 }
-
 //*   CREATE SELECTORS
 function createSetSelector() { //alert('SetSelector');  //^creates an option box from the file SetList.txt in the top directory
     statusMsg("Creating Set Selector...");
@@ -420,7 +257,7 @@ function createSetSelector() { //alert('SetSelector');  //^creates an option box
     request.send(null);
     var content = request.responseText;
     var sets = content.split("\n");
-    var ihtml = "<a style='text-align:center; width:45vw;color:white'>PLAYLIST:</a><br><select id='Set' style='font-size:2vw' onchange='SETname=(this.value);selectPlaylist(this.value)'><option selected>ALL TUNES</option>";
+    var ihtml = "<a style='text-align:center; width:45vw;color:white'>PLAYLIST:</a><br><select id='Set' style='font-size:2vw' onchange='SETname=(this.value);alert(this.value),selectPlaylist(this.value)'><option selected>ALL TUNES</option>";
     j = 0;
     while (j < sets.length) {
         if (sets[j].substr(0, 9)!= "ALL TUNES") {
@@ -431,13 +268,15 @@ function createSetSelector() { //alert('SetSelector');  //^creates an option box
     ihtml = ihtml + "\n</Select>";
     document.getElementById("setSelectA").innerHTML = ihtml;
     //if(PRESETlock!=true){selectPlaylist("ALL TUNES");} //^ default  USELESS???
-    selectPlaylist("ALL TUNES");
+    selectPlaylist(PLAYLIST);
 }
 
 function selectPlaylist(set) { //alert('selectPlaylist('+set+')');  //^ Selects your set by its name
+    document.getElementById('Set').value=set
     statusMsg('Selecting Playlist '+set,0);
     var request = new XMLHttpRequest();
     var path = "../Sets/" + set + ".txt";
+    statusMsg("Selected Playlist: " + set);
     SETname = set;
     PLAYlist = "";
     request.open("GET", path, false);
@@ -449,83 +288,137 @@ function selectPlaylist(set) { //alert('selectPlaylist('+set+')');  //^ Selects 
         dis('abet', 'none');
     }
     TUNEnum = 0
-    createPlayListSelector();//the ARRAY of songs in the set should be playlist
+    createPlaylist();//the ARRAY of songs in the set should be playlist
 }
 
-function createPlayListSelector() { //alert('createSetList()');//^ creates the setlist option box and selects tune 0
-   statusMsg('Creating PlayList Selectors ' + SETname, 0);
-   statusMsg("Formating Small Playlist and Selecting Default Song...", "yellow");
-   if (BIGselect == true) {
-      statusMsg("Formating BIG Playlist and Selecting Default Song:" + TUNEnum, "yellow");
-      var i = 0;
-      str = "<div id='BB'>"
-      statusMsg(PLAYlist.length)
-      while (i < PLAYlist.length) {
-         str = str + "<div id='BS" + i + "' onclick=\"selectTuneNo(\'" + i + "\')\" style='position:relative;border:solid;height:5vh;line-height:110%;width:100%;overflow:hidden;font-size:4vh;'>" + (i + 1) + ":  " + PLAYlist[i].split('|')[0] + "</div>";
-         i = i + 1;
-      }
-      str = str + "</div>"
-      document.getElementById('BS').innerHTML = str
-      document.getElementById("BS" + TUNEnum).style.color = 'red'
-      document.getElementById('BSbutton').style.display = 'block'
-   } else {
+function createPlaylist() { //alert('createSetList()');//^ creates the setlist option box and selects tune 0
+   //statusMsg('Creating PlayList Selector '+SETname,0);
+   if (BIGselect==false){
+      statusMsg("Creating Small Playlist: Selecting Default Song...", "yellow");
       document.getElementById('BSbutton').style.display = 'none'
-   }
-   var a;
-   var lst = "";
-   j = 0;
-   while (j < PLAYlist.length) {
-      a = (PLAYlist[j].split("|")[0]);
-      if (a.substring(0, 1) == '@') {
-         a = a.substring(1, a.length);
+      var a;
+      var lst = "";
+      j = 0;
+      while (j < PLAYlist.length) {
+         a = (PLAYlist[j].split("|")[0]);
+         if (a.substring(0, 1) == '@') {
+            a = a.substring(1, a.length);
+         }
+         lst = lst + "\n<option value= '" + PLAYlist[j] + "'>" + a + "</option>";
+         j++;
       }
-      lst = lst + "\n<option value= '" + PLAYlist[j] + "'>" + a + "</option>";
-      j++;
+      lst = lst + "\n";
+      document.getElementById("mySet").innerHTML = lst;
+   }else{
+      statusMsg("Creating BIG Playlist: Selecting Default Song...", "yellow");
+      var i = 0;
+      str=""
+      while (i < PLAYlist.length) {
+        str = str + "<div id='BS"+i+"' onclick=\"bigSelect(\'"+i+"\')\" style='position:relative;border:solid;height: overflow:hidden;5vh;line-height:110%;width:100%;font-size:4vh;'>"+(i+1)+":  "+PLAYlist[i].split('|')[0] + "</div>";
+        i = i + 1;
+      }
+      document.getElementById('bigSelector').innerHTML = "<div id='BB'>"+str+"</div>"
+     // BIGht=document.getElementById('bigSelector').clientHeight;
+     // alert("bigSelector ht: "+BIGht)
+      document.getElementById('BSbutton').style.display = 'block'
    }
-   lst = lst + "\n";
-   document.getElementById("mySet").innerHTML = lst;
-   document.getElementById("mySet").selectedValue = TUNEnum;
    TITLEplus = PLAYlist[TUNEnum];
-   PREVtitle = TITLEplus; //?????????????????????????????????????????????????
+   PREVtitle = TITLEplus;
    selectTune(TITLEplus);
+   }
+//*   NEXT TUNE=============================================================================
+function nextTune(delta) { //alert("nextTune("+delta+")");//^ Entry point if you have selected the next tune in the list by direction 1,0,-1
+   statusMsg("Incrementing tune " + TUNEnum + " by " & delta & " step(s)...", "yellow");
+   screenFormat("Think");
+   barSelect('none');
+   //alert(TUNEnum)
+   if (PLAYlist[parseInt(TUNEnum + delta)]) { //^ if next tune exists go to it
+      i = parseInt(parseInt(TUNEnum) + parseInt(delta));
+      if (i < 0 || i >= PLAYlist.length) {
+         statusMsg("No Next Tune")
+         return
+      }
+   }
+   if (BIGselect == false) {
+      smallSelect(i)
+   } else {
+      bigSelect(i)
+   }
 }
 
- function selectTuneNo(i){
- statusMsg('Selecting tune by number: '+i) 
-      if (i < 0 || i >= PLAYlist.length) {
-         statusMsg("No Tune")
-         return
-      } 
- document.getElementById('mySet').selectedIndex=i
- var titl=PLAYlist[i]
- selectTune(titl)
- }
+
+function indx(L) {
+   statusMsg("Indexing to '"+L+"'")
+   var i=0;
+   val=0
+   var end= parseInt(PLAYlist.length-1);
+   //alert ("Searching for: "+ L +" in " +PLAYlist.length)
+      for (i = 0; i<end; i++){
+         statusMsg(PLAYlist[i].substring(0,1))
+         if (PLAYlist[i].substring(0,1)==L) {
+            val=i
+            //alert(PLAYlist[i]+"\n"+val)
+            i=end;
+         }
+      }
+      //alert(val)
+      if (BIGselect==false) {
+         smallSelect(parseInt(val))
+      }else{
+         bigSelect(parseInt(val))
+      }
+}
+
+
 //*   OPEN BY TITLE
 function openSong() { //opens a song with title, if its on server, not on list============EEE
-    statusMsg("Request Tune by exact Title... ", 0);
+    statusMsg("Requesting Tune by exact Title... ", 0);
       SONGsource="request"
       dis('nextIcon','none')
       dis('nextIcon','none')
       selectTune(prompt("Please type the exact tune name", TITLE));
 
 }
+//*   SELECT A TUNE
+function smallSelect(i){
+   statusMsg("Using Small Selector for Tune #: "+i)
+   SONGsource="select"
+   TUNElast=TUNEnum;
+   TUNEnum=i
+   TITLEplus=PLAYlist[i]
+   selectTune(TITLEplus);
+}
 
-function selectTune(titl){
-   statusMsg("Selecting "+titl)
-   TITLEplus = titl;
-   TUNEnum= PLAYlist.indexOf(TITLEplus);
- 
-   //TUNEnum=returnIndexOf(PLAYlist,TITLEplus)
-   dis('BS', 'none');
+function bigSelect(i){
+   statusMsg("Using Big Selector for Tune #: "+i)
+   TUNElast=TUNEnum
+   TUNEnum =i
+   var pct= i/PLAYlist.length
+   SONGsource="select"
+   TITLEplus=PLAYlist[i];
+   statusMsg("TUNE:"+i +":  "+ TITLEplus)
+   document.getElementById('BS' + TUNEnum).style.color = 'red';
+   alert(document.getElementById('bigSelector').clientHeight);
+   alert(document.getElementById('BB').scrollHeight);
+   //alert(document.getElementById('BS1').clientHeight);
+   //alert(BIGht)
+   //var sk =(TUNEnum/PLAYlist.length)*(BIGht)
+   //document.getElementById('bigSelector').scrollTop=sk;
+   dis('bigSelector','none')
+  selectTune(TITLEplus);
+
+}
+
+function selectTune(titl) {
+   statusMsg("Tune Selected by Title: "+TITLEplus + ">>"+TUNEnum)
    dis('backtracker', 'none'); //SIMPLIFY
    document.getElementById("mySet").selectedIndex=TUNEnum;//set the std selector
    if (BIGselect==true) {
-      statusMsg('Big Select')
       document.getElementById('BS' + TUNEnum).style.color = 'red';
-      //var sk =(TUNEnum/PLAYlist.length)*(document.getElementById('BB').clientHeight)
-      //document.getElementById('BS').scrollTop=sk;
-       //TITLEplus is formated play info=@TITLE|KEY|BPM|SOUNDmode|NOTEset|volume (@ indicates alternate if its present)
-   }
+      //var st =500
+      //document.getElementById('BB').scrollTop=st;
+  }
+   
    ARRtitle = titl.split("|");
    if (ARRtitle[0].substr(0, 1) !== "@") {
       TITLE = ARRtitle[0];
@@ -550,19 +443,18 @@ function selectTune(titl){
    } else {
       VOL = VOLdefault;
    }
-   if (PRESETlock != true) {
-      loadServerTitle();
-   }
+   
+   loadServerTitle();
+  
 }
-
 //*   LOADS FROM SERVER
-function loadServerTitle() { 
-    statusMsg("Loading "+TITLE);
+function loadServerTitle() {
+    statusMsg("DownLoading from Server: "+TITLE);
     var path = "../Text/" + TITLE + ".txt"; //^ get the text file
     var request = new XMLHttpRequest();
     var content;
     var arr;
-    statusMsg("Downloading " + TITLE + "...");
+    //statusMsg("Downloading " + TITLE + "...");
     KEYbase = "X";
     document.getElementById('key2').innerHTML = "-";
     document.getElementById("title").innerHTML = TITLE; //^ put title on tab...
@@ -745,7 +637,6 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
    var icon = 'blackNotePad';
    WARNING = "No Warnings!"
    var flag = "??"
-   //var crap;USELESS
    var count = 0; //count bars
    var img = false; //if true use an image for the song not text
    var htmlString = "";
@@ -781,9 +672,9 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
       LONGLINE = 74;
       img = true;
    } //in case there are no lines (indicates image file)
-//   if (BREAKlines === true) {
+   if (BREAKlines === true) {
       LONGLINE = LINElimit
-//  } //if breaking lines is requested
+   } //if breaking lines is requested
    if (LINEnum === true | LINEtime === true) {
       LONGLINE = LONGLINE + 4;
    } //^ adding space
@@ -825,20 +716,21 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
          NOTEtrivia = NOTEtrivia + newLine.substr(2) + "<br>";
          newLine = undefined;
       } else if (lType == 'tab') { //=========================================
-         var crap = '';
-         var no = '';
-         opacSet("buttonTabs", 1)
-         if (tabCount === 0) {
-            crap = " selected "
-         }
-         newLine = newLine.substring(4) //take out "TAB:"
-         ARRtabs.push(newLine) //add bar number
-         no = newLine.split('@')[0];
-         tabString = tabString + "<option value=" + tabCount + crap + " >TAB at BAR:" + no + "</option>"
+        statusMsg('TABS INACTIVATED') 
+         //var crap = '';
+         // var no = '';
+         //opacSet("buttonTabs", 1)
+         //if (tabCount === 0) {
+         //   crap = " selected "
+         //}
+         //newLine = newLine.substring(4) //take out "TAB:"
+         //ARRtabs.push(newLine) //add bar number
+         //no = newLine.split('@')[0];
+         //tabString = tabString + "<option value=" + tabCount + crap + " >TAB at BAR:" + no + "</option>"
          //TABtriggers=TABtriggers+"<a id=\'tt"+parseInt(no-1,10)+"\' name=\'ttt"+tabCount+"\' onclick=\"showTab(this.name.substring(3),\'block\')\"> "+parseInt(no-1,10)+" </a>"
-         statusMsg('Tab ' + tabCount + ' logged...', 0)
-         tabCount = tabCount + 1
-         newLine = undefined; //===============================
+         //statusMsg('Tab ' + tabCount + ' logged...', 0)
+         //tabCount = tabCount + 1
+         //newLine = undefined; //===============================
       } else if (lType == 'noteTech') {
          if (NOTEtech === undefined) {
             NOTEtech = newLine.substr(3);
@@ -980,7 +872,6 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
             lineNum++;
          }
          if (LIVEnotes === true) {
-            //var q="</X16>"
             newLine = newLine.replace(/XX>/g, "X16>") //make them visible
             newLine = newLine.replace(/#-->/g, "</X16>") //make them visible
             newLine = newLine.replace(/<!--#/g, "<X16>") //make them visible
@@ -1147,6 +1038,8 @@ function scrollSetup(img) { //alert('scrollSetup()');//^ get the song data,songH
       vis('shade', 'hidden');
    }
    document.getElementById('thinkIcon').src = "../../Icons/trans.png";
+   //document.getElementById('thinkIcon').src = "../../Icons/underConstruction.png";
+   
    LOOPend = SCROLLpix;
    document.getElementById('le').innerHTML = parseInt(DUR, 10) + "<br>End";
    LOOPtop = 0;
@@ -1437,7 +1330,6 @@ function screenFormat(cmd, varA) { //^ configures the play screen to match the p
          if (varA === undefined) {
             varA = 'trans.png'
          }
-         document.getElementById('thinkIcon').src = "../../Icons/" + varA;
          dis('think', 'block');
       }
       if (TUNEnum === 0) {
@@ -1533,7 +1425,7 @@ function trackPause() {
    screenFormat("Pause");
 }
 
-function trackPlayNOGOOD() { //pause options...undefined
+/*function trackPlayNOGOOD() { //pause options...undefined
    Audio1.pause() //just in case
    ENDscroll = false
    CTO();
@@ -1566,7 +1458,7 @@ function trackPlayNOGOOD() { //pause options...undefined
    document.getElementById("Audio1").play();
    scrollEngine();
 }
-
+*/
 function trackPlay() { //pause options...undefined
    Audio1.pause() //just in case
    ENDscroll = false
@@ -1588,7 +1480,6 @@ function trackPlay() { //pause options...undefined
    document.getElementById('Audio1').currentTime = POStrack
    Ystart = document.getElementById('Tune').scrollTop = POSscreen
    screenFormat("Scroll");
-   // = document.getElementById("tabBox").scrollLeft;
    if (METRO === true & BAR === 0) {
       metro(0)
    }
@@ -2064,361 +1955,388 @@ function setSoundMode(mode, icon) {
    SOUNDmode = mode;
    loadServerTrack();
 }
-
-function presets(action) {
-   // 0        1          2        3   4    5     6     7         8        9         10        11      12         13       14     15     16  
-   //ARRpresets="CAPS,FULLscreen,LEFTborder,CLOCK,TEXT,SHADE,NOTES,SETnotes,POPnotes,TECHnotes,LIVEnotes,COUNTin,BREAKlines,BIGchords,LOOPER,METRO,BARsync".split(',');
-   statusMsg("Initiating preset: " + PRESET + ": " + PRESETno, 0)
-   PRESETno = 0
-   if (PRESET === "Default Mode") {
-      if (action == 'presets') {
-         ARRtf = "true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false".split(',');
-         setCustom(ARRpresets[PRESETno], ARRtf[PRESETno], 'presets')
-      } else if (action == 'wrap') {
-      document.getElementById('soundSelector').selectedIndex = 0;
+   /* 1  CAPS
+      2  FULLscreen
+      3  LEFTborder
+      4  LOCK
+      5  TEXT
+      6  SHADE
+      7  NOTES
+      8  SETnotes
+      9  POPnotes
+      10 TECHnotes
+      11 LIVEnotes
+      12 COUNTin
+      13 TBD2
+      14 BREAKlines
+      15 BIGchords
+      16 LOOPER
+      17 METRO
+      18 BARsync
+      19 BIGselect
+*/
+function presets(ps) {
+   PRESET=ps
+   statusMsg("PRESET " + PRESET + " initiated by user", "red")
+   if (PRESET == "DEFAULT") {
+      ARRtf = "true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false".split(',');
+      setLineLimit(80);
+      document.getElementById('soundSelector').selectedValue='SILENT'
+      setSoundModeDefault('SILENT');
+      PLAYLIST='ALL TUNES';
+      statusMsg("PRESET " + PRESET + " initiated by user", "red")
+   } else if (PRESET == "TEST") {
+      ARRtf = "false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false".split(',');
+      setLineLimit(80);
+      document.getElementById('soundSelector').selectedValue='SILENT'
+      setSoundModeDefault('SILENT');
+      PLAYLIST='ALL TUNES';
+   } else if (PRESET == "PERFORM") {
+      ARRtf = "true,true,false,true,false,false,true,true,false,false,true,false,true,true,false,false,true,false".split(',');
+      setLineLimit(50);
+      document.getElementById('soundSelector').selectedValue = 'BACK TRACK';
+      setSoundModeDefault("BACK TRACK");
+      PLAYLIST='Fred Solo-BT';
+   } else if (PRESET == "PRACTICE") {
+      ARRtf = "true,false,false,true,false,false,true,false,false,false,false,true,true,true,true,true,true,false".split(',');
+      setLineLimit(80);
+      document.getElementById('soundSelector').selectedValue='CLICK TRACK'
       setSoundModeDefault(document.getElementById('soundSelector').value);
-      selectPlaylist('ALL TUNES')
-      document.getElementById('Set').value = 'ALL TUNES';
-      }
-   } else if (PRESET === "Perform Mode") {
-      if (action == 'presets') {
-         //                 0        1          2        3   4    5     6     7         8        9         10        11      12         13       14     15     16  
-         //var ARRpresets="CAPS,FULLscreen,LEFTborder,CLOCK,TEXT,SHADE,NOTES,SETnotes,POPnotes,TECHnotes,LIVEnotes,COUNTin,BREAKlines,BIGchords,LOOPER,METRO,BARsync".split(',');
-         ARRtf = "false,true,false,true,false,false,true,true,false,false,true,true,true,true,false,false,true".split(',');
-         setCustom(ARRpresets[PRESETno], ARRtf[PRESETno], 'presets')
-      } else if (action == 'wrap') {
-         document.getElementById('soundSelector').selectedIndex = 2; //back Track
-         setSoundModeDefault(document.getElementById('soundSelector').value);
-         selectPlaylist('Fred Solo-BT')
-         document.getElementById('Set').value = 'Fred Solo-BT';
-      }
-   } else if (PRESET === "Practice Mode") {
-      if (action == 'presets') {
-         ARRtf = "true,false,false,true,false,false,true,false,false,false,false,true,true,true,true,true,true,false".split(',');
-         setCustom(ARRpresets[PRESETno], ARRtf[PRESETno], 'presets')
-      } else if (action == 'wrap') {
-          alert('WRAP ' +PRESET)
-         document.getElementById('soundSelector').selectedIndex = 0;
-         setSoundModeDefault(document.getElementById('soundSelector').value);
-selectPlaylist('Breen')
-         document.getElementById('Set').value = 'Breen';
-      }
-   } else if (PRESET === "Developer Mode") {
-      if (action == 'presets') {
-         ARRtf = "true,false,false,false,false,false,false,false,false,false,false,true,true,true,true,true,true,true".split(',');
-         setCustom(ARRpresets[PRESETno], ARRtf[PRESETno], 'presets')
-      } else if (action == 'wrap') {
-          alert('WRAP ' +PRESET)
-         document.getElementById('soundSelector').selectedIndex =3;
-         setSoundModeDefault(document.getElementById('soundSelector').value);
-         selectPlaylist('Fred Inwork')
-         document.getElementById('Set').value = 'Fred Inwork';
-      }
-      PRESETno = 0;
-      statusMsg('<X2>' + PRESET + " selected by the user...\n----------------------------------------</X2>", 0)
+      PLAYLIST=('ALL TUNES')
+   } else if (PRESET == "DEVELOPER") {
+      statusMonitor(2);
+      ARRtf = "true,false,false,false,false,false,false,false,false,false,false,true,true,true,true,true,true,true".split(',');
+      BIGselect = true
+      setLineLimit(70);
+      document.getElementById('soundSelector').selectedValue='CLICK TRACK'
+      setSoundModeDefault(document.getElementById('soundSelector').value);
+      PLAYLIST='ALL TUNES';
+   }
+   PRESETno=0
+   ACTION=0
+   setCustom(ARRpresets[0],ARRtf[0],'presets')
       barSelect();
-   }
 }
 
-function setCustom(VAR, val, action) {
-   AC = false;
-   //statusMsg(VAR + "-" + val + "-" + action)
+
+function setCustom(VAR, val, mode) {
    var msg;
-   var ico
    var icon;
-   var img
-   if (action != 'toggle' & action !== 'presets') {
-      alert("ERROR\nUnknown preset action: " + action)
-      return
-   }
-   if (action === 'toggle') { //single change not using ARRtf
-      statusMsg(VAR + "-" + val + "-" + action)
-      if (VAR!=BREAKlines||VAR!=BIGchords){  
-         if (window[VAR] === true) {
-            window[VAR] = false;
-            icon = "off.png";
-         } else {
-            window[VAR] = true;
-            icon = "on.png";
-         }
-      }
-      AC = true;
-      document.getElementById("img" + VAR).src = "../../Icons/" + icon;
-      statusMsg("User Toggled: " + VAR + "to " + window[VAR], 0);
-   } else if (action == 'presets') {
-      AC = true;
+    if (mode === 'preset') {
       VAR = ARRpresets[PRESETno];
-      val = ARRtf[PRESETno]
-      if (val === 'true') {
-         val = true
+      val= ARRtf[PRESETno]
+      alert("KEY"+VAR+"="+val)
+      window[VAR] = val
+
+   }else if (mode === 'refresh') { //single change not using ARRtf
+      ACTION=0;
+      if (window[VAR] === true) {
+         val = false;
+      } else if (window[VAR] === false) {
+         val = true;
+      }
+   }
+   statusMsg(PRESETno+": " + VAR + " >> " + val )
+   if (val === true) {
+      icon = "on.png";
+   } else {
+      icon = "off.png"
+   }
+   window[VAR] = val;
+   document.getElementById("img" + VAR).src = "../../Icons/" + icon;
+    //++++ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Special actions, not var or image
+ 
+   if (VAR == 'BREAKlines') { //works with BIGchords 
+      vis('bigChordPct', 'visible');
+      if (BREAKlines === true) { //turn on BIGchords too
+         BIGchords = true
+         document.getElementById('imgBREAKlines').style.width = '9%';
+         document.getElementById('imgBREAKlines').src = "../../Icons/on.png";
+         document.getElementById('breakLines').style.width = '9%';
+         document.getElementById('breakLines').innerHTML = 'CHR/<br>Line';
+         document.getElementById('bcp').innerHTML = 'Size<br>Chords';
+         document.getElementById('bcp').style.width = '9%';
+         document.getElementById('imgBIGchords').style.width = '9%';
+         document.getElementById('imgBIGchords').src = "../../Icons/on.png";
       } else {
-         val = false
-      }
-      ico = ARRimg[PRESETno]
-      statusMsg(PRESETno + ": " + VAR + "=" + val + "-" + action)
-      if (val === true) {
-         icon = "on.png";
-         window[VAR] = true;
-      } else if (val === false) {
-         icon = "off.png";
-         window[VAR] = false;
-      }
-      document.getElementById(ico).src = "../../Icons/" + icon;
-      statusMsg(PRESET + ">" + VAR + ">" + ico + ">" + icon + ">" + val)
-   } else if (action == 'wrap') {
-      statusMsg("WRAPPING UP")
-      ARRconvert()
-   }
-
-   if (VAR == 'BREAKlines') { //works with BIGchords
-      if (LINElimit >50) {
-         LINElimit = parseInt(LINElimit - 5,0);
-          document.getElementById('imgBREAKlines').src = "../../Icons/on.png"
-      } else{
-        LINElimit = 90;
-         document.getElementById('imgBREAKlines').src = "../../Icons/off.png"
-      }
-      document.getElementById('breakLines').innerHTML = "CHAR<br>" + LINElimit;
-      AC = true;
-   }
-
-
-if (VAR == 'BIGchords') {
-   BIGchordSize = BIGchordSize + 0.25;
-   if (BIGchordSize > 2.2) {
-      (BIGchordSize = 1.00)
-   }
-   if (BIGchordSize == 1) {
-      document.getElementById('imgBIGchords').src = "../../Icons/off.png"
-   } else {
-      document.getElementById('imgBIGchords').src = "../../Icons/on.png"
-   }
-   document.getElementById('bcp').innerHTML = "Chord<br>" + parseInt(BIGchordSize * 100) + "%"
-   AC = true;
-}
-if (VAR == 'SETnotes' & SETnotes === true) {
-   document.getElementById("imgPOPnotes").src = "../../Icons/off.png";
-   POPnotes = false;
-   document.getElementById("imgTECHnotes").src = "../../Icons/off.png";
-   TECHnotes = false;
-   AC = false;
-}
-if (VAR == 'POPnotes' & POPnotes === true) {
-   document.getElementById("imgSETnotes").src = "../../Icons/off.png";
-   SETnotes = false;
-   document.getElementById("imgTECHnotes").src = "../../Icons/off.png";
-   TECHnotes = false;
-   AC = false
-}
-if (VAR == 'TECHnotes' & TECHnotes === true) {
-   document.getElementById("imgSETnotes").src = "../../Icons/off.png";
-   SETnotes = false;
-   document.getElementById("imgPOPnotes").src = "../../Icons/off.png";
-   POPnotes = false;
-   AC = false
-}
-if (VAR == 'LINEnum' & LINEnum === true) {
-   window[LINEtime] = false;
-   document.getElementById("imgLINEtime").src = "../../Icons/off.png";
-   LINEtime = false;
-   AC = true
-}
-if (VAR == 'LINEtime' & LINEtime === true) {
-   window[LINEnum] = false;
-   document.getElementById("imgLINEnum").src = "../../Icons/off.png";
-   LINEnum = false;
-   AC = true
-}
-if (VAR == 'FULLscreen') {
-   if (FULLscreen === true) {
-      launchIntoFullscreen(document.documentElement);
-   } else {
-      exitFullscreen();
-   }
-
-}
-if (VAR == 'LOOPER') {
-   if (LOOPER === true) {
-      document.getElementById('looper').style.display = 'block';
-   } else {
-      document.getElementById('looper').style.display = 'none';
-   }
-}
-if (VAR == 'TEXT') {
-   if (TEXT === true) {
-      document.getElementById("imgTEXT").src = "../../Icons/on.png"
-   } else {
-      document.getElementById("imgTEXT").src = "../../Icons/off.png"
-   }
-
-}
-if (VAR == 'METRO') {
-   if (METRO === true) {
-      document.getElementById('imgBARsync').src = '../../Icons/on.png';
-      aB.play();
-      aC.play();
-      BARsync = true;
-   }
-}
-if (VAR == 'BARsync') {
-   if (BARsync === false) {
-      document.getElementById('imgMETRO').src = '../../Icons/off.png';
-      METRO = false;
-   }
-}
-if (VAR == 'COUNTin') { //USELESS click removed
-
-   if (COUNTin === false) {
-      document.getElementById("imgCLICKER").src = "../../Icons/off.png"
-      CLICKER = false
-   }
-   alert('cleared COUNTin')
-}
-if (VAR == 'BIGselect') {
-   if (BIGselect === false) {
-      document.getElementById("imgBIGselect").src = "../../Icons/off.png"
-      document.getElementById('BSbutton').style.display = 'none'
-   } else {
-      document.getElementById('BSbutton').style.display = 'block'
-      createPlayListSelector()
-   }
-}
-if (action === 'toggle') {
-   if (AC === true | AC == 'true') {
-      statusMsg("Toggle required array converstion")
-      arrConvert();
-   }
-} else if (action === 'presets') { //this is the return point to prevent excessive arrConverstions
-   if (PRESETno > 15) {
-      statusMsg("<X2>arrConvert Triggered Preset ALL...</X2>", 0)
-      alert('wrapping it up')
-      presets('wrap')
-   } else {
-      PRESETno = PRESETno + 1;
-      setCustom('', '', 'presets')
-   }
-}
-}
-
-
-   function launchIntoFullscreen(element) {
-      if (element.requestFullscreen) {
-         element.requestFullscreen();
-      } else if (element.mozRequestFullScreen) {
-         element.mozRequestFullScreen();
-      } else if (element.webkitRequestFullscreen) {
-         element.webkitRequestFullscreen();
-      } else if (element.msRequestFullscreen) {
-         element.msRequestFullscreen();
+         setLineLimit(90);
+         document.getElementById('imgBREAKlines').style.width = '18%';
+         document.getElementById('breakLines').style.width = '18%';
+         document.getElementById('breakLines').innerHTML = 'Characters<br>Per Line';
       }
    }
-
-   function exitFullscreen() {
-      if (document.exitFullscreen) {
-         document.exitFullscreen();
-      } else if (document.mozCancelFullScreen) {
-         document.mozCancelFullScreen();
-      } else if (document.webkitExitFullscreen) {
-         document.webkitExitFullscreen();
-      } else if (element.msCancelFullscreen) {
-         document.msCancelFullscreen();
+   if (VAR == 'BIGchords') {
+      if (BIGchords === true) {
+         document.getElementById('imgBIGchords').style.width = '9%';
+         document.getElementById('bcp').innerHTML = 'Size<br>Chords';
+         document.getElementById('imgBIGchords').src = "../../Icons/on.png";
+         document.getElementById('bcp').style.width = '9%';
+      } else {
+         bcPct(1);
+         statusMsg("--Custom E: " + VAR + ": forcing BREAKlines to false " + mode, 0)
+         document.getElementById('imgBIGchords').style.width = '18%';
+         document.getElementById('bcp').innerHTML = 'Spread & Size<br>Chords';
+         document.getElementById('bcp').style.width = '18%';
+         BREAKlines = false; //only works with chords spread
+         document.getElementById('breakLines').innerHTML = 'Characters<br>Per Line';
+         document.getElementById('breakLines').style.width = '18%';
+         document.getElementById('imgBREAKlines').src = "../../Icons/off.png";
+         document.getElementById('imgBREAKlines').style.width = '18%';
       }
-   } //this step is BOGUS
-
-   function tgl(vrbl, val) {
-      if (!val) {
-         if (window[vrbl] === true) {
-            window[vrbl] = false;
-         } else {
-            window[vrbl] = true;
+   }
+   if (VAR == 'SETnotes' & SETnotes === true) {
+      document.getElementById("imgPOPnotes").src = "../../Icons/off.png";
+      POPnotes = false;
+      document.getElementById("imgTECHnotes").src = "../../Icons/off.png";
+      TECHnotes = false;
+   }
+   if (VAR == 'POPnotes' & POPnotes === true) {
+      document.getElementById("imgSETnotes").src = "../../Icons/off.png";
+      SETnotes = false;
+      document.getElementById("imgTECHnotes").src = "../../Icons/off.png";
+      TECHnotes = false;
+   }
+   if (VAR == 'TECHnotes' & TECHnotes === true) {
+      document.getElementById("imgSETnotes").src = "../../Icons/off.png";
+      SETnotes = false;
+      document.getElementById("imgPOPnotes").src = "../../Icons/off.png";
+      POPnotes = false;
+   }
+   if (VAR == 'LINEnum' & LINEnum === true) {
+      window[LINEtime] = false;
+      document.getElementById("imgLINEtime").src = "../../Icons/off.png";
+      LINEtime = false;
+   }
+   if (VAR == 'LINEtime' & LINEtime === true) {
+      window[LINEnum] = false;
+      document.getElementById("imgLINEnum").src = "../../Icons/off.png";
+      LINEnum = false;
+   }
+   if (VAR == 'FULLscreen') {
+      if (FULLscreen === true) {
+         launchIntoFullscreen(document.documentElement);
+      } else {
+         exitFullscreen();
+      }
+   }
+   if (VAR == 'LOOPER') {
+      if (LOOPER === true) {
+         document.getElementById('looper').style.display = 'block';
+      } else {
+         document.getElementById('looper').style.display = 'none';
+      }
+   }
+   if (VAR == 'TEXT') {
+      if (TEXT === true) {
+         document.getElementById("imgTEXT").src = "../../Icons/on.png"
+      } else {
+         document.getElementById("imgTEXT").src = "../../Icons/off.png"
+      }
+   }
+   //if (VAR == 'CLICKER') {//USELESS removed
+   //    if (CLICKER === true) {
+   //        document.getElementById("imgCOUNTin").src = "../../Icons/on.png"
+   //        COUNTin = true
+   //    }
+   //}
+   if (VAR == 'METRO') {
+      if (METRO === true) {
+         document.getElementById('imgBARsync').src = '../../Icons/on.png';
+         aB.play();
+         aC.play();
+         BARsync = true;
+      }
+   }
+   if (VAR == 'BARsync') {
+      if (BARsync === false) {
+         document.getElementById('imgMETRO').src = '../../Icons/off.png';
+         METRO = false;
+      }
+   }
+   if (VAR == 'COUNTin') {//USELESS click removed
+       //if (COUNTin === false) {
+       //    document.getElementById("imgCLICKER").src = "../../Icons/off.png"
+       //    CLICKER = false
+       //}
+   }
+   if (VAR == 'BIGselect') {
+     if (BIGselect === false) {
+         document.getElementById("imgBIGselect").src = "../../Icons/off.png"
+         document.getElementById('BSbutton').style.display='none'
+     }else{
+         document.getElementById('BSbutton').style.display='block'
+         if (ACTION<1){ACTION=1 }         
          }
-      } else {
-         window[vrbl] = val;
+   }   
+   if (mode === 'presets') { //this is the return point to prevent excessive arrConverstions
+      if (PRESETno >= parseInt(ARRpresets.length - 1, 10)) {
+         statusMsg("Completed "+ARRpresets.length+" Loops...")
+      }else {//go to the next Custom Setting
+         statusMsg("Set Preset "+PRESETno +":  "+ARRpresets[PRESETno] +" to "+ARRtf[PRESETno] )
+         PRESETno = PRESETno + 1;
+         setCustom(ARRpresets[PRESETno],ARRtf[PRESETno], 'presets')
       }
+   }else if (mode === 'refresh') {
+      statusMsg("User set "+VAR+" to "+val+"...");      
+   }else if (mode === 'click'){
+      document.getElementById('aC').play();
+   }
+   if (ACTION==0) {
+      arrConvert()
+   }else if( ACTION==1){
+      createPlaylist()
+   }
+   
+   
+   
+  // }else{
+   //   alert("Set up error!!!")
+  
+   //}
+}
+
+function launchIntoFullscreen(element) {
+   if (element.requestFullscreen) {
+      element.requestFullscreen();
+   } else if (element.mozRequestFullScreen) {
+      element.mozRequestFullScreen();
+   } else if (element.webkitRequestFullscreen) {
+      element.webkitRequestFullscreen();
+   } else if (element.msRequestFullscreen) {
+      element.msRequestFullscreen();
+   }
+}
+
+function exitFullscreen() {
+   if (document.exitFullscreen) {
+      document.exitFullscreen();
+   } else if (document.mozCancelFullScreen) {
+      document.mozCancelFullScreen();
+   } else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen();
+   } else if (element.msCancelFullscreen) {
+      document.msCancelFullscreen();
+   }
+} //this step is BOGUS
+
+function tgl(vrbl, val) {
+   if (!val) {
       if (window[vrbl] === true) {
-         document.getElementById("img" + vrbl).src = "../../Icons/on.png";
+         window[vrbl] = false;
       } else {
-         document.getElementById("img" + vrbl).src = "../../Icons/off.png";
+         window[vrbl] = true;
       }
+   } else {
+      window[vrbl] = val;
    }
+   if (window[vrbl] === true) {
+      document.getElementById("img" + vrbl).src = "../../Icons/on.png";
+   } else {
+      document.getElementById("img" + vrbl).src = "../../Icons/off.png";
+   }
+}
 
-   function togl(vrbl) {
-      tgl(vrbl);
-      if (vrbl == 'LINEtime' && LINEnum === true) {
-         tgl('LINEnum', false);
-      } else if (vrbl == 'LINEnum' && LINEnum === true) {
-         tgl('LINEtime', false);
+function togl(vrbl) {
+   tgl(vrbl);
+   if (vrbl == 'LINEtime' && LINEnum === true) {
+      tgl('LINEnum', false);
+   } else if (vrbl == 'LINEnum' && LINEnum === true) {
+      tgl('LINEtime', false);
+   }
+}
+
+function volOnOff() {
+   if (SOUND === false) {
+      SOUND = true;
+      document.getElementById("soundOO").style.backgroundImage = "url('../../Icons/on.png')"
+      document.getElementById("Audio1").volume = VOLdefault;
+      dis('vCont', 'block')
+   } else {
+      SOUND = false
+      document.getElementById("soundOO").style.backgroundImage = "url('../../Icons/off.png')"
+      document.getElementById("Audio1").volume = 0;
+      dis('vCont', 'none')
+   }
+}
+
+function volSet(volDelta) {
+   var temp;
+   if (isNaN(volDelta) === true) {
+      VOL = VOLdefault;
+   } else if (volDelta < 1 & volDelta > -1) {
+      VOL = parseFloat(VOL + volDelta, 10);
+      if (VOL >= 1) {
+         VOL = 1;
       }
-   }
-
-   function volOnOff() {
-      if (SOUND === false) {
-         SOUND = true;
-         document.getElementById("soundOO").style.backgroundImage = "url('../../Icons/on.png')"
-         document.getElementById("Audio1").volume = VOLdefault;
-         dis('vCont', 'block')
-      } else {
-         SOUND = false
-         document.getElementById("soundOO").style.backgroundImage = "url('../../Icons/off.png')"
-         document.getElementById("Audio1").volume = 0;
-         dis('vCont', 'none')
-      }
-   }
-
-   function volSet(volDelta) {
-      var temp;
-      if (isNaN(volDelta) === true) {
-         VOL = VOLdefault;
-      } else if (volDelta < 1 & volDelta > -1) {
-         VOL = parseFloat(VOL + volDelta, 10);
-         if (VOL >= 1) {
-            VOL = 1;
-         }
-         if (VOL <= 0) {
-            VOL = 0;
-         }
-         VOLdefault = VOL;
-      } else if (volDelta > 1 & volDelta <= 100) {
-         VOL = parseInt(volDelta, 10) / 100;
-      } else {
+      if (VOL <= 0) {
          VOL = 0;
       }
-      document.getElementById('V').innerHTML = parseInt(100 * VOL, 10) + '%';
-      document.getElementById("Audio1").volume = document.getElementById("aB").volume = document.getElementById("aC").volume = VOL
+      VOLdefault = VOL;
+   } else if (volDelta > 1 & volDelta <= 100) {
+      VOL = parseInt(volDelta, 10) / 100;
+   } else {
+      VOL = 0;
    }
+   document.getElementById('V').innerHTML = parseInt(100 * VOL, 10) + '%';
+   document.getElementById("Audio1").volume = document.getElementById("aB").volume = document.getElementById("aC").volume = VOL
+}
 
-   function revDates() { //date of last mod to js file????
-      var xhReq = new XMLHttpRequest();
-      xhReq.open("HEAD", JSname, false);
-      xhReq.send(null);
-      JHdate = "REVISION: " + REV + " <> HTML: " + document.lastModified + " <> JavaScript: " + xhReq.getResponseHeader("Last-Modified")
-   }
+function revDates() { //date of last mod to js file????
+   var xhReq = new XMLHttpRequest();
+   xhReq.open("HEAD", JSname, false);
+   xhReq.send(null);
+   JHdate = REV + " <> HTML: " + document.lastModified + " <> JavaScript: " + xhReq.getResponseHeader("Last-Modified")
+}
 
-   function indx(L) {
-      var n = 0;
-      document.getElementById('mySet').selectedIndex = n;
+function Xindx(L) {
+   var n = 0;
+   document.getElementById('mySet').selectedIndex = n;
+   var str = document.getElementById('mySet').value;
+   while (str.substring(0, 1) !== L) {
+      document.getElementById('mySet').selectedIndex = n+1;
       var str = document.getElementById('mySet').value;
-      while (str.substring(0, 1) !== L) {
-         document.getElementById('mySet').selectedIndex = n;
-         var str = document.getElementById('mySet').value;
-         n++;
-         str == document.getElementById('mySet').value;
-         if (n == document.getElementById('mySet').length - 1) {
-            statusMsg("No Tunes Starting with " + L, 'yellow')
-            return
-         }
+      n++;
+      str == document.getElementById('mySet').value;
+      if (n == document.getElementById('mySet').length - 1) {
+         statusMsg("No Tunes Starting with " + L, 'yellow')
+         return
       }
-      selectTuneNo(n)
    }
-
-   function changeBackgroundImage(id, url) {
-      var urlString = 'url(' + url + ')';
-      document.getElementById(id).style.backgroundImage = urlString;
+   alert("n="+n)
+   if (BIGselect==false) {
+     smallSelect(n)
+   }else{
+    bigSelect(n)  
    }
+   
+}
 
-function bcPct() { //BigChordPCT
-alert('shit')
-      }
+function changeBackgroundImage(id, url) {
+   var urlString = 'url(' + url + ')';
+   document.getElementById(id).style.backgroundImage = urlString;
+}
+
+function bcPct(size) { //BigChordPCT
+   var sign = "+";
+   if (size !== undefined) {
+      BIGchordSize = 1.00
+   } //default
+   else {
+      BIGchordSize = BIGchordSize + 0.25;
+   }
+   if (BIGchordSize == 2.25) {
+      BIGchordSize = 1;
+   }
+   if (BIGchordSize == 1.75) {
+      BIGchordSize = 2;
+   }
+   document.getElementById('bigChordPct').innerHTML = BIGchordSize * 100 + "%"
+   statusMsg("<X2>arrConvert Triggered by Big Chord Percent...</X2>", 0)
+   if (PRESETlock != true) {
+      arrConvert();
+   }
+}
+
 //^TRANSPOSE FUNCTIONS====================================================AAA
 
 function lineTranspose(line, steps) { //^ transpose entire line and try to keep the absolute chord spacing despite differnces in chr of new chord
@@ -2754,7 +2672,8 @@ function loadFile(e){//gets the file//does not update the player until you go th
     SONGsource="request"
     readSingleFile(e); //gets the file//does not update the player until you go there --needs some time so I gave it 2 seconds;
     setTimeout(function(){createARRlines(RAWtune);document.getElementById('myTune').innerHTML=TITLE;barSelect();},2000);
-} 
+    
+    } 
 
 function readSingleFile(e){
     statusMsg('Reading file...');
@@ -2917,6 +2836,7 @@ function lineType(str){
     if(str.substring (0,7).toUpperCase()=="IREALB:"){ans = "irealb";}    
     else if(str.substring (0,4).toUpperCase()=="TAB:"){ans = "tab";}    
     else if(str.substring (0,4)=="http")  {ans = "link";}
+else if(str.substring (0,3)=="tab")  {ans = "noteTech";} 
     else if(str.substring (0,3)=="@@@")  {ans = "noteTech";} 
     else if(str.substring (0,2)=="@@")  {ans = "noteTriv";}
     else if(str.substring (0,1)=="@")  {ans = "note";}
@@ -3111,6 +3031,18 @@ function rollMirror(tf) {
    }
 }
 
+function setLineLimit(a) {
+   if (a === undefined) {
+      LINElimit = LINElimit - 5;
+   } else {
+      LINElimit = a
+   }
+   if (LINElimit <= 45) {
+      LINElimit = 90;
+   }
+   document.getElementById('lineLimit').innerHTML = LINElimit;
+}
+
 function breakLine(line) {
    //statusMsg("Formatting Fixed Font: " + line, 0)
    var last = 0;
@@ -3142,12 +3074,12 @@ function breakLine(line) {
    return (newLine);
 }
 
-function opacSet(id, opac) {
+function opacSet(id, opac) { //set opacity
    if (opac === undefined | opac === null | opac > 1) {
       opac = 1
    };
    document.getElementById(id).style.opacity = opac
-} //set opacity
+}
 
 //*Make the DIV element draggagle:=====================================================================================================
 dragElement(document.getElementById("backtracker"));
@@ -3202,4 +3134,343 @@ function dragElement(elmnt) {
       //document.ontouchend = null;
       //document.ontouchmove = null;
    }
+}
+
+//*MISC CRAP NOT LOCATED LOGICALLY
+
+window.onbeforeunload = function(e) {
+   if (MAIL.length>20) {
+      statusMsg('YOU HAVE UNSENT MAIL','red')
+      return 'UNSENT MAIL ';
+   }else{return(null)}
+}; 
+
+function getSelectionText() {
+   var text = "";
+   if (window.getSelection) {
+      text = window.getSelection().toString();
+   } else if (document.selection && document.selection.type != "Control") {
+      text = document.selection.createRange().text;
+   }
+   return text;
+}
+
+function mailTo(mode) {
+   var entry=null;
+   var x=false
+   if (mode == 'open') {
+      document.getElementById('msg').style.width = "96%";
+      if (MAIL.length >= 1) {
+         document.getElementById('mailerBody').value = MAIL
+         statusMsg('eMail Initiated');
+      }
+      dis('mailer', 'block');
+   }
+   if (mode == 'send') {
+      dis('mailer', 'none');
+      window.open("mailto:fkaparich@gmail.com?subject=From PERFORMER MAIL&body=.............Start of Mail..................%0A" + MAIL.replace(/\n/g, '%0A')+"...............End of Mail..................");
+   } else {
+      if (mode == 'title') {
+         entry = TITLE +":";
+      }
+      if (mode == 'info') {
+         var pct = document.getElementById("Tune").scrollTop / SCROLLpix;
+         var time = parseInt(pct * DUR, 10);
+         entry = TITLE + ": [" + time + " seconds {" + parseInt(pct * 100, 10) + "%}]  (" + SETname + ")";
+      }
+      if (mode == 'key') {
+         entry = TITLE + ": Key(Base)=" + KEYbase + ": now =" + KEY;
+      }
+      if (mode == 'tempo') {
+         entry = TITLE + ": Tempo now " + BPM;
+      }
+      if (mode == 'set') {
+         entry = TITLE + ": Set=" + SETname;
+      }
+      if (mode == 'hilite') {
+         entry = TITLE + ":\n----------------Selected Text-----------------\n" + getSelectionText()+"\n----------------------------------------------";
+      }     
+      if (mode == 'clear') {
+         let x=confirm('PERMANENTLY Delete Your eMail???')
+         if(x===true) {
+            window.onbeforeunload = null
+            MAIL = ""
+            document.getElementById('mailerBody').value = ""
+            document.getElementById('msg').style.width = "100%"
+            document.getElementById('mailer').style.display = "none"
+            statusMsg("eMail Deleted...", 'yellow')
+         }else{statusMsg("eMail SAVED...", 'yellow')}
+         return;
+      }
+      if (entry != undefined) {
+         MAIL = entry + '\n' + document.getElementById('mailerBody').value;
+      }
+      document.getElementById('mailerBody').value = MAIL;
+   }
+}
+
+function rTrim(str){
+   while (str.substring(str.length-1)==" "){str = str.substring(0,str.length-1);}
+   return str;
+}
+
+function iconize(icon,fontsize){// put an icon.png in text line
+   if (icon==''|icon==undefined) {icon='transRedCircle'}
+   if (fontsize==''|fontsize==undefined) {fontsize=FONTSIZE}
+   return  "<img src=\'../../Icons/"+icon+".png\' alt =\'?\' style=\'position:absolute;width:"+FONTSIZE+"\'>"
+}
+
+function localFile(desc, loc, web) {
+   var a = '<!DOCTYPE html><head></head><body>'
+   var x = window.open("", "", "toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=" + parseInt(WINDwt / 2, 10) + ", height=" + parseInt(WINDht / 3, 10));
+   a = a + '<b>' + desc + '</b>';
+   a = a + "<br><br><a href=\'" + web + "\'>INTERNET LINK (Click Here...)</a>";
+   a = a + '<br><br>To View the Local File, (If it is on your on YOUR Machine)...<br>--PASTE the string below into Address Bar...'
+   a = a + "<br>--<a href=\'" + loc + "\'>" + loc + "<br>"
+   a = a + "</body></html>";
+   x.document.write(a)
+   x.document.close
+}
+//*TAB functions OBSOLETE   QUARANTEEN===================================
+/*var ARRtabs =''.split(',');
+var TABstartTime=null;
+var TABon=0
+var TABtriggers="";
+var TABno;
+var TABpix;
+var TABbars;
+var TABtime;
+var TABwt;
+var TABkon;// = DUR * 1000 / SCROLLpix; // microseconds per pixel
+
+//^NECK
+var NECKpos=0
+var ARRneck=''.split(',');
+/^ FLAGS
+
+function showTab(no,bn) {
+    dis('tabBar',bn);
+    document.getElementById('tablature').innerHTML=stringToTab(ARRtabs[no]);
+    document.getElementById('tablature').style.color='red';
+    document.getElementById('tabBox').scrollLeft=0;
+    TABwt = document.getElementById("tablature").clientWidth;
+    TABpix=parseInt(TABwt-WINDwt, 10);
+    TABtime=TABtime*((TABwt-WINDwt)/TABwt)
+    TABkon=TABtime * 1000 / TABpix; // microseconds per pixel
+    statusMsg('TAB:'+no+' Inserted at '+TABtime +'ms; '+TABpix+'px',0)
+}
+ 
+function tabResize(){alert('OUT OF ORDER')}
+ 
+function neckReset(){
+    strToNeck()
+    NECKpos=0
+    statusMsg("Neck Reset to 0: "+ARRneck[NECKpos])
+}
+ 
+function strToNeck(n){
+    n=0
+    str=ARRtabs[n];
+    pos = 0; //position
+    var arr = str.split('@');//strip the 5 key data points
+    var barNo=arr[0]//starting bar this was added to the std string
+    var key = arr[1]; //part if original string
+    var count = arr[2];
+    var div = arr[3];
+    var chr = arr[4];
+    arr.splice(0, 5); //get rid of info string    
+    ARRneck=arr;
+    neckStep(1)
+    statusMsg(ARRneck)
+}
+ 
+function neckStep(a) {
+    var s;
+    var icon;
+    var ele = 0
+    var posA=null
+    var posB=null
+    document.getElementById('neckPos').innerHTML=NECKpos;
+    statusMsg(ARRneck[NECKpos] + ": NECKpos", 0);
+    arr = ARRneck[NECKpos].split('|')
+    statusMsg("STEP:" + NECKpos + ">>" + arr[ele] + " <> " + ele + ": string", 0);
+    for (s = 1; s <= 6; s++) {
+        icon = "s" + parseInt(s, 10)
+        statusMsg("s:" + s + " ele:" + ele + " NECKpos:" + NECKpos + " string:" + arr[ele], 0)
+        if (ele >= arr.length) {
+            dis(icon, 'none')
+        } else if (arr[ele] ===undefined|arr[ele]===null|arr[ele]==='') {
+            dis(icon, 'none')
+        } else if (arr[ele] === null) {
+            dis(icon, 'none')
+        } else if (parseInt(arr[ele].substring(0, 1), 10)=== s) {
+            statusMsg("X="+arr[ele].split(':')[1].substring(0,2))
+            if (isNaN(arr[ele].split(':')[1].substring(0,2))===false) {
+                 
+                posA=arr[ele].split(':')[1].substring(0,2);
+            }else{
+                 statusMsg('short')
+                posA=arr[ele].split(':')[1].substring(0,1)    
+            }
+            posA =parseInt(parseInt(posA*4,10)+1,10)+'%'
+            statusMsg("Element="+arr[ele]+" icon="+icon+" posA="+posA)
+            document.getElementById(icon).style.left=posA
+            dis(icon, 'block')
+            ele = ele + 1
+        } else {
+            dis(icon, 'none')
+        }
+    }
+    NECKpos = NECKpos + 1
+}
+ 
+function stringToTab(str) {
+    pos = 0; //position
+    var bar;
+    var arr = str.split('@');//strip the 5 key data points
+    var barNo=arr[0]//starting bar this was added to the std string
+    var key = arr[1]; //part if original string
+    var count = arr[2];
+    var div = arr[3];
+    var chr = arr[4];
+    var space = "-";
+    var play = "";
+    var clk;
+    var dots = "";
+    var notes;
+    var crap="\*\<a onclick=\"alert(this.id)\" id=\'t"+barNo+"\' style=\'color:red;background-color:green;\'\>|"
+    crap=crap+",e|,B|,G|,D|,A|,E|"
+    var out = crap.split(',');
+    for (a = 1; a < chr; a++) {//build space & dots
+        space = space + " ";
+        dots = dots + ".";
+    } 
+    arr.splice(0, 5); //get rid of info string
+    bar = count * div;
+    var r = 1;
+    TABbars=barNo;
+    crap= barNo;
+    //statusMsg('Tab start @ '+barNo,0)
+    for (j = 0; j < arr.length; j++) { //build line 1
+        out[0] = out[0] + r + dots;
+        for (q = 1; q < div; q++) {
+            if (j < arr.length - 1) {
+                out[0] = out[0] + "&" + dots;
+                j = j + 1;
+            }
+        }
+        if (r >= count) {
+            r = 1;
+            barNo++;
+            //barNo=parseInt(barNo+1,10);
+            out[0] = out[0] + "</a><a  onclick=\"alert(this.id)\" id=\'t"+barNo+"\' style='color:blue;background-color:tan;'>|";
+           //out[0] = out[0] + "</a><a id=\'t"+barNo+"\' style='color:blue;background-color:tan;'>|";
+        } else {
+            r = r + 1;
+        }
+    }
+    out[0]=out[0]+"</a>";
+    for (a = 1; a < 7; a++) {
+        for (j = 0; j < arr.length; j++) {
+            play = space;
+            if (arr[j] !== undefined & arr[j] !== "") { //valid click
+                clk = arr[j].split("|"); //alert (clk);
+                for (w = 0; w < clk.length; w++) {
+                    notes = clk[w].split(':');
+                    if (notes[0] == a) {
+                        play = notes[1];
+                        while (play.length < chr) {
+                            play = play + " ";
+                        }
+                    }
+                }
+            }
+            out[a] = out[a] + play;
+            if ((j + 1) / bar === parseInt((j + 1) / bar, 10)) {
+                out[a] = out[a] + "|";
+            }
+        }
+    }
+    TABbars=parseInt(barNo-TABbars,10);
+    TABtime=parseFloat(TABbars*BEATS*60/BPM,10)
+    statusMsg('Tab String Formatted: START-BAR:'+crap+' END-BAR:'+barNo,0)
+    return (out.join('\n'));
+}*/
+//*BACTRACK functions=======================================
+function btInst() {
+    var a = "BACKTRACK INSTRUCTIONS\n";
+    a = a + "1) Select a song in with Backtrack in \'Backtrack Mode\'...\n";
+    a = a + "2) The Default measurement is automatic...\n";
+    a = a + "3) Analyize the 'Map' and look at the Quality (Color Coded: Excellent,Good,Marginal,Sucks) \n";
+    a = a + "4) Verify average Tempo in C by Taking 3 measurements of Tempo (start,middle,end) and make sure it is logged correcly\n";
+    a = a + "5) Put your best measurement in the yellow input box and re-evaluate\n";
+    a = a + "6) To Get an acceptable reading change the length of the MP3 or put the correct number of bars in the song text\n";
+    a = a + "7) Be sure to add any intro bars to the start of the song and the correct number of hold bars at the end ";
+    alert(a)
+}
+
+function btAnal() {
+    var deltaDur
+    var bars
+    var ans
+    deltaDur = document.getElementById('btMdur').innerHTML - MEASURES * BEATS * 60 / document.getElementById('btTempo').value
+    bars = document.getElementById('btMdur').innerHTML * document.getElementById('btTempo').value / (BEATS * 60);
+    ans = "<pre>Measured tempo and backtrack duration indicate:" + bars + " MEASURES\n=================\n"
+    ans = ans + "Your file has " + MEASURES + " MEASURES\n=================\n"
+    ans = ans + "MP3 duration is off by " + deltaDur + " seconds\n=================\n"
+    ans = ans + "OR by " + parseFloat(MEASURES - bars, 10) + " Measures</pre>"
+    document.getElementById('eval').innerHTML = ans;
+}
+
+function d(id) {//shortcut for a common piece of code
+   return (document.getElementById(id))
+} 
+
+function songMap() {
+    countBARS();
+    d('map').innerHTML = '<pre>' + MAP.join('-') + '</pre>';
+    var barZero = 0;
+    var barLen = SCROLLpix / MEASURES;
+    var fact = parseFloat(barZero / BAR, 10);
+    var pct = parseFloat(barZero * 100 / BAR, 10);
+    var tempoMp3;
+    var col = 'white';
+    var bgc = 'black';
+    var qual="None";
+    var err;
+    //File
+    d('btTitle').innerHTML = TITLE;
+    d('btFbpm').innerHTML = BPMfile;
+    d('btFbars').innerHTML = BARS;
+    d('btFmeas').innerHTML = MEASURES;
+    d('btFdur').innerHTML = MEASURES * BEATS * 60 / BPMfile;
+    //Measures and MP3
+    d('btMbpm').innerHTML = (BEATS*MEASURES*60)/Audio1.duration
+    d('btMmeas').innerHTML =MEASURES
+    d('btMdur').innerHTML =Audio1.duration
+    //TEMPO and MP3
+    d('btTdur').innerHTML = Audio1.duration;
+    d('btTmeas').innerHTML = (d('btTempo').value*Audio1.duration)/(BEATS*60)
+    //TEMPO and MP3
+    d('btRbpm').innerHTML = d('btMbpm').innerHTML -d('btTempo').value;
+    d('btRmeas').innerHTML = d('btMmeas').innerHTML-d('btTmeas').innerHTML;
+    d('btRdur').innerHTML = ((MEASURES * BEATS * 60) / BPMfile)-Audio1.duration
+    err=Math.abs(d('btRmeas').innerHTML)
+    if ( err<=0.5/BEATS) {
+        bgc = 'gold';
+        col='black' 
+        qual="Excellent: ";
+    }else if ( err<=1/BEATS) {
+        bgc = 'green';
+        qual="Good: ";
+    }else if (err<=2/BEATS) {
+        bgc = 'yellow';
+        col='black';        
+        qual="Marginal: "; 
+    }else{bgc = 'red';
+    qual="Timing Sucks: "}
+    qual=qual+" Off by "+parseInt(err*BEATS*1000,10)/1000+ " beats over the Entire Song"
+    d('trackQual').style.backgroundColor = bgc;
+    d('trackQual').style.color = col;
+    d('trackQual').innerHTML = qual;
 }

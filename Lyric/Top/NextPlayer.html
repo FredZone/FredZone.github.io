@@ -16,7 +16,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!-- prevents zooming on mobile devices....number-based width or "device-width"-->
     <title id = 'title'>Performer</title>
-    
     <style type="text/css">
         #statusWindowheader,#backtrackerheader,#cloudheader,#mailerheader{cursor: move; background-color:orange; color:black; font-size:1vw; line-height:100%; top:0%; width:100%; height:5%; overflow:hidden;}
         Body{font-size:3.3vw;                
@@ -55,35 +54,24 @@
 <body onresize="arrConvert()">
 <!--
 Super controls ???? belonging to no group so z is determined by function   --> 
-<!--???????????????????????????????????????????????????????????????????????????????????????????-->    
-    <div id='BS'  style="display:none;font-size:3vw;line-height:120%;border:solid;background-color:lightyellow;overflow-y:scroll;overflow-x:hidden;overflow-x:hidden;position:absolute; width:50%;height:86%;left:25%;top:14%;z-index:30000;">
+    <div id='BS' style="position:absolute;display:none;line-height:120%;border:solid;overflow-y:scroll;color:green; background-color:lightyellow;overflow-x:hidden;overflow-x:hidden; width:50%;height:86%;left:25%;top:14%;z-index:30000;">
         </div>
-    
     <div id="msg" title="Message Box" style= "position:fixed; display:block; line-height:120%; text-align:center; vertical-align:middle; color:red; background-color:transparent; color:red; font-size: 2vw; height:6%; left:0%; top:60%; width:100%; z-index:5505;overflow:hidden">Loading...</div>
-    
     <audio id='aC' style="visibility: hidden;" controls=false visibility='hidden' preload = "metadata" source src="../Click/Cl.mp3" type="audio/mpeg"></audio>
     <audio id='aB' style="visibility: hidden;" controls=false visibility='hidden' preload = "metadata" source src="../Click/Bo.mp3" type="audio/mpeg"></audio>
-    
     <div id ='orient' style="position:fixed;display:none;opacity:0.2;height:1%; width:1%;">
         <br><br>LANDSCAPE ONLY:<br>ROTATE YOUR DEVICE!!<br><br>(Site should be viewed as Landscape!)<br>
         <img src = "../../Icons/resetSpinner.gif" alt ="??">
         </div>
-    
     <div id ='think' style= "position:fixed; display:block;background-color:transparent; background-image:url('../../Icons/resetSpinner.gif'); background-size:cover; left:40vw; width:20vw; bottom:15%; height:20vw; z-index:4400;"><!--4400-->
             <img id="thinkIcon" src="../../Icons/transVocal.png" alt =" " style="position:absolute; background-color:transparent; margin:auto;left:10%; top:10%; height:80%;z-index:20000;">
             </div>
-        
     <audio id="Audio1" controls=true preload = "metadata" style="position:fixed;text-align:center; bottom:0%;width:30%;right:35%;z-index:779; opacity:0.5;background-color:transparent" source src="../Backing/Default.mp3" type="audio/mpeg" >
             </audio>
-        
     <div id="cl" title ="----"style="position:fixed; border-color:black; border:solid; background-color:transparent; left:0%; width:100%; bottom:45%; height:10%;opacity:0.1;z-index:3;"> </div>
-        
     <img id="shade" title ="<<>>" src="../../Icons/shade4.png" alt ="-" style="position:fixed; left:0%; width:100%; top:0%; height:100%;opacity:0.5; z-index:3;">
-        
     <img id="backDrop" title ="<<>>" src="../../Icons/black.png" alt ="-" style="position:fixed; left:0%; width:100%; bottom:0%; height:100%;opacity:1;z-index:3;">  
-    
     <img title="Hide or Show the Debug Window..." id='bug' src="../../Icons/bug2.gif" onclick="monitorWindow()" style="position:fixed;display:none;height:4.5%; top:23%; left:1%;  z-index:12000">
-    
     <div id='metronome' style="position:fixed;display:none;line-height:100%;font-size:10vh;text-align:center; border-style:ridge; border-color:red; border-width:thick; background-color:lightgrey; right:1%;top:1%;width:10%;z-index:12000">-</div>
 
 <!-- Backtracker -->  
@@ -147,13 +135,9 @@ Super controls ???? belonging to no group so z is determined by function   -->
         <option value='4'>[TITLE]4.mp3</option>
         <option value='5'>[TITLE]5.mp3</option>
         </select>
-       <!--
-        <input id='btName'onchange="BACKTRACK=this.value,loadServerTrack()" style="position:absolute;border:solid; bottom:1%; height:5%;left:1%; width:50%; text-align : left; overflow:auto;">
-                -->
         <div id ="map" style ="position:absolute;border:solid; top:15%; height:84%;left:66%; width:30%; text-align : left; overflow:scroll;">MAP appears here...
             </div>
         </div>
-
 <!-- mailer -->  
     <div id="mailer" style="position:absolute;resize:both;color:black;border-style:ridge; border-width:thick;display:none;line-height:130%;color:black;text-align:left; font-size:1vw; background-color:lightgrey; overflow:hidden; height:45% ;width:45%; top:40%; left:20%;z-index:11000 ">
         <img onclick="dis('mailer')" src="../../Icons/blackClose.png" alt="?" style ="position:absolute;border:solid; top:0%; height:8%;right:0%;">
@@ -169,7 +153,6 @@ Super controls ???? belonging to no group so z is determined by function   -->
         <button onclick="mailTo('send')" alt="?" style ="position:absolute;border:solid;top:10%;width:12%; height:20%;right:0%;"><X2>SEND!</X2></button>
         <textarea id="mailerBody" onchange="MAIL=this.value" style="position:absolute;top:30%;height:60%;width:100%;left:0%;text-align:left;border:solid;overflow-y:scroll">Mail Body</textarea> 
     </div>
-
 
 <!-- Splash  4000 4099 -->  
     <div id ="splash" style="position:fixed; display:block; font-size:5vh;text-align:center; background-color:white; color:black; top:0%; left:0%; width:100%; height:100%; z-index:4500">
@@ -228,19 +211,20 @@ Super controls ???? belonging to no group so z is determined by function   -->
 <!--SONG ICONS-->    
     <div id ='songIcons' style="opacity:1;font-size:8vh;position:fixed; display:block; z-index:700;">
     <!--Top left-->  
-        <img id="lastIcon" src="../../Icons/transPointerLeft.png" title = "PREVIOUS TUNE" onclick ="nextTune(-1)"  alt ="<" style="opacity:1; display:block; position:fixed; left:1%;top:7%;width:7%">
+        <img id="lastIcon" src="../../Icons/transPointerLeft.png" title = "PREVIOUS TUNE" onclick ="selectTuneNo(TUNEnum-1)"   alt ="<" style="opacity:1; display:block; position:fixed; left:1%;top:7%;width:7%">
         <img id="toolsIcon" src="../../Icons/transCog.png" onclick="barSelect('configuration')" title ='SETTINGS'  alt ="Settings" style="position:fixed; left:9%;width:7%;top:7%;">
         <div id='mirror' title ='TEMPO<>KEY<>BACK TRACK<>QUALITY' onclick="rollMirror(false),listTempos(),newKey(KEY),barSelect('songbar')" style="line-height:7vw;font-size:4vw; position:fixed;text-align:center;background-color:transparent;background-size:100%;vertical-align:middle;left:17%;width:7%;top:7%;z-index:701"></div>
         <img id='mirrorImage' src'../../Icons/transSilent.png' style="position:fixed; left:17%;width:7%;top:7%;z-index:700;">
     <!--Top Center-->   
-        <select id="mySet" onchange="selectTune(this.value)" title="Select Song" style="position:fixed; overflow:hidden; opacity:0.01; border-style:solid; border-color:black; border-width:thick; background-color:white; color:green; line-height:100%; text-align:left; font-weight:bold; top:7%; height:8%; left:25%; width:45%; z-index:701;"></select>
-        <div  id='TheTune' title='Select TITLE from your Play List' style='position:fixed;background-color:lightyellow; font-size:3vw; line-height:100%; color:green; border-style:solid; border-color:green; text-align:center; vertical-align:top; white-space:nowrap; overflow:hidden; font-weight:bold; top:6%; height:8%; left:25%; width:50%; overflow:hidden;'>
-            <div  id='myTune' title='Select TITLE from your Play List' style='position:fixed;background-color:lightyellow; font-size:3vw; line-height:100%; color:green; border-style:solid; border-color:green; text-align:center; vertical-align:top; white-space:nowrap; overflow:hidden; font-weight:bold; top:6%; height:8%; left:25%; width:50%; overflow:hidden;' >-</div> 
-            <img onclick=dis('BS') src='../../Icons/blackSearch.png' style='display:block;position:absolute;position:absolute; right:0%;height:100%'>
-            </div>
+    <div id='bozo'>        
+        <div id='TheTune' title='Select TITLE from your Play List' style='position:fixed;background-color:lightyellow; font-size:3vw; line-height:100%; color:green; border-style:solid; border-color:green; text-align:center; vertical-align:top; white-space:nowrap; overflow:hidden; font-weight:bold; top:6%; height:8%; left:25%; width:50%; overflow:hidden;z-index:0'></div>
+        <div  id='myTune'style='position:fixed;background-color:lightyellow; font-size:3vw; line-height:100%; color:green; border-style:solid; border-color:green; text-align:center; vertical-align:top; white-space:nowrap; overflow:hidden; font-weight:bold; top:6%; height:8%; left:25%; width:50%; overflow:hidden; z-index:50;' >-</div>
+        <select id="mySet" onchange="selectTuneNo(this.selectedIndex)" title="Select Song" style="position:fixed; overflow:hidden;opacity:0.01; border-style:solid; border-color:black; border-width:thick; background-color:lightyellow; color:black; line-height:100%; text-align:left; font-weight:bold; top:6%; height:8%; left:25%; width:45%; z-index:100;"></select>
+        <div id ='BSbutton' onclick="dis('BS')" style="position:fixed;opacity:0.1;display:none;background-color:blue;top:6%; height:8.5%; left:25%; width:50%; z-index:150"></div>
+    </div>
         <div id="clock" style="position:fixed;display:block;border:solid;border-style:ridge; border-width:thick;line-height:80%;background-color:gold;overflow:hidden;right:45%; bottom:6%; z-index:-10000;">CLOCK</div>
-        <div id="altSong" onclick="nextTune(1)" style="text-align:center; display:none; position:fixed; background-color:lightgrey; overflow:hidden; left:25%; font-size:3vw; border-style:solid; border-color:black; color:red; line-height:100%; top:15%; overflow:hidden; white-space:nowrap; height:8%; width:50%; z-index:-11000;">Alternate Song</div>
-        <div id="abet" style="text-align:center; display:none; position:fixed; background-color:lightgrey; overflow:hidden; left:25%; font-size:2vw; border-style:solid; border-color:black; color:white; line-height:100%; top:15%; overflow:hidden;  height:5%; width:50%; z-index:-11000;">
+        <div id="altSong" onclick="selectTuneNo(TUNEnum+1)" style="text-align:center; display:none; position:fixed; background-color:lightgrey; overflow:hidden; left:25%; font-size:3vw; border-style:solid; border-color:black; color:red; line-height:100%; top:15%; overflow:hidden; white-space:nowrap; height:8%; width:50%; z-index:-11000;">Alternate Song</div>
+        <div id="abet" style="text-align:center; display:none; position:fixed; background-color:lightgrey; overflow:hidden; left:25%; font-size:2vw; border-style:solid; border-color:black; color:white; line-height:100%; top:15%; overflow:hidden;  height:5%; width:50%; z-index:11000;">
             <div onclick="indx('A')"style="position:absolute;left:0%;">A</div>
             <div onclick="indx('B')"style="position:absolute;left:3.84%;">B</div>
             <div onclick="indx('C')"style="position:absolute;left:7.7%;">C</div>
@@ -272,8 +256,8 @@ Super controls ???? belonging to no group so z is determined by function   -->
         <img onclick="mailTo('open')" src="../../Icons/email.gif" alt="?" style ="position:fixed;top:0%;width:4%; height:6%;right:0%;z-index:6000">  
         <img id="ButtonTools" onclick="barSelect('tool')" title='TOOLS' src="../../Icons/transTools.png" alt ="Admin Tools"  style="position:fixed; right:17%;top:7%; width:7vw">
         <img id="ButtonHome" title ='HOME' src="../../Icons/transHome.png" alt ="home" onclick="window.open('../../index.html')" style="position:fixed; right:9%;top:7%; width:7vw">    
-        <img id="nextIcon" src="../../Icons/transPointerRight.png" title = "NEXT TUNE" onclick ="if(document.getElementById('altSong').style.display=='block'){nextTune(2);}else{nextTune(1);}"  alt =">" style="opacity:1;  position:fixed; right:1%;top:7% ;width:7%"> 
-        </div>
+        <img id="nextIcon" src="../../Icons/transPointerRight.png" title = "NEXT TUNE" onclick ="selectTuneNo(TUNEnum+1)"  alt =">" style="opacity:1;  position:fixed; right:1%;top:7% ;width:7%"> 
+    </div>
 
 <!--Bars
 <!--SONG BAR-->  
@@ -345,7 +329,7 @@ Super controls ???? belonging to no group so z is determined by function   -->
             <img id="ButtonAnalysis" title='SONG ANALYSIS' src="../../Icons/blackInfo.png" alt ="LINKS" onclick="notePopUp(analizeSong(),'2vw','black','tan','No Analysis Available...','Song Analysis')" style=position:absolute;width:9%;height:70%;left:10.5%;bottom:0%;">
             <img id="ButtonTech" title='TECHNICAL INFO' src="../../Icons/violetNotepad.png" alt ="TECH NOTES" onclick="notePopUp(NOTEtech,'2vw','black','violet','No Technical Notes...','Technical Notes')" style=position:absolute;width:9%;height:70%;left:20.5%;bottom:0%;">
             <img id="ButtonTrivia" title='TRIVIA' src="../../Icons/yellowGift.png" alt ="TRIVIA NOTES" onclick="notePopUp(triviaNotes(),'2vw','black','yellow','No Trivia Notes...','Trivia Notes')" style=position:absolute;width:9%;height:70%;left:30.5%;bottom:0%;">
-            <img id='irbIcon' title='iREALb File (iRealb must be installed)' src = "../../Icons/blackIRB.png" alt = "???" onclick = "iRealLink();notePopUp( '<u>Sent String to iRealb App...</u><br><br>'+IRB,'3vw','white','blue','ERROR',undefined,'iRealb screen...')" style=position:absolute;width:9%;height:70%;left:40.5%;bottom:0%;">
+            <img id='irbIcon' title='iREALb File (iRealb must be installed)' src = "../../Icons/blackIRB.png" alt = "???" onclick = "iRealLink();notePopUp('<u>Sent String to iRealb App...</u><br><br>'+IRB,'3vw','white','blue','ERROR',undefined,'iRealb screen...')" style=position:absolute;width:9%;height:70%;left:40.5%;bottom:0%;">
             <img id="ButtonLinks" title='LINKS (Internet)' src="../../Icons/blackLinks.png" alt ="LINKS" onclick="notePopUp(NOTElinks,'3vw','Blue','white','No links...','Internet Links')" style=position:absolute;width:9%;height:70%;left:50.5%;bottom:0%;">
             <img id="ButtonHistory" title="Click for Revision History" src="../../Icons/lightGreenHistory.png" title="REVISION HISTORY" alt ="HISTORY" onclick ="notePopUp('<pre>'+ getRevisonHistory()+'</pre>','1vw','black','white','Unable to access Revision History...','Revision History')" style=position:absolute;width:9%;height:70%;left:60.5%;bottom:0%;">
             <!--<img id="ButtonNeck" src="../../Icons/neck.png" title="Neck" alt ="Neck" onclick ="dis('neckBar')" style="position:absolute;width:9%;height:70%;left:70.5%;bottom:0%;">-->
@@ -361,10 +345,6 @@ Super controls ???? belonging to no group so z is determined by function   -->
             </div>
         <div id="misc" style="position:absolute; visibility: visible; display:block; text-align:center; overflow:hidden;top:66%; left:0%; width:100%; height:33%; z-index:1200">   
             <div style="text-align:center; background-color:darkgrey; overflow:hidden; position:absolute; top:0%; left:0%; width:100%; height:20%;">MISCELLANEOUS</div>
-            <!--<img id="SS" title='Signal Setup' src="../../Icons/blackAmp.png" alt="Passport Setup"  onclick="window.open('SignalSetup.html')" style=position:absolute;width:9%;height:70%;left:0.5%;bottom:0%;">
-            <img id="PP" title='?' src="../../Icons/blackVol.png" alt="?" onclick="window.open('Passport.html')" style=position:absolute;width:9%;height:70%;left:10.5%;bottom:0%;">
-            <img id="PL" title='?' src="../../Icons/packingList.png" alt="?" onclick="window.open('EquipmentList.html')" style='position:absolute;width:9%;height:70%;left:20.5%;bottom:0%;'">
-            -->
         </div>
     </div>
 
@@ -392,42 +372,6 @@ Super controls ???? belonging to no group so z is determined by function   -->
             <div id ="soundOO" alt = "SOUND" onclick="volOnOff()" style="position:absolute;background-size:100% 100%;border:solid; border-color:black; background-image: url('../../Icons/on.png');width:100%; bottom:0%; height:15%;">VOL</div>
         </div>  
 
-<!--TAB BAR 
-    <div id='tabBar' style="position:fixed;overflow:hidden;text-align:left;display:none;border-color:black;border:solid; height:30%; width:100%; left:0%; top:0%; z-index:6000; background-color:grey;">
-        <div style="position:absolute;height:15%;width:100%;">
-            <select id='tabSelect' onchange="showTab(this.value,'block')" style="position:absolute;top:0%;left:5%;">-</select>
-            <div id='tabTriggers' style="position:absolute;line-height:150%;background-color:lightgrey;border:groove;font-size:2.0vh;top:0%;left:15%;">TAB TRIGGERS</div> 
-            <select id='tabMode' onchange="showTab(this.value,'block')" style="position:absolute;top:0%;right:10%;"><option value='Auto' selected>Auto</option><option value='Manual' selected>Manual</option></select>
-            <img src="../../Icons/blackClose.png" alt="+" title="CLOSE" onclick="dis('tabBar','none')" style="position:absolute;height:100%;right:0%; top:0%;z-index:4555;">  
-            <!--<img src="../../Icons/blackResize.png" alt="+" title ='RESIZE' onclick="tabResize()"  style="position:absolute; height:15%;  width:5%; right:5%; top:0%;z-index:4555;">
-            </div>
-        <div id="tabBox" style="display:block; position:absolute;  height:85%; width:100%; left:0%; top:15%; z-index:4551;  overflow-x:scroll;overflow-y:hidden"> 
-            <div id='tablature' style="position:absolute; font-weight:900; font-size:3.25vh; color:black;line-height:100%;font-family:monospace; font-weight: 400; text-align:left;border:none; height:100%;left:0%; background-color:white;white-space: pre;">
-            </div>
-            </div>
-        </div> -->        
-<!--NECK BAR 
-    <div id='neckBar' style="position:fixed;overflow:hidden;text-align:left;display:none;border:solid; height:30%; width:100%; left:0%; top:35%; z-index:6000; background-color:grey;">
-        <div style="position:absolute; font-size:3vh; line-height:150%; height:15%; width:100%;">
-            <select id='neckSelect' onchange="alert('Load Neck')" style="position:absolute;top:0%;left:5%;">-</select>
-            <img src="../../Icons/blackClose.png" alt="+" title="CLOSE" onclick="dis('neckBar','none')" style="position:absolute;height:100%;right:0%; top:0%;z-index:4555;">
-            <img src="../../Icons/reset.png" alt="+" title="Reset" onclick="neckReset()" style="position:absolute;height:100%;left:20%; top:0%;z-index:4555;">
-            <img src="../../Icons/transPointerRight.png" alt="+" title="step" onclick="neckStep(1)" style="position:absolute;height:100%;left:23%; top:0%;z-index:4555;">
-            <div id="neckBar" style="position:absolute;height:100%;left:30%;width:6%; top:0%;z-index:4555;">Bar</div>
-            <div id="neckPos" style="position:absolute;height:100%;left:40%;width:6%; top:0%;z-index:4555;">Pos</div>
-            <img src="../../Icons/blackClose.png" alt="+" title="XXX" onclick="strToNeck()" style="position:absolute;height:100%;left:26%; top:0%;z-index:4555;">  
-        </div>
-        <div id="neckBox" style="display:block; position:absolute;  height:85%; width:100%; left:0%; top:15%; z-index:4551; overflow:hidden"> 
-            <img id='s1' src="../../Icons/blackClose.png" style="position:absolute;height:16.66%; width:2%; left:1%; top:0%; z-index:4551;">
-            <img id='s2' src="../../Icons/blackClose.png" style="position:absolute;height:16.66%; width:2%; left:5%; top:16.66%; z-index:4551;">
-            <img id='s3' src="../../Icons/blackClose.png" style="position:absolute;height:16.66%; width:2%; left:9%; top:33.32%; z-index:4551;">
-            <img id='s4' src="../../Icons/blackClose.png" style="position:absolute;height:16.66%; width:2%; left:13%; top:50%; z-index:4551;">
-            <img id='s5' src="../../Icons/blackClose.png" style="position:absolute;height:16.66%; width:2%; left:17%; top:66.66%; z-index:4551;">
-            <img id='s6' src="../../Icons/blackClose.png" style="position:absolute;height:16.66%; width:2%; left:21%; bottom:0%; z-index:4551;">
-            <img id = 'fretboard' style='position:absolute; left:0%; height:100%; width:100%;' alt ='Fingerboard' src ='../../Icons/fretboard2.png'>    
-            </div>
-        </div>        
---> 
 <!--THE TUNE BODY-->    
     <div id="Tune" style="display:block; position:fixed; left:0%; height:100%; width:100%; top:0%; overflow-y:scroll;overflow-x:hidden; z-index:10;"> 
         <div id="content" style="width:100%; z-index:10;">???</div>
@@ -437,13 +381,14 @@ Super controls ???? belonging to no group so z is determined by function   -->
     <div id="configuration" style="position:fixed; font-size:2vw; display:none; border-color:darkgrey; border-style:ridge; border-width:thick; background-color:darkgrey; text-align:center; overflow:hidden; opacity:1; height:61% ; width:90%; bottom:15%; left:5%; z-index:900;">
         <img title="Advanced Configuration Mode" onclick ="dis('configuration2','block')" src ="../../Icons/advanced.png" alt='?' style="position:absolute; border-style:ridge;left:0%; width:4%;top:0%; height:12%;z-index:900;">
         <img src="../../Icons/greyBug.jpg" title="Debug Screen"  onclick ="setMonitor()" id='debugButton'style="position:absolute; text-align: center;color:white; border-style:ridge; background-color:transparent; line-height:110%; font-size:1vw; top:0%; height:12%; width:4%; left:4.5%; z-index:1">
+<img src ="../../Icons/blackTurd.png" title="Test Configuration Screen" alt="X" onclick ="crapp()" style="position:absolute;top:0%;  right:15%; height:12%;z-index:900;">   
         <img src ="../../Icons/blackClose.png" title="Close Configuration Screen" alt="X" onclick ="barSelect('configuration'),statusMsg(songSum(),'yellow')" style="position:absolute;top:0%;  right:0%; height:12%;z-index:900;">   
         <div style=";position:absolute;text-align:center;line-height:100%; left:1%; top:1%; height:31%; width:98%;">
             <div style="position: absolute;color:white;width:100%;top:0.5%; height:17%">PERFORMER: CONFIGURATION (BASIC SETTING) </div>
             <div id = 'soundBox' style="position:absolute; text-align:center;width:30%; left:1%; bottom:5%; font-size:2vw;">--SOUND BOX---</div>
             <div style="position:absolute; text-align:center;width:28%; left:36%; bottom:5%; font-size:2vw;">
                 <a style='color:white;'>PRESET MODES:</a>
-                <select onchange="PRESETlock=true,statusMsg('This will hang for about 5 seconds...Be patient...','red'),PRESET=(this.value);presets('presets')" style='background-color:white;color:black;font-size:2vw; width:100%'"><option selected >Default Mode</option><option>Perform Mode</option><option>Practice Mode</option><option>Developer Mode</option></select>
+                <select onchange="PRESET=(this.value),presets('presets')" style='background-color:white;color:black;font-size:2vw; width:100%'"><option selected >Default Mode</option><option>Perform Mode</option><option>Practice Mode</option><option>Developer Mode</option></select>
                 </div>
             <div id="setSelectA" style="position:absolute;text-align:center; bottom:5%; font-size:2vw; right:1%; width:30%;">--SET LIST--</div>
             <div id="revStatus" title="Click for Rev Dates" onclick="statusMsg(JHdate,'blue')" style="position:absolute;text-align:center; top:23.4%; font-size:2vw; right:10%; width:80%; color:blue;">Revision</div>
@@ -451,52 +396,52 @@ Super controls ???? belonging to no group so z is determined by function   -->
         <div style="color:white; position:absolute; line-height:100%; left:1%; bottom:35%; height:31%; width:98%; border:groove;">
             Display Format
             <!-- ORIGINAL-->
-            <a onclick ="setCustom('CAPS','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; left:0.5%; color:white; opacity:1;z-index:1;">ALL<br>CAPS</a>
+            <a id='btCAPS' onclick ="setCustom('CAPS','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; left:0.5%; color:white; opacity:1;z-index:1;">ALL<br>CAPS</a>
                 <img src ="../../Icons/on.png" id ="imgCAPS"  alt = "" style="position:absolute; bottom:1%; left:0.5%; height:70%; width:9%;">
-            <a  onclick ="setCustom('SHADE','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; left:9.5%; color:white; opacity:1;z-index:1;">Shade<br>Screen</a>   
+            <a  onclick ="setCustom('SHADE','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; left:9.5%; color:white; opacity:1;z-index:1;">Shade<br>Screen</a>   
                 <img src ="../../Icons/off.png" id ="imgSHADE"  alt = "" style="position:absolute; bottom:1%; left:9.5%; height:70%; width:9%">
-            <a  onclick ="setCustom('FULLscreen','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; left:18%; color:white; opacity:1;z-index:1;">Full<br>Screen</a>
+            <a  onclick ="setCustom('FULLscreen','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; left:18%; color:white; opacity:1;z-index:1;">Full<br>Screen</a>
                 <img src ="../../Icons/off.png" id ="imgFULLscreen"  alt = "" style="position:absolute; bottom:1%; left:18%; height:70%; width:9%;">
-            <a  onclick ="setCustom('LEFTborder','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; left:27%; color:white; opacity:1;z-index:1;">Left<br>Border</a>
+            <a  onclick ="setCustom('LEFTborder','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; left:27%; color:white; opacity:1;z-index:1;">Left<br>Border</a>
                <img src ="../../Icons/off.png" id ="imgLEFTborder"  alt = "" style="position:absolute; bottom:1%; left:27%; height:70%; width:9%;">
-            <a  onclick ="setCustom('CLOCK','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; left:36%; color:white; opacity:1;z-index:1">Show<br>Clock</a>   
+            <a  onclick ="setCustom('CLOCK','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; left:36%; color:white; opacity:1;z-index:1">Show<br>Clock</a>   
                 <img src ="../../Icons/off.png" id ="imgCLOCK"  alt="" style="position:absolute; bottom:1%; left:36%; height:70%; width:9%;">
-            <a  onclick ="setCustom('TEXT','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; left:45%; color:white; opacity:1;z-index:1">Small<br>Text</a>   
+            <a  onclick ="setCustom('TEXT','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; left:45%; color:white; opacity:1;z-index:1">Small<br>Text</a>   
                 <img src ="../../Icons/off.png" id ="imgTEXT"  alt="" style="position:absolute; bottom:1%; left:45%; height:70%; width:9%;">
-            <a id="breakLines" onclick ="setCustom('BREAKlines','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:18%; left:60%; color:white; opacity:1;z-index:9;">Characters<br>Per Line</a>
-                <img src ="../../Icons/off.png" id ="imgBREAKlines"  alt = "" style="position:absolute; bottom:1%; left:60%; height:70%; width:18%;z-index:5">            
-            <div id='lineLimit' onclick="setLineLimit(),arrConvert()" style="position:absolute; line-height:160%;text-align:center;background-color:transparent; top:42%; height:70%; width:9%; left:69%; color:black;z-index:3;">90</div>
-                <img src ="../../Icons/yellow.png" id ="imgFONT"  alt = "" style="position:absolute; bottom:1%; left:69%; height:70%; width:9%;z-index:1;">
-            <div  id='bcp' onclick ="setCustom('BIGchords','','refresh');" style="position:absolute;text-align:center; top:42%; height:65%; width:18%; left:80%;color:white;z-index:9;">Spread & Size<br>Chords</div>
-                <img src ="../../Icons/off.png" id ="imgBIGchords"  alt = "" style="position:absolute; bottom:1%; left:80%; height:70%; width:18%;z-index:4;">
-            <div id='bigChordPct' onclick="bcPct()" style="position:absolute; line-height:160%;text-align:center;background-color:transparent; top:45%; height:70%; width:9%; left:89%; color:black;z-index:3;">100%</div>
-                <img src ="../../Icons/yellow.png" id ="imgChordPct"  alt = "" style="position:absolute; bottom:1%; left:89%; height:70%; width:9%;z-index:1;"></div>              
+            <a  onclick ="setCustom('BIGselect','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; left:54%; color:white; opacity:1;z-index:1">Size<br>Playlist</a>   
+                <img src ="../../Icons/off.png" id ="imgBIGselect"  alt="" style="position:absolute; bottom:1%; left:54%; height:70%; width:9%;">         
+            <a id="breakLines" onclick ="setCustom('BREAKlines','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; left:63%; color:white; opacity:1;z-index:9;">Char</br>90</a> 
+                <img src ="../../Icons/off.png" id ="imgBREAKlines"  alt = "" style="position:absolute; bottom:1%; left:63%; height:70%; width:9%;z-index:5">            
+            <div  id='bcp' onclick ="setCustom('BIGchords','','toggle');" style="position:absolute;text-align:center; top:40%; height:70%; width:9%; left:72%;color:white;z-index:9;">Chord<br>Size<br>100%</div>
+                <img src ="../../Icons/off.png" id ="imgBIGchords"  alt = "" style="position:absolute; bottom:1%; left:72%; height:70%; width:9%;z-index:4;">
+            </div>              
+
         <div style="color:white;position:absolute;line-height:100%; left:1% ;bottom:1%; height:31%;width:48%; border: groove;">
             <pre>Show Notes          Pop Up Notes</pre>
-            <a  onclick ="setCustom('NOTES','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:16%; left:1%; color:white; opacity:1;z-index:1;">Misc<br>Notes</a>
+            <a  onclick ="setCustom('NOTES','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:16%; left:1%; color:white; opacity:1;z-index:1;">Misc<br>Notes</a>
                 <img src ="../../Icons/off.png" id ="imgNOTES"  alt = "" style="position:absolute; bottom:1%; width:16%; left:1%; height:70%;">
-            <a  onclick ="setCustom('LIVEnotes','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:16%; left:17%; color:white; opacity:1;z-index:1;">Live<br>Notes</a>
+            <a  onclick ="setCustom('LIVEnotes','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:16%; left:17%; color:white; opacity:1;z-index:1;">Live<br>Notes</a>
                <img src ="../../Icons/off.png" id ="imgLIVEnotes"  alt = "" style="position:absolute; bottom:1%; width:16%; left:17%; height:70%;">           
-            <a  onclick ="setCustom('SETnotes','','refresh')"  style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:33%; color:white; opacity:1;z-index:1;">SET<br>Pop!</a>
+            <a  onclick ="setCustom('SETnotes','','toggle')"  style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:33%; color:white; opacity:1;z-index:1;">SET<br>Pop!</a>
                 <img src ="../../Icons/off.png" id ="imgSETnotes"  alt = "" style="position:absolute; bottom:1%; right:33%; height:70%; width:16%">
-            <a  onclick ="setCustom('POPnotes','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:17%; color:white; opacity:1;z-index:1;">Triv<br>Pop!</a>
+            <a  onclick ="setCustom('POPnotes','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:17%; color:white; opacity:1;z-index:1;">Triv<br>Pop!</a>
                 <img src ="../../Icons/off.png" id ="imgPOPnotes"  alt = "" style="position:absolute; bottom:1%; right:17%; height:70%; width:16%;">
-            <a  onclick ="setCustom('TECHnotes','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:1%; color:white; opacity:1;z-index:1;">Tech<br>Pop!</a>
+            <a  onclick ="setCustom('TECHnotes','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:1%; color:white; opacity:1;z-index:1;">Tech<br>Pop!</a>
                 <img src ="../../Icons/off.png" id ="imgTECHnotes"  alt = "" style="position:absolute; bottom:1%; right:1%; height:70%; width:16%;">
-            <!--<a  onclick ="setCustom('TBD2','','refresh')"  style="position:absolute; display:none;text-align:center; top:42%; height:40%; width:16%; left:81%; color:white; opacity:1;z-index:1">TBD,<br>2</a>
-                <img src ="../../Icons/off.png" id ="imgTBD2"  alt = "" style="position:absolute; display:none; bottom:1%; left:81%; height:70%; width:16%;">-->
             </div>  
     <div style="color:white;position:absolute;line-height:100%; left:51%; bottom:1%; height:31%; width:48%;border: groove;">
             Automation
-        <a  onclick ="setCustom('ENDpause','','refresh')" style="position:absolute; display:block; text-align:center; top:42%; height:40%; width:16%; right:65%; color:white; opacity:1;z-index:1">End<br>Pause</a>
+        <a  onclick ="setCustom('ENDpause','','toggle')" style="position:absolute; display:block; text-align:center; top:42%; height:40%; width:16%; right:65%; color:white; opacity:1;z-index:1">End<br>Pause</a>
           <img src ="../../Icons/off.png" id ="imgENDpause"  alt = "" style="position:absolute;display:block; bottom:1%; right:65%; height:70%; width:16%;">
-        <a  id ='countText'  onclick ="setCustom('COUNTin','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:49%; color:white; opacity:1;z-index:1">Count<br>In</a>
+    <!--    <a  id ='countText'  onclick ="setCustom('COUNTin','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:49%; color:white; opacity:1;z-index:1">Count<br>In</a>
+    -->      
+  <a  onclick ="setCustom('COUNTin','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:49%; color:white; opacity:1;z-index:1">Count<br>In</a>
           <img src ="../../Icons/off.png" id ="imgCOUNTin"  alt = "" style="position:absolute; bottom:1%; right:49%; height:70%; width:16%;">  
-        <a  onclick ="setCustom('LOOPER','','refresh')"  style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:33%; color:white; opacity:1;z-index:1;">Loop<br>---</a>
+        <a  onclick ="setCustom('LOOPER','','toggle')"  style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:33%; color:white; opacity:1;z-index:1;">Loop<br>---</a>
             <img src ="../../Icons/off.png" id ="imgLOOPER"  alt = "" style="position:absolute; bottom:1%; right:33%; height:70%; width:16%;">    
-        <a onclick ="setCustom('METRO','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:17%; color:white; opacity:1;z-index:1;">Metro/<br>Beats</a>
+        <a onclick ="setCustom('METRO','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:17%; color:white; opacity:1;z-index:1;">Metro/<br>Beats</a>
             <img src ="../../Icons/off.png" id ="imgMETRO"  alt = "" style="position:absolute; bottom:1%; right:17%;  height:70%; width:16%;">        
-        <a  onclick ="setCustom('BARsync','','refresh')"  style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:1%; color:white; opacity:1;z-index:1">BAR<br>SYNC</a>
+        <a  onclick ="setCustom('BARsync','','toggle')"  style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:1%; color:white; opacity:1;z-index:1">BAR<br>SYNC</a>
             <img src ="../../Icons/off.png" id ="imgBARsync"  alt = "" style="position:absolute; bottom:1%; right:1%; height:70%; width:16%;">    
         </div>   
 <!--SCONDARY CONFIGURATION BOX-->
@@ -506,17 +451,17 @@ Super controls ???? belonging to no group so z is determined by function   -->
             <img src ="../../Icons/blackClose.png" alt="X" onclick ="barSelect('none')" style="position:absolute;top:0%; right:0%;height:12%;">
             <div style="color:white;position:absolute;line-height:100%; left:1%; bottom:35%; height:31%; width:22%; border: groove;">
                 Line Numbers
-                <a  onclick ="setCustom('LINEtime','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:45%; left:2%; color:white; opacity:1;z-index:1;">Line<br>Time</a>
+                <a  onclick ="setCustom('LINEtime','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:45%; left:2%; color:white; opacity:1;z-index:1;">Line<br>Time</a>
                     <img src ="../../Icons/off.png" id ="imgLINEtime"  alt = "" style="position:absolute; bottom:1%; left:2%; height:70%; width:45%;">
-                <a  onclick ="setCustom('LINEnum','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:45%; right:2%; color:white; opacity:1;z-index:1;">Line<br>Num</a>
+                <a  onclick ="setCustom('LINEnum','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:45%; right:2%; color:white; opacity:1;z-index:1;">Line<br>Num</a>
                     <img src ="../../Icons/off.png" id ="imgLINEnum"  alt = "" style="position:absolute; bottom:1%; right:2%; height:70%; width:45%;">
                 </div>
             <div style="color:white;position:absolute; line-height:100%; left:1%; bottom:1%; height:31%; width:98%; border: groove;">
                 INWORK CRAP....
                 <!-- <div  onclick ="breakLine('a',50)" style="position:absolute; text-align:center; top:42%; height:40%; width:10%; left:26%; color:white; opacity:1;z-index:1;">TEST<br>Thing</div>   
-                <a  onclick ="setCustom('KARAOKE','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:10%; left:36%; color:white; opacity:1;z-index:1;">Karaoke<br>Mode</a>   
+                <a  onclick ="setCustom('KARAOKE','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:10%; left:36%; color:white; opacity:1;z-index:1;">Karaoke<br>Mode</a>   
                     <img src ="../../Icons/off.png" id ="imgKARAOKE"  alt = "" style="position:absolute; bottom:1%; left:36%; height:70%; width:10%;">  -->
-                <a  onclick ="setCustom('BACKdrop','','refresh')"  style="position:absolute; text-align:center; top:42%; height:40%; width:10%; left:48%; color:white; opacity:1; z-index:1;">Back<br>Drop</a>
+                <a  onclick ="setCustom('BACKdrop','','toggle')"  style="position:absolute; text-align:center; top:42%; height:40%; width:10%; left:48%; color:white; opacity:1; z-index:1;">Back<br>Drop</a>
                     <img src ="../../Icons/off.png" id ="imgBACKdrop"  alt = "" style="position:absolute; bottom:1%; left:48%; height:70%; width:10%;">
                 </div> 
             </div>   
