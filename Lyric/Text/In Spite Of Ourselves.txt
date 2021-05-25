@@ -1,4 +1,4 @@
-TITLE:In Spite Of Ourselves,DUR:190,BPM:120,BEATS:4,KEY:C,QUAL:Raw,ARTIST:John Prine,GENRE:Country,STYLE:Ballad,HITyear:TBD
+TITLE:In Spite Of Ourselves,DUR:194,BPM:120,BEATS:4,KEY:C,QUAL:Raw,ARTIST:John Prine,GENRE:Country,STYLE:Ballad,HITyear:TBD
 #VERSE 1 --------------------------------
 |C                     |%
 She don't like her eggs all runny
@@ -39,7 +39,7 @@ odds       Honey, we're the big door
 |C                     |%
 faces               There won't be
 |G                     |G7
-There won't be nothin' but big old hearts Dancin' in our
+nothin' but big old hearts Dancin' in our
 |C                     |%
 eyes
 #BREAK 1 --------------------------------
@@ -95,7 +95,7 @@ odds       Honey, we're the big door
 |C                     |%
 faces               There won't be
 |G                     |G7
-There won't be nothin' but big old hearts Dancin' in our
+nothin' but big old hearts Dancin' in our
 |C                     |%
 eyes
 #OUTRO ----------------------------------

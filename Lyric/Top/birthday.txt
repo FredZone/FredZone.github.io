@@ -1,8 +1,8 @@
-//CODING TAGS //^//.## //.#      //.$//?. (Highlight-RIGHT-Click-Find)
+//CODING TAGS //^//.# //.##    //.$//?. (Highlight-RIGHT-Click-Find)
 //.@ DEAD/OBSOLETE....Deleat when safe
 //.$ Under Development (see SHIT)================
-//.## MAJOR SECTION===============================
-//.#      Subsection==================================
+//.# MAJOR SECTION===============================
+//.##    Subsection==================================
 //.? WTF=========================================
 //^   Trailing note (AFTER text)==================
 
@@ -15,12 +15,12 @@
 // Change the REV of NextPlayerX to the new rev (i.e. "var REV ="8.0")
 //areas for work tagged with ???
 
-//.## GLOBAL VARs
-//.#      REVISION VARs
+//.# GLOBAL VARs
+//.##    REVISION VARs
     var REV ="Beta 7-1";//this revision $$$$
     var JSname="NextPlayerX.js";//java script file $$$$
 
-//.#      FLAGS
+//.##    FLAGS
     var ALT=false;//^ alternate song
     var AUDfail=false;
     var AUDend=false;
@@ -28,7 +28,7 @@
     var NASH=false;//Nashville notation????incomplete...
     var SETnoteViewed=false;//used to keep not from popping up AWK
 
-//.#      PROGRAM and SONG VARS
+//.##    PROGRAM and SONG VARS
     var ARRtitle;
     var ARRsoundModes=("SILENT/nBACK TRACK/nCLICK TRACK/nDRUM ROCK/nDRUM COUNTRY").split("/n");
     var DUR=120;//^ Duration for scrolling and calculating
@@ -51,7 +51,7 @@
     var VOL=null
     var WARNING= "No Warnings!"
     var SONGsource="select"
-//.#      SONG DATA AND PROPERTIES (passed)
+//.##    SONG DATA AND PROPERTIES (passed)
     var RAWtune;//tune as read from file
     var ARTIST="Unknown";
     var ARRlines="";//^ Array of lines from text file
@@ -75,7 +75,7 @@
     var NOTEtrivia;
     var NOTEtech;
     var NOTElinks;
-//.#      SCROLLdata CONSTANTS
+//.##    SCROLLdata CONSTANTS
     var TOPlast;
     var SS=0;//Scroll Stopper...counts cylces of non scroll indicating end of tune
     var AS=0//audio stopper
@@ -93,7 +93,7 @@
     //var Xstart=0;//^ where Y is when you start the scroll
     var PAGEht;
     var TABwt;
-//.#      TIMEOUT CONSTANTS
+//.##    TIMEOUT CONSTANTS
     var TIMEOUTblink;//^time for blinking display
     var TIMEOUTcrap;//^ do not clear this one
     var TIMEOUTdelay;//^ trackDelay delay the start of???
@@ -104,7 +104,7 @@
     var TIMEOUTmirror;
     var TIMEOUTmet;
     var TIMEOUTwait; //Wait after scroll end before showing top Icons title etc
-//.#      CONFIGURATION CONSTANTS
+//.##    CONFIGURATION CONSTANTS
       //^     0        1            2            3        4       5        6        7         8        9         10        11      12         13       14     15     16    
     var ARRimg="imgCAPS,imgFULLscreen,imgLEFTborder,imgCLOCK,imgTEXT,imgSHADE,imgNOTES,imgSETnotes,imgPOPnotes,imgTECHnotes,imgLIVEnotes,imgCOUNTin,imgBREAKlines,imgBIGchords,imgLOOPER,imgMETRO,imgBARsync".split(',');
       //^             0        1          2        3   4    5     6     7         8        9         10        11      12         13       14     15     16  
@@ -137,7 +137,7 @@
     var TEXT=false;//reduce text size
     var TRIVIAnotes=false;
     var TECHnotes=false;
-//.#      MISC CONSTANTS
+//.##    MISC CONSTANTS
     var BIGselect=false;
     var ARRscale="A,Bb,B,C,C#,D,Eb,E,F,F#,G,Ab,A,Bb,B,C,C#,D,Eb,E,F,F#,G,Ab,A,Bb,B,C,C#,D,Eb,E,F,F#,G,Ab".split(",");
     var ARRsongSettings;
@@ -149,7 +149,7 @@
     var SETname="Single Tune";//^ default in case a list cannot be loaded
     var WINDht;//px window height
     var WINDwt;//px window width
-//.#      LOOP VARIABLES
+//.##    LOOP VARIABLES
     var METRO=false;//metronome
     var MET;//METRO count
     var METRObpm;
@@ -163,7 +163,7 @@
     var LOOPmode='repeated';
     var ENDscroll=false;
     var ENDaudio=false
-//.#      PRESETS
+//.##    PRESETS
     var ARRtf="true,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false".split(',');
     var PRESETno=0;
     var PRESET="Default Mode";
@@ -174,29 +174,29 @@
     var BARSTOP=0
     var ARRbars =''.split(',');
     var ARRpx=''.split(','); 
-//.#      STATUS LOG
+//.##    STATUS LOG
     var LOG=640;//length of Log
     var ARRstatusLog="<pre><X2>=================DEBUG LOG=================</x2></pre>".split('@');
     var STATUSmode=1;//^sets the Debug mode, 0: do not Log / 1: log while hidden /2: log while visilble
 
-//.#      TEMPO CONSTANTS 
+//.##    TEMPO CONSTANTS 
     var TEMPO;
     var TEMPOstart=0;
     var TEMPOcount=0;
     var TEMPOtime=0;
     var TEMPOtimeLast=0;
-//.#      MAP  CONSTANTS 
+//.##    MAP  CONSTANTS 
     var MAP=''.split(',');
     var MAPoffset=0;
-//.#      MAIL  CONSTANTS 
-   //var MAIL="";
+//.##    MAIL  CONSTANTS 
+   var MAIL="";
    var MAILsys;
    var BACKTRACK; //to try backtracks  
-//.#      LOCAL STORGE CONSTANTS 
+//.##    LOCAL STORGE CONSTANTS 
    var LOCALkey="TBD"
    var LOCALvalue="TBD"
 
-//.#      SHIT CONSTANTS Permanent feature 
+//.##    SHIT CONSTANTS Permanent feature 
    var SHIT= false
    //SHIT unique variables Used to While Developing  MOVE LATER=
    var MAXchordFont=5//in vw
@@ -205,10 +205,12 @@
    var MAXbars = 0
    var BARchr=1    //chr per bar
 
-//.$$ ARRchordLines and prepChordSize
+
+
+//.$ CHORD SIZE VARIABLES
 var ARRchordLines
+
 function prepChordSize() {
-   MAXchordFont=2;
    var lineCount = 0
    var aBars
    var bars
@@ -239,7 +241,7 @@ function prepChordSize() {
       CHORDfont=MAXchordFont
    }
    BARchr=100/(MAXbars*CHORDfont)
- alert("FINAL Chr Per BAR:" + BARchr + "\nMax Bars:" + MAXbars +"\nFONT: "+CHORDfont)
+ //alert("FINAL Chr Per BAR:" + BARchr + "\nMax Bars:" + MAXbars +"\nFONT: "+CHORDfont)
 }
 
 function presentChords(str) {
@@ -268,20 +270,27 @@ function presentChords(str) {
    return  out;
 }
 
-
-//.## LOCAL STORAGE otherwise superfluous
+//.# MISC CRAP NOT LOCATED LOGICALLY
+window.onbeforeunload = function(e) {
+   if (MAIL.length>20) {
+      statusMsg('YOU HAVE UNSENT MAIL','red')
+      return 'UNSENT MAIL ';
+   }else{return(null)}
+}
+//.# LOCAL STORAGE
+//.##    loadLocal(key)
 function loadLocal(key){
    dis('localAction','block')
    refreshLocal()
 }
-
+//.##    deleteLocal(key)
 function deleteLocal(){
    statusMsg("Deleted "+document.getElementById('keyLocal').value,0 )
    localStorage.removeItem(document.getElementById('keyLocal').value);
    statusMsg("Deleted Local Storage: "+LOCALkey,0 )
    refreshLocal()
 }
-
+//.##    refreshLocal(idx) 
 function refreshLocal(idx) {
    dis('localAction','block')
    var str = ""
@@ -298,27 +307,27 @@ function refreshLocal(idx) {
    document.getElementById('valueLocal').value= LOCALvalue
    document.getElementById('localAction').style.backgroundColor='lightgrey';
 }
-
+//.##    saveLocal(){
 function saveLocal(){
    localStorage.setItem(document.getElementById('keyLocal').value , document.getElementById('valueLocal').value )
    statusMsg("Saved Local Storage: "+LOCALkey,0 )
    document.getElementById('localAction').style.backgroundColor='lightgrey';
    refreshLocal()
 }
-
+//.##    dateLocal(){ 
 function dateLocal(){        
    var date = new Date();
    document.getElementById('localAction').style.backgroundColor='pink';
    document.getElementById('valueLocal').value=date;
 }
- 
+//.##    newLocal(){        
 function newLocal(){        
         var date = new Date();
         document.getElementById('localAction').style.backgroundColor='pink';
         document.getElementById('valueLocal').value="????";
         document.getElementById('keyLocal').value="????";
 }
-
+//.##    listLocal() {
 function listLocal() {
    var str = ""
    for (i = 0; i < localStorage.length; i++) {
@@ -329,90 +338,83 @@ function listLocal() {
    dis('cloud','block')
 }
 
-
-//.## MAIL
-
-//.## MISC CRAP NOT LOCATED LOGICALLY
-//window.onbeforeunload = function(e) {
-   //if (localStorage.getItem('mail').length>5) {
-   //   alert('YOU HAVE UNSENT MAIL')
- //     return 'UNSENT MAIL ';
- //  }else{return(null)}
-//}
-
-
-
-function mailTo(mode) {
-   var entry = "";
-   var stored = "";
-   var val = ""
-   msg = "Accessing mailer..."
-   if (mode == 'open') {
-      val = localStorage.getItem('mail')
-      document.getElementById('mailerBody').value = val
-      dis('mailer', 'block')
-      msg = "Mailer opened..."
-   }else if (mode == 'save') {
-      val = document.getElementById('mailerBody').value
-      if (val == null || val == '' || val == undefined||val.length<=2) {
-         alert( "Mail is blank, Cannot save that...");
-         document.getElementById('mailerBody').value = ""
-         localStorage.setItem('mail','')
-      msg('Cant save empty draft of mail...')
-      } else {
-         document.getElementById('msg').style.width = "96%";
-         localStorage.setItem('mail', val);
-         msg='Mail Draft saved...'
-      }
-   }else if (mode == 'close') {
-      dis('mailer', 'none');
-      msg = 'Mail closed...';
-   } else if (mode == 'title') {
-      entry = TITLE + ":";
-   } else if (mode == 'info') {
-      var pct = document.getElementById("Tune").scrollTop / SCROLLpix;
-      var time = parseInt(pct * DUR, 10);
-      entry = TITLE + ": [" + time + " seconds {" + parseInt(pct * 100, 10) + "%}]  (" + SETname + ")";
-   } else if (mode == 'key') {
-      entry = TITLE + ": Key(Base)=" + KEYbase + ": now =" + KEY;
-   } else if (mode == 'tempo') {
-      entry = TITLE + ": Tempo now " + BPM;
-   } else if (mode == 'set') {
-      entry = TITLE + ": Set=" + SETname;
-   } else if (mode == 'hilite') {
-      entry = TITLE + ":\nSelected Text----------------------------------\n" + getSelectionText() + "\n----------------------------------------------";
-   } else if (mode == 'restore') {
-      entry = localStorage.getItem('sentMail')
-   
-   
-   }else if (mode == 'delete') {
-      if (confirm('PERMANENTLY delete Your eMail draft') === true) {
-         document.getElementById('mailerBody').value = ""
-         localStorage.setItem('mail',"");
-         msg = "eMail Deleted."
-         document.getElementById('msg').style.width = "100%";
-      } else {
-         msg = "eMail retained."
-      }
-   }else if (mode == 'send') {
-      localStorage.setItem('sentMail', document.getElementById('mailerBody').value);
-      window.open("mailto:fkaparich@gmail.com?subject=From PERFORMER MAIL&body=.............Start of Mail..................%0A" + localStorage.getItem('mail').replace(/\n/g, '%0A') + "..................End of Mail..................");
-      localStorage.setItem('mail', "");
-      document.getElementById('mailerBody').value="";
-      dis('mailer', 'none');
-      document.getElementById('msg').style.width = '100%';
-      msg = "SEND THE MAIL (Mailer has been cleared!)";
+//.@ BIG TUNE SELECTOR 
+function ZZZsizeTuneSelect(){
+   dis('BS','none')
+   if (BIGselect==false) {
+      BIGselect=true;
+      statusMsg("Creating Small Selector...");
+      bigSelectorBuild("BS",PLAYlist);
+      document.getElementById('BSicon').src='../../Icons/blackTextSmall.png';
+      document.getElementById('BSbutton').style.display='block';
+   }else{
+      statusMsg("Creating Small Selector...");
+      BIGselect=false;
+      document.getElementById('BSbutton').style.display='none';
    }
-   if (entry != "") {
-      localStorage.setItem('mail',localStorage.getItem('mail')+entry+"\n" );
-      document.getElementById('mailerBody').value = localStorage.getItem('mail')
-      msg = "Email: "+mode
-   }
-   statusMsg(msg, "yellow")
 }
 
-//.## MISC
-function getSelectionText() {// Gets higlighted section class?
+
+
+//.# MAIL
+function mailTo(mode) {
+   var entry=null;
+   var x=false
+   if (mode == 'open') {
+      document.getElementById('msg').style.width = "96%";
+      if (MAIL.length >= 1) {
+         document.getElementById('mailerBody').value = MAIL
+         statusMsg('eMail Initiated');
+      }
+      dis('mailer', 'block');
+   }
+   if (mode == 'send') {
+      dis('mailer', 'none');
+      window.open("mailto:fkaparich@gmail.com?subject=From PERFORMER MAIL&body=.............Start of Mail..................%0A" + MAIL.replace(/\n/g, '%0A')+"...............End of Mail..................");
+   } else {
+      if (mode == 'title') {
+         entry = TITLE +":";
+      }
+      if (mode == 'info') {
+         var pct = document.getElementById("Tune").scrollTop / SCROLLpix;
+         var time = parseInt(pct * DUR, 10);
+         entry = TITLE + ": [" + time + " seconds {" + parseInt(pct * 100, 10) + "%}]  (" + SETname + ")";
+      }
+      if (mode == 'key') {
+         entry = TITLE + ": Key(Base)=" + KEYbase + ": now =" + KEY;
+      }
+      if (mode == 'tempo') {
+         entry = TITLE + ": Tempo now " + BPM;
+      }
+      if (mode == 'set') {
+         entry = TITLE + ": Set=" + SETname;
+      }
+      if (mode == 'hilite') {
+         entry = TITLE + ":\n----------------Selected Text-----------------\n" + getSelectionText()+"\n----------------------------------------------";
+      }     
+      if (mode == 'clear') {
+         let x=confirm('PERMANENTLY Delete Your eMail???')
+         if(x===true) {
+            window.onbeforeunload = null
+            MAIL = ""
+            document.getElementById('mailerBody').value = ""
+            document.getElementById('msg').style.width = "100%"
+            document.getElementById('mailer').style.display = "none"
+            statusMsg("eMail Deleted...", 'yellow')
+         }else{statusMsg("eMail SAVED...", 'yellow')}
+         return;
+      }
+      if (entry != undefined) {
+         MAIL = entry + '\n' + document.getElementById('mailerBody').value;
+      }
+      document.getElementById('mailerBody').value = MAIL;
+   }
+}
+
+//.# MISC
+
+//.##getSelectionText() Gets higlighted section class?
+function getSelectionText() {
     var text = "";
     if (window.getSelection) {
         text = window.getSelection().toString();
@@ -421,6 +423,8 @@ function getSelectionText() {// Gets higlighted section class?
     }
     return text;
 }
+
+
 
 function rTrim(str){
    while (str.substring(str.length-1)==" "){str = str.substring(0,str.length-1);}
@@ -445,7 +449,7 @@ function localFile(desc, loc, web) {
    x.document.close
 }
 
-//.## BACTRACK FUNCTIONS
+//.# BACTRACK functions
 function btInst() {
     var a = "BACKTRACK INSTRUCTIONS\n";
     a = a + "1) Select a song in with Backtrack in \'Backtrack Mode\'...\n";
@@ -524,15 +528,15 @@ function songMap() {
     d('trackQual').innerHTML = qual;
 }
 
-//.## BOOT ROUTINE BOOT and embedded functions:   All in functions sequence with breaks between sub routines
+//.# BOOT ROUTINE BOOT and embedded functions:   All in functions sequence with breaks between sub routines
 window.onload = function() {
-   var agent = (navigator.userAgent.split(')').reverse()[0].match(/(?!Gecko|Version|[A-Za-z]+?Web[Kk]it)[A-Z][a-z]+/g)[0])
-   ARRstatusLog = ("================BOOTING in " + agent + "==================").split('-');
-   statusMsg("PRESS ANY KEY or CLICK THE 'BUG' to monitor the boot...")
-   document.getElementById("debugTrigger").focus();
-   TIMEOUTcrap = setTimeout(function() {
-      start();
-   }, 1500);
+    var agent=(navigator.userAgent.split(')').reverse()[0].match(/(?!Gecko|Version|[A-Za-z]+?Web[Kk]it)[A-Z][a-z]+/g)[0])
+    ARRstatusLog=("================BOOTING in "+agent+"==================").split('-');
+    statusMsg("PRESS ANY KEY or CLICK THE 'BUG' to monitor the boot...")
+    document.getElementById("debugTrigger").focus();
+    TIMEOUTcrap = setTimeout(function() {
+        start();
+    }, 1500);
 }
 
 function monitorBoot() { //initiated by the user at boot
@@ -570,8 +574,8 @@ function start() {
     }
 }
 
-//.## SELECTORS
-function createSetSelector() { //^creates an option box from the file SetList.txt in the top directory
+//.# SELECTORS
+function createSetSelector() { //alert('SetSelector');  //^creates an option box from the file SetList.txt in the top directory
     statusMsg("Creating Set Selector...");
     var content=getTextFile("SetList.txt")
     var sets = content.split("\n");
@@ -589,7 +593,7 @@ function createSetSelector() { //^creates an option box from the file SetList.tx
     selectPlaylist("ALL TUNES");
 }
 
-function selectPlaylist(set) { //^ Selects your set by its name
+function selectPlaylist(set) { //alert('selectPlaylist('+set+')');  //^ Selects your set by its name
     statusMsg('Selecting Playlist '+set,0);
     var content=getTextFile("../Sets/" + set + ".txt")
     SETname = set;
@@ -604,7 +608,7 @@ function selectPlaylist(set) { //^ Selects your set by its name
     createPlayListSelector();//the ARRAY of songs in the set should be playlist
 }
 
-function createPlayListSelector() {//^ creates the setlist option box and selects tune 0
+function createPlayListSelector() { //alert('createSetList()');//^ creates the setlist option box and selects tune 0
    statusMsg('Creating PlayList Selectors ' + SETname, 0);
    statusMsg("Formating Small Playlist and Selecting Default Song...", "yellow");
    if (BIGselect == true) {
@@ -643,9 +647,9 @@ function createPlayListSelector() {//^ creates the setlist option box and select
 }
 
  function selectTuneNo(i){
- statusMsg('Selecting tune by number: '+i) 
+ statusMsg('...Selecting tune by number: '+i,0) 
       if (i < 0 || i >= PLAYlist.length) {
-         statusMsg("No Tune","red")
+         statusMsg("No Tune",0)
          return
       } 
  document.getElementById('mySet').selectedIndex=i
@@ -654,7 +658,7 @@ function createPlayListSelector() {//^ creates the setlist option box and select
  }
 
 
-//.## GET SONG (by title etc)
+//.# GET SONG (by title etc)
 function openSong() { //opens a song with title, if its on server, not on list
     statusMsg("Request Tune by exact Title... ", 0);
       SONGsource="request"
@@ -705,9 +709,9 @@ function selectTune(titl){
    }
 }
 
-//.#      LOAD FROM SERVER
+//.##    LOAD FROM SERVER
 function loadServerTitle() {
-   statusMsg("Loading Song by"+TITLE);
+   statusMsg("Loading Song: "+TITLE);
    KEYbase = "X";
    document.getElementById('key2').innerHTML = "-";
    document.getElementById("title").innerHTML = TITLE; //^ put title on tab...
@@ -742,8 +746,8 @@ function loadServerTitle() {
         createARRlines(content);
     }
 }
-//.## PROCESS STD TEXT FILE
-
+//.# PROCESS STD TEXT FILE
+//.##    CREATE THE ARRAY
 function createARRlines(content) { //^ Make ARRlines, from the text file
     statusMsg("Processing Song file: " + TITLE);
     NOTEset = undefined;
@@ -775,8 +779,7 @@ function createARRlines(content) { //^ Make ARRlines, from the text file
     }
     loadServerTrack();
 }
-
-//.## LOAD BACKTRACK
+//.# LOAD BACKTRACK
 function loadServerTrack() { //afrom 5.2
     rollMirror(false)
     var delay = 1000;
@@ -850,7 +853,7 @@ function loadServerTrack() { //afrom 5.2
         }, delay); //^ time to load mp3
     }
 }
-//.#    DURATION CALCULATION
+//.##    DURATION CALCULATION
 function durCalc() {
     statusMsg("Determining Song Duration...BPM>" +BPM, "yellow");
     DURcalc=0
@@ -881,7 +884,7 @@ function durCalc() {
         arrConvert();
     }
 }
-//.## CONVERT TEXT ARRAY TO HTML
+//.# TEXT ARRAY TO HTML
 function arrConvert() { //^ Setup to walk thru the ARRLines
    statusMsg('Converting Array to HTML using custom settings...');
    CTO();
@@ -919,7 +922,7 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
    IRB = undefined;
    screenFormat('Think', 'danger.png')
 
-//.$$ INSERT prepChordSize in arrConvert
+//.$ INSERT prepChordSize in arrConvert
 if(SHIT===true){prepChordSize()}
 //.$ shit Ends
    LONGLINE = longestLine() + 1;
@@ -972,6 +975,24 @@ if(SHIT===true){prepChordSize()}
          newLine = undefined;
       } else if (lType == 'tab') { 
          alert(TITLE+' file line '+j+ ' contains a tab, It should be removed')
+//.@ obsolete leave warning so you know why file fails to load...       
+         /*
+         var crap = '';
+         var no = '';
+         opacSet("buttonTabs", 1)
+         if (tabCount === 0) {
+            crap = " selected "
+         }
+         newLine = newLine.substring(4) //take out "TAB:"
+         ARRtabs.push(newLine) //add bar number
+         no = newLine.split('@')[0];
+         tabString = tabString + "<option value=" + tabCount + crap + " >TAB at BAR:" + no + "</option>"
+         //TABtriggers=TABtriggers+"<a id=\'tt"+parseInt(no-1,10)+"\' name=\'ttt"+tabCount+"\' onclick=\"showTab(this.name.substring(3),\'block\')\"> "+parseInt(no-1,10)+" </a>"
+         statusMsg('Tab ' + tabCount + ' logged...', 0)
+         tabCount = tabCount + 1
+         newLine = undefined;         
+         */
+//end of obsolete      
       } else if (lType == 'noteTech') {
          if (NOTEtech === undefined) {
             NOTEtech = newLine.substr(3);
@@ -993,12 +1014,9 @@ if(SHIT===true){prepChordSize()}
             newLine = iconize('transRedCircle') + "  <X1>" + newLine.substr(1, newLine.length) + "</X1>"
          }
       }else if (lType == 'chord') {
-
-
-
-//.$$ CHANGED A ==================== 
+//.$ CHANGED A ==================== 
          if(SHIT == true) {
-            statusMsg("SHIT ENGAGED!",'red')
+            statusMsg("SHIT ENGAGED!")
             preSong = false; //^ stop counting prelines
             if (TRANSPOSE !== 0) {//transpose
                newLine = lineTranspose(newLine, TRANSPOSE);
@@ -1008,10 +1026,6 @@ if(SHIT===true){prepChordSize()}
          
          newLine=presentChords(newLine)
 //.$ END A  
-         
-         
-         
-         
          }else{
 //.$  ORIGINAL A    
             m = "<x2>" + m
@@ -1044,12 +1058,6 @@ if(SHIT===true){prepChordSize()}
             }
          }
 //.$ END A 
-         
-         
-         
-         
-         
-         
          if (BARsync === true) {
             m = m + "/BarSync("
             var barLine = "";
@@ -1189,37 +1197,17 @@ if(SHIT===true){prepChordSize()}
    htmlHead = "<!DOCTYPE html><html><head><title id='title'>" + TITLE + "</title><style>\nBody{font-size : ";
    htmlHead = htmlHead + FONTSIZE + "; color:black; margin :0vh; padding: 0; font-family:Courrier New;font-weight:bold;line-height:100%;text-align:left;background-color:transparent;}";
    htmlHead = htmlHead + "\nX99{color:red;font-size:" + bigFont + ";line-height:100%;}\n";
-
-
-
-
-
-
-
 //.$ CHANGED B========================
    if (SHIT==true) {
       CHORDfont = CHORDfont + "vw"
       alert("CHORDfont: " + CHORDfont)
       htmlHead = htmlHead + "\nX100{color:blue;font-size:4vw;line-height:100%;}\n</style></head><body>";
 //.$ END B
-
-
-
-
-
-
-
-
   } else {
 //.$ ORIGINAL B
      htmlHead = htmlHead + "\nX100{color:red;font-size:" + bigFont + ";line-height:100%;}\n</style></head><body>";
 //.$END B
   }
-   
-   
-   
-   
-   
    if (img === true) { //substitute image for text, no text exists....
       htmlString = htmlString + "<img src=\'../Img/" + TITLE + ".jpg\' width=\'" + WINDwt * 0.98 + "px\'>";
    }
@@ -1267,7 +1255,7 @@ if(SHIT===true){prepChordSize()}
       loadSongImage("../Img/" + TITLE + ".jpg");
    }
 }
-//.## IMAGE SONG (Not Text)
+//.# IMAGE SONG (Not Text)
 function loadSongImage(path) {
     statusMsg('Loading Grapic Song Image...');
     var img = new Image();
@@ -1277,8 +1265,8 @@ function loadSongImage(path) {
     });
 }
 
-//.## SCROLL SETUP
-function scrollSetup(img) {//^ get the song data,songHeight,iframeHeight,Duration,ScrollConstant Run after you set the content of page
+//.# SCROLL SETUP
+function scrollSetup(img) { //alert('scrollSetup()');//^ get the song data,songHeight,iframeHeight,Duration,ScrollConstant Run after you set the content of page
    statusMsg('Setting Up Scroll...', 'red');
    var mesg = "No Scroll Mesage"
    statusMsg(mesg, 0);
@@ -1299,14 +1287,13 @@ function scrollSetup(img) {//^ get the song data,songHeight,iframeHeight,Duratio
          DUR = 150;
          DURsource = "Wild Guess";
       }
-      statusMsg("Audio available", 'green')
+      statusMsg("Audio available", 0)
    }
    SCROLLkon = DUR * 1000 / SCROLLpix; // microseconds per pixel
    SCROLLbase = SCROLLkon;
    document.getElementById('speed2').innerHTML = parseInt(BPM)
    mesg = songSum()
-
-//.## APPLY USER SETTINGS
+//.##    APPLY USER SETTINGS
    statusMsg("Applying User's Screen Configuration...", 0);
    if (SOUNDmode !== "SILENT" || METRO == true) {
       dis('volCtrl', 'block');
@@ -1349,30 +1336,21 @@ function scrollSetup(img) {//^ get the song data,songHeight,iframeHeight,Duratio
       document.getElementById('altSong').innerHTML = (PLAYlist[TUNEnum + 1].split('|')[0]);
    }
    
-//.## WRAP UP THE BOOT
-   statusMsg("Wrapping up the song load...")
-   statusMsg("Program Last Used on: "+localStorage.getItem('NPboot') ,0)
-   var d = new Date();
-   var result = d.toLocaleString();
-   localStorage.setItem('NPboot',result);
+//.# WRAP UP THE BOOT
    screenFormat('Ready');
    document.getElementById("splash").style.display = 'none';
    document.getElementById('msg').style.top = "0%";
    msgColor = 'yellow'
-      if (BOOT === true) {
-         if (localStorage.getItem('mail').length>1) {
-            document.getElementById('msg').style.width = "96%";
-            statusMsg("Unsent Mail...")
-         }
-         dis('configuration', 'block');
-         clockRun()
-         BOOT = false;
-         if (window.innerHeight >= window.innerWidth) {
-            alert("Rotate your device...Landscape works best...");
-         }
-         if (STATUSmode === 1) {
-            mesg = "Select Sound Mode > Select Playlist > Set Configuration..."
-            msgColor= 'yellow';
+   if (BOOT === true) {
+      clockRun()
+      dis('configuration', 'block');
+      BOOT = false;
+      if (window.innerHeight >= window.innerWidth) {
+         alert("Rotate your device...Landscape works best...");
+      }
+      if (STATUSmode === 1) {
+         mesg = "Select Sound Mode > Select Playlist > Set Configuration..."
+         msgColor = 'yellow';
          statusMonitor(0);
       } else if ((STATUSmode === 2)) {
          mesg = "Boot Successful, You're in the Debug mode..."
@@ -1421,12 +1399,19 @@ function scrollSetup(img) {//^ get the song data,songHeight,iframeHeight,Duratio
       dis('lastIcon','none')   
    }
    if(localStorage.getItem('developer')=='true'){dis('developer',true)};   
-
+  
+//.$ CHANGED X============================ 
+   var npBoot=(localStorage.getItem('NPboot'))
+   var d = new Date();
+   var result = d.toLocaleString();
+   localStorage.setItem('NPboot',result);
+//.$ END X
    statusMsg(mesg, msgColor)
 }
+//.##    BOOT COMPLETED
 
-//.## PLAYER ROUTINES
-//.#      SCROLL ENGINE
+//.# PLAYER ROUTINES
+//.##    SCROLL ENGINE
 function scrollEngine() { //^ the actual scrolling routine keep it simple* before it starts SCOLLstartTime,SCROLLkon must be set
    var newPos;
    clearTimeout(TIMEOUTscroll) //stop scroll engine
@@ -1489,7 +1474,7 @@ function scrollEngine() { //^ the actual scrolling routine keep it simple* befor
       }, SCROLLkon);
    }
 }
-//.#      END SONG
+//.##    END SONG
 function endSong() {
    clearTimeout('TIMEOUTfade')
    if (BARsync === true) {
@@ -1504,6 +1489,8 @@ function endSong() {
       CTO()
       Audio1.pause(); //stop the audio
       var dur = document.getElementById('Audio1').duration;
+      
+  //.@  var Ypos = document.getElementById('Tune').scrollTop;
       Ypos = document.getElementById('Tune').scrollTop;
       var now = document.getElementById('Audio1').currentTime;
       statusMsg('Scroll:' + parseInt(Ypos * 100 / SCROLLpix, 10) + '%  Time:' + parseInt(100 * now / dur, 10) + "%", 0);
@@ -1523,7 +1510,7 @@ function endSong() {
    }
 }
 
-//.## MISC STUFF
+//.# MISC STUFF
 function notePopUp(str, fs, clr, bak, def, title, status) { //string, font size, color and Default
    document.getElementById('cloudX').style.color = clr;
    document.getElementById('cloudX').style.backgroundColor = bak;
@@ -1591,7 +1578,7 @@ function screenFormat(cmd, varA) { //^ configures the play screen to match the p
       dis("lastIcon", "block");
       dis("nextIcon", "block");
       //vis('cntDwn', 'hidden'); USELESS
-      if (cmd == "Scroll") {
+      if (cmd == "Scroll") { //alert('Scroll');
          if (BARsync === false) {
             dis('bigButtons', 'block');
          } else {
@@ -1621,7 +1608,7 @@ function screenFormat(cmd, varA) { //^ configures the play screen to match the p
          dis("msg", "block");
          dis('Audio1', 'block');
       }
-      if (cmd === "End") {
+      if (cmd === "End") { //alert('End');
          dis('bigButtons', 'none');
          dis('bigPlay', 'block');
          dis('bigReset', 'block');
@@ -1629,7 +1616,7 @@ function screenFormat(cmd, varA) { //^ configures the play screen to match the p
          dis("msg", "block");
          dis('Audio1', 'block');
       }
-      if (cmd === "Pause") {
+      if (cmd === "Pause") { //alert('Pause');
          dis('bigButtons', 'none');
          dis('bigPlay', 'block');
          dis('bigReset', 'block');
@@ -1655,7 +1642,7 @@ function screenFormat(cmd, varA) { //^ configures the play screen to match the p
       alert(cmd + " is an invalid Command");
    }
 }
-//.## SONG CONTROL
+//.# SONG CONTROL
 function scrollRate(factor) {
     var oldBPM = BPM;
     if (BPM < 350 & factor < 1 | BPM > 30 & factor > 1) {
@@ -1771,7 +1758,7 @@ function trackPlayNOGOOD() { //pause options...undefined
    document.getElementById("Audio1").play();
    scrollEngine();
 }
-//.## PLAY TRACK
+//.# PLAY TRACK
 function trackPlay() { //pause options...undefined
    Audio1.pause() //just in case
    ENDscroll = false
@@ -1987,7 +1974,7 @@ function fade(dir) {
    }
 }
 
-//.##    UNCLASSIFIED???
+//.#CLASSIFY???
 function unique( /*str[]*/ arr) { //^ finds unique elements in an array arr
    var o = {},
       r = [],
@@ -2002,7 +1989,7 @@ function unique( /*str[]*/ arr) { //^ finds unique elements in an array arr
 
 
 
-//.## LOOP FUNCTIONS
+//.# LOOP FUNCTIONS
 function endLoop() {
    screenFormat('Ready');
    CTO();
@@ -2104,7 +2091,7 @@ function resetLoop(step, px) {
    }
 }
 
-//.## CONFIG FUNCTIONS
+//.# CONFIG FUNCTIONS
 function showSetting(num) { // alert('showSetting('+num+')')
    statusMsg("Displaying key, tempo or track type", 0)
    var iconString;
@@ -2238,7 +2225,7 @@ function setSoundMode(mode, icon) {
    SOUNDmode = mode;
    loadServerTrack();
 }
-//.## PRESETS
+//.# PRESETS
 function presets(action) {
    // 0        1          2        3   4    5     6     7         8        9         10        11      12         13       14     15     16  
    //ARRpresets="CAPS,FULLscreen,LEFTborder,CLOCK,TEXT,SHADE,NOTES,SETnotes,POPnotes,TECHnotes,LIVEnotes,COUNTin,BREAKlines,BIGchords,LOOPER,METRO,BARsync".split(',');
@@ -2258,7 +2245,7 @@ function presets(action) {
       if (action == 'presets') {
          //                 0        1          2        3   4    5     6     7         8        9         10        11      12         13       14     15     16  
          //var ARRpresets="CAPS,FULLscreen,LEFTborder,CLOCK,TEXT,SHADE,NOTES,SETnotes,POPnotes,TECHnotes,LIVEnotes,COUNTin,BREAKlines,BIGchords,LOOPER,METRO,BARsync".split(',');
-         ARRtf = "true,true,false,true,false,false,true,true,false,false,true,true,true,true,false,false,true".split(',');
+         ARRtf = "false,true,false,true,false,false,true,true,false,false,true,true,true,true,false,false,true".split(',');
          setCustom(ARRpresets[PRESETno], ARRtf[PRESETno], 'presets')
       } else if (action == 'wrap') {
          document.getElementById('soundSelector').selectedIndex = 2; //back Track
@@ -2470,7 +2457,7 @@ if (action === 'toggle') {
 }
 }
 
-//.## MISC FUNCTIONS
+//.# MISC FUNCTIONS
    function launchIntoFullscreen(element) {
       if (element.requestFullscreen) {
          element.requestFullscreen();
@@ -2559,7 +2546,7 @@ if (action === 'toggle') {
 
    function revDates() { //date of last mods
       var xhReq = new XMLHttpRequest();
-      xhReq.open("HEAD", JSname, false);
+      xhReq.open("HEAD", "NextPlayerX.js", false);
       xhReq.send(null);
       return 'HTML: '+document.lastModified+ '  <>  JAVASCRIPT: ' +new Date(xhReq.getResponseHeader("Last-Modified")).toLocaleString();
    }
@@ -2589,7 +2576,7 @@ if (action === 'toggle') {
 function bcPct() { //BigChordPCT
 alert('shit')//bcPCT is apparently dead this is a trip wire
       }
-//.## TRANSPOSE FUNCTIONS
+//.# TRANSPOSE FUNCTIONS
 function lineTranspose(line, steps) { //^ transpose entire line and try to keep the absolute chord spacing despite differnces in chr of new chord
    var lineNew;
    if (steps === 0) {
@@ -2720,7 +2707,7 @@ function noteTranspose(note, steps) { //^ must be sure to add # or b beforce cal
    return noteNew;
 }
 
-//.## NAVIGATION FUNCTIONS
+//.# NAVIGATION FUNCTIONS
 //.?function editor(){window.open(encodeURI("editor.html?"+(encodeFredComponent(ARRlines.join("\n")))));}//^ WORKS ON WICKED GAME
 
 function delay(ms) {
@@ -2750,7 +2737,7 @@ function iRealLink(){if(confirm('If this computer has Ireal Pro installed press 
 
 function fileMaster(){window.open("FileMaster.html");}
 
-//.## ANALYSIS FUNCTIONS
+//.# ANALYSIS FUNCTIONS
 // perform general functions and can be adapted to different screens 
 
 function songSum(){
@@ -2896,7 +2883,7 @@ function firstLineValues(type){//^ creates first line defaults then modifies usi
         HITyear = hash(ARRlines[0],"HITyear","Unknown");
         ARTIST = hash(ARRlines[0],"ARTIST","Unknown");}}
         
-//.## FILE FUNCTIONS
+//.# FILE FUNCTIONS
 function setUpListener(){document.getElementById('fileinput').addEventListener('change', loadFile, false); }//should be renamed here and html
 
 function loadFile(e){//gets the file//does not update the player until you go there --needs some time so I gave it 2 seconds;
@@ -2915,7 +2902,7 @@ function readSingleFile(e){
         TITLE = (file.name.substring(0,(file.name.length)-4));};
     reader.readAsText(file);}
     
-//.## LYRIC COMMON FUNCTIONS  These functions are general utility
+//.# LYRIC COMMON FUNCTIONS  These functions are general utility
 function barSelect(bar) {
     var arrBar = "configuration,tool,songbar,cloud".split(","); //,information,
     var j = 0;
@@ -2963,7 +2950,7 @@ function printFormat(){
         j++;}
     return pf;}
 
-//.## GLOBAL FUNCTIONS Used from any screen
+//.# GLOBAL FUNCTIONS Used from any screen
 function fileFromPath(path){
     path = path.split('/');return (path[path.length-1]);}
 
@@ -3090,10 +3077,12 @@ function barsClear() {
     statusMsg("ALL BARS: " + BARS + " cleared..", 0)
 }
 
-//.## STATUS FUNCTIONS
+//.# STATUS FUNCTIONS
+//.##   
 
-function statusMsg(msg,bgcolor,marq){// COLOR SCHEME: light grey=normal;red=problem ;yellow-pause or inwork; green=Ready
-    if(msg===null||msg==='' || msg===" "||msg==undefined) {msg = "ERROR: No Status Message Passed";}
+//.$  NEW XstatusMsg
+function XstatusMsg(msg,bgcolor,marq){// COLOR SCHEME: light grey=normal;red=problem ;yellow-pause or inwork; green=Ready
+    if(msg===null||msg==='' || msg===" ") {msg = "ERROR: No Status Message Passed";}
     if(STATUSmode>0) {//Log it
         if(ARRstatusLog.length>LOG){ARRstatusLog.pop()}
         if(bgcolor==0){ARRstatusLog.splice(0,0,stdTime("",true)+"       <X8>"+msg+"</X8>");}
@@ -3103,8 +3092,73 @@ function statusMsg(msg,bgcolor,marq){// COLOR SCHEME: light grey=normal;red=prob
     if(bgcolor==0) {return}
     if(bgcolor==1) {alert("STATUS MSG\n"+msg);return}
     sm2(msg,bgcolor,marq);}    
+//.$ END
 
-function sm2(msg,bgcolor,marq){//^POST the msg
+//.$   ORIGINAL  statusMsg ZZ
+function ZstatusMsg(msg, bgcolor, marq) { // COLOR SCHEME: light grey=normal;red=problem ;yellow-pause or inwork; green=Ready
+   if (msg === null || msg === '' || msg === " ") {
+      msg = "ERROR: No Status Message Passed";
+   }
+   if (STATUSmode > 0) { //Log it
+      if (ARRstatusLog.length > LOG) {
+         ARRstatusLog.pop()//hold length
+      }
+      if (bgcolor == 0) {
+         ARRstatusLog.splice(0, 0, stdTime("", true) + "       <X8>" + msg + "</X8>");
+      } else {
+         ARRstatusLog.splice(0, 0, stdTime("", true) + "  <X1>" + msg + "</X1>");
+      }
+   }
+   if (STATUSmode > 1) {//^
+      document.getElementById('bootText').innerHTML = "<pre>" + ARRstatusLog.join('<br>') + "</pre>";
+   }
+   if (bgcolor == 0) {
+      return
+   }
+   if (bgcolor == 1) {
+      alert("STATUS MSG\n" + msg);
+      return
+   }
+   sm2(msg, bgcolor, marq);
+}  
+
+//.$   new  statusMsg ZZ
+function statusMsg(msg, code, marq) { //code: null=Post & log||-1:alert &log | 0= show time & Log  1 lightgrey=normal/ red=problem/yellow-pause or inwork; green=Ready
+   if (msg === null || msg === '' || msg === " ") {
+      msg = "ERROR: No Status Message Passed";
+   }
+   if (code==-1) {
+      alert(msg);
+      msg="LOGGED ALERT: "+msg
+      code='red';
+   }
+   if (STATUSmode > 0) { //Log it
+      if (ARRstatusLog.length > LOG) {
+         ARRstatusLog.pop()//clear spot
+      }
+      if (code == 0) {
+         ARRstatusLog.splice(0, 0, stdTime("", true) + "<X8>        " + msg + "</X8>");//STANDARD LINE
+      } else {
+        ARRstatusLog.splice(0, 0, stdTime("", true) + "<X1>   " + msg + "</X1>");//HEADER
+      }
+   }
+   if (STATUSmode > 1) {//^
+      //.getElementById('bootText').innerHTML = "<pre>" + ARRstatusLog.join('<br>') + "</pre>";
+      document.getElementById('bootText').innerHTML ="   "+ARRstatusLog.join('<br>') ;
+   }
+   if (code == 0) {
+      return
+   }
+   if (code == 1) {
+      alert("UNLOGGED STATUS MSG\n" + msg);
+      return
+   }
+   //code is now the background color
+   sm2(msg, code, marq);
+}  
+//.$ END
+
+function sm2(msg,bgcolor,marq){//^this shows the message
     var clr="black";
     MSG2=MSGlast;
     if(msg===null){msg="*"+MSGlast;}
@@ -3125,13 +3179,13 @@ function statusMonitorX(m) { //set the statusMonitor mode m  (0=inactive/1=activ
     var bg='block'
     var sw='none'
     if (m === 0) {
-         line = "<X2>Debug Log Deactivated</X2>";
+         line = "Debug Log Deactivated";
          bg='none';
       }
     if (m === 1) {
-        line = "<X2>Debug Log Active and Hidden</X2>";
+        line = "Debug Log Active and Hidden";
     } else if (m === 2) {
-        line = "<X2>Debug Log Active and Displayed</X2>";
+        line = "Debug Log Active and Displayed";
         sw='block';
     }
     dis('bug',bg);
@@ -3139,32 +3193,33 @@ function statusMonitorX(m) { //set the statusMonitor mode m  (0=inactive/1=activ
     STATUSmode = m;
     statusMsg(line, 0);
 }
-
-function statusMonitor(m) { //set the statusMonitor function
-    var line = ""
-    if (m === 0) {
-        line = "<X2>Debug Log Deactivated</X2>";
-        dis('statusWindow', 'none');
-        dis('bug', 'none');
-    }else if (m === 1) {
-        dis('statusWindow', 'none');
-        dis('bug', 'block');
-        line = "<X2>Debug Log Active and Hidden</X2>";
-    } else {
-        m=2
-        dis('statusWindow', 'block');
-        dis('bug', 'block');
-        line = "<X2>Debug Log Active and Displayed</X2>";
-    }
-    STATUSmode = m;
-    statusMsg(line, "yellow");
+//.$
+function statusMonitor(m) {//set the statusMonitor function
+   var line = ""
+   STATUSmode = m;
+   if (m === 0) {//post only no log
+      line = "<X2>Debug Log Deactivated==================</X2>";
+      dis('statusWindow', 'none');
+      dis('bug', 'none');
+   } else {
+      dis('bug', 'block');
+      if (m === 1) { //hidden log
+         dis('statusWindow', 'none');
+         line = "<X2>Debug Log Active and Hidden============</X2>";
+      } else if (m === 2) {//visible log
+         dis('statusWindow', 'block');
+         line = "<X2>Debug Log Active and Displayed=========</X2>";
+      }
+   }
+   statusMsg(line, 0);
 }
+//.$  END
 
 function monitorWindow() {
     dis('statusWindow');
     if (document.getElementById('statusWindow').style.display === 'block') {
         statusMonitor(2);
-        document.getElementById('bootText').innerHTML = "<pre>" + ARRstatusLog.join('<br>') + "</pre>";
+        document.getElementById('bootText').innerHTML = "<pre>" + ARRstatusLog.join('\n') + "</pre>";
     } else {
         statusMonitor(1)
     }
@@ -3194,7 +3249,7 @@ function bugButton(but) {
 }
 
 
-//.## DEVLOPER FUNCTIONS
+//.# DEVLOPER FUNCTIONS
 function badCode(){alert(parseInt(23/0,10))}//
 
 //*
@@ -3203,27 +3258,12 @@ function bogus() { //modify during development
    blinker("ButtonHome", 24);
 }
 
-function devShrink() {
-
-   if (document.getElementById('developer').style.width == "3vw") {
-      document.getElementById('developer').style.height = "7vw"
-      document.getElementById('developer').style.width = "24vw"
-      document.getElementById('devShrink').style.top = "0vw"
-      document.getElementById('devShrink').style.height = "1vw"
-      document.getElementById('devShrink').innerHTML = "HIDE"
-   } else {
-      document.getElementById('developer').style.height = "3vw"
-      document.getElementById('developer').style.width = "3vw"
-      document.getElementById('devShrink').style.top = "1vw"
-      document.getElementById('devShrink').style.height = "2vw"
-      document.getElementById('devShrink').innerHTML = "SHOW"
-   }
-}
-//.#    SHIT (Permanent feature DO NOT DELETE)
+//.##SHIT (Permanent feature)
 //CREATE the if/else for SHIT so you can use the SHIT or bypass it completely
+
 //modify the bottom line for comming out of SHIT
 function toggleShit(){
-   //hide from the public: look for 'SHIT' to find the changes
+   //hide from  the public somehow  look for 'SHIT' to find the changes
       if(SHIT==true ) {
       SHIT=false;
       document.getElementById('tShit').src="../../Icons/NS.png";
@@ -3232,11 +3272,10 @@ function toggleShit(){
       document.getElementById('tShit').src="../../Icons/DS.png";   
       statusMsg("You are in DEEP SHIT!")
    }
-//.$$
    arrConvert()//set this depending on where you want to go back to
 }
 
-//.## DRAGABLE DIV :
+//.# DRAGABLE DIV :
 dragElement(document.getElementById("backtracker"));
 dragElement(document.getElementById("statusWindow"));
 dragElement(document.getElementById("cloud"));
@@ -3253,11 +3292,11 @@ function dragElement(elmnt) {
    if (document.getElementById(elmnt.id + "header")) {
       /* if present, the header is where you move the DIV from:*/
       document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-document.getElementById(elmnt.id + "header").ontouchstart =dragMouseDown;
+      //document.getElementById(elmnt.id + "header").ontouchstart =dragMouseDown;
    } else {
       /* otherwise, move the DIV from anywhere inside the DIV:*/
       elmnt.onmousedown = dragMouseDown;
-elmnt.ontouchstart =dragMouseDown; 
+      //elmnt.ontouchstart =dragMouseDown; 
    }
 
    function dragMouseDown(e) {
@@ -3267,9 +3306,9 @@ elmnt.ontouchstart =dragMouseDown;
       pos3 = e.clientX;
       pos4 = e.clientY;
       document.onmouseup = closeDragElement;
-document.ontouchend = closeDragElement;
+      //document.ontouchend = closeDragElement;
       document.onmousemove = elementDrag;
-document.ontouchmove = elementDrag;
+      //document.ontouchmove = elementDrag;
    }
 
    function elementDrag(e) {
@@ -3289,19 +3328,20 @@ document.ontouchmove = elementDrag;
       /* stop moving when mouse button is released:*/
       document.onmouseup = null;
       document.onmousemove = null;
-document.ontouchend = null;
-document.ontouchmove = null;
+      //document.ontouchend = null;
+      //document.ontouchmove = null;
    }
 }
 
 
-//.## BOGUS FUNCTIONS
-
+//.# BOGUS FUNCTIONS
+//.##  sleep()
 function sleep(mSec) {//stops execution experimental for m milleseconds
     statusMsg('<X2>SLEEPING for '+mSec + 'milliseconds</X2>')
     var currentTime= new Date().getTime();
     while (currentTime + mSec >= new Date().getTime()){}}
 
+//.##  flash()
 function flash(msg, dur) {
    if (msg !== MSGlast) {
       //.?
@@ -3318,6 +3358,7 @@ function flash(msg, dur) {
    }
 }
 
+//.## blinker()
 function blinker(id, cycles) { //1/4 second per blink
    var d = document.getElementById(id);
    if (cycles > 0) {
@@ -3336,7 +3377,7 @@ function blinker(id, cycles) { //1/4 second per blink
       d.style.visibility = 'visible';
    }
 }
-
+//.##  countBars()
 function countBARS() { //counts bars to sync with bars in backtrack
    MAP = "".split(',')
    ARRbars.length = 0;
@@ -3388,6 +3429,7 @@ function countBARS() { //counts bars to sync with bars in backtrack
    statusMsg("MEASURES: " + MEASURES + " / BARS:" + BARS + " (Full:" + parseInt(BARS - BARShalf) + " & HALF:" + BARShalf + ") CHORD LINES: " + CHORDlines + "   BARS/LINE: " + BARSperLine, 0)
 } //get the std number of bars from the first line}
 
+//.## rollMirror()
 function rollMirror(tf) {
    clearTimeout(TIMEOUTmirror);
    if (tf === true) {
@@ -3452,4 +3494,4 @@ function opacSet(id, opac) {
       opac = 1
    };
    document.getElementById(id).style.opacity = opac
-} 
+} //set opacity

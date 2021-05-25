@@ -1,0 +1,54 @@
+CURRENT PROBLEMS / IDEAS/ STATUS
+Critical
+    BIG chords run off screen
+
+Been working
+    make local storage
+    Eliminating bloat....(ongoing)
+    Big Selector does not scroll to last selection(highlights only)5/1/21
+    OLD Countin not working Remove it?
+    Remove Tabs.  they are still in there generating warnings
+    
+Misc...
+    trying to eleminate a lot of "NewLine=undefined"
+    Metronome is primative, does not sync quickly unless at start...
+    tone down statusMsg Activity during scroll to cut problems
+    Perhaps make scroll increment a factor of tempo to smooth it out
+    
+Out of my Control...
+    Problem with Chrome/KWS--Loop does not work in Android with KWS server use FIREFOX
+    or another server (js cannot identify server)
+Plan:
+    fix or delete the biab
+    
+COMPLETED
+
+=======================================
+Removed these functions (bloat with depricated XMLHttpRequest()) 5/1/21
+function XgetHelpFile(){//^ Selects your set by its name
+    var request = new XMLHttpRequest();
+    path ='HelpText.txt';
+    request.open("GET", path, false);
+    request.send(null);
+    return(request.responseText); } 
+
+function XgetHelpIndex(){//^ Selects your set by its name
+    var request = new XMLHttpRequest();
+    path ="Help\HelpIndex.html";
+    request.open("GET", path, false);
+    request.send(null);
+    return(request.responseText); }
+
+function XdisplayHelp(path){//^ Selects your set by its name
+    var request = new XMLHttpRequest();
+    request.open("GET", path, false);
+    request.send(null);
+    document.getElementById('helpText').innerHTML= "<pre>"(request.responseText)+"</pre>"; }
+    function XXXgetRevisonHistory(){//^ Selects your set by its name
+    var request = new XMLHttpRequest();
+    path ="Player.txt";
+    request.open("GET", path, false);
+    request.send(null);
+    return(request.responseText); }
+============================================================ 
+Tabs are incomplete and useless so I removed them 5/1/21

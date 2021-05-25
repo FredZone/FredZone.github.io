@@ -11,6 +11,8 @@ function boot(){
     MSGready="Insert your welcome message here!"//YADA
     statusMsg('INSERT BOOT CODE HERE!');//YADA
 //^COMMON CODE (FINISH BOOT)
+    localStorage.setItem('cra','crappy')
+    
     finishBoot()
     }
 

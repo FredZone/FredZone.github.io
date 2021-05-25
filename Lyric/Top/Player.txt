@@ -5,8 +5,9 @@ REVISION HISTORY and CONTROL SHEET
 CURRENT PROBLEMS / IDEAS/ STATUS
     Critical
         Presets miss the Big Selector button
-        OLD count in not working Remove it
+       
     Misc...
+    
         trying to eleminate a lot of "NewLine=undefined"
         Metronome is primative, does not sync quickly unless at start...
         Tabs are incomplete and I disabled them
@@ -18,15 +19,32 @@ CURRENT PROBLEMS / IDEAS/ STATUS
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
 
-7-1:(NextPlayer) Inwork  (126,052 bytes - 62,227 bytes))
-    4/25/20 7:07 pm
-    Adding a bigger TuneSelect box option is screwed up must fix
-    4/10/21  9:42:AM 
-    Made the Revision display yellow in Beta Version
+7-1:(NextPlayer) Inwork   ( (127,907 bytes)) - (62,227 bytes))
+    5/24/21
+        rebuilt the mailer
+    5/18/21
+        permanently deleted orient div, used alert instead
+    5/18/21
+        Tested on android tablets...must clear cash often on old machines
+        Removed all types of line feeds from the status log, more consistant
+    5/13/21
+        Isolated blink()and flasher()
+    5/12/21
+        Added a dragable developer window (reopens if left open on reboot)
+    5/8/21 10;36 AM
+        Implemented a //. code to find stuff easier
+    5/6/21 12:47 AM
+       added local storage to the debug window
+    5/4/21 9:06 PM
+        Reworked the Rev Dates to eleimiated a global variable and function(bloat)
+    5/2/21  2:30AM
+        Cleaned up presets still need work but better
+        started the SHIT shunt for new work ALL NEW WORK IS ON THE SHUNT
 
 HISTORY:======================================================================
-7.0
-5/2/21  2:30AM (122,204 bytes (55,294 bytes)
+7.0 (122,204 bytes (55,294 bytes)
+RELEASED!!!!!
+5/2/21  2:30AM 
     Cleaned up presets still need work but better
 4/29/21 3:48PM 
     deleted TABS permanently

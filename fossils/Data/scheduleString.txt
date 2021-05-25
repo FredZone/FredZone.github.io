@@ -1,9 +1,15 @@
 <X5>SCHEDULE</X5>
 <br>St Catherines (3rd Floor)
-<br>Monthly, 2nd Monday:
+<br>FIRST TIME IN A YEAR!
+<br>MAY 25 2021:
 <br>2:00PM to 3:00PM
 <br><X5>=================</X5>
 <br>Wesley Woods (Willow Wing)
+<br>NOT SINCE COVID-19!
+
+<!--
+<br>Wesley Woods (Willow Wing) inacative
 <br>Monthly, 2nd Wednesday:
 <br>2:00PM to 3:00PM
 <br><X5>=================</X5>  
+-->
