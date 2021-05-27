@@ -1044,12 +1044,7 @@ if(SHIT===true){prepChordSize()}
             }
          }
 //.$ END A 
-         
-         
-         
-         
-         
-         
+        
          if (BARsync === true) {
             m = m + "/BarSync("
             var barLine = "";
@@ -1142,10 +1137,9 @@ if(SHIT===true){prepChordSize()}
             lineNum++;
          }
          if (LIVEnotes === true) {
-            //var q="</X16>"
             newLine = newLine.replace(/XX>/g, "X16>") //make them visible
-            newLine = newLine.replace(/#-->/g, "</X16>") //make them visible
-            newLine = newLine.replace(/<!--#/g, "<X16>") //make them visible
+            newLine = newLine.replace(/#-->/g, "</X16>") //make them visible//OBSOLETE
+            newLine = newLine.replace(/<!--#/g, "<X16>") //make them visible//OBSOLETE
          }
          m = m + "</X1>"
       } else if (lType == 'spacer') {
@@ -2263,8 +2257,8 @@ function presets(action) {
       } else if (action == 'wrap') {
          document.getElementById('soundSelector').selectedIndex = 2; //back Track
          setSoundModeDefault(document.getElementById('soundSelector').value);
-         selectPlaylist('Fred Solo-BT')
-         document.getElementById('Set').value = 'Fred Solo-BT';
+         selectPlaylist('A-Fred Solo')
+         document.getElementById('Set').value = 'A-Fred Solo';
       }
    } else if (PRESET === "Practice Mode") {
       if (action == 'presets') {

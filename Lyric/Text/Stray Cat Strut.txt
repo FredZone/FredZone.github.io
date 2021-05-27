@@ -1,5 +1,5 @@
 TITLE:Stray Cat Strut,DUR:199,BPM:130,BEATS:4,KEY:A,QUAL:Complete,ARTIST:Stray Cats,GENRE:Rock,STYLE:Dance,HITyear:1982
-$$TCH1 <X14>PR 1</X14> <X14>A m2</X14> <X14>PV 1</X14> <X1>(V3)</X1> <X16>H ON</X16>
+$$TCH1 <X15>PR 1</X15> <X15>A m2</X15> <X16>V3</X16> <X16>H ON</X16>
 $$STRT ooXoo 8 5 10
 $$RP55 3 or 4
 #INTRO ----------------------------------
@@ -18,7 +18,7 @@ Oooh                 Oooh
 |Am      ~G      |F      ~E7
 Oooh                 Oooh
 |Am      ~G      |F      ~E7
-Oooh                 Oooh <XX>H OFF</XX>
+Oooh                 Oooh <!--#H OFF#-->
 #VERSE 1 --------------------------------
 |Am      ~G      |F      ~E7
 Black and orange stray cat sittin' on a fence.
@@ -46,13 +46,13 @@ Get my dinner from a garbage can.
 |Am      ~G      |F      ~E7
 -            Hey  don’t cross my path...
 |Am      ~G      |F      ~E7
--<XX>H ON  soon</XX>
-|Am      ~G      |F      ~E7
 -
 |Am      ~G      |F      ~E7
 -
 |Am      ~G      |F      ~E7
 -
+|Am      ~G      |F      ~E7
+-<!--#H ON#-->
 #CHORUS 1 -------------------------------
 |Dm             |Dm7
 I   don't   bother   chasing mice

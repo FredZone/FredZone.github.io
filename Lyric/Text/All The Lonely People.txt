@@ -1,5 +1,5 @@
 TITLE:All The Lonely People,DUR:142,BPM:165,BEATS:4,KEY:C,QUAL:Complete,ARTIST:America,GENRE:Folk,STYLE:Up Tempo,HITyear:TBD
-$$TCL1 <X14>PR 1</X14> <X14>C M3</X14> <X14>PV 1</X14> <X1>(V3)</X1> <X16>H OFF</X16>
+$$TCL1 <X15>PR 1</X15> <X15>C M3</X15> <X15>PV 1</X15> <X16>V3</X16> <X16>H OFF</X16>
 $$STRT ooXoo 8 5 10 (acoustic sound)
 $$RP55 1 or 2 (Strum)
 #INTRO ----------------------------------

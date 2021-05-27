@@ -1,5 +1,5 @@
 TITLE:Some Days Are Diamond,DUR:187,BPM:105,BEATS:4,KEY:G,QUAL:Complete,ARTIST:John Denver,GENRE:Country,STYLE:Ballad,HITyear:1981
-$$TCL1 <X14>PR 1</X14> <X14>G M3</X14> <X1>(V3)</X1> <X16>H OFF</X16>
+$$TCL1 <X15>PR 1</X15> <X15>G M3</X15> <X16>V3</X16> <X16>H OFF</X16>
 $$STRT_oooXoo 8 5 10
 $$RP55_3 or 4
 #INTRO ----------------------------------

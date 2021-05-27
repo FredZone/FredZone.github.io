@@ -1,5 +1,5 @@
 TITLE:When The Roses Bloom Again,DUR:172,BPM:131,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Wilco,GENRE:Country,STYLE:Ballad,HITyear:TBD
-$$TCL1 <X14>PR 1</X14> <X14>C M2</X14> <X1>(V3)</X1> <X16>H OFF</X16>
+$$TCL1 <X15>PR 1</X15> <X15>C M2</X15> <X15>V3</X15> <X16>H-OFF</X16>
 #INTRO ----------------------------------
 |N                                  |N
 -
@@ -15,7 +15,7 @@ A soldier and his sweetheart brave and true
 |Am                |%                 |Dm                |%
 For their thoughts were of tomorrow And  their hearts were filled with sorrow
 |F/C               |%                 |C                 |%
-As she pinned a rose upon his coat of blue <XX>H ON</XX>
+As she pinned a rose upon his coat of blue <!--#H ON#-->
 #CHORUS 1 -------------------------------
 |F/C               |%                 |Dm                |%
 Do not ask me love to linger When you know not what to say
@@ -24,7 +24,7 @@ For duty calls your sweetheart's name again
 |F/C               |%                 |Dm                |%
 And your heart need not be sighing If I be among the dying
 |C                 |F                 |C                 |%
-I'll be with you when the roses bloom again<XX>H OFF</XX>
+I'll be with you when the roses bloom again<!--#H OFF#-->
 #VERSE 2 --------------------------------
 |Am                |%                 |Dm                |%
 When the roses bloom again Beside the river
@@ -42,7 +42,7 @@ A soldier who had fallen in the fray
 |Am                |%                 |Dm                |%
 I am dying, I am dying And I know I'll have to go
 |F/C               |%                 |C                 |%
-But I want to tell you before I pass away <XX>H ON</XX>
+But I want to tell you before I pass away<!--#H ON#-->
 #CHORUS 2 -------------------------------
 |F/C               |%                 |Dm                |%
 There's a far and distant river Where the roses are in bloom

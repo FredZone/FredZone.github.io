@@ -1,5 +1,5 @@
 TITLE:Abilene,DUR:170,BPM:110,BEATS:4,KEY:E,QUAL:Complete,ARTIST:George Hamilton I V,GENRE:Country,STYLE:Ballad,HITyear:1963
-$$TCH1<X14>PR 1</X14> <X14>E M2</X14> <X1>(V3)</X1> <X16>H:ON</X16>
+$$TCH1<X15>PR 1</X15> <X15>E M2</X15> <X16>V3</X16> <X16>H:ON</X16>
 $$STRT ooXoo 8 5 10
 $$RP55 3 or 4
 #INTRO ----------------------------------
@@ -13,32 +13,29 @@ $$RP55 3 or 4
 |E               |Ab7             |A               |E
 Abilene,           Abilene,         prettiest town I've ever seen
 |F#7             |B7              |E       ~A      |E
-Women there don't treat you mean in Abilene, my Abilene
+Women there don't treat you mean in Abilene, my Abilene<!--#H OFF#-->
 #VERSE ----------------------------------
-$$<X16>H OFF</X16>
 |E               |Ab7             |A               |E
 I sat alone, most every night  Watch the trains pull out of sight
 |F#7             |B7              |E       ~A      |E
-Don't I wish they were carrying me back  to Abilene, my Abilene
+Don't I wish they were carrying me back  to Abilene, my Abilene<!--#H ON#-->
 #CHORUS ---------------------------------
-$$<X16>H ON</X16>
 |E               |Ab7             |A               |E
 Abilene,           Abilene,         prettiest town I've ever seen
 |F#7             |B7              |E       ~A      |E
-Women there don't treat you mean in Abilene, my Abilene
+Women there don't treat you mean in Abilene, my Abilene<!--#H OFF#-->
 #BREAK ----------------------------------
 |E               |Ab7             |A               |E
 -
 |F#7             |B7              |E       ~A      |E
 -
 #VERSE ----------------------------------
-$$<X16>H OFF</X16>
 |E               |Ab7             |A               |E
 Crowded city, there ain't nothing free   Nothing in this town for me
 |F#7             |B7              |E       ~A      |E
-Wish to the Lord that I could be back  in Abilene, sweet Abilene
+Wish to the Lord that I could be back  in Abilene, sweet Abilene<!--#H ON#-->
 #CHORUS ---------------------------------
-$$<X16>H ON</X16>
+
 |E               |Ab7             |A               |E
 Abilene,           Abilene,         prettiest town I've ever seen
 |F#7             |B7              |E       ~A      |E

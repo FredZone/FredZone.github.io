@@ -1,5 +1,5 @@
 TITLE:Sea Of Heartbreak,DUR:168,BPM:180,BEATS:4,KEY:E,QUAL:Complete,ARTIST:Don Gibson,GENRE:Country,STYLE:Up Tempo,HITyear:Unknown
-$$TCH1 <X14>PR 1</X14> <X14>E M3</X14> <X14>PV 1</X14> <X16>V3</X16> <X16>H:Off</X16>
+$$TCH1 <X15>PR 1</X15> <X15>E M3</X15> <X15>PV 1</X15> <X16>V3</X16> <X16>H Off</X16>
 $$STRT ooXoo 8 5 10
 $$RP55 3 or 4
 #INTRO ----------------------------------
@@ -23,12 +23,12 @@ your caress,   So divine..I wish that you were  mine
 |E            |%            |B            |%
 a-gain my dear     I'm on the sea of tears    Sea of
 |E            |%            |A            |B
-Heartbreak <!--#H OFF#-->
+Heartbreak <!--#H OFF#--> <!--# V1 ON ASAP #-->
 #VERSE 2 --------------------------------
 |E            |%            |C#m          |%
 ..How did I lose you.
 |A            |%            |B            |%
-Where did I fail <!--# V1 ON ASAP #-->
+Where did I fail
 |E            |%            |C#m          |%
 ..Why did you leave me
 |A            |%            |B[Stop]      |%
@@ -59,6 +59,7 @@ away from the sea  <!--#H ON#-->
 #CHORUS 3 -------------------------------
 |E            |%            |B            |%
 Sea of Heartbreak lost love and loneliness  Mem'ries of
+
 |E            |%            |A            |%
 your caress,   So divine..I wish that you were  mine
 |E            |%            |B            |%

@@ -1,5 +1,5 @@
 TITLE:You Are My Sunshine,DUR:142,BPM:185,BEATS:4,KEY:C,QUAL:Complete,ARTIST:The Pine Ridge Boys,GENRE:Country,STYLE:Ballad,HITyear:1940
-$$TCH1 <X14>PR .1</X14> <X14>C M1</X14> <X1>(V3)</X1> <X16>H:Off</X16>
+$$TCH1 <X15>PR .1</X15> <X15>C M1</X15> <X16>V3</X16> <X16>H OFF</X16>
 $$STRT ooXoo 8 5 10
 $$RP55 3 or 4
 #INTRO ----------------------------------
@@ -15,7 +15,7 @@ held you   in  my    arms,         When I
 |F          |%          |C          |%
 awoke dear I was mistaken        And I
 |C          |G          |C          |%
-hung my head and I cried,<!--#H ON#-->You are my
+hung my head and I cried,<!--#H ON#-->   You are my
 #CHORUS 1 -------------------------------
 |C          |%          |%          |%
 sunshine, my only sunshine,    You make me
@@ -33,7 +33,7 @@ only say the same,            But if you
 |F          |%          |C          |%
 leave me to love another,         You will
 |C          |G          |C          |%
-regret it all some day,<!--#H ON#-->You are my
+regret it all some day,<!--#H ON#-->     You are my
 #CHORUS 2 -------------------------------
 |C          |%          |%          |%
 sunshine, my only sunshine,    You make me
@@ -51,7 +51,7 @@ else could come between,         but now you’ve
 |F          |%          |C          |%
 left me and love another,         you have
 |C          |G          |C          |%
-shattered all my dreams, <!--#H ON#-->  You are my
+shattered all my dreams. <!--#H:ON#-->  You are my
 #CHORUS 3 -------------------------------
 |C          |%          |%          |%
 sunshine, my only sunshine,    You make me

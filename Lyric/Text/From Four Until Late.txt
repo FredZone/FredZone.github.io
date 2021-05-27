@@ -1,5 +1,5 @@
 TITLE:From Four Until Late,DUR:190,BPM:120,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Robert Johnson,GENRE:Blues,STYLE:Ballad,HITyear:1937?
-$$TCL1 <X14>PR 1</X14> <X14>C M2</X14> <X1>(V3)</X1> <X16>H OFF</X16>
+$$TCL1 <X15>PR 1</X15> <X15>C M2</X15> <X16>V3</X16> <X16>H OFF</X16>
 #INTRO ----------------------------------
 |NC                        |NC
 (Count in 2 bars)
@@ -24,11 +24,11 @@ $$TCL1 <X14>PR 1</X14> <X14>C M2</X14> <X1>(V3)</X1> <X16>H OFF</X16>
 |C                         |F
 four until late I was wringing my hands and
 |C                         |C7
-crying
+crying<!--#H ON#-->
 |F                         |F
 From four until late I was wringing my hands and
 |C     ~     ~B     ~Bb     |A
-crying
+crying<!--#H OFF#-->
 |D                         |G7
 I believe to my soul that your daddy's Gulfport
 |C     ~C7     ~F     ~Fm     |C     ~     ~G7     ~
@@ -37,11 +37,11 @@ bound
 |C                         |F
 Memphis to Norfolk is a thirty six hour
 |C                         |C7
-ride
+ride<!--#H ON#-->
 |F                         |F
 From Memphis to Norfolk is a thirty six hour
 |C     ~     ~B     ~Bb     |A
-ride
+ride <!--#H OFF#-->
 |D                         |G7
 A man is like a prisoner, and he's never satis
 |C     ~C7     ~F     ~Fm     |C     ~     ~G7     ~
@@ -50,11 +50,11 @@ fied
 |C                         |F
 A woman is like a dresser,some man always ramblin thru her
 |C                         |C7
-drawers
+drawers<!--#H ON#-->
 |F                         |F
 A woman is like a dresser,some man always ramblin thru her
 |C     ~     ~B     ~Bb     |A
-drawers
+drawers<!--#H OFF#-->
 |D                         |G7
 It cause so many men to wear an apron over-
 |C     ~C7     ~F     ~Fm     |C     ~     ~G7     ~
@@ -76,11 +76,11 @@ It cause so many men to wear an apron over-
 |C                         |F
 Four until late, she made me a no-good barroom
 |C                         |C7
-clown
+clown<!--#H ON#-->
 |F                         |F
 From four until late, she made me a no-good barroom
 |C     ~     ~B     ~Bb     |A
-clown
+clown<!--#H OFF#-->
 |D                         |G7
 Now she won't do nothing but tear a good man's reputation
 |C     ~C7     ~F     ~Fm     |C     ~     ~G7     ~

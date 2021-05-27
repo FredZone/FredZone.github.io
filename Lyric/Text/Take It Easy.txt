@@ -1,5 +1,5 @@
 TITLE:Take It Easy,DUR:217,BPM:130,BEATS:4,KEY:D,QUAL:Complete,ARTIST:Eagles,GENRE:Country,STYLE:Ballad,HITyear:Unknown
-$$TCL1 <X14>PR 1</X14> <X14> D M2</X14> <X14>PV 1</X14> <X16> V4 </X16> <X16>H ON</X16>
+$$TCL1 <X15>PR 1</X15> <X15> D M2</X15> <X15>PV 1</X15> <X16>V4</X16> <X16>H ON</X16>
 $$STRT ooXoo 8 5 10
 $$RP55 3 or 4
 #INTRO ----------------------------------
@@ -72,7 +72,7 @@ ea                   sy
 -
 |D            ~A               |G
 -
-|D                           |A
+|D                             |A
 -
 |G                             |D
 -

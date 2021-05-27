@@ -1,5 +1,5 @@
 TITLE:Dead Skunk,DUR:139,BPM:150,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Louden Wainwright,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
-$$TCL1  <X14>PR 1</X14> <X14>C M2</X14> <X1>(V3)</X1> <X16>H OFF</X16>
+$$TCL1  <X15>PR 1</X15> <X15>C M2</X15> <X16>V3</X16> <X16>H OFF</X16>
 #INTRO ----------------------------------
 |NC               |C                |G
 -
@@ -16,7 +16,7 @@ He shoulda looked left and he shoulda looked right
 |C                |G
 He didn't see the station wagon car
 |F                |C
-The skunk got squashed and there you are!<X16>H ON</X16>   You got yer
+The skunk got squashed and there you are!<!--#H ON#-->  You got yer
 #CHORUS 1 -------------------------------
 |C                |G
 Dead skunk in the middle of the road
@@ -25,7 +25,7 @@ Dead skunk in the middle of the road
 |C                |G
 You got yer dead skunk in the middle of the road
 |F                |C
-Stinkin' to high Heaven!<X16>H OFF</X16>
+Stinkin' to high Heaven!<!--#H OFF#-->
 #BREAK 1 --------------------------------
 |C                |G
 -
@@ -38,7 +38,7 @@ Roll up yer window and hold yer nose
 |C                |G
 You don't have to look and you don't have to see
 |F                |C
-'Cause you can feel it in your olfactory<X16>H ON</X16>
+'Cause you can feel it in your olfactory<!--#H ON#-->
 #CHORUS 2 -------------------------------
 |C                |G
 Dead skunk in the middle of the road
@@ -47,7 +47,7 @@ Dead skunk in the middle of the road
 |C                |G
 You got yer dead skunk in the middle of the road
 |F                |C
-Stinkin' to high Heaven!<X16>H OFF</X16>
+Stinkin' to high Heaven!<!--#H OFF#-->
 #BREAK 2 --------------------------------
 |C                |G
 -
@@ -64,7 +64,7 @@ On a moonlight night you got yer dead toad frog
 |C                |G
 Got yer dead rabbit and yer dead raccoon
 |F                |C
-The blood and the guts they're gonna make you swoon!<X16>H ON</X16>
+The blood and the guts they're gonna make you swoon!<!--#H ON#-->
 #CHORUS 3 -------------------------------
 |C                |G
 Dead skunk in the middle of the road
@@ -73,7 +73,7 @@ Dead skunk in the middle of the road
 |C                |G
 You got yer dead skunk in the middle of the road
 |F                |C
-Stinkin' to high Heaven!<X16>H OFF</X16>
+Stinkin' to high Heaven!<!--#H OFF#-->
 #OUTRO ----------------------------------
 |C                |G
 -

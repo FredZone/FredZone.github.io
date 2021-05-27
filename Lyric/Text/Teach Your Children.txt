@@ -1,5 +1,5 @@
 TITLE:Teach Your Children,DUR:165,BPM:160,BEATS:4,KEY:D,QUAL:Complete,ARTIST:Crosby,GENRE:Country,STYLE:Up Tempo,HITyear:
-$$TCL1 <X14>PR 1</X14> <X14>D M2</X14> <X14>PV 1</X14> <X16>V4</X16> <X16>H ON</X16>
+$$TCL1 <X15>PR 1</X15> <X15>D M2</X15> <X15>PV 1</X15> <X16>V4</X16> <X16>H ON</X16>
 $$STRT oooXo 8 5 10
 $$RP55 3 or 4
 #INTRO ----------------------------------
@@ -14,7 +14,7 @@ code          that you can live by
 |D            |%            |G            |%
 And so         become yourself     Because the
 |D            |%            |A   ~Asus4   |A
-past is just a good-bye. <XX>V3 ON (V3,V4)</XX>
+past is just a good-bye. <!--#V3 ON#-->
 #VERSE 2 --------------------------------
 |D            |%            |G            |%
 Teach      your children well, Their father's
@@ -33,9 +33,9 @@ cry,So just look at them and sigh
 |G                        |A
 -            and know they love you.
 |D            |%            |G            |%
--<XX>VOICE 1 ON (V1,V3,V4)</XX>
+<!--#V4 ON#-->
 |D            |%            |A            |%
--<XX>H OFF</XX>
+<!--#H OFF#-->
 #VERSE 3 --------------------------------
 |D            |%            |G            |%
 And you,          of tender years, Can't know the
@@ -44,7 +44,7 @@ fears  that  your  elders   grew by,
 |D            |%            |G            |%
 And so please help them with your youth, They seek the
 |D            |%            |A   ~Asus4   |A
-truth    before they  can die.<XX>H ON</XX>
+truth    before they  can die.<!--#H ON#-->
 #VERSE 4 --------------------------------
 |D            |%            |G            |%
 Teach your parents well,
@@ -54,7 +54,7 @@ Their children's hell will slowly go by,  And
 feed          them on your dreams  The one they
 |D            |%            |A   ~Asus4   |A
 picks        the one you'll know by.
--<XX>V2 ON (V-ALL)</XX>
+<!--#V2 ON (ALL ON)#-->
 #CHORUS 2 -------------------------------
 |D            |%            |G            |%
 Don't you ever ask them why, if they told you, you will

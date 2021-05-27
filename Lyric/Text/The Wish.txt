@@ -1,5 +1,5 @@
 TITLE:The Wish,DUR:188,BPM:155,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Brian And Blake,GENRE:Country,STYLE:Ballad,HITyear:Unknown
-$$TCL1 <X14>PR 1</X14> <X14>C M2</X14> <X1>(V3)</X1> <X16>H OFF</X16>
+$$TCL1 <X15>PR 1</X15> <X15>C M2</X15> <X16>V3</X16> <X16>H OFF</X16>
 #INTRO ----------------------------------
 |N                         |%
 -
@@ -12,7 +12,7 @@ I've  fought  for  freedom  on  the  shores  of  every  sea,
 |C             |%             |G             |%
 But  nowadays  it's  different  all  I  feel  is  shame,
 |Dm         |%          |Am         |G          |%
-People  dying  everyday  and  I'm  the  one  they  blame<XX>H ON</XX>
+People  dying  everyday  and  I'm  the  one  they  blame<!--#H ON#-->
 #CHORUS 1 -------------------------------
 |F             |C             |G7            |C
 I wish I was a swingset in some little kid's backyard,
@@ -23,7 +23,7 @@ I  wish  I  was  something  that  couldn't  hurt  no  one,
 |Am            |G             |F             |G
 Of all the things I could have been, I had to be a
 |Am            |%             |%             |%
-gun <XX>H OFF</XX>
+gun <!--#H OFF#-->
 #VERSE 2 --------------------------------
 |C             |%             |G             |%
 They hide me in their lockers in the high school halls,
@@ -32,7 +32,7 @@ they me hand out on the corners I've broken every law,
 |C             |%             |G             |%
 I've laid there in the court rooms tagged exhibit B,
 |Dm         |Dm7        |Am         |G          |%
-Watched them go away in chains while I go back to the streets<XX>H ON</XX>
+Watched them go away in chains while I go back to the streets<!--#H ON#-->
 #CHORUS 2 -------------------------------
 |F             |C             |G7            |C
 I wish I was a swingset in some little kid's backyard,
@@ -43,7 +43,7 @@ I  wish  I  was  something  that  couldn't  hurt  no  one,
 |Am            |G             |F             |G
 Of all the things I could have been, I had to be a
 |Am            |%             |%             |%     ~Em
-gun <XX>H OFF</XX>
+gun <!--#H OFF#-->
 #BREAK 1 --------------------------------
 |C             |%             |G             |%
 -
@@ -52,7 +52,7 @@ gun <XX>H OFF</XX>
 |C             |%             |G             |%-
 Underneath  a  sweater  hidden  on  a  closet  shelf,
 |Dm         |Dm7        |Am         |G          |%
-His tiny hands reached for me but I couldn't scream for help <XX>H ON</XX>
+His tiny hands reached for me but I couldn't scream for help <!--#H ON#-->
 #CHORUS 3 -------------------------------
 |F             |C             |G7            |C
 I wish I was a swingset in some little kid's backyard,
@@ -64,5 +64,5 @@ I  wish  I  was  something  that  couldn't  hurt  no  one,
 Of all the things I could have been, I had to be a
 |Am            |%             |%             |%
 gun
-|Am                          |%
+|Am                           |%
 -

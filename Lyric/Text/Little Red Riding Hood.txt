@@ -1,5 +1,5 @@
 TITLE:Little Red Riding Hood,DUR:177,BPM:116,BEATS:4,KEY:E,QUAL:Raw,ARTIST:Sam The Sham And The Pharaohs,GENRE:Unknown,STYLE:Unknown,HITyear:
-$$TCL1 <X14>PR 1</X14> <X14>E M2</X14> <X1>(V3)</X1> <X16>H OFF</X16>
+$$TCL1 <X15>PR 1</X15> <X15>E M2</X15> <X16>V3</X16> <X16>H OFF</X16>
 #INTRO ----------------------------------
 Owwww!
 |Em                    |Em
@@ -88,7 +88,7 @@ You sure are lookin' good
 |C                    |B7
 You're everything a big bad wolf could want
 |Em                   |B7
-                   Owwww--
+                        Owwww--
 |Em                   |G
 - I mean baaa!            Baaaa?
 |A                    |%

@@ -1,5 +1,5 @@
 TITLE:Jamaica Farewell,DUR:117,BPM:125,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Harry Belafonte,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
-$$<X14>PR 1</X14> <X14>C M2</X14> <X14>PV 1</X14> <X1>(V3)</X1> <X16>H OFF</X16>
+$$<X15>PR 1</X15> <X15>C M2</X15> <X15>PV 1</X15> <X16>v3</X16> <X16>H OFF</X16>
 $$ooXoo 8 5 10
 $$3 or 4
 #INTRO ----------------------------------

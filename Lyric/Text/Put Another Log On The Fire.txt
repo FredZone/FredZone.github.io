@@ -1,5 +1,5 @@
 TITLE:Put Another Log On The Fire,DUR:136,BPM:190,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Shel Silverstien,GENRE:Country,STYLE:Up Tempo,HITyear:Unknown
-$$TCL1 <X14>PR 1</X14> <X14>C.M2</X14> <x1>(V3)</X1> <X16>H ON</X16>
+$$TCL1 <X15>PR 1</X15> <X15>C.M2</X15> <x16>V3</X16> <X16>H ON</X16>
 #INTRO ----------------------------------
 |N           |C           |%           |%           |%
 -
@@ -21,7 +21,7 @@ And boil me up another pot of tea
 |%           |%           |C           |%
 Then put another log on the fire babe
 |G           |%           |C           |%
-And come & tell me why you're leaving me <X16>H OFF</X16>
+And come & tell me why you're leaving me <!--#H OFF#-->
 #VERSE 2 --------------------------------
 |C           |%           |%           |%
 Now don't I let you wash the car on Sunday
@@ -38,7 +38,7 @@ Don't I take her driving every night
 |%           |%           |C           |%
 So sit here at my feet cause I like you when you're sweet
 |G           |%           |C           |%
-And you know it ain't feminine to fight<X16>H ON</X16>
+And you know it ain't feminine to fight<!--#H ON#-->
 #VERSE 3 --------------------------------
 |C           |%           |%           |%
 So put another log on the fire

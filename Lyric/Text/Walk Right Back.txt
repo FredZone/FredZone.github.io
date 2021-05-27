@@ -1,5 +1,5 @@
 TITLE:Walk Right Back,DUR:150,BPM:140,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Everly Brothers,GENRE:Country,STYLE:Up Tempo,HITyear:19
-$$TCL1 <X14>PR 1</X14> <X14>C M2</X14> <X1>(V3)</X1> <X16>H OFF</X16>
+$$TCL1 <X15>PR 1</X15> <X15>C M2</X15> <X16>V3</X16> <X16>H OFF</X16>
 $$STRT ooXoo 8 5 10
 $$RP55 3 or 4
 #INTRO ----------------------------------

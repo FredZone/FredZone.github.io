@@ -21,7 +21,7 @@ CURRENT PROBLEMS / IDEAS/ STATUS
 
 7-1:(NextPlayer) Inwork   ( (127,907 bytes)) - (62,227 bytes))
     5/24/21
-        rebuilt the mailer
+        rebuilt the mailer..uses local storage
     5/18/21
         permanently deleted orient div, used alert instead
     5/18/21

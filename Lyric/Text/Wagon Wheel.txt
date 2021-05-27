@@ -1,5 +1,5 @@
 TITLE:Wagon Wheel,DUR:214,BPM:150,BEATS:4,KEY:A,QUAL:Complete,ARTIST:Darius Rucker,GENRE:Country,STYLE:Up Tempo,HITyear:2013
-$$TCL1 <X14>PR 1</X14> <X14>A M2</X14> <X1>(V3)</X1> <X16>H OFF</X16>
+$$TCL1 <X15>PR 1</X15> <X15>A M2</X15> <X16>V3</X16> <X16>H OFF</X16>
 $$STRT  ooXoo 8 5 10
 $$RP55 3 or 4
 #INTRO ----------------------------------
@@ -28,7 +28,7 @@ Picking me a bouquet of dogwood flowers
 |A                        |E
 And I'm a-hopin' for Raleigh, I can see my baby
 |D                        |%
-tonight <XX>H ON</XX>
+tonight <!--#H ON#-->
 #CHORUS 1 -------------------------------
 |A                        |E
 So rock me momma like a wagon wheel
@@ -45,7 +45,7 @@ Rock me momma like a south bound train
 |A                        |E
 Hey,                    momma
 |D                        |%
-Rock ME <XX>H OFF</XX>
+Rock ME <!--#H OFF#-->
 #VERSE 2 --------------------------------
 |A                        |E
 Running from the cold up in New England
@@ -62,7 +62,7 @@ I lost my money playing poker so I had to leave town
 |A                        |E
 But I ain't turning back to living that old life no
 |D                        |%
-more <XX>H ON</XX>
+more <!--#H ON#-->
 #CHORUS 2 -------------------------------
 |A                        |E
 So rock me momma like a wagon wheel
@@ -79,7 +79,7 @@ Rock me momma like a south bound train
 |A                        |E
 Hey,                    momma
 |D                        |%
-Rock ME  <XX>H OFF soon</XX>
+Rock ME <!--#H OFF#-->
 #BREAK 1 --------------------------------
 |A                        |E
 -
@@ -105,7 +105,7 @@ baby calling my name and I know that she's the only one
 |A                        |E
 And if I died in Raleigh at least I will die
 |D                        |%
-free <XX>H ON</XX>
+free <!--#H ON#-->
 #CHORUS 3 -------------------------------
 |A                        |E
 So rock me momma like a wagon wheel

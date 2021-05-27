@@ -1,72 +1,72 @@
-TITLE:Maries The Name,DUR:157,BPM:180,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Elvis,GENRE:Rock,STYLE:Up Tempo,HITyear:TBD
+TITLE:Maries The Name,DUR:157,BPM:180,BEATS:4,KEY:D,QUAL:Raw,ARTIST:Elvis,GENRE:Rock,STYLE:Up Tempo,HITyear:TBD
 @Slowed to 200 from 210 BPM
 #INTRO ----------------------------------
 |N                              |%
 -
-|G              |Em             |G              |Em
+|D              |Bm             |D              |Bm
 -
-|G              |Em             |G              |Em
+|D              |Bm             |D              |Bm
 -
 #VERSE 1 --------------------------------
-|G              |Em             |G              |Em
+|D              |Bm             |D              |Bm
 A very old friend   came by today    Cos' he was
-|G              |Em             |G              |Em
+|D              |Bm             |D              |Bm
 telling everyone in town  of the love that he'd just found
-|Em                 |C                  |D
+|Bm                 |G                  |A
 And Marie's the name of his latest
-|G              |Em             |G              |Em
+|D              |Bm             |D              |Bm
 flame.
 #VERSE 2 --------------------------------
-|G              |Em             |G              |Em
+|D              |Bm             |D              |Bm
 He talked and talked and I heard him say   That she
-|G              |Em             |G              |Em
+|D              |Bm             |D              |Bm
 had the longest blackest hair The prettiest green eyes anywhere
-|Em                 |C                  |D
+|Bm                 |G                  |A
 And Marie's the name of his latest
-|G              |Em             |G              |Em
+|D              |Bm             |D              |Bm
 flame.
 #BREAK 1 --------------------------------
-|D              |C              |D              |%
+|A              |G              |A              |%
 Though I smiled the tears inside were a burnin'
-|D              |C              |D              |%
+|A              |G              |A              |%
 I wished him luck and then he said goodbye
-|D              |C              |D              |%
+|A              |G              |A              |%
 And he was gone but still his words kept returning
-|D                            |C
+|A                            |G
 What else was left for me to do but
-|G              |Em             |G              |Em
+|D              |Bm             |D              |Bm
 cry.
 #VERSE 3 --------------------------------
-|G              |Em             |G              |Em
+|D              |Bm             |D              |Bm
 Would you believe that yesterday  this girl was
-|G              |Em             |G              |Em
+|D              |Bm             |D              |Bm
 In my arms and swore to me She'd be mine eternally
-|Em                 |C                  |D
+|Bm                 |G                  |A
 And Marie's the name of his latest
-|G              |Em             |G              |Em
+|D              |Bm             |D              |Bm
 flame.
 #BREAK 2 --------------------------------
-|D              |C              |D              |%
+|A              |G              |A              |%
 Though I smiled the tears inside were a burnin'
-|D              |C              |D              |%
+|A              |G              |A              |%
 I wished him luck and then he said goodbye
-|D              |C              |D              |%
+|A              |G              |A              |%
 And he was gone but still his words kept returning
-|D                            |C
+|A                            |G
 What else was left for me to do but
-|G              |Em             |G              |Em
+|D              |Bm             |D              |Bm
 cry.
 #VERSE 4 --------------------------------
-|G              |Em             |G              |Em
+|D              |Bm             |D              |Bm
 Would you believe that yesterday  this girl was
-|G              |Em             |G              |Em
+|D              |Bm             |D              |Bm
 In my arms and swore to me She'd be mine eternally
-|Em                 |C                  |D
+|Bm                 |G                  |A
 And Marie's the name of his latest
-|G              |Em             |C              |D
+|D              |Bm             |G              |A
 flame.       Yes Marie's the name of his latest
-|G              |Em             |C              |D
+|D              |Bm             |G              |A
 flame.       Oh Marie's the name of his latest
-|G              |Em             |G              |Em
+|D              |Bm             |D              |Bm
 flame.
-|G              |%              |%              |%
+|D              |%              |%              |%
