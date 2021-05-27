@@ -1,0 +1,69 @@
+TITLE:Three Little Birds,DUR:188,BPM:148,BEATS:4,KEY:A,QUAL:Verified,ARTIST:Bob Marley,GENRE:Unknown,STYLE:Up Tempo,HITyear:Unknown
+#INTRO ----------------------------------
+|A           |%           |%           |%
+-
+#CHORUS 1 -------------------------------
+|A           |%           |%           |%
+Don't worry, about a thing
+|D           |            |A           |
+Cause' every little thing, gonna be alright
+|A           |%           |%           |%
+Singin' don't worry, about a thing
+|D           |            |A           |
+Cause' every little thing, gonna be alright
+#VERSE 1 --------------------------------
+|A           |%           |E           |%
+Rise up this mornin'Smile with the rising sun
+|A           |%           |D           |%
+Three little birds perch by my doorstep
+|A           |%           |E           |%
+Singin' sweet songs Of melodies pure and true
+|D           |%           |A           |%
+Singin', this my message to you-oo-oo
+#CHORUS 2 -------------------------------
+|A           |%           |%           |%
+Singin' don't worry, about a thing
+|D           |            |A           |
+Cause' every little thing, (is) gonna be alright
+|A           |%           |%           |%
+Singin' don't worry, (don't worry) about a thing
+|D           |            |A           |
+Cause' every little thing, gonna be alright
+#VERSE 2 --------------------------------
+|A           |%           |E           |%
+Rise up this mornin'Smile with the rising sun
+|A           |%           |D           |%
+Three little birds perch by my doorstep
+|A           |%           |E           |%
+Singin' sweet songs Of melodies pure and true
+|D           |%           |A           |%
+Singin', this my message to you-oo-oo
+#CHORUS 3 -------------------------------
+|A           |%           |%           |%
+Don't worry, about a thing
+|D           |            |A           |
+Cause' every little thing, gonna be alright
+|A           |%           |%           |%
+Singin' don't worry, about a thing
+|D           |            |A           |
+Cause' every little thing, gonna be alright
+#BREAK 1 --------------------------------
+|A           |%           |E           |%
+-
+|A           |%           |D           |%
+-
+|A           |%           |E           |%
+-
+|D           |%           |A           |%
+-
+#CHORUS 4 -------------------------------
+|A           |%           |%           |%
+Don't worry, about a thing
+|D           |            |A           |
+Cause' every little thing, gonna be alright
+|A           |%           |%           |%
+Singin' don't worry, about a thing
+|D           |            |A           |
+Cause' every little thing, gonna be alright
+https://www.youtube.com/watch?v=QRSCvbDmKBw|Great Karaoke
+https://www.youtube.com/watch?v=LanCLS_hIo4|Bobs original
