@@ -1,4 +1,4 @@
-TITLE:Maries The Name,DUR:157,BPM:180,BEATS:4,KEY:D,QUAL:Raw,ARTIST:Elvis,GENRE:Rock,STYLE:Up Tempo,HITyear:TBD
+TITLE:Maries The Name,DUR:162,BPM:180,BEATS:4,KEY:D,QUAL:Complete,ARTIST:Elvis,GENRE:Rock,STYLE:Up Tempo,HITyear:TBD
 @Slowed to 200 from 210 BPM
 #INTRO ----------------------------------
 |N                              |%
@@ -67,6 +67,8 @@ And Marie's the name of his latest
 flame.       Yes Marie's the name of his latest
 |D              |Bm             |G              |A
 flame.       Oh Marie's the name of his latest
+|D              |Bm             |D              |Bm
+flame.
 |D              |Bm             |D              |Bm
 flame.
 |D              |%              |%              |%

@@ -3,7 +3,7 @@
 "http://www.musicxml.org/dtds/partwise.dtd">
 <score-partwise version='3.0'>
 <work>
-	<work-title>Come From The Heart</work-title>
+	<work-title>Maries The Name</work-title>
 	</work>
 <identification>
 	<encoding>
@@ -19,11 +19,11 @@
 	</part-list>
 <part id="P1">
 	<measure number="1">
-		<sound tempo="120"/>
+		<sound tempo="180"/>
 		<attributes>
 			<divisions>120</divisions>
 			<key>
-				<fifths>0</fifths>
+				<fifths>2</fifths>
 				<mode>major</mode>
 				</key>
 			<time>
@@ -47,7 +47,7 @@
 			<root>
 				<root-step>N</root-step>
 				</root>
-			<kind text="C">unknown</kind>
+			<kind>major</kind>
 			</harmony>
 		</measure>
 	<measure number="2">
@@ -55,13 +55,13 @@
 			<root>
 				<root-step>N</root-step>
 				</root>
-			<kind text="C">unknown</kind>
+			<kind>major</kind>
 			</harmony>
 		</measure>
 	<measure number="3">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>D</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -69,15 +69,15 @@
 	<measure number="4">
 		<harmony>
 			<root>
-				<root-step>F</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind>major</kind>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="5">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>D</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -85,15 +85,15 @@
 	<measure number="6">
 		<harmony>
 			<root>
-				<root-step>G</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind text="7">dominant</kind>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="7">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>D</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -101,15 +101,15 @@
 	<measure number="8">
 		<harmony>
 			<root>
-				<root-step>F</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind>major</kind>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="9">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>D</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -117,15 +117,15 @@
 	<measure number="10">
 		<harmony>
 			<root>
-				<root-step>G</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind text="7">dominant</kind>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="11">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>D</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -133,15 +133,15 @@
 	<measure number="12">
 		<harmony>
 			<root>
-				<root-step>F</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind>major</kind>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="13">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>D</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -149,15 +149,15 @@
 	<measure number="14">
 		<harmony>
 			<root>
-				<root-step>G</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind text="7">dominant</kind>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="15">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>D</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -165,15 +165,15 @@
 	<measure number="16">
 		<harmony>
 			<root>
-				<root-step>F</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind>major</kind>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="17">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>D</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -181,23 +181,23 @@
 	<measure number="18">
 		<harmony>
 			<root>
-				<root-step>G</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind>major</kind>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="19">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind>major</kind>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="20">
 		<harmony>
 			<root>
-				<root-step>F</root-step>
+				<root-step>G</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -205,7 +205,7 @@
 	<measure number="21">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>A</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -213,23 +213,23 @@
 	<measure number="22">
 		<harmony>
 			<root>
-				<root-step>G</root-step>
+				<root-step>D</root-step>
 				</root>
-			<kind text="7">dominant</kind>
+			<kind>major</kind>
 			</harmony>
 		</measure>
 	<measure number="23">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind>major</kind>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="24">
 		<harmony>
 			<root>
-				<root-step>F</root-step>
+				<root-step>D</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -237,45 +237,31 @@
 	<measure number="25">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
-				</root>
-			<kind>major</kind>
-			</harmony>
-		<harmony>
-			<root>
-				<root-step>A</root-step>
+				<root-step>B</root-step>
 				</root>
 			<kind text="m">minor</kind>
-		<offset>240</offset>
 			</harmony>
 		</measure>
 	<measure number="26">
 		<harmony>
 			<root>
-				<root-step>G</root-step>
+				<root-step>D</root-step>
 				</root>
 			<kind>major</kind>
-			</harmony>
-		<harmony>
-			<root>
-				<root-step>C</root-step>
-				</root>
-			<kind>major</kind>
-		<offset>240</offset>
 			</harmony>
 		</measure>
 	<measure number="27">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind>major</kind>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="28">
 		<harmony>
 			<root>
-				<root-step>F</root-step>
+				<root-step>D</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -283,31 +269,31 @@
 	<measure number="29">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind>major</kind>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="30">
 		<harmony>
 			<root>
-				<root-step>G</root-step>
+				<root-step>D</root-step>
 				</root>
-			<kind text="7">dominant</kind>
+			<kind>major</kind>
 			</harmony>
 		</measure>
 	<measure number="31">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind>major</kind>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="32">
 		<harmony>
 			<root>
-				<root-step>F</root-step>
+				<root-step>D</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -315,23 +301,23 @@
 	<measure number="33">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind>major</kind>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="34">
 		<harmony>
 			<root>
-				<root-step>G</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind text="7">dominant</kind>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="35">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>G</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -339,7 +325,7 @@
 	<measure number="36">
 		<harmony>
 			<root>
-				<root-step>F</root-step>
+				<root-step>A</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -347,7 +333,7 @@
 	<measure number="37">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>D</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -355,15 +341,15 @@
 	<measure number="38">
 		<harmony>
 			<root>
-				<root-step>G</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind>major</kind>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="39">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>D</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -371,15 +357,15 @@
 	<measure number="40">
 		<harmony>
 			<root>
-				<root-step>F</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind>major</kind>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="41">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>A</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -395,7 +381,7 @@
 	<measure number="43">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>A</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -403,7 +389,7 @@
 	<measure number="44">
 		<harmony>
 			<root>
-				<root-step>F</root-step>
+				<root-step>A</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -411,7 +397,7 @@
 	<measure number="45">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>A</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -421,13 +407,13 @@
 			<root>
 				<root-step>G</root-step>
 				</root>
-			<kind text="7">dominant</kind>
+			<kind>major</kind>
 			</harmony>
 		</measure>
 	<measure number="47">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>A</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -435,7 +421,7 @@
 	<measure number="48">
 		<harmony>
 			<root>
-				<root-step>F</root-step>
+				<root-step>A</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -443,16 +429,9 @@
 	<measure number="49">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
-				</root>
-			<kind>major</kind>
-			</harmony>
-		<harmony>
-			<root>
 				<root-step>A</root-step>
 				</root>
-			<kind text="m">minor</kind>
-		<offset>240</offset>
+			<kind>major</kind>
 			</harmony>
 		</measure>
 	<measure number="50">
@@ -462,18 +441,11 @@
 				</root>
 			<kind>major</kind>
 			</harmony>
-		<harmony>
-			<root>
-				<root-step>C</root-step>
-				</root>
-			<kind>major</kind>
-		<offset>240</offset>
-			</harmony>
 		</measure>
 	<measure number="51">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>A</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -481,7 +453,7 @@
 	<measure number="52">
 		<harmony>
 			<root>
-				<root-step>F</root-step>
+				<root-step>A</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -489,7 +461,7 @@
 	<measure number="53">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>A</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -505,7 +477,7 @@
 	<measure number="55">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>D</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -513,45 +485,31 @@
 	<measure number="56">
 		<harmony>
 			<root>
-				<root-step>F</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind>major</kind>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="57">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>D</root-step>
 				</root>
 			<kind>major</kind>
-			</harmony>
-		<harmony>
-			<root>
-				<root-step>A</root-step>
-				</root>
-			<kind text="m">minor</kind>
-		<offset>240</offset>
 			</harmony>
 		</measure>
 	<measure number="58">
 		<harmony>
 			<root>
-				<root-step>G</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind>major</kind>
-			</harmony>
-		<harmony>
-			<root>
-				<root-step>C</root-step>
-				</root>
-			<kind>major</kind>
-		<offset>240</offset>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="59">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>D</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -559,15 +517,15 @@
 	<measure number="60">
 		<harmony>
 			<root>
-				<root-step>F</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind>major</kind>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="61">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>D</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -575,15 +533,15 @@
 	<measure number="62">
 		<harmony>
 			<root>
-				<root-step>G</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind text="7">dominant</kind>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="63">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>D</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -591,53 +549,39 @@
 	<measure number="64">
 		<harmony>
 			<root>
-				<root-step>F</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind>major</kind>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="65">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>D</root-step>
 				</root>
 			<kind>major</kind>
-			</harmony>
-		<harmony>
-			<root>
-				<root-step>A</root-step>
-				</root>
-			<kind text="m">minor</kind>
-		<offset>240</offset>
 			</harmony>
 		</measure>
 	<measure number="66">
 		<harmony>
 			<root>
-				<root-step>G</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind text="7">dominant</kind>
-			</harmony>
-		<harmony>
-			<root>
-				<root-step>C</root-step>
-				</root>
-			<kind>major</kind>
-		<offset>240</offset>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="67">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind>major</kind>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="68">
 		<harmony>
 			<root>
-				<root-step>F</root-step>
+				<root-step>G</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -645,7 +589,7 @@
 	<measure number="69">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>A</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -653,23 +597,23 @@
 	<measure number="70">
 		<harmony>
 			<root>
-				<root-step>G</root-step>
+				<root-step>D</root-step>
 				</root>
-			<kind text="7">dominant</kind>
+			<kind>major</kind>
 			</harmony>
 		</measure>
 	<measure number="71">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
+				<root-step>B</root-step>
 				</root>
-			<kind>major</kind>
+			<kind text="m">minor</kind>
 			</harmony>
 		</measure>
 	<measure number="72">
 		<harmony>
 			<root>
-				<root-step>F</root-step>
+				<root-step>D</root-step>
 				</root>
 			<kind>major</kind>
 			</harmony>
@@ -677,31 +621,369 @@
 	<measure number="73">
 		<harmony>
 			<root>
-				<root-step>C</root-step>
-				</root>
-			<kind>major</kind>
-			</harmony>
-		<harmony>
-			<root>
-				<root-step>A</root-step>
+				<root-step>B</root-step>
 				</root>
 			<kind text="m">minor</kind>
-		<offset>240</offset>
 			</harmony>
 		</measure>
 	<measure number="74">
 		<harmony>
 			<root>
-				<root-step>G</root-step>
-				</root>
-			<kind text="7">dominant</kind>
-			</harmony>
-		<harmony>
-			<root>
-				<root-step>C</root-step>
+				<root-step>A</root-step>
 				</root>
 			<kind>major</kind>
-		<offset>240</offset>
+			</harmony>
+		</measure>
+	<measure number="75">
+		<harmony>
+			<root>
+				<root-step>G</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="76">
+		<harmony>
+			<root>
+				<root-step>A</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="77">
+		<harmony>
+			<root>
+				<root-step>A</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="78">
+		<harmony>
+			<root>
+				<root-step>A</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="79">
+		<harmony>
+			<root>
+				<root-step>G</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="80">
+		<harmony>
+			<root>
+				<root-step>A</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="81">
+		<harmony>
+			<root>
+				<root-step>A</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="82">
+		<harmony>
+			<root>
+				<root-step>A</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="83">
+		<harmony>
+			<root>
+				<root-step>G</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="84">
+		<harmony>
+			<root>
+				<root-step>A</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="85">
+		<harmony>
+			<root>
+				<root-step>A</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="86">
+		<harmony>
+			<root>
+				<root-step>A</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="87">
+		<harmony>
+			<root>
+				<root-step>G</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="88">
+		<harmony>
+			<root>
+				<root-step>D</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="89">
+		<harmony>
+			<root>
+				<root-step>B</root-step>
+				</root>
+			<kind text="m">minor</kind>
+			</harmony>
+		</measure>
+	<measure number="90">
+		<harmony>
+			<root>
+				<root-step>D</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="91">
+		<harmony>
+			<root>
+				<root-step>B</root-step>
+				</root>
+			<kind text="m">minor</kind>
+			</harmony>
+		</measure>
+	<measure number="92">
+		<harmony>
+			<root>
+				<root-step>D</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="93">
+		<harmony>
+			<root>
+				<root-step>B</root-step>
+				</root>
+			<kind text="m">minor</kind>
+			</harmony>
+		</measure>
+	<measure number="94">
+		<harmony>
+			<root>
+				<root-step>D</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="95">
+		<harmony>
+			<root>
+				<root-step>B</root-step>
+				</root>
+			<kind text="m">minor</kind>
+			</harmony>
+		</measure>
+	<measure number="96">
+		<harmony>
+			<root>
+				<root-step>D</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="97">
+		<harmony>
+			<root>
+				<root-step>B</root-step>
+				</root>
+			<kind text="m">minor</kind>
+			</harmony>
+		</measure>
+	<measure number="98">
+		<harmony>
+			<root>
+				<root-step>D</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="99">
+		<harmony>
+			<root>
+				<root-step>B</root-step>
+				</root>
+			<kind text="m">minor</kind>
+			</harmony>
+		</measure>
+	<measure number="100">
+		<harmony>
+			<root>
+				<root-step>B</root-step>
+				</root>
+			<kind text="m">minor</kind>
+			</harmony>
+		</measure>
+	<measure number="101">
+		<harmony>
+			<root>
+				<root-step>G</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="102">
+		<harmony>
+			<root>
+				<root-step>A</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="103">
+		<harmony>
+			<root>
+				<root-step>D</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="104">
+		<harmony>
+			<root>
+				<root-step>B</root-step>
+				</root>
+			<kind text="m">minor</kind>
+			</harmony>
+		</measure>
+	<measure number="105">
+		<harmony>
+			<root>
+				<root-step>G</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="106">
+		<harmony>
+			<root>
+				<root-step>A</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="107">
+		<harmony>
+			<root>
+				<root-step>D</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="108">
+		<harmony>
+			<root>
+				<root-step>B</root-step>
+				</root>
+			<kind text="m">minor</kind>
+			</harmony>
+		</measure>
+	<measure number="109">
+		<harmony>
+			<root>
+				<root-step>G</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="110">
+		<harmony>
+			<root>
+				<root-step>A</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="111">
+		<harmony>
+			<root>
+				<root-step>D</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="112">
+		<harmony>
+			<root>
+				<root-step>B</root-step>
+				</root>
+			<kind text="m">minor</kind>
+			</harmony>
+		</measure>
+	<measure number="113">
+		<harmony>
+			<root>
+				<root-step>D</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="114">
+		<harmony>
+			<root>
+				<root-step>B</root-step>
+				</root>
+			<kind text="m">minor</kind>
+			</harmony>
+		</measure>
+	<measure number="115">
+		<harmony>
+			<root>
+				<root-step>D</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="116">
+		<harmony>
+			<root>
+				<root-step>D</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="117">
+		<harmony>
+			<root>
+				<root-step>D</root-step>
+				</root>
+			<kind>major</kind>
+			</harmony>
+		</measure>
+	<measure number="118">
+		<harmony>
+			<root>
+				<root-step>D</root-step>
+				</root>
+			<kind>major</kind>
 			</harmony>
 		</measure>
 		</part>
