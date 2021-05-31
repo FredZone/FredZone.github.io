@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>>seed</title>
+    <style>
+        body {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="Header">
+    CRAP!!!!!
+    </div>
+    <div id='Get Form' onclick="addHTML()"> ADD HTML</div>
+    <div id='Get Code' onclick="addCode()">ADD CODE</div>
+    <div id='See Code' onclick=alert(document,getElementById('code').innerHTML)>SEE CODE</div>
+    
+<div id="Target">X</div>    
+ 
+<script id='code'></script>
+
+
+<script id ='core'>
+var LOCALkey="TBD"
+var LOCALvalue="TBD"
+var A="garbage"
+  
+//window.onload = function() {
+ //   document.getElementById('Target').innerHTML=fileDownload('dev.html')
+ //   document.getElementById('localAction').style.display='block'
+//}
+
+function addHTML() {
+    document.getElementById('Target').innerHTML=fileDownload('dev.html')
+    document.getElementById('localAction').style.display='block'
+}
+
+function addCode() {
+    alert(fileDownload('code.txt'))
+    document.getElementById('code').innerHTML=fileDownload('code.txt')
+}
+
+function fileDownload(path) {
+    var content = "Attemping to Download" + path;
+    var request = new XMLHttpRequest();
+    request.open("GET", path, false);
+    request.send(null);
+    content = request.responseText;
+    if (content.search("404") > -1 | content.length < 1) {
+        content = '404 Error' + content
+    }
+    return content;
+}
+
+function fileGet(path) {
+    var request = new XMLHttpRequest();
+    request.open("GET", path, false);
+    request.send(null);
+    var content = request.responseText;
+    return content;
+}
+
+
+</script>
+
+</body>
+</html>

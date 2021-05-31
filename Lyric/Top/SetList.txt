@@ -1,4 +1,3 @@
-A-Fred Solo
 ALL BACKING
 ALL RECENT
 ALL TUNES
@@ -9,11 +8,14 @@ C-List
 Christmas
 Fred Inwork
 Fred New
+Fred Solo A
+Fred Solo B
 Fred Solo-BT-1
 Fred Solo-BT-AAA
 Fred Solo-BT
 Fred Solo
 Johns List
+Sally A
 Sally Hootenany2
 Sally New Stuff
 Sally

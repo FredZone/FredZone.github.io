@@ -1,0 +1,106 @@
+
+var LOCALkey="TBD"
+var LOCALvalue="TBD"
+var A="garbage"
+  
+//window.onload = function() {
+ //   document.getElementById('Target').innerHTML=fileDownload('dev.html')
+ //   document.getElementById('localAction').style.display='block'
+//}
+function addForm() {
+    document.getElementById('Target').innerHTML=fileDownload('dev.html')
+    document.getElementById('localAction').style.display='block'
+}
+
+function addForm() {
+    document.getElementById('Target').innerHTML=fileDownload('dev.html')
+    document.getElementById('localAction').style.display='block'
+}
+
+function fileDownload(path) {
+    var content = "Attemping to Download" + path;
+    var request = new XMLHttpRequest();
+    request.open("GET", path, false);
+    request.send(null);
+    content = request.responseText;
+    if (content.search("404") > -1 | content.length < 1) {
+        content = '404 Error' + content
+    }
+    return content;
+}
+    
+    //.## LOCAL STORAGE otherwise superfluous
+function loadLocal(key){
+   dis('localAction','block')
+   refreshLocal()
+}
+
+function deleteLocal(){
+   statusMsg("Deleted "+document.getElementById('keyLocal').value,0 )
+   localStorage.removeItem(document.getElementById('keyLocal').value);
+   statusMsg("Deleted Local Storage: "+LOCALkey,0 )
+   refreshLocal()
+}
+
+function refreshLocal(idx) {
+   dis('localAction','block')
+   var str = ""
+   for (i = 0; i < localStorage.length; i++) {
+      str = str + "<option>" + localStorage.key(i) + "</option>"
+      }
+   str = str + "</select>"
+   document.getElementById('selectLocal').innerHTML = str
+   document.getElementById('selectLocal').selectedIndex=idx
+   LOCALkey= document.getElementById('selectLocal').value
+   document.getElementById('keyLocal').value=LOCALkey
+   LOCALvalue= localStorage.getItem(LOCALkey);
+   document.getElementById('keyLocal').value=LOCALkey
+   document.getElementById('valueLocal').value= LOCALvalue
+   document.getElementById('localAction').style.backgroundColor='lightgrey';
+}
+
+function saveLocal(){
+   var update=document.getElementById('valueLocal').value
+   //alert(document.getElementById('keyLocal').value +" > "+document.getElementById('valueLocal').value)
+   
+   localStorage.setItem(document.getElementById('keyLocal').value , update )
+   statusMsg("Saved Local Storage: "+LOCALkey,0 )
+   document.getElementById('localAction').style.backgroundColor='lightgrey';
+   refreshLocal()
+}
+
+function dateLocal(){        
+   var date = new Date();
+   document.getElementById('localAction').style.backgroundColor='pink';
+   document.getElementById('valueLocal').value=date;
+}
+ 
+function newLocal(){        
+        var date = new Date();
+        document.getElementById('localAction').style.backgroundColor='pink';
+        document.getElementById('valueLocal').value="????";
+        document.getElementById('keyLocal').value="????";
+}
+
+function listLocal() {
+   var str = ""
+   for (i = 0; i < localStorage.length; i++) {
+      str = str +parseInt(i+1,10)+": " +localStorage.key(i) + " / "+localStorage.getItem(localStorage.key(i))+"<br>"
+      }
+    document.getElementById('cloudTitle').innerHTML="LOCAL STORAGE LIST:"
+   document.getElementById('cloudX').innerHTML=str
+   dis('cloud','block')
+}
+
+function dis(id,disp){
+    if(disp===undefined){
+            if(document.getElementById(id).style.display == 'none'){
+                document.getElementById(id).style.display='block';}
+            else{document.getElementById(id).style.display='none';}}
+        else{
+            if(disp=='none') {
+                document.getElementById(id).style.display = 'none';}
+            else{document.getElementById(id).style.display = 'block' ;
+            }
+        }
+    }    

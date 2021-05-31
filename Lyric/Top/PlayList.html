@@ -127,10 +127,12 @@ select{
         <br>NOTES
         <br><textarea  id="songNotes" style="position:relative; width:90%;left:5%; height:10%;z-index:1000; border:none; margin:0; padding:0;"></textarea>
         <br><button style="border:thick; position:absolute;" onclick="displayInfo('a'+TAG)">SONG INFO</button>
-        <button style="position:absolute;bottom:2%;" onclick="updateSong()">Update Selected Song...</button>
-        </div>
-    
+        <button style="position:absolute;bottom:20%;" onclick="updateSong()">Update Selected Song...</button>
+        <img src="../../Icons/blackPython.png" alt='??' onclick="window.open('../../cgi-bin/PlayerUpdate.py','Python','width=1000,height=340,toolbar=0,menubar=0,location=0')" style='position:absolute;bottom:1%;left:0%; height:10%;'>    
+    </div>
+
     <div style = "position:fixed;right:0%; height:14%;bottom:14%; width:25%;background-color:black">
+      
         <img src="../../Icons/blackPrinter.png" alt ="print" onclick ="printList()" style="position:absolute;left:0%;height:100%;width:30%; top:0%;z-index:8000">
         <img src="../../Icons/resetSpinner.gif" alt ="..." id ='printSpinner' onclick ="alert('Printing can take a while...each song is downloaded and examined')" style="position:absolute;left:0%;height:100%; top:0%;z-index:8500; visibility:hidden">
         <img src="../../Icons/blackSigmaPrinter.png" alt ="analize" onclick ="analizeList()" style="position:absolute;left:33%;height:100%;width:30%; top:0%;z-index:8000">    
@@ -143,7 +145,13 @@ select{
         <input id = "fileInput"  type="file" onclick ="processLocalFile('screenUpdate(TEMP,TEMPlocalFileName)')" style ="display:block;position:absolute;left:0%;height:100%;top:0%; width:30%;width:30%; z-index: 8005 ;opacity:1"">
         <img src="../../Icons/blackSave.png" alt ="SAVE Local File"  onclick="document.getElementById('warning').style.display='none';document.getElementById('msg').innerHTML='Changes Assumed Saved...'; saveList();" style="position:absolute;left:33%;height:100%;width:30%; top:0%;z-index:8000">
         <img  id="HomeIcon" src="../../Icons/blackHome.png" alt ="Home" onclick="home();" style="position:absolute;height:100%;width:30%;top:0%;right:0%;z-index:8000">
-        </div>  
+    </div>  
+</div>  
+
+
+
+
+
 <SCRIPT type="text/javascript" SRC = "PlayList.js"></SCRIPT>
 <SCRIPT type="text/javascript" SRC = "CommonLyric.js"></SCRIPT>
 <SCRIPT type="text/javascript" SRC = "AAA.js"></SCRIPT>

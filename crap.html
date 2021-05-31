@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>How to Append HTML Code to a Div using Javascript</title>
+    <style>
+        body {
+            text-align: left;
+            padding: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div id="Header">
+        <h1>Builder</h1><br><button onclick="document.getElementById('Target').innerHTML=(fileDownload('dev.html'))">Add HTML</button>
+    </div>
+    <div id="Target"></div>    
+    
+    
+    
+    
+    
+    <script>
+        function fileDownload(path) {
+            var content = "Attemping to Download" + path;
+            var request = new XMLHttpRequest();
+            request.open("GET", path, false);
+            request.send(null);
+            content = request.responseText;
+            if (content.search("404") > -1 | content.length < 1) {
+                content = '404 Error' + content
+            }
+            return content;
+        }
+    </script>
+</body>
+  
+
+    </script>
+</body>
+  
+</html>
