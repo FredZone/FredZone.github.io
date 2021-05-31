@@ -2,6 +2,8 @@
 <html>
 <body>
 <button onclick=alert(XMLHttp("setList.txt"))>XMLHttpRequest</button><br>
+
+
 <button onclick=alert(fetch1("setList.txt"))>Fetch1</button><br>
 
 
@@ -9,22 +11,19 @@
 
 
 <script>
-             function XMLHttp(path) {
-                var request = new XMLHttpRequest();
-                request.open("GET", path, false);
-                request.send(null);
-                return request.responseText;
-            }
-
-async function fetch1(path) {
-  let res = await fetch(path);
-  let content = await res.text();
-  return content
+function XMLHttp(path) {
+    var request = new XMLHttpRequest();
+    request.open("GET", path, false);
+    request.send(null);
+    return request.responseText;
 }
 
-
-
-</script>
+async
+function fetch1(path) {
+    let res = await fetch(path);
+    let content = await res.text();
+    return content
+}</script>
 
 
 
