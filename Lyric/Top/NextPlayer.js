@@ -1,21 +1,28 @@
-    var REV ="7"//this revision
-    var JSname="NextPlayer.js"//java script file
-    var JHdate;
-//TO RELEASE Javascript file(ex as rev 7.4)
-//  Save this file as this file as "Player7-4.js" and Change first two lines of file as shown below
-//  var REV ="7.4"
-//  var JSname="Player7-4.js"
-//areas for work tqagged with ???
+//CODING TAGS
+//.@ DEAD/OBSOLETE....Delete when safe
+//.$ Under Development (see SHIT)================
+//.## MAJOR SECTION==============================
+//.#      Subsection=============================
+//.? WTF=========================================
+//^  Trailing note (AFTER text)==================
 
-//*GLOBAL VAR=======================================================================================================
-//*   FLAGS
+/*  TO RELEASE THIS AS THE NEXT STABLE REVISION
+      1: DO NOT CHANGE THIS FILE UNTIL THE LAST STEP!
+      2: Copy the old NextPlayer.js and NextPlayer.html into a directory "NP-?" where ? is the current Revision (ie "NP-7)for BACK-UP and history's sake
+      3: MAKE A COPIES OF THIS FILE(NextPlayerX.js) AND NextPlayerX.html that replace the old NextPlayer.js and NextPlayer.html 
+      4: Make the changes in lines marked $$$$ to the NextPlayer files
+      5: Test the new NextPlayer files
+      6  FINALLY Change the revision of NextPlayerX to the new rev (i.e. "var REV ="8.0")
+*/
+//.## GLOBAL VARs
+//.#      FLAGS
     var ALT=false;//^ alternate song
     var AUDfail=false;
     var AUDend=false;
     var BOOT=true;//^ used to do setup on boot
     var NASH=false;//Nashville notation????incomplete...
     var SETnoteViewed=false;//used to keep not from popping up AWK
-//*   PROGRAM and SONG VARS//
+//.#      PROGRAM and SONG VARS
     var ARRtitle;
     var ARRsoundModes=("SILENT/nBACK TRACK/nCLICK TRACK/nDRUM ROCK/nDRUM COUNTRY").split("/n");
     var DUR=120;//^ Duration for scrolling and calculating
@@ -25,7 +32,7 @@
     var KEYlast='C';
     var KEYbase="X";//^ anchor for changeing keys on the fly
     var PREVtitle;//previous Title
-    var LINElimit=90
+    var LINElimit=90//^most charcters per line
     var LONGLINE=50;
     var MIRROR=0;
     var TRANSPOSE=0;//^ how many 1/2 steps to tranpose
@@ -38,7 +45,7 @@
     var VOL=null
     var WARNING= "No Warnings!"
     var SONGsource="select"
-//*   SONG DATA AND PROPERTIES (passed)
+//.#      SONG DATA AND PROPERTIES (passed)
     var RAWtune;//tune as read from file
     var ARTIST="Unknown";
     var ARRlines="";//^ Array of lines from text file
@@ -62,10 +69,9 @@
     var NOTEtrivia;
     var NOTEtech;
     var NOTElinks;
-//*   SCROLLdata CONSTANTS
+//.#      SCROLLdata CONSTANTS
     var TOPlast;
     var SS=0;//Scroll Stopper...counts cylces of non scroll indicating end of tune
-    var AS=0//audio stopper
     var FONTSIZE= 2.5;//calculated size for the display 
     var CHORDlines=0;//^ how many lines are chord lines
     var PRESONGlines=0;//^ how many lines of text exist before first chord line
@@ -80,35 +86,31 @@
     //var Xstart=0;//^ where Y is when you start the scroll
     var PAGEht;
     var TABwt;
-//*   TIMEOUT CONSTANTS
+//.#      TIMEOUT CONSTANTS
     var TIMEOUTblink;//^time for blinking display
     var TIMEOUTcrap;//^ do not clear this one
     var TIMEOUTdelay;//^ trackDelay delay the start of???
     var TIMEOUTfade;//^fade the sound
-    var TIMEOUTmail=3000;
     var TIMEOUTnext; //^ for next tune
-    var TIMEOUTscroll;//^ timeout function for scrolling
+    var TIMEOUTscroll;//^ timeout for scrolling
     var TIMEOUTmirror;
     var TIMEOUTmet;
     var TIMEOUTwait; //Wait after scroll end before showing top Icons title etc
-//*   CONFIGURATION
- //             0        1            2            3        4       5        6        7         8        9         10        11      12         13       14     15     16    
-   ARRimg="imgCAPS,imgFULLscreen,imgLEFTborder,imgCLOCK,imgTEXT,imgSHADE,imgNOTES,imgSETnotes,imgPOPnotes,imgTECHnotes,imgLIVEnotes,imgCOUNTin,imgBREAKlines,imgBIGchords,imgLOOPER,imgMETRO,imgBARsync".split(',');
-      //             0        1          2        3   4    5     6     7         8        9         10        11      12         13       14     15     16  
+//.#      CONFIGURATION CONSTANTS
+      //^             0        1          2        3   4    5     6     7         8        9         10        11      12         13       14     15     16  
     var ARRpresets="CAPS,FULLscreen,LEFTborder,CLOCK,TEXT,SHADE,NOTES,SETnotes,POPnotes,TECHnotes,LIVEnotes,COUNTin,BREAKlines,BIGchords,LOOPER,METRO,BARsync".split(',');
-    var TBD= false;
     var BACKdrop=false;
     var BARsync=false
     var BIGchords=true;
     var BIGchordSize=1.00;
     var BREAKlines=true;
-    var COUNTin=false;//
-    var CAPS=true;//
+    var COUNTin=false;
+    var CAPS=true;
     var CLOCK=false;
     var CLOCKstart=0;
     var CLOCKstop=0;
     var ENDpause=false;
-    var TBD2=false;//Later    
+
     var FULLscreen=false;
     var LEFTborder=false;
     var LINEnum=false;//^ show line numbers
@@ -120,23 +122,19 @@
     var SHADE=false;//shade the screen
     var SOUND=true;
     var SETnotes=false;
-    var TABS=false;
     var TEXT=false;//reduce text size
     var TRIVIAnotes=false;
     var TECHnotes=false;
-//*   MISC CONSTANTS
-    var BIGselect=false;
+//.#      MISC CONSTANTS
     var ARRscale="A,Bb,B,C,C#,D,Eb,E,F,F#,G,Ab,A,Bb,B,C,C#,D,Eb,E,F,F#,G,Ab,A,Bb,B,C,C#,D,Eb,E,F,F#,G,Ab".split(",");
     var ARRsongSettings;
     var MSGlast="No Message...";
-    var MSG2="NO MESSAGE!";
-    var NONE;
     var RAT=0.7; //^ Ratio WINDht/WINDwt
     var PLAYlist="X";//^ Array of songs in setlist
     var SETname="Single Tune";//^ default in case a list cannot be loaded
     var WINDht;//px window height
     var WINDwt;//px window width
-//*   LOOP VARIABLES
+//.#      LOOP VARIABLES
     var METRO=false;//metronome
     var MET;//METRO count
     var METRObpm;
@@ -150,7 +148,7 @@
     var LOOPmode='repeated';
     var ENDscroll=false;
     var ENDaudio=false
-//*   PRESETS
+//.#      PRESETS
     var ARRtf="true,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false".split(',');
     var PRESETno=0;
     var PRESET="Default Mode";
@@ -161,46 +159,177 @@
     var BARSTOP=0
     var ARRbars =''.split(',');
     var ARRpx=''.split(','); 
-//*   DEVELOPER CONSTANTS (REQUIRED TO LOG Status Mssages,See Developer functions)
+//.#      STATUS LOG
     var LOG=640;//length of Log
     var ARRstatusLog="<pre><X2>=================DEBUG LOG=================</x2></pre>".split('@');
-    var STATUSmon=1;//sets the Debug mode, 0=off/1=log while hidden/2=log Real time
-//*   TEMPO
+    var STATUSmode=1;//^sets the Debug mode, 0: do not Log / 1: log while hidden /2: log while visilble
+//.#      TEMPO CONSTANTS 
     var TEMPO;
     var TEMPOstart=0;
     var TEMPOcount=0;
     var TEMPOtime=0;
     var TEMPOtimeLast=0;
-//*   MAP functons?
+//.#      MAP  CONSTANTS 
     var MAP=''.split(',');
     var MAPoffset=0;
-//*   MAIL
-   var MAIL="";
-   var MAILsys;
+//.#      MAIL  CONSTANTS 
+   //var MAIL="";
    var BACKTRACK; //to try backtracks  
-//*MISC CRAP NOT LOCATED LOGICALLY ===================================================================
-window.onbeforeunload = function(e) {
-   if (MAIL.length>20) {
-      statusMsg('YOU HAVE UNSENT MAIL','red')
-      return 'UNSENT MAIL ';
-   }else{return(null)}
-}
-function sizeTuneSelect(){
-   dis('BS','none')
-   if (BIGselect==false) {
-      BIGselect=true;
-      statusMsg("Creating Small Selector...");
-      bigSelectorBuild("BS",PLAYlist);
-      document.getElementById('BSicon').src='../../Icons/blackTextSmall.png';
-      document.getElementById('BSbutton').style.display='block';
-   }else{
-      statusMsg("Creating Small Selector...");
-      BIGselect=false;
-      document.getElementById('BSbutton').style.display='none';
-   }
+//.#      LOCAL STORGE CONSTANTS 
+   var LOCALkey="TBD"
+   var LOCALvalue="TBD"
+//.#      SHIT CONSTANTS Permanent feature 
+   var SHIT= false
+
+
+
+//.## LOCAL STORAGE otherwise superfluous
+function loadLocal(key){
+   dis('localAction','block')
+   refreshLocal()
 }
 
-function getSelectionText() {
+function deleteLocal(){
+   statusMsg("Deleted "+document.getElementById('keyLocal').value,0 )
+   localStorage.removeItem(document.getElementById('keyLocal').value);
+   statusMsg("Deleted Local Storage: "+LOCALkey,0 )
+   refreshLocal()
+}
+
+function refreshLocal(idx) {
+   dis('localAction','block')
+   var str = ""
+   for (i = 0; i < localStorage.length; i++) {
+      str = str + "<option>" + localStorage.key(i) + "</option>"
+      }
+   str = str + "</select>"
+   document.getElementById('selectLocal').innerHTML = str
+   document.getElementById('selectLocal').selectedIndex=idx
+   LOCALkey= document.getElementById('selectLocal').value
+   document.getElementById('keyLocal').value=LOCALkey
+   LOCALvalue= localStorage.getItem(LOCALkey);
+   document.getElementById('keyLocal').value=LOCALkey
+   document.getElementById('valueLocal').value= LOCALvalue
+   document.getElementById('localAction').style.backgroundColor='lightgrey';
+}
+
+function saveLocal(){
+   var update=document.getElementById('valueLocal').value
+   //alert(document.getElementById('keyLocal').value +" > "+document.getElementById('valueLocal').value)
+   
+   localStorage.setItem(document.getElementById('keyLocal').value , update )
+   statusMsg("Saved Local Storage: "+LOCALkey,0 )
+   document.getElementById('localAction').style.backgroundColor='lightgrey';
+   refreshLocal()
+}
+
+function dateLocal(){        
+   var date = new Date();
+   document.getElementById('localAction').style.backgroundColor='pink';
+   document.getElementById('valueLocal').value=date;
+}
+ 
+function newLocal(){        
+        var date = new Date();
+        document.getElementById('localAction').style.backgroundColor='pink';
+        document.getElementById('valueLocal').value="????";
+        document.getElementById('keyLocal').value="????";
+}
+
+function listLocal() {
+   var str = ""
+   for (i = 0; i < localStorage.length; i++) {
+      str = str +parseInt(i+1,10)+": " +localStorage.key(i) + " / "+localStorage.getItem(localStorage.key(i))+"<br>"
+      }
+    document.getElementById('cloudTitle').innerHTML="LOCAL STORAGE LIST:"
+   document.getElementById('cloudX').innerHTML=str
+   dis('cloud','block')
+}
+
+
+//.## MAIL
+
+//.## MISC CRAP NOT LOCATED LOGICALLY
+//window.onbeforeunload = function(e) {
+   //if (localStorage.getItem('mail').length>5) {
+   //   alert('YOU HAVE UNSENT MAIL')
+ //     return 'UNSENT MAIL ';
+ //  }else{return(null)}
+//}
+
+
+
+function mailTo(mode) {
+   var entry = "";
+   var stored = "";
+   var val = ""
+   msg = "Accessing mailer..."
+   if (mode == 'open') {
+      val = localStorage.getItem('mail')
+      document.getElementById('mailerBody').value = val
+      dis('mailer', 'block')
+      msg = "Mailer opened..."
+   }else if (mode == 'save') {
+      val = document.getElementById('mailerBody').value
+      if (val == null || val == '' || val == undefined||val.length<=2) {
+         alert( "Mail is blank, Cannot save that...");
+         document.getElementById('mailerBody').value = ""
+         localStorage.setItem('mail','')
+      msg('Cant save empty draft of mail...')
+      } else {
+         document.getElementById('msg').style.width = "96%";
+         localStorage.setItem('mail', val);
+         msg='Mail Draft saved...'
+      }
+   }else if (mode == 'close') {
+      dis('mailer', 'none');
+      msg = 'Mail closed...';
+   } else if (mode == 'title') {
+      entry = TITLE + ":";
+   } else if (mode == 'info') {
+      var pct = document.getElementById("Tune").scrollTop / SCROLLpix;
+      var time = parseInt(pct * DUR, 10);
+      entry = TITLE + ": [" + time + " seconds {" + parseInt(pct * 100, 10) + "%}]  (" + SETname + ")";
+   } else if (mode == 'key') {
+      entry = TITLE + ": Key(Base)=" + KEYbase + ": now =" + KEY;
+   } else if (mode == 'tempo') {
+      entry = TITLE + ": Tempo now " + BPM;
+   } else if (mode == 'set') {
+      entry = TITLE + ": Set=" + SETname;
+   } else if (mode == 'hilite') {
+      entry = TITLE + ":\nSelected Text----------------------------------\n" + getSelectionText() + "\n----------------------------------------------";
+   } else if (mode == 'restore') {
+      entry = localStorage.getItem('sentMail')
+   
+   
+   }else if (mode == 'delete') {
+      if (confirm('PERMANENTLY delete Your eMail draft') === true) {
+         document.getElementById('mailerBody').value = ""
+         localStorage.setItem('mail',"");
+         msg = "eMail Deleted."
+         document.getElementById('msg').style.width = "100%";
+      } else {
+         msg = "eMail retained."
+      }
+   }else if (mode == 'send') {
+      localStorage.setItem('sentMail', document.getElementById('mailerBody').value);
+      window.open("mailto:fkaparich@gmail.com?subject=From PERFORMER MAIL&body=.............Start of Mail..................%0A" + localStorage.getItem('mail').replace(/\n/g, '%0A') + "..................End of Mail..................");
+      localStorage.setItem('mail', "");
+      document.getElementById('mailerBody').value="";
+      dis('mailer', 'none');
+      document.getElementById('msg').style.width = '100%';
+      msg = "SEND THE MAIL (Mailer has been cleared!)";
+   }
+   if (entry != "") {
+      localStorage.setItem('mail',localStorage.getItem('mail')+entry+"\n" );
+      document.getElementById('mailerBody').value = localStorage.getItem('mail')
+      msg = "Email: "+mode
+   }
+   statusMsg(msg, "yellow")
+}
+
+//.## MISC
+function getSelectionText() {// Gets higlighted section class?
     var text = "";
     if (window.getSelection) {
         text = window.getSelection().toString();
@@ -208,60 +337,6 @@ function getSelectionText() {
         text = document.selection.createRange().text;
     }
     return text;
-}
-
-function mailTo(mode) {
-   var entry=null;
-   var x=false
-   if (mode == 'open') {
-      document.getElementById('msg').style.width = "96%";
-      if (MAIL.length >= 1) {
-         document.getElementById('mailerBody').value = MAIL
-         statusMsg('eMail Initiated');
-      }
-      dis('mailer', 'block');
-   }
-   if (mode == 'send') {
-      dis('mailer', 'none');
-      window.open("mailto:fkaparich@gmail.com?subject=From PERFORMER MAIL&body=.............Start of Mail..................%0A" + MAIL.replace(/\n/g, '%0A')+"...............End of Mail..................");
-   } else {
-      if (mode == 'title') {
-         entry = TITLE +":";
-      }
-      if (mode == 'info') {
-         var pct = document.getElementById("Tune").scrollTop / SCROLLpix;
-         var time = parseInt(pct * DUR, 10);
-         entry = TITLE + ": [" + time + " seconds {" + parseInt(pct * 100, 10) + "%}]  (" + SETname + ")";
-      }
-      if (mode == 'key') {
-         entry = TITLE + ": Key(Base)=" + KEYbase + ": now =" + KEY;
-      }
-      if (mode == 'tempo') {
-         entry = TITLE + ": Tempo now " + BPM;
-      }
-      if (mode == 'set') {
-         entry = TITLE + ": Set=" + SETname;
-      }
-      if (mode == 'hilite') {
-         entry = TITLE + ":\n----------------Selected Text-----------------\n" + getSelectionText()+"\n----------------------------------------------";
-      }     
-      if (mode == 'clear') {
-         let x=confirm('PERMANENTLY Delete Your eMail???')
-         if(x===true) {
-            window.onbeforeunload = null
-            MAIL = ""
-            document.getElementById('mailerBody').value = ""
-            document.getElementById('msg').style.width = "100%"
-            document.getElementById('mailer').style.display = "none"
-            statusMsg("eMail Deleted...", 'yellow')
-         }else{statusMsg("eMail SAVED...", 'yellow')}
-         return;
-      }
-      if (entry != undefined) {
-         MAIL = entry + '\n' + document.getElementById('mailerBody').value;
-      }
-      document.getElementById('mailerBody').value = MAIL;
-   }
 }
 
 function rTrim(str){
@@ -275,6 +350,7 @@ function iconize(icon,fontsize){// put an icon.png in text line
    return  "<img src=\'../../Icons/"+icon+".png\' alt =\'?\' style=\'position:absolute;width:"+FONTSIZE+"\'>"
 }
 
+//.?
 function localFile(desc, loc, web) {
    var a = '<!DOCTYPE html><head></head><body>'
    var x = window.open("", "", "toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=" + parseInt(WINDwt / 2, 10) + ", height=" + parseInt(WINDht / 3, 10));
@@ -286,7 +362,9 @@ function localFile(desc, loc, web) {
    x.document.write(a)
    x.document.close
 }
-//*BACTRACK functions=======================================
+
+
+//.## BACTRACK FUNCTIONS
 function btInst() {
     var a = "BACKTRACK INSTRUCTIONS\n";
     a = a + "1) Select a song in with Backtrack in \'Backtrack Mode\'...\n";
@@ -365,15 +443,15 @@ function songMap() {
     d('trackQual').innerHTML = qual;
 }
 
-//*BOOT ROUTINE BOOT and embedded functions=================== All in functions sequence with breaks between sub routines
+//.## BOOT ROUTINE BOOT and embedded functions:   All in functions sequence with breaks between sub routines
 window.onload = function() {
-    var agent=(navigator.userAgent.split(')').reverse()[0].match(/(?!Gecko|Version|[A-Za-z]+?Web[Kk]it)[A-Z][a-z]+/g)[0])
-    ARRstatusLog=("================BOOTING in "+agent+"==================").split('-');
-    statusMsg("PRESS ANY KEY or CLICK THE 'BUG' to monitor the boot...")
-    document.getElementById("debugTrigger").focus();
-    TIMEOUTcrap = setTimeout(function() {
-        start();
-    }, 1500);
+   var agent = (navigator.userAgent.split(')').reverse()[0].match(/(?!Gecko|Version|[A-Za-z]+?Web[Kk]it)[A-Z][a-z]+/g)[0])
+   ARRstatusLog = ("================BOOTING in " + agent + "==================").split('-');
+   statusMsg("PRESS ANY KEY or CLICK THE 'BUG' to monitor the boot...")
+   document.getElementById("debugTrigger").focus();
+   TIMEOUTcrap = setTimeout(function() {
+      start();
+   }, 1500);
 }
 
 function monitorBoot() { //initiated by the user at boot
@@ -384,13 +462,11 @@ function monitorBoot() { //initiated by the user at boot
 }
 
 function start() {
-   statusMsg("Initiating Javascript...");
+    statusMsg("Initiating Javascript...");
     var arr;
     j = 0;
     clearTimeout(TIMEOUTcrap);
     document.getElementById('dubugSafety').focus();
-    revDates();
-    document.getElementById('revStatus').innerHTML = "REV: " + REV;
     var lst = "<a style='text-align:center; width:100%'><a style='color:white;'>SOUND MODE</a><br><select id='soundSelector' style='background-color:white;color:black;font-size:2vw; width:100%' onchange='setSoundModeDefault(this.value)'>";
     while (j < ARRsoundModes.length) {
         lst = lst + "\n<option>" + ARRsoundModes[j] + "</option>";
@@ -412,13 +488,10 @@ function start() {
     }
 }
 
-//*   CREATE SELECTORS
-function createSetSelector() { //alert('SetSelector');  //^creates an option box from the file SetList.txt in the top directory
+//.## SELECTORS
+function createSetSelector() { //^creates an option box from the file SetList.txt in the top directory
     statusMsg("Creating Set Selector...");
-    var request = new XMLHttpRequest();
-    request.open("GET", "SetList.txt", false);
-    request.send(null);
-    var content = request.responseText;
+    var content=getTextFile("SetList.txt")
     var sets = content.split("\n");
     var ihtml = "<a style='text-align:center; width:45vw;color:white'>PLAYLIST:</a><br><select id='Set' style='font-size:2vw' onchange='SETname=(this.value);selectPlaylist(this.value)'><option selected>ALL TUNES</option>";
     j = 0;
@@ -434,15 +507,12 @@ function createSetSelector() { //alert('SetSelector');  //^creates an option box
     selectPlaylist("ALL TUNES");
 }
 
-function selectPlaylist(set) { //alert('selectPlaylist('+set+')');  //^ Selects your set by its name
+function selectPlaylist(set) { //^ Selects your set by its name
     statusMsg('Selecting Playlist '+set,0);
-    var request = new XMLHttpRequest();
-    var path = "../Sets/" + set + ".txt";
+    var content=getTextFile("../Sets/" + set + ".txt")
     SETname = set;
     PLAYlist = "";
-    request.open("GET", path, false);
-    request.send(null);
-    PLAYlist = request.responseText.split("\n");
+    PLAYlist = content.split("\n");
     if (set == "ALL TUNES") {
         dis('abet', 'block');
     } else {
@@ -452,10 +522,10 @@ function selectPlaylist(set) { //alert('selectPlaylist('+set+')');  //^ Selects 
     createPlayListSelector();//the ARRAY of songs in the set should be playlist
 }
 
-function createPlayListSelector() { //alert('createSetList()');//^ creates the setlist option box and selects tune 0
+function createPlayListSelector() {//^ creates the setlist option box and selects tune 0
    statusMsg('Creating PlayList Selectors ' + SETname, 0);
    statusMsg("Formating Small Playlist and Selecting Default Song...", "yellow");
-   if (BIGselect == true) {
+/*$   if (BIGselect == true) {
       statusMsg("Formating BIG Playlist and Selecting Default Song:" + TUNEnum, "yellow");
       var i = 0;
       str = "<div id='BB'>"
@@ -471,6 +541,7 @@ function createPlayListSelector() { //alert('createSetList()');//^ creates the s
    } else {
       document.getElementById('BSbutton').style.display = 'none'
    }
+*/   
    var a;
    var lst = "";
    j = 0;
@@ -486,22 +557,24 @@ function createPlayListSelector() { //alert('createSetList()');//^ creates the s
    document.getElementById("mySet").innerHTML = lst;
    document.getElementById("mySet").selectedValue = TUNEnum;
    TITLEplus = PLAYlist[TUNEnum];
-   PREVtitle = TITLEplus; //?????????????????????????????????????????????????
+   PREVtitle = TITLEplus; //?.
    selectTune(TITLEplus);
 }
 
  function selectTuneNo(i){
  statusMsg('Selecting tune by number: '+i) 
       if (i < 0 || i >= PLAYlist.length) {
-         statusMsg("No Tune")
+         statusMsg("No Tune","red")
          return
       } 
  document.getElementById('mySet').selectedIndex=i
  var titl=PLAYlist[i]
  selectTune(titl)
  }
-//*   OPEN BY TITLE
-function openSong() { //opens a song with title, if its on server, not on list============EEE
+
+
+//.## GET SONG (by title etc)
+function openSong() { //opens a song with title, if its on server, not on list
     statusMsg("Request Tune by exact Title... ", 0);
       SONGsource="request"
       dis('nextIcon','none')
@@ -511,30 +584,21 @@ function openSong() { //opens a song with title, if its on server, not on list==
 }
 
 function selectTune(titl){
-   statusMsg("Selecting "+titl)
-   TITLEplus = titl;
-   TUNEnum= PLAYlist.indexOf(TITLEplus);
- 
-   //TUNEnum=returnIndexOf(PLAYlist,TITLEplus)
-   dis('BS', 'none');
-   dis('backtracker', 'none'); //SIMPLIFY
-   document.getElementById("mySet").selectedIndex=TUNEnum;//set the std selector
-   if (BIGselect==true) {
-      statusMsg('Big Select')
-      document.getElementById('BS' + TUNEnum).style.color = 'red';
-      //var sk =(TUNEnum/PLAYlist.length)*(document.getElementById('BB').clientHeight)
-      //document.getElementById('BS').scrollTop=sk;
-       //TITLEplus is formated play info=@TITLE|KEY|BPM|SOUNDmode|NOTEset|volume (@ indicates alternate if its present)
-   }
-   ARRtitle = titl.split("|");
+   /*TITLEplus is formated play info=@TITLE|KEY|BPM|SOUNDmode|NOTEset|volume (@ indicates alternate if its present)*/ 
+  TITLEplus = titl;
+  ARRtitle = titl.split("|");
    if (ARRtitle[0].substr(0, 1) !== "@") {
       TITLE = ARRtitle[0];
       ALT = false;
    } else {
       ALT = true;
       TITLE = ARRtitle[0].substr(1);
-   }
-   document.getElementById('myTune').innerHTML = TITLE; //?what is my tune??
+   }TITLE=TITLE.replace(/(\r\n|\n|\r)/gm,"");//strip all line feeds
+   statusMsg("Selected: "+TITLE)
+   TUNEnum= PLAYlist.indexOf(TITLEplus);
+   dis('backtracker', 'none'); //SIMPLIFY
+   document.getElementById("mySet").selectedIndex=TUNEnum;//set the std selector
+   document.getElementById('myTune').innerHTML = TITLE; //?. What is my tune??
    CTO();
    document.getElementById("content").innerHTML = "";
    if (ARRtitle[3] !== undefined & ARRtitle[3] !== "") {
@@ -555,25 +619,18 @@ function selectTune(titl){
    }
 }
 
-//*   LOADS FROM SERVER
-function loadServerTitle() { 
-    statusMsg("Loading "+TITLE);
-    var path = "../Text/" + TITLE + ".txt"; //^ get the text file
-    var request = new XMLHttpRequest();
-    var content;
-    var arr;
-    statusMsg("Downloading " + TITLE + "...");
-    KEYbase = "X";
-    document.getElementById('key2').innerHTML = "-";
-    document.getElementById("title").innerHTML = TITLE; //^ put title on tab...
-    TRANSPOSE = 0;
-    CTO();
-    ARRlines = "";
-    screenFormat("Think", "transArrowDown.png");
-    request.open("GET", path, false);
-    request.send(null);
-    var content = request.responseText;
-    var n = content.search("404");
+//.#      LOAD FROM SERVER
+function loadServerTitle() {
+   statusMsg("Loading Song by"+TITLE);
+   KEYbase = "X";
+   document.getElementById('key2').innerHTML = "-";
+   document.getElementById("title").innerHTML = TITLE; //^ put title on tab...
+   TRANSPOSE = 0;
+   CTO();
+   ARRlines = "";
+   screenFormat("Think", "transArrowDown.png");
+   var content=getTextFile( "../Text/" + TITLE + ".txt")
+   var n = content.search("404");
     if (n > 0) { //^ XXX unverified through all cases of next tune
         if (TITLE=="NOTE") {
             arr=TITLEplus.split('|')
@@ -599,9 +656,8 @@ function loadServerTitle() {
         createARRlines(content);
     }
 }
-//*PROCESS THE TEXT FILE=====================================================================
+//.## PROCESS STD TEXT FILE
 
-//*   CREATE THE ARRAY
 function createARRlines(content) { //^ Make ARRlines, from the text file
     statusMsg("Processing Song file: " + TITLE);
     NOTEset = undefined;
@@ -633,7 +689,8 @@ function createARRlines(content) { //^ Make ARRlines, from the text file
     }
     loadServerTrack();
 }
-//*   LOAD A BACKTRACK
+
+//.## LOAD BACKTRACK
 function loadServerTrack() { //afrom 5.2
     rollMirror(false)
     var delay = 1000;
@@ -649,7 +706,7 @@ function loadServerTrack() { //afrom 5.2
         icon = "transSilent.png"
         document.getElementById('Audio1').src = "";
         durCalc();
-    } else { //^ tracks with BEAT Preset or Time Signature independent=====================
+    } else { //^ tracks with BEAT Preset or Time Signature independent
         statusMsg("Loading " + SOUNDmode + " track with " + parseInt(delay / 1000, 10) + " sec delay...");
         if (SOUNDmode == "BACK TRACK") {
             BPMfile=BPM = hash(ARRlines[0], "BPM", BPM);
@@ -672,7 +729,7 @@ function loadServerTrack() { //afrom 5.2
                 AUDfail = true;
                 durCalc();
                 return;
-            } //^ 4/4 tracks below here=============================================
+            } //^ 4/4 tracks below here====================
             if (SOUNDmode == "DRUM ROCK") {
                 icon = "transRock.png";
                 src = "../DrumRock/" + BPM + ".mp3";
@@ -707,7 +764,7 @@ function loadServerTrack() { //afrom 5.2
         }, delay); //^ time to load mp3
     }
 }
-//*   DURATION CALCULATION
+//.#    DURATION CALCULATION
 function durCalc() {
     statusMsg("Determining Song Duration...BPM>" +BPM, "yellow");
     DURcalc=0
@@ -738,14 +795,13 @@ function durCalc() {
         arrConvert();
     }
 }
-//*ARRAY TO HTML====================================================================
+//.## CONVERT TEXT ARRAY TO HTML
 function arrConvert() { //^ Setup to walk thru the ARRLines
    statusMsg('Converting Array to HTML using custom settings...');
    CTO();
    var icon = 'blackNotePad';
    WARNING = "No Warnings!"
    var flag = "??"
-   //var crap;USELESS
    var count = 0; //count bars
    var img = false; //if true use an image for the song not text
    var htmlString = "";
@@ -781,9 +837,7 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
       LONGLINE = 74;
       img = true;
    } //in case there are no lines (indicates image file)
-//   if (BREAKlines === true) {
       LONGLINE = LINElimit
-//  } //if breaking lines is requested
    if (LINEnum === true | LINEtime === true) {
       LONGLINE = LONGLINE + 4;
    } //^ adding space
@@ -800,8 +854,8 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
    bigFont = n.substring(0, 4) + "vw";
    var bars = 0;
    barCount = 0
-   opacSet("buttonTabs", 0.2)
-   statusMsg("#) Type/Action================================", 0)
+//$   opacSet("buttonTabs", 0.2)
+   statusMsg("#) Type/Action================================", 0)//?.
    while (j < ARRlines.length) { //^ Walk through the ARRlines to build the htmlStrings  
       newLine = rTrim(ARRlines[j]);
       lType = lineType(newLine);
@@ -824,21 +878,8 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
          }
          NOTEtrivia = NOTEtrivia + newLine.substr(2) + "<br>";
          newLine = undefined;
-      } else if (lType == 'tab') { //=========================================
-         var crap = '';
-         var no = '';
-         opacSet("buttonTabs", 1)
-         if (tabCount === 0) {
-            crap = " selected "
-         }
-         newLine = newLine.substring(4) //take out "TAB:"
-         ARRtabs.push(newLine) //add bar number
-         no = newLine.split('@')[0];
-         tabString = tabString + "<option value=" + tabCount + crap + " >TAB at BAR:" + no + "</option>"
-         //TABtriggers=TABtriggers+"<a id=\'tt"+parseInt(no-1,10)+"\' name=\'ttt"+tabCount+"\' onclick=\"showTab(this.name.substring(3),\'block\')\"> "+parseInt(no-1,10)+" </a>"
-         statusMsg('Tab ' + tabCount + ' logged...', 0)
-         tabCount = tabCount + 1
-         newLine = undefined; //===============================
+      } else if (lType == 'tab') { 
+         alert(TITLE+' file line '+j+ ' contains a tab, It should be removed')
       } else if (lType == 'noteTech') {
          if (NOTEtech === undefined) {
             NOTEtech = newLine.substr(3);
@@ -859,34 +900,36 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
          } else {
             newLine = iconize('transRedCircle') + "  <X1>" + newLine.substr(1, newLine.length) + "</X1>"
          }
-      } else if (lType == 'chord') {
-         m = "<x2>" + m
-         preSong = false; //^ stop counting prelines
-         if (TRANSPOSE !== 0) {
-            newLine = lineTranspose(newLine, TRANSPOSE);
-            m = m + "/Transpose(" + TRANSPOSE + ")"
-         } else if (BIGchords === true) {
-            m = m + "/Big Chords(" + BIGchordSize * 100 + "%)"
-            newLine = newLine.replace(/\s+/g, ''); //remove spaces    
-            arr = newLine.split('|'); //split line into arr
-            arr.splice(0, 1); //get rid of element in front of the first bar
-            bars = BARSperLine; //use BARSperLine established at song load
-            barLen = parseInt(LONGLINE / (bars * BIGchordSize), 10) - 1; //determine the length of a bar for big chords
-            newLine = "";
-            n = 0;
-            if (arr.length > bars) {
-               barLen = parseInt(barLen * bars / arr.length, 10);
-            } //if more than std number of bars
-            while (n < arr.length) {
-               temp = arr[n];
-               while (temp.length <= barLen) {
-                  temp = temp.replace(/~/g, " ~");
-                  temp = temp + ' ';
+      }else if (lType == 'chord') {
+            m = "<x2>" + m
+            preSong = false; //^ stop counting prelines
+            if (TRANSPOSE !== 0) {
+               newLine = lineTranspose(newLine, TRANSPOSE);
+               m = m + "/Transpose(" + TRANSPOSE + ")"
+            } else if (BIGchords === true) {
+               //?. below this???      
+               m = m + "/Big Chords(" + BIGchordSize * 100 + "%)"
+               newLine = newLine.replace(/\s+/g, ''); //remove spaces    
+               arr = newLine.split('|'); //split line into arr
+               arr.splice(0, 1); //get rid of element in front of the first bar
+               bars = BARSperLine; //use BARSperLine established at song load
+               barLen = parseInt(LONGLINE / (bars * BIGchordSize), 10) - 1; //determine the length of a bar for big chords
+               newLine = "";
+               n = 0;
+               if (arr.length > bars) {
+                  barLen = parseInt(barLen * bars / arr.length, 10);
+               } //if more than std number of bars
+               while (n < arr.length) {
+                  temp = arr[n];
+                  while (temp.length <= barLen) {
+                     temp = temp.replace(/~/g, " ~");
+                     temp = temp + ' ';
+                  }
+                  newLine = newLine + "|" + temp;
+                  n = n + 1;
                }
-               newLine = newLine + "|" + temp;
-               n = n + 1;
             }
-         }
+        /// }
          if (BARsync === true) {
             m = m + "/BarSync("
             var barLine = "";
@@ -919,6 +962,7 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
             newLine = newLine.replace(/<!--#/g, "<X16>")
          } //make them visible
          newLine = "<X100>" + newLine + "</X100>"
+      
       } else if (lType == 'header') {
          m = "<X8>" + m + "========================================</X8>"
          newLine = newLine.replace(/-/g, '=')
@@ -932,22 +976,20 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
          newLine = "<X8>" + newLine + "</X8>"
       } else if (lType == 'lyric') {
          m = "<X1>" + m;
-         if (BREAKlines === true) { //break long lyric lines and combine doubles to show bigger text 
-            if (j + 1 < ARRlines.length) {
-               extraLine = ARRlines[j + 1];
-               var extraType = lineType(extraLine)
-               if (lineType(extraLine) === 'lyric') { //||lineType(ARRlines[j+1])!==undefined||lineType(ARRlines[j+1])!==undefinedlines[j+1];
-                  newLine = newLine + extraLine;
-                  j = j + 1;
-               }
-            } //incase there is a 2nd lyric line
-            if (newLine.length > LONGLINE) {
-               if (newLine.length > parseInt(2 * LONGLINE, 10) - 5) {
-                  WARNING = "LYRIC LINES TOO LONG FOR SELECTED FONT >>> COMPLETE LINES MAY NOT BE DISPLAYED";
-               }
-               newLine = breakLine(newLine)
-               m = m + "/Split"
+         if (j + 1 < ARRlines.length) {
+            extraLine = ARRlines[j + 1];
+            var extraType = lineType(extraLine)
+            if (lineType(extraLine) === 'lyric') { //||lineType(ARRlines[j+1])!==undefined||lineType(ARRlines[j+1])!==undefinedlines[j+1];
+               newLine = newLine + extraLine;
+               j = j + 1;
             }
+         } //incase there is a 2nd lyric line
+         if (newLine.length > LONGLINE) {
+            if (newLine.length > parseInt(2 * LONGLINE, 10) - 5) {
+               WARNING = "LYRIC LINES TOO LONG FOR SELECTED FONT >>> COMPLETE LINES MAY NOT BE DISPLAYED";
+            }
+            newLine = breakLine(newLine)
+            m = m + "/Split"
          }
          if (CAPS === true) {
             newLine = newLine.toUpperCase();
@@ -980,10 +1022,9 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
             lineNum++;
          }
          if (LIVEnotes === true) {
-            //var q="</X16>"
             newLine = newLine.replace(/XX>/g, "X16>") //make them visible
-            newLine = newLine.replace(/#-->/g, "</X16>") //make them visible
-            newLine = newLine.replace(/<!--#/g, "<X16>") //make them visible
+            newLine = newLine.replace(/#-->/g, "</X16>") //make them visible//OBSOLETE
+            newLine = newLine.replace(/<!--#/g, "<X16>") //make them visible//OBSOLETE
          }
          m = m + "</X1>"
       } else if (lType == 'spacer') {
@@ -1075,7 +1116,7 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
       loadSongImage("../Img/" + TITLE + ".jpg");
    }
 }
-//*USE AN IMAGE FOR SONG======================================================================
+//.## IMAGE SONG (Not Text)
 function loadSongImage(path) {
     statusMsg('Loading Grapic Song Image...');
     var img = new Image();
@@ -1084,8 +1125,9 @@ function loadSongImage(path) {
         scrollSetup();
     });
 }
-//*SCROLL SETUP================================================================================
-function scrollSetup(img) { //alert('scrollSetup()');//^ get the song data,songHeight,iframeHeight,Duration,ScrollConstant Run after you set the content of page
+
+//.## SCROLL SETUP
+function scrollSetup(img) { //^ get the song data,songHeight,iframeHeight,Duration,ScrollConstant Run after you set the content of page
    statusMsg('Setting Up Scroll...', 'red');
    var mesg = "No Scroll Mesage"
    statusMsg(mesg, 0);
@@ -1106,13 +1148,13 @@ function scrollSetup(img) { //alert('scrollSetup()');//^ get the song data,songH
          DUR = 150;
          DURsource = "Wild Guess";
       }
-      statusMsg("Audio available", 0)
+      statusMsg("Audio available", 'green')
    }
    SCROLLkon = DUR * 1000 / SCROLLpix; // microseconds per pixel
    SCROLLbase = SCROLLkon;
    document.getElementById('speed2').innerHTML = parseInt(BPM)
    mesg = songSum()
-//*APPLY USER SETTINGS=====================================================================================
+   //.## APPLY USER SETTINGS
    statusMsg("Applying User's Screen Configuration...", 0);
    if (SOUNDmode !== "SILENT" || METRO == true) {
       dis('volCtrl', 'block');
@@ -1154,24 +1196,34 @@ function scrollSetup(img) { //alert('scrollSetup()');//^ get the song data,songH
    if (ALT === true) {
       document.getElementById('altSong').innerHTML = (PLAYlist[TUNEnum + 1].split('|')[0]);
    }
-   
-//*BOOT COMPLETE============================================================================   
+   //.## WRAP UP THE BOOT
+   statusMsg("Wrapping up the song load...")
+   statusMsg("Program Last Used on: " + localStorage.getItem('NPboot'), 0)
+   var d = new Date();
+   var result = d.toLocaleString();
+   localStorage.setItem('NPboot', result);
    screenFormat('Ready');
    document.getElementById("splash").style.display = 'none';
    document.getElementById('msg').style.top = "0%";
    msgColor = 'yellow'
    if (BOOT === true) {
-      clockRun()
+      if (localStorage.getItem('mail') != null) {
+         if (localStorage.getItem('mail').length > 1) {
+            document.getElementById('msg').style.width = "96%";
+            statusMsg("Unsent Mail...")
+         }
+      }
       dis('configuration', 'block');
+      clockRun()
       BOOT = false;
       if (window.innerHeight >= window.innerWidth) {
          alert("Rotate your device...Landscape works best...");
       }
-      if (STATUSmon === 1) {
+      if (STATUSmode === 1) {
          mesg = "Select Sound Mode > Select Playlist > Set Configuration..."
          msgColor = 'yellow';
          statusMonitor(0);
-      } else if ((STATUSmon === 2)) {
+      } else if ((STATUSmode === 2)) {
          mesg = "Boot Successful, You're in the Debug mode..."
          msgColor = 'red';
       }
@@ -1213,15 +1265,19 @@ function scrollSetup(img) { //alert('scrollSetup()');//^ get the song data,songH
       dis('bigPause', 'none');
       dis('bigPlay', 'none')
    }
-   if (SONGsource!='select'){
-      dis('nextIcon','none')
-      dis('lastIcon','none')   
-      //code
+   if (SONGsource != 'select') {
+      dis('nextIcon', 'none')
+      dis('lastIcon', 'none')
    }
+   if (localStorage.getItem('developer') == 'true') {
+      dis('developer', true)
+   };
+
    statusMsg(mesg, msgColor)
 }
-//*PLAYER ROUTINES====================================================
-//*   SCROLL ENGINE
+
+//.## PLAYER ROUTINES
+//.#      SCROLL ENGINE
 function scrollEngine() { //^ the actual scrolling routine keep it simple* before it starts SCOLLstartTime,SCROLLkon must be set
    var newPos;
    clearTimeout(TIMEOUTscroll) //stop scroll engine
@@ -1253,9 +1309,9 @@ function scrollEngine() { //^ the actual scrolling routine keep it simple* befor
                document.getElementById('b' + BAR).style.backgroundColor = 'yellow'
                document.getElementById('b' + parseInt(BAR - 1, 10)).style.backgroundColor = 'transparent'
             }
-            if (METRO === true) {
-               metro(0);
-            }
+      //$ if (METRO === true) {
+      //$         metro(0);
+      //$     }
             document.getElementById('b' + parseInt(BAR - 1, 10)).style.backgroundColor = 'transparent'
          }
       }
@@ -1284,7 +1340,7 @@ function scrollEngine() { //^ the actual scrolling routine keep it simple* befor
       }, SCROLLkon);
    }
 }
-//*SONG END=============================================================================
+//.#      END SONG
 function endSong() {
    clearTimeout('TIMEOUTfade')
    if (BARsync === true) {
@@ -1299,7 +1355,7 @@ function endSong() {
       CTO()
       Audio1.pause(); //stop the audio
       var dur = document.getElementById('Audio1').duration;
-      var Ypos = document.getElementById('Tune').scrollTop;
+      Ypos = document.getElementById('Tune').scrollTop;
       var now = document.getElementById('Audio1').currentTime;
       statusMsg('Scroll:' + parseInt(Ypos * 100 / SCROLLpix, 10) + '%  Time:' + parseInt(100 * now / dur, 10) + "%", 0);
       if (ENDpause == true & SOUNDmode == 'SILENT') {
@@ -1318,7 +1374,25 @@ function endSong() {
    }
 }
 
-//*MISC STUFF==========================================================================
+//.## MISC STUFF
+
+function printDiv(divName) {
+   var printContents = document.getElementById('print').innerHTML;    
+   var originalContents = document.body.innerHTML;      
+   document.body.innerHTML = printContents;
+   document.body.style.textAlign = 'left';
+   window.print();     
+   document.body.innerHTML = originalContents;
+   }
+
+
+
+
+
+
+
+
+
 function notePopUp(str, fs, clr, bak, def, title, status) { //string, font size, color and Default
    document.getElementById('cloudX').style.color = clr;
    document.getElementById('cloudX').style.backgroundColor = bak;
@@ -1340,7 +1414,7 @@ function CTO() { //^ clear all Timouts except blink
    clearTimeout(TIMEOUTnext);
    clearTimeout(TIMEOUTfade);
    clearTimeout(TIMEOUTwait);
-   clearTimeout(TIMEOUTmail);
+   //clearTimeout(TIMEOUTmail);
 }
 
 function scrollTune(pct, step) { //^ 25% of screen per second seems appropriate rate
@@ -1386,14 +1460,14 @@ function screenFormat(cmd, varA) { //^ configures the play screen to match the p
       dis("lastIcon", "block");
       dis("nextIcon", "block");
       //vis('cntDwn', 'hidden'); USELESS
-      if (cmd == "Scroll") { //alert('Scroll');
+      if (cmd == "Scroll") {
          if (BARsync === false) {
             dis('bigButtons', 'block');
          } else {
             dis('bigButtons', 'none')
-            if (METRO === true) {
-               dis('metronome', 'block')
-            }
+            //$if (METRO === true) {
+            //$   dis('metronome', 'block')
+            //$}
          }
          dis('bigPause', 'block')
          dis('bigPlay', 'none');
@@ -1416,7 +1490,7 @@ function screenFormat(cmd, varA) { //^ configures the play screen to match the p
          dis("msg", "block");
          dis('Audio1', 'block');
       }
-      if (cmd === "End") { //alert('End');
+      if (cmd === "End") {
          dis('bigButtons', 'none');
          dis('bigPlay', 'block');
          dis('bigReset', 'block');
@@ -1424,7 +1498,7 @@ function screenFormat(cmd, varA) { //^ configures the play screen to match the p
          dis("msg", "block");
          dis('Audio1', 'block');
       }
-      if (cmd === "Pause") { //alert('Pause');
+      if (cmd === "Pause") {
          dis('bigButtons', 'none');
          dis('bigPlay', 'block');
          dis('bigReset', 'block');
@@ -1450,7 +1524,7 @@ function screenFormat(cmd, varA) { //^ configures the play screen to match the p
       alert(cmd + " is an invalid Command");
    }
 }
-
+//.## SONG CONTROL
 function scrollRate(factor) {
     var oldBPM = BPM;
     if (BPM < 350 & factor < 1 | BPM > 30 & factor > 1) {
@@ -1461,58 +1535,6 @@ function scrollRate(factor) {
         SCROLLstartTime = new Date().getTime();
         Ystart = Ypos;
         Ypos = document.getElementById("Tune").scrollTop;
-    }
-}
-
-function countIntro() {
-    if (document.getElementById("Tune").scrollTop < 2 | COUNTin === true) {
-        metro(0)
-        screenFormat('Scroll')
-        dis('metronome', 'block')
-        document.getElementById('metronome').style.fontSize = '30vh'
-        document.getElementById('metronome').style.top = '60%'
-        document.getElementById('metronome').style.right = '45%'
-        document.getElementById('metronome').style.height = '30%'
-        document.getElementById('metronome').style.backgroundColor = 'yellow'
-        TIMEOUTcrap = setTimeout(function() {
-            if (METRO === false) {
-                dis('metronome', 'none')
-                clearTimeout(TIMEOUTmet)
-                trackPlay()
-            } else {
-                document.getElementById('metronome').style.fontSize = '10vh'
-                document.getElementById('metronome').style.right = '1%'
-                document.getElementById('metronome').style.top = '1%'
-                document.getElementById('metronome').style.height = '10%'
-                document.getElementById('metronome').style.backgroundColor = 'lightgrey'
-            }
-            trackPlay();
-        }, MET * BEATS);
-    } else {
-        trackPlay()
-    }
-}
-
-function metro(ct) {
-    clearTimeout(TIMEOUTmet)
-    ct++;
-    document.getElementById('metronome').innerHTML = ct
-    if (document.getElementById('metronome').style.backgroundColor == 'lightgrey') {
-        document.getElementById('metronome').style.backgroundColor = 'orange'
-    } else {
-        document.getElementById('metronome').style.backgroundColor = 'lightgrey'
-    }
-    if (SOUNDmode === 'SILENT') {
-        if (ct === 1) {
-            aB.play()
-        } else {
-            aB.play()
-        }
-    }
-    if (ct < METRObeats) {
-        TIMEOUTmet = setTimeout(function() {
-            metro(ct);
-        }, MET);
     }
 }
 
@@ -1533,40 +1555,7 @@ function trackPause() {
    screenFormat("Pause");
 }
 
-function trackPlayNOGOOD() { //pause options...undefined
-   Audio1.pause() //just in case
-   ENDscroll = false
-   CTO();
-   if (SOUNDmode === 'SILENT' | SOUNDmode === 'BACK TRACK') {
-      if (BARsync === false) {
-         trackAlign('Screen');
-      } else {
-         if (SOUNDmode === 'SILENT') {
-            trackAlign('Bar')
-         } else {
-            trackAlign('Audio')
-         }
-      }
-   } else if (SOUNDmode === 'CLICK TRACK' | SOUNDmode === 'DRUM COUNTRY' | SOUNDmode === 'DRUM ROCK') {
-      if (BARsync === true) {
-         trackAlign('Free Bar');
-      } else {
-         trackAlign('Free')
-      }
-   }
-   document.getElementById('Audio1').currentTime = POStrack
-   Ystart = document.getElementById('Tune').scrollTop = POSscreen
-   screenFormat("Scroll");
-   // = document.getElementById("tabBox").scrollLeft;
-   if (METRO === true & BAR === 0) {
-      metro(0)
-   }
-   statusMsg("PLAY STEP 2: " + document.getElementById("Audio1").currentTime + ' secs >>>' + POStrack, 0);
-   SCROLLstartTime = new Date().getTime();
-   document.getElementById("Audio1").play();
-   scrollEngine();
-}
-
+//.## PLAY TRACK
 function trackPlay() { //pause options...undefined
    Audio1.pause() //just in case
    ENDscroll = false
@@ -1588,10 +1577,10 @@ function trackPlay() { //pause options...undefined
    document.getElementById('Audio1').currentTime = POStrack
    Ystart = document.getElementById('Tune').scrollTop = POSscreen
    screenFormat("Scroll");
-   // = document.getElementById("tabBox").scrollLeft;
-   if (METRO === true & BAR === 0) {
-      metro(0)
-   }
+   //@ = document.getElementById("tabBox").scrollLeft;
+   //$if (METRO === true & BAR === 0) {
+   //$   metro(0)
+   //$}
    statusMsg("PLAY STEP 2: " + document.getElementById("Audio1").currentTime + ' secs >>>' + POStrack, 0);
    SCROLLstartTime = new Date().getTime();
    document.getElementById("Audio1").play();
@@ -1738,7 +1727,9 @@ function fadeOut(time, inc) {
 function fade(dir) {
    if (SOUND === true) {
       var fact;
-      var VOL = document.getElementById("Audio1").volume;
+      //.?===================
+   //@   var VOL = document.getElementById("Audio1").volume;
+      VOL = document.getElementById("Audio1").volume;
       document.getElementById('V').innerHTML = "<X2>" + parseInt(VOL * 100, 10) + "%</X2>";
       if (dir === 'x') {
          if (VOL > 0) {
@@ -1780,25 +1771,7 @@ function fade(dir) {
    }
 }
 
-function blinker(id, cycles) { //1/4 second per blink
-   var d = document.getElementById(id);
-   if (cycles > 0) {
-      if (d.style.visibility == 'visible') {
-         d.style.visibility = 'hidden';
-      } else {
-         d.style.visibility = 'visible';
-      }
-      TIMEOUTblink = setTimeout(function() {
-         clearTimeout(TIMEOUTblink);
-         cycles = cycles - 1;
-         blinker(id, cycles);
-      }, 125);
-   } else {
-      clearTimeout(TIMEOUTblink);
-      d.style.visibility = 'visible';
-   }
-}
-
+//.##    UNCLASSIFIED???
 function unique( /*str[]*/ arr) { //^ finds unique elements in an array arr
    var o = {},
       r = [],
@@ -1811,23 +1784,9 @@ function unique( /*str[]*/ arr) { //^ finds unique elements in an array arr
    return r;
 }
 
-function flash(msg, dur) {
-   if (msg !== MSGlast) {
-      var TIMEOUTflash;
-      var oldMsg = MSGlast;
-      if (dur === undefined) {
-         dur = 3;
-      }
-      dur = parseInt(dur * 1000, 10);
-      statusMsg(msg, 'red');
-      TIMEOUTflash = setTimeout(function() {
-         statusMsg(oldMsg);
-      }, dur);
-   }
-}
 
-//*LOOP functions=======================================================================================
 
+//.## LOOP FUNCTIONS
 function endLoop() {
    screenFormat('Ready');
    CTO();
@@ -1929,8 +1888,7 @@ function resetLoop(step, px) {
    }
 }
 
-//*CONFIG FUNCTIONS===================================================
-
+//.## CONFIG FUNCTIONS
 function showSetting(num) { // alert('showSetting('+num+')')
    statusMsg("Displaying key, tempo or track type", 0)
    var iconString;
@@ -2064,7 +2022,7 @@ function setSoundMode(mode, icon) {
    SOUNDmode = mode;
    loadServerTrack();
 }
-
+//.## PRESETS
 function presets(action) {
    // 0        1          2        3   4    5     6     7         8        9         10        11      12         13       14     15     16  
    //ARRpresets="CAPS,FULLscreen,LEFTborder,CLOCK,TEXT,SHADE,NOTES,SETnotes,POPnotes,TECHnotes,LIVEnotes,COUNTin,BREAKlines,BIGchords,LOOPER,METRO,BARsync".split(',');
@@ -2083,14 +2041,14 @@ function presets(action) {
    } else if (PRESET === "Perform Mode") {
       if (action == 'presets') {
          //                 0        1          2        3   4    5     6     7         8        9         10        11      12         13       14     15     16  
-         //var ARRpresets="CAPS,FULLscreen,LEFTborder,CLOCK,TEXT,SHADE,NOTES,SETnotes,POPnotes,TECHnotes,LIVEnotes,COUNTin,BREAKlines,BIGchords,LOOPER,METRO,BARsync".split(',');
-         ARRtf = "false,true,false,true,false,false,true,true,false,false,true,true,true,true,false,false,true".split(',');
+         //var ARRpresets="CAPS,FULLscreen,LEFTborder,CLOCK,TEXT,SHADE,NOTES,SETnotes,POPnotes,TECHnotes,LIVEnotes,unUsed,BREAKlines,BIGchords,LOOPER,unUsed,BARsync".split(',');
+         ARRtf = "true,true,false,true,false,false,true,true,false,false,true,true,true,true,false,false,true".split(',');
          setCustom(ARRpresets[PRESETno], ARRtf[PRESETno], 'presets')
       } else if (action == 'wrap') {
          document.getElementById('soundSelector').selectedIndex = 2; //back Track
          setSoundModeDefault(document.getElementById('soundSelector').value);
-         selectPlaylist('Fred Solo-BT')
-         document.getElementById('Set').value = 'Fred Solo-BT';
+         selectPlaylist('A-Fred Solo')
+         document.getElementById('Set').value = 'A-Fred Solo';
       }
    } else if (PRESET === "Practice Mode") {
       if (action == 'presets') {
@@ -2100,7 +2058,7 @@ function presets(action) {
           alert('WRAP ' +PRESET)
          document.getElementById('soundSelector').selectedIndex = 0;
          setSoundModeDefault(document.getElementById('soundSelector').value);
-selectPlaylist('Breen')
+         selectPlaylist('Breen')
          document.getElementById('Set').value = 'Breen';
       }
    } else if (PRESET === "Developer Mode") {
@@ -2134,12 +2092,12 @@ function setCustom(VAR, val, action) {
    if (action === 'toggle') { //single change not using ARRtf
       statusMsg(VAR + "-" + val + "-" + action)
       if (VAR!=BREAKlines||VAR!=BIGchords){  
-         if (window[VAR] === true) {
-            window[VAR] = false;
-            icon = "off.png";
-         } else {
-            window[VAR] = true;
-            icon = "on.png";
+      if (window[VAR] === true) {
+         window[VAR] = false;
+         icon = "off.png";
+      } else {
+         window[VAR] = true;
+         icon = "on.png";
          }
       }
       AC = true;
@@ -2154,7 +2112,8 @@ function setCustom(VAR, val, action) {
       } else {
          val = false
       }
-      ico = ARRimg[PRESETno]
+      ico = 'img' + ARRpresets[PRESETno]
+      //ico = ARRimg[PRESETno]
       statusMsg(PRESETno + ": " + VAR + "=" + val + "-" + action)
       if (val === true) {
          icon = "on.png";
@@ -2166,141 +2125,117 @@ function setCustom(VAR, val, action) {
       document.getElementById(ico).src = "../../Icons/" + icon;
       statusMsg(PRESET + ">" + VAR + ">" + ico + ">" + icon + ">" + val)
    } else if (action == 'wrap') {
-      statusMsg("WRAPPING UP")
-      ARRconvert()
+      arrConvert()
    }
-
    if (VAR == 'BREAKlines') { //works with BIGchords
-      if (LINElimit >50) {
-         LINElimit = parseInt(LINElimit - 5,0);
-          document.getElementById('imgBREAKlines').src = "../../Icons/on.png"
-      } else{
-        LINElimit = 90;
+      if (LINElimit > 35) {
+         LINElimit = parseInt(LINElimit - 5, 0);
+         document.getElementById('imgBREAKlines').src = "../../Icons/on.png"
+      } else {
+         LINElimit = 90;
          document.getElementById('imgBREAKlines').src = "../../Icons/off.png"
       }
-      document.getElementById('breakLines').innerHTML = "CHAR<br>" + LINElimit;
+      document.getElementById('breakLines').innerHTML = "CHAR<br>" + LINElimit + "/ln";
       AC = true;
    }
-
-
-if (VAR == 'BIGchords') {
-   BIGchordSize = BIGchordSize + 0.25;
-   if (BIGchordSize > 2.2) {
-      (BIGchordSize = 1.00)
+   if (VAR == 'BIGchords') {
+      BIGchordSize = BIGchordSize + 0.25;
+      if (BIGchordSize > 2.2) {
+         (BIGchordSize = 1.00)
+      }
+      if (BIGchordSize == 1) {
+         document.getElementById('imgBIGchords').src = "../../Icons/off.png"
+      } else {
+         document.getElementById('imgBIGchords').src = "../../Icons/on.png"
+      }
+      document.getElementById('bcp').innerHTML = "Chord<br>" + parseInt(BIGchordSize * 100) + "%"
+      AC = true;
    }
-   if (BIGchordSize == 1) {
-      document.getElementById('imgBIGchords').src = "../../Icons/off.png"
-   } else {
-      document.getElementById('imgBIGchords').src = "../../Icons/on.png"
+   if (VAR == 'SETnotes' & SETnotes === true) {
+      document.getElementById("imgPOPnotes").src = "../../Icons/off.png";
+      POPnotes = false;
+      document.getElementById("imgTECHnotes").src = "../../Icons/off.png";
+      TECHnotes = false;
+      AC = false;
    }
-   document.getElementById('bcp').innerHTML = "Chord<br>" + parseInt(BIGchordSize * 100) + "%"
-   AC = true;
-}
-if (VAR == 'SETnotes' & SETnotes === true) {
-   document.getElementById("imgPOPnotes").src = "../../Icons/off.png";
-   POPnotes = false;
-   document.getElementById("imgTECHnotes").src = "../../Icons/off.png";
-   TECHnotes = false;
-   AC = false;
-}
-if (VAR == 'POPnotes' & POPnotes === true) {
-   document.getElementById("imgSETnotes").src = "../../Icons/off.png";
-   SETnotes = false;
-   document.getElementById("imgTECHnotes").src = "../../Icons/off.png";
-   TECHnotes = false;
-   AC = false
-}
-if (VAR == 'TECHnotes' & TECHnotes === true) {
-   document.getElementById("imgSETnotes").src = "../../Icons/off.png";
-   SETnotes = false;
-   document.getElementById("imgPOPnotes").src = "../../Icons/off.png";
-   POPnotes = false;
-   AC = false
-}
-if (VAR == 'LINEnum' & LINEnum === true) {
-   window[LINEtime] = false;
-   document.getElementById("imgLINEtime").src = "../../Icons/off.png";
-   LINEtime = false;
-   AC = true
-}
-if (VAR == 'LINEtime' & LINEtime === true) {
-   window[LINEnum] = false;
-   document.getElementById("imgLINEnum").src = "../../Icons/off.png";
-   LINEnum = false;
-   AC = true
-}
-if (VAR == 'FULLscreen') {
-   if (FULLscreen === true) {
-      launchIntoFullscreen(document.documentElement);
-   } else {
-      exitFullscreen();
+   if (VAR == 'POPnotes' & POPnotes === true) {
+      document.getElementById("imgSETnotes").src = "../../Icons/off.png";
+      SETnotes = false;
+      document.getElementById("imgTECHnotes").src = "../../Icons/off.png";
+      TECHnotes = false;
+      AC = false
    }
-
-}
-if (VAR == 'LOOPER') {
-   if (LOOPER === true) {
-      document.getElementById('looper').style.display = 'block';
-   } else {
-      document.getElementById('looper').style.display = 'none';
+   if (VAR == 'TECHnotes' & TECHnotes === true) {
+      document.getElementById("imgSETnotes").src = "../../Icons/off.png";
+      SETnotes = false;
+      document.getElementById("imgPOPnotes").src = "../../Icons/off.png";
+      POPnotes = false;
+      AC = false
    }
-}
-if (VAR == 'TEXT') {
-   if (TEXT === true) {
-      document.getElementById("imgTEXT").src = "../../Icons/on.png"
-   } else {
-      document.getElementById("imgTEXT").src = "../../Icons/off.png"
+   if (VAR == 'LINEnum' & LINEnum === true) {
+      window[LINEtime] = false;
+      document.getElementById("imgLINEtime").src = "../../Icons/off.png";
+      LINEtime = false;
+      AC = true
    }
-
-}
-if (VAR == 'METRO') {
-   if (METRO === true) {
-      document.getElementById('imgBARsync').src = '../../Icons/on.png';
-      aB.play();
-      aC.play();
-      BARsync = true;
+   if (VAR == 'LINEtime' & LINEtime === true) {
+      window[LINEnum] = false;
+      document.getElementById("imgLINEnum").src = "../../Icons/off.png";
+      LINEnum = false;
+      AC = true
    }
-}
-if (VAR == 'BARsync') {
-   if (BARsync === false) {
-      document.getElementById('imgMETRO').src = '../../Icons/off.png';
-      METRO = false;
+   if (VAR == 'FULLscreen') {
+      if (FULLscreen === true) {
+         launchIntoFullscreen(document.documentElement);
+      } else {
+         exitFullscreen();
+      }
    }
-}
-if (VAR == 'COUNTin') { //USELESS click removed
-
-   if (COUNTin === false) {
-      document.getElementById("imgCLICKER").src = "../../Icons/off.png"
-      CLICKER = false
+   if (VAR == 'LOOPER') {
+      if (LOOPER === true) {
+         document.getElementById('looper').style.display = 'block';
+      } else {
+         document.getElementById('looper').style.display = 'none';
+      }
    }
-   alert('cleared COUNTin')
-}
-if (VAR == 'BIGselect') {
-   if (BIGselect === false) {
-      document.getElementById("imgBIGselect").src = "../../Icons/off.png"
-      document.getElementById('BSbutton').style.display = 'none'
-   } else {
-      document.getElementById('BSbutton').style.display = 'block'
-      createPlayListSelector()
+   if (VAR == 'TEXT') {
+      if (TEXT === true) {
+         document.getElementById("imgTEXT").src = "../../Icons/on.png"
+      } else {
+         document.getElementById("imgTEXT").src = "../../Icons/off.png"
+      }
    }
-}
-if (action === 'toggle') {
-   if (AC === true | AC == 'true') {
-      statusMsg("Toggle required array converstion")
-      arrConvert();
+   //$if (VAR == 'METRO') {
+   //$   if (METRO === true) {
+   //$      document.getElementById('imgBARsync').src = '../../Icons/on.png';
+   //$      aB.play();
+   //$      aC.play();
+   //$     BARsync = true;
+   //$  }
+   //$}
+   if (VAR == 'BARsync') {
+      if (BARsync === false) {
+         document.getElementById('imgMETRO').src = '../../Icons/off.png';
+         METRO = false;
+      }
    }
-} else if (action === 'presets') { //this is the return point to prevent excessive arrConverstions
-   if (PRESETno > 15) {
-      statusMsg("<X2>arrConvert Triggered Preset ALL...</X2>", 0)
-      alert('wrapping it up')
-      presets('wrap')
-   } else {
-      PRESETno = PRESETno + 1;
-      setCustom('', '', 'presets')
+   if (action === 'toggle') {
+      if (AC === true | AC == 'true') {
+         statusMsg("Toggle required array converstion")
+         arrConvert();
+      }
+   } else if (action === 'presets') { //this is the return point to prevent excessive arrConverstions
+      if (PRESETno > 15) {
+         statusMsg("<X2>arrConvert Triggered Preset ALL...</X2>", 0)
+         presets('wrap')
+      } else {
+         PRESETno = PRESETno + 1;
+         setCustom('', '', 'presets')
+      }
    }
-}
 }
 
-
+//.## MISC FUNCTIONS
    function launchIntoFullscreen(element) {
       if (element.requestFullscreen) {
          element.requestFullscreen();
@@ -2386,15 +2321,15 @@ if (action === 'toggle') {
       document.getElementById('V').innerHTML = parseInt(100 * VOL, 10) + '%';
       document.getElementById("Audio1").volume = document.getElementById("aB").volume = document.getElementById("aC").volume = VOL
    }
-
-   function revDates() { //date of last mod to js file????
+//@
+   function XXXrevDates() { //date of last mods
       var xhReq = new XMLHttpRequest();
       xhReq.open("HEAD", JSname, false);
       xhReq.send(null);
-      JHdate = "REVISION: " + REV + " <> HTML: " + document.lastModified + " <> JavaScript: " + xhReq.getResponseHeader("Last-Modified")
+      return 'HTML: '+document.lastModified+ '  <>  JAVASCRIPT: ' +new Date(xhReq.getResponseHeader("Last-Modified")).toLocaleString();
    }
 
-   function indx(L) {
+   function indx(L) {//for sheach by first letter
       var n = 0;
       document.getElementById('mySet').selectedIndex = n;
       var str = document.getElementById('mySet').value;
@@ -2415,12 +2350,11 @@ if (action === 'toggle') {
       var urlString = 'url(' + url + ')';
       document.getElementById(id).style.backgroundImage = urlString;
    }
-
+//@
 function bcPct() { //BigChordPCT
-alert('shit')
+alert('shit\n bcPCT is apparently dead this is a trip wire')
       }
-//^TRANSPOSE FUNCTIONS====================================================AAA
-
+//.## TRANSPOSE FUNCTIONS
 function lineTranspose(line, steps) { //^ transpose entire line and try to keep the absolute chord spacing despite differnces in chr of new chord
    var lineNew;
    if (steps === 0) {
@@ -2551,8 +2485,9 @@ function noteTranspose(note, steps) { //^ must be sure to add # or b beforce cal
    return noteNew;
 }
 
-//**NAVIGATION FUNCTIONS ===========================================
-//function editor(){window.open(encodeURI("editor.html?"+(encodeFredComponent(ARRlines.join("\n")))));}//^ WORKS ON WICKED GAME
+//.## NAVIGATION FUNCTIONS
+//.?function editor(){window.open(encodeURI("editor.html?"+(encodeFredComponent(ARRlines.join("\n")))));}//^ WORKS ON WICKED GAME
+
 function delay(ms) {
     statusMsg("#####################################################", 0)
     var n = 1;
@@ -2580,8 +2515,8 @@ function iRealLink(){if(confirm('If this computer has Ireal Pro installed press 
 
 function fileMaster(){window.open("FileMaster.html");}
 
-//**ANALYSIS FUNCTIONS==================================================
-//^ perform general functions and can be adapted to different screens 
+//.## ANALYSIS FUNCTIONS
+// perform general functions and can be adapted to different screens 
 
 function songSum(){
     var mesg = "<X1>" + parseInt(TUNEnum + 1, 10)+ "/" + parseInt(PLAYlist.length,10);
@@ -2656,32 +2591,23 @@ function lyricLineCount(){
         i++;}    
     return count;}
 
-function getRevisonHistory(){//^ Selects your set by its name
+
+
+function getTextFileFetch(path) {
+   fetch(path)
+  .then(response => response.text())
+  .then((data) => {
+    console.log(data)
+  })
+   }
+
+
+
+function getTextFile(path){//^ Selects your set by its name
     var request = new XMLHttpRequest();
-    path ="Player.txt";
     request.open("GET", path, false);
     request.send(null);
     return(request.responseText); }
-
-function getHelpFile(){//^ Selects your set by its name
-    var request = new XMLHttpRequest();
-    path ='HelpText.txt';
-    request.open("GET", path, false);
-    request.send(null);
-    return(request.responseText); } 
-
-function getHelpIndex(){//^ Selects your set by its name
-    var request = new XMLHttpRequest();
-    path ="Help\HelpIndex.html";
-    request.open("GET", path, false);
-    request.send(null);
-    return(request.responseText); }
-
-function displayHelp(path){//^ Selects your set by its name
-    var request = new XMLHttpRequest();
-    request.open("GET", path, false);
-    request.send(null);
-    document.getElementById('helpText').innerHTML= "<pre>"(request.responseText)+"</pre>"; }
 
 function chordLines(){//^ Common Lyic
     var i=0;
@@ -2747,7 +2673,7 @@ function firstLineValues(type){//^ creates first line defaults then modifies usi
         HITyear = hash(ARRlines[0],"HITyear","Unknown");
         ARTIST = hash(ARRlines[0],"ARTIST","Unknown");}}
         
-//FILE FUNCTIONS===============================================AAA
+//.## FILE FUNCTIONS
 function setUpListener(){document.getElementById('fileinput').addEventListener('change', loadFile, false); }//should be renamed here and html
 
 function loadFile(e){//gets the file//does not update the player until you go there --needs some time so I gave it 2 seconds;
@@ -2766,8 +2692,7 @@ function readSingleFile(e){
         TITLE = (file.name.substring(0,(file.name.length)-4));};
     reader.readAsText(file);}
     
-//^LYRIC COMMON FUNCTIONS==================================================These functions are general utility
-//APPLICATIONS=======================================================AAA
+//.## LYRIC COMMON FUNCTIONS  These functions are general utility
 function barSelect(bar) {
     var arrBar = "configuration,tool,songbar,cloud".split(","); //,information,
     var j = 0;
@@ -2815,36 +2740,10 @@ function printFormat(){
         j++;}
     return pf;}
 
-//*GLOBAL FUNCTIONS Used from any screen ===============================================AAA
+//.## GLOBAL FUNCTIONS Used from any screen
 function fileFromPath(path){
     path = path.split('/');return (path[path.length-1]);}
 
-function statusMsg(msg,bgcolor,marq){// COLOR SCHEME: light grey=normal;red=problem ;yellow-pause or inwork; green=Ready
-    if(msg===null||msg==='' || msg===" ") {msg = "ERROR: No Status Message Passed";}
-    if(STATUSmon>0) {
-        if(ARRstatusLog.length>LOG){ARRstatusLog.pop()}
-        if(bgcolor==0){ARRstatusLog.splice(0,0,stdTime("",true)+"       <X8>"+msg+"</X8>");}
-        else{ARRstatusLog.splice(0,0,stdTime("",true) +"  <X1>"+msg+"</X1>");}}
-    if(STATUSmon>1){    
-        document.getElementById('bootText').innerHTML="<pre>"+ARRstatusLog.join('<br>')+"</pre>";}    
-    if(bgcolor==0) {return}
-    if(bgcolor==1) {alert("STATUS MSG\n"+msg);return}
-    sm2(msg,bgcolor,marq);}    
-
-function sm2(msg,bgcolor,marq){
-    var clr="black";
-    MSG2=MSGlast;
-    if(msg===null){msg="*"+MSGlast;}
-    else{MSGlast = msg;}
-    if(document.getElementById('splash').style.display=="block") {bgcolor = "transparent"}
-    else if(bgcolor == "black"|bgcolor == "red"|bgcolor == "green"|bgcolor == "blue"|bgcolor=='grey'){clr = 'white';}
-    else if(bgcolor == "yellow"|bgcolor == "transparent"){clr = 'green';}
-    else if(bgcolor == "none"|bgcolor == "transparent"){clr = "transparent";}
-    else{bgcolor = 'lightgrey';}//default
-    if(marq===true){msg= "<marquee><mark>"+msg+"</mark></marquee>";bgcolor='yellow'}
-    document.getElementById("msg").style.color = clr;
-    document.getElementById("msg").style.backgroundColor = bgcolor;
-    document.getElementById("msg").innerHTML = msg;} 
 
 function secToMin(sec){ //grey-normal;red-attention Required ;yellow-normal pause or inwork//^ XXX this sucks
     var m =parseInt((sec/60),10);
@@ -2913,19 +2812,19 @@ function decodeFredComponent(str){ //grey-normal;red-attention Required ;yellow-
     return str;}
     
 function lineType(str){   
-    var ans ="lyric";
-    if(str.substring (0,7).toUpperCase()=="IREALB:"){ans = "irealb";}    
-    else if(str.substring (0,4).toUpperCase()=="TAB:"){ans = "tab";}    
-    else if(str.substring (0,4)=="http")  {ans = "link";}
-    else if(str.substring (0,3)=="@@@")  {ans = "noteTech";} 
-    else if(str.substring (0,2)=="@@")  {ans = "noteTriv";}
-    else if(str.substring (0,1)=="@")  {ans = "note";}
-    else if(str.substring (0,1)=="#") {ans = "header";}
-    else if(str.substring (0,2)=="$$") {ans = "noteLive";}
-    else if(str.substring (0,1)=="$") {ans = "spacer";}
-    else if(str.search(":")>-1) {ans = "hash";}
-    else if(str.indexOf("|") >-1){ans ="chord";}
-    return ans;}
+    var t ="lyric";
+    if(str.substring (0,7).toUpperCase()=="IREALB:"){t = "irealb";}    
+    else if(str.substring (0,4).toUpperCase()=="TAB:"){t = "tab";}    
+    else if(str.substring (0,4)=="http"){t = "link";}
+    else if(str.substring (0,3)=="@@@"){t = "noteTech";} 
+    else if(str.substring (0,2)=="@@"){t = "noteTriv";}
+    else if(str.substring (0,1)=="@"){t = "note";}
+    else if(str.substring (0,1)=="#"){t = "header";}
+    else if(str.substring (0,2)=="$$"){t = "noteLive";}
+    else if(str.substring (0,1)=="$"){t = "spacer";}
+    else if(str.search(":")>-1){t = "hash";}
+    else if(str.indexOf("|") >-1){t ="chord";}
+    return t;}
     
 function longestLine(){
     var count =0;
@@ -2937,7 +2836,7 @@ function longestLine(){
             if(ARRlines[i].length > count){count = ARRlines[i].length;}}
         i++;}    
     return count;}
-    
+
 function stdTime(androidTime,sec){//returns hh:mm:ss with AM or PM
     var s=0;
     var h=0;
@@ -2968,25 +2867,51 @@ function barsClear() {
     statusMsg("ALL BARS: " + BARS + " cleared..", 0)
 }
 
-//*DEVELOPER FUNCTIONS ===================================================================
+//.## STATUS FUNCTIONS
+function statusMsg(msg,bgcolor,marq){// COLOR SCHEME: light grey=normal;red=problem ;yellow-pause or inwork; green=Ready
+    if(msg===null||msg==='' || msg===" "||msg==undefined) {msg = "ERROR: No Status Message Passed";}
+    if(STATUSmode>0) {//Log it
+        if(ARRstatusLog.length>LOG){ARRstatusLog.pop()}
+        if(bgcolor==0){ARRstatusLog.splice(0,0,stdTime("",true)+"       <X8>"+msg+"</X8>");}
+        else{ARRstatusLog.splice(0,0,stdTime("",true) +"  <X1>"+msg+"</X1>");}}
+    if(STATUSmode>1){    
+        document.getElementById('bootText').innerHTML="<pre>"+ARRstatusLog.join('<br>')+"</pre>";}    
+    if(bgcolor==0) {return}
+    if(bgcolor==1) {alert("STATUS MSG\n"+msg);return}
+    sm2(msg,bgcolor,marq);}    
+
+function sm2(msg,bgcolor,marq){//^POST the msg
+    var clr="black";
+    if(msg===null){msg="*"+MSGlast;}
+    else{MSGlast = msg;}
+    if(document.getElementById('splash').style.display=="block") {bgcolor = "transparent"}
+    else if(bgcolor == "black"|bgcolor == "red"|bgcolor == "green"|bgcolor == "blue"|bgcolor=='grey'){clr = 'white';}
+    else if(bgcolor == "yellow"|bgcolor == "transparent"){clr = 'green';}
+    else if(bgcolor == "none"|bgcolor == "transparent"){clr = "transparent";}
+    else{bgcolor = 'lightgrey';}//default
+    if(marq===true){msg= "<marquee><mark>"+msg+"</mark></marquee>";bgcolor='yellow'}
+    document.getElementById("msg").style.color = clr;
+    document.getElementById("msg").style.backgroundColor = bgcolor;
+    document.getElementById("msg").innerHTML = msg;} 
+
 function statusMonitor(m) { //set the statusMonitor function
     var line = ""
     if (m === 0) {
-        line = "<X2>Debug Log Deactivated==================</X2>";
+        line = "<X2>Debug Log Deactivated</X2>";
         dis('statusWindow', 'none');
         dis('bug', 'none');
-    }
-    if (m === 1) {
+    }else if (m === 1) {
         dis('statusWindow', 'none');
         dis('bug', 'block');
-        line = "<X2>Debug Log Active and Hidden============</X2>";
-    } else if (m === 2) {
+        line = "<X2>Debug Log Active and Hidden</X2>";
+    } else {
+        m=2
         dis('statusWindow', 'block');
         dis('bug', 'block');
-        line = "<X2>Debug Log Active and Displayed=========</X2>";
+        line = "<X2>Debug Log Active and Displayed</X2>";
     }
-    STATUSmon = m;
-    statusMsg(line, 0);
+    STATUSmode = m;
+    statusMsg(line, "yellow");
 }
 
 function monitorWindow() {
@@ -2999,7 +2924,7 @@ function monitorWindow() {
     }
 }
 function setMonitor() {
-    if (STATUSmon === 0) {
+    if (STATUSmode === 0) {
         statusMonitor(2)
     } else {
         statusMonitor(0)
@@ -3021,18 +2946,146 @@ function bugButton(but) {
     output = but + "----------\n" + output+"\n"+but + "^^^^^^^^^^^^^^\n"
     document.getElementById('devText').innerHTML=output;dis('devText','block');
 }
-//*BOGUS FUNCTIONS===========================================================
-function sleep(mSec) {//stops execution experimental
+
+
+//.## DEVLOPER FUNCTIONS
+function badCode(){alert(parseInt(23/0,10))}//
+
+function devShrink() {
+   if (document.getElementById('developer').style.width == "3vw") {
+      document.getElementById('developer').style.height = "7vw"
+      document.getElementById('developer').style.width = "24vw"
+      document.getElementById('devShrink').style.top = "0vw"
+      document.getElementById('devShrink').style.height = "1vw"
+      document.getElementById('devShrink').innerHTML = "HIDE"
+   } else {
+      document.getElementById('developer').style.height = "3vw"
+      document.getElementById('developer').style.width = "3vw"
+      document.getElementById('devShrink').style.top = "1vw"
+      document.getElementById('devShrink').style.height = "2vw"
+      document.getElementById('devShrink').innerHTML = "SHOW"
+   }
+}
+//.#    SHIT (DO NOT DELETE)
+//CREATE the if/else for SHIT to use or bypass sections completely
+function toggleShit(){
+   //hide from the public: look for 'SHIT' to find the changes
+      if(SHIT==true ) {
+      SHIT=false;
+      document.getElementById('tShit').src="../../Icons/NS.png";
+      }else{
+      SHIT=true;
+      document.getElementById('tShit').src="../../Icons/DS.png";   
+      statusMsg("You're in DEEP SHIT!")
+   }
+   arrConvert()//set this depending on where you want to go back to
+}
+
+//.## DRAGABLE DIV :
+dragElement(document.getElementById("backtracker"));
+dragElement(document.getElementById("statusWindow"));
+dragElement(document.getElementById("cloud"));
+dragElement(document.getElementById("mailer"));
+dragElement(document.getElementById("localAction"));
+dragElement(document.getElementById("developer"));
+
+function dragElement(elmnt) {
+   //left some touch commands in to work later
+   var pos1 = 0,
+      pos2 = 0,
+      pos3 = 0,
+      pos4 = 0;
+   if (document.getElementById(elmnt.id + "header")) {
+      /* if present, the header is where you move the DIV from:*/
+      document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+      document.getElementById(elmnt.id + "header").ontouchstart = dragMouseDown;
+   } else {
+      /* otherwise, move the DIV from anywhere inside the DIV:*/
+      elmnt.onmousedown = dragMouseDown;
+      elmnt.ontouchstart = dragMouseDown;
+   }
+
+   function dragMouseDown(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // get the mouse cursor position at startup:
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      document.onmouseup = closeDragElement;
+      document.ontouchend = closeDragElement;
+      document.onmousemove = elementDrag;
+      document.ontouchmove = elementDrag;
+   }
+
+   function elementDrag(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // calculate the new cursor position:
+      pos1 = pos3 - e.clientX;
+      pos2 = pos4 - e.clientY;
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      // set the element's new position:
+      elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+      elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+   }
+
+   function closeDragElement() {
+      /* stop moving when mouse button is released:*/
+      document.onmouseup = null;
+      document.onmousemove = null;
+      document.ontouchend = null;
+      document.ontouchmove = null;
+   }
+}
+//.## BOGUS FUNCTIONS
+
+function bogus() { //modify during development
+   flash("BOGUS BLINKER AND FLASH DEMO!" ,4);
+   blinker("ButtonHome", 24);
+}
+
+function sleep(mSec) {//stops execution experimental for m milleseconds
     statusMsg('<X2>SLEEPING for '+mSec + 'milliseconds</X2>')
     var currentTime= new Date().getTime();
     while (currentTime + mSec >= new Date().getTime()){}}
 
-function badCode(){alert(parseInt(23/0,10))}//
+function flash(msg, dur) {
+   if (msg !== MSGlast) {
+      //.?
+      var TIMEOUTflash;
+      var oldMsg = MSGlast;
+      if (dur === undefined) {
+         dur = 3;
+      }
+      dur = parseInt(dur * 1000, 10);
+      statusMsg(msg, 'red');
+      TIMEOUTflash = setTimeout(function() {
+         statusMsg(oldMsg);
+      }, dur);
+   }
+}
 
-function bogus() {flash("QUALITY: "+ QUAL,3);blinker("msg",5);}
+function blinker(id, cycles) { //1/4 second per blink
+   var d = document.getElementById(id);
+   if (cycles > 0) {
+      if (d.style.visibility == 'visible') {
+         d.style.visibility = 'hidden';
+      } else {
+         d.style.visibility = 'visible';
+      }
+      TIMEOUTblink = setTimeout(function() {
+         clearTimeout(TIMEOUTblink);
+         cycles = cycles - 1;
+         blinker(id, cycles);
+      }, 125);
+   } else {
+      clearTimeout(TIMEOUTblink);
+      d.style.visibility = 'visible';
+   }
+}
 
-//*INWORK FUNCTIONS===========================================================
-function countBARS() {
+function countBARS() { //counts bars to sync with bars in backtrack
    MAP = "".split(',')
    ARRbars.length = 0;
    BARS = 0;
@@ -3091,7 +3144,7 @@ function rollMirror(tf) {
          if (MIRROR === 1) {
             document.getElementById("mirror").innerHTML = parseInt(parseFloat(BPM, 10) + 0.49, 10);
             document.getElementById('mirrorImage').src = '../../Icons/transCircleGreen.png';
-         } //????
+         } //?.
          else if (MIRROR === 2) {
             document.getElementById("mirror").innerHTML = KEY;
             document.getElementById('mirrorImage').src = '../../Icons/transCircleYellow.png';
@@ -3112,7 +3165,6 @@ function rollMirror(tf) {
 }
 
 function breakLine(line) {
-   //statusMsg("Formatting Fixed Font: " + line, 0)
    var last = 0;
    var newLine = "";
    var j;
@@ -3142,64 +3194,10 @@ function breakLine(line) {
    return (newLine);
 }
 
+//.? probably belongs in a visual category 
 function opacSet(id, opac) {
    if (opac === undefined | opac === null | opac > 1) {
       opac = 1
    };
    document.getElementById(id).style.opacity = opac
-} //set opacity
-
-//*Make the DIV element draggagle:=====================================================================================================
-dragElement(document.getElementById("backtracker"));
-dragElement(document.getElementById("statusWindow"));
-dragElement(document.getElementById("cloud"));
-dragElement(document.getElementById("mailer"));
-
-function dragElement(elmnt) {
-   var pos1 = 0,
-      pos2 = 0,
-      pos3 = 0,
-      pos4 = 0;
-   if (document.getElementById(elmnt.id + "header")) {
-      /* if present, the header is where you move the DIV from:*/
-      document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-      //document.getElementById(elmnt.id + "header").ontouchstart =dragMouseDown;
-   } else {
-      /* otherwise, move the DIV from anywhere inside the DIV:*/
-      elmnt.onmousedown = dragMouseDown;
-      //elmnt.ontouchstart =dragMouseDown; 
-   }
-
-   function dragMouseDown(e) {
-      e = e || window.event;
-      e.preventDefault();
-      // get the mouse cursor position at startup:
-      pos3 = e.clientX;
-      pos4 = e.clientY;
-      document.onmouseup = closeDragElement;
-      //document.ontouchend = closeDragElement;
-      document.onmousemove = elementDrag;
-      //document.ontouchmove = elementDrag;
-   }
-
-   function elementDrag(e) {
-      e = e || window.event;
-      e.preventDefault();
-      // calculate the new cursor position:
-      pos1 = pos3 - e.clientX;
-      pos2 = pos4 - e.clientY;
-      pos3 = e.clientX;
-      pos4 = e.clientY;
-      // set the element's new position:
-      elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-      elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-   }
-
-   function closeDragElement() {
-      /* stop moving when mouse button is released:*/
-      document.onmouseup = null;
-      document.onmousemove = null;
-      //document.ontouchend = null;
-      //document.ontouchmove = null;
-   }
-}
+} 

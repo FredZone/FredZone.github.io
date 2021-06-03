@@ -1,11 +1,5 @@
-A
 Abilene
-Abilene1
-Abilene2
-Abilene3
-Abilene4
-Abilene5
-Abilene5
+Abilene
 All The Lonely People
 Always On My Mind-Willie
 Always On My Mind
@@ -32,8 +26,7 @@ Cool Water
 Cooler N Hell
 Dark As A Dungeon
 Dead Skunk
-Default
-Default
+Dead Skunk
 Dont Laugh At Me
 Dream Lover
 Dream

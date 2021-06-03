@@ -1,29 +1,99 @@
 <!DOCTYPE html>
 <html>
+    <!--See if you can import this into a page--->
 <body>
-<button onclick=alert(XMLHttp("setList.txt"))>XMLHttpRequest</button><br>
+<button style="background-color:lightgreen" onclick=document.getElementById('info').innerHTML=XMLHttp("setList.txt")>XMLHttpRequest</button><br>
+<button onclick=document.getElementById('info').innerHTML=fetch1("setList.txt")>F1-As Sent to me F1</button><br>
+<button style="background-color:lightyellow" onclick=document.getElementById('info').innerHTML=fetch2("setList.txt")>F2-As Sent to me With console.log</button><br>
+<button onclick=document.getElementById('info').innerHTML=fetch3("setList.txt")>F3-As Sent to me F1</button><br>
+<button onclick=document.getElementById('info').innerHTML=fetch4("setList.txt")>F4-As Sent to me With console.log</button><br>
+<button style="background-color:lightgreen" onclick="fetch5('setList.txt')">F5-Experiment A</button><br>
+<button onclick=document.getElementById('info').innerHTML=fetch6("setList.txt")>F6-use a var to hold it</button><br>
+<button onclick=document.getElementById('info').innerHTML=fetch7("setList.txt")>F7-use a var to hold it</button><br>
+<button onclick=document.getElementById('info').innerHTML=fetch8("setList.txt")>F8-use a var to hold it</button><br>
 
+<br><br><button onclick=document.getElementById('info').innerHTML="">CLEAR</button><br>
 
-<button onclick=alert(fetch1("setList.txt"))>Fetch1</button><br>
+<!--
+<button onclick=document.getElementById('info').innerHTML=fetch2("setList.txt")>XMLHttp method</button><br>   
+-->
 
-
-
-
-
+<div id='info' style="position:absolute;border:solid;bottom:5%;height:50%;left:5%;right:5%">???</div>
+<div id='pocket' style="overflow:hidden;position:absolute;border:solid;bottom:55%;height:5%;left:5%;right:5%">???</div>
 <script>
 function XMLHttp(path) {
+    document.getElementById('info').innerHTML=""
     var request = new XMLHttpRequest();
     request.open("GET", path, false);
     request.send(null);
     return request.responseText;
 }
 
-async
-function fetch1(path) {
+async function fetch1(path) {//as sent to me
+    document.getElementById('info').innerHTML=""
+  let res = await fetch(path);
+  let content = await res.text();
+  return content
+}
+
+async function fetch2(path) {//with console log
+    document.getElementById('info').innerHTML=""
+  let res = await fetch(path);
+  let content = await res.text();
+  console.log(content)
+  return content
+}
+
+
+async function fetch3(path) {
+    document.getElementById('info').innerHTML=""
     let res = await fetch(path);
     let content = await res.text();
     return content
-}</script>
+}
+
+async function fetch4(path) {//as sent to me
+  document.getElementById('info').innerHTML=""
+  let res = await fetch(path);
+  return await res.text();
+}
+
+async function fetch5(path) {//with console log
+  document.getElementById('info').innerHTML=""
+  let res = await fetch(path);
+  document.getElementById('info').innerHTML = await res.text();
+}
+
+async function fetch6(path) {//with console log
+    document.getElementById('info').innerHTML=""
+    let res = await fetch(path);
+    let str = await res.text();
+    return str
+}
+
+async function fetch7(path) {//with console log
+    document.getElementById('info').innerHTML=""
+    let res = await fetch(path);
+    return (await res.text());
+}
+
+async function fetch8(path) {//with console log
+  document.getElementById('info').innerHTML=""
+  document.getElementById('pocket').innerHTML="FAILURE" 
+  let res = await fetch(path);
+  var str=document.getElementById('pocket').innerHTML=await res.text();
+  return str
+}
+
+
+async function fetch8(path) {//with console log
+  document.getElementById('info').innerHTML=""
+  let res = await fetch(path);
+  var str=await res.text();
+  return str
+}
+
+</script>
 
 
 

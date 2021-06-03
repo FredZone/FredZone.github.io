@@ -1,23 +1,20 @@
-
-
-
 <div id="localAction" style="display:none;border:solid;color:black;position:absolute;font-size:1vw;right:20%;top:20%;height:35%; width:30%;background-color:lightgrey ;z-index:10000">
-<div id="localActionheader" style="position:absolute;top:0%;height:10%;font-size:2vw">
-Local Storage
-</div>
-<select id='selectLocal' onchange="refreshLocal(this.selectedIndex)" style="position:absolute;background-color:lightgrey;top:11%; height:12%; width:96%; left:1%;">
-</select> <img src="../../Icons/blackClose.png" onclick="dis('localAction')" style="position:absolute;height:10%;right:0%;top:0%;z-index:1;"> <input id="keyLocal" type="text" onchange="document.getElementById('localAction').style.backgroundColor='pink'" style='position:absolute;left:1%;width:96%;top:25%;height:10%;overflow-y:scroll;font-size:1vw' value="TBD"><br>
-<textarea id="valueLocal" onchange="document.getElementById('localAction').style.backgroundColor='pink'" style="position:absolute ;text-align:left;top:41%;height:35%;left:1%; width:96%;overflow-y:scroll;white-space: pre;">
-z-index:10050"&gt;
-</textarea>
-<button onclick="newLocal()" style="position:absolute;bottom:10%; height:10%; width:20%; left:0%;">NEW</button>
-<button onclick="dateLocal()" style="position:absolute;bottom:10%; height:10%; width:20%; left:20%;">DATE</button>
-<button onclick="listLocal()" style="position:absolute;bottom:10%; height:10%; width:20%; left:40%;">LIST</button>
-<button onclick="statusMsg('TBD')" style="position:absolute;bottom:10%; height:10%; width:20%; left:60%;">TBD</button>
-<button onclick="statusMsg('TBD')" style="position:absolute;color:red;bottom:10%; height:10%; width:20%; left:80%;">TBD</button>
-<button onclick="saveLocal(),refreshLocal(0)" style="position:absolute;color:green;bottom:0%; height:10%; width:20%; left:0%;">SAVE</button>
-<button onclick="refreshLocal()" style="position:absolute;bottom:0%; height:10%; width:20%; left:20%;">REFRESH</button>
-<button onclick= "document.getElementById('print').innerHTML=document.getElementById('keyLocal').value+':&lt;br&gt;===============================&lt;br&gt;'+document.getElementById('valueLocal').value.replace(/\n/g, '&lt;br&gt;'), printDiv('print')" style="position:absolute;color:green;bottom:0%; height:10%; width:20%; left:40%;">PRINT</button>
-<button onclick="deleteLocal(),refreshLocal(0)" style="position:absolute;color:red;bottom:0%; height:10%; width:20%; left:60%;">DELETE</button>
-<button onclick="if(confirm('CLEAR ALL LOCAL STORAGE???')==true){localStorage.clear(),refreshLocal(),statusMsg('Local Storage Cleared!','red')}" style="position:absolute;color:red;bottom:0%; height:10%; width:20%; left:80%;">CLEAR!</button>
+    <div id="localActionheader" style="position:absolute;top:0%;height:10%;font-size:2vw">
+        Local Storage
+        </div>
+    <select id='selectLocal' onchange="refreshLocal(this.selectedIndex)" style="position:absolute;background-color:lightgrey;top:11%; height:12%; width:96%; left:1%;">
+        </select>
+    <img src="../../Icons/blackClose.png" onclick="dis('localAction')" style="position:absolute;height:10%;right:0%;top:0%;z-index:1;"> <input id="keyLocal" type="text" onchange="document.getElementById('localAction').style.backgroundColor='pink'" style='position:absolute;left:1%;width:96%;top:25%;height:10%;overflow-y:scroll;font-size:1vw' value="TBD"><br>
+    <textarea id="valueLocal" onchange="document.getElementById('localAction').style.backgroundColor='pink'" style="position:absolute ;text-align:left;top:41%;height:35%;left:1%; width:96%;overflow-y:scroll;white-space: pre;">
+        </textarea>
+    <button onclick="newLocal()" style="position:absolute;bottom:10%; height:10%; width:20%; left:0%;">NEW</button>
+    <button onclick="dateLocal()" style="position:absolute;bottom:10%; height:10%; width:20%; left:20%;">DATE</button>
+    <button onclick="listLocal()" style="position:absolute;bottom:10%; height:10%; width:20%; left:40%;">LIST</button>
+    <button onclick="statusMsg('TBD')" style="position:absolute;bottom:10%; height:10%; width:20%; left:60%;">TBD</button>
+    <button onclick="statusMsg('TBD')" style="position:absolute;color:red;bottom:10%; height:10%; width:20%; left:80%;">TBD</button>
+    <button onclick="saveLocal(),refreshLocal(0)" style="position:absolute;color:green;bottom:0%; height:10%; width:20%; left:0%;">SAVE</button>
+    <button onclick="refreshLocal()" style="position:absolute;bottom:0%; height:10%; width:20%; left:20%;">REFRESH</button>
+    <button onclick= "document.getElementById('print').innerHTML=document.getElementById('keyLocal').value+':&lt;br&gt;===============================&lt;br&gt;'+document.getElementById('valueLocal').value.replace(/\n/g, '&lt;br&gt;'), printDiv('print')" style="position:absolute;color:green;bottom:0%; height:10%; width:20%; left:40%;">PRINT</button>
+    <button onclick="deleteLocal(),refreshLocal(0)" style="position:absolute;color:red;bottom:0%; height:10%; width:20%; left:60%;">DELETE</button>
+    <button onclick="if(confirm('CLEAR ALL LOCAL STORAGE???')==true){localStorage.clear(),refreshLocal(),statusMsg('Local Storage Cleared!','red')}" style="position:absolute;color:red;bottom:0%; height:10%; width:20%; left:80%;">CLEAR!</button>
 </div>

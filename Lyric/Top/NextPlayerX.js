@@ -1,24 +1,20 @@
-//CODING TAGS //^//.## //.#      //.$//?. (Highlight-RIGHT-Click-Find)
-//.@ DEAD/OBSOLETE....Deleat when safe
+//CODING TAGS
+//.@ DEAD/OBSOLETE....Delete when safe
 //.$ Under Development (see SHIT)================
-//.## MAJOR SECTION===============================
-//.#      Subsection==================================
+//.## MAJOR SECTION==============================
+//.#      Subsection=============================
 //.? WTF=========================================
-//^   Trailing note (AFTER text)==================
+//^  Trailing note (AFTER text)==================
 
-//  RELEASE  THIS AS THE STABLE REVISION  MARKED WITH $$$$
-//  Save the old NextPlayer.js and NextPlayer.html in directory "NP-R" where R is the current Revision (ie "NP-7)just for history's sake
-
-//  Save this new files "NextPlayerX.js" and NextPlayerX.html as NextPlayer.js" and NextPlayer.html in the 'TOP' directory
-//  Change the last line of Nexplayer.html to reference <SCRIPT "NextPlayer.js"  instead of "NextPlayerX.js"
-
-// Change the REV of NextPlayerX to the new rev (i.e. "var REV ="8.0")
-//areas for work tagged with ???
-
+/*  TO RELEASE THIS AS THE NEXT STABLE REVISION
+      1: DO NOT CHANGE THIS FILE UNTIL THE LAST STEP!
+      2: Copy the old NextPlayer.js and NextPlayer.html into a directory "NP-?" where ? is the current Revision (ie "NP-7)for BACK-UP and history's sake
+      3: MAKE A COPIES OF THIS FILE(NextPlayerX.js) AND NextPlayerX.html that replace the old NextPlayer.js and NextPlayer.html 
+      4: Make the changes in lines marked $$$$ to the NextPlayer files
+      5: Test the new NextPlayer files
+      6  FINALLY Change the revision of NextPlayerX to the new rev (i.e. "var REV ="8.0")
+*/
 //.## GLOBAL VARs
-//.#      REVISION VARs
-    var REV ="Beta 7-1";//this revision $$$$
-    var JSname="NextPlayerX.js";//java script file $$$$
 //.#      FLAGS
     var ALT=false;//^ alternate song
     var AUDfail=false;
@@ -76,7 +72,6 @@
 //.#      SCROLLdata CONSTANTS
     var TOPlast;
     var SS=0;//Scroll Stopper...counts cylces of non scroll indicating end of tune
-//.@  var AS=0//audio stopper
     var FONTSIZE= 2.5;//calculated size for the display 
     var CHORDlines=0;//^ how many lines are chord lines
     var PRESONGlines=0;//^ how many lines of text exist before first chord line
@@ -96,18 +91,14 @@
     var TIMEOUTcrap;//^ do not clear this one
     var TIMEOUTdelay;//^ trackDelay delay the start of???
     var TIMEOUTfade;//^fade the sound
-//.@ var TIMEOUTmail=3000;
     var TIMEOUTnext; //^ for next tune
     var TIMEOUTscroll;//^ timeout for scrolling
     var TIMEOUTmirror;
     var TIMEOUTmet;
     var TIMEOUTwait; //Wait after scroll end before showing top Icons title etc
 //.#      CONFIGURATION CONSTANTS
-      //^          0        1            2            3        4       5        6        7         8        9         10        11      12         13       14     15     16    
-//.@var ARRimg="imgCAPS,imgFULLscreen,imgLEFTborder,imgCLOCK,imgTEXT,imgSHADE,imgNOTES,imgSETnotes,imgPOPnotes,imgTECHnotes,imgLIVEnotes,imgCOUNTin,imgBREAKlines,imgBIGchords,imgLOOPER,imgMETRO,imgBARsync".split(',');
       //^             0        1          2        3   4    5     6     7         8        9         10        11      12         13       14     15     16  
     var ARRpresets="CAPS,FULLscreen,LEFTborder,CLOCK,TEXT,SHADE,NOTES,SETnotes,POPnotes,TECHnotes,LIVEnotes,COUNTin,BREAKlines,BIGchords,LOOPER,METRO,BARsync".split(',');
-//.@     var TBD= false;
     var BACKdrop=false;
     var BARsync=false
     var BIGchords=true;
@@ -119,7 +110,7 @@
     var CLOCKstart=0;
     var CLOCKstop=0;
     var ENDpause=false;
-//.@    var TBD2=false;
+
     var FULLscreen=false;
     var LEFTborder=false;
     var LINEnum=false;//^ show line numbers
@@ -131,17 +122,13 @@
     var SHADE=false;//shade the screen
     var SOUND=true;
     var SETnotes=false;
-//.@    var TABS=false;
     var TEXT=false;//reduce text size
     var TRIVIAnotes=false;
     var TECHnotes=false;
 //.#      MISC CONSTANTS
- //.$   var BIGselect=false;
     var ARRscale="A,Bb,B,C,C#,D,Eb,E,F,F#,G,Ab,A,Bb,B,C,C#,D,Eb,E,F,F#,G,Ab,A,Bb,B,C,C#,D,Eb,E,F,F#,G,Ab".split(",");
     var ARRsongSettings;
     var MSGlast="No Message...";
-//.@    var MSG2="NO MESSAGE!";
-//.@     var NONE;
     var RAT=0.7; //^ Ratio WINDht/WINDwt
     var PLAYlist="X";//^ Array of songs in setlist
     var SETname="Single Tune";//^ default in case a list cannot be loaded
@@ -187,83 +174,13 @@
     var MAPoffset=0;
 //.#      MAIL  CONSTANTS 
    //var MAIL="";
-//.@   var MAILsys;
    var BACKTRACK; //to try backtracks  
 //.#      LOCAL STORGE CONSTANTS 
    var LOCALkey="TBD"
    var LOCALvalue="TBD"
-
 //.#      SHIT CONSTANTS Permanent feature 
    var SHIT= false
-   //SHIT unique variables Used to While Developing  MOVE LATER=
-   var MAXchordFont=5//in vw
-   var MINchordFont=1
-   var CHORDfont//chord size in vw
-   var MAXbars = 0
-   var BARchr=1    //chr per bar
 
-//.$$ ARRchordLines and prepChordSize
-var ARRchordLines
-function prepChordSize() {
-   MAXchordFont=2;
-   var lineCount = 0
-   var aBars
-   var bars
-   MAXbars = 0
-   var maxBarLength = 1
-   BARchr = 0 //characters in a bar
-   for (i = 0; i < ARRlines.length - 1; i++) {
-      if (lineType(ARRlines[i]) == 'chord') {
-         str = ARRlines[i].substring(1); //remove first character (|)
-         str = str.replace(/\s+/g, ''); //remove all white space
-         aBars = str.split("|")
-         bars = aBars.length
-         if (bars > MAXbars) { //get the MAXbars in a line
-            MAXbars = bars
-         }
-         for (j = 0;j < aBars.length; j++) {
-            if (aBars[j].length > BARchr) {
-               BARchr = aBars[j].length
-            }
-         }
-      }
-   }
-   BARchr = BARchr + 2 //add for at least one space and the |
-   //alert("Chr Per BAR:" + BARchr + "\nMax Bars:" + MAXbars)
-   CHORDfont= 100 / (BARchr * MAXbars)
-   //alert("Chr Per BAR:" + BARchr + "\nMax Bars:" + MAXbars +"\nFONT: "+CHORDfont)
-   if (CHORDfont>MAXchordFont) {
-      CHORDfont=MAXchordFont
-   }
-   BARchr=100/(MAXbars*CHORDfont)
- alert("FINAL Chr Per BAR:" + BARchr + "\nMax Bars:" + MAXbars +"\nFONT: "+CHORDfont)
-}
-
-function presentChords(str) {
-   var out = ""
-   var arrBars
-   if (str==undefined){str = "|C7#m|*D|G9/b5|D"}
-   var frag = '';
-   var halfFactor=1
-   arrBars=str.split('|'); 
-   str = str.replace(/\s+/g, ''); //kill spaces
-   str=str.substring(1)
-   arrBars = str.split('|')
-   for (i = 0;i< arrBars.length;i++) {
-      frag = "|" + arrBars[i];
-     // if (frag.substring(1,2)=='*') {
-      //  halfFactor=2
-      //}else{
-      halfFactor=1
-     // }
-      while (frag.length <= parseInt(BARchr/halfFactor)) {
-         frag = frag + "-";
-      }
-      out = out + frag
-   }
-   //alert(out)
-   return  out;
-}
 
 
 //.## LOCAL STORAGE otherwise superfluous
@@ -550,7 +467,6 @@ function start() {
     j = 0;
     clearTimeout(TIMEOUTcrap);
     document.getElementById('dubugSafety').focus();
-    document.getElementById('revStatus').innerHTML = "REV: " + REV;
     var lst = "<a style='text-align:center; width:100%'><a style='color:white;'>SOUND MODE</a><br><select id='soundSelector' style='background-color:white;color:black;font-size:2vw; width:100%' onchange='setSoundModeDefault(this.value)'>";
     while (j < ARRsoundModes.length) {
         lst = lst + "\n<option>" + ARRsoundModes[j] + "</option>";
@@ -680,15 +596,8 @@ function selectTune(titl){
    }TITLE=TITLE.replace(/(\r\n|\n|\r)/gm,"");//strip all line feeds
    statusMsg("Selected: "+TITLE)
    TUNEnum= PLAYlist.indexOf(TITLEplus);
-//$dis('BS', 'none');
    dis('backtracker', 'none'); //SIMPLIFY
    document.getElementById("mySet").selectedIndex=TUNEnum;//set the std selector
-   
-   
-//.$   if (BIGselect==true) {
- //     statusMsg('Big Select')
- //     document.getElementById('BS' + TUNEnum).style.color = 'red';
- //  }
    document.getElementById('myTune').innerHTML = TITLE; //?. What is my tune??
    CTO();
    document.getElementById("content").innerHTML = "";
@@ -923,18 +832,12 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
    NOTElinks = undefined;
    IRB = undefined;
    screenFormat('Think', 'danger.png')
-
-//.$$ INSERT prepChordSize in arrConvert
-if(SHIT===true){prepChordSize()}
-//.$ shit Ends
    LONGLINE = longestLine() + 1;
    if (LONGLINE == 1) {
       LONGLINE = 74;
       img = true;
    } //in case there are no lines (indicates image file)
- //$if (BREAKlines === true) {//OBSOLETE???
       LONGLINE = LINElimit
- //$} //if breaking lines is requested
    if (LINEnum === true | LINEtime === true) {
       LONGLINE = LONGLINE + 4;
    } //^ adding space
@@ -998,28 +901,6 @@ if(SHIT===true){prepChordSize()}
             newLine = iconize('transRedCircle') + "  <X1>" + newLine.substr(1, newLine.length) + "</X1>"
          }
       }else if (lType == 'chord') {
-
-
-
-//.$$ CHANGED A ==================== 
-         if(SHIT == true) {
-            statusMsg("SHIT ENGAGED!",'red')
-            preSong = false; //^ stop counting prelines
-            if (TRANSPOSE !== 0) {//transpose
-               newLine = lineTranspose(newLine, TRANSPOSE);
-               m = m + "/Transpose(" + TRANSPOSE + ")"
-            }
-            newLine = newLine.replace(/\s+/g, '');
-         
-         newLine=presentChords(newLine)
-         }else{
-//.$ END A  
-         
-         
-         
-         
-        
-//.$  ORIGINAL A    
             m = "<x2>" + m
             preSong = false; //^ stop counting prelines
             if (TRANSPOSE !== 0) {
@@ -1048,9 +929,7 @@ if(SHIT===true){prepChordSize()}
                   n = n + 1;
                }
             }
-         }
-//.$ END A 
-        
+        /// }
          if (BARsync === true) {
             m = m + "/BarSync("
             var barLine = "";
@@ -1189,29 +1068,7 @@ if(SHIT===true){prepChordSize()}
    htmlHead = "<!DOCTYPE html><html><head><title id='title'>" + TITLE + "</title><style>\nBody{font-size : ";
    htmlHead = htmlHead + FONTSIZE + "; color:black; margin :0vh; padding: 0; font-family:Courrier New;font-weight:bold;line-height:100%;text-align:left;background-color:transparent;}";
    htmlHead = htmlHead + "\nX99{color:red;font-size:" + bigFont + ";line-height:100%;}\n";
-
-
-
-
-
-
-
-//.$ CHANGED B========================
-   if (SHIT==true) {
-      CHORDfont = CHORDfont + "vw"
-      alert("CHORDfont: " + CHORDfont)
-      htmlHead = htmlHead + "\nX100{color:blue;font-size:4vw;line-height:100%;}\n</style></head><body>";
-   } else {
-//.$ END B
-//.$ ORIGINAL B
-     htmlHead = htmlHead + "\nX100{color:red;font-size:" + bigFont + ";line-height:100%;}\n</style></head><body>";
-
-  }
-//. $END B   
-   
-   
-   
-   
+   htmlHead = htmlHead + "\nX100{color:red;font-size:" + bigFont + ";line-height:100%;}\n</style></head><body>";
    if (img === true) { //substitute image for text, no text exists....
       htmlString = htmlString + "<img src=\'../Img/" + TITLE + ".jpg\' width=\'" + WINDwt * 0.98 + "px\'>";
    }
@@ -1452,9 +1309,9 @@ function scrollEngine() { //^ the actual scrolling routine keep it simple* befor
                document.getElementById('b' + BAR).style.backgroundColor = 'yellow'
                document.getElementById('b' + parseInt(BAR - 1, 10)).style.backgroundColor = 'transparent'
             }
-      //$ if (METRO === true) {
-      //$         metro(0);
-      //$     }
+      //@ if (METRO === true) {
+      //@         metro(0);
+      //@     }
             document.getElementById('b' + parseInt(BAR - 1, 10)).style.backgroundColor = 'transparent'
          }
       }
@@ -1477,7 +1334,7 @@ function scrollEngine() { //^ the actual scrolling routine keep it simple* befor
       nowTime = new Date().getTime();
       newPos = parseInt(((nowTime - SCROLLstartTime) / SCROLLkon) + Ystart, 10);
       document.getElementById("Tune").scrollTop = newPos
-      statusMsg('> ' + parseInt(Ypos, 10) + ' px: ' + SS, 0)
+      statusMsg('> ' + parseInt(Ypos, 10) + ' px', 0)
       TIMEOUTscroll = setTimeout(function() {
          scrollEngine();
       }, SCROLLkon);
@@ -1527,13 +1384,6 @@ function printDiv(divName) {
    window.print();     
    document.body.innerHTML = originalContents;
    }
-
-
-
-
-
-
-
 
 
 function notePopUp(str, fs, clr, bak, def, title, status) { //string, font size, color and Default
@@ -1681,58 +1531,6 @@ function scrollRate(factor) {
     }
 }
 
-//.$ function countIntro() {
- /*   if (document.getElementById("Tune").scrollTop < 2 | COUNTin === true) {
-        metro(0)
-        screenFormat('Scroll')
-        dis('metronome', 'block')
-        document.getElementById('metronome').style.fontSize = '30vh'
-        document.getElementById('metronome').style.top = '60%'
-        document.getElementById('metronome').style.right = '45%'
-        document.getElementById('metronome').style.height = '30%'
-        document.getElementById('metronome').style.backgroundColor = 'yellow'
-        TIMEOUTcrap = setTimeout(function() {
-            if (METRO === false) {
-                dis('metronome', 'none')
-                clearTimeout(TIMEOUTmet)
-                trackPlay()
-            } else {
-                document.getElementById('metronome').style.fontSize = '10vh'
-                document.getElementById('metronome').style.right = '1%'
-                document.getElementById('metronome').style.top = '1%'
-                document.getElementById('metronome').style.height = '10%'
-                document.getElementById('metronome').style.backgroundColor = 'lightgrey'
-            }
-            trackPlay();
-        }, MET * BEATS);
-    } else {
-        trackPlay()
-    }
-}
-
-//$function metro(ct) {
-    clearTimeout(TIMEOUTmet)
-    ct++;
-    document.getElementById('metronome').innerHTML = ct
-    if (document.getElementById('metronome').style.backgroundColor == 'lightgrey') {
-        document.getElementById('metronome').style.backgroundColor = 'orange'
-    } else {
-        document.getElementById('metronome').style.backgroundColor = 'lightgrey'
-    }
-    if (SOUNDmode === 'SILENT') {
-        if (ct === 1) {
-            aB.play()
-        } else {
-            aB.play()
-        }
-    }
-    if (ct < METRObeats) {
-        TIMEOUTmet = setTimeout(function() {
-            metro(ct);
-        }, MET);
-    }
-}
-*/
 function trackPause() {
    CTO();
    if (BARsync === true) {
@@ -1749,41 +1547,7 @@ function trackPause() {
    }
    screenFormat("Pause");
 }
-//.@
-/* function trackPlayNOGOOD() { //pause options...undefined
-   Audio1.pause() //just in case
-   ENDscroll = false
-   CTO();
-   if (SOUNDmode === 'SILENT' | SOUNDmode === 'BACK TRACK') {
-      if (BARsync === false) {
-         trackAlign('Screen');
-      } else {
-         if (SOUNDmode === 'SILENT') {
-            trackAlign('Bar')
-         } else {
-            trackAlign('Audio')
-         }
-      }
-   } else if (SOUNDmode === 'CLICK TRACK' | SOUNDmode === 'DRUM COUNTRY' | SOUNDmode === 'DRUM ROCK') {
-      if (BARsync === true) {
-         trackAlign('Free Bar');
-      } else {
-         trackAlign('Free')
-      }
-   }
-   document.getElementById('Audio1').currentTime = POStrack
-   Ystart = document.getElementById('Tune').scrollTop = POSscreen
-   screenFormat("Scroll");
-   // = document.getElementById("tabBox").scrollLeft;
-   if (METRO === true & BAR === 0) {
-      metro(0)
-   }
-   statusMsg("PLAY STEP 2: " + document.getElementById("Audio1").currentTime + ' secs >>>' + POStrack, 0);
-   SCROLLstartTime = new Date().getTime();
-   document.getElementById("Audio1").play();
-   scrollEngine();
-}
-*/
+
 //.## PLAY TRACK
 function trackPlay() { //pause options...undefined
    Audio1.pause() //just in case
@@ -2448,22 +2212,6 @@ function setCustom(VAR, val, action) {
          METRO = false;
       }
    }
-   //.@if (VAR == 'COUNTin') { //USELESS click removed
-   /*   if (COUNTin === false) {
-   document.getElementById("imgCLICKER").src = "../../Icons/off.png"
-   CLICKER = false
-   }
-   }
-   */
-   //.$if (VAR == 'BIGselect') {
-   /*  if (BIGselect === false) {
-   document.getElementById("imgBIGselect").src = "../../Icons/off.png"
-   document.getElementById('BSbutton').style.display = 'none'
-   } else {
-   document.getElementById('BSbutton').style.display = 'block'
-   createPlayListSelector()
-   }
-   }*/
    if (action === 'toggle') {
       if (AC === true | AC == 'true') {
          statusMsg("Toggle required array converstion")
@@ -2566,8 +2314,8 @@ function setCustom(VAR, val, action) {
       document.getElementById('V').innerHTML = parseInt(100 * VOL, 10) + '%';
       document.getElementById("Audio1").volume = document.getElementById("aB").volume = document.getElementById("aC").volume = VOL
    }
-
-   function revDates() { //date of last mods
+//@
+   function XXXrevDates() { //date of last mods
       var xhReq = new XMLHttpRequest();
       xhReq.open("HEAD", JSname, false);
       xhReq.send(null);
@@ -2836,8 +2584,7 @@ function lyricLineCount(){
         i++;}    
     return count;}
 
-
-
+//.@
 function getTextFileFetch(path) {
    fetch(path)
   .then(response => response.text())
@@ -2845,8 +2592,6 @@ function getTextFileFetch(path) {
     console.log(data)
   })
    }
-
-
 
 function getTextFile(path){//^ Selects your set by its name
     var request = new XMLHttpRequest();
@@ -2996,7 +2741,9 @@ function secToMin(sec){ //grey-normal;red-attention Required ;yellow-normal paus
     if(s < 10) {s = ":0" + s;}else{s = ":" + s;}
     return m+s;} 
 
-function hash(hashString,key,defaultVal){ //grey-normal;red-attention Required ;yellow-normal pause or inwork//^ Gets hash values from string a:b,c:d,e:f,......
+//.@
+/*
+ function OLDhash(hashString,key,defaultVal){ //^ Gets hash values from string a:b,c:d,e:f,......
     var arrHash = (hashString.split(",")); //^  an array from hashString   
     var i=0;
     while (i < arrHash.length){
@@ -3006,7 +2753,24 @@ function hash(hashString,key,defaultVal){ //grey-normal;red-attention Required ;
             i = arrHash.length;} //^ kick you out must be a better way
         i++;}
     return defaultVal;}
+*/
 
+function hash(str, key, deflt) { //^ Gets hash values from string a:b,c:d,e:f,......
+   var arr = (str.split(","));
+   var i = 0;
+   var ele
+   while (i < arr.length) {
+      ele = (arr[i].split(":"));
+      if (ele[0] == key) {
+         return ele[1];
+      }
+      i++;
+   }
+   return deflt;
+}
+
+
+//## GLOBAL CANDIDATES
 function dis(id,disp){
     if(disp===undefined){
             if(document.getElementById(id).style.display == 'none'){
@@ -3055,7 +2819,8 @@ function decodeFredComponent(str){ //grey-normal;red-attention Required ;yellow-
     str=str.split("AMARK");
     str=str.join("@");
     return str;}
-    
+
+//.##NEXT PLAYER UNIQUE FUNCTIONS
 function lineType(str){   
     var t ="lyric";
     if(str.substring (0,7).toUpperCase()=="IREALB:"){t = "irealb";}    
@@ -3074,9 +2839,9 @@ function lineType(str){
 function longestLine(){
     var count =0;
     var i=0;
+    var ltype
     while (i < ARRlines.length){
-        var ltype = lineType(ARRlines[i]);
-        //if (ltype == "chord" | ltype == "lyric"| ltype == "note"| ltype =="header"){
+        ltype = lineType(ARRlines[i]);
         if(ltype == 'lyric'|ltype=='chord'){
             if(ARRlines[i].length > count){count = ARRlines[i].length;}}
         i++;}    
@@ -3113,21 +2878,22 @@ function barsClear() {
 }
 
 //.## STATUS FUNCTIONS
-function statusMsg(msg,bgcolor,marq){// COLOR SCHEME: light grey=normal;red=problem ;yellow-pause or inwork; green=Ready
+function statusMsg(msg,bgcolor,marq){
+   //if color=0 msg only for debug, not normally posted
+   //COLOR SCHEME: light grey=normal;red=problem ;yellow-pause or inwork; green=Ready
     if(msg===null||msg==='' || msg===" "||msg==undefined) {msg = "ERROR: No Status Message Passed";}
     if(STATUSmode>0) {//Log it
         if(ARRstatusLog.length>LOG){ARRstatusLog.pop()}
         if(bgcolor==0){ARRstatusLog.splice(0,0,stdTime("",true)+"       <X8>"+msg+"</X8>");}
         else{ARRstatusLog.splice(0,0,stdTime("",true) +"  <X1>"+msg+"</X1>");}}
-    if(STATUSmode>1){    
+    if(STATUSmode>1){//boot log   
         document.getElementById('bootText').innerHTML="<pre>"+ARRstatusLog.join('<br>')+"</pre>";}    
-    if(bgcolor==0) {return}
+    if(bgcolor==0) {return}//do not post
     if(bgcolor==1) {alert("STATUS MSG\n"+msg);return}
     sm2(msg,bgcolor,marq);}    
 
 function sm2(msg,bgcolor,marq){//^POST the msg
     var clr="black";
-//.@  MSG2=MSGlast;
     if(msg===null){msg="*"+MSGlast;}
     else{MSGlast = msg;}
     if(document.getElementById('splash').style.display=="block") {bgcolor = "transparent"}
@@ -3197,10 +2963,7 @@ function bugButton(but) {
 //.## DEVLOPER FUNCTIONS
 function badCode(){alert(parseInt(23/0,10))}//
 
-
-
 function devShrink() {
-
    if (document.getElementById('developer').style.width == "3vw") {
       document.getElementById('developer').style.height = "7vw"
       document.getElementById('developer').style.width = "24vw"
@@ -3247,11 +3010,11 @@ function dragElement(elmnt) {
    if (document.getElementById(elmnt.id + "header")) {
       /* if present, the header is where you move the DIV from:*/
       document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-document.getElementById(elmnt.id + "header").ontouchstart =dragMouseDown;
+      document.getElementById(elmnt.id + "header").ontouchstart = dragMouseDown;
    } else {
       /* otherwise, move the DIV from anywhere inside the DIV:*/
       elmnt.onmousedown = dragMouseDown;
-elmnt.ontouchstart =dragMouseDown; 
+      elmnt.ontouchstart = dragMouseDown;
    }
 
    function dragMouseDown(e) {
@@ -3261,9 +3024,9 @@ elmnt.ontouchstart =dragMouseDown;
       pos3 = e.clientX;
       pos4 = e.clientY;
       document.onmouseup = closeDragElement;
-document.ontouchend = closeDragElement;
+      document.ontouchend = closeDragElement;
       document.onmousemove = elementDrag;
-document.ontouchmove = elementDrag;
+      document.ontouchmove = elementDrag;
    }
 
    function elementDrag(e) {
@@ -3283,11 +3046,10 @@ document.ontouchmove = elementDrag;
       /* stop moving when mouse button is released:*/
       document.onmouseup = null;
       document.onmousemove = null;
-document.ontouchend = null;
-document.ontouchmove = null;
+      document.ontouchend = null;
+      document.ontouchmove = null;
    }
 }
-
 //.## BOGUS FUNCTIONS
 
 function bogus() { //modify during development
@@ -3413,9 +3175,8 @@ function rollMirror(tf) {
       }, 1000);
    }
 }
-//.@ probably obsolete  CHECK BEFORE DELETING
+
 function breakLine(line) {
-   //statusMsg("Formatting Fixed Font: " + line, 0)
    var last = 0;
    var newLine = "";
    var j;

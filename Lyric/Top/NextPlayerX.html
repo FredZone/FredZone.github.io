@@ -1,8 +1,8 @@
+<!--MODULE-A-->
 <!DOCTYPE html>
-<!--TO RELEASE as a new revision (i.e 7.4)  Items marked $$$$
-        Save this file as NextPlayer.html(that will be the name of the latest revision)
-        Change the link to the shortcut icon below from bug2.png to  "transVocal.png">
-        Change the javascript reference in the last line of this file to reflect the NextPlayer.js
+<!--TO RELEASE aFollow directions in NextPlayerX.js
+    1: Items marked $$$$ must be changed (2 PLACES)
+    2; Save this file as NextPlayer.html?(that will be the name of the latest revision)
 
 //CODING TAGS
 --@ DEAD/OBSOLETE....Deleat when safe
@@ -21,10 +21,10 @@
       border-collapse: collapse;
     }
     </style>
-    <link rel="shortcut icon" type="image/png" href="../../Icons/inWork.png"><!--$$$$-->
+    <link rel="shortcut icon" type="image/png" href="../../Icons/inWork.png"><!--$$$$  Change href to "transVocal.png">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!-- prevents zooming on mobile devices....number-based width or "device-width"-->
-    <title id = 'title'>Performer</title>
+    <title id = 'title'>Next Performer</title><!--$$$$ Change to Performer-->
     <style type="text/css">
         #localActionheader,#statusWindowheader,#backtrackerheader,#cloudheader,#mailerheader,#developerheader{cursor: move; background-color:orange; text-align:center; color:black; font-size:1vw; line-height:100%; top:0%; width:100%; height:5%; overflow:hidden;}
         Body{font-size:3.3vw;                
@@ -61,8 +61,8 @@
         optgroup {font-size:1.5vw; }
         </style>    
     </head>
-
 <body onresize="arrConvert()">
+<!--A-->
 <!--#  Super controls ???? belonging to no group so z is determined by function   --> 
     <div id='BS' style="position:absolute;display:none;line-height:120%;border:solid;overflow-y:scroll;color:green; background-color:lightyellow;overflow-x:hidden;overflow-x:hidden; width:50%;height:86%;left:25%;top:14%;z-index:30000;"></div>
     <div id="msg" title="Message Box" style= "position:fixed; display:block; line-height:120%; text-align:center; vertical-align:middle; color:red; background-color:transparent; color:red; font-size: 2vw; height:6%; left:0%; top:60%; width:100%; z-index:5505;overflow-x:hidden;overflow-y:scroll">Loading...</div>
@@ -72,7 +72,7 @@
         <img id="thinkIcon" src="../../Icons/transVocal.png" alt =" " style="position:absolute; background-color:transparent; margin:auto;left:10%; top:10%; height:80%;z-index:20000;">
         </div>
     <audio id="Audio1" controls=true preload = "metadata" style="position:fixed;text-align:center; bottom:0%;width:30%;right:35%;z-index:779; opacity:0.5;background-color:transparent" source src="../Backing/Default.mp3" type="audio/mpeg" > </audio>
-<!--.$ ???
+<!--???
     <div id="cl" title ="----"style="position:fixed; border-color:black; border:solid; background-color:transparent; left:0%; width:100%; bottom:45%; height:10%;opacity:0.1;z-index:3;"> </div>
     -->
     <img id="shade" src="../../Icons/shade4.png" alt ="-" style="position:fixed; left:0%; width:100%; top:0%; height:100%;opacity:0.5; z-index:3;">
@@ -201,35 +201,26 @@
     <div id='printCash' style="display:none;z-index:0"></div>
 
 <!--# Local Storage -->    
-    <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-
-    <html>
-        <head>
-            <title></title>
-        </head>
-        <body>
-            <div id="localAction" style="display:none;border:solid;color:black;position:absolute;font-size:1vw;right:20%;top:20%;height:35%; width:30%;background-color:lightgrey ;z-index:10000">
-                <div id="localActionheader" style="position:absolute;top:0%;height:10%;font-size:2vw">
-                    Local Storage
-                </div>
-                <select id='selectLocal' onchange="refreshLocal(this.selectedIndex)" style="position:absolute;background-color:lightgrey;top:11%; height:12%; width:96%; left:1%;">
-                </select> <img src="../../Icons/blackClose.png" onclick="dis('localAction')" style="position:absolute;height:10%;right:0%;top:0%;z-index:1;"> <input id="keyLocal" type="text" onchange="document.getElementById('localAction').style.backgroundColor='pink'" style='position:absolute;left:1%;width:96%;top:25%;height:10%;overflow-y:scroll;font-size:1vw' value="TBD"><br>
-                <textarea id="valueLocal" onchange="document.getElementById('localAction').style.backgroundColor='pink'" style="position:absolute ;text-align:left;top:41%;height:35%;left:1%; width:96%;overflow-y:scroll;white-space: pre;">
-                    z-index:10050"&gt;
-                </textarea>
-                <button onclick="newLocal()" style="position:absolute;bottom:10%; height:10%; width:20%; left:0%;">NEW</button>
-                <button onclick="dateLocal()" style="position:absolute;bottom:10%; height:10%; width:20%; left:20%;">DATE</button>
-                <button onclick="listLocal()" style="position:absolute;bottom:10%; height:10%; width:20%; left:40%;">LIST</button>
-                <button onclick="statusMsg('TBD')" style="position:absolute;bottom:10%; height:10%; width:20%; left:60%;">TBD</button>
-                <button onclick="statusMsg('TBD')" style="position:absolute;color:red;bottom:10%; height:10%; width:20%; left:80%;">TBD</button>
-                <button onclick="saveLocal(),refreshLocal(0)" style="position:absolute;color:green;bottom:0%; height:10%; width:20%; left:0%;">SAVE</button>
-                <button onclick="refreshLocal()" style="position:absolute;bottom:0%; height:10%; width:20%; left:20%;">REFRESH</button>
-                <button onclick= "document.getElementById('print').innerHTML=document.getElementById('keyLocal').value+':&lt;br&gt;===============================&lt;br&gt;'+document.getElementById('valueLocal').value.replace(/\n/g, '&lt;br&gt;'), printDiv('print')" style="position:absolute;color:green;bottom:0%; height:10%; width:20%; left:40%;">PRINT</button>
-                <button onclick="deleteLocal(),refreshLocal(0)" style="position:absolute;color:red;bottom:0%; height:10%; width:20%; left:60%;">DELETE</button>
-                <button onclick="if(confirm('CLEAR ALL LOCAL STORAGE???')==true){localStorage.clear(),refreshLocal(),statusMsg('Local Storage Cleared!','red')}" style="position:absolute;color:red;bottom:0%; height:10%; width:20%; left:80%;">CLEAR!</button>
-                </div>
-        </body>
-    </html>
+    <div id="localAction" style="display:none;border:solid;color:black;position:absolute;font-size:1vw;right:20%;top:20%;height:35%; width:30%;background-color:lightgrey ;z-index:10000">
+        <div id="localActionheader" style="position:absolute;top:0%;height:10%;font-size:2vw">
+            Local Storage
+        </div>
+        <select id='selectLocal' onchange="refreshLocal(this.selectedIndex)" style="position:absolute;background-color:lightgrey;top:11%; height:12%; width:96%; left:1%;">
+        </select> <img src="../../Icons/blackClose.png" onclick="dis('localAction')" style="position:absolute;height:10%;right:0%;top:0%;z-index:1;"> <input id="keyLocal" type="text" onchange="document.getElementById('localAction').style.backgroundColor='pink'" style='position:absolute;left:1%;width:96%;top:25%;height:10%;overflow-y:scroll;font-size:1vw' value="TBD"><br>
+        <textarea id="valueLocal" onchange="document.getElementById('localAction').style.backgroundColor='pink'" style="position:absolute ;text-align:left;top:41%;height:35%;left:1%; width:96%;overflow-y:scroll;white-space: pre;">
+            z-index:10050"&gt;
+        </textarea>
+        <button onclick="newLocal()" style="position:absolute;bottom:10%; height:10%; width:20%; left:0%;">NEW</button>
+        <button onclick="dateLocal()" style="position:absolute;bottom:10%; height:10%; width:20%; left:20%;">DATE</button>
+        <button onclick="listLocal()" style="position:absolute;bottom:10%; height:10%; width:20%; left:40%;">LIST</button>
+        <button onclick="statusMsg('TBD')" style="position:absolute;bottom:10%; height:10%; width:20%; left:60%;">TBD</button>
+        <button onclick="statusMsg('TBD')" style="position:absolute;color:red;bottom:10%; height:10%; width:20%; left:80%;">TBD</button>
+        <button onclick="saveLocal(),refreshLocal(0)" style="position:absolute;color:green;bottom:0%; height:10%; width:20%; left:0%;">SAVE</button>
+        <button onclick="refreshLocal()" style="position:absolute;bottom:0%; height:10%; width:20%; left:20%;">REFRESH</button>
+        <button onclick= "document.getElementById('print').innerHTML=document.getElementById('keyLocal').value+':&lt;br&gt;===============================&lt;br&gt;'+document.getElementById('valueLocal').value.replace(/\n/g, '&lt;br&gt;'), printDiv('print')" style="position:absolute;color:green;bottom:0%; height:10%; width:20%; left:40%;">PRINT</button>
+        <button onclick="deleteLocal(),refreshLocal(0)" style="position:absolute;color:red;bottom:0%; height:10%; width:20%; left:60%;">DELETE</button>
+        <button onclick="if(confirm('CLEAR ALL LOCAL STORAGE???')==true){localStorage.clear(),refreshLocal(),statusMsg('Local Storage Cleared!','red')}" style="position:absolute;color:red;bottom:0%; height:10%; width:20%; left:80%;">CLEAR!</button>
+        </div>
 
 <!--# SONG Controls 0000 to 999 --> 
     <div id='bigButtons'style="display:none; z-index:780;">
@@ -244,14 +235,7 @@
     </div>
 <!--# SONG Controls 0000 to 999 -->     
     <div id="bigPlay" style="display:block">
-        <!--<div onclick="trackPlay()" style="display:block; border:none; position:fixed; opacity:0.05; right:0%; bottom:0%; width:33%; height:22%; background-color:lightgreen; z-index:780;"></div>-->
-    
         <div onclick="trackPlay()" style="display:block; border:solid; position:fixed; opacity:0.05; right:0%; bottom:0%; width:33%; height:22%; background-color:lightgreen; z-index:780;"></div> 
-     
-     
-<!--$    <div onclick="if(COUNTin===true){countIntro()}else{trackPlay()}" style="display:block; border:solid; position:fixed; opacity:0.05; right:0%; bottom:0%; width:33%; height:22%; background-color:lightgreen; z-index:780;"></div>
--->
-        
         <img src="../../Icons/transPlay.png" title = "PLAY" alt =">" style="position:fixed;opacity:0.3;right:2% ;bottom:1% ;width:7%;z-index:779;">
         <div id="bigReset" onclick="trackReset()" style="display:block; border:solid; opacity:0.05; position:fixed; left:0%; bottom:0%; width:33%; height:22%; background-color:lightgreen; z-index:780;"></div>
         <img src="../../Icons/transReset.png" alt ="o" style="position:fixed; opacity:0.3; left:2% ;bottom:1% ;width:7%; z-index:779;">
@@ -386,17 +370,7 @@
             <img src="../../Icons/blackPrinter.png" title='PRINT' alt ="Print" onclick ="dis('prntType')" style="position:absolute;width:9%; height:70%;left:50.5%;bottom:0%;">
             <input  onclick = "setUpListener()" title ="GET LOCAL FILE" type="file" id = "fileinput" style = " position:absolute; left:60.5%; height:80%; width:9%; height:70%; bottom: 0%; z-index: 1202; opacity:0.01">
             <img src = "../../Icons/blackRead.png" alt ="Get Local File" style=" position:absolute;width:9%; height:70%;left:60.5%;bottom:0%;">
-            
-            
-            
             <img src="../../Icons/blackPython.png" alt='Python' onclick="window.open('../../cgi-bin/PlayerUpdate.py','Python','width=1000,height=340,toolbar=0,menubar=0,location=0')" style=" position:absolute;width:9%; height:70%;left:80.5%;bottom:0%;">
-       
-            
-            
-            
-            
-            
-            
             <img id="ButtonBT" src="../../Icons/blackTrack.png" title='Back Track Screen' alt ="BACK TRACK" onclick ="if(SOUNDmode=='BACK TRACK'& Audio1.duration>100){dis('backtracker','block'),document.getElementById('btTempo').value=BPMfile,songMap()}else{statusMsg('You Must be in Backtrack Mode with a valid Backtrack...','red')}" style="position:absolute;width:9%; height:70%;left:70.5%;bottom:0%;">
 <!--<img src="../../Icons/tab.png" id='buttonTabs' title='TAB SCREEN' alt ='TAB SCREEN' onclick ="showTab(0)" style="position:absolute;opacity:0.3;width:9%; height:70%;left:80.5%;bottom:0%;">-->
             <img id="ButtonDev" title="Activate Developer" src="../../Icons/Dev.png" alt ="Developer" onclick="dis('developer','block'),localStorage.setItem('developer','true')" style="position:absolute;width:9%;height:70%;left:90.5%;bottom:0%;">
@@ -467,15 +441,14 @@
     <img src="../../Icons/greyBug.jpg" title="Debug Screen"  onclick ="setMonitor()" id='debugButton'style="position:absolute; text-align: center;color:white; border-style:ridge; background-color:transparent; line-height:110%; font-size:1vw; top:0%; height:12%; width:4%; left:0%; z-index:5">
         <img src ="../../Icons/blackClose.png" title="Close Configuration Screen" alt="X" onclick ="barSelect('configuration'),statusMsg(songSum(),'yellow')" style="position:absolute;top:0%;  right:0%; height:12%;z-index:900;">   
         <div style=";position:absolute;text-align:center;line-height:100%; left:1%; top:1%; height:31%; width:98%;">
-        <div style="position: absolute;color:white;width:100%;top:0.5%; height:17%">BASIC SETTINGS</div>
+        <div style="position: absolute;color:white;width:100%;top:0.5%; height:17%">BASIC &nbsp SETTINGS</div>
         <div id = 'soundBox' style="position:absolute; text-align:center;width:30%; left:1%; bottom:5%; font-size:2vw;">--SOUND BOX---</div>
         <div style="position:absolute; text-align:center;width:28%; left:36%; bottom:5%; font-size:2vw;">
             <a style='color:white;'>PRESET MODES:</a>
             <select onchange="PRESET=(this.value),presets('presets')" style='background-color:white;color:black;font-size:2vw; width:100%'"><option selected >Default Mode</option><option>Perform Mode</option><option>Practice Mode</option><option>Developer Mode</option></select>
             </div>
         <div id="setSelectA" style="position:absolute;text-align:center; bottom:5%; font-size:2vw; right:1%; width:30%;">--SET LIST--</div>
-         <div id='revQ' onclick="statusMsg(revDates(),'yellow')" style="position:absolute;top:20.4%; right:40%; width:20%; height:20% ;background-color:transparent;z-index:901;"></div><!-- -->
-        <div id='revStatus' title='Click for Rev Dates' style="position:absolute;text-align:center; top:23.4%; font-size:2vw; right:40%; width:20%; background-color:yellow;color:red">Revision</div>
+        <div id='revStatus' title='Revision' style="position:absolute;text-align:center; top:23.4%;color:white; font-size:2vw; right:30%; width:40%;">REV:8.1 (6/2/21)</div><!--$$$$-->
     </div>
     <div style="color:white; position:absolute; line-height:100%; left:1%; bottom:35%; height:31%; width:98%; border:groove;">
         Display Format
@@ -492,18 +465,10 @@
             <img src ="../../Icons/off.png" id ="imgCLOCK"  alt="" style="position:absolute; bottom:1%; left:36%; height:70%; width:9%;">
         <a  onclick ="setCustom('TEXT','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; left:45%; color:white; opacity:1;z-index:1">Small<br>Text</a>   
             <img src ="../../Icons/off.png" id ="imgTEXT"  alt="" style="position:absolute; bottom:1%; left:45%; height:70%; width:9%;">
-       
- <!--$       <a  onclick ="setCustom('BIGselect','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; left:54%; color:white; opacity:1;z-index:1">Size<br>Playlist</a>   
-            <img src ="../../Icons/off.png" id ="imgBIGselect"  alt="" style="position:absolute; bottom:1%; left:54%; height:70%; width:9%;">         
- -->         
-        
         <a id="breakLines" onclick ="setCustom('BREAKlines','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; left:54%; color:white; opacity:1;z-index:9;">Char</br>90</a> 
             <img src ="../../Icons/off.png" id ="imgBREAKlines"  alt = "" style="position:absolute; bottom:1%; left:54%; height:70%; width:9%;z-index:5">            
         <div  id='bcp' onclick ="setCustom('BIGchords','','toggle');" style="position:absolute;text-align:center; top:40%; height:70%; width:9%; left:63%;color:white;z-index:9;">Chord<br>100%</div>
             <img src ="../../Icons/off.png" id ="imgBIGchords"  alt = "" style="position:absolute; bottom:1%; left:63%; height:70%; width:9%;z-index:4;">
- <!--$  <div  id='csize' onclick ="setCustom('CHORDsize','','toggle');" style="position:absolute;text-align:center; top:40%; height:70%; width:9%; left:72%;color:white;z-index:9;">Size<br>Chord<br>Auto</div>
-        <img src ="../../Icons/off.png" id ="imgCHORDsize"  alt = "" style="position:absolute; bottom:1%; left:72%; height:70%; width:9%;z-index:4;">
-    -->
         </div>       
     <div style="color:white;position:absolute;line-height:100%; left:1% ;bottom:1%; height:31%;width:48%; border: groove;">
         <pre>Show Notes          Pop Up Notes</pre>
@@ -519,71 +484,22 @@
             <img src ="../../Icons/off.png" id ="imgTECHnotes"  alt = "" style="position:absolute; bottom:1%; right:1%; height:70%; width:16%;">
         </div>  
     <div style="color:white;position:absolute;line-height:100%; left:51%; bottom:1%; height:31%; width:48%;border: groove;">
-            Automation
-        
-        
-
-
-                <a  onclick ="setCustom('BACKdrop','','toggle')"  style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:80%; color:white; opacity:1; z-index:1;">Back<br>Drop</a>
-                    <img src ="../../Icons/off.png" id ="imgBACKdrop"  alt = "" style="position:absolute; bottom:1%; right:80%; height:70%; width:16%;">
-                
-
-
-
-
-
-
-<a  onclick ="setCustom('LINEtime','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:48%; color:white; opacity:1;z-index:1;">Line<br>Time</a>
-<img src ="../../Icons/off.png" id ="imgLINEtime"  alt = "" style="position:absolute; bottom:1%; right:48%; height:70%; width:16%;">
-<a  onclick ="setCustom('LINEnum','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:64%; color:white; opacity:1;z-index:1;">Line<br>Num</a>
-<img src ="../../Icons/off.png" id ="imgLINEnum"  alt = "" style="position:absolute; bottom:1%; right:64%; height:70%; width:16%;">
-
-        
-        
-        
-        
+        Automation
+        <a  onclick ="setCustom('BACKdrop','','toggle')"  style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:80%; color:white; opacity:1; z-index:1;">Back<br>Drop</a>
+            <img src ="../../Icons/off.png" id ="imgBACKdrop"  alt = "" style="position:absolute; bottom:1%; right:80%; height:70%; width:16%;">
+        <a  onclick ="setCustom('LINEtime','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:48%; color:white; opacity:1;z-index:1;">Line<br>Time</a>
+            <img src ="../../Icons/off.png" id ="imgLINEtime"  alt = "" style="position:absolute; bottom:1%; right:48%; height:70%; width:16%;">
+        <a  onclick ="setCustom('LINEnum','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:64%; color:white; opacity:1;z-index:1;">Line<br>Num</a>
+            <img src ="../../Icons/off.png" id ="imgLINEnum"  alt = "" style="position:absolute; bottom:1%; right:64%; height:70%; width:16%;">
         <a  onclick ="setCustom('ENDpause','','toggle')" style="position:absolute; display:block; text-align:center; top:42%; height:40%; width:16%; right:32%; color:white; opacity:1;z-index:1">End<br>Pause</a>
-        <img src ="../../Icons/off.png" id ="imgENDpause"  alt = "" style="position:absolute;display:block; bottom:1%; right:32%; height:70%; width:16%;">
-  <!--@    <a  id ='countText'  onclick ="setCustom('COUNTin','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:49%; color:white; opacity:1;z-index:1">Count<br>In</a>
-  -->      
-
- <!--$  <a  onclick ="setCustom('COUNTin','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:49%; color:white; opacity:1;z-index:1">Count<br>In</a>
-          <img src ="../../Icons/off.png" id ="imgCOUNTin"  alt = "" style="position:absolute; bottom:1%; right:49%; height:70%; width:16%;">  
-  -->        
-        
-        
-        
+            <img src ="../../Icons/off.png" id ="imgENDpause"  alt = "" style="position:absolute;display:block; bottom:1%; right:32%; height:70%; width:16%;">
         <a  onclick ="setCustom('LOOPER','','toggle')"  style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:16%; color:white; opacity:1;z-index:1;">Loop<br>---</a>
             <img src ="../../Icons/off.png" id ="imgLOOPER"  alt = "" style="position:absolute; bottom:1%; right:16%; height:70%; width:16%;">    
- <!--$        <a onclick ="setCustom('METRO','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:17%; color:white; opacity:1;z-index:1;">Metro/<br>Beats</a>
-            <img src ="../../Icons/off.png" id ="imgMETRO"  alt = "" style="position:absolute; bottom:1%; right:17%;  height:70%; width:16%;">        
--->         
         <a  onclick ="setCustom('BARsync','','toggle')"  style="position:absolute; text-align:center; top:42%; height:40%; width:16%; right:1%; color:white; opacity:1;z-index:1">BAR<br>SYNC</a>
             <img src ="../../Icons/off.png" id ="imgBARsync"  alt = "" style="position:absolute; bottom:1%; right:1%; height:70%; width:16%;">    
     </div>   
-<!--$ SCONDARY CONFIGURATION BOX
-        <div id="configuration2" style="display:none; position:fixed; font-size:2vw; border-color:darkgrey; border-style:ridge; border-width:thick; background-color:darkgrey; text-align:center; overflow:hidden; opacity:1; height:61% ;width:90%; bottom:15%; left:5%; z-index:910;">    
-            <div>PERFORMER: CONFIGURATION (ADVANCED SETTINGS)</div>
-            <img  onclick ="dis('configuration2','none')"src ="../../Icons/primative.png" alt='?' style="position:absolute; border:outset; top:0%; left:0%;height:12%;">
-            <img src ="../../Icons/blackClose.png" alt="X" onclick ="barSelect('none')" style="position:absolute;top:0%; right:0%;height:12%;">
-            <div style="color:white;position:absolute;line-height:100%; left:1%; bottom:35%; height:31%; width:22%; border: groove;">
-                Line Numbers
-                <a  onclick ="setCustom('LINEtime','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:45%; left:2%; color:white; opacity:1;z-index:1;">Line<br>Time</a>
-                    <img src ="../../Icons/off.png" id ="imgLINEtime"  alt = "" style="position:absolute; bottom:1%; left:2%; height:70%; width:45%;">
-                <a  onclick ="setCustom('LINEnum','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:45%; right:2%; color:white; opacity:1;z-index:1;">Line<br>Num</a>
-                    <img src ="../../Icons/off.png" id ="imgLINEnum"  alt = "" style="position:absolute; bottom:1%; right:2%; height:70%; width:45%;">
-                </div>
-            <div style="color:white;position:absolute; line-height:100%; left:1%; bottom:1%; height:31%; width:98%; border: groove;">
-                INWORK CRAP....
-                <!-- <div  onclick ="breakLine('a',50)" style="position:absolute; text-align:center; top:42%; height:40%; width:10%; left:26%; color:white; opacity:1;z-index:1;">TEST<br>Thing</div>   
-                <a  onclick ="setCustom('KARAOKE','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:10%; left:36%; color:white; opacity:1;z-index:1;">Karaoke<br>Mode</a>   
-                    <img src ="../../Icons/off.png" id ="imgKARAOKE"  alt = "" style="position:absolute; bottom:1%; left:36%; height:70%; width:10%;">  ->
-                <a  onclick ="setCustom('BACKdrop','','toggle')"  style="position:absolute; text-align:center; top:42%; height:40%; width:10%; left:48%; color:white; opacity:1; z-index:1;">Back<br>Drop</a>
-                    <img src ="../../Icons/off.png" id ="imgBACKdrop"  alt = "" style="position:absolute; bottom:1%; left:48%; height:70%; width:10%;">
-                </div> 
-            </div>   
-        </div>
-        -->
-<!--TO RELEASE change the NEXTplayer.js to the the numbered Revision-->
-<SCRIPT type="text/javascript" SRC = "NextPlayerX.js"></script><!--$$$$-->
+
+<SCRIPT type="text/javascript" SRC = "NextPlayerX.js"></script><!--$$$$ CHANGE SRC= NextPlayer.js-->
+
+<!--MODULE-Z-->
 </body></html>

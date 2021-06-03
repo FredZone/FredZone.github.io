@@ -3,26 +3,29 @@ REVISION HISTORY and CONTROL SHEET
     shown as...<img src='../../Icons/turdSmall.jpg'>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 CURRENT PROBLEMS / IDEAS/ STATUS
-    Critical
-        Presets miss the Big Selector button
-       
-    Misc...
-    
-        trying to eleminate a lot of "NewLine=undefined"
-        Metronome is primative, does not sync quickly unless at start...
-        Tabs are incomplete and I disabled them
-    Out of my Control...
-        Problem with Chrome/KWS--Loop does not work in Android with KWS server use FIREFOX
-        or another server (js cannot identify server)
-    Plan:
-        fix or delete the bab
+
+    Mail useless?
+    Compartmentalize developer?
+    fix or delete the biab
+    python adds double Abilene to Backing list.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
 
-7-1:(NextPlayer) Inwork   ((128,331 bytes)) - (62,227 bytes))
-    5/27/21
+8.1 INWORK (120,453 bytes) (56,713 bytes) 
+    6/02/21
+        removed html page from developer
+    6/02/21 started 
+
+RELEASED(120,453 bytes) (56,713 bytes)
+8.0 :(123,982 bytes) - (57,277 bytes)
+    6/02/21
+        standardized release and final Cleanup deleted release date routin (useless)
+    5/31/21
+        cleanded up dead code from last two weeks (123,982 bytes)(57,277 bytes) back to  pre 06/19 size
+    5/27/21(123,982 bytes) - (57,277 bytes)
         eliminated ARRpresetImages
-        Corrected width of tune selector
+        Corrected width of tune selector//deleted big selector
         Fixed failure to boot if local storage did not HAVE mail(128,331 bytes)
         added printDiv function to mail and local Storage (ie ToDo list)
     5/24/21
@@ -46,18 +49,16 @@ CURRENT PROBLEMS / IDEAS/ STATUS
         Cleaned up presets still need work but better
         started the SHIT shunt for new work ALL NEW WORK IS ON THE SHUNT
 
-HISTORY:======================================================================
-7.0 (122,204 bytes (55,294 bytes)
-RELEASED!!!!!
-5/2/21  2:30AM 
-    Cleaned up presets still need work but better
-4/29/21 3:48PM 
-    deleted TABS permanently
-    cleanted up createPlayListSelectors
-    Reinstalled the Alt Tunes...needs to jump 2
 
+7.0 (122,204 bytes (55,294 bytes)========================
+    5/2/21  2:30AM 
+       Cleaned up presets still need work but better
+    4/29/21 3:48PM 
+        deleted TABS permanently
+        cleanted up createPlayListSelectors
+        Reinstalled the Alt Tunes...needs to jump 2
 
-7 (MAJOR Cleanup)==============================(130,539 bytes - 61,999 bytes)
+7. (MAJOR Cleanup)==============================(130,539 bytes - 61,999 bytes)
     4/8/21 2:37:pm I basically fooled with it for over a year without keeping track...I cant remember everything
     Basically the highlights are:
         1)adding a bigger TuneSelect box option

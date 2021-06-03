@@ -1,0 +1,262 @@
+<!--X MODULE-A-->
+<!DOCTYPE html>
+<!--TO RELEASE aFollow directions in NextPlayerX.js
+    1: Items marked $$$$ must be changed (2 PLACES)
+    2; Save this file as NextPlayer.html?(that will be the name of the latest revision)
+
+//CODING TAGS
+--@ DEAD/OBSOLETE....Deleat when safe
+--$ Under Development (see SHIT)================
+--# Major Section===============================
+--* Subsection==================================
+--^ Trailing note (AFTER text)==================
+--? WTF=========================================-->
+
+<head>
+    <style>
+    table, th, td {
+      table-layout: fixed;
+      overflow: hidden;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    </style>
+    <link rel="shortcut icon" type="image/png" href="../../Icons/inWork.png"><!--$$$$  Change href to "transVocal.png">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!-- prevents zooming on mobile devices....number-based width or "device-width"-->
+    <title id = 'title'>Performer</title>
+    <style type="text/css">
+        #localActionheader,#statusWindowheader,#backtrackerheader,#cloudheader,#mailerheader,#developerheader{cursor: move; background-color:orange; text-align:center; color:black; font-size:1vw; line-height:100%; top:0%; width:100%; height:5%; overflow:hidden;}
+        Body{font-size:3.3vw;                
+            color:white;
+            font-family:Courrier New;
+            font-weight: bold;
+            text-align:center;
+            vertical-align:middle;
+            border-color: black;
+            border-width:thin;
+            background-color:white;
+            padding:0px;
+            margin:0px;
+            overflow:hidden;}
+        X0{color:red;font-size:100vw;}
+        X1{color:green;}
+        X2{color:red;}
+        X4{color:red;background-color:#F4FA58;}
+        X5{color:white; background-color:lightgrey;}
+        X6{background-color:lightgrey;}
+        X7{background-color:transparent;}
+        X8{color:blue;}
+        X14{text-align:center; background-color:black; color:white;}
+        X15{text-align:center; background-color:red; color:white;}
+        X16{text-align:center; background-color:green; color:yellow;}
+        XX{text-align:center; background-color:transparent; color:transparent;}<!--invisible-->
+        table{border-color:transparent;
+            background-color:transparent;}
+        th  {border-style:groove;
+            border-color:black;
+            background-color:lightgrey;
+            text-align:center;}
+        pre { display: inline}
+        optgroup {font-size:1.5vw; }
+        </style>    
+    </head>
+<!--A-->
+
+<body">
+<!--# Local Storage -->    
+            <div id="localAction" style="display:block;border:solid;color:black;position:absolute;font-size:1vw;right:20%;top:20%;height:35%; width:30%;background-color:lightgrey ;z-index:10000">
+                <div id="localActionheader" style="position:absolute;top:0%;height:10%;font-size:2vw">
+                    Local Storage
+                </div>
+                <select id='selectLocal' onchange="refreshLocal(this.selectedIndex)" style="position:absolute;background-color:lightgrey;top:11%; height:12%; width:96%; left:1%;">
+                </select> <img src="../../Icons/blackClose.png" onclick="dis('localAction')" style="position:absolute;height:10%;right:0%;top:0%;z-index:1;"> <input id="keyLocal" type="text" onchange="document.getElementById('localAction').style.backgroundColor='pink'" style='position:absolute;left:1%;width:96%;top:25%;height:10%;overflow-y:scroll;font-size:1vw' value="TBD"><br>
+                <textarea id="valueLocal" onchange="document.getElementById('localAction').style.backgroundColor='pink'" style="position:absolute ;text-align:left;top:41%;height:35%;left:1%; width:96%;overflow-y:scroll;white-space: pre;">
+                    z-index:10050"&gt;
+                </textarea>
+                <button onclick="newLocal()" style="position:absolute;bottom:10%; height:10%; width:20%; left:0%;">NEW</button>
+                <button onclick="dateLocal()" style="position:absolute;bottom:10%; height:10%; width:20%; left:20%;">DATE</button>
+                <button onclick="listLocal()" style="position:absolute;bottom:10%; height:10%; width:20%; left:40%;">LIST</button>
+                <button onclick="statusMsg('TBD')" style="position:absolute;bottom:10%; height:10%; width:20%; left:60%;">TBD</button>
+                <button onclick="statusMsg('TBD')" style="position:absolute;color:red;bottom:10%; height:10%; width:20%; left:80%;">TBD</button>
+                <button onclick="saveLocal(),refreshLocal(0)" style="position:absolute;color:green;bottom:0%; height:10%; width:20%; left:0%;">SAVE</button>
+                <button onclick="refreshLocal()" style="position:absolute;bottom:0%; height:10%; width:20%; left:20%;">REFRESH</button>
+                <button onclick= "document.getElementById('print').innerHTML=document.getElementById('keyLocal').value+':&lt;br&gt;===============================&lt;br&gt;'+document.getElementById('valueLocal').value.replace(/\n/g, '&lt;br&gt;'), printDiv('print')" style="position:absolute;color:green;bottom:0%; height:10%; width:20%; left:40%;">PRINT</button>
+                <button onclick="deleteLocal(),refreshLocal(0)" style="position:absolute;color:red;bottom:0%; height:10%; width:20%; left:60%;">DELETE</button>
+                <button onclick="if(confirm('CLEAR ALL LOCAL STORAGE???')==true){localStorage.clear(),refreshLocal(),statusMsg('Local Storage Cleared!','red')}" style="position:absolute;color:red;bottom:0%; height:10%; width:20%; left:80%;">CLEAR!</button>
+                </div>
+
+<script>
+//.#      LOCAL STORAGE CONSTANTS 
+var LOCALkey="TBD"
+var LOCALvalue="TBD"
+
+//.## LOCAL STORAGE CODE
+function loadLocal(key){
+   dis('localAction','block')
+   refreshLocal()
+}
+
+function deleteLocal(){
+   statusMsg("Deleted "+document.getElementById('keyLocal').value,0 )
+   localStorage.removeItem(document.getElementById('keyLocal').value);
+   statusMsg("Deleted Local Storage: "+LOCALkey,0 )
+   refreshLocal()
+}
+
+function refreshLocal(idx) {
+   dis('localAction','block')
+   var str = ""
+   for (i = 0; i < localStorage.length; i++) {
+      str = str + "<option>" + localStorage.key(i) + "</option>"
+      }
+   str = str + "</select>"
+   document.getElementById('selectLocal').innerHTML = str
+   document.getElementById('selectLocal').selectedIndex=idx
+   LOCALkey= document.getElementById('selectLocal').value
+   document.getElementById('keyLocal').value=LOCALkey
+   LOCALvalue= localStorage.getItem(LOCALkey);
+   document.getElementById('keyLocal').value=LOCALkey
+   document.getElementById('valueLocal').value= LOCALvalue
+   document.getElementById('localAction').style.backgroundColor='lightgrey';
+}
+
+function saveLocal(){
+   var update=document.getElementById('valueLocal').value
+   //alert(document.getElementById('keyLocal').value +" > "+document.getElementById('valueLocal').value)
+   localStorage.setItem(document.getElementById('keyLocal').value , update )
+   statusMsg("Saved Local Storage: "+LOCALkey,0 )
+   document.getElementById('localAction').style.backgroundColor='lightgrey';
+   refreshLocal()
+}
+
+function dateLocal(){        
+   var date = new Date();
+   document.getElementById('localAction').style.backgroundColor='pink';
+   document.getElementById('valueLocal').value=date;
+}
+ 
+function newLocal(){        
+        var date = new Date();
+        document.getElementById('localAction').style.backgroundColor='pink';
+        document.getElementById('valueLocal').value="????";
+        document.getElementById('keyLocal').value="????";
+}
+
+function listLocal() {
+   var str = ""
+   for (i = 0; i < localStorage.length; i++) {
+      str = str +parseInt(i+1,10)+": " +localStorage.key(i) + " / "+localStorage.getItem(localStorage.key(i))+"<br>"
+      }
+    //document.getElementById('cloudTitle').innerHTML="LOCAL STORAGE LIST:"
+  // document.getElementById('cloudX').innerHTML=str
+   //dis('cloud','block')
+}
+
+//## GLOBAL CANDIDATES
+function dis(id,disp){
+    if(disp===undefined){
+            if(document.getElementById(id).style.display == 'none'){
+                document.getElementById(id).style.display='block';}
+            else{document.getElementById(id).style.display='none';}}
+        else{
+            if(disp=='none') {
+                document.getElementById(id).style.display = 'none';}
+            else{document.getElementById(id).style.display = 'block' ;}}}
+
+function vis(ID,style){
+    if(style===undefined){
+        if(document.getElementById(ID).style.visibility =='visible') {
+            style='hidden';}
+        else{
+            style='visible';}}
+    document.getElementById(ID).style.visibility =style;}
+    
+function receiveARR(divider,keepName) {//decode array (or string) and leading elements (put in receiving page)
+    var oldName=window.name;
+    var data;
+    if(divider===undefined)//recieve a string
+        {data=decodeURIComponent(decodeFredComponent(window.name));}
+    else//receive and array
+        {data=decodeURIComponent(decodeFredComponent(window.name)).split(divider);}
+    if(keepName===true|keepName===undefined|keepName===''){window.name=oldName;}
+    return  data;}
+
+function passARR(pageName,arr,divider,leadingElements){//take data, array or string and pass to another page//if its an array it you must use a divider (i.e. '\n')
+    var pf;
+    if(Array.isArray(arr)===true){pf=arr.join(divider);}else{pf=arr;}
+    if(leadingElements!==null){pf=leadingElements+divider+pf;}
+    window.open(pageName,encodeURI(encodeFredComponent(pf)),"toolbar=yes,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes");
+  //$  dis('prntType','none')
+  }
+
+function encodeFredComponent(str){ //grey-normal;red-attention Required ;yellow-normal pause or inwork//^ encodes problem char (?,@)
+    str=str.split("?");
+    str=str.join("QMARK");
+    str=str.split("@");
+    str=str.join("AMARK");
+    return str;}
+
+function decodeFredComponent(str){ //grey-normal;red-attention Required ;yellow-normal pause or inwork//^ decodes problem char (?,@)
+    str=str.split("QMARK");
+    str=str.join("?");
+    str=str.split("AMARK");
+    str=str.join("@");
+    return str;}
+
+    
+//.## DEVLOPER FUNCTIONS
+function badCode(){alert(parseInt(23/0,10))}//
+
+function devShrink() {
+   if (document.getElementById('developer').style.width == "3vw") {
+      document.getElementById('developer').style.height = "7vw"
+      document.getElementById('developer').style.width = "24vw"
+      document.getElementById('devShrink').style.top = "0vw"
+      document.getElementById('devShrink').style.height = "1vw"
+      document.getElementById('devShrink').innerHTML = "HIDE"
+   } else {
+      document.getElementById('developer').style.height = "3vw"
+      document.getElementById('developer').style.width = "3vw"
+      document.getElementById('devShrink').style.top = "1vw"
+      document.getElementById('devShrink').style.height = "2vw"
+      document.getElementById('devShrink').innerHTML = "SHOW"
+   }
+}
+//.#    SHIT (DO NOT DELETE)
+//CREATE the if/else for SHIT to use or bypass sections completely
+function toggleShit(){
+   //hide from the public: look for 'SHIT' to find the changes
+      if(SHIT==true ) {
+      SHIT=false;
+      document.getElementById('tShit').src="../../Icons/NS.png";
+      }else{
+      SHIT=true;
+      document.getElementById('tShit').src="../../Icons/DS.png";   
+      statusMsg("You're in DEEP SHIT!")
+   }
+   arrConvert()//set this depending on where you want to go back to
+}    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+//##.Status Msg Substitute
+function  statusMsg(){return}
+
+//.## BOOT ROUTINE BOOT and embedded functions:   All in functions sequence with breaks between sub routines
+window.onload = function() {
+  // dis('developer')
+}
+
+
+
+
+</script>
+
+</body></html>
