@@ -1,0 +1,44 @@
+
+
+
+ 
+    
+
+
+
+
+
+
+
+
+
+
+11000 print
+5505 msg
+
+4400   think
+    20000   thinkIcon
+
+
+
+
+
+
+990 Developer
+980 Local Storage
+970 Status Window
+960 Mail
+955 tempo/kwy/track
+950 backtracker
+940 info
+930 deeper
+920 tools
+
+
+
+
+
+
+
+
+3 shade 

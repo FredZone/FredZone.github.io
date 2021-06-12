@@ -1,0 +1,57 @@
+TITLE:Ill See You In My Dreams,DUR:160,BPM:150,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Joe Brown,GENRE:Unknown,STYLE:Unknown,HITyear:TBD
+#INTRO ----------------------------------
+|F       ~Dm       |Am      ~Dm      |F       ~Dm       |Am      ~Dm
+-
+|F       ~Dm       |Am      ~Dm      |F       ~Dm       |Am      ~Dm
+-
+#VERSE 1 --------------------------------
+|F       ~Dm       |Am      ~Dm      |D7               |F#dim     ~D7
+Though the days are long,                    twighight sings a song
+|G7               |Bb       ~C       |F       ~Dm       |Am      ~Dm
+Of the happin - ess that used to be
+|Am               |E7               |%                |Am
+Soon my eyes will close,  soon I'll find repose
+|Dm               |G7               |C                |CM7      ~C7
+And in dreams,  you're always near to me
+#CHORUS 1 -------------------------------
+|Bb               |Gm               |Bbm              |%
+I'll see you in my dreams,
+|F                |E7               |F6               |%
+hold you in  my    dreams
+|D7(3)            |%                |G7               |%
+Someone took you out of my arms,
+|C                |%                |CM7              |C7
+still I feel the thrill of your charms
+|Bb               |Gm               |Bbm              |%
+Lips that once were mine,
+|F                |E7               |F6               |%
+tender eyes   that  shine
+|D#maj(4)         |Dmaj(3)          |C                |A7
+They        will     light  my way   to -  night
+|Bb               |C                |F               |%
+I'll see you in my dreams
+#CHORUS 2 -------------------------------
+|Bb               |Gm               |Bbm              |%
+I'll see you in my dreams,
+|F                |E7               |F6               |%
+hold you in  my    dreams
+|D7(3)            |%                |G7               |%
+Someone took you out of my arms,
+|C                |%                |CM7              |C7
+still I feel the thrill of your charms
+|Bb               |Gm               |Bbm              |%
+Lips that once were mine,
+|F                |E7               |F6               |%
+tender eyes   that  shine
+|D#maj(4)         |Dmaj(3)          |C                |A7
+They        will     light  my way   to -  night
+|Dm               |Bb               |C                |F
+I'll see you in my dreams
+#OUTRO ----------------------------------
+|D#maj(4)     |Dmaj(3)      |C            |A7           |Dm
+They         will     light   my lonely way to - night
+|Bb               |C                |F
+I'll see you in my dreams
+|F       ~Dm       |Am      ~Dm      |F       ~Dm       |Am      ~Dm
+-
+https://youtu.be/1MSFxR11LOI?t=222|Joe Brown

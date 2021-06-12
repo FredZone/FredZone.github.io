@@ -96,25 +96,25 @@
     var TIMEOUTmirror;
     var TIMEOUTmet;
     var TIMEOUTwait; //Wait after scroll end before showing top Icons title etc
-//.#      CONFIGURATION CONSTANTS
-      //^             0        1          2        3   4    5     6     7         8        9         10        11      12         13       14     15     16  
-    var ARRpresets="CAPS,FULLscreen,LEFTborder,CLOCK,TEXT,SHADE,NOTES,SETnotes,POPnotes,TECHnotes,LIVEnotes,COUNTin,BREAKlines,BIGchords,LOOPER,METRO,BARsync".split(',');
-    var BACKdrop=false;
-    var BARsync=false
+//.#       CONFIGURATION CONSTANTS
+   //^         0      1       2        3    4      5        6         7         8        9       10       11      12 
+   ARRpresets="CAPS,SHADE,LEFTborder,CLOCK,NOTES,Unused,POPnotes,TECHnotes,LIVEnotes,LOOPER,BARsync,FULLscreen,ENDpause".split(',');//99
+   //Caps,Shad,Left,Clok,Note,Snot,Pnot,Tnot,Lnote,Loop,Sync,Full,Epau
+    var NOTEtype='None';
+    var BARsync=false;
     var BIGchords=true;
     var BIGchordSize=1.00;
     var BREAKlines=true;
     var COUNTin=false;
     var CAPS=true;
     var CLOCK=false;
-    var CLOCKstart=0;
-    var CLOCKstop=0;
-    var ENDpause=false;
-
+    //@var CLOCKstart=0;
+    //@var CLOCKstop=0;
+    var ENDpause=true;
     var FULLscreen=false;
     var LEFTborder=false;
-    var LINEnum=false;//^ show line numbers
-    var LINEtime=false;//^ show min sec instead of line num
+   //@ var LINEnum=false;//^ show line numbers
+   //@ var LINEtime=false;//^ show min sec instead of line num
     var LINKnotes=false;
     var LIVEnotes=false;
     var NOTES=false;
@@ -135,10 +135,6 @@
     var WINDht;//px window height
     var WINDwt;//px window width
 //.#      LOOP VARIABLES
-    var METRO=false;//metronome
-    var MET;//METRO count
-    var METRObpm;
-    var METRObeats;
     var LOOPER=false;
     var LOOPon=false;
     var LOOPtop=0;
@@ -148,8 +144,8 @@
     var LOOPmode='repeated';
     var ENDscroll=false;
     var ENDaudio=false
-//.#      PRESETS
-    var ARRtf="true,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false".split(',');
+//.#     PRESETS
+    var ARRtf="true,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,true".split(',');
     var PRESETno=0;
     var PRESET="Default Mode";
     var PRESETlock=false //force break in presets
@@ -215,8 +211,6 @@ function refreshLocal(idx) {
 
 function saveLocal(){
    var update=document.getElementById('valueLocal').value
-   //alert(document.getElementById('keyLocal').value +" > "+document.getElementById('valueLocal').value)
-   
    localStorage.setItem(document.getElementById('keyLocal').value , update )
    statusMsg("Saved Local Storage: "+LOCALkey,0 )
    document.getElementById('localAction').style.backgroundColor='lightgrey';
@@ -241,9 +235,9 @@ function listLocal() {
    for (i = 0; i < localStorage.length; i++) {
       str = str +parseInt(i+1,10)+": " +localStorage.key(i) + " / "+localStorage.getItem(localStorage.key(i))+"<br>"
       }
-    document.getElementById('cloudTitle').innerHTML="LOCAL STORAGE LIST:"
-   document.getElementById('cloudX').innerHTML=str
-   dis('cloud','block')
+   document.getElementById('infoheader').innerHTML="LOCAL STORAGE LIST:"
+   document.getElementById('infoX').innerHTML=str
+   dis('info','block')
 }
 
 
@@ -300,8 +294,6 @@ function mailTo(mode) {
       entry = TITLE + ":\nSelected Text----------------------------------\n" + getSelectionText() + "\n----------------------------------------------";
    } else if (mode == 'restore') {
       entry = localStorage.getItem('sentMail')
-   
-   
    }else if (mode == 'delete') {
       if (confirm('PERMANENTLY delete Your eMail draft') === true) {
          document.getElementById('mailerBody').value = ""
@@ -350,7 +342,7 @@ function iconize(icon,fontsize){// put an icon.png in text line
    return  "<img src=\'../../Icons/"+icon+".png\' alt =\'?\' style=\'position:absolute;width:"+FONTSIZE+"\'>"
 }
 
-//.?
+//.?.@
 function localFile(desc, loc, web) {
    var a = '<!DOCTYPE html><head></head><body>'
    var x = window.open("", "", "toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=" + parseInt(WINDwt / 2, 10) + ", height=" + parseInt(WINDht / 3, 10));
@@ -362,7 +354,6 @@ function localFile(desc, loc, web) {
    x.document.write(a)
    x.document.close
 }
-
 
 //.## BACTRACK FUNCTIONS
 function btInst() {
@@ -467,13 +458,16 @@ function start() {
     j = 0;
     clearTimeout(TIMEOUTcrap);
     document.getElementById('dubugSafety').focus();
-    var lst = "<a style='text-align:center; width:100%'><a style='color:white;'>SOUND MODE</a><br><select id='soundSelector' style='background-color:white;color:black;font-size:2vw; width:100%' onchange='setSoundModeDefault(this.value)'>";
+   
+   
+    var lst = ""
     while (j < ARRsoundModes.length) {
         lst = lst + "\n<option>" + ARRsoundModes[j] + "</option>";
         j++;
     }
-    lst = lst + "\n</Select>";
-    document.getElementById("soundBox").innerHTML = lst;
+    document.getElementById("soundSelector").innerHTML = lst;
+    
+    createBTselector()
     arr = receiveARR(); //get an array if one is sent...*possible global
     if (arr ===undefined | arr ===null | arr ===''|arr.length<10) { //^ normal first time boot, no query string
         BOOT = true;
@@ -489,11 +483,29 @@ function start() {
 }
 
 //.## SELECTORS
+
+function createBTselector() {
+//function createSetSelector() { //^creates an option box from the file SetList.txt in the top directory
+    statusMsg("Backing Track Selector...");
+    var content=getTextFile("../Sets/ALL BACKING.txt")
+    var tracks = content.split("\n");
+    var ihtml = "";
+    j = 0;
+    while (j < tracks.length) {
+      ihtml = ihtml + "\n<option>"+tracks[j]+"</option>";
+      j = j + 1;
+    }
+    ihtml = ihtml + "\n</Select>";
+    document.getElementById("btName").innerHTML = ihtml;
+}
+
+
+
 function createSetSelector() { //^creates an option box from the file SetList.txt in the top directory
     statusMsg("Creating Set Selector...");
     var content=getTextFile("SetList.txt")
     var sets = content.split("\n");
-    var ihtml = "<a style='text-align:center; width:45vw;color:white'>PLAYLIST:</a><br><select id='Set' style='font-size:2vw' onchange='SETname=(this.value);selectPlaylist(this.value)'><option selected>ALL TUNES</option>";
+    var ihtml = "<option selected>ALL TUNES</option>"//<a style='text-align:center; width:45vw;color:white'>PLAYLIST:</a><br><select id='Set' style='font-size:2vw' onchange='SETname=(this.value);selectPlaylist(this.value)'><option selected>ALL TUNES</option>";
     j = 0;
     while (j < sets.length) {
         if (sets[j].substr(0, 9)!= "ALL TUNES") {
@@ -501,9 +513,8 @@ function createSetSelector() { //^creates an option box from the file SetList.tx
         }
         j = j + 1;
     }
-    ihtml = ihtml + "\n</Select>";
-    document.getElementById("setSelectA").innerHTML = ihtml;
-    //if(PRESETlock!=true){selectPlaylist("ALL TUNES");} //^ default  USELESS???
+    //ihtml = ihtml + "\n</Select>";
+    document.getElementById("set").innerHTML = ihtml;
     selectPlaylist("ALL TUNES");
 }
 
@@ -523,25 +534,7 @@ function selectPlaylist(set) { //^ Selects your set by its name
 }
 
 function createPlayListSelector() {//^ creates the setlist option box and selects tune 0
-   statusMsg('Creating PlayList Selectors ' + SETname, 0);
-   statusMsg("Formating Small Playlist and Selecting Default Song...", "yellow");
-/*$   if (BIGselect == true) {
-      statusMsg("Formating BIG Playlist and Selecting Default Song:" + TUNEnum, "yellow");
-      var i = 0;
-      str = "<div id='BB'>"
-      statusMsg(PLAYlist.length)
-      while (i < PLAYlist.length) {
-         str = str + "<div id='BS" + i + "' onclick=\"selectTuneNo(\'" + i + "\')\" style='position:relative;border:solid;height:5vh;line-height:110%;width:100%;overflow:hidden;font-size:4vh;'>" + (i + 1) + ":  " + PLAYlist[i].split('|')[0] + "</div>";
-         i = i + 1;
-      }
-      str = str + "</div>"
-      document.getElementById('BS').innerHTML = str
-      document.getElementById("BS" + TUNEnum).style.color = 'red'
-      document.getElementById('BSbutton').style.display = 'block'
-   } else {
-      document.getElementById('BSbutton').style.display = 'none'
-   }
-*/   
+   statusMsg("Formating Playlist and Selecting Default Song...", "yellow");
    var a;
    var lst = "";
    j = 0;
@@ -583,21 +576,24 @@ function openSong() { //opens a song with title, if its on server, not on list
 
 }
 
-function selectTune(titl){
-   /*TITLEplus is formated play info=@TITLE|KEY|BPM|SOUNDmode|NOTEset|volume (@ indicates alternate if its present)*/ 
-  TITLEplus = titl;
-  ARRtitle = titl.split("|");
+function selectTune(titl) {
+   /*TITLEplus is formated play info=@TITLE|KEY|BPM|SOUNDmode|NOTEset|volume (@ indicates alternate if its present)*/
+   TITLEplus = titl;
+   ARRtitle = titl.split("|");
+   //alert
+
    if (ARRtitle[0].substr(0, 1) !== "@") {
       TITLE = ARRtitle[0];
       ALT = false;
    } else {
       ALT = true;
       TITLE = ARRtitle[0].substr(1);
-   }TITLE=TITLE.replace(/(\r\n|\n|\r)/gm,"");//strip all line feeds
-   statusMsg("Selected: "+TITLE)
-   TUNEnum= PLAYlist.indexOf(TITLEplus);
-   dis('backtracker', 'none'); //SIMPLIFY
-   document.getElementById("mySet").selectedIndex=TUNEnum;//set the std selector
+   }
+   TITLE = TITLE.replace(/(\r\n|\n|\r)/gm, ""); //strip all line feeds
+   statusMsg("Selected: " + TITLE)
+   TUNEnum = PLAYlist.indexOf(TITLEplus);
+   dis('backtracker', 'none'); //???whySIMPLIFY
+   document.getElementById("mySet").selectedIndex = TUNEnum; //set the std selector
    document.getElementById('myTune').innerHTML = TITLE; //?. What is my tune??
    CTO();
    document.getElementById("content").innerHTML = "";
@@ -606,14 +602,19 @@ function selectTune(titl){
    } else {
       SOUNDmode = SOUNDmodeDefault;
    }
-   if (ARRtitle[4] !== undefined & ARRtitle[4] !== "") {
-      NOTEset = ARRtitle[4];
+   if (ARRtitle[4] !== undefined & ARRtitle[4] !== "No tune specific notes from the Set") {
+   //   NOTEset = ARRtitle[4];
    }
    if (ARRtitle[5] !== undefined & ARRtitle[5] !== "") {
       VOL = ARRtitle[5];
    } else {
       VOL = VOLdefault;
    }
+   if (TITLEplus.length-TITLE.length<3) {
+   NOTEset = "No Notes..."
+   }else{
+   NOTEset = "<pre>KEY   > " + ARRtitle[1] + "<br>BPM   > " + ARRtitle[2] + "<br>SOUND > " + ARRtitle[4] + "<br>VOLUME> " + ARRtitle[5] + "<br>NOTE  > " + ARRtitle[4] + "</pre>";
+   }  
    if (PRESETlock != true) {
       loadServerTitle();
    }
@@ -660,7 +661,6 @@ function loadServerTitle() {
 
 function createARRlines(content) { //^ Make ARRlines, from the text file
     statusMsg("Processing Song file: " + TITLE);
-    NOTEset = undefined;
     ARRlines = "";
     while (content.indexOf("\r") >= 0) { //^ get rid of linefeeds
         content = content.replace("\r", "");
@@ -684,8 +684,8 @@ function createARRlines(content) { //^ Make ARRlines, from the text file
             SOUNDmode = ARRtitle[3];
         }
         if (ARRtitle[4] !== undefined & ARRtitle[4] !== "") {
-            NOTEset = ARRtitle[4];
-        }
+           NOTEset = ARRtitle[4];
+       }
     }
     loadServerTrack();
 }
@@ -712,7 +712,7 @@ function loadServerTrack() { //afrom 5.2
             BPMfile=BPM = hash(ARRlines[0], "BPM", BPM);
             icon = "transBackTrack.png";
             src = "../Backing/" + BACKTRACK + ".mp3";//zzz
-            document.getElementById('trackName').innerHTML=BACKTRACK + ".mp3"
+            document.getElementById('btName').value=BACKTRACK;
         } else { //dependent on Beat (round up to 5 or 10)
             while (parseFloat(newBPM / 5, 10) !== parseInt(newBPM / 5, 10)) {
                 newBPM = parseInt(newBPM, 10) + 1;
@@ -827,9 +827,9 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
    var tabCount = 0
    var tabString
    PRESONGlines = 0;
-   NOTEtech = undefined; //^ consider calculating these to eliminate constants
-   NOTEtrivia = "NO TRIVIA NOTES";
-   NOTElinks = undefined;
+   NOTEtech ="No Notes...";
+   NOTEtrivia ="<center>" +TITLE.toUpperCase() +"<br>ARTIST: "+ARTIST+" < > HIT YEAR; " +HITyear +"</center><br>";
+   NOTElinks ="No Notes...";
    IRB = undefined;
    screenFormat('Think', 'danger.png')
    LONGLINE = longestLine() + 1;
@@ -838,16 +838,7 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
       img = true;
    } //in case there are no lines (indicates image file)
       LONGLINE = LINElimit
-   if (LINEnum === true | LINEtime === true) {
-      LONGLINE = LONGLINE + 4;
-   } //^ adding space
-   var lineNum = 1;
-   if (TEXT === true) {
-      m = "/Small Text"
-      fsize = (165 / LONGLINE)
-   } else {
       fsize = (180 / LONGLINE)
-   }
    n = fsize.toString();
    FONTSIZE = n.substring(0, 4) + "vw";
    n = (BIGchordSize * fsize).toString();
@@ -873,22 +864,19 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
          } else
             newLine = newLine.substring(2, newLine.length);
       } else if (lType == 'noteTriv') {
-         if (NOTEtrivia == "NO TRIVIA NOTES") {
-            NOTEtrivia = "";
-         }
          NOTEtrivia = NOTEtrivia + newLine.substr(2) + "<br>";
          newLine = undefined;
       } else if (lType == 'tab') { 
          alert(TITLE+' file line '+j+ ' contains a tab, It should be removed')
       } else if (lType == 'noteTech') {
-         if (NOTEtech === undefined) {
+         if (NOTEtech =="No Notes...") {
             NOTEtech = newLine.substr(3);
          } else {
             NOTEtech = NOTEtech + "\n" + newLine.substr(3);
          }
          newLine = undefined;
       } else if (lType == 'link') {
-         if (NOTElinks === undefined) {
+         if (NOTElinks === "No Notes...") {
             NOTElinks = "";
          }
          arrTemp = newLine.split("|");
@@ -970,9 +958,6 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
          while (newLine.length < LONGLINE - 5) {
             newLine = newLine + "=";
          }
-         if (LINEnum === true || LINEtime === true) {
-            newLine = "<X6>    </X6>" + newLine;
-         }
          newLine = "<X8>" + newLine + "</X8>"
       } else if (lType == 'lyric') {
          m = "<X1>" + m;
@@ -995,32 +980,7 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
             newLine = newLine.toUpperCase();
             m = m + "/Capitalized";
          }
-         if (LINEnum === true) {
-            if (lineNum < 10) {
-               num = "<X5>" + lineNum + "   </X5>";
-            } else if (lineNum < 100) {
-               num = "<X5>" + lineNum + "  </X5>";
-            } else {
-               num = +"<X5>" + lineNum + " </X5>";
-            }
-            newLine = num + newLine;
-            lineNum++;
-         }
-         if (LINEtime === true) {
-            newLine = "<X5>" + secToMin(((lineNum - 1) / lyricLines) * DUR, 10) + "</X5>" + newLine;
-            lineNum++;
-         }
-         if (LINEnum === true) {
-            if (lineNum < 10) {
-               num = "<X5>" + lineNum + "   </X5>";
-            } else if (lineNum < 100) {
-               num = "<X5>" + lineNum + "  </X5>";
-            } else {
-               num = +"<X5>" + lineNum + " </X5>";
-            }
-            newLine = num + newLine;
-            lineNum++;
-         }
+
          if (LIVEnotes === true) {
             newLine = newLine.replace(/XX>/g, "X16>") //make them visible
             newLine = newLine.replace(/#-->/g, "</X16>") //make them visible//OBSOLETE
@@ -1033,9 +993,6 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
             newLine = newLine + " ";
          }
          newLine = "<X7>" + newLine + "</X7>";
-         if (LINEnum === true || LINEtime === true) {
-            newLine = "<X6>    </X6>" + newLine;
-         }
       }
       if (newLine) {
          if (LEFTborder === true) {
@@ -1081,25 +1038,17 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
    }
    htmlString = htmlString + "<X2><center>=====    END    =====</center></X2><br>" + offset2 + "</pre></body></html>";
    statusMsg("Line)Type/Actions================================", 0);
-   if (NOTEtech !== undefined) {
-      NOTEtech = "<pre>" + NOTEtech + "</pre>";
-   }
-   if (NOTEtrivia === "" | NOTEtrivia === undefined) {
-      opacSet("ButtonTrivia", 0.2)
-   } else {
-      opacSet("ButtonTrivia", 1);
-   }
    if (SOUNDmode != "BACK TRACK" | isNaN(Audio1.duration) === true) {
       opacSet("ButtonBT", 0.2)
    } else {
       opacSet("ButtonBT", 1);
    }
-   if (NOTEtech === "" | NOTEtech === undefined) {
+   if (NOTEtech == "No Notes...") {
       opacSet("ButtonTech", 0.2)
    } else {
       opacSet("ButtonTech", 1);
    }
-   if (NOTElinks === "" | NOTElinks === undefined) {
+   if (NOTElinks == "No Notes...") {
       opacSet("ButtonLinks", 0.2)
    } else {
       opacSet("ButtonLinks", 1);
@@ -1116,6 +1065,7 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
       loadSongImage("../Img/" + TITLE + ".jpg");
    }
 }
+
 //.## IMAGE SONG (Not Text)
 function loadSongImage(path) {
     statusMsg('Loading Grapic Song Image...');
@@ -1129,6 +1079,7 @@ function loadSongImage(path) {
 //.## SCROLL SETUP
 function scrollSetup(img) { //^ get the song data,songHeight,iframeHeight,Duration,ScrollConstant Run after you set the content of page
    statusMsg('Setting Up Scroll...', 'red');
+   var z;
    var mesg = "No Scroll Mesage"
    statusMsg(mesg, 0);
    PAGEht = document.getElementById("content").clientHeight;
@@ -1156,7 +1107,7 @@ function scrollSetup(img) { //^ get the song data,songHeight,iframeHeight,Durati
    mesg = songSum()
    //.## APPLY USER SETTINGS
    statusMsg("Applying User's Screen Configuration...", 0);
-   if (SOUNDmode !== "SILENT" || METRO == true) {
+   if (SOUNDmode !== "SILENT"){ 
       dis('volCtrl', 'block');
    } else {
       dis('volCtrl', 'none');
@@ -1172,14 +1123,14 @@ function scrollSetup(img) { //^ get the song data,songHeight,iframeHeight,Durati
    } else {
       dis("clock", "none");
    }
-   if (NOTEset !== undefined & SETnoteViewed === false & SETnotes === true) { //(str,fs,clr,bak,def,title,status)
-      notePopUp(NOTEset.split('@').join('<br>'), '2vw', 'black', 'white', 'No Playlist Notes', 'Playlist Notes', 'Playlist note...'), 'Playlist Notes';
-      SETnoteViewed === true
-   } else if (POPnotes === true & PREVtitle !== TITLE) { //& NOTEtrivia!==undefined 
-      notePopUp(triviaNotes(), '2vw', 'black', 'yellow', 'No Trivia Notes...', 0, 'No Trivia Notes', 'Trivia Notes');
-   } else if (TECHnotes === true & PREVtitle !== TITLE & NOTEtech !== undefined) { //& NOTEtrivia!==undefined 
-      notePopUp(NOTEtech, '4vw', 'black', 'pink', 'No Tech Notes...', 0, 'Technical Notes');
-   }
+  //.@ if (NOTEset !== undefined & SETnoteViewed === false & SETnotes === true) { //(str,fs,clr,bak,def,title,status)
+  //    notePopUp('Playlist Notes',NOTEset.split('@').join('<br>'));
+  //    SETnoteViewed === true
+  // } else if (POPnotes === true & PREVtitle !== TITLE) { //& NOTEtrivia!==undefined 
+ //     notePopUp('Trivia Notes',NOTEtrivia);
+ //  } else if (TECHnotes === true & PREVtitle !== TITLE) { //& NOTEtrivia!==undefined 
+ //     notePopUp('Technical Notes',NOTEtech);
+ //  }
    PREVtitle = TITLE;
    TRANSPOSE = 0;
    document.getElementById('key2').innerHTML = KEY;
@@ -1241,21 +1192,6 @@ function scrollSetup(img) { //^ get the song data,songHeight,iframeHeight,Durati
       mesg = WARNING;
       msgColor = 'red';
    }
-   METRObpm = BPM
-   METRObeats = BEATS
-   if (BPM > 150) {
-      if (BEATS == 2 || BEATS == 4 || BEATS == 8 || BEATS == 10 || BEATS == 12 || BEATS == 16) {
-         METRObpm = parseInt(BPM / 2);
-         METRObeats = parseInt(BEATS / 2, 10);
-      } else if (BEATS == 6) {
-         METRObpm = parseInt(BPM / 3)
-         METRObeats = 2
-      } else {
-         METRObpm = parseInt(BPM / BEATS)
-         METRObeats = 1
-      }
-   }
-   MET = parseInt(60000 / METRObpm, 10)
    BAR = -1
    BARSTOP = ARRbars[0]
    ENDscroll = false;
@@ -1271,8 +1207,22 @@ function scrollSetup(img) { //^ get the song data,songHeight,iframeHeight,Durati
    }
    if (localStorage.getItem('developer') == 'true') {
       dis('developer', true)
-   };
-
+   }   
+   if(NOTEtype!='None'){
+      if (NOTEtype=='Set'){
+         z=NOTEset;
+      }else if (NOTEtype=="Tech") {
+         z=NOTEtech;
+      }else if (NOTEtype=="Trivia") {
+         z=NOTEtrivia;
+      }else if (NOTEtype=="Links") {
+         z=NOTElinks;
+      }
+      if (z!="No Notes...") {
+         notePopUp(TITLE+"-Noted Internet "+NOTEtype,z);   
+      
+      }
+   }
    statusMsg(mesg, msgColor)
 }
 
@@ -1359,14 +1309,14 @@ function endSong() {
       var now = document.getElementById('Audio1').currentTime;
       statusMsg('Scroll:' + parseInt(Ypos * 100 / SCROLLpix, 10) + '%  Time:' + parseInt(100 * now / dur, 10) + "%", 0);
       if (ENDpause == true & SOUNDmode == 'SILENT') {
-         var crap = (WINDht / SCROLLkon) * 500
+         //@var crap = (WINDht / SCROLLkon) * 750
          statusMsg('Pause for scroll catchup...', 'none')
-         screenFormat('Think', 'trans.png');
+         screenFormat('EndPause', 'trans.png');
          dis("msg", "none")
          TIMEOUTcrap = setTimeout(function() {;
             screenFormat('End');
             statusMsg('SONG ENDED', 'yellow')
-         }, crap);
+         }, (WINDht / SCROLLkon) * 750);
       } else {
          screenFormat('End')
          statusMsg('SONG ENDED', 'yellow')
@@ -1384,19 +1334,13 @@ function printDiv(divName) {
    window.print();     
    document.body.innerHTML = originalContents;
    }
-
-
-function notePopUp(str, fs, clr, bak, def, title, status) { //string, font size, color and Default
-   document.getElementById('cloudX').style.color = clr;
-   document.getElementById('cloudX').style.backgroundColor = bak;
-   document.getElementById('cloudX').style.fontSize = fs;
-   document.getElementById('cloudX').innerHTML = str;
-   document.getElementById('cloudX').scrollTop = 0;
-   document.getElementById('cloudTitle').innerHTML = title;
-   document.getElementById('cloudX').scrollTop = 0;
-   dis('cloud', 'block');
-   dis('tool', 'none')
-   statusMsg("Pop Up Notes : " + title, 0);
+//.$
+function notePopUp(title,str) { //string, font size, color and Default
+  document.getElementById('infoheader').innerHTML = title;
+  document.getElementById('infoX').innerHTML = str;
+   dis('info', 'block');
+   //@dis('tool', 'none')
+   statusMsg("Pop Up: " + title, "yellow");
 }
 
 function CTO() { //^ clear all Timouts except blink
@@ -1407,7 +1351,6 @@ function CTO() { //^ clear all Timouts except blink
    clearTimeout(TIMEOUTnext);
    clearTimeout(TIMEOUTfade);
    clearTimeout(TIMEOUTwait);
-   //clearTimeout(TIMEOUTmail);
 }
 
 function scrollTune(pct, step) { //^ 25% of screen per second seems appropriate rate
@@ -1439,15 +1382,16 @@ function scrollTune(pct, step) { //^ 25% of screen per second seems appropriate 
 
 function screenFormat(cmd, varA) { //^ configures the play screen to match the play status(moves, displays and hides icons )
    statusMsg("Display Format: " + cmd + "(" + varA + ")", 0)
-   if (cmd == "Scroll" | cmd == "Ready" | cmd == "Pause" | cmd == "Think" | cmd == "End") {
+   dis('info','none')
+   if (cmd == "Scroll" | cmd == "Ready" | cmd == "Pause" | cmd == "Think" | cmd == "End" | cmd == "EndPause") {
       clearTimeout(TIMEOUTfade);
-      dis('metronome', 'none')
+      //document.getElementById('think').onclick=""
+      document.getElementById('think').setAttribute( "onClick", "javascript: return;" );
       dis('Audio1', 'block');
       dis('bigPause', 'none');
       dis('bigButtons', 'none');
       dis('bigPlay', 'block');
       dis("think", "none");
-      dis('backDrop', 'none');
       dis('altSong', 'none');
       dis("msg", "none");
       dis("lastIcon", "block");
@@ -1458,9 +1402,6 @@ function screenFormat(cmd, varA) { //^ configures the play screen to match the p
             dis('bigButtons', 'block');
          } else {
             dis('bigButtons', 'none')
-            //$if (METRO === true) {
-            //$   dis('metronome', 'block')
-            //$}
          }
          dis('bigPause', 'block')
          dis('bigPlay', 'none');
@@ -1468,9 +1409,6 @@ function screenFormat(cmd, varA) { //^ configures the play screen to match the p
          barSelect("none");
          dis("songIcons", "none");
          document.getElementById('shade').style.visibility = 'hidden';
-         if (BACKdrop === true) {
-            dis('backDrop', 'block');
-         }
       }
       if (cmd === "Ready") {
          if (ALT === true) {
@@ -1490,6 +1428,18 @@ function screenFormat(cmd, varA) { //^ configures the play screen to match the p
          dis('songIcons', 'block');
          dis("msg", "block");
          dis('Audio1', 'block');
+      }
+      if (cmd === "EndPause") {
+         dis('think', 'block');  
+        // dis('bigButtons', 'block');
+         //dis('bigPlay', 'block');
+         //dis('bigReset', 'block');
+         //dis('songIcons', 'none');
+         //dis("msg", "none");
+         //dis('Audio1', 'block');
+         
+         document.getElementById('think').setAttribute( "onClick", "javascript: trackReset();" );
+         //document.getElementById('think').onclick="trackReset()"
       }
       if (cmd === "Pause") {
          dis('bigButtons', 'none');
@@ -1536,7 +1486,6 @@ function trackPause() {
    if (BARsync === true) {
       barsClear()
    }
-   document.getElementById('metronome').innerHTML = "-"
    if (SOUNDmode !== 'SILENT') {
       document.getElementById("Audio1").pause();
    } //;PAUSEpoint=document.getElementById("Audio1").currentTime;}
@@ -1570,10 +1519,6 @@ function trackPlay() { //pause options...undefined
    document.getElementById('Audio1').currentTime = POStrack
    Ystart = document.getElementById('Tune').scrollTop = POSscreen
    screenFormat("Scroll");
-   //@ = document.getElementById("tabBox").scrollLeft;
-   //$if (METRO === true & BAR === 0) {
-   //$   metro(0)
-   //$}
    statusMsg("PLAY STEP 2: " + document.getElementById("Audio1").currentTime + ' secs >>>' + POStrack, 0);
    SCROLLstartTime = new Date().getTime();
    document.getElementById("Audio1").play();
@@ -1776,8 +1721,6 @@ function unique( /*str[]*/ arr) { //^ finds unique elements in an array arr
       r.push(i);
    return r;
 }
-
-
 
 //.## LOOP FUNCTIONS
 function endLoop() {
@@ -1983,7 +1926,6 @@ function newKey(nk) { //nash means Nashville
    document.getElementById('key2').src = '../../Icons/key' + nk2 + '.png'
    KEYlast = KEY;
    KEY = nk;
-   //SONGlastCustom=0; USELESS
    statusMsg("Transposed to " + KEY + 'and arrConvert()initiated', 0)
    arrConvert();
 }
@@ -2017,74 +1959,118 @@ function setSoundMode(mode, icon) {
 }
 //.## PRESETS
 function presets(action) {
-   // 0        1          2        3   4    5     6     7         8        9         10        11      12         13       14     15     16  
-   //ARRpresets="CAPS,FULLscreen,LEFTborder,CLOCK,TEXT,SHADE,NOTES,SETnotes,POPnotes,TECHnotes,LIVEnotes,COUNTin,BREAKlines,BIGchords,LOOPER,METRO,BARsync".split(',');
-   statusMsg("Initiating preset: " + PRESET + ": " + PRESETno, 0)
-   PRESETno = 0
+   statusMsg("PRESET:" + PRESET + "  (" + action + "0")
+   PRESETno = 0;
+   LINElimit = 90;
+   document.getElementById('imgBREAKlines').src = "../../Icons/off.png"
+   BIGchordSize = 1 
+   document.getElementById('imgBIGchords').src = "../../Icons/off.png"
    if (PRESET === "Default Mode") {
       if (action == 'presets') {
-         ARRtf = "true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false".split(',');
+         //         0    1     2     3     4     5     6     7    8     9     10    11   12
+         //       Caps,Shad, Left, Clok, Note, Snot,  obs, obs,  ,obs, Loop, Sync, Full, Epau
+         ARRtf = "true,false,false,false,false,false,false,false,false,false,false,false,true".split(',');
          setCustom(ARRpresets[PRESETno], ARRtf[PRESETno], 'presets')
       } else if (action == 'wrap') {
-      document.getElementById('soundSelector').selectedIndex = 0;
-      setSoundModeDefault(document.getElementById('soundSelector').value);
-      selectPlaylist('ALL TUNES')
-      document.getElementById('Set').value = 'ALL TUNES';
+         document.getElementById('soundSelector').selectedIndex = 0;
+         setSoundModeDefault(document.getElementById('soundSelector').value);
+         selectPlaylist('ALL TUNES')
+         document.getElementById('set').value = 'ALL TUNES';
       }
    } else if (PRESET === "Perform Mode") {
       if (action == 'presets') {
-         //                 0        1          2        3   4    5     6     7         8        9         10        11      12         13       14     15     16  
-         //var ARRpresets="CAPS,FULLscreen,LEFTborder,CLOCK,TEXT,SHADE,NOTES,SETnotes,POPnotes,TECHnotes,LIVEnotes,unUsed,BREAKlines,BIGchords,LOOPER,unUsed,BARsync".split(',');
-         ARRtf = "true,true,false,true,false,false,true,true,false,false,true,true,true,true,false,false,true".split(',');
+         //         0    1     2     3     4    5    6    7     8    9    10     11    12
+         //       Caps,Shad, Left, Clok,Note, Snot, Pnot,Tnot, Lnot, Loop,Sync, Full,Epau
+         ARRtf = "true,false,false,true,false,false,false,false,true,false,true,true,true,".split(',');
          setCustom(ARRpresets[PRESETno], ARRtf[PRESETno], 'presets')
       } else if (action == 'wrap') {
-         document.getElementById('soundSelector').selectedIndex = 2; //back Track
+         LINElimit = 70;
+         document.getElementById('imgBREAKlines').src = "../../Icons/on.png"
+         document.getElementById('breakLines').innerHTML= "Char<br>70/ln"
+         BIGchordSize = 1.25
+         document.getElementById('bcp').innerHTML= "Chords<br>125%"
+         document.getElementById('imgBIGchords').src = "../../Icons/on.png"
+         document.getElementById('soundSelector').selectedIndex = 1; //back Track
          setSoundModeDefault(document.getElementById('soundSelector').value);
-         selectPlaylist('A-Fred Solo')
-         document.getElementById('Set').value = 'A-Fred Solo';
+         selectPlaylist('Fred Solo A')
+         document.getElementById('set').value = 'Fred Solo A';
       }
    } else if (PRESET === "Practice Mode") {
       if (action == 'presets') {
-         ARRtf = "true,false,false,true,false,false,true,false,false,false,false,true,true,true,true,true,true,false".split(',');
+         //         0    1     2     3    4    5    6     7    8    9    10    11   12
+         //       Caps,Shad, Left, Clok, Note,Snot,Pnot,Tnot,Lnot, Loop, Sync,Full,Epau
+         ARRtf = "true,false,false,true,ture,true,true,false,false,true,false,true,true,".split(',');
          setCustom(ARRpresets[PRESETno], ARRtf[PRESETno], 'presets')
       } else if (action == 'wrap') {
-          alert('WRAP ' +PRESET)
          document.getElementById('soundSelector').selectedIndex = 0;
          setSoundModeDefault(document.getElementById('soundSelector').value);
          selectPlaylist('Breen')
-         document.getElementById('Set').value = 'Breen';
+         document.getElementById('set').value = 'Breen';
       }
    } else if (PRESET === "Developer Mode") {
       if (action == 'presets') {
-         ARRtf = "true,false,false,false,false,false,false,false,false,false,false,true,true,true,true,true,true,true".split(',');
+         dis('developer', 'block'), localStorage.setItem('developer', 'true')
+         //        0    1     2     3     4     5    6     7     8    9    10    11    12
+         //       Caps,Shad, Left, Clok, Note, Snot, Pnot, Tnot, Lnot, Loop,Sync, Full, Epau
+         ARRtf = "true,false,false,false,false,false,false,false,false,true,false,false,false".split(',');
          setCustom(ARRpresets[PRESETno], ARRtf[PRESETno], 'presets')
       } else if (action == 'wrap') {
-          alert('WRAP ' +PRESET)
-         document.getElementById('soundSelector').selectedIndex =3;
+         LINElimit = 50;
+         document.getElementById('imgBREAKlines').src = "../../Icons/on.png"
+         BIGchordSize = 1.5 
+         document.getElementById('imgBIGchords').src = "../../Icons/on.png"
+         AC = true;
+         document.getElementById('soundSelector').selectedIndex = 3;
          setSoundModeDefault(document.getElementById('soundSelector').value);
-         selectPlaylist('Fred Inwork')
-         document.getElementById('Set').value = 'Fred Inwork';
+         selectPlaylist('Fred Solo A')
+         document.getElementById('set').value = 'Fred Solo A';
       }
-      PRESETno = 0;
-      statusMsg('<X2>' + PRESET + " selected by the user...\n----------------------------------------</X2>", 0)
-      barSelect();
+ } else if (PRESET === "Demo Mode") {
+      if (action == 'presets') {
+         dis('developer', 'block'), localStorage.setItem('developer', 'true')
+         //         0    1     2     3       4     5     6     7     8    9    10   11    12
+         //       Caps, Shad, Left, Clok,  Note, Snot,Pnot,Tnot, Lnot, Loop, Sync,  Full, Epau
+         ARRtf = "false,false,false,false,false,false,true,false,false,false,false,false,false".split(',');
+         setCustom(ARRpresets[PRESETno], ARRtf[PRESETno], 'presets')
+      } else if (action == 'wrap') {
+         document.getElementById('soundSelector').selectedIndex = 0;
+         setSoundModeDefault(document.getElementById('soundSelector').value);
+         selectPlaylist('Demo')
+         document.getElementById('set').value = 'Demo';
+      }
+
    }
+   document.getElementById('breakLines').innerHTML = "Char<br>" + LINElimit + "/ln";
+   document.getElementById('bcp').innerHTML = "Chord<br>" + parseInt(BIGchordSize * 100) + "%"
 }
 
 function setCustom(VAR, val, action) {
    AC = false;
-   //statusMsg(VAR + "-" + val + "-" + action)
    var msg;
    var ico
    var icon;
    var img
-   if (action != 'toggle' & action !== 'presets') {
-      alert("ERROR\nUnknown preset action: " + action)
-      return
+   //any action
+   if (VAR == 'FULLscreen' && action=='instant') {//&& action == 'instant'
+      if (FULLscreen == true) {
+         FULLscreen  = false;
+         val= false;
+      }else{
+         FULLscreen = true;
+         val=true;
+      }
+      statusMsg(VAR + "-" + val + "-" + action)
+      if (val== false) {
+         closeFullscreen();
+         document.getElementById('imgFULLscreen').src = "../../Icons/off.png"
+      } else {
+         document.getElementById('imgFULLscreen').src = "../../Icons/on.png"
+         launchIntoFullscreen(document.documentElement);
+      }
    }
    if (action === 'toggle') { //single change not using ARRtf
       statusMsg(VAR + "-" + val + "-" + action)
-      if (VAR!=BREAKlines||VAR!=BIGchords){  
+      if (VAR!=='BREAKlines'||VAR!=='BIGchords'||VAR!=='FULLscreen'){  
       if (window[VAR] === true) {
          window[VAR] = false;
          icon = "off.png";
@@ -2095,19 +2081,17 @@ function setCustom(VAR, val, action) {
       }
       AC = true;
       document.getElementById("img" + VAR).src = "../../Icons/" + icon;
-      statusMsg("User Toggled: " + VAR + "to " + window[VAR], 0);
+      statusMsg("B  User Toggled: " + VAR + "to " + window[VAR], 0);
    } else if (action == 'presets') {
       AC = true;
       VAR = ARRpresets[PRESETno];
       val = ARRtf[PRESETno]
-      if (val === 'true') {
+      if (val === 'true'||val=='true') {
          val = true
       } else {
          val = false
       }
       ico = 'img' + ARRpresets[PRESETno]
-      //ico = ARRimg[PRESETno]
-      statusMsg(PRESETno + ": " + VAR + "=" + val + "-" + action)
       if (val === true) {
          icon = "on.png";
          window[VAR] = true;
@@ -2116,11 +2100,11 @@ function setCustom(VAR, val, action) {
          window[VAR] = false;
       }
       document.getElementById(ico).src = "../../Icons/" + icon;
-      statusMsg(PRESET + ">" + VAR + ">" + ico + ">" + icon + ">" + val)
+      statusMsg(PRESETno + ": " + VAR + ">" + ico + ">" + icon + ">" + val,0)
    } else if (action == 'wrap') {
       arrConvert()
    }
-   if (VAR == 'BREAKlines') { //works with BIGchords
+   if (VAR == 'BREAKlines'&& action=='toggle') { //works with BIGchords
       if (LINElimit > 35) {
          LINElimit = parseInt(LINElimit - 5, 0);
          document.getElementById('imgBREAKlines').src = "../../Icons/on.png"
@@ -2128,10 +2112,10 @@ function setCustom(VAR, val, action) {
          LINElimit = 90;
          document.getElementById('imgBREAKlines').src = "../../Icons/off.png"
       }
-      document.getElementById('breakLines').innerHTML = "CHAR<br>" + LINElimit + "/ln";
+      document.getElementById('breakLines').innerHTML = "Char<br>" + LINElimit + "/ln";
       AC = true;
    }
-   if (VAR == 'BIGchords') {
+   if (VAR == 'BIGchords'&& action=='toggle') {
       BIGchordSize = BIGchordSize + 0.25;
       if (BIGchordSize > 2.2) {
          (BIGchordSize = 1.00)
@@ -2144,20 +2128,20 @@ function setCustom(VAR, val, action) {
       document.getElementById('bcp').innerHTML = "Chord<br>" + parseInt(BIGchordSize * 100) + "%"
       AC = true;
    }
-   if (VAR == 'SETnotes' & SETnotes === true) {
+/* .@   if (VAR == 'SETnotes' & SETnotes === true) {
       document.getElementById("imgPOPnotes").src = "../../Icons/off.png";
       POPnotes = false;
       document.getElementById("imgTECHnotes").src = "../../Icons/off.png";
       TECHnotes = false;
       AC = false;
-   }
+   }//@
    if (VAR == 'POPnotes' & POPnotes === true) {
       document.getElementById("imgSETnotes").src = "../../Icons/off.png";
       SETnotes = false;
       document.getElementById("imgTECHnotes").src = "../../Icons/off.png";
       TECHnotes = false;
       AC = false
-   }
+   }//@
    if (VAR == 'TECHnotes' & TECHnotes === true) {
       document.getElementById("imgSETnotes").src = "../../Icons/off.png";
       SETnotes = false;
@@ -2165,23 +2149,11 @@ function setCustom(VAR, val, action) {
       POPnotes = false;
       AC = false
    }
-   if (VAR == 'LINEnum' & LINEnum === true) {
-      window[LINEtime] = false;
-      document.getElementById("imgLINEtime").src = "../../Icons/off.png";
-      LINEtime = false;
-      AC = true
-   }
-   if (VAR == 'LINEtime' & LINEtime === true) {
-      window[LINEnum] = false;
-      document.getElementById("imgLINEnum").src = "../../Icons/off.png";
-      LINEnum = false;
-      AC = true
-   }
-   if (VAR == 'FULLscreen') {
+*/  if (VAR == 'FULLscreen') {
       if (FULLscreen === true) {
          launchIntoFullscreen(document.documentElement);
       } else {
-         exitFullscreen();
+         closeFullscreen();
       }
    }
    if (VAR == 'LOOPER') {
@@ -2198,38 +2170,26 @@ function setCustom(VAR, val, action) {
          document.getElementById("imgTEXT").src = "../../Icons/off.png"
       }
    }
-   //$if (VAR == 'METRO') {
-   //$   if (METRO === true) {
-   //$      document.getElementById('imgBARsync').src = '../../Icons/on.png';
-   //$      aB.play();
-   //$      aC.play();
-   //$     BARsync = true;
-   //$  }
-   //$}
-   if (VAR == 'BARsync') {
-      if (BARsync === false) {
-         document.getElementById('imgMETRO').src = '../../Icons/off.png';
-         METRO = false;
-      }
-   }
    if (action === 'toggle') {
       if (AC === true | AC == 'true') {
-         statusMsg("Toggle required array converstion")
+         statusMsg("Toggle required array conversion")
          arrConvert();
       }
    } else if (action === 'presets') { //this is the return point to prevent excessive arrConverstions
-      if (PRESETno > 15) {
-         statusMsg("<X2>arrConvert Triggered Preset ALL...</X2>", 0)
+      PRESETno = PRESETno + 1;
+      if (PRESETno >12) {//99
+         statusMsg("<X2>F  Wrapping up the presets</X2>", 0)
          presets('wrap')
       } else {
-         PRESETno = PRESETno + 1;
          setCustom('', '', 'presets')
       }
    }
 }
 
+
 //.## MISC FUNCTIONS
-   function launchIntoFullscreen(element) {
+function launchIntoFullscreen(element) {
+   if (!document.fullscreenElement) {
       if (element.requestFullscreen) {
          element.requestFullscreen();
       } else if (element.mozRequestFullScreen) {
@@ -2240,18 +2200,24 @@ function setCustom(VAR, val, action) {
          element.msRequestFullscreen();
       }
    }
+}
 
-   function exitFullscreen() {
+function closeFullscreen() {
+   if (document.fullscreenElement) {
       if (document.exitFullscreen) {
          document.exitFullscreen();
-      } else if (document.mozCancelFullScreen) {
-         document.mozCancelFullScreen();
-      } else if (document.webkitExitFullscreen) {
-         document.webkitExitFullscreen();
-      } else if (element.msCancelFullscreen) {
-         document.msCancelFullscreen();
       }
-   } //this step is BOGUS
+      if (document.webkitExitFullscreen) {
+         document.webkitExitFullscreen();
+      }
+      if (document.mozCancelFullScreen) {
+         document.mozCancelFullScreen();
+      }
+      if (document.msExitFullscreen) {
+         document.msExitFullscreen();
+      }
+   }
+}
 
    function tgl(vrbl, val) {
       if (!val) {
@@ -2267,15 +2233,6 @@ function setCustom(VAR, val, action) {
          document.getElementById("img" + vrbl).src = "../../Icons/on.png";
       } else {
          document.getElementById("img" + vrbl).src = "../../Icons/off.png";
-      }
-   }
-
-   function togl(vrbl) {
-      tgl(vrbl);
-      if (vrbl == 'LINEtime' && LINEnum === true) {
-         tgl('LINEnum', false);
-      } else if (vrbl == 'LINEnum' && LINEnum === true) {
-         tgl('LINEtime', false);
       }
    }
 
@@ -2345,9 +2302,10 @@ function setCustom(VAR, val, action) {
    }
 //@
 function bcPct() { //BigChordPCT
-alert('shit\n bcPCT is apparently dead this is a trip wire')
-      }
+   alert('shit\n bcPCT is apparently dead this is a trip wire')
+   }
 //.## TRANSPOSE FUNCTIONS
+
 function lineTranspose(line, steps) { //^ transpose entire line and try to keep the absolute chord spacing despite differnces in chr of new chord
    var lineNew;
    if (steps === 0) {
@@ -2584,7 +2542,7 @@ function lyricLineCount(){
         i++;}    
     return count;}
 
-//.@
+//.@ this has not worked
 function getTextFileFetch(path) {
    fetch(path)
   .then(response => response.text())
@@ -2684,7 +2642,7 @@ function readSingleFile(e){
     
 //.## LYRIC COMMON FUNCTIONS  These functions are general utility
 function barSelect(bar) {
-    var arrBar = "configuration,tool,songbar,cloud".split(","); //,information,
+    var arrBar = "configuration,tool,songbar,info".split(","); //,information,
     var j = 0;
     var flg = false
     if (bar == 'none') {
@@ -2735,25 +2693,16 @@ function fileFromPath(path){
     path = path.split('/');return (path[path.length-1]);}
 
 
-function secToMin(sec){ //grey-normal;red-attention Required ;yellow-normal pause or inwork//^ XXX this sucks
-    var m =parseInt((sec/60),10);
-    var s =parseInt(parseFloat((sec/60)-parseInt(sec/60,10))*60,10);
-    if(s < 10) {s = ":0" + s;}else{s = ":" + s;}
-    return m+s;} 
-
-//.@
-/*
- function OLDhash(hashString,key,defaultVal){ //^ Gets hash values from string a:b,c:d,e:f,......
-    var arrHash = (hashString.split(",")); //^  an array from hashString   
-    var i=0;
-    while (i < arrHash.length){
-        var ele=(arrHash[i].split(":"));//^ Hash4 an array of the first element of Hash3
-        if(ele[0] == key){
-            defaultVal = ele[1];
-            i = arrHash.length;} //^ kick you out must be a better way
-        i++;}
-    return defaultVal;}
-*/
+function secToMin(sec) { //grey-normal;red-attention Required ;yellow-normal pause or inwork//^ XXX this sucks
+   var m = parseInt((sec / 60), 10);
+   var s = parseInt(parseFloat((sec / 60) - parseInt(sec / 60, 10)) * 60, 10);
+   if (s < 10) {
+      s = ":0" + s;
+   } else {
+      s = ":" + s;
+   }
+   return m + s;
+}
 
 function hash(str, key, deflt) { //^ Gets hash values from string a:b,c:d,e:f,......
    var arr = (str.split(","));
@@ -2769,17 +2718,17 @@ function hash(str, key, deflt) { //^ Gets hash values from string a:b,c:d,e:f,..
    return deflt;
 }
 
-
 //## GLOBAL CANDIDATES
 function dis(id,disp){
-    if(disp===undefined){
-            if(document.getElementById(id).style.display == 'none'){
-                document.getElementById(id).style.display='block';}
-            else{document.getElementById(id).style.display='none';}}
-        else{
-            if(disp=='none') {
-                document.getElementById(id).style.display = 'none';}
-            else{document.getElementById(id).style.display = 'block' ;}}}
+   if(disp===undefined){
+      if(document.getElementById(id).style.display == 'none'){
+          document.getElementById(id).style.display='block';}
+      else{document.getElementById(id).style.display='none';}}
+  else{
+      if(disp=='none') {
+          document.getElementById(id).style.display = 'none';}
+      else{document.getElementById(id).style.display = 'block' ;}}
+   }
 
 function vis(ID,style){
     if(style===undefined){
@@ -2996,7 +2945,7 @@ function toggleShit(){
 //.## DRAGABLE DIV :
 dragElement(document.getElementById("backtracker"));
 dragElement(document.getElementById("statusWindow"));
-dragElement(document.getElementById("cloud"));
+dragElement(document.getElementById("info"));
 dragElement(document.getElementById("mailer"));
 dragElement(document.getElementById("localAction"));
 dragElement(document.getElementById("developer"));
@@ -3051,11 +3000,12 @@ function dragElement(elmnt) {
    }
 }
 //.## BOGUS FUNCTIONS
-
-function bogus() { //modify during development
-   flash("BOGUS BLINKER AND FLASH DEMO!" ,4);
-   blinker("ButtonHome", 24);
-}
+function bogus(){//TITLEplus is formated play info=@TITLE|KEY|BPM|SOUNDmode|NOTEset|volume (@ indicates alternate if its present)*/ 
+   //notePopUp(NOTEtype+'Notes',NOTEset);
+  
+  str="<pre>KEY   > "+ ARRtitle[1]+"<br>BPM   > "+ ARRtitle[2]+"<br>SOUND > "+ ARRtitle[4]+"<br>VOLUME> "+ ARRtitle[5]+"<br>NOTE  > "+ ARRtitle[4]+"</pre>";
+  notePopUp(TITLE+"  Set Notes...",str)
+  }
 
 function sleep(mSec) {//stops execution experimental for m milleseconds
     statusMsg('<X2>SLEEPING for '+mSec + 'milliseconds</X2>')
@@ -3212,4 +3162,52 @@ function opacSet(id, opac) {
       opac = 1
    };
    document.getElementById(id).style.opacity = opac
-} 
+}
+//.@
+function XselectorBuild(id,arr,indx,val) {//(if val is not null value is the arr's value & selected value, otherwise arr's index is the value and the indx is the index selected)
+    if (indx === undefined | indx === null | indx === '') {
+        indx = 0;
+    }
+    var i = 0;
+    var str = '';
+    if (val== null||val==undefined||val=='') {
+        while (i < arr.length) {
+                str = str + "<option value=" + i + ">" + arr[i] + "</option>";    
+            i = i + 1;
+        }
+        document.getElementById(id).innerHTML = str;
+        document.getElementById(id).index = indx; 
+    } else {
+        while (i < arr.length) {
+                str = str + "<option value=" + arr[i] + ">" + arr[i] + "</option>";    
+            i = i + 1;
+        }
+        document.getElementById(id).innerHTML = str;
+        document.getElementById(id).value = val;
+    }
+}
+function pickPop(id,pct) {
+   TECHnotes = false;
+   SETnotes = false;
+   TRIVIAnotes = false
+   LINKnotes=false
+   document.getElementById('p1').style.top = pct+"%"
+   //document.getElementById('popLinks').style.backgroundColor = 'white'
+  // document.getElementById('popSet').style.backgroundColor = 'white'
+   //document.getElementById('popTrivia').style.backgroundColor = 'white'
+   //document.getElementById('popTech').style.backgroundColor = 'white'
+   dis('pickPops', 'none')
+   //var x = 'pop' + id;
+   //document.getElementById(x).style.backgroundColor = 'pink'
+   statusMsg("PopUps set to " + id, 'yellow')
+   if (id == 'None') {
+     x = 'off.png'
+   } else {
+      x = "on.png"
+   }
+   NOTEtype=id
+   
+   document.getElementById('imgpickPops').src = "../../Icons/" + x
+   document.getElementById('popName').innerHTML = "PopUp<br>" + id
+
+}

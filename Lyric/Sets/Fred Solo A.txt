@@ -3,7 +3,7 @@ Sea Of Heartbreak|||BACK TRACK||0.68
 You Are My Sunshine|||SILENT|
 When The Roses Bloom Again|||BACK TRACK||0.75|
 Margaritaville|||BACK TRACK||0.75
-Dream|||BACK TRACK||0.125
+Dream|||BACK TRACK||0.75
 The Cape|C||SILENT||0.75
 Little Red Riding Hood|||SILENT||0.75
 Stray Cat Strut|||BACK TRACK||0.75

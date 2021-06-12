@@ -1,83 +1,14 @@
-TITLE:And So It Goes,DUR:0,BPM:120,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:TBD
-
+TITLE:And So It Goes,DUR:13,BPM:108,BEATS:3,KEY:C,QUAL:Raw,ARTIST:Billy Joel,GENRE:Unknown,STYLE:Ballad,HITyear:TBD
 #INTRO ----------------------------------
-C  C/E  F  C/E  F  C/G  Asus2  Am
-G/B  C  G/B  C  C/E  F  F/A  G
-
-C  C/E  F  C/E  F  C/G  Asus2  Am
-G/B  C  C/E  F  F/A  Fmaj9/G  C
-
+|C         ~         ~C/E
+   In ev' ry
 #VERSE 1 --------------------------------
-   C   C/E  F     C/E   F  C/G  Asus2 Am
-In ev' ry   heart there is a    room
-G/B  C    G/B C    C/E  F    F/A  G
+|F                |C
+ heart there is a    room
+|*G       ~F       |C
 A    sanctu - ar - y    safe and  strong
-   C    C/E  F      C/E  F     C/G  Asus2 Am
+|F                |C
 To heal the  wounds from lov - ers  past
-G/B  C       C/E F/A  Fmaj9/G  C
+|*G       ~F       |C
 Un - til a   new one  comes    along
 
-#VERSE 2 --------------------------------
-  C     C/E  F   C/E  F      C/G  Asus2 Am
-I spoke to   you in   caut - ious tones
-G/B  C     G/B C    C/E  F  F/A   G
-You  ans - wered me with no pre - tense
-    C     C/E  F    C/E  F    C/G  Asus2 Am
-And still I    feel I    said too  much
-G/B C     C/E  F   F/A  Fmaj9/G  C
-My  sil - ence is  my   self     defense
-
-#CHORUS 1 -------------------------------
-    C     C/Bb      F/A    Fm/Ab
-And every time I've held a rose
-   C/G     Am   D        Gsus4  G
-It seems I only felt the thorns
-    C     C/Bb      F/A   Fm/Ab
-And so it goes, and so it goes
-    C/G     Am       D/F#  Gsus4   G
-And so will you soon I     suppose
-
-#VERSE 3 --------------------------------
-    C   C/E  F     C/E   F    C/G  Asus2 Am
-But if  my   sil - ence  made you  leave
-G/B  C    G/B   C   C/E  F        F/A  G
-Then that would be  my   worst mistake
-   C  C/E  F     C/E  F    C/G  Asus2 Am
-So I  will share this room with you
-G/B  C   C/E  F    F/A  Fmaj9/G  C
-And  you can  have this heart to break
-#BREAK 1 --------------------------------
-C  C/E  F  C/E  F  C/G  Asus  Am
-
-G/B  C  C/E  F  F/A  Fmaj9/G  C
-
-#CHORUS 2 -------------------------------
-    C       C/Bb   F/A      Fm/Ab
-And this is why my eyes are closed
-     C/G     Am       D        Gsus4  G
-It's just as well for all I've seen
-    C     C/Bb      F/A   Fm/Ab
-And so it goes, and so it goes
-    C/G        Am   D/F#    Gsus4   G
-And you're the only one who knows
-
-#VERSE 4 --------------------------------
-   C  C/E   F      C/E  F   C/G  Asus2 Am
-So I  would choose to   be  with you
-G/B    C   G/B  C      C/E  F    F/A  G
-That's if  the  choice were mine to   make
-    C   C/E  F    C/E  F     C/G  Asus2 Am
-But you can  make de - cis - ions too
-G/B  C   C/E  F    F/A  Fmaj9/G  C
-And  you can  have this heart to break
-
-#BREAK 2 --------------------------------
-C  C/E  F  C/E  F  C/G  Asus2  Am
-
-G/B  C  G/B  C  C/E  F  F/A  G
-
-#OUTRO ----------------------------------
-    C     C/Bb      F/A   Fm/Ab
-And so it goes, and so it goes
-    C/G        F    Fmaj9/G     C
-And you're the only one     who knows

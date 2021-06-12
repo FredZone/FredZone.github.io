@@ -2048,7 +2048,7 @@ function presets(action) {
          document.getElementById('soundSelector').selectedIndex = 2; //back Track
          setSoundModeDefault(document.getElementById('soundSelector').value);
          selectPlaylist('A-Fred Solo')
-         document.getElementById('Set').value = 'A-Fred Solo';
+         document.getElementById('Set').value = 'Fred Solo A';
       }
    } else if (PRESET === "Practice Mode") {
       if (action == 'presets') {
