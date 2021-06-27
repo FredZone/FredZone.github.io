@@ -8,27 +8,39 @@ CURRENT PROBLEMS / IDEAS/ STATUS
     fix or delete the biab
     python adds double Abilene to Backing list.
 
-TO FO LIST
+TO DO LIST
  7) Auto next???? May not do this
 10) Must clean up local storage save,enter???
 11) Default.mp3 on backing track does not exist
 12) Abilene shows up Twice in ALL BACKING list
 14) information screen is awkward
-Completed ==============================
-x1 BIG chords run off screen
-x2)???
-x3) Big Selector does not scroll to last selection(highlights only)5/1/21
-x4) Metronome sucks REMOVING IT
-x5)???
-X6) End pause is too quirky, provide over ride it
-x8) Remove the To Do list or fix it
-x9) Preset the char per line
-X13) Wrong dates for js/html edits when clicking rev
+16) tgl function WTF?
 
+Completed ==============================
+x1 BIG chords run off screen(seems OK, can live with it for now)
+x2)???
+x3) Big Selector does not scroll to last selection(highlights only)5/1/21(Killed big selector)
+x4) Metronome sucks REMOVING IT(gone)
+x5)???
+X6) End pause is too quirky, provide over ride it(fixed and added kill)
+x8) Remove the To Do list or fix it (works OK)
+x9) Preset the char per line
+X13) Wrong dates for js/html edits when clicking rev (killed function)
+X15) Demo playlist.does not work with pop ups...
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
 
 8.1 INWORK
-
+    6/19/24(114,721 bytes)
+        enlarged the popup box 6:58 AM
+        cleaned up the rev look
+    6/19/21(114,721 bytes)
+        cleaned up the clock 11:59AM
+    6/16/21(120,440 byte bytes) 11:45AM
+        cleaned out the old transpose functions
+    6/16/21(120,440 byte bytes) 11:45AM
+        New transpose function working
+    6/13/21(120,358 bytes)
+        Pop Ups running as planned
     6/09/21  (118,956 bytes)(56,510 bytes)
         More Pop up work...
     6/08/21  (119,786 bytes)(56,194 bytes)

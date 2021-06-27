@@ -1,3 +1,4 @@
-Break My Mind|C||BACK TRACK|Welcome to the Demo Songlist...Be sure you selected the Demo Mode to get here...Note, the set notes are the only option selected to start...|0.875
-@Abilene|E||BACK TRACK|Demo's Alternative song using the @ symbol in from of the title...You also see the pop up note@|0.625
-Dream Lover|C||BACK TRACK||0.5
+Abilene|||SILENT|Simple song with no track, vol etc...default to song constant|1.00
+Sea Of Heartbreak|||BACK TRACK|Song and Backtrack are specified in the Set.|
+Break My Mind|||BACK TRACK|the set specified Song, Backtrack and volume|0.75
+Bye Bye Love|||BACK TRACK|specified the volume and backtrack|0.25

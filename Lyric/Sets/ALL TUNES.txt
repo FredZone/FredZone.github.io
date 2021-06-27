@@ -10,6 +10,7 @@ Amarillo By Morning - 1 Key
 Amarillo By Morning - 2 Key
 Amarillo By Morning-Short
 Amie
+And So It Goes (1)
 And So It Goes
 Angel From Montgomery
 Annies Song
@@ -24,7 +25,6 @@ Before The Next Teardrop Falls
 Blowin In The Wind
 Blue Eyes Crying In The Rain-Short
 Blue Eyes Crying In The Rain
-Blue Moon-Crazy
 Blue Moon-Short
 Blue Moon
 Blue Moon2
@@ -51,13 +51,11 @@ Cigarettes And Whiskey And Wild Wild Women
 City Of New Orleans-Short
 City Of New Orleans
 Come From The Heart
-Constant Craving
 Cool Water-John
 Cool Water
 Cooler N Hell
 Corina Corina
 Cotton Fields
-Could I Have This Dance
 Crazy A
 Crazy
 Crocodile Rock
@@ -82,16 +80,12 @@ Dream-Short
 Dream
 Drift Away
 Drinkin And Dialin
-Drinking And Dialing-RAW
 Early Morning Rain
-El Paso Short
-El Paso
 Elvira
 End Of The Line
 Evangelina
 Everybodys Talkin At Me
 Feel A Whole Lot Better
-Feliz Navidad
 Fire And Rain
 Fire Lake
 Fly over States
@@ -102,7 +96,6 @@ Forever Young
 Four Strong Winds
 Fox On The Run
 Fraulein
-Fred Solo-BT
 From Four Until Late (1)
 From Four Until Late
 Frosty The Snowman
@@ -111,9 +104,7 @@ Garden Party
 Georgia On My Mind
 Georgia Simple
 Georgia-Img
-Georgia
 Get Back-Img
-Gettin You Home
 Ghost Band
 Ghost Riders In The Sky
 Give Me A Ride Back Home
@@ -132,7 +123,6 @@ Heartaches By The Number
 Help Me Make It Through The Night
 Hes Got The Whole World In His Hands
 Hey Good Lookin
-High Heel Sneakers
 Homeless Brother
 Hot Rod Lincoln
 Hound Dog
@@ -145,8 +135,6 @@ I Aint That Lonely Yet
 I Always Get Lucky With You
 I Can Help
 I Cant Help Falling In Love With You-Short
-I Cant Help Falling In Love With You
-I Cant Help It If Im Still In Love With You
 I Cant Stop Loving You
 I Fall To Pieces
 I Fought The Law
@@ -196,7 +184,6 @@ Lodi
 Long Black Veil
 Look What Theyve Done To My Song
 Lookin For Love
-Loosing it
 Lost Highway
 Love Has No Pride
 Love Potion Number 9 - Original
@@ -222,7 +209,6 @@ My Girl
 My Old Man
 Needles And Pins
 Ol 55
-Old Guys
 Old Hippie
 Old Pigweed
 Old Time Rock And Roll
@@ -243,9 +229,7 @@ Poison Ivy
 Political Science
 Pride Of Man
 Pride
-Proud Mary
 Put Another Log On The Fire
-Put Your Hand In The Hand
 Ready To Fly
 Return To Sender
 Right Down The Line
@@ -289,7 +273,6 @@ Stand By Me
 Star
 Steam Roller Blues
 Steel Rail Blues
-Still Gonna Die
 Stray Cat Strut
 Stuck In The Middle With You
 Suicide Is Painless
@@ -298,11 +281,8 @@ Sultans Of Swing
 Summer Song
 Sunday Morning Coming Down
 Suo Gan
-Sweet Bestsy From Pike
-Sweet Georgia Brown
 Take It Easy
 Take Me Home Country Roads - Pat
-Take Me Home
 Take Me Out To The Ball Game
 Teach Your Children
 Tears In Heaven
@@ -314,7 +294,6 @@ Tennessee Whiskey
 Texas 1947
 Thats Another Side To This Life
 Thats Gonna Leave A Mark
-The Boxer
 The Cape
 The First Song That I Wrote
 The Fox
@@ -339,7 +318,6 @@ This Land Is Your Land-Long
 This Land Is Your Land
 This World Is Not My Home
 Three Little Birds
-Time In A Bottle
 Tobacco Road
 Today I Started Loving You Again
 Tom Dooley
@@ -371,7 +349,6 @@ When The Saints Go Marching In
 Where Have All The Flowers Gone
 Whiskey In The Jar
 White Sport Coat
-Whole Lotta Shakin
 Wholl Stop The Rain
 Why Baby Why
 Wicked Game
@@ -383,11 +360,33 @@ Winter Wonderland
 Witch Doctor
 Wolverton Mountain
 Worried Man
+xxGeorgia
 Yesterday-2
 Yesterday
 You Are My Sunshine
 You Dont Have To Call Me Darlin Darlin
 You Were On My Mind
-Your Cheatin Heart
 Your Momma Dont Dance
+ZCould I Have This Dance
+ZEl Paso Short
+ZEl Paso
+zFeliz Navidad
+ZLoosing it
+ZOld Guys
+ZProud Mary
+ZPut Your Hand In The Hand
 ZZTake It Easy
+ZZZBBlue Moon-Crazy
+ZZZConstant Craving
+ZZZGettin You Home
+ZZZHigh Heel Sneakers
+ZZZI Cant Help Falling In Love With You
+ZZZI Cant Help It If Im Still In Love With You
+ZZZStill Gonna Die
+ZZZSweet Bestsy From Pike
+ZZZSweet Georgia Brown
+ZZZTake Me Home
+ZZZThe Boxer
+zzzTime In A Bottle
+zzzWhole Lotta Shakin
+ZZZYour Cheatin Heart

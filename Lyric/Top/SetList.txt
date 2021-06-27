@@ -1,23 +1,14 @@
 ALL BACKING
 ALL RECENT
 ALL TUNES
-BackingByKey
-BARN STORM NEW
 Breen
-C-List
 Christmas
 Demo
 Fred Inwork
 Fred New
 Fred Solo A
 Fred Solo B
-Fred Solo-BT-1
-Fred Solo-BT-AAA
-Fred Solo-BT
+Fred Solo C
 Fred Solo
 Johns List
 Sally A
-Sally Hootenany2
-Sally New Stuff
-Sally
-Sallys List
