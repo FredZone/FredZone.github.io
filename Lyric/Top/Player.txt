@@ -30,7 +30,10 @@ X15) Demo playlist.does not work with pop ups...
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
 
 8.1 INWORK
+    6/28/24(114,721 bytes)
+        BAR SYNC now shows played chords as linen and starts on time
     6/19/24(114,721 bytes)
+        added animated icon to end pause
         enlarged the popup box 6:58 AM
         cleaned up the rev look
     6/19/21(114,721 bytes)

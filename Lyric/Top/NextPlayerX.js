@@ -16,12 +16,45 @@
 */
 
 //.## BOGUS FUNCTIONS
-
-
 function bogus(){
-   transpose(1)
-}  
+   dis('bogusA');
+   dis('bogusB');
+   }
 
+
+
+function ctrlPop(val) {
+   var msg;
+   var icon;
+   var arr = 'tpl,bigReset,tpa,ahead,back,slower,faster'.split(',')
+   if (val != undefined) {
+      OPACITY = val;
+   } else {
+      OPACITY = OPACITY * 3;
+   }
+   if (OPACITY > 0.27) {
+      OPACITY = 0.03
+   }
+   if (OPACITY == 0.03) {
+      icon = 'off';
+      msg = "Dim";
+   } else if (OPACITY == 0.09) {
+      icon = 'on';
+      msg = "Medium";
+   } else {
+      icon = 'on';
+      msg = "Bright";
+   }
+   document.getElementById('imgCTRL').src = '../../Icons/' + icon + '.png'
+   document.getElementById('ctrlPop').innerHTML = "CTRLs<br>" + msg
+   for (j = 0; j < arr.length; j++) {
+      document.getElementById(arr[j]).style.opacity = OPACITY
+   }
+   arr = 'moveBack,moveAhead,turtle,rabbit,play,reset,pause'.split(',')
+   for (j = 0; j < arr.length; j++) {
+      document.getElementById(arr[j]).style.opacity = OPACITY * 3
+   }
+}
 //var ARRscale =("A,Bb,B,C,C#,D,Eb,E,F,F#,G,Ab,A,Bb,B,C,C#,D,Eb,E,F,F#,G,Ab").split(',')
 //.## GLOBAL VARs
 //.#      FLAGS
@@ -29,8 +62,9 @@ function bogus(){
     var AUDfail=false;
     var AUDend=false;
     var BOOT=true;//^ used to do setup on boot
-    var NASH=false;//Nashville notation????incomplete...
-    var SETnoteViewed=false;//used to keep not from popping up AWK
+    var OPACITY=0.03
+//@   var NASH=false;//Nashville notation????incomplete...
+//@    var SETnoteViewed=false;//used to keep not from popping up AWK
 //.#      PROGRAM and SONG VARS
     var ARRtitle;
     var ARRsoundModes=("SILENT/nBACK TRACK/nCLICK TRACK/nDRUM ROCK/nDRUM COUNTRY").split("/n");
@@ -180,6 +214,15 @@ function bogus(){
    var LOCALvalue="TBD"
 //.#      SHIT CONSTANTS Permanent feature 
    var SHIT= false
+
+
+
+
+
+
+
+
+
 
 //.## LOCAL STORAGE otherwise superfluous
 function loadLocal(key){
@@ -609,7 +652,7 @@ function selectTune(titl) {
       SOUNDmode = SOUNDmodeDefault;
    }
    if (ARRtitle[4] !== undefined & ARRtitle[4] !== "No tune specific notes from the Set") {
-   //   NOTEset = ARRtitle[4];
+
    }
    if (ARRtitle[5] !== undefined & ARRtitle[5] !== "") {
       VOL = ARRtitle[5];
@@ -1274,9 +1317,8 @@ function scrollEngine() { //^ the actual scrolling routine keep it simple* befor
             } else {
                BARSTOP = ARRbars[BAR] / MEASURES * DUR;
                document.getElementById('b' + BAR).style.backgroundColor = 'yellow'
-               document.getElementById('b' + parseInt(BAR - 1, 10)).style.backgroundColor = 'transparent'
             }
-            document.getElementById('b' + parseInt(BAR - 1, 10)).style.backgroundColor = 'transparent'
+           document.getElementById('b' + parseInt(BAR - 1, 10)).style.backgroundColor = 'linen'
          }
       }
       if (SS > 5 | document.getElementById('Tune').scrollTop > LOOPend - 1) {
@@ -1523,6 +1565,8 @@ function trackPlay() { //pause options...undefined
          trackAlign('Screen');
       } else {
          trackAlign('Bar')
+         document.getElementById('b' + BAR).style.backgroundColor = 'yellow'
+         trackAlign('Screen');
       }
    } else if (SOUNDmode === 'CLICK TRACK' | SOUNDmode === 'DRUM COUNTRY' | SOUNDmode === 'DRUM ROCK') {
       if (BARsync === true) {
@@ -1537,8 +1581,45 @@ function trackPlay() { //pause options...undefined
    statusMsg("PLAY STEP 2: " + document.getElementById("Audio1").currentTime + ' secs >>>' + POStrack, 0);
    SCROLLstartTime = new Date().getTime();
    document.getElementById("Audio1").play();
+
    scrollEngine();
 }
+
+
+function  XtrackPlay() { //pause options...undefined
+   Audio1.pause() //just in case
+   ENDscroll = false
+   CTO();
+   clearTimeout(TIMEOUTwait)
+   if (SOUNDmode === 'SILENT' | SOUNDmode === 'BACK TRACK') {
+      if (BARsync === false) {
+         trackAlign('Screen');
+      } else {
+         trackAlign('Bar')
+      }
+   } else if (SOUNDmode === 'CLICK TRACK' | SOUNDmode === 'DRUM COUNTRY' | SOUNDmode === 'DRUM ROCK') {
+      if (BARsync === true) {
+         trackAlign('Free Bar');
+      } else {
+         trackAlign('Free')
+      }
+   }
+   document.getElementById('Audio1').currentTime = POStrack
+   Ystart = document.getElementById('Tune').scrollTop = POSscreen
+   screenFormat("Scroll");
+   //@ = document.getElementById("tabBox").scrollLeft;
+   //$if (METRO === true & BAR === 0) {
+   //$   metro(0)
+   //$}
+   statusMsg("PLAY STEP 2: " + document.getElementById("Audio1").currentTime + ' secs >>>' + POStrack, 0);
+   SCROLLstartTime = new Date().getTime();
+   document.getElementById("Audio1").play();
+   scrollEngine();
+}
+
+
+
+
 
 function trackAlign(to) {
    Audio1.pause() //just in case
@@ -1948,6 +2029,7 @@ function presets(action) {
    document.getElementById('imgBREAKlines').src = "../../Icons/off.png"
    BIGchordSize = 1
    document.getElementById('imgBIGchords').src = "../../Icons/off.png"
+   ctrlPop(0.03)
    if (PRESET === "Default Mode") {
       if (action == 'presets') {
          //         0    1     2     3    4      5    6      7    8
