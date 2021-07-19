@@ -69,8 +69,14 @@ Digitec RP55=======================================
     </textarea>
     </div>  
 
+<div id=chordU style = "position:absolute; display:block;background-color:pink;border:none; margin:0; padding:0; right :0% ; z-index:50000;text-align:left ; width:30%; height: 25%;overflow:scroll">
+    Chord u
+    <br><a onclick="dis('chordU')">Close</a>
+    <br><a onclick="StepThroughArray('stringIt')">stringIt</a>
+    <br><a onclick="alert(CHORDstring),CHORDstring=CHORDstring.replace(/    /g, '   |'),document.getElementById('rawTune').value=CHORDstring" >step 2</a>
+    <br><a onclick="makeChordString()" >step 2</a>   
 
-
+</div> 
 
 
 <a id="none" style=" display:none; visibility:hidden"></a>
@@ -187,8 +193,7 @@ Digitec RP55=======================================
             <img id ='xmlImg' src="../../Icons/text.png" alt ="TXT" style=" left:1vw; height:3vw; width:3vw" onclick = "dis('cannedText')">
             <img src="../../Icons/blackNotepad.png" alt ="PAD" style=" left:5vw; height:3vw; width:3vw" onclick = "dis('notePad')">
             <img src="../../Icons/blackPython.png" alt='??' onclick="window.open('../../cgi-bin/PlayerUpdate.py','Python','width=1000,height=340,toolbar=0,menubar=0,location=0')" style=" left:4vw; height:3vw; width:3vw">    
-    
-    
+            <img src="../../Icons/blackNotepad.png" alt ="PAD" style=" left:20vw; height:3vw; width:3vw" onclick = "dis('chordU')">
     
     </fieldset> 
 

@@ -1,6 +1,8 @@
 //GLOBAL VARIABLES================================================================
 //First Line Variables============================================================
 //Defaults are Set here...
+var CHORDstring="";
+
 var BARS =0;
 var BARSperLine=4;
 var BEATS=4;//Beats/bar
@@ -52,6 +54,19 @@ var BARShalf=0;
 var BARSperLine=0;
 var CHORDlines=0;
 var ARRbars =''.split(',');
+
+
+
+function makeChordString(){
+var x= document.getElementById('rawTune').value
+x=x.replace(/\n/g," ")
+x=x.replace(/    /g,"   |%")
+document.getElementById('rawTune').value=x;
+}
+
+
+
+
 
 function abcConvert(){
  upDateArray(); 
@@ -1380,6 +1395,18 @@ function StepThroughArray(funk, v1, v2) { //built 10 or more edit functions into
       if (temp.length < LONGLYRIC) {
         ARRlines[j] = temp
       }
+    
+ //-$   
+     } else if (funk == "stringIt") {
+      if (j>1) {
+        if (ARRlines[j].length==0) {
+          CHORDstring=CHORDstring+" ";
+        }else{
+        CHORDstring=CHORDstring+ARRlines[j]
+        }
+      }
+    
+    
     } else if (funk == "addChords" && lType == "chord") {
       //alert(ARRlines[j])
       return
@@ -1424,8 +1451,15 @@ function StepThroughArray(funk, v1, v2) { //built 10 or more edit functions into
     }
     document.getElementById('tabSelect').innerHTML = crap
   }
-  //alert(crap);
+    if (funk=='stringIt') {
+   
+   document.getElementById("rawTune").value =CHORDstring
+  
+  
+  }else{
+  
   upDateWorkSpace(); //Since work was done on Array change the rawTune to match the array
+  }
   statusMsg("Changed " + linesChanged + " of " + j + "  lines.", "yellow");
 }
 

@@ -671,7 +671,7 @@ function selectTune(titl) {
 
 //.#      LOAD FROM SERVER
 function loadServerTitle() {
-   statusMsg("Loading Song by"+TITLE);
+   statusMsg("Loading Song by Title: "+TITLE);
    KEYbase = "X";
    document.getElementById('key2').innerHTML = "-";
    document.getElementById("title").innerHTML = TITLE; //^ put title on tab...
@@ -2705,6 +2705,7 @@ function receiveARR(divider,keepName) {//decode array (or string) and leading el
     return  data;}
 
 function passARR(pageName,arr,divider,leadingElements){//take data, array or string and pass to another page//if its an array it you must use a divider (i.e. '\n')
+    statusMsg('PassARR() to: '+pageName,0)
     var pf;
     if(Array.isArray(arr)===true){pf=arr.join(divider);}else{pf=arr;}
     if(leadingElements!==null){pf=leadingElements+divider+pf;}
