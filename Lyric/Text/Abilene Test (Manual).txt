@@ -1,0 +1,10 @@
+TITLE:Abilene Test,DUR:131,BPM:103.5,BEATS:4,KEY:F,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+|*F      |F       |F       |F
+|F       |A       |Bb      |F       |G       |C       |F      ~Bb     |F      ~C
+|F       |A       |Bb      |F       |G       |C       |F      ~Bb     |F      ~C
+|F       |A       |Bb      |F       |G       |C       |F      ~Bb     |F      ~C
+|F       |A       |Bb      |F       |G       |C       |F      ~Bb     |F      ~C
+|F       |A       |Bb      |F       |G       |C       |F      ~Bb     |F      ~C
+|F       |A       |Bb      |F       |G       |C       |F      ~Bb     |F      ~C
+|G       |C       |F      ~Bb     |F      ~C |C
+

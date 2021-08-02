@@ -1,6 +1,9 @@
-TITLE:Star,DUR:128,BPM:120,BEATS:4,KEY:C,QUAL:Preliminary,ARTIST:Steelers Wheel,GENRE:Folk,STYLE:Ballad,HITyear:TBD
-[Intro]  (x4)
-D Dsus2 D C
+TITLE:Star,DUR:150,BPM:115,BEATS:4,KEY:C,QUAL:Preliminary,ARTIST:Steelers Wheel,GENRE:Folk,STYLE:Ballad,HITyear:TBD
+#INTRO ----------------------------------
+|D ~   ~Dsus2 ~D |C    |D ~   ~Dsus2 ~D |C
+-
+|D ~   ~Dsus2 ~D |C    |D ~   ~Dsus2 ~D |C
+-
 #VERSE 1 --------------------------------
 |D             ~A             |F#m            ~Bm
 So they made you a star,
@@ -75,3 +78,4 @@ doo doo doo doo doo doo doo doo doo dooo
 Doo doo doo doo doo doo doo doo doo doo
 |Em            ~Bm            |A
 doo doo doo doo doo doo doo doo doo dooo
+https://www.youtube.com/watch?v=Fm-pTIlM4uU

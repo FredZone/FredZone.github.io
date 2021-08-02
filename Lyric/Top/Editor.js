@@ -54,18 +54,57 @@ var BARShalf=0;
 var BARSperLine=0;
 var CHORDlines=0;
 var ARRbars =''.split(',');
+var CHORDERhelp="Go To ChordU and copy the chord Chart\nPaste it into the editor\nfill in the first line (i.e. title etc)\nSave the file\nsame the Utube version of the song as MP3\nUse Audacity to process the audio (clip at ends)ste"
 
-
-
-function makeChordString(){
-var x= document.getElementById('rawTune').value
-x=x.replace(/\n/g," ")
-x=x.replace(/    /g,"   |%")
-document.getElementById('rawTune').value=x;
+function makeChordStringX(){
+var strA= document.getElementById('rawTune').value
+var strB=strA.replace(/\n/g,"z")//make it a string
+//document.getElementById('rawTune').value="1} strB:\n"+strB;
+var strC=strB.replace(/zzzzzz/g,"qqqq")
+strC=strC.replace(/zzzzz/g,"qqqq")
+strC=strC.replace(/zzzz/g,"qqqq")
+strC=strC.replace(/zzz/g,"qq")
+strC=strC.replace(/zz/g,"qq")
+strC=strC.replace(/q/g," ")
+document.getElementById('rawTune').value="strB:\n"+strB+"\nstrC:\n"+strC;
 }
 
-
-
+function makeChordString() {
+  var trigger = 0
+  var Q = ""
+  var strD = ""
+  var waiting = ""
+  var strA = document.getElementById('rawTune').value
+  var strB = strA.replace(/\n/g, "z") //make it a string
+  document.getElementById('rawTune').value = "strB:\n" + strB
+  var strC = strB.replace(/zzzzzz/g, "qqqq")
+  document.getElementById('rawTune').value = "strB:\n" + strB
+  strC = strC.replace(/zzzzz/g, "qqqq")
+  strC = strC.replace(/zzzz/g, "qqqq")
+  strC = strC.replace(/zzz/g, "qq")
+  strC = strC.replace(/zz/g, "qq")
+  document.getElementById('rawTune').value = document.getElementById('rawTune').value + "strC:\n\n" + strC
+  for (j = 0; j < strC.length; j++) {
+    if (strC[j] != "q") {
+      if (Q.length == 0)
+        waiting = waiting + strC[j]
+      else if (Q.length >= 4) {
+        strD = strD + "|" + waiting + Q
+        waiting = strC[j]
+        Q = "";
+      } else if (Q.length >0&Q.length <4) {
+        strD = strD + "|*" + waiting + Q
+        waiting = strC[j]
+        Q = "";
+      }
+    } else {
+      Q = Q + "q"
+    }
+  }
+ 
+ strD=strD.replace(/q/g," ")
+ document.getElementById('rawTune').value = document.getElementById('rawTune').value + "\n\nstrD:\n" + strD
+}
 
 
 function abcConvert(){
@@ -1394,17 +1433,17 @@ function StepThroughArray(funk, v1, v2) { //built 10 or more edit functions into
       temp = ARRlines[j].split(" ").join("  ");
       if (temp.length < LONGLYRIC) {
         ARRlines[j] = temp
-      }
+
     
  //-$   
-     } else if (funk == "stringIt") {
-      if (j>1) {
+     } else if (funk == "stringIt") {alert("this function is dead")}
+     /*-@ if (j>1) {
         if (ARRlines[j].length==0) {
           CHORDstring=CHORDstring+" ";
         }else{
         CHORDstring=CHORDstring+ARRlines[j]
         }
-      }
+      }*/
     
     
     } else if (funk == "addChords" && lType == "chord") {

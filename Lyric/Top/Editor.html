@@ -69,12 +69,15 @@ Digitec RP55=======================================
     </textarea>
     </div>  
 
-<div id=chordU style = "position:absolute; display:block;background-color:pink;border:none; margin:0; padding:0; right :0% ; z-index:50000;text-align:left ; width:30%; height: 25%;overflow:scroll">
-    Chord u
-    <br><a onclick="dis('chordU')">Close</a>
-    <br><a onclick="StepThroughArray('stringIt')">stringIt</a>
-    <br><a onclick="alert(CHORDstring),CHORDstring=CHORDstring.replace(/    /g, '   |'),document.getElementById('rawTune').value=CHORDstring" >step 2</a>
-    <br><a onclick="makeChordString()" >step 2</a>   
+<div id=chorder style = "position:absolute; display:block;background-color:pink;border:none; margin:0; padding:0; right :0% ; z-index:50000;text-align:left ; width:30%; height: 25%;overflow:scroll">
+    
+    <img src="../../Icons/chordU.png" onclick ="window.open('https://chordU.com')" style="position:absolute;height:3vw;left:0px;top:0%;">
+    <img src="../../Icons/chordify.png" onclick ="window.open('https://chordify.net')" style="position:absolute;height:3vw;left:3vw;top:0%;">
+    <img src="../../Icons/blackInfo.png" onclick ="alert(CHORDERhelp)" style="position:absolute;height:3vw;right:3vw;top:0%;">
+    <img src="../../Icons/blackClose.png" onclick="dis('chorder')" style="position:absolute;height:3vw;right:0px;top:0%;">
+    <!--<br><br><a onclick="StepThroughArray('stringIt')">stringIt</a>-->
+   
+    <br><br><a onclick="makeChordString()" >MAKE CHORDstring</a>
 
 </div> 
 
@@ -193,7 +196,7 @@ Digitec RP55=======================================
             <img id ='xmlImg' src="../../Icons/text.png" alt ="TXT" style=" left:1vw; height:3vw; width:3vw" onclick = "dis('cannedText')">
             <img src="../../Icons/blackNotepad.png" alt ="PAD" style=" left:5vw; height:3vw; width:3vw" onclick = "dis('notePad')">
             <img src="../../Icons/blackPython.png" alt='??' onclick="window.open('../../cgi-bin/PlayerUpdate.py','Python','width=1000,height=340,toolbar=0,menubar=0,location=0')" style=" left:4vw; height:3vw; width:3vw">    
-            <img src="../../Icons/blackNotepad.png" alt ="PAD" style=" left:20vw; height:3vw; width:3vw" onclick = "dis('chordU')">
+            <img src="../../Icons/chordify.png" alt ="PAD" style=" left:20vw; height:3vw; width:3vw" onclick = "dis('chorder')">
     
     </fieldset> 
 
@@ -242,7 +245,7 @@ Digitec RP55=======================================
     <a id ="tuneList" style="color:white;left:60%;">Songs Appear Here...or type your own into the list</a>
     <img src="../../Icons/blackSearch.png" alt ="Research" style="position:fixed; height:6vw; right:21vw ; height:6vw;width:6vw" onclick = "research()">
     <img src="../../Icons/blackQuestion.png" alt ="Help" style="position:fixed; height:6vw; right:14vw ; height:6vw;width:6vw" onclick = "window.open('helpIndex.html','Help with text file','width = 400, height=500, scrollbars=yes, resizable =yes')">        
-    <img src="../../Icons/transVocalWhat.png" alt ="Player" onclick = "passARR('nextplayer.html',ARRlines,'\n',null);" id = "ButtonConfigToPlay" style = "position:fixed; height:6vw; width:6vw; right:7vw; border:none; margin:0; padding:0; z-index:7900">
+    <img src="../../Icons/inWork.png" alt ="Player" onclick = "passARR('NextPlayerX.html',ARRlines,'\n',null);" id = "ButtonConfigToPlay" style = "position:fixed; height:6vw; width:6vw; right:7vw; border:none; margin:0; padding:0; z-index:7900">
     <img  id="HomeIcon" src="../../Icons/blackHome.png" alt ="Home" onclick="home()" style="position:fixed;height:6vw ;width :6vw;right:0vw">
     </div>
 
