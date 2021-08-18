@@ -16,11 +16,6 @@
 */
 
 //.## BOGUS FUNCTIONS
-function bogus(){
-   dis('bogusA');
-   dis('bogusB');
-   }
-
 
 
 function ctrlPop(val) {
@@ -215,7 +210,7 @@ function ctrlPop(val) {
 //.#      SHIT CONSTANTS Permanent feature 
    var SHIT= false
 
-
+   var POET=false;
 
 
 
@@ -2596,6 +2591,8 @@ function readSingleFile(e){
         RAWtune = e.target.result;//is program specific
         TITLE = (file.name.substring(0,(file.name.length)-4));};
     reader.readAsText(file);}
+    
+    
     
 //.## LYRIC COMMON FUNCTIONS  These functions are general utility
 function barSelect(bar) {
