@@ -1,0 +1,18 @@
+<div style='position:absolute;border:none;background-color:transparent;left:0%;right:0%;top:0%;bottom:0%;overflow:hidden;'>
+    
+    <div id='welText'style="position:absolute;background-color:transparent;border:none;overflow-y:auto;overflow-x:hidden;border:text-align:left">
+        <X5>WELCOME TO THE POET</X5>
+        <br>An experimental poetry site...
+        <br><X5>=========================</X5>
+        <br>Hopeing to work with my old friend Paul on this
+        <br><X5>=========================</X5>
+        <br>Please excuse the unfinished Look, its an Experiment
+        <br><X5>=========================</X5>
+        <br>I 'hand-made' this Website and would appreciate any constructive comments...
+    </div>   
+    
+    <div id='cards' style="position:absolute;opacity:0;display:block;border:none;line-height:100%;overflow-y:auto;text-align:center;">
+        HINTS...
+    </div> 
+    <img id='iconA' src='Data/iconA.png' style="position:absolute;">
+</div>

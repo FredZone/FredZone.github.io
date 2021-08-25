@@ -1,0 +1,16 @@
+<div style="border:groove">
+<X5>PLAYLIST</X5>
+<br>
+<div  style='position:relative;border:none;'>
+    <div  onclick="trackLoad('The Great Cabal')"style='position:relative;border:groove;color:red;background-color:yellow;height:4vw'>    
+        The Great Cabal
+    </div>
+<!-- <img src='Data/blackI.png' onclick= "pop(ARRtunes[0].split('\n').slice(1).join(''),'<X2>'+ARRtunes[0].split('\n')[0].toUpperCase()+'</X2>',25)" style='position:absolute;border:none;right:0%;top:5%;height:90%;z-index:500'>
+-->
+</div>
+<div  style='position:relative;border:none;'>
+    <div  onclick="trackLoad('Wyoming Limousines')"style='position:relative;border:groove;color:red;background-color:yellow;height:4vw'>    
+        Wyoming Limousines
+    </div>
+ <!--     <img src='Data/blackI.png' onclick= "pop(ARRtunes[0].split('\n').slice(1).join(''),'<X2>'+ARRtunes[1].split('\n')[0].toUpperCase()+'</X2>',25)" style='position:absolute;border:none;right:0%;top:5%;height:90%;z-index:500'>
+--></div>

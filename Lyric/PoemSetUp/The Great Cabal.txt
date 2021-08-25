@@ -1,0 +1,1 @@
+black,140%,0%,center,cursive,150%,1187,1785

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+<link rel="icon" href="iconSite.png" type="image/png">
+<meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!-- prevents zooming on mobile devices....number-based width or "device-width"-->
+<title id = 'title'>FLYER</title>
+    <style type="text/css">
+        Body
+            {
+                line-height:110%;
+                font-size:1.2vw;
+                font-family:Courrier New;
+                font-weight: bold;
+                text-align:center;
+                vertical-align:middle;
+                padding:0px;
+                margin:0px;                
+            }
+        X1{color:red;}
+        X2{color:blue;}
+        X3{opacity:0.3;}
+        X4{color:green;}
+        X5{opacity:0.4;}
+        X6{font-size:40px;}
+        X7{color:red;font-size:150px;line-height:100%}
+    </style>
+    </head>
+
+<body>
+    <div id='pg' style='position:absolute;width:1400px;height:1850px;border:solid;'>
+        <div id='toggle' onclick="hideBorder()" style="position:absolute;right:0px;top:0px;width:200px;height:200px;opacity:0;z-index:10000">Toggle
+        </div>  
+
+
+
+<!--Header-->            
+            <div style="position:absolute; font-size:90px; line-height:130%; width:1300px; height:150px; top:20px; left:50px;">
+               <X1><X7>Fred</X7><br><X5>& The Fossils (Virtual Band)</X5></X1>
+               </div>  
+<!--Pitch --> 
+            <div style="position:absolute; text-align:left;font-size:70px; line-height:130%; width:650px; height:100px; top:320px; right:50px;">
+               Just a guy,<br>his guitar &<br>his gadgets...
+               </div> 
+
+<!--images-->            
+            <img src='folkBand.png' style="position:absolute; overflow:hidden;opacity:1;top:600px; width:800px; height:800px;right:50px;z-index:10" >
+            <img src='player.png' style="position:absolute; overflow:hidden; height: 1200px; top:300px; left:50px;" >
+            <img src='transRingBlue.png' style="position:absolute; overflow:hidden;opacity:0.5;top:600px; width:900px; height:900px;right:0px;" >
+        <!--<img src='tabletFrame.jpg' style="position:absolute; overflow:hidden;opacity:1;bottom:104px; width:210px; height:140px;left:420px;" >-->
+        
+<!--Desc --> 
+        <div style="position:absolute; text-align:left;font-size:50px; line-height:130%; width:800px; height:100px; bottom:300px; right:50px;">
+           Electronic Backtracks & Harmony
+           </div> 
+        
+<!--Where and When -->  
+        <input  value=' When:'style="position:absolute;font-size:60px;left:50px;bottom:200px;width:1300px; height:80px;">
+        <input value=' Where:'style="position:absolute; font-size:60px; left:50px; bottom:100px; width:1300px;height:80px;">
+    
+<!--Contact-->
+        <input id='contact'  value='Website: https://fredzone.github.io/fossils/   Email: fkaparich@gmail.com:'style="position:absolute;text-align:center;font-size:40px;left:50px;bottom:25px;width:1300px;border:none; height:50px;">
+    </div>    
+
+<script>
+    
+var NAME='Fred and the Fossils';
+  
+window.onload = function() {
+    document.getElementById('contact').value="Website: https://fredzone.github.io/fossils/  Email: fkaparich@gmail.com"
+    alert(NAME+' says\nYou can edit the When and Where lines\nYou can also edit the contact information\nYou can \'toggle\' the border on\\off in the upper right')  
+    }
+
+
+function hideBorder(){
+    if (document.getElementById('pg').style.border=='none'){
+        document.getElementById('pg').style.border='solid'
+    }else{
+        document.getElementById('pg').style.border='none'
+    }
+}
+
+
+
+
+
+function dis(id,disp){
+    if(disp===undefined){
+            if(document.getElementById(id).style.display == 'none'){
+                document.getElementById(id).style.display='block';}
+            else{document.getElementById(id).style.display='none';}}
+        else{
+            if(disp=='none') {
+                document.getElementById(id).style.display = 'none';}
+            else{document.getElementById(id).style.display = 'block' ;}}}
+
+
+</script>
+</body></html>

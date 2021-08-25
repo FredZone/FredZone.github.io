@@ -1,0 +1,1 @@
+white,350%,1%,center,cursive,140%,1195,1795

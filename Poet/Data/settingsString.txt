@@ -1,0 +1,17 @@
+<div style='text-align:left'>
+<X3>SETTINGS</X3>
+<br>
+<br>The Stuff here is experimental
+<br>It may be half baked...
+<br>========================================================
+<br><a onclick="LISTEN=true,changePlayer(),config(ID)"><img src='Data/yellowGear.png' style='height:3vh;'><X3>Change Player Type...</X3></a>
+<br>========================================================
+
+<!--
+
+<br><br><a onclick="PLAYERtype='A',config('4')">A: My Custom Player (Defualt)</a>
+<br><a onclick="PLAYERtype='B'",config('4')>B: Your Browsers Standard Player</a>
+
+-->
+
+</div>

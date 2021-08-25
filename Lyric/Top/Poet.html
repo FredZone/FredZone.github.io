@@ -12,15 +12,56 @@
 --^ Trailing note (AFTER text)==================
 --? WTF=========================================-->
 
-
-<div id="field" style="display:block; background-color: lightyellow; position:fixed; left:0%; height:100%; width:100%; top:0%;overflow-y:scroll; z-index:0;">
-        <div id='ghost' onclick ="dis('player')" style='position:fixed;background-color:transparent; display:block;overflow:hidden; width:40vw;height:10vw; right:0%;bottom:0%;z-index:15;'></div>
-        <div id="content" style="position:absolute; font-family: cursive;font-weight: bold;  font-size:2.2vw; white-space: pre; text-align: center; left:2%; width:95%; top:0%;background-color:transparent;overflow:hidden; z-index:5;">
-                YOUR POEM APPEARS HERE!     
+<div id='world'style='position:absolute;display:block; background-color:lightblue; color:black; top:0%; left:0%; width:100%; height:100%; z-index:0'>
+        <div id ="splash" style="position:absolute; display:none; font-size:5vh;text-align:center; background-color:white; color:black; top:0%; left:0%; width:100%; height:100%; z-index:4500">
+                POET <br><br>A Javascript Application<br>by<br>Fred Kaparich<br>fkaparich@gmail.com<br>
         </div>
-        <audio id="Audio1" controls=true preload = "metadata" style="position:fixed;display:none;text-align:center; bottom:0%;width:30%;right:35%;z-index:779; opacity:1;background-color:transparent"> </audio>
-        <img id="backGround" src="../../Icons/trans.png" style="display:block; position:fixed; left:0%; width:100%; top:0%; overflow:hidden; z-index:0;">    
-        <div id="ctrl" style="position:fixed; display:block;text-align:left; font-size:2vh;background-color:black;border:outset; color:white; top:20%; left:20%; width:40%; height:75%;overflow-y:scroll;overflow-x:hidden; z-index:4500">
+        <img id ='think' src='../../Icons/resetSpinner.gif' alt ="thinking..." style='position:absolute; display:none; width:25%;top:40%; left:37%;z-index:5000;'>
+        
+        <img id="backGround" src="../PoemPics/The Poet.jpg" style="display:block; position:absolute; left:0%; top:0%; overflow:hidden; z-index:1;"> 
+        
+       <div id='player' style='position:absolute; display:block; border:groove; background-color:lightyellow;;left:0%;height:20%;top:0%;z-index:10000'>
+                <img id='resetButton' onclick='resetTrack()' src='../../Icons/transReset.png' style='position:absolute;display:block;;left:0vw;top:0vw;width:5vw;z-index:20;'>
+                <select onchange="parseAndLoad(this.value)" style="position:absolute;display:block;left:6vw;top:1.5vw;width:13vw;z-index:20;"><option selected>The Poet</option><option>The Great Cabal</option><option >Wyoming Limousines</option>></select>
+                <img id='pauseButton' onclick='trackPause()' src='../../Icons/transPause.png' style='position:absolute;display:none;left:20vw;top:0vw;width:5vw;z-index:20;'>
+                <img id='playButton' onclick='trackPlay()' src='../../Icons/transPlay.png' style='position:absolute;display:block;left:20vw;top:0vw;width:5vw;z-index:20;'>
+                <img id='fullButton' onclick='launchIntoFullscreen(document.documentElement)' src='../../Icons/transFullScreen.png' style='position:absolute;display:block;right:0vw;top:0vw;width:5vw;z-index:20;'>
+                <img id='XXXX' src='../../Icons/blackBug.png' alt ="load a poem"  onclick="parseAndLoad('The Great Cabal.mp3,The Great Cabal.txt,The Great Cabal.png')" style='position:absolute;display:block;left:60vw;top:0vw;width:5vw;z-index:20;'>
+                <img id='showCtrl' src='../../Icons/transTools.png' alt ="TOOLS"  onclick="dis('ctrl','block'),dis('player','none')" style='position:absolute;display:block;left:70vw;top:0vw;width:5vw;z-index:20;'>
+                <img id='recordButton' onclick="dis('player'),record()" src='../../Icons/transArrowRight.png' style='position:absolute;display:block;left:90vw;top:0vw;width:5vw;z-index:20;'>
+        </div>   
+
+        
+        
+        
+        
+        
+        <div id="field" style="display:block; background-color: transparent; position:absolute; left:1%; height:98%; width:98%; top:1%;overflow-y:scroll; overflow-x:hidden;z-index:20;">
+ <!--               <img id="backGround" src="../PoemPics/The Poet.jpg" style="display:block; position:absolute; left:0%; top:0%; overflow:hidden; z-index:5000;">    
+             <div id='ghost' onclick ="dis('player')" style='position:absolute;background-color:transparent; display:block;overflow:hidden; width:100%;height:10%; right:0%;z-index:100;'></div>
+                <div id="contentX" style="position:absolute; font-family: cursive;font-weight: bold;  font-size:2.2vw; white-space: pre; text-align: center; left:2%; width:100%; top:0%;background-color:transparent;overflow:hidden; z-index:-5;">
+                        YOUR POEM APPEARS HERE!     
+        -->      
+        </div>
+        
+        
+        <div id="scroller" style="display:block; position:absolute; background-color:transparent;left:0%; top:0%; width:100%;height:100%;overflow-y:scroll; overflow-x:hidden; z-index:100;"> 
+               <div id="content" style="position:absolute; font-family: cursive;font-weight: bold;  font-size:2.2vw; white-space: pre; text-align: center; left:2%; width:100%; top:0%;background-color:transparent;overflow:hidden; z-index:5000;">
+                       YOUR content APPEARS HERE!     
+                </div>
+        </div>
+       
+        <audio id="Audio1" controls=true preload = "metadata" style="position:absolute;display:none;text-align:center; bottom:0%;width:30%;right:35%;z-index:779; opacity:1;background-color:transparent"> </audio>
+        
+                
+        
+        
+        
+        
+        
+ 
+        
+        <div id="ctrl" style="position:absolute; display:none;text-align:left; font-size:2vh;background-color:black;border:outset; color:white; top:20%; left:20%; width:40%; height:75%;overflow-y:scroll;overflow-x:hidden; z-index:20000">
                 IMPORT YOU'RE OWN FILES,<br>RUN THE SETUP ROUTINE<br>=======================================================<br>
                 <img id='ctrlClose' src='../../Icons/blackClose.png' alt ="close"  onclick="dis('ctrl','none')" style='position:absolute; display:block; width:10%; right:0%;top:0%;'>
                1) Load text file:<br>
@@ -41,33 +82,25 @@
                 <button onclick="scrollSetup(false)">SETUP ROUTINE</button><br>
                 ========================================================================<br>
 
-        <select onchange="txtColor(this.value)"><option>black</option><option>white</option><option>red</option><option>orange</option><option>yellow</option><option>blue</option><option>indigo</option><option>violet</option></select>
-        <select onchange="txtFont(this.value)"><option>2.2vw</option><option>1.2vw</option><option>1.4vw</option><option>1.6vw</option><option>1.8vw</option><option>2vw</option><option>2.2vw</option><option>2.4vw</option><option>2.6vw</option><option>2.8vw</option><option>3vw</option><option>3.2vw</option></option><option>3.4vw</option><option>3.6vw</option><option>3.8vw</option><option>4vw</option><option>4.2vw</option></select>
-        <select onchange="leftMargin(this.value)"><option selected>2%</option><option>4%</option><option>6%</option><option>8%</option><option>10%</option><option>12%</option><option>14%</option><option>16%</option><option>18%</option><option>20%</option></select>
-        <select onchange="txtAlign(this.value)"><option>left</option><option  selected>center</option><option>right</option></select>
-        <select onchange="txtFamily(this.value)"><option>serif</option><option>sans-serif</option><option>monospace</option><option  selected>cursive</option><option>fantasy</option></select>
-        <select onchange="txtHeight(this.value)"><option>120%</option><option>130%</option><option>140%</option><option selected>150%</option><option>160%</option><option>170%</option></select>
-        </div> 
-<!--Player-->
-        <div id='player' style='position:fixed; display:none; border:groove; background-color:yellow;font-size:3vw;line-height:75%;right:0%;width:100vw;height:5vw;bottom:0%;z-index:200'>
-
-                <img id='reseterButton' onclick='resetTrack()' src='../../Icons/transReset.png' style='position:absolute;display:block;;left:0vw;top:0vw;width:5vw;z-index:20;'>
-                <select onchange="parseAndLoad(this.value)" style="position:absolute;display:block;left:7vw;top:1.5vw;width:20vw;z-index:20;"><option value="The Great Cabal.mp3,The Great Cabal.txt,The Great Cabal.png" selected>The Great Cabal</option><option value="Wyoming.mp3,Wyoming.txt,Wyoming.jpg" >Wyoming Limousines</option>></select>
-                <img id='pauseButton' onclick='trackPause()' src='../../Icons/transPause.png' style='position:absolute;display:block;left:30vw;top:0vw;width:5vw;z-index:20;'>
-                <img id='playButton' onclick='trackPlay()' src='../../Icons/transPlay.png' style='position:absolute;display:block;right:50vw;top:0vw;width:5vw;z-index:20;'>
-                
-                 <img id='XXXX' src='../../Icons/blackBug.png' alt ="load a poem"  onclick="parseAndLoad('The Great Cabal.mp3,The Great Cabal.txt,The Great Cabal.png')" style='position:absolute;display:block;left:60vw;top:0vw;width:5vw;z-index:20;'>
-                
-
-                <img id='showCtrl' src='../../Icons/transTools.png' alt ="TOOLS"  onclick="dis('ctrl','block'),dis('player','none')" style='position:absolute;display:block;left:70vw;top:0vw;width:5vw;z-index:20;'>
-                <img id='fullButton' onclick='launchIntoFullscreen(document.documentElement)' src='../../Icons/transClose.png' style='position:absolute;display:block;left:80vw;top:0vw;width:5vw;z-index:20;'>
-                <img id='recordButton' onclick="dis('player'),record()" src='../../Icons/transArrowRight.png' style='position:absolute;display:block;left:90vw;top:0vw;width:5vw;z-index:20;'>
+                <select onchange="txtColor(this.value)"><option>black</option><option>white</option><option>red</option><option>orange</option><option>yellow</option><option>green</option><option>blue</option><option>indigo</option><option>violet</option></select>
+                <select onchange="txtFont(this.value)"><option>2.2vw</option><option>1.2vw</option><option>1.4vw</option><option>1.6vw</option><option>1.8vw</option><option>2vw</option><option>2.2vw</option><option>2.4vw</option><option>2.6vw</option><option>2.8vw</option><option>3vw</option><option>3.2vw</option></option><option>3.4vw</option><option>3.6vw</option><option>3.8vw</option><option>4vw</option><option>4.2vw</option></select>
+                <select onchange="leftMargin(this.value)"><option selected>2%</option><option>4%</option><option>6%</option><option>8%</option><option>10%</option><option>12%</option><option>14%</option><option>16%</option><option>18%</option><option>20%</option></select>
+                <select onchange="txtAlign(this.value)"><option>left</option><option  selected>center</option><option>right</option></select>
+                <select onchange="txtFamily(this.value)"><option>serif</option><option>sans-serif</option><option>monospace</option><option  selected>cursive</option><option>fantasy</option></select>
+                <select onchange="txtHeight(this.value)"><option>120%</option><option>130%</option><option>140%</option><option selected>150%</option><option>160%</option><option>170%</option></select>
+                </div> 
         </div>
-
 </div>
 </body><!-- ==================================================================================================================-->
-<script type="text/javascript">
 
+
+
+
+
+
+
+<script type="text/javascript">
+var SETup;
 var DUR;
 var WINDht;
 var PAGEht;
@@ -78,34 +111,66 @@ var SCROLLkon;
 var TIMEOUTscroll;
 var SCROLLstartTime=0;
 var POStrack;
+var TITLE
+var ASPECTpic
+var ASPECTfld;
 
 
-window.onload = function() {
-        document.getElementById('Audio1').src = "../Backing/poem.mp3"
-        document.getElementById('content').innerHTML=fileDownload('../Text/poem.txt')
-        document.getElementById('backGround').src = "../../Icons/mountain.png"
-        setTimeout(function(){scrollSetup(), dis('player')
-        },3000);
+window.onload = function() {//default poem
+        parseAndLoad ('The Great Cabal')
        }
 
 
-function parseAndLoad(str){
-var arr =str.split(',');
-loadPoem(arr[0],arr[1],arr[2])
+function parseAndLoad(str) {
+        TITLE = str
+        alert(TITLE)
+        document.getElementById('backGround').src = "../PoemPics/" + TITLE + ".jpg"
+        SETup = fileDownload("../PoemSetUp/" + TITLE + ".txt").split(',')
+        txtColor(SETup[0]);
+        txtFont(SETup[1]);
+        leftMargin(SETup[2]);
+        txtAlign(SETup[3]);
+        txtFamily(SETup[4]);
+        txtHeight(SETup[5]);
+        
+        var bgh=SETup[6]
+        var bgw=SETup[7]
+        var ost=document.getElementById('field').offsetTop  //field offet Top
+        
+        var elmnt = document.getElementById("field");
+        var fh=elmnt.clientHeight;
+        var fw=elmnt.clientWidth;
+        
+        var fch=elmnt.clientHeight;
+        ASPECTpic=bgh/bgw;
+        ASPECTfld=fh/fw;
+        alert("ASPECTpic:"+ASPECTpic+"\nASPECTfld:"+ASPECTfld)
+                
+        if (ASPECTpic>=ASPECTfld) {
+               document.getElementById("backGround").style.height='100%';
+               document.getElementById("backGround").style.width=null;
+               
+        }else{
+              document.getElementById("backGround").style.width='100%';
+              document.getElementById("backGround").style.height=null;
+              
+        }
+
+        
+        
+        
+        
+        
+        //alert(SETup[0] + "-" + SETup[1] + "-" + SETup[2] + "-" + SETup[3] + "-" + SETup[4])
+        
+        document.getElementById('Audio1').src = "../PoemTracks/" + TITLE + ".mp3"
+        document.getElementById('content').innerHTML = fileDownload("../Poems/" + TITLE + ".txt")
+        
+        document.getElementById('backGround').src = "../PoemPics/" + TITLE + ".jpg"
+        setTimeout(function() {
+                scrollSetup(), dis('player', 'block')
+        }, 3000);
 }
-
-
-
-
-function loadPoem(aud,txt,pic){
-        dis('player','none')
-        document.getElementById('Audio1').src = "../PoemTracks/"+aud
-        document.getElementById('content').innerHTML=fileDownload("../Poems/"+txt)
-        document.getElementById('backGround').src = "../PoemPics/"+pic
-        setTimeout(function(){scrollSetup(), dis('player','block')
-        },3000);
-       }
-
 
 
 //-Setup steps============================================================================
@@ -141,12 +206,12 @@ function txtHeight(clr){document.getElementById('content').style.lineHeight =clr
 //.## SCROLL SETUP =============================================================
 function scrollSetup() { //^ get the song data,songHeight,iframeHeight,Duration,ScrollConstant Run after you set the content of page
         //launchIntoFullscreen
-        document.getElementById("field").scrollTop=0;
+        document.getElementById("scroller").scrollTop=0;
         DUR=Audio1.duration;
         WINDht = window.innerHeight;
         PAGEht = document.getElementById("content").clientHeight;
         SCROLLpix = parseInt(PAGEht - (WINDht), 10);
-        Ypos =Ystart = document.getElementById('field').scrollTop ;
+        Ypos =Ystart = document.getElementById('scroller').scrollTop ;
         SCROLLkon = DUR * 1000 / SCROLLpix; // microseconds per pixel
         //dis('ctrl','none');
         //dis('player','block');
@@ -156,12 +221,13 @@ function scrollSetup() { //^ get the song data,songHeight,iframeHeight,Duration,
 //-play routines======================================================================================
 function trackPlay() { //pause options...undefined
         Audio1.pause(); //just in case
-        Ypos=Ystart = document.getElementById('field').scrollTop 
-        Audio1.currentTime=DUR*document.getElementById('field').scrollTop/SCROLLpix
+        Ypos=Ystart = document.getElementById('scroller').scrollTop 
+        Audio1.currentTime=DUR*document.getElementById('scroller').scrollTop/SCROLLpix
         SCROLLstartTime = new Date().getTime();
         document.getElementById("Audio1").play();
         SCROLLstartTime = new Date().getTime();
         Audio1.play()
+        //dis('player','none')
         scrollEngine();
 }
 
@@ -169,7 +235,7 @@ function resetTrack() {
    clearTimeout(TIMEOUTscroll) 
    Audio1.pause();
    document.getElementById('Audio1').currentTime=0;
-   document.getElementById('field').scrollTop =0;
+   document.getElementById('scroller').scrollTop =0;
 }
 
 
@@ -181,10 +247,11 @@ function trackPause() {
 function scrollEngine() { //^ the actual scrolling routine keep it simple* before it starts SCOLLstartTime,SCROLLkon must be set
         var newPos;
         clearTimeout(TIMEOUTscroll) //stop scroll engine
-        Ypos = document.getElementById("field").scrollTop;
+        if (document.getElementById('scroller').scrollTop>=SCROLLpix-1){return}
+        Ypos = document.getElementById("scroller").scrollTop;
         nowTime = new Date().getTime();
         newPos = parseInt(((nowTime - SCROLLstartTime) / SCROLLkon) + Ystart, 10);
-        document.getElementById("field").scrollTop = newPos;
+        document.getElementById("scroller").scrollTop = newPos;
         TIMEOUTscroll = setTimeout(function() {
                 scrollEngine();
         }, SCROLLkon);
