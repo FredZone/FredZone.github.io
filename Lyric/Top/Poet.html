@@ -36,13 +36,20 @@
                 <img src='../../Icons/resetSpinner.gif' alt="thinking..." style='position:absolute; width:25%;top:40%; left:37%;'>
         </div>        
 
-        <div id='player' style='position:absolute; display:block; border:none; background-color:transparent;left:0%;height:7%;width:100%;bottom:0%;z-index:8000'>
-                <img id='resetButton' onclick='trackReset()' src='../../Icons/transReset.png' style='position:absolute;display:block;left:0%;top:0%;height:100%;z-index:20;'>
-                <img id='playButton' onclick='trackPlay()' src='../../Icons/transPlay.png' style='position:absolute;display:block;left:20vw;top:0vw;height:100%;z-index:20;'>
-                <img id='pauseButton' onclick='trackPause()' src='../../Icons/transPause.png' style='position:absolute;display:none;left:20vw;top:0%;height:100%;z-index:20;'>
-                <img id='homeButton' onclick="parseAndLoad('The Poet')"  src='../../Icons/transHome.png' style='position:absolute;display:block;right:20vw;top:0%;height:100%;z-index:20;'>        
-                <img id='fullButton' onclick="launchIntoFullscreen(document.documentElement),mode('full')" src='../../Icons/transFullscreen.png' style='position:absolute;display:block;right:0vw;top:0vw;height:100%;z-index:20;'>       
-                <img id='smallButton' onclick="closeFullscreen(document.documentElement),mode('small')" src='../../Icons/yellowExitFullScreen.png' style='position:absolute;display:none;right:0vw;top:0vw;height:100%;z-index:20;'>       
+        <div id='player' style='position:absolute; display:block; border:none; background-color:transparent;left:0%;height:7%;width:95%;bottom:0%;z-index:8000'>
+                <img id='resetButton' onclick='trackReset()' src='../../Icons/transReset.png' style='position:absolute;display:block;left:0%;bottom:0%;height:100%;z-index:20;'>
+                
+                <img id='playButton' onclick='trackPlay()' src='../../Icons/transPlay.png' style='position:absolute;display:block;left:23.25%;top:0vw;height:100%;z-index:20;'>
+                <img id='pauseButton' onclick='trackPause()' src='../../Icons/transPause.png' style='position:absolute;display:none;left:23.25%;bottom:0%;height:100%;z-index:20;'>
+                
+                <img id='settingsButton' onclick="alert('Under Construction')" src='../../Icons/transGear.png' style='position:absolute;display:block;left:46.5%;bottom:0%;height:100%;z-index:20;'>       
+
+                
+                <img id='homeButton' onclick="parseAndLoad('The Poet')"  src='../../Icons/transHome.png' style='position:absolute;display:block;left:69.75%;bottom:0%;height:100%;z-index:20;'>        
+                
+                <img id='fullButton' onclick="launchIntoFullscreen(document.documentElement),mode('full')" src='../../Icons/enterFullScreen.png' style='position:absolute;display:block;left:93%;bottom:0%;height:100%;z-index:20;'>       
+                <img id='smallButton' onclick="closeFullscreen(document.documentElement),mode('small')" src='../../Icons/exitFullScreen.png' style='position:absolute;display:none;left:93%;bottom:0%;height:100%;z-index:20;'>       
+ 
         <!--       
                 
         <img id='showCtrl' src='../../Icons/transTools.png' alt="TOOLS" onclick="dis('ctrl','block'),dis('player','none')" style='position:absolute;display:block;left:70vw;top:0vw;width:5vw;z-index:20;'>
@@ -51,7 +58,7 @@
         -->
         </div>
         
-        <div id="field" style="display:block;  background-color: transparent; position:absolute; left:0%; height:92%; width:100%; top:0%;overflow:hidden;z-index:20;">
+        <div id="field" style="display:block; background-color: transparent; position:absolute; left:0%; height:92%; width:100%; top:0%;overflow:hidden;z-index:20;">
                 <div id="scroller" style="display:block;background-image:url('../PoemPics/Background.jpg');background-repeat:no-repeat;background-size:cover; position:absolute;left:0%; top:0%; width:100%;height:100%; overflow-y:scroll; background-color:lightgrey;overflow-x:hidden; z-index:100;">
                         <div id="content" style="position:absolute; font-family: cursive;font-weight: bold; font-size:2.2vw; white-space: pre; text-align: center; left:2%; width:100%; top:0%;background-color:transparent;overflow:hidden; z-index:5000;">
                                 YOUR content APPEARS HERE! <!--left:0%; top:0%; width:100%;height:100%;-->
@@ -170,7 +177,7 @@ window.onload = function() {//default poem
 function parseAndLoad(str) {
         mode('think')
         TITLE = str
-        SETup = fileDownload("../PoemSetUp/" + TITLE + ".txt").split(',')
+        SETup = fileDownload("../PoemSetUp/" + TITLE + ".txt").split('|')
         TXTcolor=SETup[0];
         TXTfont=SETup[1];
         TXTmargin=SETup[2];
@@ -194,7 +201,7 @@ function config() {
         document.getElementById('content').style.fontSize=TXTfontAdj+'vw';//1
         document.getElementById('content').style.left=TXTmargin+'%'//2
         document.getElementById('content').style.textAlign =TXTalign;//3
-        document.getElementById('content').style.fontFamily =TXTfont;//4
+        document.getElementById('content').style.fontFamily =TXTfamily;//4
         document.getElementById('content').style.lineHeight =TXTheight+'%'//5
         setTimeout(function() {
               resize(), scrollSetup(),mode('ready');
@@ -224,8 +231,7 @@ function resize() {
                 document.getElementById("scroller").style.top = parseInt((fh - h) / 2, 10) + 'px';
         }
         document.getElementById('content').style.fontSize=TXTfontAdj+"vw"     
-        document.getElementById('msg').innerHTML=TXTfontAdj+"vw   " +ASPECTpic/ASPECTfld
-//adjust scroll to new position
+        //adjust scroll to new position
         //launchIntoFullscreen
         //document.getElementById("scroller").scrollTop=0;
         //DUR=Audio1.duration;
