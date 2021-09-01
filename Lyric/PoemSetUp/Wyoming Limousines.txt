@@ -1,1 +1,1 @@
-white,4,4,center,cursive,140%,1195,1795
+white|4|4|center|cursive|140%|1195|1795

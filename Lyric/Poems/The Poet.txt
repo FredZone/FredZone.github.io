@@ -1,18 +1,5 @@
-WELCOME TO "THE POET"
-Select A Poem<br>
-<a onclick="parseAndLoad('The Great Cabal')">The Great Cabal</a>
-<a onclick="parseAndLoad('Wyoming Limousines')">Wyoming Limousines</a>
-<!--
-<select onchange="parseAndLoad(this.value)" style="position:relative;display:block;">
-        <option>
-                The Great Cabal
-        </option>
-        <option>
-                Wyoming Limousines
-        </option>
-</select>
--->
-Controls below allow you to navigate the site
-The     icon plays any naration
-The     icon allows you to go full screen
-The     icon brings you back here
+    WELCOME TO "THE POET"
+    Select A Poem    
+    <a onclick="parseAndLoad('The Great Cabal')">...The Great Cabal</a>
+    <a onclick="parseAndLoad('Wyoming Limousines')">...Wyoming Limousines</a>
+

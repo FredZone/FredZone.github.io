@@ -5,10 +5,32 @@ This is "The Poet Template"
 Interpretation
 color,    fontsize(vw at full width),          leftMargin(%),         align(left,center,right),             font(cursive,monospace),lineHeight(%),picHeight(px),picWidth(px)
 0              1                                     2                          3                                      4                5            6               7
+============================================================
 0 color
-1 font(vw at full width)
-2 leftMargin(%)
+============================================================
+1 font
+(BEST SET WHILE VIEWING AT FULL SCREEN )
+
+Serif:      fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.
+Sans-serif: fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
+Monospace:  fonts - here all the letters have the same fixed width. They create a mechanical look. 
+Cursive:    fonts imitate human handwriting.
+Fantasy:    fonts are decorative/playful fonts.
+============================================================
+2 left Margin(%)
+(BEST SET WHILE VIEWING AT FULL SCREEN )
+============================================================
 3 align(left,center,right)
+
+
+
+============================================================
 4 lineHeight(%)
+
+
+============================================================
 5 picHeight(px)
+the raw picture height in pixels
+============================================================
 6 picWidth(px)
+the raw picture width in pixels

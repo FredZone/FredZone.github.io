@@ -1,1 +1,1 @@
-black,2.1,0,center,cursive,150,1187,1785
+green|2.25|0|center|cursive|150|1050|1680
