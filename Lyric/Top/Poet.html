@@ -19,7 +19,7 @@
 </head>
 <body onresize=resize()>
         
-<div id='world' style="position:absolute;display:block; background-image:url('../PoemPics/Background.jpg');background-repeat:no-repeat;background-size:cover; background-color:transparent; color:black; top:0%; left:0%; width:100%; height:100%; z-index:0; overflow:hidden">
+<div id='world' style="position:fixed;display:block; background-image:url('../PoemPics/Background.jpg');background-repeat:no-repeat;background-size:cover; background-color:transparent; color:black; top:0%; left:0%; width:100%; height:100%; z-index:0; overflow:hidden">
 <!-- --><div id="msg" style="position:absolute;text-align:left; display:none; font-size:3vw;background-color:transparent; color:red; top:0%; left:5%; width:95%; height:5%;overflow:hidden;border:solid;z-index:22000">msg</div>
         
                <div id="splash" style="position:absolute; display:block; font-size:5vh;text-align:center; background-image:url('../PoemPics/Background.jpg');background-repeat:no-repeat;background-size:cover;background-color:lightgrey; color:black; top:0%; left:0%; width:100%; height:100%;overflow:hidden;z-index:10000">POET<br>
@@ -36,7 +36,7 @@
                 <img src='../../Icons/resetSpinner.gif' alt="thinking..." style='position:absolute; width:25%;top:40%; left:37%;'>
         </div>        
 
-        <div id='player' style='position:absolute; display:block; border:none; background-color:transparent;left:0%;height:7%;width:95%;bottom:0%;z-index:8000'>
+        <div id='player' style='position:absolute; display:block; border:none; background-color:transparent;left:0%;height:7%;width:100%;bottom:0%;z-index:8000'>
                 <img id='resetButton' onclick='trackReset()' src='../../Icons/transReset.png' style='position:absolute;display:block;left:0%;bottom:0%;height:100%;z-index:20;'>
                 
                 <img id='playButton' onclick='trackPlay()' src='../../Icons/transPlay.png' style='position:absolute;display:block;left:23.25%;top:0vw;height:100%;z-index:20;'>
@@ -59,7 +59,12 @@
         </div>
         
         <div id="field" style="display:block; background-color: transparent; position:absolute; left:0%; height:92%; width:100%; top:0%;overflow:hidden;z-index:20;">
-                <div id="scroller" style="display:block;background-image:url('../PoemPics/Background.jpg');background-repeat:no-repeat;background-size:cover; position:absolute;left:0%; top:0%; width:100%;height:100%; overflow-y:scroll; background-color:lightgrey;overflow-x:hidden; z-index:100;">
+                
+                
+                
+                
+                
+                <div id="scroller" style="display:block;background-image:url('../PoemPics/Background.jpg');background-repeat:no-repeat;background-size:cover; position:absolute;left:0%; top:0%; width:100%;height:110%; overflow-y:scroll; background-color:lightgrey;overflow-x:hidden; z-index:100;">
                         <div id="content" style="position:absolute; font-family: cursive;font-weight: bold; font-size:2.2vw; white-space: pre; text-align: center; left:2%; width:100%; top:0%;background-color:transparent;overflow:hidden; z-index:5000;">
                                 YOUR content APPEARS HERE! <!--left:0%; top:0%; width:100%;height:100%;-->
                         </div>
