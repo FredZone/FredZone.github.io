@@ -1,1 +1,1 @@
-pink,3vw,1%,center,monospace,150%,1088,717
+red,4,1,center,monospace,150,1000,1000

@@ -103,7 +103,11 @@
         duplicate the main form to start other forms...      
         Convention id: title; src; action: STYLE position: font-size: text-align:color; background-color: border: left: right: top: bottom: width: height: z-index> -->     
         
+        
+        
+    <!--Main form  (allows 5% for msg  0-->         
         <div id ="main" style="position:absolute; display:block; font-size:2vw;text-align:center;  background-color:lightgrey; top:5%; left:0%; width:100%; height:95%; z-index:0">
+    <!--hdr (8% of main  you may choose to hide it 0-->        
             <div id='hdr' style='position:absolute;background-color:black;border:none;left:0%;top:0%;height:8%;width:100%;'>
                 <img  title="Download Default File" onclick="document.getElementById('demo').value=fileDownload('../text/Wagon Wheel.txt')" src="..\..\Icons\blackDownload.png" style='position:absolute;left:0%;top:1%;height:98%;'>
                 <img  title="Get a Local File"onclick="fileGetLocal('document.getElementById(\'demo\').value=TEMP')"  src="../../Icons/blackRead.png"id='getLocal' style='position:absolute;left:9%;top:1%;height:98%;'>
@@ -111,16 +115,11 @@
                 <img  title="Editor" src="../../Icons/blackEdit.png" alt="+" onclick="dis('main2')" style='position:absolute;right:27%;top:1%;height:98%;'>
                 <img  title="Popup" src="../../Icons/blackInfo.png" alt="+" onclick="popUp('yada yada yada','popup',3,'pink')"style='position:absolute;right:18%;top:1%;height:98%;'>
                 <img  title="Go Home" src="../../Icons/blackHome.png" alt="+"onclick="window.open('../../index.html','HOME')"style='position:absolute;right:9%;top:1%;height:98%;'>
-                
-                
                 <img  title="SHIT" src="../../Icons/blackHome.png" alt="+" onclick="fileGetLocal( undefined,'Your Process Is Complete','Abilene.txt')" style='position:absolute;right:50%;top:1%;height:98%;'>
                 <input type="text" value="Hello World" id="myInput" style='position:absolute;right:65%;top:1%;height:98%;'>>           
-                
-                //"fileGetLocal( undefined,'got it','Abilene.txt')"
-                
                 <img  title="Close the Form" src="../../Icons/blackClose.png" alt="+" onclick="dis('main','none')" style='position:absolute;right:0%;top:1%;height:98%;'>
             </div>
-            
+       
             <select id='dbSelect'  onchange="document.getElementById('demo').value=fileDownload(this.value)" style="position:absolute;overflow-y:hidden;top:10%;height:4%;left:1%;width:48%"><!--YADA put your function Here-->
                 <option value='../UTool/Modes.json' selected >MODES</option>    
                 <option value='../JSON/ExampleA.json'>A</option><!--YADA put in your own default files-->
@@ -128,7 +127,7 @@
                 <option value='../JSON/ExampleC.json>C</option>
             </select> 
             <textarea id="demo" title="DEMO text file" style="position:absolute;overflow-y:scroll;left:1%;top:16%;bottom:6%;width:48%">...</textarea>
-
+     <!--Typical Footer-->   
             <div id='ftr' style='position:absolute;background-color:black;font-size:2vw;left:0;bottom:0%;height:5%;width:100%;'><!--YADA put functions on Buttons-->
                 <button id='b21' onclick="statusMsg(this.id)" style='position:absolute;border-color:white;left:0%;top:1%;height:98%;width:9%;'>?1?</button>
                 <button id='b22' onclick="statusMsg(this.id)" style='position:absolute;border-color:white;left:10%;top:1%;height:98%;width:9%;'>?2?</button>

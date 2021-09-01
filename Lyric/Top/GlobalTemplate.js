@@ -12,7 +12,6 @@ function boot(){
     statusMsg('INSERT BOOT CODE HERE!');//YADA
 //^COMMON CODE (FINISH BOOT)
     localStorage.setItem('cra','crappy')
-    
     finishBoot()
     }
 

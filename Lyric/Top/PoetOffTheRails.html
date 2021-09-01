@@ -11,45 +11,45 @@
 --* Subsection==================================
 --^ Trailing note (AFTER text)==================
 --? WTF=========================================-->
-
-<div id='world'style='position:fixed;display:block; background-color:black; color:black; top:0%; left:0%; width:100%; height:100%; z-index:0'>
-    <div id ='think' style="position:absolute; display:block; font-size:5vh;text-align:center; background-color:white; color:black; top:0%; left:0%; width:100%; height:100%; z-index:4500">
-        <div id ="thinkWords"  style='position:absolute; display:block; width:100%;top:0%; left:0%'> THE POET <br><br>A Javascript Application<br>by<br>Fred Kaparich<br>fkaparich@gmail.com</div>
-        <img src='../../Icons/resetSpinner.gif' alt ="thinking..." style='position:absolute; display:block; width:25%;top:40%; left:37%;'>
-    </div>
-
-        <div id="field" style="background-image: url('../PoemPics/The Poet.jpg') ;background-size: 100% 100%;display:block; background-color: lightyellow; position:fixed; left:0%; height:100%; width:100%; top:0%;overflow-y:scroll; overflow-x:hidden;z-index:0;">
-
-        <div id='ghost' onclick ="dis('player')" style='position:absolute;background-color:transparent; display:block;overflow:hidden; width:100%; height:10vw; left:0%;bottom:0%;z-index:15;'></div>
-        <div id="content" style="position:absolute; font-family: cursive;font-weight: bold;  font-size:2.2vw; white-space: pre; text-align: center; left:2%; width:100%; top:0%;background-color:transparent;overflow-y:scroll; overflow-x:hidden;z-index:5;">
-                YOUR POEM APPEARS HERE!     
+<body onresize =parseAndLoad()>
+<div id='world'style='position:absolute;display:block; background-color:lightblue; color:black; top:0%; left:0%; width:100%; height:100%; z-index:0'>
+        <div id ="splash" style="position:absolute; display:none; font-size:5vh;text-align:center; background-color:white; color:black; top:0%; left:0%; width:100%; height:100%; z-index:4500">
+                POET <br><br>A Javascript Application<br>by<br>Fred Kaparich<br>fkaparich@gmail.com<br>
         </div>
-        <audio id="Audio1" controls=true preload = "metadata" style="position:absolute;display:none;text-align:center; bottom:0%;width:30%;right:35%;z-index:779; opacity:1;background-color:transparent"> </audio>
- <!--       <img id="backGround" src="../PoemPics/The Great Cabal.jpg" style="display:block; position:fixed; left:0%; width:100%; top:0%; overflow:hidden; z-index:0;">    
- -->        
+        <img id ='think' src='../../Icons/resetSpinner.gif' alt ="thinking..." style='position:absolute; display:none; width:25%;top:40%; left:37%;z-index:5000;'>
         
- <!--Player-->
-        <div id='player' style='position:fixed; display:block; border:groove; background-color:lightyellow;font-size:3vw;line-height:75%;left:25vw;width:50vw;height:5vw;bottom:0%;z-index:200'>
+        <img id="backGround" src="../PoemPics/The Poet.jpg" style="display:block; position:absolute; left:0%; top:0%; overflow:hidden; z-index:1;"> 
+        
+       <div id='player' style='position:absolute; display:block; border:groove; background-color:lightyellow;;left:0%;height:20%;top:0%;z-index:10000'>
                 <img id='resetButton' onclick='resetTrack()' src='../../Icons/transReset.png' style='position:absolute;display:block;;left:0vw;top:0vw;width:5vw;z-index:20;'>
-                <select onchange="parseAndLoad(this.value,'Loading '+ this.value +'...')" style="position:absolute;display:block;left:6vw;top:1.5vw;width:13vw;z-index:20;"><option value="The Poet" selected>-INFORMATION-</option><option>The Great Cabal</option><option >Wyoming Limousines</option></select>
+                <select onchange="parseAndLoad(this.value)" style="position:absolute;display:block;left:6vw;top:1.5vw;width:13vw;z-index:20;"><option selected>The Poet</option><option>The Great Cabal</option><option >Wyoming Limousines</option>></select>
                 <img id='pauseButton' onclick='trackPause()' src='../../Icons/transPause.png' style='position:absolute;display:none;left:20vw;top:0vw;width:5vw;z-index:20;'>
                 <img id='playButton' onclick='trackPlay()' src='../../Icons/transPlay.png' style='position:absolute;display:block;left:20vw;top:0vw;width:5vw;z-index:20;'>
                 <img id='fullButton' onclick='launchIntoFullscreen(document.documentElement)' src='../../Icons/transFullScreen.png' style='position:absolute;display:block;right:0vw;top:0vw;width:5vw;z-index:20;'>
-
-                 <img id='XXXX' src='../../Icons/blackBug.png' alt ="load a poem"  onclick='sizeField()'style='position:absolute;display:block;right:50vw;top:0vw;width:5vw;z-index:20;'>
-                
-                
+                <img id='XXXX' src='../../Icons/blackBug.png' alt ="load a poem"  onclick="parseAndLoad('The Great Cabal.mp3,The Great Cabal.txt,The Great Cabal.png')" style='position:absolute;display:block;left:60vw;top:0vw;width:5vw;z-index:20;'>
                 <img id='showCtrl' src='../../Icons/transTools.png' alt ="TOOLS"  onclick="dis('ctrl','block'),dis('player','none')" style='position:absolute;display:block;left:70vw;top:0vw;width:5vw;z-index:20;'>
-                
                 <img id='recordButton' onclick="dis('player'),record()" src='../../Icons/transArrowRight.png' style='position:absolute;display:block;left:90vw;top:0vw;width:5vw;z-index:20;'>
-        -->
-        </div>       
+        </div>   
+
+
+        <div id="field" style="display:block; background-color: transparent; position:absolute; left:1%; height:98%; width:98%; top:1%;overflow-y:scroll; overflow-x:hidden;z-index:20;">
+ <!--               <img id="backGround" src="../PoemPics/The Poet.jpg" style="display:block; position:absolute; left:0%; top:0%; overflow:hidden; z-index:5000;">    
+             <div id='ghost' onclick ="dis('player')" style='position:absolute;background-color:transparent; display:block;overflow:hidden; width:100%;height:10%; right:0%;z-index:100;'></div>
+                <div id="contentX" style="position:absolute; font-family: cursive;font-weight: bold;  font-size:2.2vw; white-space: pre; text-align: center; left:2%; width:100%; top:0%;background-color:transparent;overflow:hidden; z-index:-5;">
+                        YOUR POEM APPEARS HERE!     
+        -->      
+        </div>
         
         
-        
-        
-        
-        <div id="ctrl" style="position:fixed; display:none;text-align:left; font-size:2vh;background-color:black;border:outset; color:white; top:20%; left:20%; width:40%; height:75%;overflow-y:scroll;overflow-x:hidden; z-index:4500">
+        <div id="scroller" style="display:block; position:absolute; background-color:transparent;left:0%; top:0%; width:100%;height:100%;overflow-y:scroll; overflow-x:hidden; z-index:100;"> 
+               <div id="content" style="position:absolute; font-family: cursive;font-weight: bold;  font-size:2.2vw; white-space: pre; text-align: center; left:2%; width:100%; top:0%;background-color:transparent;overflow:hidden; z-index:5000;">
+                       YOUR content APPEARS HERE!     
+                </div>
+        </div>
+       
+        <audio id="Audio1" controls=true preload = "metadata" style="position:absolute;display:none;text-align:center; bottom:0%;width:30%;right:35%;z-index:779; opacity:1;background-color:transparent"> </audio>
+
+        <div id="ctrl" style="position:absolute; display:none;text-align:left; font-size:2vh;background-color:black;border:outset; color:white; top:20%; left:20%; width:40%; height:75%;overflow-y:scroll;overflow-x:hidden; z-index:20000">
                 IMPORT YOU'RE OWN FILES,<br>RUN THE SETUP ROUTINE<br>=======================================================<br>
                 <img id='ctrlClose' src='../../Icons/blackClose.png' alt ="close"  onclick="dis('ctrl','none')" style='position:absolute; display:block; width:10%; right:0%;top:0%;'>
                1) Load text file:<br>
@@ -61,11 +61,6 @@
                 3) Background Image<br>
                 <input id="image_file" type="file" accept="image/*"><br>
                 =====================================================================<br>
-                
-                
-                
-                
-                
                 SET THE VIEW TO FULL SCREEN<br>
                 <button onclick="launchIntoFullscreen(document.documentElement)">GO FULL SCREEN</button><br>
                 <button onclick="closeFullscreen(document.documentElement)">EXIT FULL SCREEN</button><br>
@@ -75,18 +70,18 @@
                 <button onclick="scrollSetup(false)">SETUP ROUTINE</button><br>
                 ========================================================================<br>
 
-        <select onchange="txtColor(this.value)"><option>black</option><option>white</option><option>red</option><option>orange</option><option>yellow</option><option>green</option><option>blue</option><option>indigo</option><option>violet</option></select>
-        <select onchange="txtFont(this.value)"><option>2.2vw</option><option>1.2vw</option><option>1.4vw</option><option>1.6vw</option><option>1.8vw</option><option>2vw</option><option>2.2vw</option><option>2.4vw</option><option>2.6vw</option><option>2.8vw</option><option>3vw</option><option>3.2vw</option></option><option>3.4vw</option><option>3.6vw</option><option>3.8vw</option><option>4vw</option><option>4.2vw</option></select>
-        <select onchange="leftMargin(this.value)"><option selected>2%</option><option>4%</option><option>6%</option><option>8%</option><option>10%</option><option>12%</option><option>14%</option><option>16%</option><option>18%</option><option>20%</option></select>
-        <select onchange="txtAlign(this.value)"><option>left</option><option  selected>center</option><option>right</option></select>
-        <select onchange="txtFamily(this.value)"><option>serif</option><option>sans-serif</option><option>monospace</option><option  selected>cursive</option><option>fantasy</option></select>
-        <select onchange="txtHeight(this.value)"><option>120%</option><option>130%</option><option>140%</option><option selected>150%</option><option>160%</option><option>170%</option></select>
-        </div> 
+                <select onchange="txtColor(this.value)"><option>black</option><option>white</option><option>red</option><option>orange</option><option>yellow</option><option>green</option><option>blue</option><option>indigo</option><option>violet</option></select>
+                <select onchange="txtFont(this.value)"><option>2.2vw</option><option>1.2vw</option><option>1.4vw</option><option>1.6vw</option><option>1.8vw</option><option>2vw</option><option>2.2vw</option><option>2.4vw</option><option>2.6vw</option><option>2.8vw</option><option>3vw</option><option>3.2vw</option></option><option>3.4vw</option><option>3.6vw</option><option>3.8vw</option><option>4vw</option><option>4.2vw</option></select>
+                <select onchange="leftMargin(this.value)"><option selected>2%</option><option>4%</option><option>6%</option><option>8%</option><option>10%</option><option>12%</option><option>14%</option><option>16%</option><option>18%</option><option>20%</option></select>
+                <select onchange="txtAlign(this.value)"><option>left</option><option  selected>center</option><option>right</option></select>
+                <select onchange="txtFamily(this.value)"><option>serif</option><option>sans-serif</option><option>monospace</option><option  selected>cursive</option><option>fantasy</option></select>
+                <select onchange="txtHeight(this.value)"><option>120%</option><option>130%</option><option>140%</option><option selected>150%</option><option>160%</option><option>170%</option></select>
+                </div> 
+        </div>
+</div>
+</body onresize=realign() ><!-- ==================================================================================================================-->
 
 
-</div>
-</div>
-</body><!-- ==================================================================================================================-->
 <script type="text/javascript">
 var SETup;
 var DUR;
@@ -97,57 +92,81 @@ var Ypos;
 var SCROLLpix;
 var SCROLLkon;
 var TIMEOUTscroll;
-var SCROLLstartTime=0;
+var SCROLLstartTime = 0;
 var POStrack;
-var TITLE
-var ASPECTscreen
-var ASPECTpic
-var NH=100
-var NW=100
+var TITLE;
+var BGH;
+var BGW;
+var ASPECTpic;
+var ASPECTfld;
+var AP;
+var Af;
+var ARRsetUp;
 
-window.onload = function() {//default poem
-       parseAndLoad('The Poet','THE POET <br><br>A Javascript Application<br>by<br>Fred Kaparich<br>fkaparich@gmail.com')
-       }
-
-
-function changeBackground()
-{
-     var fact
-     path='../PoemPics/'+TITLE+'.jpg'
-       if (ASPECTscreen<ASPECTpic) {
-        fact=parseInt(100*ASPECTscreen/ASPECTpic,10)
-      }else{
-        fact=parseInt(100*ASPECTpic/ASPECTscreen,10)
-      }
-      document.getElementById('field').style.left=parseInt((100-fact)/2,10)+"%"
-      document.getElementById('field').style.width=fact+'%';
-
-
+window.onload = function() { //default poem
+        parseAndLoad('The Poet')
 }
 
-function parseAndLoad(str,desc){
-        TITLE=str
-        document.getElementById('thinkWords').innerHTML=desc
-        dis('think','block')
-        SETup=fileDownload("../PoemSetUp/"+TITLE+".txt").split(',')
-        txtColor(SETup[0]);
-        txtFont(SETup[1]);
-        leftMargin(SETup[2]);
-        txtAlign(SETup[3]);
-        txtFamily(SETup[4]);
-        ASPECTpic=SETup[5]/SETup[6];
-        ASPECTscreen=screen.height/screen.width
-        changeBackground()
-        document.getElementById('Audio1').src = "../PoemTracks/"+TITLE+".mp3"
-        document.getElementById('content').innerHTML=fileDownload("../Poems/"+TITLE+".txt")
-       
-        setTimeout(function(){scrollSetup(), dis('player','block'), dis('think','none'), dis('playButton','block'), dis('pauseButton','none');document.getElementById('field').style="background-image:url('../PoemPics/"+TITLE+".jpg')" ;
-        },3000);
-       }
+function parseAndLoad(str) {
+        TITLE = str
+        alert(str)
+        SETup = fileDownload("../PoemSetUp/" + TITLE + ".txt")
+        setTimeout(function() {
+        pAL2(str)       
+        }, 1000);
+}       
+function pAL2(str)  {      
+
+        document.getElementById('backGround').src = "../PoemPics/" + TITLE + ".jpg"
+        alert(SETup)
+        ARRsetUp=SETup.split(',') 
+        txtColor(ARRsetUp[0]);
+        txtFont(ARRsetUp[1]);
+        leftMargin(ARRsetUp[2]);
+        txtAlign(ARRsetUp[3]);
+        //txtFamily(ARRsetUp[4]);
+       // txtHeight(ARRsetUp[5]);
+        var BGH = ARRsetUp[6]
+        var BGW = ARRsetUp[7]
+        alert(BGH+"/"+BGW)
+        ASPECTpic = BGH/BGW;
+        var ost = document.getElementById('field').offsetTop //field offet Top
+        document.getElementById('Audio1').src = "../PoemTracks/" + TITLE + ".mp3"
+        document.getElementById('content').innerHTML = fileDownload("../Poems/" + TITLE + ".txt")
+        document.getElementById('backGround').src = "../PoemPics/" + TITLE + ".jpg"
+        setTimeout(function() {
+                scrollSetup(), dis('player', 'block');//,realign()
+        }, 1000);
+        
+}
+
+function realign() {
+        var elmnt = document.getElementById("field");
+        var fh = elmnt.clientHeight;
+        var fw = elmnt.clientWidth;
+        ASPECTfld = fh / fw;
+        //alert("X ASPECTpic:" + ASPECTpic + "\nASPECTfld:" + ASPECTfld)
+
+        if (ASPECTpic >= ASPECTfld) { //picture taller 
+                document.getElementById("backGround").style.height = '100%';
+                document.getElementById("backGround").style.width = 100;
+        } else {
+                document.getElementById("backGround").style.width = '100%';
+                document.getElementById("backGround").style.height = '100%';
+
+        }
+}
 
 
 
-//-Setup steps============================================================================
+
+
+//alert(ARRsetUp[0] + "-" + ARRsetUp[1] + "-" + ARRsetUp[2] + "-" + ARRsetUp[3] + "-" + ARRsetUp[4])
+
+
+
+
+/*-Setup steps============================================================================
 document.getElementById('inputfile')
         .addEventListener('change', function() {
         var fr = new FileReader();
@@ -158,80 +177,96 @@ document.getElementById('inputfile')
 })
 
 audio_file.onchange = function() {
-    var files = this.files;
-    var file = URL.createObjectURL(files[0]);
-    Audio1.src = file;
+        var files = this.files;
+        var file = URL.createObjectURL(files[0]);
+        Audio1.src = file;
 };
 
 image_file.onchange = function() {
-    var files = this.files;
-    var file = URL.createObjectURL(files[0]);
-    backGround.src = file;
+        var files = this.files;
+        var file = URL.createObjectURL(files[0]);
+        backGround.src = file;
 };
 
 //-Appearance=============================================================
-function txtFont(clr){document.getElementById('content').style.fontSize=clr}
-function txtColor(clr){document.getElementById('content').style.color=clr}
-function leftMargin(clr){document.getElementById('content').style.left=clr}
-function txtAlign(clr){document.getElementById('content').style.textAlign =clr}
-function txtFamily(clr){document.getElementById('content').style.fontFamily =clr}
-function txtHeight(clr){document.getElementById('content').style.lineHeight =clr}
+*/
+function txtFont(clr) {
+        document.getElementById('content').style.fontSize = clr
+}
+
+function txtColor(clr) {
+        document.getElementById('content').style.color = clr
+}
+
+function leftMargin(clr) {
+        document.getElementById('content').style.left = clr
+}
+
+function txtAlign(clr) {
+        document.getElementById('content').style.textAlign = clr
+}
+
+function txtFamily(clr) {
+        document.getElementById('content').style.fontFamily = clr
+}
+
+function txtHeight(clr) {
+        document.getElementById('content').style.lineHeight = clr
+}
 
 //.## SCROLL SETUP =============================================================
+
 function scrollSetup() { //^ get the song data,songHeight,iframeHeight,Duration,ScrollConstant Run after you set the content of page
         //launchIntoFullscreen
-        document.getElementById("field").scrollTop=0;
-        DUR=Audio1.duration;
+        document.getElementById("scroller").scrollTop = 0;
+        DUR = Audio1.duration;
         WINDht = window.innerHeight;
         PAGEht = document.getElementById("content").clientHeight;
         SCROLLpix = parseInt(PAGEht - (WINDht), 10);
-        Ypos =Ystart = document.getElementById('field').scrollTop ;
+        Ypos = Ystart = document.getElementById('scroller').scrollTop;
         SCROLLkon = DUR * 1000 / SCROLLpix; // microseconds per pixel
         //dis('ctrl','none');
         //dis('player','block');
-        document.getElementById('Audio1').currentTime=0;
-       // alert("DUR:"+DUR+"\nWINDht: "+WINDht + "\nPAGEht: "+PAGEht + "\nSCROLLpix: "+SCROLLpix+ "\nSCROLLkon: "+SCROLLkon+"\nSCROLLstartTime: "+SCROLLstartTime+"\nYstart: "+Ystart);
+        document.getElementById('Audio1').currentTime = 0;
+        // alert("DUR:"+DUR+"\nWINDht: "+WINDht + "\nPAGEht: "+PAGEht + "\nSCROLLpix: "+SCROLLpix+ "\nSCROLLkon: "+SCROLLkon+"\nSCROLLstartTime: "+SCROLLstartTime+"\nYstart: "+Ystart);
 }
 //-play routines======================================================================================
+
 function trackPlay() { //pause options...undefined
         Audio1.pause(); //just in case
-        dis('pauseButton','block');dis('playButton','none')
-        Ypos=Ystart = document.getElementById('field').scrollTop 
-        Audio1.currentTime=DUR*document.getElementById('field').scrollTop/SCROLLpix
+        Ypos = Ystart = document.getElementById('scroller').scrollTop
+        Audio1.currentTime = DUR * document.getElementById('scroller').scrollTop / SCROLLpix
         SCROLLstartTime = new Date().getTime();
         document.getElementById("Audio1").play();
         SCROLLstartTime = new Date().getTime();
         Audio1.play()
-        dis('player','none')
+        //dis('player','none')
         scrollEngine();
 }
 
 function resetTrack() {
-   clearTimeout(TIMEOUTscroll) 
-   Audio1.pause();
-   document.getElementById('Audio1').currentTime=0;
-   document.getElementById('field').scrollTop =0;
+        clearTimeout(TIMEOUTscroll)
+        Audio1.pause();
+        document.getElementById('Audio1').currentTime = 0;
+        document.getElementById('scroller').scrollTop = 0;
 }
 
 
 function trackPause() {
-   clearTimeout(TIMEOUTscroll)
-   dis('pauseButton','none');dis('playButton','block')
-   Audio1.pause();
+        clearTimeout(TIMEOUTscroll)
+        Audio1.pause();
 }
 
 function scrollEngine() { //^ the actual scrolling routine keep it simple* before it starts SCOLLstartTime,SCROLLkon must be set
         var newPos;
         clearTimeout(TIMEOUTscroll) //stop scroll engine
-                if (document.getElementById('field').scrollTop>=SCROLLpix-1){
-                dis('player','block');
-                dis('pauseButton','none');
-                dis('playButton','block')
-                return}
-        Ypos = document.getElementById("field").scrollTop;
+        if (document.getElementById('scroller').scrollTop >= SCROLLpix - 1) {
+                return
+        }
+        Ypos = document.getElementById("scroller").scrollTop;
         nowTime = new Date().getTime();
         newPos = parseInt(((nowTime - SCROLLstartTime) / SCROLLkon) + Ystart, 10);
-        document.getElementById("field").scrollTop = newPos;
+        document.getElementById("scroller").scrollTop = newPos;
         TIMEOUTscroll = setTimeout(function() {
                 scrollEngine();
         }, SCROLLkon);
@@ -240,55 +275,56 @@ function scrollEngine() { //^ the actual scrolling routine keep it simple* befor
 
 function record() { //^ the actual scrolling routine keep it simple* before it starts SCOLLstartTime,SCROLLkon must be set
         launchIntoFullscreen(document.documentElement)
-        dis('ctrl','none')
-        dis('player','none')
-        setTimeout(function() {trackPlay();
-        },7000);
-}        
+        dis('ctrl', 'none')
+        dis('player', 'none')
+        setTimeout(function() {
+                trackPlay();
+        }, 7000);
+}
 
 //-Common functions=============================================================
 
 function fileDownload(path) {
-    var content = "Attemping to Download" + path;
-    var request = new XMLHttpRequest();
-    request.open("GET", path, false);
-    request.send(null);
-    content = request.responseText;
-    if (content.search("404") > -1 | content.length < 1) {
-        content = '404 Error' + content
-    }
-    return content; //could be undfined or null, not tested for
+        var content = "Attemping to Download" + path;
+        var request = new XMLHttpRequest();
+        request.open("GET", path, false);
+        request.send(null);
+        content = request.responseText;
+        if (content.search("404") > -1 | content.length < 1) {
+                content = '404 Error' + content
+        }
+        return content; //could be undfined or null, not tested for
 }
 
 function launchIntoFullscreen(element) {
-   if (!document.fullscreenElement) {
-      if (element.requestFullscreen) {
-         element.requestFullscreen();
-      } else if (element.mozRequestFullScreen) {
-         element.mozRequestFullScreen();
-      } else if (element.webkitRequestFullscreen) {
-         element.webkitRequestFullscreen();
-      } else if (element.msRequestFullscreen) {
-         element.msRequestFullscreen();
-      }
-   }
+        if (!document.fullscreenElement) {
+                if (element.requestFullscreen) {
+                        element.requestFullscreen();
+                } else if (element.mozRequestFullScreen) {
+                        element.mozRequestFullScreen();
+                } else if (element.webkitRequestFullscreen) {
+                        element.webkitRequestFullscreen();
+                } else if (element.msRequestFullscreen) {
+                        element.msRequestFullscreen();
+                }
+        }
 }
 
 function closeFullscreen() {
-   if (document.fullscreenElement) {
-      if (document.exitFullscreen) {
-         document.exitFullscreen();
-      }
-      if (document.webkitExitFullscreen) {
-         document.webkitExitFullscreen();
-      }
-      if (document.mozCancelFullScreen) {
-         document.mozCancelFullScreen();
-      }
-      if (document.msExitFullscreen) {
-         document.msExitFullscreen();
-      }
-   }
+        if (document.fullscreenElement) {
+                if (document.exitFullscreen) {
+                        document.exitFullscreen();
+                }
+                if (document.webkitExitFullscreen) {
+                        document.webkitExitFullscreen();
+                }
+                if (document.mozCancelFullScreen) {
+                        document.mozCancelFullScreen();
+                }
+                if (document.msExitFullscreen) {
+                        document.msExitFullscreen();
+                }
+        }
 }
 
 function dis(id, disp) {

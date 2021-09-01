@@ -1,11 +1,18 @@
 WELCOME TO "THE POET"
-
-Its a work in progress
-So dont expect a whole lot
-SOME BASICS
-The control bar is at the bottom
-    IF THE TOOLBAR DISAPPEARS
-    TAP THE BOTTOM OF THE SCREEN
-    THAT SHOULD BRING IT BACK
-    
-    
+Select A Poem<br>
+<a onclick="parseAndLoad('The Great Cabal')">The Great Cabal</a>
+<a onclick="parseAndLoad('Wyoming Limousines')">Wyoming Limousines</a>
+<!--
+<select onchange="parseAndLoad(this.value)" style="position:relative;display:block;">
+        <option>
+                The Great Cabal
+        </option>
+        <option>
+                Wyoming Limousines
+        </option>
+</select>
+-->
+Controls below allow you to navigate the site
+The     icon plays any naration
+The     icon allows you to go full screen
+The     icon brings you back here

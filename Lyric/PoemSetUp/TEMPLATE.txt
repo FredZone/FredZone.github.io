@@ -1,0 +1,14 @@
+red,5,1,left,monospace,150,892,892
+=============================================
+This is "The Poet Template"
+
+Interpretation
+color,    fontsize(vw at full width),          leftMargin(%),         align(left,center,right),             font(cursive,monospace),lineHeight(%),picHeight(px),picWidth(px)
+0              1                                     2                          3                                      4                5            6               7
+0 color
+1 font(vw at full width)
+2 leftMargin(%)
+3 align(left,center,right)
+4 lineHeight(%)
+5 picHeight(px)
+6 picWidth(px)
