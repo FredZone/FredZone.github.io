@@ -19,7 +19,7 @@
 </head>
 <body onresize=resize()>
         
-<div id='world' style="position:fixed;display:block; background-image:url('../PoemPics/Background.jpg');background-repeat:no-repeat;background-size:cover; background-color:transparent; color:black; top:0%; left:0%; width:100%; height:100%; z-index:0; overflow:hidden">
+<div id='world' style="position:fixed;display:block; background-image:url('../PoemPics/Background.jpg');background-repeat:no-repeat;background-size:cover;background-color:lightgrey; color:black; top:0%; left:0%; width:100%; height:100%; z-index:0; overflow:hidden">
 <!-- --><div id="msg" style="position:absolute;text-align:left; display:none; font-size:3vw;background-color:transparent; color:red; top:0%; left:5%; width:95%; height:5%;overflow:hidden;border:solid;z-index:22000">msg</div>
         
                <div id="splash" style="position:absolute; display:block; font-size:5vh;text-align:center; background-image:url('../PoemPics/Background.jpg');background-repeat:no-repeat;background-size:cover;background-color:lightgrey; color:black; top:0%; left:0%; width:100%; height:100%;overflow:hidden;z-index:10000">POET<br>
@@ -42,7 +42,7 @@
                 <img id='playButton' onclick='trackPlay()' src='../../Icons/transPlay.png' style='position:absolute;display:block;left:23.25%;top:0vw;height:100%;z-index:20;'>
                 <img id='pauseButton' onclick='trackPause()' src='../../Icons/transPause.png' style='position:absolute;display:none;left:23.25%;bottom:0%;height:100%;z-index:20;'>
                 
-                <img id='settingsButton' onclick="alert('Under Construction')" src='../../Icons/transGear.png' style='position:absolute;display:block;left:46.5%;bottom:0%;height:100%;z-index:20;'>       
+                <img id='settingsButton' onclick="dis('ctrl')" src='../../Icons/transGear.png' style='position:absolute;display:block;left:46.5%;bottom:0%;height:100%;z-index:20;'>       
 
                 
                 <img id='homeButton' onclick="parseAndLoad('The Poet')"  src='../../Icons/transHome.png' style='position:absolute;display:block;left:69.75%;bottom:0%;height:100%;z-index:20;'>        
@@ -70,7 +70,7 @@
                         </div>
                 </div>
         </div><audio id="Audio1" controls="true" preload="metadata" style="position:absolute;display:none;text-align:center; bottom:0%;width:30%;right:35%;z-index:779; opacity:1;background-color:transparent"></audio>
-</div><!--       
+</div>      
         <div id="ctrl" style="position:absolute; display:none;text-align:left; font-size:2vh;background-color:black;border:outset; color:white; top:20%; left:20%; width:40%; height:75%;overflow-y:scroll;overflow-x:hidden; z-index:20000">
                 IMPORT YOU'RE OWN FILES,<br>RUN THE SETUP ROUTINE<br>=======================================================<br>
                 <img id='ctrlClose' src='../../Icons/blackClose.png' alt ="close"  onclick="dis('ctrl','none')" style='position:absolute; display:block; width:10%; right:0%;top:0%;'>
@@ -99,7 +99,7 @@
                 <select onchange="txtFamily(this.value)"><option>serif</option><option>sans-serif</option><option>monospace</option><option  selected>cursive</option><option>fantasy</option></select>
                 <select onchange="txtHeight(this.value)"><option>120%</option><option>130%</option><option>140%</option><option selected>150%</option><option>160%</option><option>170%</option></select>
                 </div> 
-    </div>-->
+    </div><!-- -->
 
 <!-- ==================================================================================================================-->
 
@@ -147,10 +147,10 @@ function mode(mode){
         if(mode=='boot'){setMode('block','block','none','block','-','-','block','none')}
         else if (mode=='ready') {setMode('block','block','none','block','-','-','none','none')}
         else if (mode=='play') {setMode('block','none','block','block','-','-','none','none')}
-        else if(mode=='think') {setMode('-', '-', '-', '-',  '-', '-', '-', 'block')}
+        else if(mode=='think') {setMode('-', '-', '-', '-',  '-', '-', 'none', 'block')}
         else if(mode=='small') {setMode('-', '-', '-', '-',  'block', 'none', '-', '-')}
         else if(mode=='full') {setMode('-', '-', '-', '-',  'none', 'block', '-', '-')}
-        else if(mode=='think') {setMode('-', '-', '-', '-', '-', '-','-', 'block')}
+        else if(mode=='think') {setMode('-', '-', '-', '-', '-', '-','none', 'block')}
         MODE=mode;
        // alert('mode: '+MODE)
 }
@@ -164,7 +164,8 @@ function setMode(reset,play,pause,home,full,small,splash,think){
         if(home!= '-'){dis('homeButton',home)}
         if(full!='-'){dis('fullButton',full)}
         if(small!= '-'){dis('smallButton',small)}
-        if(think!= '-'){dis('splash',splash)}
+        if(think!= '-'){dis('think',think)}
+        if(splash!= '-'){dis('splash',splash)}
 }
 
 function ChangeBackgroungImageOfTab(tabName, imagePrefix)
@@ -256,7 +257,7 @@ function resize() {
 
 
 
-/*Setup steps============================================================================
+//*Setup steps============================================================================
 document.getElementById('inputfile')
         .addEventListener('change', function() {
         var fr = new FileReader();
@@ -272,13 +273,42 @@ audio_file.onchange = function() {
     Audio1.src = file;
 };
 
+/* was abbd worked
 image_file.onchange = function() {
     var files = this.files;
     var file = URL.createObjectURL(files[0]);
     backGround.src = file;
 };
- -Appearance=============================================================
-*/ 
+
+ var urlString = "url(\'../PoemPics/" + TITLE + ".jpg\')";
+
+
+*/
+
+
+
+
+image_file.onchange = function() {
+    var files = this.files;
+    alert(this.files)
+    var file = URL.createObjectURL(files[0]);
+    alert(file)
+   // document.getElementById('scroller').style.backgroundImage =  urlString;
+    document.getElementById('scroller').style.backgroundImage=file
+//content.style.backgroundImage.src = file;
+   // changeBackgroundImageOfTab('content',file)
+    
+    
+/*    function ChangeBackgroungImageOfTab(tabName, imagePrefix)
+{      var urlString = "url(\'../PoemPics/" + TITLE + ".jpg\')";
+    document.getElementById(tabName).style.backgroundImage =  urlString;
+           document.getElementById(tabName).style.backgroundRepeat = "no-repeat";
+        document.getElementById(tabName).style.backgroundSize = "cover";
+*/   
+}
+
+// -Appearance=============================================================
+
 function txtFont(fs){document.getElementById('content').style.fontSize=fs}
 function txtColor(clr){document.getElementById('content').style.color=clr}
 function leftMargin(lft){document.getElementById('content').style.left=lft}
