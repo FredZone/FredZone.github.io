@@ -237,24 +237,26 @@ function resize() {
                 document.getElementById("scroller").style.top = parseInt((fh - h) / 2, 10) + 'px';
         }
         document.getElementById('content').style.fontSize=TXTfontAdj+"vw"     
-        //adjust scroll to new position
-        //launchIntoFullscreen
-        //document.getElementById("scroller").scrollTop=0;
-        //DUR=Audio1.duration;
-        //Audio1.pause();
-        //var WINDht= scroller.offsetHeight
-//if (WINDht!=scroller.offsetHeight){statusMsg('offset error'+(WINDht=-scroller.offsetHeight))}
-        //PAGEht = document.getElementById("content").clientHeight; 
-        //SCROLLpix = parseInt(PAGEht - (WINDht), 10);
-       // Ypos =Ystart = document.getElementById('scroller').scrollTop ;
-       // SCROLLkon = DUR * 1000 / SCROLLpix; // microseconds per pixel
-        //document.getElementById('Audio1').currentTime=0;
-        //mode('ready')
+        syncTrack()
 
 }
         
 
-
+function syncTrack(){
+        //launchIntoFullscreen
+        //document.getElementById("scroller").scrollTop=0;
+        //DUR=Audio1.duration;
+        //Audio1.pause();
+        
+        var WINDht= scroller.offsetHeight
+        PAGEht = document.getElementById("content").clientHeight; 
+        SCROLLpix = parseInt(PAGEht - (WINDht), 10);
+        Ypos =SCROLLpix*document.getElementById('Audio1').currentTime/DUR
+        SCROLLkon = DUR * 1000 / SCROLLpix; // microseconds per pixel
+        //document.getElementById('Audio1').currentTime=0;
+        //mode('ready')    
+     
+}
 
 
 //*Setup steps============================================================================
