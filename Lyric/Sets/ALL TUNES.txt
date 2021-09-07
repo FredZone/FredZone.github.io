@@ -1,10 +1,6 @@
 25 Minutes To Go
 A Thousand Stars
-AAAA City of New Orleans
-Abilene Test (Manual)
-Abilene Test
 Abilene
-AbileneXXX
 Act Naturally
 Alcohol
 All The Lonely People
@@ -232,7 +228,6 @@ Peaceful Easy Feeling
 Peggy Sue
 Peppermint Twist
 Pleasures Of The Harbor
-Poem
 Poison Ivy
 Political Science
 Pride Of Man
@@ -301,13 +296,11 @@ Ten Degrees And Colder
 Tennessee Waltz
 Tennessee Whiskey
 Texas 1947
-TGC
 Thats Another Side To This Life
 Thats Gonna Leave A Mark
 The Cape
 The First Song That I Wrote
 The Fox
-The Great Cabal
 The Highroad
 The Last Time
 The Lesson
@@ -315,8 +308,6 @@ The Lion Sleeps Tonight
 The Little Old Lady From Pasadena
 The Night They Drove Old Dixie Down
 The Nightlife
-The Perfect High
-The Perfect Low
 The Pilgrim Chapter 33
 The Streets Of London
 The Times They Are A Changing

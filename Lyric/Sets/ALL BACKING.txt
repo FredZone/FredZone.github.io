@@ -1,4 +1,3 @@
-Abilene Test
 Abilene
 Abilene
 All The Lonely People
@@ -87,7 +86,6 @@ Pancho and LeftyA
 Peaceful Easy Feeling
 Peppermint Twist
 Pleasures Of The Harbor
-Poem
 Put Another Log On The Fire
 Ready To Fly
 Rock Me On The Water K
@@ -115,7 +113,6 @@ Take It Easy
 Teach Your Children
 Thats Gonna Leave A Mark
 The Cape
-The Great Cabal
 The Highroad
 The House Of The Rising Sun
 The Lion Sleeps Tonight

@@ -1,1 +1,1 @@
-black|5|1|left|'monospace'|150|1000|1000
+black|5|1|center|'monospace'|150|1000|1000
