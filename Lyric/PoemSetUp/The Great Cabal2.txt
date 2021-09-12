@@ -1,1 +1,1 @@
-purple|3.25|0|center|cursive|150|1058|1752
+purple|3.8|0|center|cursive|150|949|1785

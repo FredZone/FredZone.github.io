@@ -32,6 +32,10 @@
 </style>
 </head>
 <body onresize=resize()>
+<div id='recordDiv' onclick="record()" style='position:absolute; display:none;background-color:yellow; width:20%; height:20%;left:0%;top:0%;z-index:50000'> Record...</div>    
+<div id='emergencyDiv' onclick="dis('player','block')" style='position:absolute; display:block;background-color:transparent; width:20%; height:20%;left:0%;top:0%;z-index:49000'></div>    
+
+<img id='stopRecord' onclick="recordMode(false)" src='../../Icons/blackClose.png' style='position:absolute; display:none; width:10%; right:0%;top:0%;z-index:50000'>  -->     
 <img id='test' onclick=alert('test') src='../../Icons/blackClose.png'style='position:absolute; display:none; width:3%; right:0%;top:0%;z-index:50000'>  -->     
 <div id='world' style="padding:0;margin:0;position:fixed;display:block;font-size:2.2vw; background-color:lightgrey; color:black; top:0%; left:0%; width:100%; height:100%; z-index:0; overflow:hidden">
 
@@ -48,11 +52,11 @@
         </div>   
 
         <div id='ctrl' style='position:absolute;line-height:150%;font-size:4vw;color:white; display:none;text-align: center;left:0%;height:4%;width:100%;top:96%;z-index:8005'>
-                <button id='autoButton' onclick="buttonToggle('autoButton','AUTO')" style='position:absolute;color:white;background-color:red;display:block;left:0%;top:0%;width:20%;height:100%;z-index:20;'><b>AUTO</b></button>
+                <button id='recordButton' onclick="recordMode(true)" style='position:absolute;color:white;background-color:red;display:block;left:0%;top:0%;width:20%;height:100%;z-index:20;'><b>RECORD</b></button>
                 <button id='voiceButton'onclick="buttonToggle('voiceButton','VOICE')"style='position:absolute;color:white;background-color:green;display:block;left:20%;top:0%;width:20%;height:100%;z-index:20;'><b>VOICE</b></button>
                 <button id='textButton' onclick="buttonToggle('textButton','TEXT')" style='position:absolute;color:white;background-color:green;display:block;left:40%;top:0%;width:20%;height:100%;z-index:20;'><b>TEXT</b></button> 
                 <button id='pictureButton' onclick="buttonToggle('pictureButton','PICTURE')" style='position:absolute;color:white;background-color:green;line-height:150%;line-height:100%;display:block;left:60%;top:0%;width:20%;height:100%;z-index:20;'><b>PICTURES</b></button>
-                <button id='saveButton' onclick="dis('ctrl'),parseAndLoad(TITLE)"style='position:absolute;line-height:100%;display:block;left:80%;top:0%;width:20%;height:100%;z-index:20;'><b>SAVE</b></button>
+                <button id='saveButton' onclick="dis('ctrl'),parseAndLoad(TITLE)"style='position:absolute;line-height:100%;display:block;left:80%;top:0%;width:20%;height:100%;z-index:20;'><b>OK...</b></button>
         </div>   
         
         <div id="splash" style="position:absolute; display:block; font-size:5vh;text-align:center;background-color:lightgrey; color:black; top:0%; left:0%; width:100%; height:100%;overflow:hidden;z-index:10000">POET<br>
@@ -113,10 +117,11 @@
 </body>
 
 <script type="text/javascript">
-var TEXT=true
-var VOICE=true
-var PICTURE=true
-var AUTO=false
+var RECORD=false;
+var TEXT=true;
+var VOICE=true;
+var PICTURE=true;
+var AUTO=false;
 var SETup;
 var DUR;
 var WINDht;
@@ -132,8 +137,8 @@ var TITLE;
 var ASPECTpic;
 var ASPECTfld;
 var LONGESTline=70;
-var PICheight
-var PICwidth
+var PICheight;
+var PICwidth;
 var TXTcolor;
 var TXTfont;
 var TXTfontAdj
@@ -142,6 +147,37 @@ var TXTalign;
 var TXTfamily;
 var TXTheight;
 var MODE;
+
+
+function recordMode(tf) { //^ the actual scrolling routine keep it simple* before it starts SCOLLstartTime,SCROLLkon must be set
+        if (tf == true) {
+                RECORD=true
+                dis('ctrl', 'none');
+                dis('player', 'none');
+                document.getElementById("scroller").style.height = '100%';
+                document.getElementById("scroller").style.width = '100%';
+                document.getElementById("scroller").style.top = '0%';
+                document.getElementById("scroller").style.left= '0%';
+                launchIntoFullscreen(document.documentElement);
+                dis('recordDiv','block')
+        } else {
+                mode('boot');
+                RECORD = false;
+                trackReset();
+                parseAndLoad(TITLE);
+                dis('ctrl', 'none')
+                dis('player', 'block')
+        }
+}
+
+function record(){
+        dis('recordDiv','none')
+        setTimeout(function() {
+        trackPlay();
+        }, 10000);
+}
+
+
 
 function buttonToggle(id,varName){
         if (window[varName]==false){
@@ -221,7 +257,6 @@ function config() {
         }
         if (TEXT==false) {dis('content','none')}else{dis('content','block')}
         if (VOICE == true) {Audio1.volume=1}else{Audio1.volume=0}
-
         document.getElementById('Audio1').src = "../PoemTracks/" + TITLE + ".mp3"
         var fle = fileDownload("../Poems/" + TITLE + ".txt")
         document.getElementById('content').innerHTML = fle
@@ -231,14 +266,7 @@ function config() {
         document.getElementById('content').style.textAlign =TXTalign;//3
         document.getElementById('content').style.fontFamily =TXTfamily;//4
         document.getElementById('content').style.lineHeight =TXTheight+'%'//5
-        
-        
         if (TEXT=='false') {dis('scroller','none')}
-        
-        
-        
-        
-        
         setTimeout(function() {
               resize(), scrollSetup(),mode('ready');
         }, 1000);
@@ -247,36 +275,44 @@ function config() {
 
 
 function resize() {
+        var fh;
+        var fw;
         var elmnt = document.getElementById("world");
-        var fh = 0.96*elmnt.clientHeight;
-        var fw = elmnt.clientWidth;
-        ASPECTpic = PICheight / PICwidth;
-        ASPECTfld = fh / fw;
-        if (ASPECTpic >= ASPECTfld) {//landscape
-                TXTfontAdj=TXTfont*(ASPECTfld/ASPECTpic)
-                var w = parseInt((fh / PICheight) *PICwidth, 10)
-                document.getElementById("scroller").style.height = fh + 'px';
-                document.getElementById("scroller").style.top = '0px';
-                document.getElementById("player").style.width=w + 'px';
-                //document.getElementById("ctrl").style.bottom='5%';
-                document.getElementById("ctrl").style.width=document.getElementById("scroller").style.width = w + 'px';
-                document.getElementById("ctrl").style.left=document.getElementById("player").style.left= document.getElementById("scroller").style.left = parseInt((fw - w) / 2, 10) + 'px';
-                
-        
-
-        document.getElementById("player").style.top = '96%';
-        
-        } else {//phone
-                TXTfontAdj=TXTfont
-                var h = parseInt((fw / PICwidth) * PICheight, 10);
-                document.getElementById("scroller").style.width = fw + 'px';
-                document.getElementById("scroller").style.left = '0%';
-                document.getElementById("scroller").style.height = h + 'px';
-                document.getElementById("scroller").style.top = '0px';// parseInt((fh - h) / 2, 10) + 'px';
-                document.getElementById("player").style.top = parseInt(h , 10) + 'px';
-//document.getElementById("ctrl").style.top =parseInt(h*0.85, 10) + 'px';
-                document.getElementById("ctrl").style.width=document.getElementById("player").style.width= '100%';
-                document.getElementById("ctrl").style.left=document.getElementById("player").style.left= '0%';
+        if (RECORD==true){
+                //document.getElementById("scroller").style.left = '0px';
+                //document.getElementById("scroller").style.top = '0px';
+                document.getElementById("scroller").style.width = '100%';
+                document.getElementById("scroller").style.height = '100%';
+                //TXTfontAdj=TXTfont
+                //alert(1)
+        }else{
+                fh = 0.96*elmnt.clientHeight;
+                fw = elmnt.clientWidth;
+                ASPECTpic = PICheight / PICwidth;
+                ASPECTfld = fh / fw;
+                if (ASPECTpic >= ASPECTfld) {//landscape
+                        TXTfontAdj=TXTfont*(ASPECTfld/ASPECTpic)
+                        var w = parseInt((fh / PICheight) *PICwidth, 10)
+                        document.getElementById("scroller").style.height = fh + 'px';
+                        document.getElementById("scroller").style.top = '0px';
+                        document.getElementById("player").style.width=w + 'px';
+                        //document.getElementById("ctrl").style.bottom='5%';
+                        document.getElementById("ctrl").style.width=document.getElementById("scroller").style.width = w + 'px';
+                        document.getElementById("ctrl").style.left=document.getElementById("player").style.left= document.getElementById("scroller").style.left = parseInt((fw - w) / 2, 10) + 'px';
+                        
+                document.getElementById("player").style.top = '96%';
+                } else {//phone
+                        TXTfontAdj=TXTfont
+                        var h = parseInt((fw / PICwidth) * PICheight, 10);
+                        document.getElementById("scroller").style.width = fw + 'px';
+                        document.getElementById("scroller").style.left = '0%';
+                        document.getElementById("scroller").style.height = h + 'px';
+                        document.getElementById("scroller").style.top = '0px';// parseInt((fh - h) / 2, 10) + 'px';
+                        document.getElementById("player").style.top = parseInt(h , 10) + 'px';
+                        //document.getElementById("ctrl").style.top =parseInt(h*0.85, 10) + 'px';
+                        document.getElementById("ctrl").style.width=document.getElementById("player").style.width= '100%';
+                        document.getElementById("ctrl").style.left=document.getElementById("player").style.left= '0%';
+                }
         }
         document.getElementById('content').style.fontSize=TXTfontAdj+"vw"     
         syncTrack()
@@ -400,6 +436,10 @@ function trackReset() {
 
 
 function trackPause() {
+   if (RECORD==true) {
+        RECORD=false;
+        dis('player','block')
+   }
    clearTimeout(TIMEOUTscroll) ;
    Audio1.pause();
    mode('ready');
@@ -409,8 +449,19 @@ function scrollEngine() { //^ the actual scrolling routine keep it simple* befor
         var newPos;
         clearTimeout(TIMEOUTscroll) //stop scroll engine
         if (document.getElementById('scroller').scrollTop>=SCROLLpix-1){
-                mode('stopTrack')        
-                return}
+                if (RECORD==true) {
+                        RECORD=false;
+                        setTimeout(function() {
+                                trackPause();
+                                dis('player','block')
+                                }, 10000);
+                        return
+                }else{
+                        trackPause()
+                        mode('stopTrack')        
+                        return
+                }
+        }
         Ypos = document.getElementById("scroller").scrollTop;
         nowTime = new Date().getTime();
         newPos = parseInt(((nowTime - SCROLLstartTime) / SCROLLkon) + Ystart, 10);
@@ -421,13 +472,6 @@ function scrollEngine() { //^ the actual scrolling routine keep it simple* befor
 }
 
 
-function record() { //^ the actual scrolling routine keep it simple* before it starts SCOLLstartTime,SCROLLkon must be set
-        launchIntoFullscreen(document.documentElement)
-        dis('ctrl','none')
-        dis('player','none')
-        setTimeout(function() {trackPlay();
-        },7000);
-}        
 
 //-Common functions=============================================================
 
