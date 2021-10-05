@@ -1,0 +1,43 @@
+TITLE:Whistlers And Jugglers And Singers Of Songs,DUR:251,BPM:130,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Waylon Jennings,GENRE:Country,STYLE:Ballad,HITyear:1964
+
+#INTRO ----------------------------------
+|A      |%      |D      |%      |E      |%      |A      |%
+                                     You take the
+#VERSE 1 --------------------------------
+|D      |%      |E      |%      |A      |%      |D      |%
+lady                      and I'll take the lesson
+|A      |%      |B7     |%      |E      |%      |%      |%
+I can't say that anyone is doin' me wrong
+|D      |%      |E      |%      |A      |%      |D      |%
+'Cause I always knew that the girl had a weakness
+|A      |%      |E      |%      |A      |%      |%      |%
+For whistlers and jugglers and singers of songs
+#VERSE 2 --------------------------------
+|D      |%      |E      |%      |A      |%      |D      |%
+She was a child back when I first found her
+|A      |%      |B7     |%      |E      |%      |%      |%
+The dreamer inside her was just bein' born
+|D      |%      |E      |%      |A      |%      |D      |%
+I knew she'd come with me 'cause she had a fever
+|A      |%      |E      |%      |A      |%      |%      |%
+For whistlers and jugglers and singers of songs
+#BREAK 1 --------------------------------
+|F#m    |%      |%      |%      |B7     |%      |%      |%
+Whistlers will whistle a tune she can dance to
+|F#m    |%      |%      |%      |B7     |%      |%      |%
+The jugglers will cheer her when she starts to cry
+|F#m    |%      |%      |%      |B7     |%      |%      |%
+Singers will sing her a bed of red roses
+|%      |%      |%      |%      |%      |%      |%      |%
+Where she might let you lie by her side
+#VERSE 3 --------------------------------
+|D      |%      |E      |%      |A      |%      |D      |%
+She'll laugh in the face of the wealthy and famous
+|A      |%      |B7     |%      |E      |%      |%      |%
+You'll never lose her to the handsome or strong
+|D      |%      |E      |%      |A      |%      |D      |%
+All of your life, boy, watch over your shoulder
+|A      |%      |E      |%      |A      |%      |%      |%
+For whistlers and jugglers and singers of songs
+https://www.youtube.com/watch?v=ftx1jxJiv4A|Wayon Jennings
+https://www.youtube.com/watch?v=LLGhACsb3hI|Bob Gibson

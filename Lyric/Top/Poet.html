@@ -117,6 +117,11 @@
 </body>
 
 <script type="text/javascript">
+/*-@ */
+var ARRpics="5000@tgc01,10000@tgc02,15000@Background,20000@Custers Savior".split(',')
+PICnew=""
+var PICtime=10000000
+var PICno=0
 var RECORD=false;
 var TEXT=true;
 var VOICE=true;
@@ -399,6 +404,11 @@ function scrollSetup() { //^ get the song data,songHeight,iframeHeight,Duration,
         Ypos =Ystart = document.getElementById('scroller').scrollTop ;
         SCROLLkon = DUR * 1000 / SCROLLpix; // microseconds per pixel
         document.getElementById('Audio1').currentTime=0;
+        
+/*-@ */ PICno=0//set up the picture changer
+       // alert(ARRpics[0])
+        PICnew=ARRpics[0].split('@')[1]
+        PICtime=ARRpics[0].split('@')[0]
         mode('ready')
 }
 //-play routines======================================================================================
@@ -447,6 +457,8 @@ function trackPause() {
 
 function scrollEngine() { //^ the actual scrolling routine keep it simple* before it starts SCOLLstartTime,SCROLLkon must be set
         var newPos;
+        var pic=undefined
+        var NEXTpic=4000
         clearTimeout(TIMEOUTscroll) //stop scroll engine
         if (document.getElementById('scroller').scrollTop>=SCROLLpix-1){
                 if (RECORD==true) {
@@ -466,6 +478,12 @@ function scrollEngine() { //^ the actual scrolling routine keep it simple* befor
         nowTime = new Date().getTime();
         newPos = parseInt(((nowTime - SCROLLstartTime) / SCROLLkon) + Ystart, 10);
         document.getElementById("scroller").scrollTop = newPos;
+/*-@ if (nowTime-SCROLLstartTime>PICtime) {//set up a picture switch....
+                ChangeBackgroungImageOfTab('scroller', PICnew)
+                PICno=PICno +1
+                PICnew=ARRpics[PICno].split('@')[1]
+                PICtime=ARRpics[PICno].split('@')[0]
+        }*/ 
         TIMEOUTscroll = setTimeout(function() {
                 scrollEngine();
         }, SCROLLkon);

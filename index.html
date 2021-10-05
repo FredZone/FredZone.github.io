@@ -243,8 +243,15 @@ Body
                 Karaoke
             </div>
         </div>
-        
-        <div title="tbd" onclick="alert('Nothing to see here....')" style=" position:absolute;background-color:black;display:block;border-style:solid;vertical-align:bottom;left:12%; top:20%; width:9vw;height:12vw;">
+
+           <div title="WordPress" onclick="window.open('https://fredzone314118593.wordpress.com/');" style='border-style:solid;background-color:black;vertical-align:bottom; position:absolute;left:12%; top:20%; width:9vw;height:12vw'>
+            <img src='Icons/inWork.png' alt='karolkeJoe' style='position:absolute;top:0%;left:0%; width:100%;'>
+            <div style="position:absolute;text-align: center; bottom:0%;width:100%">
+                WordPress
+            </div>
+        </div>     
+
+        <div title="tbd" onclick="alert('Nothing to see here....')" style=" position:absolute;background-color:black;display:block;border-style:solid;vertical-align:bottom;left:23%; top:20%; width:9vw;height:12vw;">
             <img src="Icons/inWork.png" alt='??' style='position:absolute;top:0%;left:0%; width:100%;'>
             <div style="position:absolute;text-align: center; bottom:0%;width:100%">
                 NOTHING
@@ -263,39 +270,38 @@ Body
    
 <script type="text/javascript">
        //Baslined 11/25/19 12:53AM
-    window.onload = function() {
-        if (window.innerHeight >= window.innerWidth) {
-            alert("PLEASE rotate your device...Landscape works best on this site...");
-        }
-        if (location.host == 'localhost') {
-            dis('greetingNet', 'none');
-            dis('greetingLocal', 'block');
-            dis('PythonUpdate', 'block');
-            document.body.style.backgroundColor = "blue";
-        } else {
-            dis('greetingNet', 'block');
-            dis('greetingLocal', 'none');
-            dis('PythonUpdate', 'none');
-            document.body.style.backgroundColor = "lightgrey";
-        }
-
+window.onload = function() {
+    if (window.innerHeight >= window.innerWidth) {
+        alert("PLEASE rotate your device...Landscape works best on this site...");
     }
+    if (location.host == 'localhost') {
+        dis('greetingNet', 'none');
+        dis('greetingLocal', 'block');
+        dis('PythonUpdate', 'block');
+        document.body.style.backgroundColor = "blue";
+    } else {
+        dis('greetingNet', 'block');
+        dis('greetingLocal', 'none');
+        dis('PythonUpdate', 'none');
+        document.body.style.backgroundColor = "lightgrey";
+    }
+}
 
-      function dis(id, disp) {
-          if (disp === undefined) {
-              if (document.getElementById(id).style.display == 'none') {
-                  document.getElementById(id).style.display = 'block';
-              } else {
-                  document.getElementById(id).style.display = 'none';
-              }
-          } else {
-              if (disp == 'none') {
-                  document.getElementById(id).style.display = 'none';
-              } else {
-                  document.getElementById(id).style.display = 'block';
-              }
-          }
-      }
+function dis(id, disp) {
+    if (disp === undefined) {
+        if (document.getElementById(id).style.display == 'none') {
+            document.getElementById(id).style.display = 'block';
+        } else {
+            document.getElementById(id).style.display = 'none';
+        }
+    } else {
+        if (disp == 'none') {
+            document.getElementById(id).style.display = 'none';
+        } else {
+            document.getElementById(id).style.display = 'block';
+        }
+    }
+}
 </script>
 </body>
 </html>

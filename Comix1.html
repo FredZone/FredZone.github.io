@@ -23,184 +23,109 @@ Body
     X3{color:red;}
     </style>
 </head>
-<!-- <meta property="og:image" content="https://assets.amuniversal.com/cd3cc3b01011013935fb005056a9545d" />   -->
 <body>
-<div id='bod' style="background-color:yellow;font-size:3.7vw;overflow-y:scroll;" >
-    <div id='hdr'style='line-height:110%;position:absolute;display:block; vertical-align:middle; overflow:hidden; left:1%;width:98%; top:1%;border: groove; height:8%'>
-        <img id='pic' src='Icons/+comedy.png'  style="left:0px;position:absolute;height:100%">COMICS
-        </div>
+   <img id='pic' src='Icons/comedy.png' style='left:0px;position:absolute;left:0%;height:20%;top:0%;width:15%'>
     
-    <div id='matrix' style='position:absolute;border:none; line-height:110%;position:fixed;display:block; font-size:1.5vw; vertical-align:middle; overflow:scroll; left:0%;width:100%; top:11%;height:88%'>
+    <div id='matrix' style='position:absolute;border:none; line-height:180%;position:fixed;text-align:left;display:block; font-size:1.5vw; vertical-align:middle; overflow-x:hidden;overflow-y:scroll; left:0%;width:15%;height:75% ;top:20%;'>
+        <X3>==GO COMICS==</X3><br>
+        <div id='luann' onmouseover="picOn('Luann.png')" onmouseout="picOff()" onclick="todayGC1('luann')">Luann</div>
 
-        <div style= "position:absolute;top:0vw;left:1vw;width:12vw; height:4vw; border:solid; background-color:black" onmouseover="picOn('Luann.png')" onmouseout="picOff()" onclick="todayGC('luann')">
-            Luann
+        <div id='doonesbury' onmouseover="picOn('Doones.jpg')" onmouseout="picOff()" onclick="todayGC1(this.id)">
+            Doonesbury
             </div>
-        
-        <div style= 'position:absolute;top:0vw;left:15vw;width:12vw; height:4vw; border:solid;background-color:black'onmouseover="picOn('Funky.png')" onmouseout="picOff()" onclick="window.open('https://www.comicskingdom.com/funky-winkerbean')">
+        <div id='claybennett' onmouseover="picOn('Clay.png')" onmouseout="picOff()" onclick="todayGC1('claybennett')">
+            Clay Bennett
+            </div>
+        <div  id='calvinandhobbes' onmouseover="picOn('Calvin.png')" onmouseout="picOff()" onclick="this.style.color='yellow',todayGC1('calvinandhobbes')">
+           Calvin & Hobbs
+            </div>
+        <div  id='jeffdanziger' onmouseover="picOn('Danziger.png')" onmouseout="picOff()" onclick="todayGC1('jeffdanziger')">
+           Jeff Danziger
+            </div>
+        <div  id='m2bulls' onmouseover="picOn('2Bulls.png')" onmouseout="picOff()" onclick="todayGC1('m2bulls')">
+            Marty 2 Bulls  
+            </div>
+        <div  id='johndeering' onmouseover="picOn('Deering.png')" onmouseout="picOff()" onclick="todayGC1('johndeering')">
+            John Deering
+            </div>
+        <div id='nickanderson'onmouseover="picOn('NickAnderson.png')" onmouseout="picOff()" onclick="todayGC1('nickanderson')">
+            Nick Anderson
+            </div>
+        <div  id='nonsequitur' onmouseover="picOn('NonSeq.png')" onmouseout="picOff()" onclick="todayGC1('nonsequitur')">
+            Non Sequitur
+            </div>
+        <div  id='boondocks' onmouseover="picOn('Boondocks.png')" onmouseout="picOff()" onclick="todayGC1('boondocks')">
+            The Boondocks
+            </div>
+        <div  id='candorville' onmouseover="picOn('candorville.png')" onmouseout="picOff()" onclick="todayGC1('candorville')">
+            Candorville
+            </div>
+        <div  id='cornered' onmouseover="picOn('Cornered.png')" onmouseout="picOff()" onclick="todayGC1('cornered')">
+            Cornered
+            </div>
+        <div  id='freshlysqueezed' onmouseover="picOn('FreshlySqueezed.png')" onmouseout="picOff()" onclick="todayGC1('freshlysqueezed')">
+            Freshly Squeezed
+            </div>
+        <div  id='pickles' onmouseover="picOn('Pickles.png')" onmouseout="picOff()" onclick="todayGC1('pickles')">
+            Pickles
+            </div>
+        <div  id='frank-and-ernest' onmouseover="picOn('F&E.png')" onmouseout="picOff()" onclick="todayGC1('frank-and-ernest')">
+            Frank and Earnest
+            </div>
+        <div  id='brian-mcfadden' onmouseover="picOn('McFadden.png')" onmouseout="picOff()" onclick="todayGC1('brian-mcfadden')">
+            Brian McFadden
+            </div>  
+ 
+            
+            <X3>COMIC KINGDOM</X3><br>
+        <div onmouseover="picOn('Funky.png')" onmouseout="picOff()" onclick="todayCK('funky-winkerbean')">
+           F. Winkerbean
+           </div>
+        <X3>NEW WINDOW</X3><br>
+       <div onmouseover="picOn('WTrib.png')" onmouseout="picOff()" onclick="window.open('https://www.editorialcartoonists.com/editorial-cartoon-galleries/')">
+            Editorial
+            </div>
+        <div onmouseover="picOn('WTrib.png')" onmouseout="picOff()" onclick="window.open('https://www.wacotrib.com/eedition/')">
+            Waco Trib
+            </div>
+    </div>
+
+<!-- 
+     
+        <div style= 'position:absolute;top:0vw;left:1vw;width:12vw; height:4vw; border:solid;background-color:black'onmouseover="picOn('Funky.png')" onmouseout="picOff()" onclick="window.open('https://www.comicskingdom.com/funky-winkerbean')">
             Funky Winkerbean  
             </div>
 
-        <div style= 'position:absolute;top:0vw;left:29vw;width:12vw; height:4vw; border:solid;background-color:black' onmouseover="picOn('Calvin.png')" onmouseout="picOff()" onclick="todayGC('calvinandhobbes')">
-            Calvin & Hobbs   
-            </div>
-        
-<div style= 'position:absolute;top:0vw;left:43vw;width:12vw; height:4vw; border:solid;background-color:black' onmouseover="picOn('Dbell.png')" onmouseout="picOff()" onclick="todayCK('darrin-bell')">
+        <div style= 'position:absolute;top:0vw;left:43vw;width:12vw; height:4vw; border:solid;background-color:black' onmouseover="picOn('Dbell.png')" onmouseout="picOff()" onclick="todayCK('darrin-bell')">
             Darrin Bell
             </div>       
  
-<div style= 'position:absolute;top:0vw;left:57vw;width:12vw; height:4vw; border:solid;background-color:black' onmouseover="picOn('Farside.png')" onmouseout="picOff()" onclick="window.open('https://www.thefarside.com/')">
+        <div style= 'position:absolute;top:0vw;left:57vw;width:12vw; height:4vw; border:solid;background-color:black' onmouseover="picOn('Farside.png')" onmouseout="picOff()" onclick="window.open('https://www.thefarside.com/')">
             The Farside
             </div>    
-        
-        <div style= 'position:absolute;top:0vw;left:71vw;width:12vw; height:4vw; border:solid;background-color:black' onmouseover="picOn('Doones.jpg')" onmouseout="picOff()" onclick="todayGC('doonesbury')">
-            Doonesbury   
-            </div>    
-
-<div style= 'position:absolute;top:0vw;left:85vw;width:12vw; height:4vw;border:solid;background-color:black' onmouseover="picOn('WTrib.png')" onmouseout="picOff()" onclick="window.open('https://www.wacotrib.com/eedition/')">
-            Waco Trib
-            </div>
-
-<!--  
-<div style= 'position:absolute;top:0vw;left:29vw;width:12vw; height:4vw; border:solid;background-color:black' onmouseover="picOn('Calvin.png')" onmouseout="picOff()" onclick="todayGC('LINK')">
-            NAME   
-            </div>    
-        
--->
-       
-
-
-
-<!-- =========================================== -->
-
-        <div style= "position:absolute;top:6vw;left:1vw;width:12vw; height:4vw; border:solid;background-color:black" onmouseover="picOn('Clay.png')" onmouseout="picOff()" onclick="todayGC('claybennett')">
-            Clay Bennett
-            </div>
-
-        <div style= 'position:absolute;top:18vw;left:15vw;width:12vw; height:16vw; border:solid;background-color:black' onclick="todayGC('johndeering')">
-            <img src="Icons/Deering.png" style="height:12vw;width:100%;top:0px;left:0px">
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>John Deering</div>    
-            </div>
-
-        <div style= 'position:absolute;top:18vw;left:29vw;width:12vw; height:16vw; border:solid;background-color:black' onclick="todayGC('jeffdanziger')">
-            <img src="Icons/Danziger.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>Jeff Danziger</div>    
-            </div>
 
         <div style= 'position:absolute;top:18vw;left:43vw;width:12vw; height:16vw; border:solid;background-color:black' onclick="todayGC('bloom-county')">
             <img src="Icons/Bloom.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
             <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>Bloom County</div>    
             </div>
-        
-        <div style= 'position:absolute;top:18vw;left:57vw;width:12vw; height:16vw; border:solid;background-color:black' onclick="todayGC('m2bulls')">
-            <img src="Icons/2Bulls.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>Marty 2 Bulls</div>    
-            </div>       
-        
-        <div style= 'position:absolute;top:18vw;left:71vw;width:12vw; height:16vw; border:solid;background-color:black' onclick="todayGC('nickanderson')">
-            <img src="Icons/NickAnderson.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>Nick Anderson</div>    
-            </div>          
 
-        <div style= 'position:absolute;top:18vw;left:85vw;width:12vw; height:16vw;border:solid;background-color:black' onclick="todayGC('nonsequitur')">
-            <img src="Icons/NonSeq.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>Non Sequitur</div>
-        </div>
-        
-    
-    <!-- =========================================== -->
-
-        <div style= "position:absolute;top:36vw;left:1vw;width:12vw; height:16vw; border:solid;background-color:black" onclick="todayGC('boondocks')">
-            <img src="Icons/Boondocks.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>The Boondocks</div>    
-            </div>
-
-        <div style= 'position:absolute;top:36vw;left:15vw;width:12vw; height:16vw; border:solid;background-color:black' onclick="todayGC('candorville')">
-            <img src="Icons/Candorville.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>Candorville</div>    
-            </div>
-
-        <div style= 'position:absolute;top:36vw;left:29vw;width:12vw; height:16vw; border:solid;background-color:black' onclick="todayGC('cornered')">
-            <img src="Icons/Cornered.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>Cornered</div>    
-            </div>
-
-        <div style= 'position:absolute;top:36vw;left:43vw;width:12vw; height:16vw; border:solid;background-color:black' onclick="todayGC('freshlysqueezed')">
-            <img src="Icons/FreshlySqueezed.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>Freshly Squeezed</div>    
-            </div>
-        
-        <div style= 'position:absolute;top:36vw;left:57vw;width:12vw; height:16vw; border:solid;background-color:black'onclick="todayGC('pickles')">
-            <img src="Icons/Pickles.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>Pickles</div>    
-            </div>       
-        
-        <div style= 'position:absolute;top:36vw;left:71vw;width:12vw; height:16vw; border:solid;background-color:black' onclick="todayGC('frank-and-ernest')">
-            <img src="Icons/F&E.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>Frank and Earnest</div>    
-            </div>          
 
         <div style= 'font-size:1.0vw;position:absolute;top:36vw;left:85vw;width:12vw; height:16vw;border:solid;background-color:black' onclick="window.open('https://www.editorialcartoonists.com/editorial-cartoon-galleries/')">
             <img src="Icons/AAEC.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
             <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>Amer. Asso. Editorial Cartoonists</div>
-        </div>
-    
-<!-- =========================================== -->
-
-        <div style= "position:absolute;top:54vw;left:1vw;width:12vw; height:16vw; border:solid; background-color:black" onclick="todayGC('luann')">
-            <img src='Icons/blackInWork.png' style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none;'>In Work</div>    
             </div>
 
-        <div style= 'position:absolute;top:54vw;left:15vw;width:12vw; height:16vw; border:solid;background-color:black' onclick="window.open('https://gocomics.com')">
-            <img src="Icons/comedy.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>TBD</div>    
-            </div>
-
-        <div style= 'position:absolute;top:54vw;left:29vw;width:12vw; height:16vw; border:solid;background-color:black' onclick="window.open('https://gocomics.com')">
-            <img src="Icons/comedy.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>TBD</div>    
-            </div>
-
-        <div style= 'position:absolute;top:54vw;left:43vw;width:12vw; height:16vw; border:solid;background-color:black' onclick="window.open('https://gocomics.com')">
-            <img src="Icons/comedy.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>TBD</div>    
-            </div>
-        
-        <div style= 'position:absolute;top:54vw;left:57vw;width:12vw; height:16vw; border:solid;background-color:black'onclick="window.open('https://gocomics.com')">
-            <img src="Icons/comedy.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>TBD</div>    
-            </div>       
-        
-        <div style= 'position:absolute;top:54vw;left:71vw;width:12vw; height:16vw; border:solid;background-color:black' onclick="window.open('https://gocomics.com')">
-            <img src="Icons/comedy.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>TBD</div>    
-            </div>          
-
-        <div style= 'position:absolute;top:54vw;left:85vw;width:12vw; height:16vw;border:solid;background-color:black' onclick="window.open('https://gocomics.com')">
-            <img src="Icons/comedy.png" style="height:12vw;width:100%;top:0px;left:0px"></img>
-            <div style='position:absolute;bottom:0vw;left:0vw;width:12vw; height:4vw;border:none'>TBD</div>
-        </div>    
-    
-    
-    
-    </div>
-
-
-        </div>
-
-
-    </div>
-
+-->
 <script type="text/javascript">
-    
-    function picOn(id){
-        document.getElementById('pic').src='Icons/'+id
-    }
+function picOn(id){
+    document.getElementById('pic').src='Icons/'+id
+}
 
-    function picOff(){
-        document.getElementById('pic').src='Icons/comedy.png'
-    }
-       
+function picOff(){
+   //this.style.color='white'
+    document.getElementById('pic').src='Icons/comedy.png'
+}
+   
 function imgOnly(link){
     var dateObj = new Date();
     var month = ('0' + (dateObj.getMonth() + 1)).slice(-2);
@@ -232,51 +157,38 @@ function imgOnly(link){
   X.send('');	
   data = X.responseText;
  return window.open( "data:x-application/external;charset=utf-8," + escape(data));
-}//end savePageAs   
-    
-    
-    window.onload = function() {
-        if (window.innerHeight >= window.innerWidth) {
-            alert("PLEASE rotate your device...Landscape works best on this site...");
-        }
-        if (location.host == 'localhost') {
-            dis('greetingNet', 'none');
-            dis('greetingLocal', 'block');
-            document.body.style.backgroundColor = "lightblue";
-        } else {
-            dis('greetingNet', 'block');
-            dis('greetingLocal', 'none');
-            document.body.style.backgroundColor = "lightgrey";
-        }
-    }
+}
 
-function todayGC(link) {
-    var params = "scrollbars=yes,resizable=yes,status=no,location=no,toolbar=no,menubar=no,width=100%;height=100%,left=0,top=0"
+function todayGC1(link){
+    document.getElementById(link).style.color='yellow'
      var dateObj = new Date();
      var month = ('0' + (dateObj.getMonth() + 1)).slice(-2);
      var date = ('0' + dateObj.getDate()).slice(-2);
      var year = dateObj.getFullYear();
      var shortDate = year + '/' + month + '/' + date;
-     window.open('https://www.gocomics.com/'+link+"/"+shortDate,"XXX",params)
+     window.open('https://www.gocomics.com/'+link+"/"+shortDate,'toon', "toolbar=no,scrollbars=yes,resizable=yes,top=-300px,left=0px,width=1000px,height=800px,scrollTop=200px")
+    };  
+    
+function todayCK(link) {
+    var params = "scrollbars=yes,resizable=yes,status=no,location=no,toolbar=no,menubar=no,width=100%;height=100%,left=0,top=0"
+    window.open('https://www.comicskingdom.com/'+link)
+    }    
+    
+function dis(id, disp) {
+    if (disp === undefined) {
+        if (document.getElementById(id).style.display == 'none') {
+            document.getElementById(id).style.display = 'block';
+        } else {
+            document.getElementById(id).style.display = 'none';
+        }
+    } else {
+        if (disp == 'none') {
+            document.getElementById(id).style.display = 'none';
+        } else {
+            document.getElementById(id).style.display = 'block';
+        }
     }
-    
-    
-    
-      function dis(id, disp) {
-          if (disp === undefined) {
-              if (document.getElementById(id).style.display == 'none') {
-                  document.getElementById(id).style.display = 'block';
-              } else {
-                  document.getElementById(id).style.display = 'none';
-              }
-          } else {
-              if (disp == 'none') {
-                  document.getElementById(id).style.display = 'none';
-              } else {
-                  document.getElementById(id).style.display = 'block';
-              }
-          }
-      }
+}
 </script>
 
 
