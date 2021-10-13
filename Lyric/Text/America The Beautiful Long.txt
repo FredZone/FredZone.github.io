@@ -1,0 +1,139 @@
+TITLE:America The Beautiful Long,DUR:130,BPM:240,BEATS:4,KEY:G,QUAL:Raw,ARTIST:Pete Seeger,GENRE:Unknown,STYLE:Ballad,HITyear:
+#INTRO ----------------------------------
+|G                    |%
+#VERSE 1 --------------------------------
+|G                    |D
+O beautiful for spacious skies,
+|D7                   |G
+for amber waves of grain
+|G                    |D
+For purple mountain majesties,
+|A         ~A7         |D         ~D7
+above the fruited plain!
+|G                    |D
+America! America!
+|D7                   |G
+God shed his grace on thee
+|C                    |G
+And crown thy good with brotherhood,
+|C         ~D7         |G
+from sea to shining sea!
+#VERSE 2 --------------------------------
+|G                    |D
+O beautiful for pilgrim feet,
+|D7                   |G
+whose stern impassioned stress
+|G                    |D
+A thoroughfare of freedom beat,
+|A         ~A7         |D         ~D7
+across the wilderness!
+|G                    |D
+America! America!
+|D7                   |G
+God mend thine every flaw
+|C                    |G
+Confirm thy soul in self-control,
+|C         ~D7         |G
+Thy liberty in law!
+#VERSE 3 --------------------------------
+|G                    |D
+O beautiful for heroes proved,
+|D7                   |G
+in liberating strife.
+|G                    |D
+Who more than self their country loved,
+|A         ~A7         |D         ~D7
+and mercy more than life!
+|G                    |D
+America! America!
+|D7                   |G
+May God thy gold refine
+|C                    |G
+Till all success be nobleness,
+|C         ~D7         |G
+and every gain divine!
+#VERSE 4 --------------------------------
+|G                    |D
+O beautiful for patriot dream,
+|D7                   |G
+that sees beyond the years
+|G                    |D
+Thine alabaster cities gleam,
+|A         ~A7         |D         ~D7
+undimmed by human tears!
+|G                    |D
+America! America!
+|D7                   |G
+God shed his grace on thee
+|C                    |G
+And crown thy good with brotherhood,
+|C         ~D7         |G
+from sea to shining sea!
+#VERSE 5 --------------------------------
+|G                    |D
+O beautiful for halcyon skies,
+|D7                   |G
+For amber waves of grain,
+|G                    |D
+For purple mountain majesties
+|A         ~A7         |D         ~D7
+Above the enameled plain!
+|G                    |D
+America! America!
+|D7                   |G
+God shed his grace on thee
+|C                    |G
+Till souls wax fair as earth and air
+|C         ~D7         |G
+And music-hearted sea!
+#VERSE 6 --------------------------------
+|G                    |D
+O beautiful for pilgrims feet,
+|D7                   |G
+Whose stem impassioned stress
+|G                    |D
+A thoroughfare for freedom beat
+|A         ~A7         |D         ~D7
+Across the wilderness!
+|G                    |D
+America! America!
+|D7                   |G
+God shed his grace on thee
+|C                    |G
+Till paths be wrought through wilds of thought
+|C         ~D7         |G
+By pilgrim foot and knee!
+#VERSE 7 --------------------------------
+|G                    |D
+O beautiful for glory-tale
+|D7                   |G
+Of liberating strife
+|G                    |D
+When once and twice, for man's avail
+|A         ~A7         |D         ~D7
+Men lavished precious life!
+|G                    |D
+America! America!
+|D7                   |G
+God shed his grace on thee
+|C                    |G
+Till selfish gain no longer stain
+|C         ~D7         |G
+The banner of the free!
+#VERSE 8 --------------------------------
+|G                    |D
+O beautiful for patriot dream
+|D7                   |G
+That sees beyond the years
+|G                    |D
+Thine alabaster cities gleam
+|A         ~A7         |D         ~D7
+Undimmed by human tears!
+|G                    |D
+America! America!
+|D7                   |G
+God shed his grace on thee
+|C                    |G
+Till nobler men keep once again
+|C         ~D7         |G
+Thy whiter jubilee!
