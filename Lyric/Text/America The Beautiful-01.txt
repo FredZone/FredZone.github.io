@@ -1,0 +1,20 @@
+TITLE:America The Beautiful-01,DUR:130,BPM:240,BEATS:4,KEY:G,QUAL:Raw,ARTIST:Pete Seeger,GENRE:Unknown,STYLE:Ballad,HITyear:
+#INTRO ----------------------------------
+|G                    |%
+#VERSE 1 --------------------------------
+|G                    |D
+O beautiful for spacious skies,
+|D7                   |G
+for amber waves of grain
+|G                    |D
+For purple mountain majesties,
+|A         ~A7         |D         ~D7
+above the fruited plain!
+|G                    |D
+America! America!
+|D7                   |G
+God shed his grace on thee
+|C                    |G
+And crown thy good with brotherhood,
+|C         ~D7         |G
+from sea to shining sea!

@@ -24,11 +24,11 @@ You  say  you  love  the  baby  then  you  crucify  the  man
 |D               |F#m             |G               |D               |D
 You  say  you  love  the  baby  then  you  crucify  the  man
 #BRIDGE ---------------------------------
-|Bm                  |F#m                 |Bm                  |A         ~D
+|Bm            |%      |F#m                 |A         ~D
 Every day things are changin', words once honored turn to lies
 |Bm                  |D
 People  wonderin',  can  you  blame  them
-|Bm                  |E                   |A                   |Asus4
+|Bm        ~D          |E                 ~A                   |Asus4
 It's  too  far  to  run  and  too  late  to  hide
 #VERSE 3 --------------------------------
 |D                   |F#m                 |G                   |D

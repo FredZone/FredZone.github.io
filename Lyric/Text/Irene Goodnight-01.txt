@@ -1,0 +1,74 @@
+TITLE:Irene Goodnight-01,DUR:165,BPM:270,BEATS:6,KEY:C,QUAL:Complete,ARTIST:Lead Belly,GENRE:Folk,STYLE:Ballad,HITyear:Unknown
+<!--#Sally leads in on piano #-->
+#INTRO ----------------------------------
+|C        |%          |%       |%
+<!--#ALL#-->
+#CHORUS 1 -------------------------------
+|C        |%         |G7       |%
+I   -    rene    goodnight,
+|G7       |%         |C        |%
+Irene           goodnight,
+|C        |C7         |F       |Dm7
+Goodnight Irene, goodnight Irene,
+|G7       |%         |C        |%
+I'll see you in my dreams.<!--#<br>John#-->
+#VERSE 1 --------------------------------
+|C        |%         |G7       |%
+Last Saturday night I got married.
+|G7       |%         |C        |%
+Me and my wife settled down.
+|C        |C7         |F       |Dm7
+Now me and my wife are parted,
+|G7       |%         |C        |%
+I'm gonna take another stroll downtown<!--#<br>ALL#-->
+#CHORUS 2 -------------------------------
+|C        |%         |G7       |%
+I   -    rene    goodnight,
+|G7       |%         |C        |%
+Irene           goodnight,
+|C        |C7         |F       |Dm7
+Goodnight Irene, goodnight Irene,
+|G7       |%         |C        |%
+I'll see you in my dreams.<!--#<br>Stan and Bill#-->
+#VERSE 2 --------------------------------
+|C        |%         |G7       |%
+Sometimes I live in the country;
+|G7       |%         |C        |%
+Sometimes I live in town;
+|C        |C7         |F       |Dm7
+Sometimes I take a great notion
+|G7       |%         |C        |%
+To jump into the river and drown<!--#<br>ALL#-->
+#CHORUS 3 -------------------------------
+|C        |%         |G7       |%
+I   -    rene    goodnight,
+|G7       |%         |C        |%
+Irene           goodnight,
+|C        |C7         |F       |Dm7
+Goodnight Irene, goodnight Irene,
+|G7       |%         |C        |%
+I'll see you in my dreams.<!--#<br>Sally#-->
+#VERSE 3 --------------------------------
+|C        |%         |G7       |%
+Stop ramblin',           stop your gamblin';
+|G7       |%         |C        |%
+Stop stayin' out late at night;
+|C        |C7         |F       |Dm7
+Go home to your wife and family;
+|G7       |%         |C        |%
+Stay there by your fire-side bright.<!--#<br>ALL#-->
+#CHORUS 4 -------------------------------
+|C        |%         |G7       |%
+I   -    rene    goodnight,
+|G7       |%         |C        |%
+Irene           goodnight,
+|C        |C7         |F       |Dm7
+Goodnight Irene, goodnight Irene,
+|G7       |%         |C        |%
+I'll see you in my dreams.
+#OUTRO ----------------------------------
+|C        |C7         |F       |Dm7
+Goodnight Irene, goodnight Irene,
+|G7       |%         |C        |%
+I'll see you in my dreams.
+https://www.youtube.com/watch?v=vmQXmqbZ3Pc|Lead Belly

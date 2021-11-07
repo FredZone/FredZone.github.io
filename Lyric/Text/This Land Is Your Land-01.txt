@@ -1,0 +1,56 @@
+TITLE:This Land Is Your Land-01,DUR:96,BPM:240,BEATS:4,KEY:G,QUAL:Raw,ARTIST:Pete Seeger,GENRE:Unknown,STYLE:Ballad,HITyear:
+<!--#Fred Picks all pick it up#-->
+#INTRO ----------------------------------
+|G            |%            |D            |%
+-
+|A            |%            |D            |%
+-
+|G            |%            |D            |%
+-
+|A            |%            |D            |%
+-<!--#ALL#-->
+#CHORUS 1 -------------------------------
+|G            |%            |D            |%
+This land is your land, this land is my land
+|A            |%            |D            |%
+From California to the New York Island
+|G            |%            |D            |%
+From the Redwood Forest to the Gulf Stream waters
+|A            |%            |D            |%
+This land was made for you and me.<!--#John#-->
+#VERSE 1 --------------------------------
+|G            |%            |D            |%
+As I went walking that ribbon of highway
+|A            |%            |D            |%
+I saw above me that endless skyway
+|G            |%            |D            |%
+I saw below me that golden valley
+|A            |%            |D            |%
+This land was made for you and me.
+#CHORUS 2 -------------------------------
+|G            |%            |D            |%
+This land is your land, this land is my land
+|A            |%            |D            |%
+From California to the New York Island
+|G            |%            |D            |%
+From the Redwood Forest to the Gulf Stream waters
+|A            |%            |D            |%
+This land was made for you and me.<!--#Sally#-->
+#VERSE 2 --------------------------------
+|G            |%            |D            |%
+I roamed and I rambled and I followed my footsteps
+|A            |%            |D            |%
+To the sparkling sands of her diamond deserts
+|G            |%            |D            |%
+While all around me a voice was sounding
+|A            |%            |D            |%
+This land was made for you and me.<!--#John#-->
+#OUTRO -------------------------------
+|G            |%            |D            |%
+This land is your land, this land is my land
+|A            |%            |D            |%
+From California to the New York Island
+|G            |%            |D            |%
+From the Redwood Forest to the Gulf Stream waters
+|A            |%            |D            |%
+This land was made for you and me.

@@ -1,0 +1,74 @@
+TITLE:Jamaica Farewell-01,DUR:117,BPM:125,BEATS:4,KEY:C,QUAL:Complete,ARTIST:Harry Belafonte,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
+$$<X15>PR 1</X15> <X15>C M2</X15> <X15>PV 1</X15> <X16>v3</X16> <X16>H OFF</X16>
+$$ooXoo 8 5 10
+$$3 or 4
+<!--#<br>Fred sets up the beat#-->
+#INTRO ----------------------------------
+|NC            |C             |%
+-
+|C             |%
+-<!--#<br>Fred#-->
+#VERSE 1 --------------------------------
+|C             |F
+Down the way where the nights are gay
+|G             |C
+And the sun shines daily on the mountain top
+|C             |F
+I took a trip on a sailing ship
+|G             |C
+And when I reach Jamaica I made a stop -<!--#<br>All#-->
+#CHORUS 1 -------------------------------
+|C             |F
+But I'm sad to say, I'm on my way
+|G             |C
+Won't be back for many a day
+|C             |F
+My heart is down, my head is turning around
+|G             |C
+I had to leave a little girl in Kingston town<!--#<br>John#-->
+#VERSE 2 --------------------------------
+|C             |F
+Sounds of laughter everywhere
+|G             |C
+And the dancing girls swaying to and fro
+|C             |F
+I must declare, my heart is there
+|G             |C
+Tho' I've been from Maine to Mexico<!--#<br>All#-->
+#CHORUS 2 -------------------------------
+|C             |F
+But I'm sad to say, I'm on my way
+|G             |C
+Won't be back for many a day
+|C             |F
+My heart is down, my head is turning around
+|G             |C
+I had to leave a little girl in Kingston town<!--#<br>Stan#-->
+#VERSE 3 --------------------------------
+|C             |F
+Down at the market you can hear
+|G             |C
+Ladies cry out while on their heads they bear
+|C             |F
+Ackey rice, salt fish are nice
+|G             |C
+And the rum is fine any time of year<!--#<br>All#-->
+#CHORUS 3 -------------------------------
+|C             |F
+But I'm sad to say, I'm on my way
+|G             |C
+Won't be back for many a day
+|C             |F
+My heart is down, my head is turning around
+|G             |C
+I had to leave a little girl in Kingston town
+#OUTRO ----------------------------------
+|C             |F
+My heart is down, my head is turning around
+|G             |C
+I had to leave a little girl in Kingston town
+|C             |F
+My heart is down, my head is turning around
+|G             |C
+I had to leave a little girl in Kingston town
+irealb://Jamaica%20Farewell%3DUnknown%3D%3DCountry%3DC%3D%3D1r34LbKcu7XC%7CQy4C%2CLZyXF%7CQyXC%7B%20%20QyXyQX%7CZ%20%2CCZL%2CCZL%2CCQ%7CG7X4Ti*%7C%7CQyXCyQ%7CFX%7CQyX7G%7CQyXF%7CQyCX%7CQyXC%7CQyX7G%7CQyCXyQ%7CXC%7CQyFXyQ%7CG7XyQ%7CC%20%20%3C3x%3E%20%7D%7BCXyQ%7CFXyQ%7CG7XyQ%7CCXyQ%7D%20%3DPop-Country%3D120%3D1

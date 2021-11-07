@@ -1,0 +1,67 @@
+TITLE:Fox On The Run-01,DUR:116,BPM:118,BEATS:4,KEY:G,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:TBD
+<!--#Fred Leads in picking...<br>Everyone joins before the chorus#-->
+#INTRO ----------------------------------
+|G         ~D         |Am        ~C
+-
+|Am        ~D         |C         ~G         |G
+-
+#CHORUS 1 -------------------------------
+<!--#ALL#-->
+|G         ~D         |Am        ~C
+She walks through the corn leading down to the river
+|Am        ~D         |C         ~G         |*G
+Her hair shone like  gold in the hot mornin' sun
+|G         ~D         |Am        ~C
+She took all the love that a poor boy could give her
+|Am        ~D         |C         ~G         |*G
+And left me to die like a fox on the run
+|C                    |G                    |*G
+Like a fox, (like a fox, like a fox) on the run
+#VERSE 1 --------------------------------
+<!--#STAN#-->
+|C        ~G         |D         ~G
+Everybody knows the reason for the fall
+|C         ~G         |A7       ~D         |*D
+When woman tempted man down in paradise hall
+|C         ~G         |D         ~G
+This woman tempted me alright then took me for a ride
+|C         ~G         |D         ~G        |*G
+But like a lonely fox, boys I need a place to hide
+#CHORUS 2 -------------------------------
+<!--#ALL#-->
+|G         ~D         |Am        ~C
+She walks through the corn leading down to the river
+|Am        ~D         |C         ~G         |*G
+Her hair shone like  gold in the hot mornin' sun
+|G         ~D         |Am        ~C
+She took all the love that a poor boy could give her
+|Am        ~D         |C         ~G         |*G
+And left me to die like a fox on the run
+|C                    |G                    |*G
+Like a fox, (like a fox, like a fox) on the run
+#VERSE 2 --------------------------------
+<!--#STAN#-->
+|C        ~G         |D         ~G
+Come drink a glass of wine boys to fortify our souls
+|C         ~G         |A7       ~D         |*D
+We'll talk about the world and friends we used to know
+|C         ~G         |D         ~G
+I see a string of girls who have put me on the floor
+|C         ~G         |D         ~G        |*G
+The game is nearly over and the hounds are at my door
+#CHORUS 3 -------------------------------
+<!--#ALL#-->
+|G         ~D         |Am        ~C
+She walks through the corn leading down to the river
+|Am        ~D         |C         ~G         |*G
+Her hair shone like  gold in the hot mornin' sun
+|G         ~D         |Am        ~C
+She took all the love that a poor boy could give her
+|Am        ~D         |C         ~G         |*G
+And left me to die like a fox on the run
+|C                    |G                    |*G
+Like a fox, (like a fox, like a fox) on the run
+https://www.youtube.com/watch?v=xjQRzH-S_JM|Country Gentlemen
+https://www.youtube.com/watch?v=2zqFDRA1HY8|Manfred Mann
+https://www.youtube.com/watch?v=8KuQILn2L2A|Tom T Hall
+https://www.youtube.com/watch?v=w3VBDOKbuug|Zac Brpwm
