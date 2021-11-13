@@ -1,0 +1,102 @@
+TITLE:Well Well Well-01,DUR:207,BPM:88,BEATS:4,KEY:E,QUAL:Raw,ARTIST:Gibson And Camp,GENRE:Folk,STYLE:Ballad,HITyear:Unknown
+#INTRO ----------------------------------
+|NC
+<!--#John bass lead in#-->
+|NC                     |%
+-
+|NC                     |%
+-
+|NC                     |%
+-
+|NC                     |%
+-
+#CHORUS 1 -------------------------------
+<!--#All#-->
+|Em                     |Em    ~Am    ~Em    ~
+<!--#ALL#-->Well, Well, Well, <!--#JOHN#-->Who's that a-callin'
+|Em         ~Am         |G          ~B7
+<!--#ALL#-->Well, Well, Well,   <!--#JOHN#-->Hold my    hand.
+|Em                     |Em    ~Am    ~Em    ~
+<!--#ALL#-->Well, Well, Well,  <!--#JOHN#-->Night is a-fallin'
+|G                      |B7
+<!--#ALL#-->Spirit is a-movin'all over this land.
+#VERSE 1 --------------------------------
+|G                      |%
+<!--#JOHN#-->Lord told   Noah,     Build him an ark,
+|Bm                     |%
+Build it out of      hickory   bark.
+|Em          ~E          |Am
+Rain started fallen and the water start to climb,
+|G                      |B7
+God send a fire, not a flood next time.
+#CHORUS 2 -------------------------------
+@Harmony 1-3-4
+|Em                     |Em    ~Am    ~Em    ~
+<!--#ALL#-->Well, Well, Well, <!--#Fred#-->Who's that a-callin'
+|Em         ~Am         |G          ~B7
+<!--#ALL#-->Well, Well, Well,  <!--#Fred#-->Hold my    hand.
+|Em                     |Em    ~Am    ~Em    ~
+<!--#ALL#-->Well, Well, Well, <!--#Fred#-->Night is a-fallin'
+|G                      |B7
+<!--#ALL#-->Spirit is a-movin'all over this land.
+#VERSE 2 --------------------------------
+|G                      |%
+<!--#Fred#-->My Lord said fire comin' judgement day,
+|Bm                     |%
+All mankind gonna pass away.
+|Em          ~E          |Am
+Brothers and sisters don't you know
+|G                      |B7
+You're gonna reap just what you sow.
+#CHORUS 3 -------------------------------
+@Harmony 1-3-4
+|Em                     |Em    ~Am    ~Em    ~
+<!--#ALL#-->Well, Well, Well,  <!--#Sally#-->Who's that a-callin'
+|Em         ~Am         |G          ~B7
+<!--#ALL#-->Well, Well, Well,   <!--#Sally#-->Hold my    hand.
+|Em                     |Em    ~Am    ~Em    ~
+<!--#ALL#-->Well, Well, Well,  <!--#Sally#-->Night is a-fallin'
+|G                      |B7
+<!--#ALL#-->Spirit is a-movin'all over this land.
+#VERSE 3 --------------------------------
+|G                      |%
+<!--#Sally#-->World's not waitin' for the Lord's command,
+|Bm                     |%
+Buildin' a fire to sweep the land.
+|Em          ~E          |Am
+With thunder out of heaven, comin' Gabriel's call;
+|G                      |B7
+And the sea's gonna boil and the sky's gonna fall.
+#CHORUS 4 -------------------------------
+<!--#JOHN(bass) substitutes for WELL WELL WELL#-->
+|Em                     |Em    ~Am    ~Em    ~
+-      -         -,<!--#All#-->Who's that a-callin'
+|Em         ~Am         |G          ~B7
+-      -         <!--#ALL#-->Hold my      hand.
+|Em                     |Em    ~Am    ~Em    ~
+-      -         <!--#All#-->Night is a-fallin'
+|G                      |B7
+<!--#ALL#-->Spirit is a-movin'all over this land.
+#CHORUS 5 -------------------------------
+|Em                     |Em    ~Am    ~Em    ~
+<!--#ALL [Down]#-->Well, Well, Well, Who's that a-callin'
+|Em         ~Am         |G          ~B7
+Well, Well, Well,  Hold my    hand.
+|Em                     |Em    ~Am    ~Em    ~
+Well, Well, Well, Night is a-fallin'
+|G                      |B7
+Spirit is a-movin'all over this land.
+|Em    ~NC    ~G    ~NC    |A     ~NC     ~     ~
+Well,     Well,    Well,
+|Em
+-END
+https://www.youtube.com/watch?v=mw8PAuOe-Lg&spfreload=1|Bob Gibson and Hamilton Camp
+https://www.youtube.com/watch?v=czeMLNb6wg4|Live as Old Guys
+https://www.bobgibsonfolk.com/wp-content/uploads/2017/05/Well-Well-Well-Peter-Paul-Mary.mp3?_=1|Peter Paul and Mary
+https://www.bobgibsonfolk.com/wp-content/uploads/2017/05/Well-Well-Well-Highwaymen.mp3?_=2|Highwaymen
+https://www.bobgibsonfolk.com/wp-content/uploads/2017/05/Well-Well-Well-Seekers.mp3?_=3|Seekers
+https://www.bobgibsonfolk.com/wp-content/uploads/2017/05/Well-Well-Well-Tumbling-Wheels.mp3?_=4|Tumbling Wheels
+https://www.bobgibsonfolk.com/wp-content/uploads/2017/05/Well-Well-Well-Travelers-3.mp3?_=6|Travelers
+https://www.bobgibsonfolk.com/wp-content/uploads/2017/02/17-Well-Well-Well.mp3?_=8|Gibson and Camp
+https://www.bobgibsonfolk.com/wp-content/uploads/2017/02/17-Well-Well-Well.mp3?_=9|Gibson Bootleg
+https://www.bobgibsonfolk.com/wp-content/uploads/2017/05/Well-Well-Well-Paxton-Hills.mp3?_=11|Paxton and Hills

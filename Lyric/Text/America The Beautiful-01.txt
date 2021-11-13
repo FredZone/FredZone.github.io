@@ -1,4 +1,4 @@
-TITLE:America The Beautiful-01,DUR:130,BPM:240,BEATS:4,KEY:G,QUAL:Raw,ARTIST:Pete Seeger,GENRE:Unknown,STYLE:Ballad,HITyear:
+TITLE:America The Beautiful-01,DUR:36,BPM:120,BEATS:4,KEY:G,QUAL:Raw,ARTIST:Pete Seeger,GENRE:Unknown,STYLE:Ballad,HITyear:
 #INTRO ----------------------------------
 |G                    |%
 #VERSE 1 --------------------------------

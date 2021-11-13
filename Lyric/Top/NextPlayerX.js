@@ -18,6 +18,34 @@
 //.## BOGUS FUNCTIONS
 
 
+function sizeTune(dir) {
+   if (document.getElementById("Tune").style.left != '0%') {
+      w = 100, h = 100
+   }
+   if (dir == 'w') {
+      if (TUNEwide < 60) {
+         TUNEwide = 100;
+         document.getElementById('tuneWider').style.display = 'none';
+      } else {
+         TUNEwide = (TUNEwide - 5)
+         document.getElementById('tuneWider').style.display = 'block'
+      }
+      document.getElementById("Tune").style.left = (100 - TUNEwide) / 2 + "%"
+      document.getElementById("Tune").style.width = TUNEwide + "%"
+   } else if (dir == 'h') {
+      if (TUNEhigh < 60) {
+         TUNEhigh = 100;
+         document.getElementById('tuneTaller').style.display = 'none';
+      } else {
+         TUNEhigh = (TUNEhigh - 5)
+         document.getElementById('tuneTaller').style.display = 'block'
+      }
+      document.getElementById("Tune").style.top = (100 - TUNEhigh) / 2 + "%"
+      document.getElementById("Tune").style.height = TUNEhigh + "%"
+   }
+
+}
+
 function ctrlPop(val) {
    var msg;
    var icon;
@@ -209,15 +237,10 @@ function ctrlPop(val) {
    var LOCALvalue="TBD"
 //.#      SHIT CONSTANTS Permanent feature 
    var SHIT= false
-
    var POET=false;
-
-
-
-
-
-
-
+//.$ Resize Tune Window
+   var TUNEwide=100;
+   var TUNEhigh=100;
 
 //.## LOCAL STORAGE otherwise superfluous
 function loadLocal(key){
@@ -2110,6 +2133,8 @@ function setCustom(VAR, val, action) {
    var icon;
    var img
    //any action
+   
+   
    if (VAR == 'FULLscreen' && action=='instant') {//&& action == 'instant'
       if (FULLscreen == true) {
          FULLscreen  = false;
@@ -2163,6 +2188,9 @@ function setCustom(VAR, val, action) {
    } else if (action == 'wrap') {
       arrConvert()
    }
+   
+
+   
    if (VAR == 'BREAKlines'&& action=='toggle') { //works with BIGchords
       if (LINElimit > 35) {
          LINElimit = parseInt(LINElimit - 5, 0);

@@ -1,4 +1,4 @@
-TITLE:Whistlers And Jugglers And Singers Of Songs,DUR:251,BPM:130,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Waylon Jennings,GENRE:Country,STYLE:Ballad,HITyear:1964
+TITLE:Whistlers And Jugglers And Singers Of Songs,DUR:251,BPM:130,BEATS:4,KEY:A,QUAL:Raw,ARTIST:Waylon Jennings,GENRE:Country,STYLE:Ballad,HITyear:1964
 
 #INTRO ----------------------------------
 |A      |%      |D      |%      |E      |%      |A      |%

@@ -1,4 +1,4 @@
-TITLE:Fox On The Run-01,DUR:116,BPM:118,BEATS:4,KEY:G,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:TBD
+TITLE:Fox On The Run-01,DUR:125,BPM:110,BEATS:4,KEY:G,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:TBD
 <!--#Fred Leads in picking...<br>Everyone joins before the chorus#-->
 #INTRO ----------------------------------
 |G         ~D         |Am        ~C

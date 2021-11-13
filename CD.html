@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <link rel="shortcut icon" type="image/png" href="Icons/fz.png">
+    <title id='title'>CD</title>
+    <style type="text/css">
+Body
+    {
+        font-size:1.5vw;
+        color:white;
+        font-family:Courrier New;
+        font-weight: bold;
+        text-align:center;
+        vertical-align:middle;
+        border-color: black;
+        border-width:thick;
+        background-color:blue;
+        padding:0px;
+        margin:0px;
+        overflow:hidden;
+        line-height: 100%;
+    }
+    </style>
+</head>
+<body>
+
+    <div id='field' style='position:fixed;left:0%;top:0%;width:100%;height:100%;overflow:scroll;background-color:lightgrey;z-index:10'>
+       <img id='pic' src="ST ANN 1959-60.jpg" style='position:absolute;left:0%;top:0%;z-index:20;z-index:0 ' >
+
+    </div>    
+
+</body>
+</html>
+
+   
+<script type="text/javascript">
+window.onload=function(){
+    document.getElementById('frame').width=document.getElementById('pic').width+'px',document.getElementById('frame').height=document.getElementById('pic').height+'px',alert(document.getElementById('frame').height)
+    alert(picSize());
+    }
+document.getElementById('pic').addEventListener('click', printMousePos, true);
+var boxHt=30
+var boxWt=30
+var imgHt=100
+var imgWt=100
+
+function printMousePos(e){
+    cursorX = e.pageX;
+    cursorY= e.pageY;
+    alert ("<div onclick=\"alert(\'NAME\')\" style='position:absolute;left:"+parseInt(cursorX-(0.5*boxHt))+"px;top:"+parseInt(cursorY-(0.5*boxWt))+"px;height:"+boxHt+"px;width:"+boxWt+"px;z-index:30;background-color:red;z-index:10'>XXX</div>");
+
+}
+function picSize(){
+var image=document.getElementById("pic");
+imgWt=image.offsetWidth;
+imgHt=image.offsetHeight;
+return(imgHt +"-"+imgWt)
+    
+}
+
+
+
+</script>
+</body>
+</html>

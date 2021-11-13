@@ -92,7 +92,6 @@
         </style>    
     </head>
 <body onresize="arrConvert()">
-
 <!--#  Super controls ???? belonging to no group so z is determined by function   --> 
     <div id="msg" title="Message Box" style= "position:fixed; display:block; line-height:120%; text-align:center; vertical-align:middle; color:red; background-color:transparent; color:black; font-size: 2vw; height:6%; left:0%; top:60%; width:100%; z-index:5505;overflow-x:hidden;overflow-y:scroll">PRESS ANY KEY or CLICK THE 'BUG' to monitor the boot...</div>
     <audio id='aC' style="visibility: hidden;" controls=false visibility='hidden' preload = "metadata" source src="../Click/Cl.mp3" type="audio/mpeg"></audio>
@@ -464,8 +463,12 @@
         </div>
     </div>
 
+<div id="tuneWider" onclick= "sizeTune('w')" style="display:none; position:absolute;border:none; left:0%; height:5%; width:5%; top:35%; overflow-x:hidden; z-index:9;">W</div>
+<div id="tuneTaller" onclick= "sizeTune('h')"style="display:block; position:absolute;border:none; left:0%; height:5%; width:5%; bottom:35%; overflow-x:hidden; z-index:9;">H</div>
+
+
 <!--# THE TUNE BODY-->    
-    <div id="Tune" style="display:block; position:fixed; left:0%; height:100%; width:100%; top:0%; overflow-y:scroll;overflow-x:hidden; z-index:10;">
+    <div id="Tune" style="display:block; position:absolute;border:solid; left:0%; height:100%; width:100%; top:0%; overflow-y:scroll;overflow-x:hidden; z-index:10;">
         <div id="content" style="width:100%; z-index:10;">
             ???
         </div>
@@ -490,7 +493,7 @@
             <img src ="../../Icons/off.png" style="position:absolute;top:80%; left:0%; height:20%; width:100%;z-index:10">
             </div>        
         
-        <div style=";position:absolute;text-align:center;line-height:100%; left:1%; top:0%; height:31%; width:98%;">
+        <div style=";position:absolute;text-align:center;line-height:100%; left:0%; top:0%; height:31%; width:98%;">
             <div style="position: absolute;color:white;width:100%;top:0.5%; height:17%">BASIC &nbsp SETTINGS</div>
             <div style="position:absolute; text-align:center;width:32%; left:1%; bottom:5%; font-size:2vw;">
                 <a style='color:white;'>SOUND MODES:</a>
@@ -534,8 +537,17 @@
                 <img src ="../../Icons/off.png" id ="imgNOTES"  alt = "" style="position:absolute; bottom:1%; width:19.5%; left:1%; height:70%;">
             <a  onclick ="setCustom('LIVEnotes','','toggle')" style="position:absolute; text-align:center; top:42%; height:40%; width:19.5%; left:20.5%; color:white; opacity:1;z-index:1;">Live<br>Notes</a>
                <img src ="../../Icons/off.png" id ="imgLIVEnotes"  alt = "?" style="position:absolute; bottom:1%; width:19.5%; left:20.5%; height:70%;">           
+
+
+<!--@--><a  onclick="window.open('NextPlayerX.html','xxx','width=1000,height=600'),window.location = '../../blank.html'" style="position:absolute; text-align:center; top:42%; height:40%; width:19.5%; left:40.5%; color:white; opacity:1;z-index:1;">New<br>Window</a>
+            <img src ="../../Icons/off.png" id ="A"  alt = "" style="position:absolute; bottom:1%; width:19.5%; left:40.5%; height:70%;">   
+            
+<!--@-->   <a  onclick ="sizeTune('w'),sizeTune('h')" style="position:absolute; text-align:center; top:42%; height:40%; width:19.5%; left:60.5%; color:white; opacity:1;z-index:1;">Window<br>border</a>
+            <img src ="../../Icons/off.png" id ="B"  alt = "" style="position:absolute; bottom:1%; width:19.5%; left:60.5%; height:70%;">       
+            
+            
             <a  onclick ="dis('pickPops')" id='popName' style="position:absolute; text-align:center; top:42%; height:40%; width:19.5%; right:1%; color:white; opacity:1;z-index:10;">No<br>PopUps</a>
-                <img src ="../../Icons/off.png" id ="imgpickPops"  alt = "" style="position:absolute; bottom:1%; right:1%; height:70%; width:19.5%;z-index:8;">
+            <img src ="../../Icons/off.png" id ="imgpickPops"  alt = "" style="position:absolute; bottom:1%; right:1%; height:70%; width:19.5%;z-index:8;">
         </div>  
         <div style="color:white;position:absolute;line-height:100%; left:66%; bottom:1%; height:31%; width:33%;border: groove;">
             Automation
