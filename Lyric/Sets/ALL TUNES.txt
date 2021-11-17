@@ -11,6 +11,7 @@ Amarillo By Morning - 1 Key
 Amarillo By Morning - 2 Key
 Amarillo By Morning-Short
 America The Beautiful Long
+America The Beautiful-01
 Amie
 And So It Goes (1)
 And So It Goes
@@ -147,6 +148,7 @@ I Cant Help Falling In Love With You-Short
 I Cant Stop Loving You
 I Fall To Pieces
 I Fought The Law
+I Saw The Light-01
 I Saw The Light
 I Want To Be A Cowboys Sweetheart
 I Was Not A Nazi Polka 
@@ -199,6 +201,7 @@ Lookin For Love
 Lost Highway
 Love Has No Pride
 Love Potion Number 9 - Original
+Love Potion Number 9-01
 Love Potion Number 9
 Loving Arms
 Lying Eyes - Pat
@@ -220,6 +223,7 @@ Much Too Young To Feel This Damn Old
 My Girl
 My Old Man
 Needles And Pins
+Needles And Pins
 Ol 55
 Old Hippie
 Old Pigweed
@@ -237,6 +241,7 @@ Peaceful Easy Feeling
 Peggy Sue
 Peppermint Twist
 Pleasures Of The Harbor
+Poison Ivy-01
 Poison Ivy
 Political Science
 Pride Of Man
@@ -327,6 +332,7 @@ The Wish
 Theme For An Imaginary Western
 Then You Can Tell Me Goodbye
 This Aint My First Rodeo
+This Land Is Your Land-01
 This Land Is Your Land-Long
 This Land Is Your Land
 This World Is Not My Home
@@ -339,6 +345,7 @@ Tulsa Time
 Twinkle Twinkle
 Twist Medley-Short
 Twist Medley
+Under The Boardwalk-01
 Under The Boardwalk
 Under The X In Texas
 Wagon Wheel
@@ -348,6 +355,8 @@ Waltz Across Texas
 Waltzing Matilda-Short
 Waltzing Matilda
 Weeping in the Promised Land
+Well Well Well-01 (1)
+Well Well Well-01
 Well Well Well-Short
 Well Well Well
 Werewolves Of London
@@ -369,6 +378,7 @@ Wholl Stop The Rain
 Why Baby Why
 Wicked Game
 Wild Mountain Thyme
+Will The Circle Be Unbroken-01
 Will The Circle Be Unbroken
 Will You Still Love Me Tomorrow
 Willie And The Hand Jive
