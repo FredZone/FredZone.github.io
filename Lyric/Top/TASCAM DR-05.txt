@@ -1,0 +1,20 @@
+TASCAM DR-05
+
+SETUP (direct from stereo input (Not Microphones))
+    1) UPLUG or DISCONNECT the output from the Tascam unit
+    2) Set up the PASSPORT AMP for the proper mix in the room
+    3) START the Recorder (HOME BUTTON)
+    4) Hit RED RECORD BUTTON one time to go into setup mode (flashing red light)
+    5) Hit QUICK for Level Control 
+    6) Do NOT USE Auto Level unless you have no choice...
+    7) Use 'Limit' and set at the "v" marks with little to no distortion light
+    8) Adust the record output of the amp for any other adjustment
+============================================================
+
+RECORD  (Make sure the output is disconnected or there will be feedback)
+    1)Hit the RECORD button while the record light is flashing (Record light goes constant)
+    2)Hit RECORD to Pause recording or HOME to stop the file altogether
+    
+PLAYBACK
+    1)Reconnect the Output
+    2)Hit the Play button

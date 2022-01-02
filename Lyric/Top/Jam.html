@@ -1,0 +1,285 @@
+<!DOCTYPE html><html>
+<head>
+    <Title>UTUBE BACK TRACKS</title>
+    <link rel="icon" href="../../Icons/uTube.png" type="image/png">
+    <style type="text/css">
+        Body
+        {
+            font-size : 2.5vw;
+            font-family:Courrier New;
+            font-weight:bold;
+            line-height:110%;
+            text-align:center;
+            background-color:lightgrey;
+            color:blue;
+        }
+    
+    pre
+        {
+        display: block;
+        font-family: monospace;
+        white-space: pre;
+        margin: 0 0;
+        } 
+    X1{color:red;}
+    X2{color:blue;}
+    </style>
+</head>
+<body>
+    
+    <img id='icn' alt="?" onclick="modeChange()" src="../../icons/transRedCircle.png" style="visibility:visible; position:fixed; left:0%; height:11%; top:0%;z-index:10">
+    <img id='buttonChord' alt="?" onclick="vis('chordWrapper')" src="../../icons/KeyBb.png" style="visibility:visible; position:fixed; left:7%; height:11%; top:0%;z-index:10">    
+        <div id='hdr' style="position:fixed; left:20%; text-align:center; width:60%; height:4%; top:1%">
+            YOU TUBE BACKING TRACKS
+        </div>
+    <img id="ButtonHome" title ='HOME' src="../../icons/transHome.png" alt ="home" onclick="home()" style="position:fixed; right:0%;top:0%; height:10%">  
+        
+        <div id ='prog' style ="overflow:hidden; position:fixed; height:10%; top:10% ;width:98%;color:green; line-height: 150%; vertical-align:middle">
+            <center>CHORD PROGRESSION MAY BE DISPLAYED HERE...</center>
+        </div>
+    
+    <div id = 'chordWrapper' style="background-color:lightgrey; position:fixed; left:5%; height:60%; top:25% ;width:90%; visibility:hidden; border:outset; border-width:3px; border-color:lightgrey; z-index:300 ">
+        CHORD PROGRESSION
+        <img id="ButtonClose" title ='Close Chords' src="../../icons/close.png" alt ="home" onclick="vis('chordWrapper','hidden')" style="position:fixed; right:5%;top:25%; height:9%">
+        <div id ='chords' style ="text-align:left; overflow:auto; position:fixed;left:8%; height:50%; top:34% ;width:84%;color:green;line-height: 120%;z-index:350 ">
+            <center>CHORD PROGRESSION MAY BE DISPLAYED HERE...</center>
+       
+        </div>
+    </div>
+    
+    
+    <div style ="position:fixed; opacity:1 ;font-size :4vh; line-height:100%; height:79%; bottom:0 ;width: 98%;border:groove; vertical-align:middle; z-index:100">
+        
+        <div  id ='b1' style="position:absolute; left:1%; height:14%; top:1%; width:23%;opacity:1;border:outset;" onclick="iTrack('SLOW BLUES','axTQ3Tg9io8','C','|C |F |C |% |F |% |C |% |G |F |C |G ',undefined,this.id,undefined)">
+             Slow Blues -- C 
+        </div>
+
+        <div  id ='b2'style="position:absolute; left:26%; height:14%; top:1%; width:23%; border:groove;vertical-align:middle" onclick="iTrack('Delta Blues','nbbhvNtArm8','A','|A |% |% |% |% |% |% |% |C |% |A |% |D |C |A |D ',undefined,this.id,undefined)">
+                Delta Blues -- A 
+        </div>
+        
+        <div  id ='b3' style="position:absolute; left:51%; height:14%; top:1%; width:23%;border:groove;vertical-align:middle"  onclick="iTrack('Shuffle Blues (turn around)','1yURXpa0p4M','E','|E7 |% |% |% |A7 |% |E7 |% |B7 |A7 <X1>|E7 ~% ~A ~C7 |E5 ~C7 ~B7 ~%</X1>',undefined,this.id,undefined)">
+                Shuffle Blues -E (turn around)
+        </div>
+
+        <div id ='b4' style="position:absolute; left:76%; height:14%; top:1%; width:23%;border:groove;vertical-align:middle"  onclick="iTrack('Slow Blues (Sophisticated chords)','8PzyEtQypYA','C','|C9|F9|C9~C#9|C7|F9|F#dim7|C9|C9|G9~%~%~Gb9|F9|C9~F7|C9~G9',undefined,this.id,undefined)">
+                Slow Blues (Tricky Chords)
+        </div>
+
+        <div id ='b5' style="position:absolute; left:1%; height:14%; top:17%; width:23%; border:groove;vertical-align:middle" onclick="iTrack('Minor Blues','22mWUkAi0PI','A','|Am |% |% |% |Dm |% |Am |% |F |E7 |Am |E7 ',undefined,this.id,undefined)">
+                Minor Blues -- A 
+        </div>  
+
+        <div id ='b6' style="position:absolute; left:26%; height:14%; top:17%; width:23%; border:groove;vertical-align:middle" onclick="iTrack('ZZ TOP  LaGrange','nP_25tTOnDg','A','(|A|A~%~C~D)ad infinitum',undefined,this.id,undefined)">
+               ZZ TOP  LaGrange -- A 
+        </div>
+
+         <div id ='b7' style="position:absolute; left:51%; height:14%; top:17%; width:23%; border:groove;vertical-align:middle" onclick="iTrack('QUIST SLOW BLUES','2aQRF47hJa0','Em','?? |E |Am |Em |% |Am |% |Em |% |Bm |Am |Em |% |',undefined,this.id,75)">
+               SLOW BLUES--Em
+        </div>       
+
+        <div id ='b8'style="position:absolute; left:76%; height:14%; top:17%; width:23%;border:groove;vertical-align:middle" onclick="iTrack('Chuck Berry School Days','bBSI7dhwCpI','G','|G |% |% |% |C |% |G |% |D |C |G |% ',undefined,this.id,undefined)">
+               Chuck Berry School Days--G
+        </div>
+        
+         <div id ='b9'style="position:absolute; left:1%; height:14%; top:33%; width:23%; border:groove;vertical-align:middle" onclick="iTrack('Chuck Berry Fast --A','uLI-Atz1SoM','A','|A |% |% |% |D |% |A |% |E |D |A |E ',undefined,this.id,undefined)">
+               Chuck Berry Fast--A
+        </div>          
+
+        <div id ='b10' style="position:absolute; left:26%; height:14%; top:33%; width:23%;border:groove;vertical-align:middle" onclick="iTrack('Country Fast --A','VlB4oxkEEu4','C','|C |% |% |% |F |% |C |% |G |F |C |G',undefined,this.id,undefined)">
+               Country Fast--C
+        </div>
+
+        <div id ='b11'style="position:absolute; left:51%; height:14%; top:33%; width:23%;border:groove;vertical-align:middle" onclick="iTrack('Country country/folk','8fi3p5KtOr0','C','|C |% |F |% |C |% |G |F |C |% |F |% |Am |G |F |% ',undefined,this.id,undefined)">
+               Country/folk--C
+        </div>
+
+        
+        <div id ='b12'style="position:absolute; left:76%; height:14%; top:33%; width:23%;border:groove;vertical-align:middle" onclick="iTrack('Cross Roads ','GzABg4BFHG4','C','|C |% |F |% |C |% |G |F |C |% |F |% |Am |G |F |% ','https://www.youtube.com/watch?v=e5hWLdyj-yE',this.id,undefined)">
+               CROSS ROADS
+        </div>        
+
+        <div id ='b14'style="position:absolute; left:1%; height:14%; top:49%; width:23%;border:groove;vertical-align:middle" onclick="
+            PROG='|Am |F  |C  |E  |Am |F  |C  |E  <br>|Am |F  |C  |E  |Am |F  |C  |E  |Am |Am<br>|Am |F  |C  |E  |Am |F  |C  |E  <br>|F  |G  |Am |Am |F  |G  |E  |E <br>|Am |F  |G  |C  |Am |F  |G  |C  <br>|Am |Am |Am |Am |Am |F  |C  |E <br>|Am |F  |C  |E  |Am |F  |G  |C~E|Am |F  |G  |C~E',
+            iTrack('FOLK ROCK ','BBW6KkmDF74','A',PROG,undefined,this.id,undefined)
+            ">
+                  Folk/ROCK
+        </div>  
+        
+
+        <div id ='b15'
+            style="position:absolute; left:26%; height:14%; top:49%; width:23%;border:groove;vertical-align:middle"
+            onclick= "PROG='|Bm |E',iTrack('Hard Rock','mWOskn9b2tg','B',PROG,undefined,this.id,'100')
+            ">
+            Hard Rock
+        </div>
+        
+        <div style="position:absolute; left:51%; height:14%; top:49%; width:23%;border:groove;vertical-align:middle" onclick="tabs911();">
+        </div>
+        
+        
+        <div style="position:absolute; left:76%; height:14%; top:49%; width:23%;border:groove;vertical-align:middle" onclick="alert('nothing yet');">
+        </div>
+
+        <div style="position:absolute; left:1%; height:14%; top:65%; width:23%;border:groove;vertical-align:middle" onclick="alert('nothing yet');">
+        </div>
+       
+       <div style="position:absolute; left:26%; height:14%; top:65%; width:23%;border:groove;vertical-align:middle" onclick="alert('nothing yet');">
+       </div>
+       
+       <div style="position:absolute; left:51%; height:14%; top:65%; width:23%;border:groove;vertical-align:middle" onclick="alert('nothing yet');">
+        </div>
+
+        <div style="position:absolute; left:76%; height:14%; top:65%; width:23%;border:groove;vertical-align:middle" onclick="alert('nothing yet');">
+        </div>
+
+        <div style="position:absolute; left:1%; height:14%; top:81%; width:23%;border:groove;vertical-align:middle" onclick="alert('nothing yet');">
+        </div>
+        
+        <div style="position:absolute; left:26%; height:14%; top:81%; width:23%;border:groove;vertical-align:middle" onclick="alert('nothing yet');">
+        </div>
+
+        <div style="position:absolute; left:51%; height:14%; top:81%; width:23%;border:groove;vertical-align:middle" onclick="alert('nothing yet');">
+        </div>
+        
+        
+        <div id ='b13' style="position:absolute; left:76%; height:14%; top:81%; width:23%;border:groove;vertical-align:middle" onclick="list();">
+               TRACKS PENDING
+         </div>
+    </div>    
+    <iframe id ="player" src="stop.html" type="text/html"style="visibility:hidden; position:fixed; bottom:0%; left:0%; width:100%;height:79%;border:groove; z-index:200;"></iframe> 
+<script>
+    
+//https://www.youtube.com/watch?v=2aQRF47hJa0&t=3m4s  3 min 4 seconds in
+//  |% |% |% |% |% |% |% |% |% |% |% |% |% |% |% |% |%   for creating progressions
+var SONGsite ="stop.html";
+MODE='stop';
+var KEY;
+var YTID;
+var LINK;
+var PROG;
+var HDR;
+window.onload = function()
+    {
+        iTrack('Select A Backing Track','xSE9Qk9wkig','Select a Track!','Select a Track... Or Jam to a cat video!',undefined,'Select a Track Below...!','xSE9Qk9wkig');
+    };    
+function list()
+    {
+    var i=1;
+    var id='b13';
+    var pl="TNkUUDmhGPQ,vc7NQ3KttLI,BBW6KkmDF74,p_db4OXYJVw,kT42dIifKZM,IVf7LnIv1Gg,BJ-JFsP0BEk";
+    SONGsite ="https://www.youtube.com/embed/XXXX?autoplay=1&loop=1&playlist="+pl; 
+    document.getElementById('player').src= "https://www.youtube.com/embed/XXXX?autoplay=1&loop=1&playlist="+pl; 
+        document.getElementById('hdr').innerHTML="<pre>TRACKS PENDING APPROVAL...</pre>";
+        document.getElementById('prog').innerHTML="<pre>KEY, PROGRESSION etc not shown here....</pre>";
+        document.getElementById('icn').src='../../Icons/Utube.png';
+        document.getElementById('icn').visibility='visible';
+        //document.getElementById ('player').style.visibility='visible';
+        MODE='stop';
+        while (i<25)
+        {
+            var idX= 'b'+i;
+            if (idX==id)
+                {
+                    document.getElementById(idX).style.borderColor='red';
+                    document.getElementById(idX).style.color='white';
+                    document.getElementById(idX).style.backgroundColor='grey';
+                }
+                else
+                {
+                    document.getElementById(idX).style.borderColor='white';
+                    document.getElementById(idX).style.backgroundColor='lightgrey';
+                    document.getElementById(idX).style.color='black';
+                }
+            i=i+1;
+        }    
+    }
+
+
+
+function iTrack(hdr,ytid,key,prog,lnk,id,sec)
+    {
+        YTID=ytid;
+        HDR=hdr;
+        var i=1;
+        var idX;
+        var pathFull=ytid;
+        document.getElementById('player').src='stop.html';
+        document.getElementById('icn').src='../../Icons/utube.png';  
+        document.getElementById('icn').style.visibility='visible';
+        
+        document.getElementById('buttonChord').src='../../icons/Key'+key+'.png'; 
+        if(sec!==undefined)
+            {
+                pathFull=ytid+"?start="+sec;
+                SONGsite= "https://www.youtube.com/embed/"+pathFull+"&autoplay=1&loop=1&playlist="+ytid;
+            }
+        else
+            {
+            SONGsite= "https://www.youtube.com/embed/"+pathFull+"?autoplay=1&loop=1&playlist="+ytid;
+            
+            //SONGsite= "https://www.youtube.com/embed/"+pathFull+"?autoplay=1&loop=1";//NO LOOP
+            }
+        if (lnk===undefined) {lnk="";}
+        else
+            {
+                lnk="<a onclick=\"window.open('"+lnk+"')\"><X2>LINK<X2></a>";
+            }
+        document.getElementById('hdr').innerHTML="<pre>"+HDR+"<br><X1>KEY:"+key +"</X1>     "+lnk+"</pre>";
+        document.getElementById('prog').innerHTML="<pre>"+prog+"</pre>";
+        document.getElementById('chords').innerHTML="<pre>"+prog+"</pre>";
+        MODE='stop';
+        while (i<25)
+        {
+            idX= 'b'+i;
+            if (idX==id)
+                {
+                    document.getElementById(idX).style.borderColor='red';
+                    document.getElementById(idX).style.backgroundColor='grey';
+                    document.getElementById(idX).style.border='outset';
+                    document.getElementById(idX).style.color='white';
+                }
+                else
+                {
+                    document.getElementById(idX).style.borderColor='white';
+                    document.getElementById(idX).style.backgroundColor='lightgrey';
+                    document.getElementById(idX).style.border='groove';
+                    document.getElementById(idX).style.color='black';
+                }
+            i=i+1;
+        }
+    }
+
+function modeChange()
+    {
+        if (MODE=='play')
+            {
+                MODE='stop';
+                document.getElementById('icn').src="../../Icons/utube.png";
+                document.getElementById('player').src='stop.html';
+                document.getElementById ('player').style.visibility='hidden';
+            }
+        else if (MODE=='stop')
+            {
+                MODE='play';
+                document.getElementById('icn').src="../../Icons/utubeStop.png";
+                document.getElementById('player').src=SONGsite;
+                document.getElementById ('player').style.visibility='visible';
+            }
+    }
+
+function home(){window.open("index.html");}
+
+function vis(iconID,style)
+    {
+        if (style===undefined)
+            {
+                if (document.getElementById(iconID).style.visibility =='visible') {style='hidden';}else{style='visible';}
+            }
+        document.getElementById(iconID).style.visibility =style;
+    }
+
+//|% |% |% |% |% |% |% |% |% |% |% |% |% 
+</script>
+
+</body></html>

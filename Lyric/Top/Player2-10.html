@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<head>
+<link rel="icon" href="../../Icons/faviconblue.gif" type="image/gif" sizes="16x16">
+<meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!-- prevents zooming on mobile devices....number-based width or "device-width"-->
+<title id = 'title'>Player</title>
+<style type="text/css">
+    Body
+        {
+            font-size:5vh;
+            color:white;
+            font-family:Courrier New;
+            font-weight: bold;
+            text-align:center;
+            vertical-align:middle;
+            border-color: black;
+            border-width:thin;
+            background-color:tan;
+            padding:0px;
+            margin:0px;
+            overflow:hidden;
+        }
+    optgroup {font-size:4vh;}
+    select {font-size:4vh;overflow:hidden;}
+    F21 {vertical-align:middle ;color:yellow;text-align:left}
+    </style>
+    </head>
+<body>
+    <a id="none" style=" display:none; visibility:hidden"></a><!--needed a null element....must be a better way -->
+<!-- Play> Z-INDEX PLAN:-->
+
+<!-- Super controls  ???? belonging to no group so z is determined by function  -->
+    <img id="ButtonHome" title ='HOME' src="../../icons/whiteHome.png" alt ="home" onclick="home()" style="position:fixed; left:1vw; bottom:1%; height:12%; width:7vw; visibility:visible; z-index:4500">    
+    <img id='playerCover' onclick ="flashBlink('Use the PLAYER icon to raise the Glass Screen',2,'ButtonPlayer',8)" src="../../icons/crackedglass.png" alt='?????' style="position:fixed; visibility:visible; opacity:0.5; height:87%; bottom:18%; width:100%; left:0%; z-index:1000">  
+
+<div id ='orient' style="position:fixed; z-Index:5000; background-color:red; height:100%; width:100%; visibility:hidden; opacity:1"><br><br>LANDSCAPE ONLY:<br>ROTATE YOUR DEVICE!!<br><br>(The entire site should be viewed in the landscape orientation...)<br><img src = "../../icons/resetSpinner.gif"></div>
+
+<!-- Splash  4000 4999 -->
+    <a id="msg2" style= " position:fixed; vertical-align:middle; color:black; font-size: 4vh; height:5vh; left:0px; bottom:13vh; width:100vw; z-index:4300">Loading HTML...</a>//moves to tools then player level
+    <div id ="splash" style="position:fixed; visibility:visible; background-color:white; color:black; top:0%; left:0%; width:100%; height:100%; z-index:4000">
+        PLAYER  (Rev 2.10) <br>A Javascript Application<br>by<br>Fred Kaparich<br>fkaparich@gmail.com<br><br>
+        <img src='../../Icons/resetSpinner.gif' alt ="Welcome..." style='position:fixed; width:25%; left:37%;opacity:0.2;z-index:4500'>
+        </div>
+
+<!--Tools: 1000>1999 -->    
+    <div id="tools" style=" position:fixed; visibility:hidden; background-color:transparent; text-align:center; overflow:hidden; opacity:1; height:100% ;width:100%; bottom:0%; left:0%; z-index:1000">
+    
+        <div id="toolBar" style=" position:fixed; visibility:visible; background:black; text-align:center; overflow:hidden; opacity:1; height:13%; width:100%; bottom:0%; left:0%; z-index:1500">
+            <!--
+            <img src="../../icons/blackAdjust.png" title='CUSTOM SETTING' alt ="Custom" onclick ="toolMode('toolsCustom')" style="position:fixed;height:12vh; width:7vw; left:9%">
+            -->
+            <div style="position:fixed;text-align:left;width:35vw;left:20vw; font-size:4vh" id = 'soundBox'>--SOUND BOX---</div>    
+            <div id="setSelectA" style="position:fixed;text-align:left; font-size:4vh; left:60vw; width:25vw ">--SET LIST--</div>
+            <!--
+            <img src="../../icons/blackTools.png" title='Tools' alt ="Tools" onclick ="vis('toolsBar2')" style="position:fixed; height:12vh; width:7vw; right:9%">
+            -->
+            <img src="../../icons/blackplayer.png" id ='ButtonPlayer' title='PLAYER' alt ="PLAYER" onclick ="toolMode('false')" style="position:fixed; height:12vh; width:7vw; right:1%">
+            </div>
+        <div id="toolsBar2" style="position:fixed; visibility:visible; right:0vw; padding:0; width:9%;height:87%; top:0%; background-color:black; z-index:15000">
+            <img src="../../icons/blackReadWrite.png" title='FILE MAKER' alt ="XXX" onclick="fileLister()" style="height:12vh; width:7vw;top:1%;">
+            <img src="../../icons/blackPlayList.png" title='PLAYLIST' alt ="PlayList" onclick ="playlist()"style="height:12vh; width:7vw;top:14%;">
+            <img src="../../icons/blackEdit.png" title='EDIT' alt ="Edit" onclick ="editor()" style="height:12vh; width:7vw; top:42%;">        
+            <img src="../../icons/blackSearch.png" title='INFO / RESEARCH' alt ="Info" onclick="research()" style="height:12vh; width:7vw; top:28%;">
+            <img src="../../icons/blackPrinter.png" title='PRINT' alt ="Print" onclick ="print()" style="height:12vh; width:7vw;top:56%;">   
+            </div>
+
+        <div id ='toolsCustom' style ="visibility:visible; position:fixed;font-size:4vh; vertical-align: bottom;  text-align:center; top:0%; left:8%; height:87%; width:21%; background-color:black; z-index:1520">
+            <div style="color:white;position:fixed;line-height:100%; left:9% ;top:1%; height:20%;width:19%; border: groove; z-index:1520">
+                Line Numbers
+                <a  onclick ="setCustom('LINEtime','','refresh')" style="position:fixed; text-align:center; top:10%; height:13%; width:8%; left:10%; color:white; opacity:1;z-index:1520">Line<br>Time</a>
+                    <img src ="../../Icons/On.png" id ="imgLINEtime"  alt = "" style="position:fixed; top:8%; left:10%; height:13%; width:8%; z-index:1490">
+                <a  onclick ="setCustom('LINEnum','','refresh')" style="position:fixed; text-align:center; top:10%; height:13%; width:8%; left:20%; color:white; opacity:1; z-index:1520">Line<br>Num</a>
+                    <img src ="../../Icons/Off.png" id ="imgLINEnum"  alt = "" style="position:fixed; top:8%; left:20%; height:13%; width:8%;z-index:1490">
+                </div>
+       
+            <div style="color:white;position:fixed;line-height:100%; left:9% ;top:22%; height:37%; width:19%; border: groove; z-index:1520">    
+                Display Format
+                <a onclick ="setCustom('CAPS','','refresh')" style="position:fixed; vertical-align:middle; text-align:center; top:32%; height:13%; width:8%; left:10%; color:white; opacity:1;z-index:1520">CAPS</a>
+                    <img src ="../../Icons/On.png" id ="imgCAPS"  alt = "" style="position:fixed; top:29%; left:10%; height:13%; width:8%;">
+                <a  onclick ="setCustom('HILITE','','refresh')" style="position:fixed; text-align:center; top:32%; height:13%; width:8%; left:20%; color:white; opacity:1;z-index:1520"> Hi-Lite</a>
+                    <img src ="../../Icons/Off.png" id ="imgHILITE"  alt = "" style="position:fixed; top:29%; left:20%; height:13%; width:8%;">
+                <a  onclick ="setCustom('NOTES','','refresh')" style="position:fixed; text-align:center; top:46%; height:13%; width:8%; left:10%; color:white; opacity:1;z-index:1520">Notes</a>
+                    <img src ="../../Icons/On.png" id ="imgNOTES"  alt = "" style="position:fixed; top:44%; left:10%; height:13%; width:8%;">
+                <a  onclick ="setCustom('FULLscreen','','refresh')" style="position:fixed; text-align:center; top:46%; height:13%; width:8%; left:20%; color:white; opacity:1;z-index:1520">Full<br>Screen</a>
+                    <img src ="../../Icons/Off.png" id ="imgFULLscreen"  alt = "" style="position:fixed; top:44%; left:20%; height:13%; width:8%;">
+                </div>          
+        
+            <div style="color:white;position:fixed;line-height:100%; left:9% ;top:60%; height:20%;width:19%; border: groove;z-index:1520">
+                Operation
+                <a  onclick ="setCustom('AUTOnext','','refresh')" style="position:fixed; text-align:center; top:68%; height:13%; width:8%; left:10%; color:white; opacity:1;z-index:1520">Auto<br>Next</a>
+                    <img src ="../../Icons/Off.png" id ="imgAUTOnext"  alt = "" style="position:fixed; top:66%; left:10%; height:13%; width:8%; z-index:1490">
+                <a  onclick ="setCustom('POPnotes','','refresh')" style="position:fixed; text-align:center; top:68%; height:13%; width:8%; left:20%; color:white; opacity:1; z-index:1520">Pop<br>Ups</a>
+                    <img src ="../../Icons/Off.png" id ="imgPOPnotes"  alt = "" style="position:fixed; top:66%; left:20%; height:13%; width:8%;z-index:1490">
+                </div>
+            </div>    
+        </div>        
+
+    <img id ='buttonCover'  src="../../icons/blackSquare.png" alt='' style="position:fixed; visibility:hidden; opacity:0.3; height:13%; bottom:0%; width:77%; left:7%; z-index:999;">
+    <img id ='buttonCover2' src="../../icons/blackSquare.png" alt='' style="position:fixed; visibility:hidden; opacity:0.3; height:13%; bottom:0%; width:8%;  left:92%; z-index:999;">
+    <div id ="keyList" style="visibility:hidden; position:fixed; text-align:center; background-color:black;font-size:6vh;color:white; bottom:13vh; right:76%; width:7%; height:87vh; z-index:990 ">
+        <a onclick="newKey('A')">A</a><br><a onclick="newKey('Bb')">Bb</a><br><a onclick="newKey('B')">B</a><br><a onclick="newKey('C')">C</a><br>
+        <a onclick="newKey('C#')">C#</a><br><a onclick="newKey('D')">D</a><br><a onclick="newKey('Eb')">Eb</a><br><a onclick="newKey('E')">E</a><br>
+        <a onclick="newKey('F')">F</a><br><a onclick="newKey('F#')">F#</a><br><a onclick="newKey('G')">G</a><br><a onclick="newKey('Ab')">Ab</a><br>
+        </div>
+    
+    <div id ="tempoList" style="visibility:visible;text-align:center; background-color:black;position:fixed;font-size:6vh;color:white; bottom:13vh; left:75%; width:7%; height:87vh; z-index:990">--</div>
+
+    <div id="infoList" style="display:none; visibility:visible; background-color:black;text-align: center;  overflow:hidden;position:fixed; bottom:13vh; left:9%; width:7%; height:87vh; z-index:990">   
+        <img id="ButtonAnalysis" title='Song Analysis' src="../../icons/blackQuestion.png" alt ="LINKS" onclick="analizeSong()" style="top:0%; height:13vh">
+        <img id="ButtonTech" title='Tech Info' src="../../icons/blackNotePad.png" alt ="TECH NOTES" onclick="notePopUp(NOTEtech,'2vw','red')" style="top:13%; height:13%">
+        <img id="ButtonTrivia" title='Trivia Info' src="../../icons/blackGift.png" alt ="TRIVIA NOTES" onclick="notePopUp(NOTEtrivia,'4vw','black')" style="top:26%; height:13vh">
+        <img id='irbIcon' title='iREALb File (iRealb must be installed)' src = "../../icons/blackIRB.png" alt = "???" onclick = "iRealLink()" style="top:39%; height:13vh">    
+        <img id="ButtonLinks" title='Links Info' src="../../icons/blackLinks.png" alt ="LINKS" onclick="notePopUp(NOTElinks,'4vw','black')" style="top:52%; height:13vh">
+        <img id="ButtonHistory" src="../../icons/blackHistory.png" title='Revision History' alt ="HISTORY" onclick ="history()" style="height:13vh;top:65%"> 
+        </div>    
+    
+    <div id="trackList" style=" visibility:hidden; background-color:black;text-align: center;  overflow:hidden;position:fixed; bottom:13vh; right:9%; width:7%; height:87%; z-index:990">   
+        <img id="iconDrum" title='Drum Track' src="../../icons/blackDrum.png" alt ="Track" onclick="vis('drumList')" style="top:0%; height:13vh">
+        <img id="iconClick" title='Click Track' src="../../icons/blackClick.png" alt ="Track" onclick="setSoundMode('CLICK TRACK','blackClick.png')" style="top:14%; height:13vh">
+        <img id="iconcVocal" title='Vocal Track' src="../../icons/blackVocal.png" alt ="Track" onclick="setSoundMode('VOCAL','blackVocal.png')" style="top:28%; height:13vh">
+        <img id="iconBack" title='Back Track' src="../../icons/blackBacktrack.png" alt ="Track" onclick="setSoundMode('BACK TRACK','blackBackTrack.png')" style="top:42%; height:13vh">
+        <img id="iconSilent" title='Silent' src="../../icons/blackTrack.png" alt ="Track" onclick="setSoundMode('SILENT','redTrack.png')" style="top:42%; height:13vh">
+    </div>  
+    
+    <div id="drumList" style=" visibility:hidden; background-color:black; overflow:hidden; position:fixed; top:0vh; right:16%; width:21%; height:13%; z-index:990">   
+        <div><img id="iconRock" title='ROCK DRUM TRACK' src="../../icons/blackRock.png" alt ="ROCK" onclick="setSoundMode('DRUM ROCK','blackRock.png')" style="position:fixed; right:16%; height:13%; width:7%; "></div>
+        <div><img id="iconCountry" title='COUNTRY DRUM TRACK' src="../../icons/blackcountry.png" alt ="COUNTRY" onclick="setSoundMode('DRUM COUNTRY','blackCountry.png')" style="position:fixed; right:23%; width:7%;height:13%;"></div>
+        <div><img id="iconCount" title='COUNT DRUM TRACK' src="../../icons/blackcount.png" alt ="COUNT" onclick="setSoundMode('DRUM COUNT','blackCount.png')" style="position:fixed; right:30%; width:7%;height:13%;"></div>
+        </div>
+    
+    <div id ='playicons' style="position:fixed; display:block; z-index:980">
+        <img id="trackIcon" src="../../icons/backtrack.png" alt ="^" style="opacity:1; visibility: hidden; position:fixed; left:44% ;top:36% ;width:12%">
+        <img id="pauseIcon" src="../../icons/transpause.png" onclick="trackPause()" alt ="II" style="opacity:0.05; visibility: hidden; position:fixed; left:37% ;top:20% ;width:26%">
+        <img id="resetIcon" src="../../icons/transreset.png" onclick="trackReset()" alt ="^" style="opacity:0.5; visibility: hidden; position:fixed; left:37% ;top:20% ;width:26%;">
+        <img id="startIcon" src="../../icons/play.png" onclick="trackDelay()" alt ="X" style="opacity:0.6; visibility: hidden; position:fixed; left:37% ;top:20% ;width:26%">
+        <img id="thinkIcon" src="../../icons/resetSpinner.gif" alt =">>>" onclick="trackReset()" style="opacity:0.5; visibility: hidden; position:fixed; left:37% ;top:20% ;width:26%">
+        <img id="countIcon" src=" "  onclick="trackReset()" alt="" style="opacity:0.9; visibility: hidden; position:fixed; left:30% ;top:0% ;width:40%">
+        <img id="playIcon" src="../../icons/transplay.png" alt =">" onclick="trackPlay()" style="opacity:0.2; visibility: hidden; position:fixed; left:65% ;top:20% ;width:26%">
+        <img id="nextIcon" src="../../icons/transRight.png"  onclick ="nextTune(1)"  alt =">" style="opacity:0.4; visibility:visible; position:fixed; left:80%; top:50% ;height:13vw">
+        <img id="lastIcon" src="../../icons/transLeft.png"  onclick ="nextTune(-1)"  alt ="<" style="opacity:0.4; visibility:visible; position:fixed; right:80%; top:50% ;height:13vw">
+        </div>
+    
+    <div  id= "volCtrl" style="position:fixed; right:2vw ;Top:20vh ;height:22vw; width:6vw;visibility:hidden;z-index:900">
+        <img src="../../icons/SliderBackGrnd2.png" alt ="???" id ="SBG" style="position:fixed; right:2vw; Top:25vh; height:30vh; width:6vw;opacity:0.4">
+        <img src="../../icons/transparent.png" alt ="???" id = "SUp" onclick ="volSet2(-1)" style="position:fixed; right:2vw; Top:25vh; height:15vh; width:6vw;  z-index: 925">
+        <img src="../../icons/transparent.png" alt ="???" id = "SDn" name = "SDn" onclick ="volSet2(+1)" style="position:fixed; right:2vw ;Top:25vh; height:30vh; width:6vw; z-index:920;">
+        <img src="../../icons/blackSpeaker.png" alt ="???" id = "SK" name = "SK"  style="position:fixed; right:3vw ;top:37vh; height:6vh; width:4vw; z-index: 915">
+        <img src ="../../Icons/On.png" id ="soundOO" alt = "" onclick="volSet2(10)" style="position:fixed; top:55vh ;width:6vw; right:2vw;z-index:915;opacity:0.4">
+        </div>    
+    
+    <div id="playCntrl" style="background:black;text-align: center;  overflow:hidden;position:fixed; height:13% !important ;width:100vw; bottom:0px; LEFT:0vw;z-index:10">
+        <img id="ButtonInfo" onclick="dis('infoList')" title='Info' src="../../icons/blackInfo.png" alt ="Info"  style="position:fixed; left:9vw; height:13%; width:7vw;visibility:visible">
+        <a id='key' onclick="vis('keyList')" style="background-color:black; position:fixed; left:17%; bottom:3%; font-size:8vh; color:white; background-color:black; z-index:880">Key</a>
+        <a id="speed" onclick="listTempos()" style="position:fixed; visibility:visible; left:76% ; bottom:3%; font-size:8vh; color:white; background-color:black; z-index:880">Tempo</a>
+        <div id="set" style="position:fixed ;height:5% ;font-size:2.5vh; top:87%; width: 50vw ;left:25vw">-</div>
+        <audio id="Audio1" controls=false preload = "metadata" style="opacity:1;position:fixed ;height:6%; top:94%; width: 50vw ;left:25vw ;z-index:998" source src="../Backing/Default.mp3" type="audio/mpeg" ></audio>
+        <a id='trackMsg' style="position:fixed; height:6%; top:94%; width: 50% ;left:25%;z-index:1001;visibility:hidden"></a>  
+        <img id="ButtonTrack" title ='SOUND TRACK' src="../../icons/redTrack.png" alt ="track" onclick="vis('trackList');vis('drumList','hidden')"  style = "position:fixed; right:9%; height:13%; width:7%; visibility:visible; z-index:997">
+        <img id="ButtonReset" title ='RESET' src="../../icons/blackReset.png" alt ="Reset" onclick="trackReset()"  style = "position:fixed; right:9%; height:13%; width:7%; visibility:visible; z-index:999">
+        <img id="ButtonTools" src="../../icons/blackgear.png" onclick="toolMode('true')" title ='Settings'  alt ="Settings" style = "position:fixed; right:1% ;height:13%; width:7%; visibility:visible">
+        </div>       
+    <div id ='cloud' onclick="document.getElementById('cloud').style.display ='none'" style='display:none; border-style:none ;text-align:left;position:fixed;left:0%;Top:0%;width:100%;height:82%;background-color:transparent;z-index:990;overflow:hidden;'>
+        <img src='../../Icons/cloud.png' left =0% height=100% width=100%>
+        <div id ='cloudwords' onclick="document.getElementById('cloud').style.display ='none'" style='display:block; border-style:none;text-align:center;position:fixed;left:20%;Top:10%; width:60%;height:62%;background-color:transparent;z-index:990;overflow:hidden; color:black'>xxx</div>
+        </div>
+    <div id ='popup' onclick="document.getElementById('popup').style.display ='none'" style='display:none; border-style:solid;text-align:left;position:fixed;left:16vw;Top:10vh;width:80vw;height:65vh;background-color:lightyellow;z-index:990;overflow-y:scroll;'>Notes...</div>
+    <img id="floater" title ="<<>>" src="../../icons/guidelines.png" alt ="<<>>" style="position:fixed; left:0%; width:100%; top:0px; height:25%;visibility:visible;z-index:5;opacity: 0.9"> 
+    <img id="rabbit" title ="FASTER SCROLL" src="../../icons/rabbit.png" alt ="Speed Up" onclick="scrollRate(0.9);" style="position:fixed; right:2vw; height:12vh; width:7vw; bottom:13vh; visibility:visible;z-index:990">
+    <img id="turtle" title = 'SLOWER SCROLL' src="../../icons/turtle.png" alt ="Slower" onclick="scrollRate(1.111111)" style="position:fixed; right:2vw ;height:12vh; width:7vw;top:0 ;visibility:hidden;z-index:990">
+    <!--<img id="statusIcon" name = "statusIcon" onclick ="flashBlink('Song Quality :'+QUAL,2,'statusIcon',8)"  title='Status Icon' src="../../icons/gearTrain.gif" alt ="?" style="position:fixed; right:2vw ;height:12vh; width:7vw;top:2vh;z-index:990">
+-->    <img id="statusIcon" name = "statusIcon" onclick ="bogus()"  title='Status Icon' src="../../icons/gearTrain.gif" alt ="?" style="position:fixed; right:2vw ;height:12vh; width:7vw;top:2vh;z-index:990">
+    <img id="pointerDown" onclick="scrollTune(0.10)" src="../../icons/pointerDown.png" alt ="vvv" style="visibility:visible; opacity:0.2; position:fixed; left:0%; bottom:13%; height:31%; width:10%; z-index:890">
+    <img id="pointerUp" onclick="scrollTune(-0.10)" src="../../icons/pointerUp.png" alt ="^^^" style="visibility:visible; opacity:0.2; position:fixed; left:0% ;top:0%; height:31%; width:10%; z-index:890">
+    <iframe  id="Tune" style="background:white; overflow-x:hidden; overflow-y:scroll; position:fixed; vertical-align: baseline; top:0%; left:0px; height:87%; width:100%"></iframe>
+
+<SCRIPT type="text/javascript" SRC = "Player2-10.js"></script>
+    </body></html>

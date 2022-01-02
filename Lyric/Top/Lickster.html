@@ -1,0 +1,347 @@
+<!DOCTYPE html><head><title id = 'title'>LICKSTER</title>
+<meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!-- prevents zooming on mobile devices....number-based width or "device-width"-->
+<link rel="shortcut icon" type="image/png" href="../../Icons/blackLick.png">
+<style type="text/css">
+    Body
+    {
+        background-color: blue;
+        text-align:center;
+        font-size: 2vh;
+        border-width: 0px;
+        vertical-align: top;
+        border-color:  transparent;
+        border-style:none;
+        padding:0px;
+        margin:0px;
+        display:block;
+    }
+    input
+    {
+        font-size: 2vh;
+    }
+    X1{color:red;font-size:3vh}
+    X2{color:black;font-size:3vh}
+    X3{font-style:normal; color:blue;background-color:yellow;font-size:4vh}
+</style>
+</head>
+<body onresize="adjustElements();"> 
+<a id="none" style=" display:none; visibility:hidden"></a>  
+<!--Layout Plan
+    Section     Bottom  z-index
+    splash      full    5000-5500          
+    msg         5%      5500
+    Header      10%     4500-4999
+    screens     70%
+    Audio       15%
+    
+Header-->
+
+<audio id="audioClick" controls = false  preload = "metadata" source src="../Click/Cl.mp3" type="audio/mpeg"></audio>
+
+<!--Splash  5000 5499-->
+    <div id ="splash" style="position:fixed; visibility:visible; background-color:white; color:black; top:0%; left:0%; width:100%; height:100%;text-align:center; z-index:5000">
+        LICKSTER  (Rev 1.00 [BETA]) <br>A Javascript Application<br>by<br>Fred Kaparich<br>fkaparich@gmail.com<br>
+      <img src='../../Icons/resetSpinner.gif' alt ="Welcome..." style='position:fixed; width:25%; left:37%;opacity:0.2;z-index:1'>  
+    </div>
+
+<!--MESSAGE 5500=================================================================================================== -->
+    <div id ='msg' onclick="alert(document.getElementById('msg').innerHTML)" style='font-size:4vh; position:fixed; line-height:100%; top:0%; left:0%; height:5%; width:100%; background-color:white; z-index:5500;overflow:hidden'>
+        "Loading html file...."
+    </div>
+
+<!-- Main Header 4500-4999> -->
+    <div id ='header' style='position:fixed; font-size:1vw;top:5%; height:10%; text-align:left; width:100%; background-color:lightgrey; font-size:2vw; line-height:100%;z-index:4500'>
+    <div id = 'sheildSelect' style="position:absolute; top:0%; width:100%; left:0%; height:100%; font-size:4vh; z-index:0; background-color:red; visibility:hidden" onclick ="changesSave()"></div>
+        <select  id ='lickFile' style="position:absolute;top:10%; width:20%; left:1%; font-size:4vh;;" onchange="loadServerLickFile(this.value)"> 
+            <optgroup>
+            <option value ="12BarBluesA" selected >12 Bar Blues (A)</option>
+            <option value ="CountryLicksC" >Country Licks (C)</option>
+            <option value ="Chuck Berry A" >Chuck Berry (A)</option>
+            <option value ="PICKING" >PICKING</option>
+            <option value ="Take It Easy" >Take It Easy</option>
+            <!--
+            <option value ="Chuck Berry A" >Chuck Berry A</option>
+            <option value ="Pentatonic Boxes" >Pentatonic Boxes</option>
+            <option value ="Major Pentatonic" >Major Pentatonic</option>
+            <option value ="Repeaters" >Repeaters</option>
+            <option value ="Reyman Blues2" >Reyman Blues (In Work)</option>
+            <option value ="Delta Blues" >Delta Blues (In Work)</option>
+            <option value ="XXXSandercoe Blues">XXSandercoe Blues (obsolete)</option>
+            -->
+            </optgroup>
+        </select><br>
+        <img id="lastLick" src="../../icons/transLeft.png"  title = "Last Lick" onclick ="lickSelect(parseInt(INDEXlick,10)-1);" alt ="<"  style="position:absolute; top:0%; width:4%; right:74%;">
+        <select id="lick" style="position:absolute; top:10%; left:26%; width:15%; font-size:4vh" onchange="lickSelect(this.value);">Lick Selector</select>    
+        <img id="nextLick" src="../../icons/transRight.png" title = "Next Lick" onclick ="lickSelect(parseInt(INDEXlick,10)+1);"  alt ="<" style="position:absolute; top:0%;width:4%;left:41%;">
+        <a id="lickCount" style="position:fixed; top:0%;left:46%;width:10%; font-size:2vw;">XXXX</a>
+        <a id ='keyA' style="position:absolute;top:0%; height:50%; width:6%; left:46%">?</a>
+        <a id ='beatsA' style="position:absolute;bottom:0%; height:50%; width:6%; left:46%">?</a>
+        <img id="link" src="../../icons/blackLinks.png" title = "LINK" onclick ="window.open(LINK);"  alt ="Info" style="position:absolute;top:0%;height:100%;right:7%;">
+        <img id='hme' src="../../icons/blackHome.png" title = 'HOME' onclick ='home();'  alt ='HOME' style="position:absolute;height:100%;top:0%;right:0%">
+    </div > 
+<!--Master Control===================================================================  -->
+    <div id="masterCtrl" style="position:absolute;top:6%; height:8%; width:20%; left:60%; border-style:solid; border-width:1px;border-color:black;background-color:white;z-index:4800">
+        <img id="buttonTab"  src="../../icons/tab.png"   title = "TAB VIEW"  onclick ="mode('tab');"  alt ="TAB" style="position:absolute;height:100%;left:0%;bottom:0%;opacity:1">
+        <img id="buttonEdit" src="../../icons/tabEdit.png" title = "EDIT VIEW"  onclick ="mode('edit');" alt ="EDIT" style="position:absolute;height:100%;left:25%;opacity:0.3">       
+        <img id="buttonNeck" src="../../icons/neck.png"  title = "NECK VIEW" onclick ="mode('neck');"  alt ="NECK" style="position:absolute;height:100%;right:25%;opacity:0.1">
+        <img id="buttonJam"  src="../../icons/jam.jpg"   title = "TAB VIEW"  onclick ="mode('jam');"  alt ="JAM" style="position:absolute;height:100%;right:0%;bottom:0%;opacity:0.2">
+    </div>    
+    
+<!-- tab Screen  4000-4499==============================================================================  --> 
+    <div id="tabScreen" style="display:block; position:fixed; font-size:2vh; background-color:white; left:0%; height:70%; width:100%; top:15%; overflow:hidden; z-index:4000"> 
+        <div id ='screen' style='position:absolute; text-align:left; font-size:4.2vh; top:0%; left:0%; height:75%; width:100%; background-color:white; overflow-x:scroll;overflow-y:hidden'>LICK SHOULD APPEAR HERE! </div>
+        <div id =barButton style='position:absolute; width:100%; background-color:lightgrey; text-align:center;bottom:15%; height:8%; z-index:0;visibility:hidden;'>
+            <div style='position:absolute;left:1%;'>STEP EDIT...</div>
+            <button id = 'swidth' style='height:100%'>STEP WIDTH-></button>
+            <select  id ='stepWidth' onchange="STEPwidth=(this.value);lickRender();style='height:100%'">
+                <optgroup style='height:100%'>
+                <option value ="3" selected>3</option>
+                <option value ="4">4</option>
+                <option value ="5">5</option>
+                <option value ="6">6</option>
+                <option value ="7">7</option>
+                <option value ="8">8</option>
+                <option value ="9">9</option>
+                </optgroup>
+            </select>  
+            <button id = 'sIns' onclick='stepInsert()' style='height:100%' >INSERT</button>
+            <button id = 'sDel' onclick='stepDelete()'style='height:100%'>DELETE</button>
+            <button id = 'sDup' onclick='stepDuplicate()' style='height:100%'>DUPLICATE</button>
+            <button id = 'sClr' onclick='stepClear()' style='height:100%'>CLEAR</button>
+        </div>
+        <div id="editor" style="visibility:hidden" > <!-- File Edit Bar Control bar=============8=====================================================================  -->   
+            <div style="text-align:left; position:absolute; background-color:black; left:0%; bottom:0%; width:100%; height:16%;z-index:0" >
+                <img src = "../../icons/blackRead.png" alt ="Get Local File" onclick="document.getElementById('fileInput').click()" style="position:absolute;left:0%; height:100%">
+                <input onclick = "fileReadSetup()" type="file" id = "fileInput" style = "position:absolute; visibility:hidden; left:0%; height:0%; width:0%; top:0%;left:0%;">
+                <img id="sav" src="../../icons/blackSave.png" title = "SAVE FILE" onclick ="fileLickSave()"  alt ="^" style="position:absolute;height:100%;left:6%;">
+                <img id="delete" src="../../icons/blackTrash.png" title = "DELETE THIS LICK" onclick ="lickDelete()"  alt ="^" style="position:absolute;height:100%;left:12%;">
+                <img id="dup" src="../../icons/transDup.png" title = "DUPLICATE THIS LICK" onclick ="lickDup();vis('details')"  alt ="^" style="position:absolute;height:100%;left:18%;">
+                <img id="help" src="../../icons/blackQuestion.png" title = "HELP" onclick ="infoTab();"  alt ="Info" style="position:absolute;height:100%;left:24%;">
+                <img id="bgs" src="../../icons/blackNew.png" title = "bogus" onclick ="lickNew()"  alt ="^" style="position:absolute;height:100%;left:36%;">
+                <img id="info" src="../../icons/blackEdit.png" title = "Edit" onclick ="vis('details');"  alt ="Info" style="position:absolute; height:100%; left:42%;">
+            </div>            
+        </div>
+    </div> 
+    
+<!-- Neck Screen===3500>3999=======================================================================-->   
+    <div  id ="neckScreen" style="position:fixed; display:NONE; z-index:3500; top:15%; height:70%; width:100%">
+        <div id ='screen2' style="overflow-x: scroll; position:absolute; top:0%; left:0%; height:73%; width:100%; background-color:lightgrey; overflow-x:hidden;">
+            <img id = 'fretboard' style='position:absolute; left:0%; height:100%; width:100%;' alt ='Fingerboard' src ='../../icons/fretboard2.png'>
+            <div id ='fbplay' style='position:absolute;height:100%;width:100%;background-color:transparent;z-index:300'></div>
+            <div id ='fbshow' style='position:absolute;height:100%;width:100%;background-color: transparent; z-index:400'></div>
+            <div id ='fbgrid' onclick="sf(event);" style='position:absolute;height:100%;width:100%;background-color: transparent; z-index:100'></div>
+            <div id ='metro' style='position:fixed; bottom:30%; vertical-align:top; left:1%; width:94%; text-align:center; line-height:100%; height:3%; font-size:3vh; background-color:pink;'></div>
+            <div id ='metro2' style='position:fixed; bottom:27%; vertical-align:top; left:1%; width:94%; text-align:center; line-height:100%; height:3%; font-size:3vh; background-color:pink;'></div>
+            <div id = 'cntrl' style="position:fixed; left:0%; bottom:15%; width:100%; height:10%;background-color:lightgrey">    
+                <img id="lastIcon" src="../../icons/transArrowLeft.png" title = "Last Note" onclick ="stepAdvance(-1)"  alt ="<" style="position:absolute;height:100%;left:0%">
+                <img id="loopCtrl" src="../../icons/transOnePlay.png" title = "Loop" onclick ="loop();"  alt ="<" style="position:absolute;height:100%;left:7%;visibility:visible">
+                <img id="resetIcon" src="../../icons/transResetBlue.png" title = "RESET" onclick ="stepAdvance(100000);neckPlayToggle(false)"  alt ="<" style="position:absolute;height:100%;left:14%;">
+                <img id="playIcon" src="../../icons/transPlayGreen.png" title = "PLAY" alt =">" onclick="neckPlayToggle(true),document.getElementById('audioClick').play()" style="position:absolute;height:100%;left:21%">
+                <img id="pauseIcon" src="../../icons/transPauseRed.png" title = "STOP" alt =">" onclick="neckPlayToggle(false)" style="position:absolute;height:100%;left:21%;z-index:15001;visibility:hidden">
+                <img id="nextIcon" src="../../icons/transArrowRight.png" title = "Next Note" alt ="||" onclick="stepAdvance(+1)" style="position:absolute; height:100%;left:28%">
+                <img id="h" src="../../icons/blackQuestion.png" title = "Help with ICONS" alt ="?" onclick ="help('FINGERBOARD ICONS',infoIcons())" style="position:absolute;height:100%;left:35%;">
+                <!--
+                <img id="fastIcon" src="../../icons/rabbit2.png" title = "Faster" onclick ="setSpeed(0.5);"  alt =">>" style="position:absolute;height:100%;left:42%">
+                <img id="slowIcon" src="../../icons/turtle2.png" title = "Slower" onclick ="setSpeed(2.0);"  alt ="<<" style="position:absolute;height:100%;left:49%">
+                -->
+            <select  id ='metSpeed' style="position:absolute;top:10%; width:10%; left:42%; font-size:4vh;;" onchange="MET=parseInt(60000/this.value,10)"> 
+            <optgroup>
+                <option value =60>60 BPM</option>
+                <option value =70>70 BPM</option>
+                <option value =80>80 BPM</option>
+                <option value =90>90 BPM</option>
+                <option value =100>100 BPM</option>
+                <option value =110>110 BPM</option>
+                <option value =120 selected>120 BPM</option>
+                <option value =130>130 BPM</option>
+                <option value =140>140 BPM</option>
+                <option value =150>150 BPM</option>
+                <option value =160>160 BPM</option>
+                <option value =170>170 BPM</option>
+                <option value =180>180 BPM</option>
+                <option value =190>190 BPM</option>
+                <option value =200>200 BPM</option>
+            </optgroup>
+            </select>
+            <img id="metIcon" src="../../icons/transSilent.png" title = "Faster" onclick ="clickToggle();"  alt =">>" style="position:absolute;height:100%;left:54%">    
+                <div id='header2' style='position:absolute; right:0%;bottom:0%; text-align:left; width:40%; background-color:lightgrey; font-size:2vw; line-height: 170%;'>  
+                    <select  id ='key2' style="font-size:2vw; top:0%; left:1%; width:8%" onchange="ROOT=(this.value);makeScale('1-0-1-0-1-1-0-1-0-1-0-1','scale');">
+                        <optgroup>
+                            <option value ="A" >A</option>
+                            <option value ="Bb">Bb</option>
+                            <option value ="B">B</option>
+                            <option value ="C" selected>C</option>
+                            <option value ="C#">C#</option>
+                            <option value ="D">D</option>
+                            <option value ="Eb">Eb</option>
+                            <option value ="E">E</option>
+                            <option value ="F">F</option>
+                            <option value ="F#">F#</option>
+                            <option value ="G">G</option>
+                            <option value ="Ab">Ab</option>
+                        </optgroup>
+                    </select>
+                    <select id='scale' style='position:absolute; left:10%;  width:40%;font-size:2vw;opacity:0.25'onchange="dispMode(this.value,'scale');">
+                        <optgroup>
+                            <!--            1 b 2 b 3 4 b 5 b 6 b 7  -->
+                            <option value ="0-0-0-0-0-0-0-0-0-0-0-0" selected >NO SCALE...</option>
+                            <option value ="1-1-1-1-1-1-1-1-1-1-1-1">CHROMATIC</option>
+                            <option value ="1-0-1-0-1-1-0-1-0-1-0-1">MAJOR (IONIAN)</option>
+                            <option value ="1-0-1-1-0-1-0-1-1-0-1-1">MINOR (NATURAL)</option>
+                            <option value ="1-0-1-0-1-1-0-1-0-1-1-0">MIXOLYDIAN</option>
+                            <option value ="1-0-1-1-0-1-0-1-0-1-1-0">DORIAN</option> <!--T,S,T,T,T,S,T -->
+                            <option value ="1-0-1-0-1-0-0-1-0-1-0-0">MAJOR PENTATONIC</option>
+                            <option value ="1-0-0-1-0-1-0-1-0-0-1-0">MINOR PENTATONIC</option>
+                            <option value ="1-0-0-1-0-1-1-1-0-0-1-0">BLUES</option>
+                            </optgroup>
+                    </select>   
+                    <select id='chord' style='position:absolute; left:55%; width:40%; font-size:2vw;opacity:0.25' onchange="dispMode(this.value,'chord');">
+                        <optgroup>
+                            <!--                    1 1   1   1      -->
+                            <!--            8   9   0 1   2   3      -->
+                            <!--            1 b 2 b 3 4 b 5 b 6 b 7  -->
+                            <option value ="0-0-0-0-0-0-0-0-0-0-0-0"  selected>NO CHORD...</option>
+                            <option value ="1-0-0-0-0-0-0-0-0-0-0-0">ROOT ONLY</option>
+                            <option value ="1-0-0-0-1-0-0-1-0-0-0-0">Major Chord</option>
+                            <option value ="1-0-0-0-1-0-0-1-0-1-0-0">Major 6th Chord</option>
+                            <option value ="1-0-0-0-1-0-0-1-0-0-0-1">Major 7th Chord</option>
+                            <option value ="1-0-1-0-1-0-0-1-0-0-0-1">Major 9th Chord</option>
+                            <option value ="1-0-0-1-0-0-0-1-0-0-0-0">Minor Chord</option>
+                            <option value ="1-0-0-1-0-0-0-1-0-1-0-0">Minor 6th Chord</option>
+                            <option value ="1-0-0-1-0-0-0-1-0-0-1-0">Minor 7th Chord</option>
+                            <option value ="1-0-0-1-0-0-1-0-0-0-0-0">Diminished Chord</option>
+                            <option value ="1-0-0-1-0-0-1-0-0-1-0-0">Diminished 7 Chord</option>
+                        </optgroup>
+                    </select>     
+                </div>
+            </div>
+        </div>
+    </div>   
+
+<---Help Div-->   
+    <div id ='helpDiv' style="overflow:hidden;visibility:hidden; font-size:3vw; line-height:150%; border-style:solid; text-align:left; position:fixed; left:4%; top:15%; width:90%; bottom:15%; background-color:yellow; color:red;z-index:25000">
+        <div id='helpHdr' style="position:absolute;top:0%; height:15%;width:100%;background-color: tan">
+            <div id ='helpIntro' style="position:absolute; left:0%; height:100%;z-index:26000">XXXXXXXXXX</div>
+            <img src ="../../Icons/blackClose.png" alt="X" onclick ="dis('helpDiv')" style="position:absolute; right:0%; height:100%;z-index:26000">    
+        </div>
+        <div id ='helpBody' style="position:absolute; top:15%;overflow-y:scroll; left:0%; height:85%; width:100%; background-color:white; font-size:3vw">
+            Body
+        </div>
+     </div>
+
+<!-- CONFIG: 1000>1999 -->   
+    <div id ='details' style='border:solid;position:fixed; left:5%;top:10%;height:70%; text-align:left; width:90%; background-color:yellow; font-size:2vw; line-height: 112%;z-index:20000;visibility:hidden'>
+        <a onclick="vis('details','hidden');" style="position:absolute; right:2%; font-size:3vw">X</a>
+        TITLE<input id ='titl' style="width:30%;font-size:2vw" onchange = "TITLE=document.getElementById('titl').value;lickUpdate();lickSelector(INDEXlick)">
+        BEATS <select  id ='beats' style="font-size:2vw; width:6%" onchange="BEATS=(this.value);lickUpdate();">
+                <optgroup>
+                <option value ="2">2</option>
+                <option value ="3">3</option>
+                <option value ="4">4</option>
+                <option value ="5">5</option>
+                <option value ="6">6</option>
+                <option value ="7">7</option>
+                <option value ="8">8</option>
+                <option value ="9">9</option>
+                <option value ="10">10</option>
+                <option value ="12">12</option>
+                <option value ="16">16</option>
+                </optgroup>
+            </select>
+        KEY <select  id ='key' style="font-size:2vw;" onchange="ROOT=(this.value);lickUpdate();">
+                <optgroup>
+                <option value ="A" >A</option>
+                <option value ="Bb">Bb</option>
+                <option value ="B">B</option>
+                <option value ="C" selected>C</option>
+                <option value ="C#">C#</option>
+                <option value ="D">D</option>
+                <option value ="Eb">Eb</option>
+                <option value ="E">E</option>
+                <option value ="F">F</option>
+                <option value ="F#">F#</option>
+                <option value ="G">G</option>
+                <option value ="Ab">Ab</option>
+                </optgroup>
+            </select>
+      
+        Count<select  id ='and' style="font-size:2vw;" onchange="AND=(this.value);lickUpdate();">
+            <optgroup>
+            <option value ="A" selected>1.2.3.4</option>
+            <option value ="B">1.&amp;.2.&amp;</option>
+            <option value ="C">1.&amp;.&amp;.2</option>
+            <option value ="D">1.&amp;.&amp;.&amp;</option>
+            </optgroup>
+        </select> 
+        <a onclick = "fetchHeader('index.html')">ZZ</a>;
+        <br>
+        INFO<br>
+        <textarea  id="inf" style="font-size:2vw;width:90vw;left:5%;height:40%; width:100%; border:none; margin:0; padding:0;" onchange="INFO=(this.value);lickUpdate();"></textarea><br>
+        LINK<br><input id = 'lnk' style="font-size:2vw;top:50%; width:100%" onchange="LINK=(this.value);lickUpdate();"><br>
+        BACK TRACK<br><input id = 'bak' style="font-size:2vw; width:100%" onchange="BACK=(this.value);lickUpdate();"><br>
+    </div>
+
+<!-- Lick BOX================================================================================================= -->    
+    <div  id ="lickBox" style="border:solid; border-color:black;position:fixed; text-align:left; z-index:100;  background-color:gray;bottom:0%;width:30%;height:14%;left:0%;opacity:1; font-size:4vh" >
+        <img id="bgs2" src="../../icons/transPlayGreen.png" title = "play" onclick ="lickPlay();"  alt ="^" style="position:absolute; top:10%;height:80%;left:1%">    
+        <audio id="Audio1" controls = false onended="lickReset()"    preload = "metadata" style="position:absolute; bottom:1%;height:50%; width: 50%;left:30%;" source src="../Backing/Default.mp3" type="audio/mpeg"></audio>
+        <div style="position:absolute; top:0%;height:30%; width: 20%;left:20%;">LICK</div>
+    </div>    
+
+<!---JAM BOX================================================================================================= -->    
+    <div  id ="jamBox" style="border:solid; border-color:black; position:fixed;text-align:left; display:block;background-color:gray; bottom:0%;width:70%;height:14%;left:30%;opacity:1; font-size:4vh;z-index:4800" >
+        
+        <!--LOOP BAR -->
+        <div id="looper" style="font-size: 1.4vw; position:absolute;  border:solid; opacity:1; left:10% ;top:0% ;height:40%; width:50%;visibility:visible;z-index:15000">
+            <img id = 'loopImg' alt="@" src="../../icons/transOnePlay.png" style="position:absolute;left:2%;height:90%;top:5%" onclick="loopMode()">
+            <div id='lt' style="position:absolute; height:90%; top:5%; height:90%; left:15%; vertical-align:middle; text-align:center;">0.00</div>
+            <img  alt="^" src="../../icons/transup.png" style="position:absolute; height:90%; top:5%; height:90%; left:30%;" onclick="loopMarkTop()"><br>
+            <img alt="v" src="../../icons/transdown.png" style="position:absolute;height:90%; top:5%;height:90%; right:30%; " onclick="loopMarkEnd()"><br>
+            <div id='le' style="position:absolute;height:90%; top:5%; height:90%; right:15%; vertical-align:middle; text-align: center;">End</div>
+            <img alt="?" id = 'loopInfo' src="../../icons/transInfo.png" style="position:absolute; height:90%; top:5%; right:2%;" onclick="loopMsg('true')">
+        </div>
+        <img id='jPlay' src="../../icons/transPlayGreen.png" title = 'JAM TRACK' onclick ="jamPlay()"  alt ='JAM TRACK' style="position:absolute;left:1%; top:10%; height:80%">
+<!--<img id='jlock' src="../../icons/unlock.png" title = 'LOCK TRACK' onclick ="jLock()"  alt ='JAM TRACK LOCK' style="position:absolute;left:10%; top:10%; height:80%"> 
+        <div id ='jTrackName'style="position:absolute;top:0%;left:20%;height:50%;">JAM TRACK</div>-->
+        <select  id ='lickTime' style="position:absolute; height:40%; width: 30%;top:0%; left:65%; font-size:4vh" onchange="CTO();LICKtime=(this.value);lickRender();licksCycle();">
+            <optgroup >
+                <option value ="9999999999">AUTO ADVANCE OFF</option>
+                <option value ="5000">5 Sec Interval</option>
+                <option value ="10000">10 Sec Interval</option>
+                <option value ="20000">20 Sec Interval</option>
+                <option value ="30000" selected>30 Sec Interval</option>
+                <option value ="45000">45 Sec Interval</option>
+                <option value ="60000">1 Minute Interval</option>
+                <option value ="120000">2 Minute Interval</option>
+                <option value ="300000">5 Minute Interval</option>
+            </optgroup>
+        </select>  
+        <audio loop id="Audio2" controls = false preload = "metadata" style="position:absolute; left:10%;height:30%; bottom:1%; width:85%; height:50%" source src="../Jam/default.mp3" type="audio/mpeg"></audio>
+    </div>
+
+<!-- JAM Screen  ==============================================================================  --> 
+    <div  id ="jamScreen" style="display:none;background-color:lightgrey;border:solid; border-color:black;position:fixed; font-size:2vh; background-color:white; left:0%; height:70%; width:100%; top:15%; overflow:hidden; z-index:4000">
+
+       
+        <!--
+        <a id ='keyB' style="position:absolute;top:0%; height:4%; width:15%; left:46%">?</a>
+        <a id ='beatsB' style="position:absolute;top:5%; height:4%; width:15%; left:46%">?</a>
+        <a id ='timeB' style="position:absolute;top:5%; height:4%; width:15%; left:66%">?</a>
+        -->
+        <div style="position:absolute;top:1%; left:1%; width:98%; font-size:4vh;text-align: left;">
+            <div id='jamGoal'style="border:groove;width:95%;">--</div>
+            <div id='jamProg'style="border:groove;width:95%;">--</div>
+            <div id='jamDesc'style="border:groove;width:95%;">--</div>
+            <div id='jamLesson' style="border:groove;width:95%;">--</div>
+            Select...<div id="lesson" style="font-size:4vh;">--</div>
+        </div>
+    </div>   
+
+
+
+
+
+
+<SCRIPT type="text/javascript" SRC = "Lickster.js"></SCRIPT>
+<SCRIPT type="text/javascript" SRC = "CommonRoutines.js"></SCRIPT>
+</body></html>

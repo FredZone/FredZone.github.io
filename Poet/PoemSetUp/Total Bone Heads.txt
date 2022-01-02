@@ -1,0 +1,2 @@
+green|5|1|center|cursive|300%|1000|1000
+color|font|margin|align|family|height|picHeight|picWidth

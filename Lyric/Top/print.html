@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><title id = 'title'>UNKNOWN PRINT</title>
+<style type="text/css">
+Body
+    {
+    font-size : 2.4vw;
+    margin :0vh; padding: 0;
+    font-family:courrier monospace;
+    font-weight:bold;
+    line-height:100%;
+    text-align:Left;
+    background-color:white;
+    }
+    </style>
+    
+    <body>
+    <center><a id="header">TITLE will appear here...</a></center>
+    <div id="song"><pre>song will appear here...</pre></div> 
+    <div id="trvnote" style="width:800px">Trivia Notes</div>
+    <div id="tecnote" style="width:800px">Tech Notes</div>
+    <script type="text/javascript">
+    var ARRlines ='';
+
+    window.onload = function()
+    {
+        var htmlStr="";
+        htmlStr2 ="TRIVIA NOTES:";
+        htmlStr3 ="<br>TECHNICAL NOTES:<pre>";
+        var x = (decodeURIComponent(window.location).split("?"));
+        //var x = (decodeURIComponent(decodeFredComponent(window.location)).split("?"));
+        x[2] = decodeFredComponent(x[2]);
+        if (!x[1]) //normal first time boot, no query string
+        {
+            alert("NO SONG WAS PASSED!");
+        }
+        else
+        {
+            var j =1;
+            //alert('loading');
+            ARRlines=x[2].split('\n'); //play the string passed in the query string
+            while (j < ARRlines.length)
+            {
+                var lType = lineType(ARRlines[j]);
+                if (lType=="chord" | lType=='lyric'| lType=='header'|lType =='note')
+                {
+                    htmlStr = htmlStr + ARRlines[j]+"<br>";
+                }
+                else if (lType =='noteTriv')
+                {
+                    htmlStr2 = htmlStr2 +"<br><br>"+ARRlines[j].substr(2);
+                
+                }
+                else if (lType =='noteTech')
+                {
+                     htmlStr3 = htmlStr3+"\n"+ARRlines[j].substr(3);
+                }
+                
+                
+                j = j+1;
+            }
+        }
+        document.getElementById('song').innerHTML ="<pre>"+ htmlStr+"</pre>";
+        document.getElementById('trvnote').innerHTML =htmlStr2;
+        document.getElementById('tecnote').innerHTML =htmlStr3+"</pre>";
+        document.getElementById('title').innerHTML ="PRINT: "+x[1];
+        document.getElementById('header').innerHTML =x[1];
+    }
+</script>
+<SCRIPT type="text/javascript" SRC = "CommonLyric.js"></SCRIPT>
+</body></html>

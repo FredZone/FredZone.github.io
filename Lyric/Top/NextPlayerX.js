@@ -520,6 +520,7 @@ function start() {
     document.getElementById("soundSelector").innerHTML = lst;
     createBTselector()
     arr = receiveARR(); //get an array if one is sent...*possible global
+    statusMsg("PROBLEM HERE...with arr.Length   Solve it when you have time!!!")
     if (arr ===undefined | arr ===null | arr ===''|arr.length<10) { //^ normal first time boot, no query string
         BOOT = true;
         statusMsg("No valid array passed to boot routine",0)
@@ -924,7 +925,7 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
    statusMsg("#) Type/Action================================", 0)//?.
    while (j < ARRlines.length) { //^ Walk through the ARRlines to build the htmlStrings  
       newLine = rTrim(ARRlines[j]);
-      lType = lineType(newLine);
+      lType = lineType(newLine);//Determine line Type
       m = j + ") " + lType;
       if (lType == 'irealb') {
          IRB = newLine;
@@ -963,27 +964,45 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
          } else {
             newLine = iconize('transRedCircle') + "  <X1>" + newLine.substr(1, newLine.length) + "</X1>"
          }
+//CHORD LINE============================================================
       } else if (lType == 'chord') {
          m = "<x2>" + m
          preSong = false; //^ stop counting prelines
          if (TRANSPOSE !== 0) {
             newLine = lineTranspose(newLine, TRANSPOSE);
             m = m + "/Transpose(" + TRANSPOSE + ")"}
+//*BIG CHORDS         
          if (BIGchords === true) {
             //?. below this???
-            m = m + "/Big Chords(" + BIGchordSize * 100 + "%)"
-            newLine = newLine.replace(/\s+/g, ''); //remove spaces    
+            m = m + "/Big Chords Set to " + BIGchordSize * 100 + "%)"
+            if(BIGchordSize==1.25){
+               newLine = newLine.replace(/   /g,'!@'); //3
+               newLine = newLine.replace(/!@+/g,'  '); //3>2
+               }
+            if(BIGchordSize==1.50){
+               newLine = newLine.replace(/    /g,'!@'); //4
+               newLine = newLine.replace(/!@/g,'  '); //4>2
+               }
+            if(BIGchordSize==1.75){
+               newLine = newLine.replace(/     /g,'!@'); //4
+               newLine = newLine.replace(/   /g,'!!'); //3
+               newLine = newLine.replace(/!@/g,'  '); //4>2
+               newLine = newLine.replace(/!!/g,' '); //2>2
+               }
+            if(BIGchordSize==2.0){
+               newLine = newLine.replace(/    /g,'!@'); //4
+               newLine = newLine.replace(/   /g,'!!'); //3
+               newLine = newLine.replace(/!@/g,' '); //4>1
+               newLine = newLine.replace(/!!/g,' '); //3>>1
+               }  
             arr = newLine.split('|'); //split line into arr
             arr.splice(0, 1); //get rid of element in front of the first bar
             bars = BARSperLine; //use BARSperLine established at song load
             //barLen = parseInt(LONGLINE / (bars * BIGchordSize), 10) - 1; //determine the length of a bar for big chords
-            
-            
-            
-            if (SHIT == true) {
-               barLen = parseInt(LONGLINE / (bars * BIGchordSize), 10); //determine the length of a bar for big chords   
-               newLine = "";
-               n = 0;
+/*            if (SHIT == true ) {alert('shit')
+              barLen = parseInt(LONGLINE / (bars * BIGchordSize), 10); //determine the length of a bar for big chords   
+              newLine = "";
+              n = 0;
                barLen = parseInt((barLen * bars) / (arr.length*BIGchordSize), 10);
             //   if (arr.length > bars) { //if more than std number of bars
             //      barLen = parseInt(barLen * bars / arr.length, 10);
@@ -997,7 +1016,7 @@ function arrConvert() { //^ Setup to walk thru the ARRLines
                   newLine = newLine + "|" + temp;
                   n = n + 1;
                }
-            }
+            }*/
          }
 
          if (BARsync === true) {

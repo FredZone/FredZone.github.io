@@ -1,0 +1,20 @@
+/*FILE MAP=====================================================
+ARRCollections{\n}
+        ARRvideos{;}
+                ARRloops[0]{#}
+                        Properties of the video
+                        [0]UTID
+                        [1]UTtitle
+                        [2]UTnote
+                        [3]UTback {|}
+                                [0]backing track ID 
+                                [1]start in seconds
+                ARRloops[1>n]{#}
+                        properties of loops
+                        [0]LOOPstart
+                        [1]LOOPstop
+                        [2]LOOPname
+                        [3]LOOPnote
+                        [4]LOOPtab {$}
+                                [n]lines in tab
+END FILE MAP===================================================*/         

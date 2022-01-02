@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<head>
+    <link rel="shortcut icon" type="image/png" href="../../Icons/performerYellow.png">
+    <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!-- prevents zooming on mobile devices....number-based width or "device-width"-->
+    <title id = 'title'>Performer</title>
+    <style type="text/css">
+        Body{font-size:5vh;
+            color:white;
+            font-family:Courrier New;
+            font-weight: bold;
+            text-align:center;
+            vertical-align:middle;
+            border-color: black;
+            border-width:thin;
+            background-color:white;
+            padding:0px;
+            margin:0px;
+            overflow:hidden;}
+        X2{color:red;}
+        X2A{color:red;font-size:10vh;line-height:150%;}
+        X2B{color:red;font-size:10vh;background-color:#F4FA58;line-height:130%;}
+        X3{background-color:lightgrey;}
+        X4{color:red;background-color:#F4FA58;}
+        X5{color:white; background-color:lightgrey;}
+        X6{background-color:lightgrey;}
+        X7{background-color:transparent;}
+        X8{color:blue;}
+        X9{text-align:center; background-color:white; color:green;}
+        X10{color:white;}
+        X11{text-align:center; background-color:yellow; color:red;}
+        X12{text-align:center; background-color:yellow; color:black;}
+        X13{text-align:center; background-color:black; color:red;}
+        X14{background-color:black; color:white;}
+        F21 {vertical-align:middle ;color:purple;text-align:left;}
+        table{border-color:transparent;
+            background-color:transparent;}
+        th  {border-style:groove;
+            border-color:black;
+            background-color:lightgrey;
+            text-align:center;}
+        pre { display: inline}
+        </style>    
+    </head>
+<body onresize="arrConvert()"> 
+<!-- Super controls ???? belonging to no group so z is determined by function   --> 
+    <a id="none" style=" display:none; visibility:hidden;"></a><!--needed a null element....must be a better way -->
+    <a id="msg" title="Message Box" style= "position:fixed; line-height:120%; text-align:center; vertical-align:middle; color:red; background-color:transparent; color:red; font-size: 2vw; height:6%; left:0%; top:60%; width:100%; z-index:5505;overflow:hidden">Loading HTML...</a>
+    <audio id='aC' style="visibility: hidden;" controls=false visibility='hidden' preload = "metadata" source src="../Click/Cl.mp3" type="audio/mpeg"></audio>
+    <div id ='orient' style="position:fixed; display:none;height:1%; width:1%; visibility:hidden; opacity:0.2;">
+        <br><br>LANDSCAPE ONLY:<br>ROTATE YOUR DEVICE!!<br>
+        <br>(The entire site should be viewed in the landscape orientation...)<br>
+        <img src = "../../icons/resetSpinner.gif" alt ="??">
+        </div>
+    
+    <div id ='think' style= "position:fixed; background-image:url('../../Icons/resetSpinner.gif');background-size:cover; left:40%; height:40%; bottom:30%; width:20%; background-color:transparent; z-index:4400; display:none ">
+        <img id="thinkIcon" src="../../icons/backtrack.png" alt =" " style="position:absolute; background-color:transparent; margin:auto;left:10%; top:10%; height:80%">
+        <div id='cntDwn' style="position:absolute; visibility:hidden; text-align:center; vertical-align:middle;font-size:30vh; left:0%; height:60%; bottom:0%; width:100%; background-color:transparent;"></div>
+        </div>
+        <audio id="Audio1" controls=true preload = "metadata" style="position:fixed;text-align:center; bottom:0%;width:30%;right:35%;z-index:980; opacity:0.5;background-color:transparent" source src="../Backing/Default.mp3" type="audio/mpeg" >
+        </audio>
+        
+    <div id="cl" title ="<<>>"style="position:fixed;  border-color:black; border:solid; background-color:green; left:0%; width:100%; bottom:45%; height:10%;opacity:0.05;z-index:3;"> </div>
+    <img id="shade" title ="<<>>" src="../../icons/shade4.png" alt ="-" style="position:fixed; left:0%; width:100%; top:0%; height:100%;opacity:0.5; z-index:3;">
+    <img id="backDrop" title ="<<>>" src="../../icons/black.png" alt ="-" style="position:fixed; left:0%; width:100%; bottom:0%; height:100%;opacity:1;z-index:3;">  
+    <!-- Splash  4000 4999 -->  
+    <div id ="splash" style="position:fixed; visibility:visible; font-size:5vh;text-align:center; background-color:white; color:black; top:0%; left:0%; width:100%; height:100%; z-index:4500">
+        PERFORMER <br><br>A Javascript Application<br>by<br>Fred Kaparich<br>fkaparich@gmail.com<br>
+        <img src='../../Icons/resetSpinner.gif' alt ="*" style='position:fixed; width:25%; left:37%;opacity:0.4;'>
+        </div>
+<!--Controls 0000 to 999 -->
+    <div id="bigPlay" style="display:block">
+        <div onclick="trackPrePlay()" style="display:block;border:solid; position:fixed; opacity: 0.1;right:0%; bottom:0%; width:34%; height:22%; background-color:lightgreen;z-index:780"></div>
+        <img src="../../icons/transPlay.png" title = "PLAY" alt =">" style="position:fixed;opacity:0.3;right:2% ;bottom:1% ;width:7%;z-index:779;">
+        <div id="bigReset" onclick="trackReset()" style="display:block; border:solid; opacity:0.1; position:fixed;left:0% ;bottom:0% ;width:33%;height:22%;background-color:red;z-index:780"></div>
+        <img src="../../icons/transReset.png" alt ="o" style="position:fixed; opacity:0.3; left:2% ;bottom:1% ;width:7%; z-index:779;">
+        </div>    
+    <div id='bigButtons'style="display:none; position:fixed; top:0%; height:100%; width:100%; left:0%;z-index:780;">
+        <div 'bscreen' style="top:0%;height:100%;width:100%;left:0%;z-index:780;">
+            <img src="../../icons/frogUp.png" alt ="^" style="position:fixed; opacity:0.3; left:2% ;top:1% ;width:7% ;z-index:779">
+            <img src="../../icons/turtle.png" alt ="^" style="position:fixed;opacity:0.3;right:2% ;top:1% ;width:7%; z-index:779">
+            <img src="../../icons/frogDown.png" alt ="v" style="position:fixed;opacity:0.3;left:2% ;bottom:1% ;width:7%;z-index:779">  
+            <img src="../../icons/rabbit.png" alt ="^" style="position:fixed;opacity:0.3;right:47% ;bottom:1% ;width:7%;z-index:779">  
+            <img src="../../icons/transPauseRed.png" alt =">" style="position:fixed;opacity:0.3; right:2% ;bottom:1%; width:7%; z-index:779">  
+            </div>
+        <div style="position:fixed;height:100%; width:100%; top:0; left:0%; opacity:0.1; z-index:780;color:black;">
+            <!--jump back-->
+            <div onclick="scrollTune(-0.30)" style="position:fixed; height:22%; width:50%; left:0%; background-color:green;border:solid;"></div>
+            <!--slow down-->
+            <div onclick="scrollRate(1.11111);scrollTune(-0.30);" style="position:fixed; top:0; height:22%; width:50%; right:0%; background-color:blue; border:solid;"></div>
+            <!--jump fwd--> 
+            <div onclick="scrollTune(0.30)" style="position:fixed;bottom:0%;height:22%;width:33%;left:0%;background-color:green;border:solid;"></div>
+            <!--speed up -->
+            <div onclick="scrollRate(0.9);scrollTune(0.30);" style="position:fixed;bottom:0%;height:22%;width:33%;left:33%;background-color:blue;border:solid;"></div>
+            <!--pause -->
+            <div id="pauseButton" onclick="trackPause()" style="position:fixed; bottom:0%; height:22%; width:34%; right:0%; background-color:red;border:solid;"></div>
+            </div></div>
+    
+<!--SONG BAR2-->  
+    <div id='songBar2' style="position:fixed; display:block;font-size:2vw; border-color:darkgrey; border-style:ridge; border-width:thick; background-color:darkgrey; text-align:center;color:white; overflow:hidden; opacity:1; height:61%; width:90%; bottom:15%; left:5%;z-index:900;">
+        INWORK...Single Song Settings (just close it,  it only shows on boot )
+        <img id="ButtonCloseSongBar" src="../../icons/blackClose.png" title="CLOSE" alt ="CLOSE" onclick ="dis('songBar2')" style="position:absolute;right:0%;top:0%;height:8%;">
+    <!--Tempo==================================================================================== -->         
+        <div id="speed" title = "TEMPO" style="position:absolute;line-height:200%;background-size:100% 100%;vertical-align:middle; background-image:url('../../icons/transWhiteCircle.png'); text-align: left; border:solid; line-height:140%;background-color:transparent; position:absolute; text-align:center; font-size:8vh; color:black; width:9%; height:25%; left:1%; top:10%; z-index:900;">-</div>    
+        <div id="tempo" title = "TEMPO" style="position:absolute; text-align: left; border:solid; line-height:140%;background-color:transparent; position:absolute; text-align:center; font-size:8vh; color:black; width:89%; height:25%; left:10%; top:10%;">
+            ----
+            </div>
+    <!--Key==================================================================================== -->           
+        <div id="key" title = "KEY" style="position:absolute;line-height:200%;background-size:100% 100%;vertical-align:middle; background-image:url('../../icons/transWhiteCircle.png'); text-align: left; border:solid; line-height:140%;background-color:transparent; position:absolute; text-align:center; font-size:8vh; color:black; width:9%; height:25%; left:1%; top:38%; z-index:900;">-</div>    
+        <div id="keyBox" title = "TEMPO" style="position:absolute; text-align: left; border:solid; line-height:140%;background-color:transparent; position:absolute; text-align:center; font-size:8vh; color:black; width:89%; height:25%; left:10%; top:38%;">
+            <img onclick="newKey('A')" src='../../icons/KeyA.png' alt='A' style='position:absolute; top:10%; width:7%; left:0%'>
+            <img onclick="newKey('Bb')" src='../../icons/KeyBb.png'  alt='Bb' style='position:absolute; top:10%; width:7%; left:8%'>
+            <img onclick="newKey('B')" src='../../icons/KeyB.png'  alt='B' style='position:absolute; top:10%; width:7%; left:16%'>
+            <img onclick="newKey('C')" src='../../icons/KeyC.png'  alt='C' style='position:absolute; top:10%; width:7%; left:24%'> 
+            <img onclick="newKey('C#')" src='../../icons/KeyCs.png'  alt='C#' style='position:absolute; top:10%; width:7%; left:32%;'>
+            <img onclick="newKey('D')" src='../../icons/KeyD.png'  alt='D' style='position:absolute; top:10%; width:7%; left:40%'>
+            <img onclick="newKey('Eb')" src='../../icons/KeyEb.png'  alt='Eb' style='position:absolute; top:10%; width:7%; left:48%'>
+            <img onclick="newKey('E')" src='../../icons/KeyE.png'  alt='F' style='position:absolute; top:10%; width:7%; left:56%'>
+            <img onclick="newKey('F')" src='../../icons/KeyF.png'  alt='F'style='position:absolute; top:10%; width:7%; left:64%'>
+            <img onclick="newKey('F#')" src='../../icons/KeyFs.png'  alt='F#' style='position:absolute; top:10%; width:7%; left:72%'>
+            <img onclick="newKey('G')" src='../../icons/KeyG.png'  alt='G' style='position:absolute; top:10%; width:7%; left:80%'>
+            <img onclick="newKey('Ab')" src='../../icons/KeyAb.png'  alt='Ab'style='position:absolute; top:10%; width:7%; left:88%'>
+            <img onclick="newKey('N')" src='../../icons/KeyN.png'  alt='N' style='position:absolute; bottom:0%; width:5%; left:95%;'>
+            </div>
+    <!--Track==================================================================================== -->           
+        <div id="buttonTrack" title = "Track" style="position:absolute; text-align: left; border:solid; line-height:140%; background-size:100% 100%;vertical-align:middle; background-image:url('../../icons/transWhiteCircle.png');background-color:transparent; position:absolute; text-align:center; font-size:8vh; color:black; width:9%; height:25%; left:1%; bottom:1%;">+++</div>    
+        <div id="trackBox" title = "TRACK" style="position:absolute; text-align: left; border:solid; line-height:140%;background-color:transparent;vertical-align:middle; position:absolute; font-size:8vh; color:black; width:89%; height:25%; left:10%; bottom:1%;">
+            <img id="iconSilent" title='SILENT' src="../../icons/transSilent.png" alt ="Track" onclick="setSoundMode('SILENT','transSilent.png')" style="position:absolute;left:0.5% ; width:9%;">
+            <img id="iconClick" title='CLICK TRACKS' src="../../icons/transClick.png" alt ="Track" onclick="setSoundMode('CLICK TRACK','blackClick.png')" style="position:absolute; left:10.5%; width:9%;">
+            <img id="iconcVocal" title='VOCAL TRACKS' src="../../icons/transVocal.png" alt ="Track" onclick="setSoundMode('VOCAL','blackVocal.png')" style="position:absolute; left:20.5%; width:9%;">
+            <img id="iconBack" title='BACK TRACKS' src="../../icons/transBackTrack.png" alt ="Track" onclick="setSoundMode('BACK TRACK','blackBackTrack.png')" style="position:absolute; left:30.5%; width:9%;">
+            <img id="iconRock" title='ROCK DRUM TRACK' src="../../icons/transRock.png" alt ="ROCK" onclick="setSoundMode('DRUM ROCK','blackRock.png')" style="position:absolute; left:40.5%; width:9%;">
+            <img id="iconCountry" title='COUNTRY DRUM TRACK' src="../../icons/transcountry.png" alt ="COUNTRY" onclick="setSoundMode('DRUM COUNTRY','blackCountry.png')" style="position:absolute; left:50.5%; width:9%;">
+            <!--<img id="iconCount" title='COUNT DRUM TRACK' src="../../icons/transcount.png" alt ="COUNT" onclick="setSoundMode('DRUM COUNT','blackCount.png')" style="position:absolute; left:60.5%; width:9%;">
+            -->
+            <img id="iconCount" title='COUNT DRUM TRACK' src="../../icons/transcount.png" onclick="bogus()"  alt ="COUNT"  style="position:absolute; left:60.5%; width:9%;">
+            </div>
+        </div> 
+<!--onclick="document.getElementById('buttonTrack').style.backgroundImage="url('../../Icons/blackSquare.png')"    onclick="document.getElementById('mirror').innerHTML='shit'"             -->
+<!--SONG BAR
+    <div id='songBar' style="position:fixed;border:solid; line-height:105%; background-color:yellow; font-size:1.5vh; text-align:center; top:25%; height:25%; left:12% ;width:30%; z-index:780;">
+        Single Song Settings
+        <div id="speed" onclick="listTempos();barSelect('tempo','TEMPO')" title = "BEATS/MIN" style="line-height:140%;width:24%;background-color:transparent; position:absolute; text-align:center; left:0%; bottom:0%; font-size:8vh; color:black; z-index:710">Key</div>
+        <img id="speedBackgrnd" onclick="listTempos();barSelect('tempo','TEMPO')" title = "TEMPO" src="../../icons/transWhiteCircle.png" alt ="-" style =  "position:absolute; bottom:0%; left:1% ;width:24%; opacity:1">
+        <div id='key'  onclick="barSelect('key-Selection')" title = "KEY" style="line-height:140%;width:24%;background-color:transparent; position:absolute; text-align:center; left:38%; bottom:15%; font-size:8vh; color:black; z-index:710">Key</div>
+        <img id="keyBackgrnd" onclick="barSelect('key-Selection')" title = "KEY" src="../../icons/transWhiteCircle.png" alt ="-" style = "position:absolute; bottom:0%; left:38% ;width:24%; opacity:1">
+        <img id='buttonTrack' title ='SOUND TRACK' src='../../icons/transTrackNo.png' alt ='track' onclick="barSelect('sound-track');dis('drumBar','none')"  style = "position:absolute; bottom:0%; right:1%; width:24%">
+        </div>  
+-->  
+<!--SONG ICONS-->    
+    <div id ='songIcons' style="font-size:8vh;position:fixed; display:block; z-index:700; background-color:transparent; top:6%; width:100%;  height:7%;">
+    <!--Top left-->  
+        <img id="lastIcon" src="../../icons/transPointerLeft.png" title = "PREVIOUS TUNE" onclick ="nextTune(-1)"  alt ="<" style="opacity:1; position:absolute; left:1%;bottom:0%;width:7%">
+        <img id="toolsIcon" src="../../icons/transCog.png" onclick="barSelect('configuration')" title ='SETTINGS'  alt ="Settings" style="position:absolute; left:9%;width:7vw;top:7%;">
+<!--
+<img id="mirrorIcon" onclick="barSelect('songBar2')" src="../../icons/transCircleWhite.png" alt='' style=" display:none;position:absolute; left:17%;width:7vw;top:7%;">
+<div id='mirrorTxt' onclick="barSelect('songBar2')" style="display:none;line-height:210%; position:absolute;text-align:center;background-color:transparent; left:17%;width:7vw;bottom:0%;height:100%;z-index:701">-</div>
+-->        
+        <div id='mirror' onclick="barSelect('songBar2')" style="line-height:210%; position:absolute;text-align:center;background-color:transparent;background-size:100% 100%;vertical-align:middle; background-image:url('../../icons/transWhiteCircle.png'); left:17%;width:7vw;top:7%;z-index:800">xxx</div>
+    
+    <!--Top Center-->   
+        <select id="mySet" onchange="selectTune(this.value)" title="Select Song" style="position:fixed; overflow:hidden; opacity:0.01; border-style:solid; border-color:black; border-width:thick; background-color:white; color:green; line-height:100%; text-align:left; font-weight:bold; top:7%; height:8%; left:25%; width:50%; z-index:701;"></select>
+        <div  id='TheTune' title='Select TITLE from your Play List' style='position:fixed;background-color:lightyellow; font-size:3vw; line-height:100%; color:green; border-style:solid; border-color:green; text-align:center; vertical-align:top; white-space:nowrap; overflow:hidden; font-weight:bold; top:6%; height:8%; left:25%; width:50%; overflow:hidden;'>
+            <div  id='myTune' title='Select TITLE from your Play List' style='position:fixed;background-color:lightyellow; font-size:3vw; line-height:100%; color:green; border-style:solid; border-color:green; text-align:center; vertical-align:top; white-space:nowrap; overflow:hidden; font-weight:bold; top:6%; height:8%; left:25%; width:50%; overflow:hidden;' >-</div> 
+            <img id="theTuneArrow" title='Select' src="../../icons/pointerDown.png" alt ="v"  style="position:absolute; right:0%;height:100%">
+            </div>
+        <div id="clock" style="position:fixed;line-height:120%;overflow:hidden;right:45%; top:25%; z-index:-10000;">CLOCK</div>
+        <div id="altSong" onclick="nextTune(1)" style="text-align:center; visibility:hidden; position:fixed; background-color:lightgrey; overflow:hidden; left:25%; font-size:3vw; border-style:solid; border-color:black; color:red; line-height:100%; top:15%; overflow:hidden; white-space:nowrap; height:8%; width:50%; z-index:-11000;">Alternate Song</div>
+        <div id="abet" style="text-align:center; display:none; position:fixed; background-color:lightgrey; overflow:hidden; left:25%; font-size:2vw; border-style:solid; border-color:black; color:white; line-height:100%; top:15%; overflow:hidden;  height:5%; width:50%; z-index:-11000;">
+            <div onclick="indexLetter('A')"style="text-align:center;position:absolute;left:0%; width:3.5%;top:0%">A</div>
+            <div onclick="indexLetter('B')"style="position:absolute;left:3.84%; width:3.5%;top:0%">B</div>
+            <div onclick="indexLetter('C')"style="position:absolute;left:7.7%; width:3.5%;top:0%">C</div>
+            <div onclick="indexLetter('D')"style="position:absolute;left:11.53%; width:3.5%;top:0%">D</div>
+            <div onclick="indexLetter('E')"style="position:absolute;left:15.38%; width:3.5%;top:0%">E</div>
+            <div onclick="indexLetter('F')"style="position:absolute;left:19.23%; width:3.5%;top:0%">F</div>
+            <div onclick="indexLetter('G')"style="position:absolute;left:23.07%; width:3.5%;top:0%">G</div>
+            <div onclick="indexLetter('H')"style="position:absolute;left:26.92%; width:3.5%;top:0%">H</div>
+            <div onclick="indexLetter('I')"style="text-align:center;position:absolute;left:30.7%; width:3.5%;top:0%">I</div>
+            <div onclick="indexLetter('J')"style="position:absolute;left:34.61%; width:3.5%;top:0%">J</div>
+            <div onclick="indexLetter('K')"style="position:absolute;left:38.46%; width:3.5%;top:0%">K</div>
+            <div onclick="indexLetter('L')"style="position:absolute;left:42.30%; width:3.5%;top:0%" >L</div>
+            <div onclick="indexLetter('M')"style="position:absolute;left:46.15%; width:3.5%;top:0%";>M</div>
+            <div onclick="indexLetter('N')"style="position:absolute;left:50.00%; width:3.5%;top:0%";>N</div>
+            <div onclick="indexLetter('O')"style="position:absolute;left:53.84%; width:3.5%;top:0%";>O</div>
+            <div onclick="indexLetter('P')"style="position:absolute;left:57.69%; width:3.5%;top:0%";>P</div>
+            <div onclick="indexLetter('Q')"style="position:absolute;left:61.3%; width:3.5%;top:0%";>Q</div>
+            <div onclick="indexLetter('R')"style="position:absolute;left:65.15%; width:3.5%;top:0%";>R</div>
+            <div onclick="indexLetter('S')"style="position:absolute;left:69%; width:3.5%;top:0%";>S</div>
+            <div onclick="indexLetter('T')"style="position:absolute;left:72.84%; width:3.5%;top:0%";>T</div>
+            <div onclick="indexLetter('U')"style="position:absolute;left:76.7%; width:3.5%;top:0%";>U</div>
+            <div onclick="indexLetter('V')"style="position:absolute;left:80.5%; width:3.5%;top:0%";>V</div>
+            <div onclick="indexLetter('W')"style="position:absolute;left:84.38%; width:3.5%;top:0%";>W</div>
+            <div onclick="indexLetter('X')"style="position:absolute;left:88.23%; width:3.5%;top:0%";>X</div>
+            <div onclick="indexLetter('Y')"style="position:absolute;left:92.07%; width:3.5%;top:0%";>Y</div>
+            <div onclick="indexLetter('Z')"style="position:absolute;left:95.91%; width:3.5%;top:0%";>Z</div>
+            </div>
+    <!--Top right-->     
+        <img id="ButtonTools" onclick="barSelect('tool')" title='TOOLS' src="../../icons/transTools.png" alt ="Admin Tools"  style="position:fixed; right:17%;top:7%; width:7vw">
+        <img id="ButtonHome" title ='HOME' src="../../icons/transHome.png" alt ="home" onclick="home()" style="position:fixed; right:9%;top:7%; width:7vw">    
+        <img id="nextIcon" src="../../icons/transPointerRight.png" title = "NEXT TUNE" onclick ="if(document.getElementById('altSong').style.visibility=='visible'){nextTune(2);}else{nextTune(1);}"  alt =">" style="opacity:1;  position:fixed; right:1%;top:7% ;width:7%"> 
+        </div>
+
+<!--TOOLS -->
+<!--INFORMATION  BAR-->   
+    <div id='information' style="display:none; font-size:2vw; line-height:130%; border-style:solid; text-align:left; position:fixed; left:5%; top:14%; width:90%; bottom:15%; color:black; overflow:hidden; z-index:7001;">
+    <div id='cloudHdr' style="line-height:130%; border-style:solid; text-align:left; position:absolute; left:0%; top:0%; width:100%; height:9%; background-color:darkgrey; color:white; overflow:hidden;"> 
+       <div id='cloudTitle' style=" position:absolute; font-size:2vw; line-height:130%; border-style:none; text-align:left;left:0%; top:0%; width:90%; height:100%; background-color:darkgrey; color:white; overflow:hidden;">Information Screen</div> 
+       <img id="ButtonCloseInfo" src="../../icons/blackClose.png" title="CLOSE" alt ="CLOSE" onclick ="dis('information')" style="position:absolute;right:0%;top:0%;height:100%;"></div>  
+       <div id='cloudX' style="font-size:2vw; line-height:130%; border-style:none; text-align:left; position:absolute; left:0%; top:10%; width:100%; bottom:0%; background-color:darkgrey; color:white; overflow-y:scroll">??????</div></div>
+
+<!--TOOL BAR -->
+    <div id="tool" style="position:fixed; font-size:2vw; display:none;border-color:darkgrey; border-style:ridge; border-width:thick; background-color:darkgrey; text-align:center;color:white; overflow:hidden; opacity:1; height:61%; width:90%; bottom:15%; left:5%; z-index:900;">
+        <img src ="../../Icons/blackClose.png" alt="X" onclick ="statusMsg(document.getElementById('tool').style.height),barSelect('none')" style="position:absolute;top:0%; right:0%; width:6%;z-index:1201;">
+        <div id="tools" style="position:absolute;visibility:visible; display:block; text-align:center; overflow:hidden; top:0%; left:0%; width:100%; height:33%">   
+            <div style="display:block; background-color:darkgrey; text-align:center; overflow:hidden; position:absolute; top:0%; left:0%; height:80%; width:100%; height:20%;">TOOLS</div>
+            <img src="../../icons/blackAdmin.png" title='FILE MAKER' alt ="XXX" onclick="fileMaster()" style="position:absolute;width:9%; height:70%;left:0.5%;bottom:0%;">
+            <img src="../../icons/blackPlayList.png" title='PLAYLIST BUILDER' alt ="PlayList" onclick ="passARR('playlist.html',SETname,null,null)" style="position:absolute; width:9%; height:70%;left:10.5%;bottom:0%;">
+            <img src="../../icons/blackEdit.png" title='EDITOR' alt ="Edit" onclick ="passARR('editor.html',ARRlines,'\n',null)" style="position:absolute;width:9%; height:70%;left:20.5%;bottom:0%;">
+            <img src="../../icons/blackSearch.png" title='INFO / RESEARCH' alt ="Info" onclick="passARR('Research.html',TITLE,'\n',null)" style="position:absolute;width:9%; height:70%;left:30.5%;bottom:0%;">
+            <img src="../../icons/blackSheet.png" title='OPEN BY EXACT NAME' alt ="open" onclick ="openSong()" style="position:absolute;width:9%; height:70%;left:40.5%;bottom:0%;">
+            <img src="../../icons/blackPrinter.png" title='PRINT' alt ="Print" onclick ="dis('prntType')" style="position:absolute;width:9%; height:70%;left:50.5%;bottom:0%;">
+            <input  onclick = "setUpListener()" title ="GET LOCAL FILE" type="file" id = "fileinput" style = " position:absolute; left:60.5%; height:80%; width:9%; height:70%; bottom: 0%; z-index: 1202; opacity:0.01">
+            <img src = "../../icons/blackRead.png" alt ="Get Local File" style=" position:absolute;width:9%; height:70%;left:60.5%;bottom:0%;"></div>
+        <div id="info" style="position:absolute; visibility: visible; display:block; text-align:center; overflow:hidden;top:33%; left:0%; width:100%; height:33%; z-index:1200">   
+            <div style="text-align:center; background-color:darkgrey; overflow:hidden; position:absolute; top:0%; left:0%; width:100%; height:20%;">INFORMATION</div>
+            <img id="ButtonHelp" title='HELP' src="../../icons/blackQuestion.png" alt ="Help"  onclick ="window.open('helpIndex.html')" style=position:absolute;width:9%;height:70%;left:0.5%;bottom:0%;">
+            <img id="ButtonAnalysis" title='SONG ANALYSIS' src="../../icons/blackInfo.png" alt ="LINKS" onclick="notePopUp(analizeSong(),'2vw','black','tan','No Analysis Available...','Song Analysis')" style=position:absolute;width:9%;height:70%;left:10.5%;bottom:0%;">
+            <img id="ButtonTech" title='TECHNICAL INFO' src="../../icons/violetNotePad.png" alt ="TECH NOTES" onclick="notePopUp(NOTEtech,'2vw','black','violet','No Technical Notes...','Technical Notes')" style=position:absolute;width:9%;height:70%;left:20.5%;bottom:0%;">
+            <img id="ButtonTrivia" title='TRIVIA' src="../../icons/yellowGift.png" alt ="TRIVIA NOTES" onclick="notePopUp(triviaNotes(),'2vw','black','yellow','No Trivia Notes...','Trivia Notes')" style=position:absolute;width:9%;height:70%;left:30.5%;bottom:0%;">
+            <img id='irbIcon' title='iREALb File (iRealb must be installed)' src = "../../icons/blackIRB.png" alt = "???" onclick = "iRealLink();notePopUp( '<u>Sent String to iRealb App...</u><br><br>'+IRB,'3vw','white','blue','ERROR',undefined,'iRealb screen...')" style=position:absolute;width:9%;height:70%;left:40.5%;bottom:0%;">
+            <img id="ButtonLinks" title='LINKS (Internet)' src="../../icons/blackLinks.png" alt ="LINKS" onclick="notePopUp(NOTElinks,'3vw','Blue','white','No links...','Internet Links')" style=position:absolute;width:9%;height:70%;left:50.5%;bottom:0%;">
+            <img id="ButtonHistory" src="../../icons/lightGreenHistory.png" title="REVISION HISTORY" alt ="HISTORY" onclick ="notePopUp('<pre>'+ getRevisonHistory()+'</pre>','1vw','black','lightgreen','Unable to access Revision History...','Revision History')" style=position:absolute;width:9%;height:70%;left:60.5%;bottom:0%;"></div>
+        <div id='prntType' style="position:absolute; display:none; font-size:1.5vw; left:50.5%; top:33%; height:66%; background-color:orange; width:9%; color:black; font-size:1.5vw; text-align:left; z-index:5000">    
+            <button onclick="passARR('print2.html',ARRlines,'\n','\n'+TITLE+'\n'+FONTSIZE)" style="position:absolute;width:100%;top:0%;height:16%;left:0%;width:100%">Std</button>
+            <button onclick="passARR('print2.html',ARRlines,'\n','(Full)\n'+TITLE+'\n'+FONTSIZE)" style="position:absolute;width:100%;top:16%;height:16%;left:0%;width:100%">Full</button>
+            <button onclick="passARR('print2.html',ARRlines,'\n','(Bass)\n'+TITLE+'\n'+FONTSIZE)" style="position:absolute;width:100%;top:32%;height:16%;left:0%;width:100%">Bass</button> 
+            <button onclick="passARR('print2.html',ARRlines,'\n','(Lyrics)\n'+TITLE+'\n'+FONTSIZE)" style="position:absolute;width:100%;top:48%;height:16%;left:0%;width:100%">Lyrics</button>
+            <button onclick="passARR('print2.html',ARRlines,'\n','(Chords)\n'+TITLE+'\n'+FONTSIZE)" style="position:absolute;width:100%;top:64%;height:16%;left:0%;width:100%">Chords</button>
+            <button onclick="printContent(),dis('prntType','none')" style="position:absolute;width:100%;top:80%;height:20%;left:0%;width:100%">As Shown</button></div></div>
+
+<!--LOOPING BAR-->      
+    <div id="looper" style="font-size: 1.4vw; position:fixed;  border:solid; opacity:0.4; right:10% ;Top:23% ;height:60%; width:5%;visibility:hidden;z-index:800">
+        <img id = 'loopImg' alt="@" src="../../icons/transOnePlay.png" style="position:absolute;width:100%;top:3%" onclick="loopMode()">
+        <div id='lt' style="position:absolute;width:100%;text-align: center;top:20%">0.00</div>
+        <img  alt="^" src="../../icons/transup.png" style="position:absolute; width:100%; bottom:52%" onclick="loopMarkTop()"><br>
+        <img alt="v" src="../../icons/transdown.png" style="position:absolute; width:100%; top:52%" onclick="loopMarkEnd()"><br>
+        <div id='le' style="position:absolute;width:100%;text-align: center;bottom:20%">End</div>
+        <img alt="?" id = 'loopInfo' src="../../icons/transInfo.png" style="position:absolute;width:100%;bottom:3%" onclick="loopMsg('true')">
+        </div>
+
+<!--KEY SELECTOR   
+    <div id ="key-Selection" style="display:none; position:fixed; border:solid; background-color:lightgrey; color:black; bottom:20%; left:1%; width:98%; height:10%; z-index:1090">
+        <img onclick="newKey('A')" src='../../icons/KeyA.png' alt='A' style='position:absolute; top:10%; width:7%; left:0%'>
+        <img onclick="newKey('Bb')" src='../../icons/KeyBb.png'  alt='Bb' style='position:absolute; top:10%; width:7%; left:8%'>
+        <img onclick="newKey('B')" src='../../icons/KeyB.png'  alt='B' style='position:absolute; top:10%; width:7%; left:16%'>
+        <img onclick="newKey('C')" src='../../icons/KeyC.png'  alt='C' style='position:absolute; top:10%; width:7%; left:24%'> 
+        <img onclick="newKey('C#')" src='../../icons/KeyCs.png'  alt='C#' style='position:absolute; top:10%; width:7%; left:32%;'>
+        <img onclick="newKey('D')" src='../../icons/KeyD.png'  alt='D' style='position:absolute; top:10%; width:7%; left:40%'>
+        <img onclick="newKey('Eb')" src='../../icons/KeyEb.png'  alt='Eb' style='position:absolute; top:10%; width:7%; left:48%'>
+        <img onclick="newKey('E')" src='../../icons/KeyE.png'  alt='F' style='position:absolute; top:10%; width:7%; left:56%'>
+        <img onclick="newKey('F')" src='../../icons/KeyF.png'  alt='F'style='position:absolute; top:10%; width:7%; left:64%'>
+        <img onclick="newKey('F#')" src='../../icons/KeyFs.png'  alt='F#' style='position:absolute; top:10%; width:7%; left:72%'>
+        <img onclick="newKey('G')" src='../../icons/KeyG.png'  alt='G' style='position:absolute; top:10%; width:7%; left:80%'>
+        <img onclick="newKey('Ab')" src='../../icons/KeyAb.png'  alt='Ab'style='position:absolute; top:10%; width:7%; left:88%'>
+        <img onclick="newKey('N')" src='../../icons/KeyN.png'  alt='N' style='position:absolute; bottom:0%; width:5%; left:95%;'>
+        </div>
+    -->       
+<!--TEMPO BAR-->
+<!--
+    <div id ="tempox" style="position:fixed; visibility:visible;display:none; border: solid; border-color:black; text-align:center; background-color:lightgrey; font-size:4vw; line-height:130%; color:black; bottom:20%; right:1%; height:50%; width:98%; z-index:1090">
+       ---</div>
+-->
+
+<!--SOUND TRACK ICON
+    <div id="sound-track" style="position:fixed; border: solid; border-color:black; display:none; background-color:yellow;overflow:hidden;bottom:40%; left:10%; width:80%; height:7%; z-index:990">   
+        <img id="iconSilent" title='SILENT' src="../../icons/transSilent.png" alt ="Track" onclick="setSoundMode('SILENT','transSilent.png')" style="position:absolute; bottom:0%; width:10%;">
+        <img id="iconClick" title='CLICK TRACKS' src="../../icons/transClick.png" alt ="Track" onclick="setSoundMode('CLICK TRACK','blackClick.png')" style="position:absolute; left:10%; bottom:0%; width:10%;">
+        <img id="iconcVocal" title='VOCAL TRACKS' src="../../icons/transVocal.png" alt ="Track" onclick="setSoundMode('VOCAL','blackVocal.png')" style="position:absolute; left:20%; bottom:0%; width:10%;">
+        <img id="iconBack" title='BACK TRACKS' src="../../icons/transBackTrack.png" alt ="Track" onclick="setSoundMode('BACK TRACK','blackBackTrack.png')" style="position:absolute; left:30%; bottom:0%; width:10%;">
+        <img id="iconRock" title='ROCK DRUM TRACK' src="../../icons/transRock.png" alt ="ROCK" onclick="setSoundMode('DRUM ROCK','blackRock.png')" style="position:absolute; left:40%; bottom:0%; width:10%;">
+        <img id="iconCountry" title='COUNTRY DRUM TRACK' src="../../icons/transcountry.png" alt ="COUNTRY" onclick="setSoundMode('DRUM COUNTRY','blackCountry.png')" style="position:absolute; left:50%; bottom:0%; width:10%;">
+        <img id="iconCount" title='COUNT DRUM TRACK' src="../../icons/transcount.png" alt ="COUNT" onclick="setSoundMode('DRUM COUNT','blackCount.png')" style="position:absolute; left:60%; bottom:0%; width:10%;">
+        </div>  -->
+        
+<!--VOLUME CONTROL-->    
+    <div  id= "volCtrl" style="position:fixed; border:solid; opacity:0.4; right:2% ;Top:23% ;height:60%; width:5%;visibility:hidden;z-index:800">
+        <img src="../../icons/loadingHorizontal.gif" alt =">>>" id ="fadeIcon" style="position:absolute; visibility:visible; right:3%; Top:0%; height:3%; width:94%">
+        <div id = "V" onclick="fade('x')" style="position:absolute; right:3%; Top:3%; background-color:white; height:12%; width:94%;text-align:center; font-size:4vh">--</div>
+        <img src="../../icons/SliderBackGrnd2.png" alt ="???" id ="SBG" style="position:absolute; right:3%; Top:15%; height:70%; width:94%;">
+        <img src="../../icons/transparent.png" alt ="???" id = "SUp" onclick ="volSet(-1)" style="position:absolute; background-color:transparent; right:3%; bottom:15%; height:35%; width:94%;  z-index: 2">
+        <img src="../../icons/transparent.png" alt ="???" id = "SDn" name = "SDn" onclick ="volSet(+1)" style="position:absolute; background-color:transparent; left:3% ;bottom:15%; height:70%; width:94%; z-index:1;">
+        <img src="../../icons/blackSpeaker.png" alt ="???" id = "SK" name = "SK"  style="position:absolute; right:15% ;bottom:45%; height:10%; width:70%">
+        <img src="../../Icons/On.png" id ="soundOO" alt = "" onclick="volSet(10);" style="position:absolute; top:85%; width:94%; height:15%; right:3%;">
+        </div>    
+<!--THE TUNE BODY-->    
+    <div id="Tune" style="visibility:visible; position:fixed; left:0%; height:100%; width:100%; top:0%; overflow-y:scroll; z-index:10"> 
+        <div id="content" style="width:100%; z-index:10;">???</div>
+        </div>
+<!--PRIMARY CONFIGURATION BOX-->    
+    <div id="configuration" style="position:fixed; font-size:2vw; display:block; border-style:ridge; border-width:thick; background-color:darkgrey; text-align:center; overflow:hidden; opacity:1; height:61% ; width:90%; bottom:15%; left:5%; z-index:900;">
+        <div style="color:white;">PERFORMER: CONFIGURATION (BASIC SETTINGS) </div>
+        <div style="position:absolute; text-align:center; width:45%; left:1%; top:13%; font-size:2vw" id = 'soundBox'>--SOUND BOX---</div>
+        <div id="setSelectA" style="position:absolute;text-align:center; top:13%; font-size:2vw; right:1%; width:45% ">--SET LIST--</div>
+        <div id="revStatus" onclick="revDetails()" style="position:absolute;text-align:center; top:6%; font-size:2vw; right:10%; width:80%; color:blue;">Revision</div>
+        <img src ="../../Icons/blackClose.png" alt="X" onclick ="barSelect('none')" style="position:absolute;top:0%; right:0%; width:6%;">
+        <div style="color:white; position:absolute; line-height:100%; left:1%; bottom:35%; height:31%; width:98%; border:groove;">
+            Display Format
+            <a onclick ="setCustom('CAPS','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; left:0.5%; color:white; opacity:1;z-index:1;">ALL<br>CAPS</a>
+                <img src ="../../Icons/On.png" id ="imgCAPS"  alt = "" style="position:absolute; bottom:1%; left:0.5%; height:70%; width:9%;">
+            <a  onclick ="setCustom('HILITE','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; left:10%; color:white; opacity:1;z-index:1"> Hi-Lite<br>Chords</a>
+                <img src ="../../Icons/Off.png" id ="imgHILITE"  alt = "" style="position:absolute; bottom:1%; left:10%; height:70%; width:9%;">
+            <a  onclick ="setCustom('FULLscreen','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; left:20%; color:white; opacity:1;z-index:1;">Full<br>Screen</a>
+                <img src ="../../Icons/Off.png" id ="imgFULLscreen"  alt = "" style="position:absolute; bottom:1%; left:20%; height:70%; width:9%;">
+            <a  onclick ="setCustom('LEFTborder','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; left:30%; color:white; opacity:1;z-index:1;">Left<br>Border</a>
+               <img src ="../../Icons/Off.png" id ="imgLEFTborder"  alt = "" style="position:absolute; bottom:1%; left:30%; height:70%; width:9%;">
+            <a  onclick ="setCustom('CLOCK','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; left:40%; color:white; opacity:1;z-index:1">Show<br>Clock</a>   
+                <img src ="../../Icons/Off.png" id ="imgCLOCK"  alt="" style="position:absolute; bottom:1%; left:40%; height:70%; width:9%;">
+            <div  id='bcp' onclick ="setCustom('BIGchords','','refresh');" style="position:absolute;text-align:center; top:42%; height:65%; width:18%; left:60.5%;color:white;z-index:9;">Spread & Size<br>Chords</div>
+                <img src ="../../Icons/Off.png" id ="imgBIGchords"  alt = "" style="position:absolute; bottom:1%; left:61%; height:70%; width:18%;z-index:4;">
+                <div id='bigChordPct' onclick="bcPct()" style="position:absolute; line-height:160%;text-align:center;background-color:transparent; top:45%; height:70%; width:8%; left:70.5%; color:black;z-index:3;">100%</div>
+                <img src ="../../Icons/yellow.png" id ="imgChordPct"  alt = "" style="position:absolute; bottom:1%; left:70%; height:70%; width:9%;z-index:1;">
+            <a  onclick ="setCustom('SHADE','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; left:80%; color:white; opacity:1;z-index:1;">Shade<br>Screen</a>   
+                <img src ="../../Icons/OFF.png" id ="imgSHADE"  alt = "" style="position:absolute; bottom:1%; left:80%; height:70%; width:9%">
+            <a  onclick ="setCustom('NOTES','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:9%; right:0.5%; color:white; opacity:1;z-index:1;">Show<br>Notes</a>
+                <img src ="../../Icons/Off.png" id ="imgNOTES"  alt = "" style="position:absolute; bottom:1%; width:9%; right:0.5%; height:70%;">
+            </div>          
+        <div style="color:white;position:absolute;line-height:100%; left:1% ;bottom:1%; height:31%;width:22%; border: groove;">
+            Auto Pop-ups
+            <a  onclick ="setCustom('SETnotes','')"  style="position:absolute; text-align:center; top:42%; height:40%; width:32%; left:1%; color:white; opacity:1;z-index:1;">SET<br>Notes</a>
+                <img src ="../../Icons/Off.png" id ="imgSETnotes"  alt = "" style="position:absolute; bottom:1%; left:1%; height:70%; width:32%">
+            <a  onclick ="setCustom('POPnotes','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:32%; left:34%; color:white; opacity:1;z-index:1;">Triv<br>Notes</a>
+                <img src ="../../Icons/Off.png" id ="imgPOPnotes"  alt = "" style="position:absolute; bottom:1%; left:34%; height:70%; width:32%;">
+            <a  onclick ="setCustom('TECHnotes','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:32%; right:1%; color:white; opacity:1;z-index:1;">Tech<br>Notes</a>
+                <img src ="../../Icons/Off.png" id ="imgTECHnotes"  alt = "" style="position:absolute; bottom:1%; right:1%; height:70%; width:32%;">
+            </div>  
+        <div style="color:white;position:absolute;line-height:100%; left:24% ;bottom:1%; height:31%;width:25%; border: groove;">
+            Automation
+            <a  onclick ="setCustom('AUTOnext','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:32%; left:1%; color:white; opacity:1;z-index:1">Auto<br>Next</a>
+                <img src ="../../Icons/Off.png" id ="imgAUTOnext"  alt = "" style="position:absolute; bottom:1%; left:1%; height:70%; width:32%;">
+            <a  onclick ="setCustom('COUNTin','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:32%; left:34%; color:white; opacity:1;z-index:1">Count<br>In</a>
+                <img src ="../../Icons/Off.png" id ="imgCOUNTin"  alt = "" style="position:absolute; bottom:1%; left:34%; height:70%; width:32%;">        
+            <a  onclick ="setCustom('CLICKER','','click')"  style="position:absolute; text-align:center; top:42%; height:40%; width:32%; left:67%; color:white; opacity:1;z-index:1">Click<br>Sound</a>
+                <img src ="../../Icons/Off.png" id ="imgCLICKER"  alt = "" style="position:absolute; bottom:1%; left:67%; height:70%; width:32%;">
+            </div>
+        <div style="color:white;position:absolute;line-height:100%; left:51%; bottom:1%; height:31%; width:48%;border: groove;">
+            Growth and New Functions....
+            <a  onclick ="dis('configuration2','block')"  style="position:absolute; text-align:center; bottom:1%; height:100%; width:15%; right:1%; color:white;z-index:1">ADV!</a>
+                <img src ="../../Icons/advanced.png" alt='?' title='ADVANCED and EXPERIMENTAL STUFF' style="visibility:visible;position:absolute;bottom:1%; right:1%; height:70%; width:15%;">
+            </div>   
+<!--SCONDARY CONFIGURATION BOX-->
+        <div id="configuration2" style="display:none; position:fixed;font-size:2vw; border-style:ridge; border-width:thick; background-color:darkgrey; text-align:center; overflow:hidden; opacity:1; height:61% ;width:90%; bottom:15%; left:5%; z-index:910;">    
+            <div>PERFORMER: CONFIGURATION (ADVANCED SETTINGS)</div>
+            <img src ="../../Icons/blackClose.png" alt="X" onclick ="dis('configuration2','none');barSelect('none')" style="position:absolute;top:0%; right:0%; width:6%;">
+            <div style="color:white;position:absolute;line-height:100%; left:1%; bottom:35%; height:31%; width:22%; border: groove;">
+                Line Numbers
+                <a  onclick ="setCustom('LINEtime','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:45%; left:2%; color:white; opacity:1;z-index:1;">Line<br>Time</a>
+                    <img src ="../../Icons/Off.png" id ="imgLINEtime"  alt = "" style="position:absolute; bottom:1%; left:2%; height:70%; width:45%;">
+                <a  onclick ="setCustom('LINEnum','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:45%; right:2%; color:white; opacity:1;z-index:1;">Line<br>Num</a>
+                    <img src ="../../Icons/Off.png" id ="imgLINEnum"  alt = "" style="position:absolute; bottom:1%; right:2%; height:70%; width:45%;">
+                </div>
+            <div style="color:white;position:absolute; line-height:100%; left:1%; bottom:1%; height:31%; width:98%; border: groove;">
+                INWORK CRAP....
+                <a  onclick ="setCustom('KARAOKE','','refresh')" style="position:absolute; text-align:center; top:42%; height:40%; width:10%; left:36%; color:white; opacity:1;z-index:1;">Karaoke<br>Mode</a>   
+                    <img src ="../../Icons/OFF.png" id ="imgKARAOKE"  alt = "" style="position:absolute; bottom:1%; left:36%; height:70%; width:10%;">
+                <a  onclick ="setCustom('BACKdrop','','refresh')"  style="position:absolute; text-align:center; top:42%; height:40%; width:10%; left:48%; color:white; opacity:1;z-index:1;">Back<br>Drop</a>
+                    <img src ="../../Icons/Off.png" id ="imgBACKdrop"  alt = "" style="position:absolute; bottom:1%; left:48%; height:70%; width:10%;">
+                <a  onclick ="setCustom('LOOPER','','refresh')"  style="position:absolute; text-align:center; top:42%; height:40%; width:10%; left:72%; color:white; opacity:1;z-index:1;">Loop<br>---</a>
+                    <img src ="../../Icons/Off.png" id ="imgLOOPER"  alt = "" style="position:absolute; bottom:1%; left:72%; height:70%; width:10%;">
+                <a  onclick ="dis('configuration2','none')"  style="position:absolute; text-align:center; bottom:0%; height:100%; width:8%; right:1%; color:white; opacity:1; z-index:1;">BASIC</a>
+                    <img src ="../../Icons/primative.png" alt='?' style="position:absolute; bottom:1%; right:1%; height:70%; width:8%;">
+                </div> 
+            </div>   
+        </div>        
+<SCRIPT type="text/javascript" SRC = "help.js"></script>
+<SCRIPT type="text/javascript" SRC = "NextPlayer.js"></script><!--change the file name at revision...-->
+    
+</body></html>

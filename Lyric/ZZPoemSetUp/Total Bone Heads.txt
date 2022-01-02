@@ -1,0 +1,1 @@
+red|5|8|center|cursive|140%|1000|1000
