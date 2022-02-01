@@ -6,3 +6,17 @@
     <a onclick="parseAndLoad('The Great Cabal2')">...The Great Cabal</a>
     <a onclick="parseAndLoad('Interrupted Journey')">...Interrupted Journey</a>
     <a onclick="parseAndLoad('Total Bone Heads')">...Total Bone Heads</a>
+    <a onclick="parseAndLoad('Inwork A')">...Inwork A </a>
+    <a onclick="parseAndLoad('Inwork B')">...Inwork B</a>
+    <a onclick="parseAndLoad('Inwork B')">...Inwork C</a>
+    <a onclick="stepFileLoad('TBH')">TBH STEP C</a>
+>>>
+black|3.0|0|center|cursive|100|1000|1000
+color|font|margin|align|family|height|picHeight|picWidth
+>>>
+FRMnum|PICid|FRMtime|FRMdis|FRMleft|FRMtp|FRMwid
+1|1|4|'block'|2|2|20
+1|2|8|'none'|2|2|20
+
+
+>>>

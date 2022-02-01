@@ -1,0 +1,6 @@
+color|font|left|align|top|align|family|picVh|time
+black|2|1|left|cursive|200%|50|yada<br>yada<br>yada<br>yada<br>yada<br>yada|10000
+red|2|1|left|cursive|200%|50|HiHo<br>HiHo<br>HiHo<br>HiHo<br>HiHo<br>HiHo<br>HiHo|10000
+purple|2|1|left|cursive|200%|50|yada<br>yada<br>yada<br>yada<br>yada<br>yada|10000
+green|2|1|left|cursive|200%|50|yada<br>yada<br>yada<br>yada<br>yada<br>yada|10000
+orange|2|1|left|cursive|200%|50|yada<br>yada<br>yada<br>yada<br>yada<br>yada|10000

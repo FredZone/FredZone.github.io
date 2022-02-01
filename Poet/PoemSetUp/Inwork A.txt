@@ -1,2 +1,2 @@
-green|3.0|0|center|cursive|200|1000|1000
+black|2|1|left|cursive|200%|1000|1000
 color|font|margin|align|family|height|picHeight|picWidth

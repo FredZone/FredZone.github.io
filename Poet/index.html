@@ -33,22 +33,21 @@
 </head>
 <body onresize=resize()>
 <div id='recordDiv' onclick="record()" style='position:absolute; display:none;background-color:yellow; width:20%; height:20%;left:0%;top:0%;z-index:50000'> Record...</div>    
-<div id='emergencyDiv' onclick="dis('player','block')" style='position:absolute; display:block;background-color:transparent; width:20%; height:20%;left:0%;top:0%;z-index:49000'></div>    
-
+<div id='emergencyDiv' onclick="dis('player','block')" style='position:absolute; display:block;background-color:transparent; width:20%; height:20%;left:0%;top:0%;z-index:49000'></div> <!--bring player back-->  
 <img id='stopRecord' onclick="recordMode(false)" src='../Icons/blackClose.png' style='position:absolute; display:none; width:10%; right:0%;top:0%;z-index:50000'>  -->     
 <img id='test' onclick=alert('test') src='../Icons/blackClose.png'style='position:absolute; display:none; width:3%; right:0%;top:0%;z-index:50000'>  -->     
-<div id='world' style="padding:0;margin:0;position:fixed;display:block;font-size:2.2vw; background-color:lightgrey; color:black; top:0%; left:0%; width:100%; height:100%; z-index:0; overflow:hidden">
-
+    <div id='world' style="padding:0;margin:0;position:fixed;display:block;font-size:2.2vw; background-color:lightgrey; color:black; top:0%; left:0%; width:100%; height:100%; z-index:0; overflow:hidden">
         <div id="msg" style="position:absolute;text-align:left; display:none; font-size:3vw;background-color:transparent; color:red; top:0%; left:5%; width:95%; height:5%;overflow:hidden;border:solid;z-index:22000">msg</div>
         <div id='player' style='position:absolute;line-height:150%;font-size:3vw;background-color:grey;  display:block;text-align: center;left:0%;height:4%;width:100vw;bottom:0%;z-index:8000'>
-               <!--<img id='resetButton' onclick='trackReset()' src='../Icons/transReset.png' style='position:absolute;display:block;left:0%;bottom:0%;width:7vh;z-index:20;'>-->
-                <button id='resetButton' onclick='trackReset()' style='color:black;position:absolute;display:block;left:0%;top:0%;width:20%;height:100%;z-index:20;'><b>RESET</b></button>
-                <button id='playButton' onclick='trackPlay()' style='position:absolute;display:block;left:20%;top:0%;width:20%;height:100%;z-index:20;'><b>PLAY</b></button>
-                <button id='pauseButton' onclick='trackPause()' style='color:black;position:absolute;display:block;left:20%;top:0%;width:20%;height:100%;z-index:20;'><b>STOP</b></button>
-                <button id='settingsButton' onclick="dis('ctrl')" style='color:black;position:absolute;display:block;left:40%;top:0%;width:20%;height:100%;z-index:20;'><b>SETUP</b></button> 
-                <button id='homeButton' onclick="parseAndLoad('The Poet')" style='color:black;position:absolute;display:block;left:60%;top:0%;width:20%;height:100%;z-index:20;'><b>HOME</b></button>     
-                <button id='fullButton' onclick="launchIntoFullscreen(document.documentElement),mode('full')"style='color:black;position:absolute;line-height:150%;line-height:100%;display:block;left:80%;top:0%;width:20%;height:100%;z-index:20;'><b>FULL</b></button>
-                <button id='smallButton' onclick="closeFullscreen(document.documentElement),mode('small')"style='color:black;position:absolute;line-height:100%;display:none;left:80%;top:0%;width:20%;height:100%;z-index:20;'><b>SMALL</b></button>
+            <!--<img id='resetButton' onclick='trackReset()' src='../Icons/transReset.png' style='position:absolute;display:block;left:0%;bottom:0%;width:7vh;z-index:20;'>-->
+             <button id='resetButton' onclick='trackReset()' style='color:black;position:absolute;display:block;left:0%;top:0%;width:10%;height:100%;z-index:20;'><b>RESET</b></button>
+             <button id='playButton' onclick='trackPlay()' style='position:absolute;display:block;left:10%;top:0%;width:10%;height:100%;z-index:20;'><b>PLAY</b></button>
+                 <button id='pauseButton' onclick='trackPause()' style='color:black;position:absolute;display:block;left:10%;top:0%;width:10%;height:100%;z-index:20;'><b>STOP</b></button>
+             <button id='settingsButton' onclick="dis('ctrl')" style='color:black;position:absolute;display:block;left:20%;top:0%;width:20%;height:100%;z-index:20;'><b>Scroll SETUP</b></button> 
+              <button id='StepSetupButton' onclick="dis('stepctrl')" style='color:black;position:absolute;display:block;left:40%;top:0%;width:20%;height:100%;z-index:20;'><b>Step SETUP</b></button> 
+             <button id='homeButton' onclick="parseAndLoad('The Poet')" style='color:black;position:absolute;display:block;left:60%;top:0%;width:20%;height:100%;z-index:20;'><b>HOME</b></button>     
+             <button id='fullButton' onclick="launchIntoFullscreen(document.documentElement),mode('full')"style='color:black;position:absolute;line-height:150%;line-height:100%;display:block;left:80%;top:0%;width:20%;height:100%;z-index:20;'><b>FULL</b></button>
+             <button id='smallButton' onclick="closeFullscreen(document.documentElement),mode('small')"style='color:black;position:absolute;line-height:100%;display:none;left:80%;top:0%;width:20%;height:100%;z-index:20;'><b>SMALL</b></button>
         </div>   
 
         <div id='ctrl' style='position:absolute;line-height:150%;font-size:4vw;color:white; display:none;text-align: center;left:0%;height:4%;width:100%;top:96%;z-index:8005'>
@@ -68,17 +67,23 @@
                 </div>
                 <img src='../Icons/resetSpinner.gif' alt="thinking..." style='position:absolute; width:25%;top:25%; left:37%;z-index:0'>
         </div> 
+        
         <div id='think' style="position:absolute;opacity:0.9;display:none;text-align:center;font-size:8vh;background-color:lightgrey; top:0%; left:0%; width:100%; height:100%; z-index: 9000">
                 <div style='position:absolute;width:100%;top:45%;z-index:5;'>...THINKING...</div>
                 <img src='../Icons/resetSpinner.gif' alt="thinking..." style='position:absolute;width:25%;top:25%; left:37%'>
         </div>        
-
-        <div id="scroller" class='example' style="display:block;background-image:url('PoemPics/Background.jpg');background-repeat:no-repeat;background-size:cover; position:absolute;left:0%; top:0%; width:100%;height:100%; overflow-y:scroll; background-color:lightgrey;overflow-x:hidden; z-index:100;">
-                <div id="content" style="position:absolute; font-family: cursive;font-weight: bold;white-space: pre; text-align: center; left:2%; width:100%; top:0%;background-color:transparent;overflow:hidden; z-index:5000;">
-                        YOUR content APPEARS HERE! <!--left:0%; top:0%; width:100%;height:100%;-->
-                </div>
+        
+        <img id="frm1"src="PoemPics/Total Bone Heads 1.jpg" style="position:absolute;left:1vw;top:5vh;width:20vw;display:none;z-index:101">
+        <img id="frm2"src="PoemPics/Total Bone Heads 1.jpg" style="position:absolute;left:1vw;top:55vh;width:20vw;display:block;z-index:101">
+        <img id="frm3"src="PoemPics/Total Bone Heads 1.jpg" style="position:absolute;left:79vw;top:5vh;width:20vw;display:none;z-index:101">
+        <img id="frm4"src="PoemPics/Total Bone Heads 1.jpg" style="position:absolute;left:79vw;top:55vh;width:20vw;display:none;z-index:101">
+        
+        <div id="scroller" class='example' style="display:block;background-image:url('PoemPics/Background.jpg');background-repeat:no-repeat;background-size:cover; position:absolute;left:0%; top:0%; width:100%;height:100%; overflow-y:scroll; background-color:lightgrey;overflow-x:hidden; z-index:10;">
+            <div id="content" style="position:absolute; font-family: cursive;font-weight: bold;white-space: pre; text-align: center; left:2%; width:100%; top:0%;background-color:transparent;overflow:hidden; z-index:5000;">
+                YOUR content APPEARS HERE! <!--left:0%; top:0%; width:100%;height:100%;-->
+            </div>
         </div>
-        </div>
+    </div>
         <audio id="Audio1" controls="true" preload="metadata" style="position:absolute;display:none;text-align:center; bottom:0%;width:30%;right:35%;z-index:779; opacity:1;background-color:transparent"></audio>
 </div>      
         <div id="ctrl1" style="position:absolute; display:none;text-align:left; font-size:2vh;background-color:black; color:white; top:20%; left:20%; width:40%; height:75%;overflow-y:scroll;overflow-x:hidden; z-index:20000">
@@ -111,17 +116,12 @@
                 </div> 
     </div><!-- -->
 
-<!-- ==================================================================================================================-->
-
 
 </body>
 
 <script type="text/javascript">
+//==================================================================================================================
 /*-@ */
-var ARRpics="5000@tgc01,10000@tgc02,15000@Background,20000@Custers Savior".split(',')
-PICnew=""
-var PICtime=10000000
-var PICno=0
 var RECORD=false;
 var TEXT=true;
 var VOICE=true;
@@ -144,6 +144,7 @@ var ASPECTfld;
 var LONGESTline=70;
 var PICheight;
 var PICwidth;
+//Screen format
 var TXTcolor;
 var TXTfont;
 var TXTfontAdj
@@ -152,6 +153,191 @@ var TXTalign;
 var TXTfamily;
 var TXTheight;
 var MODE;
+var CONTENT=""
+var SCREENsteps="1,2,3,4".split(",");
+var STEPno;
+var STEPtxt;
+var ELEM;
+//FRAME========================
+var FRMnum=1
+var FRMpic =1;
+var FRMtime=0;
+var FRMdis='false';
+var FRMleft=2;
+var FRMtp=2;
+var FRMwid=25;
+var FRMnext=1
+var FRMnextTime
+
+
+
+
+window.onload = function() {//default poem
+        mode('boot')
+        setTimeout(function() {
+             parseAndLoad ('The Poet')
+        }, 100);
+        VOLUME=(Audio1.volume)
+        }
+
+function parseAndLoad(str) {
+        mode('think')
+        TITLE = str
+        dta=fileDownload("Poems/" + TITLE + ".txt").split(">>>")
+        CONTENT=dta[0]
+        SETup = dta[1].split('|')
+        FRM=dta[2].split('|')
+        
+        
+        alert(dta[2])
+        TXTcolor=SETup[0];
+        TXTfont=SETup[1];
+        TXTmargin=SETup[2];
+        TXTalign=SETup[3];
+        TXTfamily=SETup[4];
+        TXTheight=SETup[5];
+        PICheight = SETup[6];
+        PICwidth = SETup[7];
+
+    //set up the pictures    
+    
+       // FRMname=FRM[0]
+        //FRMnum=FRM[1]
+        //FRMtime=FRM[2]
+        //FRMdis=FRM[3]
+        //FRMleft=FRM[4]
+        //FRMtp=FRM[5]
+        //FRMwid=FRM[6]
+        var FRMnext=0
+        //var FRMgo=FRMtime
+        config();
+        
+}       
+
+
+function frmShow(){
+document.getElementById("frm"+x).style.display='block'
+    
+}
+
+function frmQue(){
+    FRMname=FRM[0]
+    FRMnum=FRM[1]
+    FRMtime=FRM[2]
+    FRMdis=FRM[3]
+    FRMleft=FRM[4]
+    FRMtp=FRM[5]
+    FRMwid=FRM[6]
+    var FRMnext=FRMnext+1   
+}
+
+
+
+
+function config() {
+        if (PICTURE == false) {
+                ChangeBackgroungImageOfTab('scroller', 'The Poet(2)')
+        }
+        else {
+                ChangeBackgroungImageOfTab('scroller', TITLE)
+        }
+        if (TEXT==false) {dis('content','none')}else{dis('content','block')}
+        if (VOICE == true) {Audio1.volume=1}else{Audio1.volume=0}
+        document.getElementById('Audio1').src = "PoemTracks/" + TITLE + ".mp3"
+        document.getElementById('content').innerHTML = CONTENT
+        document.getElementById('content').style.color=TXTcolor; //0
+        document.getElementById('content').style.fontSize=TXTfontAdj+'vw';//1
+        document.getElementById('content').style.left=TXTmargin+'%'//2
+        document.getElementById('content').style.textAlign =TXTalign;//3
+        document.getElementById('content').style.fontFamily =TXTfamily;//4
+        document.getElementById('content').style.lineHeight =TXTheight+'%'//5
+        if (TEXT=='false') {dis('scroller','none')}
+        setTimeout(function() {
+              resize(), scrollSetup(),mode('ready');
+        }, 1000);
+}
+
+function resize() {
+        var fh;
+        var fw;
+        var elmnt = document.getElementById("world");
+        if (RECORD==true){
+                document.getElementById("scroller").style.width = '100%';
+                document.getElementById("scroller").style.height = '100%';
+        }else{
+                fh = 0.96*elmnt.clientHeight;
+                fw = elmnt.clientWidth;
+                ASPECTpic = PICheight / PICwidth;
+                ASPECTfld = fh / fw;
+                if (ASPECTpic >= ASPECTfld) {//landscape
+                        TXTfontAdj=TXTfont*(ASPECTfld/ASPECTpic)
+                        var w = parseInt((fh / PICheight) *PICwidth, 10)
+                        document.getElementById("scroller").style.height = fh + 'px';
+                        document.getElementById("scroller").style.top = '0px';
+                        document.getElementById("player").style.width=w + 'px';
+                        document.getElementById("ctrl").style.width=document.getElementById("scroller").style.width = w + 'px';
+                        document.getElementById("ctrl").style.left=document.getElementById("player").style.left= document.getElementById("scroller").style.left = parseInt((fw - w) / 2, 10) + 'px';
+                        
+                document.getElementById("player").style.top = '96%';
+                } else {//phone
+                        TXTfontAdj=TXTfont
+                        var h = parseInt((fw / PICwidth) * PICheight, 10);
+                        document.getElementById("scroller").style.width = fw + 'px';
+                        document.getElementById("scroller").style.left = '0%';
+                        document.getElementById("scroller").style.height = h + 'px';
+                        document.getElementById("scroller").style.top = '0px';
+                        document.getElementById("player").style.top = parseInt(h , 10) + 'px';
+                        document.getElementById("ctrl").style.width=document.getElementById("player").style.width= '100%';
+                        document.getElementById("ctrl").style.left=document.getElementById("player").style.left= '0%';
+                }
+        }
+        document.getElementById('content').style.fontSize=TXTfontAdj+"vw"     
+        syncTrack()
+}
+
+function syncTrack(){
+        var WINDht= scroller.offsetHeight
+        PAGEht = document.getElementById("content").clientHeight; 
+        SCROLLpix = parseInt(PAGEht - (WINDht), 10);
+        Ypos =SCROLLpix*document.getElementById('Audio1').currentTime/DUR
+        SCROLLkon = DUR * 1000 / SCROLLpix; // microseconds per pixel
+}
+
+
+
+
+function XstepFileLoad(str){
+    TITLE=str
+    SCREENsteps = getTextFile("PoemSetUp/"+str+".txt").split("\n");
+    alert(SCREENsteps[1])
+    showSteps()
+    }
+
+function showSteps(n){
+    DUR=60000
+    for (j=1;j<SCREENsteps.length;j++)
+    alert(SCREENsteps.length)
+    ELEM = SCREENsteps[n].split('|')
+    alert (ELEM[0])
+    TXTcolor=ELEM[0];
+    TXTfont=ELEM[1];
+    TXTmargin=ELEM[2];
+    TXTalign=ELEM[3];
+    TXTfamily=ELEM[4];
+    TXTheight=ELEM[5];
+    PICheight = ELEM[6];
+    STEPtxt = ELEM[7];
+    STEPtime = ELEM[8]
+    }
+
+
+function getTextFile(path){//^ Selects your set by its name
+    var request = new XMLHttpRequest();
+    request.open("GET", path, false);
+    request.send(null);
+    //alert(request.responseText)
+    return(request.responseText); }
+
 
 
 function recordMode(tf) { //^ the actual scrolling routine keep it simple* before it starts SCOLLstartTime,SCROLLkon must be set
@@ -230,106 +416,6 @@ function ChangeBackgroungImageOfTab(tabName, jpgName){
         document.getElementById(tabName).style.backgroundSize = "cover";
 }
 
-window.onload = function() {//default poem
-        mode('boot')
-        setTimeout(function() {
-             parseAndLoad ('The Poet')
-        }, 100);
-        VOLUME=(Audio1.volume)
-        }
-
-function parseAndLoad(str) {
-        mode('think')
-        TITLE = str
-        SETup = fileDownload("PoemSetUp/" + TITLE + ".txt").split('|')
-        TXTcolor=SETup[0];
-        TXTfont=SETup[1];
-        TXTmargin=SETup[2];
-        TXTalign=SETup[3];
-        TXTfamily=SETup[4];
-        TXTheight=SETup[5];
-        PICheight = SETup[6];
-        PICwidth = SETup[7];
-        config();
-}       
-
-function config() {
-        if (PICTURE == false) {
-                ChangeBackgroungImageOfTab('scroller', 'The Poet(2)')
-        }
-        else {
-                ChangeBackgroungImageOfTab('scroller', TITLE)
-        }
-        if (TEXT==false) {dis('content','none')}else{dis('content','block')}
-        if (VOICE == true) {Audio1.volume=1}else{Audio1.volume=0}
-        document.getElementById('Audio1').src = "PoemTracks/" + TITLE + ".mp3"
-        var fle = fileDownload("Poems/" + TITLE + ".txt")
-        document.getElementById('content').innerHTML = fle
-        document.getElementById('content').style.color=TXTcolor; //0
-        document.getElementById('content').style.fontSize=TXTfontAdj+'vw';//1
-        document.getElementById('content').style.left=TXTmargin+'%'//2
-        document.getElementById('content').style.textAlign =TXTalign;//3
-        document.getElementById('content').style.fontFamily =TXTfamily;//4
-        document.getElementById('content').style.lineHeight =TXTheight+'%'//5
-        if (TEXT=='false') {dis('scroller','none')}
-        setTimeout(function() {
-              resize(), scrollSetup(),mode('ready');
-        }, 1000);
-}
-
-
-
-function resize() {
-        var fh;
-        var fw;
-        var elmnt = document.getElementById("world");
-        if (RECORD==true){
-                //document.getElementById("scroller").style.left = '0px';
-                //document.getElementById("scroller").style.top = '0px';
-                document.getElementById("scroller").style.width = '100%';
-                document.getElementById("scroller").style.height = '100%';
-                //TXTfontAdj=TXTfont
-                //alert(1)
-        }else{
-                fh = 0.96*elmnt.clientHeight;
-                fw = elmnt.clientWidth;
-                ASPECTpic = PICheight / PICwidth;
-                ASPECTfld = fh / fw;
-                if (ASPECTpic >= ASPECTfld) {//landscape
-                        TXTfontAdj=TXTfont*(ASPECTfld/ASPECTpic)
-                        var w = parseInt((fh / PICheight) *PICwidth, 10)
-                        document.getElementById("scroller").style.height = fh + 'px';
-                        document.getElementById("scroller").style.top = '0px';
-                        document.getElementById("player").style.width=w + 'px';
-                        //document.getElementById("ctrl").style.bottom='5%';
-                        document.getElementById("ctrl").style.width=document.getElementById("scroller").style.width = w + 'px';
-                        document.getElementById("ctrl").style.left=document.getElementById("player").style.left= document.getElementById("scroller").style.left = parseInt((fw - w) / 2, 10) + 'px';
-                        
-                document.getElementById("player").style.top = '96%';
-                } else {//phone
-                        TXTfontAdj=TXTfont
-                        var h = parseInt((fw / PICwidth) * PICheight, 10);
-                        document.getElementById("scroller").style.width = fw + 'px';
-                        document.getElementById("scroller").style.left = '0%';
-                        document.getElementById("scroller").style.height = h + 'px';
-                        document.getElementById("scroller").style.top = '0px';// parseInt((fh - h) / 2, 10) + 'px';
-                        document.getElementById("player").style.top = parseInt(h , 10) + 'px';
-                        //document.getElementById("ctrl").style.top =parseInt(h*0.85, 10) + 'px';
-                        document.getElementById("ctrl").style.width=document.getElementById("player").style.width= '100%';
-                        document.getElementById("ctrl").style.left=document.getElementById("player").style.left= '0%';
-                }
-        }
-        document.getElementById('content').style.fontSize=TXTfontAdj+"vw"     
-        syncTrack()
-}
-
-function syncTrack(){
-        var WINDht= scroller.offsetHeight
-        PAGEht = document.getElementById("content").clientHeight; 
-        SCROLLpix = parseInt(PAGEht - (WINDht), 10);
-        Ypos =SCROLLpix*document.getElementById('Audio1').currentTime/DUR
-        SCROLLkon = DUR * 1000 / SCROLLpix; // microseconds per pixel
-}
 
 
 //*Setup steps============================================================================
@@ -405,15 +491,20 @@ function scrollSetup() { //^ get the song data,songHeight,iframeHeight,Duration,
         SCROLLkon = DUR * 1000 / SCROLLpix; // microseconds per pixel
         document.getElementById('Audio1').currentTime=0;
         
-/*-@ */ PICno=0//set up the picture changer
+/*-@  PICno=0//set up the picture changer
        // alert(ARRpics[0])
         PICnew=ARRpics[0].split('@')[1]
-        PICtime=ARRpics[0].split('@')[0]
+        PICtime=ARRpics[0].split('@')[0]*/
         mode('ready')
 }
 //-play routines======================================================================================
 
 
+
+
+function picFlash(frm,pic,tf,left,top,ht){
+    //code
+}
 
 
 
@@ -457,8 +548,6 @@ function trackPause() {
 
 function scrollEngine() { //^ the actual scrolling routine keep it simple* before it starts SCOLLstartTime,SCROLLkon must be set
         var newPos;
-        var pic=undefined
-        var NEXTpic=4000
         clearTimeout(TIMEOUTscroll) //stop scroll engine
         if (document.getElementById('scroller').scrollTop>=SCROLLpix-1){
                 if (RECORD==true) {
@@ -478,18 +567,15 @@ function scrollEngine() { //^ the actual scrolling routine keep it simple* befor
         nowTime = new Date().getTime();
         newPos = parseInt(((nowTime - SCROLLstartTime) / SCROLLkon) + Ystart, 10);
         document.getElementById("scroller").scrollTop = newPos;
-/*-@ if (nowTime-SCROLLstartTime>PICtime) {//set up a picture switch....
-                ChangeBackgroungImageOfTab('scroller', PICnew)
-                PICno=PICno +1
-                PICnew=ARRpics[PICno].split('@')[1]
-                PICtime=ARRpics[PICno].split('@')[0]
-        }*/ 
+        if (FRMtime+SCROLLstartTime<nowTime) {
+          
+           alert("now: "+nowTime+"\nFrame:"+FRMtime+SCROLLstartTime)
+           FRMtime=1000000
+        }
         TIMEOUTscroll = setTimeout(function() {
                 scrollEngine();
         }, SCROLLkon);
 }
-
-
 
 //-Common functions=============================================================
 
@@ -552,9 +638,4 @@ function dis(id, disp) {
         }
 }
 
-</script>
-</html>
-
-
-
-
+</script></html>
