@@ -1,125 +1,125 @@
 TITLE:Hallelujah-01,DUR:179,BPM:75,BEATS:2,KEY:C,QUAL:Inwork,ARTIST:Leonard Cohen,GENRE:Unknown,STYLE:Unknown,HITyear:Unknown
 <!--#Sally start playing others join in <br> Bill start whenever--#-->
 #INTRO ----------------------------------
-|C                |Am
+|C                               |Am
 -
-|C                |Am
+|C                               |Am
 -
-|C                |Am
+|C                               |Am
 -
-|C                |Am <!--#<br>Bill#-->
+|C                               |Am
 #VERSE ----------------------------------
-           |C              |Am
+|C                               |Am
 Now I've heard there was a secret chord
-       |C                 |Am
+|C                               |Am
 That David played, and it pleased the Lord
-      |F              |G7
+|F                               |G7
 But you don't really care for music,
-|C     |G7
- do you
-     |C               |F         ~G
+|C                               |G7
+do you
+|C                               |F               ~G
 It goes like this The fourth, the fifth
-    |Am             |F
+|Am                              |F
 The minor fall, the major lift
-    |G7          |E7
+|G7                              |E7
 The baffled king composing
-   |Am              |%
-Hallelujah           <!--#<br>ALL#-->
+|Am                              |%
+Hallelujah  <!--#<br>ALL#-->
 #CHORUS ---------------------------------
-     |F           |%
-Hallelu           jah,
-     |Am          |%
-Hallelu           jah,
-     |F           |%
-Hallelu           jah,
-     |C           |G7
-Hallelu           uu
-     |C           |%
-    jah<!--#<br>Bill#-->
+|F                               |%
+Hallelu  jah,
+|Am                              |%
+Hallelu  jah,
+|F                               |%
+Hallelu  jah,
+|C                               |G7
+Hallelu  uu
+|C                               |%
+jah<!--#<br>Bill#-->
 #VERSE ----------------------------------
-           |C                  |Am
+|C                               |Am
 Your faith was strong, but you needed proof
-     |C                    |Am
+|C                               |Am
 You saw her bathing on the roof
-      |F           |G7
+|F                               |G7
 Her beauty and the moonlight
-     |C   |G7
+|C                               |G7
 overthrew you
-     |C           |F     ~G
+|C                               |F               ~G
 She tied you To a kitchen chair
-      |Am             |F
+|Am                              |F
 She broke your throne and she cut your hair
-      |G7              |E7
+|G7                              |E7
 And from your lips she drew the
-   |Am               |%
-Hallelujah                    <!--#<br>ALL#-->
+|Am                              |%
+Hallelujah   <!--#<br>ALL#-->
 #CHORUS ---------------------------------
-     |F           |%
-Hallelu           jah,
-     |Am          |%
-Hallelu           jah,
-     |F           |%
-Hallelu           jah,
-     |C           |G7
-Hallelu           uu
-     |C           |%
-    jah    <!--#<br>Bill#-->
+|F                               |%
+Hallelu  jah,
+|Am                              |%
+Hallelu  jah,
+|F                               |%
+Hallelu  jah,
+|C                               |G7
+Hallelu  uu
+|C                               |%
+jah <!--#<br>Bill#-->
 #VERSE ----------------------------------
-         |C                |Am
+|C                               |Am
 You say I took the Name in vain
-       |C                    |Am
+|C                               |Am
 I don't even know the Name
-      |F               |G7
+|F                               |G7
 But if I did, well really, what's it
-|C     |G7
+|C                               |G7
 to you
-     |C                     |F    ~G
+|C                               |F               ~G
 There's a blaze of light In every word
-      |Am             |F
-It doesn't matter     which you heard
-      |G        |E7
+|Am                              |F
+It doesn't matter which you heard
+|G                               |E7
 The holy or the broken Halle
-|Am          |%
-lujah                     <!--#<br>ALL#-->
+|Am                              |%
+lujah   <!--#<br>ALL#-->
 #CHORUS ---------------------------------
-     |F           |%
-Hallelu           jah,
-     |Am          |%
-Hallelu           jah,
-     |F           |%
-Hallelu           jah,
-     |C           |G7
-Hallelu           uu
-     |C           |%
-    jah   <!--#<br>Bill#-->
+|F                               |%
+Hallelu  jah,
+|Am                              |%
+Hallelu  jah,
+|F                               |%
+Hallelu  jah,
+|C                               |G7
+Hallelu  uu
+|C                               |%
+jah <!--#<br>Bill#-->
 #VERSE ----------------------------------
-           |C                |Am
+|C                               |Am
 I did my best, it wasn't much
-       |C                    |Am
+|C                               |Am
 I couldn't feel, so I tried to touch
-      |F               |G7
+|F                               |G7
 I've told the truth, I didn't come to
-|C       |G7
+|C                               |G7
 fool you
-     |C            |F      ~G
+|C                               |F               ~G
 And even though It all went wrong
-      |Am             |F
+|Am                              |F
 I'll stand before the Lord of Song
-      |G               |E7
+|G                               |E7
 With nothing on my tongue but
-   |Am               |%
-Hallelujah,                 <!--#<br>ALL#-->
+|Am                              |%
+Hallelujah,   <!--#<br>ALL#-->
 #Outro ---------------------------------
-     |F           |%
-Hallelu           jah,
-     |Am          |%
-Hallelu           jah,
-     |F           |%
-Hallelu           jah,
-     |C           |G7
-Hallelu           uu
-     |C           |%
-    jah
+|F                               |%
+Hallelu  jah,
+|Am                              |%
+Hallelu  jah,
+|F                               |%
+Hallelu  jah,
+|C                               |G7
+Hallelu  uu
+|C                               |%
+jah
 https://www.youtube.com/watch?v=Ki-UYXQxVyk|Karaoke
 https://www.youtube.com/watch?v=nm5LIf-y4k0|Karaoke
 iRealb://Hallelujah%3DCohen%20Leonard%3D%3DRock%20100%3DC%3D9%3D1r34LbKcu7%5ECZL-4C%2C%20A*%7BZ%20%2C-A%207%5ECZL-%20ACZL%2C-A%207%5ECZL%2C-ASC%20A4Ti*%7Bes%20a%20ZF%2C%20Greht%20draeh%20ev'4I7*%3CZL%2C7G%20CZL%2C7e%20wasL-A%207deen%20chordub%20gnorts%20saw%20thiaf%20ruoY06*%3C%20%3Et%20you%20terchT72*oof%3E%20ofeb%20ereh%20neebe%20vah%20I%20ybaB54*%3Cre%3E%20%3Crp%20deI%20yasas%20a%201*%3C%20%3Ewonk%20em%20tle%20uoy%20nehw%20emit2You%20w%20ere%20t'ns%20the%20%20%2Ctseb%20ym%20did%20%3CI%20%3Eniav%20ni%20emanit%20wakoot%20QyXFBXyQXyX-AZL7E%20GZL%2CF%20A-%7C%2CG%2CF%20CZL%20QyXQyQ%5D%5B*%3EhcumA%7CQyXQ%7CFXyXQyXQyXQyX%7D%20%3Ex874*%3C%20%20CZL7G%20C%7CQyQ%7BQFyX-A%7C-XyQ%7CFXyQ%7CC%20G7LZC%20%20%3C*363x%3E%20%7D%20%3DPop-Rock%3D75%3D1
