@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <link rel="icon" href="Data/iconFav.png" type="image/png">
+    <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!-- prevents zooming on mobile devices....number-based width or "device-width"-->
+    <title id = 'title'>Memorial</title>
+    <style type="text/css">
+        Body
+            {
+                color:black;
+                line-height:110%;
+                font-size:3vw;
+                font-family:Courrier New;
+                font-weight: bold;
+                text-align:left;
+                padding:3%;
+                margin:0px;
+            }
+        X1{color:red;}
+        X2{color:white;}
+        X3{color:blue;}
+        X4{line-height:100%;color:yellow;}
+        X5{line-height:150%;color:green;}
+        X10{line-height:150%;color:red;background-color:yellow}
+    </style>
+</head>
+
+<body onresize="realign()">
+<!--z-index  map============================================
+-1 Main Screen black background
+ 0 Base hdr/menu/msg/playerA 
+ 50:pause buttonA
+ 100   
+ 300 pauseButtonA
+ 400 Audio1
+ 450 viewBox
+ 500 floater
+ 600 playButton
+ 700 pause Button
+1000 popper
+ audio 1000temp
+-->
+<!--MAIN SCREEN -------------------------------------------------------------------------------------------------------  -->
+<div id='all' style="position:absolute; display:block;left:0%; top:0%;width:100%; bottom:0%;background-color:pink;overflow:hidden"><!--Main Envelope-->
+    <div id='hdr' style="text-align:left;color:white;left:0%;width:100%;top:0%;height:5%;background-color:red;">
+        Butte Class of 64 Memorial Page
+        
+        <select name="Classmate" id="classmate" onchange= 'load(this.value)' style='right:5%'>
+            <option value="00001">Marion Drzewiecki</option>
+            <option value="00002">Rich Jones</option>
+            <option value="00003">Mike Kablin</option>
+            <option value="00004">Judy Bugni</option>
+            </select>
+    </div>
+    
+    <div id='pic' position:relative; style="display:block;left:0%;width:500%;top:5%;height:30%;background-color:lightyellow;color:black;text-align:left;overflow-x:scroll;overflow-y:hidden">
+        <img id='picA' src="00000A.png" style="top:0%;height:100%">
+        <img id='picB' src="00000A.png" style="top:0%;height:100%">
+        </div>    
+    
+    <div id='main' style=padding:5%;display:block;left:0%;right:0%;height:65%;bottom:0%;background-color:lightgrey;color:black;text-align:left;overflow-y:scroll;">
+        Your Classmate will appear hear
+        </div>    
+    </div>
+<script>
+//window.onload = function() {alert('load')}
+
+function getTextFile(path){//^ Selects your set by its name
+    var request = new XMLHttpRequest();
+    request.open("GET", path, false);
+    request.send(null);
+    return(request.responseText); }
+
+function load(v){
+    var path=v+'.txt'
+    var content= getTextFile(path)
+    document.getElementById('picA').src=v+'A.png'
+    document.getElementById('picB').src=v+'B.png'
+    document.getElementById('main').innerHTML=content
+}
+
+</script>
+</body>
+</html>

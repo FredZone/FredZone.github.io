@@ -1,0 +1,65 @@
+TITLE:Doctor My Eyes,DUR:114,BPM:120,BEATS:4,KEY:E,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:TBD
+#INTRO ----------------------------------
+|E                          |D/E*
+-
+|A/E                        |E
+Thump on E bass note between single chord strums
+optional-D/E as 077700 and A/E as 077600
+#VERSE 1 --------------------------------
+|E                          |%
+Doctor, my eyes have seen the years
+|G#m                        |%
+And the slow parade of fears without crying
+|C#m                        |A
+Now                I want to under-
+|E                          |E
+-stand
+|E                          |E
+I have done all that I could,
+|G#m
+ to see the evil and the good
+|C#m                        |A
+without hiding.  You must help me if you can
+|E                          |%
+#CHORUS 1 -------------------------------
+|C#m                        |E
+Doctor, my eyes, tell me what is wrong
+|C#m                        |B            ~A
+Was I unwise to leave them open for so long
+|E                          |D/E
+-
+|A/E                        |E
+-
+#VERSE 2 --------------------------------
+|E                          |%
+'Cause I have wandered through this world
+|G#m                        |%
+And as each moment has unfurled,  I've been waiting
+|C#m           ~A           |E
+to awaken from these dreams
+|E                          |G#m
+People go just where they will,  I never noticed them until
+|C#m           ~A           |E
+I got this feeling, that it's later than it seems
+#CHORUS 2 -------------------------------
+|C#m                        |E
+Doctor, my eyes, tell me what you see
+|C#m                        |B            ~A
+I hear their cries, just say if it's too late for me
+|E                          |D/E
+-
+|A/E                        |E
+-
+#BREAK 1 --------------------------------
+|D/E                        |A/E
+|E                          |E
+#CHORUS 3 -------------------------------
+|C#m                        |E
+Doctor, my eyes, they cannot see the sky
+|C#m                        |B            ~A
+Is this the price for having learned how not to cry
+|E                          |D/E
+-
+|A/E                        |E
+-
+https://www.youtube.com/watch?v=BrCLkeYKuEw
