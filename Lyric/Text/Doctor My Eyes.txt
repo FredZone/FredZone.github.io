@@ -1,4 +1,4 @@
-TITLE:Doctor My Eyes,DUR:114,BPM:120,BEATS:4,KEY:E,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:TBD
+TITLE:Doctor My Eyes,DUR:126,BPM:120,BEATS:4,KEY:E,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:TBD
 #INTRO ----------------------------------
 |E                          |D/E*
 -
@@ -17,15 +17,21 @@ Now                I want to under-
 |E                          |E
 I have done all that I could,
 |G#m
- to see the evil and the good
+to see the evil and the good
 |C#m                        |A
 without hiding.  You must help me if you can
 |E                          |%
 #CHORUS 1 -------------------------------
-|C#m                        |E
-Doctor, my eyes, tell me what is wrong
-|C#m                        |B            ~A
-Was I unwise to leave them open for so long
+|C#m                        |%
+Doctor, my eyes,
+|E                          |%
+tell me what is wrong
+|C#m                        |%
+Was I unwise to leave them
+|B                          |A
+open for so long
+|A                          |E
+-
 |E                          |D/E
 -
 |A/E                        |E
@@ -37,8 +43,10 @@ Was I unwise to leave them open for so long
 And as each moment has unfurled,  I've been waiting
 |C#m           ~A           |E
 to awaken from these dreams
-|E                          |G#m
-People go just where they will,  I never noticed them until
+|E                          |%
+People go just where they will,
+|G#m
+I never noticed them until
 |C#m           ~A           |E
 I got this feeling, that it's later than it seems
 #CHORUS 2 -------------------------------
