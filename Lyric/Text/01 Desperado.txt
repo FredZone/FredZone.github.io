@@ -1,0 +1,55 @@
+TITLE:Desperado,DUR:204,BPM:130,BEATS:4,KEY:D,QUAL:Preliminary,ARTIST:Eagles,GENRE:Country,STYLE:Ballad,HITyear:Unknown
+#INTRO ----------------------------------
+|D                |D7               |G                |Gm6
+-
+|D                |Bm               |E7               |A
+-
+#VERSE 1 --------------------------------
+|D                |D9               |G                |Gm6
+Desperado,   why don't you come to   your   senses You been
+|D                |Bm7              |E7               |A7
+ out ridin' fences for      so    long now    Oh, you're a
+|D                |D*               |G                |Gm6
+ hardone, I know that you got your reasons, These
+|D   ~   ~F#   |Bm7          |E7   ~   ~A7   |D            |A/C#
+things that are pleasin' you can hurt you somehow            Don't you
+#CHORUS 1 -------------------------------
+|Bm               |F#m7             |G                |D
+draw the queen of diamonds boy, She'll beat you if she's able,  the
+|Bm7              |G                |D                |A/C#
+queen of hearts is always  your best   bet               Now it
+|Bm               |F#m7             |G                |D
+seems to  me some fine things have been laid upon  your   table
+|Bm               |E7               |Em7              |A
+But you only want the ones you can't get                  Desper
+#VERSE 2 --------------------------------
+|D                |Am7/D            |G                |Em
+ado, oh you ain't gettin' no younger,
+|D               |Bm               |E7               |A7
+Your pain and your hunger, they're drivin' you home
+|D                |Am7/D            |G    ~    ~F#m    |Em
+And freedom, oh, freedom, well, that's just some people talkin'
+|D  ~  ~F#7/C#  |Bm7          |E7   ~   ~A7   |D            |A/C#
+Your prison is walkin' through this world all alone
+#CHORUS 2 -------------------------------
+|                 |Bm               |F#m7
+Don't your feet get cold in the winter time
+|                 |G                |D                |A/C#
+The sky won't snow and the sun won't shine
+|             |Bm           |G            |D            |A/C#
+It's hard to tell the night time from the day
+|                 |Bm               |F#m7
+You're losin' all your highs and lows
+|             |G            |D            |Em7          |Em7/A
+Ain't it funny how the feelin' goes away
+#VERSE 3 --------------------------------
+|A          |A7         |D          |Am7        |G          |Gm6
+Desperado, why don't you come to your senses
+|           |D          |A/C#       |Bm         |E7         |A7
+Come down from your fences, open the gate
+|             |D            |Am7          |G            |Gm6
+It may be rainin',  but there's a rainbow above you
+|          |D         |F#7/C#    |Bm        |G         |D/F#      |Em
+You better let somebody love you,
+|        |D       |F#7/Bb  |Bm      |Em7/A(D |D7      |G       |Gm6     |D)
+You better let somebody love you before it's too late

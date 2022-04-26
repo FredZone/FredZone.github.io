@@ -1,0 +1,56 @@
+TITLE:01 All The Lonely People,DUR:119,BPM:165,BEATS:4,KEY:C,QUAL:Complete,ARTIST:America,GENRE:Folk,STYLE:Up Tempo,HITyear:TBD
+$$TCL1 <X15>PR 1</X15> <X15>C M3</X15> <X15>PV 1</X15> <X16>V3</X16> <X16>H OFF</X16>
+$$STRT ooXoo 8 5 10 (acoustic sound)
+$$RP55 1 or 2 (Strum)
+#INTRO ----------------------------------
+|N                |N
+-
+|C           |Am          |Em          |Em
+-
+|C           |Am          |Em          |G
+-
+|F           |G           |C           |C
+-
+|F           |G           |C           |G
+-
+#VERSE 1 --------------------------------
+|C           |Am          |Em          |Em
+This is for all the lonely people
+|C           |Am          |Em          |G
+Thinking that life has passed them by
+|F           |G           |C           |C
+Don't give up until you drink from the silver cup
+|F           |G           |C           |G
+And ride that highway in the sky <!--#H ON#-->
+#VERSE 2 --------------------------------
+|C           |Am          |Em          |Em
+This is for all the single people
+|C           |Am          |Em          |G
+Thinking that love has left them dry
+|F           |G           |C           |C
+Don't give up until you drink from the silver cup
+|F           |G           |C           |G
+You never know until you try
+#CHORUS 1 -------------------------------
+|F    ~C/E    |Dm          |Dm
+Well, I'm on my way
+|F    ~C/E    |Dm          |Dm
+Yes, I'm back to stay
+|F    ~C/E    |Dm    ~G    |C           |G
+Well, I'm on my way back home
+#VERSE 3 --------------------------------
+|C           |Am          |Em          |Em
+This is for all the lonely people
+|C           |Am          |Em          |G
+Thinking that life has passed them by <!--#V4 ON#-->
+|F           |G           |C           |C
+Don't give up until you drink from the silver cup
+|F           |G           |C           |C
+She'll never take you down or never give you up
+|F           |G           |Am.         |Am
+Never know until you try...
+|N           |N
+-
+https://www.youtube.com/watch?v=IRDnEqW1vAc|LIVE America with Peek
+https://www.youtube.com/watch?v=L52gGTK_KyM|Dan Peek Solo
+https://www.youtube.com/watch?v=l1orZ2b_hAk|Live without Peek

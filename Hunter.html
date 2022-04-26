@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<head>
+    <link rel="shortcut icon" type="image/png" href="Icons/fz.png">
+    <title id='title'>The Hunter</title>
+    <style type="text/css">
+Body
+    {
+        font-size:1.5vw;
+        color:white;
+        font-family:Courrier New;
+        font-weight: bold;
+        text-align:center;
+        vertical-align:middle;
+        border-color: black;
+        border-width:thick;
+        background-color:blue;
+        padding:0px;
+        margin:0px;
+        overflow:hidden;
+        line-height: 100%;
+    }
+    X3{color:red;}
+    </style>
+</head>
+<body>
+    <div id='greeting' style='line-height:110%;position:fixed;display:block; font-size:3.7vw; vertical-align:middle; overflow:hidden; left:1%;width:95%; top:1%;border: groove; height:8%'>
+        <img src='Icons/cavemanComputer.png' alt='Google+' style='position:absolute;top:0%;left:0%; height:100%;'> <X3>HUNTER - GATHERER</X3>
+    
+    </div>
+
+ 
+   <!-- <div style="color:white;position:absolute;line-height:100%; left:1%; top:10%; height:20%; width:95%;font-size:1.7vw; border: groove;">-->
+
+        <div title="Google +" onclick="window.open('https://www.google.com/advanced_search?hl=en&fg=1','GOOGLE +')" style='border-style:solid;vertical-align:bottom;background-color:black;  position:absolute;left:1%; top:10%; width:9vw;height:12vw'>
+            <img src='Icons/Google.png' alt='Google+' style='position:absolute;top:0%;left:0%; width:100%;'>
+
+            <div style="position:absolute;text-align: center; bottom:0%;width:100%">
+                Google+
+            </div>'
+        </div>
+
+        <div title='Find a Grave' onclick="window.open('https://www.findagrave.com/','Grave Digging?')" style="background-color:black;display:block;border-style:solid;vertical-align:bottom; position:absolute;left:12%; top:10%; width:9vw;height:12vw;">
+            <img src="Icons/grave.png" alt='??' style='position:absolute;top:0%;left:0%; width:100%;'>
+            <div style="position:absolute;text-align: center;background-color:black; bottom:0%;width:100%">
+                Find a Grave
+            </div>
+        </div> 
+
+        <div title="Bing" onclick="window.open('https://www.bing.com')" style='border-style:solid;vertical-align:bottom;background-color:black; position:absolute;left:23%; top:10%; width:9vw;height:12vw'>
+            <img src='Icons/bing.png' alt="Bing..." style='position:absolute;top:0%;left:0%; width:100%;'>
+
+            <div style="position:absolute;text-align: center; bottom:0%;width:100%">
+                Bing
+            </div>
+        </div>
+
+    
+        <div title="True People Search" onclick="window.open('https://www.truepeoplesearch.com/');" style='border-style:solid;background-color:black;vertical-align:bottom; position:absolute;left:34%; top:10%; width:9vw;height:12vw'>
+            <img src='Icons/TruePeopleSearch.png' alt='TPS' style='position:absolute;top:0%;left:0%; width:100%;'>
+
+            <div style="position:absolute;text-align: center; bottom:0%;width:100%">
+                True People Search
+            </div>
+        </div>
+ 
+        <div title="Legacy" onclick="window.open('https://www.legacy.com');" style='border-style:solid;background-color:black;vertical-align:bottom; position:absolute;left:45%; top:10%; width:9vw;height:12vw'>
+            <img src='Icons/legacy.png' alt='Legacy' style='position:absolute;top:0%;left:0%; width:100%;'>
+
+            <div style="position:absolute;text-align: center; bottom:0%;width:100%">
+                Legacy
+            </div>
+        </div>
+         
+        
+        <div title="Cluster Maps" onclick="window.open('https://clustrmaps.com/persons/William-Kaparich');" style='border-style:solid;background-color:black;vertical-align:bottom; position:absolute;left:56%; top:10%; width:9vw;height:12vw'>
+            <img src='Icons/ClusterMaps.png' alt='Cluster Maps' style='position:absolute;top:0%;left:0%; width:100%;'>
+
+            <div style="position:absolute;text-align: center; bottom:0%;width:100%">
+               Cluster Maps
+            </div>
+        </div>
+      
+        
+        <div title="White Pages" onclick="window.open('https://www.whitepages.com/');" style='border-style:solid;background-color:black;vertical-align:bottom; position:absolute;left:67%; top:10%; width:9vw;height:12vw'>
+            <img src='Icons/WhitePages.png' alt='CLIMB' style='position:absolute;top:0%;left:0%; width:100%;'>
+
+            <div style="position:absolute;text-align: center; bottom:0%;width:100%">
+                White Pages
+            </div>
+        </div>
+   
+ <!--   </div>  -->
+
+    
+    <input type="text" style="position:fixed ;width:60%;top:35%; left:1% ;height:5%; border:solid; margin:5px; padding:5px; z-index:10050" name="Title" id="Title" value="Title">
+    <img onclick="fileSaveTextAs('fileName', 'textToWrite')" src='Icons/blackSave.png' alt='Save' style='position:absolute;top:35%;left:61%; padding:5px;width:5%;height:5% ;z-index:10050'>
+    <img onclick="alert('Open that shit')" src='Icons/blackRead.png' alt='Open' style='position:absolute;top:35%;left:66%; padding:5px;width:5%;height:5% ;z-index:10050'>
+    
+    <textarea id="file" style="position:fixed ;width:70%;top:40%; left:1% ;height:55%; border:solid; margin:5px; padding:5px; z-index:10050"></textarea>
+    
+    <textarea id="scratchPad"style="position:fixed ;left:72%;top:35%; right:1% ;height:60%; border:solid; margin:5px; padding:5px; z-index:10050;background-color:lightYellow" name="scratch">Scratch Pad</textarea>
+
+</body>
+</html>
+
+   
+<script type="text/javascript">
+       //Baslined 11/25/19 12:53AM
+window.onload = function() {
+    if (window.innerHeight >= window.innerWidth) {
+        alert("PLEASE rotate your device...Landscape works best on this site...");
+    }
+    if (location.host == 'localhost') {
+        document.body.style.backgroundColor = "pink";
+    } else {
+        document.body.style.backgroundColor = "blue";
+    }
+}
+
+function dis(id, disp) {
+    if (disp === undefined) {
+        if (document.getElementById(id).style.display == 'none') {
+            document.getElementById(id).style.display = 'block';
+        } else {
+            document.getElementById(id).style.display = 'none';
+        }
+    } else {
+        if (disp == 'none') {
+            document.getElementById(id).style.display = 'none';
+        } else {
+            document.getElementById(id).style.display = 'block';
+        }
+    }
+
+
+function fileSaveTextAs(fileName, textToWrite) {
+    var textFileAsBlob = new Blob([textToWrite], {
+        type: 'text/plain'
+    });
+    var downloadLink = document.createElement("a");
+    downloadLink.download = fileName;
+    downloadLink.innerHTML = "My Hidden Link";
+    window.URL = window.URL || window.webkitURL; // allowcode to work in webkit & Gecko based browsers// without the need for a if / else block.
+    downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+    downloadLink.onclick = destroyClickedElement; // when link is clicked call a function to remove it from// the DOM in case user wants to save a second file.
+    downloadLink.style.display = "block";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    statusMsg('Please Verify that ' + fileName + ' was created');
+}
+
+function readSingleFile(e) {
+    var fMsg=TEMPmsg
+    var code = TEMPflag
+    var nme = TEMPlocalFileName
+    TEMP = TEMPflag = TEMPlocalFileName = undefined //transfer msg & clear TEMP
+    document.getElementById("myInput").select();
+    //copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+    document.execCommand("copy")
+    document.getElementById('myInput').value = null
+    var file = e.target.files[0];
+    if (!file) {
+        statusMsg("Failed to get Local File...", 'red');
+    } else {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            TEMP = e.target.result; //read the file
+            if (code != undefined) {
+                eval(code);
+                if (fMsg == undefined) {
+                    fMsg = "Local File Processed:[" + code + "]"
+                } else if (nme != undefined) {
+                    document.getElementById("myInput").value = nme;
+                    document.getElementById("myInput").select();
+                    document.execCommand("copy")
+                    msg("Use CTRL-V to select " + nme, 'yellow')
+                    statusMsg(msg,'yellow')
+                }
+            } else {
+                popUp("<pre>" + TEMP + "<pre>", "Here it is...", 5, 'yellow')
+                fMsg("Here is your file...use as you will...")
+            }
+        }
+        statusMsg(fMsg, 'green')
+        reader.readAsText(file);
+    }
+}
+
+
+
+
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+TITLE:Doctor My Eyes,DUR:164,BPM:120,BEATS:4,KEY:E,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:TBD
+#INTRO ----------------------------------
+|E                     |D/E*
+-
+|A/E                   |E
+Thump on E bass note between single chord strums
+optional-D/E as 077700 and A/E as 077600
+#VERSE 1 --------------------------------
+|E                     |%
+Doctor, my eyes have seen the years
+|G#m                   |%
+And the slow parade of fears without crying
+|C#m                   |A
+Now                I want to under-
+|E                     |E
+-stand
+|E                     |E
+I have done all that I could,
+|G#m                   |%
+to see the evil and the good
+|C#m                   |A
+without hiding.  You must help me if you can
+|E                     |%
+#CHORUS 1 -------------------------------
+|C#m                   |%
+Doctor, my eyes,
+|E                     |%
+tell me what is wrong
+|C#m                   |%
+Was I unwise to leave them
+|B                     |A
+open for so long
+|A                     |E
+-
+|E                     |D/E
+-
+|A/E            |E              |%
+-
+#VERSE 2 --------------------------------
+|E                     |%
+'Cause I have wandered through this world
+|G#m                   |%
+And as each moment has unfurled,  I've been
+|C#m                   |A
+waiting to awaken from these
+|E                     |%
+dreams
+|E                     |%
+People go just where they will,
+|G#m                   |%
+I never noticed them until
+|C#m                   |A
+I got this feeling, that it's
+|E                     |%
+later than it seems
+#CHORUS 2 -------------------------------
+|C#m                   |%
+Doctor, my eyes,
+|E                     |%
+tell me what you see
+|C#m                   |%
+I hear their cries, just say
+|B                     |A
+if it's too late for me
+|A                     |E
+-
+|E                     |D
+-
+|A/E            |E              |%
+-
+#BREAK 1 --------------------------------
+|D/E                   |A/E
+-
+|E                     |E
+-
+#CHORUS 3 -------------------------------
+|C#m                   |%
+Doctor, my eyes,
+|E                     |%
+ they cannot see the sky
+|C#m                   |%
+Is this the price
+|B                     |A
+for having learned how not to cry
+|A                     |E
+-
+|E                     |D
+-
+|A/E            |E              |%
+-
+-
+https://www.youtube.com/watch?v=BrCLkeYKuEw

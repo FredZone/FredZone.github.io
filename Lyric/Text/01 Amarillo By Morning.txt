@@ -1,0 +1,50 @@
+TITLE:01 Amarillo By Morning,DUR:157,BPM:125,BEATS:4,KEY:C,QUAL:Complete,ARTIST:George Strait,GENRE:Country,STYLE:Ballad,HITyear:1983
+@ Whistle intro
+#INTRO ----------------------------------
+|N                                  |%
+-
+|C                |Em               |F                |G
+-
+|C                |Em               |F                |G
+-
+#VERSE 1 --------------------------------
+|C                |Em               |F                |C
+Amarillo        by        mornin'        up        from        San        Antone
+|C                |Em               |F                |G
+Everything    that    I    got    is    just    what    I    got    on
+|G                |F                |G                |C       ~Em
+            When that sun is high in that Texas sky I'll be buckin at the county
+|F                |C                |Em               |F       ~G
+fair    Amarillo    by    mornin'    Ama    rillo    I'll    be
+|C                |Em               |F                |G
+there(whistle Run..................)
+#VERSE 2 --------------------------------
+|C                |Em               |F                |C
+They  took  my  saddle  in  Houston,  broke  my  leg  in  Sante  Fe
+|C                |Em               |F                |G
+Lost    my    wife    and    a    girlfriend    somewhere    along    the    way
+|G                |F                |G                |C       ~Em
+But Ill be looking for eight when they pull that gate and I hope that judge ain't
+|F                |C                |Em               |F       ~G
+blind    Amarillo    by    mornin'    Amarillo's    on    my
+|C                |Em               |F                |G
+there(whistle Run..................)
+#CHORUS 1 -------------------------------
+|D                |Gbm              |G                |D
+Amarillo        by        mornin'        up        from        San        Antone
+|D                |Gbm              |G                |A
+Everything  that  I  got  is  just  what  I  got  on  I  ain't
+|A                |G                |A                |D      ~Gbm
+I aint got a dime but what I got is mine I ain't rich but Lord I'm
+|G                |D                |Gbm              |G       ~A
+free    Amarillo    by    mornin'    Amarillo's    where    I'll
+|D                |Gbm              |G                |A
+be(lead Run..................)                .                .                .
+#OUTRO ----------------------------------
+|D                |Gbm              |G                |A
+(lead Run..................)
+|D                |Gbm              |G                |A
+-
+|D                |%                |%                |%
+https://www.youtube.com/watch?v=qggmydu9zho|Karaoke
+@@Written by Terry Stafford (Suspicion) and Paul Fraser, and recorded by Stafford in 1973 Major 1983 hit for George Strait.
