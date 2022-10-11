@@ -1,0 +1,35 @@
+TITLE:Stewball,DUR:232,BPM:180,BEATS:6,KEY:C,QUAL:Verified,ARTIST:Kathy Young,GENRE:Unknown,STYLE:Unknown,HITyear:1960
+#INTRO ----------------------------------
+|D             |%             |%             |%
+#VERSE 1 --------------------------------
+|D      |%      |%      |%      |Em     |%      |%      |%
+Oh Stewball Was A Racehorse, And I Wish He Were Mine.
+|A      |%      |%      |%      |D      |G      |A      |%
+He Never Drank Water, He Always Drank Wine.
+|D      |%      |%      |%      |Em     |%      |%      |%
+His Bridle Was Silver, His Mane It Was Gold.
+|A      |%      |%      |%      |D      |G      |A      |%
+And The Worth Of His Saddle Has Never Been Told.
+#VERSE 2 --------------------------------
+|D      |%      |%      |%      |Em     |%      |%      |%
+Oh The Fairgrounds Were Crowded, And Stewball Was There
+|A      |%      |%      |%      |D      |G      |A      |%
+But The Betting Was Heavy On The Bay And The Mare.
+|D      |%      |%      |%      |Em     |%      |%      |%
+And A-Way Up Yonder, Ahead Of Them All,
+|A      |%      |%      |%      |D      |G      |A      |%
+Came A-Prancing And A-Dancing My Noble Stewball.
+#VERSE 3 --------------------------------
+|D      |%      |%      |%      |Em     |%      |%      |%
+I Bet On The Grey Mare, I Bet On The Bay
+|A      |%      |%      |%      |D      |G      |A      |%
+If I'D Have Bet On Old Stewball, I'D Be A Free Man Today.
+|D      |%      |%      |%      |Em     |%      |%      |%
+Oh The Hoot Owl, She Hollers, And The Turtle Dove Moans.
+|A      |%      |%      |%      |D      |G      |A      |%
+I'M A Poor Boy In Trouble, I'M A Long Way From Home.
+#OUTRO ----------------------------------
+|D      |%      |%      |%      |Em     |%      |%      |%
+Oh Stewball Was A Racehorse, And I Wish He Were Mine.
+|A      |%      |%      |%      |D      |G      |A      |%
+He Never Drank Water, He Always Drank Wine.

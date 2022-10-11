@@ -1,0 +1,55 @@
+TITLE:Roll Over Beethoven,DUR:123,BPM:150,BEATS:4,KEY:D,QUAL:Raw,ARTIST:Beatles,GENRE:Rock,STYLE:Up Tempo,HITyear:TBD
+#INTRO ----------------------------------
+|D               |%             |%           |%
+#VERSE 1 --------------------------------
+|D               |G               |D               |%
+I’m gonna write a little letter, Gonna mail it to my local D.J..
+|G               |G               |D               |D
+It's a rocking little record, I want my jockey to play.
+|A               |G               |D               |%
+Roll over Beethoven, I gotta hear it again today.
+#VERSE 2 --------------------------------
+|D               |G               |D               |%
+You know my temperature's rising,And the jukebox's blown a fuse.
+|G               |G               |D               |%
+My heart’s a beating rhythm,   And my soul keeps a-singin’ the blues.
+|A               |G               |D               |%
+Roll over Beethoven, Tell Tchaikovsky the news.
+#VERSE 3 --------------------------------
+|D               |G               |D               |%
+I got the rocking pneumonia, I need a shot of rhythm and blues.
+|G               |G               |D               |%
+I think I got it off the writer,     Sittin' down by the rhythm review.
+|A               |G               |D               |%
+Roll over Beethoven, We're rockin' in two by two.
+#VERSE 4 --------------------------------
+|D               |G               |D               |%
+Well if you feel you like it, Well get your lover and reel and rock it.
+|G               |G               |D               |%
+Roll it over and move on up,Just a trifle further.
+|A               |G               |D               |%
+And reel and rock it,Roll it over.Roll over Beethoven A rocking in two by two.
+INSTRUMENTAL: (Octave Lead over)
+#VERSE 5 --------------------------------
+|D               |G               |D               |%
+Well early in the morning,I'm a giving you the warning. Don't you step on my blue suede shoes,
+|G               |G               |D               |%
+Hey, diddle diddle. Gonna play my fiddle,Ain't got nothing to lose.
+|A               |G               |D               |%
+Roll over BeethovenTell Tchaikovsky the news.
+#VERSE 6 --------------------------------
+|D               |G               |D               |%
+You know she winks like a glow worm,Dance like a spinning top.
+|G               |G               |D               |%
+She got a crazy partner,Oughta see them reel an rock.
+|A               |G               |D               |%
+Long as she's got a dime,The music will never stop.
+REPRISE:
+|D
+Roll over Beethoven,
+Roll over Beethoven.
+Roll over Beethoven,
+Roll over Beethoven.
+Roll over Beethoven,
+And dig these rhythm and blues.
+

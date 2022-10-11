@@ -1,0 +1,54 @@
+TITLE:Blueberry Hill,DUR:104,BPM:120,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Fats Domino,GENRE:Unknown,STYLE:Unknown,HITyear:TBD
+|C             |
+              I found my
+|F             |
+thrill          On Blueberry
+|C             |
+Hill            On Blueberry
+|G7            |
+Hill            When I found
+|C             |
+ you           The moon stood
+|F             |
+still             On Blueberry
+|C             |
+Hill             It lingered
+|G7            |
+until            My dreams came
+|C      ~F     |C     ~G7
+true        The wind in the
+|C             |G7
+willow played  Love's sweet
+|C             |B7
+melody        But all of those
+|B7
+ vows you made    Were never
+|G7            |E
+to be
+
+|F             |
+Though we're apart
+|C             |
+You're part of me still
+|G7            |
+For you were my thrill
+|C             |
+On Blueberry Hill
+
+|G             |C
+The wind in the willow played
+|G7            |C
+Love's sweet melody
+|B7       |Em       |B7
+But all of those vows you made
+|B7       |E        |G7
+Were never to be
+
+|F             |
+Though we're apart
+|C             |
+You're part of me still
+|G7            |
+For you were my thrill
+|C             |
+On Blueberry Hill

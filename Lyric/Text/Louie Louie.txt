@@ -1,0 +1,43 @@
+TITLE:Louie Louie,DUR:163,BPM:100,BEATS:4,KEY:A,QUAL:Raw,ARTIST:Unknown,GENRE:Unknown,STYLE:Unknown,HITyear:TBD
+#INTRO ----------------------------------
+|A       ~D       |Em       ~D       |A       ~D       |Em       ~D
+#CHORUS 1 -------------------------------
+|A       ~D       |Em       ~D       |A       ~D       |Em       ~D
+Louie  Louie,  Oh  No,  We  Gotta  Go.
+|A       ~D       |Em       ~D       |A       ~D       |Em       ~D
+Louie  Louie,  Oh  Baby,  We  Gotta  Go.
+#VERSE 1 --------------------------------
+|A       ~D       |Em       ~D       |A       ~D       |Em       ~D
+A Fine Girl, Who Waited For Me. I Catch A Ship Across The Sea.
+|A       ~D       |Em       ~D       |A       ~D       |Em       ~D
+I Sailed The Ship All Alone.I Wondered When I'M Gonna Make It Home.
+#CHORUS 2 -------------------------------
+|A       ~D       |Em       ~D       |A       ~D       |Em       ~D
+Louie  Louie,  Oh  No,  We  Gotta  Go.
+|A       ~D       |Em       ~D       |A       ~D       |Em       ~D
+Louie  Louie,  Oh  Baby,  We  Gotta  Go.
+#VERSE 2 --------------------------------
+|A       ~D       |Em       ~D       |A       ~D       |Em       ~D
+Three Nights And Days I Sailed The Sea.I Think Of The Girl Constantly.
+|A       ~D       |Em       ~D       |A       ~D       |Em       ~D
+On The Ship, I Dream She There.I Smell The Rose That'S In Her Hair.
+#CHORUS 3 -------------------------------
+|A       ~D       |Em       ~D       |A       ~D       |Em       ~D
+Louie  Louie,  Oh  No,  We  Gotta  Go.
+|A       ~D       |Em       ~D       |A       ~D       |Em       ~D
+Louie  Louie,  Oh  Baby,  We  Gotta  Go.
+#VERSE 3 --------------------------------
+|A       ~D       |Em       ~D       |A       ~D       |Em       ~D
+I  See  Jamaican  Moon  Above.   See  The  Girl  I'M  Thinking  Of.
+|A       ~D       |Em       ~D       |A       ~D       |Em       ~D
+I Take Her In My Arms And Then Say I'll Never Leave Again.
+#CHORUS 4 -------------------------------
+|A       ~D       |Em       ~D       |A       ~D       |Em       ~D
+Louie  Louie,  Oh  No,  We  Gotta  Go.
+|A       ~D       |Em       ~D       |A       ~D       |Em       ~D
+Louie  Louie,  Oh  Baby,  We  Gotta  Go.
+#OUTRO ----------------------------------
+|A       ~D       |Em       ~D       |A       ~D       |Em       ~D
+Louie  Louie,  Oh  No,  We  Gotta  Go.
+|A       ~D       |Em       ~D       |A       ~D       |Em       ~D
+Louie  Louie,  Oh  Baby,  We  Gotta  Go.

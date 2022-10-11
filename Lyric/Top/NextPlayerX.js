@@ -2096,11 +2096,11 @@ function presets(action) {
          ARRtf = "true,false,false,true,true,false,true,true,true".split(',');
          setCustom(ARRpresets[PRESETno], ARRtf[PRESETno], 'presets')
       } else if (action == 'wrap') {
-         LINElimit = 70;
+         LINElimit = 90;
          document.getElementById('imgBREAKlines').src = "../../Icons/on.png"
          document.getElementById('breakLines').innerHTML = "Char<br>70/ln"
-         BIGchordSize = 1.25
-         document.getElementById('bcp').innerHTML = "Chords<br>125%"
+         BIGchordSize = 1.00
+         document.getElementById('bcp').innerHTML = "Chords<br>100%"
          document.getElementById('imgBIGchords').src = "../../Icons/on.png"
          document.getElementById('soundSelector').selectedIndex = 1; //back Track
          setSoundModeDefault(document.getElementById('soundSelector').value);

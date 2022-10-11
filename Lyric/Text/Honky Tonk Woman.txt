@@ -1,0 +1,46 @@
+TITLE:Honky Tonk Woman,DUR:168,BPM:120,BEATS:4,KEY:G,QUAL:Raw,ARTIST:Stones,GENRE:Rock,STYLE:Unknown,HITyear:TBD
+#INTRO ----------------------------------
+|G           |G           |G           |G
+#VERSE 1 --------------------------------
+|G           |C           |G           |G
+I Met A Gin-Soaked Barroom Queen In Memphis
+|G           |A           |D           |%
+She  Tried  To  Take  Me  Upstairs  For  A  Ride
+|G           |%           |C           |%
+She Had To Heave Me Right Across Her Shoulder
+|G           |D           |G           |%
+‘Cause I Just Can'T Seem To Drink You Off My Mind
+#CHORUS 1 -------------------------------
+|G           |D           |G           |%
+It'S    The    Ho-Oooo-Nky    Tonk    Women
+|G           |D           |G           |%
+That Gimme, Gimme, Gimme The Honky-Tonk Blues
+#VERSE 2 --------------------------------
+|G           |C           |G           |G
+I  Laid  A  Divorcee  In  New  York  City
+|G           |A           |D           |%
+I  Had  To  Put  Up  Some  Kind  Of  A  Fight
+|G           |%           |C           |%
+The  Lady  Then  She  Covered  Me  In  Roses
+|G           |D           |G           |%
+She Blew My Nose And Then She Blew My Mind
+#CHORUS 2 -------------------------------
+|G           |D           |G           |%
+It'S    The    Ho-Oooo-Nky    Tonk    Women
+|G           |D           |G           |%
+That Gimme, Gimme, Gimme The Honky-Tonk Blues
+#BREAK 1 --------------------------------
+|G           |G           |C           |%
+|G           |A           |D           |%
+|G           |G           |C           |%
+|G           |D           |G           |%
+#CHORUS 3 -------------------------------
+|G           |D           |G           |%
+It'S    The    Ho-Oooo-Nky    Tonk    Women
+|G           |D           |G           |%
+That Gimme, Gimme, Gimme The Honky-Tonk Blues
+#OUTRO ----------------------------------
+|G           |D           |G           |%
+It'S    The    Ho-Oooo-Nky    Tonk    Women
+|G           |D           |G           |%
+That Gimme, Gimme, Gimme The Honky-Tonk Blues

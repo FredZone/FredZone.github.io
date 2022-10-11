@@ -15,6 +15,7 @@ Abilene
 Act Naturally
 Alcohol
 All The Lonely People
+Alley Oop 2
 Alley Oop
 Always On My Mind
 Amanda
@@ -45,6 +46,7 @@ Blue Moon
 Blue Moon2
 Blue Skies
 Blue Suede Shoes
+Blueberry Hill 02
 Blueberry Hill
 Boot Scootin Boogie - PJF
 Boot Scootin Boogie
@@ -304,6 +306,7 @@ Stand By Me
 Star
 Steam Roller Blues
 Steel Rail Blues
+Stewball
 Still Gonna Die
 Stray Cat Strut
 Stuck In The Middle With You
@@ -312,7 +315,6 @@ Sultans Of Swing (1)
 Sultans Of Swing
 Summer Song
 Sunday Morning Coming Down
-Suo Gan
 Suo Gan
 Take It Easy
 Take Me Home Country Roads - Pat

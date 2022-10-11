@@ -1,4 +1,4 @@
-TITLE:Aa A Thousand Stars,DUR:172,BPM:180,BEATS:6,KEY:C,QUAL:Verified,ARTIST:Kathy Young,GENRE:Unknown,STYLE:Unknown,HITyear:1960
+TITLE:01 A Thousand Stars,DUR:172,BPM:180,BEATS:6,KEY:C,QUAL:Verified,ARTIST:Kathy Young,GENRE:Unknown,STYLE:Unknown,HITyear:1960
 @1 . 2 . 3 . 4 .
 @d   u   D   ^
 @-
@@ -13,7 +13,7 @@ stars in the sky like the stars in your eyes
 |C            |%          |F             |G
 They say to   me that   there ll never be
 |C            |%          |F             |G
-No other      love like    you  -       oo for
+No other      love like    you  -  oo for
 |C            |F           |C             |NC
 me-e-e                                 A thousand
 #CHORUS 1 -------------------------------

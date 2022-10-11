@@ -8,6 +8,7 @@ The Cape|C||SILENT||0.75
 Little Red Riding Hood|||SILENT||0.75
 Stray Cat Strut|||BACK TRACK||0.75
 Jamaica Farewell|||BACK TRACK||0.60
+Blueberry Hill|||SILENT||0.75
 Walk Right Back|||BACK TRACK||0.75
 Singing The Blues|C||BACK TRACK||0.75
 Take It Easy|||BACK TRACK||0.75

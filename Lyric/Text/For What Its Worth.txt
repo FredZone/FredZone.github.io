@@ -1,0 +1,80 @@
+TITLE:For What Its Worth,DUR:130,BPM:110,BEATS:4,KEY:E,QUAL:Raw,ARTIST:Crosby Stills And Nash,GENRE:Rock,STYLE:Ballad,HITyear:Unknown
+|E            |A            |E            |A
+#VERSE 1 --------------------------------
+|E            |A
+There's somethin' happenin' here.
+|E            |A
+What it is ain't exactly clear.
+|E            |A
+There's a man with a gun over there
+|E            |A
+A-tellin' me I've got to beware.
+[Chorus]
+#CHORUS 1 -------------------------------
+|E     ~D
+I think it's time we stop children, what's that sound
+|A     ~C
+Everybody look what's goin' down.
+|E            |A
+-
+|E            |A
+-
+#VERSE 2 --------------------------------
+|E            |A
+There's battle lines bein' drawn.
+|E            |A
+Nobody's right if everybody's wrong.
+|E            |A
+Young people speakin' their minds
+|E            |A
+A-gettin' so much resistance from behind.
+#CHORUS 1 -------------------------------
+|E     ~D
+I think it's time we stop children, what's that sound
+|A     ~C
+Everybody look what's goin' down.
+|E            |A
+-
+|E            |A
+-
+#VERSE 3 --------------------------------
+|E            |A
+What a field day for the heat.
+|E            |A
+A thousand people in the street
+|E            |A
+Singin' songs and a-carryin' signs
+|E            |A
+Mostly sayin' hooray for our side.
+#CHORUS 3 -------------------------------
+|E     ~D
+I think it's time we stop children, what's that sound
+|A     ~C
+Everybody look what's goin' down.
+|E            |A
+-
+|E            |A
+-
+#VERSE 4 --------------------------------
+|E            |A
+Paranoia strikes deep.
+|E            |A
+Into your life it will creep.
+|E            |A
+It starts when you're always afraid.
+|E            |A
+Step out of line, the men come and take you away.
+#OUTRO ----------------------------------
+|E     ~D
+I think it's time we stop children, what's that sound
+|A     ~C
+Everybody look what's goin' down.
+|E     ~D
+I think it's time we stop children, what's that sound
+|A     ~C
+Everybody look what's goin' down.
+|E     ~D
+I think it's time we stop children, what's that sound
+|A     ~C
+Everybody look what's goin' down.
+-

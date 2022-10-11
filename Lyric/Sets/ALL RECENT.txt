@@ -1,5 +1,11 @@
-01 Down And Out
+Stewball
+Alley Oop 2
+Which Way Are You Goin
+Blueberry Hill
+Blueberry Hill 02
 01 Doctor My Eyes
+01 Down And Out
+01 A Thousand Stars
 01 Desperado
 01 Delilah
 01 Bad Moon Rising
@@ -7,7 +13,6 @@
 01 All The Lonely People
 01 Act Naturally
 01 A Thousand Stars (1)
-01 A Thousand Stars
 Doctor My Eyes
 End Of The Line
 Hallelujah-01
@@ -29,7 +34,6 @@ Irene Goodnight-01
 Blowin In The Wind-01
 Georgia On My Mind-01
 Abilene-01
-Which Way Are You Goin
 America The Beautiful Long
 This Land Is Your Land
 While My Guitar Gently Weeps
@@ -67,7 +71,6 @@ When The Roses Bloom Again
 Sea Of Heartbreak
 Abilene
 In Spite Of Ourselves
-Blueberry Hill
 In Spite Of Ourselves (1)
 Another You
 How Great Thou Art

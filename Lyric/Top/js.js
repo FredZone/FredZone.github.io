@@ -1,0 +1,1 @@
+function GoGo(){alert('WHOOP!')}

@@ -1,42 +1,52 @@
-TITLE:01 Down And Out,DUR:70,BPM:120,BEATS:4,KEY:Bb,QUAL:Raw,ARTIST:Unknown,GENRE:Blues,STYLE:Ballad,HITyear:TBD
+TITLE:01 Down And Out,DUR:86,BPM:120,BEATS:4,KEY:Bb,QUAL:Raw,ARTIST:Unknown,GENRE:Blues,STYLE:Ballad,HITyear:TBD
+
+#INTRO ----------------------------------
+|C         ~E7         |A7
+-
+|Dm        ~A7        |Dm   ~A7   ~Dm   ~Dm
+-
+|F         ~G         |C         ~A7
+-
+|D7                   |G7
+-
 #VERSE 1 --------------------------------
 |C         ~E7         |A7
 Once I lived a life of a millionaire,
-|Dm         ~A7         |Dm   ~A7   ~Dm   ~Dm
+|Dm        ~A7        |Dm   ~A7   ~Dm   ~Dm
 Spent all my money, like I didn't care.
-|F          ~G          |C         ~A7
+|F         ~G         |C         ~A7
 Takin my friends out for mighty good time
-|D7                    |G7
+|D7                   |G7
 Buying fancy licour, champagne and wine
 #VERSE 2 --------------------------------
 |C         ~E7         |A7
 Then I began to fall so low
-|Dm         ~A7         |Dm   ~A7   ~Dm   ~Dm
+|Dm        ~A7        |Dm   ~A7   ~Dm   ~Dm
 Didn't have no money and no place to go
-|F          ~G          |C         ~A7
+|F         ~G         |C         ~A7
 If I ever get my hands on a dollar again
-|D7                    |G7
+|D7                   |G7
 I'm gonna hang on to it til that eagle grins.
 #CHORUS 1 -------------------------------
 |C         ~E7         |A7
 Because, No nobody knows you
-|Dm         ~A7         |Dm   ~A7   ~Dm   ~Dm
+|Dm        ~A7        |Dm   ~A7   ~Dm   ~Dm
 when you're down and out
-|F          ~G          |C         ~A7
+|F         ~G         |C         ~A7
 In your pocket you haven't got a penny
-|D7                    |G7
+|D7                   |G7
 and as for friends, there aint to many
-#VERSE 2 -------------------------------
+#VERSE 3 --------------------------------
 |C         ~E7         |A7
 If I get back on my feet again
-|Dm         ~A7         |Dm   ~A7   ~Dm   ~Dm
+|Dm        ~A7        |Dm   ~A7   ~Dm   ~Dm
 Everybody wants to be my long lost friend
-|F          ~G          |C         ~A7
+|F         ~G         |C         ~A7
 It's mighty strange without a doubt
-|D7                    |G7         ~C
+|D7                   |G7         ~C
 nobody knows you when you're down and out.
 #OUTRO ----------------------------------
-|A7                    |F          ~G
+|A7                   |F         ~G
 I mean...    When your down and
 |C    ~F    ~G    ~G
 Out
