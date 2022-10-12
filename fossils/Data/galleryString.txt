@@ -4,7 +4,7 @@ Click <img src='Data/yellowAuto.png' onclick="if (PIC!=-2){changeGalleryMode()}"
 <X4>1969 > 2010: </X4> Occasionally played with friends and family|backyard.png|465|661|5
 <X4>2010 > 2016: </X4> Ron (on right) got me back into performing (After a 40 year hiatus)|ron.jpg|1051|788|8
 <X4>2016 > 2019: </X4> Played with my buddy, Pat, until he passed away in November 2019|pat.jpg|1051|855|8
-<X4>2019 > mid 2020: </X4> I played Solo at St Catherine's and Wesley Woods Senior Care facilities in Waco, Texas until Covid-19|fred.jpg|1641|3919|8
+<X4>2019 > Now: </X4> I've played solo at St Catherine's and Wesley Woods Senior Care facilities in Waco, Texas (with a 2 year break for Covid 19)|fred.jpg|1641|3919|8
 <X4>Now: </X4>My <i>BACKUP BAND</i> consists of computer generated tracks and electronic harmony.|FredAndBand01.jpg|3840|2861|9
-<X4>Now: </X4>I play with my friends, Stan, Bill, John and, Sally, just for Fun...|barn.jpg|2754|1660|9
+<X4>Now: </X4>I also play with my friends, Stan, Bill, John and, Sally, just for Fun...|barn.jpg|2754|1660|9
 And, On it goes...<br><img src='Data/resetSpinner.gif' style="height:50%"><X1><i>Resetting the Gallery...</i></X1><img src='Data/resetSpinner.gif'style="height:50%">|FredOnTrack.png|352|582|4
