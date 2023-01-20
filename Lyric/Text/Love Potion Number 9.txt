@@ -1,77 +1,80 @@
-TITLE:Love Potion Number 9,DUR:120,BPM:125,BEATS:4,KEY:E,QUAL:Complete,ARTIST:Clovers,GENRE:Rock,STYLE:Up Tempo,HITyear:1959
+TITLE:Love Potion Number 9,DUR:128,BPM:125,BEATS:4,KEY:E,QUAL:Complete,ARTIST:Clovers,GENRE:Rock,STYLE:Up Tempo,HITyear:1959
 @@@<x9>FRED</x9><x4> 1</x4><x14>ooxoo</x14><x11> 9</x11><x12> 10 10</x12>
 @@@<x9>PAT </x9><x4> 1</x4><x14>oooxo</x14><x11>10</x11><x12>  9  6</x12>
 #INTRO ----------------------------------
 @One Two Three Four....
-|NC               |Em               |Am               
+|NC               |Em               |Am
 I took my troubles down to Madame Ruth
-|Em                       |Am                       
+|Em               |Am
 You know that gypsy with the gold-capped tooth
-|G                        |Em                       
+|G                |Em
 She's got a pad down at 34th and Vine
-|Am                       |B                        
+|Am               |B
 Sellin' little bottles of     Love Potion Number
-|Em                       |%                        
+|Em               |%
 Nine
 #VERSE 1 --------------------------------
-|Em                       |Am                       
+|Em               |Am
 I told her that I was a flop with chicks
-|Em                       |Am                       
+|Em               |Am
 I'd been this way since 1956
-|G                        |Em                       
+|G                |Em
 She looked at my palm and she made a magic sign
-|Am                       |B                        
+|Am               |B
 She said "What you need is Love Potion Number
-|Em                       |%                        
+|Em               |%
 Nine
 #CHORUS 1 -------------------------------
-|Am                       |%                        
+|Am               |%
 She bent down and turned around and gave me a wink
-|Gb7                      |%                        
+|Gb7              |%
 She said "I'm gonna make it up right here in the sink"
-|Am                       |%                        
+|Am               |%
 It smelled like turpentine and looked like India ink
-|B                        |%                        
+|B                |%
 I held my nose, I closed my eyes, I took a drink
 #VERSE 2 --------------------------------
-|Em                       |Am                       
+|Em               |Am
 I didn't know if it was day or night
-|Em                       |Am                       
+|Em               |Am
 I started kissin' everything in sight
-|G                        |Em                       
+|G                |Em
 But when I kissed the cop down at 34th and Vine
-|Am                       |B                        
+|Am               |B
 He broke my little bottle of    Love Potion Number
-|Em                       |%                        
+|Em               |%
 Nine
 #BREAK 1 --------------------------------
-|Am                       |%                        
+|Am               |%
 -
-|Gb7                      |%                        
+|Gb7              |%
 -
-|Am                       |%                        
+|Am               |%
 -
-|B                        |%                        
+|B                |%
 I held my nose, I closed my eyes, I took a drink
 #VERSE 3 --------------------------------
-|Em                       |Am                       
+|Em               |Am
 I didn't know if it was day or night
-|Em                       |Am                       
+|Em               |Am
 I started kissin' everything in sight
-|G                        |Em                       
+|G                |Em
 But when I kissed the cop down at 34th and Vine
-|Am                       |B                        
+|Am               |B
 He broke my little bottle of Love potion number
-|Em                       |Am                       
+|Em               |Am
  Nine          Love Potion Number
 #OUTRO ----------------------------------
-|Em                       |Am                       
+|Em               |Am
 Nine          Love Potion Number
-|Em                       |Am                       
+|Em               |Am
 Nine          Love Potion Number
-|Em                       |Em                       
+|Em       ~G       |A       ~B7
 ni . . . .i. . . . i. . . .i...ine.
-
+|Em               |Em
+.....  .......
+|Em               |Em
+......
 @@Originally Recorded by The Clovers
 @@Covered by the The Searchers (1963)
 @@By Jerry Leiber and Mike Stoller

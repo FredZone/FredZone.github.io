@@ -1,0 +1,105 @@
+TITLE:If You Could Read My Mind,DUR:184,BPM:130,BEATS:4,KEY:G,QUAL:Raw,ARTIST:Gordon Lightfoot,GENRE:Unknown,STYLE:Ballad,HITyear:?
+#VERSE 1 --------------------------------
+|G                     |%
+If You Could Read My Mind Love
+|F                     |%
+What A Tale My Thoughts Could Tell
+|G                     |%
+Just Like An Old Time Movie
+|F                     |%
+'Bout A Ghost From A Wishin' Well
+|G         ~G7         |C
+In A Castle Dark Or A Fortress Strong
+|D                     |Em
+With Chains Upon My Feet
+|C                     |G
+You Know That Ghost Is Me
+|C                     |G/B
+And I Will Never Be Set Free
+|Am7                   |D
+As Long As I'M A Ghost That You Cant
+|G                     |
+See
+#BREAK 1 --------------------------------
+|G                     |%
+#VERSE 2 --------------------------------
+|G                     |%
+If I Could Read Your Mind Love
+|F                     |%
+What A Tale Your Thoughts Could Tell
+|G                     |%
+Just Like A Paperback Novel
+|F                     |%
+The Kind That Drugstores Sell
+|G              |G7             |C
+When You Reach The Part Where The Heartaches Come
+|D                     |Em
+The Hero Would Be Me
+|C                     |G
+But Heroes Often Fail
+|C                     |G/B
+And You Won'T Read That Book Again
+|Am7            |D              |G
+Because The Ending'S Just Too Hard To
+|
+Take
+#BREAK 2 --------------------------------
+G F G F
+#Interlude --------------------------------
+|G              |G7             |C
+I'D Walk Away Like A Movie Star
+|D                     |Em
+Who Gets Burned In A Three Way Script
+|C                     |G
+Enter Number Two
+|C                     |G/B
+A Movie Queen To Play The Scene
+|Am7            |D              |Em
+Of Bringing All The Good Things Out In Me
+|C                     |G/B
+But For Now Love, Let'S Be Real
+|C                     |G/B
+* I Never Thought I Could Act This Way *
+|Am7                   |D
+And I'Ve Got To Say That I Just Don'T Get It
+|C                     |G/B
+I Don'T Know Where We Went Wrong
+|Am7                   |%
+But The Feelin'S Gone
+|D                     |G
+And I Just Can'T Get It Back
+#BREAK 3 --------------------------------
+|G                     |%
+#VERSE 4 --------------------------------
+|G                     |%
+If You Could Read My Mind Love
+|F                     |%
+What A Tale My Thoughts Could Tell
+|G                     |%
+Just Like An Old Time Movie
+|F                     |%
+'Bout A Ghost From A Wishin' Well
+|G              |G7             |C
+In A Castle Dark Or A Fortress Strong
+|D                     |Em
+With Chains Upon My Feet
+|C                     |G
+But Stories Always End
+|C                     |G/B
+And If You Read Between The Lines
+|Am7            |D              |Em
+You'Ll Know That I'M Just Tryin' To Understand
+|C                     |G/B
+The Feelin'S That You Lack
+|C                     |G/B
+I Never Thought I Could Feel This Way
+|Am7                   |D
+And I'Ve Got To Say That I Just Don'T Get It
+|C                     |G/B
+I Don'T Know Where We Went Wrong
+|Am7                   |%
+But The Feelin'S Gone
+|D                     |G
+And I Just Can'T Get It Back
+#OUTRO ----------------------------------
+F  G

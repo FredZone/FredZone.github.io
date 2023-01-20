@@ -87,8 +87,8 @@ window.onload = function() {
 
     ICONspecial='coronavirus.png'
     MSGspecial="<div style='line-height:180%;'The Corona virus caused me to cancel a2 years worth of shows"    
-    MSGspecial=MSGspecial +'<br>Had my first show on May 25 and several more since.'  
-    MSGspecial=MSGspecial +'<br>Looks Like I\'m am back up and running'  
+    MSGspecial=MSGspecial +'<br>Had my first post-Covid show on May 25,2022 and several more since.'  
+    MSGspecial=MSGspecial +'<br>So it Looks like I\'m am back up and running'  
     MSGspecial=MSGspecial +'<br>Fred Kaparich</div>'
     pop(MSGspecial,'PLAYING AGAIN...',7,undefined,'yellow')
 }

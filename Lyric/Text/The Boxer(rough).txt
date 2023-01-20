@@ -1,0 +1,151 @@
+TITLE:The Boxer(Rough),DUR:396,BPM:120,BEATS:4,KEY:C,QUAL:Raw,ARTIST:Simon And Garfunkle,GENRE:Folk,STYLE:Unknown,HITyear:TBD
+#INTRO ----------------------------------
+|C                                      |C
+#VERSE 1 --------------------------------
+|C                   |%                   |%        ~C/B        |Am
+I  am  just  a  poor  boy,  though  my  story's  seldom  told
+|G                   |G7                  |G6                  |%
+I  have  squandered  my  resistance For  a  pocketful  of  mumbles  such  are
+|C                   |C                   |Am                  |G
+promises                            All  lies  and  jest  still  a  man  hears
+|F                   |%                   |C                   |G
+what  he  wants  to  hear   And  disregards  the  rest
+|F         ~G         |C                   |%                   |%
+-
+#VERSE 1 --------------------------------
+|C                   |%                   |%        ~C/B        |Am
+When  I  left  my  home  and  family  I  was  no  more  than  a  boy
+|G                   |G7                  |G6                  |%
+In  the  company  of  strangers   In  the  quiet  of  a  railway  station  running
+|C                   |C                   |Am                  |G
+scared                                          Laying  low  seeking  out  the    go
+|F                   |%                   |C                   |G
+poorer  quarters  where  the  ragged  people      Looking  for  the  places
+|F         ~G         |C                   |%                   |%
+only  they  would  know
+
+|Am
+Lie-la-lie
+|Em
+Lie-la-la-la-la  lie-la-lie
+|Am
+Lie  la  lie
+|G                                      |C
+Lie-la  la  la  la  la  lie  la  la  la  la  lie
+#VERSE 2 --------------------------------
+|C                         |C/B                       |Am
+Asking  only  workmans  wages  I  come  looking  for  a  job
+|G
+But  I  get  no  offers
+|G7                        |G6                        |C
+Just  a  come-on  from  the  whores  on  seventh  avenue
+|C/B             |Am              |G               |F               |C
+I do declare there were times when I was so lonesome I took some comfort there
+|G                                      |C
+La-la-la-la-la-la-la
+#INTERLUDE 1 ----------------------------
+|%      |C      |%      |C      |C/B    |Am     |%      |G7     |%      |G7     |%
+|%C                  |%CC/BAm             |%G7                 |%
+(2/4)
+|%       |F       |%       |C       |G7      |%       |F       |%       |C       |%
+(2/4)
+*************************************************************************************
+Extra  verse  in  live  versions
+|C                         |C/B                       |Am
+Now  the  years  are  rolling  by  me,  they  are  rocking  evenly
+|G
+And  I  am  older  than  I  once  was
+|G7                        |G6                        |C
+And  younger  than  I'll  be,  that's  not  unusual
+|C/B             |Am              |G               |F               |C
+No, it isn't strange, after changes upon changes we are more or less the same
+|G                         |F                         |C
+After  changes  we  are  more  or  less  the  same
+**************************************************************************************
+Refrain]
+|Am
+Lie-la-lie
+|Em
+Lie-la-la-la-la  lie-la-lie
+|Am
+Lie  la  lie
+|G                                      |C
+Lie-la  la  la  la  la  lie  la  la  la  la  lie
+#VERSE 3 --------------------------------
+|C                         |C/B                       |Am
+Then  I'm  laying  out  my  winter  clothes  and  wishing  I  was  gone
+|G                   |G7                  |G6                  |C
+Going  home  where  the  new  york  city  winters  aren't  bleeding  me
+|Em                                     |Am
+Leading  me-e
+|G7                                     |C
+Going  home
+|C                         |C/B                       |Am
+In  the  clearing  stands  a  boxer  and  a  fighter  by  his  trade
+|G
+And  he  carries  the  reminders
+|G7                        |G6                        |C
+Of  ev'ry  glove  that  laid  him  down  or  cut  him  till  he  cried  out
+|C/B                                    |Am
+In  his  anger  and  his  shame
+|G                         |F                         |C
+"I  am  leaving,  I  am  leaving."  but  the  fighter  still  remains
+|G                   |F                   |G                   |C
+Hm,  hm,  hm
+Refrain]
+|Am
+Lie-la-lie
+|Em
+Lie-la-la-la-la  lie-la-lie
+|Am
+Lie  la  lie
+|G                                      |Am]
+Lie-la  la  la  la  la  lie  la  la  la  la  lie
+|Am                                     |Em
+Lie-la-la-la-la  lie-la-lie
+|Am
+Lie  la  lie
+|G                                      |Am]
+Lie-la  la  la  la  la  lie  la  la  la  la  lie
+|Am                                     |Em
+Lie-la-la-la-la  lie-la-lie
+|Am
+Lie  la  lie
+|G                                      |Am]
+Lie-la  la  la  la  la  lie  la  la  la  la  lie
+|Am                                     |Em
+Lie-la-la-la-la  lie-la-lie
+|Am
+Lie  la  lie
+|G                                      |Am]
+Lie-la  la  la  la  la  lie  la  la  la  la  lie
+|Am                                     |Em
+Lie-la-la-la-la  lie-la-lie
+|Am
+Lie  la  lie
+|G                                      |Am]
+Lie-la  la  la  la  la  lie  la  la  la  la  lie
+|Am                                     |Em
+Lie-la-la-la-la  lie-la-lie
+|Am
+Lie  la  lie
+|G                                      |Am]
+Lie-la  la  la  la  la  lie  la  la  la  la  lie
+|Am                                     |Em
+Lie-la-la-la-la  lie-la-lie
+|Am
+Lie  la  lie
+|G                                      |Am]
+Lie-la  la  la  la  la  lie  la  la  la  la  lie
+|Am                                     |Em
+Lie-la-la-la-la  lie-la-lie
+|Am
+Lie  la  lie
+|G                                      |C]
+Lie-la  la  la  la  la  lie  la  la  la  la  lie
+#OUTRO ----------------------------------
+|%      |C      |%      |C      |C/B    |Am     |%      |G      |%      |G      |%
+|%C                  |%CC/BAm             |%G7                 |%
+(2/4)
+|%       |F       |%       |C       |G7      |%       |F       |%       |C       |C
+(2/4)

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+</head>    
+<body>
+     <div id='selector'>
+     <select id='bp' onchange='build(value)'>
+          <option value="none">Select A Name!</option>
+          <option value="The Birds,Circus,Fight,Arrest" >Bartoletti</option>
+          <option value="The Birds,Circus,Fight">Jones</option>
+          <option value="The Birds,Circus">Smith</option>
+     </select >
+     </div>
+     <div id='box' style="border:solid;color:maroon"> 
+     links shoud appear here...
+     <div>
+
+
+
+
+<script>
+var arr
+var str
+
+     function build(val) {
+          str =""
+          alert(val)
+          arr = val.split(",");
+          for (j=0; j< arr.length; j++) {
+              str = str + "<a href=#"+arr[j]+">"+arr[j]+"</a> - "
+          }
+          alert(str)
+          document.getElementById('box').innerHTML=str
+     }    
+</script>
+</body >
+</html>

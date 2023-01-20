@@ -1,0 +1,71 @@
+TITLE:Sugar Man,DUR:128,BPM:120,BEATS:4,KEY:Am,QUAL:Raw,ARTIST:Chris Kristofferson,GENRE:Blues,STYLE:Ballad,HITyear:TBD
+Kris Kristofferson
+key: Am
+#VERSE 1 --------------------------------
+|Am       ~E7       |Am       ~A7
+There are shadows on the sidewalks
+|Dm       ~A7       |Dm
+Of the city streets at night
+|Dm                |Am
+And the alleyways and ugly things
+|F#m7b5            |E7
+Are hidden from the light
+|Am       ~E7       |Am       ~A7
+And somewhere soon, my baby's
+|Dm       ~A7       |Dm    ~A7    ~Dm   ~
+Gonna sell her soul again
+|Dm       ~G       |Am     ~F#m7b5
+For a custom tailored lady killer
+|F7       ~E7       |Am
+They call Sugar Man
+#VERSE 2 --------------------------------
+|Am       ~E7       |Am       ~A7
+I searched the backstreet barrooms
+|Dm       ~A7       |Dm
+And every cheap hotel
+|Dm                |Am
+Asking for my baby
+|F#m7b5            |E7
+They all knew her well
+|Am       ~E7       |Am       ~A7
+Well, they said, she's out there working
+|Dm       ~A7       |Dm    ~A7    ~Dm   ~
+For the wages of her sin
+|Dm       ~G       |Am     ~F#m7b5
+And if you want to find your baby, Baby
+|F7       ~E7       |Am
+Look for Sugar Man
+#VERSE 3 --------------------------------
+|Am       ~E7       |Am       ~A7
+Well  tonight I found her
+|Dm       ~A7       |Dm
+On the sorry side of town
+|Dm                |Am
+Lying cold upon the bed
+|F#m7b5            |E7
+Where she had laid her body down
+|Am       ~E7       |Am       ~A7
+I     picked up the needle
+|Dm       ~A7       |Dm    ~A7    ~Dm   ~
+that had fallen from her hand
+|Dm       ~G       |Am     ~F#m7b5
+And stuck it through the money
+|F7       ~E7       |Am
+she had made for Sugar Man
+#VERSE 4 --------------------------------
+|Am       ~E7       |Am       ~A7
+There are shadows on the sidewalks
+|Dm       ~A7       |Dm
+Of the city streets at night
+|Dm                |Am
+And the alleyways and ugly things
+|F#m7b5            |E7
+Are hidden from the light
+|Am       ~E7       |Am       ~A7
+But the sun's gonna shine tomorrow
+|Dm       ~A7       |Dm    ~A7    ~Dm   ~
+On some dirty gargage cans
+|Dm       ~G       |Am     ~F#m7b5
+And a custom tailored lady killer
+|F7       ~E7       |Am
+They called Sugar Man

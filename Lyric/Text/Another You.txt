@@ -1,8 +1,8 @@
 TITLE:Another You,DUR:132,BPM:150,BEATS:4,KEY:C,QUAL:Preliminary,ARTIST:Seekers,GENRE:Folk,STYLE:Ballad,HITyear:1969?
 [Intro]
-|G      ~C      |D              |G      ~C      |D
+|C      ~F      |G              |C      ~F      |G
 -
-|G      ~C      |D              |G      ~C      |D
+|C      ~F      |G              |C      ~F      |G
 -
 #VERSE 1 --------------------------------
 |C              |F              |D7             |G7
