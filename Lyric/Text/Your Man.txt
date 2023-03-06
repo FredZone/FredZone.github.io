@@ -1,0 +1,102 @@
+TITLE:Your Man,DUR:209,BPM:101,BEATS:4,KEY:B,QUAL:Raw,ARTIST:Josh Turner,GENRE:Country,STYLE:Unknown,HITyear:TBD
+#INTRO ----------------------------------
+|N
+lead in...
+|B                        |%
+-
+|F#                       |%
+-
+|C#                       |%
+-
+|F#                       |%
+-                         Baby lock the door and turn the
+#CHORUS 1 -------------------------------
+|B                        |%
+lights down low     Put some music on that's
+|F#                       |%
+soft and slow       Baby we ain't got no
+|C#                       |%
+place to go              I hope you understand
+|F#
+------------------- I've been thinking 'bout this
+|B                        |%
+ all day long     Never felt a feeling
+|F#                       |%
+quite this strong    I can't believe how much it
+|C#                       |%
+ turns me on    Just to be your man
+|F#                       |%
+-
+#VERSE 1 --------------------------------
+|Abm                      |%
+There's no hurry, don't you worry
+|F#                       |%
+We can take our time
+|Abm                      |Bbm
+Come a little closer, let's go over
+|B                        |C#
+What I had in mind
+#CHORUS 2 -------------------------------
+|B                        |%
+lights down low     Put some music on that's
+|F#                       |%
+soft and slow       Baby we ain't got no
+|C#                       |%
+place to go              I hope you understand
+|F#
+------------------- I've been thinking 'bout this
+|B                        |%
+ all day long     Never felt a feeling
+|F#                       |%
+quite this strong    I can't believe how much it
+|C#                       |%
+ turns me on    Just to be your man
+|F#
+-
+#BREAK 1 --------------------------------
+|B                        |%
+-
+|F#                       |%
+-
+|C#                       |%
+-
+|F#                       |%
+-
+#VERSE 2 --------------------------------
+|Abm                      |%
+Ain't nobody, ever loved nobody
+|F#                       |%
+The way that I love you
+|Abm                      |Bbm
+We're alone now, you don't know how
+|B                        |C#
+Long I've wanted to          Baby lock the door and turn the
+#CHORUS 3 -------------------------------
+|B                        |%
+lights down low     Put some music on that's
+|F#                       |%
+soft and slow       Baby we ain't got no
+|C#                       |%
+place to go              I hope you understand
+|F#
+------------------- I've been thinking 'bout this
+|B                        |%
+ all day long     Never felt a feeling
+|F#                       |%
+quite this strong    I can't believe how much it
+|C#                       |%
+ turns me on    Just to be your man
+|F#                       |%
+--                     I can't believe how much it
+#outro --------------------------------
+|C#                       |%
+ turns me on    Just to be your man
+|F#                       |B
+------------------
+|B                        |F#
+-
+|F#                       |C#
+-
+|C#                       |F#
+-
+|F#
